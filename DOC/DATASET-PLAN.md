@@ -30,6 +30,10 @@ con `[x]`.
 - Sí habrá revisión humana lingüística y pedagógica del contenido antes de
   publicarlo.
 - `DATASET/` no dependerá de Next.js, del backend ni de una base de datos.
+- La taxonomía será jerárquica y permitirá seleccionar práctica general o
+  específica.
+- Una selección de categoría incluirá todos sus descendientes publicados.
+- Cada actividad estará vinculada al nodo más específico que practique.
 
 ## Fuentes principales
 
@@ -52,7 +56,8 @@ DATASET/
 │   ├── curriculum-map.json
 │   ├── coverage-targets.json
 │   ├── lesson-index.json
-│   └── activity-index.json
+│   ├── activity-index.json
+│   └── practice-index.json
 ├── schemas/
 │   ├── lesson.schema.json
 │   ├── activity.schema.json
@@ -74,6 +79,7 @@ DATASET/
 └── reports/
     ├── validation.json
     ├── coverage.json
+    ├── practice-coverage.json
     └── duplicates.json
 ```
 
@@ -136,8 +142,32 @@ DATASET/
 
 - [ ] Crear `catalog/taxonomy.json`.
 - [ ] Definir los niveles `B1` y `B2`.
+- [ ] Modelar la taxonomía como un árbol de nodos estables.
+- [ ] Definir los tipos de nodo:
+  - `category`.
+  - `topic`.
+  - `subtopic`.
+  - `skill`.
+- [ ] Definir en cada nodo:
+  - `id`.
+  - `parentId`.
+  - `kind`.
+  - `labels.en`.
+  - `labels.es`.
+  - `levels`.
+  - `selectableForPractice`.
+  - `order`.
 - [ ] Definir las categorías definitivas.
-- [ ] Definir temas y subtemas mediante valores controlados.
+- [ ] Definir temas, subtemas y skills mediante valores controlados.
+- [ ] Representar selecciones generales mediante nodos padre.
+- [ ] Representar selecciones específicas mediante nodos hoja o intermedios.
+- [ ] Incluir como mínimo jerarquías equivalentes a:
+  - Grammar → Verb tenses → Present perfect.
+  - Vocabulary → Travel → Airports.
+  - Phrasal verbs → Everyday actions → Phrasal verb concreto.
+- [ ] Validar que el árbol no contenga ciclos.
+- [ ] Validar que todo `parentId` exista.
+- [ ] Mantener IDs aunque cambie la etiqueta visible.
 - [ ] Evitar tags libres cuando exista un valor en la taxonomía.
 - [ ] Crear `catalog/curriculum-map.json`.
 - [ ] Registrar para cada unidad:
@@ -145,6 +175,7 @@ DATASET/
   - Categoría.
   - Tema.
   - Subtema.
+  - Skill.
   - Objetivos de aprendizaje.
   - Prerrequisitos.
   - Referencias CEFR.
@@ -161,8 +192,15 @@ DATASET/
   - Categoría.
   - Tema.
   - Subtema.
+  - Skill.
   - Tipo de actividad.
   - Dificultad.
+- [ ] Definir cobertura mínima para que un nodo pueda marcarse como
+  `selectableForPractice`.
+- [ ] Calcular la cobertura de un nodo padre sumando actividades únicas de
+  todos sus descendientes.
+- [ ] Evitar contar una misma actividad varias veces dentro de una selección
+  general.
 - [ ] Mantener como meta global de producto:
   - 100 o más lecciones.
   - 10.000 o más actividades.
@@ -225,6 +263,7 @@ DATASET/
   - `category`.
   - `topic`.
   - `subtopic`.
+  - `taxonomyNodeIds`.
   - `difficulty`.
   - `instructions`.
   - `prompt`.
@@ -254,6 +293,9 @@ DATASET/
   - Contracciones.
   - Variantes británicas y americanas.
 - [ ] Exigir al menos una `lessonId` válida.
+- [ ] Exigir al menos un `taxonomyNodeId` válido y seleccionable.
+- [ ] Exigir que cada actividad referencie el nodo más específico que evalúa.
+- [ ] Permitir varios nodos hoja cuando una actividad evalúe más de una skill.
 - [ ] Permitir varias lecciones cuando la actividad combine conocimientos.
 - [ ] Añadir explicaciones posteriores a todas las actividades.
 - [ ] Añadir feedback específico por distractor cuando sea útil.
@@ -337,6 +379,7 @@ DATASET/
 - [ ] Añadir `pnpm dataset:validate`.
 - [ ] Añadir `pnpm dataset:index`.
 - [ ] Añadir `pnpm dataset:coverage`.
+- [ ] Añadir `pnpm dataset:practice-index`.
 - [ ] Añadir `pnpm dataset:duplicates`.
 - [ ] Añadir `pnpm dataset:test-grading`.
 - [ ] Añadir `pnpm dataset:all`.
@@ -344,6 +387,9 @@ DATASET/
 - [ ] Validar que la ruta coincida con los metadatos.
 - [ ] Detectar IDs duplicados.
 - [ ] Detectar referencias rotas.
+- [ ] Detectar ciclos y nodos huérfanos en la taxonomía.
+- [ ] Detectar actividades sin nodo de práctica.
+- [ ] Detectar nodos seleccionables sin suficientes actividades.
 - [ ] Detectar lecciones sin actividades.
 - [ ] Detectar actividades sin lección.
 - [ ] Rechazar actividades sin evaluador automático.
@@ -353,6 +399,13 @@ DATASET/
 - [ ] Detectar duplicados exactos normalizados.
 - [ ] Detectar posibles duplicados cercanos para revisión editorial.
 - [ ] Generar índices deterministas.
+- [ ] Generar `practice-index.json` con:
+  - Descendientes de cada nodo seleccionable.
+  - IDs de actividades publicadas sin duplicados.
+  - Conteo por nivel.
+  - Conteo por dificultad.
+  - Conteo por tipo de actividad.
+- [ ] Generar `practice-coverage.json`.
 - [ ] Generar informes de cobertura y dificultad.
 - [ ] Ejecutar `dataset:all` en CI.
 
@@ -393,6 +446,10 @@ DATASET/
 - [ ] Diseñar distractores a partir de errores frecuentes reales.
 - [ ] Crear actividades de contraste entre estructuras confundibles.
 - [ ] Crear actividades acumulativas entre varias lecciones.
+- [ ] Equilibrar las actividades entre descendientes para que una selección
+  general no esté dominada por un único subtema.
+- [ ] Garantizar suficientes actividades distintas para sesiones dirigidas de
+  5, 10, 15 y 20 preguntas cuando el alcance lo permita.
 - [ ] Producir B1 y B2 en paralelo.
 - [ ] Priorizar gramática y Use of English.
 - [ ] Continuar con vocabulario, phrasal verbs, collocations y preposiciones.
@@ -441,6 +498,10 @@ DATASET/
 - [ ] No existen IDs duplicados.
 - [ ] No existen referencias rotas.
 - [ ] Los metadatos coinciden con sus rutas.
+- [ ] Todos los nodos seleccionables se resuelven a actividades publicadas.
+- [ ] Una selección general incluye correctamente todos sus descendientes.
+- [ ] Una selección específica no incluye actividades de nodos hermanos.
+- [ ] El índice de práctica no contiene IDs duplicados dentro de un alcance.
 - [ ] Los índices se generan de forma determinista.
 - [ ] Las lecciones publicadas tienen actividades asociadas.
 - [ ] El contenido publicado ha pasado revisión lingüística y pedagógica.

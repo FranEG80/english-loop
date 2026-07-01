@@ -44,6 +44,13 @@ con `[x]`.
 - Los repasos mezclarán la actividad original y variantes del mismo objetivo.
 - Las lecciones vistas no se repetirán mientras existan lecciones nuevas
   elegibles, salvo que haya errores pendientes relacionados.
+- Existirán tres modos de práctica: `DAILY`, `SMART_REVIEW` y `FOCUSED`.
+- `FOCUSED` permitirá seleccionar una categoría, tema, subtema o skill de la
+  taxonomía.
+- La práctica dirigida registrará intentos y progreso, pero no completará el
+  Daily Loop ni consumirá por sí sola la cola de repaso automático.
+- Un fallo durante práctica dirigida sí podrá crear o reforzar un
+  `ReviewItem`.
 
 ## Referencias técnicas
 
@@ -149,6 +156,8 @@ context/
 - [ ] Crear `InvariantViolationException`.
 - [ ] Crear `InvalidActivityResponseException`.
 - [ ] Crear `InvalidSessionTransitionException`.
+- [ ] Crear `InvalidPracticeScopeException`.
+- [ ] Crear `InsufficientActivitiesForScopeException`.
 - [ ] Crear `UnsupportedEvaluatorException`.
 - [ ] Crear `ApplicationException`.
 - [ ] Crear `ResourceNotFoundException`.
@@ -179,10 +188,14 @@ context/
 - [ ] Modelar `Lesson`.
 - [ ] Modelar `Activity`.
 - [ ] Modelar `ContentVersion`.
+- [ ] Modelar `TaxonomyNode` y su relación padre-hijos.
 - [ ] Modelar nivel, categoría, tema y dificultad como value objects o tipos
   controlados.
 - [ ] Crear `LessonCatalogPort`.
 - [ ] Crear `ActivityCatalogPort`.
+- [ ] Crear `TaxonomyCatalogPort`.
+- [ ] Permitir resolver un nodo a todos sus descendientes seleccionables.
+- [ ] Permitir contar actividades disponibles por nodo y nivel.
 - [ ] Crear filtros de catálogo mediante specifications.
 - [ ] Limitar el runtime a contenido `published`.
 
@@ -193,11 +206,15 @@ context/
 - [ ] Crear `ListActivities`.
 - [ ] Crear `GetActivityQuestion`.
 - [ ] Crear `GetCatalogMetadata`.
+- [ ] Crear `GetPracticeTaxonomy`.
+- [ ] Crear `GetPracticeScopeAvailability`.
 
 ### Adaptadores locales
 
 - [ ] Crear `FileLessonCatalogAdapter`.
 - [ ] Crear `FileActivityCatalogAdapter`.
+- [ ] Crear `FileTaxonomyCatalogAdapter`.
+- [ ] Leer `practice-index.json`.
 - [ ] Leer los índices generados de `DATASET/`.
 - [ ] No recorrer todos los archivos en cada request.
 - [ ] Cargar y cachear los índices una vez por proceso.
@@ -276,20 +293,27 @@ context/
 - [ ] Crear `SavedLesson`.
 - [ ] Crear `DailySession`.
 - [ ] Crear `DailySessionLesson`.
-- [ ] Crear `DailySessionActivity`.
+- [ ] Crear `PracticeRun`.
+- [ ] Crear `PracticeRunActivity`.
 - [ ] Crear `ActivityAttempt`.
 - [ ] Crear `UserActivityProgress`.
 - [ ] Crear `UserLessonProgress`.
-- [ ] Crear `TopicProgress`.
+- [ ] Crear `TaxonomyProgress` por usuario y nodo.
 - [ ] Crear `ReviewItem`.
 - [ ] Crear `DatasetImport`.
 - [ ] Preparar el futuro modelo:
   - `LessonVersion`.
   - `ActivityVersion`.
+  - `TaxonomyNodeVersion`.
   - Relaciones de catálogo.
 - [ ] Añadir una restricción única por usuario y fecha local de Daily Session.
+- [ ] Añadir a `PracticeRun` el modo `DAILY`, `SMART_REVIEW` o `FOCUSED`.
+- [ ] Guardar en `PracticeRun` el alcance de taxonomía y sus descendientes como
+  snapshot.
+- [ ] Permitir que una Daily Session referencie su `PracticeRun`.
 - [ ] Añadir una restricción única de idempotency key por usuario.
 - [ ] Añadir una restricción única de progreso por usuario y actividad.
+- [ ] Añadir una restricción única de progreso por usuario y nodo de taxonomía.
 - [ ] Añadir una restricción única por ID y versión de contenido.
 - [ ] Añadir foreign keys.
 - [ ] Añadir índices para consultas de progreso y repaso.
@@ -299,6 +323,23 @@ context/
 ### Dominio
 
 - [ ] Modelar `ActivityAttempt` como inmutable.
+- [ ] Modelar `PracticeRun` como aggregate root para cualquier lote de
+  actividades.
+- [ ] Modelar `PracticeRunMode` con `DAILY`, `SMART_REVIEW` y `FOCUSED`.
+- [ ] Modelar `PracticeScope` con:
+  - Nivel activo.
+  - `taxonomyNodeId`.
+  - IDs descendientes resueltos.
+  - Número solicitado de actividades.
+- [ ] Crear `PracticeRunPlanner`.
+- [ ] Para práctica dirigida:
+  - Incluir únicamente actividades publicadas del alcance.
+  - Incluir descendientes cuando se selecciona un nodo general.
+  - Evitar duplicados dentro de la sesión.
+  - Priorizar actividades no realizadas recientemente.
+  - Equilibrar subtemas en selecciones generales.
+  - Reutilizar actividades recientes solo cuando el pool sea insuficiente.
+- [ ] Permitir tamaños de sesión de 5, 10, 15 o 20 actividades.
 - [ ] Crear `ActivityEvaluator`.
 - [ ] Crear `ActivityEvaluatorFactory`.
 - [ ] Implementar estrategia `boolean`.
@@ -316,12 +357,21 @@ context/
 ### Puertos y casos de uso
 
 - [ ] Crear `AttemptRepository`.
+- [ ] Crear `PracticeRunRepository`.
+- [ ] Crear `CreateFocusedPracticeRun`.
+- [ ] Crear `GetPracticeRun`.
+- [ ] Crear `CompletePracticeRun`.
+- [ ] Crear `GetPracticeRunSummary`.
 - [ ] Crear `SubmitActivityAttempt`.
 - [ ] Crear `GradeActivityResponse`.
 - [ ] Crear `GetAttemptFeedback`.
 - [ ] Exigir idempotency key al enviar un intento.
 - [ ] No permitir modificar o borrar un intento.
 - [ ] Guardar respuesta enviada, resultado y versión de evaluación.
+- [ ] Registrar el origen `DAILY`, `SMART_REVIEW` o `FOCUSED` en cada intento.
+- [ ] No marcar una lección como vista por realizar únicamente práctica
+  dirigida.
+- [ ] No incrementar loops completados al finalizar una práctica dirigida.
 - [ ] No guardar datos innecesarios o sensibles.
 
 ## Fase 10 — Bounded context Progress & Review
@@ -348,12 +398,17 @@ context/
 - [ ] Asociar cada repaso con su objetivo de aprendizaje.
 - [ ] Permitir que una lección con errores pendientes aparezca como
   recapitulación.
+- [ ] Un intento `FOCUSED` correcto actualizará progreso, pero no resolverá un
+  `ReviewItem` vencido salvo que el intento pertenezca explícitamente a ese
+  repaso.
+- [ ] Un intento `FOCUSED` fallado creará o reforzará el `ReviewItem`
+  correspondiente.
 
 ### Casos de uso
 
 - [ ] Crear `GetReviewQueue`.
 - [ ] Crear `GetProgressOverview`.
-- [ ] Crear `GetTopicProgress`.
+- [ ] Crear `GetTaxonomyProgress`.
 - [ ] Crear `GetActivityHistory`.
 - [ ] Crear `GetDashboardSummary`.
 
@@ -365,9 +420,11 @@ context/
 - [ ] Corregir mediante la estrategia determinista.
 - [ ] Insertar `ActivityAttempt`.
 - [ ] Actualizar `UserActivityProgress`.
-- [ ] Actualizar `TopicProgress`.
+- [ ] Actualizar la hoja de `TaxonomyProgress` y propagar la proyección a sus
+  ancestros.
 - [ ] Crear, avanzar o resolver `ReviewItem`.
-- [ ] Actualizar la Daily Session.
+- [ ] Actualizar el `PracticeRun`.
+- [ ] Actualizar la Daily Session únicamente cuando el run sea `DAILY`.
 - [ ] Ejecutar todos los cambios en una sola transacción.
 - [ ] Publicar eventos internos después del commit.
 - [ ] Devolver el resultado existente si se repite el mismo comando.
@@ -379,7 +436,7 @@ context/
 
 - [ ] Modelar `DailySession` como aggregate root.
 - [ ] Modelar estados válidos de sesión.
-- [ ] Modelar lecciones y actividades asignadas.
+- [ ] Modelar lecciones asignadas y la referencia a su `PracticeRun`.
 - [ ] Crear `DailySessionPlanner`.
 - [ ] Crear `DailySessionRepository`.
 - [ ] Crear eventos:
@@ -406,7 +463,8 @@ context/
 
 ### Snapshot
 
-- [ ] Persistir el orden de lecciones y actividades.
+- [ ] Persistir el orden de lecciones.
+- [ ] Delegar el snapshot de actividades en `PracticeRun`.
 - [ ] Persistir la versión del dataset.
 - [ ] Persistir la seed.
 - [ ] Guardar snapshot servidor de pregunta, evaluador y feedback.
@@ -431,6 +489,11 @@ context/
 - [ ] Crear `LessonDto`.
 - [ ] Devolver el contenido de la lección como Markdown.
 - [ ] Crear `ActivityQuestionDto`.
+- [ ] Crear `TaxonomyNodeDto`.
+- [ ] Crear `PracticeScopeAvailabilityDto`.
+- [ ] Crear `CreateFocusedPracticeRunDto`.
+- [ ] Crear `PracticeRunDto`.
+- [ ] Crear `PracticeRunSummaryDto`.
 - [ ] Excluir respuesta, evaluador y explicación del DTO de pregunta.
 - [ ] Crear `AttemptFeedbackDto`.
 - [ ] Incluir en el feedback:
@@ -452,6 +515,13 @@ context/
 - [ ] Crear `GET /api/v1/lessons/:id`.
 - [ ] Crear `GET /api/v1/activities`.
 - [ ] Crear `GET /api/v1/activities/:id`.
+- [ ] Crear `GET /api/v1/practice-taxonomy`.
+- [ ] Crear `GET /api/v1/practice-taxonomy/:nodeId/availability`.
+- [ ] Crear `POST /api/v1/practice-runs`.
+- [ ] Crear `GET /api/v1/practice-runs/:id`.
+- [ ] Crear `POST /api/v1/practice-runs/:id/attempts`.
+- [ ] Crear `POST /api/v1/practice-runs/:id/complete`.
+- [ ] Crear `GET /api/v1/practice-runs/:id/summary`.
 - [ ] Crear `GET /api/v1/me/settings`.
 - [ ] Crear `PATCH /api/v1/me/settings`.
 - [ ] Crear `GET /api/v1/me/saved-lessons`.
@@ -461,11 +531,10 @@ context/
 - [ ] Crear `GET /api/v1/daily-sessions/current`.
 - [ ] Crear `POST /api/v1/daily-sessions/:id/lessons/:lessonId/complete`.
 - [ ] Crear `POST /api/v1/daily-sessions/:id/lessons/:lessonId/skip`.
-- [ ] Crear `POST /api/v1/daily-sessions/:id/attempts`.
 - [ ] Crear `POST /api/v1/daily-sessions/:id/complete`.
 - [ ] Crear `GET /api/v1/review-queue`.
 - [ ] Crear `GET /api/v1/progress/overview`.
-- [ ] Crear `GET /api/v1/progress/topics`.
+- [ ] Crear `GET /api/v1/progress/taxonomy`.
 - [ ] Crear `GET /api/v1/progress/history`.
 - [ ] Crear `GET /api/v1/dashboard`.
 - [ ] Crear `GET /api/v1/health`.
@@ -527,6 +596,8 @@ pnpm dataset:import -- --source ./DATASET
 ```
 
 - [ ] Ejecutar primero la validación completa del dataset.
+- [ ] Importar la taxonomía antes que lecciones y actividades.
+- [ ] Mantener relaciones padre-hijos e IDs estables de taxonomía.
 - [ ] Importar únicamente contenido `published`.
 - [ ] Calcular checksum de cada elemento.
 - [ ] Calcular checksum global del dataset.
@@ -595,6 +666,8 @@ pnpm dataset:import -- --source ./DATASET
 - [ ] Medir intentos procesados.
 - [ ] Medir conflictos de idempotencia.
 - [ ] Medir sesiones creadas y completadas.
+- [ ] Medir runs por modo y nodo de taxonomía.
+- [ ] Medir scopes solicitados sin suficiente contenido.
 - [ ] Medir tamaño de la cola de repaso.
 - [ ] Exponer la versión activa del dataset.
 - [ ] Hacer que `health` compruebe el proceso.
@@ -609,6 +682,8 @@ pnpm dataset:import -- --source ./DATASET
 - [ ] Probar invariantes.
 - [ ] Probar transiciones de Daily Session.
 - [ ] Probar `DailySessionPlanner`.
+- [ ] Probar `PracticeRunPlanner`.
+- [ ] Probar resolución de scopes generales y específicos.
 - [ ] Probar `ReviewPolicy`.
 - [ ] Probar todos los evaluadores.
 - [ ] Añadir property-based tests para normalización y grading.
@@ -634,6 +709,11 @@ pnpm dataset:import -- --source ./DATASET
 - [ ] Probar intento + progreso + review atómicos.
 - [ ] Probar timezone y cambio de día.
 - [ ] Probar snapshot ante cambios del dataset.
+- [ ] Probar que un scope general distribuya actividades entre descendientes.
+- [ ] Probar que un scope específico no incluya nodos hermanos.
+- [ ] Probar que un run `FOCUSED` no complete el Daily Loop.
+- [ ] Probar que un run `FOCUSED` correcto no consuma un repaso pendiente.
+- [ ] Probar que un fallo `FOCUSED` cree o refuerce un repaso.
 
 ### API y acciones
 
@@ -667,6 +747,11 @@ pnpm dataset:import -- --source ./DATASET
 - [ ] Probar feedback.
 - [ ] Probar resumen diario.
 - [ ] Probar aparición de un repaso.
+- [ ] Probar selección de gramática general.
+- [ ] Probar selección de un tiempo verbal específico.
+- [ ] Probar selección de vocabulario general y específico.
+- [ ] Probar selección de phrasal verbs.
+- [ ] Probar resumen de práctica dirigida.
 
 ## Fase 22 — Orden recomendado de implementación
 
@@ -680,14 +765,15 @@ pnpm dataset:import -- --source ./DATASET
 - [ ] 8. Evaluadores deterministas.
 - [ ] 9. Intentos y proyecciones.
 - [ ] 10. Política de repaso.
-- [ ] 11. Daily Session y snapshots.
-- [ ] 12. API REST.
-- [ ] 13. Server Actions.
-- [ ] 14. Dashboard.
-- [ ] 15. Script de importación.
-- [ ] 16. Observabilidad y seguridad.
-- [ ] 17. Contract tests PostgreSQL.
-- [ ] 18. Preparación de producción.
+- [ ] 11. PracticeRun y práctica dirigida.
+- [ ] 12. Daily Session y snapshots.
+- [ ] 13. API REST.
+- [ ] 14. Server Actions.
+- [ ] 15. Dashboard.
+- [ ] 16. Script de importación.
+- [ ] 17. Observabilidad y seguridad.
+- [ ] 18. Contract tests PostgreSQL.
+- [ ] 19. Preparación de producción.
 
 ## Criterios finales de aceptación
 
@@ -702,6 +788,12 @@ pnpm dataset:import -- --source ./DATASET
 - [ ] Los intentos son inmutables y auditables.
 - [ ] Las proyecciones se actualizan atómicamente.
 - [ ] Las Daily Sessions son estables e idempotentes.
+- [ ] Los tres modos reutilizan `PracticeRun` sin duplicar corrección.
+- [ ] La práctica dirigida admite selección por categoría, tema, subtema y
+  skill.
+- [ ] Las selecciones generales incluyen descendientes de forma equilibrada.
+- [ ] Las selecciones específicas no mezclan nodos hermanos.
+- [ ] La práctica dirigida actualiza progreso sin completar el Daily Loop.
 - [ ] Las sesiones respetan la timezone del usuario.
 - [ ] Las lecciones no se repiten innecesariamente.
 - [ ] Los repasos no superan el 30% cuando existe contenido nuevo.

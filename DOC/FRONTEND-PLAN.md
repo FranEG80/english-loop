@@ -22,6 +22,11 @@ mediante ports intercambiables por REST.
 - Canvas será una demostración visual no puntuable.
 - No habrá corrección real en componentes: el mock adapter devolverá
   `AttemptFeedbackDto` igual que la futura API.
+- `/review` diferenciará repaso automático por errores y repaso dirigido por
+  tema.
+- El usuario podrá seleccionar desde una categoría general hasta una skill
+  concreta de la taxonomía.
+- La práctica dirigida reutilizará el mismo `ActivityRenderer`.
 - La primera versión será únicamente clara; no se implementará dark mode.
 - Todos los assets propios se producirán juntos en una fase independiente
   usando obligatoriamente `$imagegen`.
@@ -55,6 +60,7 @@ frontend/
 │   ├── daily/
 │   ├── lessons/
 │   ├── activities/
+│   ├── practice/
 │   ├── review/
 │   ├── dashboard/
 │   └── settings/
@@ -82,6 +88,7 @@ frontend/
 - `AuthPort`
 - `LearningContentPort`
 - `DailySessionPort`
+- `FocusedPracticePort`
 - `ProgressPort`
 - `SettingsPort`
 - `LocalePort`
@@ -101,6 +108,11 @@ componente importará fixtures directamente.
 - `DailySessionDto`
 - `ProgressOverviewDto`
 - `ReviewQueueDto`
+- `TaxonomyNodeDto`
+- `PracticeScopeAvailabilityDto`
+- `CreateFocusedPracticeRunDto`
+- `PracticeRunDto`
+- `PracticeRunSummaryDto`
 - `UserSettingsDto`
 
 Separar contenido y presentación:
@@ -130,6 +142,8 @@ type InteractionMode =
 - Daily Session.
 - Progreso.
 - Review queue.
+- Taxonomía jerárquica bilingüe.
+- Disponibilidad y sesiones de práctica dirigida.
 - Dashboard.
 - Settings.
 - Contenido de UI equivalente en español e inglés.
@@ -165,6 +179,9 @@ Rutas:
 - `/activities`
 - `/activities/[activityId]`
 - `/review`
+- `/review/focus`
+- `/review/session/[sessionId]`
+- `/review/session/[sessionId]/summary`
 - `/dashboard`
 - `/settings`
 
@@ -263,7 +280,28 @@ Rutas:
 
 #### Review, Dashboard y Settings
 
-- Cola de repaso.
+- `/review` será un hub con dos entradas claramente separadas:
+  - Repaso recomendado: cola automática basada en errores.
+  - Repaso por tema: práctica dirigida elegida por el usuario.
+- La cola automática mostrará errores vencidos y próximos repasos.
+- El selector de práctica dirigida mostrará:
+  - Nivel B1, B2 o ambos.
+  - Categorías generales.
+  - Navegación progresiva por tema, subtema y skill.
+  - Breadcrumb de la selección actual.
+  - Número de actividades disponibles.
+  - Tamaño de sesión: 5, 10, 15 o 20.
+  - Resumen legible del alcance antes de empezar.
+- Una categoría general incluirá todos sus descendientes.
+- Una selección específica no incluirá nodos hermanos.
+- Los nodos sin suficientes actividades se mostrarán deshabilitados con una
+  explicación.
+- En mobile se usará navegación drill-down con listas y botones, no un árbol
+  ARIA complejo.
+- La sesión dirigida reutilizará el layout de Daily Practice sin referencias a
+  progreso diario.
+- El resumen dirigido mostrará aciertos, fallos, subtemas cubiertos y acciones
+  para repetir el mismo alcance o elegir otro.
 - Errores.
 - Temas débiles.
 - Estadísticas con texto y datos accesibles además de gráficos.
@@ -291,8 +329,12 @@ Rutas:
 - [ ] Definir reglas de dependencias.
 - [ ] Definir DTOs.
 - [ ] Definir ports.
+- [ ] Definir el contrato jerárquico de taxonomía.
+- [ ] Definir `FocusedPracticePort`.
 - [ ] Crear el adapter factory.
 - [ ] Crear mocks bilingües consistentes.
+- [ ] Crear un árbol mock con categorías, temas, subtemas y skills.
+- [ ] Crear disponibilidad mock por nodo y nivel.
 - [ ] Crear diccionarios tipados `es` y `en`.
 - [ ] Implementar locale cookie con español predeterminado.
 - [ ] Implementar auth cookie mock.
@@ -351,7 +393,8 @@ Manifest:
 ```text
 public/
 ├── brand/
-│   └── englishloop-mark.webp
+│   ├── englishloop-mark.webp
+│   └── englishloop-mark-badge.webp
 ├── mascot/
 │   ├── loopy-reference.webp
 │   ├── loopy-wave.webp
@@ -366,17 +409,65 @@ public/
 │   ├── grammar-practice.webp
 │   ├── vocabulary-practice.webp
 │   ├── reading-practice.webp
+│   ├── focused-practice.webp
 │   ├── empty-lessons.webp
 │   ├── empty-activities.webp
 │   ├── empty-review.webp
 │   ├── empty-search.webp
 │   ├── summary-success.webp
 │   ├── error-state.webp
-│   └── offline-state.webp
+│   ├── offline-state.webp
+│   └── activities/
+│       ├── true-false.webp
+│       ├── single-choice.webp
+│       ├── multiple-choice.webp
+│       ├── fill-blank.webp
+│       ├── sentence-transformation.webp
+│       ├── error-correction.webp
+│       ├── word-formation.webp
+│       ├── open-cloze.webp
+│       ├── key-word-transformation.webp
+│       ├── matching.webp
+│       ├── word-order.webp
+│       ├── rewrite-sentence.webp
+│       ├── complete-dialogue.webp
+│       └── complete-paragraph.webp
+├── photos/
+│   └── landing/
+│       ├── study-at-home.webp
+│       ├── conversation-practice.webp
+│       └── high-five-loopy.webp
 └── social/
     └── og-cover-art.webp
 ```
 
+- [ ] Cada una de las 14 actividades mock tendrá una ilustración propia.
+- [ ] Las ilustraciones de actividad vivirán únicamente en
+  `public/illustrations/activities/`.
+- [ ] Un registro de presentación en `features/activities` asociará cada
+  `activityId` con su `illustrationSrc`; el DTO público seguirá libre de rutas
+  de assets y ningún componente inferirá la ruta a partir del tipo.
+- [ ] La correspondencia inicial será:
+  - `true_false` → `true-false.webp`.
+  - `single_choice` → `single-choice.webp`.
+  - `multiple_choice` → `multiple-choice.webp`.
+  - `fill_blank` → `fill-blank.webp`.
+  - `sentence_transformation` → `sentence-transformation.webp`.
+  - `error_correction` → `error-correction.webp`.
+  - `word_formation` → `word-formation.webp`.
+  - `open_cloze` → `open-cloze.webp`.
+  - `key_word_transformation` → `key-word-transformation.webp`.
+  - `matching` → `matching.webp`.
+  - `word_order` → `word-order.webp`.
+  - `rewrite_sentence` → `rewrite-sentence.webp`.
+  - `complete_dialogue` → `complete-dialogue.webp`.
+  - `complete_paragraph` → `complete-paragraph.webp`.
+- [ ] Usar las fotografías únicamente en la landing y mantener el resto del
+  producto en el lenguaje ilustrado de EnglishLoop.
+- [ ] `high-five-loopy.webp` combinará fotografía real con Loopy ilustrado a
+  pequeña escala para conectar ambos lenguajes visuales.
+- [ ] El OG incluirá el mark y el nombre `EnglishLoop`; no dependerá de texto
+  generado dentro de la ilustración.
 - [ ] Derivar iconos PNG de aplicación desde el mark aprobado.
 - [ ] Crear una hoja de contacto para revisar consistencia.
 - [ ] Rechazar y regenerar solo assets que fallen identidad, encuadre o
@@ -433,7 +524,17 @@ public/
 - [ ] Implementar Lesson detail.
 - [ ] Implementar Activities.
 - [ ] Implementar Activity detail.
-- [ ] Implementar Review.
+- [ ] Implementar el hub Review.
+- [ ] Implementar la cola de repaso recomendado.
+- [ ] Implementar el selector de nivel para práctica dirigida.
+- [ ] Implementar el explorador jerárquico de taxonomía.
+- [ ] Implementar breadcrumb y navegación atrás.
+- [ ] Implementar conteos de actividades disponibles.
+- [ ] Implementar selector de 5, 10, 15 o 20 actividades.
+- [ ] Implementar confirmación del alcance seleccionado.
+- [ ] Implementar Focused Practice Session reutilizando `ActivityRenderer`.
+- [ ] Implementar Focused Practice Summary.
+- [ ] Implementar acciones para repetir alcance o cambiar selección.
 - [ ] Implementar Dashboard.
 - [ ] Implementar Settings.
 - [ ] Implementar loading states.
@@ -500,6 +601,17 @@ public/
 - [ ] Las imágenes no provocan CLS.
 - [ ] Sidebar y bottom navigation contienen las mismas rutas.
 - [ ] Los filtros sobreviven a la navegación mediante URL.
+- [ ] El hub diferencia repaso recomendado y repaso por tema.
+- [ ] Grammar general incluye actividades de varios descendientes.
+- [ ] Verb tenses permite bajar hasta un tiempo verbal específico.
+- [ ] Vocabulary permite selección general y por campo léxico.
+- [ ] Phrasal verbs puede seleccionarse como categoría o skill concreta.
+- [ ] Una selección específica no muestra actividades de nodos hermanos.
+- [ ] Los nodos sin contenido suficiente explican por qué no pueden iniciarse.
+- [ ] La sesión dirigida admite 5, 10, 15 y 20 actividades según
+  disponibilidad.
+- [ ] El resumen permite repetir exactamente el mismo alcance.
+- [ ] La práctica dirigida no modifica visualmente el progreso del Daily Loop.
 - [ ] Mobile no produce scroll horizontal.
 - [ ] Reduced motion elimina animaciones no esenciales.
 - [ ] Ninguna respuesta correcta aparece en el DOM antes del feedback.
@@ -511,6 +623,9 @@ public/
 - [ ] Marca consistente como EnglishLoop.
 - [ ] Interfaz bilingüe con español predeterminado.
 - [ ] Daily Loop completo de inicio a resumen.
+- [ ] Repaso automático y práctica dirigida claramente diferenciados.
+- [ ] Selección jerárquica desde categoría general hasta skill concreta.
+- [ ] Práctica dirigida conectable al `PracticeRun` del backend.
 - [ ] Todos los modos interactivos solicitados disponibles.
 - [ ] Mascota presente sin distraer.
 - [ ] Lote amplio de assets generado exclusivamente mediante `$imagegen`.
