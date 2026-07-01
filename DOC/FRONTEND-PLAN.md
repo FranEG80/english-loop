@@ -409,7 +409,6 @@ public/
 │   ├── grammar-practice.webp
 │   ├── vocabulary-practice.webp
 │   ├── reading-practice.webp
-│   ├── focused-practice.webp
 │   ├── empty-lessons.webp
 │   ├── empty-activities.webp
 │   ├── empty-review.webp

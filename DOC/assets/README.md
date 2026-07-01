@@ -22,7 +22,8 @@ Generated in one `$imagegen` work block for frontend phase 3.
   editorial con la mascota ilustrada.
 - Social cover: 1200 × 630 opaque WebP.
 - App icons: opaque PNG at 180, 192, and 512 pixels.
-- Contact sheet: `contact-sheet.webp`.
+- Contact sheets: `contact-sheet.webp`, `contact-sheet-activities.webp` and
+  `contact-sheet-brand-photos.webp`.
 
 The `EnglishLoop` wordmark is intentionally not rasterized. Render it in Geist
 beside `public/brand/englishloop-mark.webp`.
