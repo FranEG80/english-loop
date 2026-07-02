@@ -8,7 +8,14 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "dataset:validate": "tsx scripts/dataset/validate.ts",
+    "dataset:index": "tsx scripts/dataset/index.ts",
+    "dataset:coverage": "tsx scripts/dataset/coverage.ts",
+    "dataset:practice-index": "tsx scripts/dataset/practice-index.ts",
+    "dataset:duplicates": "tsx scripts/dataset/duplicates.ts",
+    "dataset:test-grading": "tsx scripts/dataset/test-grading.ts",
+    "dataset:all": "tsx scripts/dataset/all.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -35,10 +42,14 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.0.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "gray-matter": "^4.0.3",
     "jsdom": "^29.1.1",
     "prisma": "^7.8.0",
+    "tsx": "^4.20.6",
     "typescript": "^5",
     "vitest": "^4.1.9"
   }
