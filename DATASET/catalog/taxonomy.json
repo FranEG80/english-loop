@@ -1,0 +1,1481 @@
+{
+  "schemaVersion": "1.0.0",
+  "nodes": [
+    {
+      "id": "grammar",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Grammar", "es": "Gramática" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "verb-tenses",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Verb tenses", "es": "Tiempos verbales" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "future-forms",
+      "parentId": "verb-tenses",
+      "kind": "subtopic",
+      "labels": { "en": "Future forms", "es": "Formas de futuro" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "will-predictions",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Will for predictions", "es": "Will para predicciones" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "will-spontaneous-decisions",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Will for spontaneous decisions", "es": "Will para decisiones espontáneas" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "going-to-intentions",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Going to for intentions", "es": "Going to para intenciones" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "going-to-evidence",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Going to for evidence-based predictions", "es": "Going to para predicciones con indicios" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "present-continuous-arrangements",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Present continuous for arrangements", "es": "Presente continuo para planes acordados" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "present-simple-timetables",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Present simple for timetables", "es": "Presente simple para horarios" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "future-time-clauses",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Future time clauses", "es": "Oraciones temporales de futuro" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "future-continuous-perfect",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Future continuous and future perfect", "es": "Futuro continuo y futuro perfecto" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "future-likelihood-imminence",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Likelihood and imminence", "es": "Probabilidad e inminencia" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 9
+    },
+    {
+      "id": "future-in-the-past",
+      "parentId": "future-forms",
+      "kind": "skill",
+      "labels": { "en": "Future in the past", "es": "Futuro en el pasado" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 10
+    },
+    {
+      "id": "conditionals",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Conditionals", "es": "Condicionales" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "first-conditional",
+      "parentId": "conditionals",
+      "kind": "skill",
+      "labels": { "en": "First conditional", "es": "Primer condicional" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "second-conditional",
+      "parentId": "conditionals",
+      "kind": "skill",
+      "labels": { "en": "Second conditional", "es": "Segundo condicional" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "third-conditional",
+      "parentId": "conditionals",
+      "kind": "skill",
+      "labels": { "en": "Third conditional", "es": "Tercer condicional" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "mixed-conditionals",
+      "parentId": "conditionals",
+      "kind": "skill",
+      "labels": { "en": "Mixed conditionals", "es": "Condicionales mixtos" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "modals",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Modal verbs", "es": "Verbos modales" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "modal-perfects",
+      "parentId": "modals",
+      "kind": "subtopic",
+      "labels": { "en": "Modal perfects", "es": "Modales perfectos" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "modal-perfect-deduction",
+      "parentId": "modal-perfects",
+      "kind": "skill",
+      "labels": { "en": "Past deduction", "es": "Deducción sobre el pasado" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "modal-perfect-criticism",
+      "parentId": "modal-perfects",
+      "kind": "skill",
+      "labels": { "en": "Past criticism and regret", "es": "Crítica y arrepentimiento sobre el pasado" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "modal-perfect-unnecessary-action",
+      "parentId": "modal-perfects",
+      "kind": "skill",
+      "labels": { "en": "Unnecessary past actions", "es": "Acciones pasadas innecesarias" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "present-tenses",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Present tenses", "es": "Tiempos de presente" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "present-simple-vs-continuous",
+      "parentId": "present-tenses",
+      "kind": "skill",
+      "labels": { "en": "Present simple vs present continuous", "es": "Presente simple frente a presente continuo" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "present-perfect-experience",
+      "parentId": "present-tenses",
+      "kind": "skill",
+      "labels": { "en": "Present perfect for experience and recent events", "es": "Presente perfecto para experiencias y hechos recientes" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "present-perfect-for-since",
+      "parentId": "present-tenses",
+      "kind": "skill",
+      "labels": { "en": "Present perfect with for and since", "es": "Presente perfecto con for y since" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "present-perfect-vs-past-simple",
+      "parentId": "present-tenses",
+      "kind": "skill",
+      "labels": { "en": "Present perfect vs past simple", "es": "Presente perfecto frente a pasado simple" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "present-perfect-simple-vs-continuous",
+      "parentId": "present-tenses",
+      "kind": "skill",
+      "labels": { "en": "Present perfect simple vs continuous", "es": "Presente perfecto simple frente a continuo" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "past-tenses",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Past tenses", "es": "Tiempos de pasado" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "past-simple-vs-continuous",
+      "parentId": "past-tenses",
+      "kind": "skill",
+      "labels": { "en": "Past simple vs past continuous", "es": "Pasado simple frente a pasado continuo" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "past-perfect-narrative",
+      "parentId": "past-tenses",
+      "kind": "skill",
+      "labels": { "en": "Past perfect in narratives", "es": "Pasado perfecto en narraciones" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "used-to-would-past-habits",
+      "parentId": "past-tenses",
+      "kind": "skill",
+      "labels": { "en": "Used to and would for past habits", "es": "Used to y would para hábitos pasados" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "past-perfect-simple-vs-continuous",
+      "parentId": "past-tenses",
+      "kind": "skill",
+      "labels": { "en": "Past perfect simple vs continuous", "es": "Pasado perfecto simple frente a continuo" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "advanced-narrative-tenses",
+      "parentId": "past-tenses",
+      "kind": "skill",
+      "labels": { "en": "Advanced narrative tense contrast", "es": "Contraste avanzado de tiempos narrativos" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "ability-permission",
+      "parentId": "modals",
+      "kind": "skill",
+      "labels": { "en": "Ability and permission", "es": "Capacidad y permiso" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "obligation-necessity-prohibition",
+      "parentId": "modals",
+      "kind": "skill",
+      "labels": { "en": "Obligation, necessity and prohibition", "es": "Obligación, necesidad y prohibición" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "advice-possibility",
+      "parentId": "modals",
+      "kind": "skill",
+      "labels": { "en": "Advice and possibility", "es": "Consejo y posibilidad" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "advanced-modal-meaning",
+      "parentId": "modals",
+      "kind": "skill",
+      "labels": { "en": "Advanced modal meaning", "es": "Significados modales avanzados" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "passive-voice",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Passive voice", "es": "Voz pasiva" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "present-past-passive",
+      "parentId": "passive-voice",
+      "kind": "skill",
+      "labels": { "en": "Present and past passive", "es": "Pasiva de presente y pasado" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "perfect-modal-passive",
+      "parentId": "passive-voice",
+      "kind": "skill",
+      "labels": { "en": "Perfect and modal passives", "es": "Pasivas perfectas y con modales" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "advanced-passive-tenses",
+      "parentId": "passive-voice",
+      "kind": "skill",
+      "labels": { "en": "Advanced passive tense contrast", "es": "Contraste avanzado de tiempos pasivos" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "reporting-passives",
+      "parentId": "passive-voice",
+      "kind": "skill",
+      "labels": { "en": "Reporting passives", "es": "Pasivas con verbos de reporte" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "have-get-something-done",
+      "parentId": "passive-voice",
+      "kind": "skill",
+      "labels": { "en": "Have and get something done", "es": "Have y get something done" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "reported-speech",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Reported speech", "es": "Estilo indirecto" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "reported-statements",
+      "parentId": "reported-speech",
+      "kind": "skill",
+      "labels": { "en": "Reported statements", "es": "Enunciados en estilo indirecto" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "reported-questions-commands",
+      "parentId": "reported-speech",
+      "kind": "skill",
+      "labels": { "en": "Reported questions and commands", "es": "Preguntas y órdenes en estilo indirecto" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "advanced-backshift",
+      "parentId": "reported-speech",
+      "kind": "skill",
+      "labels": { "en": "Advanced backshift and viewpoint", "es": "Backshift avanzado y cambio de perspectiva" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "reporting-verb-patterns",
+      "parentId": "reported-speech",
+      "kind": "skill",
+      "labels": { "en": "Reporting verb patterns", "es": "Patrones de verbos de reporte" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "questions",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Questions", "es": "Preguntas" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "direct-indirect-questions",
+      "parentId": "questions",
+      "kind": "skill",
+      "labels": { "en": "Direct and indirect questions", "es": "Preguntas directas e indirectas" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "subject-object-question-tags",
+      "parentId": "questions",
+      "kind": "skill",
+      "labels": { "en": "Subject questions, object questions and tags", "es": "Preguntas de sujeto, objeto y question tags" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "gerunds-infinitives",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Gerunds and infinitives", "es": "Gerundios e infinitivos" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 9
+    },
+    {
+      "id": "basic-verb-patterns",
+      "parentId": "gerunds-infinitives",
+      "kind": "skill",
+      "labels": { "en": "Basic verb patterns", "es": "Patrones verbales básicos" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "verb-object-infinitive",
+      "parentId": "gerunds-infinitives",
+      "kind": "skill",
+      "labels": { "en": "Verb, object and infinitive patterns", "es": "Patrones de verbo, objeto e infinitivo" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "meaning-change-gerund-infinitive",
+      "parentId": "gerunds-infinitives",
+      "kind": "skill",
+      "labels": { "en": "Meaning changes with gerunds and infinitives", "es": "Cambios de significado con gerundio e infinitivo" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "perfect-passive-infinitives-gerunds",
+      "parentId": "gerunds-infinitives",
+      "kind": "skill",
+      "labels": { "en": "Perfect and passive infinitives and gerunds", "es": "Infinitivos y gerundios perfectos y pasivos" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "comparisons",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Comparisons", "es": "Comparaciones" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 10
+    },
+    {
+      "id": "comparative-superlative",
+      "parentId": "comparisons",
+      "kind": "skill",
+      "labels": { "en": "Comparatives and superlatives", "es": "Comparativos y superlativos" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "too-enough-comparative-modifiers",
+      "parentId": "comparisons",
+      "kind": "skill",
+      "labels": { "en": "Too, enough and comparative modifiers", "es": "Too, enough y modificadores comparativos" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "advanced-comparisons",
+      "parentId": "comparisons",
+      "kind": "skill",
+      "labels": { "en": "Advanced comparisons", "es": "Comparaciones avanzadas" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "articles-determiners",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Articles and determiners", "es": "Artículos y determinantes" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 11
+    },
+    {
+      "id": "articles-reference",
+      "parentId": "articles-determiners",
+      "kind": "skill",
+      "labels": { "en": "Articles and reference", "es": "Artículos y referencia" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "quantifiers-determiners",
+      "parentId": "articles-determiners",
+      "kind": "skill",
+      "labels": { "en": "Quantifiers and determiners", "es": "Cuantificadores y determinantes" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "relative-clauses",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Relative clauses", "es": "Oraciones de relativo" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 12
+    },
+    {
+      "id": "defining-relative-clauses",
+      "parentId": "relative-clauses",
+      "kind": "skill",
+      "labels": { "en": "Defining relative clauses", "es": "Oraciones de relativo especificativas" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "non-defining-relative-clauses",
+      "parentId": "relative-clauses",
+      "kind": "skill",
+      "labels": { "en": "Non-defining relative clauses", "es": "Oraciones de relativo explicativas" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "participle-reduced-clauses",
+      "parentId": "relative-clauses",
+      "kind": "skill",
+      "labels": { "en": "Participle and reduced relative clauses", "es": "Oraciones de participio y relativas reducidas" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "linking-discourse",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Linking and discourse", "es": "Conexión y discurso" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 13
+    },
+    {
+      "id": "basic-linking-words",
+      "parentId": "linking-discourse",
+      "kind": "skill",
+      "labels": { "en": "Basic linking words", "es": "Conectores básicos" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "advanced-connectors-discourse-markers",
+      "parentId": "linking-discourse",
+      "kind": "skill",
+      "labels": { "en": "Advanced connectors and discourse markers", "es": "Conectores y marcadores discursivos avanzados" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "inversion-emphasis",
+      "parentId": "grammar",
+      "kind": "topic",
+      "labels": { "en": "Inversion and emphasis", "es": "Inversión y énfasis" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 14
+    },
+    {
+      "id": "negative-inversion",
+      "parentId": "inversion-emphasis",
+      "kind": "skill",
+      "labels": { "en": "Negative inversion", "es": "Inversión negativa" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "cleft-sentences-fronting",
+      "parentId": "inversion-emphasis",
+      "kind": "skill",
+      "labels": { "en": "Cleft sentences and fronting", "es": "Oraciones hendidas y fronting" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "vocabulary",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Vocabulary", "es": "Vocabulario" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-daily-routines-life",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Daily routines and everyday life", "es": "Rutinas y vida cotidiana" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "b1-family-relationships",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Family and relationships", "es": "Familia y relaciones" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-home-services",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Home, furniture and services", "es": "Hogar, muebles y servicios" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b1-food-cooking",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Food and cooking", "es": "Comida y cocina" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "b1-health-body",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Health and the body", "es": "Salud y cuerpo" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "b1-education-study",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Education and study", "es": "Educación y estudio" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "b1-work-jobs",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Work and jobs", "es": "Trabajo y empleos" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "b1-travel-transport",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Travel, holidays and transport", "es": "Viajes, vacaciones y transporte" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "b1-shopping-clothes-money",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Shopping, clothes and money", "es": "Compras, ropa y dinero" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 9
+    },
+    {
+      "id": "b1-leisure-sport-entertainment",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Leisure, sport and entertainment", "es": "Ocio, deporte y entretenimiento" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 10
+    },
+    {
+      "id": "b1-technology-digital-life",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Technology and digital life", "es": "Tecnología y vida digital" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 11
+    },
+    {
+      "id": "b1-environment-weather-places",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Environment, weather and places", "es": "Medioambiente, tiempo y lugares" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 12
+    },
+    {
+      "id": "b2-career-business",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Career, business and entrepreneurship", "es": "Carrera, negocios y emprendimiento" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 13
+    },
+    {
+      "id": "b2-education-learning",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Education and learning", "es": "Educación y aprendizaje" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 14
+    },
+    {
+      "id": "b2-science-research",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Science and research", "es": "Ciencia e investigación" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 15
+    },
+    {
+      "id": "b2-ai-digital-life",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Artificial intelligence and digital life", "es": "Inteligencia artificial y vida digital" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 16
+    },
+    {
+      "id": "b2-media-communication",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Media and communication", "es": "Medios y comunicación" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 17
+    },
+    {
+      "id": "b2-climate-global-issues",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Climate and global issues", "es": "Clima y problemas globales" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 18
+    },
+    {
+      "id": "b2-health-psychology",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Health, lifestyle and psychology", "es": "Salud, estilo de vida y psicología" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 19
+    },
+    {
+      "id": "b2-crime-justice",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Crime and justice", "es": "Delincuencia y justicia" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 20
+    },
+    {
+      "id": "b2-society-culture-public-life",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Society, culture and public life", "es": "Sociedad, cultura y vida pública" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 21
+    },
+    {
+      "id": "b2-money-economics",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Money and economics", "es": "Dinero y economía" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 22
+    },
+    {
+      "id": "b2-travel-tourism-urban-life",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Travel, tourism and urban life", "es": "Viajes, turismo y vida urbana" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 23
+    },
+    {
+      "id": "b2-creativity-innovation-decisions",
+      "parentId": "vocabulary",
+      "kind": "topic",
+      "labels": { "en": "Creativity, innovation and decision-making", "es": "Creatividad, innovación y toma de decisiones" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 24
+    },
+    {
+      "id": "use-of-english",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Use of English", "es": "Use of English" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b1-multiple-choice-cloze",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B1 multiple-choice cloze", "es": "Cloze de opción múltiple B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "b1-open-cloze",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B1 open cloze", "es": "Open cloze B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-word-formation",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B1 word formation", "es": "Formación de palabras B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b1-sentence-rewriting",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B1 sentence rewriting", "es": "Reformulación de oraciones B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "b1-error-correction",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B1 error correction", "es": "Corrección de errores B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "b1-fixed-expressions",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B1 fixed expressions", "es": "Expresiones fijas B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "b2-multiple-choice-cloze",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B2 multiple-choice cloze", "es": "Cloze de opción múltiple B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "b2-open-cloze",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B2 open cloze", "es": "Open cloze B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "b2-word-formation",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B2 word formation", "es": "Formación de palabras B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 9
+    },
+    {
+      "id": "b2-key-word-transformations",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B2 key word transformations", "es": "Transformaciones con palabra clave B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 10
+    },
+    {
+      "id": "b2-register-rewriting",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B2 register and style rewriting", "es": "Reformulación de registro y estilo B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 11
+    },
+    {
+      "id": "b2-advanced-fixed-expressions",
+      "parentId": "use-of-english",
+      "kind": "skill",
+      "labels": { "en": "B2 advanced fixed expressions", "es": "Expresiones fijas avanzadas B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 12
+    },
+    {
+      "id": "reading",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Reading", "es": "Comprensión lectora" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "b1-reading-notices-functional-texts",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B1 notices and functional texts", "es": "Avisos y textos funcionales B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "b1-reading-gist-detail",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B1 gist and detail", "es": "Idea general y detalle B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-reading-people-matching",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B1 people and text matching", "es": "Relacionar personas y textos B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b1-reading-gapped-text",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B1 gapped text cohesion", "es": "Cohesión en textos con huecos B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "b1-reading-opinion-purpose",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B1 opinion and purpose", "es": "Opinión y propósito B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "b2-reading-gist-detail-inference",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B2 gist, detail and inference", "es": "Idea general, detalle e inferencia B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "b2-reading-attitude-tone",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B2 attitude and tone", "es": "Actitud y tono B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "b2-reading-gapped-text",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B2 gapped text", "es": "Texto con huecos B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "b2-reading-multiple-matching",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B2 multiple matching", "es": "Multiple matching B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 9
+    },
+    {
+      "id": "b2-reading-argument-evidence",
+      "parentId": "reading",
+      "kind": "skill",
+      "labels": { "en": "B2 argument and evidence", "es": "Argumentación y evidencia B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 10
+    },
+    {
+      "id": "guided-writing",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Guided writing", "es": "Writing guiado" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "b1-writing-informal-email",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B1 informal email structure", "es": "Estructura del email informal B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "b1-writing-semi-formal-email",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B1 semi-formal email", "es": "Email semiformal B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-writing-story-sequencing",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B1 story sequencing", "es": "Secuenciación de historias B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b1-writing-opinion-article",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B1 opinion article", "es": "Artículo de opinión B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "b1-writing-review-description",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B1 review and description", "es": "Reseña y descripción B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "b2-writing-essay-structure",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B2 essay structure", "es": "Estructura del essay B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "b2-writing-formal-email",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B2 formal email", "es": "Email formal B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "b2-writing-article-review",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B2 article and review", "es": "Artículo y reseña B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "b2-writing-report",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B2 report structure and register", "es": "Estructura y registro del informe B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 9
+    },
+    {
+      "id": "b2-writing-argument-cohesion",
+      "parentId": "guided-writing",
+      "kind": "skill",
+      "labels": { "en": "B2 argument and cohesion", "es": "Argumentación y cohesión B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 10
+    },
+    {
+      "id": "phrasal-verbs",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Phrasal verbs", "es": "Phrasal verbs" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "b1-phrasal-everyday-actions",
+      "parentId": "phrasal-verbs",
+      "kind": "topic",
+      "labels": { "en": "B1 everyday-action phrasal verbs", "es": "Phrasal verbs B1 de acciones cotidianas" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "get-up",
+      "parentId": "b1-phrasal-everyday-actions",
+      "kind": "skill",
+      "labels": { "en": "get up", "es": "levantarse" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "look-after",
+      "parentId": "b1-phrasal-everyday-actions",
+      "kind": "skill",
+      "labels": { "en": "look after", "es": "cuidar de" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-phrasal-travel-services",
+      "parentId": "phrasal-verbs",
+      "kind": "topic",
+      "labels": { "en": "B1 travel and service phrasal verbs", "es": "Phrasal verbs B1 de viajes y servicios" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "check-in",
+      "parentId": "b1-phrasal-travel-services",
+      "kind": "skill",
+      "labels": { "en": "check in", "es": "facturar o registrarse" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "run-out-of",
+      "parentId": "b1-phrasal-travel-services",
+      "kind": "skill",
+      "labels": { "en": "run out of", "es": "quedarse sin" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-phrasal-study-relationships",
+      "parentId": "phrasal-verbs",
+      "kind": "topic",
+      "labels": { "en": "B1 study and relationship phrasal verbs", "es": "Phrasal verbs B1 de estudio y relaciones" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b2-phrasal-change-progress",
+      "parentId": "phrasal-verbs",
+      "kind": "topic",
+      "labels": { "en": "B2 change and progress phrasal verbs", "es": "Phrasal verbs B2 de cambio y progreso" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "bring-about",
+      "parentId": "b2-phrasal-change-progress",
+      "kind": "skill",
+      "labels": { "en": "bring about", "es": "provocar" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "carry-out",
+      "parentId": "b2-phrasal-change-progress",
+      "kind": "skill",
+      "labels": { "en": "carry out", "es": "llevar a cabo" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b2-phrasal-work-problems",
+      "parentId": "phrasal-verbs",
+      "kind": "topic",
+      "labels": { "en": "B2 work and problem-solving phrasal verbs", "es": "Phrasal verbs B2 de trabajo y resolución de problemas" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "come-up-with",
+      "parentId": "b2-phrasal-work-problems",
+      "kind": "skill",
+      "labels": { "en": "come up with", "es": "idear" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "sort-out",
+      "parentId": "b2-phrasal-work-problems",
+      "kind": "skill",
+      "labels": { "en": "sort out", "es": "resolver u organizar" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b2-phrasal-attitudes-relationships",
+      "parentId": "phrasal-verbs",
+      "kind": "topic",
+      "labels": { "en": "B2 attitude and relationship phrasal verbs", "es": "Phrasal verbs B2 de actitudes y relaciones" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 6
+    },
+    {
+      "id": "put-up-with",
+      "parentId": "b2-phrasal-attitudes-relationships",
+      "kind": "skill",
+      "labels": { "en": "put up with", "es": "soportar" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "look-up-to",
+      "parentId": "b2-phrasal-attitudes-relationships",
+      "kind": "skill",
+      "labels": { "en": "look up to", "es": "admirar" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "collocations",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Collocations", "es": "Colocaciones" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 7
+    },
+    {
+      "id": "b1-collocations-daily-life",
+      "parentId": "collocations",
+      "kind": "topic",
+      "labels": { "en": "B1 daily-life collocations", "es": "Colocaciones B1 de vida cotidiana" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "b1-collocations-travel-work",
+      "parentId": "collocations",
+      "kind": "topic",
+      "labels": { "en": "B1 travel and work collocations", "es": "Colocaciones B1 de viajes y trabajo" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b2-collocations-academic-business",
+      "parentId": "collocations",
+      "kind": "topic",
+      "labels": { "en": "B2 academic and business collocations", "es": "Colocaciones B2 académicas y empresariales" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b2-collocations-impact-attitudes",
+      "parentId": "collocations",
+      "kind": "topic",
+      "labels": { "en": "B2 impact and attitude collocations", "es": "Colocaciones B2 de impacto y actitud" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "prepositions",
+      "parentId": null,
+      "kind": "category",
+      "labels": { "en": "Prepositions", "es": "Preposiciones" },
+      "levels": ["B1", "B2"],
+      "selectableForPractice": true,
+      "order": 8
+    },
+    {
+      "id": "b1-prepositions-time-place",
+      "parentId": "prepositions",
+      "kind": "topic",
+      "labels": { "en": "B1 prepositions of time and place", "es": "Preposiciones B1 de tiempo y lugar" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 1
+    },
+    {
+      "id": "b1-prepositions-movement-travel",
+      "parentId": "prepositions",
+      "kind": "topic",
+      "labels": { "en": "B1 prepositions of movement and travel", "es": "Preposiciones B1 de movimiento y viajes" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 2
+    },
+    {
+      "id": "b1-dependent-prepositions",
+      "parentId": "prepositions",
+      "kind": "topic",
+      "labels": { "en": "B1 dependent prepositions", "es": "Preposiciones dependientes B1" },
+      "levels": ["B1"],
+      "selectableForPractice": true,
+      "order": 3
+    },
+    {
+      "id": "b2-dependent-prepositions",
+      "parentId": "prepositions",
+      "kind": "topic",
+      "labels": { "en": "B2 dependent prepositions", "es": "Preposiciones dependientes B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 4
+    },
+    {
+      "id": "b2-prepositions-abstract-relations",
+      "parentId": "prepositions",
+      "kind": "topic",
+      "labels": { "en": "B2 prepositions in abstract relations", "es": "Preposiciones B2 en relaciones abstractas" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 5
+    },
+    {
+      "id": "b2-prepositional-fixed-phrases",
+      "parentId": "prepositions",
+      "kind": "topic",
+      "labels": { "en": "B2 fixed prepositional phrases", "es": "Frases preposicionales fijas B2" },
+      "levels": ["B2"],
+      "selectableForPractice": true,
+      "order": 6
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://englishloop.local/schemas/activity.schema.json",
+  "title": "EnglishLoop activity batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "batchId",
+    "level",
+    "category",
+    "topic",
+    "subtopic",
+    "lessonId",
+    "activityType",
+    "activities"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "batchId": { "$ref": "#/$defs/id" },
+    "level": { "enum": ["B1", "B2"] },
+    "category": { "$ref": "#/$defs/id" },
+    "topic": { "$ref": "#/$defs/id" },
+    "subtopic": { "$ref": "#/$defs/id" },
+    "lessonId": { "$ref": "#/$defs/id" },
+    "activityType": { "$ref": "#/$defs/activityType" },
+    "activities": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 25,
+      "items": { "$ref": "#/$defs/activity" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "activityType": {
+      "enum": [
+        "true_false",
+        "single_choice",
+        "multiple_select",
+        "fill_blank",
+        "multi_gap_fill",
+        "multiple_choice_cloze",
+        "open_cloze",
+        "word_formation",
+        "matching",
+        "word_order",
+        "sentence_transformation",
+        "key_word_transformation",
+        "error_identification",
+        "error_correction",
+        "complete_dialogue",
+        "complete_paragraph",
+        "vocabulary_in_context",
+        "phrasal_verb_choice",
+        "collocation_choice",
+        "preposition_choice",
+        "reading_comprehension",
+        "reading_matching",
+        "gapped_text",
+        "guided_writing"
+      ]
+    },
+    "normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trim",
+        "collapseWhitespace",
+        "caseSensitive",
+        "ignoreTerminalPunctuation",
+        "normaliseApostrophes"
+      ],
+      "properties": {
+        "trim": { "type": "boolean" },
+        "collapseWhitespace": { "type": "boolean" },
+        "caseSensitive": { "type": "boolean" },
+        "ignoreTerminalPunctuation": { "type": "boolean" },
+        "normaliseApostrophes": { "type": "boolean" }
+      }
+    },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "type": "string", "minLength": 1 },
+        "feedback": { "type": "string", "minLength": 3 }
+      }
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["leftId", "left", "rightId", "right"],
+      "properties": {
+        "leftId": { "$ref": "#/$defs/id" },
+        "left": { "type": "string", "minLength": 1 },
+        "rightId": { "$ref": "#/$defs/id" },
+        "right": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evaluator": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "correct"],
+          "properties": {
+            "strategy": { "const": "boolean" },
+            "correct": { "type": "boolean" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "correctOptionId"],
+          "properties": {
+            "strategy": { "const": "single_option" },
+            "correctOptionId": { "$ref": "#/$defs/id" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "correctOptionIds"],
+          "properties": {
+            "strategy": { "const": "multiple_options" },
+            "correctOptionIds": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/id" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "answer", "normalization"],
+          "properties": {
+            "strategy": { "const": "exact_text" },
+            "answer": { "type": "string", "minLength": 1 },
+            "normalization": { "$ref": "#/$defs/normalization" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "answers", "normalization"],
+          "properties": {
+            "strategy": { "const": "one_of_texts" },
+            "answers": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "normalization": { "$ref": "#/$defs/normalization" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "gaps", "normalization"],
+          "properties": {
+            "strategy": { "const": "per_gap" },
+            "gaps": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["gapId", "answers"],
+                "properties": {
+                  "gapId": { "$ref": "#/$defs/id" },
+                  "answers": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": { "type": "string", "minLength": 1 }
+                  }
+                }
+              }
+            },
+            "normalization": { "$ref": "#/$defs/normalization" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "correctTokenIds"],
+          "properties": {
+            "strategy": { "const": "ordered_tokens" },
+            "correctTokenIds": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/id" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "correctValues", "normalization"],
+          "properties": {
+            "strategy": { "const": "unordered_set" },
+            "correctValues": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "normalization": { "$ref": "#/$defs/normalization" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "pairs"],
+          "properties": {
+            "strategy": { "const": "matching_pairs" },
+            "pairs": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["leftId", "rightId"],
+                "properties": {
+                  "leftId": { "$ref": "#/$defs/id" },
+                  "rightId": { "$ref": "#/$defs/id" }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "id",
+        "status",
+        "autoGradable",
+        "level",
+        "type",
+        "category",
+        "topic",
+        "subtopic",
+        "taxonomyNodeIds",
+        "difficulty",
+        "instructions",
+        "prompt",
+        "lessonIds",
+        "tags",
+        "estimatedSeconds",
+        "evaluator",
+        "explanation"
+      ],
+      "properties": {
+        "schemaVersion": { "const": "1.0.0" },
+        "id": { "$ref": "#/$defs/id" },
+        "status": { "enum": ["draft", "reviewed", "published"] },
+        "autoGradable": { "const": true },
+        "level": { "enum": ["B1", "B2"] },
+        "type": { "$ref": "#/$defs/activityType" },
+        "category": { "$ref": "#/$defs/id" },
+        "topic": { "$ref": "#/$defs/id" },
+        "subtopic": { "$ref": "#/$defs/id" },
+        "taxonomyNodeIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "instructions": { "type": "string", "minLength": 5 },
+        "prompt": { "type": "string", "minLength": 5 },
+        "passage": { "type": "string", "minLength": 20 },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/option" }
+        },
+        "tokens": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/option" }
+        },
+        "pairs": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/pair" }
+        },
+        "lessonIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "estimatedSeconds": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 900
+        },
+        "evaluator": { "$ref": "#/$defs/evaluator" },
+        "explanation": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

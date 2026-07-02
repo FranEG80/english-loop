@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "batchId": "b1-category-topic-lesson-single-choice-001",
+  "level": "B1",
+  "category": "category-id",
+  "topic": "topic-id",
+  "subtopic": "most-specific-taxonomy-node",
+  "lessonId": "b1-category-topic-focus",
+  "activityType": "single_choice",
+  "activities": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "b1-category-topic-focus-single-choice-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "category": "category-id",
+      "topic": "topic-id",
+      "subtopic": "most-specific-taxonomy-node",
+      "taxonomyNodeIds": ["most-specific-taxonomy-node"],
+      "difficulty": 2,
+      "instructions": "Choose the best answer.",
+      "prompt": "Original contextualised question.",
+      "options": [
+        { "id": "a", "text": "First option" },
+        { "id": "b", "text": "Second option" },
+        { "id": "c", "text": "Third option" },
+        { "id": "d", "text": "Fourth option" }
+      ],
+      "lessonIds": ["b1-category-topic-focus"],
+      "tags": ["b1", "category-id", "topic-id"],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "b"
+      },
+      "explanation": "Explicación precisa en español."
+    }
+  ]
+}

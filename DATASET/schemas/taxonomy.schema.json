@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://englishloop.local/schemas/taxonomy.schema.json",
+  "title": "EnglishLoop taxonomy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "nodes"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/node" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "parentId",
+        "kind",
+        "labels",
+        "levels",
+        "selectableForPractice",
+        "order"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "parentId": {
+          "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/id" }]
+        },
+        "kind": { "enum": ["category", "topic", "subtopic", "skill"] },
+        "labels": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["en", "es"],
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "es": { "type": "string", "minLength": 1 }
+          }
+        },
+        "levels": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["B1", "B2"] }
+        },
+        "selectableForPractice": { "type": "boolean" },
+        "order": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

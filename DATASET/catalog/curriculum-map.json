@@ -1,0 +1,530 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditNotes": [
+    "CEFR aporta descriptores de capacidad, no una lista cerrada de puntos gramaticales.",
+    "La asignación gramatical concreta combina progresión pedagógica, complejidad formal y formatos Cambridge.",
+    "Los recorridos B1 preparan contrastes productivos; los B2 exigen inferencia temporal y reformulación más precisa."
+  ],
+  "units": [
+    {
+      "id": "b1-future-forms-core",
+      "level": "B1",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "will-predictions",
+      "skills": ["will-predictions", "will-spontaneous-decisions", "going-to-intentions", "going-to-evidence"],
+      "learningObjectives": [
+        "Elegir entre will y be going to según la evidencia y el tipo de decisión.",
+        "Explicar por qué una predicción se basa en opinión o en indicios presentes."
+      ],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "multiple_select", "fill_blank", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-future-forms-will-going-to"]
+    },
+    {
+      "id": "b1-future-forms-schedules",
+      "level": "B1",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "present-continuous-arrangements",
+      "skills": ["present-continuous-arrangements", "present-simple-timetables", "future-time-clauses"],
+      "learningObjectives": [
+        "Distinguir acuerdos personales de horarios oficiales.",
+        "Usar presente tras conectores temporales con significado futuro."
+      ],
+      "prerequisites": ["b1-grammar-future-forms-will-going-to"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "word_order", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-future-arrangements-timetables"]
+    },
+    {
+      "id": "b1-conditionals-real-hypothetical",
+      "level": "B1",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "first-conditional",
+      "skills": ["first-conditional", "second-conditional"],
+      "learningObjectives": [
+        "Contrastar consecuencias futuras posibles con situaciones hipotéticas.",
+        "Mantener coherencia temporal entre condición y resultado."
+      ],
+      "prerequisites": ["b1-grammar-future-forms-will-going-to"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "fill_blank", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-first-conditional", "b1-grammar-second-conditional"]
+    },
+    {
+      "id": "b2-modal-perfects",
+      "level": "B2",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "skills": ["modal-perfect-deduction", "modal-perfect-criticism", "modal-perfect-unnecessary-action"],
+      "learningObjectives": [
+        "Graduar certeza al deducir hechos pasados.",
+        "Distinguir crítica, arrepentimiento y acción innecesaria."
+      ],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "fill_blank", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-modal-perfect-deduction", "b2-grammar-modal-perfect-regret-criticism"]
+    },
+    {
+      "id": "b2-conditionals-past-mixed",
+      "level": "B2",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "skills": ["third-conditional", "mixed-conditionals"],
+      "learningObjectives": [
+        "Construir hipótesis contrarias a hechos pasados.",
+        "Relacionar una condición pasada con una consecuencia presente y viceversa."
+      ],
+      "prerequisites": ["b1-grammar-first-conditional", "b1-grammar-second-conditional"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-third-conditional", "b2-grammar-mixed-conditionals"]
+    },
+    {
+      "id": "b1-present-simple-continuous",
+      "level": "B1", "category": "grammar", "topic": "present-tenses", "subtopic": "present-simple-vs-continuous",
+      "skills": ["present-simple-vs-continuous"],
+      "learningObjectives": ["Distinguir rutinas, estados y hechos de acciones temporales o en progreso.", "Elegir marcadores temporales compatibles con cada presente."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "error_correction", "complete_dialogue", "vocabulary_in_context"],
+      "plannedLessonIds": ["b1-grammar-present-simple-continuous"]
+    },
+    {
+      "id": "b1-present-perfect-experience",
+      "level": "B1", "category": "grammar", "topic": "present-tenses", "subtopic": "present-perfect-experience",
+      "skills": ["present-perfect-experience"],
+      "learningObjectives": ["Hablar de experiencias sin indicar un momento pasado terminado.", "Usar just, already, yet, ever y never con posición natural."],
+      "prerequisites": ["b1-grammar-present-simple-continuous"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "fill_blank", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-present-perfect-experience-recent-events"]
+    },
+    {
+      "id": "b1-present-perfect-duration",
+      "level": "B1", "category": "grammar", "topic": "present-tenses", "subtopic": "present-perfect-for-since",
+      "skills": ["present-perfect-for-since"],
+      "learningObjectives": ["Expresar duración que continúa hasta el presente.", "Distinguir for como periodo de since como punto de inicio."],
+      "prerequisites": ["b1-grammar-present-perfect-experience-recent-events"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "matching", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-present-perfect-for-since"]
+    },
+    {
+      "id": "b1-present-perfect-past-simple",
+      "level": "B1", "category": "grammar", "topic": "present-tenses", "subtopic": "present-perfect-vs-past-simple",
+      "skills": ["present-perfect-vs-past-simple"],
+      "learningObjectives": ["Contrastar periodos terminados con conexiones presentes.", "Elegir el tiempo a partir del marco temporal explícito o implícito."],
+      "prerequisites": ["b1-grammar-present-perfect-experience-recent-events"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "multiple_select", "fill_blank", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-present-perfect-vs-past-simple"]
+    },
+    {
+      "id": "b1-past-simple-continuous",
+      "level": "B1", "category": "grammar", "topic": "past-tenses", "subtopic": "past-simple-vs-continuous",
+      "skills": ["past-simple-vs-continuous"],
+      "learningObjectives": ["Distinguir eventos completos de acciones en progreso en un momento pasado.", "Combinar when y while en narraciones breves."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "word_order", "complete_paragraph", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-past-simple-continuous"]
+    },
+    {
+      "id": "b1-past-perfect-narratives",
+      "level": "B1", "category": "grammar", "topic": "past-tenses", "subtopic": "past-perfect-narrative",
+      "skills": ["past-perfect-narrative"],
+      "learningObjectives": ["Marcar qué evento ocurrió antes de otro punto pasado.", "Evitar usar past perfect cuando la secuencia ya es lineal e inequívoca."],
+      "prerequisites": ["b1-grammar-past-simple-continuous"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "word_order", "complete_paragraph", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-past-perfect-narratives"]
+    },
+    {
+      "id": "b1-past-habits",
+      "level": "B1", "category": "grammar", "topic": "past-tenses", "subtopic": "used-to-would-past-habits",
+      "skills": ["used-to-would-past-habits"],
+      "learningObjectives": ["Distinguir estados y hábitos pasados con used to.", "Usar would únicamente para acciones repetidas en un marco pasado claro."],
+      "prerequisites": ["b1-grammar-past-simple-continuous"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "fill_blank", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-used-to-would-past-habits"]
+    },
+    {
+      "id": "b1-modals-ability-permission",
+      "level": "B1", "category": "grammar", "topic": "modals", "subtopic": "ability-permission",
+      "skills": ["ability-permission"],
+      "learningObjectives": ["Expresar capacidad presente, pasada y futura con can, could y be able to.", "Pedir y conceder permiso con el grado adecuado de formalidad."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "complete_dialogue", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-modals-ability-permission"]
+    },
+    {
+      "id": "b1-modals-obligation",
+      "level": "B1", "category": "grammar", "topic": "modals", "subtopic": "obligation-necessity-prohibition",
+      "skills": ["obligation-necessity-prohibition"],
+      "learningObjectives": ["Distinguir obligación interna, externa y ausencia de necesidad.", "Evitar confundir mustn't con don't have to."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "fill_blank", "multiple_select", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-modals-obligation-prohibition"]
+    },
+    {
+      "id": "b1-modals-advice-possibility",
+      "level": "B1", "category": "grammar", "topic": "modals", "subtopic": "advice-possibility",
+      "skills": ["advice-possibility"],
+      "learningObjectives": ["Dar consejo con should y ought to.", "Graduar posibilidades presentes y futuras con may, might y could."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "complete_dialogue", "fill_blank", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-modals-advice-possibility"]
+    },
+    {
+      "id": "b1-passive-present-past",
+      "level": "B1", "category": "grammar", "topic": "passive-voice", "subtopic": "present-past-passive",
+      "skills": ["present-past-passive"],
+      "learningObjectives": ["Formar pasivas de presente y pasado con be y participio.", "Elegir voz pasiva cuando el proceso o resultado es más relevante que el agente."],
+      "prerequisites": ["b1-grammar-past-simple-continuous"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-passive-present-past"]
+    },
+    {
+      "id": "b1-passive-perfect-modals",
+      "level": "B1", "category": "grammar", "topic": "passive-voice", "subtopic": "perfect-modal-passive",
+      "skills": ["perfect-modal-passive"],
+      "learningObjectives": ["Formar present perfect passive y pasivas con modales.", "Mantener el participio correcto tras been o be."],
+      "prerequisites": ["b1-grammar-passive-present-past", "b1-grammar-present-perfect-experience-recent-events"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "error_correction", "word_order"],
+      "plannedLessonIds": ["b1-grammar-passive-perfect-modals"]
+    },
+    {
+      "id": "b1-reported-statements",
+      "level": "B1", "category": "grammar", "topic": "reported-speech", "subtopic": "reported-statements",
+      "skills": ["reported-statements"],
+      "learningObjectives": ["Informar de enunciados con say y tell.", "Aplicar cambios básicos de tiempo, pronombre y referencia temporal."],
+      "prerequisites": ["b1-grammar-past-simple-continuous"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-reported-statements"]
+    },
+    {
+      "id": "b1-reported-questions-commands",
+      "level": "B1", "category": "grammar", "topic": "reported-speech", "subtopic": "reported-questions-commands",
+      "skills": ["reported-questions-commands"],
+      "learningObjectives": ["Mantener orden afirmativo en preguntas indirectas.", "Transformar órdenes y peticiones con tell o ask más objeto e infinitivo."],
+      "prerequisites": ["b1-grammar-reported-statements"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "complete_dialogue", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-reported-questions-commands"]
+    },
+    {
+      "id": "b1-direct-indirect-questions",
+      "level": "B1", "category": "grammar", "topic": "questions", "subtopic": "direct-indirect-questions",
+      "skills": ["direct-indirect-questions"],
+      "learningObjectives": ["Construir preguntas directas con auxiliar correcto.", "Usar orden afirmativo tras expresiones de pregunta indirecta."],
+      "prerequisites": ["b1-grammar-present-simple-continuous"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "word_order", "complete_dialogue", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-direct-indirect-questions"]
+    },
+    {
+      "id": "b1-subject-object-tags",
+      "level": "B1", "category": "grammar", "topic": "questions", "subtopic": "subject-object-question-tags",
+      "skills": ["subject-object-question-tags"],
+      "learningObjectives": ["Distinguir preguntas de sujeto sin do de preguntas de objeto.", "Construir question tags coherentes con auxiliar, polaridad y sujeto."],
+      "prerequisites": ["b1-grammar-direct-indirect-questions"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["true_false", "single_choice", "fill_blank", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-subject-object-questions-tags"]
+    },
+    {
+      "id": "b1-basic-verb-patterns",
+      "level": "B1", "category": "grammar", "topic": "gerunds-infinitives", "subtopic": "basic-verb-patterns",
+      "skills": ["basic-verb-patterns"],
+      "learningObjectives": ["Asociar verbos frecuentes con gerundio o infinitivo.", "Distinguir actividades generales de intenciones y decisiones."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "matching", "word_formation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-gerunds-infinitives-basic"]
+    },
+    {
+      "id": "b1-verb-object-infinitive",
+      "level": "B1", "category": "grammar", "topic": "gerunds-infinitives", "subtopic": "verb-object-infinitive",
+      "skills": ["verb-object-infinitive"],
+      "learningObjectives": ["Construir patrones de verbo más objeto más infinitivo.", "Distinguir ask, tell, want, allow y let por su complemento."],
+      "prerequisites": ["b1-grammar-gerunds-infinitives-basic"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "word_order", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-verb-object-infinitive"]
+    },
+    {
+      "id": "b1-comparatives-superlatives",
+      "level": "B1", "category": "grammar", "topic": "comparisons", "subtopic": "comparative-superlative",
+      "skills": ["comparative-superlative"],
+      "learningObjectives": ["Formar comparativos y superlativos regulares e irregulares.", "Elegir than, in, of y estructuras as ... as según el contexto."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_formation", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-comparatives-superlatives"]
+    },
+    {
+      "id": "b1-too-enough-modifiers",
+      "level": "B1", "category": "grammar", "topic": "comparisons", "subtopic": "too-enough-comparative-modifiers",
+      "skills": ["too-enough-comparative-modifiers"],
+      "learningObjectives": ["Distinguir exceso e insuficiencia con too y enough.", "Modificar comparativos con much, far, a bit y slightly."],
+      "prerequisites": ["b1-grammar-comparatives-superlatives"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-too-enough-modifiers"]
+    },
+    {
+      "id": "b1-articles-reference",
+      "level": "B1", "category": "grammar", "topic": "articles-determiners", "subtopic": "articles-reference",
+      "skills": ["articles-reference"],
+      "learningObjectives": ["Elegir a, an, the o artículo cero según identificación y referencia.", "Reconocer usos institucionales y geográficos frecuentes."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "open_cloze", "error_correction", "complete_paragraph"],
+      "plannedLessonIds": ["b1-grammar-articles-reference"]
+    },
+    {
+      "id": "b1-quantifiers-determiners",
+      "level": "B1", "category": "grammar", "topic": "articles-determiners", "subtopic": "quantifiers-determiners",
+      "skills": ["quantifiers-determiners"],
+      "learningObjectives": ["Distinguir nombres contables e incontables al elegir cuantificadores.", "Usar each, every, both, either y neither con concordancia correcta."],
+      "prerequisites": ["b1-grammar-articles-reference"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "multiple_select", "open_cloze", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-quantifiers-determiners"]
+    },
+    {
+      "id": "b1-defining-relatives",
+      "level": "B1", "category": "grammar", "topic": "relative-clauses", "subtopic": "defining-relative-clauses",
+      "skills": ["defining-relative-clauses"],
+      "learningObjectives": ["Elegir who, which, that, where y whose según el antecedente.", "Omitir el pronombre relativo únicamente cuando funciona como objeto."],
+      "prerequisites": ["b1-grammar-direct-indirect-questions"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "matching", "error_correction"],
+      "plannedLessonIds": ["b1-grammar-defining-relative-clauses"]
+    },
+    {
+      "id": "b1-basic-linking",
+      "level": "B1", "category": "grammar", "topic": "linking-discourse", "subtopic": "basic-linking-words",
+      "skills": ["basic-linking-words"],
+      "learningObjectives": ["Relacionar causa, contraste, resultado, adición y ejemplo.", "Distinguir conjunciones internas de conectores entre oraciones."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "matching", "complete_paragraph", "guided_writing"],
+      "plannedLessonIds": ["b1-grammar-basic-linking-words"]
+    },
+    {
+      "id": "b2-present-perfect-contrast",
+      "level": "B2", "category": "grammar", "topic": "present-tenses", "subtopic": "present-perfect-simple-vs-continuous",
+      "skills": ["present-perfect-simple-vs-continuous"],
+      "learningObjectives": ["Contrastar resultado, cantidad y finalización con duración y actividad.", "Interpretar verbos de estado y acciones repetidas en ambos aspectos."],
+      "prerequisites": ["b1-grammar-present-perfect-for-since", "b1-grammar-present-perfect-vs-past-simple"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "fill_blank", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-present-perfect-simple-continuous"]
+    },
+    {
+      "id": "b2-past-perfect-contrast",
+      "level": "B2", "category": "grammar", "topic": "past-tenses", "subtopic": "past-perfect-simple-vs-continuous",
+      "skills": ["past-perfect-simple-vs-continuous"],
+      "learningObjectives": ["Distinguir resultado anterior de proceso y duración anteriores.", "Combinar ambos aspectos con puntos de referencia pasados inequívocos."],
+      "prerequisites": ["b1-grammar-past-perfect-narratives"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "complete_paragraph", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-past-perfect-simple-continuous"]
+    },
+    {
+      "id": "b2-advanced-narrative-tenses",
+      "level": "B2", "category": "grammar", "topic": "past-tenses", "subtopic": "advanced-narrative-tenses",
+      "skills": ["advanced-narrative-tenses"],
+      "learningObjectives": ["Gestionar primer plano, fondo y anterioridad en narraciones complejas.", "Mantener coherencia temporal al alternar secuencias y retrospecciones."],
+      "prerequisites": ["b1-grammar-past-perfect-narratives"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["multiple_choice_cloze", "fill_blank", "complete_paragraph", "gapped_text", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-advanced-narrative-tenses"]
+    },
+    {
+      "id": "b2-future-continuous-perfect",
+      "level": "B2", "category": "grammar", "topic": "future-forms", "subtopic": "future-continuous-perfect",
+      "skills": ["future-continuous-perfect"],
+      "learningObjectives": ["Describir procesos en curso en un punto futuro.", "Expresar acciones completadas antes de una fecha futura."],
+      "prerequisites": ["b1-grammar-future-arrangements-timetables", "b1-grammar-present-perfect-experience-recent-events"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_order", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-future-continuous-perfect"]
+    },
+    {
+      "id": "b2-future-likelihood",
+      "level": "B2", "category": "grammar", "topic": "future-forms", "subtopic": "future-likelihood-imminence",
+      "skills": ["future-likelihood-imminence"],
+      "learningObjectives": ["Expresar inminencia con be about to y be on the point of.", "Graduar probabilidad con be likely, unlikely, bound y due to."],
+      "prerequisites": ["b1-grammar-future-forms-will-going-to"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "fill_blank", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-future-likelihood-imminence"]
+    },
+    {
+      "id": "b2-future-in-past",
+      "level": "B2", "category": "grammar", "topic": "future-forms", "subtopic": "future-in-the-past",
+      "skills": ["future-in-the-past"],
+      "learningObjectives": ["Presentar expectativas y planes futuros desde un punto pasado.", "Distinguir would, was going to, was about to y was due to."],
+      "prerequisites": ["b1-grammar-future-forms-will-going-to", "b1-grammar-past-perfect-narratives"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "complete_paragraph", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-future-in-the-past"]
+    },
+    {
+      "id": "b2-advanced-modal-meaning",
+      "level": "B2", "category": "grammar", "topic": "modals", "subtopic": "advanced-modal-meaning",
+      "skills": ["advanced-modal-meaning"],
+      "learningObjectives": ["Distinguir expectativa, norma, permiso y certeza con estructuras modales avanzadas.", "Usar be supposed to, be allowed to, be bound to y be likely to."],
+      "prerequisites": ["b1-grammar-modals-ability-permission", "b1-grammar-modals-obligation-prohibition"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "fill_blank", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-advanced-modal-meaning"]
+    },
+    {
+      "id": "b2-advanced-passive-tenses",
+      "level": "B2", "category": "grammar", "topic": "passive-voice", "subtopic": "advanced-passive-tenses",
+      "skills": ["advanced-passive-tenses"],
+      "learningObjectives": ["Formar pasivas continuas, perfectas, infinitivas y con gerundio.", "Elegir el tiempo pasivo según cronología y foco informativo."],
+      "prerequisites": ["b1-grammar-passive-perfect-modals"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-advanced-passive-tenses"]
+    },
+    {
+      "id": "b2-reporting-passives",
+      "level": "B2", "category": "grammar", "topic": "passive-voice", "subtopic": "reporting-passives",
+      "skills": ["reporting-passives"],
+      "learningObjectives": ["Transformar afirmaciones con it is said y sujeto más passive infinitive.", "Elegir infinitivo simple o perfecto según la relación temporal."],
+      "prerequisites": ["b1-grammar-reported-statements", "b2-grammar-advanced-passive-tenses"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "sentence_transformation", "key_word_transformation", "fill_blank", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-reporting-passives"]
+    },
+    {
+      "id": "b2-have-get-something-done",
+      "level": "B2", "category": "grammar", "topic": "passive-voice", "subtopic": "have-get-something-done",
+      "skills": ["have-get-something-done"],
+      "learningObjectives": ["Expresar servicios organizados con have o get más objeto y participio.", "Distinguir causative de experiencia no deseada según el contexto."],
+      "prerequisites": ["b1-grammar-passive-present-past"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "complete_dialogue", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-have-get-something-done"]
+    },
+    {
+      "id": "b2-advanced-backshift",
+      "level": "B2", "category": "grammar", "topic": "reported-speech", "subtopic": "advanced-backshift",
+      "skills": ["advanced-backshift"],
+      "learningObjectives": ["Decidir cuándo el backshift es obligatorio, opcional o inadecuado.", "Mantener perspectiva temporal y deíctica al informar de hechos aún válidos."],
+      "prerequisites": ["b1-grammar-reported-statements"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "sentence_transformation", "complete_paragraph", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-advanced-backshift"]
+    },
+    {
+      "id": "b2-reporting-verbs",
+      "level": "B2", "category": "grammar", "topic": "reported-speech", "subtopic": "reporting-verb-patterns",
+      "skills": ["reporting-verb-patterns"],
+      "learningObjectives": ["Asociar reporting verbs con gerundio, infinitivo u objeto más infinitivo.", "Conservar el significado de admisión, negación, advertencia, acusación y recomendación."],
+      "prerequisites": ["b1-grammar-reported-questions-commands", "b1-grammar-gerunds-infinitives-basic"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "matching", "fill_blank", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-reporting-verb-patterns"]
+    },
+    {
+      "id": "b2-gerund-infinitive-meaning",
+      "level": "B2", "category": "grammar", "topic": "gerunds-infinitives", "subtopic": "meaning-change-gerund-infinitive",
+      "skills": ["meaning-change-gerund-infinitive"],
+      "learningObjectives": ["Distinguir remember, stop, try y regret con gerundio o infinitivo.", "Inferir el significado correcto a partir de la secuencia de eventos."],
+      "prerequisites": ["b1-grammar-gerunds-infinitives-basic"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "fill_blank", "complete_dialogue", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-meaning-change-gerund-infinitive"]
+    },
+    {
+      "id": "b2-perfect-passive-nonfinite",
+      "level": "B2", "category": "grammar", "topic": "gerunds-infinitives", "subtopic": "perfect-passive-infinitives-gerunds",
+      "skills": ["perfect-passive-infinitives-gerunds"],
+      "learningObjectives": ["Formar perfect infinitive y perfect gerund para anterioridad.", "Usar infinitivos y gerundios pasivos con agente explícito solo cuando aporta valor."],
+      "prerequisites": ["b1-grammar-verb-object-infinitive", "b1-grammar-passive-perfect-modals"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_formation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-perfect-passive-infinitives-gerunds"]
+    },
+    {
+      "id": "b2-advanced-comparisons",
+      "level": "B2", "category": "grammar", "topic": "comparisons", "subtopic": "advanced-comparisons",
+      "skills": ["advanced-comparisons"],
+      "learningObjectives": ["Usar estructuras correlativas the more ... the more.", "Distinguir like, as, as if y as though y graduar diferencias."],
+      "prerequisites": ["b1-grammar-comparatives-superlatives", "b1-grammar-too-enough-modifiers"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-advanced-comparisons"]
+    },
+    {
+      "id": "b2-non-defining-relatives",
+      "level": "B2", "category": "grammar", "topic": "relative-clauses", "subtopic": "non-defining-relative-clauses",
+      "skills": ["non-defining-relative-clauses"],
+      "learningObjectives": ["Puntuar información adicional con comas y pronombre no omitible.", "Usar which para referirse a una proposición completa."],
+      "prerequisites": ["b1-grammar-defining-relative-clauses"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "fill_blank", "sentence_transformation", "word_order", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-non-defining-relative-clauses"]
+    },
+    {
+      "id": "b2-participle-reduced-clauses",
+      "level": "B2", "category": "grammar", "topic": "relative-clauses", "subtopic": "participle-reduced-clauses",
+      "skills": ["participle-reduced-clauses"],
+      "learningObjectives": ["Reducir relativas activas y pasivas con participios adecuados.", "Evitar modificadores colgantes asegurando un sujeto compartido."],
+      "prerequisites": ["b2-grammar-non-defining-relative-clauses"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_select", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-participle-reduced-clauses"]
+    },
+    {
+      "id": "b2-advanced-connectors",
+      "level": "B2", "category": "grammar", "topic": "linking-discourse", "subtopic": "advanced-connectors-discourse-markers",
+      "skills": ["advanced-connectors-discourse-markers"],
+      "learningObjectives": ["Distinguir conectores de contraste, concesión, causa y resultado por su sintaxis.", "Organizar argumentos con marcadores de postura y alcance."],
+      "prerequisites": ["b1-grammar-basic-linking-words"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "multiple_choice_cloze", "fill_blank", "complete_paragraph", "guided_writing"],
+      "plannedLessonIds": ["b2-grammar-advanced-connectors-discourse"]
+    },
+    {
+      "id": "b2-negative-inversion",
+      "level": "B2", "category": "grammar", "topic": "inversion-emphasis", "subtopic": "negative-inversion",
+      "skills": ["negative-inversion"],
+      "learningObjectives": ["Invertir auxiliar y sujeto tras adverbiales negativos iniciales.", "Construir not only, hardly, no sooner y condicionales invertidos sin alterar la cronología."],
+      "prerequisites": ["b1-grammar-direct-indirect-questions", "b2-grammar-third-conditional"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "word_order", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-negative-inversion"]
+    },
+    {
+      "id": "b2-cleft-fronting",
+      "level": "B2", "category": "grammar", "topic": "inversion-emphasis", "subtopic": "cleft-sentences-fronting",
+      "skills": ["cleft-sentences-fronting"],
+      "learningObjectives": ["Focalizar información con it-clefts y wh-clefts.", "Usar fronting y do enfático sin perder concordancia ni registro."],
+      "prerequisites": ["b1-grammar-defining-relative-clauses", "b1-grammar-direct-indirect-questions"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["single_choice", "word_order", "sentence_transformation", "key_word_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-grammar-cleft-sentences-fronting"]
+    }
+  ]
+}
