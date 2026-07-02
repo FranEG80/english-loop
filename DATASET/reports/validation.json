@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "valid": false,
+  "summary": {
+    "lessons": 8,
+    "activities": 500,
+    "batches": 20,
+    "taxonomyNodes": 164,
+    "errors": 2
+  },
+  "issues": [
+    {
+      "code": "global-activity-coverage",
+      "location": "catalog/coverage-targets.json",
+      "message": "Hay 500 actividades publicadas; se requieren 10000."
+    },
+    {
+      "code": "global-lesson-coverage",
+      "location": "catalog/coverage-targets.json",
+      "message": "Hay 8 lecciones publicadas; se requieren 100."
+    }
+  ]
+}
