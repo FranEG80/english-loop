@@ -10,20 +10,35 @@ import {
 import type {
   ActivityBatch,
   CoverageTargets,
+  CurriculumMap,
   LessonDocument,
   LessonFrontmatter,
   LoadedDataset,
+  SourcesCatalog,
   Taxonomy,
 } from "./types";
 
 export async function loadDataset(): Promise<LoadedDataset> {
-  const [lessonPaths, activityPaths, taxonomy, coverageTargets] =
+  const [
+    lessonPaths,
+    activityPaths,
+    taxonomy,
+    coverageTargets,
+    curriculumMap,
+    sources,
+  ] =
     await Promise.all([
       walkFiles(path.join(DATASET_ROOT, "lessons"), ".md"),
       walkFiles(path.join(DATASET_ROOT, "activities"), ".json"),
       readJson<Taxonomy>(path.join(DATASET_ROOT, "catalog", "taxonomy.json")),
       readJson<CoverageTargets>(
         path.join(DATASET_ROOT, "catalog", "coverage-targets.json"),
+      ),
+      readJson<CurriculumMap>(
+        path.join(DATASET_ROOT, "catalog", "curriculum-map.json"),
+      ),
+      readJson<SourcesCatalog>(
+        path.join(DATASET_ROOT, "references", "sources.json"),
       ),
     ]);
 
@@ -54,5 +69,7 @@ export async function loadDataset(): Promise<LoadedDataset> {
     activities: batches.flatMap(({ batch }) => batch.activities),
     taxonomy,
     coverageTargets,
+    curriculumMap,
+    sources,
   };
 }

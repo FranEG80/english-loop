@@ -1,28 +1,37 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 8,
-    "publishedActivities": 500,
+    "publishedLessons": 23,
+    "publishedActivities": 2000,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 4,
-    "nodeTargetsTotal": 4
+    "nodeTargetsMet": 19,
+    "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 250,
+      "B1": 1750,
       "B2": 250
     },
     "category": {
-      "grammar": 500
+      "grammar": 2000
     },
     "topic": {
       "conditionals": 250,
       "future-forms": 125,
-      "modal-perfects": 125
+      "modal-perfects": 125,
+      "modals": 300,
+      "passive-voice": 200,
+      "past-tenses": 300,
+      "present-tenses": 400,
+      "questions": 100,
+      "reported-speech": 200
     },
     "subtopic": {
+      "ability-permission": 100,
+      "advice-possibility": 100,
+      "direct-indirect-questions": 100,
       "first-conditional": 75,
       "future-time-clauses": 25,
       "going-to-evidence": 25,
@@ -30,31 +39,1459 @@
       "modal-perfect-criticism": 50,
       "modal-perfect-deduction": 50,
       "modal-perfect-unnecessary-action": 25,
+      "obligation-necessity-prohibition": 100,
+      "past-perfect-narrative": 100,
+      "past-simple-vs-continuous": 100,
+      "perfect-modal-passive": 100,
       "present-continuous-arrangements": 25,
+      "present-past-passive": 100,
+      "present-perfect-experience": 100,
+      "present-perfect-for-since": 100,
+      "present-perfect-vs-past-simple": 100,
       "present-simple-timetables": 25,
+      "present-simple-vs-continuous": 100,
+      "reported-questions-commands": 100,
+      "reported-statements": 100,
       "second-conditional": 50,
       "third-conditional": 75,
+      "used-to-would-past-habits": 100,
       "will-predictions": 25
     },
     "activityType": {
-      "error_correction": 50,
+      "complete_dialogue": 100,
+      "error_correction": 425,
       "error_identification": 50,
-      "fill_blank": 75,
+      "fill_blank": 425,
       "key_word_transformation": 25,
-      "multiple_select": 75,
-      "single_choice": 100,
-      "true_false": 75,
-      "word_order": 50
+      "multiple_select": 125,
+      "sentence_transformation": 100,
+      "single_choice": 475,
+      "true_false": 100,
+      "word_order": 175
     },
     "difficulty": {
-      "1": 50,
-      "2": 90,
-      "3": 122,
-      "4": 120,
-      "5": 118
+      "1": 350,
+      "2": 390,
+      "3": 422,
+      "4": 420,
+      "5": 418
     }
   },
   "targets": [
+    {
+      "taxonomyNodeId": "ability-permission",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "advanced-backshift",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "advanced-comparisons",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "advanced-connectors-discourse-markers",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "advanced-modal-meaning",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "advanced-narrative-tenses",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "advanced-passive-tenses",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "advice-possibility",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "articles-reference",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-collocations-daily-life",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-collocations-travel-work",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-daily-routines-life",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-dependent-prepositions",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-education-study",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-environment-weather-places",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-error-correction",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-family-relationships",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-fixed-expressions",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-food-cooking",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-health-body",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-home-services",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-leisure-sport-entertainment",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-multiple-choice-cloze",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-open-cloze",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-phrasal-everyday-actions",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-phrasal-study-relationships",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-phrasal-travel-services",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-prepositions-movement-travel",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-prepositions-time-place",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-reading-gapped-text",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-reading-gist-detail",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-reading-notices-functional-texts",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-reading-opinion-purpose",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-reading-people-matching",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-sentence-rewriting",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-shopping-clothes-money",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-technology-digital-life",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-travel-transport",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-word-formation",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-work-jobs",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-writing-informal-email",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-writing-opinion-article",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-writing-review-description",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-writing-semi-formal-email",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b1-writing-story-sequencing",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-advanced-fixed-expressions",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-ai-digital-life",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-career-business",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-climate-global-issues",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-collocations-academic-business",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-collocations-impact-attitudes",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-creativity-innovation-decisions",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-crime-justice",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-dependent-prepositions",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-education-learning",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-health-psychology",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-key-word-transformations",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-media-communication",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-money-economics",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-multiple-choice-cloze",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-open-cloze",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-phrasal-attitudes-relationships",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-phrasal-change-progress",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-phrasal-work-problems",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-prepositional-fixed-phrases",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-prepositions-abstract-relations",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-reading-argument-evidence",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-reading-attitude-tone",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-reading-gapped-text",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-reading-gist-detail-inference",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-reading-multiple-matching",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-register-rewriting",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-science-research",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-society-culture-public-life",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-travel-tourism-urban-life",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-word-formation",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-writing-argument-cohesion",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-writing-article-review",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-writing-essay-structure",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-writing-formal-email",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "b2-writing-report",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "basic-linking-words",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "basic-verb-patterns",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "cleft-sentences-fronting",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "comparative-superlative",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
     {
       "taxonomyNodeId": "conditionals",
       "level": "B1",
@@ -98,6 +1535,62 @@
         5
       ],
       "met": true
+    },
+    {
+      "taxonomyNodeId": "defining-relative-clauses",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "direct-indirect-questions",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "future-continuous-perfect",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
     },
     {
       "taxonomyNodeId": "future-forms",
@@ -123,6 +1616,70 @@
       "met": true
     },
     {
+      "taxonomyNodeId": "future-in-the-past",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "future-likelihood-imminence",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "have-get-something-done",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "meaning-change-gerund-infinitive",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
       "taxonomyNodeId": "modal-perfects",
       "level": "B2",
       "minimumActivities": 100,
@@ -142,6 +1699,478 @@
         5
       ],
       "met": true
+    },
+    {
+      "taxonomyNodeId": "negative-inversion",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "non-defining-relative-clauses",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "obligation-necessity-prohibition",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "participle-reduced-clauses",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "past-perfect-narrative",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "past-perfect-simple-vs-continuous",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "past-simple-vs-continuous",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "perfect-modal-passive",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "perfect-passive-infinitives-gerunds",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "present-past-passive",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "present-perfect-experience",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "present-perfect-for-since",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "present-perfect-simple-vs-continuous",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "present-perfect-vs-past-simple",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "present-simple-vs-continuous",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "quantifiers-determiners",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "reported-questions-commands",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "reported-statements",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "reporting-passives",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "reporting-verb-patterns",
+      "level": "B2",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "subject-object-question-tags",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "too-enough-comparative-modifiers",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
+    },
+    {
+      "taxonomyNodeId": "used-to-would-past-habits",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "verb-object-infinitive",
+      "level": "B1",
+      "minimumActivities": 100,
+      "minimumActivityTypes": 4,
+      "requiredDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actualActivities": 0,
+      "actualActivityTypes": 0,
+      "actualDifficulties": [],
+      "met": false
     }
   ]
 }

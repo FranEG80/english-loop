@@ -171,12 +171,48 @@ export interface CoverageTargets {
   }>;
 }
 
+export interface CurriculumUnit {
+  id: string;
+  level: Level;
+  category: string;
+  topic: string;
+  subtopic: string;
+  skills: string[];
+  learningObjectives: string[];
+  prerequisites: string[];
+  frameworkRefs: string[];
+  compatibleActivityTypes: ActivityType[];
+  plannedLessonIds: string[];
+}
+
+export interface CurriculumMap {
+  schemaVersion: "1.0.0";
+  auditNotes: string[];
+  units: CurriculumUnit[];
+}
+
+export interface SourcesCatalog {
+  schemaVersion: "1.0.0";
+  consultedAt: string;
+  sources: Array<{
+    id: string;
+    organisation: string;
+    title: string;
+    url: string;
+    consultedAt: string;
+    permittedUse: string;
+    notes: string;
+  }>;
+}
+
 export interface LoadedDataset {
   lessons: LessonDocument[];
   batches: Array<{ filePath: string; relativePath: string; batch: ActivityBatch }>;
   activities: Activity[];
   taxonomy: Taxonomy;
   coverageTargets: CoverageTargets;
+  curriculumMap: CurriculumMap;
+  sources: SourcesCatalog;
 }
 
 export type ActivityResponse =

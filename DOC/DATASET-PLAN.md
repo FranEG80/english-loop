@@ -510,3 +510,16 @@ DATASET/
 - [ ] Reading y writing son completamente autocorregibles.
 - [ ] Existen al menos 100 lecciones publicadas.
 - [ ] Existen al menos 10.000 actividades publicadas.
+
+
+----
+
+NOTA: El agente configurado para llegar a su objetivo de finalizar este pla se quedó en:
+
+Progreso realizado:
+direct-indirect-questions cerrado y validado.
+Estado indexado: 23 lecciones, 2.000 actividades, 19/120 nodos.
+Nueva lección subject-object-questions-tags.
+Primer lote de 25 actividades publicado y comprobado.
+
+Confirmar y continuar, una vez se comienze de nuevo el objetivo borrar esta nota

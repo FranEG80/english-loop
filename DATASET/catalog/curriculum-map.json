@@ -525,6 +525,726 @@
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["single_choice", "word_order", "sentence_transformation", "key_word_transformation", "error_correction"],
       "plannedLessonIds": ["b2-grammar-cleft-sentences-fronting"]
+    },
+    {
+      "id": "b1-vocabulary-daily-routines",
+      "level": "B1", "category": "vocabulary", "topic": "b1-daily-routines-life", "subtopic": "b1-daily-routines-life",
+      "skills": ["b1-daily-routines-life"],
+      "learningObjectives": ["Describir rutinas, tareas domésticas y gestión del tiempo con verbos naturales.", "Distinguir combinaciones frecuentes como do chores, get ready y have a break."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "single_choice", "matching", "fill_blank", "complete_dialogue"],
+      "plannedLessonIds": ["b1-vocabulary-daily-routines-life"]
+    },
+    {
+      "id": "b1-vocabulary-family",
+      "level": "B1", "category": "vocabulary", "topic": "b1-family-relationships", "subtopic": "b1-family-relationships",
+      "skills": ["b1-family-relationships"],
+      "learningObjectives": ["Nombrar relaciones familiares y sociales sin ambigüedad.", "Describir apoyo, conflicto, semejanza y contacto mediante expresiones frecuentes."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "single_choice", "fill_blank", "complete_dialogue"],
+      "plannedLessonIds": ["b1-vocabulary-family-relationships"]
+    },
+    {
+      "id": "b1-vocabulary-home",
+      "level": "B1", "category": "vocabulary", "topic": "b1-home-services", "subtopic": "b1-home-services",
+      "skills": ["b1-home-services"],
+      "learningObjectives": ["Describir vivienda, habitaciones, mobiliario y averías domésticas.", "Solicitar servicios y explicar reparaciones con vocabulario funcional."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "single_choice", "complete_dialogue", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-home-services"]
+    },
+    {
+      "id": "b1-vocabulary-food",
+      "level": "B1", "category": "vocabulary", "topic": "b1-food-cooking", "subtopic": "b1-food-cooking",
+      "skills": ["b1-food-cooking"],
+      "learningObjectives": ["Nombrar ingredientes, métodos de cocina, sabor y textura.", "Comprender recetas breves y pedir comida especificando preferencias o restricciones."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "word_order", "complete_dialogue", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-food-cooking"]
+    },
+    {
+      "id": "b1-vocabulary-health",
+      "level": "B1", "category": "vocabulary", "topic": "b1-health-body", "subtopic": "b1-health-body",
+      "skills": ["b1-health-body"],
+      "learningObjectives": ["Describir partes del cuerpo, síntomas y lesiones comunes.", "Comprender y dar consejos básicos de salud sin formular diagnósticos."],
+      "prerequisites": ["b1-grammar-modals-advice-possibility"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "single_choice", "complete_dialogue", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-health-body"]
+    },
+    {
+      "id": "b1-vocabulary-education",
+      "level": "B1", "category": "vocabulary", "topic": "b1-education-study", "subtopic": "b1-education-study",
+      "skills": ["b1-education-study"],
+      "learningObjectives": ["Hablar de asignaturas, evaluación, progreso y estrategias de estudio.", "Distinguir learn, study, teach, revise, pass, fail y take an exam."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "single_choice", "matching", "fill_blank", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-education-study"]
+    },
+    {
+      "id": "b1-vocabulary-work",
+      "level": "B1", "category": "vocabulary", "topic": "b1-work-jobs", "subtopic": "b1-work-jobs",
+      "skills": ["b1-work-jobs"],
+      "learningObjectives": ["Describir puestos, responsabilidades, condiciones y búsqueda de empleo.", "Distinguir job, work, career, employer, employee, salary y wage."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "single_choice", "matching", "complete_dialogue", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-work-jobs"]
+    },
+    {
+      "id": "b1-vocabulary-travel",
+      "level": "B1", "category": "vocabulary", "topic": "b1-travel-transport", "subtopic": "b1-travel-transport",
+      "skills": ["b1-travel-transport"],
+      "learningObjectives": ["Gestionar reservas, rutas, equipaje y problemas de transporte.", "Distinguir journey, trip, travel, tour, voyage y medios de transporte."],
+      "prerequisites": ["b1-grammar-future-arrangements-timetables"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "complete_dialogue", "single_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-travel-transport"]
+    },
+    {
+      "id": "b1-vocabulary-shopping",
+      "level": "B1", "category": "vocabulary", "topic": "b1-shopping-clothes-money", "subtopic": "b1-shopping-clothes-money",
+      "skills": ["b1-shopping-clothes-money"],
+      "learningObjectives": ["Hablar de prendas, talla, ajuste, precio, pago, devolución y ahorro.", "Distinguir cost, price, value, afford, borrow, lend y spend."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "complete_dialogue", "matching", "single_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-shopping-clothes-money"]
+    },
+    {
+      "id": "b1-vocabulary-leisure",
+      "level": "B1", "category": "vocabulary", "topic": "b1-leisure-sport-entertainment", "subtopic": "b1-leisure-sport-entertainment",
+      "skills": ["b1-leisure-sport-entertainment"],
+      "learningObjectives": ["Describir aficiones, deportes, películas, libros y música.", "Expresar preferencias y valorar experiencias de ocio con adjetivos precisos."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "single_choice", "complete_dialogue", "guided_writing"],
+      "plannedLessonIds": ["b1-vocabulary-leisure-sport-entertainment"]
+    },
+    {
+      "id": "b1-vocabulary-technology",
+      "level": "B1", "category": "vocabulary", "topic": "b1-technology-digital-life", "subtopic": "b1-technology-digital-life",
+      "skills": ["b1-technology-digital-life"],
+      "learningObjectives": ["Describir dispositivos, archivos, cuentas, conexión y acciones en internet.", "Explicar problemas digitales comunes y seguir instrucciones básicas."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "complete_dialogue", "single_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b1-vocabulary-technology-digital-life"]
+    },
+    {
+      "id": "b1-vocabulary-environment",
+      "level": "B1", "category": "vocabulary", "topic": "b1-environment-weather-places", "subtopic": "b1-environment-weather-places",
+      "skills": ["b1-environment-weather-places"],
+      "learningObjectives": ["Describir clima, paisaje, ciudad, campo y problemas ambientales cotidianos.", "Relacionar acciones personales con reciclaje, residuos, energía y transporte."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "matching", "single_choice", "reading_comprehension", "guided_writing"],
+      "plannedLessonIds": ["b1-vocabulary-environment-weather-places"]
+    },
+    {
+      "id": "b2-vocabulary-career",
+      "level": "B2", "category": "vocabulary", "topic": "b2-career-business", "subtopic": "b2-career-business",
+      "skills": ["b2-career-business"],
+      "learningObjectives": ["Analizar carrera, contratación, liderazgo, mercado y emprendimiento.", "Usar vocabulario de rendimiento, negociación, estrategia y responsabilidad."],
+      "prerequisites": ["b1-vocabulary-work-jobs"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "multiple_choice_cloze", "word_formation", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-career-business"]
+    },
+    {
+      "id": "b2-vocabulary-education",
+      "level": "B2", "category": "vocabulary", "topic": "b2-education-learning", "subtopic": "b2-education-learning",
+      "skills": ["b2-education-learning"],
+      "learningObjectives": ["Debatir acceso, evaluación, habilidades, formación y aprendizaje permanente.", "Distinguir términos académicos y verbos de adquisición y aplicación de conocimiento."],
+      "prerequisites": ["b1-vocabulary-education-study"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "multiple_choice_cloze", "word_formation", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-education-learning"]
+    },
+    {
+      "id": "b2-vocabulary-science",
+      "level": "B2", "category": "vocabulary", "topic": "b2-science-research", "subtopic": "b2-science-research",
+      "skills": ["b2-science-research"],
+      "learningObjectives": ["Describir hipótesis, método, muestra, evidencia, resultado y limitación.", "Distinguir correlación, causa, hallazgo, afirmación y revisión."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "multiple_choice_cloze", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-science-research"]
+    },
+    {
+      "id": "b2-vocabulary-ai",
+      "level": "B2", "category": "vocabulary", "topic": "b2-ai-digital-life", "subtopic": "b2-ai-digital-life",
+      "skills": ["b2-ai-digital-life"],
+      "learningObjectives": ["Hablar de automatización, datos, privacidad, sesgo y sistemas digitales.", "Distinguir capacidad técnica, impacto social y grado de fiabilidad."],
+      "prerequisites": ["b1-vocabulary-technology-digital-life"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "multiple_choice_cloze", "word_formation", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-ai-digital-life"]
+    },
+    {
+      "id": "b2-vocabulary-media",
+      "level": "B2", "category": "vocabulary", "topic": "b2-media-communication", "subtopic": "b2-media-communication",
+      "skills": ["b2-media-communication"],
+      "learningObjectives": ["Analizar fuentes, cobertura, audiencia, persuasión y desinformación.", "Describir tono, afirmación, sesgo, difusión y verificación."],
+      "prerequisites": ["b1-vocabulary-technology-digital-life"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "multiple_choice_cloze", "word_formation", "reading_comprehension", "guided_writing"],
+      "plannedLessonIds": ["b2-vocabulary-media-communication"]
+    },
+    {
+      "id": "b2-vocabulary-climate",
+      "level": "B2", "category": "vocabulary", "topic": "b2-climate-global-issues", "subtopic": "b2-climate-global-issues",
+      "skills": ["b2-climate-global-issues"],
+      "learningObjectives": ["Debatir emisiones, adaptación, recursos, desigualdad y cooperación global.", "Distinguir amenaza, impacto, medida, objetivo y resultado ambiental."],
+      "prerequisites": ["b1-vocabulary-environment-weather-places"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "collocation_choice", "reading_comprehension", "guided_writing"],
+      "plannedLessonIds": ["b2-vocabulary-climate-global-issues"]
+    },
+    {
+      "id": "b2-vocabulary-health",
+      "level": "B2", "category": "vocabulary", "topic": "b2-health-psychology", "subtopic": "b2-health-psychology",
+      "skills": ["b2-health-psychology"],
+      "learningObjectives": ["Hablar de hábitos, bienestar, estrés, conducta y apoyo psicológico.", "Distinguir síntoma, condición, tratamiento, recuperación, prevención y percepción."],
+      "prerequisites": ["b1-vocabulary-health-body"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "multiple_choice_cloze", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-health-psychology"]
+    },
+    {
+      "id": "b2-vocabulary-crime",
+      "level": "B2", "category": "vocabulary", "topic": "b2-crime-justice", "subtopic": "b2-crime-justice",
+      "skills": ["b2-crime-justice"],
+      "learningObjectives": ["Describir delito, investigación, prueba, juicio, sentencia y prevención.", "Distinguir verbos y nombres de acusación, condena, absolución y apelación."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "multiple_choice_cloze", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-crime-justice"]
+    },
+    {
+      "id": "b2-vocabulary-society",
+      "level": "B2", "category": "vocabulary", "topic": "b2-society-culture-public-life", "subtopic": "b2-society-culture-public-life",
+      "skills": ["b2-society-culture-public-life"],
+      "learningObjectives": ["Debatir comunidad, diversidad, participación, tradición y políticas públicas.", "Distinguir derecho, deber, acceso, representación, patrimonio y actitud."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "collocation_choice", "reading_comprehension", "guided_writing"],
+      "plannedLessonIds": ["b2-vocabulary-society-culture-public-life"]
+    },
+    {
+      "id": "b2-vocabulary-economics",
+      "level": "B2", "category": "vocabulary", "topic": "b2-money-economics", "subtopic": "b2-money-economics",
+      "skills": ["b2-money-economics"],
+      "learningObjectives": ["Describir ingresos, gasto, deuda, inversión, inflación y crecimiento.", "Distinguir términos cotidianos de conceptos económicos de nivel intermedio."],
+      "prerequisites": ["b1-vocabulary-shopping-clothes-money"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "multiple_choice_cloze", "collocation_choice", "reading_comprehension"],
+      "plannedLessonIds": ["b2-vocabulary-money-economics"]
+    },
+    {
+      "id": "b2-vocabulary-tourism",
+      "level": "B2", "category": "vocabulary", "topic": "b2-travel-tourism-urban-life", "subtopic": "b2-travel-tourism-urban-life",
+      "skills": ["b2-travel-tourism-urban-life"],
+      "learningObjectives": ["Analizar turismo, infraestructura, vivienda, movilidad y calidad urbana.", "Expresar ventajas, presión, capacidad, accesibilidad y sostenibilidad."],
+      "prerequisites": ["b1-vocabulary-travel-transport"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "multiple_choice_cloze", "collocation_choice", "reading_comprehension", "guided_writing"],
+      "plannedLessonIds": ["b2-vocabulary-travel-tourism-urban-life"]
+    },
+    {
+      "id": "b2-vocabulary-creativity",
+      "level": "B2", "category": "vocabulary", "topic": "b2-creativity-innovation-decisions", "subtopic": "b2-creativity-innovation-decisions",
+      "skills": ["b2-creativity-innovation-decisions"],
+      "learningObjectives": ["Describir generación de ideas, evaluación, riesgo, innovación y toma de decisiones.", "Distinguir resultado, enfoque, restricción, alternativa, viabilidad y compromiso."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["vocabulary_in_context", "word_formation", "collocation_choice", "reading_comprehension", "guided_writing"],
+      "plannedLessonIds": ["b2-vocabulary-creativity-innovation-decisions"]
+    },
+    {
+      "id": "b1-use-multiple-choice-cloze",
+      "level": "B1", "category": "use-of-english", "topic": "b1-multiple-choice-cloze", "subtopic": "b1-multiple-choice-cloze",
+      "skills": ["b1-multiple-choice-cloze"],
+      "learningObjectives": ["Elegir vocabulario por significado, colocación y función dentro de un texto.", "Descartar distractores gramaticales o semánticos sin depender de traducción literal."],
+      "prerequisites": ["b1-vocabulary-daily-routines-life", "b1-grammar-basic-linking-words"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["multiple_choice_cloze", "vocabulary_in_context", "collocation_choice", "phrasal_verb_choice"],
+      "plannedLessonIds": ["b1-use-of-english-multiple-choice-cloze"]
+    },
+    {
+      "id": "b1-use-open-cloze",
+      "level": "B1", "category": "use-of-english", "topic": "b1-open-cloze", "subtopic": "b1-open-cloze",
+      "skills": ["b1-open-cloze"],
+      "learningObjectives": ["Completar huecos de una palabra mediante gramática y cohesión.", "Reconocer artículos, auxiliares, pronombres, conectores y preposiciones previsibles."],
+      "prerequisites": ["b1-grammar-articles-reference", "b1-grammar-basic-linking-words"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["open_cloze", "multi_gap_fill", "fill_blank", "complete_paragraph"],
+      "plannedLessonIds": ["b1-use-of-english-open-cloze"]
+    },
+    {
+      "id": "b1-use-word-formation",
+      "level": "B1", "category": "use-of-english", "topic": "b1-word-formation", "subtopic": "b1-word-formation",
+      "skills": ["b1-word-formation"],
+      "learningObjectives": ["Formar nombres, verbos, adjetivos y adverbios frecuentes.", "Aplicar prefijos negativos y sufijos sin alterar ortografía indebidamente."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["word_formation", "fill_blank", "matching", "multiple_choice_cloze"],
+      "plannedLessonIds": ["b1-use-of-english-word-formation"]
+    },
+    {
+      "id": "b1-use-sentence-rewriting",
+      "level": "B1", "category": "use-of-english", "topic": "b1-sentence-rewriting", "subtopic": "b1-sentence-rewriting",
+      "skills": ["b1-sentence-rewriting"],
+      "learningObjectives": ["Reformular comparaciones, pasivas, discurso indirecto y patrones verbales conservando significado.", "Producir respuestas dentro de conjuntos finitos y límites de palabras."],
+      "prerequisites": ["b1-grammar-passive-present-past", "b1-grammar-reported-statements", "b1-grammar-comparatives-superlatives"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["sentence_transformation", "rewrite_sentence", "key_word_transformation", "fill_blank"],
+      "plannedLessonIds": ["b1-use-of-english-sentence-rewriting"]
+    },
+    {
+      "id": "b1-use-error-correction",
+      "level": "B1", "category": "use-of-english", "topic": "b1-error-correction", "subtopic": "b1-error-correction",
+      "skills": ["b1-error-correction"],
+      "learningObjectives": ["Identificar errores frecuentes de tiempo, concordancia, auxiliar, artículo y preposición.", "Corregir exactamente el segmento defectuoso sin reescribir contenido válido."],
+      "prerequisites": ["b1-grammar-present-perfect-vs-past-simple", "b1-grammar-articles-reference"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["error_identification", "error_correction", "multiple_select"],
+      "plannedLessonIds": ["b1-use-of-english-error-correction"]
+    },
+    {
+      "id": "b1-use-fixed-expressions",
+      "level": "B1", "category": "use-of-english", "topic": "b1-fixed-expressions", "subtopic": "b1-fixed-expressions",
+      "skills": ["b1-fixed-expressions"],
+      "learningObjectives": ["Reconocer expresiones fijas frecuentes en situaciones cotidianas.", "Elegir la expresión por función comunicativa y colocación completa."],
+      "prerequisites": ["b1-vocabulary-daily-routines-life"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["single_choice", "matching", "fill_blank", "complete_dialogue", "vocabulary_in_context"],
+      "plannedLessonIds": ["b1-use-of-english-fixed-expressions"]
+    },
+    {
+      "id": "b2-use-multiple-choice-cloze",
+      "level": "B2", "category": "use-of-english", "topic": "b2-multiple-choice-cloze", "subtopic": "b2-multiple-choice-cloze",
+      "skills": ["b2-multiple-choice-cloze"],
+      "learningObjectives": ["Distinguir matiz, registro, colocación, phrasal verbs y expresiones idiomáticas.", "Justificar la opción correcta mediante evidencia local y global del texto."],
+      "prerequisites": ["b1-use-of-english-multiple-choice-cloze"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["multiple_choice_cloze", "collocation_choice", "phrasal_verb_choice", "vocabulary_in_context"],
+      "plannedLessonIds": ["b2-use-of-english-multiple-choice-cloze"]
+    },
+    {
+      "id": "b2-use-open-cloze",
+      "level": "B2", "category": "use-of-english", "topic": "b2-open-cloze", "subtopic": "b2-open-cloze",
+      "skills": ["b2-open-cloze"],
+      "learningObjectives": ["Resolver dependencias gramaticales y cohesivas entre oraciones.", "Enumerar todas las respuestas de una palabra válidas cuando existe variación real."],
+      "prerequisites": ["b1-use-of-english-open-cloze", "b2-grammar-advanced-connectors-discourse"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["open_cloze", "multi_gap_fill", "complete_paragraph", "fill_blank"],
+      "plannedLessonIds": ["b2-use-of-english-open-cloze"]
+    },
+    {
+      "id": "b2-use-word-formation",
+      "level": "B2", "category": "use-of-english", "topic": "b2-word-formation", "subtopic": "b2-word-formation",
+      "skills": ["b2-word-formation"],
+      "learningObjectives": ["Formar familias léxicas con cambios ortográficos y prefijos múltiples.", "Inferir categoría, polaridad y número a partir de la sintaxis del texto."],
+      "prerequisites": ["b1-use-of-english-word-formation"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["word_formation", "multi_gap_fill", "multiple_choice_cloze", "error_correction"],
+      "plannedLessonIds": ["b2-use-of-english-word-formation"]
+    },
+    {
+      "id": "b2-use-key-word-transformations",
+      "level": "B2", "category": "use-of-english", "topic": "b2-key-word-transformations", "subtopic": "b2-key-word-transformations",
+      "skills": ["b2-key-word-transformations"],
+      "learningObjectives": ["Transformar pasivas, condicionales, reported speech, modales y comparaciones con palabra obligatoria.", "Conservar significado dentro de un límite finito de respuestas y palabras."],
+      "prerequisites": ["b1-use-of-english-sentence-rewriting", "b2-grammar-third-conditional", "b2-grammar-reporting-passives"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["key_word_transformation", "sentence_transformation", "rewrite_sentence"],
+      "plannedLessonIds": ["b2-use-of-english-key-word-transformations"]
+    },
+    {
+      "id": "b2-use-register-rewriting",
+      "level": "B2", "category": "use-of-english", "topic": "b2-register-rewriting", "subtopic": "b2-register-rewriting",
+      "skills": ["b2-register-rewriting"],
+      "learningObjectives": ["Transformar expresiones formales e informales sin cambiar el contenido proposicional.", "Elegir fórmulas, verbos y conectores adecuados al destinatario."],
+      "prerequisites": ["b1-writing-semi-formal-email", "b2-grammar-advanced-connectors-discourse"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["guided_writing", "sentence_transformation", "matching", "single_choice", "complete_dialogue"],
+      "plannedLessonIds": ["b2-use-of-english-register-rewriting"]
+    },
+    {
+      "id": "b2-use-fixed-expressions",
+      "level": "B2", "category": "use-of-english", "topic": "b2-advanced-fixed-expressions", "subtopic": "b2-advanced-fixed-expressions",
+      "skills": ["b2-advanced-fixed-expressions"],
+      "learningObjectives": ["Reconocer expresiones fijas, binomios y marcos idiomáticos de frecuencia alta.", "Distinguir significado literal de función idiomática mediante contexto."],
+      "prerequisites": ["b1-use-of-english-fixed-expressions"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["multiple_choice_cloze", "single_choice", "matching", "fill_blank", "vocabulary_in_context"],
+      "plannedLessonIds": ["b2-use-of-english-fixed-expressions"]
+    },
+    {
+      "id": "b1-reading-functional",
+      "level": "B1", "category": "reading", "topic": "b1-reading-notices-functional-texts", "subtopic": "b1-reading-notices-functional-texts",
+      "skills": ["b1-reading-notices-functional-texts"],
+      "learningObjectives": ["Identificar propósito, destinatario y acción requerida en avisos y mensajes breves.", "Relacionar paráfrasis con información explícita sin añadir inferencias."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["reading_comprehension", "single_choice", "reading_matching", "true_false"],
+      "plannedLessonIds": ["b1-reading-notices-functional-texts"]
+    },
+    {
+      "id": "b1-reading-gist-detail",
+      "level": "B1", "category": "reading", "topic": "b1-reading-gist-detail", "subtopic": "b1-reading-gist-detail",
+      "skills": ["b1-reading-gist-detail"],
+      "learningObjectives": ["Distinguir idea principal de datos de apoyo en textos cotidianos.", "Localizar información específica y reconocer paráfrasis léxica."],
+      "prerequisites": ["b1-reading-notices-functional-texts"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["reading_comprehension", "single_choice", "true_false", "multiple_select"],
+      "plannedLessonIds": ["b1-reading-gist-detail"]
+    },
+    {
+      "id": "b1-reading-matching",
+      "level": "B1", "category": "reading", "topic": "b1-reading-people-matching", "subtopic": "b1-reading-people-matching",
+      "skills": ["b1-reading-people-matching"],
+      "learningObjectives": ["Extraer requisitos y preferencias de descripciones de personas.", "Relacionar cada perfil con un texto que satisfaga todas sus condiciones."],
+      "prerequisites": ["b1-reading-gist-detail"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["reading_matching", "matching", "multiple_select"],
+      "plannedLessonIds": ["b1-reading-people-matching"]
+    },
+    {
+      "id": "b1-reading-gapped",
+      "level": "B1", "category": "reading", "topic": "b1-reading-gapped-text", "subtopic": "b1-reading-gapped-text",
+      "skills": ["b1-reading-gapped-text"],
+      "learningObjectives": ["Reconstruir cohesión mediante pronombres, conectores y continuidad temática.", "Descartar frases que contradicen referencia, tiempo o progresión informativa."],
+      "prerequisites": ["b1-grammar-basic-linking-words", "b1-reading-gist-detail"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["gapped_text", "reading_matching", "ordered_tokens"],
+      "plannedLessonIds": ["b1-reading-gapped-text-cohesion"]
+    },
+    {
+      "id": "b1-reading-opinion",
+      "level": "B1", "category": "reading", "topic": "b1-reading-opinion-purpose", "subtopic": "b1-reading-opinion-purpose",
+      "skills": ["b1-reading-opinion-purpose"],
+      "learningObjectives": ["Distinguir hecho, opinión, recomendación y propósito del autor.", "Identificar actitud positiva, negativa o equilibrada a partir de lenguaje explícito."],
+      "prerequisites": ["b1-reading-gist-detail"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["reading_comprehension", "single_choice", "multiple_select", "true_false"],
+      "plannedLessonIds": ["b1-reading-opinion-purpose"]
+    },
+    {
+      "id": "b2-reading-inference",
+      "level": "B2", "category": "reading", "topic": "b2-reading-gist-detail-inference", "subtopic": "b2-reading-gist-detail-inference",
+      "skills": ["b2-reading-gist-detail-inference"],
+      "learningObjectives": ["Integrar información distribuida para inferir conclusiones justificadas.", "Distinguir inferencia textual de suposición externa."],
+      "prerequisites": ["b1-reading-gist-detail"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["reading_comprehension", "single_choice", "multiple_select", "true_false"],
+      "plannedLessonIds": ["b2-reading-gist-detail-inference"]
+    },
+    {
+      "id": "b2-reading-attitude",
+      "level": "B2", "category": "reading", "topic": "b2-reading-attitude-tone", "subtopic": "b2-reading-attitude-tone",
+      "skills": ["b2-reading-attitude-tone"],
+      "learningObjectives": ["Reconocer actitud, tono, reservas y grado de certeza.", "Relacionar elecciones léxicas con aprobación, crítica, ironía moderada o cautela."],
+      "prerequisites": ["b1-reading-opinion-purpose"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["reading_comprehension", "single_choice", "matching", "multiple_select"],
+      "plannedLessonIds": ["b2-reading-attitude-tone"]
+    },
+    {
+      "id": "b2-reading-gapped",
+      "level": "B2", "category": "reading", "topic": "b2-reading-gapped-text", "subtopic": "b2-reading-gapped-text",
+      "skills": ["b2-reading-gapped-text"],
+      "learningObjectives": ["Reconstruir textos largos mediante referencia, progresión lógica y estructura retórica.", "Usar evidencia anterior y posterior para seleccionar cada fragmento."],
+      "prerequisites": ["b1-reading-gapped-text-cohesion", "b2-grammar-advanced-connectors-discourse"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["gapped_text", "reading_matching", "ordered_tokens"],
+      "plannedLessonIds": ["b2-reading-gapped-text"]
+    },
+    {
+      "id": "b2-reading-multiple-matching",
+      "level": "B2", "category": "reading", "topic": "b2-reading-multiple-matching", "subtopic": "b2-reading-multiple-matching",
+      "skills": ["b2-reading-multiple-matching"],
+      "learningObjectives": ["Localizar opiniones y experiencias equivalentes en varios textos.", "Distinguir coincidencia parcial de cumplimiento completo de una afirmación."],
+      "prerequisites": ["b1-reading-people-matching", "b2-reading-gist-detail-inference"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["reading_matching", "matching", "multiple_select"],
+      "plannedLessonIds": ["b2-reading-multiple-matching"]
+    },
+    {
+      "id": "b2-reading-argument",
+      "level": "B2", "category": "reading", "topic": "b2-reading-argument-evidence", "subtopic": "b2-reading-argument-evidence",
+      "skills": ["b2-reading-argument-evidence"],
+      "learningObjectives": ["Identificar tesis, razones, evidencia, contraargumento y conclusión.", "Evaluar qué afirmaciones están respaldadas por el texto y con qué alcance."],
+      "prerequisites": ["b2-reading-gist-detail-inference", "b2-grammar-advanced-connectors-discourse"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["reading_comprehension", "matching", "multiple_select", "true_false"],
+      "plannedLessonIds": ["b2-reading-argument-evidence"]
+    },
+    {
+      "id": "b1-writing-informal-email",
+      "level": "B1", "category": "guided-writing", "topic": "b1-writing-informal-email", "subtopic": "b1-writing-informal-email",
+      "skills": ["b1-writing-informal-email"],
+      "learningObjectives": ["Ordenar saludo, apertura, respuesta a puntos, cierre y despedida.", "Elegir fórmulas informales naturales y conectores básicos."],
+      "prerequisites": ["b1-grammar-basic-linking-words"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["guided_writing", "word_order", "matching", "complete_paragraph", "single_choice"],
+      "plannedLessonIds": ["b1-writing-informal-email"]
+    },
+    {
+      "id": "b1-writing-semi-formal",
+      "level": "B1", "category": "guided-writing", "topic": "b1-writing-semi-formal-email", "subtopic": "b1-writing-semi-formal-email",
+      "skills": ["b1-writing-semi-formal-email"],
+      "learningObjectives": ["Elegir saludo, petición y cierre adecuados a un destinatario no íntimo.", "Transformar expresiones demasiado informales sin volver el mensaje artificialmente formal."],
+      "prerequisites": ["b1-writing-informal-email"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["guided_writing", "sentence_transformation", "matching", "complete_dialogue", "single_choice"],
+      "plannedLessonIds": ["b1-writing-semi-formal-email"]
+    },
+    {
+      "id": "b1-writing-story",
+      "level": "B1", "category": "guided-writing", "topic": "b1-writing-story-sequencing", "subtopic": "b1-writing-story-sequencing",
+      "skills": ["b1-writing-story-sequencing"],
+      "learningObjectives": ["Ordenar situación inicial, incidente, reacción y desenlace.", "Elegir tiempos narrativos y conectores temporales coherentes."],
+      "prerequisites": ["b1-grammar-past-perfect-narratives", "b1-grammar-basic-linking-words"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["guided_writing", "word_order", "complete_paragraph", "gapped_text", "matching"],
+      "plannedLessonIds": ["b1-writing-story-sequencing"]
+    },
+    {
+      "id": "b1-writing-opinion",
+      "level": "B1", "category": "guided-writing", "topic": "b1-writing-opinion-article", "subtopic": "b1-writing-opinion-article",
+      "skills": ["b1-writing-opinion-article"],
+      "learningObjectives": ["Construir párrafos con opinión, razón y ejemplo.", "Elegir título, apertura y cierre adecuados para un artículo breve."],
+      "prerequisites": ["b1-grammar-basic-linking-words", "b1-reading-opinion-purpose"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["guided_writing", "matching", "complete_paragraph", "single_choice", "word_order"],
+      "plannedLessonIds": ["b1-writing-opinion-article"]
+    },
+    {
+      "id": "b1-writing-review",
+      "level": "B1", "category": "guided-writing", "topic": "b1-writing-review-description", "subtopic": "b1-writing-review-description",
+      "skills": ["b1-writing-review-description"],
+      "learningObjectives": ["Separar descripción, valoración y recomendación.", "Elegir adjetivos y modificadores que expresen una evaluación precisa."],
+      "prerequisites": ["b1-grammar-comparatives-superlatives", "b1-vocabulary-leisure-sport-entertainment"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["guided_writing", "matching", "single_choice", "complete_paragraph", "vocabulary_in_context"],
+      "plannedLessonIds": ["b1-writing-review-description"]
+    },
+    {
+      "id": "b2-writing-essay",
+      "level": "B2", "category": "guided-writing", "topic": "b2-writing-essay-structure", "subtopic": "b2-writing-essay-structure",
+      "skills": ["b2-writing-essay-structure"],
+      "learningObjectives": ["Organizar introducción, argumentos, contraargumento y conclusión.", "Seleccionar thesis statements y topic sentences que respondan exactamente a la tarea."],
+      "prerequisites": ["b1-writing-opinion-article", "b2-reading-argument-evidence"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["guided_writing", "matching", "word_order", "complete_paragraph", "gapped_text"],
+      "plannedLessonIds": ["b2-writing-essay-structure"]
+    },
+    {
+      "id": "b2-writing-formal-email",
+      "level": "B2", "category": "guided-writing", "topic": "b2-writing-formal-email", "subtopic": "b2-writing-formal-email",
+      "skills": ["b2-writing-formal-email"],
+      "learningObjectives": ["Elegir registro, cortesía, petición, queja y cierre formal.", "Reformular lenguaje directo mediante estructuras precisas y no ambiguas."],
+      "prerequisites": ["b1-writing-semi-formal-email", "b2-use-of-english-register-rewriting"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["guided_writing", "sentence_transformation", "matching", "complete_paragraph", "single_choice"],
+      "plannedLessonIds": ["b2-writing-formal-email"]
+    },
+    {
+      "id": "b2-writing-article-review",
+      "level": "B2", "category": "guided-writing", "topic": "b2-writing-article-review", "subtopic": "b2-writing-article-review",
+      "skills": ["b2-writing-article-review"],
+      "learningObjectives": ["Distinguir propósito, audiencia y estructura de artículo y reseña.", "Combinar descripción, evaluación, ejemplo y recomendación con voz coherente."],
+      "prerequisites": ["b1-writing-review-description", "b2-reading-attitude-tone"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["guided_writing", "matching", "complete_paragraph", "single_choice", "gapped_text"],
+      "plannedLessonIds": ["b2-writing-article-review"]
+    },
+    {
+      "id": "b2-writing-report",
+      "level": "B2", "category": "guided-writing", "topic": "b2-writing-report", "subtopic": "b2-writing-report",
+      "skills": ["b2-writing-report"],
+      "learningObjectives": ["Organizar informe con encabezados, hallazgos y recomendaciones.", "Elegir registro impersonal y verbos que distingan evidencia de propuesta."],
+      "prerequisites": ["b2-writing-formal-email", "b2-reading-argument-evidence"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["guided_writing", "matching", "complete_paragraph", "sentence_transformation", "single_choice"],
+      "plannedLessonIds": ["b2-writing-report"]
+    },
+    {
+      "id": "b2-writing-cohesion",
+      "level": "B2", "category": "guided-writing", "topic": "b2-writing-argument-cohesion", "subtopic": "b2-writing-argument-cohesion",
+      "skills": ["b2-writing-argument-cohesion"],
+      "learningObjectives": ["Conectar afirmaciones, evidencia, concesión y conclusión sin sobrecargar el texto.", "Corregir referencias vagas, repetición y progresión temática deficiente."],
+      "prerequisites": ["b2-writing-essay-structure", "b2-grammar-advanced-connectors-discourse"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["guided_writing", "gapped_text", "complete_paragraph", "matching", "error_correction"],
+      "plannedLessonIds": ["b2-writing-argument-cohesion"]
+    },
+    {
+      "id": "b1-phrasal-everyday",
+      "level": "B1", "category": "phrasal-verbs", "topic": "b1-phrasal-everyday-actions", "subtopic": "b1-phrasal-everyday-actions",
+      "skills": ["get-up", "look-after"],
+      "learningObjectives": ["Usar phrasal verbs frecuentes para rutinas, ropa, aparatos y cuidado.", "Distinguir partículas separables e inseparables con pronombres."],
+      "prerequisites": ["b1-vocabulary-daily-routines-life"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["phrasal_verb_choice", "matching", "fill_blank", "complete_dialogue", "error_correction"],
+      "plannedLessonIds": ["b1-phrasal-verbs-everyday-actions"]
+    },
+    {
+      "id": "b1-phrasal-travel",
+      "level": "B1", "category": "phrasal-verbs", "topic": "b1-phrasal-travel-services", "subtopic": "b1-phrasal-travel-services",
+      "skills": ["check-in", "run-out-of"],
+      "learningObjectives": ["Usar phrasal verbs de llegada, salida, registro, avería y recursos.", "Elegir el verbo correcto a partir de situaciones de viaje y servicio."],
+      "prerequisites": ["b1-vocabulary-travel-transport"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["phrasal_verb_choice", "matching", "fill_blank", "complete_dialogue", "vocabulary_in_context"],
+      "plannedLessonIds": ["b1-phrasal-verbs-travel-services"]
+    },
+    {
+      "id": "b1-phrasal-study",
+      "level": "B1", "category": "phrasal-verbs", "topic": "b1-phrasal-study-relationships", "subtopic": "b1-phrasal-study-relationships",
+      "skills": ["b1-phrasal-study-relationships"],
+      "learningObjectives": ["Usar phrasal verbs de continuidad, abandono, búsqueda, descubrimiento y relación.", "Distinguir significado composicional de significado idiomático frecuente."],
+      "prerequisites": ["b1-vocabulary-education-study", "b1-vocabulary-family-relationships"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["phrasal_verb_choice", "matching", "fill_blank", "vocabulary_in_context", "error_correction"],
+      "plannedLessonIds": ["b1-phrasal-verbs-study-relationships"]
+    },
+    {
+      "id": "b2-phrasal-change",
+      "level": "B2", "category": "phrasal-verbs", "topic": "b2-phrasal-change-progress", "subtopic": "b2-phrasal-change-progress",
+      "skills": ["bring-about", "carry-out"],
+      "learningObjectives": ["Usar phrasal verbs para causar, ejecutar, reducir, avanzar y terminar procesos.", "Distinguir combinaciones adecuadas a contextos formales y neutrales."],
+      "prerequisites": ["b1-phrasal-verbs-study-relationships"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["phrasal_verb_choice", "multiple_choice_cloze", "matching", "fill_blank", "key_word_transformation"],
+      "plannedLessonIds": ["b2-phrasal-verbs-change-progress"]
+    },
+    {
+      "id": "b2-phrasal-work",
+      "level": "B2", "category": "phrasal-verbs", "topic": "b2-phrasal-work-problems", "subtopic": "b2-phrasal-work-problems",
+      "skills": ["come-up-with", "sort-out"],
+      "learningObjectives": ["Usar phrasal verbs para idear, investigar, resolver, aplazar y descartar.", "Elegir partículas según significado y patrón transitivo."],
+      "prerequisites": ["b1-vocabulary-work-jobs", "b2-vocabulary-career-business"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["phrasal_verb_choice", "multiple_choice_cloze", "matching", "fill_blank", "error_correction"],
+      "plannedLessonIds": ["b2-phrasal-verbs-work-problems"]
+    },
+    {
+      "id": "b2-phrasal-attitudes",
+      "level": "B2", "category": "phrasal-verbs", "topic": "b2-phrasal-attitudes-relationships", "subtopic": "b2-phrasal-attitudes-relationships",
+      "skills": ["put-up-with", "look-up-to"],
+      "learningObjectives": ["Usar phrasal verbs de admiración, desprecio, tolerancia, recuperación y compensación.", "Interpretar actitud y relación interpersonal mediante contexto."],
+      "prerequisites": ["b1-vocabulary-family-relationships"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["phrasal_verb_choice", "multiple_choice_cloze", "matching", "vocabulary_in_context", "error_correction"],
+      "plannedLessonIds": ["b2-phrasal-verbs-attitudes-relationships"]
+    },
+    {
+      "id": "b1-collocations-daily",
+      "level": "B1", "category": "collocations", "topic": "b1-collocations-daily-life", "subtopic": "b1-collocations-daily-life",
+      "skills": ["b1-collocations-daily-life"],
+      "learningObjectives": ["Combinar make, do, have, take, get, keep y pay con nombres frecuentes.", "Evitar combinaciones traducidas literalmente que no son naturales."],
+      "prerequisites": ["b1-vocabulary-daily-routines-life"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["collocation_choice", "matching", "fill_blank", "multiple_choice_cloze", "error_correction"],
+      "plannedLessonIds": ["b1-collocations-daily-life"]
+    },
+    {
+      "id": "b1-collocations-travel-work",
+      "level": "B1", "category": "collocations", "topic": "b1-collocations-travel-work", "subtopic": "b1-collocations-travel-work",
+      "skills": ["b1-collocations-travel-work"],
+      "learningObjectives": ["Usar colocaciones sobre transporte, horarios, tareas, decisiones y progreso.", "Distinguir miss/catch, make/do y spend/save en contexto."],
+      "prerequisites": ["b1-vocabulary-travel-transport", "b1-vocabulary-work-jobs"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["collocation_choice", "matching", "fill_blank", "multiple_choice_cloze", "vocabulary_in_context"],
+      "plannedLessonIds": ["b1-collocations-travel-work"]
+    },
+    {
+      "id": "b2-collocations-academic",
+      "level": "B2", "category": "collocations", "topic": "b2-collocations-academic-business", "subtopic": "b2-collocations-academic-business",
+      "skills": ["b2-collocations-academic-business"],
+      "learningObjectives": ["Usar colocaciones de evidencia, conclusión, atención, progreso y responsabilidad.", "Combinar verbos y nombres adecuados en contextos académicos y profesionales."],
+      "prerequisites": ["b1-collocations-travel-work", "b2-vocabulary-science-research"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["collocation_choice", "multiple_choice_cloze", "matching", "word_formation", "error_correction"],
+      "plannedLessonIds": ["b2-collocations-academic-business"]
+    },
+    {
+      "id": "b2-collocations-impact",
+      "level": "B2", "category": "collocations", "topic": "b2-collocations-impact-attitudes", "subtopic": "b2-collocations-impact-attitudes",
+      "skills": ["b2-collocations-impact-attitudes"],
+      "learningObjectives": ["Usar combinaciones de intensidad y actitud como deeply concerned y strongly recommend.", "Describir impacto con pose a threat, play a role, raise awareness y take into account."],
+      "prerequisites": ["b1-collocations-daily-life", "b2-vocabulary-climate-global-issues"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["collocation_choice", "multiple_choice_cloze", "matching", "vocabulary_in_context", "error_correction"],
+      "plannedLessonIds": ["b2-collocations-impact-attitudes"]
+    },
+    {
+      "id": "b1-prepositions-time-place",
+      "level": "B1", "category": "prepositions", "topic": "b1-prepositions-time-place", "subtopic": "b1-prepositions-time-place",
+      "skills": ["b1-prepositions-time-place"],
+      "learningObjectives": ["Elegir at, on e in para tiempo y lugar con excepciones frecuentes.", "Distinguir posición, evento, superficie, área y punto específico."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["preposition_choice", "fill_blank", "matching", "open_cloze", "error_correction"],
+      "plannedLessonIds": ["b1-prepositions-time-place"]
+    },
+    {
+      "id": "b1-prepositions-movement",
+      "level": "B1", "category": "prepositions", "topic": "b1-prepositions-movement-travel", "subtopic": "b1-prepositions-movement-travel",
+      "skills": ["b1-prepositions-movement-travel"],
+      "learningObjectives": ["Distinguir to, into, onto, through, across, along, past y towards.", "Describir rutas y desplazamientos con origen, dirección y destino claros."],
+      "prerequisites": ["b1-vocabulary-travel-transport"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["preposition_choice", "fill_blank", "matching", "word_order", "error_correction"],
+      "plannedLessonIds": ["b1-prepositions-movement-travel"]
+    },
+    {
+      "id": "b1-dependent-prepositions",
+      "level": "B1", "category": "prepositions", "topic": "b1-dependent-prepositions", "subtopic": "b1-dependent-prepositions",
+      "skills": ["b1-dependent-prepositions"],
+      "learningObjectives": ["Usar combinaciones frecuentes de verbo, adjetivo y nombre con preposición.", "Aprender la unidad léxica completa en lugar de traducir la preposición."],
+      "prerequisites": [],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
+      "compatibleActivityTypes": ["preposition_choice", "matching", "fill_blank", "open_cloze", "error_correction"],
+      "plannedLessonIds": ["b1-dependent-prepositions"]
+    },
+    {
+      "id": "b2-dependent-prepositions",
+      "level": "B2", "category": "prepositions", "topic": "b2-dependent-prepositions", "subtopic": "b2-dependent-prepositions",
+      "skills": ["b2-dependent-prepositions"],
+      "learningObjectives": ["Usar dependencias menos transparentes con verbos, adjetivos y nombres B2.", "Distinguir combinaciones cercanas que cambian significado o patrón."],
+      "prerequisites": ["b1-dependent-prepositions"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["preposition_choice", "multiple_choice_cloze", "open_cloze", "matching", "error_correction"],
+      "plannedLessonIds": ["b2-dependent-prepositions"]
+    },
+    {
+      "id": "b2-prepositions-abstract",
+      "level": "B2", "category": "prepositions", "topic": "b2-prepositions-abstract-relations", "subtopic": "b2-prepositions-abstract-relations",
+      "skills": ["b2-prepositions-abstract-relations"],
+      "learningObjectives": ["Expresar causa, medio, excepción, contraste, proporción y perspectiva mediante preposiciones.", "Distinguir estructuras como due to, owing to, by means of y in contrast to."],
+      "prerequisites": ["b1-prepositions-time-place", "b2-grammar-advanced-connectors-discourse"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["preposition_choice", "multiple_choice_cloze", "open_cloze", "sentence_transformation", "error_correction"],
+      "plannedLessonIds": ["b2-prepositions-abstract-relations"]
+    },
+    {
+      "id": "b2-prepositional-phrases",
+      "level": "B2", "category": "prepositions", "topic": "b2-prepositional-fixed-phrases", "subtopic": "b2-prepositional-fixed-phrases",
+      "skills": ["b2-prepositional-fixed-phrases"],
+      "learningObjectives": ["Usar frases fijas como in charge of, on behalf of, at risk y under pressure.", "Elegir la frase completa por significado, registro y patrón sintáctico."],
+      "prerequisites": ["b1-dependent-prepositions"],
+      "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
+      "compatibleActivityTypes": ["preposition_choice", "multiple_choice_cloze", "matching", "fill_blank", "error_correction"],
+      "plannedLessonIds": ["b2-prepositional-fixed-phrases"]
     }
   ]
 }

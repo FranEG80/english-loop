@@ -91,6 +91,7 @@ export async function validateDataset(
 
   validateUniqueIds(dataset, issues);
   validateTaxonomy(dataset, issues);
+  validateCurriculum(dataset, issues);
   validateReferences(dataset, issues);
   validateCoverage(dataset, issues);
 
@@ -407,12 +408,16 @@ function validateReferences(
   const lessonIds = new Set(
     dataset.lessons.map(({ frontmatter }) => frontmatter.id),
   );
+  const allowedLessonIds = new Set([
+    ...lessonIds,
+    ...dataset.curriculumMap.units.flatMap(({ plannedLessonIds }) => plannedLessonIds),
+  ]);
   const nodes = new Map(dataset.taxonomy.nodes.map((node) => [node.id, node]));
-  const sourceIds = new Set<string>();
+  const sourceIds = new Set(dataset.sources.sources.map(({ id }) => id));
 
   for (const lesson of dataset.lessons) {
     for (const id of [...lesson.frontmatter.prerequisites, ...lesson.frontmatter.relatedLessonIds]) {
-      if (!lessonIds.has(id)) {
+      if (!allowedLessonIds.has(id)) {
         addIssue(
           issues,
           "broken-lesson-reference",
@@ -432,6 +437,16 @@ function validateReferences(
           "broken-taxonomy-reference",
           lesson.relativePath,
           `No existe el nodo ${nodeId}.`,
+        );
+      }
+    }
+    for (const sourceId of lesson.frontmatter.frameworkRefs) {
+      if (!sourceIds.has(sourceId)) {
+        addIssue(
+          issues,
+          "broken-source-reference",
+          lesson.relativePath,
+          `No existe la fuente ${sourceId}.`,
         );
       }
     }
@@ -476,7 +491,6 @@ function validateReferences(
     }
   }
 
-  void sourceIds;
   const lessonActivityCounts = new Map<string, number>();
   for (const activity of dataset.activities.filter(
     ({ status }) => status === "published",
@@ -497,6 +511,96 @@ function validateReferences(
         "lesson-without-activities",
         lesson.relativePath,
         "Una lección publicada debe tener actividades publicadas.",
+      );
+    }
+  }
+}
+
+function validateCurriculum(
+  dataset: LoadedDataset,
+  issues: ValidationIssue[],
+): void {
+  const nodes = new Map(dataset.taxonomy.nodes.map((node) => [node.id, node]));
+  const sourceIds = new Set(dataset.sources.sources.map(({ id }) => id));
+  const actualLessonIds = new Set(
+    dataset.lessons.map(({ frontmatter }) => frontmatter.id),
+  );
+  const plannedLessonIds = dataset.curriculumMap.units.flatMap(
+    ({ plannedLessonIds: ids }) => ids,
+  );
+  const plannedLessonSet = new Set(plannedLessonIds);
+
+  findDuplicates(
+    dataset.curriculumMap.units.map(({ id }) => id),
+    "duplicate-curriculum-unit-id",
+    issues,
+  );
+  findDuplicates(plannedLessonIds, "duplicate-planned-lesson-id", issues);
+
+  for (const unit of dataset.curriculumMap.units) {
+    const location = `catalog/curriculum-map.json#${unit.id}`;
+    for (const nodeId of [
+      unit.category,
+      unit.topic,
+      unit.subtopic,
+      ...unit.skills,
+    ]) {
+      const node = nodes.get(nodeId);
+      if (!node) {
+        addIssue(
+          issues,
+          "broken-taxonomy-reference",
+          location,
+          `No existe el nodo ${nodeId}.`,
+        );
+      } else if (!node.levels.includes(unit.level)) {
+        addIssue(
+          issues,
+          "curriculum-level-mismatch",
+          location,
+          `El nodo ${nodeId} no admite el nivel ${unit.level}.`,
+        );
+      }
+    }
+    for (const sourceId of unit.frameworkRefs) {
+      if (!sourceIds.has(sourceId)) {
+        addIssue(
+          issues,
+          "broken-source-reference",
+          location,
+          `No existe la fuente ${sourceId}.`,
+        );
+      }
+    }
+    for (const prerequisiteId of unit.prerequisites) {
+      if (!plannedLessonSet.has(prerequisiteId)) {
+        addIssue(
+          issues,
+          "broken-curriculum-prerequisite",
+          location,
+          `No existe la lección prerrequisito ${prerequisiteId} en el mapa.`,
+        );
+      }
+    }
+  }
+
+  for (const lessonId of plannedLessonIds) {
+    if (!actualLessonIds.has(lessonId)) {
+      addIssue(
+        issues,
+        "planned-lesson-missing",
+        "catalog/curriculum-map.json",
+        `Falta la lección planificada ${lessonId}.`,
+      );
+    }
+  }
+  for (const lessonId of actualLessonIds) {
+    if (!plannedLessonSet.has(lessonId)) {
+      addIssue(
+        issues,
+        "lesson-not-in-curriculum",
+        lessonId,
+        "La lección no aparece en el mapa curricular.",
       );
     }
   }
@@ -529,6 +633,87 @@ function validateCoverage(
       `Hay ${publishedActivities} actividades publicadas; se requieren ${dataset.coverageTargets.global.minimumActivities}.`,
     );
   }
+
+  const nodes = new Map(dataset.taxonomy.nodes.map((node) => [node.id, node]));
+  const children = new Map<string, string[]>();
+  for (const node of dataset.taxonomy.nodes) {
+    if (node.parentId === null) continue;
+    const direct = children.get(node.parentId) ?? [];
+    direct.push(node.id);
+    children.set(node.parentId, direct);
+  }
+
+  for (const target of dataset.coverageTargets.nodes) {
+    const location = `catalog/coverage-targets.json#${target.level}:${target.taxonomyNodeId}`;
+    const targetNode = nodes.get(target.taxonomyNodeId);
+    if (!targetNode) {
+      addIssue(
+        issues,
+        "broken-coverage-node",
+        location,
+        `No existe el nodo ${target.taxonomyNodeId}.`,
+      );
+      continue;
+    }
+    if (!targetNode.selectableForPractice) {
+      addIssue(
+        issues,
+        "non-selectable-coverage-node",
+        location,
+        "Un objetivo de cobertura debe apuntar a un nodo seleccionable.",
+      );
+    }
+    const acceptedNodeIds = new Set([
+      target.taxonomyNodeId,
+      ...collectDescendantIds(target.taxonomyNodeId, children),
+    ]);
+    const matching = dataset.activities.filter(
+      ({ level, status, taxonomyNodeIds }) =>
+        status === "published" &&
+        level === target.level &&
+        taxonomyNodeIds.some((id) => acceptedNodeIds.has(id)),
+    );
+    const types = new Set(matching.map(({ type }) => type));
+    const difficulties = new Set(matching.map(({ difficulty }) => difficulty));
+
+    if (matching.length < target.minimumActivities) {
+      addIssue(
+        issues,
+        "node-activity-coverage",
+        location,
+        `Hay ${matching.length} actividades; se requieren ${target.minimumActivities}.`,
+      );
+    }
+    if (types.size < target.minimumActivityTypes) {
+      addIssue(
+        issues,
+        "node-type-coverage",
+        location,
+        `Hay ${types.size} tipos; se requieren ${target.minimumActivityTypes}.`,
+      );
+    }
+    const missingDifficulties = target.requiredDifficulties.filter(
+      (difficulty) => !difficulties.has(difficulty as Activity["difficulty"]),
+    );
+    if (missingDifficulties.length > 0) {
+      addIssue(
+        issues,
+        "node-difficulty-coverage",
+        location,
+        `Faltan dificultades: ${missingDifficulties.join(", ")}.`,
+      );
+    }
+  }
+}
+
+function collectDescendantIds(
+  nodeId: string,
+  children: Map<string, string[]>,
+): string[] {
+  return (children.get(nodeId) ?? []).flatMap((childId) => [
+    childId,
+    ...collectDescendantIds(childId, children),
+  ]);
 }
 
 function addIssue(

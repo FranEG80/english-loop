@@ -1,0 +1,162 @@
+{
+  "schemaVersion":"1.0.0",
+  "batchId":"b1-past-perfect-narrative-word-order-001",
+  "level":"B1",
+  "category":"grammar",
+  "topic":"past-tenses",
+  "subtopic":"past-perfect-narrative",
+  "lessonId":"b1-grammar-past-perfect-narratives",
+  "activityType":"word_order",
+  "activities":[
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-001","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":1,
+      "instructions":"Put the chunks in order to show which event happened first.","prompt":"The concert began before your arrival.",
+      "tokens":[{"id":"t1","text":"When we arrived,"},{"id":"t2","text":"the concert"},{"id":"t3","text":"had"},{"id":"t4","text":"started."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El punto de referencia aparece primero y el evento anterior usa «had started»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-002","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":1,
+      "instructions":"Put the chunks in order to explain a past situation.","prompt":"Explain why you were hungry.",
+      "tokens":[{"id":"t1","text":"I was hungry"},{"id":"t2","text":"because I"},{"id":"t3","text":"hadn't eaten"},{"id":"t4","text":"breakfast."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La causa anterior sigue a «because» en past perfect."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-003","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":1,
+      "instructions":"Put the chunks in order to describe an earlier departure.","prompt":"She left before the meeting finished.",
+      "tokens":[{"id":"t1","text":"She had"},{"id":"t2","text":"gone home"},{"id":"t3","text":"before the meeting"},{"id":"t4","text":"ended."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Had gone» marca la salida anterior al final de la reunión."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-004","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":1,
+      "instructions":"Put the chunks in order to make a past perfect question.","prompt":"Ask whether a driver saw a warning before an incident.",
+      "tokens":[{"id":"t1","text":"Had the driver"},{"id":"t2","text":"seen"},{"id":"t3","text":"the warning"},{"id":"t4","text":"before the incident?"}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La pregunta comienza con «Had the driver» y conserva el participio «seen»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-005","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":1,
+      "instructions":"Put the chunks in order to describe completion before a deadline.","prompt":"The inspection was complete by noon.",
+      "tokens":[{"id":"t1","text":"By noon,"},{"id":"t2","text":"we had"},{"id":"t3","text":"finished"},{"id":"t4","text":"the inspection."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El límite «By noon» precede al resultado «had finished»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-006","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":2,
+      "instructions":"Put the chunks in order with natural adverb placement.","prompt":"Omar heard the news before you called.",
+      "tokens":[{"id":"t1","text":"When I called,"},{"id":"t2","text":"Omar had already"},{"id":"t3","text":"heard"},{"id":"t4","text":"the news."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Already» aparece entre «had» y el participio."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-007","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":2,
+      "instructions":"Put the chunks in order to describe an immediately earlier event.","prompt":"The guests left moments before your taxi arrived.",
+      "tokens":[{"id":"t1","text":"The guests"},{"id":"t2","text":"had just left"},{"id":"t3","text":"when our taxi"},{"id":"t4","text":"arrived."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Had just left» sitúa la salida inmediatamente antes de la llegada."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-008","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":2,
+      "instructions":"Put the chunks in order to describe no previous experience.","prompt":"That journey was Nora's first flight.",
+      "tokens":[{"id":"t1","text":"Nora had"},{"id":"t2","text":"never flown"},{"id":"t3","text":"before"},{"id":"t4","text":"that trip."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La experiencia se mide hasta «that trip»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-009","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":2,
+      "instructions":"Put the chunks in order to explain an unsuccessful payment.","prompt":"Your wallet was at home when payment was due.",
+      "tokens":[{"id":"t1","text":"We couldn't pay"},{"id":"t2","text":"because I had"},{"id":"t3","text":"left my wallet"},{"id":"t4","text":"at home."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La causa anterior aparece en «had left my wallet»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-010","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":2,
+      "instructions":"Put the chunks in order to explain a slippery path.","prompt":"Overnight rain caused the later condition.",
+      "tokens":[{"id":"t1","text":"The path was slippery"},{"id":"t2","text":"because it"},{"id":"t3","text":"had rained"},{"id":"t4","text":"overnight."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La lluvia anterior explica el estado posterior."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-011","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":3,
+      "instructions":"Put the chunks in order to show Maya was already absent.","prompt":"Maya's departure happened before your arrival.",
+      "tokens":[{"id":"t1","text":"When I arrived,"},{"id":"t2","text":"Maya"},{"id":"t3","text":"had already"},{"id":"t4","text":"left."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Had already left» indica ausencia previa."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-012","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":3,
+      "instructions":"Put the chunks in order without unnecessary past perfect.","prompt":"Narrate opening, entering and turning on a light in chronological order.",
+      "tokens":[{"id":"t1","text":"I opened the door,"},{"id":"t2","text":"walked inside"},{"id":"t3","text":"and switched on"},{"id":"t4","text":"the light."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La secuencia lineal usa past simple."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-013","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":3,
+      "instructions":"Put the chunks in order for a sequence established by «after».","prompt":"Locking happened before walking to the station.",
+      "tokens":[{"id":"t1","text":"After I"},{"id":"t2","text":"locked the door,"},{"id":"t3","text":"I walked"},{"id":"t4","text":"towards the station."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«After» ya ordena dos eventos en past simple."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-014","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":3,
+      "instructions":"Put the chunks in order to make leaving earlier than returning.","prompt":"You returned after you had left the building.",
+      "tokens":[{"id":"t1","text":"I returned"},{"id":"t2","text":"to check the door"},{"id":"t3","text":"after I had left"},{"id":"t4","text":"the building."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Had left» marca el evento anterior al regreso."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-015","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":3,
+      "instructions":"Put the chunks in order to describe a result before a past limit.","prompt":"A queue existed before the doors opened.",
+      "tokens":[{"id":"t1","text":"By the time"},{"id":"t2","text":"the doors opened,"},{"id":"t3","text":"a long queue"},{"id":"t4","text":"had formed."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El límite pasado sigue a «By the time» y el resultado usa past perfect."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-016","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe a mistaken belief.","prompt":"You believed the document was saved, but it was absent.",
+      "tokens":[{"id":"t1","text":"I thought"},{"id":"t2","text":"I had saved the document,"},{"id":"t3","text":"but the folder"},{"id":"t4","text":"was empty."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El supuesto guardado es anterior al pensamiento y al descubrimiento."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-017","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe a state before later work.","prompt":"Their relationship existed for years before they became colleagues.",
+      "tokens":[{"id":"t1","text":"They had known"},{"id":"t2","text":"each other"},{"id":"t3","text":"for years before"},{"id":"t4","text":"they worked together."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El estado anterior usa «had known»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-018","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":4,
+      "instructions":"Put the chunks in order to show a very short earlier interval.","prompt":"The lift stopped one second before entry.",
+      "tokens":[{"id":"t1","text":"The lift had stopped"},{"id":"t2","text":"only a second"},{"id":"t3","text":"before we"},{"id":"t4","text":"entered it."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La corta distancia temporal no cambia la relación de anterioridad."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-019","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":4,
+      "instructions":"Put the chunks in order to connect a failure and repair.","prompt":"An overnight failure caused an early repair.",
+      "tokens":[{"id":"t1","text":"The server had failed overnight,"},{"id":"t2","text":"so the technician"},{"id":"t3","text":"replaced it before"},{"id":"t4","text":"the office opened."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El fallo anterior se conecta con la reparación posterior."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-020","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe something pending at noon.","prompt":"The replacement had not arrived by the stated time.",
+      "tokens":[{"id":"t1","text":"At noon,"},{"id":"t2","text":"the replacement parcel"},{"id":"t3","text":"hadn't arrived"},{"id":"t4","text":"yet."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Hadn't arrived yet» expresa una acción pendiente en un punto pasado."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-021","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":5,
+      "instructions":"Put the chunks in order to identify an item's earlier origin.","prompt":"The supplier sent a part that you later found in a box.",
+      "tokens":[{"id":"t1","text":"I opened the box"},{"id":"t2","text":"and found the part"},{"id":"t3","text":"that the supplier"},{"id":"t4","text":"had sent."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La relativa en past perfect identifica el envío anterior."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-022","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":5,
+      "instructions":"Put the chunks in order to connect an earlier mistake to a later result.","prompt":"A wrong path caused arrival from another direction.",
+      "tokens":[{"id":"t1","text":"We had taken"},{"id":"t2","text":"the wrong path,"},{"id":"t3","text":"so we reached the village"},{"id":"t4","text":"from the opposite direction."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La causa anterior usa past perfect y el resultado past simple."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-023","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":5,
+      "instructions":"Put the chunks in order, moving back once and then narrating normally.","prompt":"Lena first missed a bus; she then called and waited.",
+      "tokens":[{"id":"t1","text":"Lena had missed the bus,"},{"id":"t2","text":"so she called us"},{"id":"t3","text":"and waited"},{"id":"t4","text":"for the next one."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Past perfect abre el retroceso; los eventos siguientes usan past simple."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-024","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":5,
+      "instructions":"Put the chunks in order to ask about earlier experience.","prompt":"Ask about software use before training.",
+      "tokens":[{"id":"t1","text":"Had Ravi"},{"id":"t2","text":"used the software"},{"id":"t3","text":"before the training"},{"id":"t4","text":"began?"}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La pregunta comienza con «Had Ravi used»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-perfect-narrative-wo-025","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-perfect-narrative","taxonomyNodeIds":["past-perfect-narrative"],"difficulty":5,
+      "instructions":"Put the chunks in order without unnecessary past perfect.","prompt":"Narrate scanning, entering and finding a seat chronologically.",
+      "tokens":[{"id":"t1","text":"I scanned my ticket,"},{"id":"t2","text":"entered the hall"},{"id":"t3","text":"and found"},{"id":"t4","text":"my seat."}],"lessonIds":["b1-grammar-past-perfect-narratives"],"tags":["b1","past-perfect","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La secuencia directa usa past simple."
+    }
+  ]
+}

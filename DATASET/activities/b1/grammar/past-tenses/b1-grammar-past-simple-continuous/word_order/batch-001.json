@@ -1,0 +1,162 @@
+{
+  "schemaVersion":"1.0.0",
+  "batchId":"b1-past-simple-continuous-word-order-001",
+  "level":"B1",
+  "category":"grammar",
+  "topic":"past-tenses",
+  "subtopic":"past-simple-vs-continuous",
+  "lessonId":"b1-grammar-past-simple-continuous",
+  "activityType":"word_order",
+  "activities":[
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-001","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":1,
+      "instructions":"Put the chunks in order to describe an action in progress.","prompt":"Describe what was happening outside the theatre at eight.",
+      "tokens":[{"id":"t1","text":"At eight,"},{"id":"t2","text":"we were waiting"},{"id":"t3","text":"outside"},{"id":"t4","text":"the theatre."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La referencia horaria precede a «we were waiting»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-002","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":1,
+      "instructions":"Put the chunks in order to describe a completed event.","prompt":"State when the meeting finished.",
+      "tokens":[{"id":"t1","text":"The meeting"},{"id":"t2","text":"ended"},{"id":"t3","text":"at"},{"id":"t4","text":"4.15."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El sujeto va seguido del evento completo «ended» y su hora."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-003","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":1,
+      "instructions":"Put the chunks in order to describe an interruption.","prompt":"A call interrupted your journey home.",
+      "tokens":[{"id":"t1","text":"I was walking"},{"id":"t2","text":"home"},{"id":"t3","text":"when Marta"},{"id":"t4","text":"called."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La actividad en curso precede al evento introducido por «when»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-004","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":1,
+      "instructions":"Put the chunks in order to describe simultaneous actions.","prompt":"Describe two dinner preparations happening together.",
+      "tokens":[{"id":"t1","text":"While I was cooking,"},{"id":"t2","text":"Leo was"},{"id":"t3","text":"setting"},{"id":"t4","text":"the table."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«While» conecta dos actividades en progreso."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-005","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":1,
+      "instructions":"Put the chunks in order to make a sentence with a stative verb.","prompt":"Say that you had the answer but remained silent.",
+      "tokens":[{"id":"t1","text":"I knew"},{"id":"t2","text":"the answer,"},{"id":"t3","text":"but I"},{"id":"t4","text":"stayed quiet."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El verbo de estado usa «knew», seguido del contraste."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-006","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":2,
+      "instructions":"Put the chunks in order to make a negative past continuous sentence.","prompt":"Explain why a knock surprised you.",
+      "tokens":[{"id":"t1","text":"We weren't"},{"id":"t2","text":"expecting"},{"id":"t3","text":"any"},{"id":"t4","text":"visitors."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La negativa plural sigue «weren't + -ing»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-007","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":2,
+      "instructions":"Put the chunks in order to make a past continuous question.","prompt":"Ask whether Maya was asleep when the alarm sounded.",
+      "tokens":[{"id":"t1","text":"Was Maya"},{"id":"t2","text":"sleeping"},{"id":"t3","text":"when the alarm"},{"id":"t4","text":"went off?"}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La pregunta empieza con «Was Maya sleeping»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-008","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":2,
+      "instructions":"Put the chunks in order to describe an interruption.","prompt":"The lights failed during dinner.",
+      "tokens":[{"id":"t1","text":"The lights"},{"id":"t2","text":"went out"},{"id":"t3","text":"while we were"},{"id":"t4","text":"having dinner."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El evento completo aparece antes de la actividad con «while»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-009","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":2,
+      "instructions":"Put the chunks in order to describe activity before a signal.","prompt":"The children were moving when the whistle sounded.",
+      "tokens":[{"id":"t1","text":"The children"},{"id":"t2","text":"were running"},{"id":"t3","text":"when the whistle"},{"id":"t4","text":"blew."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La carrera en curso precede al evento «the whistle blew»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-010","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":2,
+      "instructions":"Put the chunks in order to make a completed sequence.","prompt":"Order the actions performed before leaving.",
+      "tokens":[{"id":"t1","text":"I saved the file,"},{"id":"t2","text":"closed the laptop"},{"id":"t3","text":"and left"},{"id":"t4","text":"the office."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Los tres eventos completos siguen su orden narrativo."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-011","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":3,
+      "instructions":"Put the chunks in order to describe a temporary background.","prompt":"A summer job in Madrid was the setting for meeting Jo.",
+      "tokens":[{"id":"t1","text":"I met Jo"},{"id":"t2","text":"while I was working"},{"id":"t3","text":"in Madrid"},{"id":"t4","text":"for the summer."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El encuentro es el evento y el trabajo temporal constituye el fondo."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-012","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":3,
+      "instructions":"Put the chunks in order to describe a completed period.","prompt":"Describe residence by the coast before moving inland.",
+      "tokens":[{"id":"t1","text":"I lived"},{"id":"t2","text":"near the coast"},{"id":"t3","text":"until I moved"},{"id":"t4","text":"inland."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Ambos eventos se presentan como periodos o cambios completos."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-013","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":3,
+      "instructions":"Put the chunks in order to express a past opinion.","prompt":"State your opinion of the plan.",
+      "tokens":[{"id":"t1","text":"I thought"},{"id":"t2","text":"the plan"},{"id":"t3","text":"was"},{"id":"t4","text":"too risky."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Thought» expresa una opinión pasada."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-014","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":3,
+      "instructions":"Put the chunks in order to describe an interrupted thought process.","prompt":"A call interrupted your consideration of another route.",
+      "tokens":[{"id":"t1","text":"I was thinking"},{"id":"t2","text":"about changing the route"},{"id":"t3","text":"when you"},{"id":"t4","text":"called."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El proceso mental estaba en curso cuando llegó la llamada."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-015","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":3,
+      "instructions":"Put the chunks in order to build a narrative background.","prompt":"Describe the weather and people as shops were closing.",
+      "tokens":[{"id":"t1","text":"Rain was falling"},{"id":"t2","text":"and people were"},{"id":"t3","text":"hurrying home"},{"id":"t4","text":"as the shops closed."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":55,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Las dos acciones continuas crean el fondo del cierre."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-016","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe a deliberate action in progress.","prompt":"The alarm interrupted the chef's check of the sauce.",
+      "tokens":[{"id":"t1","text":"The chef was tasting"},{"id":"t2","text":"the sauce"},{"id":"t3","text":"when the alarm"},{"id":"t4","text":"sounded."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Was tasting» es la acción deliberada que estaba en progreso."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-017","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe a past property.","prompt":"Explain why the sauce was not served.",
+      "tokens":[{"id":"t1","text":"The sauce tasted"},{"id":"t2","text":"unusually bitter,"},{"id":"t3","text":"so we didn't"},{"id":"t4","text":"serve it."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Tasted» describe una propiedad que explica la decisión."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-018","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe a completed long period.","prompt":"Describe five years of work before a move.",
+      "tokens":[{"id":"t1","text":"She worked"},{"id":"t2","text":"in Nairobi"},{"id":"t3","text":"for five years"},{"id":"t4","text":"before moving away."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La duración completa usa past simple."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-019","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":4,
+      "instructions":"Put the chunks in order to describe an ongoing warning.","prompt":"Explain why you switched the machine off.",
+      "tokens":[{"id":"t1","text":"The warning light"},{"id":"t2","text":"was flashing,"},{"id":"t3","text":"so I switched"},{"id":"t4","text":"the machine off."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El aviso estaba activo antes de la decisión completa."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-020","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":4,
+      "instructions":"Put the chunks in order to emphasize an irritating habit.","prompt":"Complain about repeated borrowing without permission.",
+      "tokens":[{"id":"t1","text":"He was always"},{"id":"t2","text":"borrowing"},{"id":"t3","text":"my charger"},{"id":"t4","text":"without asking."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":60,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Was always borrowing» presenta el hábito como molesto."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-021","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":5,
+      "instructions":"Put the chunks in order to contrast parallel work with a later event.","prompt":"Two groups worked simultaneously before the supervisor checked.",
+      "tokens":[{"id":"t1","text":"While one group was collecting samples,"},{"id":"t2","text":"the other was recording data;"},{"id":"t3","text":"then the supervisor"},{"id":"t4","text":"checked the results."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Las primeras actividades son paralelas; «checked» hace avanzar la narración."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-022","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":5,
+      "instructions":"Put the chunks in order to narrate a failure and response.","prompt":"The GPS failed during navigation, so you changed tools.",
+      "tokens":[{"id":"t1","text":"We were following the route"},{"id":"t2","text":"when the GPS stopped working,"},{"id":"t3","text":"so we used"},{"id":"t4","text":"a paper map."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El fondo continuo precede al fallo y la respuesta completos."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-023","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":5,
+      "instructions":"Put the chunks in order to contrast a state and an activity.","prompt":"You held an opinion while an analyst checked figures.",
+      "tokens":[{"id":"t1","text":"I believed"},{"id":"t2","text":"the figures were wrong"},{"id":"t3","text":"while the analyst"},{"id":"t4","text":"was checking them."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"El estado usa «believed» y la actividad «was checking»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-024","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":5,
+      "instructions":"Put the chunks in order to place an arrival inside an ongoing test.","prompt":"The technicians were testing when the inspector arrived.",
+      "tokens":[{"id":"t1","text":"When the inspector arrived,"},{"id":"t2","text":"the technicians"},{"id":"t3","text":"were running"},{"id":"t4","text":"the final safety test."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"La llegada completa ocurre durante la prueba en progreso."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-past-simple-continuous-wo-025","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"past-tenses","subtopic":"past-simple-vs-continuous","taxonomyNodeIds":["past-simple-vs-continuous"],"difficulty":5,
+      "instructions":"Put the chunks in order to build a changing weather scene.","prompt":"The wind increased during the crossing and stopped at the shelter.",
+      "tokens":[{"id":"t1","text":"The wind was blowing harder"},{"id":"t2","text":"as we were crossing the ridge,"},{"id":"t3","text":"but it stopped"},{"id":"t4","text":"at the shelter."}],"lessonIds":["b1-grammar-past-simple-continuous"],"tags":["b1","past-tenses","word-order"],"estimatedSeconds":65,
+      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Las acciones continuas crean el fondo; «stopped» marca el cambio."
+    }
+  ]
+}

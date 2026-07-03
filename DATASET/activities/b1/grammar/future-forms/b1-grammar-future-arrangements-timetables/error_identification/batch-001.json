@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "batchId": "b1-future-time-clauses-error-identification-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "future-time-clauses",
+  "lessonId": "b1-grammar-future-arrangements-timetables",
+  "activityType": "error_identification",
+  "activities": [
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-001","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":1,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I'll call you when I arrive at the hotel.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":30,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"No hay error: tras «when» usamos presente simple («arrive») aunque la llegada sea futura."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-002","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":1,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"We'll eat as soon as Dad will get home.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":30,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"Hay un error: después de «as soon as» debe decir «Dad gets home», sin «will»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-003","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":1,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"Please lock the door before you leave.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":30,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"No hay error: «before you leave» usa presente simple para una acción futura."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-004","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":1,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I won't start cooking until you will be here.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":30,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"Tras «until» usamos presente: la forma adecuada es «until you are here»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-005","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":1,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"We'll have coffee after the meeting finishes.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":30,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La oración es correcta: «finishes» aparece en presente después de «after»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-006","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":2,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"Once the rain stops, we'll continue the match.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":35,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"No hay error: «once» introduce «stops» en presente y la principal lleva «will»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-007","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":2,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"Once the rain will stop, we'll continue the match.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":35,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"La cláusula con «once» no admite «will» en este uso: debe ser «Once the rain stops»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-008","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":2,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I'll send the form back as soon as I complete it.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":35,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La secuencia es correcta: «complete» está en presente tras «as soon as»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-009","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":2,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"Before the guests will arrive, we'll put the drinks in the fridge.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":35,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"Después de «before» corresponde presente simple: «Before the guests arrive»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-010","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":2,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"We'll stay inside until the storm passes.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":35,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"Es correcta: «until» va seguido del presente «passes» para marcar el límite futuro."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-011","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":3,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"When the new term begins, I will join the evening class.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":40,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La cláusula temporal usa correctamente «begins» y la consecuencia futura usa «will join»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-012","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":3,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I'll keep the receipt in case we need to return the headphones.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":40,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"No hay error: «in case» se combina con presente para una posible necesidad futura."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-013","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":3,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I'll keep the receipt in case we will need to return the headphones.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":40,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"Con «in case» no usamos normalmente «will» para esta posibilidad: debe decir «in case we need»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-014","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":3,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"After you have read the instructions, the system will ask you to confirm.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":40,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"Es correcta: el presente perfecto «have read» puede enfatizar que la lectura estará terminada antes del siguiente paso."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-015","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":3,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"We'll wait here until the technician has checked the lift.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":40,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"El presente perfecto tras «until» es válido porque destaca la finalización de la comprobación."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-016","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":4,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"As soon as the payment will have arrived, we will dispatch your order.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"La subordinada debe usar presente perfecto: «As soon as the payment has arrived»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-017","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":4,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I'll decide which route to take when I see the traffic report.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La decisión es futura, pero la cláusula temporal usa correctamente el presente «see»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-018","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":4,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"When will you see the traffic report?","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"No hay error: aquí «when» introduce una pregunta directa, no una cláusula temporal subordinada, y admite «will»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-019","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":4,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I don't know when the replacement part will arrive.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"Es correcta: «when» introduce una pregunta indirecta sobre el momento, no una condición temporal para otra acción."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-020","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":4,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I don't know when will the replacement part arrive.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":45,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"La pregunta indirecta mantiene orden afirmativo: «when the replacement part will arrive»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-021","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":5,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"By the time the audience enters, the musicians will be ready.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"«By the time» lleva presente «enters» y la situación posterior se expresa con «will be»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-022","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":5,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"By the time the audience will enter, the musicians will be ready.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"boolean","correct":true},"explanation":"En la cláusula con «by the time» debe usarse presente: «the audience enters»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-023","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":5,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"The moment the results are available, the university will publish them online.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La expresión temporal «the moment» se combina correctamente con presente «are»."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-024","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":5,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"I'll back up the files before I install the update.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La subordinada con «before» usa presente «install» y la principal expresa la decisión futura."
+    },
+    {
+      "schemaVersion":"1.0.0","id":"b1-future-time-clauses-ei-025","status":"published","autoGradable":true,"level":"B1","type":"error_identification","category":"grammar","topic":"future-forms","subtopic":"future-time-clauses","taxonomyNodeIds":["future-time-clauses"],"difficulty":5,
+      "instructions":"Decide whether the sentence contains an error in its future time clause.","prompt":"We will not know the exact cost until the engineer completes the inspection.","lessonIds":["b1-grammar-future-arrangements-timetables"],"tags":["b1","future-forms","time-clauses"],"estimatedSeconds":50,
+      "evaluator":{"strategy":"boolean","correct":false},"explanation":"La estructura es correcta: «until» introduce el presente «completes» y la principal usa «will not know»."
+    }
+  ]
+}
