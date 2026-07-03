@@ -55,7 +55,7 @@ export default async function DashboardPage() {
 
         <div className="grid auto-rows-[minmax(9rem,auto)] gap-4 md:grid-cols-6">
           <Link
-            href="/"
+            href="/daily/lesson"
             className="ink-card group relative overflow-hidden rounded-[2rem] bg-primary-dark p-7 text-white md:col-span-4 md:row-span-2"
           >
             <p className="text-xs font-black uppercase tracking-[.18em] text-accent">

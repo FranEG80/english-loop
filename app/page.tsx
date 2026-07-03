@@ -10,6 +10,7 @@ import { getDictionary } from "@/shared/i18n";
 import { PublicShell } from "@/shared/layout/PublicShell";
 import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
 import { Landing } from "@/features/landing/Landing";
+import DashboardPage from "./dashboard/page";
 
 const TIMEZONE = "UTC";
 
@@ -33,12 +34,17 @@ export default async function RootPage() {
   );
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
-      {dailyLoop.lesson ? (
-        <DailyLessonView dictionary={dictionary} lesson={dailyLoop.lesson} />
-      ) : (
-        <p>{dictionary.states.emptyTitle}</p>
-      )}
-    </WorkspaceShell>
-  );
+    <DashboardPage />
+  )
+
+  // return (
+  //   <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
+  //     {dailyLoop.lesson ? (
+  //       <DashboardPage />
+  //       // <DailyLessonView dictionary={dictionary} lesson={dailyLoop.lesson} />
+  //     ) : (
+  //       <p>{dictionary.states.emptyTitle}</p>
+  //     )}
+  //   </WorkspaceShell>
+  // );
 }
