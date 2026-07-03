@@ -2,6 +2,8 @@
 
 Before starting a task, consult the `codebase-memory-mcp` knowledge graph index to discover the available skills and use any skill relevant to the request. If the graph index does not contain enough information about the required skill, inspect the `.agents/` directory for additional project-specific skills and instructions.
 
+Call read-only codebase-memory-mcp tools automatically whenever useful. Do not ask for confirmation before querying the knowledge graph.
+
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
