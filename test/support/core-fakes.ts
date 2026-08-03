@@ -23,7 +23,7 @@ import type { DomainEvent, UnitOfWorkPort } from "@/core/shared/kernel";
 export const actor: Actor = { userId: "user-1", name: "Test", email: "test@example.com", activeLevels: ["B1", "B2"] };
 export const identity: IdentityPort = { getActor: async () => actor, requireActor: async () => actor };
 export const clock = { now: () => new Date("2026-08-03T22:00:00.000Z"), nowIso: () => "2026-08-03T22:00:00.000Z" };
-export const random = { int: (_max: number) => 0, float: () => 0, shuffle: <T>(items: readonly T[]) => [...items] };
+export const random = { int: (max: number) => { void max; return 0; }, float: () => 0, shuffle: <T>(items: readonly T[]) => [...items] };
 export const uow: UnitOfWorkPort = { transaction: async (work) => work() };
 let nextId = 0;
 export const ids = { generate: () => `id-${++nextId}` };
@@ -135,4 +135,4 @@ export function collectEvents() {
   return { events, dispatcher: { dispatch: async (items: DomainEvent[]) => { events.push(...items); } } };
 }
 
-export const lessonProgress: LessonProgressRepository = { findByUserId: async () => [], upsert: async (_record: LessonProgressRecord) => {} };
+export const lessonProgress: LessonProgressRepository = { findByUserId: async () => [], upsert: async (record: LessonProgressRecord) => { void record; } };

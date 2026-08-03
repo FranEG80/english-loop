@@ -15,7 +15,7 @@ describe("authMockAdapter", () => {
 
   it("logs in valid credentials, reads the session and logs out", async () => {
     await expect(authMockAdapter.getSession()).resolves.toBeNull();
-    const session = await authMockAdapter.login({ email: "demo@example.com", password: "english-loop" });
+    const session = await authMockAdapter.login({ email: "alex@example.com", password: "password123" });
     expect(session.userId).toBeTruthy();
     await expect(authMockAdapter.getSession()).resolves.toEqual(session);
     await authMockAdapter.logout();

@@ -1,6 +1,5 @@
 import type { FocusedPracticePort } from "@/core/ports";
 import type {
-  CefrLevel,
   CefrLevelFilter,
   PracticeRunDto,
   PracticeScopeAvailabilityDto,

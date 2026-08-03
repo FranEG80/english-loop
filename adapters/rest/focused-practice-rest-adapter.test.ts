@@ -5,7 +5,10 @@ afterEach(() => vi.unstubAllGlobals());
 
 describe("focusedPracticeRestAdapter", () => {
   it("uses canonical scope, run, attempt and summary endpoints", async () => {
-    const fetchMock = vi.fn(async () => new Response("{}", { status: 200 }));
+    const fetchMock = vi.fn(async (...args: Parameters<typeof fetch>) => {
+      void args;
+      return new Response("{}", { status: 200 });
+    });
     vi.stubGlobal("fetch", fetchMock);
     await focusedPracticeRestAdapter.getScopeAvailability("topic");
     await focusedPracticeRestAdapter.createRun({ taxonomyNodeId: "topic", level: "both", sessionSize: 5 });

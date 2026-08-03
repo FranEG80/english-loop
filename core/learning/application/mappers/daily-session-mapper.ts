@@ -11,10 +11,6 @@ export function toDailySessionDto(
   const pendingLessons = session.lessons.filter(
     (lesson) => lesson.status === "pending",
   );
-  const completedLessons = session.lessons.filter(
-    (lesson) => lesson.status === "completed",
-  );
-
   return {
     id: session.id,
     date: session.date,

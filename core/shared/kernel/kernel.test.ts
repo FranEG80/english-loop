@@ -53,7 +53,7 @@ describe("shared kernel", () => {
 
   it("keeps clock and random source deterministic through ports", () => {
     const clock = { now: () => new Date("2026-08-03T10:00:00.000Z"), nowIso: () => "2026-08-03T10:00:00.000Z" };
-    const random = { int: (_max: number) => 1, float: () => 0.5, shuffle: <T>(items: readonly T[]) => [...items].reverse() };
+    const random = { int: (max: number) => Math.min(1, max), float: () => 0.5, shuffle: <T>(items: readonly T[]) => [...items].reverse() };
     expect(clock.nowIso()).toBe("2026-08-03T10:00:00.000Z");
     expect(random.int(3)).toBe(1);
     expect(random.shuffle([1, 2, 3])).toEqual([3, 2, 1]);

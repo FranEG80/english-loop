@@ -4,7 +4,6 @@ import { withErrorHandling } from "@/server/infrastructure/http/with-error-handl
 import { createFocusedPracticeRun } from "@/core/practice/application/use-cases/create-focused-practice-run";
 import { toPracticeRunDto } from "@/core/practice/application/mappers/practice-run-mapper";
 import { ValidationException } from "@/core/shared/exceptions";
-import type { CefrLevelFilter } from "@/core/models/level";
 import { isCefrLevelFilter } from "@/core/models/level";
 import { createPracticeRunBodySchema, parseRequest } from "@/server/infrastructure/http/request-schemas";
 
