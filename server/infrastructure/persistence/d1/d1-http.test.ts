@@ -128,6 +128,8 @@ describe("D1 persistence boundary", () => {
     });
 
     await expect(client.batch([{ name: "health" }, { name: "activeCatalogMetadata" }])).resolves.toHaveLength(2);
-    await expect(client.batch([])).rejects.toThrow("between 1 and 100");
+    await expect(client.batch([])).rejects.toMatchObject({
+      message: expect.stringContaining("between 1 and 100"),
+    });
   });
 });

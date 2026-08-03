@@ -1,6 +1,6 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
-import type { ActivityResponseValue } from "@/core/models/attempt";
+import type { ActivityResponseValue } from "@/core/models/types/attempt";
 import {
   UniqueId,
   type ClockPort,

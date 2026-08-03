@@ -1,4 +1,4 @@
-import type { TaxonomyNode } from "../../domain/taxonomy";
+import type { TaxonomyNode } from "../../domain/types/taxonomy";
 import type { TaxonomyCatalogPort } from "../../ports/catalog-ports";
 
 /** Devuelve el árbol de taxonomía completo. */

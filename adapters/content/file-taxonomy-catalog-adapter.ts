@@ -1,7 +1,7 @@
 import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import type { TaxonomyNode } from "@/core/content/domain/taxonomy";
+import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
 import type { ContentVersion } from "@/core/content/domain/content-version";
 import type { TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
-import type { Activity } from "@/core/content/domain/activity";
+import type { Activity } from "@/core/content/domain/types/activity";
 import type { TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
-import type { TaxonomyNode } from "@/core/content/domain/taxonomy";
+import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
 import type { ProgressRepository } from "@/core/progress/ports/progress-repository";
 import type { ReviewRepository } from "@/core/progress/ports/review-repository";
 import { ReviewItem } from "@/core/progress/domain/review-item";

@@ -1,5 +1,5 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
-import type { TaxonomyProgressDto } from "@/core/models/progress";
+import type { TaxonomyProgressDto } from "@/core/models/types/progress";
 import type { ProgressRepository } from "../../ports/progress-repository";
 
 export async function getTaxonomyProgress(

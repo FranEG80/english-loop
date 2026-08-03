@@ -1,5 +1,5 @@
-import type { ActivityHistoryDto, ProgressOverviewDto, TaxonomyProgressDto } from "../models/progress";
-import type { ReviewQueueDto } from "../models/review";
+import type { ActivityHistoryDto, ProgressOverviewDto, TaxonomyProgressDto } from "../models/types/progress";
+import type { ReviewQueueDto } from "../models/types/review";
 
 export interface ProgressPort {
   getOverview(): Promise<ProgressOverviewDto>;

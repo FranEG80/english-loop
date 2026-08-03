@@ -1,5 +1,5 @@
-import type { Evaluator, ActivityOption, ActivityPair } from "../domain/activity";
-import type { LessonExample } from "../domain/lesson";
+import type { Evaluator, ActivityOption, ActivityPair } from "../domain/types/activity";
+import type { LessonExample } from "../domain/types/lesson";
 
 export interface CatalogSeedTaxonomyNode {
   id: string;

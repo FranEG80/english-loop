@@ -1,6 +1,6 @@
-import type { LessonDetailDto, LessonSummaryDto } from "../models/lesson";
-import type { ActivityQuestionDto } from "../models/activity";
-import type { TaxonomyNodeDto } from "../models/taxonomy";
+import type { LessonDetailDto, LessonSummaryDto } from "../models/types/lesson";
+import type { ActivityQuestionDto } from "../models/types/activity";
+import type { TaxonomyNodeDto } from "../models/types/taxonomy";
 import type { CefrLevel, CefrLevelFilter } from "../models/level";
 
 export interface LessonListFilters {

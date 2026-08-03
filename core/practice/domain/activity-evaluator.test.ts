@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { evaluate } from "@/core/practice/domain/activity-evaluator";
-import type { Evaluator } from "@/core/content/domain/activity";
+import type { Evaluator } from "@/core/content/domain/types/activity";
 
 const normalization = {
   trim: true,

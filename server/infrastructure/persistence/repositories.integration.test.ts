@@ -91,7 +91,7 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
     await expect(unitOfWork.transaction(async () => {
       await settings.save(UserSettings.defaults(userId));
       throw new Error("force rollback");
-    })).rejects.toThrow("force rollback");
+    })).rejects.toMatchObject({ message: "force rollback" });
     await prisma.userSettings.deleteMany({ where: { userId } });
     expect(await settings.findByUserId(userId)).toBeNull();
   });

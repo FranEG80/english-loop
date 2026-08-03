@@ -1,7 +1,7 @@
 import type { CefrLevel, CefrLevelFilter } from "@/core/models/level";
-import type { Lesson } from "../domain/lesson";
-import type { Activity } from "../domain/activity";
-import type { TaxonomyNode } from "../domain/taxonomy";
+import type { Lesson } from "../domain/types/lesson";
+import type { Activity } from "../domain/types/activity";
+import type { TaxonomyNode } from "../domain/types/taxonomy";
 import type { ContentVersion } from "../domain/content-version";
 
 export interface LessonListFilters {

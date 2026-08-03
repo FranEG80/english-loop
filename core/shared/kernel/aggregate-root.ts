@@ -1,4 +1,4 @@
-import type { DomainEvent } from "./domain-event";
+import type { DomainEvent } from "./types/domain-event";
 
 /**
  * Un aggregate root es una entidad que actúa como frontera de consistencia

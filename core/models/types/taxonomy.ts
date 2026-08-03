@@ -1,5 +1,5 @@
-import type { LocalizedText } from "./locale";
-import type { CefrLevel, CefrLevelFilter } from "./level";
+import type { LocalizedText } from "../locale";
+import type { CefrLevel, CefrLevelFilter } from "../level";
 
 export type TaxonomyNodeType = "category" | "topic" | "subtopic" | "skill";
 

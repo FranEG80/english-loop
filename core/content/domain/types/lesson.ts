@@ -1,5 +1,5 @@
 import type { CefrLevel } from "@/core/models/level";
-import type { ContentStatus } from "./content-version";
+import type { ContentStatus } from "../content-version";
 
 export type LessonCategory =
   | "grammar"

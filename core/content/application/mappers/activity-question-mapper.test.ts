@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Activity } from "../../domain/activity";
+import type { Activity } from "../../domain/types/activity";
 import { toActivityQuestionDto } from "./activity-question-mapper";
 
 function activity(type: string, extras: Partial<Activity> = {}): Activity {

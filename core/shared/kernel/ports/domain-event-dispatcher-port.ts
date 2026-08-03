@@ -1,4 +1,4 @@
-import type { DomainEvent } from "./domain-event";
+import type { DomainEvent } from "../types/domain-event";
 
 /** Publica eventos internos únicamente después de confirmar la transacción. */
 export interface DomainEventDispatcherPort {

@@ -1,4 +1,4 @@
-import type { Lesson } from "@/core/content/domain/lesson";
+import type { Lesson } from "@/core/content/domain/types/lesson";
 import type { LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { RandomSourcePort } from "@/core/shared/kernel";
 

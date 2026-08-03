@@ -17,19 +17,19 @@ describe("auth server actions", () => {
     const login = new FormData();
     login.set("email", "alex@example.com");
     login.set("password", "secret");
-    await expect(loginAction(undefined, login)).rejects.toThrow("REDIRECT:/");
+    await expect(loginAction(undefined, login)).rejects.toMatchObject({ message: "REDIRECT:/" });
     expect(authPort.login).toHaveBeenCalledWith({ email: "alex@example.com", password: "secret" });
 
     const register = new FormData();
     register.set("name", "Alex");
     register.set("email", "alex@example.com");
     register.set("password", "secret");
-    await expect(registerAction(undefined, register)).rejects.toThrow("REDIRECT:/");
+    await expect(registerAction(undefined, register)).rejects.toMatchObject({ message: "REDIRECT:/" });
     expect(authPort.register).toHaveBeenCalledWith({ name: "Alex", email: "alex@example.com", password: "secret" });
   });
 
   it("logs out through the adapter and redirects", async () => {
-    await expect(logoutAction()).rejects.toThrow("REDIRECT:/");
+    await expect(logoutAction()).rejects.toMatchObject({ message: "REDIRECT:/" });
     expect(authPort.logout).toHaveBeenCalledOnce();
   });
 });

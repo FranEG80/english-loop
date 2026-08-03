@@ -1,5 +1,5 @@
-import type { CefrLevelFilter } from "./level";
-import type { SessionSize } from "./session-size";
+import type { CefrLevelFilter } from "../level";
+import type { SessionSize } from "../session-size";
 
 export interface FocusedPracticeScopeDto {
   taxonomyNodeId: string;

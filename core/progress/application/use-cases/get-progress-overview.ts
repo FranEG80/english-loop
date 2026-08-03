@@ -1,7 +1,7 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { ProgressRepository } from "../../ports/progress-repository";
 import type { ReviewRepository } from "../../ports/review-repository";
-import type { ProgressOverviewDto } from "@/core/models/progress";
+import type { ProgressOverviewDto } from "@/core/models/types/progress";
 
 /** Obtiene el resumen de progreso del usuario autenticado. */
 export async function getProgressOverview(

@@ -1,4 +1,4 @@
-import type { Activity } from "@/core/content/domain/activity";
+import type { Activity } from "@/core/content/domain/types/activity";
 import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { RandomSourcePort } from "@/core/shared/kernel";
 import type { CefrLevelFilter } from "@/core/models/level";

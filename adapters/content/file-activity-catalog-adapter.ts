@@ -1,7 +1,7 @@
 import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import type { Activity } from "@/core/content/domain/activity";
+import type { Activity } from "@/core/content/domain/types/activity";
 import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 import type { ActivityListFilters, ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { CefrLevel } from "@/core/models/level";

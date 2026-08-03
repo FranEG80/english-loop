@@ -1,5 +1,5 @@
-import type { Locale } from "./locale";
-import type { CefrLevel } from "./level";
+import type { Locale } from "../locale";
+import type { CefrLevel } from "../level";
 
 export interface UserSettingsDto {
   locale: Locale;

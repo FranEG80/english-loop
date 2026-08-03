@@ -25,6 +25,14 @@ Aplica esta correspondencia:
 - `app/api/`: tests del Route Handler para éxito, validación, autenticación,
   autorización y errores.
 - Server Actions: tests de validación, efectos, redirects y errores.
+- En rechazos asíncronos, no uses `rejects.toThrow(...)`: Vitest Explorer puede
+  resolverlo de forma distinta al CLI y producir un falso error interno
+  (`Cannot read properties of undefined (reading 'indexOf')`). Usa siempre una
+  aserción esperada y `await`, por ejemplo
+  `await expect(promise).rejects.toMatchObject({ message: "mensaje exacto" })`,
+  `expect.stringMatching(...)` para patrones o
+  `await expect(promise).rejects.toBeInstanceOf(Error)` cuando solo importe el
+  tipo. Reserva `expect(() => operation()).toThrow(...)` para errores síncronos.
 - `features/` y `shared/`: tests de componente, utilidades e interacción
   accesible.
 - Prisma y persistencia: tests de contrato, aislamiento, transacciones y

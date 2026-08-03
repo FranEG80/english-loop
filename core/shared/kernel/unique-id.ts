@@ -1,4 +1,4 @@
-import type { IdGeneratorPort } from "./id-generator-port";
+import type { IdGeneratorPort } from "./ports/id-generator-port";
 
 /**
  * Identificador único generado por la aplicación. Se usa en lugar de

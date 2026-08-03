@@ -116,7 +116,9 @@ describeDatabase("normalized catalog seed integration", () => {
     const writer = new PrismaCatalogWriteAdapter(prisma);
     const before = await prisma.catalogPublication.findUnique({ where: { id: "active" } });
 
-    await expect(writer.seedCatalog(seedInput("checksum-invalid", ["missing-lesson"]))).rejects.toThrow();
+    await expect(
+      writer.seedCatalog(seedInput("checksum-invalid", ["missing-lesson"])),
+    ).rejects.toBeInstanceOf(Error);
 
     const after = await prisma.catalogPublication.findUnique({ where: { id: "active" } });
     expect(after?.releaseId).toBe(before?.releaseId);

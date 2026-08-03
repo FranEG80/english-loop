@@ -3,11 +3,11 @@ import type { UserSettingsRepository } from "@/core/account/ports/user-settings-
 import type { SavedLessonRepository } from "@/core/account/ports/saved-lesson-repository";
 import type { SavedLesson } from "@/core/account/domain/saved-lesson";
 import { UserSettings } from "@/core/account/domain/user-settings";
-import type { Lesson } from "@/core/content/domain/lesson";
-import type { Activity } from "@/core/content/domain/activity";
+import type { Lesson } from "@/core/content/domain/types/lesson";
+import type { Activity } from "@/core/content/domain/types/activity";
 import type { ActivityCatalogPort, LessonCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { ContentVersion } from "@/core/content/domain/content-version";
-import type { TaxonomyNode } from "@/core/content/domain/taxonomy";
+import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
 import type { DailySessionRepository } from "@/core/learning/ports/daily-session-repository";
 import type { LessonProgressRecord, LessonProgressRepository } from "@/core/learning/ports/lesson-progress-repository";
 import { DailySession } from "@/core/learning/domain/daily-session";

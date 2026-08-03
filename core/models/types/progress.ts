@@ -1,4 +1,4 @@
-import type { CefrLevel } from "./level";
+import type { CefrLevel } from "../level";
 
 export interface ProgressOverviewDto {
   activeLevels: CefrLevel[];

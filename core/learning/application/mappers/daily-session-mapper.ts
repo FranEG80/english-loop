@@ -1,5 +1,5 @@
 import type { DailySession } from "../../domain/daily-session";
-import type { DailySessionDto } from "@/core/models/daily-session";
+import type { DailySessionDto } from "@/core/models/types/daily-session";
 import type { PracticeRun } from "@/core/practice/domain/practice-run";
 import { DEFAULT_DAILY_GOAL_ACTIVITIES } from "@/core/account/domain/user-settings";
 

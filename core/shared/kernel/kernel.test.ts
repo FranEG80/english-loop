@@ -3,7 +3,7 @@ import { AggregateRoot } from "./aggregate-root";
 import { Entity } from "./entity";
 import { ValueObject } from "./value-object";
 import { UniqueId } from "./unique-id";
-import type { DomainEvent } from "./domain-event";
+import type { DomainEvent } from "./types/domain-event";
 
 class TestEntity extends Entity<string> {
   constructor(id: string) { super(id); }

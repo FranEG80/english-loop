@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { getNodeWithDescendants, getTaxonomyNodePath, getTaxonomyTree } from "./get-taxonomy";
-import type { TaxonomyNode } from "../../domain/taxonomy";
+import type { TaxonomyNode } from "../../domain/types/taxonomy";
 import type { TaxonomyCatalogPort } from "../../ports/catalog-ports";
 
 const node: TaxonomyNode = { id: "topic", parentId: null, kind: "topic", labels: { en: "Topic", es: "Tema" }, levels: ["B1"], selectableForPractice: true, order: 0, children: [] };

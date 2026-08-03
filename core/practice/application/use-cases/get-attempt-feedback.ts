@@ -1,7 +1,7 @@
 import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
-import type { Evaluator } from "@/core/content/domain/activity";
+import type { Evaluator } from "@/core/content/domain/types/activity";
 import type { ActivityAttempt } from "../../domain/activity-attempt";
-import type { AttemptFeedbackDto } from "@/core/models/attempt";
+import type { AttemptFeedbackDto } from "@/core/models/types/attempt";
 
 /** Construye el feedback seguro para el cliente a partir de un intento. */
 export async function getAttemptFeedback(

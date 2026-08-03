@@ -1,4 +1,4 @@
-import type { LocalizedText } from "./locale";
+import type { LocalizedText } from "../locale";
 
 /**
  * Demostración visual no puntuable. No se registra como actividad completada.

@@ -1,5 +1,5 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
-import type { ActivityHistoryDto } from "@/core/models/progress";
+import type { ActivityHistoryDto } from "@/core/models/types/progress";
 import type { AttemptRepository } from "@/core/practice/ports/attempt-repository";
 
 export async function getActivityHistory(

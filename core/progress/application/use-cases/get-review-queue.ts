@@ -1,6 +1,6 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { ReviewRepository } from "../../ports/review-repository";
-import type { ReviewQueueDto, ReviewQueueItemDto } from "@/core/models/review";
+import type { ReviewQueueDto, ReviewQueueItemDto } from "@/core/models/types/review";
 
 /** Obtiene la cola de repaso del usuario autenticado. */
 export async function getReviewQueue(

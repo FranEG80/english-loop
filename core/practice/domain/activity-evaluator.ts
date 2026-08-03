@@ -1,5 +1,5 @@
-import type { Evaluator, NormalizationRules } from "@/core/content/domain/activity";
-import type { ActivityResponseValue } from "@/core/models/attempt";
+import type { Evaluator, NormalizationRules } from "@/core/content/domain/types/activity";
+import type { ActivityResponseValue } from "@/core/models/types/attempt";
 import { UnsupportedEvaluatorException } from "@/core/shared/exceptions";
 
 const CURLY_APOSTROPHES = /[\u2018\u2019\u02bc]/g;

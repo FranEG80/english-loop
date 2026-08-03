@@ -1,7 +1,7 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { ActivityCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import { type ClockPort, type DomainEvent, type DomainEventDispatcherPort, type IdGeneratorPort, type UnitOfWorkPort, UniqueId } from "@/core/shared/kernel";
-import type { ActivityResponseValue } from "@/core/models/attempt";
+import type { ActivityResponseValue } from "@/core/models/types/attempt";
 import type { AttemptRepository } from "@/core/practice/ports/attempt-repository";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import type { DailySessionRepository } from "@/core/learning/ports/daily-session-repository";

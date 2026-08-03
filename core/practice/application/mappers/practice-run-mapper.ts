@@ -1,5 +1,5 @@
 import type { PracticeRun } from "../../domain/practice-run";
-import type { PracticeRunDto, PracticeRunSummaryDto } from "@/core/models/practice";
+import type { PracticeRunDto, PracticeRunSummaryDto } from "@/core/models/types/practice";
 
 /** Convierte un run de dominio a DTO seguro. */
 export function toPracticeRunDto(run: PracticeRun): PracticeRunDto {

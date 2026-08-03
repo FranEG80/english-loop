@@ -1,4 +1,4 @@
-import type { Activity } from "@/core/content/domain/activity";
+import type { Activity } from "@/core/content/domain/types/activity";
 import type { TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import { UniqueId, type ClockPort, type IdGeneratorPort } from "@/core/shared/kernel";
 import type { AttemptOrigin } from "@/core/practice/domain/activity-attempt";

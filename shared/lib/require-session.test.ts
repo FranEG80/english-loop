@@ -15,6 +15,6 @@ describe("requireSession", () => {
 
   it("redirects unauthenticated requests to the supplied destination", async () => {
     auth.getSession.mockResolvedValueOnce(null);
-    await expect(requireSession("/signin")).rejects.toThrow("REDIRECT:/signin");
+    await expect(requireSession("/signin")).rejects.toMatchObject({ message: "REDIRECT:/signin" });
   });
 });

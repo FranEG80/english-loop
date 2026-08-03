@@ -1,4 +1,4 @@
-import type { Lesson } from "../../domain/lesson";
+import type { Lesson } from "../../domain/types/lesson";
 import type { LessonCatalogPort } from "../../ports/catalog-ports";
 import type { CefrLevel } from "@/core/models/level";
 

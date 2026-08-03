@@ -1,5 +1,5 @@
-import type { DailySessionDto } from "../models/daily-session";
-import type { SubmitAttemptInputDto, AttemptFeedbackDto } from "../models/attempt";
+import type { DailySessionDto } from "../models/types/daily-session";
+import type { SubmitAttemptInputDto, AttemptFeedbackDto } from "../models/types/attempt";
 
 export interface DailySessionPort {
   getTodaySession(timezone: string): Promise<DailySessionDto>;

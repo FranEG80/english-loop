@@ -1,5 +1,5 @@
-import type { Lesson } from "../../domain/lesson";
-import type { LessonDetailDto, LessonSummaryDto } from "@/core/models/lesson";
+import type { Lesson } from "../../domain/types/lesson";
+import type { LessonDetailDto, LessonSummaryDto } from "@/core/models/types/lesson";
 
 /** Convierte una lección de dominio a DTO de resumen. */
 export function toLessonSummaryDto(lesson: Lesson): LessonSummaryDto {

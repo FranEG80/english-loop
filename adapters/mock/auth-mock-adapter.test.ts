@@ -23,7 +23,9 @@ describe("authMockAdapter", () => {
   });
 
   it("rejects invalid credentials and registers the supplied profile", async () => {
-    await expect(authMockAdapter.login({ email: "bad@example.com", password: "bad" })).rejects.toThrow(/incorrectos/iu);
+    await expect(
+      authMockAdapter.login({ email: "bad@example.com", password: "bad" }),
+    ).rejects.toMatchObject({ message: expect.stringMatching(/incorrectos/iu) });
     const session = await authMockAdapter.register({ name: "New", email: "new@example.com", password: "password" });
     expect(session).toMatchObject({ name: "New", email: "new@example.com" });
   });

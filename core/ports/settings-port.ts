@@ -1,4 +1,4 @@
-import type { UserSettingsDto } from "../models/settings";
+import type { UserSettingsDto } from "../models/types/settings";
 
 export interface SettingsPort {
   getSettings(): Promise<UserSettingsDto>;

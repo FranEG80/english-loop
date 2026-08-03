@@ -1,6 +1,6 @@
 import "server-only";
 import type { PrismaClient, Prisma } from "@/generated/prisma/client";
-import type { Activity } from "@/core/content/domain/activity";
+import type { Activity } from "@/core/content/domain/types/activity";
 import {
   ACTIVE_CATALOG_PUBLICATION_ID,
   CONTENT_SCHEMA_VERSION,
@@ -8,8 +8,8 @@ import {
   UNKNOWN_DATASET_VERSION,
   type ContentVersion,
 } from "@/core/content/domain/content-version";
-import type { Lesson } from "@/core/content/domain/lesson";
-import type { TaxonomyNode } from "@/core/content/domain/taxonomy";
+import type { Lesson } from "@/core/content/domain/types/lesson";
+import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
 import type {
   ActivityCatalogPort,
   ActivityListFilters,

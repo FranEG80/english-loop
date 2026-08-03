@@ -1,5 +1,5 @@
-import type { Activity } from "../../domain/activity";
-import type { ActivityQuestionDto, InteractionMode } from "@/core/models/activity";
+import type { Activity } from "../../domain/types/activity";
+import type { ActivityQuestionDto, InteractionMode } from "@/core/models/types/activity";
 
 /**
  * Convierte una actividad de catálogo (lado servidor, con evaluador) en un

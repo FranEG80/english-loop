@@ -1,5 +1,5 @@
-import type { Activity } from "@/core/content/domain/activity";
-import type { Lesson } from "@/core/content/domain/lesson";
+import type { Activity } from "@/core/content/domain/types/activity";
+import type { Lesson } from "@/core/content/domain/types/lesson";
 
 export function parseCatalogJson<T>(value: string | null | undefined, fallback: T): T {
   if (!value) return fallback;

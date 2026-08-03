@@ -1,4 +1,4 @@
-import type { CefrLevel } from "./level";
+import type { CefrLevel } from "../level";
 
 export type UserId = string;
 

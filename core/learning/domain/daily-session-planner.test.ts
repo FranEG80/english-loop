@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Lesson } from "@/core/content/domain/lesson";
+import type { Lesson } from "@/core/content/domain/types/lesson";
 import type { LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import { DailySessionPlanner } from "./daily-session-planner";
 

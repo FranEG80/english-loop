@@ -1,4 +1,4 @@
-import type { ActivityResponseValue } from "@/core/models/attempt";
+import type { ActivityResponseValue } from "@/core/models/types/attempt";
 
 export type AttemptOrigin = "DAILY" | "SMART_REVIEW" | "FOCUSED";
 

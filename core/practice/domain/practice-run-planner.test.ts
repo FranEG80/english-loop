@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
-import type { Activity } from "@/core/content/domain/activity";
+import type { Activity } from "@/core/content/domain/types/activity";
 import { InsufficientActivitiesForScopeException } from "@/core/shared/exceptions";
 import { PracticeRunPlanner } from "./practice-run-planner";
 

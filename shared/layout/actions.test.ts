@@ -13,7 +13,7 @@ import { logoutAction, setLocaleAction } from "./actions";
 
 describe("shared layout actions", () => {
   it("logs out and redirects to the public entry point", async () => {
-    await expect(logoutAction()).rejects.toThrow("REDIRECT:/");
+    await expect(logoutAction()).rejects.toMatchObject({ message: "REDIRECT:/" });
     expect(ports.logout).toHaveBeenCalledOnce();
   });
 

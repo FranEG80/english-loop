@@ -1,4 +1,4 @@
-import type { AuthSession, Credentials, RegisterInput } from "../models/auth";
+import type { AuthSession, Credentials, RegisterInput } from "../models/types/auth";
 
 export interface AuthPort {
   getSession(): Promise<AuthSession | null>;

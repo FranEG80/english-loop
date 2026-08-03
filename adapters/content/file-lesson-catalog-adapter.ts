@@ -2,7 +2,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
-import type { Lesson } from "@/core/content/domain/lesson";
+import type { Lesson } from "@/core/content/domain/types/lesson";
 import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 import type { LessonListFilters, LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";

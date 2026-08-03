@@ -1,5 +1,5 @@
-import type { TaxonomyNode } from "../../domain/taxonomy";
-import type { TaxonomyNodeDto } from "@/core/models/taxonomy";
+import type { TaxonomyNode } from "../../domain/types/taxonomy";
+import type { TaxonomyNodeDto } from "@/core/models/types/taxonomy";
 
 /** Convierte un nodo de taxonomía de dominio a DTO seguro. */
 export function toTaxonomyNodeDto(node: TaxonomyNode): TaxonomyNodeDto {

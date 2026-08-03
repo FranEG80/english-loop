@@ -10,7 +10,9 @@ describe("review server actions", () => {
   it("normalizes focused-practice form input and redirects with activity ids", async () => {
     focused.createRun.mockResolvedValueOnce({ id: "run-1", activityIds: ["a1", "a2"] });
     const form = new FormData(); form.set("taxonomyNodeId", "grammar"); form.set("level", "invalid"); form.set("sessionSize", "999");
-    await expect(createFocusedPracticeAction(form)).rejects.toThrow("REDIRECT:/review/session/run-1?activityId=a1&activityId=a2");
+    await expect(createFocusedPracticeAction(form)).rejects.toMatchObject({
+      message: "REDIRECT:/review/session/run-1?activityId=a1&activityId=a2",
+    });
     expect(focused.createRun).toHaveBeenCalledWith({ taxonomyNodeId: "grammar", level: "both", sessionSize: 5 });
   });
 
