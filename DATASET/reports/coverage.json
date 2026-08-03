@@ -1,36 +1,47 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 23,
-    "publishedActivities": 2000,
+    "publishedLessons": 35,
+    "publishedActivities": 3200,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 19,
+    "nodeTargetsMet": 31,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 1750,
-      "B2": 250
+      "B1": 2650,
+      "B2": 550
     },
     "category": {
-      "grammar": 2000
+      "grammar": 3200
     },
     "topic": {
+      "articles-determiners": 200,
+      "comparisons": 200,
       "conditionals": 250,
       "future-forms": 125,
+      "gerunds-infinitives": 200,
+      "linking-discourse": 100,
       "modal-perfects": 125,
       "modals": 300,
       "passive-voice": 200,
-      "past-tenses": 300,
-      "present-tenses": 400,
-      "questions": 100,
+      "past-tenses": 500,
+      "present-tenses": 500,
+      "questions": 200,
+      "relative-clauses": 100,
       "reported-speech": 200
     },
     "subtopic": {
       "ability-permission": 100,
+      "advanced-narrative-tenses": 100,
       "advice-possibility": 100,
+      "articles-reference": 100,
+      "basic-linking-words": 100,
+      "basic-verb-patterns": 100,
+      "comparative-superlative": 100,
+      "defining-relative-clauses": 100,
       "direct-indirect-questions": 100,
       "first-conditional": 75,
       "future-time-clauses": 25,
@@ -41,40 +52,46 @@
       "modal-perfect-unnecessary-action": 25,
       "obligation-necessity-prohibition": 100,
       "past-perfect-narrative": 100,
+      "past-perfect-simple-vs-continuous": 100,
       "past-simple-vs-continuous": 100,
       "perfect-modal-passive": 100,
       "present-continuous-arrangements": 25,
       "present-past-passive": 100,
       "present-perfect-experience": 100,
       "present-perfect-for-since": 100,
+      "present-perfect-simple-vs-continuous": 100,
       "present-perfect-vs-past-simple": 100,
       "present-simple-timetables": 25,
       "present-simple-vs-continuous": 100,
+      "quantifiers-determiners": 100,
       "reported-questions-commands": 100,
       "reported-statements": 100,
       "second-conditional": 50,
+      "subject-object-question-tags": 100,
       "third-conditional": 75,
+      "too-enough-comparative-modifiers": 100,
       "used-to-would-past-habits": 100,
+      "verb-object-infinitive": 100,
       "will-predictions": 25
     },
     "activityType": {
       "complete_dialogue": 100,
-      "error_correction": 425,
+      "error_correction": 475,
       "error_identification": 50,
-      "fill_blank": 425,
+      "fill_blank": 725,
       "key_word_transformation": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 475,
-      "true_false": 100,
-      "word_order": 175
+      "single_choice": 775,
+      "true_false": 350,
+      "word_order": 475
     },
     "difficulty": {
-      "1": 350,
-      "2": 390,
-      "3": 422,
-      "4": 420,
-      "5": 418
+      "1": 590,
+      "2": 630,
+      "3": 666,
+      "4": 660,
+      "5": 654
     }
   },
   "targets": [
@@ -176,10 +193,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "advanced-passive-tenses",
@@ -232,10 +255,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-collocations-daily-life",
@@ -1437,10 +1466,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "basic-verb-patterns",
@@ -1454,10 +1489,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "cleft-sentences-fronting",
@@ -1487,10 +1528,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "conditionals",
@@ -1548,10 +1595,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "direct-indirect-questions",
@@ -1805,10 +1858,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "past-simple-vs-continuous",
@@ -1952,10 +2011,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "present-perfect-vs-past-simple",
@@ -2015,10 +2080,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "reported-questions-commands",
@@ -2110,10 +2181,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "too-enough-comparative-modifiers",
@@ -2127,10 +2204,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "used-to-would-past-habits",
@@ -2167,10 +2250,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     }
   ]
 }

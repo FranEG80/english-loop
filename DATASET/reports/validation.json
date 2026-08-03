@@ -2,37 +2,22 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 23,
-    "activities": 2000,
-    "batches": 80,
+    "lessons": 35,
+    "activities": 3200,
+    "batches": 128,
     "taxonomyNodes": 164,
-    "errors": 406
+    "errors": 358
   },
   "issues": [
     {
       "code": "global-activity-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 2000 actividades publicadas; se requieren 10000."
+      "message": "Hay 3200 actividades publicadas; se requieren 10000."
     },
     {
       "code": "global-lesson-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 23 lecciones publicadas; se requieren 100."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:articles-reference",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:articles-reference",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:articles-reference",
-      "message": "Hay 0 tipos; se requieren 4."
+      "message": "Hay 35 lecciones publicadas; se requieren 100."
     },
     {
       "code": "node-activity-coverage",
@@ -576,126 +561,6 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:basic-linking-words",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:basic-linking-words",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:basic-linking-words",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:basic-verb-patterns",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:basic-verb-patterns",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:basic-verb-patterns",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:comparative-superlative",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:comparative-superlative",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:comparative-superlative",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:defining-relative-clauses",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:defining-relative-clauses",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:defining-relative-clauses",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:quantifiers-determiners",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:quantifiers-determiners",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:quantifiers-determiners",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:subject-object-question-tags",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:subject-object-question-tags",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:subject-object-question-tags",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:too-enough-comparative-modifiers",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:too-enough-comparative-modifiers",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:too-enough-comparative-modifiers",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:verb-object-infinitive",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:verb-object-infinitive",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:verb-object-infinitive",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:advanced-backshift",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -752,21 +617,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:advanced-modal-meaning",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:advanced-narrative-tenses",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:advanced-narrative-tenses",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:advanced-narrative-tenses",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -1461,21 +1311,6 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:past-perfect-simple-vs-continuous",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:past-perfect-simple-vs-continuous",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:past-perfect-simple-vs-continuous",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:perfect-passive-infinitives-gerunds",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -1487,21 +1322,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:perfect-passive-infinitives-gerunds",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:present-perfect-simple-vs-continuous",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:present-perfect-simple-vs-continuous",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:present-perfect-simple-vs-continuous",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -1548,51 +1368,6 @@
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-dependent-prepositions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-articles-reference."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-basic-linking-words."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-comparatives-superlatives."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-defining-relative-clauses."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-gerunds-infinitives-basic."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-quantifiers-determiners."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-subject-object-questions-tags."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-too-enough-modifiers."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-grammar-verb-object-infinitive."
     },
     {
       "code": "planned-lesson-missing",
@@ -1797,11 +1572,6 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-grammar-advanced-narrative-tenses."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-grammar-advanced-passive-tenses."
     },
     {
@@ -1852,17 +1622,7 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-grammar-past-perfect-simple-continuous."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-grammar-perfect-passive-infinitives-gerunds."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-grammar-present-perfect-simple-continuous."
     },
     {
       "code": "planned-lesson-missing",
