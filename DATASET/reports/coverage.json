@@ -1,21 +1,21 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 42,
-    "publishedActivities": 3900,
+    "publishedLessons": 43,
+    "publishedActivities": 4000,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 38,
+    "nodeTargetsMet": 39,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
       "B1": 2650,
-      "B2": 1250
+      "B2": 1350
     },
     "category": {
-      "grammar": 3900
+      "grammar": 4000
     },
     "topic": {
       "articles-determiners": 200,
@@ -31,10 +31,11 @@
       "present-tenses": 500,
       "questions": 200,
       "relative-clauses": 100,
-      "reported-speech": 200
+      "reported-speech": 300
     },
     "subtopic": {
       "ability-permission": 100,
+      "advanced-backshift": 100,
       "advanced-modal-meaning": 100,
       "advanced-narrative-tenses": 100,
       "advanced-passive-tenses": 100,
@@ -85,20 +86,20 @@
       "complete_dialogue": 100,
       "error_correction": 475,
       "error_identification": 50,
-      "fill_blank": 900,
+      "fill_blank": 925,
       "key_word_transformation": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 950,
-      "true_false": 525,
-      "word_order": 650
+      "single_choice": 975,
+      "true_false": 550,
+      "word_order": 675
     },
     "difficulty": {
       "1": 590,
-      "2": 775,
-      "3": 859,
-      "4": 866,
-      "5": 810
+      "2": 796,
+      "3": 887,
+      "4": 896,
+      "5": 831
     }
   },
   "targets": [
@@ -136,10 +137,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "advanced-comparisons",

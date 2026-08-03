@@ -2,22 +2,22 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 42,
-    "activities": 3900,
-    "batches": 156,
+    "lessons": 43,
+    "activities": 4000,
+    "batches": 160,
     "taxonomyNodes": 164,
-    "errors": 330
+    "errors": 326
   },
   "issues": [
     {
       "code": "global-activity-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 3900 actividades publicadas; se requieren 10000."
+      "message": "Hay 4000 actividades publicadas; se requieren 10000."
     },
     {
       "code": "global-lesson-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 42 lecciones publicadas; se requieren 100."
+      "message": "Hay 43 lecciones publicadas; se requieren 100."
     },
     {
       "code": "node-activity-coverage",
@@ -557,21 +557,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:advanced-backshift",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:advanced-backshift",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:advanced-backshift",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -1443,11 +1428,6 @@
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-dependent-prepositions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-grammar-advanced-backshift."
     },
     {
       "code": "planned-lesson-missing",
