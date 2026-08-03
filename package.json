@@ -31,7 +31,7 @@
     "test:e2e": "playwright test",
     "test:a11y": "playwright test e2e/accessibility.spec.ts",
     "test:dataset": "pnpm dataset:validate && pnpm dataset:test-grading",
-    "test:integration": "touch \"$INIT_CWD/test-repositories.db\" && DATABASE_URL=file:$INIT_CWD/test-repositories.db pnpm prisma migrate deploy && DATABASE_URL=file:$INIT_CWD/test-repositories.db TEST_DATABASE_URL=file:$INIT_CWD/test-repositories.db RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/repositories.integration.test.ts",
+    "test:integration": "INTEGRATION_DB_DIR=$(mktemp -d) && trap 'rm -rf \"$INTEGRATION_DB_DIR\"' EXIT && INTEGRATION_DB_PATH=\"$INTEGRATION_DB_DIR/integration.db\" && touch \"$INTEGRATION_DB_PATH\" && DATABASE_URL=file:$INTEGRATION_DB_PATH pnpm prisma migrate deploy && DATABASE_URL=file:$INTEGRATION_DB_PATH TEST_DATABASE_URL=file:$INTEGRATION_DB_PATH RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/repositories.integration.test.ts server/infrastructure/persistence/prisma-catalog-write-adapter.integration.test.ts",
     "test:integration:catalog": "touch \"$INIT_CWD/test-catalog.db\" && DATABASE_URL=file:$INIT_CWD/test-catalog.db pnpm prisma migrate deploy && DATABASE_URL=file:$INIT_CWD/test-catalog.db TEST_DATABASE_URL=file:$INIT_CWD/test-catalog.db RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/prisma-catalog-write-adapter.integration.test.ts",
     "verify": "pnpm lint && pnpm typecheck && pnpm arch:check && pnpm test && pnpm build:test",
     "verify:full": "pnpm verify && pnpm test:coverage && pnpm test:integration && pnpm test:e2e"

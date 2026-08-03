@@ -1,6 +1,9 @@
 
 # EnglishLoop
 
+Consulta la [guía técnica del backend](./BACKEND-README.md) para arquitectura,
+persistencia, configuración, D1, seed y pruebas.
+
 SaaS personal para aprender, refrescar y recordar inglés de nivel B1 y B2 mediante lecciones cortas, práctica escrita y repaso inteligente.
 
 La app está pensada para una persona que quiere volver a activar su inglés B1, avanzar hacia B2 y mantenerlo fresco a largo plazo sin usar voz ni audios. Todo el aprendizaje estará centrado en lectura, escritura, gramática, vocabulario, Use of English, phrasal verbs, collocations, writing y ejercicios interactivos.
