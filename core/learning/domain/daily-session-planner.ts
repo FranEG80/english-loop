@@ -19,8 +19,8 @@ export interface LessonSelection {
 
 /**
  * Planifica las lecciones de la sesión diaria:
- * - Prioriza lecciones no vistas.
- * - Incluye lecciones con errores pendientes cuando corresponda.
+ * - Prioriza lecciones con errores pendientes reales.
+ * - Después incorpora lecciones no vistas.
  * - No repite lecciones vistas sin errores mientras exista contenido nuevo.
  * - Reutiliza contenido visto cuando se agota el contenido nuevo.
  */
@@ -44,18 +44,15 @@ export class DailySessionPlanner {
 
     const selections: LessonSelection[] = [];
 
-    // 1. Lecciones nuevas.
-    for (const lesson of this.pick(newLessons, input.count - selections.length)) {
-      selections.push({ lessonId: lesson.id, selectionReason: "new" });
+    // 1. Recuperar primero los errores que todavía bloquean la lección.
+    for (const lesson of this.pick(errorLessons, input.count - selections.length)) {
+      selections.push({ lessonId: lesson.id, selectionReason: "review" });
     }
 
-    // 2. Lecciones con errores pendientes (recapitulación).
+    // 2. Lecciones nuevas.
     if (selections.length < input.count) {
-      for (const lesson of this.pick(
-        errorLessons,
-        input.count - selections.length,
-      )) {
-        selections.push({ lessonId: lesson.id, selectionReason: "review" });
+      for (const lesson of this.pick(newLessons, input.count - selections.length)) {
+        selections.push({ lessonId: lesson.id, selectionReason: "new" });
       }
     }
 

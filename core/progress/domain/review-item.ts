@@ -6,6 +6,8 @@ export interface ReviewItemProps {
   id: string;
   userId: string;
   activityId: string;
+  activityVersionId?: string | null;
+  lessonId?: string | null;
   taxonomyNodeId: string;
   level: CefrLevel;
   stage: ReviewStage;
@@ -37,6 +39,14 @@ export class ReviewItem {
 
   get activityId(): string {
     return this.props.activityId;
+  }
+
+  get activityVersionId(): string | null {
+    return this.props.activityVersionId ?? null;
+  }
+
+  get lessonId(): string | null {
+    return this.props.lessonId ?? null;
   }
 
   get taxonomyNodeId(): string {

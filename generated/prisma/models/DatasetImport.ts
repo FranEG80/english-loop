@@ -33,6 +33,7 @@ export type DatasetImportMinAggregateOutputType = {
   finishedAt: Date | null
   result: string | null
   error: string | null
+  releaseId: string | null
 }
 
 export type DatasetImportMaxAggregateOutputType = {
@@ -44,6 +45,7 @@ export type DatasetImportMaxAggregateOutputType = {
   finishedAt: Date | null
   result: string | null
   error: string | null
+  releaseId: string | null
 }
 
 export type DatasetImportCountAggregateOutputType = {
@@ -55,6 +57,7 @@ export type DatasetImportCountAggregateOutputType = {
   finishedAt: number
   result: number
   error: number
+  releaseId: number
   _all: number
 }
 
@@ -68,6 +71,7 @@ export type DatasetImportMinAggregateInputType = {
   finishedAt?: true
   result?: true
   error?: true
+  releaseId?: true
 }
 
 export type DatasetImportMaxAggregateInputType = {
@@ -79,6 +83,7 @@ export type DatasetImportMaxAggregateInputType = {
   finishedAt?: true
   result?: true
   error?: true
+  releaseId?: true
 }
 
 export type DatasetImportCountAggregateInputType = {
@@ -90,6 +95,7 @@ export type DatasetImportCountAggregateInputType = {
   finishedAt?: true
   result?: true
   error?: true
+  releaseId?: true
   _all?: true
 }
 
@@ -174,6 +180,7 @@ export type DatasetImportGroupByOutputType = {
   finishedAt: Date | null
   result: string | null
   error: string | null
+  releaseId: string | null
   _count: DatasetImportCountAggregateOutputType | null
   _min: DatasetImportMinAggregateOutputType | null
   _max: DatasetImportMaxAggregateOutputType | null
@@ -206,6 +213,8 @@ export type DatasetImportWhereInput = {
   finishedAt?: Prisma.DateTimeNullableFilter<"DatasetImport"> | Date | string | null
   result?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
   error?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+  releaseId?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+  release?: Prisma.XOR<Prisma.CatalogReleaseNullableScalarRelationFilter, Prisma.CatalogReleaseWhereInput> | null
 }
 
 export type DatasetImportOrderByWithRelationInput = {
@@ -217,6 +226,8 @@ export type DatasetImportOrderByWithRelationInput = {
   finishedAt?: Prisma.SortOrderInput | Prisma.SortOrder
   result?: Prisma.SortOrderInput | Prisma.SortOrder
   error?: Prisma.SortOrderInput | Prisma.SortOrder
+  releaseId?: Prisma.SortOrderInput | Prisma.SortOrder
+  release?: Prisma.CatalogReleaseOrderByWithRelationInput
 }
 
 export type DatasetImportWhereUniqueInput = Prisma.AtLeast<{
@@ -231,6 +242,8 @@ export type DatasetImportWhereUniqueInput = Prisma.AtLeast<{
   finishedAt?: Prisma.DateTimeNullableFilter<"DatasetImport"> | Date | string | null
   result?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
   error?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+  releaseId?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+  release?: Prisma.XOR<Prisma.CatalogReleaseNullableScalarRelationFilter, Prisma.CatalogReleaseWhereInput> | null
 }, "id">
 
 export type DatasetImportOrderByWithAggregationInput = {
@@ -242,6 +255,7 @@ export type DatasetImportOrderByWithAggregationInput = {
   finishedAt?: Prisma.SortOrderInput | Prisma.SortOrder
   result?: Prisma.SortOrderInput | Prisma.SortOrder
   error?: Prisma.SortOrderInput | Prisma.SortOrder
+  releaseId?: Prisma.SortOrderInput | Prisma.SortOrder
   _count?: Prisma.DatasetImportCountOrderByAggregateInput
   _max?: Prisma.DatasetImportMaxOrderByAggregateInput
   _min?: Prisma.DatasetImportMinOrderByAggregateInput
@@ -259,6 +273,7 @@ export type DatasetImportScalarWhereWithAggregatesInput = {
   finishedAt?: Prisma.DateTimeNullableWithAggregatesFilter<"DatasetImport"> | Date | string | null
   result?: Prisma.StringNullableWithAggregatesFilter<"DatasetImport"> | string | null
   error?: Prisma.StringNullableWithAggregatesFilter<"DatasetImport"> | string | null
+  releaseId?: Prisma.StringNullableWithAggregatesFilter<"DatasetImport"> | string | null
 }
 
 export type DatasetImportCreateInput = {
@@ -270,6 +285,7 @@ export type DatasetImportCreateInput = {
   finishedAt?: Date | string | null
   result?: string | null
   error?: string | null
+  release?: Prisma.CatalogReleaseCreateNestedOneWithoutDatasetImportsInput
 }
 
 export type DatasetImportUncheckedCreateInput = {
@@ -281,6 +297,7 @@ export type DatasetImportUncheckedCreateInput = {
   finishedAt?: Date | string | null
   result?: string | null
   error?: string | null
+  releaseId?: string | null
 }
 
 export type DatasetImportUpdateInput = {
@@ -292,6 +309,7 @@ export type DatasetImportUpdateInput = {
   finishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   result?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   error?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  release?: Prisma.CatalogReleaseUpdateOneWithoutDatasetImportsNestedInput
 }
 
 export type DatasetImportUncheckedUpdateInput = {
@@ -303,6 +321,7 @@ export type DatasetImportUncheckedUpdateInput = {
   finishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   result?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   error?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  releaseId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
 }
 
 export type DatasetImportCreateManyInput = {
@@ -314,6 +333,7 @@ export type DatasetImportCreateManyInput = {
   finishedAt?: Date | string | null
   result?: string | null
   error?: string | null
+  releaseId?: string | null
 }
 
 export type DatasetImportUpdateManyMutationInput = {
@@ -336,6 +356,7 @@ export type DatasetImportUncheckedUpdateManyInput = {
   finishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   result?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   error?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  releaseId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
 }
 
 export type DatasetImportCountOrderByAggregateInput = {
@@ -347,6 +368,7 @@ export type DatasetImportCountOrderByAggregateInput = {
   finishedAt?: Prisma.SortOrder
   result?: Prisma.SortOrder
   error?: Prisma.SortOrder
+  releaseId?: Prisma.SortOrder
 }
 
 export type DatasetImportMaxOrderByAggregateInput = {
@@ -358,6 +380,7 @@ export type DatasetImportMaxOrderByAggregateInput = {
   finishedAt?: Prisma.SortOrder
   result?: Prisma.SortOrder
   error?: Prisma.SortOrder
+  releaseId?: Prisma.SortOrder
 }
 
 export type DatasetImportMinOrderByAggregateInput = {
@@ -369,6 +392,165 @@ export type DatasetImportMinOrderByAggregateInput = {
   finishedAt?: Prisma.SortOrder
   result?: Prisma.SortOrder
   error?: Prisma.SortOrder
+  releaseId?: Prisma.SortOrder
+}
+
+export type DatasetImportListRelationFilter = {
+  every?: Prisma.DatasetImportWhereInput
+  some?: Prisma.DatasetImportWhereInput
+  none?: Prisma.DatasetImportWhereInput
+}
+
+export type DatasetImportOrderByRelationAggregateInput = {
+  _count?: Prisma.SortOrder
+}
+
+export type DatasetImportCreateNestedManyWithoutReleaseInput = {
+  create?: Prisma.XOR<Prisma.DatasetImportCreateWithoutReleaseInput, Prisma.DatasetImportUncheckedCreateWithoutReleaseInput> | Prisma.DatasetImportCreateWithoutReleaseInput[] | Prisma.DatasetImportUncheckedCreateWithoutReleaseInput[]
+  connectOrCreate?: Prisma.DatasetImportCreateOrConnectWithoutReleaseInput | Prisma.DatasetImportCreateOrConnectWithoutReleaseInput[]
+  createMany?: Prisma.DatasetImportCreateManyReleaseInputEnvelope
+  connect?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+}
+
+export type DatasetImportUncheckedCreateNestedManyWithoutReleaseInput = {
+  create?: Prisma.XOR<Prisma.DatasetImportCreateWithoutReleaseInput, Prisma.DatasetImportUncheckedCreateWithoutReleaseInput> | Prisma.DatasetImportCreateWithoutReleaseInput[] | Prisma.DatasetImportUncheckedCreateWithoutReleaseInput[]
+  connectOrCreate?: Prisma.DatasetImportCreateOrConnectWithoutReleaseInput | Prisma.DatasetImportCreateOrConnectWithoutReleaseInput[]
+  createMany?: Prisma.DatasetImportCreateManyReleaseInputEnvelope
+  connect?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+}
+
+export type DatasetImportUpdateManyWithoutReleaseNestedInput = {
+  create?: Prisma.XOR<Prisma.DatasetImportCreateWithoutReleaseInput, Prisma.DatasetImportUncheckedCreateWithoutReleaseInput> | Prisma.DatasetImportCreateWithoutReleaseInput[] | Prisma.DatasetImportUncheckedCreateWithoutReleaseInput[]
+  connectOrCreate?: Prisma.DatasetImportCreateOrConnectWithoutReleaseInput | Prisma.DatasetImportCreateOrConnectWithoutReleaseInput[]
+  upsert?: Prisma.DatasetImportUpsertWithWhereUniqueWithoutReleaseInput | Prisma.DatasetImportUpsertWithWhereUniqueWithoutReleaseInput[]
+  createMany?: Prisma.DatasetImportCreateManyReleaseInputEnvelope
+  set?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  disconnect?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  delete?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  connect?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  update?: Prisma.DatasetImportUpdateWithWhereUniqueWithoutReleaseInput | Prisma.DatasetImportUpdateWithWhereUniqueWithoutReleaseInput[]
+  updateMany?: Prisma.DatasetImportUpdateManyWithWhereWithoutReleaseInput | Prisma.DatasetImportUpdateManyWithWhereWithoutReleaseInput[]
+  deleteMany?: Prisma.DatasetImportScalarWhereInput | Prisma.DatasetImportScalarWhereInput[]
+}
+
+export type DatasetImportUncheckedUpdateManyWithoutReleaseNestedInput = {
+  create?: Prisma.XOR<Prisma.DatasetImportCreateWithoutReleaseInput, Prisma.DatasetImportUncheckedCreateWithoutReleaseInput> | Prisma.DatasetImportCreateWithoutReleaseInput[] | Prisma.DatasetImportUncheckedCreateWithoutReleaseInput[]
+  connectOrCreate?: Prisma.DatasetImportCreateOrConnectWithoutReleaseInput | Prisma.DatasetImportCreateOrConnectWithoutReleaseInput[]
+  upsert?: Prisma.DatasetImportUpsertWithWhereUniqueWithoutReleaseInput | Prisma.DatasetImportUpsertWithWhereUniqueWithoutReleaseInput[]
+  createMany?: Prisma.DatasetImportCreateManyReleaseInputEnvelope
+  set?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  disconnect?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  delete?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  connect?: Prisma.DatasetImportWhereUniqueInput | Prisma.DatasetImportWhereUniqueInput[]
+  update?: Prisma.DatasetImportUpdateWithWhereUniqueWithoutReleaseInput | Prisma.DatasetImportUpdateWithWhereUniqueWithoutReleaseInput[]
+  updateMany?: Prisma.DatasetImportUpdateManyWithWhereWithoutReleaseInput | Prisma.DatasetImportUpdateManyWithWhereWithoutReleaseInput[]
+  deleteMany?: Prisma.DatasetImportScalarWhereInput | Prisma.DatasetImportScalarWhereInput[]
+}
+
+export type DatasetImportCreateWithoutReleaseInput = {
+  id?: string
+  datasetVersion: string
+  checksum: string
+  status: string
+  startedAt?: Date | string
+  finishedAt?: Date | string | null
+  result?: string | null
+  error?: string | null
+}
+
+export type DatasetImportUncheckedCreateWithoutReleaseInput = {
+  id?: string
+  datasetVersion: string
+  checksum: string
+  status: string
+  startedAt?: Date | string
+  finishedAt?: Date | string | null
+  result?: string | null
+  error?: string | null
+}
+
+export type DatasetImportCreateOrConnectWithoutReleaseInput = {
+  where: Prisma.DatasetImportWhereUniqueInput
+  create: Prisma.XOR<Prisma.DatasetImportCreateWithoutReleaseInput, Prisma.DatasetImportUncheckedCreateWithoutReleaseInput>
+}
+
+export type DatasetImportCreateManyReleaseInputEnvelope = {
+  data: Prisma.DatasetImportCreateManyReleaseInput | Prisma.DatasetImportCreateManyReleaseInput[]
+}
+
+export type DatasetImportUpsertWithWhereUniqueWithoutReleaseInput = {
+  where: Prisma.DatasetImportWhereUniqueInput
+  update: Prisma.XOR<Prisma.DatasetImportUpdateWithoutReleaseInput, Prisma.DatasetImportUncheckedUpdateWithoutReleaseInput>
+  create: Prisma.XOR<Prisma.DatasetImportCreateWithoutReleaseInput, Prisma.DatasetImportUncheckedCreateWithoutReleaseInput>
+}
+
+export type DatasetImportUpdateWithWhereUniqueWithoutReleaseInput = {
+  where: Prisma.DatasetImportWhereUniqueInput
+  data: Prisma.XOR<Prisma.DatasetImportUpdateWithoutReleaseInput, Prisma.DatasetImportUncheckedUpdateWithoutReleaseInput>
+}
+
+export type DatasetImportUpdateManyWithWhereWithoutReleaseInput = {
+  where: Prisma.DatasetImportScalarWhereInput
+  data: Prisma.XOR<Prisma.DatasetImportUpdateManyMutationInput, Prisma.DatasetImportUncheckedUpdateManyWithoutReleaseInput>
+}
+
+export type DatasetImportScalarWhereInput = {
+  AND?: Prisma.DatasetImportScalarWhereInput | Prisma.DatasetImportScalarWhereInput[]
+  OR?: Prisma.DatasetImportScalarWhereInput[]
+  NOT?: Prisma.DatasetImportScalarWhereInput | Prisma.DatasetImportScalarWhereInput[]
+  id?: Prisma.StringFilter<"DatasetImport"> | string
+  datasetVersion?: Prisma.StringFilter<"DatasetImport"> | string
+  checksum?: Prisma.StringFilter<"DatasetImport"> | string
+  status?: Prisma.StringFilter<"DatasetImport"> | string
+  startedAt?: Prisma.DateTimeFilter<"DatasetImport"> | Date | string
+  finishedAt?: Prisma.DateTimeNullableFilter<"DatasetImport"> | Date | string | null
+  result?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+  error?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+  releaseId?: Prisma.StringNullableFilter<"DatasetImport"> | string | null
+}
+
+export type DatasetImportCreateManyReleaseInput = {
+  id?: string
+  datasetVersion: string
+  checksum: string
+  status: string
+  startedAt?: Date | string
+  finishedAt?: Date | string | null
+  result?: string | null
+  error?: string | null
+}
+
+export type DatasetImportUpdateWithoutReleaseInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  status?: Prisma.StringFieldUpdateOperationsInput | string
+  startedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  finishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  result?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  error?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+}
+
+export type DatasetImportUncheckedUpdateWithoutReleaseInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  status?: Prisma.StringFieldUpdateOperationsInput | string
+  startedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  finishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  result?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  error?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+}
+
+export type DatasetImportUncheckedUpdateManyWithoutReleaseInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  status?: Prisma.StringFieldUpdateOperationsInput | string
+  startedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  finishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  result?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  error?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
 }
 
 
@@ -382,6 +564,8 @@ export type DatasetImportSelect<ExtArgs extends runtime.Types.Extensions.Interna
   finishedAt?: boolean
   result?: boolean
   error?: boolean
+  releaseId?: boolean
+  release?: boolean | Prisma.DatasetImport$releaseArgs<ExtArgs>
 }, ExtArgs["result"]["datasetImport"]>
 
 export type DatasetImportSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -393,6 +577,8 @@ export type DatasetImportSelectCreateManyAndReturn<ExtArgs extends runtime.Types
   finishedAt?: boolean
   result?: boolean
   error?: boolean
+  releaseId?: boolean
+  release?: boolean | Prisma.DatasetImport$releaseArgs<ExtArgs>
 }, ExtArgs["result"]["datasetImport"]>
 
 export type DatasetImportSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -404,6 +590,8 @@ export type DatasetImportSelectUpdateManyAndReturn<ExtArgs extends runtime.Types
   finishedAt?: boolean
   result?: boolean
   error?: boolean
+  releaseId?: boolean
+  release?: boolean | Prisma.DatasetImport$releaseArgs<ExtArgs>
 }, ExtArgs["result"]["datasetImport"]>
 
 export type DatasetImportSelectScalar = {
@@ -415,13 +603,25 @@ export type DatasetImportSelectScalar = {
   finishedAt?: boolean
   result?: boolean
   error?: boolean
+  releaseId?: boolean
 }
 
-export type DatasetImportOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "datasetVersion" | "checksum" | "status" | "startedAt" | "finishedAt" | "result" | "error", ExtArgs["result"]["datasetImport"]>
+export type DatasetImportOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "datasetVersion" | "checksum" | "status" | "startedAt" | "finishedAt" | "result" | "error" | "releaseId", ExtArgs["result"]["datasetImport"]>
+export type DatasetImportInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  release?: boolean | Prisma.DatasetImport$releaseArgs<ExtArgs>
+}
+export type DatasetImportIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  release?: boolean | Prisma.DatasetImport$releaseArgs<ExtArgs>
+}
+export type DatasetImportIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  release?: boolean | Prisma.DatasetImport$releaseArgs<ExtArgs>
+}
 
 export type $DatasetImportPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "DatasetImport"
-  objects: {}
+  objects: {
+    release: Prisma.$CatalogReleasePayload<ExtArgs> | null
+  }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
     datasetVersion: string
@@ -431,6 +631,7 @@ export type $DatasetImportPayload<ExtArgs extends runtime.Types.Extensions.Inter
     finishedAt: Date | null
     result: string | null
     error: string | null
+    releaseId: string | null
   }, ExtArgs["result"]["datasetImport"]>
   composites: {}
 }
@@ -825,6 +1026,7 @@ readonly fields: DatasetImportFieldRefs;
  */
 export interface Prisma__DatasetImportClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
+  release<T extends Prisma.DatasetImport$releaseArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.DatasetImport$releaseArgs<ExtArgs>>): Prisma.Prisma__CatalogReleaseClient<runtime.Types.Result.GetResult<Prisma.$CatalogReleasePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -862,6 +1064,7 @@ export interface DatasetImportFieldRefs {
   readonly finishedAt: Prisma.FieldRef<"DatasetImport", 'DateTime'>
   readonly result: Prisma.FieldRef<"DatasetImport", 'String'>
   readonly error: Prisma.FieldRef<"DatasetImport", 'String'>
+  readonly releaseId: Prisma.FieldRef<"DatasetImport", 'String'>
 }
     
 
@@ -878,6 +1081,10 @@ export type DatasetImportFindUniqueArgs<ExtArgs extends runtime.Types.Extensions
    * Omit specific fields from the DatasetImport
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
   /**
    * Filter, which DatasetImport to fetch.
    */
@@ -897,6 +1104,10 @@ export type DatasetImportFindUniqueOrThrowArgs<ExtArgs extends runtime.Types.Ext
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
+  /**
    * Filter, which DatasetImport to fetch.
    */
   where: Prisma.DatasetImportWhereUniqueInput
@@ -914,6 +1125,10 @@ export type DatasetImportFindFirstArgs<ExtArgs extends runtime.Types.Extensions.
    * Omit specific fields from the DatasetImport
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
   /**
    * Filter, which DatasetImport to fetch.
    */
@@ -963,6 +1178,10 @@ export type DatasetImportFindFirstOrThrowArgs<ExtArgs extends runtime.Types.Exte
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
+  /**
    * Filter, which DatasetImport to fetch.
    */
   where?: Prisma.DatasetImportWhereInput
@@ -1010,6 +1229,10 @@ export type DatasetImportFindManyArgs<ExtArgs extends runtime.Types.Extensions.I
    * Omit specific fields from the DatasetImport
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
   /**
    * Filter, which DatasetImports to fetch.
    */
@@ -1059,6 +1282,10 @@ export type DatasetImportCreateArgs<ExtArgs extends runtime.Types.Extensions.Int
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
+  /**
    * The data needed to create a DatasetImport.
    */
   data: Prisma.XOR<Prisma.DatasetImportCreateInput, Prisma.DatasetImportUncheckedCreateInput>
@@ -1090,6 +1317,10 @@ export type DatasetImportCreateManyAndReturnArgs<ExtArgs extends runtime.Types.E
    * The data used to create many DatasetImports.
    */
   data: Prisma.DatasetImportCreateManyInput | Prisma.DatasetImportCreateManyInput[]
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportIncludeCreateManyAndReturn<ExtArgs> | null
 }
 
 /**
@@ -1104,6 +1335,10 @@ export type DatasetImportUpdateArgs<ExtArgs extends runtime.Types.Extensions.Int
    * Omit specific fields from the DatasetImport
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
   /**
    * The data needed to update a DatasetImport.
    */
@@ -1156,6 +1391,10 @@ export type DatasetImportUpdateManyAndReturnArgs<ExtArgs extends runtime.Types.E
    * Limit how many DatasetImports to update.
    */
   limit?: number
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportIncludeUpdateManyAndReturn<ExtArgs> | null
 }
 
 /**
@@ -1170,6 +1409,10 @@ export type DatasetImportUpsertArgs<ExtArgs extends runtime.Types.Extensions.Int
    * Omit specific fields from the DatasetImport
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
   /**
    * The filter to search for the DatasetImport to update in case it exists.
    */
@@ -1197,6 +1440,10 @@ export type DatasetImportDeleteArgs<ExtArgs extends runtime.Types.Extensions.Int
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
+  /**
    * Filter which DatasetImport to delete.
    */
   where: Prisma.DatasetImportWhereUniqueInput
@@ -1217,6 +1464,25 @@ export type DatasetImportDeleteManyArgs<ExtArgs extends runtime.Types.Extensions
 }
 
 /**
+ * DatasetImport.release
+ */
+export type DatasetImport$releaseArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the CatalogRelease
+   */
+  select?: Prisma.CatalogReleaseSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the CatalogRelease
+   */
+  omit?: Prisma.CatalogReleaseOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.CatalogReleaseInclude<ExtArgs> | null
+  where?: Prisma.CatalogReleaseWhereInput
+}
+
+/**
  * DatasetImport without action
  */
 export type DatasetImportDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -1228,4 +1494,8 @@ export type DatasetImportDefaultArgs<ExtArgs extends runtime.Types.Extensions.In
    * Omit specific fields from the DatasetImport
    */
   omit?: Prisma.DatasetImportOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.DatasetImportInclude<ExtArgs> | null
 }

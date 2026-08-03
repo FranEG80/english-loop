@@ -5,6 +5,7 @@ import type { ActivityResponseValue } from "@/core/models/attempt";
 import type { AttemptRepository } from "@/core/practice/ports/attempt-repository";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import type { DailySessionRepository } from "@/core/learning/ports/daily-session-repository";
+import type { LessonProgressRepository } from "@/core/learning/ports/lesson-progress-repository";
 import { ActivityAttempt } from "@/core/practice/domain/activity-attempt";
 import { ActivityAnswered, ActivityFailed } from "@/core/practice/domain/events";
 import { evaluate } from "@/core/practice/domain/activity-evaluator";
@@ -33,6 +34,7 @@ export interface SubmitAttemptTransactionResult {
 
 export interface SubmitAttemptTransactionOptions {
   dailySessionRepository?: DailySessionRepository;
+  lessonProgressRepository?: LessonProgressRepository;
 }
 
 /** Persiste un intento y todas sus proyecciones en una única transacción. */
@@ -60,6 +62,7 @@ export async function submitAttemptTransaction(
     taxonomyCatalog,
     idGenerator,
     clock,
+    options.lessonProgressRepository,
   );
 
   const { created, events, ...result } = await unitOfWork.transaction(async () => {
@@ -125,6 +128,9 @@ export async function submitAttemptTransaction(
       userId: actor.userId,
       practiceRunId: run.id,
       activityId: input.activityId,
+      activityVersionId: activity.versionId,
+      practiceRunItemId: `${run.id}:${run.currentIndex}`,
+      isRepetition: run.isCurrentActivityRepetition,
       origin: run.mode,
       idempotencyKey: input.idempotencyKey,
       response: input.response,
@@ -133,6 +139,12 @@ export async function submitAttemptTransaction(
       submittedAt: nowIso,
     });
     await attemptRepository.save(attempt);
+
+    // A failed original item gets exactly one copy appended to the run. A
+    // failed copy is marked as a repetition already, so it cannot recurse.
+    if (!attempt.isCorrect && !attempt.isRepetition) {
+      run.scheduleRepetition(input.activityId);
+    }
 
     const reviewUpdated = await projector.project({
       userId: actor.userId,

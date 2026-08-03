@@ -20,6 +20,8 @@ export const GET = withErrorHandling(
         runSummary.correctCount,
         runSummary.incorrectCount,
         runSummary.coveredSubtopicIds,
+        runSummary.recoveredCount,
+        runSummary.scorePercent,
       ),
     );
   },

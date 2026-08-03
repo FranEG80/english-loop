@@ -117,6 +117,8 @@ export const focusedPracticeMockAdapter: FocusedPracticePort = {
       runId: run.id,
       correctCount: stats.correct,
       incorrectCount: stats.incorrect,
+      recoveredCount: 0,
+      scorePercent: run.activityIds.length === 0 ? 0 : Math.round((stats.correct / run.activityIds.length) * 100),
       coveredSubtopicIds,
       scope: run.scope,
     };

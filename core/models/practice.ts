@@ -27,6 +27,10 @@ export interface PracticeRunSummaryDto {
   runId: string;
   correctCount: number;
   incorrectCount: number;
+  /** Aciertos de la única repetición inmediata permitida. */
+  recoveredCount: number;
+  /** Porcentaje calculado sobre las actividades originales. */
+  scorePercent: number;
   /** IDs de subtemas cubiertos durante la sesión. */
   coveredSubtopicIds: string[];
   scope: FocusedPracticeScopeDto;

@@ -10,6 +10,8 @@ export interface PracticeRunSummary {
   runId: string;
   correctCount: number;
   incorrectCount: number;
+  recoveredCount: number;
+  scorePercent: number;
   coveredSubtopicIds: string[];
 }
 
@@ -34,11 +36,19 @@ export async function getPracticeRunSummary(
     }),
   );
 
+  const originalAttempts = attempts.filter((attempt) => !attempt.isRepetition);
+  const correctCount = originalAttempts.filter((attempt) => attempt.isCorrect).length;
+  const incorrectCount = originalAttempts.filter((attempt) => !attempt.isCorrect).length;
+  const recoveredCount = attempts.filter((attempt) => attempt.isRepetition && attempt.isCorrect).length;
   return {
     run,
     runId: run.id,
-    correctCount: attempts.filter((attempt) => attempt.isCorrect).length,
-    incorrectCount: attempts.filter((attempt) => !attempt.isCorrect).length,
+    correctCount,
+    incorrectCount,
+    recoveredCount,
+    scorePercent: run.originalActivityCount === 0
+      ? 0
+      : Math.round((correctCount / run.originalActivityCount) * 100),
     coveredSubtopicIds: [...coveredSubtopicIds].sort(),
   };
 }

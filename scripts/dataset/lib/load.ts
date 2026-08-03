@@ -18,7 +18,7 @@ import type {
   Taxonomy,
 } from "./types";
 
-export async function loadDataset(): Promise<LoadedDataset> {
+export async function loadDataset(datasetRoot = DATASET_ROOT): Promise<LoadedDataset> {
   const [
     lessonPaths,
     activityPaths,
@@ -28,17 +28,17 @@ export async function loadDataset(): Promise<LoadedDataset> {
     sources,
   ] =
     await Promise.all([
-      walkFiles(path.join(DATASET_ROOT, "lessons"), ".md"),
-      walkFiles(path.join(DATASET_ROOT, "activities"), ".json"),
-      readJson<Taxonomy>(path.join(DATASET_ROOT, "catalog", "taxonomy.json")),
+      walkFiles(path.join(datasetRoot, "lessons"), ".md"),
+      walkFiles(path.join(datasetRoot, "activities"), ".json"),
+      readJson<Taxonomy>(path.join(datasetRoot, "catalog", "taxonomy.json")),
       readJson<CoverageTargets>(
-        path.join(DATASET_ROOT, "catalog", "coverage-targets.json"),
+        path.join(datasetRoot, "catalog", "coverage-targets.json"),
       ),
       readJson<CurriculumMap>(
-        path.join(DATASET_ROOT, "catalog", "curriculum-map.json"),
+        path.join(datasetRoot, "catalog", "curriculum-map.json"),
       ),
       readJson<SourcesCatalog>(
-        path.join(DATASET_ROOT, "references", "sources.json"),
+        path.join(datasetRoot, "references", "sources.json"),
       ),
     ]);
 
@@ -48,7 +48,7 @@ export async function loadDataset(): Promise<LoadedDataset> {
       const parsed = matter(source);
       return {
         filePath,
-        relativePath: toPosixRelative(filePath),
+        relativePath: toPosixRelative(filePath, datasetRoot),
         frontmatter: parsed.data as LessonFrontmatter,
         content: parsed.content.trim(),
       };
@@ -58,7 +58,7 @@ export async function loadDataset(): Promise<LoadedDataset> {
   const batches = await Promise.all(
     activityPaths.map(async (filePath) => ({
       filePath,
-      relativePath: toPosixRelative(filePath),
+      relativePath: toPosixRelative(filePath, datasetRoot),
       batch: await readJson<ActivityBatch>(filePath),
     })),
   );

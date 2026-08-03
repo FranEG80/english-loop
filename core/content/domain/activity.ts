@@ -45,6 +45,8 @@ export interface ActivityPair {
  */
 export interface Activity {
   id: string;
+  /** Immutable catalog version used when the activity is attempted. */
+  versionId?: string;
   level: CefrLevel;
   type: string;
   category: string;

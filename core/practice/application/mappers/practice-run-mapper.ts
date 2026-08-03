@@ -22,11 +22,17 @@ export function toPracticeRunSummaryDto(
   correctCount: number,
   incorrectCount: number,
   coveredSubtopicIds: string[],
+  recoveredCount = 0,
+  scorePercent = run.originalActivityCount === 0
+    ? 0
+    : Math.round((correctCount / run.originalActivityCount) * 100),
 ): PracticeRunSummaryDto {
   return {
     runId: run.id,
     correctCount,
     incorrectCount,
+    recoveredCount,
+    scorePercent,
     coveredSubtopicIds,
     scope: {
       taxonomyNodeId: run.scope.taxonomyNodeId,

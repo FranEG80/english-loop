@@ -12,7 +12,17 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "json", "html"],
-      include: ["core/**/*.ts", "adapters/**/*.ts", "server/**/*.ts"],
+      include: [
+        "core/**/*.ts",
+        "adapters/**/*.ts",
+        "server/**/*.ts",
+        "app/api/**/*.ts",
+        "app/actions/**/*.ts",
+        "features/**/*.ts",
+        "features/**/*.tsx",
+        "shared/**/*.ts",
+        "shared/**/*.tsx",
+      ],
       exclude: ["**/*.test.ts", "**/*.test.tsx", "generated/**", "**/index.ts"],
       thresholds: {
         // Umbral de la primera ola integral; se eleva junto con cada capa

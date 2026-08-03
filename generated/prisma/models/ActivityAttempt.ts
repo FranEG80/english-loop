@@ -29,10 +29,13 @@ export type ActivityAttemptMinAggregateOutputType = {
   userId: string | null
   practiceRunId: string | null
   activityId: string | null
+  activityVersionId: string | null
+  practiceRunItemId: string | null
   origin: string | null
   idempotencyKey: string | null
   response: string | null
   isCorrect: boolean | null
+  isRepetition: boolean | null
   evaluatorVersion: string | null
   submittedAt: Date | null
 }
@@ -42,10 +45,13 @@ export type ActivityAttemptMaxAggregateOutputType = {
   userId: string | null
   practiceRunId: string | null
   activityId: string | null
+  activityVersionId: string | null
+  practiceRunItemId: string | null
   origin: string | null
   idempotencyKey: string | null
   response: string | null
   isCorrect: boolean | null
+  isRepetition: boolean | null
   evaluatorVersion: string | null
   submittedAt: Date | null
 }
@@ -55,10 +61,13 @@ export type ActivityAttemptCountAggregateOutputType = {
   userId: number
   practiceRunId: number
   activityId: number
+  activityVersionId: number
+  practiceRunItemId: number
   origin: number
   idempotencyKey: number
   response: number
   isCorrect: number
+  isRepetition: number
   evaluatorVersion: number
   submittedAt: number
   _all: number
@@ -70,10 +79,13 @@ export type ActivityAttemptMinAggregateInputType = {
   userId?: true
   practiceRunId?: true
   activityId?: true
+  activityVersionId?: true
+  practiceRunItemId?: true
   origin?: true
   idempotencyKey?: true
   response?: true
   isCorrect?: true
+  isRepetition?: true
   evaluatorVersion?: true
   submittedAt?: true
 }
@@ -83,10 +95,13 @@ export type ActivityAttemptMaxAggregateInputType = {
   userId?: true
   practiceRunId?: true
   activityId?: true
+  activityVersionId?: true
+  practiceRunItemId?: true
   origin?: true
   idempotencyKey?: true
   response?: true
   isCorrect?: true
+  isRepetition?: true
   evaluatorVersion?: true
   submittedAt?: true
 }
@@ -96,10 +111,13 @@ export type ActivityAttemptCountAggregateInputType = {
   userId?: true
   practiceRunId?: true
   activityId?: true
+  activityVersionId?: true
+  practiceRunItemId?: true
   origin?: true
   idempotencyKey?: true
   response?: true
   isCorrect?: true
+  isRepetition?: true
   evaluatorVersion?: true
   submittedAt?: true
   _all?: true
@@ -182,10 +200,13 @@ export type ActivityAttemptGroupByOutputType = {
   userId: string
   practiceRunId: string | null
   activityId: string
+  activityVersionId: string | null
+  practiceRunItemId: string | null
   origin: string
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition: boolean
   evaluatorVersion: string
   submittedAt: Date
   _count: ActivityAttemptCountAggregateOutputType | null
@@ -216,13 +237,18 @@ export type ActivityAttemptWhereInput = {
   userId?: Prisma.StringFilter<"ActivityAttempt"> | string
   practiceRunId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
   activityId?: Prisma.StringFilter<"ActivityAttempt"> | string
+  activityVersionId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
+  practiceRunItemId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
   origin?: Prisma.StringFilter<"ActivityAttempt"> | string
   idempotencyKey?: Prisma.StringFilter<"ActivityAttempt"> | string
   response?: Prisma.StringFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
+  isRepetition?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeFilter<"ActivityAttempt"> | Date | string
   practiceRun?: Prisma.XOR<Prisma.PracticeRunNullableScalarRelationFilter, Prisma.PracticeRunWhereInput> | null
+  activityVersion?: Prisma.XOR<Prisma.ActivityVersionNullableScalarRelationFilter, Prisma.ActivityVersionWhereInput> | null
+  practiceRunItem?: Prisma.XOR<Prisma.PracticeRunItemNullableScalarRelationFilter, Prisma.PracticeRunItemWhereInput> | null
 }
 
 export type ActivityAttemptOrderByWithRelationInput = {
@@ -230,13 +256,18 @@ export type ActivityAttemptOrderByWithRelationInput = {
   userId?: Prisma.SortOrder
   practiceRunId?: Prisma.SortOrderInput | Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrderInput | Prisma.SortOrder
+  practiceRunItemId?: Prisma.SortOrderInput | Prisma.SortOrder
   origin?: Prisma.SortOrder
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
   practiceRun?: Prisma.PracticeRunOrderByWithRelationInput
+  activityVersion?: Prisma.ActivityVersionOrderByWithRelationInput
+  practiceRunItem?: Prisma.PracticeRunItemOrderByWithRelationInput
 }
 
 export type ActivityAttemptWhereUniqueInput = Prisma.AtLeast<{
@@ -248,13 +279,18 @@ export type ActivityAttemptWhereUniqueInput = Prisma.AtLeast<{
   userId?: Prisma.StringFilter<"ActivityAttempt"> | string
   practiceRunId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
   activityId?: Prisma.StringFilter<"ActivityAttempt"> | string
+  activityVersionId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
+  practiceRunItemId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
   origin?: Prisma.StringFilter<"ActivityAttempt"> | string
   idempotencyKey?: Prisma.StringFilter<"ActivityAttempt"> | string
   response?: Prisma.StringFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
+  isRepetition?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeFilter<"ActivityAttempt"> | Date | string
   practiceRun?: Prisma.XOR<Prisma.PracticeRunNullableScalarRelationFilter, Prisma.PracticeRunWhereInput> | null
+  activityVersion?: Prisma.XOR<Prisma.ActivityVersionNullableScalarRelationFilter, Prisma.ActivityVersionWhereInput> | null
+  practiceRunItem?: Prisma.XOR<Prisma.PracticeRunItemNullableScalarRelationFilter, Prisma.PracticeRunItemWhereInput> | null
 }, "id" | "userId_idempotencyKey">
 
 export type ActivityAttemptOrderByWithAggregationInput = {
@@ -262,10 +298,13 @@ export type ActivityAttemptOrderByWithAggregationInput = {
   userId?: Prisma.SortOrder
   practiceRunId?: Prisma.SortOrderInput | Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrderInput | Prisma.SortOrder
+  practiceRunItemId?: Prisma.SortOrderInput | Prisma.SortOrder
   origin?: Prisma.SortOrder
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
   _count?: Prisma.ActivityAttemptCountOrderByAggregateInput
@@ -281,10 +320,13 @@ export type ActivityAttemptScalarWhereWithAggregatesInput = {
   userId?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   practiceRunId?: Prisma.StringNullableWithAggregatesFilter<"ActivityAttempt"> | string | null
   activityId?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
+  activityVersionId?: Prisma.StringNullableWithAggregatesFilter<"ActivityAttempt"> | string | null
+  practiceRunItemId?: Prisma.StringNullableWithAggregatesFilter<"ActivityAttempt"> | string | null
   origin?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   idempotencyKey?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   response?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolWithAggregatesFilter<"ActivityAttempt"> | boolean
+  isRepetition?: Prisma.BoolWithAggregatesFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeWithAggregatesFilter<"ActivityAttempt"> | Date | string
 }
@@ -297,9 +339,12 @@ export type ActivityAttemptCreateInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
   practiceRun?: Prisma.PracticeRunCreateNestedOneWithoutAttemptsInput
+  activityVersion?: Prisma.ActivityVersionCreateNestedOneWithoutAttemptsInput
+  practiceRunItem?: Prisma.PracticeRunItemCreateNestedOneWithoutAttemptsInput
 }
 
 export type ActivityAttemptUncheckedCreateInput = {
@@ -307,10 +352,13 @@ export type ActivityAttemptUncheckedCreateInput = {
   userId: string
   practiceRunId?: string | null
   activityId: string
+  activityVersionId?: string | null
+  practiceRunItemId?: string | null
   origin: string
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
 }
@@ -323,9 +371,12 @@ export type ActivityAttemptUpdateInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   practiceRun?: Prisma.PracticeRunUpdateOneWithoutAttemptsNestedInput
+  activityVersion?: Prisma.ActivityVersionUpdateOneWithoutAttemptsNestedInput
+  practiceRunItem?: Prisma.PracticeRunItemUpdateOneWithoutAttemptsNestedInput
 }
 
 export type ActivityAttemptUncheckedUpdateInput = {
@@ -333,10 +384,13 @@ export type ActivityAttemptUncheckedUpdateInput = {
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   practiceRunId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  practiceRunItemId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -346,10 +400,13 @@ export type ActivityAttemptCreateManyInput = {
   userId: string
   practiceRunId?: string | null
   activityId: string
+  activityVersionId?: string | null
+  practiceRunItemId?: string | null
   origin: string
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
 }
@@ -362,6 +419,7 @@ export type ActivityAttemptUpdateManyMutationInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -371,10 +429,13 @@ export type ActivityAttemptUncheckedUpdateManyInput = {
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   practiceRunId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  practiceRunItemId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -399,10 +460,13 @@ export type ActivityAttemptCountOrderByAggregateInput = {
   userId?: Prisma.SortOrder
   practiceRunId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrder
+  practiceRunItemId?: Prisma.SortOrder
   origin?: Prisma.SortOrder
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
 }
@@ -412,10 +476,13 @@ export type ActivityAttemptMaxOrderByAggregateInput = {
   userId?: Prisma.SortOrder
   practiceRunId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrder
+  practiceRunItemId?: Prisma.SortOrder
   origin?: Prisma.SortOrder
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
 }
@@ -425,10 +492,13 @@ export type ActivityAttemptMinOrderByAggregateInput = {
   userId?: Prisma.SortOrder
   practiceRunId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrder
+  practiceRunItemId?: Prisma.SortOrder
   origin?: Prisma.SortOrder
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
 }
@@ -475,6 +545,90 @@ export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunNestedInput = {
   deleteMany?: Prisma.ActivityAttemptScalarWhereInput | Prisma.ActivityAttemptScalarWhereInput[]
 }
 
+export type ActivityAttemptCreateNestedManyWithoutActivityVersionInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput> | Prisma.ActivityAttemptCreateWithoutActivityVersionInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput | Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyActivityVersionInputEnvelope
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+}
+
+export type ActivityAttemptUncheckedCreateNestedManyWithoutActivityVersionInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput> | Prisma.ActivityAttemptCreateWithoutActivityVersionInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput | Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyActivityVersionInputEnvelope
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+}
+
+export type ActivityAttemptUpdateManyWithoutActivityVersionNestedInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput> | Prisma.ActivityAttemptCreateWithoutActivityVersionInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput | Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput[]
+  upsert?: Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutActivityVersionInput | Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutActivityVersionInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyActivityVersionInputEnvelope
+  set?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  disconnect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  delete?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  update?: Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutActivityVersionInput | Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutActivityVersionInput[]
+  updateMany?: Prisma.ActivityAttemptUpdateManyWithWhereWithoutActivityVersionInput | Prisma.ActivityAttemptUpdateManyWithWhereWithoutActivityVersionInput[]
+  deleteMany?: Prisma.ActivityAttemptScalarWhereInput | Prisma.ActivityAttemptScalarWhereInput[]
+}
+
+export type ActivityAttemptUncheckedUpdateManyWithoutActivityVersionNestedInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput> | Prisma.ActivityAttemptCreateWithoutActivityVersionInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput | Prisma.ActivityAttemptCreateOrConnectWithoutActivityVersionInput[]
+  upsert?: Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutActivityVersionInput | Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutActivityVersionInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyActivityVersionInputEnvelope
+  set?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  disconnect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  delete?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  update?: Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutActivityVersionInput | Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutActivityVersionInput[]
+  updateMany?: Prisma.ActivityAttemptUpdateManyWithWhereWithoutActivityVersionInput | Prisma.ActivityAttemptUpdateManyWithWhereWithoutActivityVersionInput[]
+  deleteMany?: Prisma.ActivityAttemptScalarWhereInput | Prisma.ActivityAttemptScalarWhereInput[]
+}
+
+export type ActivityAttemptCreateNestedManyWithoutPracticeRunItemInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput> | Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput | Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyPracticeRunItemInputEnvelope
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+}
+
+export type ActivityAttemptUncheckedCreateNestedManyWithoutPracticeRunItemInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput> | Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput | Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyPracticeRunItemInputEnvelope
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+}
+
+export type ActivityAttemptUpdateManyWithoutPracticeRunItemNestedInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput> | Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput | Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput[]
+  upsert?: Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutPracticeRunItemInput | Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutPracticeRunItemInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyPracticeRunItemInputEnvelope
+  set?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  disconnect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  delete?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  update?: Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunItemInput | Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunItemInput[]
+  updateMany?: Prisma.ActivityAttemptUpdateManyWithWhereWithoutPracticeRunItemInput | Prisma.ActivityAttemptUpdateManyWithWhereWithoutPracticeRunItemInput[]
+  deleteMany?: Prisma.ActivityAttemptScalarWhereInput | Prisma.ActivityAttemptScalarWhereInput[]
+}
+
+export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunItemNestedInput = {
+  create?: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput> | Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput[] | Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput[]
+  connectOrCreate?: Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput | Prisma.ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput[]
+  upsert?: Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutPracticeRunItemInput | Prisma.ActivityAttemptUpsertWithWhereUniqueWithoutPracticeRunItemInput[]
+  createMany?: Prisma.ActivityAttemptCreateManyPracticeRunItemInputEnvelope
+  set?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  disconnect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  delete?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  connect?: Prisma.ActivityAttemptWhereUniqueInput | Prisma.ActivityAttemptWhereUniqueInput[]
+  update?: Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunItemInput | Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunItemInput[]
+  updateMany?: Prisma.ActivityAttemptUpdateManyWithWhereWithoutPracticeRunItemInput | Prisma.ActivityAttemptUpdateManyWithWhereWithoutPracticeRunItemInput[]
+  deleteMany?: Prisma.ActivityAttemptScalarWhereInput | Prisma.ActivityAttemptScalarWhereInput[]
+}
+
 export type ActivityAttemptCreateWithoutPracticeRunInput = {
   id?: string
   userId: string
@@ -483,18 +637,24 @@ export type ActivityAttemptCreateWithoutPracticeRunInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
+  activityVersion?: Prisma.ActivityVersionCreateNestedOneWithoutAttemptsInput
+  practiceRunItem?: Prisma.PracticeRunItemCreateNestedOneWithoutAttemptsInput
 }
 
 export type ActivityAttemptUncheckedCreateWithoutPracticeRunInput = {
   id?: string
   userId: string
   activityId: string
+  activityVersionId?: string | null
+  practiceRunItemId?: string | null
   origin: string
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
 }
@@ -532,15 +692,18 @@ export type ActivityAttemptScalarWhereInput = {
   userId?: Prisma.StringFilter<"ActivityAttempt"> | string
   practiceRunId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
   activityId?: Prisma.StringFilter<"ActivityAttempt"> | string
+  activityVersionId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
+  practiceRunItemId?: Prisma.StringNullableFilter<"ActivityAttempt"> | string | null
   origin?: Prisma.StringFilter<"ActivityAttempt"> | string
   idempotencyKey?: Prisma.StringFilter<"ActivityAttempt"> | string
   response?: Prisma.StringFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
+  isRepetition?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeFilter<"ActivityAttempt"> | Date | string
 }
 
-export type ActivityAttemptCreateManyPracticeRunInput = {
+export type ActivityAttemptCreateWithoutActivityVersionInput = {
   id?: string
   userId: string
   activityId: string
@@ -548,6 +711,119 @@ export type ActivityAttemptCreateManyPracticeRunInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  isRepetition?: boolean
+  evaluatorVersion: string
+  submittedAt?: Date | string
+  practiceRun?: Prisma.PracticeRunCreateNestedOneWithoutAttemptsInput
+  practiceRunItem?: Prisma.PracticeRunItemCreateNestedOneWithoutAttemptsInput
+}
+
+export type ActivityAttemptUncheckedCreateWithoutActivityVersionInput = {
+  id?: string
+  userId: string
+  practiceRunId?: string | null
+  activityId: string
+  practiceRunItemId?: string | null
+  origin: string
+  idempotencyKey: string
+  response: string
+  isCorrect: boolean
+  isRepetition?: boolean
+  evaluatorVersion: string
+  submittedAt?: Date | string
+}
+
+export type ActivityAttemptCreateOrConnectWithoutActivityVersionInput = {
+  where: Prisma.ActivityAttemptWhereUniqueInput
+  create: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput>
+}
+
+export type ActivityAttemptCreateManyActivityVersionInputEnvelope = {
+  data: Prisma.ActivityAttemptCreateManyActivityVersionInput | Prisma.ActivityAttemptCreateManyActivityVersionInput[]
+}
+
+export type ActivityAttemptUpsertWithWhereUniqueWithoutActivityVersionInput = {
+  where: Prisma.ActivityAttemptWhereUniqueInput
+  update: Prisma.XOR<Prisma.ActivityAttemptUpdateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedUpdateWithoutActivityVersionInput>
+  create: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedCreateWithoutActivityVersionInput>
+}
+
+export type ActivityAttemptUpdateWithWhereUniqueWithoutActivityVersionInput = {
+  where: Prisma.ActivityAttemptWhereUniqueInput
+  data: Prisma.XOR<Prisma.ActivityAttemptUpdateWithoutActivityVersionInput, Prisma.ActivityAttemptUncheckedUpdateWithoutActivityVersionInput>
+}
+
+export type ActivityAttemptUpdateManyWithWhereWithoutActivityVersionInput = {
+  where: Prisma.ActivityAttemptScalarWhereInput
+  data: Prisma.XOR<Prisma.ActivityAttemptUpdateManyMutationInput, Prisma.ActivityAttemptUncheckedUpdateManyWithoutActivityVersionInput>
+}
+
+export type ActivityAttemptCreateWithoutPracticeRunItemInput = {
+  id?: string
+  userId: string
+  activityId: string
+  origin: string
+  idempotencyKey: string
+  response: string
+  isCorrect: boolean
+  isRepetition?: boolean
+  evaluatorVersion: string
+  submittedAt?: Date | string
+  practiceRun?: Prisma.PracticeRunCreateNestedOneWithoutAttemptsInput
+  activityVersion?: Prisma.ActivityVersionCreateNestedOneWithoutAttemptsInput
+}
+
+export type ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput = {
+  id?: string
+  userId: string
+  practiceRunId?: string | null
+  activityId: string
+  activityVersionId?: string | null
+  origin: string
+  idempotencyKey: string
+  response: string
+  isCorrect: boolean
+  isRepetition?: boolean
+  evaluatorVersion: string
+  submittedAt?: Date | string
+}
+
+export type ActivityAttemptCreateOrConnectWithoutPracticeRunItemInput = {
+  where: Prisma.ActivityAttemptWhereUniqueInput
+  create: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput>
+}
+
+export type ActivityAttemptCreateManyPracticeRunItemInputEnvelope = {
+  data: Prisma.ActivityAttemptCreateManyPracticeRunItemInput | Prisma.ActivityAttemptCreateManyPracticeRunItemInput[]
+}
+
+export type ActivityAttemptUpsertWithWhereUniqueWithoutPracticeRunItemInput = {
+  where: Prisma.ActivityAttemptWhereUniqueInput
+  update: Prisma.XOR<Prisma.ActivityAttemptUpdateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedUpdateWithoutPracticeRunItemInput>
+  create: Prisma.XOR<Prisma.ActivityAttemptCreateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput>
+}
+
+export type ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunItemInput = {
+  where: Prisma.ActivityAttemptWhereUniqueInput
+  data: Prisma.XOR<Prisma.ActivityAttemptUpdateWithoutPracticeRunItemInput, Prisma.ActivityAttemptUncheckedUpdateWithoutPracticeRunItemInput>
+}
+
+export type ActivityAttemptUpdateManyWithWhereWithoutPracticeRunItemInput = {
+  where: Prisma.ActivityAttemptScalarWhereInput
+  data: Prisma.XOR<Prisma.ActivityAttemptUpdateManyMutationInput, Prisma.ActivityAttemptUncheckedUpdateManyWithoutPracticeRunItemInput>
+}
+
+export type ActivityAttemptCreateManyPracticeRunInput = {
+  id?: string
+  userId: string
+  activityId: string
+  activityVersionId?: string | null
+  practiceRunItemId?: string | null
+  origin: string
+  idempotencyKey: string
+  response: string
+  isCorrect: boolean
+  isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
 }
@@ -560,18 +836,24 @@ export type ActivityAttemptUpdateWithoutPracticeRunInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  activityVersion?: Prisma.ActivityVersionUpdateOneWithoutAttemptsNestedInput
+  practiceRunItem?: Prisma.PracticeRunItemUpdateOneWithoutAttemptsNestedInput
 }
 
 export type ActivityAttemptUncheckedUpdateWithoutPracticeRunInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  practiceRunItemId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -580,10 +862,133 @@ export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  practiceRunItemId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+}
+
+export type ActivityAttemptCreateManyActivityVersionInput = {
+  id?: string
+  userId: string
+  practiceRunId?: string | null
+  activityId: string
+  practiceRunItemId?: string | null
+  origin: string
+  idempotencyKey: string
+  response: string
+  isCorrect: boolean
+  isRepetition?: boolean
+  evaluatorVersion: string
+  submittedAt?: Date | string
+}
+
+export type ActivityAttemptUpdateWithoutActivityVersionInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  origin?: Prisma.StringFieldUpdateOperationsInput | string
+  idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
+  response?: Prisma.StringFieldUpdateOperationsInput | string
+  isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  practiceRun?: Prisma.PracticeRunUpdateOneWithoutAttemptsNestedInput
+  practiceRunItem?: Prisma.PracticeRunItemUpdateOneWithoutAttemptsNestedInput
+}
+
+export type ActivityAttemptUncheckedUpdateWithoutActivityVersionInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  practiceRunId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  practiceRunItemId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  origin?: Prisma.StringFieldUpdateOperationsInput | string
+  idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
+  response?: Prisma.StringFieldUpdateOperationsInput | string
+  isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+}
+
+export type ActivityAttemptUncheckedUpdateManyWithoutActivityVersionInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  practiceRunId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  practiceRunItemId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  origin?: Prisma.StringFieldUpdateOperationsInput | string
+  idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
+  response?: Prisma.StringFieldUpdateOperationsInput | string
+  isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+}
+
+export type ActivityAttemptCreateManyPracticeRunItemInput = {
+  id?: string
+  userId: string
+  practiceRunId?: string | null
+  activityId: string
+  activityVersionId?: string | null
+  origin: string
+  idempotencyKey: string
+  response: string
+  isCorrect: boolean
+  isRepetition?: boolean
+  evaluatorVersion: string
+  submittedAt?: Date | string
+}
+
+export type ActivityAttemptUpdateWithoutPracticeRunItemInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  origin?: Prisma.StringFieldUpdateOperationsInput | string
+  idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
+  response?: Prisma.StringFieldUpdateOperationsInput | string
+  isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  practiceRun?: Prisma.PracticeRunUpdateOneWithoutAttemptsNestedInput
+  activityVersion?: Prisma.ActivityVersionUpdateOneWithoutAttemptsNestedInput
+}
+
+export type ActivityAttemptUncheckedUpdateWithoutPracticeRunItemInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  practiceRunId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  origin?: Prisma.StringFieldUpdateOperationsInput | string
+  idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
+  response?: Prisma.StringFieldUpdateOperationsInput | string
+  isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+}
+
+export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunItemInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  practiceRunId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  origin?: Prisma.StringFieldUpdateOperationsInput | string
+  idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
+  response?: Prisma.StringFieldUpdateOperationsInput | string
+  isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -595,13 +1000,18 @@ export type ActivityAttemptSelect<ExtArgs extends runtime.Types.Extensions.Inter
   userId?: boolean
   practiceRunId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  practiceRunItemId?: boolean
   origin?: boolean
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
+  activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
+  practiceRunItem?: boolean | Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>
 }, ExtArgs["result"]["activityAttempt"]>
 
 export type ActivityAttemptSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -609,13 +1019,18 @@ export type ActivityAttemptSelectCreateManyAndReturn<ExtArgs extends runtime.Typ
   userId?: boolean
   practiceRunId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  practiceRunItemId?: boolean
   origin?: boolean
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
+  activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
+  practiceRunItem?: boolean | Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>
 }, ExtArgs["result"]["activityAttempt"]>
 
 export type ActivityAttemptSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -623,13 +1038,18 @@ export type ActivityAttemptSelectUpdateManyAndReturn<ExtArgs extends runtime.Typ
   userId?: boolean
   practiceRunId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  practiceRunItemId?: boolean
   origin?: boolean
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
+  activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
+  practiceRunItem?: boolean | Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>
 }, ExtArgs["result"]["activityAttempt"]>
 
 export type ActivityAttemptSelectScalar = {
@@ -637,39 +1057,53 @@ export type ActivityAttemptSelectScalar = {
   userId?: boolean
   practiceRunId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  practiceRunItemId?: boolean
   origin?: boolean
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
 }
 
-export type ActivityAttemptOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "practiceRunId" | "activityId" | "origin" | "idempotencyKey" | "response" | "isCorrect" | "evaluatorVersion" | "submittedAt", ExtArgs["result"]["activityAttempt"]>
+export type ActivityAttemptOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "practiceRunId" | "activityId" | "activityVersionId" | "practiceRunItemId" | "origin" | "idempotencyKey" | "response" | "isCorrect" | "isRepetition" | "evaluatorVersion" | "submittedAt", ExtArgs["result"]["activityAttempt"]>
 export type ActivityAttemptInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
+  activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
+  practiceRunItem?: boolean | Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>
 }
 export type ActivityAttemptIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
+  activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
+  practiceRunItem?: boolean | Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>
 }
 export type ActivityAttemptIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
+  activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
+  practiceRunItem?: boolean | Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>
 }
 
 export type $ActivityAttemptPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "ActivityAttempt"
   objects: {
     practiceRun: Prisma.$PracticeRunPayload<ExtArgs> | null
+    activityVersion: Prisma.$ActivityVersionPayload<ExtArgs> | null
+    practiceRunItem: Prisma.$PracticeRunItemPayload<ExtArgs> | null
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
     userId: string
     practiceRunId: string | null
     activityId: string
+    activityVersionId: string | null
+    practiceRunItemId: string | null
     origin: string
     idempotencyKey: string
     response: string
     isCorrect: boolean
+    isRepetition: boolean
     evaluatorVersion: string
     submittedAt: Date
   }, ExtArgs["result"]["activityAttempt"]>
@@ -1067,6 +1501,8 @@ readonly fields: ActivityAttemptFieldRefs;
 export interface Prisma__ActivityAttemptClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
   practiceRun<T extends Prisma.ActivityAttempt$practiceRunArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>>): Prisma.Prisma__PracticeRunClient<runtime.Types.Result.GetResult<Prisma.$PracticeRunPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+  activityVersion<T extends Prisma.ActivityAttempt$activityVersionArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>>): Prisma.Prisma__ActivityVersionClient<runtime.Types.Result.GetResult<Prisma.$ActivityVersionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+  practiceRunItem<T extends Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.ActivityAttempt$practiceRunItemArgs<ExtArgs>>): Prisma.Prisma__PracticeRunItemClient<runtime.Types.Result.GetResult<Prisma.$PracticeRunItemPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1100,10 +1536,13 @@ export interface ActivityAttemptFieldRefs {
   readonly userId: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly practiceRunId: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly activityId: Prisma.FieldRef<"ActivityAttempt", 'String'>
+  readonly activityVersionId: Prisma.FieldRef<"ActivityAttempt", 'String'>
+  readonly practiceRunItemId: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly origin: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly idempotencyKey: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly response: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly isCorrect: Prisma.FieldRef<"ActivityAttempt", 'Boolean'>
+  readonly isRepetition: Prisma.FieldRef<"ActivityAttempt", 'Boolean'>
   readonly evaluatorVersion: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly submittedAt: Prisma.FieldRef<"ActivityAttempt", 'DateTime'>
 }
@@ -1521,6 +1960,44 @@ export type ActivityAttempt$practiceRunArgs<ExtArgs extends runtime.Types.Extens
    */
   include?: Prisma.PracticeRunInclude<ExtArgs> | null
   where?: Prisma.PracticeRunWhereInput
+}
+
+/**
+ * ActivityAttempt.activityVersion
+ */
+export type ActivityAttempt$activityVersionArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the ActivityVersion
+   */
+  select?: Prisma.ActivityVersionSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the ActivityVersion
+   */
+  omit?: Prisma.ActivityVersionOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.ActivityVersionInclude<ExtArgs> | null
+  where?: Prisma.ActivityVersionWhereInput
+}
+
+/**
+ * ActivityAttempt.practiceRunItem
+ */
+export type ActivityAttempt$practiceRunItemArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the PracticeRunItem
+   */
+  select?: Prisma.PracticeRunItemSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the PracticeRunItem
+   */
+  omit?: Prisma.PracticeRunItemOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PracticeRunItemInclude<ExtArgs> | null
+  where?: Prisma.PracticeRunItemWhereInput
 }
 
 /**

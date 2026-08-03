@@ -27,7 +27,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "pnpm build:test && pnpm start",
+    command: "pnpm build:test && pnpm start -H 127.0.0.1",
     url: "http://127.0.0.1:3000/api/v1/health",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

@@ -25,6 +25,8 @@ describe("ReviewRepository contract", () => {
         "id" TEXT NOT NULL PRIMARY KEY,
         "userId" TEXT NOT NULL,
         "activityId" TEXT NOT NULL,
+        "activityVersionId" TEXT,
+        "lessonId" TEXT,
         "taxonomyNodeId" TEXT NOT NULL,
         "level" TEXT NOT NULL,
         "stage" INTEGER NOT NULL DEFAULT 0,

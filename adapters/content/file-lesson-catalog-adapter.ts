@@ -40,6 +40,16 @@ interface LessonFrontmatter {
   relatedLessonIds?: string[];
 }
 
+interface ActivityIndexEntry {
+  id: string;
+  lessonIds: string[];
+  status: string;
+}
+
+interface ActivityIndex {
+  activities: ActivityIndexEntry[];
+}
+
 /**
  * Adaptador de lecciones que lee `DATASET/catalog/lesson-index.json` y los
  * archivos markdown. Cachea el índice una vez por proceso.
@@ -48,10 +58,13 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
   private readonly datasetRoot: string;
   private readonly indexPath: string;
   private indexPromise: Promise<LessonIndexEntry[]> | null = null;
+  private readonly activityIndexPath: string;
+  private relatedActivitiesPromise: Promise<Map<string, string[]>> | null = null;
 
   constructor(datasetRoot: string) {
     this.datasetRoot = datasetRoot;
     this.indexPath = path.join(datasetRoot, "catalog", "lesson-index.json");
+    this.activityIndexPath = path.join(datasetRoot, "catalog", "activity-index.json");
   }
 
   private async loadIndex(): Promise<LessonIndexEntry[]> {
@@ -74,7 +87,29 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
     return raw.lessons.filter((lesson) => lesson.status === "published");
   }
 
-  private async readLesson(entry: LessonIndexEntry): Promise<Lesson> {
+  private async relatedActivities(): Promise<Map<string, string[]>> {
+    if (this.relatedActivitiesPromise) return this.relatedActivitiesPromise;
+    this.relatedActivitiesPromise = (async () => {
+      try {
+        const raw = JSON.parse(await readFile(this.activityIndexPath, "utf8")) as ActivityIndex;
+        const result = new Map<string, string[]>();
+        for (const activity of raw.activities) {
+          if (activity.status !== "published") continue;
+          for (const lessonId of activity.lessonIds) {
+            const ids = result.get(lessonId) ?? [];
+            ids.push(activity.id);
+            result.set(lessonId, ids);
+          }
+        }
+        return result;
+      } catch {
+        return new Map<string, string[]>();
+      }
+    })();
+    return this.relatedActivitiesPromise;
+  }
+
+  private async readLesson(entry: LessonIndexEntry, relatedActivityIds: string[]): Promise<Lesson> {
     const filePath = path.join(this.datasetRoot, entry.path);
     let source: string;
     try {
@@ -100,7 +135,7 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
       explanation: content,
       examples: [],
       commonMistakes: [],
-      relatedActivityIds: frontmatter.relatedLessonIds ?? [],
+      relatedActivityIds: [...new Set(relatedActivityIds)].sort(),
       tags: frontmatter.tags ?? [],
       difficulty: entry.difficulty as 1 | 2 | 3,
       status: entry.status as Lesson["status"],
@@ -124,18 +159,20 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
 
   async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
     const entries = await this.loadIndex();
+    const related = await this.relatedActivities();
     const filtered = entries.filter((entry) => {
       if (filters?.level && entry.level !== filters.level) return false;
       if (filters?.category && entry.category !== filters.category) return false;
       return true;
     });
-    return Promise.all(filtered.map((entry) => this.readLesson(entry)));
+    return Promise.all(filtered.map((entry) => this.readLesson(entry, related.get(entry.id) ?? [])));
   }
 
   async getLessonById(lessonId: string): Promise<Lesson | null> {
     const entries = await this.loadIndex();
+    const related = await this.relatedActivities();
     const entry = entries.find((lesson) => lesson.id === lessonId);
     if (!entry) return null;
-    return this.readLesson(entry);
+    return this.readLesson(entry, related.get(entry.id) ?? []);
   }
 }

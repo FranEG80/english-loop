@@ -12,7 +12,7 @@
     "test": "vitest run",
     "test:unit": "vitest run core adapters server scripts --exclude **/*.integration.test.ts --exclude **/*.contract.test.ts",
     "test:component": "vitest run features shared",
-    "test:contract": "vitest run '**/*.contract.test.ts' adapters/rest/rest-adapters.test.ts server/infrastructure/http/http-contracts.test.ts",
+    "test:contract": "vitest run server/infrastructure/persistence/review-repository.contract.test.ts server/infrastructure/persistence/user-settings-repository.contract.test.ts adapters/port-contracts.test.ts adapters/rest server/infrastructure/http",
     "arch:check": "depcruise --config .dependency-cruiser.cjs core adapters features shared app",
     "arch:check:core": "depcruise --config .dependency-cruiser.cjs core",
     "dataset:validate": "tsx scripts/dataset/validate.ts",
@@ -22,7 +22,9 @@
     "dataset:duplicates": "tsx scripts/dataset/duplicates.ts",
     "dataset:test-grading": "tsx scripts/dataset/test-grading.ts",
     "dataset:all": "tsx scripts/dataset/all.ts",
-    "dataset:import": "tsx scripts/dataset/import.ts",
+    "db:check-parity": "tsx scripts/database/schema-parity.ts",
+    "dataset:seed": "tsx scripts/dataset/seed.ts",
+    "dataset:import": "pnpm dataset:seed",
     "db:seed": "prisma db seed",
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test",
@@ -30,7 +32,7 @@
     "test:dataset": "pnpm dataset:validate && pnpm dataset:test-grading",
     "test:integration": "touch \"$INIT_CWD/test-repositories.db\" && DATABASE_URL=file:$INIT_CWD/test-repositories.db pnpm prisma migrate deploy && DATABASE_URL=file:$INIT_CWD/test-repositories.db TEST_DATABASE_URL=file:$INIT_CWD/test-repositories.db RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/repositories.integration.test.ts",
     "verify": "pnpm lint && pnpm typecheck && pnpm arch:check && pnpm test && pnpm build:test",
-    "verify:full": "pnpm verify && pnpm test:coverage && pnpm test:integration"
+    "verify:full": "pnpm verify && pnpm test:coverage && pnpm test:integration && pnpm test:e2e"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

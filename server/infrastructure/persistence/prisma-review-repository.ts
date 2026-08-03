@@ -14,6 +14,8 @@ export class PrismaReviewRepository implements ReviewRepository {
     id: string;
     userId: string;
     activityId: string;
+    activityVersionId: string | null;
+    lessonId: string | null;
     taxonomyNodeId: string;
     level: string;
     stage: number;
@@ -27,6 +29,8 @@ export class PrismaReviewRepository implements ReviewRepository {
       id: row.id,
       userId: row.userId,
       activityId: row.activityId,
+      activityVersionId: row.activityVersionId,
+      lessonId: row.lessonId,
       taxonomyNodeId: row.taxonomyNodeId,
       level: row.level as never,
       stage: row.stage as never,
@@ -77,6 +81,8 @@ export class PrismaReviewRepository implements ReviewRepository {
         id: snapshot.id,
         userId: snapshot.userId,
         activityId: snapshot.activityId,
+        activityVersionId: snapshot.activityVersionId ?? null,
+        lessonId: snapshot.lessonId ?? null,
         taxonomyNodeId: snapshot.taxonomyNodeId,
         level: snapshot.level,
         stage: snapshot.stage,

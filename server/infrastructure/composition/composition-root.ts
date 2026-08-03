@@ -14,6 +14,8 @@ import { FileLessonCatalogAdapter } from "@/adapters/content/file-lesson-catalog
 import { FileActivityCatalogAdapter } from "@/adapters/content/file-activity-catalog-adapter";
 import { FileTaxonomyCatalogAdapter } from "@/adapters/content/file-taxonomy-catalog-adapter";
 import { FileCatalogMetadataAdapter } from "@/adapters/content/file-catalog-metadata-adapter";
+import { PrismaCatalogAdapter } from "@/adapters/content/prisma-catalog-adapter";
+import { PrismaCatalogWriteAdapter } from "@/server/infrastructure/persistence/prisma-catalog-write-adapter";
 import { PracticeRunPlanner } from "@/core/practice/domain/practice-run-planner";
 import { DailySessionPlanner } from "@/core/learning/domain/daily-session-planner";
 import { DailyPracticePlanner } from "@/core/learning/domain/daily-practice-planner";
@@ -29,7 +31,9 @@ import type {
   ActivityCatalogPort,
   LessonCatalogPort,
   TaxonomyCatalogPort,
+  CatalogMetadataPort,
 } from "@/core/content/ports/catalog-ports";
+import type { CatalogWritePort } from "@/core/content/ports/catalog-write-port";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
@@ -79,9 +83,20 @@ export class CompositionRoot {
   private activityCatalog: FileActivityCatalogAdapter | null = null;
   private taxonomyCatalog: FileTaxonomyCatalogAdapter | null = null;
   private catalogMetadata: FileCatalogMetadataAdapter | null = null;
+  private databaseCatalog: PrismaCatalogAdapter | null = null;
   private readonly datasetVersion = readDatasetVersionSync();
 
+  private getDatabaseCatalog(): PrismaCatalogAdapter {
+    if (!this.databaseCatalog) this.databaseCatalog = new PrismaCatalogAdapter(prisma);
+    return this.databaseCatalog;
+  }
+
+  getCatalogWritePort(): CatalogWritePort {
+    return new PrismaCatalogWriteAdapter(prisma);
+  }
+
   getLessonCatalog(): LessonCatalogPort {
+    if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.lessonCatalog) {
       this.lessonCatalog = new FileLessonCatalogAdapter(DATASET_ROOT);
     }
@@ -89,6 +104,7 @@ export class CompositionRoot {
   }
 
   getActivityCatalog(): ActivityCatalogPort {
+    if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.activityCatalog) {
       this.activityCatalog = new FileActivityCatalogAdapter(DATASET_ROOT);
     }
@@ -96,6 +112,7 @@ export class CompositionRoot {
   }
 
   getTaxonomyCatalog(): TaxonomyCatalogPort {
+    if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.taxonomyCatalog) {
       this.taxonomyCatalog = new FileTaxonomyCatalogAdapter(
         DATASET_ROOT,
@@ -105,15 +122,19 @@ export class CompositionRoot {
     return this.taxonomyCatalog;
   }
 
-  getCatalogMetadata(): FileCatalogMetadataAdapter {
+  getCatalogMetadata(): CatalogMetadataPort {
+    if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.catalogMetadata) {
       this.catalogMetadata = new FileCatalogMetadataAdapter(DATASET_ROOT);
     }
     return this.catalogMetadata;
   }
 
-  getDatasetVersion(): Promise<string> {
-    return Promise.resolve(this.datasetVersion);
+  async getDatasetVersion(): Promise<string> {
+    if (config.contentSource === "database") {
+      return (await this.getDatabaseCatalog().getContentVersion()).datasetVersion;
+    }
+    return this.datasetVersion;
   }
 
   async checkDatabase(): Promise<boolean> {

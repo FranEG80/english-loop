@@ -16,4 +16,22 @@ describe("getPracticeRunSummary", () => {
     expect(result).toMatchObject({ runId: run.id, correctCount: 1, incorrectCount: 1 });
     expect(result.coveredSubtopicIds).toEqual(["root", "subtopic", "topic"]);
   });
+
+  it("does not inflate the original score with a recovered repetition", async () => {
+    const runs = new MemoryRuns();
+    const attempts = new MemoryAttempts();
+    const run = PracticeRun.create({ id: "score", userId: actor.userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 2 }, activityIds: ["activity-1", "activity-2", "activity-1"], originalActivityCount: 2, repetitionActivityIds: ["activity-1"], currentIndex: 2, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: clock.nowIso() });
+    await runs.save(run);
+    await attempts.save(ActivityAttempt.create({ id: "original-fail", userId: actor.userId, practiceRunId: run.id, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "original-fail", response: { kind: "boolean", value: false }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() }));
+    await attempts.save(ActivityAttempt.create({ id: "original-ok", userId: actor.userId, practiceRunId: run.id, activityId: "activity-2", origin: "FOCUSED", idempotencyKey: "original-ok", response: { kind: "boolean", value: true }, isCorrect: true, evaluatorVersion: "1", submittedAt: clock.nowIso() }));
+    await attempts.save(ActivityAttempt.create({ id: "recovery", userId: actor.userId, practiceRunId: run.id, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "recovery", response: { kind: "boolean", value: true }, isCorrect: true, isRepetition: true, submittedAt: clock.nowIso(), evaluatorVersion: "1" }));
+    const catalog = { getActivityById: async (id: string) => activity(id, ["root", "topic"]), listActivities: async () => [], countActivitiesByNode: async () => 1, countActivitiesByNodes: async () => 1 };
+
+    const result = await getPracticeRunSummary(identity, runs, attempts, catalog, run.id);
+
+    expect(result.correctCount).toBe(1);
+    expect(result.incorrectCount).toBe(1);
+    expect(result.recoveredCount).toBe(1);
+    expect(result.scorePercent).toBe(50);
+  });
 });

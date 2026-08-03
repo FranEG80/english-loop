@@ -97,3 +97,104 @@ export type DatasetImport = Prisma.DatasetImportModel
  * 
  */
 export type RateLimitBucket = Prisma.RateLimitBucketModel
+/**
+ * Model CatalogRelease
+ * Stable identity of an editorial release. Only the publication pointer is
+ * mutable; version rows are immutable after publication.
+ */
+export type CatalogRelease = Prisma.CatalogReleaseModel
+/**
+ * Model CatalogPublication
+ * Singleton pointer (`id = active`) to the release visible to readers.
+ */
+export type CatalogPublication = Prisma.CatalogPublicationModel
+/**
+ * Model ActivityType
+ * 
+ */
+export type ActivityType = Prisma.ActivityTypeModel
+/**
+ * Model EvaluatorStrategy
+ * 
+ */
+export type EvaluatorStrategy = Prisma.EvaluatorStrategyModel
+/**
+ * Model CefrLevel
+ * 
+ */
+export type CefrLevel = Prisma.CefrLevelModel
+/**
+ * Model EditorialStatus
+ * 
+ */
+export type EditorialStatus = Prisma.EditorialStatusModel
+/**
+ * Model TaxonomyNode
+ * 
+ */
+export type TaxonomyNode = Prisma.TaxonomyNodeModel
+/**
+ * Model TaxonomyNodeVersion
+ * 
+ */
+export type TaxonomyNodeVersion = Prisma.TaxonomyNodeVersionModel
+/**
+ * Model Lesson
+ * 
+ */
+export type Lesson = Prisma.LessonModel
+/**
+ * Model LessonVersion
+ * 
+ */
+export type LessonVersion = Prisma.LessonVersionModel
+/**
+ * Model LessonVersionTaxonomy
+ * 
+ */
+export type LessonVersionTaxonomy = Prisma.LessonVersionTaxonomyModel
+/**
+ * Model Activity
+ * 
+ */
+export type Activity = Prisma.ActivityModel
+/**
+ * Model ActivityVersion
+ * 
+ */
+export type ActivityVersion = Prisma.ActivityVersionModel
+/**
+ * Model ActivityVersionLesson
+ * 
+ */
+export type ActivityVersionLesson = Prisma.ActivityVersionLessonModel
+/**
+ * Model ActivityVersionTaxonomy
+ * 
+ */
+export type ActivityVersionTaxonomy = Prisma.ActivityVersionTaxonomyModel
+/**
+ * Model ActivityVersionOption
+ * 
+ */
+export type ActivityVersionOption = Prisma.ActivityVersionOptionModel
+/**
+ * Model ActivityVersionToken
+ * 
+ */
+export type ActivityVersionToken = Prisma.ActivityVersionTokenModel
+/**
+ * Model ActivityVersionPair
+ * 
+ */
+export type ActivityVersionPair = Prisma.ActivityVersionPairModel
+/**
+ * Model ActivityExpectedAnswer
+ * 
+ */
+export type ActivityExpectedAnswer = Prisma.ActivityExpectedAnswerModel
+/**
+ * Model PracticeRunItem
+ * 
+ */
+export type PracticeRunItem = Prisma.PracticeRunItemModel

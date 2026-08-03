@@ -147,14 +147,15 @@ model PracticeRun {
   mode          String // DAILY | SMART_REVIEW | FOCUSED
   status        String   @default("in_progress") // in_progress | completed
   scopeSnapshot String // JSON: alcance de taxonomía y descendientes
-  activityIds   String // JSON array
   currentIndex  Int      @default(0)
+  originalActivityCount Int @default(0)
   datasetVersion String
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 
   dailySession DailySession?
   attempts     ActivityAttempt[]
+  items        PracticeRunItem[]
 
   @@index([userId, mode])
 }
@@ -168,18 +169,25 @@ model ActivityAttempt {
   userId         String
   practiceRunId  String?
   activityId     String
+  activityVersionId String?
+  practiceRunItemId String?
   origin         String // DAILY | SMART_REVIEW | FOCUSED
   idempotencyKey String
   response       String // JSON
   isCorrect      Boolean
+  isRepetition   Boolean  @default(false)
   evaluatorVersion String
   submittedAt    DateTime @default(now())
 
   practiceRun PracticeRun? @relation(fields: [practiceRunId], references: [id])
+  activityVersion ActivityVersion? @relation(fields: [activityVersionId], references: [id])
+  practiceRunItem PracticeRunItem? @relation(fields: [practiceRunItemId], references: [id])
 
   @@unique([userId, idempotencyKey])
   @@index([userId, activityId])
   @@index([userId, submittedAt])
+  @@index([activityVersionId])
+  @@index([practiceRunItemId])
 }
 
 // ---------------------------------------------------------------------------
@@ -233,6 +241,8 @@ model ReviewItem {
   id            String   @id @default(uuid())
   userId        String
   activityId    String
+  activityVersionId String?
+  lessonId      String?
   taxonomyNodeId String
   level         String
   stage         Int      @default(0) // 0=fallo, 1=1er acierto, 2=2º acierto, 3=resuelto
@@ -261,6 +271,9 @@ model DatasetImport {
   finishedAt    DateTime?
   result        String? // JSON resumen
   error         String?
+  releaseId     String?
+
+  release CatalogRelease? @relation(fields: [releaseId], references: [id])
 
   @@index([datasetVersion])
 }
@@ -272,4 +285,275 @@ model RateLimitBucket {
   updatedAt DateTime @updatedAt
 
   @@index([resetAt])
+}
+
+// ---------------------------------------------------------------------------
+// Published catalog
+// ---------------------------------------------------------------------------
+
+/// Stable identity of an editorial release. Only the publication pointer is
+/// mutable; version rows are immutable after publication.
+model CatalogRelease {
+  id            String   @id @default(uuid())
+  datasetVersion String
+  checksum      String
+  status        String   // preparing | published | failed
+  createdAt     DateTime @default(now())
+  publishedAt   DateTime?
+
+  publication       CatalogPublication?
+  datasetImports    DatasetImport[]
+  taxonomyVersions  TaxonomyNodeVersion[]
+  lessonVersions    LessonVersion[]
+  activityVersions  ActivityVersion[]
+
+  @@unique([datasetVersion, checksum])
+  @@index([status, publishedAt])
+}
+
+/// Singleton pointer (`id = active`) to the release visible to readers.
+model CatalogPublication {
+  id          String   @id
+  releaseId   String   @unique
+  publishedAt DateTime @default(now())
+
+  release CatalogRelease @relation(fields: [releaseId], references: [id])
+}
+
+model ActivityType {
+  code     String @id
+  versions ActivityVersion[]
+}
+
+model EvaluatorStrategy {
+  code     String @id
+  versions ActivityVersion[]
+}
+
+model CefrLevel {
+  code           String @id
+  lessonVersions LessonVersion[]
+  activityVersions ActivityVersion[]
+}
+
+model EditorialStatus {
+  code           String @id
+  lessonVersions LessonVersion[]
+  activityVersions ActivityVersion[]
+}
+
+model TaxonomyNode {
+  id                    String @id
+  versions              TaxonomyNodeVersion[]
+  lessonVersionLinks    LessonVersionTaxonomy[]
+  activityVersionLinks  ActivityVersionTaxonomy[]
+}
+
+model TaxonomyNodeVersion {
+  id                    String   @id @default(uuid())
+  releaseId             String
+  nodeId                String
+  checksum              String
+  parentId              String?
+  kind                  String
+  labelsEn              String
+  labelsEs              String
+  levels                String   // JSON array kept as a compact read model
+  selectableForPractice Boolean
+  sortOrder             Int
+
+  release CatalogRelease @relation(fields: [releaseId], references: [id], onDelete: Cascade)
+  node    TaxonomyNode   @relation(fields: [nodeId], references: [id])
+
+  @@unique([releaseId, nodeId])
+  @@index([releaseId, parentId, sortOrder])
+}
+
+model Lesson {
+  id       String @id
+  versions LessonVersion[]
+  activityLinks ActivityVersionLesson[]
+}
+
+model LessonVersion {
+  id              String   @id @default(uuid())
+  releaseId       String
+  lessonId        String
+  checksum        String
+  levelCode       String
+  category        String
+  taxonomyNodeId  String
+  title           String
+  summary         String
+  explanation     String
+  examples        String   // JSON array
+  commonMistakes  String   // JSON array
+  tags            String   // JSON array
+  difficulty      Int
+  contentVersion  Int
+  statusCode      String
+
+  release CatalogRelease @relation(fields: [releaseId], references: [id], onDelete: Cascade)
+  lesson  Lesson         @relation(fields: [lessonId], references: [id])
+  level   CefrLevel      @relation(fields: [levelCode], references: [code])
+  status  EditorialStatus @relation(fields: [statusCode], references: [code])
+  taxonomyLinks LessonVersionTaxonomy[]
+
+  @@unique([releaseId, lessonId])
+  @@index([releaseId, statusCode, levelCode])
+}
+
+model LessonVersionTaxonomy {
+  id              String @id @default(uuid())
+  lessonVersionId String
+  taxonomyNodeId  String
+
+  lessonVersion LessonVersion @relation(fields: [lessonVersionId], references: [id], onDelete: Cascade)
+  taxonomyNode  TaxonomyNode  @relation(fields: [taxonomyNodeId], references: [id])
+
+  @@unique([lessonVersionId, taxonomyNodeId])
+  @@index([taxonomyNodeId])
+}
+
+model Activity {
+  id       String @id
+  versions ActivityVersion[]
+}
+
+model ActivityVersion {
+  id                    String   @id @default(uuid())
+  releaseId             String
+  activityId            String
+  checksum              String
+  activityTypeCode      String
+  evaluatorStrategyCode String
+  levelCode             String
+  category              String
+  topic                 String
+  subtopic              String
+  difficulty            Int
+  instructions          String
+  prompt                String
+  passage               String?
+  explanation           String
+  tags                  String   // JSON array
+  lessonIds             String   // JSON compatibility snapshot
+  estimatedSeconds      Int
+  evaluatorData         String   // JSON for evaluator-specific opaque data
+  statusCode             String
+
+  release         CatalogRelease     @relation(fields: [releaseId], references: [id], onDelete: Cascade)
+  activity        Activity           @relation(fields: [activityId], references: [id])
+  activityType    ActivityType      @relation(fields: [activityTypeCode], references: [code])
+  evaluatorStrategy EvaluatorStrategy @relation(fields: [evaluatorStrategyCode], references: [code])
+  level           CefrLevel          @relation(fields: [levelCode], references: [code])
+  status          EditorialStatus    @relation(fields: [statusCode], references: [code])
+  lessonLinks     ActivityVersionLesson[]
+  taxonomyLinks   ActivityVersionTaxonomy[]
+  options         ActivityVersionOption[]
+  tokens          ActivityVersionToken[]
+  pairs           ActivityVersionPair[]
+  expectedAnswers ActivityExpectedAnswer[]
+  practiceRunItems PracticeRunItem[]
+  attempts        ActivityAttempt[]
+
+  @@unique([releaseId, activityId])
+  @@index([releaseId, statusCode, levelCode])
+  @@index([activityId])
+}
+
+model ActivityVersionLesson {
+  id              String @id @default(uuid())
+  activityVersionId String
+  lessonId        String
+  position        Int    @default(0)
+
+  activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
+  lesson          Lesson          @relation(fields: [lessonId], references: [id])
+
+  @@unique([activityVersionId, lessonId])
+  @@index([lessonId])
+}
+
+model ActivityVersionTaxonomy {
+  id              String @id @default(uuid())
+  activityVersionId String
+  taxonomyNodeId  String
+  position        Int    @default(0)
+
+  activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
+  taxonomyNode    TaxonomyNode    @relation(fields: [taxonomyNodeId], references: [id])
+
+  @@unique([activityVersionId, taxonomyNodeId])
+  @@index([taxonomyNodeId])
+}
+
+model ActivityVersionOption {
+  id              String @id @default(uuid())
+  activityVersionId String
+  optionId        String
+  label           String
+  position        Int
+
+  activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
+  @@unique([activityVersionId, optionId])
+}
+
+model ActivityVersionToken {
+  id              String @id @default(uuid())
+  activityVersionId String
+  tokenId         String
+  label           String
+  position        Int
+
+  activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
+  @@unique([activityVersionId, tokenId])
+}
+
+model ActivityVersionPair {
+  id              String @id @default(uuid())
+  activityVersionId String
+  leftId          String
+  leftLabel       String
+  rightId         String
+  rightLabel      String
+  position        Int
+
+  activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
+  @@index([activityVersionId, position])
+}
+
+model ActivityExpectedAnswer {
+  id              String @id @default(uuid())
+  activityVersionId String
+  gapId           String?
+  answer          String
+  position        Int
+
+  activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
+  @@index([activityVersionId, gapId, position])
+}
+
+model PracticeRunItem {
+  id                String   @id @default(uuid())
+  practiceRunId     String
+  position          Int
+  lessonId          String?
+  activityId        String
+  activityVersionId String?
+  origin            String
+  status            String   @default("pending") // pending | active | answered | repetition
+  isRepetition      Boolean  @default(false)
+  repetitionOfItemId String?
+  answeredAt        DateTime?
+
+  practiceRun   PracticeRun      @relation(fields: [practiceRunId], references: [id], onDelete: Cascade)
+  activityVersion ActivityVersion? @relation(fields: [activityVersionId], references: [id])
+  repetitionOfItem PracticeRunItem? @relation("PracticeRunItemRepetitions", fields: [repetitionOfItemId], references: [id])
+  repetitions   PracticeRunItem[] @relation("PracticeRunItemRepetitions")
+  attempts      ActivityAttempt[]
+
+  @@unique([practiceRunId, position])
+  @@index([practiceRunId, status])
+  @@index([activityId])
 }

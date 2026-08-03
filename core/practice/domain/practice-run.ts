@@ -22,6 +22,10 @@ export interface PracticeRunProps {
   mode: PracticeRunMode;
   scope: PracticeScope;
   activityIds: string[];
+  /** Activities appended after a failure for one immediate recovery attempt. */
+  repetitionActivityIds?: string[];
+  /** Count of activities originally selected, excluding repetitions. */
+  originalActivityCount?: number;
   currentIndex: number;
   status: PracticeRunStatus;
   datasetVersion: string;
@@ -38,7 +42,12 @@ export class PracticeRun extends AggregateRoot<string> {
 
   private constructor(props: PracticeRunProps) {
     super(props.id);
-    this.props = props;
+    this.props = {
+      ...props,
+      activityIds: [...props.activityIds],
+      repetitionActivityIds: [...(props.repetitionActivityIds ?? [])],
+      originalActivityCount: props.originalActivityCount ?? props.activityIds.length,
+    };
   }
 
   static create(props: PracticeRunProps): PracticeRun {
@@ -94,6 +103,28 @@ export class PracticeRun extends AggregateRoot<string> {
     return this.props.activityIds[this.props.currentIndex] ?? null;
   }
 
+  get originalActivityCount(): number {
+    return this.props.originalActivityCount ?? this.props.activityIds.length;
+  }
+
+  get isCurrentActivityRepetition(): boolean {
+    return this.props.currentIndex >= this.originalActivityCount;
+  }
+
+  /**
+   * Adds at most one immediate repetition for an activity. The set is keyed
+   * by activity id so a failed repetition cannot recursively append another.
+   */
+  scheduleRepetition(activityId: string): boolean {
+    if (this.props.repetitionActivityIds?.includes(activityId)) return false;
+    this.props.activityIds.push(activityId);
+    this.props.repetitionActivityIds = [
+      ...(this.props.repetitionActivityIds ?? []),
+      activityId,
+    ];
+    return true;
+  }
+
   /** Avanza al siguiente intento. Devuelve true si el run se completó. */
   advance(): boolean {
     if (this.props.status === "completed") {
@@ -114,6 +145,7 @@ export class PracticeRun extends AggregateRoot<string> {
     return {
       ...this.props,
       activityIds: [...this.props.activityIds],
+      repetitionActivityIds: [...(this.props.repetitionActivityIds ?? [])],
       scope: { ...this.props.scope, descendantIds: [...this.props.scope.descendantIds] },
     };
   }

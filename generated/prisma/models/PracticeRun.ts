@@ -28,10 +28,12 @@ export type AggregatePracticeRun = {
 
 export type PracticeRunAvgAggregateOutputType = {
   currentIndex: number | null
+  originalActivityCount: number | null
 }
 
 export type PracticeRunSumAggregateOutputType = {
   currentIndex: number | null
+  originalActivityCount: number | null
 }
 
 export type PracticeRunMinAggregateOutputType = {
@@ -40,8 +42,8 @@ export type PracticeRunMinAggregateOutputType = {
   mode: string | null
   status: string | null
   scopeSnapshot: string | null
-  activityIds: string | null
   currentIndex: number | null
+  originalActivityCount: number | null
   datasetVersion: string | null
   createdAt: Date | null
   updatedAt: Date | null
@@ -53,8 +55,8 @@ export type PracticeRunMaxAggregateOutputType = {
   mode: string | null
   status: string | null
   scopeSnapshot: string | null
-  activityIds: string | null
   currentIndex: number | null
+  originalActivityCount: number | null
   datasetVersion: string | null
   createdAt: Date | null
   updatedAt: Date | null
@@ -66,8 +68,8 @@ export type PracticeRunCountAggregateOutputType = {
   mode: number
   status: number
   scopeSnapshot: number
-  activityIds: number
   currentIndex: number
+  originalActivityCount: number
   datasetVersion: number
   createdAt: number
   updatedAt: number
@@ -77,10 +79,12 @@ export type PracticeRunCountAggregateOutputType = {
 
 export type PracticeRunAvgAggregateInputType = {
   currentIndex?: true
+  originalActivityCount?: true
 }
 
 export type PracticeRunSumAggregateInputType = {
   currentIndex?: true
+  originalActivityCount?: true
 }
 
 export type PracticeRunMinAggregateInputType = {
@@ -89,8 +93,8 @@ export type PracticeRunMinAggregateInputType = {
   mode?: true
   status?: true
   scopeSnapshot?: true
-  activityIds?: true
   currentIndex?: true
+  originalActivityCount?: true
   datasetVersion?: true
   createdAt?: true
   updatedAt?: true
@@ -102,8 +106,8 @@ export type PracticeRunMaxAggregateInputType = {
   mode?: true
   status?: true
   scopeSnapshot?: true
-  activityIds?: true
   currentIndex?: true
+  originalActivityCount?: true
   datasetVersion?: true
   createdAt?: true
   updatedAt?: true
@@ -115,8 +119,8 @@ export type PracticeRunCountAggregateInputType = {
   mode?: true
   status?: true
   scopeSnapshot?: true
-  activityIds?: true
   currentIndex?: true
+  originalActivityCount?: true
   datasetVersion?: true
   createdAt?: true
   updatedAt?: true
@@ -215,8 +219,8 @@ export type PracticeRunGroupByOutputType = {
   mode: string
   status: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex: number
+  originalActivityCount: number
   datasetVersion: string
   createdAt: Date
   updatedAt: Date
@@ -251,13 +255,14 @@ export type PracticeRunWhereInput = {
   mode?: Prisma.StringFilter<"PracticeRun"> | string
   status?: Prisma.StringFilter<"PracticeRun"> | string
   scopeSnapshot?: Prisma.StringFilter<"PracticeRun"> | string
-  activityIds?: Prisma.StringFilter<"PracticeRun"> | string
   currentIndex?: Prisma.IntFilter<"PracticeRun"> | number
+  originalActivityCount?: Prisma.IntFilter<"PracticeRun"> | number
   datasetVersion?: Prisma.StringFilter<"PracticeRun"> | string
   createdAt?: Prisma.DateTimeFilter<"PracticeRun"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"PracticeRun"> | Date | string
   dailySession?: Prisma.XOR<Prisma.DailySessionNullableScalarRelationFilter, Prisma.DailySessionWhereInput> | null
   attempts?: Prisma.ActivityAttemptListRelationFilter
+  items?: Prisma.PracticeRunItemListRelationFilter
 }
 
 export type PracticeRunOrderByWithRelationInput = {
@@ -266,13 +271,14 @@ export type PracticeRunOrderByWithRelationInput = {
   mode?: Prisma.SortOrder
   status?: Prisma.SortOrder
   scopeSnapshot?: Prisma.SortOrder
-  activityIds?: Prisma.SortOrder
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
   datasetVersion?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   dailySession?: Prisma.DailySessionOrderByWithRelationInput
   attempts?: Prisma.ActivityAttemptOrderByRelationAggregateInput
+  items?: Prisma.PracticeRunItemOrderByRelationAggregateInput
 }
 
 export type PracticeRunWhereUniqueInput = Prisma.AtLeast<{
@@ -284,13 +290,14 @@ export type PracticeRunWhereUniqueInput = Prisma.AtLeast<{
   mode?: Prisma.StringFilter<"PracticeRun"> | string
   status?: Prisma.StringFilter<"PracticeRun"> | string
   scopeSnapshot?: Prisma.StringFilter<"PracticeRun"> | string
-  activityIds?: Prisma.StringFilter<"PracticeRun"> | string
   currentIndex?: Prisma.IntFilter<"PracticeRun"> | number
+  originalActivityCount?: Prisma.IntFilter<"PracticeRun"> | number
   datasetVersion?: Prisma.StringFilter<"PracticeRun"> | string
   createdAt?: Prisma.DateTimeFilter<"PracticeRun"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"PracticeRun"> | Date | string
   dailySession?: Prisma.XOR<Prisma.DailySessionNullableScalarRelationFilter, Prisma.DailySessionWhereInput> | null
   attempts?: Prisma.ActivityAttemptListRelationFilter
+  items?: Prisma.PracticeRunItemListRelationFilter
 }, "id">
 
 export type PracticeRunOrderByWithAggregationInput = {
@@ -299,8 +306,8 @@ export type PracticeRunOrderByWithAggregationInput = {
   mode?: Prisma.SortOrder
   status?: Prisma.SortOrder
   scopeSnapshot?: Prisma.SortOrder
-  activityIds?: Prisma.SortOrder
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
   datasetVersion?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
@@ -320,8 +327,8 @@ export type PracticeRunScalarWhereWithAggregatesInput = {
   mode?: Prisma.StringWithAggregatesFilter<"PracticeRun"> | string
   status?: Prisma.StringWithAggregatesFilter<"PracticeRun"> | string
   scopeSnapshot?: Prisma.StringWithAggregatesFilter<"PracticeRun"> | string
-  activityIds?: Prisma.StringWithAggregatesFilter<"PracticeRun"> | string
   currentIndex?: Prisma.IntWithAggregatesFilter<"PracticeRun"> | number
+  originalActivityCount?: Prisma.IntWithAggregatesFilter<"PracticeRun"> | number
   datasetVersion?: Prisma.StringWithAggregatesFilter<"PracticeRun"> | string
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"PracticeRun"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"PracticeRun"> | Date | string
@@ -333,13 +340,14 @@ export type PracticeRunCreateInput = {
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
   dailySession?: Prisma.DailySessionCreateNestedOneWithoutPracticeRunInput
   attempts?: Prisma.ActivityAttemptCreateNestedManyWithoutPracticeRunInput
+  items?: Prisma.PracticeRunItemCreateNestedManyWithoutPracticeRunInput
 }
 
 export type PracticeRunUncheckedCreateInput = {
@@ -348,13 +356,14 @@ export type PracticeRunUncheckedCreateInput = {
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
   dailySession?: Prisma.DailySessionUncheckedCreateNestedOneWithoutPracticeRunInput
   attempts?: Prisma.ActivityAttemptUncheckedCreateNestedManyWithoutPracticeRunInput
+  items?: Prisma.PracticeRunItemUncheckedCreateNestedManyWithoutPracticeRunInput
 }
 
 export type PracticeRunUpdateInput = {
@@ -363,13 +372,14 @@ export type PracticeRunUpdateInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   dailySession?: Prisma.DailySessionUpdateOneWithoutPracticeRunNestedInput
   attempts?: Prisma.ActivityAttemptUpdateManyWithoutPracticeRunNestedInput
+  items?: Prisma.PracticeRunItemUpdateManyWithoutPracticeRunNestedInput
 }
 
 export type PracticeRunUncheckedUpdateInput = {
@@ -378,13 +388,14 @@ export type PracticeRunUncheckedUpdateInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   dailySession?: Prisma.DailySessionUncheckedUpdateOneWithoutPracticeRunNestedInput
   attempts?: Prisma.ActivityAttemptUncheckedUpdateManyWithoutPracticeRunNestedInput
+  items?: Prisma.PracticeRunItemUncheckedUpdateManyWithoutPracticeRunNestedInput
 }
 
 export type PracticeRunCreateManyInput = {
@@ -393,8 +404,8 @@ export type PracticeRunCreateManyInput = {
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
@@ -406,8 +417,8 @@ export type PracticeRunUpdateManyMutationInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -419,8 +430,8 @@ export type PracticeRunUncheckedUpdateManyInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -437,8 +448,8 @@ export type PracticeRunCountOrderByAggregateInput = {
   mode?: Prisma.SortOrder
   status?: Prisma.SortOrder
   scopeSnapshot?: Prisma.SortOrder
-  activityIds?: Prisma.SortOrder
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
   datasetVersion?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
@@ -446,6 +457,7 @@ export type PracticeRunCountOrderByAggregateInput = {
 
 export type PracticeRunAvgOrderByAggregateInput = {
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
 }
 
 export type PracticeRunMaxOrderByAggregateInput = {
@@ -454,8 +466,8 @@ export type PracticeRunMaxOrderByAggregateInput = {
   mode?: Prisma.SortOrder
   status?: Prisma.SortOrder
   scopeSnapshot?: Prisma.SortOrder
-  activityIds?: Prisma.SortOrder
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
   datasetVersion?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
@@ -467,8 +479,8 @@ export type PracticeRunMinOrderByAggregateInput = {
   mode?: Prisma.SortOrder
   status?: Prisma.SortOrder
   scopeSnapshot?: Prisma.SortOrder
-  activityIds?: Prisma.SortOrder
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
   datasetVersion?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
@@ -476,6 +488,12 @@ export type PracticeRunMinOrderByAggregateInput = {
 
 export type PracticeRunSumOrderByAggregateInput = {
   currentIndex?: Prisma.SortOrder
+  originalActivityCount?: Prisma.SortOrder
+}
+
+export type PracticeRunScalarRelationFilter = {
+  is?: Prisma.PracticeRunWhereInput
+  isNot?: Prisma.PracticeRunWhereInput
 }
 
 export type PracticeRunCreateNestedOneWithoutDailySessionInput = {
@@ -510,18 +528,33 @@ export type PracticeRunUpdateOneWithoutAttemptsNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.PracticeRunUpdateToOneWithWhereWithoutAttemptsInput, Prisma.PracticeRunUpdateWithoutAttemptsInput>, Prisma.PracticeRunUncheckedUpdateWithoutAttemptsInput>
 }
 
+export type PracticeRunCreateNestedOneWithoutItemsInput = {
+  create?: Prisma.XOR<Prisma.PracticeRunCreateWithoutItemsInput, Prisma.PracticeRunUncheckedCreateWithoutItemsInput>
+  connectOrCreate?: Prisma.PracticeRunCreateOrConnectWithoutItemsInput
+  connect?: Prisma.PracticeRunWhereUniqueInput
+}
+
+export type PracticeRunUpdateOneRequiredWithoutItemsNestedInput = {
+  create?: Prisma.XOR<Prisma.PracticeRunCreateWithoutItemsInput, Prisma.PracticeRunUncheckedCreateWithoutItemsInput>
+  connectOrCreate?: Prisma.PracticeRunCreateOrConnectWithoutItemsInput
+  upsert?: Prisma.PracticeRunUpsertWithoutItemsInput
+  connect?: Prisma.PracticeRunWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.PracticeRunUpdateToOneWithWhereWithoutItemsInput, Prisma.PracticeRunUpdateWithoutItemsInput>, Prisma.PracticeRunUncheckedUpdateWithoutItemsInput>
+}
+
 export type PracticeRunCreateWithoutDailySessionInput = {
   id?: string
   userId: string
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
   attempts?: Prisma.ActivityAttemptCreateNestedManyWithoutPracticeRunInput
+  items?: Prisma.PracticeRunItemCreateNestedManyWithoutPracticeRunInput
 }
 
 export type PracticeRunUncheckedCreateWithoutDailySessionInput = {
@@ -530,12 +563,13 @@ export type PracticeRunUncheckedCreateWithoutDailySessionInput = {
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
   attempts?: Prisma.ActivityAttemptUncheckedCreateNestedManyWithoutPracticeRunInput
+  items?: Prisma.PracticeRunItemUncheckedCreateNestedManyWithoutPracticeRunInput
 }
 
 export type PracticeRunCreateOrConnectWithoutDailySessionInput = {
@@ -560,12 +594,13 @@ export type PracticeRunUpdateWithoutDailySessionInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   attempts?: Prisma.ActivityAttemptUpdateManyWithoutPracticeRunNestedInput
+  items?: Prisma.PracticeRunItemUpdateManyWithoutPracticeRunNestedInput
 }
 
 export type PracticeRunUncheckedUpdateWithoutDailySessionInput = {
@@ -574,12 +609,13 @@ export type PracticeRunUncheckedUpdateWithoutDailySessionInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   attempts?: Prisma.ActivityAttemptUncheckedUpdateManyWithoutPracticeRunNestedInput
+  items?: Prisma.PracticeRunItemUncheckedUpdateManyWithoutPracticeRunNestedInput
 }
 
 export type PracticeRunCreateWithoutAttemptsInput = {
@@ -588,12 +624,13 @@ export type PracticeRunCreateWithoutAttemptsInput = {
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
   dailySession?: Prisma.DailySessionCreateNestedOneWithoutPracticeRunInput
+  items?: Prisma.PracticeRunItemCreateNestedManyWithoutPracticeRunInput
 }
 
 export type PracticeRunUncheckedCreateWithoutAttemptsInput = {
@@ -602,12 +639,13 @@ export type PracticeRunUncheckedCreateWithoutAttemptsInput = {
   mode: string
   status?: string
   scopeSnapshot: string
-  activityIds: string
   currentIndex?: number
+  originalActivityCount?: number
   datasetVersion: string
   createdAt?: Date | string
   updatedAt?: Date | string
   dailySession?: Prisma.DailySessionUncheckedCreateNestedOneWithoutPracticeRunInput
+  items?: Prisma.PracticeRunItemUncheckedCreateNestedManyWithoutPracticeRunInput
 }
 
 export type PracticeRunCreateOrConnectWithoutAttemptsInput = {
@@ -632,12 +670,13 @@ export type PracticeRunUpdateWithoutAttemptsInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   dailySession?: Prisma.DailySessionUpdateOneWithoutPracticeRunNestedInput
+  items?: Prisma.PracticeRunItemUpdateManyWithoutPracticeRunNestedInput
 }
 
 export type PracticeRunUncheckedUpdateWithoutAttemptsInput = {
@@ -646,12 +685,89 @@ export type PracticeRunUncheckedUpdateWithoutAttemptsInput = {
   mode?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
-  activityIds?: Prisma.StringFieldUpdateOperationsInput | string
   currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
   datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   dailySession?: Prisma.DailySessionUncheckedUpdateOneWithoutPracticeRunNestedInput
+  items?: Prisma.PracticeRunItemUncheckedUpdateManyWithoutPracticeRunNestedInput
+}
+
+export type PracticeRunCreateWithoutItemsInput = {
+  id?: string
+  userId: string
+  mode: string
+  status?: string
+  scopeSnapshot: string
+  currentIndex?: number
+  originalActivityCount?: number
+  datasetVersion: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  dailySession?: Prisma.DailySessionCreateNestedOneWithoutPracticeRunInput
+  attempts?: Prisma.ActivityAttemptCreateNestedManyWithoutPracticeRunInput
+}
+
+export type PracticeRunUncheckedCreateWithoutItemsInput = {
+  id?: string
+  userId: string
+  mode: string
+  status?: string
+  scopeSnapshot: string
+  currentIndex?: number
+  originalActivityCount?: number
+  datasetVersion: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  dailySession?: Prisma.DailySessionUncheckedCreateNestedOneWithoutPracticeRunInput
+  attempts?: Prisma.ActivityAttemptUncheckedCreateNestedManyWithoutPracticeRunInput
+}
+
+export type PracticeRunCreateOrConnectWithoutItemsInput = {
+  where: Prisma.PracticeRunWhereUniqueInput
+  create: Prisma.XOR<Prisma.PracticeRunCreateWithoutItemsInput, Prisma.PracticeRunUncheckedCreateWithoutItemsInput>
+}
+
+export type PracticeRunUpsertWithoutItemsInput = {
+  update: Prisma.XOR<Prisma.PracticeRunUpdateWithoutItemsInput, Prisma.PracticeRunUncheckedUpdateWithoutItemsInput>
+  create: Prisma.XOR<Prisma.PracticeRunCreateWithoutItemsInput, Prisma.PracticeRunUncheckedCreateWithoutItemsInput>
+  where?: Prisma.PracticeRunWhereInput
+}
+
+export type PracticeRunUpdateToOneWithWhereWithoutItemsInput = {
+  where?: Prisma.PracticeRunWhereInput
+  data: Prisma.XOR<Prisma.PracticeRunUpdateWithoutItemsInput, Prisma.PracticeRunUncheckedUpdateWithoutItemsInput>
+}
+
+export type PracticeRunUpdateWithoutItemsInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  mode?: Prisma.StringFieldUpdateOperationsInput | string
+  status?: Prisma.StringFieldUpdateOperationsInput | string
+  scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
+  currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
+  datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  dailySession?: Prisma.DailySessionUpdateOneWithoutPracticeRunNestedInput
+  attempts?: Prisma.ActivityAttemptUpdateManyWithoutPracticeRunNestedInput
+}
+
+export type PracticeRunUncheckedUpdateWithoutItemsInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  mode?: Prisma.StringFieldUpdateOperationsInput | string
+  status?: Prisma.StringFieldUpdateOperationsInput | string
+  scopeSnapshot?: Prisma.StringFieldUpdateOperationsInput | string
+  currentIndex?: Prisma.IntFieldUpdateOperationsInput | number
+  originalActivityCount?: Prisma.IntFieldUpdateOperationsInput | number
+  datasetVersion?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  dailySession?: Prisma.DailySessionUncheckedUpdateOneWithoutPracticeRunNestedInput
+  attempts?: Prisma.ActivityAttemptUncheckedUpdateManyWithoutPracticeRunNestedInput
 }
 
 
@@ -661,10 +777,12 @@ export type PracticeRunUncheckedUpdateWithoutAttemptsInput = {
 
 export type PracticeRunCountOutputType = {
   attempts: number
+  items: number
 }
 
 export type PracticeRunCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   attempts?: boolean | PracticeRunCountOutputTypeCountAttemptsArgs
+  items?: boolean | PracticeRunCountOutputTypeCountItemsArgs
 }
 
 /**
@@ -684,6 +802,13 @@ export type PracticeRunCountOutputTypeCountAttemptsArgs<ExtArgs extends runtime.
   where?: Prisma.ActivityAttemptWhereInput
 }
 
+/**
+ * PracticeRunCountOutputType without action
+ */
+export type PracticeRunCountOutputTypeCountItemsArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.PracticeRunItemWhereInput
+}
+
 
 export type PracticeRunSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
@@ -691,13 +816,14 @@ export type PracticeRunSelect<ExtArgs extends runtime.Types.Extensions.InternalA
   mode?: boolean
   status?: boolean
   scopeSnapshot?: boolean
-  activityIds?: boolean
   currentIndex?: boolean
+  originalActivityCount?: boolean
   datasetVersion?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   dailySession?: boolean | Prisma.PracticeRun$dailySessionArgs<ExtArgs>
   attempts?: boolean | Prisma.PracticeRun$attemptsArgs<ExtArgs>
+  items?: boolean | Prisma.PracticeRun$itemsArgs<ExtArgs>
   _count?: boolean | Prisma.PracticeRunCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["practiceRun"]>
 
@@ -707,8 +833,8 @@ export type PracticeRunSelectCreateManyAndReturn<ExtArgs extends runtime.Types.E
   mode?: boolean
   status?: boolean
   scopeSnapshot?: boolean
-  activityIds?: boolean
   currentIndex?: boolean
+  originalActivityCount?: boolean
   datasetVersion?: boolean
   createdAt?: boolean
   updatedAt?: boolean
@@ -720,8 +846,8 @@ export type PracticeRunSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.E
   mode?: boolean
   status?: boolean
   scopeSnapshot?: boolean
-  activityIds?: boolean
   currentIndex?: boolean
+  originalActivityCount?: boolean
   datasetVersion?: boolean
   createdAt?: boolean
   updatedAt?: boolean
@@ -733,17 +859,18 @@ export type PracticeRunSelectScalar = {
   mode?: boolean
   status?: boolean
   scopeSnapshot?: boolean
-  activityIds?: boolean
   currentIndex?: boolean
+  originalActivityCount?: boolean
   datasetVersion?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type PracticeRunOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "mode" | "status" | "scopeSnapshot" | "activityIds" | "currentIndex" | "datasetVersion" | "createdAt" | "updatedAt", ExtArgs["result"]["practiceRun"]>
+export type PracticeRunOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "mode" | "status" | "scopeSnapshot" | "currentIndex" | "originalActivityCount" | "datasetVersion" | "createdAt" | "updatedAt", ExtArgs["result"]["practiceRun"]>
 export type PracticeRunInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   dailySession?: boolean | Prisma.PracticeRun$dailySessionArgs<ExtArgs>
   attempts?: boolean | Prisma.PracticeRun$attemptsArgs<ExtArgs>
+  items?: boolean | Prisma.PracticeRun$itemsArgs<ExtArgs>
   _count?: boolean | Prisma.PracticeRunCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type PracticeRunIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
@@ -754,6 +881,7 @@ export type $PracticeRunPayload<ExtArgs extends runtime.Types.Extensions.Interna
   objects: {
     dailySession: Prisma.$DailySessionPayload<ExtArgs> | null
     attempts: Prisma.$ActivityAttemptPayload<ExtArgs>[]
+    items: Prisma.$PracticeRunItemPayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
@@ -761,8 +889,8 @@ export type $PracticeRunPayload<ExtArgs extends runtime.Types.Extensions.Interna
     mode: string
     status: string
     scopeSnapshot: string
-    activityIds: string
     currentIndex: number
+    originalActivityCount: number
     datasetVersion: string
     createdAt: Date
     updatedAt: Date
@@ -1162,6 +1290,7 @@ export interface Prisma__PracticeRunClient<T, Null = never, ExtArgs extends runt
   readonly [Symbol.toStringTag]: "PrismaPromise"
   dailySession<T extends Prisma.PracticeRun$dailySessionArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.PracticeRun$dailySessionArgs<ExtArgs>>): Prisma.Prisma__DailySessionClient<runtime.Types.Result.GetResult<Prisma.$DailySessionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
   attempts<T extends Prisma.PracticeRun$attemptsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.PracticeRun$attemptsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ActivityAttemptPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  items<T extends Prisma.PracticeRun$itemsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.PracticeRun$itemsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$PracticeRunItemPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1196,8 +1325,8 @@ export interface PracticeRunFieldRefs {
   readonly mode: Prisma.FieldRef<"PracticeRun", 'String'>
   readonly status: Prisma.FieldRef<"PracticeRun", 'String'>
   readonly scopeSnapshot: Prisma.FieldRef<"PracticeRun", 'String'>
-  readonly activityIds: Prisma.FieldRef<"PracticeRun", 'String'>
   readonly currentIndex: Prisma.FieldRef<"PracticeRun", 'Int'>
+  readonly originalActivityCount: Prisma.FieldRef<"PracticeRun", 'Int'>
   readonly datasetVersion: Prisma.FieldRef<"PracticeRun", 'String'>
   readonly createdAt: Prisma.FieldRef<"PracticeRun", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"PracticeRun", 'DateTime'>
@@ -1632,6 +1761,30 @@ export type PracticeRun$attemptsArgs<ExtArgs extends runtime.Types.Extensions.In
   take?: number
   skip?: number
   distinct?: Prisma.ActivityAttemptScalarFieldEnum | Prisma.ActivityAttemptScalarFieldEnum[]
+}
+
+/**
+ * PracticeRun.items
+ */
+export type PracticeRun$itemsArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the PracticeRunItem
+   */
+  select?: Prisma.PracticeRunItemSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the PracticeRunItem
+   */
+  omit?: Prisma.PracticeRunItemOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PracticeRunItemInclude<ExtArgs> | null
+  where?: Prisma.PracticeRunItemWhereInput
+  orderBy?: Prisma.PracticeRunItemOrderByWithRelationInput | Prisma.PracticeRunItemOrderByWithRelationInput[]
+  cursor?: Prisma.PracticeRunItemWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.PracticeRunItemScalarFieldEnum | Prisma.PracticeRunItemScalarFieldEnum[]
 }
 
 /**

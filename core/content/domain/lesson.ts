@@ -20,6 +20,8 @@ export interface LessonExample {
 /** Lección tal como se sirve al cliente (DTO de dominio). */
 export interface Lesson {
   id: string;
+  /** Immutable catalog version used for historical references. */
+  versionId?: string;
   level: CefrLevel;
   category: LessonCategory;
   taxonomyNodeId: string;

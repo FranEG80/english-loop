@@ -4,6 +4,7 @@ import { UniqueId, type ClockPort, type IdGeneratorPort } from "@/core/shared/ke
 import type { AttemptOrigin } from "@/core/practice/domain/activity-attempt";
 import type { ProgressRepository } from "../../ports/progress-repository";
 import type { ReviewRepository } from "../../ports/review-repository";
+import type { LessonProgressRepository } from "@/core/learning/ports/lesson-progress-repository";
 import { ReviewItem } from "../../domain/review-item";
 import { ReviewPolicy } from "../../domain/review-policy";
 
@@ -23,6 +24,7 @@ export class ProgressProjector {
     private readonly taxonomyCatalog: TaxonomyCatalogPort,
     private readonly idGenerator: IdGeneratorPort,
     private readonly clock: ClockPort,
+    private readonly lessonProgressRepository?: LessonProgressRepository,
   ) {}
 
   async project(input: ProjectAttemptInput): Promise<boolean> {
@@ -31,8 +33,8 @@ export class ProgressProjector {
       userId,
       activity.id,
     )) ?? {
-      userId,
-      activityId: activity.id,
+            userId,
+            activityId: activity.id,
       attemptsCount: 0,
       correctCount: 0,
       lastResult: null,
@@ -91,6 +93,8 @@ export class ProgressProjector {
           id: UniqueId.create(this.idGenerator).toString(),
           userId,
           activityId: activity.id,
+          activityVersionId: activity.versionId,
+          lessonId: activity.lessonIds[0] ?? null,
           taxonomyNodeId,
           level: activity.level,
           stage: 0,
@@ -110,6 +114,7 @@ export class ProgressProjector {
             attemptsCount: 1,
           }),
         );
+        await this.changeLessonPending(activity.lessonIds, userId, 1);
       }
       return true;
     }
@@ -134,10 +139,36 @@ export class ProgressProjector {
             attemptsCount: existingReview.attemptsCount + 1,
           }),
         );
+        if (result.resolved) {
+          await this.changeLessonPending(activity.lessonIds, userId, -1);
+        }
         return true;
       }
     }
     return false;
+  }
+
+  private async changeLessonPending(
+    lessonIds: string[],
+    userId: string,
+    delta: number,
+  ): Promise<void> {
+    if (!this.lessonProgressRepository || lessonIds.length === 0) return;
+    const records = await this.lessonProgressRepository.findByUserId(userId);
+    const byLesson = new Map(records.map((record) => [record.lessonId, record]));
+    for (const lessonId of new Set(lessonIds)) {
+      const current = byLesson.get(lessonId) ?? {
+        userId,
+        lessonId,
+        viewed: false,
+        viewedAt: null,
+        errorsPending: 0,
+      };
+      await this.lessonProgressRepository.upsert({
+        ...current,
+        errorsPending: Math.max(0, current.errorsPending + delta),
+      });
+    }
   }
 
   /** Mantiene el reloj como dependencia explícita del projector. */

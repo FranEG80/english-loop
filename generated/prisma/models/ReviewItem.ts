@@ -42,6 +42,8 @@ export type ReviewItemMinAggregateOutputType = {
   id: string | null
   userId: string | null
   activityId: string | null
+  activityVersionId: string | null
+  lessonId: string | null
   taxonomyNodeId: string | null
   level: string | null
   stage: number | null
@@ -58,6 +60,8 @@ export type ReviewItemMaxAggregateOutputType = {
   id: string | null
   userId: string | null
   activityId: string | null
+  activityVersionId: string | null
+  lessonId: string | null
   taxonomyNodeId: string | null
   level: string | null
   stage: number | null
@@ -74,6 +78,8 @@ export type ReviewItemCountAggregateOutputType = {
   id: number
   userId: number
   activityId: number
+  activityVersionId: number
+  lessonId: number
   taxonomyNodeId: number
   level: number
   stage: number
@@ -104,6 +110,8 @@ export type ReviewItemMinAggregateInputType = {
   id?: true
   userId?: true
   activityId?: true
+  activityVersionId?: true
+  lessonId?: true
   taxonomyNodeId?: true
   level?: true
   stage?: true
@@ -120,6 +128,8 @@ export type ReviewItemMaxAggregateInputType = {
   id?: true
   userId?: true
   activityId?: true
+  activityVersionId?: true
+  lessonId?: true
   taxonomyNodeId?: true
   level?: true
   stage?: true
@@ -136,6 +146,8 @@ export type ReviewItemCountAggregateInputType = {
   id?: true
   userId?: true
   activityId?: true
+  activityVersionId?: true
+  lessonId?: true
   taxonomyNodeId?: true
   level?: true
   stage?: true
@@ -239,6 +251,8 @@ export type ReviewItemGroupByOutputType = {
   id: string
   userId: string
   activityId: string
+  activityVersionId: string | null
+  lessonId: string | null
   taxonomyNodeId: string
   level: string
   stage: number
@@ -278,6 +292,8 @@ export type ReviewItemWhereInput = {
   id?: Prisma.StringFilter<"ReviewItem"> | string
   userId?: Prisma.StringFilter<"ReviewItem"> | string
   activityId?: Prisma.StringFilter<"ReviewItem"> | string
+  activityVersionId?: Prisma.StringNullableFilter<"ReviewItem"> | string | null
+  lessonId?: Prisma.StringNullableFilter<"ReviewItem"> | string | null
   taxonomyNodeId?: Prisma.StringFilter<"ReviewItem"> | string
   level?: Prisma.StringFilter<"ReviewItem"> | string
   stage?: Prisma.IntFilter<"ReviewItem"> | number
@@ -294,6 +310,8 @@ export type ReviewItemOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrderInput | Prisma.SortOrder
+  lessonId?: Prisma.SortOrderInput | Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
   level?: Prisma.SortOrder
   stage?: Prisma.SortOrder
@@ -313,6 +331,8 @@ export type ReviewItemWhereUniqueInput = Prisma.AtLeast<{
   NOT?: Prisma.ReviewItemWhereInput | Prisma.ReviewItemWhereInput[]
   userId?: Prisma.StringFilter<"ReviewItem"> | string
   activityId?: Prisma.StringFilter<"ReviewItem"> | string
+  activityVersionId?: Prisma.StringNullableFilter<"ReviewItem"> | string | null
+  lessonId?: Prisma.StringNullableFilter<"ReviewItem"> | string | null
   taxonomyNodeId?: Prisma.StringFilter<"ReviewItem"> | string
   level?: Prisma.StringFilter<"ReviewItem"> | string
   stage?: Prisma.IntFilter<"ReviewItem"> | number
@@ -329,6 +349,8 @@ export type ReviewItemOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrderInput | Prisma.SortOrder
+  lessonId?: Prisma.SortOrderInput | Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
   level?: Prisma.SortOrder
   stage?: Prisma.SortOrder
@@ -353,6 +375,8 @@ export type ReviewItemScalarWhereWithAggregatesInput = {
   id?: Prisma.StringWithAggregatesFilter<"ReviewItem"> | string
   userId?: Prisma.StringWithAggregatesFilter<"ReviewItem"> | string
   activityId?: Prisma.StringWithAggregatesFilter<"ReviewItem"> | string
+  activityVersionId?: Prisma.StringNullableWithAggregatesFilter<"ReviewItem"> | string | null
+  lessonId?: Prisma.StringNullableWithAggregatesFilter<"ReviewItem"> | string | null
   taxonomyNodeId?: Prisma.StringWithAggregatesFilter<"ReviewItem"> | string
   level?: Prisma.StringWithAggregatesFilter<"ReviewItem"> | string
   stage?: Prisma.IntWithAggregatesFilter<"ReviewItem"> | number
@@ -369,6 +393,8 @@ export type ReviewItemCreateInput = {
   id?: string
   userId: string
   activityId: string
+  activityVersionId?: string | null
+  lessonId?: string | null
   taxonomyNodeId: string
   level: string
   stage?: number
@@ -385,6 +411,8 @@ export type ReviewItemUncheckedCreateInput = {
   id?: string
   userId: string
   activityId: string
+  activityVersionId?: string | null
+  lessonId?: string | null
   taxonomyNodeId: string
   level: string
   stage?: number
@@ -401,6 +429,8 @@ export type ReviewItemUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
   level?: Prisma.StringFieldUpdateOperationsInput | string
   stage?: Prisma.IntFieldUpdateOperationsInput | number
@@ -417,6 +447,8 @@ export type ReviewItemUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
   level?: Prisma.StringFieldUpdateOperationsInput | string
   stage?: Prisma.IntFieldUpdateOperationsInput | number
@@ -433,6 +465,8 @@ export type ReviewItemCreateManyInput = {
   id?: string
   userId: string
   activityId: string
+  activityVersionId?: string | null
+  lessonId?: string | null
   taxonomyNodeId: string
   level: string
   stage?: number
@@ -449,6 +483,8 @@ export type ReviewItemUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
   level?: Prisma.StringFieldUpdateOperationsInput | string
   stage?: Prisma.IntFieldUpdateOperationsInput | number
@@ -465,6 +501,8 @@ export type ReviewItemUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   userId?: Prisma.StringFieldUpdateOperationsInput | string
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
   level?: Prisma.StringFieldUpdateOperationsInput | string
   stage?: Prisma.IntFieldUpdateOperationsInput | number
@@ -481,6 +519,8 @@ export type ReviewItemCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrder
+  lessonId?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
   level?: Prisma.SortOrder
   stage?: Prisma.SortOrder
@@ -503,6 +543,8 @@ export type ReviewItemMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrder
+  lessonId?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
   level?: Prisma.SortOrder
   stage?: Prisma.SortOrder
@@ -519,6 +561,8 @@ export type ReviewItemMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
+  activityVersionId?: Prisma.SortOrder
+  lessonId?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
   level?: Prisma.SortOrder
   stage?: Prisma.SortOrder
@@ -543,6 +587,8 @@ export type ReviewItemSelect<ExtArgs extends runtime.Types.Extensions.InternalAr
   id?: boolean
   userId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  lessonId?: boolean
   taxonomyNodeId?: boolean
   level?: boolean
   stage?: boolean
@@ -559,6 +605,8 @@ export type ReviewItemSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Ex
   id?: boolean
   userId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  lessonId?: boolean
   taxonomyNodeId?: boolean
   level?: boolean
   stage?: boolean
@@ -575,6 +623,8 @@ export type ReviewItemSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Ex
   id?: boolean
   userId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  lessonId?: boolean
   taxonomyNodeId?: boolean
   level?: boolean
   stage?: boolean
@@ -591,6 +641,8 @@ export type ReviewItemSelectScalar = {
   id?: boolean
   userId?: boolean
   activityId?: boolean
+  activityVersionId?: boolean
+  lessonId?: boolean
   taxonomyNodeId?: boolean
   level?: boolean
   stage?: boolean
@@ -603,7 +655,7 @@ export type ReviewItemSelectScalar = {
   updatedAt?: boolean
 }
 
-export type ReviewItemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "activityId" | "taxonomyNodeId" | "level" | "stage" | "consecutiveCorrect" | "dueAt" | "failedAt" | "resolvedAt" | "attemptsCount" | "createdAt" | "updatedAt", ExtArgs["result"]["reviewItem"]>
+export type ReviewItemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "activityId" | "activityVersionId" | "lessonId" | "taxonomyNodeId" | "level" | "stage" | "consecutiveCorrect" | "dueAt" | "failedAt" | "resolvedAt" | "attemptsCount" | "createdAt" | "updatedAt", ExtArgs["result"]["reviewItem"]>
 
 export type $ReviewItemPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "ReviewItem"
@@ -612,6 +664,8 @@ export type $ReviewItemPayload<ExtArgs extends runtime.Types.Extensions.Internal
     id: string
     userId: string
     activityId: string
+    activityVersionId: string | null
+    lessonId: string | null
     taxonomyNodeId: string
     level: string
     stage: number
@@ -1048,6 +1102,8 @@ export interface ReviewItemFieldRefs {
   readonly id: Prisma.FieldRef<"ReviewItem", 'String'>
   readonly userId: Prisma.FieldRef<"ReviewItem", 'String'>
   readonly activityId: Prisma.FieldRef<"ReviewItem", 'String'>
+  readonly activityVersionId: Prisma.FieldRef<"ReviewItem", 'String'>
+  readonly lessonId: Prisma.FieldRef<"ReviewItem", 'String'>
   readonly taxonomyNodeId: Prisma.FieldRef<"ReviewItem", 'String'>
   readonly level: Prisma.FieldRef<"ReviewItem", 'String'>
   readonly stage: Prisma.FieldRef<"ReviewItem", 'Int'>

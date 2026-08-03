@@ -32,7 +32,7 @@ const random = {
 };
 
 describe("DailySessionPlanner", () => {
-  it("prioritizes unseen lessons, then review lessons, then reuse", async () => {
+  it("prioritizes lessons with real pending errors, then new lessons, then reuse", async () => {
     const planner = new DailySessionPlanner(random);
 
     const result = await planner.plan(catalog, {
@@ -43,9 +43,9 @@ describe("DailySessionPlanner", () => {
     });
 
     expect(result).toEqual([
+      { lessonId: "review-1", selectionReason: "review" },
       { lessonId: "new-1", selectionReason: "new" },
       { lessonId: "new-2", selectionReason: "new" },
-      { lessonId: "review-1", selectionReason: "review" },
       { lessonId: "seen-1", selectionReason: "reuse" },
     ]);
   });

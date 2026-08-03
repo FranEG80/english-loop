@@ -35,8 +35,8 @@ export async function walkFiles(
   return nested.flat().sort((left, right) => left.localeCompare(right));
 }
 
-export function toPosixRelative(filePath: string): string {
-  return path.relative(DATASET_ROOT, filePath).split(path.sep).join("/");
+export function toPosixRelative(filePath: string, root = DATASET_ROOT): string {
+  return path.relative(root, filePath).split(path.sep).join("/");
 }
 
 export function isMissingFileError(error: unknown): boolean {

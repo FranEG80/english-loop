@@ -86,6 +86,9 @@ export async function submitActivityAttempt(
     userId: actor.userId,
     practiceRunId: run.id,
     activityId: input.activityId,
+    activityVersionId: activity.versionId,
+    practiceRunItemId: `${run.id}:${run.currentIndex}`,
+    isRepetition: run.isCurrentActivityRepetition,
     origin: run.mode,
     idempotencyKey: input.idempotencyKey,
     response: input.response,
@@ -95,6 +98,9 @@ export async function submitActivityAttempt(
   });
 
   await attemptRepository.save(attempt);
+  if (!attempt.isCorrect && !attempt.isRepetition) {
+    run.scheduleRepetition(input.activityId);
+  }
   const runCompleted = run.advance();
   await runRepository.save(run);
 

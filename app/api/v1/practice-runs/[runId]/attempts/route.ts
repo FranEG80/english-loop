@@ -45,7 +45,10 @@ export const POST = withErrorHandling(
         idempotencyKey: body.idempotencyKey,
         response: body.response,
       },
-      { dailySessionRepository: compositionRoot.dailySessionRepository },
+      {
+        dailySessionRepository: compositionRoot.dailySessionRepository,
+        lessonProgressRepository: compositionRoot.lessonProgressRepository,
+      },
     );
 
     const feedback = await getAttemptFeedback(

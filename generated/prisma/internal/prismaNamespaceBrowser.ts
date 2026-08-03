@@ -66,7 +66,27 @@ export const ModelName = {
   TaxonomyProgress: 'TaxonomyProgress',
   ReviewItem: 'ReviewItem',
   DatasetImport: 'DatasetImport',
-  RateLimitBucket: 'RateLimitBucket'
+  RateLimitBucket: 'RateLimitBucket',
+  CatalogRelease: 'CatalogRelease',
+  CatalogPublication: 'CatalogPublication',
+  ActivityType: 'ActivityType',
+  EvaluatorStrategy: 'EvaluatorStrategy',
+  CefrLevel: 'CefrLevel',
+  EditorialStatus: 'EditorialStatus',
+  TaxonomyNode: 'TaxonomyNode',
+  TaxonomyNodeVersion: 'TaxonomyNodeVersion',
+  Lesson: 'Lesson',
+  LessonVersion: 'LessonVersion',
+  LessonVersionTaxonomy: 'LessonVersionTaxonomy',
+  Activity: 'Activity',
+  ActivityVersion: 'ActivityVersion',
+  ActivityVersionLesson: 'ActivityVersionLesson',
+  ActivityVersionTaxonomy: 'ActivityVersionTaxonomy',
+  ActivityVersionOption: 'ActivityVersionOption',
+  ActivityVersionToken: 'ActivityVersionToken',
+  ActivityVersionPair: 'ActivityVersionPair',
+  ActivityExpectedAnswer: 'ActivityExpectedAnswer',
+  PracticeRunItem: 'PracticeRunItem'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -200,8 +220,8 @@ export const PracticeRunScalarFieldEnum = {
   mode: 'mode',
   status: 'status',
   scopeSnapshot: 'scopeSnapshot',
-  activityIds: 'activityIds',
   currentIndex: 'currentIndex',
+  originalActivityCount: 'originalActivityCount',
   datasetVersion: 'datasetVersion',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
@@ -215,10 +235,13 @@ export const ActivityAttemptScalarFieldEnum = {
   userId: 'userId',
   practiceRunId: 'practiceRunId',
   activityId: 'activityId',
+  activityVersionId: 'activityVersionId',
+  practiceRunItemId: 'practiceRunItemId',
   origin: 'origin',
   idempotencyKey: 'idempotencyKey',
   response: 'response',
   isCorrect: 'isCorrect',
+  isRepetition: 'isRepetition',
   evaluatorVersion: 'evaluatorVersion',
   submittedAt: 'submittedAt'
 } as const
@@ -269,6 +292,8 @@ export const ReviewItemScalarFieldEnum = {
   id: 'id',
   userId: 'userId',
   activityId: 'activityId',
+  activityVersionId: 'activityVersionId',
+  lessonId: 'lessonId',
   taxonomyNodeId: 'taxonomyNodeId',
   level: 'level',
   stage: 'stage',
@@ -292,7 +317,8 @@ export const DatasetImportScalarFieldEnum = {
   startedAt: 'startedAt',
   finishedAt: 'finishedAt',
   result: 'result',
-  error: 'error'
+  error: 'error',
+  releaseId: 'releaseId'
 } as const
 
 export type DatasetImportScalarFieldEnum = (typeof DatasetImportScalarFieldEnum)[keyof typeof DatasetImportScalarFieldEnum]
@@ -306,6 +332,233 @@ export const RateLimitBucketScalarFieldEnum = {
 } as const
 
 export type RateLimitBucketScalarFieldEnum = (typeof RateLimitBucketScalarFieldEnum)[keyof typeof RateLimitBucketScalarFieldEnum]
+
+
+export const CatalogReleaseScalarFieldEnum = {
+  id: 'id',
+  datasetVersion: 'datasetVersion',
+  checksum: 'checksum',
+  status: 'status',
+  createdAt: 'createdAt',
+  publishedAt: 'publishedAt'
+} as const
+
+export type CatalogReleaseScalarFieldEnum = (typeof CatalogReleaseScalarFieldEnum)[keyof typeof CatalogReleaseScalarFieldEnum]
+
+
+export const CatalogPublicationScalarFieldEnum = {
+  id: 'id',
+  releaseId: 'releaseId',
+  publishedAt: 'publishedAt'
+} as const
+
+export type CatalogPublicationScalarFieldEnum = (typeof CatalogPublicationScalarFieldEnum)[keyof typeof CatalogPublicationScalarFieldEnum]
+
+
+export const ActivityTypeScalarFieldEnum = {
+  code: 'code'
+} as const
+
+export type ActivityTypeScalarFieldEnum = (typeof ActivityTypeScalarFieldEnum)[keyof typeof ActivityTypeScalarFieldEnum]
+
+
+export const EvaluatorStrategyScalarFieldEnum = {
+  code: 'code'
+} as const
+
+export type EvaluatorStrategyScalarFieldEnum = (typeof EvaluatorStrategyScalarFieldEnum)[keyof typeof EvaluatorStrategyScalarFieldEnum]
+
+
+export const CefrLevelScalarFieldEnum = {
+  code: 'code'
+} as const
+
+export type CefrLevelScalarFieldEnum = (typeof CefrLevelScalarFieldEnum)[keyof typeof CefrLevelScalarFieldEnum]
+
+
+export const EditorialStatusScalarFieldEnum = {
+  code: 'code'
+} as const
+
+export type EditorialStatusScalarFieldEnum = (typeof EditorialStatusScalarFieldEnum)[keyof typeof EditorialStatusScalarFieldEnum]
+
+
+export const TaxonomyNodeScalarFieldEnum = {
+  id: 'id'
+} as const
+
+export type TaxonomyNodeScalarFieldEnum = (typeof TaxonomyNodeScalarFieldEnum)[keyof typeof TaxonomyNodeScalarFieldEnum]
+
+
+export const TaxonomyNodeVersionScalarFieldEnum = {
+  id: 'id',
+  releaseId: 'releaseId',
+  nodeId: 'nodeId',
+  checksum: 'checksum',
+  parentId: 'parentId',
+  kind: 'kind',
+  labelsEn: 'labelsEn',
+  labelsEs: 'labelsEs',
+  levels: 'levels',
+  selectableForPractice: 'selectableForPractice',
+  sortOrder: 'sortOrder'
+} as const
+
+export type TaxonomyNodeVersionScalarFieldEnum = (typeof TaxonomyNodeVersionScalarFieldEnum)[keyof typeof TaxonomyNodeVersionScalarFieldEnum]
+
+
+export const LessonScalarFieldEnum = {
+  id: 'id'
+} as const
+
+export type LessonScalarFieldEnum = (typeof LessonScalarFieldEnum)[keyof typeof LessonScalarFieldEnum]
+
+
+export const LessonVersionScalarFieldEnum = {
+  id: 'id',
+  releaseId: 'releaseId',
+  lessonId: 'lessonId',
+  checksum: 'checksum',
+  levelCode: 'levelCode',
+  category: 'category',
+  taxonomyNodeId: 'taxonomyNodeId',
+  title: 'title',
+  summary: 'summary',
+  explanation: 'explanation',
+  examples: 'examples',
+  commonMistakes: 'commonMistakes',
+  tags: 'tags',
+  difficulty: 'difficulty',
+  contentVersion: 'contentVersion',
+  statusCode: 'statusCode'
+} as const
+
+export type LessonVersionScalarFieldEnum = (typeof LessonVersionScalarFieldEnum)[keyof typeof LessonVersionScalarFieldEnum]
+
+
+export const LessonVersionTaxonomyScalarFieldEnum = {
+  id: 'id',
+  lessonVersionId: 'lessonVersionId',
+  taxonomyNodeId: 'taxonomyNodeId'
+} as const
+
+export type LessonVersionTaxonomyScalarFieldEnum = (typeof LessonVersionTaxonomyScalarFieldEnum)[keyof typeof LessonVersionTaxonomyScalarFieldEnum]
+
+
+export const ActivityScalarFieldEnum = {
+  id: 'id'
+} as const
+
+export type ActivityScalarFieldEnum = (typeof ActivityScalarFieldEnum)[keyof typeof ActivityScalarFieldEnum]
+
+
+export const ActivityVersionScalarFieldEnum = {
+  id: 'id',
+  releaseId: 'releaseId',
+  activityId: 'activityId',
+  checksum: 'checksum',
+  activityTypeCode: 'activityTypeCode',
+  evaluatorStrategyCode: 'evaluatorStrategyCode',
+  levelCode: 'levelCode',
+  category: 'category',
+  topic: 'topic',
+  subtopic: 'subtopic',
+  difficulty: 'difficulty',
+  instructions: 'instructions',
+  prompt: 'prompt',
+  passage: 'passage',
+  explanation: 'explanation',
+  tags: 'tags',
+  lessonIds: 'lessonIds',
+  estimatedSeconds: 'estimatedSeconds',
+  evaluatorData: 'evaluatorData',
+  statusCode: 'statusCode'
+} as const
+
+export type ActivityVersionScalarFieldEnum = (typeof ActivityVersionScalarFieldEnum)[keyof typeof ActivityVersionScalarFieldEnum]
+
+
+export const ActivityVersionLessonScalarFieldEnum = {
+  id: 'id',
+  activityVersionId: 'activityVersionId',
+  lessonId: 'lessonId',
+  position: 'position'
+} as const
+
+export type ActivityVersionLessonScalarFieldEnum = (typeof ActivityVersionLessonScalarFieldEnum)[keyof typeof ActivityVersionLessonScalarFieldEnum]
+
+
+export const ActivityVersionTaxonomyScalarFieldEnum = {
+  id: 'id',
+  activityVersionId: 'activityVersionId',
+  taxonomyNodeId: 'taxonomyNodeId',
+  position: 'position'
+} as const
+
+export type ActivityVersionTaxonomyScalarFieldEnum = (typeof ActivityVersionTaxonomyScalarFieldEnum)[keyof typeof ActivityVersionTaxonomyScalarFieldEnum]
+
+
+export const ActivityVersionOptionScalarFieldEnum = {
+  id: 'id',
+  activityVersionId: 'activityVersionId',
+  optionId: 'optionId',
+  label: 'label',
+  position: 'position'
+} as const
+
+export type ActivityVersionOptionScalarFieldEnum = (typeof ActivityVersionOptionScalarFieldEnum)[keyof typeof ActivityVersionOptionScalarFieldEnum]
+
+
+export const ActivityVersionTokenScalarFieldEnum = {
+  id: 'id',
+  activityVersionId: 'activityVersionId',
+  tokenId: 'tokenId',
+  label: 'label',
+  position: 'position'
+} as const
+
+export type ActivityVersionTokenScalarFieldEnum = (typeof ActivityVersionTokenScalarFieldEnum)[keyof typeof ActivityVersionTokenScalarFieldEnum]
+
+
+export const ActivityVersionPairScalarFieldEnum = {
+  id: 'id',
+  activityVersionId: 'activityVersionId',
+  leftId: 'leftId',
+  leftLabel: 'leftLabel',
+  rightId: 'rightId',
+  rightLabel: 'rightLabel',
+  position: 'position'
+} as const
+
+export type ActivityVersionPairScalarFieldEnum = (typeof ActivityVersionPairScalarFieldEnum)[keyof typeof ActivityVersionPairScalarFieldEnum]
+
+
+export const ActivityExpectedAnswerScalarFieldEnum = {
+  id: 'id',
+  activityVersionId: 'activityVersionId',
+  gapId: 'gapId',
+  answer: 'answer',
+  position: 'position'
+} as const
+
+export type ActivityExpectedAnswerScalarFieldEnum = (typeof ActivityExpectedAnswerScalarFieldEnum)[keyof typeof ActivityExpectedAnswerScalarFieldEnum]
+
+
+export const PracticeRunItemScalarFieldEnum = {
+  id: 'id',
+  practiceRunId: 'practiceRunId',
+  position: 'position',
+  lessonId: 'lessonId',
+  activityId: 'activityId',
+  activityVersionId: 'activityVersionId',
+  origin: 'origin',
+  status: 'status',
+  isRepetition: 'isRepetition',
+  repetitionOfItemId: 'repetitionOfItemId',
+  answeredAt: 'answeredAt'
+} as const
+
+export type PracticeRunItemScalarFieldEnum = (typeof PracticeRunItemScalarFieldEnum)[keyof typeof PracticeRunItemScalarFieldEnum]
 
 
 export const SortOrder = {

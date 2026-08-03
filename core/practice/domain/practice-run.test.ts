@@ -50,4 +50,17 @@ describe("PracticeRun", () => {
     const run = makeRun({ status: "completed", currentIndex: 2 });
     expect(() => run.advance()).toThrow(InvariantViolationException);
   });
+
+  it("adds only one immediate repetition and never chains repetitions", () => {
+    const run = makeRun({ activityIds: ["a1"], originalActivityCount: 1 });
+
+    expect(run.scheduleRepetition("a1")).toBe(true);
+    expect(run.scheduleRepetition("a1")).toBe(false);
+    expect(run.activityIds).toEqual(["a1", "a1"]);
+    expect(run.originalActivityCount).toBe(1);
+
+    run.advance();
+    expect(run.isCurrentActivityRepetition).toBe(true);
+    expect(run.scheduleRepetition("a1")).toBe(false);
+  });
 });
