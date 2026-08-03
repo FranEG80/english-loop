@@ -1,32 +1,32 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 35,
-    "publishedActivities": 3200,
+    "publishedLessons": 42,
+    "publishedActivities": 3900,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 31,
+    "nodeTargetsMet": 38,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
       "B1": 2650,
-      "B2": 550
+      "B2": 1250
     },
     "category": {
-      "grammar": 3200
+      "grammar": 3900
     },
     "topic": {
       "articles-determiners": 200,
       "comparisons": 200,
       "conditionals": 250,
-      "future-forms": 125,
+      "future-forms": 425,
       "gerunds-infinitives": 200,
       "linking-discourse": 100,
       "modal-perfects": 125,
-      "modals": 300,
-      "passive-voice": 200,
+      "modals": 400,
+      "passive-voice": 500,
       "past-tenses": 500,
       "present-tenses": 500,
       "questions": 200,
@@ -35,7 +35,9 @@
     },
     "subtopic": {
       "ability-permission": 100,
+      "advanced-modal-meaning": 100,
       "advanced-narrative-tenses": 100,
+      "advanced-passive-tenses": 100,
       "advice-possibility": 100,
       "articles-reference": 100,
       "basic-linking-words": 100,
@@ -44,8 +46,12 @@
       "defining-relative-clauses": 100,
       "direct-indirect-questions": 100,
       "first-conditional": 75,
+      "future-continuous-perfect": 100,
+      "future-in-the-past": 100,
+      "future-likelihood-imminence": 100,
       "future-time-clauses": 25,
       "going-to-evidence": 25,
+      "have-get-something-done": 100,
       "mixed-conditionals": 50,
       "modal-perfect-criticism": 50,
       "modal-perfect-deduction": 50,
@@ -66,6 +72,7 @@
       "quantifiers-determiners": 100,
       "reported-questions-commands": 100,
       "reported-statements": 100,
+      "reporting-passives": 100,
       "second-conditional": 50,
       "subject-object-question-tags": 100,
       "third-conditional": 75,
@@ -78,20 +85,20 @@
       "complete_dialogue": 100,
       "error_correction": 475,
       "error_identification": 50,
-      "fill_blank": 725,
+      "fill_blank": 900,
       "key_word_transformation": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 775,
-      "true_false": 350,
-      "word_order": 475
+      "single_choice": 950,
+      "true_false": 525,
+      "word_order": 650
     },
     "difficulty": {
       "1": 590,
-      "2": 630,
-      "3": 666,
-      "4": 660,
-      "5": 654
+      "2": 775,
+      "3": 859,
+      "4": 866,
+      "5": 810
     }
   },
   "targets": [
@@ -177,10 +184,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "advanced-narrative-tenses",
@@ -215,10 +227,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "advice-possibility",
@@ -1640,10 +1657,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "future-forms",
@@ -1679,10 +1701,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "future-likelihood-imminence",
@@ -1695,10 +1722,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "have-get-something-done",
@@ -1711,10 +1743,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "meaning-change-gerund-infinitive",
@@ -2148,10 +2185,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "reporting-verb-patterns",

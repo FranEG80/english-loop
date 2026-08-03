@@ -421,12 +421,12 @@
       "taxonomyNodeIds": ["will-predictions"],
       "difficulty": 4,
       "instructions": "Decide whether the sentence uses the future form appropriately.",
-      "prompt": "I wonder whether the new library will have study rooms.",
+      "prompt": "I wonder whether the new library will extend its opening hours.",
       "lessonIds": ["b1-grammar-future-forms-will-going-to"],
       "tags": ["b1", "future-forms", "will-predictions"],
       "estimatedSeconds": 40,
       "evaluator": { "strategy": "boolean", "correct": true },
-      "explanation": "Tras «I wonder whether» se mantiene el orden afirmativo: «the library will have», no inversión de pregunta."
+      "explanation": "Es una pregunta indirecta y no admite inversión: debe decir «whether the new library will extend»."
     },
     {
       "schemaVersion": "1.0.0",
