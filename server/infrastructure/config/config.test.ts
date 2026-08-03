@@ -14,6 +14,7 @@ describe("loadConfig", () => {
     process.env = { ...process.env, NODE_ENV: "development" };
     delete process.env.CONTENT_SOURCE;
     delete process.env.DATABASE_PROVIDER;
+    delete process.env.DATABASE_URL;
     delete process.env.D1_TRANSPORT;
     expect(loadConfig()).toMatchObject({
       databaseUrl: "file:./dev.db",

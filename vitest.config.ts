@@ -23,7 +23,30 @@ export default defineConfig({
         "shared/**/*.ts",
         "shared/**/*.tsx",
       ],
-      exclude: ["**/*.test.ts", "**/*.test.tsx", "generated/**", "**/index.ts"],
+      exclude: [
+        "**/*.test.ts",
+        "**/*.test.tsx",
+        "generated/**",
+        "**/index.ts",
+        // Contracts erased by TypeScript have no runtime functions or classes.
+        "core/**/ports/**",
+        "core/shared/kernel/*-port.ts",
+        "core/shared/kernel/domain-event.ts",
+        "core/shared/kernel/message.ts",
+        "core/shared/kernel/pagination.ts",
+        "core/models/activity.ts",
+        "core/models/attempt.ts",
+        "core/models/auth.ts",
+        "core/models/canvas-preview.ts",
+        "core/models/daily-session.ts",
+        "core/models/flashcard.ts",
+        "core/models/lesson.ts",
+        "core/models/practice.ts",
+        "core/models/progress.ts",
+        "core/models/review.ts",
+        "core/models/settings.ts",
+        "core/models/taxonomy.ts",
+      ],
       thresholds: {
         // Umbral de la primera ola integral; se eleva junto con cada capa
         // que se incorpora al inventario de tests.
