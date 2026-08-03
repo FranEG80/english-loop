@@ -39,6 +39,7 @@ export type ActivityVersionOptionMinAggregateOutputType = {
   activityVersionId: string | null
   optionId: string | null
   label: string | null
+  feedback: string | null
   position: number | null
 }
 
@@ -47,6 +48,7 @@ export type ActivityVersionOptionMaxAggregateOutputType = {
   activityVersionId: string | null
   optionId: string | null
   label: string | null
+  feedback: string | null
   position: number | null
 }
 
@@ -55,6 +57,7 @@ export type ActivityVersionOptionCountAggregateOutputType = {
   activityVersionId: number
   optionId: number
   label: number
+  feedback: number
   position: number
   _all: number
 }
@@ -73,6 +76,7 @@ export type ActivityVersionOptionMinAggregateInputType = {
   activityVersionId?: true
   optionId?: true
   label?: true
+  feedback?: true
   position?: true
 }
 
@@ -81,6 +85,7 @@ export type ActivityVersionOptionMaxAggregateInputType = {
   activityVersionId?: true
   optionId?: true
   label?: true
+  feedback?: true
   position?: true
 }
 
@@ -89,6 +94,7 @@ export type ActivityVersionOptionCountAggregateInputType = {
   activityVersionId?: true
   optionId?: true
   label?: true
+  feedback?: true
   position?: true
   _all?: true
 }
@@ -184,6 +190,7 @@ export type ActivityVersionOptionGroupByOutputType = {
   activityVersionId: string
   optionId: string
   label: string
+  feedback: string | null
   position: number
   _count: ActivityVersionOptionCountAggregateOutputType | null
   _avg: ActivityVersionOptionAvgAggregateOutputType | null
@@ -215,6 +222,7 @@ export type ActivityVersionOptionWhereInput = {
   activityVersionId?: Prisma.StringFilter<"ActivityVersionOption"> | string
   optionId?: Prisma.StringFilter<"ActivityVersionOption"> | string
   label?: Prisma.StringFilter<"ActivityVersionOption"> | string
+  feedback?: Prisma.StringNullableFilter<"ActivityVersionOption"> | string | null
   position?: Prisma.IntFilter<"ActivityVersionOption"> | number
   activityVersion?: Prisma.XOR<Prisma.ActivityVersionScalarRelationFilter, Prisma.ActivityVersionWhereInput>
 }
@@ -224,6 +232,7 @@ export type ActivityVersionOptionOrderByWithRelationInput = {
   activityVersionId?: Prisma.SortOrder
   optionId?: Prisma.SortOrder
   label?: Prisma.SortOrder
+  feedback?: Prisma.SortOrderInput | Prisma.SortOrder
   position?: Prisma.SortOrder
   activityVersion?: Prisma.ActivityVersionOrderByWithRelationInput
 }
@@ -237,6 +246,7 @@ export type ActivityVersionOptionWhereUniqueInput = Prisma.AtLeast<{
   activityVersionId?: Prisma.StringFilter<"ActivityVersionOption"> | string
   optionId?: Prisma.StringFilter<"ActivityVersionOption"> | string
   label?: Prisma.StringFilter<"ActivityVersionOption"> | string
+  feedback?: Prisma.StringNullableFilter<"ActivityVersionOption"> | string | null
   position?: Prisma.IntFilter<"ActivityVersionOption"> | number
   activityVersion?: Prisma.XOR<Prisma.ActivityVersionScalarRelationFilter, Prisma.ActivityVersionWhereInput>
 }, "id" | "activityVersionId_optionId">
@@ -246,6 +256,7 @@ export type ActivityVersionOptionOrderByWithAggregationInput = {
   activityVersionId?: Prisma.SortOrder
   optionId?: Prisma.SortOrder
   label?: Prisma.SortOrder
+  feedback?: Prisma.SortOrderInput | Prisma.SortOrder
   position?: Prisma.SortOrder
   _count?: Prisma.ActivityVersionOptionCountOrderByAggregateInput
   _avg?: Prisma.ActivityVersionOptionAvgOrderByAggregateInput
@@ -262,6 +273,7 @@ export type ActivityVersionOptionScalarWhereWithAggregatesInput = {
   activityVersionId?: Prisma.StringWithAggregatesFilter<"ActivityVersionOption"> | string
   optionId?: Prisma.StringWithAggregatesFilter<"ActivityVersionOption"> | string
   label?: Prisma.StringWithAggregatesFilter<"ActivityVersionOption"> | string
+  feedback?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersionOption"> | string | null
   position?: Prisma.IntWithAggregatesFilter<"ActivityVersionOption"> | number
 }
 
@@ -269,6 +281,7 @@ export type ActivityVersionOptionCreateInput = {
   id?: string
   optionId: string
   label: string
+  feedback?: string | null
   position: number
   activityVersion: Prisma.ActivityVersionCreateNestedOneWithoutOptionsInput
 }
@@ -278,6 +291,7 @@ export type ActivityVersionOptionUncheckedCreateInput = {
   activityVersionId: string
   optionId: string
   label: string
+  feedback?: string | null
   position: number
 }
 
@@ -285,6 +299,7 @@ export type ActivityVersionOptionUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
   activityVersion?: Prisma.ActivityVersionUpdateOneRequiredWithoutOptionsNestedInput
 }
@@ -294,6 +309,7 @@ export type ActivityVersionOptionUncheckedUpdateInput = {
   activityVersionId?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -302,6 +318,7 @@ export type ActivityVersionOptionCreateManyInput = {
   activityVersionId: string
   optionId: string
   label: string
+  feedback?: string | null
   position: number
 }
 
@@ -309,6 +326,7 @@ export type ActivityVersionOptionUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -317,6 +335,7 @@ export type ActivityVersionOptionUncheckedUpdateManyInput = {
   activityVersionId?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -340,6 +359,7 @@ export type ActivityVersionOptionCountOrderByAggregateInput = {
   activityVersionId?: Prisma.SortOrder
   optionId?: Prisma.SortOrder
   label?: Prisma.SortOrder
+  feedback?: Prisma.SortOrder
   position?: Prisma.SortOrder
 }
 
@@ -352,6 +372,7 @@ export type ActivityVersionOptionMaxOrderByAggregateInput = {
   activityVersionId?: Prisma.SortOrder
   optionId?: Prisma.SortOrder
   label?: Prisma.SortOrder
+  feedback?: Prisma.SortOrder
   position?: Prisma.SortOrder
 }
 
@@ -360,6 +381,7 @@ export type ActivityVersionOptionMinOrderByAggregateInput = {
   activityVersionId?: Prisma.SortOrder
   optionId?: Prisma.SortOrder
   label?: Prisma.SortOrder
+  feedback?: Prisma.SortOrder
   position?: Prisma.SortOrder
 }
 
@@ -413,6 +435,7 @@ export type ActivityVersionOptionCreateWithoutActivityVersionInput = {
   id?: string
   optionId: string
   label: string
+  feedback?: string | null
   position: number
 }
 
@@ -420,6 +443,7 @@ export type ActivityVersionOptionUncheckedCreateWithoutActivityVersionInput = {
   id?: string
   optionId: string
   label: string
+  feedback?: string | null
   position: number
 }
 
@@ -456,6 +480,7 @@ export type ActivityVersionOptionScalarWhereInput = {
   activityVersionId?: Prisma.StringFilter<"ActivityVersionOption"> | string
   optionId?: Prisma.StringFilter<"ActivityVersionOption"> | string
   label?: Prisma.StringFilter<"ActivityVersionOption"> | string
+  feedback?: Prisma.StringNullableFilter<"ActivityVersionOption"> | string | null
   position?: Prisma.IntFilter<"ActivityVersionOption"> | number
 }
 
@@ -463,6 +488,7 @@ export type ActivityVersionOptionCreateManyActivityVersionInput = {
   id?: string
   optionId: string
   label: string
+  feedback?: string | null
   position: number
 }
 
@@ -470,6 +496,7 @@ export type ActivityVersionOptionUpdateWithoutActivityVersionInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -477,6 +504,7 @@ export type ActivityVersionOptionUncheckedUpdateWithoutActivityVersionInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -484,6 +512,7 @@ export type ActivityVersionOptionUncheckedUpdateManyWithoutActivityVersionInput 
   id?: Prisma.StringFieldUpdateOperationsInput | string
   optionId?: Prisma.StringFieldUpdateOperationsInput | string
   label?: Prisma.StringFieldUpdateOperationsInput | string
+  feedback?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   position?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -494,6 +523,7 @@ export type ActivityVersionOptionSelect<ExtArgs extends runtime.Types.Extensions
   activityVersionId?: boolean
   optionId?: boolean
   label?: boolean
+  feedback?: boolean
   position?: boolean
   activityVersion?: boolean | Prisma.ActivityVersionDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["activityVersionOption"]>
@@ -503,6 +533,7 @@ export type ActivityVersionOptionSelectCreateManyAndReturn<ExtArgs extends runti
   activityVersionId?: boolean
   optionId?: boolean
   label?: boolean
+  feedback?: boolean
   position?: boolean
   activityVersion?: boolean | Prisma.ActivityVersionDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["activityVersionOption"]>
@@ -512,6 +543,7 @@ export type ActivityVersionOptionSelectUpdateManyAndReturn<ExtArgs extends runti
   activityVersionId?: boolean
   optionId?: boolean
   label?: boolean
+  feedback?: boolean
   position?: boolean
   activityVersion?: boolean | Prisma.ActivityVersionDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["activityVersionOption"]>
@@ -521,10 +553,11 @@ export type ActivityVersionOptionSelectScalar = {
   activityVersionId?: boolean
   optionId?: boolean
   label?: boolean
+  feedback?: boolean
   position?: boolean
 }
 
-export type ActivityVersionOptionOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "activityVersionId" | "optionId" | "label" | "position", ExtArgs["result"]["activityVersionOption"]>
+export type ActivityVersionOptionOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "activityVersionId" | "optionId" | "label" | "feedback" | "position", ExtArgs["result"]["activityVersionOption"]>
 export type ActivityVersionOptionInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   activityVersion?: boolean | Prisma.ActivityVersionDefaultArgs<ExtArgs>
 }
@@ -545,6 +578,7 @@ export type $ActivityVersionOptionPayload<ExtArgs extends runtime.Types.Extensio
     activityVersionId: string
     optionId: string
     label: string
+    feedback: string | null
     position: number
   }, ExtArgs["result"]["activityVersionOption"]>
   composites: {}
@@ -974,6 +1008,7 @@ export interface ActivityVersionOptionFieldRefs {
   readonly activityVersionId: Prisma.FieldRef<"ActivityVersionOption", 'String'>
   readonly optionId: Prisma.FieldRef<"ActivityVersionOption", 'String'>
   readonly label: Prisma.FieldRef<"ActivityVersionOption", 'String'>
+  readonly feedback: Prisma.FieldRef<"ActivityVersionOption", 'String'>
   readonly position: Prisma.FieldRef<"ActivityVersionOption", 'Int'>
 }
     

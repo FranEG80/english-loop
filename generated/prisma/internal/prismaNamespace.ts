@@ -3540,6 +3540,7 @@ export const ActivityVersionOptionScalarFieldEnum = {
   activityVersionId: 'activityVersionId',
   optionId: 'optionId',
   label: 'label',
+  feedback: 'feedback',
   position: 'position'
 } as const
 
@@ -3551,6 +3552,7 @@ export const ActivityVersionTokenScalarFieldEnum = {
   activityVersionId: 'activityVersionId',
   tokenId: 'tokenId',
   label: 'label',
+  feedback: 'feedback',
   position: 'position'
 } as const
 

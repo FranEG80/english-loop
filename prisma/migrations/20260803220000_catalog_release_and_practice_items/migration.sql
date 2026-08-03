@@ -161,6 +161,7 @@ CREATE TABLE "ActivityVersionOption" (
     "activityVersionId" TEXT NOT NULL,
     "optionId" TEXT NOT NULL,
     "label" TEXT NOT NULL,
+    "feedback" TEXT,
     "position" INTEGER NOT NULL,
     CONSTRAINT "ActivityVersionOption_activityVersionId_fkey" FOREIGN KEY ("activityVersionId") REFERENCES "ActivityVersion" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -171,6 +172,7 @@ CREATE TABLE "ActivityVersionToken" (
     "activityVersionId" TEXT NOT NULL,
     "tokenId" TEXT NOT NULL,
     "label" TEXT NOT NULL,
+    "feedback" TEXT,
     "position" INTEGER NOT NULL,
     CONSTRAINT "ActivityVersionToken_activityVersionId_fkey" FOREIGN KEY ("activityVersionId") REFERENCES "ActivityVersion" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );

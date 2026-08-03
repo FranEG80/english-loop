@@ -16,21 +16,9 @@ import type {
 import type { CefrLevel } from "@/core/models/level";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import { getPrismaClient } from "@/server/infrastructure/database/prisma-transaction-context";
+import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson } from "./prisma-catalog-mappers";
 
 const ACTIVE_PUBLICATION_ID = "active";
-
-function parseJson<T>(value: string | null | undefined, fallback: T): T {
-  if (!value) return fallback;
-  try {
-    return JSON.parse(value) as T;
-  } catch {
-    return fallback;
-  }
-}
-
-function levelMatches(level: string, requested: CefrLevel | "both" | undefined): boolean {
-  return !requested || requested === "both" || level === requested;
-}
 
 /**
  * Read adapter for the normalized published catalog. It only follows the
@@ -82,44 +70,6 @@ export class PrismaCatalogAdapter
     return related;
   }
 
-  private mapLesson(
-    row: {
-      id: string;
-      lessonId: string;
-      levelCode: string;
-      category: string;
-      taxonomyNodeId: string;
-      title: string;
-      summary: string;
-      explanation: string;
-      examples: string;
-      commonMistakes: string;
-      tags: string;
-      difficulty: number;
-      statusCode: string;
-      contentVersion: number;
-    },
-    relatedActivityIds: string[],
-  ): Lesson {
-    return {
-      id: row.lessonId,
-      versionId: row.id,
-      level: row.levelCode as Lesson["level"],
-      category: row.category as Lesson["category"],
-      taxonomyNodeId: row.taxonomyNodeId,
-      title: row.title,
-      summary: row.summary,
-      explanation: row.explanation,
-      examples: parseJson(row.examples, []),
-      commonMistakes: parseJson(row.commonMistakes, []),
-      relatedActivityIds: [...new Set(relatedActivityIds)].sort(),
-      tags: parseJson(row.tags, []),
-      difficulty: row.difficulty as 1 | 2 | 3,
-      status: row.statusCode as Lesson["status"],
-      contentVersion: row.contentVersion,
-    };
-  }
-
   async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
     const releaseId = await this.requireActiveReleaseId();
     const where: Prisma.LessonVersionWhereInput = {
@@ -132,7 +82,7 @@ export class PrismaCatalogAdapter
       this.db().lessonVersion.findMany({ where, orderBy: { lessonId: "asc" } }),
       this.relatedActivitiesByLesson(releaseId),
     ]);
-    return rows.map((row) => this.mapLesson(row, related.get(row.lessonId) ?? []));
+    return rows.map((row) => mapPrismaLesson(row, related.get(row.lessonId) ?? []));
   }
 
   async getLessonById(lessonId: string): Promise<Lesson | null> {
@@ -144,80 +94,7 @@ export class PrismaCatalogAdapter
       }),
       this.relatedActivitiesByLesson(releaseId),
     ]);
-    return row ? this.mapLesson(row, related.get(lessonId) ?? []) : null;
-  }
-
-  private mapActivity(row: {
-    id: string;
-    activityId: string;
-    levelCode: string;
-    activityTypeCode: string;
-    category: string;
-    topic: string;
-    subtopic: string;
-    difficulty: number;
-    instructions: string;
-    prompt: string;
-    passage: string | null;
-    explanation: string;
-    tags: string;
-    lessonIds: string;
-    estimatedSeconds: number;
-    evaluatorData: string;
-    statusCode: string;
-    options: Array<{ optionId: string; label: string; position: number }>;
-    tokens: Array<{ tokenId: string; label: string; position: number }>;
-    pairs: Array<{ leftId: string; leftLabel: string; rightId: string; rightLabel: string; position: number }>;
-    lessonLinks: Array<{ lessonId: string; position: number }>;
-    taxonomyLinks: Array<{ taxonomyNodeId: string; position: number }>;
-  }): Activity {
-    const options = [...row.options]
-      .sort((a, b) => a.position - b.position)
-      .map((option) => ({ id: option.optionId, text: option.label }));
-    const tokens = [...row.tokens]
-      .sort((a, b) => a.position - b.position)
-      .map((token) => ({ id: token.tokenId, text: token.label }));
-    const pairs = [...row.pairs]
-      .sort((a, b) => a.position - b.position)
-      .map((pair) => ({
-        leftId: pair.leftId,
-        left: pair.leftLabel,
-        rightId: pair.rightId,
-        right: pair.rightLabel,
-      }));
-    const lessonIds = row.lessonLinks.length > 0
-      ? [...row.lessonLinks].sort((a, b) => a.position - b.position).map((link) => link.lessonId)
-      : parseJson(row.lessonIds, []);
-    const taxonomyNodeIds = row.taxonomyLinks.length > 0
-      ? [...row.taxonomyLinks].sort((a, b) => a.position - b.position).map((link) => link.taxonomyNodeId)
-      : [];
-
-    return {
-      id: row.activityId,
-      versionId: row.id,
-      level: row.levelCode as Activity["level"],
-      type: row.activityTypeCode,
-      category: row.category,
-      topic: row.topic,
-      subtopic: row.subtopic,
-      taxonomyNodeIds,
-      difficulty: row.difficulty,
-      instructions: row.instructions,
-      prompt: row.prompt,
-      ...(row.passage ? { passage: row.passage } : {}),
-      options: options.length > 0 ? options : undefined,
-      tokens: tokens.length > 0 ? tokens : undefined,
-      pairs: pairs.length > 0 ? pairs : undefined,
-      lessonIds,
-      tags: parseJson(row.tags, []),
-      estimatedSeconds: row.estimatedSeconds,
-      evaluator: parseJson(row.evaluatorData, { strategy: "exact_text", answer: "", normalization: {
-        trim: true, collapseWhitespace: true, caseSensitive: false,
-        ignoreTerminalPunctuation: true, normaliseApostrophes: true,
-      } }) as Activity["evaluator"],
-      explanation: row.explanation,
-      status: row.statusCode as Activity["status"],
-    };
+    return row ? mapPrismaLesson(row, related.get(lessonId) ?? []) : null;
   }
 
   private activityWhere(
@@ -252,7 +129,7 @@ export class PrismaCatalogAdapter
       include: this.activityInclude,
       orderBy: { activityId: "asc" },
     });
-    return rows.map((row) => this.mapActivity(row));
+    return rows.map((row) => mapPrismaActivity(row));
   }
 
   async getActivityById(activityId: string): Promise<Activity | null> {
@@ -262,7 +139,7 @@ export class PrismaCatalogAdapter
       include: this.activityInclude,
       orderBy: { id: "desc" },
     });
-    return row ? this.mapActivity(row) : null;
+    return row ? mapPrismaActivity(row) : null;
   }
 
   async countActivitiesByNode(nodeId: string, level: CefrLevel | "both"): Promise<number> {
@@ -312,7 +189,7 @@ export class PrismaCatalogAdapter
       parentId: row.parentId,
       kind: row.kind as TaxonomyNode["kind"],
       labels: { en: row.labelsEn, es: row.labelsEs },
-      levels: parseJson(row.levels, []) as TaxonomyNode["levels"],
+      levels: parseCatalogJson(row.levels, []) as TaxonomyNode["levels"],
       selectableForPractice: row.selectableForPractice,
       order: row.sortOrder,
       children: (children.get(row.nodeId) ?? [])

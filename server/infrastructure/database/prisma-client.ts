@@ -1,16 +1,15 @@
 import "server-only";
 import { PrismaClient } from "@/generated/prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
 import { config } from "@/server/infrastructure/config/config";
+import { assertPrismaProvider, createPrismaAdapter } from "./prisma-adapter-factory";
 
 const globalForPrisma = globalThis as unknown as {
   prisma?: PrismaClient;
 };
 
 function createPrismaClient(): PrismaClient {
-  const adapter = new PrismaBetterSqlite3({
-    url: config.databaseUrl,
-  });
+  assertPrismaProvider(config.databaseProvider);
+  const adapter = createPrismaAdapter(config.databaseProvider, config.databaseUrl);
   return new PrismaClient({ adapter });
 }
 

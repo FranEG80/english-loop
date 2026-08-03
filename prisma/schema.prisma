@@ -493,6 +493,7 @@ model ActivityVersionOption {
   activityVersionId String
   optionId        String
   label           String
+  feedback        String?
   position        Int
 
   activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)
@@ -504,6 +505,7 @@ model ActivityVersionToken {
   activityVersionId String
   tokenId         String
   label           String
+  feedback        String?
   position        Int
 
   activityVersion ActivityVersion @relation(fields: [activityVersionId], references: [id], onDelete: Cascade)

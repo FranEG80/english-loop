@@ -201,13 +201,13 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
           await tx.activityVersionOption.createMany({
             data: activity.options.map((option, position) => ({
               id: id(), activityVersionId: version.id, optionId: option.id,
-              label: option.text, position,
+              label: option.text, feedback: option.feedback ?? null, position,
             })),
           });
           await tx.activityVersionToken.createMany({
             data: activity.tokens.map((token, position) => ({
               id: id(), activityVersionId: version.id, tokenId: token.id,
-              label: token.text, position,
+              label: token.text, feedback: token.feedback ?? null, position,
             })),
           });
           await tx.activityVersionPair.createMany({
