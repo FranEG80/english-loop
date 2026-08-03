@@ -453,7 +453,7 @@ function validateReferences(
   }
 
   for (const activity of dataset.activities) {
-    for (const lessonId of activity.lessonIds) {
+    for (const lessonId of Array.isArray(activity.lessonIds) ? activity.lessonIds : []) {
       if (!lessonIds.has(lessonId)) {
         addIssue(
           issues,
@@ -463,7 +463,7 @@ function validateReferences(
         );
       }
     }
-    for (const nodeId of activity.taxonomyNodeIds) {
+    for (const nodeId of Array.isArray(activity.taxonomyNodeIds) ? activity.taxonomyNodeIds : []) {
       const node = nodes.get(nodeId);
       if (!node) {
         addIssue(
@@ -481,7 +481,10 @@ function validateReferences(
         );
       }
     }
-    if (!activity.taxonomyNodeIds.includes(activity.subtopic)) {
+    if (
+      Array.isArray(activity.taxonomyNodeIds) &&
+      !activity.taxonomyNodeIds.includes(activity.subtopic)
+    ) {
       addIssue(
         issues,
         "non-specific-taxonomy-reference",
@@ -671,7 +674,8 @@ function validateCoverage(
       ({ level, status, taxonomyNodeIds }) =>
         status === "published" &&
         level === target.level &&
-        taxonomyNodeIds.some((id) => acceptedNodeIds.has(id)),
+        (Array.isArray(taxonomyNodeIds) &&
+          taxonomyNodeIds.some((id) => acceptedNodeIds.has(id))),
     );
     const types = new Set(matching.map(({ type }) => type));
     const difficulties = new Set(matching.map(({ difficulty }) => difficulty));

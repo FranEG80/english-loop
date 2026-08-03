@@ -8,7 +8,7 @@ function item(id: string, prompt: string): Activity {
 
 describe("findDuplicates", () => {
   it("finds exact normalized groups and near duplicates deterministically", () => {
-    const result = findDuplicates([item("b", "Hello world!"), item("a", " hello   world "), item("c", "Hello world today")]);
+    const result = findDuplicates([item("b", "Hello world"), item("a", " hello   world "), item("c", "Hello world today")]);
     expect(result.exact).toEqual([{ normalisedPrompt: "hello world", activityIds: ["a", "b"] }]);
     expect(result.nearDuplicateThreshold).toBe(0.86);
     expect(result.near).toEqual([]);

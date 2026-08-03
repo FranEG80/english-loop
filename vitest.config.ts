@@ -15,12 +15,12 @@ export default defineConfig({
       include: ["core/**/*.ts", "adapters/**/*.ts", "server/**/*.ts"],
       exclude: ["**/*.test.ts", "**/*.test.tsx", "generated/**", "**/index.ts"],
       thresholds: {
-        // Ratchet inicial: evita regresiones mientras se completa la
-        // cobertura por capas. Estos valores se elevan por fases en CI.
-        lines: 49,
-        functions: 48,
-        statements: 49,
-        branches: 43,
+        // Umbral de la primera ola integral; se eleva junto con cada capa
+        // que se incorpora al inventario de tests.
+        lines: 70,
+        functions: 70,
+        statements: 70,
+        branches: 57,
       },
     },
   },
