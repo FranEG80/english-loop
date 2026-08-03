@@ -48,7 +48,7 @@ export async function runPracticeIndex(): Promise<void> {
   console.log(`Índice de práctica creado para ${scopes.length} nodos.`);
 }
 
-function buildChildren(
+export function buildChildren(
   nodes: TaxonomyNode[],
 ): Map<string, TaxonomyNode[]> {
   const children = new Map<string, TaxonomyNode[]>();
@@ -62,7 +62,7 @@ function buildChildren(
   return children;
 }
 
-function collectDescendants(
+export function collectDescendants(
   id: string,
   children: Map<string, TaxonomyNode[]>,
 ): string[] {
@@ -72,12 +72,12 @@ function collectDescendants(
     .sort((left, right) => left.localeCompare(right));
 }
 
-function uniqueActivities(activities: Activity[]): Activity[] {
+export function uniqueActivities(activities: Activity[]): Activity[] {
   return [...new Map(activities.map((activity) => [activity.id, activity])).values()]
     .sort((left, right) => left.id.localeCompare(right.id));
 }
 
-function countBy(
+export function countBy(
   activities: Activity[],
   key: (activity: Activity) => string,
 ): Record<string, number> {

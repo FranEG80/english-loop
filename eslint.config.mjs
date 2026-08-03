@@ -25,6 +25,30 @@ const eslintConfig = defineConfig([
               message:
                 "core/ no puede depender de adapters, features ni app.",
             },
+            {
+              group: ["@prisma/*", "better-auth", "zod"],
+              message:
+                "core/ no puede depender de Prisma, Better Auth ni Zod.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    // El shared kernel es el nivel más bajo: no puede depender de ningún
+    // bounded context ni de la capa de aplicación.
+    files: ["core/shared/**/*.{ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["@/core/(?!shared)"],
+              message:
+                "core/shared no puede depender de otros bounded contexts.",
+            },
           ],
         },
       ],

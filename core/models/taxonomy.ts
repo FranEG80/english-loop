@@ -1,5 +1,5 @@
 import type { LocalizedText } from "./locale";
-import type { CefrLevel } from "./level";
+import type { CefrLevel, CefrLevelFilter } from "./level";
 
 export type TaxonomyNodeType = "category" | "topic" | "subtopic" | "skill";
 
@@ -14,7 +14,7 @@ export interface TaxonomyNodeDto {
 
 export interface PracticeScopeAvailabilityDto {
   nodeId: string;
-  level: CefrLevel;
+  level: CefrLevelFilter;
   availableActivityCount: number;
   minRequiredActivities: number;
   isEligible: boolean;

@@ -3,6 +3,7 @@ import type { SubmitAttemptInputDto, AttemptFeedbackDto } from "../models/attemp
 
 export interface DailySessionPort {
   getTodaySession(timezone: string): Promise<DailySessionDto>;
+  startDailyPractice(sessionId: string): Promise<DailySessionDto>;
   submitDailyAttempt(
     sessionId: string,
     input: SubmitAttemptInputDto,

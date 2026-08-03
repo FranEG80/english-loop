@@ -12,18 +12,18 @@ import { restRequest } from "./http-client";
 export const focusedPracticeRestAdapter: FocusedPracticePort = {
   getScopeAvailability: (taxonomyNodeId) =>
     restRequest<PracticeScopeAvailabilityDto[]>(
-      `/practice/scope-availability/${taxonomyNodeId}`,
+      `/practice-taxonomy/${taxonomyNodeId}/availability`,
     ),
   createRun: (input: CreateFocusedPracticeRunDto) =>
-    restRequest<PracticeRunDto>("/practice/runs", {
+    restRequest<PracticeRunDto>("/practice-runs", {
       method: "POST",
       body: JSON.stringify(input),
     }),
   submitRunAttempt: (runId, input: SubmitAttemptInputDto) =>
-    restRequest<AttemptFeedbackDto>(`/practice/runs/${runId}/attempts`, {
+    restRequest<AttemptFeedbackDto>(`/practice-runs/${runId}/attempts`, {
       method: "POST",
       body: JSON.stringify(input),
     }),
   getRunSummary: (runId) =>
-    restRequest<PracticeRunSummaryDto>(`/practice/runs/${runId}/summary`),
+    restRequest<PracticeRunSummaryDto>(`/practice-runs/${runId}/summary`),
 };

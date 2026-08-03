@@ -1,9 +1,9 @@
 import path from "node:path";
 import { DATASET_ROOT, writeJson } from "./lib/io";
 import { loadDataset } from "./lib/load";
+import type { LoadedDataset } from "./lib/types";
 
-export async function runIndexing(): Promise<void> {
-  const dataset = await loadDataset();
+export function buildIndexes(dataset: LoadedDataset) {
   const lessonIndex = {
     schemaVersion: "1.0.0",
     generatedFromDatasetVersion: "0.1.0",
@@ -48,6 +48,13 @@ export async function runIndexing(): Promise<void> {
       left.id.localeCompare(right.id),
     ),
   };
+
+  return { lessonIndex, activityIndex };
+}
+
+export async function runIndexing(): Promise<void> {
+  const dataset = await loadDataset();
+  const { lessonIndex, activityIndex } = buildIndexes(dataset);
 
   await Promise.all([
     writeJson(

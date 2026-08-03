@@ -39,7 +39,7 @@ export async function runGradingTests(): Promise<void> {
   );
 }
 
-function correctResponse(evaluator: Evaluator): ActivityResponse {
+export function correctResponse(evaluator: Evaluator): ActivityResponse {
   switch (evaluator.strategy) {
     case "boolean":
       return evaluator.correct;
@@ -66,7 +66,7 @@ function correctResponse(evaluator: Evaluator): ActivityResponse {
   }
 }
 
-function incorrectResponse(evaluator: Evaluator): ActivityResponse {
+export function incorrectResponse(evaluator: Evaluator): ActivityResponse {
   switch (evaluator.strategy) {
     case "boolean":
       return !evaluator.correct;
@@ -94,7 +94,7 @@ function incorrectResponse(evaluator: Evaluator): ActivityResponse {
   }
 }
 
-function acceptedVariants(evaluator: Evaluator): ActivityResponse[] {
+export function acceptedVariants(evaluator: Evaluator): ActivityResponse[] {
   switch (evaluator.strategy) {
     case "exact_text":
       return textVariants(evaluator.answer, evaluator.normalization);
@@ -122,7 +122,7 @@ function acceptedVariants(evaluator: Evaluator): ActivityResponse[] {
   }
 }
 
-function textVariants(
+export function textVariants(
   answer: string,
   rules: NormalizationRules,
 ): ActivityResponse[] {

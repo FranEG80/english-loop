@@ -1,6 +1,7 @@
 import type { FocusedPracticePort } from "@/core/ports";
 import type {
   CefrLevel,
+  CefrLevelFilter,
   PracticeRunDto,
   PracticeScopeAvailabilityDto,
 } from "@/core/models";
@@ -19,7 +20,7 @@ const MIN_REQUIRED_ACTIVITIES = 3;
 const runsById = new Map<string, PracticeRunDto>();
 const runStatsById = new Map<string, { correct: number; incorrect: number }>();
 
-function activitiesForScope(taxonomyNodeId: string, level?: CefrLevel) {
+function activitiesForScope(taxonomyNodeId: string, level?: CefrLevelFilter) {
   const node = findTaxonomyNode(taxonomyNodeId);
   const scopedIds = node
     ? new Set(collectDescendantIds(node))
@@ -27,7 +28,7 @@ function activitiesForScope(taxonomyNodeId: string, level?: CefrLevel) {
   return mockActivities.filter(
     (activity) =>
       scopedIds.has(activity.taxonomyNodeId) &&
-      (!level || activity.level === level),
+      (!level || level === "both" || activity.level === level),
   );
 }
 
@@ -39,7 +40,7 @@ function findRunById(runId: string): PracticeRunDto {
 
 export const focusedPracticeMockAdapter: FocusedPracticePort = {
   async getScopeAvailability(taxonomyNodeId) {
-    const levels: CefrLevel[] = ["B1", "B2"];
+    const levels: CefrLevelFilter[] = ["B1", "B2", "both"];
     return levels.map((level): PracticeScopeAvailabilityDto => {
       const availableActivityCount = activitiesForScope(
         taxonomyNodeId,

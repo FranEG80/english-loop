@@ -1,23 +1,7 @@
 import type { Metadata } from "next";
-import { Caveat, Newsreader, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { getLocalePort } from "@/adapters/adapter-factory";
 import { getDictionary } from "@/shared/i18n";
-
-const nunito = Nunito_Sans({
-  variable: "--font-nunito",
-  subsets: ["latin"],
-});
-
-const newsreader = Newsreader({
-  variable: "--font-newsreader",
-  subsets: ["latin"],
-});
-
-const caveat = Caveat({
-  variable: "--font-caveat",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -57,7 +41,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       data-scroll-behavior="smooth"
-      className={`${nunito.variable} ${newsreader.variable} ${caveat.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <body className="min-h-full flex flex-col">
         <a href="#main-content" className="skip-link">

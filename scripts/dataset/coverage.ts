@@ -96,7 +96,7 @@ export async function runCoverage(): Promise<void> {
   );
 }
 
-function buildChildren(
+export function buildChildren(
   nodes: TaxonomyNode[],
 ): Map<string, TaxonomyNode[]> {
   const children = new Map<string, TaxonomyNode[]>();
@@ -109,7 +109,7 @@ function buildChildren(
   return children;
 }
 
-function collectDescendants(
+export function collectDescendants(
   nodeId: string,
   children: Map<string, TaxonomyNode[]>,
 ): string[] {
@@ -119,7 +119,7 @@ function collectDescendants(
   ]);
 }
 
-function countBy(
+export function countBy(
   activities: Activity[],
   key: (activity: Activity) => string,
 ): Record<string, number> {

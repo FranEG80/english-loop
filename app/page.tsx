@@ -1,18 +1,8 @@
-import {
-  getAuthPort,
-  getDailySessionPort,
-  getLearningContentPort,
-  getLocalePort,
-} from "@/adapters/adapter-factory";
-import { getDailyLoop } from "@/core/use-cases";
-import { DailyLessonView } from "@/features/daily/DailyLessonView";
+import { getAuthPort, getLocalePort } from "@/adapters/adapter-factory";
 import { getDictionary } from "@/shared/i18n";
 import { PublicShell } from "@/shared/layout/PublicShell";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
 import { Landing } from "@/features/landing/Landing";
 import DashboardPage from "./dashboard/page";
-
-const TIMEZONE = "UTC";
 
 export default async function RootPage() {
   const locale = await getLocalePort().getLocale();
@@ -27,24 +17,5 @@ export default async function RootPage() {
     );
   }
 
-  const dailyLoop = await getDailyLoop(
-    getDailySessionPort(),
-    getLearningContentPort(),
-    TIMEZONE,
-  );
-
-  return (
-    <DashboardPage />
-  )
-
-  // return (
-  //   <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
-  //     {dailyLoop.lesson ? (
-  //       <DashboardPage />
-  //       // <DailyLessonView dictionary={dictionary} lesson={dailyLoop.lesson} />
-  //     ) : (
-  //       <p>{dictionary.states.emptyTitle}</p>
-  //     )}
-  //   </WorkspaceShell>
-  // );
+  return <DashboardPage />;
 }

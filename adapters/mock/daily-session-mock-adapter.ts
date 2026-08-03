@@ -39,6 +39,12 @@ export const dailySessionMockAdapter: DailySessionPort = {
     return getOrCreateSession(getLocalDate(timezone));
   },
 
+  async startDailyPractice(sessionId) {
+    const session = findSessionById(sessionId);
+    session.status = "practice";
+    return session;
+  },
+
   async submitDailyAttempt(sessionId, input) {
     const session = findSessionById(sessionId);
     const activity = mockActivities.find((item) => item.id === input.activityId);

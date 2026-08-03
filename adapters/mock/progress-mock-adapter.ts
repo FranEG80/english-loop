@@ -9,4 +9,10 @@ export const progressMockAdapter: ProgressPort = {
   async getReviewQueue() {
     return mockReviewQueue;
   },
+  async getTaxonomyProgress(taxonomyNodeId) {
+    return { taxonomyNodeId, attemptsCount: 0, correctCount: 0, accuracyRate: 0 };
+  },
+  async getActivityHistory(activityId) {
+    return { activityId, attempts: [] };
+  },
 };

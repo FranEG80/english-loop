@@ -2,7 +2,6 @@ import {
   BarChart3,
   BookOpen,
   Dumbbell,
-  Home,
   LayoutDashboard,
   RotateCcw,
   Settings,

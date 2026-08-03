@@ -6,10 +6,9 @@ import type { Activity } from "./lib/types";
 
 const NEAR_DUPLICATE_THRESHOLD = 0.86;
 
-export async function runDuplicateDetection(): Promise<void> {
-  const dataset = await loadDataset();
+export function findDuplicates(activities: Activity[]) {
   const exactGroups = new Map<string, Activity[]>();
-  for (const activity of dataset.activities) {
+  for (const activity of activities) {
     const key = normalizePrompt(activity.prompt);
     const group = exactGroups.get(key) ?? [];
     group.push(activity);
@@ -17,64 +16,46 @@ export async function runDuplicateDetection(): Promise<void> {
   }
 
   const exact = [...exactGroups.entries()]
-    .filter(([, activities]) => activities.length > 1)
-    .map(([normalisedPrompt, activities]) => ({
+    .filter(([, values]) => values.length > 1)
+    .map(([normalisedPrompt, values]) => ({
       normalisedPrompt,
-      activityIds: activities
-        .map(({ id }) => id)
-        .sort((left, right) => left.localeCompare(right)),
+      activityIds: values.map(({ id }) => id).sort((left, right) => left.localeCompare(right)),
     }))
-    .sort((left, right) =>
-      left.activityIds[0].localeCompare(right.activityIds[0]),
-    );
+    .sort((left, right) => left.activityIds[0].localeCompare(right.activityIds[0]));
 
   const buckets = new Map<string, Activity[]>();
-  for (const activity of dataset.activities) {
+  for (const activity of activities) {
     const key = `${activity.level}:${activity.type}:${activity.topic}`;
     const bucket = buckets.get(key) ?? [];
     bucket.push(activity);
     buckets.set(key, bucket);
   }
 
-  const near: Array<{
-    leftId: string;
-    rightId: string;
-    similarity: number;
-  }> = [];
+  const near: Array<{ leftId: string; rightId: string; similarity: number }> = [];
   for (const bucket of buckets.values()) {
     for (let leftIndex = 0; leftIndex < bucket.length; leftIndex += 1) {
-      for (
-        let rightIndex = leftIndex + 1;
-        rightIndex < bucket.length;
-        rightIndex += 1
-      ) {
+      for (let rightIndex = leftIndex + 1; rightIndex < bucket.length; rightIndex += 1) {
         const left = bucket[leftIndex];
         const right = bucket[rightIndex];
-        if (normalizePrompt(left.prompt) === normalizePrompt(right.prompt)) {
-          continue;
-        }
+        if (normalizePrompt(left.prompt) === normalizePrompt(right.prompt)) continue;
         const similarity = jaccard(left.prompt, right.prompt);
-        if (similarity >= NEAR_DUPLICATE_THRESHOLD) {
-          near.push({
-            leftId: left.id,
-            rightId: right.id,
-            similarity: Number(similarity.toFixed(3)),
-          });
-        }
+        if (similarity >= NEAR_DUPLICATE_THRESHOLD) near.push({ leftId: left.id, rightId: right.id, similarity: Number(similarity.toFixed(3)) });
       }
     }
   }
-  near.sort(
-    (left, right) =>
-      left.leftId.localeCompare(right.leftId) ||
-      left.rightId.localeCompare(right.rightId),
-  );
+  near.sort((left, right) => left.leftId.localeCompare(right.leftId) || left.rightId.localeCompare(right.rightId));
+  return { exact, near, nearDuplicateThreshold: NEAR_DUPLICATE_THRESHOLD };
+}
+
+export async function runDuplicateDetection(): Promise<void> {
+  const dataset = await loadDataset();
+  const { exact, near, nearDuplicateThreshold } = findDuplicates(dataset.activities);
 
   await writeJson(path.join(DATASET_ROOT, "reports", "duplicates.json"), {
     schemaVersion: "1.0.0",
     exact,
     near,
-    nearDuplicateThreshold: NEAR_DUPLICATE_THRESHOLD,
+    nearDuplicateThreshold,
   });
 
   console.log(

@@ -1,0 +1,275 @@
+// EnglishLoop - Prisma schema
+// SQLite para desarrollo; PostgreSQL como destino futuro.
+// Los IDs son UUID generados por la aplicación (no autoincrementales).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// ---------------------------------------------------------------------------
+// Better Auth (tablas requeridas)
+// ---------------------------------------------------------------------------
+
+model User {
+  id            String    @id @default(uuid())
+  name          String
+  email         String    @unique
+  emailVerified Boolean   @default(false)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  sessions     Session[]
+  accounts     Account[]
+  settings     UserSettings?
+  savedLessons SavedLesson[]
+}
+
+model Session {
+  id        String   @id @default(uuid())
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Account {
+  id                String  @id @default(uuid())
+  accountId         String
+  providerId        String
+  accessToken       String?
+  refreshToken      String?
+  idToken           String?
+  accessTokenExpiresAt DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope             String?
+  password          String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Verification {
+  id         String   @id @default(uuid())
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// Account
+// ---------------------------------------------------------------------------
+
+model UserSettings {
+  id                 String   @id @default(uuid())
+  userId             String   @unique
+  locale             String   @default("es")
+  activeLevels       String   @default("B1") // JSON array
+  dailyGoalLessons   Int      @default(1)
+  dailyGoalActivities Int     @default(10)
+  timezone           String   @default("UTC")
+  reducedMotion      Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model SavedLesson {
+  id       String   @id @default(uuid())
+  userId   String
+  lessonId String
+  savedAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+  @@index([userId])
+}
+
+// ---------------------------------------------------------------------------
+// Learning: Daily Session
+// ---------------------------------------------------------------------------
+
+model DailySession {
+  id            String   @id @default(uuid())
+  userId        String
+  date          String // fecha local del usuario (YYYY-MM-DD)
+  status        String   @default("not_started")
+  datasetVersion String
+  seed          String
+  practiceRunId String?  @unique
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  lessons DailySessionLesson[]
+  practiceRun PracticeRun? @relation(fields: [practiceRunId], references: [id])
+
+  @@unique([userId, date])
+  @@index([userId, date])
+}
+
+model DailySessionLesson {
+  id            String   @id @default(uuid())
+  dailySessionId String
+  lessonId      String
+  order         Int
+  status        String   @default("pending") // pending | completed | skipped
+  selectionReason String
+  completedAt   DateTime?
+
+  dailySession DailySession @relation(fields: [dailySessionId], references: [id], onDelete: Cascade)
+
+  @@index([dailySessionId])
+}
+
+// ---------------------------------------------------------------------------
+// Practice
+// ---------------------------------------------------------------------------
+
+model PracticeRun {
+  id            String   @id @default(uuid())
+  userId        String
+  mode          String // DAILY | SMART_REVIEW | FOCUSED
+  status        String   @default("in_progress") // in_progress | completed
+  scopeSnapshot String // JSON: alcance de taxonomía y descendientes
+  activityIds   String // JSON array
+  currentIndex  Int      @default(0)
+  datasetVersion String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  dailySession DailySession?
+  attempts     ActivityAttempt[]
+
+  @@index([userId, mode])
+}
+
+// ---------------------------------------------------------------------------
+// Attempts (inmutables)
+// ---------------------------------------------------------------------------
+
+model ActivityAttempt {
+  id             String   @id @default(uuid())
+  userId         String
+  practiceRunId  String?
+  activityId     String
+  origin         String // DAILY | SMART_REVIEW | FOCUSED
+  idempotencyKey String
+  response       String // JSON
+  isCorrect      Boolean
+  evaluatorVersion String
+  submittedAt    DateTime @default(now())
+
+  practiceRun PracticeRun? @relation(fields: [practiceRunId], references: [id])
+
+  @@unique([userId, idempotencyKey])
+  @@index([userId, activityId])
+  @@index([userId, submittedAt])
+}
+
+// ---------------------------------------------------------------------------
+// Progress (proyecciones derivadas de intentos)
+// ---------------------------------------------------------------------------
+
+model UserActivityProgress {
+  id         String   @id @default(uuid())
+  userId     String
+  activityId String
+  attemptsCount Int    @default(0)
+  correctCount  Int    @default(0)
+  lastResult    Boolean?
+  lastAttemptAt DateTime?
+  updatedAt     DateTime @updatedAt
+
+  @@unique([userId, activityId])
+  @@index([userId])
+}
+
+model UserLessonProgress {
+  id         String   @id @default(uuid())
+  userId     String
+  lessonId   String
+  viewed     Boolean  @default(false)
+  viewedAt   DateTime?
+  errorsPending Int   @default(0)
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, lessonId])
+  @@index([userId])
+}
+
+model TaxonomyProgress {
+  id         String   @id @default(uuid())
+  userId     String
+  taxonomyNodeId String
+  attemptsCount Int    @default(0)
+  correctCount  Int    @default(0)
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, taxonomyNodeId])
+  @@index([userId])
+}
+
+// ---------------------------------------------------------------------------
+// Review
+// ---------------------------------------------------------------------------
+
+model ReviewItem {
+  id            String   @id @default(uuid())
+  userId        String
+  activityId    String
+  taxonomyNodeId String
+  level         String
+  stage         Int      @default(0) // 0=fallo, 1=1er acierto, 2=2º acierto, 3=resuelto
+  consecutiveCorrect Int @default(0)
+  dueAt         DateTime
+  failedAt      DateTime
+  resolvedAt    DateTime?
+  attemptsCount Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([userId, dueAt])
+  @@index([userId, resolvedAt])
+}
+
+// ---------------------------------------------------------------------------
+// Dataset import
+// ---------------------------------------------------------------------------
+
+model DatasetImport {
+  id            String   @id @default(uuid())
+  datasetVersion String
+  checksum      String
+  status        String // started | completed | failed
+  startedAt     DateTime @default(now())
+  finishedAt    DateTime?
+  result        String? // JSON resumen
+  error         String?
+
+  @@index([datasetVersion])
+}
+
+model RateLimitBucket {
+  key     String   @id
+  count   Int      @default(0)
+  resetAt DateTime
+  updatedAt DateTime @updatedAt
+
+  @@index([resetAt])
+}
