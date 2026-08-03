@@ -7,6 +7,9 @@ import { PracticeRun } from "@/core/practice/domain/practice-run";
 import type { DailySessionRepository } from "../../ports/daily-session-repository";
 import type { DailyPracticePlanner } from "../../domain/daily-practice-planner";
 import { ForbiddenException, ResourceNotFoundException } from "@/core/shared/exceptions";
+import { DEFAULT_DAILY_GOAL_ACTIVITIES } from "@/core/account/domain/user-settings";
+import type { SessionSize } from "@/core/models/session-size";
+import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
 
 export interface StartDailyPracticeResult {
   sessionId: string;
@@ -49,8 +52,8 @@ export async function startDailyPractice(
     }
 
     const settings = await userSettingsRepository.findByUserId(actor.userId);
-    const level = settings?.activeLevels[0] ?? actor.activeLevels[0] ?? "B1";
-    const activityCount = settings?.dailyGoalActivities ?? 10;
+    const level = settings?.activeLevels[0] ?? actor.activeLevels[0] ?? DEFAULT_CEFR_LEVEL;
+    const activityCount = settings?.dailyGoalActivities ?? DEFAULT_DAILY_GOAL_ACTIVITIES;
     const activityIds = await planner.plan(activityCatalog, {
       lessonIds: session.lessons.map((lesson) => lesson.lessonId),
       level,
@@ -65,7 +68,7 @@ export async function startDailyPractice(
         taxonomyNodeId: "daily",
         taxonomyPath: [],
         descendantIds: [],
-        requestedCount: activityCount as 5 | 10 | 15 | 20,
+        requestedCount: activityCount as SessionSize,
       },
       activityIds,
       currentIndex: 0,

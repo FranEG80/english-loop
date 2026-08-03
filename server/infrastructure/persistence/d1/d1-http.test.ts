@@ -112,4 +112,22 @@ describe("D1 persistence boundary", () => {
     expect(body).toEqual({ operation: { name: "health" } });
     expect(JSON.stringify(body)).not.toContain("SELECT");
   });
+
+  it("supports bounded typed batches over HTTP", async () => {
+    const client = new D1HttpClient({
+      url: "https://d1-proxy.test",
+      token: "shared-secret",
+      now: () => 1_700_000_000_000,
+      nonce: () => "nonce-batch",
+      fetch: async (_input, init) => {
+        const body = JSON.parse(String(init?.body)) as { operations: unknown[] };
+        return new Response(JSON.stringify({
+          results: body.operations.map(() => ({ success: true, results: [] })),
+        }), { status: 200 });
+      },
+    });
+
+    await expect(client.batch([{ name: "health" }, { name: "activeCatalogMetadata" }])).resolves.toHaveLength(2);
+    await expect(client.batch([])).rejects.toThrow("between 1 and 100");
+  });
 });

@@ -3,6 +3,7 @@ import {
   getLocalePort,
 } from "@/adapters/adapter-factory";
 import type { TaxonomyNodeDto } from "@/core/models";
+import { ALLOWED_SESSION_SIZES } from "@/core/models/session-size";
 import { getTaxonomy } from "@/core/use-cases";
 import { createFocusedPracticeAction } from "@/features/review/actions";
 import { getDictionary } from "@/shared/i18n";
@@ -71,7 +72,7 @@ export default async function FocusPage({
                 name="sessionSize"
                 className="h-12 rounded-control border-2 border-foreground/50 bg-surface px-3"
               >
-                {[5, 10, 15, 20].map((size) => (
+                {ALLOWED_SESSION_SIZES.map((size) => (
                   <option key={size} value={size}>
                     {size}
                   </option>

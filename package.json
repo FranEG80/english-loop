@@ -23,6 +23,7 @@
     "dataset:test-grading": "tsx scripts/dataset/test-grading.ts",
     "dataset:all": "tsx scripts/dataset/all.ts",
     "db:check-parity": "tsx scripts/database/schema-parity.ts",
+    "db:render-schema": "tsx scripts/database/render-provider-schema.ts",
     "dataset:seed": "tsx scripts/dataset/seed.ts",
     "dataset:import": "pnpm dataset:seed",
     "db:seed": "prisma db seed",
@@ -31,6 +32,7 @@
     "test:a11y": "playwright test e2e/accessibility.spec.ts",
     "test:dataset": "pnpm dataset:validate && pnpm dataset:test-grading",
     "test:integration": "touch \"$INIT_CWD/test-repositories.db\" && DATABASE_URL=file:$INIT_CWD/test-repositories.db pnpm prisma migrate deploy && DATABASE_URL=file:$INIT_CWD/test-repositories.db TEST_DATABASE_URL=file:$INIT_CWD/test-repositories.db RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/repositories.integration.test.ts",
+    "test:integration:catalog": "touch \"$INIT_CWD/test-catalog.db\" && DATABASE_URL=file:$INIT_CWD/test-catalog.db pnpm prisma migrate deploy && DATABASE_URL=file:$INIT_CWD/test-catalog.db TEST_DATABASE_URL=file:$INIT_CWD/test-catalog.db RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/prisma-catalog-write-adapter.integration.test.ts",
     "verify": "pnpm lint && pnpm typecheck && pnpm arch:check && pnpm test && pnpm build:test",
     "verify:full": "pnpm verify && pnpm test:coverage && pnpm test:integration && pnpm test:e2e"
   },

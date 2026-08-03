@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
 import type { Lesson } from "@/core/content/domain/lesson";
+import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 import type { LessonListFilters, LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 
@@ -84,7 +85,7 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
         { path: this.indexPath },
       );
     }
-    return raw.lessons.filter((lesson) => lesson.status === "published");
+    return raw.lessons.filter((lesson) => lesson.status === PUBLISHED_CONTENT_STATUS);
   }
 
   private async relatedActivities(): Promise<Map<string, string[]>> {
@@ -94,7 +95,7 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
         const raw = JSON.parse(await readFile(this.activityIndexPath, "utf8")) as ActivityIndex;
         const result = new Map<string, string[]>();
         for (const activity of raw.activities) {
-          if (activity.status !== "published") continue;
+          if (activity.status !== PUBLISHED_CONTENT_STATUS) continue;
           for (const lessonId of activity.lessonIds) {
             const ids = result.get(lessonId) ?? [];
             ids.push(activity.id);

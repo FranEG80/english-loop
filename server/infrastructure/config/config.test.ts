@@ -60,4 +60,32 @@ describe("loadConfig", () => {
     process.env = { ...process.env, NODE_ENV: "production" };
     expect(() => loadConfig()).toThrow("BETTER_AUTH_SECRET is required in production");
   });
+
+  it("loads operational policies from environment variables", () => {
+    process.env = {
+      ...process.env,
+      AUTH_SESSION_EXPIRES_IN_SECONDS: "3600",
+      AUTH_SESSION_UPDATE_AGE_SECONDS: "900",
+      AUTH_COOKIE_CACHE_MAX_AGE_SECONDS: "120",
+      ATTEMPT_RATE_LIMIT_WINDOW_MS: "30000",
+      ATTEMPT_RATE_LIMIT_MAX: "12",
+      AUTH_RATE_LIMIT_WINDOW_MS: "15000",
+      AUTH_RATE_LIMIT_MAX: "4",
+    };
+
+    expect(loadConfig()).toMatchObject({
+      authSessionExpiresInSeconds: 3600,
+      authSessionUpdateAgeSeconds: 900,
+      authCookieCacheMaxAgeSeconds: 120,
+      attemptRateLimitWindowMs: 30000,
+      attemptRateLimitMax: 12,
+      authRateLimitWindowMs: 15000,
+      authRateLimitMax: 4,
+    });
+  });
+
+  it("rejects invalid operational policy values", () => {
+    process.env = { ...process.env, AUTH_RATE_LIMIT_MAX: "not-a-number" };
+    expect(() => loadConfig()).toThrow("AUTH_RATE_LIMIT_MAX must be a positive integer");
+  });
 });

@@ -2,6 +2,10 @@ import "server-only";
 import type { PrismaClient } from "@/generated/prisma/client";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import { PracticeRun } from "@/core/practice/domain/practice-run";
+import {
+  ACTIVE_CATALOG_PUBLICATION_ID,
+  PUBLISHED_CONTENT_STATUS,
+} from "@/core/content/domain/content-version";
 import { getPrismaClient } from "../database/prisma-transaction-context";
 
 interface ScopeSnapshot {
@@ -84,7 +88,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
     });
 
     const publication = await db.catalogPublication.findUnique({
-      where: { id: "active" },
+      where: { id: ACTIVE_CATALOG_PUBLICATION_ID },
       select: { releaseId: true },
     });
     for (let position = 0; position < snapshot.activityIds.length; position += 1) {
@@ -92,7 +96,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
       const isRepetition = position >= (snapshot.originalActivityCount ?? snapshot.activityIds.length);
       const activityVersion = publication
         ? await db.activityVersion.findFirst({
-            where: { releaseId: publication.releaseId, activityId, statusCode: "published" },
+            where: { releaseId: publication.releaseId, activityId, statusCode: PUBLISHED_CONTENT_STATUS },
             select: { id: true },
           })
         : null;

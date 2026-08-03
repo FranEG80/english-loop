@@ -1,5 +1,6 @@
 import type { AuthPort } from "@/core/ports";
 import type { AuthSession, Credentials, RegisterInput } from "@/core/models";
+import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
 import { RestApiError } from "./http-client";
 
 const AUTH_BASE_PATH = "/api/auth";
@@ -21,7 +22,7 @@ interface BetterAuthSessionResponse {
 
 function toAuthSession(response: BetterAuthSessionResponse | null): AuthSession | null {
   if (!response?.user) return null;
-  return { userId: response.user.id, name: response.user.name, email: response.user.email, activeLevels: ["B1"] };
+  return { userId: response.user.id, name: response.user.name, email: response.user.email, activeLevels: [DEFAULT_CEFR_LEVEL] };
 }
 
 export const authRestAdapter: AuthPort = {

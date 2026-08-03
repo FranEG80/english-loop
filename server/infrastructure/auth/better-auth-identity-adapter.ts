@@ -2,6 +2,7 @@ import "server-only";
 import { headers } from "next/headers";
 import { auth } from "@/server/infrastructure/auth/auth";
 import type { Actor, IdentityPort } from "@/core/account/ports/identity-port";
+import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
 import { UnauthorizedException } from "@/core/shared/exceptions";
 
 /**
@@ -19,7 +20,7 @@ export class BetterAuthIdentityAdapter implements IdentityPort {
       userId: session.user.id,
       name: session.user.name,
       email: session.user.email,
-      activeLevels: ["B1"],
+      activeLevels: [DEFAULT_CEFR_LEVEL],
     };
   }
 

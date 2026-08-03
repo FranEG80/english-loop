@@ -3,9 +3,9 @@ import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { RandomSourcePort } from "@/core/shared/kernel";
 import type { CefrLevelFilter } from "@/core/models/level";
 import { InsufficientActivitiesForScopeException } from "@/core/shared/exceptions";
+import type { SessionSize } from "@/core/models/session-size";
 
-export const ALLOWED_SESSION_SIZES = [5, 10, 15, 20] as const;
-export type SessionSize = (typeof ALLOWED_SESSION_SIZES)[number];
+const MAX_BALANCING_ROUNDS_PER_SUBTOPIC = 10;
 
 export interface PlanPracticeRunInput {
   level: CefrLevelFilter;
@@ -93,7 +93,7 @@ export class PracticeRunPlanner {
         selected.push(available[this.random.int(available.length)]);
       }
       round += 1;
-      if (round > keys.length * 10) break; // salvaguarda
+      if (round > keys.length * MAX_BALANCING_ROUNDS_PER_SUBTOPIC) break;
     }
     return selected.slice(0, count);
   }

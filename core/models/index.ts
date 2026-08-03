@@ -11,4 +11,5 @@ export * from "./daily-session";
 export * from "./progress";
 export * from "./review";
 export * from "./practice";
+export * from "./session-size";
 export * from "./settings";

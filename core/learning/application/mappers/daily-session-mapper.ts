@@ -1,6 +1,7 @@
 import type { DailySession } from "../../domain/daily-session";
 import type { DailySessionDto } from "@/core/models/daily-session";
 import type { PracticeRun } from "@/core/practice/domain/practice-run";
+import { DEFAULT_DAILY_GOAL_ACTIVITIES } from "@/core/account/domain/user-settings";
 
 /** Convierte una sesión diaria de dominio a DTO seguro. */
 export function toDailySessionDto(
@@ -18,7 +19,7 @@ export function toDailySessionDto(
     recommendedLessonId: pendingLessons[0]?.lessonId ?? "",
     activityIds: run?.activityIds ?? [],
     goal: {
-      targetActivities: run?.activityIds.length ?? 10,
+      targetActivities: run?.activityIds.length ?? DEFAULT_DAILY_GOAL_ACTIVITIES,
       completedActivities,
     },
     streakDays: 0,

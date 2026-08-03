@@ -1,7 +1,13 @@
 import "server-only";
 import type { PrismaClient, Prisma } from "@/generated/prisma/client";
 import type { Activity } from "@/core/content/domain/activity";
-import type { ContentVersion } from "@/core/content/domain/content-version";
+import {
+  ACTIVE_CATALOG_PUBLICATION_ID,
+  CONTENT_SCHEMA_VERSION,
+  PUBLISHED_CONTENT_STATUS,
+  UNKNOWN_DATASET_VERSION,
+  type ContentVersion,
+} from "@/core/content/domain/content-version";
 import type { Lesson } from "@/core/content/domain/lesson";
 import type { TaxonomyNode } from "@/core/content/domain/taxonomy";
 import type {
@@ -18,8 +24,6 @@ import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import { getPrismaClient } from "@/server/infrastructure/database/prisma-transaction-context";
 import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson } from "./prisma-catalog-mappers";
 
-const ACTIVE_PUBLICATION_ID = "active";
-
 /**
  * Read adapter for the normalized published catalog. It only follows the
  * active publication pointer, so an in-progress or failed seed is invisible.
@@ -35,9 +39,10 @@ export class PrismaCatalogAdapter
 
   private async activeReleaseId(): Promise<string | null> {
     const publication = await this.db().catalogPublication.findUnique({
-      where: { id: ACTIVE_PUBLICATION_ID },
+      where: { id: ACTIVE_CATALOG_PUBLICATION_ID },
+      select: { releaseId: true, release: { select: { status: true } } },
     });
-    return publication?.releaseId ?? null;
+    return publication?.release.status === PUBLISHED_CONTENT_STATUS ? publication.releaseId : null;
   }
 
   private async requireActiveReleaseId(): Promise<string> {
@@ -53,7 +58,7 @@ export class PrismaCatalogAdapter
 
   private async relatedActivitiesByLesson(releaseId: string): Promise<Map<string, string[]>> {
     const rows = await this.db().activityVersion.findMany({
-      where: { releaseId, statusCode: "published" },
+      where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS },
       select: {
         activityId: true,
         lessonLinks: { select: { lessonId: true, position: true }, orderBy: { position: "asc" } },
@@ -74,7 +79,7 @@ export class PrismaCatalogAdapter
     const releaseId = await this.requireActiveReleaseId();
     const where: Prisma.LessonVersionWhereInput = {
       releaseId,
-      statusCode: "published",
+      statusCode: PUBLISHED_CONTENT_STATUS,
       ...(filters?.level ? { levelCode: filters.level } : {}),
       ...(filters?.category ? { category: filters.category } : {}),
     };
@@ -89,7 +94,7 @@ export class PrismaCatalogAdapter
     const releaseId = await this.requireActiveReleaseId();
     const [row, related] = await Promise.all([
       this.db().lessonVersion.findFirst({
-        where: { releaseId, lessonId, statusCode: "published" },
+        where: { releaseId, lessonId, statusCode: PUBLISHED_CONTENT_STATUS },
         orderBy: { id: "desc" },
       }),
       this.relatedActivitiesByLesson(releaseId),
@@ -103,7 +108,7 @@ export class PrismaCatalogAdapter
   ): Prisma.ActivityVersionWhereInput {
     return {
       releaseId,
-      statusCode: "published",
+      statusCode: PUBLISHED_CONTENT_STATUS,
       ...(filters?.level && filters.level !== "both" ? { levelCode: filters.level } : {}),
       ...(filters?.taxonomyNodeId
         ? { taxonomyLinks: { some: { taxonomyNodeId: filters.taxonomyNodeId } } }
@@ -135,7 +140,7 @@ export class PrismaCatalogAdapter
   async getActivityById(activityId: string): Promise<Activity | null> {
     const releaseId = await this.requireActiveReleaseId();
     const row = await this.db().activityVersion.findFirst({
-      where: { releaseId, activityId, statusCode: "published" },
+      where: { releaseId, activityId, statusCode: PUBLISHED_CONTENT_STATUS },
       include: this.activityInclude,
       orderBy: { id: "desc" },
     });
@@ -147,7 +152,7 @@ export class PrismaCatalogAdapter
     return this.db().activityVersion.count({
       where: {
         releaseId,
-        statusCode: "published",
+      statusCode: PUBLISHED_CONTENT_STATUS,
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: nodeId } },
       },
@@ -160,7 +165,7 @@ export class PrismaCatalogAdapter
     return this.db().activityVersion.count({
       where: {
         releaseId,
-        statusCode: "published",
+        statusCode: PUBLISHED_CONTENT_STATUS,
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: { in: nodeIds } } },
       },
@@ -227,30 +232,33 @@ export class PrismaCatalogAdapter
   }
 
   async getContentVersion(): Promise<ContentVersion> {
-    const publication = await this.db().catalogPublication.findUnique({
-      where: { id: ACTIVE_PUBLICATION_ID },
-      include: { release: true },
-    });
+    const releaseId = await this.activeReleaseId();
+    const release = releaseId
+      ? await this.db().catalogRelease.findUnique({
+          where: { id: releaseId },
+          select: { datasetVersion: true },
+        })
+      : null;
     return {
-      datasetVersion: publication?.release.datasetVersion ?? "unknown",
-      schemaVersion: "1.0.0",
+      datasetVersion: release?.datasetVersion ?? UNKNOWN_DATASET_VERSION,
+      schemaVersion: CONTENT_SCHEMA_VERSION,
     };
   }
 
   async getCatalogMetadata(): Promise<CatalogMetadata> {
     const releaseId = await this.activeReleaseId();
     if (!releaseId) {
-      return { datasetVersion: "unknown", schemaVersion: "1.0.0", lessonCount: 0, activityCount: 0, taxonomyNodeCount: 0 };
+      return { datasetVersion: UNKNOWN_DATASET_VERSION, schemaVersion: CONTENT_SCHEMA_VERSION, lessonCount: 0, activityCount: 0, taxonomyNodeCount: 0 };
     }
     const [release, lessonCount, activityCount, taxonomyNodeCount] = await Promise.all([
       this.db().catalogRelease.findUnique({ where: { id: releaseId }, select: { datasetVersion: true } }),
-      this.db().lessonVersion.count({ where: { releaseId, statusCode: "published" } }),
-      this.db().activityVersion.count({ where: { releaseId, statusCode: "published" } }),
+      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS } }),
+      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS } }),
       this.db().taxonomyNodeVersion.count({ where: { releaseId } }),
     ]);
     return {
-      datasetVersion: release?.datasetVersion ?? "unknown",
-      schemaVersion: "1.0.0",
+      datasetVersion: release?.datasetVersion ?? UNKNOWN_DATASET_VERSION,
+      schemaVersion: CONTENT_SCHEMA_VERSION,
       lessonCount,
       activityCount,
       taxonomyNodeCount,

@@ -7,7 +7,8 @@ import {
 } from "@/core/shared/kernel";
 import type { PracticeRunRepository } from "../../ports/practice-run-repository";
 import { PracticeRun } from "../../domain/practice-run";
-import { PracticeRunPlanner, type SessionSize } from "../../domain/practice-run-planner";
+import { PracticeRunPlanner } from "../../domain/practice-run-planner";
+import type { SessionSize } from "@/core/models/session-size";
 import { InvalidPracticeScopeException } from "@/core/shared/exceptions";
 import type { CefrLevelFilter } from "@/core/models/level";
 

@@ -1,5 +1,13 @@
 import type { ReviewItem, ReviewStage } from "./review-item";
 
+const REVIEW_INITIAL_STAGE: ReviewStage = 0;
+const REVIEW_FIRST_SUCCESS_STAGE: ReviewStage = 1;
+const REVIEW_SECOND_SUCCESS_STAGE: ReviewStage = 2;
+const REVIEW_RESOLVED_STAGE: ReviewStage = 3;
+const REVIEW_FAILURE_DELAY_DAYS = 1;
+const REVIEW_FIRST_SUCCESS_DELAY_DAYS = 3;
+const REVIEW_SECOND_SUCCESS_DELAY_DAYS = 7;
+
 export interface ReviewPolicyResult {
   /** Nueva etapa tras el intento. */
   stage: ReviewStage;
@@ -25,17 +33,21 @@ export class ReviewPolicy {
   apply(item: ReviewItem, isCorrect: boolean): ReviewPolicyResult {
     if (isCorrect) {
       const consecutiveCorrect = item.consecutiveCorrect + 1;
-      if (consecutiveCorrect >= 3) {
+      if (consecutiveCorrect >= REVIEW_RESOLVED_STAGE) {
         return {
-          stage: 3,
+          stage: REVIEW_RESOLVED_STAGE,
           consecutiveCorrect,
           dueAt: this.now.toISOString(),
           resolved: true,
         };
       }
-      const days = consecutiveCorrect === 1 ? 3 : 7;
+      const days = consecutiveCorrect === REVIEW_FIRST_SUCCESS_STAGE
+        ? REVIEW_FIRST_SUCCESS_DELAY_DAYS
+        : REVIEW_SECOND_SUCCESS_DELAY_DAYS;
       return {
-        stage: consecutiveCorrect as ReviewStage,
+        stage: consecutiveCorrect === REVIEW_FIRST_SUCCESS_STAGE
+          ? REVIEW_FIRST_SUCCESS_STAGE
+          : REVIEW_SECOND_SUCCESS_STAGE,
         consecutiveCorrect,
         dueAt: this.addDays(this.now, days).toISOString(),
         resolved: false,
@@ -44,9 +56,9 @@ export class ReviewPolicy {
 
     // Fallo: reinicia la etapa.
     return {
-      stage: 0,
+      stage: REVIEW_INITIAL_STAGE,
       consecutiveCorrect: 0,
-      dueAt: this.addDays(this.now, 1).toISOString(),
+      dueAt: this.addDays(this.now, REVIEW_FAILURE_DELAY_DAYS).toISOString(),
       resolved: false,
     };
   }

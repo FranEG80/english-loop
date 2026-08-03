@@ -2,7 +2,6 @@ import "dotenv/config";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { PrismaClient } from "@/generated/prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
 import type {
   CatalogSeedActivity,
   CatalogSeedInput,
@@ -14,6 +13,8 @@ import { sha256Checksum } from "./lib/checksum";
 import { loadDataset } from "./lib/load";
 import { validateDataset } from "./lib/validation";
 import type { Evaluator } from "./lib/types";
+import { loadConfig } from "@/server/infrastructure/config/config";
+import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructure/database/prisma-adapter-factory";
 
 export interface CliOptions {
   source: string;
@@ -151,12 +152,11 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
     console.log("Dry-run: no se escribió nada en la base de datos.");
     return;
   }
-  if ((process.env.DATABASE_PROVIDER ?? "sqlite") !== "sqlite") {
-    throw new Error("El seed Prisma local soporta sqlite; PostgreSQL, MariaDB y D1 usan sus bundles de persistencia.");
-  }
+  const runtimeConfig = loadConfig();
+  assertPrismaProvider(runtimeConfig.databaseProvider);
 
   const prisma = new PrismaClient({
-    adapter: new PrismaBetterSqlite3({ url: process.env.DATABASE_URL ?? "file:./dev.db" }),
+    adapter: createPrismaAdapter(runtimeConfig.databaseProvider, runtimeConfig.databaseUrl),
   });
   try {
     const result = await new PrismaCatalogWriteAdapter(prisma).seedCatalog(input);

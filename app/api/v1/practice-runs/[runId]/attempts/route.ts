@@ -4,6 +4,7 @@ import { withErrorHandling } from "@/server/infrastructure/http/with-error-handl
 import { submitAttemptTransaction } from "@/core/progress/application/use-cases/submit-attempt-transaction";
 import { getAttemptFeedback } from "@/core/practice/application/use-cases/get-attempt-feedback";
 import { parseRequest, attemptBodySchema } from "@/server/infrastructure/http/request-schemas";
+import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";
 
 export const POST = withErrorHandling(
   async (request: Request, context: { params: Promise<{ runId: string }> }) => {
@@ -38,7 +39,7 @@ export const POST = withErrorHandling(
       compositionRoot.idGenerator,
       compositionRoot.clock,
       compositionRoot.domainEventDispatcher,
-      "1.0.0",
+      CONTENT_SCHEMA_VERSION,
       {
         runId,
         activityId: body.activityId,

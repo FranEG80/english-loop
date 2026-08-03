@@ -16,11 +16,11 @@ export const auth = betterAuth({
     enabled: true,
   },
   session: {
-    expiresIn: 60 * 60 * 24 * 7, // 7 días
-    updateAge: 60 * 60 * 24, // renovar cada 24h
+    expiresIn: config.authSessionExpiresInSeconds,
+    updateAge: config.authSessionUpdateAgeSeconds,
     cookieCache: {
       enabled: true,
-      maxAge: 60 * 5,
+      maxAge: config.authCookieCacheMaxAgeSeconds,
     },
   },
   advanced: {

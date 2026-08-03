@@ -4,6 +4,8 @@ import type { LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import { UniqueId, type ClockPort, type DomainEventDispatcherPort, type IdGeneratorPort } from "@/core/shared/kernel";
 import { ValidationException } from "@/core/shared/exceptions";
 import type { DailySessionRepository } from "../../ports/daily-session-repository";
+import { DEFAULT_DAILY_GOAL_LESSONS, DEFAULT_TIMEZONE } from "@/core/account/domain/user-settings";
+import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
 import type { LessonProgressRepository } from "../../ports/lesson-progress-repository";
 import { DailySession } from "../../domain/daily-session";
 import { DailySessionPlanner } from "../../domain/daily-session-planner";
@@ -48,7 +50,7 @@ export async function getOrCreateDailySession(
 ): Promise<DailySession> {
   const actor = await identity.requireActor();
   const settings = await userSettingsRepository.findByUserId(actor.userId);
-  const timezone = settings?.timezone ?? input.timezone ?? "UTC";
+  const timezone = settings?.timezone ?? input.timezone ?? DEFAULT_TIMEZONE;
   const date = localDateForTimezone(clock.now(), timezone);
 
   const existing = await sessionRepository.findByUserIdAndDate(actor.userId, date);
@@ -61,8 +63,8 @@ export async function getOrCreateDailySession(
   const errorLessonIds = lessonProgress
     .filter((record) => record.errorsPending > 0)
     .map((record) => record.lessonId);
-  const activeLevel = settings?.activeLevels[0] ?? actor.activeLevels[0] ?? "B1";
-  const lessonCount = settings?.dailyGoalLessons ?? 1;
+  const activeLevel = settings?.activeLevels[0] ?? actor.activeLevels[0] ?? DEFAULT_CEFR_LEVEL;
+  const lessonCount = settings?.dailyGoalLessons ?? DEFAULT_DAILY_GOAL_LESSONS;
   const selections = await planner.plan(lessonCatalog, {
     level: activeLevel,
     viewedLessonIds,

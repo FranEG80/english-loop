@@ -7,11 +7,13 @@ import { submitAttemptTransaction } from "@/core/progress/application/use-cases/
 import { getAttemptFeedback } from "@/core/practice/application/use-cases/get-attempt-feedback";
 import { toPracticeRunDto } from "@/core/practice/application/mappers/practice-run-mapper";
 import type { CefrLevelFilter } from "@/core/models/level";
+import type { SessionSize } from "@/core/models/session-size";
+import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";
 
 export interface CreateRunInput {
   taxonomyNodeId: string;
   level: CefrLevelFilter;
-  sessionSize: 5 | 10 | 15 | 20;
+  sessionSize: SessionSize;
 }
 
 /** Server Action para crear un run de práctica dirigida. */
@@ -53,7 +55,7 @@ export async function submitAttemptAction(input: SubmitAttemptInput) {
     compositionRoot.idGenerator,
     compositionRoot.clock,
     compositionRoot.domainEventDispatcher,
-    "1.0.0",
+    CONTENT_SCHEMA_VERSION,
     {
       runId: input.runId,
       activityId: input.activityId,

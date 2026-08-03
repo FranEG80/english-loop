@@ -33,6 +33,25 @@ taxonomía
 Los índices y los informes no son fuentes de contenido. Se generan a partir de
 los cuatro niveles anteriores.
 
+## Publicación en catálogo relacional
+
+El dataset también puede publicarse en la base normalizada de ejecución:
+
+```bash
+pnpm dataset:seed -- --dry-run
+pnpm dataset:seed
+```
+
+El seed es idempotente por `DATASET/VERSION + checksum`, registra cada intento
+en `DatasetImport` y solo mueve `CatalogPublication` cuando todas las
+versiones, relaciones, opciones, tokens, pares y respuestas esperadas se han
+escrito correctamente. `dataset:import` se mantiene como alias compatible.
+
+La aplicación elige entre los ficheros editoriales y el release publicado con
+`CONTENT_SOURCE=dataset|database`. En modo `database`, `relatedActivityIds`
+se calcula desde las relaciones `ActivityVersionLesson`, no desde IDs de
+lecciones mal interpretados.
+
 ## 2. Estructura del directorio `DATASET`
 
 ```text

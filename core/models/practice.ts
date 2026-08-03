@@ -1,4 +1,5 @@
 import type { CefrLevelFilter } from "./level";
+import type { SessionSize } from "./session-size";
 
 export interface FocusedPracticeScopeDto {
   taxonomyNodeId: string;
@@ -10,7 +11,7 @@ export interface FocusedPracticeScopeDto {
 export interface CreateFocusedPracticeRunDto {
   taxonomyNodeId: string;
   level: CefrLevelFilter;
-  sessionSize: 5 | 10 | 15 | 20;
+  sessionSize: SessionSize;
 }
 
 export type PracticeRunStatus = "in_progress" | "completed";

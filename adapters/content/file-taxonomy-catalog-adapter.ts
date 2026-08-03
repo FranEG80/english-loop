@@ -4,6 +4,7 @@ import path from "node:path";
 import type { TaxonomyNode } from "@/core/content/domain/taxonomy";
 import type { ContentVersion } from "@/core/content/domain/content-version";
 import type { TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
+import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 
 interface RawTaxonomyNode {
@@ -123,7 +124,7 @@ export class FileTaxonomyCatalogAdapter implements TaxonomyCatalogPort {
   async getContentVersion(): Promise<ContentVersion> {
     return {
       datasetVersion: this.datasetVersion,
-      schemaVersion: "1.0.0",
+      schemaVersion: CONTENT_SCHEMA_VERSION,
     };
   }
 }

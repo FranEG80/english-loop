@@ -2,6 +2,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { Activity } from "@/core/content/domain/activity";
+import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 import type { ActivityListFilters, ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { CefrLevel } from "@/core/models/level";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
@@ -66,7 +67,7 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort {
         { path: this.indexPath },
       );
     }
-    return raw.activities.filter((activity) => activity.status === "published");
+    return raw.activities.filter((activity) => activity.status === PUBLISHED_CONTENT_STATUS);
   }
 
   private loadBatch(batchId: string, batchPath: string): Promise<Activity[]> {
@@ -89,7 +90,7 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort {
         { path: filePath },
       );
     }
-    return raw.activities.filter((activity) => activity.status === "published");
+    return raw.activities.filter((activity) => activity.status === PUBLISHED_CONTENT_STATUS);
   }
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {

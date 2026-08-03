@@ -5,6 +5,7 @@ export const d1OperationNames = [
   "activeCatalogMetadata",
   "activityById",
   "consumeVerification",
+  "acceptReplayNonce",
 ] as const;
 
 export type D1OperationName = (typeof d1OperationNames)[number];
@@ -13,7 +14,8 @@ export type D1Operation =
   | { name: "health" }
   | { name: "activeCatalogMetadata" }
   | { name: "activityById"; activityId: string }
-  | { name: "consumeVerification"; identifier: string; value: string; nowIso: string };
+  | { name: "consumeVerification"; identifier: string; value: string; nowIso: string }
+  | { name: "acceptReplayNonce"; nonce: string; nowIso: string; expiresAtIso: string };
 
 interface PreparedOperation {
   statement: D1PreparedStatement;
@@ -73,6 +75,24 @@ export function prepareD1Operation(
           .bind(operation.identifier, operation.value, operation.nowIso),
         write: true,
       };
+    case "acceptReplayNonce":
+      return {
+        statement: database
+          .prepare(
+            `INSERT INTO RateLimitBucket (key, count, resetAt, updatedAt)
+             VALUES (?, 1, ?, ?)
+             ON CONFLICT(key) DO UPDATE SET
+               count = 1, resetAt = excluded.resetAt, updatedAt = excluded.updatedAt
+             WHERE RateLimitBucket.resetAt <= ?`,
+          )
+          .bind(
+            `d1:http:nonce:${operation.nonce}`,
+            operation.expiresAtIso,
+            operation.nowIso,
+            operation.nowIso,
+          ),
+        write: true,
+      };
   }
 }
 
@@ -110,6 +130,11 @@ export class D1BindingClient {
       value,
       nowIso,
     });
+    return result.success && (result.meta?.changes ?? 0) === 1;
+  }
+
+  async acceptReplayNonce(nonce: string, nowIso: string, expiresAtIso: string): Promise<boolean> {
+    const result = await this.execute({ name: "acceptReplayNonce", nonce, nowIso, expiresAtIso });
     return result.success && (result.meta?.changes ?? 0) === 1;
   }
 }

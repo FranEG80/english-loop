@@ -6,8 +6,10 @@ import type {
   CatalogSeedResult,
   CatalogWritePort,
 } from "@/core/content/ports/catalog-write-port";
-
-const ACTIVE_PUBLICATION_ID = "active";
+import {
+  ACTIVE_CATALOG_PUBLICATION_ID,
+  PUBLISHED_CONTENT_STATUS,
+} from "@/core/content/domain/content-version";
 
 function id(): string {
   return randomUUID();
@@ -52,14 +54,14 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
         },
       },
     });
-    if (existing?.status === "published") {
+    if (existing?.status === PUBLISHED_CONTENT_STATUS) {
       const publication = await this.client.catalogPublication.findUnique({
-        where: { id: ACTIVE_PUBLICATION_ID },
+        where: { id: ACTIVE_CATALOG_PUBLICATION_ID },
       });
       if (publication?.releaseId !== existing.id) {
         await this.client.catalogPublication.upsert({
-          where: { id: ACTIVE_PUBLICATION_ID },
-          create: { id: ACTIVE_PUBLICATION_ID, releaseId: existing.id },
+          where: { id: ACTIVE_CATALOG_PUBLICATION_ID },
+          create: { id: ACTIVE_CATALOG_PUBLICATION_ID, releaseId: existing.id },
           update: { releaseId: existing.id, publishedAt: new Date() },
         });
       }
@@ -227,11 +229,11 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
 
         await tx.catalogRelease.update({
           where: { id: release.id },
-          data: { status: "published", publishedAt: new Date() },
+          data: { status: PUBLISHED_CONTENT_STATUS, publishedAt: new Date() },
         });
         await tx.catalogPublication.upsert({
-          where: { id: ACTIVE_PUBLICATION_ID },
-          create: { id: ACTIVE_PUBLICATION_ID, releaseId: release.id },
+          where: { id: ACTIVE_CATALOG_PUBLICATION_ID },
+          create: { id: ACTIVE_CATALOG_PUBLICATION_ID, releaseId: release.id },
           update: { releaseId: release.id, publishedAt: new Date() },
         });
         await tx.datasetImport.update({
@@ -261,7 +263,7 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
       releaseId: release.id,
       datasetVersion: input.datasetVersion,
       checksum: input.checksum,
-      status: "published",
+      status: PUBLISHED_CONTENT_STATUS,
       counts,
     };
   }

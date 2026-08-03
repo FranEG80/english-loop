@@ -3,19 +3,35 @@ import type { D1Operation, D1OperationName } from "./d1-operations";
 import { D1BindingClient } from "./d1-operations";
 import type { D1DatabaseLike, D1Result } from "./d1-types";
 
-const requestSchema = z.object({
-  operation: z.discriminatedUnion("name", [
+/** Protocol/security bounds, intentionally code constants rather than secrets. */
+export const D1_HTTP_MAX_BATCH_OPERATIONS = 100;
+export const D1_HTTP_MAX_BODY_BYTES = 1_000_000;
+export const D1_HTTP_MAX_CLOCK_SKEW_MS = 5 * 60_000;
+const D1_HTTP_MAX_IDENTIFIER_LENGTH = 500;
+const D1_HTTP_MAX_ACTIVITY_ID_LENGTH = 200;
+
+const operationSchema = z.discriminatedUnion("name", [
     z.object({ name: z.literal("health") }),
     z.object({ name: z.literal("activeCatalogMetadata") }),
-    z.object({ name: z.literal("activityById"), activityId: z.string().min(1).max(200) }),
+    z.object({ name: z.literal("activityById"), activityId: z.string().min(1).max(D1_HTTP_MAX_ACTIVITY_ID_LENGTH) }),
     z.object({
       name: z.literal("consumeVerification"),
-      identifier: z.string().min(1).max(500),
-      value: z.string().min(1).max(500),
+      identifier: z.string().min(1).max(D1_HTTP_MAX_IDENTIFIER_LENGTH),
+      value: z.string().min(1).max(D1_HTTP_MAX_IDENTIFIER_LENGTH),
       nowIso: z.string().datetime(),
     }),
-  ]),
-});
+    z.object({
+      name: z.literal("acceptReplayNonce"),
+      nonce: z.string().min(1).max(200),
+      nowIso: z.string().datetime(),
+      expiresAtIso: z.string().datetime(),
+    }),
+  ]);
+
+const requestSchema = z.union([
+  z.object({ operation: operationSchema }),
+  z.object({ operations: z.array(operationSchema).min(1).max(D1_HTTP_MAX_BATCH_OPERATIONS) }),
+]);
 
 export type D1HttpRequestBody = z.infer<typeof requestSchema>;
 
@@ -87,7 +103,7 @@ export async function handleD1HttpRequest(
   const nonce = request.headers.get("x-d1-nonce");
   const timestamp = timestampRaw ? Number(timestampRaw) : Number.NaN;
   const now = options.now?.() ?? Date.now();
-  const maxSkewMs = options.maxSkewMs ?? 5 * 60_000;
+  const maxSkewMs = options.maxSkewMs ?? D1_HTTP_MAX_CLOCK_SKEW_MS;
   if (!nonce || !Number.isFinite(timestamp) || Math.abs(now - timestamp) > maxSkewMs) {
     return json({ error: "invalid_timestamp" }, 401);
   }
@@ -99,7 +115,7 @@ export async function handleD1HttpRequest(
   }
 
   const contentLength = Number(request.headers.get("content-length") ?? 0);
-  if (contentLength > (options.maxBodyBytes ?? 1_000_000)) {
+  if (contentLength > (options.maxBodyBytes ?? D1_HTTP_MAX_BODY_BYTES)) {
     return json({ error: "payload_too_large" }, 413);
   }
   let body: unknown;
@@ -113,8 +129,12 @@ export async function handleD1HttpRequest(
 
   try {
     const client = new D1BindingClient(options.database);
-    const result = await client.execute(parsed.data.operation as D1Operation);
-    return json({ success: result.success, results: result.results, meta: result.meta });
+    if ("operation" in parsed.data) {
+      const result = await client.execute(parsed.data.operation as D1Operation);
+      return json({ success: result.success, results: result.results, meta: result.meta });
+    }
+    const results = await client.batch(parsed.data.operations as D1Operation[]);
+    return json({ success: results.every((result) => result.success), results });
   } catch {
     return json({ error: "d1_operation_failed" }, 502);
   }
@@ -155,10 +175,30 @@ export class D1HttpClient {
     if (!response.ok) throw new Error(body.error ?? "D1 HTTP operation failed");
     return body;
   }
+
+  async batch(operations: D1Operation[]): Promise<D1Result[]> {
+    if (operations.length === 0 || operations.length > D1_HTTP_MAX_BATCH_OPERATIONS) {
+      throw new Error("D1 HTTP batches must contain between 1 and 100 operations");
+    }
+    const timestamp = this.now();
+    const response = await this.fetcher(this.options.url, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${this.options.token}`,
+        "content-type": "application/json",
+        "x-d1-timestamp": String(timestamp),
+        "x-d1-nonce": this.nonce(),
+      },
+      body: JSON.stringify({ operations }),
+    });
+    const body = (await response.json()) as { results?: D1Result[]; error?: string };
+    if (!response.ok || !body.results) throw new Error(body.error ?? "D1 HTTP batch failed");
+    return body.results;
+  }
 }
 
 export function isD1OperationName(value: string): value is D1OperationName {
-  return ["health", "activeCatalogMetadata", "activityById", "consumeVerification"].includes(
+  return ["health", "activeCatalogMetadata", "activityById", "consumeVerification", "acceptReplayNonce"].includes(
     value as D1OperationName,
   );
 }

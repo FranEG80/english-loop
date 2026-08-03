@@ -1,5 +1,5 @@
 import type { Locale } from "@/core/models/locale";
-import type { CefrLevel } from "@/core/models/level";
+import { DEFAULT_CEFR_LEVEL, type CefrLevel } from "@/core/models/level";
 import { InvariantViolationException } from "@/core/shared/exceptions";
 
 /** Zonas horarias IANA soportadas (subconjunto inicial). */
@@ -30,6 +30,9 @@ export interface UserSettingsProps {
 
 export const DEFAULT_DAILY_GOAL_LESSONS = 1;
 export const DEFAULT_DAILY_GOAL_ACTIVITIES = 10;
+export const MAX_DAILY_GOAL_LESSONS = 10;
+export const MAX_DAILY_GOAL_ACTIVITIES = 100;
+export const DEFAULT_TIMEZONE = "UTC";
 
 export function isSupportedTimezone(value: string): boolean {
   try {
@@ -82,10 +85,10 @@ export class UserSettings {
     return new UserSettings({
       userId,
       locale: "es",
-      activeLevels: ["B1"],
+      activeLevels: [DEFAULT_CEFR_LEVEL],
       dailyGoalLessons: DEFAULT_DAILY_GOAL_LESSONS,
       dailyGoalActivities: DEFAULT_DAILY_GOAL_ACTIVITIES,
-      timezone: "UTC",
+      timezone: DEFAULT_TIMEZONE,
       reducedMotion: false,
     });
   }

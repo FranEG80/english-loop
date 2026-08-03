@@ -4,6 +4,8 @@ import type { ReviewRepository } from "@/core/progress/ports/review-repository";
 import { ReviewItem } from "@/core/progress/domain/review-item";
 import { getPrismaClient } from "../database/prisma-transaction-context";
 
+const UPCOMING_REVIEW_LIMIT = 20;
+
 /**
  * Adaptador Prisma del repositorio de repasos.
  */
@@ -68,7 +70,7 @@ export class PrismaReviewRepository implements ReviewRepository {
     const rows = await getPrismaClient(this.client).reviewItem.findMany({
       where: { userId, resolvedAt: null, dueAt: { gt: new Date(nowIso) } },
       orderBy: { dueAt: "asc" },
-      take: 20,
+      take: UPCOMING_REVIEW_LIMIT,
     });
     return rows.map((row) => this.toDomain(row));
   }

@@ -34,6 +34,7 @@ import type {
   CatalogMetadataPort,
 } from "@/core/content/ports/catalog-ports";
 import type { CatalogWritePort } from "@/core/content/ports/catalog-write-port";
+import { UNKNOWN_DATASET_VERSION } from "@/core/content/domain/content-version";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
@@ -43,7 +44,7 @@ function readDatasetVersionSync(): string {
   try {
     return readFileSync(path.join(DATASET_ROOT, "VERSION"), "utf8").trim();
   } catch {
-    return "unknown";
+    return UNKNOWN_DATASET_VERSION;
   }
 }
 
@@ -70,11 +71,11 @@ export class CompositionRoot {
   );
   readonly idGenerator = new UuidIdGenerator();
   readonly attemptRateLimiter = config.nodeEnv === "production"
-    ? new PrismaRateLimiter(prisma, 60_000, 30, this.clock)
-    : new InMemoryRateLimiter(60_000, 30, this.clock);
+    ? new PrismaRateLimiter(prisma, config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock)
+    : new InMemoryRateLimiter(config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock);
   readonly authRateLimiter = config.nodeEnv === "production"
-    ? new PrismaRateLimiter(prisma, 60_000, 10, this.clock)
-    : new InMemoryRateLimiter(60_000, 10, this.clock);
+    ? new PrismaRateLimiter(prisma, config.authRateLimitWindowMs, config.authRateLimitMax, this.clock)
+    : new InMemoryRateLimiter(config.authRateLimitWindowMs, config.authRateLimitMax, this.clock);
   readonly practiceRunPlanner = new PracticeRunPlanner(this.randomSource);
   readonly dailySessionPlanner = new DailySessionPlanner(this.randomSource);
   readonly dailyPracticePlanner = new DailyPracticePlanner(this.randomSource);
@@ -153,7 +154,9 @@ export class CompositionRoot {
         catalog.getTaxonomyTree(),
         catalog.getContentVersion(),
       ]);
-      return tree.length > 0 && version.datasetVersion === this.datasetVersion;
+      return tree.length > 0 && version.datasetVersion !== UNKNOWN_DATASET_VERSION && (
+        config.contentSource === "database" || version.datasetVersion === this.datasetVersion
+      );
     } catch {
       return false;
     }

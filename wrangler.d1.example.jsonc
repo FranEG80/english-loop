@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "english-loop-d1-proxy",
+  "main": "workers/d1-proxy.ts",
+  "compatibility_date": "2026-08-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "replace-with-your-d1-name",
+      "database_id": "replace-with-your-d1-id",
+      "migrations_dir": "prisma/migrations"
+    }
+  ],
+  // Configure the shared token outside this file:
+  // wrangler secret put D1_HTTP_TOKEN
+}

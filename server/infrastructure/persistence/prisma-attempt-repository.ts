@@ -4,6 +4,8 @@ import type { AttemptRepository } from "@/core/practice/ports/attempt-repository
 import { ActivityAttempt } from "@/core/practice/domain/activity-attempt";
 import { getPrismaClient } from "../database/prisma-transaction-context";
 
+const DEFAULT_ATTEMPT_HISTORY_LIMIT = 50;
+
 /**
  * Adaptador Prisma del repositorio de intentos. Los intentos son inmutables.
  */
@@ -62,7 +64,7 @@ export class PrismaAttemptRepository implements AttemptRepository {
   async findByUserIdAndActivityId(
     userId: string,
     activityId: string,
-    limit = 50,
+    limit = DEFAULT_ATTEMPT_HISTORY_LIMIT,
   ): Promise<ActivityAttempt[]> {
     const rows = await getPrismaClient(this.client).activityAttempt.findMany({
       where: { userId, activityId },

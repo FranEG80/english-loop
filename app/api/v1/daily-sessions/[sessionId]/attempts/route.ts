@@ -5,6 +5,7 @@ import { submitAttemptTransaction } from "@/core/progress/application/use-cases/
 import { getAttemptFeedback } from "@/core/practice/application/use-cases/get-attempt-feedback";
 import { parseRequest, attemptBodySchema } from "@/server/infrastructure/http/request-schemas";
 import { ResourceNotFoundException } from "@/core/shared/exceptions";
+import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";
 
 export const POST = withErrorHandling(
   async (request: Request, context: { params: Promise<{ sessionId: string }> }) => {
@@ -29,7 +30,7 @@ export const POST = withErrorHandling(
       compositionRoot.idGenerator,
       compositionRoot.clock,
       compositionRoot.domainEventDispatcher,
-      "1.0.0",
+      CONTENT_SCHEMA_VERSION,
       { runId: session.practiceRunId, ...body },
       { dailySessionRepository: compositionRoot.dailySessionRepository },
     );

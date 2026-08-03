@@ -21,9 +21,33 @@ export interface AppConfig {
   d1Transport: D1Transport;
   d1HttpUrl: string | null;
   d1HttpToken: string | null;
+  authSessionExpiresInSeconds: number;
+  authSessionUpdateAgeSeconds: number;
+  authCookieCacheMaxAgeSeconds: number;
+  attemptRateLimitWindowMs: number;
+  attemptRateLimitMax: number;
+  authRateLimitWindowMs: number;
+  authRateLimitMax: number;
   betterAuthSecret: string;
   betterAuthUrl: string;
   nodeEnv: string;
+}
+
+const DEFAULT_AUTH_SESSION_EXPIRES_IN_SECONDS = 60 * 60 * 24 * 7;
+const DEFAULT_AUTH_SESSION_UPDATE_AGE_SECONDS = 60 * 60 * 24;
+const DEFAULT_AUTH_COOKIE_CACHE_MAX_AGE_SECONDS = 60 * 5;
+const DEFAULT_RATE_LIMIT_WINDOW_MS = 60_000;
+const DEFAULT_ATTEMPT_RATE_LIMIT_MAX = 30;
+const DEFAULT_AUTH_RATE_LIMIT_MAX = 10;
+
+function positiveIntegerEnv(name: string, fallback: number): number {
+  const raw = process.env[name];
+  if (raw === undefined || raw === "") return fallback;
+  const value = Number(raw);
+  if (!Number.isSafeInteger(value) || value <= 0) {
+    throw new Error(`${name} must be a positive integer`);
+  }
+  return value;
 }
 
 /**
@@ -68,6 +92,34 @@ export function loadConfig(): AppConfig {
   const betterAuthSecret = process.env.BETTER_AUTH_SECRET;
   const betterAuthUrl = process.env.BETTER_AUTH_URL ?? "http://localhost:3000";
   const nodeEnv = process.env.NODE_ENV ?? "development";
+  const authSessionExpiresInSeconds = positiveIntegerEnv(
+    "AUTH_SESSION_EXPIRES_IN_SECONDS",
+    DEFAULT_AUTH_SESSION_EXPIRES_IN_SECONDS,
+  );
+  const authSessionUpdateAgeSeconds = positiveIntegerEnv(
+    "AUTH_SESSION_UPDATE_AGE_SECONDS",
+    DEFAULT_AUTH_SESSION_UPDATE_AGE_SECONDS,
+  );
+  const authCookieCacheMaxAgeSeconds = positiveIntegerEnv(
+    "AUTH_COOKIE_CACHE_MAX_AGE_SECONDS",
+    DEFAULT_AUTH_COOKIE_CACHE_MAX_AGE_SECONDS,
+  );
+  const attemptRateLimitWindowMs = positiveIntegerEnv(
+    "ATTEMPT_RATE_LIMIT_WINDOW_MS",
+    DEFAULT_RATE_LIMIT_WINDOW_MS,
+  );
+  const attemptRateLimitMax = positiveIntegerEnv(
+    "ATTEMPT_RATE_LIMIT_MAX",
+    DEFAULT_ATTEMPT_RATE_LIMIT_MAX,
+  );
+  const authRateLimitWindowMs = positiveIntegerEnv(
+    "AUTH_RATE_LIMIT_WINDOW_MS",
+    DEFAULT_RATE_LIMIT_WINDOW_MS,
+  );
+  const authRateLimitMax = positiveIntegerEnv(
+    "AUTH_RATE_LIMIT_MAX",
+    DEFAULT_AUTH_RATE_LIMIT_MAX,
+  );
 
   if (nodeEnv === "production" && !betterAuthSecret) {
     throw new Error("BETTER_AUTH_SECRET is required in production");
@@ -80,6 +132,13 @@ export function loadConfig(): AppConfig {
     d1Transport,
     d1HttpUrl,
     d1HttpToken,
+    authSessionExpiresInSeconds,
+    authSessionUpdateAgeSeconds,
+    authCookieCacheMaxAgeSeconds,
+    attemptRateLimitWindowMs,
+    attemptRateLimitMax,
+    authRateLimitWindowMs,
+    authRateLimitMax,
     betterAuthSecret: betterAuthSecret ?? "dev-secret",
     betterAuthUrl,
     nodeEnv,
