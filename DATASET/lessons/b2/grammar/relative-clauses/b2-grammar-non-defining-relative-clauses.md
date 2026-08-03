@@ -14,12 +14,12 @@ learningObjectives:
   - "Distinguir which, who, whose, where y when según la función y el antecedente."
   - "Evitar that y omisiones incorrectas en cláusulas no definitorias."
 prerequisites:
-  - b1-grammar-relative-clauses
+  - b1-grammar-defining-relative-clauses
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-grammar-relative-clauses
+  - b1-grammar-defining-relative-clauses
   - b2-grammar-participle-reduced-clauses
 tags:
   - b2

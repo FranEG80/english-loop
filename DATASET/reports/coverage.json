@@ -1,48 +1,61 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 43,
-    "publishedActivities": 4000,
+    "publishedLessons": 56,
+    "publishedActivities": 5250,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 39,
+    "nodeTargetsMet": 51,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
       "B1": 2650,
-      "B2": 1350
+      "B2": 2600
     },
     "category": {
-      "grammar": 4000
+      "grammar": 4900,
+      "vocabulary": 350
     },
     "topic": {
       "articles-determiners": 200,
-      "comparisons": 200,
+      "b2-ai-digital-life": 50,
+      "b2-career-business": 100,
+      "b2-education-learning": 100,
+      "b2-science-research": 100,
+      "comparisons": 300,
       "conditionals": 250,
       "future-forms": 425,
-      "gerunds-infinitives": 200,
-      "linking-discourse": 100,
+      "gerunds-infinitives": 400,
+      "inversion-emphasis": 200,
+      "linking-discourse": 200,
       "modal-perfects": 125,
       "modals": 400,
       "passive-voice": 500,
       "past-tenses": 500,
       "present-tenses": 500,
       "questions": 200,
-      "relative-clauses": 100,
-      "reported-speech": 300
+      "relative-clauses": 300,
+      "reported-speech": 400
     },
     "subtopic": {
       "ability-permission": 100,
       "advanced-backshift": 100,
+      "advanced-comparisons": 100,
+      "advanced-connectors-discourse-markers": 100,
       "advanced-modal-meaning": 100,
       "advanced-narrative-tenses": 100,
       "advanced-passive-tenses": 100,
       "advice-possibility": 100,
       "articles-reference": 100,
+      "b2-ai-digital-life": 50,
+      "b2-career-business": 100,
+      "b2-education-learning": 100,
+      "b2-science-research": 100,
       "basic-linking-words": 100,
       "basic-verb-patterns": 100,
+      "cleft-sentences-fronting": 100,
       "comparative-superlative": 100,
       "defining-relative-clauses": 100,
       "direct-indirect-questions": 100,
@@ -53,15 +66,20 @@
       "future-time-clauses": 25,
       "going-to-evidence": 25,
       "have-get-something-done": 100,
+      "meaning-change-gerund-infinitive": 100,
       "mixed-conditionals": 50,
       "modal-perfect-criticism": 50,
       "modal-perfect-deduction": 50,
       "modal-perfect-unnecessary-action": 25,
+      "negative-inversion": 100,
+      "non-defining-relative-clauses": 100,
       "obligation-necessity-prohibition": 100,
+      "participle-reduced-clauses": 100,
       "past-perfect-narrative": 100,
       "past-perfect-simple-vs-continuous": 100,
       "past-simple-vs-continuous": 100,
       "perfect-modal-passive": 100,
+      "perfect-passive-infinitives-gerunds": 100,
       "present-continuous-arrangements": 25,
       "present-past-passive": 100,
       "present-perfect-experience": 100,
@@ -74,6 +92,7 @@
       "reported-questions-commands": 100,
       "reported-statements": 100,
       "reporting-passives": 100,
+      "reporting-verb-patterns": 100,
       "second-conditional": 50,
       "subject-object-question-tags": 100,
       "third-conditional": 75,
@@ -86,20 +105,20 @@
       "complete_dialogue": 100,
       "error_correction": 475,
       "error_identification": 50,
-      "fill_blank": 925,
+      "fill_blank": 1250,
       "key_word_transformation": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 975,
-      "true_false": 550,
-      "word_order": 675
+      "single_choice": 1300,
+      "true_false": 850,
+      "word_order": 975
     },
     "difficulty": {
       "1": 590,
-      "2": 796,
-      "3": 887,
-      "4": 896,
-      "5": 831
+      "2": 1142,
+      "3": 1243,
+      "4": 1188,
+      "5": 1087
     }
   },
   "targets": [
@@ -158,10 +177,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "advanced-connectors-discourse-markers",
@@ -174,10 +198,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "advanced-modal-meaning",
@@ -928,9 +957,14 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 50,
+      "actualActivityTypes": 2,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -944,10 +978,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-climate-global-issues",
@@ -1056,10 +1095,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-health-psychology",
@@ -1344,10 +1388,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-society-culture-public-life",
@@ -1534,10 +1583,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "comparative-superlative",
@@ -1770,10 +1824,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "modal-perfects",
@@ -1807,10 +1866,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "non-defining-relative-clauses",
@@ -1823,10 +1887,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "obligation-necessity-prohibition",
@@ -1862,10 +1931,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "past-perfect-narrative",
@@ -1969,10 +2043,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "present-past-passive",
@@ -2212,10 +2291,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "subject-object-question-tags",

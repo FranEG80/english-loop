@@ -15,7 +15,7 @@ learningObjectives:
   - "Mantener auxiliares y tiempos verbales correctos en escritura formal."
 prerequisites:
   - b2-grammar-advanced-connectors-discourse
-  - b1-grammar-questions
+  - b1-grammar-direct-indirect-questions
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format

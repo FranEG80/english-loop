@@ -14,13 +14,13 @@ learningObjectives:
   - "Distinguir conectores que introducen una cláusula de los que introducen un nombre o un gerundio."
   - "Puntuar y colocar discourse markers con naturalidad en textos formales."
 prerequisites:
-  - b1-grammar-linking-words
+  - b1-grammar-basic-linking-words
   - b2-grammar-participle-reduced-clauses
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-grammar-linking-words
+  - b1-grammar-basic-linking-words
   - b2-grammar-non-defining-relative-clauses
 tags:
   - b2
