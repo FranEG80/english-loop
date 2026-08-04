@@ -1,6 +1,7 @@
 # EnglishLoop asset pack
 
-Generated in one `$imagegen` work block for frontend phase 3.
+Asset inventory for the EnglishLoop release 1. The files are committed release
+assets; this document records their format and visual direction.
 
 ## Visual direction
 

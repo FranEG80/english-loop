@@ -4,17 +4,15 @@ Esta es la guía técnica del backend actual. El backend es un monolito modular
 dentro de Next.js: el dominio y los casos de uso no dependen de Next, Prisma,
 Better Auth ni de la forma concreta de transportar las peticiones.
 
-El plan de trabajo está en [`BACKEND-PLAN.md`](./BACKEND-PLAN.md). Este
-documento explica cómo está organizado, cómo se ejecuta y qué partes están
-listas o siguen en evolución.
+Este documento es la fuente de verdad del backend de la release 1: explica cómo
+está organizado, cómo se ejecuta y qué límites de despliegue siguen abiertos.
 
 ## Estado actual
 
 Está terminado el backend funcional local: catálogo desde `DATASET/` o desde
 el catálogo relacional publicado, sesiones, práctica, corrección determinista,
 progreso, repaso, API, Server Actions, SQLite y la persistencia D1 por binding
-o HTTP. El estado comprobable de cada requisito está en
-[`BACKEND-PLAN.md`](./BACKEND-PLAN.md).
+o HTTP.
 
 Siguen como preparación de producción la ejecución del runner PostgreSQL contra
 una instancia aislada, la expiración E2E con reloj controlable y la integración
@@ -286,8 +284,9 @@ pnpm db:seed
 
 # D1: copia la plantilla a una configuración local y usa Wrangler
 cp wrangler.d1.example.jsonc wrangler.d1.jsonc
-pnpm dlx wrangler d1 migrations list replace-with-your-d1-name --config wrangler.d1.jsonc --remote
-pnpm dlx wrangler d1 migrations apply replace-with-your-d1-name --config wrangler.d1.jsonc --remote
+pnpm d1:migrate:local
+pnpm d1:migrate:remote
+pnpm d1:dev
 
 # Seed directo para proveedores Prisma SQL o D1 HTTP
 pnpm dataset:seed
@@ -382,9 +381,11 @@ cambio. No se debe usar `skip` para ocultar una regresión.
 
 ## Archivos de referencia
 
-- [`BACKEND-PLAN.md`](./BACKEND-PLAN.md): hoja de ruta y decisiones de trabajo.
+- [`ARCHITECTURE.md`](./ARCHITECTURE.md): límites de módulos y puntos de
+  composición.
 - [`BACKEND-DEPLOYMENT-NEXT-STEPS.md`](./BACKEND-DEPLOYMENT-NEXT-STEPS.md):
-  pasos pendientes para PostgreSQL, MariaDB, D1, Vercel y Cloudflare.
+  guía de deploy y validación para SQLite, PostgreSQL, MariaDB, D1, Vercel y
+  Cloudflare.
 - [`../.env.example`](../.env.example): configuración comentada.
 - [`../prisma/schema.prisma`](../prisma/schema.prisma): modelo persistente.
 - [`../server/infrastructure/composition/composition-root.ts`](../server/infrastructure/composition/composition-root.ts): composición de adaptadores.

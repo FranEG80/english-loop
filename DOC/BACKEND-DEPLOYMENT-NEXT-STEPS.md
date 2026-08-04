@@ -1,5 +1,10 @@
 # Próximos pasos de despliegue del backend
 
+> Esta es la guía operativa de deploy de la release 1. No es un plan de
+> desarrollo: SQLite local está validado y los proveedores externos solo se
+> consideran cerrados después de ejecutar y conservar la evidencia de este
+> procedimiento.
+
 Esta guía está escrita para poder seguirla sin conocer todavía la
 arquitectura de EnglishLoop. Explica qué elegir, qué comando ejecutar, qué
 resultado esperar y qué partes todavía no deben considerarse producción.
@@ -81,7 +86,9 @@ BETTER_AUTH_URL=https://app.example.com
 ~~~
 
 BETTER_AUTH_SECRET firma las sesiones. BETTER_AUTH_URL debe ser la URL pública
-real, no localhost.
+real, no localhost. Usa un secreto aleatorio de al menos 32 caracteres; el
+valor `change-me` de `.env.example` solo sirve como referencia local y nunca
+debe llegar a un entorno de producción.
 
 ### Comprobación común antes de desplegar
 
@@ -188,8 +195,8 @@ factoría selecciona PostgreSQL cuando DATABASE_PROVIDER=postgresql.
 
 No ejecutar a ciegas pnpm prisma migrate deploy contra PostgreSQL. La
 historia versionada de prisma/migrations/ nació para SQLite/D1 y contiene
-sentencias específicas de SQLite en algunas migraciones. El plan actual
-genera una baseline PostgreSQL desde el esquema canónico; todavía falta
+sentencias específicas de SQLite en algunas migraciones. El procedimiento
+actual genera una baseline PostgreSQL desde el esquema canónico; todavía falta
 convertir ese bootstrap en una historia de migraciones PostgreSQL mantenida
 automáticamente.
 
@@ -319,11 +326,11 @@ servir de proxy HTTP para Vercel.
 
 ### Paso 1: crear una base y una configuración local de Wrangler
 
-Instalar/autenticar Wrangler mediante el proyecto:
+Autenticar Wrangler mediante el proyecto:
 
 ~~~bash
-pnpm dlx wrangler login
-pnpm dlx wrangler d1 create english-loop-d1
+pnpm exec wrangler login
+pnpm exec wrangler d1 create english-loop-d1
 ~~~
 
 El comando devuelve database_id. Copiar la plantilla y sustituir el nombre y
@@ -348,18 +355,38 @@ configuration](https://developers.cloudflare.com/workers/wrangler/configuration/
 
 ### Paso 2: aplicar migraciones D1
 
-Usar el nombre de la base, no un nombre inventado para el binding, y mirar
-primero qué falta:
+La configuración de ejemplo usa `DB` como nombre del binding. Los scripts del
+proyecto resuelven ese binding y evitan repetir el nombre real de la base:
 
 ~~~bash
-pnpm dlx wrangler d1 migrations list english-loop-d1 \
-  --config wrangler.d1.jsonc --remote
-pnpm dlx wrangler d1 migrations apply english-loop-d1 \
-  --config wrangler.d1.jsonc --remote
+pnpm d1:migrate:local
+pnpm d1:migrate:remote
 ~~~
 
---remote significa que se modifica la base de Cloudflare. Sin esa opción se
-trabaja con el almacenamiento local de Wrangler.
+`d1:migrate:local` crea/aplica las migraciones en el SQLite local de Wrangler.
+`d1:migrate:remote` modifica la base de Cloudflare. Ejecutar la segunda solo
+después de revisar el SQL y confirmar el proyecto autenticado.
+
+Para desarrollar el Worker contra el D1 local:
+
+~~~bash
+pnpm d1:dev
+~~~
+
+El Worker escucha por defecto en `http://127.0.0.1:8787`. En otra terminal,
+la aplicación Next puede usar ese Worker por HTTP con estas variables:
+
+~~~dotenv
+DATABASE_PROVIDER=d1
+D1_TRANSPORT=http
+D1_HTTP_URL=http://127.0.0.1:8787
+D1_HTTP_TOKEN=local-d1-token
+CONTENT_SOURCE=database
+~~~
+
+Crea un fichero `.dev.vars` con `D1_HTTP_TOKEN=local-d1-token` para Wrangler;
+`.dev.vars` y `wrangler.d1.jsonc` están ignorados por Git. Así el flujo local
+es reproducible sin fingir que un proceso Node tiene acceso al binding `DB`.
 
 ### Paso 3: proteger y desplegar el Worker
 
@@ -367,9 +394,9 @@ El proxy exige un token compartido. Guardarlo como secreto de Wrangler, nunca
 en wrangler.d1.jsonc:
 
 ~~~bash
-pnpm dlx wrangler secret put D1_HTTP_TOKEN \
+pnpm exec wrangler secret put D1_HTTP_TOKEN \
   --config wrangler.d1.jsonc
-pnpm dlx wrangler deploy --config wrangler.d1.jsonc
+pnpm d1:deploy
 ~~~
 
 El endpoint /seed es una ruta operativa. Debe quedar autenticado, limitada en
@@ -441,11 +468,16 @@ Hay que distinguir dos despliegues:
 - **Proxy D1**: es el Worker existente y puede desplegarse siguiendo la
   sección 7.
 - **Aplicación Next completa**: necesita un adaptador de runtime de Next para
-  Route Handlers, Server Actions, cookies y Better Auth. Esa integración aún
-  no está validada en este repositorio.
+  Route Handlers, Server Actions, cookies y Better Auth. Esta integración no
+  forma parte de este repositorio: se ha descartado OpenNext para conservar
+  el build y despliegue nativos de Next/Vercel.
 
-Antes de afirmar que la aplicación está en Cloudflare hay que completar y
-probar:
+Por tanto, la opción Cloudflare actualmente soportada es desplegar el Worker
+D1 y alojar la aplicación Next en Vercel (o en otro hosting Node). No se debe
+afirmar que la aplicación Next completa está en Cloudflare sin añadir y
+validar explícitamente otro adaptador de runtime.
+
+Si en el futuro se decide añadir uno, habrá que completar y probar:
 
 - elección del adaptador de runtime compatible;
 - configuración de Env y generación de tipos de Wrangler;
@@ -455,8 +487,9 @@ probar:
 - dominios, secretos, logs, límites y rollback;
 - recorrido E2E contra el entorno remoto.
 
-Hasta entonces, la combinación comprobable es Next/Vercel (o Node) más D1 por
-HTTP, o el proxy D1 aislado en Cloudflare.
+La combinación comprobable y documentada es Next/Vercel (o Node) con
+PostgreSQL/MariaDB directo, Next/Vercel (o Node) más D1 por HTTP, o el proxy D1
+aislado en Cloudflare con binding nativo.
 
 ## 10. Checklist de cierre
 

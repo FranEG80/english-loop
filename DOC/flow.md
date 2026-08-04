@@ -1,10 +1,14 @@
 ## Daily Learning Flow
 
-La experiencia principal de la app será una sesión diaria guiada.
+La experiencia principal de la app es una sesión diaria guiada.
 
-Aunque las lecciones y actividades estarán disponibles libremente desde sus propias secciones, al entrar en la aplicación se mostrará una lección recomendada de cualquier categoría según el nivel activo, progreso y errores anteriores.
+Aunque las lecciones y actividades están disponibles libremente desde sus
+propias secciones, al entrar en la aplicación se muestra una lección
+recomendada según el nivel activo, el progreso y los errores anteriores.
 
-El usuario podrá avanzar entre lecciones con un botón de “Siguiente” y, cuando quiera, pasar a las actividades del día. Estas actividades estarán relacionadas con las lecciones vistas previamente durante esa sesión.
+El usuario puede avanzar entre lecciones con “Siguiente” y pasar a las
+actividades del día cuando quiera. Las actividades se relacionan con las
+lecciones vistas durante esa sesión.
 
 ### Objetivo
 
@@ -16,15 +20,16 @@ Evitar que el usuario tenga que decidir siempre qué estudiar y crear una rutina
 4. Revisar errores.
 5. Guardar progreso.
 
-### Reglas iniciales
+### Reglas de la release 1
 
 - Al entrar, mostrar una lección recomendada.
 - La lección puede ser de gramática, vocabulario, Use of English, phrasal verbs, writing o reading.
 - El botón “Siguiente” muestra otra lección recomendada.
 - El botón “Ir a actividades del día” genera ejercicios relacionados con las lecciones vistas.
-- La sesión diaria mezcla contenido nuevo, errores anteriores y repaso aleatorio.
+- La sesión diaria mezcla contenido nuevo, errores anteriores y repaso de
+  mantenimiento.
 
-### workflow?
+### Secuencia
 
 Entrar en la app
 ↓
