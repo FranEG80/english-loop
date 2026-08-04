@@ -1,28 +1,33 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 111,
-    "publishedActivities": 10125,
+    "publishedLessons": 125,
+    "publishedActivities": 11800,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": true,
-    "nodeTargetsMet": 100,
+    "nodeTargetsMet": 117,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 5450,
-      "B2": 4675
+      "B1": 5950,
+      "B2": 5850
     },
     "category": {
+      "collocations": 400,
       "grammar": 4900,
-      "guided-writing": 625,
+      "guided-writing": 1000,
+      "phrasal-verbs": 600,
+      "prepositions": 300,
       "reading": 1000,
       "use-of-english": 1200,
       "vocabulary": 2400
     },
     "topic": {
       "articles-determiners": 200,
+      "b1-collocations-daily-life": 100,
+      "b1-collocations-travel-work": 100,
       "b1-daily-routines-life": 100,
       "b1-education-study": 100,
       "b1-environment-weather-places": 100,
@@ -35,6 +40,9 @@
       "b1-leisure-sport-entertainment": 100,
       "b1-multiple-choice-cloze": 100,
       "b1-open-cloze": 100,
+      "b1-phrasal-everyday-actions": 100,
+      "b1-phrasal-study-relationships": 100,
+      "b1-phrasal-travel-services": 100,
       "b1-reading-gapped-text": 100,
       "b1-reading-gist-detail": 100,
       "b1-reading-notices-functional-texts": 100,
@@ -55,8 +63,11 @@
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-climate-global-issues": 100,
+      "b2-collocations-academic-business": 100,
+      "b2-collocations-impact-attitudes": 100,
       "b2-creativity-innovation-decisions": 100,
       "b2-crime-justice": 100,
+      "b2-dependent-prepositions": 100,
       "b2-education-learning": 100,
       "b2-health-psychology": 100,
       "b2-key-word-transformations": 100,
@@ -64,6 +75,11 @@
       "b2-money-economics": 100,
       "b2-multiple-choice-cloze": 100,
       "b2-open-cloze": 100,
+      "b2-phrasal-attitudes-relationships": 100,
+      "b2-phrasal-change-progress": 100,
+      "b2-phrasal-work-problems": 100,
+      "b2-prepositional-fixed-phrases": 100,
+      "b2-prepositions-abstract-relations": 100,
       "b2-reading-argument-evidence": 100,
       "b2-reading-attitude-tone": 100,
       "b2-reading-gapped-text": 100,
@@ -74,7 +90,10 @@
       "b2-society-culture-public-life": 100,
       "b2-travel-tourism-urban-life": 100,
       "b2-word-formation": 100,
-      "b2-writing-argument-cohesion": 25,
+      "b2-writing-argument-cohesion": 100,
+      "b2-writing-article-review": 100,
+      "b2-writing-essay-structure": 100,
+      "b2-writing-formal-email": 100,
       "b2-writing-report": 100,
       "comparisons": 300,
       "conditionals": 250,
@@ -101,6 +120,8 @@
       "advanced-passive-tenses": 100,
       "advice-possibility": 100,
       "articles-reference": 100,
+      "b1-collocations-daily-life": 100,
+      "b1-collocations-travel-work": 100,
       "b1-daily-routines-life": 100,
       "b1-education-study": 100,
       "b1-environment-weather-places": 100,
@@ -113,6 +134,9 @@
       "b1-leisure-sport-entertainment": 100,
       "b1-multiple-choice-cloze": 100,
       "b1-open-cloze": 100,
+      "b1-phrasal-everyday-actions": 100,
+      "b1-phrasal-study-relationships": 100,
+      "b1-phrasal-travel-services": 100,
       "b1-reading-gapped-text": 100,
       "b1-reading-gist-detail": 100,
       "b1-reading-notices-functional-texts": 100,
@@ -133,8 +157,11 @@
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-climate-global-issues": 100,
+      "b2-collocations-academic-business": 100,
+      "b2-collocations-impact-attitudes": 100,
       "b2-creativity-innovation-decisions": 100,
       "b2-crime-justice": 100,
+      "b2-dependent-prepositions": 100,
       "b2-education-learning": 100,
       "b2-health-psychology": 100,
       "b2-key-word-transformations": 100,
@@ -142,6 +169,11 @@
       "b2-money-economics": 100,
       "b2-multiple-choice-cloze": 100,
       "b2-open-cloze": 100,
+      "b2-phrasal-attitudes-relationships": 100,
+      "b2-phrasal-change-progress": 100,
+      "b2-phrasal-work-problems": 100,
+      "b2-prepositional-fixed-phrases": 100,
+      "b2-prepositions-abstract-relations": 100,
       "b2-reading-argument-evidence": 100,
       "b2-reading-attitude-tone": 100,
       "b2-reading-gapped-text": 100,
@@ -152,7 +184,10 @@
       "b2-society-culture-public-life": 100,
       "b2-travel-tourism-urban-life": 100,
       "b2-word-formation": 100,
-      "b2-writing-argument-cohesion": 25,
+      "b2-writing-argument-cohesion": 100,
+      "b2-writing-article-review": 100,
+      "b2-writing-essay-structure": 100,
+      "b2-writing-formal-email": 100,
       "b2-writing-report": 100,
       "basic-linking-words": 100,
       "basic-verb-patterns": 100,
@@ -203,36 +238,37 @@
       "will-predictions": 25
     },
     "activityType": {
-      "collocation_choice": 50,
-      "complete_dialogue": 175,
-      "complete_paragraph": 150,
-      "error_correction": 525,
+      "collocation_choice": 150,
+      "complete_dialogue": 225,
+      "complete_paragraph": 225,
+      "error_correction": 550,
       "error_identification": 75,
-      "fill_blank": 1925,
-      "gapped_text": 75,
-      "guided_writing": 100,
+      "fill_blank": 2100,
+      "gapped_text": 125,
+      "guided_writing": 175,
       "key_word_transformation": 75,
-      "matching": 400,
+      "matching": 800,
       "multi_gap_fill": 75,
-      "multiple_choice_cloze": 150,
+      "multiple_choice_cloze": 400,
       "multiple_select": 325,
-      "open_cloze": 50,
-      "phrasal_verb_choice": 50,
+      "open_cloze": 100,
+      "phrasal_verb_choice": 200,
+      "preposition_choice": 75,
       "reading_comprehension": 175,
       "reading_matching": 125,
-      "sentence_transformation": 225,
-      "single_choice": 2175,
+      "sentence_transformation": 275,
+      "single_choice": 2200,
       "true_false": 1500,
-      "vocabulary_in_context": 75,
-      "word_formation": 50,
-      "word_order": 1600
+      "vocabulary_in_context": 150,
+      "word_formation": 75,
+      "word_order": 1625
     },
     "difficulty": {
-      "1": 1175,
-      "2": 2175,
-      "3": 2305,
-      "4": 2274,
-      "5": 2196
+      "1": 1290,
+      "2": 2618,
+      "3": 2723,
+      "4": 2679,
+      "5": 2490
     }
   },
   "targets": [
@@ -444,10 +480,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-collocations-travel-work",
@@ -461,10 +503,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-daily-routines-life",
@@ -771,10 +819,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-phrasal-study-relationships",
@@ -788,10 +842,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-phrasal-travel-services",
@@ -805,10 +865,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-prepositions-movement-travel",
@@ -1307,10 +1373,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-collocations-impact-attitudes",
@@ -1323,10 +1394,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-creativity-innovation-decisions",
@@ -1381,10 +1457,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-education-learning",
@@ -1544,10 +1625,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-phrasal-change-progress",
@@ -1560,10 +1646,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-phrasal-work-problems",
@@ -1576,10 +1667,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-prepositional-fixed-phrases",
@@ -1592,10 +1688,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-prepositions-abstract-relations",
@@ -1608,10 +1709,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-reading-argument-evidence",
@@ -1834,8 +1940,8 @@
         4,
         5
       ],
-      "actualActivities": 25,
-      "actualActivityTypes": 1,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         1,
         2,
@@ -1843,7 +1949,7 @@
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-writing-article-review",
@@ -1856,10 +1962,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-writing-essay-structure",
@@ -1872,10 +1983,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-writing-formal-email",
@@ -1888,10 +2004,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-writing-report",

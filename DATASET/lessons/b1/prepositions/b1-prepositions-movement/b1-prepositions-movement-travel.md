@@ -7,57 +7,73 @@ category: prepositions
 topic: b1-prepositions-movement-travel
 subtopics:
   - b1-prepositions-movement-travel
-taxonomyNodeIds:
-  - b1-prepositions-movement-travel
+difficulty: 3
+learningObjectives:
+  - "Distinguir to, into, onto, through, across, along, past y towards."
+  - "Describir rutas con origen, recorrido, dirección y destino."
+prerequisites:
+  - b1-vocabulary-travel-transport
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b1-preliminary-format
-sourceIds:
-  - cefr-companion-volume-2020
-  - cambridge-b1-preliminary-format
+relatedLessonIds: []
+tags:
+  - b1
+  - prepositions
+  - movement-travel
 estimatedMinutes: 20
 status: published
+author: openai-codex
+reviewer: publication-authorised-by-project-owner
+contentVersion: 1
 ---
 
-# Preposiciones de movimiento y viajes
+# Resumen
 
-## Objetivo
+Las preposiciones de movimiento muestran destino, entrada, recorrido, cruce o dirección.
 
-Describir rutas con *to*, *into*, *onto*, *through*, *across*, *along*, *past* y *towards*.
+# Objetivos
 
-## Destino
+- Elegir la preposición según la trayectoria imaginada.
+- Describir desplazamientos y rutas de viaje con precisión.
 
-Usa *to* para el destino: *walk to the station*. Usa *into* cuando el movimiento termina dentro de un espacio: *go into the shop*.
+# Explicación
 
-## Superficies y recorridos
+*To* señala un destino; *into* indica movimiento hacia el interior; *onto* indica una superficie; *through* y *across* describen recorridos.
 
-Usa *onto* para subir a una superficie, *through* para atravesar un espacio y *across* para cruzar de un lado al otro.
+# Forma o estructura
 
-## Dirección
+*Along* sigue una línea, *past* pasa junto a un punto y *towards* expresa dirección sin asegurar que se llegue.
 
-*Along* sigue una línea o ruta, *past* indica que se pasa junto a algo y *towards* señala una dirección sin afirmar que se llega.
+# Usos principales
 
-## Transporte
+Combina origen y recorrido: *from the hotel, through the park, across the bridge and to the station*.
 
-En una descripción de viaje, combina la preposición con el verbo: *cycle along the river*, *walk across the bridge* y *drive towards the coast*.
+# Contrastes importantes
 
-## Secuencia
+*Go into the shop* describe entrada; *walk towards the shop* solo describe dirección. *Across* cruza una superficie o área; *through* atraviesa un espacio.
 
-Una ruta clara puede ordenar origen, recorrido y destino: *from the hotel, through the park, across the bridge and to the station*.
+# Ejemplos
 
-## Estrategia
+1. **We walked through the forest towards the lake.** — Caminamos por el bosque hacia el lago.
+2. **The cyclist rode along the river and past the bridge.** — El ciclista recorrió el río y pasó junto al puente.
 
-Imagina el movimiento: ¿entra, sube, atraviesa, cruza, pasa junto a algo o se dirige hacia ello? Esa imagen ayuda a elegir la preposición.
+# Errores frecuentes
 
-## Ejemplo guiado
+- ❌ *walk in the shop* para expresar entrada / ✅ *walk into the shop*.
+- ❌ *cross through the road* / ✅ *cross the road* o *walk across the road*.
 
-En *The hikers walked through the forest towards the lake*, *through* describe el recorrido y *towards* la dirección final.
+# Excepciones relevantes
 
-## Errores frecuentes
+Con algunos verbos el destino no lleva *to*: *go home*, *come here* y *arrive home*. El verbo ya contiene la idea de destino.
 
-No uses *in* para un movimiento hacia dentro ni *to* cuando solo expresas dirección. Compara *go into the museum* con *walk towards the museum*.
+# Mini resumen
 
-## Comprobación final
+Destino: *to*. Interior: *into*. Superficie: *onto*. Recorrido: *through*, *across* o *along*. Dirección: *towards*.
 
-Comprueba si la preposición expresa destino, entrada, superficie, recorrido o dirección. Después revisa que el verbo y la ruta formen una escena lógica.
+# Comprobación rápida autocorregible
+
+1. Completa: *They walked ___ the tunnel ___ the station.*
+   - Respuesta: `through, towards`
+   - Explicación: *through* describe el recorrido interior y *towards* la dirección.
 

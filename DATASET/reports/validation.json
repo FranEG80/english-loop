@@ -2,42 +2,17 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 111,
-    "activities": 10125,
-    "batches": 405,
+    "lessons": 125,
+    "activities": 11800,
+    "batches": 472,
     "taxonomyNodes": 164,
-    "errors": 91
+    "errors": 47
   },
   "issues": [
     {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-collocations-daily-life",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-collocations-daily-life",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-collocations-daily-life",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-collocations-travel-work",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-collocations-travel-work",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-collocations-travel-work",
-      "message": "Hay 0 tipos; se requieren 4."
+      "code": "duplicate-lesson-id",
+      "location": "b1-prepositions-time-place",
+      "message": "ID duplicado: b1-prepositions-time-place."
     },
     {
       "code": "node-activity-coverage",
@@ -52,51 +27,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-dependent-prepositions",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -130,284 +60,134 @@
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
-      "message": "Hay 25 actividades; se requieren 100."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
-      "message": "Hay 1 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-article-review",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-article-review",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-article-review",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-essay-structure",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-essay-structure",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-essay-structure",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-formal-email",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-formal-email",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-formal-email",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-collocations-daily-life."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-collocations-travel-work."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-dependent-prepositions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-prepositions-movement-travel."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-prepositions-time-place."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-collocations-academic-business."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-collocations-impact-attitudes."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-dependent-prepositions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-phrasal-verbs-attitudes-relationships."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-phrasal-verbs-change-progress."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-phrasal-verbs-work-problems."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-prepositional-fixed-phrases."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-prepositions-abstract-relations."
-    },
-    {
-      "code": "lesson-path",
-      "location": "lessons/b1/guided-writing/b1-writing-opinion-article.md",
-      "message": "La ruta esperada es lessons/b1/guided-writing/b1-writing-opinion-article/b1-writing-opinion-article.md."
-    },
-    {
-      "code": "lesson-path",
-      "location": "lessons/b1/guided-writing/b1-writing-review-description.md",
-      "message": "La ruta esperada es lessons/b1/guided-writing/b1-writing-review-description/b1-writing-review-description.md."
-    },
-    {
-      "code": "lesson-path",
-      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-everyday-actions/b1-phrasal-verbs-everyday-actions.md",
-      "message": "La ruta esperada es lessons/b1/phrasal-verbs/b1-phrasal-everyday-actions/b1-phrasal-verbs-everyday-actions.md."
-    },
-    {
       "code": "lesson-without-activities",
-      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-everyday-actions/b1-phrasal-verbs-everyday-actions.md",
+      "location": "lessons/b1/prepositions/b1-dependent-prepositions/b1-dependent-prepositions.md",
       "message": "Una lección publicada debe tener actividades publicadas."
     },
     {
       "code": "lesson-path",
-      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-study-relationships/b1-phrasal-verbs-study-relationships.md",
-      "message": "La ruta esperada es lessons/b1/phrasal-verbs/b1-phrasal-study-relationships/b1-phrasal-verbs-study-relationships.md."
+      "location": "lessons/b1/prepositions/b1-prepositions-movement/b1-prepositions-movement-travel.md",
+      "message": "La ruta esperada es lessons/b1/prepositions/b1-prepositions-movement-travel/b1-prepositions-movement-travel.md."
     },
     {
       "code": "lesson-without-activities",
-      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-study-relationships/b1-phrasal-verbs-study-relationships.md",
+      "location": "lessons/b1/prepositions/b1-prepositions-movement/b1-prepositions-movement-travel.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/prepositions/b1-prepositions-time-place/b1-prepositions-time-place.md",
       "message": "Una lección publicada debe tener actividades publicadas."
     },
     {
       "code": "lesson-path",
-      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-travel-services/b1-phrasal-verbs-travel-services.md",
-      "message": "La ruta esperada es lessons/b1/phrasal-verbs/b1-phrasal-travel-services/b1-phrasal-verbs-travel-services.md."
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "La ruta esperada es lessons/b1/prepositions/b1-prepositions-time-place/b1-prepositions-time-place.md."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Comprobación rápida autocorregible\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Contrastes importantes\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Ejemplos\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Excepciones relevantes\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Explicación\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Forma o estructura\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Mini resumen\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Objetivos\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Resumen\"."
+    },
+    {
+      "code": "lesson-section",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "Falta la sección obligatoria \"Usos principales\"."
     },
     {
       "code": "lesson-without-activities",
-      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-travel-services/b1-phrasal-verbs-travel-services.md",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
       "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'author'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'contentVersion'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'difficulty'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'learningObjectives'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'prerequisites'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'relatedLessonIds'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'reviewer'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must have required property 'tags'"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must NOT have additional properties"
+    },
+    {
+      "code": "schema",
+      "location": "lessons/b1/prepositions/b1-prepositions-time/b1-prepositions-time-place.md",
+      "message": "must NOT have additional properties"
     },
     {
       "code": "lesson-path",
@@ -435,34 +215,34 @@
       "message": "La ruta esperada es lessons/b1/use-of-english/b1-word-formation/b1-use-of-english-word-formation.md."
     },
     {
-      "code": "lesson-path",
-      "location": "lessons/b2/guided-writing/b2-writing-article-review.md",
-      "message": "La ruta esperada es lessons/b2/guided-writing/b2-writing-article-review/b2-writing-article-review.md."
+      "code": "broken-taxonomy-reference",
+      "location": "lessons/b2/phrasal-verbs/b2-phrasal-verbs-attitudes-relationships/b2-phrasal-verbs-attitudes-relationships.md",
+      "message": "No existe el nodo b2-phrasal-verbs-attitudes-relationships."
     },
     {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/guided-writing/b2-writing-article-review.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
+      "code": "broken-taxonomy-reference",
+      "location": "lessons/b2/phrasal-verbs/b2-phrasal-verbs-attitudes-relationships/b2-phrasal-verbs-attitudes-relationships.md",
+      "message": "No existe el nodo b2-phrasal-verbs-attitudes-relationships."
     },
     {
-      "code": "lesson-path",
-      "location": "lessons/b2/guided-writing/b2-writing-essay-structure.md",
-      "message": "La ruta esperada es lessons/b2/guided-writing/b2-writing-essay-structure/b2-writing-essay-structure.md."
+      "code": "broken-taxonomy-reference",
+      "location": "lessons/b2/phrasal-verbs/b2-phrasal-verbs-change-progress/b2-phrasal-verbs-change-progress.md",
+      "message": "No existe el nodo b2-phrasal-verbs-change-progress."
     },
     {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/guided-writing/b2-writing-essay-structure.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
+      "code": "broken-taxonomy-reference",
+      "location": "lessons/b2/phrasal-verbs/b2-phrasal-verbs-change-progress/b2-phrasal-verbs-change-progress.md",
+      "message": "No existe el nodo b2-phrasal-verbs-change-progress."
     },
     {
-      "code": "lesson-path",
-      "location": "lessons/b2/guided-writing/b2-writing-formal-email.md",
-      "message": "La ruta esperada es lessons/b2/guided-writing/b2-writing-formal-email/b2-writing-formal-email.md."
+      "code": "broken-taxonomy-reference",
+      "location": "lessons/b2/phrasal-verbs/b2-phrasal-verbs-work-problems/b2-phrasal-verbs-work-problems.md",
+      "message": "No existe el nodo b2-phrasal-verbs-work-problems."
     },
     {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/guided-writing/b2-writing-formal-email.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
+      "code": "broken-taxonomy-reference",
+      "location": "lessons/b2/phrasal-verbs/b2-phrasal-verbs-work-problems/b2-phrasal-verbs-work-problems.md",
+      "message": "No existe el nodo b2-phrasal-verbs-work-problems."
     }
   ]
 }

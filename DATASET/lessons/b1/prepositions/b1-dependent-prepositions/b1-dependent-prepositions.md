@@ -7,57 +7,72 @@ category: prepositions
 topic: b1-dependent-prepositions
 subtopics:
   - b1-dependent-prepositions
-taxonomyNodeIds:
-  - b1-dependent-prepositions
+difficulty: 3
+learningObjectives:
+  - "Usar combinaciones frecuentes de verbos, adjetivos y nombres con preposición."
+  - "Reconocer que la unidad léxica completa determina la preposición."
+prerequisites: []
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b1-preliminary-format
-sourceIds:
-  - cefr-companion-volume-2020
-  - cambridge-b1-preliminary-format
+relatedLessonIds: []
+tags:
+  - b1
+  - prepositions
+  - dependent
 estimatedMinutes: 20
 status: published
+author: openai-codex
+reviewer: publication-authorised-by-project-owner
+contentVersion: 1
 ---
 
-# Preposiciones dependientes frecuentes
+# Resumen
 
-## Objetivo
+Algunos verbos, adjetivos y nombres seleccionan una preposición concreta. Conviene aprender la combinación completa.
 
-Aprender la preposición que acompaña a verbos, adjetivos y nombres frecuentes sin traducir cada palabra por separado.
+# Objetivos
 
-## Verbos frecuentes
+- Usar patrones como *listen to*, *interested in* y *responsible for*.
+- Aplicar *-ing* después de una preposición cuando sigue una acción.
 
-Recuerda *listen to*, *wait for*, *belong to*, *depend on* y *apologise for*. La preposición forma parte del patrón verbal.
+# Explicación
 
-## Adjetivos frecuentes
+La preposición no siempre se puede traducir literalmente. *Depend on*, *good at* y *reason for* deben memorizarse como unidades.
 
-Usa *afraid of*, *interested in*, *good at*, *responsible for* y *proud of*. Después puede aparecer un nombre o una forma en *-ing*.
+# Forma o estructura
 
-## Nombres frecuentes
+Verbo + preposición: *wait for*. Adjetivo + preposición: *afraid of*. Nombre + preposición: *answer to*.
 
-Son útiles *reason for*, *answer to*, *invitation to* y *difference between*. Aprende el nombre junto con su preposición.
+# Usos principales
 
-## Significado
+Son frecuentes *belong to*, *apologise for*, *interested in*, *proud of*, *responsible for* y *difference between*.
 
-Una preposición distinta puede cambiar la relación: *care about* expresa interés, mientras que *care for* puede expresar cuidado o gusto en ciertos contextos.
+# Contrastes importantes
 
-## Gerundios
+*Listen to music* necesita *to*, mientras que *hear music* no. *Good at* describe habilidad; *good for* describe beneficio.
 
-Después de una preposición usamos normalmente *-ing*: *interested in learning* y *good at solving problems*.
+# Ejemplos
 
-## Estrategia
+1. **Mia is interested in learning Japanese.** — A Mia le interesa aprender japonés.
+2. **The answer to this question is in the book.** — La respuesta a esta pregunta está en el libro.
 
-Memoriza unidades cortas, crea un ejemplo propio y comprueba la preposición antes de completar la frase.
+# Errores frecuentes
 
-## Ejemplo guiado
+- ❌ *interested on* / ✅ *interested in*.
+- ❌ *good in maths* para habilidad / ✅ *good at maths*.
 
-En *Mina is responsible for checking the doors*, *for* pertenece al adjetivo *responsible* y *checking* sigue a la preposición.
+# Excepciones relevantes
 
-## Errores frecuentes
+Algunas palabras admiten más de una preposición con distinto significado: *care about* expresa interés y *care for* puede expresar cuidado.
 
-Evita *listen music*, *interested on* y *good in*. Las formas estándar son *listen to music*, *interested in* y *good at*.
+# Mini resumen
 
-## Comprobación final
+Identifica la palabra que gobierna la preposición y aprende el patrón entero, no solo la preposición aislada.
 
-Identifica la palabra que gobierna la preposición. Si después viene una acción, revisa que la forma verbal sea *-ing*.
+# Comprobación rápida autocorregible
+
+1. Completa: *They are responsible ___ checking the doors.*
+   - Respuesta: `for`
+   - Explicación: *responsible for* es la combinación estable y después aparece *-ing*.
 
