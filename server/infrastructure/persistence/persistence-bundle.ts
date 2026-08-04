@@ -11,6 +11,7 @@ import type { ReviewRepository } from "@/core/progress/ports/review-repository";
 import type { UnitOfWorkPort } from "@/core/shared/kernel";
 import type { RateLimiterPort } from "@/core/shared/kernel";
 import type { ActivityCatalogPort, CatalogMetadataPort, LessonCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
+import type { CatalogWritePort } from "@/core/content/ports/catalog-write-port";
 import { PrismaUnitOfWorkAdapter } from "../database/prisma-unit-of-work-adapter";
 import { PrismaUserSettingsRepository } from "./prisma-user-settings-repository";
 import { PrismaSavedLessonRepository } from "./prisma-saved-lesson-repository";
@@ -27,8 +28,10 @@ import { D1DailySessionRepository, D1LessonProgressRepository } from "./d1/d1-le
 import { D1ProgressRepository, D1ReviewRepository } from "./d1/d1-progress-repositories";
 import { D1SavedLessonRepository, D1UserSettingsRepository } from "./d1/d1-account-repositories";
 import { D1UnitOfWorkAdapter } from "./d1/d1-unit-of-work-adapter";
+import { D1TransactionCoordinator } from "./d1/d1-transaction-coordinator";
 import { createD1Transport, type D1RuntimeOptions } from "./d1/d1-runtime";
 import { D1RateLimiter } from "../security/d1-rate-limiter";
+import { D1CatalogWriteAdapter } from "./d1/catalog-write";
 import type { AppConfig } from "../config/config";
 
 export interface PersistenceBundle {
@@ -45,6 +48,8 @@ export interface PersistenceBundle {
   activityCatalog: ActivityCatalogPort;
   taxonomyCatalog: TaxonomyCatalogPort;
   catalogMetadata: CatalogMetadataPort;
+  databaseCatalog: LessonCatalogPort & ActivityCatalogPort & TaxonomyCatalogPort & CatalogMetadataPort;
+  catalogWritePort: CatalogWritePort | null;
   databaseHealth: () => Promise<boolean>;
   attemptRateLimiter: RateLimiterPort | null;
   authRateLimiter: RateLimiterPort | null;
@@ -63,24 +68,27 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
   if (options.config.databaseProvider === "d1") {
     const transport = createD1Transport({ ...options.config, binding: options.d1Binding, fetch: options.fetch, now: options.now, nonce: options.nonce });
     if (!transport) throw new Error("D1 persistence requires a configured D1 transport");
+    const coordinator = new D1TransactionCoordinator(transport);
     const catalog = new D1CatalogAdapter(transport);
     return {
-      unitOfWork: new D1UnitOfWorkAdapter(),
-      userSettingsRepository: new D1UserSettingsRepository(transport),
-      savedLessonRepository: new D1SavedLessonRepository(transport),
-      attemptRepository: new D1AttemptRepository(transport),
-      practiceRunRepository: new D1PracticeRunRepository(transport),
-      progressRepository: new D1ProgressRepository(transport),
-      reviewRepository: new D1ReviewRepository(transport),
-      dailySessionRepository: new D1DailySessionRepository(transport),
-      lessonProgressRepository: new D1LessonProgressRepository(transport),
+      unitOfWork: new D1UnitOfWorkAdapter(coordinator),
+      userSettingsRepository: new D1UserSettingsRepository(coordinator),
+      savedLessonRepository: new D1SavedLessonRepository(coordinator),
+      attemptRepository: new D1AttemptRepository(coordinator),
+      practiceRunRepository: new D1PracticeRunRepository(coordinator),
+      progressRepository: new D1ProgressRepository(coordinator),
+      reviewRepository: new D1ReviewRepository(coordinator),
+      dailySessionRepository: new D1DailySessionRepository(coordinator),
+      lessonProgressRepository: new D1LessonProgressRepository(coordinator),
       lessonCatalog: catalog,
       activityCatalog: catalog,
       taxonomyCatalog: catalog,
       catalogMetadata: catalog,
-      databaseHealth: async () => (await transport.execute({ name: "health" })).success,
-      attemptRateLimiter: new D1RateLimiter(transport, options.config.attemptRateLimitWindowMs, options.config.attemptRateLimitMax),
-      authRateLimiter: new D1RateLimiter(transport, options.config.authRateLimitWindowMs, options.config.authRateLimitMax),
+      databaseCatalog: catalog,
+      catalogWritePort: options.d1Binding?.DB ? new D1CatalogWriteAdapter(options.d1Binding.DB) : null,
+      databaseHealth: async () => (await coordinator.execute({ name: "health" })).success,
+      attemptRateLimiter: new D1RateLimiter(coordinator, options.config.attemptRateLimitWindowMs, options.config.attemptRateLimitMax),
+      authRateLimiter: new D1RateLimiter(coordinator, options.config.authRateLimitWindowMs, options.config.authRateLimitMax),
     };
   }
 
@@ -99,6 +107,8 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
     activityCatalog: catalog,
     taxonomyCatalog: catalog,
     catalogMetadata: catalog,
+    databaseCatalog: catalog,
+    catalogWritePort: null,
     databaseHealth: async () => {
       try {
         await options.prisma.$queryRaw`SELECT 1`;

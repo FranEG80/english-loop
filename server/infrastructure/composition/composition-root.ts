@@ -1,20 +1,11 @@
 import "server-only";
 import { prisma } from "@/server/infrastructure/database/prisma-client";
-import { PrismaUnitOfWorkAdapter } from "@/server/infrastructure/database/prisma-unit-of-work-adapter";
 import { BetterAuthIdentityAdapter } from "@/server/infrastructure/auth/better-auth-identity-adapter";
-import { PrismaUserSettingsRepository } from "@/server/infrastructure/persistence/prisma-user-settings-repository";
-import { PrismaSavedLessonRepository } from "@/server/infrastructure/persistence/prisma-saved-lesson-repository";
-import { PrismaAttemptRepository } from "@/server/infrastructure/persistence/prisma-attempt-repository";
-import { PrismaPracticeRunRepository } from "@/server/infrastructure/persistence/prisma-practice-run-repository";
-import { PrismaProgressRepository } from "@/server/infrastructure/persistence/prisma-progress-repository";
-import { PrismaReviewRepository } from "@/server/infrastructure/persistence/prisma-review-repository";
-import { PrismaDailySessionRepository } from "@/server/infrastructure/persistence/prisma-daily-session-repository";
-import { PrismaLessonProgressRepository } from "@/server/infrastructure/persistence/prisma-lesson-progress-repository";
+import { createPersistenceBundle, type PersistenceBundle } from "@/server/infrastructure/persistence/persistence-bundle";
 import { FileLessonCatalogAdapter } from "@/adapters/content/file-lesson-catalog-adapter";
 import { FileActivityCatalogAdapter } from "@/adapters/content/file-activity-catalog-adapter";
 import { FileTaxonomyCatalogAdapter } from "@/adapters/content/file-taxonomy-catalog-adapter";
 import { FileCatalogMetadataAdapter } from "@/adapters/content/file-catalog-metadata-adapter";
-import { PrismaCatalogAdapter } from "@/adapters/content/prisma-catalog-adapter";
 import { PrismaCatalogWriteAdapter } from "@/server/infrastructure/persistence/prisma-catalog-write-adapter";
 import { PracticeRunPlanner } from "@/core/practice/domain/practice-run-planner";
 import { DailySessionPlanner } from "@/core/learning/domain/daily-session-planner";
@@ -27,6 +18,16 @@ import { UuidIdGenerator } from "@/server/infrastructure/id/uuid-id-generator";
 import { InMemoryRateLimiter } from "@/server/infrastructure/security/rate-limiter";
 import { PrismaRateLimiter } from "@/server/infrastructure/security/prisma-rate-limiter";
 import { config } from "@/server/infrastructure/config/config";
+import type { RateLimiterPort, UnitOfWorkPort } from "@/core/shared/kernel";
+import type { UserSettingsRepository } from "@/core/account/ports/user-settings-repository";
+import type { SavedLessonRepository } from "@/core/account/ports/saved-lesson-repository";
+import type { AttemptRepository } from "@/core/practice/ports/attempt-repository";
+import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
+import type { ProgressRepository } from "@/core/progress/ports/progress-repository";
+import type { ReviewRepository } from "@/core/progress/ports/review-repository";
+import type { DailySessionRepository } from "@/core/learning/ports/daily-session-repository";
+import type { LessonProgressRepository } from "@/core/learning/ports/lesson-progress-repository";
+import type { D1RuntimeOptions } from "@/server/infrastructure/persistence/d1/d1-runtime";
 import type {
   ActivityCatalogPort,
   LessonCatalogPort,
@@ -53,16 +54,18 @@ function readDatasetVersionSync(): string {
  * Construye los adaptadores y expone los casos de uso del backend.
  */
 export class CompositionRoot {
-  readonly unitOfWork = new PrismaUnitOfWorkAdapter(prisma);
-  readonly identity = new BetterAuthIdentityAdapter();
-  readonly userSettingsRepository = new PrismaUserSettingsRepository(prisma);
-  readonly savedLessonRepository = new PrismaSavedLessonRepository(prisma);
-  readonly attemptRepository = new PrismaAttemptRepository(prisma);
-  readonly practiceRunRepository = new PrismaPracticeRunRepository(prisma);
-  readonly progressRepository = new PrismaProgressRepository(prisma);
-  readonly reviewRepository = new PrismaReviewRepository(prisma);
-  readonly dailySessionRepository = new PrismaDailySessionRepository(prisma);
-  readonly lessonProgressRepository = new PrismaLessonProgressRepository(prisma);
+  readonly unitOfWork: UnitOfWorkPort;
+  readonly identity: BetterAuthIdentityAdapter;
+  readonly userSettingsRepository: UserSettingsRepository;
+  readonly savedLessonRepository: SavedLessonRepository;
+  readonly attemptRepository: AttemptRepository;
+  readonly practiceRunRepository: PracticeRunRepository;
+  readonly progressRepository: ProgressRepository;
+  readonly reviewRepository: ReviewRepository;
+  readonly dailySessionRepository: DailySessionRepository;
+  readonly lessonProgressRepository: LessonProgressRepository;
+  readonly attemptRateLimiter: RateLimiterPort;
+  readonly authRateLimiter: RateLimiterPort;
   readonly randomSource = new SystemRandomSource();
   readonly clock = new SystemClock();
   readonly logger = new StructuredLogger(this.clock);
@@ -70,12 +73,6 @@ export class CompositionRoot {
     this.logger,
   );
   readonly idGenerator = new UuidIdGenerator();
-  readonly attemptRateLimiter = config.nodeEnv === "production"
-    ? new PrismaRateLimiter(prisma, config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock)
-    : new InMemoryRateLimiter(config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock);
-  readonly authRateLimiter = config.nodeEnv === "production"
-    ? new PrismaRateLimiter(prisma, config.authRateLimitWindowMs, config.authRateLimitMax, this.clock)
-    : new InMemoryRateLimiter(config.authRateLimitWindowMs, config.authRateLimitMax, this.clock);
   readonly practiceRunPlanner = new PracticeRunPlanner(this.randomSource);
   readonly dailySessionPlanner = new DailySessionPlanner(this.randomSource);
   readonly dailyPracticePlanner = new DailyPracticePlanner(this.randomSource);
@@ -84,15 +81,44 @@ export class CompositionRoot {
   private activityCatalog: FileActivityCatalogAdapter | null = null;
   private taxonomyCatalog: FileTaxonomyCatalogAdapter | null = null;
   private catalogMetadata: FileCatalogMetadataAdapter | null = null;
-  private databaseCatalog: PrismaCatalogAdapter | null = null;
+  private databaseCatalog: LessonCatalogPort & ActivityCatalogPort & TaxonomyCatalogPort & CatalogMetadataPort | null = null;
   private readonly datasetVersion = readDatasetVersionSync();
 
-  private getDatabaseCatalog(): PrismaCatalogAdapter {
-    if (!this.databaseCatalog) this.databaseCatalog = new PrismaCatalogAdapter(prisma);
+  private readonly persistence: PersistenceBundle;
+
+  constructor(options: Pick<D1RuntimeOptions, "binding" | "fetch" | "now" | "nonce"> = {}) {
+    this.persistence = createPersistenceBundle({ prisma, config, ...options });
+    this.unitOfWork = this.persistence.unitOfWork;
+    this.identity = new BetterAuthIdentityAdapter();
+    this.userSettingsRepository = this.persistence.userSettingsRepository;
+    this.savedLessonRepository = this.persistence.savedLessonRepository;
+    this.attemptRepository = this.persistence.attemptRepository;
+    this.practiceRunRepository = this.persistence.practiceRunRepository;
+    this.progressRepository = this.persistence.progressRepository;
+    this.reviewRepository = this.persistence.reviewRepository;
+    this.dailySessionRepository = this.persistence.dailySessionRepository;
+    this.lessonProgressRepository = this.persistence.lessonProgressRepository;
+    this.databaseCatalog = this.persistence.databaseCatalog;
+    this.attemptRateLimiter = this.persistence.attemptRateLimiter ?? (config.nodeEnv === "production"
+      ? new PrismaRateLimiter(prisma, config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock)
+      : new InMemoryRateLimiter(config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock));
+    this.authRateLimiter = this.persistence.authRateLimiter ?? (config.nodeEnv === "production"
+      ? new PrismaRateLimiter(prisma, config.authRateLimitWindowMs, config.authRateLimitMax, this.clock)
+      : new InMemoryRateLimiter(config.authRateLimitWindowMs, config.authRateLimitMax, this.clock));
+  }
+
+  private getDatabaseCatalog(): LessonCatalogPort & ActivityCatalogPort & TaxonomyCatalogPort & CatalogMetadataPort {
+    if (!this.databaseCatalog) this.databaseCatalog = this.persistence.databaseCatalog;
     return this.databaseCatalog;
   }
 
   getCatalogWritePort(): CatalogWritePort {
+    if (config.databaseProvider === "d1") {
+      if (!this.persistence.catalogWritePort) {
+        throw new Error("D1 catalog seed requires the native DB binding; HTTP seed transport is not configured");
+      }
+      return this.persistence.catalogWritePort;
+    }
     return new PrismaCatalogWriteAdapter(prisma);
   }
 
@@ -139,12 +165,7 @@ export class CompositionRoot {
   }
 
   async checkDatabase(): Promise<boolean> {
-    try {
-      await prisma.$queryRaw`SELECT 1`;
-      return true;
-    } catch {
-      return false;
-    }
+    return this.persistence.databaseHealth();
   }
 
   async checkCatalog(): Promise<boolean> {

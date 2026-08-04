@@ -2,6 +2,7 @@ import {
   D1BindingClient,
   D1BindingReplayGuard,
   handleD1HttpRequest,
+  handleD1SeedHttpRequest,
   type D1DatabaseLike,
 } from "../server/infrastructure/persistence/d1";
 
@@ -17,6 +18,13 @@ export interface D1ProxyEnv {
 const d1ProxyWorker = {
   async fetch(request: Request, env: D1ProxyEnv): Promise<Response> {
     const client = new D1BindingClient(env.DB);
+    if (new URL(request.url).pathname.endsWith("/seed")) {
+      return handleD1SeedHttpRequest(request, {
+        database: env.DB,
+        sharedToken: env.D1_HTTP_TOKEN,
+        replayGuard: new D1BindingReplayGuard(client),
+      });
+    }
     return handleD1HttpRequest(request, {
       database: env.DB,
       sharedToken: env.D1_HTTP_TOKEN,

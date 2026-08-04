@@ -3,6 +3,8 @@ export * from "./types/operations";
 export type * from "./types/transport";
 export * from "./d1-operations";
 export * from "./d1-http";
+export * from "./http/seed";
+export * from "./catalog-write";
 export * from "./d1-better-auth-verification";
 export * from "./d1-replay-guard";
 export * from "./d1-runtime";

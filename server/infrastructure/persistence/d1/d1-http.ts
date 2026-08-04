@@ -2,6 +2,7 @@ import { z } from "zod";
 import { isD1Operation, type D1Operation } from "./d1-operations";
 import { D1BindingClient } from "./d1-operations";
 import type { D1DatabaseLike, D1Result } from "./types/binding";
+import { authorizeD1HttpRequest, jsonResponse } from "./http/security";
 
 /** Protocol/security bounds, intentionally code constants rather than secrets. */
 export const D1_HTTP_MAX_BATCH_OPERATIONS = 100;
@@ -49,77 +50,38 @@ export interface D1HttpProxyOptions {
   maxBodyBytes?: number;
 }
 
-function json(data: unknown, status = 200): Response {
-  return new Response(JSON.stringify(data), {
-    status,
-    headers: { "content-type": "application/json; charset=utf-8" },
-  });
-}
-
-async function tokenMatches(provided: string, expected: string): Promise<boolean> {
-  const encoder = new TextEncoder();
-  const [providedDigest, expectedDigest] = await Promise.all([
-    crypto.subtle.digest("SHA-256", encoder.encode(provided)),
-    crypto.subtle.digest("SHA-256", encoder.encode(expected)),
-  ]);
-  const left = new Uint8Array(providedDigest);
-  const right = new Uint8Array(expectedDigest);
-  let difference = 0;
-  for (let index = 0; index < left.length; index += 1) {
-    difference |= left[index] ^ right[index];
-  }
-  return difference === 0;
-}
-
-function authToken(request: Request): string | null {
-  const header = request.headers.get("authorization");
-  if (!header?.startsWith("Bearer ")) return null;
-  return header.slice("Bearer ".length);
-}
-
 export async function handleD1HttpRequest(
   request: Request,
   options: D1HttpProxyOptions,
 ): Promise<Response> {
-  if (request.method !== "POST") return json({ error: "method_not_allowed" }, 405);
-  const timestampRaw = request.headers.get("x-d1-timestamp");
-  const nonce = request.headers.get("x-d1-nonce");
-  const timestamp = timestampRaw ? Number(timestampRaw) : Number.NaN;
   const now = options.now?.() ?? Date.now();
-  const maxSkewMs = options.maxSkewMs ?? D1_HTTP_MAX_CLOCK_SKEW_MS;
-  if (!nonce || !Number.isFinite(timestamp) || Math.abs(now - timestamp) > maxSkewMs) {
-    return json({ error: "invalid_timestamp" }, 401);
-  }
-  if (!(await tokenMatches(authToken(request) ?? "", options.sharedToken))) {
-    return json({ error: "unauthorized" }, 401);
-  }
-  if (!(await options.replayGuard.accept(nonce, now + maxSkewMs))) {
-    return json({ error: "replay_detected" }, 409);
-  }
-
-  const contentLength = Number(request.headers.get("content-length") ?? 0);
-  if (contentLength > (options.maxBodyBytes ?? D1_HTTP_MAX_BODY_BYTES)) {
-    return json({ error: "payload_too_large" }, 413);
-  }
+  const securityResponse = await authorizeD1HttpRequest(request, {
+    sharedToken: options.sharedToken,
+    replayGuard: options.replayGuard,
+    now: () => now,
+    maxSkewMs: options.maxSkewMs ?? D1_HTTP_MAX_CLOCK_SKEW_MS,
+    maxBodyBytes: options.maxBodyBytes ?? D1_HTTP_MAX_BODY_BYTES,
+  });
+  if (securityResponse) return securityResponse;
   let body: unknown;
   try {
     body = await request.json();
   } catch {
-    return json({ error: "invalid_json" }, 400);
+    return jsonResponse({ error: "invalid_json" }, 400);
   }
   const parsed = requestSchema.safeParse(body);
-  if (!parsed.success) return json({ error: "invalid_operation" }, 400);
+  if (!parsed.success) return jsonResponse({ error: "invalid_operation" }, 400);
 
   try {
     const client = new D1BindingClient(options.database);
     if ("operation" in parsed.data) {
       const result = await client.execute(parsed.data.operation as D1Operation);
-      return json({ success: result.success, results: result.results, meta: result.meta });
+      return jsonResponse({ success: result.success, results: result.results, meta: result.meta });
     }
     const results = await client.batch(parsed.data.operations as D1Operation[]);
-    return json({ success: results.every((result) => result.success), results });
+    return jsonResponse({ success: results.every((result) => result.success), results });
   } catch {
-    return json({ error: "d1_operation_failed" }, 502);
+    return jsonResponse({ error: "d1_operation_failed" }, 502);
   }
 }
 
@@ -179,4 +141,3 @@ export class D1HttpClient {
     return body.results;
   }
 }
-

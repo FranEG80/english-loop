@@ -1,15 +1,15 @@
 import "server-only";
 import type { UnitOfWorkPort } from "@/core/shared/kernel";
+import type { D1TransactionCoordinator } from "./d1-transaction-coordinator";
 
 /**
- * D1's transactional primitive is `D1Database.batch()`. Repository writes
- * that are intrinsically composite use that primitive directly. The generic
- * core port remains available for read/modify/write use cases while the
- * request-scoped batch coordinator is introduced in the next persistence
- * slice.
+ * D1's transactional primitive is `D1Database.batch()`, coordinated through
+ * a request-local transport scope.
  */
 export class D1UnitOfWorkAdapter implements UnitOfWorkPort {
+  constructor(private readonly coordinator: D1TransactionCoordinator) {}
+
   async transaction<T>(work: () => Promise<T>): Promise<T> {
-    return work();
+    return this.coordinator.transaction(work);
   }
 }
