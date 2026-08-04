@@ -47,7 +47,7 @@ pnpm db:seed
 El seed es idempotente por `DATASET/VERSION + checksum`, registra cada intento
 en `DatasetImport` y solo mueve `CatalogPublication` cuando todas las
 versiones, relaciones, opciones, tokens, pares y respuestas esperadas se han
-escrito correctamente. `dataset:import` se mantiene como alias compatible.
+escrito correctamente.
 
 La aplicación elige entre los ficheros editoriales y el release publicado con
 `CONTENT_SOURCE=dataset|database`. En modo `database`, `relatedActivityIds`
