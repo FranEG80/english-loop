@@ -4,6 +4,13 @@ import { UnsupportedEvaluatorException } from "@/core/shared/exceptions";
 
 const CURLY_APOSTROPHES = /[\u2018\u2019\u02bc]/g;
 const TERMINAL_PUNCTUATION = /[.!?]+$/u;
+const DEFAULT_NORMALIZATION: NormalizationRules = {
+  trim: true,
+  collapseWhitespace: true,
+  caseSensitive: false,
+  ignoreTerminalPunctuation: true,
+  normaliseApostrophes: true,
+};
 
 function normalizeText(value: string, rules: NormalizationRules): string {
   let result = value.normalize("NFC");
@@ -13,6 +20,27 @@ function normalizeText(value: string, rules: NormalizationRules): string {
   if (rules.ignoreTerminalPunctuation) result = result.replace(TERMINAL_PUNCTUATION, "");
   if (!rules.caseSensitive) result = result.toLocaleLowerCase("en-GB");
   return result;
+}
+
+/** Devuelve la respuesta en la forma que usa el evaluador para compararla. */
+export function normalizeResponse(
+  evaluator: Evaluator,
+  response: ActivityResponseValue,
+): ActivityResponseValue {
+  switch (evaluator.strategy) {
+    case "exact_text":
+    case "one_of_texts":
+    case "per_gap":
+      return response.kind === "text"
+        ? { kind: "text", value: normalizeText(response.value, evaluator.normalization ?? DEFAULT_NORMALIZATION) }
+        : response;
+    case "unordered_set":
+      return response.kind === "multiple"
+        ? { kind: "multiple", value: response.value.map((value) => normalizeText(value, evaluator.normalization ?? DEFAULT_NORMALIZATION)) }
+        : response;
+    default:
+      return response;
+  }
 }
 
 function equivalent(left: string, right: string, rules: NormalizationRules): boolean {

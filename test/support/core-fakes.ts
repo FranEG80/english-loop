@@ -111,6 +111,7 @@ export const catalog: ActivityCatalogPort & LessonCatalogPort = {
     );
   },
   async getActivityById(id) { return [activity("activity-1"), activity("activity-2")].find((item) => item.id === id) ?? null; },
+  async getActivityByVersionId(versionId) { return [activity("activity-1"), activity("activity-2")].find((item) => item.versionId === versionId) ?? null; },
   async countActivitiesByNode(nodeId, level) { return this.countActivitiesByNodes([nodeId], level); },
   async countActivitiesByNodes(nodeIds, level) { return (await this.listActivities({ level })).filter((item) => item.taxonomyNodeIds.some((id) => nodeIds.includes(id))).length; },
 };

@@ -6,6 +6,7 @@ import { removeSavedLesson } from "@/core/account/application/use-cases/remove-s
 
 export const POST = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ lessonId: string }> }) => {
+    await compositionRoot.identity.requireActor();
     const { lessonId } = await context.params;
     await saveLesson(
       compositionRoot.identity,
@@ -19,6 +20,7 @@ export const POST = withErrorHandling(
 
 export const DELETE = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ lessonId: string }> }) => {
+    await compositionRoot.identity.requireActor();
     const { lessonId } = await context.params;
     await removeSavedLesson(
       compositionRoot.identity,

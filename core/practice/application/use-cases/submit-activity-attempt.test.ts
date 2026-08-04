@@ -4,6 +4,22 @@ import { PracticeRun } from "../../domain/practice-run";
 import { submitActivityAttempt } from "./submit-activity-attempt";
 
 describe("submitActivityAttempt", () => {
+  it("uses the version pinned by the run instead of the active activity", async () => {
+    const runs = new MemoryRuns();
+    const run = PracticeRun.create({ id: "versioned-submit", userId: actor.userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["activity-1"], activityVersionIds: ["activity-1-v1"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: clock.nowIso() });
+    await runs.save(run);
+    const catalog = {
+      getActivityById: async () => ({ ...activity("activity-1"), versionId: "activity-1-v2", evaluator: { strategy: "boolean" as const, correct: true } }),
+      getActivityByVersionId: async () => ({ ...activity("activity-1"), versionId: "activity-1-v1", evaluator: { strategy: "boolean" as const, correct: false } }),
+      listActivities: async () => [],
+      countActivitiesByNode: async () => 1,
+      countActivitiesByNodes: async () => 1,
+    };
+    const result = await submitActivityAttempt(identity, new MemoryAttempts(), runs, catalog, ids, clock, "1.0.0", { runId: run.id, activityId: "activity-1", idempotencyKey: "versioned-submit-key", response: { kind: "boolean", value: true } });
+    expect(result.attempt.isCorrect).toBe(false);
+    expect(result.attempt.activityVersionId).toBe("activity-1-v1");
+  });
+
   it("evaluates, persists and returns the same attempt on retry", async () => {
     const runs = new MemoryRuns();
     const attempts = new MemoryAttempts();

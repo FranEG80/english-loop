@@ -6,6 +6,7 @@ import { toDailySessionDto } from "@/core/learning/application/mappers/daily-ses
 
 export const POST = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ sessionId: string }> }) => {
+    await compositionRoot.identity.requireActor();
     const { sessionId } = await context.params;
     const session = await completeDailySession(
       compositionRoot.identity,

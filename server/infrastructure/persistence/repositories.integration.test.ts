@@ -26,7 +26,11 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
   let userId: string;
 
   beforeAll(async () => {
-    prisma = new PrismaClient({ adapter: new PrismaBetterSqlite3({ url: process.env.TEST_DATABASE_URL ?? "file:./test-repositories.db" }) });
+    const databaseUrl = process.env.TEST_DATABASE_URL;
+    if (!databaseUrl) {
+      throw new Error("TEST_DATABASE_URL must point to an isolated migrated database for repository integration tests");
+    }
+    prisma = new PrismaClient({ adapter: new PrismaBetterSqlite3({ url: databaseUrl }) });
     await prisma.rateLimitBucket.deleteMany();
     await prisma.catalogPublication.deleteMany();
     await prisma.practiceRunItem.deleteMany();
@@ -94,7 +98,12 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
     const release = await prisma.catalogRelease.create({ data: { id: "release-integration", datasetVersion: "v1", checksum: "catalog-checksum", status: "published", publishedAt: new Date("2026-08-03T00:00:00.000Z") } });
     await prisma.catalogPublication.create({ data: { id: "active", releaseId: release.id } });
     await prisma.activityVersion.create({ data: { id: "activity-version-integration", releaseId: release.id, activityId: "activity-1", checksum: "activity-checksum", activityTypeCode: "choice", evaluatorStrategyCode: "single_option", levelCode: "B1", category: "grammar", topic: "topic", subtopic: "topic", difficulty: 1, instructions: "Choose", prompt: "Prompt", passage: null, explanation: "Explanation", tags: "[]", lessonIds: "[]", estimatedSeconds: 10, evaluatorData: "{}", statusCode: "published" } });
-    const publishedRun = PracticeRun.create({ id: "run-published-version", userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["activity-1"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: "2026-08-03T00:00:00.000Z" });
+    const publishedRun = PracticeRun.create({ id: "run-published-version", userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["activity-1"], activityVersionIds: ["activity-version-integration"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: "2026-08-03T00:00:00.000Z" });
+    await runs.save(publishedRun);
+    expect((await prisma.practiceRunItem.findUnique({ where: { practiceRunId_position: { practiceRunId: publishedRun.id, position: 0 } } }))?.activityVersionId).toBe("activity-version-integration");
+    const newerRelease = await prisma.catalogRelease.create({ data: { id: "release-integration-v2", datasetVersion: "v2", checksum: "catalog-checksum-v2", status: "published", publishedAt: new Date("2026-08-04T00:00:00.000Z") } });
+    await prisma.activityVersion.create({ data: { id: "activity-version-integration-v2", releaseId: newerRelease.id, activityId: "activity-1", checksum: "activity-checksum-v2", activityTypeCode: "choice", evaluatorStrategyCode: "single_option", levelCode: "B1", category: "grammar", topic: "topic", subtopic: "topic", difficulty: 1, instructions: "Choose", prompt: "Prompt v2", passage: null, explanation: "Explanation v2", tags: "[]", lessonIds: "[]", estimatedSeconds: 10, evaluatorData: "{}", statusCode: "published" } });
+    await prisma.catalogPublication.update({ where: { id: "active" }, data: { releaseId: newerRelease.id } });
     await runs.save(publishedRun);
     expect((await prisma.practiceRunItem.findUnique({ where: { practiceRunId_position: { practiceRunId: publishedRun.id, position: 0 } } }))?.activityVersionId).toBe("activity-version-integration");
     const statusRun = PracticeRun.create({ id: "run-statuses", userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 2 }, activityIds: ["activity-1", "activity-2"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: "2026-08-03T00:00:00.000Z" });

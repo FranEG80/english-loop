@@ -1,7 +1,8 @@
 /** Estado de publicación de un elemento de contenido. */
-export type ContentStatus = "draft" | "reviewed" | "published";
+export type ContentStatus = "draft" | "reviewed" | "published" | "retired";
 
 export const PUBLISHED_CONTENT_STATUS = "published" as const;
+export const RETIRED_CONTENT_STATUS = "retired" as const;
 export const ACTIVE_CATALOG_PUBLICATION_ID = "active";
 export const UNKNOWN_DATASET_VERSION = "unknown";
 

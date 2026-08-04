@@ -8,6 +8,7 @@ import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";
 
 export const POST = withErrorHandling(
   async (request: Request, context: { params: Promise<{ runId: string }> }) => {
+    await compositionRoot.identity.requireActor();
     const { runId } = await context.params;
     const body = parseRequest(attemptBodySchema.safeParse(await request.json()));
 
@@ -55,6 +56,7 @@ export const POST = withErrorHandling(
     const feedback = await getAttemptFeedback(
       compositionRoot.getActivityCatalog(),
       attempt,
+      compositionRoot.reviewRepository,
     );
     return NextResponse.json(feedback);
   },

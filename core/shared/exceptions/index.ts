@@ -17,3 +17,5 @@ export * from "./infrastructure-exception";
 export * from "./persistence-exception";
 export * from "./dataset-unavailable-exception";
 export * from "./authentication-provider-exception";
+export * from "./request-payload-too-large-exception";
+export * from "./response-payload-too-large-exception";

@@ -10,8 +10,8 @@ const authQuery = { model: "user" as const, where: [{ field: "email", value: "u@
 
 const validOperations: D1Operation[] = [
   { name: "health" }, { name: "activeCatalogMetadata" }, { name: "catalogTaxonomy" },
-  { name: "activityById", activityId: "a1" }, { name: "catalogLessons", level: "B1", category: "grammar" },
-  { name: "catalogActivities", taxonomyNodeId: "n1", level: "B1", lessonIds: ["l1"] },
+  { name: "activityById", activityId: "a1" }, { name: "activityByVersionId", activityVersionId: "a1-v1" }, { name: "catalogLessons", level: "B1", category: "grammar", cursor: "opaque", limit: 10 },
+  { name: "catalogActivities", taxonomyNodeId: "n1", level: "B1", lessonIds: ["l1"], cursor: "opaque", limit: 10 },
   { name: "catalogCounts", kind: "activities" }, { name: "userSettingsGet", userId: "u1" }, { name: "userSettingsSave", snapshot },
   { name: "savedLessonsList", userId: "u1" }, { name: "savedLessonGet", userId: "u1", lessonId: "l1" },
   { name: "savedLessonSave", snapshot: { userId: "u1", lessonId: "l1", savedAt: "now" } }, { name: "savedLessonDelete", userId: "u1", lessonId: "l1" },
@@ -43,7 +43,12 @@ describe("D1 operation envelope validation", () => {
     const invalid = [
       null, [], {}, { name: "missing" },
       { name: "activityById", activityId: "" },
+      { name: "activityByVersionId", activityVersionId: "" },
       { name: "catalogActivities", lessonIds: [1] },
+      { name: "catalogLessons", cursor: "", limit: 1 },
+      { name: "catalogActivities", cursor: "opaque", limit: 0 },
+      { name: "catalogLessons", cursor: 1, limit: 1 },
+      { name: "catalogActivities", cursor: "opaque", limit: "1" },
       { name: "catalogCounts", kind: "unknown" },
       { name: "userSettingsGet", userId: "" },
       { name: "userSettingsSave", snapshot: { ...snapshot, reducedMotion: "false" } },

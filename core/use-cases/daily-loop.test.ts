@@ -9,7 +9,7 @@ const session: DailySessionDto = { id: "session-1", date: "2026-08-04", status: 
 
 describe("getDailyLoop", () => {
   it("loads the recommended lesson and filters missing activities", async () => {
-    const daily: DailySessionPort = { getTodaySession: async () => session, startDailyPractice: async () => session, submitDailyAttempt: async () => ({ attemptId: "a", activityId: "a1", isCorrect: true, correctAnswer: "true", explanation: "", submittedAt: "now" }), completeDailySession: async () => session };
+    const daily: DailySessionPort = { getTodaySession: async () => session, startDailyPractice: async () => session, submitDailyAttempt: async () => ({ attemptId: "a", activityId: "a1", isCorrect: true, correctAnswer: "true", normalizedResponse: { kind: "boolean", value: true }, explanation: "", nextReviewAt: null, submittedAt: "now" }), completeDailySession: async () => session };
     const content: LearningContentPort = { listLessons: async () => [], getLessonById: async (id) => id === lesson.id ? lesson : null, listActivities: async () => [], getActivityById: async (id) => id === activity.id ? activity : null, getTaxonomyTree: async () => [] };
     await expect(getDailyLoop(daily, content, "UTC")).resolves.toEqual({ dailySession: session, lesson, activities: [activity] });
   });

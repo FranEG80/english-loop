@@ -5,11 +5,12 @@ import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
 import type { CatalogSeedInput } from "@/core/content/ports/catalog-write-port";
 import { PrismaCatalogWriteAdapter } from "./prisma-catalog-write-adapter";
 import { PrismaCatalogAdapter } from "@/adapters/content/prisma-catalog-adapter";
+import { RETIRED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 
 const enabled = process.env.RUN_DB_INTEGRATION === "1";
 const describeDatabase = enabled ? describe : describe.skip;
 
-function seedInput(checksum: string, lessonIds = ["lesson-1"]): CatalogSeedInput {
+function seedInput(checksum: string, lessonIds = ["lesson-1"], status: CatalogSeedInput["activities"][number]["status"] = "published"): CatalogSeedInput {
   return {
     datasetVersion: "integration-v1",
     checksum,
@@ -37,7 +38,7 @@ function seedInput(checksum: string, lessonIds = ["lesson-1"]): CatalogSeedInput
       tags: [],
       difficulty: 1,
       contentVersion: 1,
-      status: "published",
+      status,
     }],
     activities: [{
       id: "activity-1",
@@ -64,7 +65,7 @@ function seedInput(checksum: string, lessonIds = ["lesson-1"]): CatalogSeedInput
       tokens: [],
       pairs: [],
       expectedAnswers: [{ gapId: null, answer: "correct", position: 0 }],
-      status: "published",
+      status,
     }],
   };
 }
@@ -73,9 +74,13 @@ describeDatabase("normalized catalog seed integration", () => {
   let prisma: PrismaClient;
 
   beforeAll(async () => {
+    const databaseUrl = process.env.TEST_DATABASE_URL;
+    if (!databaseUrl) {
+      throw new Error("TEST_DATABASE_URL must point to an isolated migrated database for catalog integration tests");
+    }
     prisma = new PrismaClient({
       adapter: new PrismaBetterSqlite3({
-        url: process.env.TEST_DATABASE_URL ?? "file:./test-catalog.db",
+        url: databaseUrl,
       }),
     });
     await prisma.catalogPublication.deleteMany();
@@ -128,5 +133,15 @@ describeDatabase("normalized catalog seed integration", () => {
     const after = await prisma.catalogPublication.findUnique({ where: { id: "active" } });
     expect(after?.releaseId).toBe(before?.releaseId);
     expect(await prisma.activityVersion.count({ where: { releaseId: { not: before?.releaseId ?? "" } } })).toBe(0);
+  });
+
+  it("retires a published version without deleting its audit history", async () => {
+    const writer = new PrismaCatalogWriteAdapter(prisma);
+    const retired = await writer.seedCatalog(seedInput("checksum-retired", ["lesson-1"], RETIRED_CONTENT_STATUS));
+    expect(retired.status).toBe("published");
+    expect(await prisma.activityVersion.count({ where: { activityId: "activity-1" } })).toBe(2);
+    expect(await prisma.activityVersion.findFirst({ where: { releaseId: retired.releaseId!, activityId: "activity-1" } })).toMatchObject({ statusCode: RETIRED_CONTENT_STATUS });
+    const catalog = new PrismaCatalogAdapter(prisma);
+    await expect(catalog.getActivityById("activity-1")).resolves.toBeNull();
   });
 });

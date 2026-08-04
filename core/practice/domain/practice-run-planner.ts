@@ -20,6 +20,8 @@ export interface PlanPracticeRunInput {
 
 export interface PlannedActivities {
   activityIds: string[];
+  activityVersionIds: Array<string | null>;
+  activitySnapshots: Activity[];
   /** IDs de subtemas cubiertos. */
   coveredSubtopicIds: string[];
 }
@@ -66,6 +68,8 @@ export class PracticeRunPlanner {
 
     return {
       activityIds: selected.map((activity) => activity.id),
+      activityVersionIds: selected.map((activity) => activity.versionId ?? null),
+      activitySnapshots: selected,
       coveredSubtopicIds: this.coveredSubtopics(selected),
     };
   }

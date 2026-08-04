@@ -42,9 +42,17 @@ export function prepareCompositeD1Operation(
     statements.push(bind(database, `INSERT INTO PracticeRunItem
         (id, practiceRunId, position, lessonId, activityId, activityVersionId, origin,
          status, isRepetition, repetitionOfItemId)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      VALUES (?, ?, ?, ?, ?, COALESCE(?, (
+        SELECT av.id
+        FROM ActivityVersion av
+        INNER JOIN CatalogRelease cr ON cr.id = av.releaseId
+        WHERE av.activityId = ? AND cr.datasetVersion = ?
+          AND cr.status = 'published' AND av.statusCode = 'published'
+        ORDER BY cr.publishedAt DESC LIMIT 1
+      )), ?, ?, ?, ?)`,
       [`${s.id}:${item.position}`, s.id, item.position, item.lessonId, item.activityId,
-        item.activityVersionId, item.origin, item.status, item.isRepetition ? 1 : 0, item.repetitionOfItemId], true));
+        item.activityVersionId, item.activityId, s.datasetVersion, item.origin, item.status,
+        item.isRepetition ? 1 : 0, item.repetitionOfItemId], true));
   }
   return statements;
 }

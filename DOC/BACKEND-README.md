@@ -8,6 +8,18 @@ El plan de trabajo está en [`BACKEND-PLAN.md`](./BACKEND-PLAN.md). Este
 documento explica cómo está organizado, cómo se ejecuta y qué partes están
 listas o siguen en evolución.
 
+## Estado actual
+
+Está terminado el backend funcional local: catálogo desde `DATASET/` o desde
+el catálogo relacional publicado, sesiones, práctica, corrección determinista,
+progreso, repaso, API, Server Actions, SQLite y la persistencia D1 por binding
+o HTTP. El estado comprobable de cada requisito está en
+[`BACKEND-PLAN.md`](./BACKEND-PLAN.md).
+
+Siguen como preparación de producción los contract tests contra PostgreSQL, la
+expiración E2E con reloj controlable y las métricas pedagógicas agregadas. El
+runner E2E autenticado básico sí está implementado y usa una SQLite aislada.
+
 ## Arquitectura
 
 ```text
@@ -40,6 +52,15 @@ Las Route Handlers y las Server Actions comparten los mismos casos de uso.
 No se hacen peticiones HTTP internas desde Server Components o Server
 Actions.
 
+### Frontera `server-only`
+
+Los módulos que pueden entrar en el bundle de Next y contienen secretos,
+Prisma, Better Auth o acceso a headers importan `server-only`. Los módulos
+runtime-neutrales compartidos por el CLI de seed y por Workers (por ejemplo,
+operaciones D1 y el núcleo del writer Prisma) no lo importan deliberadamente:
+esa separación permite reutilizar la lógica sin hacer que un script o un
+Worker dependa de la resolución de Next.
+
 ## Fuente de contenido y catálogo relacional
 
 `DATASET/` es la fuente editorial. Puede leerse directamente con
@@ -56,7 +77,16 @@ El catálogo relacional separa identidades estables de versiones inmutables:
 - Las relaciones, opciones, tokens, pares y respuestas esperadas están
   normalizadas.
 - `ActivityAttempt` conserva el `activityVersionId` histórico.
-- `PracticeRunItem` conserva la actividad original y sus repeticiones.
+- `PracticeRunItem` conserva la actividad original, su `activityVersionId` y
+  sus repeticiones; la corrección y el feedback resuelven esa versión cuando
+  existe, aunque todavía no se duplica el DTO/evaluador dentro del run.
+
+Los identificadores editoriales (`lessonId`, `activityId` y
+`taxonomyNodeId`) se mantienen como referencias estables del catálogo, no como
+foreign keys obligatorias en los modelos de progreso. Esto permite usar
+`CONTENT_SOURCE=dataset` sin exigir que el contenido haya sido importado a la
+misma base; las relaciones internas y todas las relaciones de versiones sí
+están protegidas por foreign keys.
 
 Los lectores solo siguen el puntero `active` y aceptan releases con estado
 `published`. Un release `preparing` o `failed` nunca se expone a la práctica.
@@ -77,6 +107,8 @@ El fichero [.env.example](../.env.example) contiene una plantilla comentada.
 | `D1_TRANSPORT` | `binding`, `http` | Solo aplica cuando `DATABASE_PROVIDER=d1`. |
 | `D1_HTTP_URL` | URL HTTPS | Endpoint del Worker proxy para Node/Vercel. |
 | `D1_HTTP_TOKEN` | secreto | Token compartido entre Vercel y el Worker. |
+| `PUBLIC_PAGE_DEFAULT_LIMIT` | entero positivo | Tamaño por defecto de los listados públicos. |
+| `PUBLIC_PAGE_MAX_LIMIT` | entero positivo | Límite máximo aceptado por petición. |
 | `BETTER_AUTH_SECRET` | secreto | Firma y protección de sesiones. Obligatorio en producción. |
 | `BETTER_AUTH_URL` | URL | URL pública de Better Auth. |
 
@@ -90,14 +122,42 @@ ATTEMPT_RATE_LIMIT_WINDOW_MS=60000
 ATTEMPT_RATE_LIMIT_MAX=30
 AUTH_RATE_LIMIT_WINDOW_MS=60000
 AUTH_RATE_LIMIT_MAX=10
+PUBLIC_PAGE_DEFAULT_LIMIT=25
+PUBLIC_PAGE_MAX_LIMIT=100
+HTTP_MAX_REQUEST_BODY_BYTES=1048576
+HTTP_MAX_RESPONSE_BODY_BYTES=1048576
 ```
 
 Se validan como enteros positivos. Estas variables permiten ajustar una
 instalación sin cambiar el código, pero no modifican las reglas pedagógicas.
 
+`withErrorHandling` rechaza cuerpos de petición que superen el límite incluso
+cuando llegan en streaming y verifica el tamaño de las respuestas antes de
+entregarlas. Un request demasiado grande devuelve `413`; una respuesta interna
+demasiado grande se registra como error de infraestructura sin exponer su
+contenido.
+
+### Paginación de los listados públicos
+
+`GET /api/v1/lessons` y `GET /api/v1/activities` devuelven un envelope estable:
+
+```json
+{
+  "items": [],
+  "nextCursor": "...",
+  "hasMore": true
+}
+```
+
+`limit` es opcional y queda limitado por `PUBLIC_PAGE_MAX_LIMIT`. Para obtener
+la siguiente página se reenvía el `nextCursor` como parámetro `cursor`. El
+cursor es opaco, versionado y se basa en el ID editorial estable; los
+adaptadores filesystem, Prisma y D1 aplican la misma ordenación ascendente y
+semántica keyset. Los planificadores internos siguen usando sus consultas
+completas y no dependen de este envelope HTTP.
+
 ## Matriz de proveedores
 
-| Proveedor | Adaptador actual | Uso recomendado | Estado |
 | --- | --- | --- | --- |
 | SQLite | `@prisma/adapter-better-sqlite3` | Desarrollo local y tests de integración | Disponible |
 | PostgreSQL | `@prisma/adapter-pg` | Despliegues Node/Vercel convencionales | Adaptador disponible |
@@ -218,7 +278,8 @@ Estas reglas son parte del dominio y no deben trasladarse al `.env`.
 ## Qué va al `.env` y qué queda en código
 
 Va al `.env` lo que depende del despliegue: proveedor, URL, secretos,
-duraciones de sesión y límites operativos.
+duraciones de sesión y límites operativos, incluidos los límites de paginación
+HTTP.
 
 Queda versionado como constante lo que define el contrato del producto o del
 protocolo: tamaños de sesión `5/10/15/20`, estados de publicación, publicación
@@ -236,6 +297,7 @@ pnpm lint
 pnpm arch:check
 pnpm test:unit
 pnpm test:integration:catalog
+pnpm test:e2e
 ```
 
 Las pruebas relevantes incluyen:
@@ -245,7 +307,17 @@ Las pruebas relevantes incluyen:
 - configuración de proveedores y rechazo del fallback D1 → SQLite;
 - operaciones D1 binding/HTTP, batches, autenticación y anti-replay;
 - reglas de repetición, score y repaso;
+- límites HTTP y métricas agregadas de latencia/errores por endpoint;
+- registro, login, logout y acceso autenticado contra una base E2E aislada;
 - límites arquitectónicos con `dependency-cruiser`.
+
+La configuración de Vitest excluye módulos declarativos `types/`, `type.ts` y
+los contratos de puertos del cálculo ejecutable. Los umbrales globales son
+`80%` para statements, lines y functions, y `90%` para branches. La última
+ejecución global completa pasó con `96.15%` de statements, `90.73%` de
+branches, `96.46%` de functions y `97.63%` de lines. La validación directa del
+dataset sigue reportando incidencias de contenido presentes en el estado
+actual de `DATASET/`; no se han ocultado excluyéndola de la aplicación.
 
 Para cambios de comportamiento es obligatorio añadir la prueba en el mismo
 cambio. No se debe usar `skip` para ocultar una regresión.

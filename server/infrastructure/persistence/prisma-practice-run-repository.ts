@@ -2,10 +2,7 @@ import "server-only";
 import type { PrismaClient } from "@/generated/prisma/client";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import { PracticeRun } from "@/core/practice/domain/practice-run";
-import {
-  ACTIVE_CATALOG_PUBLICATION_ID,
-  PUBLISHED_CONTENT_STATUS,
-} from "@/core/content/domain/content-version";
+import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 import { getPrismaClient } from "../database/prisma-transaction-context";
 
 interface ScopeSnapshot {
@@ -29,7 +26,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
         dailySession: { select: { id: true } },
         items: {
           orderBy: { position: "asc" },
-          select: { activityId: true, isRepetition: true },
+          select: { activityId: true, activityVersionId: true, isRepetition: true },
         },
       },
     });
@@ -47,6 +44,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
         requestedCount: scope.requestedCount,
       },
       activityIds: row.items.map((item) => item.activityId),
+      activityVersionIds: row.items.map((item) => item.activityVersionId),
       repetitionActivityIds: row.items.filter((item) => item.isRepetition).map((item) => item.activityId),
       originalActivityCount: row.originalActivityCount || row.items.filter((item) => !item.isRepetition).length,
       currentIndex: row.currentIndex,
@@ -88,16 +86,25 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
       },
     });
 
-    const publication = await db.catalogPublication.findUnique({
-      where: { id: ACTIVE_CATALOG_PUBLICATION_ID },
-      select: { releaseId: true },
+    // A run is a server snapshot. Never rebind its items to the currently
+    // active release after a newer dataset has been published.
+    const release = await db.catalogRelease.findFirst({
+      where: {
+        datasetVersion: snapshot.datasetVersion,
+        status: PUBLISHED_CONTENT_STATUS,
+      },
+      orderBy: { publishedAt: "desc" },
+      select: { id: true },
     });
     for (let position = 0; position < snapshot.activityIds.length; position += 1) {
       const activityId = snapshot.activityIds[position];
       const isRepetition = position >= originalActivityCount;
-      const activityVersion = publication
+      const pinnedActivityVersionId = snapshot.activityVersionIds?.[position] ?? null;
+      const activityVersion = pinnedActivityVersionId
+        ? { id: pinnedActivityVersionId }
+        : release
         ? await db.activityVersion.findFirst({
-            where: { releaseId: publication.releaseId, activityId, statusCode: PUBLISHED_CONTENT_STATUS },
+            where: { releaseId: release.id, activityId, statusCode: PUBLISHED_CONTENT_STATUS },
             select: { id: true },
           })
         : null;

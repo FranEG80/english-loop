@@ -54,7 +54,7 @@ export async function startDailyPractice(
     const settings = await userSettingsRepository.findByUserId(actor.userId);
     const level = settings?.activeLevels[0] ?? actor.activeLevels[0] ?? DEFAULT_CEFR_LEVEL;
     const activityCount = settings?.dailyGoalActivities ?? DEFAULT_DAILY_GOAL_ACTIVITIES;
-    const activityIds = await planner.plan(activityCatalog, {
+    const planned = await planner.plan(activityCatalog, {
       lessonIds: session.lessons.map((lesson) => lesson.lessonId),
       level,
       count: activityCount,
@@ -70,7 +70,9 @@ export async function startDailyPractice(
         descendantIds: [],
         requestedCount: activityCount as SessionSize,
       },
-      activityIds,
+      activityIds: planned.activityIds,
+      activityVersionIds: planned.activityVersionIds,
+      activitySnapshots: planned.activitySnapshots,
       currentIndex: 0,
       status: "in_progress",
       datasetVersion,

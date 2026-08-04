@@ -12,14 +12,17 @@ import type { Lesson } from "@/core/content/domain/types/lesson";
 import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
 import type {
   ActivityCatalogPort,
+  ActivityCatalogPagePort,
   ActivityListFilters,
   CatalogMetadata,
   CatalogMetadataPort,
   LessonCatalogPort,
+  LessonCatalogPagePort,
   LessonListFilters,
   TaxonomyCatalogPort,
 } from "@/core/content/ports/catalog-ports";
 import type { CefrLevel } from "@/core/models/level";
+import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import { getPrismaClient } from "@/server/infrastructure/database/prisma-transaction-context";
 import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson } from "./prisma-catalog-mappers";
@@ -29,7 +32,7 @@ import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson } from "./prisma-c
  * active publication pointer, so an in-progress or failed seed is invisible.
  */
 export class PrismaCatalogAdapter
-  implements LessonCatalogPort, ActivityCatalogPort, TaxonomyCatalogPort, CatalogMetadataPort
+  implements LessonCatalogPort, LessonCatalogPagePort, ActivityCatalogPort, ActivityCatalogPagePort, TaxonomyCatalogPort, CatalogMetadataPort
 {
   constructor(private readonly client: PrismaClient) {}
 
@@ -90,6 +93,33 @@ export class PrismaCatalogAdapter
     return rows.map((row) => mapPrismaLesson(row, related.get(row.lessonId) ?? []));
   }
 
+  async listLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: CursorPaginationParams,
+  ): Promise<CursorPage<Lesson>> {
+    assertCursorPageLimit(pagination.limit);
+    const releaseId = await this.requireActiveReleaseId();
+    const cursor = pagination.cursor ? decodeCursor(pagination.cursor) : undefined;
+    const where: Prisma.LessonVersionWhereInput = {
+      releaseId,
+      statusCode: PUBLISHED_CONTENT_STATUS,
+      ...(filters?.level ? { levelCode: filters.level } : {}),
+      ...(filters?.category ? { category: filters.category } : {}),
+      ...(cursor ? { lessonId: { gt: cursor } } : {}),
+    };
+    const [rows, related] = await Promise.all([
+      this.db().lessonVersion.findMany({ where, take: pagination.limit + 1, orderBy: { lessonId: "asc" } }),
+      this.relatedActivitiesByLesson(releaseId),
+    ]);
+    const hasMore = rows.length > pagination.limit;
+    const pageRows = hasMore ? rows.slice(0, pagination.limit) : rows;
+    return {
+      items: pageRows.map((row) => mapPrismaLesson(row, related.get(row.lessonId) ?? [])),
+      hasMore,
+      nextCursor: hasMore ? encodeCursor(pageRows.at(-1)!.lessonId) : null,
+    };
+  }
+
   async getLessonById(lessonId: string): Promise<Lesson | null> {
     const releaseId = await this.requireActiveReleaseId();
     const [row, related] = await Promise.all([
@@ -137,12 +167,45 @@ export class PrismaCatalogAdapter
     return rows.map((row) => mapPrismaActivity(row));
   }
 
+  async listActivitiesPage(
+    filters: ActivityListFilters | undefined,
+    pagination: CursorPaginationParams,
+  ): Promise<CursorPage<Activity>> {
+    assertCursorPageLimit(pagination.limit);
+    const releaseId = await this.requireActiveReleaseId();
+    const cursor = pagination.cursor ? decodeCursor(pagination.cursor) : undefined;
+    const rows = await this.db().activityVersion.findMany({
+      where: {
+        ...this.activityWhere(releaseId, filters),
+        ...(cursor ? { activityId: { gt: cursor } } : {}),
+      },
+      include: this.activityInclude,
+      take: pagination.limit + 1,
+      orderBy: { activityId: "asc" },
+    });
+    const hasMore = rows.length > pagination.limit;
+    const pageRows = hasMore ? rows.slice(0, pagination.limit) : rows;
+    return {
+      items: pageRows.map((row) => mapPrismaActivity(row)),
+      hasMore,
+      nextCursor: hasMore ? encodeCursor(pageRows.at(-1)!.activityId) : null,
+    };
+  }
+
   async getActivityById(activityId: string): Promise<Activity | null> {
     const releaseId = await this.requireActiveReleaseId();
     const row = await this.db().activityVersion.findFirst({
       where: { releaseId, activityId, statusCode: PUBLISHED_CONTENT_STATUS },
       include: this.activityInclude,
       orderBy: { id: "desc" },
+    });
+    return row ? mapPrismaActivity(row) : null;
+  }
+
+  async getActivityByVersionId(activityVersionId: string): Promise<Activity | null> {
+    const row = await this.db().activityVersion.findFirst({
+      where: { id: activityVersionId, statusCode: PUBLISHED_CONTENT_STATUS },
+      include: this.activityInclude,
     });
     return row ? mapPrismaActivity(row) : null;
   }

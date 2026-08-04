@@ -4,7 +4,8 @@ import path from "node:path";
 import matter from "gray-matter";
 import type { Lesson } from "@/core/content/domain/types/lesson";
 import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
-import type { LessonListFilters, LessonCatalogPort } from "@/core/content/ports/catalog-ports";
+import type { LessonListFilters, LessonCatalogPagePort, LessonCatalogPort } from "@/core/content/ports/catalog-ports";
+import { paginateSortedItems, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 
 interface LessonIndexEntry {
@@ -55,7 +56,7 @@ interface ActivityIndex {
  * Adaptador de lecciones que lee `DATASET/catalog/lesson-index.json` y los
  * archivos markdown. Cachea el índice una vez por proceso.
  */
-export class FileLessonCatalogAdapter implements LessonCatalogPort {
+export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalogPagePort {
   private readonly datasetRoot: string;
   private readonly indexPath: string;
   private indexPromise: Promise<LessonIndexEntry[]> | null = null;
@@ -167,6 +168,26 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort {
       return true;
     });
     return Promise.all(filtered.map((entry) => this.readLesson(entry, related.get(entry.id) ?? [])));
+  }
+
+  async listLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: CursorPaginationParams,
+  ): Promise<CursorPage<Lesson>> {
+    const entries = await this.loadIndex();
+    const related = await this.relatedActivities();
+    const filtered = entries
+      .filter((entry) => {
+        if (filters?.level && entry.level !== filters.level) return false;
+        if (filters?.category && entry.category !== filters.category) return false;
+        return true;
+      })
+      .sort((left, right) => left.id.localeCompare(right.id));
+    const page = paginateSortedItems(filtered, pagination, (entry) => entry.id);
+    return {
+      ...page,
+      items: await Promise.all(page.items.map((entry) => this.readLesson(entry, related.get(entry.id) ?? []))),
+    };
   }
 
   async getLessonById(lessonId: string): Promise<Lesson | null> {

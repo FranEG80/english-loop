@@ -1,4 +1,6 @@
 import { PracticeRunPlanner } from "@/core/practice/domain/practice-run-planner";
+import { paginateSortedItems } from "@/core/shared/kernel";
+import type { ActivityListFilters, LessonListFilters } from "@/core/content/ports/catalog-ports";
 import { DailyPracticePlanner } from "@/core/learning/domain/daily-practice-planner";
 import { DailySessionPlanner } from "@/core/learning/domain/daily-session-planner";
 import {
@@ -33,6 +35,14 @@ function createActivityCatalog() {
           (!filters?.level || filters.level === "both" || item.level === filters.level) &&
           (!filters?.lessonIds || item.lessonIds.some((id) => filters.lessonIds?.includes(id))),
       );
+    },
+    async listLessonsPage(filters: LessonListFilters | undefined, pagination: { cursor?: string; limit: number }) {
+      const lessons = await this.listLessons(filters);
+      return paginateSortedItems([...lessons].sort((left, right) => left.id.localeCompare(right.id)), pagination, (item) => item.id);
+    },
+    async listActivitiesPage(filters: ActivityListFilters | undefined, pagination: { cursor?: string; limit: number }) {
+      const listed = await this.listActivities(filters);
+      return paginateSortedItems([...listed].sort((left, right) => left.id.localeCompare(right.id)), pagination, (item) => item.id);
     },
     async getActivityById(id: string) {
       return activities.find((item) => item.id === id) ?? null;

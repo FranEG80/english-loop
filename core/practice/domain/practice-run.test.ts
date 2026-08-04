@@ -36,6 +36,22 @@ describe("PracticeRun", () => {
     expect(run.currentActivityId).toBe("a1");
   });
 
+  it("keeps the version aligned with each activity, including repetitions", () => {
+    const run = makeRun({ activityVersionIds: ["a1-v1", "a2-v1"] });
+    expect(run.currentActivityVersionId).toBe("a1-v1");
+    expect(run.scheduleRepetition("a1", "a1-v1")).toBe(true);
+    expect(run.activityVersionIds).toEqual(["a1-v1", "a2-v1", "a1-v1"]);
+    run.advance();
+    expect(run.currentActivityVersionId).toBe("a2-v1");
+    const snapshot = run.toSnapshot();
+    snapshot.activityVersionIds?.push("mutated");
+    expect(run.activityVersionIds).toEqual(["a1-v1", "a2-v1", "a1-v1"]);
+  });
+
+  it("rejects a snapshot whose versions do not match its activities", () => {
+    expect(() => makeRun({ activityVersionIds: ["a1-v1"] })).toThrow(InvariantViolationException);
+  });
+
   it("advances through activities and completes", () => {
     const run = makeRun();
     expect(run.advance()).toBe(false);
@@ -44,6 +60,7 @@ describe("PracticeRun", () => {
     expect(run.advance()).toBe(true);
     expect(run.status).toBe("completed");
     expect(run.currentActivityId).toBeNull();
+    expect(run.currentActivityVersionId).toBeNull();
   });
 
   it("cannot advance a completed run", () => {

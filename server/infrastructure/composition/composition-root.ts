@@ -13,6 +13,7 @@ import { DailySessionPlanner } from "@/core/learning/domain/daily-session-planne
 import { DailyPracticePlanner } from "@/core/learning/domain/daily-practice-planner";
 import { SystemRandomSource } from "@/server/infrastructure/random/system-random-source";
 import { StructuredLogger } from "@/server/infrastructure/logging/structured-logger";
+import { AggregatedMetrics } from "@/server/infrastructure/observability/aggregated-metrics";
 import { StructuredDomainEventDispatcher } from "@/server/infrastructure/events/structured-domain-event-dispatcher";
 import { SystemClock } from "@/server/infrastructure/clock/system-clock";
 import { UuidIdGenerator } from "@/server/infrastructure/id/uuid-id-generator";
@@ -31,7 +32,9 @@ import type { LessonProgressRepository } from "@/core/learning/ports/lesson-prog
 import type { D1RuntimeOptions } from "@/server/infrastructure/persistence/d1/d1-runtime";
 import type {
   ActivityCatalogPort,
+  ActivityCatalogPagePort,
   LessonCatalogPort,
+  LessonCatalogPagePort,
   TaxonomyCatalogPort,
   CatalogMetadataPort,
 } from "@/core/content/ports/catalog-ports";
@@ -70,6 +73,7 @@ export class CompositionRoot {
   readonly randomSource = new SystemRandomSource();
   readonly clock = new SystemClock();
   readonly logger = new StructuredLogger(this.clock);
+  readonly metrics = new AggregatedMetrics();
   readonly domainEventDispatcher = new StructuredDomainEventDispatcher(
     this.logger,
   );
@@ -82,7 +86,7 @@ export class CompositionRoot {
   private activityCatalog: FileActivityCatalogAdapter | null = null;
   private taxonomyCatalog: FileTaxonomyCatalogAdapter | null = null;
   private catalogMetadata: FileCatalogMetadataAdapter | null = null;
-  private databaseCatalog: LessonCatalogPort & ActivityCatalogPort & TaxonomyCatalogPort & CatalogMetadataPort | null = null;
+  private databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort | null = null;
   private readonly datasetVersion = readDatasetVersionSync();
 
   private readonly persistence: PersistenceBundle;
@@ -111,7 +115,7 @@ export class CompositionRoot {
       : new InMemoryRateLimiter(config.authRateLimitWindowMs, config.authRateLimitMax, this.clock));
   }
 
-  private getDatabaseCatalog(): LessonCatalogPort & ActivityCatalogPort & TaxonomyCatalogPort & CatalogMetadataPort {
+  private getDatabaseCatalog(): LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort {
     if (!this.databaseCatalog) this.databaseCatalog = this.persistence.databaseCatalog;
     return this.databaseCatalog;
   }
@@ -126,7 +130,7 @@ export class CompositionRoot {
     return new PrismaCatalogWriteAdapter(prisma);
   }
 
-  getLessonCatalog(): LessonCatalogPort {
+  getLessonCatalog(): LessonCatalogPort & LessonCatalogPagePort {
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.lessonCatalog) {
       this.lessonCatalog = new FileLessonCatalogAdapter(DATASET_ROOT);
@@ -134,7 +138,7 @@ export class CompositionRoot {
     return this.lessonCatalog;
   }
 
-  getActivityCatalog(): ActivityCatalogPort {
+  getActivityCatalog(): ActivityCatalogPort & ActivityCatalogPagePort {
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.activityCatalog) {
       this.activityCatalog = new FileActivityCatalogAdapter(DATASET_ROOT);

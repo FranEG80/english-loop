@@ -15,6 +15,7 @@ export const GET = withErrorHandling(async () => {
 });
 
 export const PATCH = withErrorHandling(async (request: Request) => {
+  await compositionRoot.identity.requireActor();
   const body = parseRequest(settingsPatchSchema.safeParse(await request.json()));
   const settings = await updateUserSettings(
     compositionRoot.identity,

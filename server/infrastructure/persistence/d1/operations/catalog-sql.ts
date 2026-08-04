@@ -2,12 +2,9 @@ import type { D1DatabaseLike } from "../types/binding";
 import type { D1Operation } from "../types/operations";
 import { bind, type PreparedOperation } from "./shared";
 
-type CatalogOperation = Extract<D1Operation, { name: "activityById" | "catalogLessons" | "catalogActivities" | "catalogTaxonomy" | "catalogCounts" }>;
+type CatalogOperation = Extract<D1Operation, { name: "activityById" | "activityByVersionId" | "catalogLessons" | "catalogActivities" | "catalogTaxonomy" | "catalogCounts" }>;
 
-export function prepareCatalogOperation(database: D1DatabaseLike, operation: CatalogOperation): PreparedOperation {
-  switch (operation.name) {
-    case "activityById":
-      return bind(database, `SELECT v.id, v.activityId, v.levelCode,
+const activityProjection = `v.id, v.activityId, v.levelCode,
           v.activityTypeCode, v.category, v.topic, v.subtopic, v.difficulty,
           v.instructions, v.prompt, v.passage, v.explanation, v.tags, v.lessonIds,
           v.estimatedSeconds, v.evaluatorData, v.statusCode,
@@ -24,10 +21,19 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
           COALESCE((SELECT json_group_array(json_object('lessonId', l.lessonId, 'position', l.position))
             FROM ActivityVersionLesson l WHERE l.activityVersionId = v.id), '[]') AS lessonLinks,
           COALESCE((SELECT json_group_array(json_object('taxonomyNodeId', t.taxonomyNodeId, 'position', t.position))
-            FROM ActivityVersionTaxonomy t WHERE t.activityVersionId = v.id), '[]') AS taxonomyLinks
+            FROM ActivityVersionTaxonomy t WHERE t.activityVersionId = v.id), '[]') AS taxonomyLinks`;
+
+export function prepareCatalogOperation(database: D1DatabaseLike, operation: CatalogOperation): PreparedOperation {
+  switch (operation.name) {
+    case "activityById":
+      return bind(database, `SELECT ${activityProjection}
         FROM ActivityVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId
         WHERE p.id = 'active' AND v.statusCode = 'published' AND v.activityId = ?
         ORDER BY v.id DESC LIMIT 1`, [operation.activityId]);
+    case "activityByVersionId":
+      return bind(database, `SELECT ${activityProjection}
+        FROM ActivityVersion v
+        WHERE v.id = ? AND v.statusCode = 'published'`, [operation.activityVersionId]);
     case "catalogLessons":
       return bind(database, `SELECT v.id, v.lessonId, v.levelCode, v.category, v.taxonomyNodeId,
           v.title, v.summary, v.explanation, v.examples, v.commonMistakes,
@@ -38,8 +44,10 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
         FROM LessonVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId
         WHERE p.id = 'active' AND v.statusCode = 'published'
           AND (? IS NULL OR v.levelCode = ?) AND (? IS NULL OR v.category = ?)
-        ORDER BY v.lessonId ASC`,
-        [operation.level ?? null, operation.level ?? null, operation.category ?? null, operation.category ?? null]);
+          ${operation.limit === undefined ? "" : "AND (? IS NULL OR v.lessonId > ?)"}
+        ORDER BY v.lessonId ASC${operation.limit === undefined ? "" : " LIMIT ?"}`,
+        [operation.level ?? null, operation.level ?? null, operation.category ?? null, operation.category ?? null,
+          ...(operation.limit === undefined ? [] : [operation.cursor ?? null, operation.cursor ?? null, operation.limit])]);
     case "catalogActivities":
       return bind(database, `SELECT v.id, v.activityId, v.levelCode, v.activityTypeCode,
           v.category, v.topic, v.subtopic, v.difficulty, v.instructions, v.prompt,
@@ -66,9 +74,11 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
             WHERE t.activityVersionId = v.id AND t.taxonomyNodeId = ?))
           AND (? = 0 OR EXISTS (SELECT 1 FROM ActivityVersionLesson l
             WHERE l.activityVersionId = v.id AND l.lessonId IN (SELECT value FROM json_each(?))))
-        ORDER BY v.activityId ASC`,
+          ${operation.limit === undefined ? "" : "AND (? IS NULL OR v.activityId > ?)"}
+        ORDER BY v.activityId ASC${operation.limit === undefined ? "" : " LIMIT ?"}`,
         [operation.level ?? null, operation.level ?? null, operation.taxonomyNodeId ?? null,
-          operation.taxonomyNodeId ?? null, operation.lessonIds?.length ?? 0, JSON.stringify(operation.lessonIds ?? [])]);
+          operation.taxonomyNodeId ?? null, operation.lessonIds?.length ?? 0, JSON.stringify(operation.lessonIds ?? []),
+          ...(operation.limit === undefined ? [] : [operation.cursor ?? null, operation.cursor ?? null, operation.limit])]);
     case "catalogTaxonomy":
       return bind(database, `SELECT nodeId, parentId, kind, labelsEn, labelsEs, levels,
           selectableForPractice, sortOrder

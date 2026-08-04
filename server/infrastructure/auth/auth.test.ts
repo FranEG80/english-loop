@@ -2,6 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 
 const betterAuth = vi.hoisted(() => vi.fn((options: unknown) => ({ options })));
 const prisma = vi.hoisted(() => ({ $queryRaw: vi.fn() }));
+const prismaAdapter = vi.hoisted(() => vi.fn(() => ({ adapter: "prisma" })));
 const config = vi.hoisted(() => ({
   betterAuthSecret: "test-secret",
   betterAuthUrl: "https://english-loop.test",
@@ -18,6 +19,7 @@ const createD1Transport = vi.hoisted(() => vi.fn(() => ({ execute: vi.fn() })));
 const createD1BetterAuthAdapter = vi.hoisted(() => vi.fn(() => ({ execute: vi.fn() })));
 
 vi.mock("better-auth", () => ({ betterAuth }));
+vi.mock("better-auth/adapters/prisma", () => ({ prismaAdapter }));
 vi.mock("@/server/infrastructure/database/prisma-client", () => ({ prisma }));
 vi.mock("@/server/infrastructure/config/config", () => ({ config }));
 vi.mock("../persistence/d1/d1-runtime", () => ({ createD1Transport }));
@@ -30,8 +32,9 @@ describe("Better Auth configuration boundary", () => {
     expect(betterAuth).toHaveBeenCalledOnce();
     expect(auth).toEqual({ options: expect.any(Object) });
     const options = betterAuth.mock.calls[0]?.[0] as Record<string, unknown>;
+    expect(prismaAdapter).toHaveBeenCalledWith(prisma, { provider: "sqlite" });
     expect(options).toMatchObject({
-      database: prisma,
+      database: { adapter: "prisma" },
       secret: "test-secret",
       baseURL: "https://english-loop.test",
       emailAndPassword: { enabled: true },

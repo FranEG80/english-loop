@@ -83,6 +83,7 @@ function regularOperations(): D1Operation[] {
   return [
     { name: "health" }, { name: "activeCatalogMetadata" },
     { name: "activityById", activityId: "activity-1" },
+    { name: "activityByVersionId", activityVersionId: "activity-version-1" },
     { name: "catalogLessons", level: "B1", category: "grammar" },
     { name: "catalogActivities", taxonomyNodeId: "node-1", level: "B1", lessonIds: ["lesson-1"] },
     { name: "catalogTaxonomy" },
@@ -126,13 +127,25 @@ describe("D1 operation SQL dispatch", () => {
     prepareD1Operation(fake.database, { name: "catalogLessons" });
     prepareD1Operation(fake.database, { name: "catalogActivities" });
     prepareD1Operation(fake.database, { name: "catalogActivities", level: "both" });
-    expect(fake.queries.length).toBe(40);
+    expect(fake.queries.length).toBe(41);
+  });
+
+  it("adds keyset predicates and limits only to paginated catalog reads", () => {
+    const fake = database();
+    prepareD1Operation(fake.database, { name: "catalogLessons", cursor: "lesson-1", limit: 3 });
+    prepareD1Operation(fake.database, { name: "catalogLessons", limit: 3 });
+    prepareD1Operation(fake.database, { name: "catalogActivities", cursor: "activity-1", limit: 3 });
+    prepareD1Operation(fake.database, { name: "catalogActivities", limit: 3 });
+    expect(fake.queries.filter((query) => query.includes("LIMIT ?"))).toHaveLength(4);
+    expect(fake.queries.filter((query) => query.includes("lessonId > ?"))).toHaveLength(2);
+    expect(fake.queries.filter((query) => query.includes("activityId > ?"))).toHaveLength(2);
   });
 
   it("prepares composite daily and practice snapshots with their child rows", () => {
     const fake = database();
     expect(prepareCompositeD1Operation(fake.database, { name: "dailySessionSave", snapshot: dailySession })).toHaveLength(3);
     expect(prepareCompositeD1Operation(fake.database, { name: "practiceRunSave", snapshot: practiceRun })).toHaveLength(3);
+    expect(fake.queries[5]).toContain("cr.datasetVersion");
     expect(prepareCompositeD1Operation(fake.database, { name: "dailySessionSave", snapshot: { ...dailySession, lessons: [] } })).toHaveLength(2);
     expect(prepareCompositeD1Operation(fake.database, { name: "practiceRunSave", snapshot: { ...practiceRun, items: [] } })).toHaveLength(2);
   });

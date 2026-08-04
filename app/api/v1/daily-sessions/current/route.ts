@@ -6,6 +6,7 @@ import { toDailySessionDto } from "@/core/learning/application/mappers/daily-ses
 import { dailySessionBodySchema, parseRequest } from "@/server/infrastructure/http/request-schemas";
 
 export const PUT = withErrorHandling(async (request: Request) => {
+  await compositionRoot.identity.requireActor();
   const body = parseRequest(dailySessionBodySchema.safeParse(await request.json()));
   const datasetVersion = await compositionRoot.getDatasetVersion();
   const session = await getOrCreateDailySession(

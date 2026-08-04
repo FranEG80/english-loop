@@ -115,7 +115,9 @@ export async function submitAttemptTransaction(
       );
     }
 
-    const activity = await activityCatalog.getActivityById(input.activityId);
+    const activity = run.currentActivityVersionId && activityCatalog.getActivityByVersionId
+      ? await activityCatalog.getActivityByVersionId(run.currentActivityVersionId)
+      : await activityCatalog.getActivityById(input.activityId);
     if (!activity) {
       throw new ResourceNotFoundException(
         `Activity not found: ${input.activityId}`,
@@ -143,7 +145,11 @@ export async function submitAttemptTransaction(
     // A failed original item gets exactly one copy appended to the run. A
     // failed copy is marked as a repetition already, so it cannot recurse.
     if (!attempt.isCorrect && !attempt.isRepetition) {
-      run.scheduleRepetition(input.activityId);
+      run.scheduleRepetition(
+        input.activityId,
+        activity.versionId ?? run.currentActivityVersionId,
+        activity,
+      );
     }
 
     const reviewUpdated = await projector.project({

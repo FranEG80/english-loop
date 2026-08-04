@@ -15,7 +15,7 @@ describe("ReviewRepository contract", () => {
 
   beforeAll(async () => {
     const adapter = new PrismaBetterSqlite3({
-      url: "file:./test-contract.db",
+      url: ":memory:",
     });
     prisma = new PrismaClient({ adapter });
     repository = new PrismaReviewRepository(prisma);

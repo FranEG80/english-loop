@@ -6,6 +6,7 @@ import { toPracticeRunDto } from "@/core/practice/application/mappers/practice-r
 
 export const POST = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ runId: string }> }) => {
+    await compositionRoot.identity.requireActor();
     const { runId } = await context.params;
     const run = await completePracticeRun(
       compositionRoot.identity,

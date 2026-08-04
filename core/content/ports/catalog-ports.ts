@@ -3,6 +3,7 @@ import type { Lesson } from "../domain/types/lesson";
 import type { Activity } from "../domain/types/activity";
 import type { TaxonomyNode } from "../domain/types/taxonomy";
 import type { ContentVersion } from "../domain/content-version";
+import type { CursorPage, CursorPaginationParams } from "@/core/shared/kernel";
 
 export interface LessonListFilters {
   category?: string;
@@ -13,6 +14,20 @@ export interface ActivityListFilters {
   taxonomyNodeId?: string;
   level?: CefrLevelFilter;
   lessonIds?: string[];
+}
+
+export interface LessonCatalogPagePort {
+  listLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: CursorPaginationParams,
+  ): Promise<CursorPage<Lesson>>;
+}
+
+export interface ActivityCatalogPagePort {
+  listActivitiesPage(
+    filters: ActivityListFilters | undefined,
+    pagination: CursorPaginationParams,
+  ): Promise<CursorPage<Activity>>;
 }
 
 export interface CatalogMetadata {
@@ -33,6 +48,8 @@ export interface LessonCatalogPort {
 export interface ActivityCatalogPort {
   listActivities(filters?: ActivityListFilters): Promise<Activity[]>;
   getActivityById(activityId: string): Promise<Activity | null>;
+  /** Recupera una versión publicada concreta para corregir un snapshot. */
+  getActivityByVersionId?(activityVersionId: string): Promise<Activity | null>;
   /** Cuenta actividades publicadas por nodo de taxonomía (incluye descendientes). */
   countActivitiesByNode(nodeId: string, level: CefrLevelFilter): Promise<number>;
   countActivitiesByNodes(nodeIds: string[], level: CefrLevelFilter): Promise<number>;

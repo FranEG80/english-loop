@@ -1,7 +1,7 @@
 import type { D1Operation, D1OperationName } from "../types/operations";
 
 export const d1OperationNames: readonly D1OperationName[] = [
-  "health", "activeCatalogMetadata", "activityById", "catalogLessons", "catalogActivities",
+  "health", "activeCatalogMetadata", "activityById", "activityByVersionId", "catalogLessons", "catalogActivities",
   "catalogTaxonomy", "catalogCounts", "userSettingsGet", "userSettingsSave", "savedLessonsList",
   "savedLessonGet", "savedLessonSave", "savedLessonDelete", "dailySessionGetById",
   "dailySessionGetByUserDate", "dailySessionGetByPracticeRun", "dailySessionSave", "practiceRunGet",
@@ -28,6 +28,11 @@ function hasSnapshot(value: RecordValue, fields: string[]): value is RecordValue
   return isRecord(value.snapshot) && hasStrings(value.snapshot, fields);
 }
 
+function hasOptionalCursorPagination(value: RecordValue): boolean {
+  return (value.cursor === undefined || (typeof value.cursor === "string" && value.cursor !== "")) &&
+    (value.limit === undefined || (typeof value.limit === "number" && Number.isSafeInteger(value.limit) && value.limit > 0));
+}
+
 function isAuthQuery(value: unknown): boolean {
   if (!isRecord(value) || !["user", "session", "account", "verification"].includes(String(value.model))) return false;
   if (value.where !== undefined && (!Array.isArray(value.where) || !value.where.every(isRecord))) return false;
@@ -47,6 +52,8 @@ export function isD1Operation(value: unknown): value is D1Operation {
       return true;
     case "activityById":
       return hasStrings(value, ["activityId"]);
+    case "activityByVersionId":
+      return hasStrings(value, ["activityVersionId"]);
     case "userSettingsGet":
     case "savedLessonsList":
     case "lessonProgressList":
@@ -54,11 +61,13 @@ export function isD1Operation(value: unknown): value is D1Operation {
       return hasStrings(value, ["userId"]);
     case "catalogLessons":
       return (value.level === undefined || typeof value.level === "string") &&
-        (value.category === undefined || typeof value.category === "string");
+        (value.category === undefined || typeof value.category === "string") &&
+        hasOptionalCursorPagination(value);
     case "catalogActivities":
       return (value.taxonomyNodeId === undefined || typeof value.taxonomyNodeId === "string") &&
         (value.level === undefined || typeof value.level === "string") &&
-        (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string")));
+        (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string"))) &&
+        hasOptionalCursorPagination(value);
     case "catalogCounts":
       return value.kind === "lessons" || value.kind === "activities" || value.kind === "taxonomy";
     case "userSettingsSave":

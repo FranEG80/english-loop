@@ -1,5 +1,6 @@
 import type { LearningContentPort } from "@/core/ports";
 import type { ActivityQuestionDto, LessonDetailDto, LessonSummaryDto, TaxonomyNodeDto } from "@/core/models";
+import type { CursorPage } from "@/core/shared/kernel";
 import { restRequest } from "./http-client";
 
 function toQueryString<T extends object>(params?: T): string {
@@ -18,12 +19,12 @@ function toQueryString<T extends object>(params?: T): string {
 }
 
 export const learningContentRestAdapter: LearningContentPort = {
-  listLessons: (filters) =>
-    restRequest<LessonSummaryDto[]>(`/lessons${toQueryString(filters)}`),
+  listLessons: async (filters) =>
+    (await restRequest<CursorPage<LessonSummaryDto>>(`/lessons${toQueryString(filters)}`)).items,
   getLessonById: (lessonId) =>
     restRequest<LessonDetailDto | null>(`/lessons/${lessonId}`),
-  listActivities: (filters) =>
-    restRequest<ActivityQuestionDto[]>(`/activities${toQueryString(filters)}`),
+  listActivities: async (filters) =>
+    (await restRequest<CursorPage<ActivityQuestionDto>>(`/activities${toQueryString(filters)}`)).items,
   getActivityById: (activityId) =>
     restRequest<ActivityQuestionDto | null>(`/activities/${activityId}`),
   getTaxonomyTree: () => restRequest<TaxonomyNodeDto[]>("/practice-taxonomy"),

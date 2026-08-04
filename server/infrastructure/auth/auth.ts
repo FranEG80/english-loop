@@ -1,5 +1,6 @@
 import "server-only";
 import { betterAuth } from "better-auth";
+import { prismaAdapter } from "better-auth/adapters/prisma";
 import { prisma } from "@/server/infrastructure/database/prisma-client";
 import { config } from "@/server/infrastructure/config/config";
 import { createD1BetterAuthAdapter } from "./d1-better-auth-adapter";
@@ -13,7 +14,11 @@ export interface AuthRuntimeOptions {
 }
 
 function authDatabase(options: AuthRuntimeOptions) {
-  if (config.databaseProvider !== "d1") return prisma;
+  if (config.databaseProvider !== "d1") {
+    return prismaAdapter(prisma, {
+      provider: config.databaseProvider === "mariadb" ? "mysql" : config.databaseProvider,
+    });
+  }
   const transport = createD1Transport({ ...config, ...options });
   if (!transport) throw new Error("D1 auth requires a configured D1 transport");
   return createD1BetterAuthAdapter(transport);

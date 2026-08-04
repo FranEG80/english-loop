@@ -2,6 +2,7 @@ export type D1OperationName =
   | "health"
   | "activeCatalogMetadata"
   | "activityById"
+  | "activityByVersionId"
   | "catalogLessons"
   | "catalogActivities"
   | "catalogTaxonomy"
@@ -191,8 +192,9 @@ export type D1Operation =
   | { name: "health" }
   | { name: "activeCatalogMetadata" }
   | { name: "activityById"; activityId: string }
-  | { name: "catalogLessons"; level?: string; category?: string }
-  | { name: "catalogActivities"; taxonomyNodeId?: string; level?: string; lessonIds?: string[] }
+  | { name: "activityByVersionId"; activityVersionId: string }
+  | { name: "catalogLessons"; level?: string; category?: string; cursor?: string; limit?: number }
+  | { name: "catalogActivities"; taxonomyNodeId?: string; level?: string; lessonIds?: string[]; cursor?: string; limit?: number }
   | { name: "catalogTaxonomy" }
   | { name: "catalogCounts"; kind: "lessons" | "activities" | "taxonomy" }
   | { name: "userSettingsGet"; userId: string }
@@ -235,5 +237,3 @@ export type D1Operation =
   | { name: "authIncrementOne"; query: D1AuthQuery; increment: Record<string, number>; set?: Record<string, D1AuthValue> }
   | { name: "consumeVerification"; identifier: string; value: string; nowIso: string }
   | { name: "acceptReplayNonce"; nonce: string; nowIso: string; expiresAtIso: string };
-
-

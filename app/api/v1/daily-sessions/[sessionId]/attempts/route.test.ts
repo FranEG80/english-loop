@@ -7,7 +7,11 @@ import { POST as startPractice } from "../practice/route";
 import { POST } from "./route";
 
 describe("POST /api/v1/daily-sessions/:sessionId/attempts", () => {
-  beforeEach(() => resetApiRouteRoot());
+  let fixture: ReturnType<typeof resetApiRouteRoot>;
+
+  beforeEach(() => {
+    fixture = resetApiRouteRoot();
+  });
 
   it("grades a valid daily attempt", async () => {
     await PATCH(routeRequest("/api/v1/me/settings", { method: "PATCH", headers: { "content-type": "application/json" }, body: JSON.stringify({ dailyGoalActivities: 5 }) }));
@@ -15,5 +19,21 @@ describe("POST /api/v1/daily-sessions/:sessionId/attempts", () => {
     await completeLesson(new Request("http://test.local", { method: "POST" }), { params: Promise.resolve({ sessionId: session.id, lessonId: "lesson-1" }) });
     await startPractice(routeRequest(`/api/v1/daily-sessions/${session.id}/practice`, { method: "POST" }), { params: Promise.resolve({ sessionId: session.id }) });
     expect(await expectJson(await POST(jsonRequest(`/api/v1/daily-sessions/${session.id}/attempts`, { activityId: "activity-1", idempotencyKey: "daily-route", response: { kind: "boolean", value: true } }), { params: Promise.resolve({ sessionId: session.id }) }))).toMatchObject({ isCorrect: true });
+  });
+
+  it("applies the attempt rate limit to daily practice too", async () => {
+    fixture.root.attemptRateLimiter.isLimited = async () => true;
+
+    const response = await POST(
+      jsonRequest("/api/v1/daily-sessions/session-1/attempts", {
+        activityId: "activity-1",
+        idempotencyKey: "daily-rate-limit",
+        response: { kind: "boolean", value: true },
+      }),
+      { params: Promise.resolve({ sessionId: "session-1" }) },
+    );
+
+    expect(response.status).toBe(429);
+    await expect(response.json()).resolves.toMatchObject({ error: { code: "RATE_LIMITED" } });
   });
 });

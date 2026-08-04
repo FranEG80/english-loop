@@ -10,7 +10,7 @@ import type { ProgressRepository } from "@/core/progress/ports/progress-reposito
 import type { ReviewRepository } from "@/core/progress/ports/review-repository";
 import type { UnitOfWorkPort } from "@/core/shared/kernel";
 import type { RateLimiterPort } from "@/core/shared/kernel";
-import type { ActivityCatalogPort, CatalogMetadataPort, LessonCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
+import type { ActivityCatalogPagePort, ActivityCatalogPort, CatalogMetadataPort, LessonCatalogPagePort, LessonCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { CatalogWritePort } from "@/core/content/ports/catalog-write-port";
 import { PrismaUnitOfWorkAdapter } from "../database/prisma-unit-of-work-adapter";
 import { PrismaUserSettingsRepository } from "./prisma-user-settings-repository";
@@ -48,7 +48,7 @@ export interface PersistenceBundle {
   activityCatalog: ActivityCatalogPort;
   taxonomyCatalog: TaxonomyCatalogPort;
   catalogMetadata: CatalogMetadataPort;
-  databaseCatalog: LessonCatalogPort & ActivityCatalogPort & TaxonomyCatalogPort & CatalogMetadataPort;
+  databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
   catalogWritePort: CatalogWritePort | null;
   databaseHealth: () => Promise<boolean>;
   attemptRateLimiter: RateLimiterPort | null;

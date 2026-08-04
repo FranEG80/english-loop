@@ -28,6 +28,7 @@ const activities = [activity("a1", "tense"), activity("a2", "vocabulary"), activ
 const catalog: ActivityCatalogPort = {
   listActivities: async () => activities,
   getActivityById: async (id) => activities.find((item) => item.id === id) ?? null,
+  getActivityByVersionId: async (versionId) => activities.find((item) => item.versionId === versionId) ?? null,
   countActivitiesByNode: async () => activities.length,
   countActivitiesByNodes: async () => activities.length,
 };

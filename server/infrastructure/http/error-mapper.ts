@@ -9,6 +9,7 @@ import {
   ResourceNotFoundException,
   ConflictException,
   IdempotencyConflictException,
+  RequestPayloadTooLargeException,
 } from "@/core/shared/exceptions";
 
 export interface ErrorEnvelope {
@@ -36,6 +37,20 @@ export function mapErrorToHttp(
           code: error.code,
           message: error.publicMessage,
           fieldErrors: error.fieldErrors,
+          requestId,
+        },
+      },
+    };
+  }
+
+  if (error instanceof RequestPayloadTooLargeException) {
+    return {
+      status: 413,
+      body: {
+        error: {
+          code: error.code,
+          message: error.publicMessage,
+          fieldErrors: {},
           requestId,
         },
       },

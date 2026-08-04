@@ -1,6 +1,7 @@
 import { AggregateRoot } from "@/core/shared/kernel";
 import { InvariantViolationException } from "@/core/shared/exceptions";
 import type { CefrLevelFilter } from "@/core/models/level";
+import type { Activity } from "@/core/content/domain/types/activity";
 
 export type PracticeRunMode = "DAILY" | "SMART_REVIEW" | "FOCUSED";
 export type PracticeRunStatus = "in_progress" | "completed";
@@ -22,6 +23,10 @@ export interface PracticeRunProps {
   mode: PracticeRunMode;
   scope: PracticeScope;
   activityIds: string[];
+  /** Versiones de catálogo fijadas para cada posición del run. */
+  activityVersionIds?: Array<string | null>;
+  /** Copias inmutables de las actividades usadas por cada posición. */
+  activitySnapshots?: Array<Activity | null>;
   /** Activities appended after a failure for one immediate recovery attempt. */
   repetitionActivityIds?: string[];
   /** Count of activities originally selected, excluding repetitions. */
@@ -42,9 +47,25 @@ export class PracticeRun extends AggregateRoot<string> {
 
   private constructor(props: PracticeRunProps) {
     super(props.id);
+    const activityVersionIds = props.activityVersionIds ?? props.activityIds.map(() => null);
+    const activitySnapshots = props.activitySnapshots ?? props.activityIds.map(() => null);
+    if (activityVersionIds.length !== props.activityIds.length) {
+      throw new InvariantViolationException(
+        "Activity versions must match the run activities",
+        "The practice run snapshot is invalid.",
+      );
+    }
+    if (activitySnapshots.length !== props.activityIds.length) {
+      throw new InvariantViolationException(
+        "Activity snapshots must match the run activities",
+        "The practice run snapshot is invalid.",
+      );
+    }
     this.props = {
       ...props,
       activityIds: [...props.activityIds],
+      activityVersionIds: [...activityVersionIds],
+      activitySnapshots: activitySnapshots.map(cloneActivity),
       repetitionActivityIds: [...(props.repetitionActivityIds ?? [])],
       originalActivityCount: props.originalActivityCount ?? props.activityIds.length,
     };
@@ -82,6 +103,14 @@ export class PracticeRun extends AggregateRoot<string> {
     return [...this.props.activityIds];
   }
 
+  get activityVersionIds(): Array<string | null> {
+    return [...(this.props.activityVersionIds ?? [])];
+  }
+
+  get activitySnapshots(): Array<Activity | null> {
+    return (this.props.activitySnapshots ?? this.props.activityIds.map(() => null)).map(cloneActivity);
+  }
+
   get currentIndex(): number {
     return this.props.currentIndex;
   }
@@ -103,6 +132,16 @@ export class PracticeRun extends AggregateRoot<string> {
     return this.props.activityIds[this.props.currentIndex] ?? null;
   }
 
+  get currentActivityVersionId(): string | null {
+    if (this.props.status === "completed") return null;
+    return this.props.activityVersionIds?.[this.props.currentIndex] ?? null;
+  }
+
+  get currentActivitySnapshot(): Activity | null {
+    if (this.props.status === "completed") return null;
+    return cloneActivity(this.props.activitySnapshots?.[this.props.currentIndex] ?? null);
+  }
+
   get originalActivityCount(): number {
     return this.props.originalActivityCount ?? this.props.activityIds.length;
   }
@@ -115,9 +154,15 @@ export class PracticeRun extends AggregateRoot<string> {
    * Adds at most one immediate repetition for an activity. The set is keyed
    * by activity id so a failed repetition cannot recursively append another.
    */
-  scheduleRepetition(activityId: string): boolean {
+  scheduleRepetition(
+    activityId: string,
+    activityVersionId: string | null = null,
+    activitySnapshot: Activity | null = null,
+  ): boolean {
     if (this.props.repetitionActivityIds?.includes(activityId)) return false;
     this.props.activityIds.push(activityId);
+    this.props.activityVersionIds?.push(activityVersionId);
+    this.props.activitySnapshots?.push(cloneActivity(activitySnapshot));
     this.props.repetitionActivityIds = [
       ...(this.props.repetitionActivityIds ?? []),
       activityId,
@@ -145,8 +190,14 @@ export class PracticeRun extends AggregateRoot<string> {
     return {
       ...this.props,
       activityIds: [...this.props.activityIds],
+      activityVersionIds: [...(this.props.activityVersionIds ?? [])],
+      activitySnapshots: (this.props.activitySnapshots ?? this.props.activityIds.map(() => null)).map(cloneActivity),
       repetitionActivityIds: [...(this.props.repetitionActivityIds ?? [])],
       scope: { ...this.props.scope, descendantIds: [...this.props.scope.descendantIds] },
     };
   }
+}
+
+function cloneActivity(activity: Activity | null): Activity | null {
+  return activity ? (JSON.parse(JSON.stringify(activity)) as Activity) : null;
 }

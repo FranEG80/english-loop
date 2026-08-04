@@ -27,6 +27,10 @@ export interface AppConfig {
   attemptRateLimitMax: number;
   authRateLimitWindowMs: number;
   authRateLimitMax: number;
+  publicPageDefaultLimit: number;
+  publicPageMaxLimit: number;
+  httpMaxRequestBodyBytes: number;
+  httpMaxResponseBodyBytes: number;
   betterAuthSecret: string;
   betterAuthUrl: string;
   nodeEnv: string;
@@ -38,6 +42,10 @@ const DEFAULT_AUTH_COOKIE_CACHE_MAX_AGE_SECONDS = 60 * 5;
 const DEFAULT_RATE_LIMIT_WINDOW_MS = 60_000;
 const DEFAULT_ATTEMPT_RATE_LIMIT_MAX = 30;
 const DEFAULT_AUTH_RATE_LIMIT_MAX = 10;
+const DEFAULT_PUBLIC_PAGE_LIMIT = 25;
+const DEFAULT_PUBLIC_PAGE_MAX_LIMIT = 100;
+const DEFAULT_HTTP_MAX_REQUEST_BODY_BYTES = 1_048_576;
+const DEFAULT_HTTP_MAX_RESPONSE_BODY_BYTES = 1_048_576;
 
 function positiveIntegerEnv(name: string, fallback: number): number {
   const raw = process.env[name];
@@ -116,6 +124,25 @@ export function loadConfig(): AppConfig {
     "AUTH_RATE_LIMIT_MAX",
     DEFAULT_AUTH_RATE_LIMIT_MAX,
   );
+  const publicPageDefaultLimit = positiveIntegerEnv(
+    "PUBLIC_PAGE_DEFAULT_LIMIT",
+    DEFAULT_PUBLIC_PAGE_LIMIT,
+  );
+  const publicPageMaxLimit = positiveIntegerEnv(
+    "PUBLIC_PAGE_MAX_LIMIT",
+    DEFAULT_PUBLIC_PAGE_MAX_LIMIT,
+  );
+  if (publicPageDefaultLimit > publicPageMaxLimit) {
+    throw new Error("PUBLIC_PAGE_DEFAULT_LIMIT must not exceed PUBLIC_PAGE_MAX_LIMIT");
+  }
+  const httpMaxRequestBodyBytes = positiveIntegerEnv(
+    "HTTP_MAX_REQUEST_BODY_BYTES",
+    DEFAULT_HTTP_MAX_REQUEST_BODY_BYTES,
+  );
+  const httpMaxResponseBodyBytes = positiveIntegerEnv(
+    "HTTP_MAX_RESPONSE_BODY_BYTES",
+    DEFAULT_HTTP_MAX_RESPONSE_BODY_BYTES,
+  );
 
   if (nodeEnv === "production" && !betterAuthSecret) {
     throw new Error("BETTER_AUTH_SECRET is required in production");
@@ -135,6 +162,10 @@ export function loadConfig(): AppConfig {
     attemptRateLimitMax,
     authRateLimitWindowMs,
     authRateLimitMax,
+    publicPageDefaultLimit,
+    publicPageMaxLimit,
+    httpMaxRequestBodyBytes,
+    httpMaxResponseBodyBytes,
     betterAuthSecret: betterAuthSecret ?? "dev-secret",
     betterAuthUrl,
     nodeEnv,

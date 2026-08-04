@@ -64,5 +64,5 @@ export async function submitAttemptAction(input: SubmitAttemptInput) {
     },
     { dailySessionRepository: compositionRoot.dailySessionRepository },
   );
-  return getAttemptFeedback(compositionRoot.getActivityCatalog(), attempt);
+  return getAttemptFeedback(compositionRoot.getActivityCatalog(), attempt, compositionRoot.reviewRepository);
 }

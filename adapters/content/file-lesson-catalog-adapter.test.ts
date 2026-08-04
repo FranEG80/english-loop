@@ -15,6 +15,16 @@ describe("FileLessonCatalogAdapter", () => {
     expect(await adapter.getLessonById("missing")).toBeNull();
   });
 
+  it("paginates lessons with an opaque stable cursor", async () => {
+    const adapter = new FileLessonCatalogAdapter(path.join(process.cwd(), "DATASET"));
+    const first = await adapter.listLessonsPage({ level: "B1" }, { limit: 1 });
+    expect(first.items).toHaveLength(1);
+    expect(first.hasMore).toBe(true);
+    const second = await adapter.listLessonsPage({ level: "B1" }, { limit: 1, cursor: first.nextCursor! });
+    expect(second.items).toHaveLength(1);
+    expect(second.items[0]?.id).not.toBe(first.items[0]?.id);
+  });
+
   it("summarizes temporary lessons and tolerates a missing activity index", async () => {
     const root = await mkdtemp(path.join(os.tmpdir(), "english-loop-lesson-catalog-"));
     try {
@@ -23,6 +33,9 @@ describe("FileLessonCatalogAdapter", () => {
       await writeFile(path.join(root, "catalog", "lessons", "lesson.md"), "---\ntags: [temp]\n---\n# Resumen\nFirst paragraph\n\nSecond paragraph\n# Explanation\nBody");
       const adapter = new FileLessonCatalogAdapter(root);
       await expect(adapter.listLessons({ level: "B2", category: "grammar" })).resolves.toMatchObject([{ id: "lesson-temp", summary: "First paragraph Second paragraph", relatedActivityIds: [], tags: ["temp"] }]);
+      await expect(adapter.listLessonsPage({ level: "B2", category: "grammar" }, { limit: 1 })).resolves.toMatchObject({ items: [{ id: "lesson-temp", relatedActivityIds: [] }], hasMore: false, nextCursor: null });
+      await expect(adapter.listLessonsPage({ level: "B2", category: "vocabulary" }, { limit: 1 })).resolves.toMatchObject({ items: [], hasMore: false, nextCursor: null });
+      await expect(adapter.getLessonById("lesson-temp")).resolves.toMatchObject({ id: "lesson-temp" });
       await expect(adapter.listLessons({ level: "B1" })).resolves.toEqual([]);
       await expect(adapter.getLessonById("missing")).resolves.toBeNull();
     } finally {

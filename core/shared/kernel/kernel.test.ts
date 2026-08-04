@@ -3,6 +3,7 @@ import { AggregateRoot } from "./aggregate-root";
 import { Entity } from "./entity";
 import { ValueObject } from "./value-object";
 import { UniqueId } from "./unique-id";
+import { decodeCursor, InvalidCursorError, paginateSortedItems } from "./cursor";
 import type { DomainEvent } from "./types/domain-event";
 
 class TestEntity extends Entity<string> {
@@ -45,10 +46,24 @@ describe("shared kernel", () => {
   });
 
   it("paginates with stable cursors", () => {
-    const page = { items: [1, 2], nextCursor: "next", hasMore: true };
-    expect(page.items).toEqual([1, 2]);
-    expect(page.nextCursor).toBe("next");
-    expect(page.hasMore).toBe(true);
+    const first = paginateSortedItems(
+      [{ id: "a" }, { id: "b" }, { id: "c" }],
+      { limit: 2 },
+      (item) => item.id,
+    );
+    expect(first.items.map((item) => item.id)).toEqual(["a", "b"]);
+    expect(first.nextCursor).toBeTypeOf("string");
+    expect(first.hasMore).toBe(true);
+    expect(decodeCursor(first.nextCursor!)).toBe("b");
+    expect(paginateSortedItems([{ id: "a" }, { id: "b" }, { id: "c" }], { limit: 2, cursor: first.nextCursor! }, (item) => item.id)).toEqual({
+      items: [{ id: "c" }],
+      nextCursor: null,
+      hasMore: false,
+    });
+    expect(paginateSortedItems([{ id: "a" }, { id: "b" }], { limit: 2, cursor: btoa(JSON.stringify({ version: 1, key: "z" })) }, (item) => item.id)).toMatchObject({ items: [], hasMore: false, nextCursor: null });
+    expect(() => decodeCursor(btoa(JSON.stringify({ version: 1 })))).toThrow(InvalidCursorError);
+    expect(() => decodeCursor("invalid")).toThrow(InvalidCursorError);
+    expect(() => paginateSortedItems([], { limit: 0 }, (item: never) => item)).toThrow("positive integer");
   });
 
   it("keeps clock and random source deterministic through ports", () => {

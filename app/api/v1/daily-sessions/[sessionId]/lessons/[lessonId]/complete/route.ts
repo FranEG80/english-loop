@@ -11,6 +11,7 @@ export const POST = withErrorHandling(
       params: Promise<{ sessionId: string; lessonId: string }>;
     },
   ) => {
+    await compositionRoot.identity.requireActor();
     const { sessionId, lessonId } = await context.params;
     const session = await completeLesson(
       compositionRoot.identity,

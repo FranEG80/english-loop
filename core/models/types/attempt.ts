@@ -17,7 +17,10 @@ export interface AttemptFeedbackDto {
   activityId: string;
   isCorrect: boolean;
   correctAnswer: string | string[];
+  normalizedResponse: ActivityResponseValue;
   /** Explicación en español. */
   explanation: string;
+  /** Próximo vencimiento del repaso, si el intento dejó uno activo. */
+  nextReviewAt: string | null;
   submittedAt: string;
 }

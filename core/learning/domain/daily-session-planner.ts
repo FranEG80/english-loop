@@ -2,6 +2,8 @@ import type { Lesson } from "@/core/content/domain/types/lesson";
 import type { LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { RandomSourcePort } from "@/core/shared/kernel";
 
+const MAX_REVIEW_RATIO = 0.3;
+
 export interface LessonSelectionInput {
   level: string;
   /** Lecciones ya vistas (sin errores pendientes). */
@@ -44,8 +46,15 @@ export class DailySessionPlanner {
 
     const selections: LessonSelection[] = [];
 
-    // 1. Recuperar primero los errores que todavía bloquean la lección.
-    for (const lesson of this.pick(errorLessons, input.count - selections.length)) {
+    // Cuando todavía existe contenido nuevo, los repasos ocupan como máximo
+    // el 30% de la sesión. Si no queda contenido nuevo, los errores sí pueden
+    // rellenar toda la sesión para no dejar al usuario sin práctica útil.
+    const reviewLimit = newLessons.length > 0
+      ? Math.floor(input.count * MAX_REVIEW_RATIO)
+      : input.count;
+
+    // 1. Recuperar primero los errores dentro del límite de repaso.
+    for (const lesson of this.pick(errorLessons, Math.min(reviewLimit, input.count))) {
       selections.push({ lessonId: lesson.id, selectionReason: "review" });
     }
 

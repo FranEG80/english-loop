@@ -210,7 +210,7 @@ export function Landing({
                   sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 90vw"
                   className="h-48 w-full rounded-2xl object-contain"
                 />
-                <h3 className="mt-3 text-xl font-bold">
+                <h3 className="mt-3 bg-[#fffdf7] text-xl font-bold">
                   {locale === "es" ? item.es : item.en}
                 </h3>
               </article>
@@ -221,7 +221,7 @@ export function Landing({
 
       <section className="defer-section mx-auto grid w-full max-w-[1240px] gap-8 px-5 py-24 lg:grid-cols-12 lg:px-8">
         <div className="ink-card relative overflow-hidden rounded-[2.5rem] bg-level-b1 p-8 lg:col-span-7 lg:p-12">
-          <p className="font-hand text-3xl font-bold text-coral">Daily Loop</p>
+          <p className="font-hand text-3xl font-bold text-level-b1-strong">Daily Loop</p>
           <h2 className="mt-3 max-w-lg text-5xl font-medium leading-none">
             {dictionary.landing.dailyLoopTitle}
           </h2>
@@ -278,7 +278,7 @@ export function Landing({
           <h2 className="mx-auto mt-3 max-w-2xl text-5xl font-medium leading-none">
             {dictionary.landing.finalCtaTitle}
           </h2>
-          <p className="mx-auto mt-4 max-w-xl font-bold text-foreground/70">
+          <p className="mx-auto mt-4 max-w-xl font-bold text-foreground">
             {dictionary.landing.finalCtaSubtitle}
           </p>
           <Link

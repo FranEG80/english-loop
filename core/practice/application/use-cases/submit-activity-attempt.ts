@@ -71,7 +71,9 @@ export async function submitActivityAttempt(
     );
   }
 
-  const activity = await activityCatalog.getActivityById(input.activityId);
+  const activity = run.currentActivityVersionId && activityCatalog.getActivityByVersionId
+    ? await activityCatalog.getActivityByVersionId(run.currentActivityVersionId)
+    : await activityCatalog.getActivityById(input.activityId);
   if (!activity) {
     throw new ResourceNotFoundException(
       `Activity not found: ${input.activityId}`,
@@ -99,7 +101,7 @@ export async function submitActivityAttempt(
 
   await attemptRepository.save(attempt);
   if (!attempt.isCorrect && !attempt.isRepetition) {
-    run.scheduleRepetition(input.activityId);
+    run.scheduleRepetition(input.activityId, activity.versionId ?? run.currentActivityVersionId);
   }
   const runCompleted = run.advance();
   await runRepository.save(run);

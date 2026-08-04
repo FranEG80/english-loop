@@ -100,11 +100,27 @@ describe("loadConfig", () => {
       attemptRateLimitMax: 12,
       authRateLimitWindowMs: 15000,
       authRateLimitMax: 4,
+      publicPageDefaultLimit: 25,
+      publicPageMaxLimit: 100,
+      httpMaxRequestBodyBytes: 1048576,
+      httpMaxResponseBodyBytes: 1048576,
     });
   });
 
   it("rejects invalid operational policy values", () => {
     process.env = { ...process.env, AUTH_RATE_LIMIT_MAX: "not-a-number" };
     expect(() => loadConfig()).toThrow("AUTH_RATE_LIMIT_MAX must be a positive integer");
+  });
+
+  it("validates public pagination limits", () => {
+    process.env = { ...process.env, PUBLIC_PAGE_DEFAULT_LIMIT: "10", PUBLIC_PAGE_MAX_LIMIT: "20" };
+    expect(loadConfig()).toMatchObject({ publicPageDefaultLimit: 10, publicPageMaxLimit: 20 });
+    process.env = { ...process.env, PUBLIC_PAGE_DEFAULT_LIMIT: "21" };
+    expect(() => loadConfig()).toThrow("PUBLIC_PAGE_DEFAULT_LIMIT must not exceed PUBLIC_PAGE_MAX_LIMIT");
+  });
+
+  it("loads HTTP body limits from environment variables", () => {
+    process.env = { ...process.env, HTTP_MAX_REQUEST_BODY_BYTES: "2048", HTTP_MAX_RESPONSE_BODY_BYTES: "4096" };
+    expect(loadConfig()).toMatchObject({ httpMaxRequestBodyBytes: 2048, httpMaxResponseBodyBytes: 4096 });
   });
 });

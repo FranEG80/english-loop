@@ -18,6 +18,7 @@ export function prepareD1Operation(database: D1DatabaseLike, operation: D1Operat
     case "acceptReplayNonce":
       return prepareSystemOperation(database, operation);
     case "activityById":
+    case "activityByVersionId":
     case "catalogLessons":
     case "catalogActivities":
     case "catalogTaxonomy":

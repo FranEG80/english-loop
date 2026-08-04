@@ -7,7 +7,7 @@ describe("learningContentRestAdapter", () => {
   it("serializes filters and resolves all catalog endpoints", async () => {
     const fetchMock = vi.fn(async (...args: Parameters<typeof fetch>) => {
       void args;
-      return new Response("[]", { status: 200 });
+      return new Response(JSON.stringify({ items: [], nextCursor: null, hasMore: false }), { status: 200 });
     });
     vi.stubGlobal("fetch", fetchMock);
     await learningContentRestAdapter.listLessons({ level: "B1", category: "grammar" });

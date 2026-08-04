@@ -77,7 +77,9 @@ export function gradeMockAttempt(
     activityId: activity.id,
     isCorrect: isCorrectResponse(response, answerKey.correctAnswer),
     correctAnswer: answerKey.correctAnswer,
+    normalizedResponse: response,
     explanation: answerKey.explanation,
+    nextReviewAt: null,
     submittedAt: new Date().toISOString(),
   };
 }

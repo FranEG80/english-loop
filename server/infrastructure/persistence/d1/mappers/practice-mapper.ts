@@ -19,6 +19,7 @@ export function practiceRunRowsToDomain(input: Row[]): PracticeRun | null {
     id: text(base.id), userId: text(base.userId), mode: text(base.mode) as never,
     scope: { level: scope.level as never, taxonomyNodeId: scope.taxonomyNodeId, taxonomyPath: scope.taxonomyPath, descendantIds: scope.descendantIds, requestedCount: scope.requestedCount },
     activityIds: items.map((row) => text(row.activityId)),
+    activityVersionIds: items.map((row) => nullableText(row.activityVersionId)),
     repetitionActivityIds: items.filter((row) => bool(row.isRepetition)).map((row) => text(row.activityId)),
     originalActivityCount: Number(base.originalActivityCount), currentIndex: Number(base.currentIndex),
     status: text(base.status) as never, datasetVersion: text(base.datasetVersion), dailySessionId: null, createdAt: iso(base.createdAt),

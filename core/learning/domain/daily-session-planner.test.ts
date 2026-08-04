@@ -63,4 +63,37 @@ describe("DailySessionPlanner", () => {
     expect(result).toHaveLength(4);
     expect(new Set(result.map(({ lessonId }) => lessonId)).size).toBe(4);
   });
+
+  it("caps review lessons at 30% while new lessons are available", async () => {
+    const available = [
+      ...Array.from({ length: 5 }, (_, index) => makeLesson(`new-${index + 1}`)),
+      ...Array.from({ length: 5 }, (_, index) => makeLesson(`review-${index + 1}`)),
+    ];
+    const planner = new DailySessionPlanner(random);
+    const result = await planner.plan(
+      { ...catalog, listLessons: async () => available },
+      {
+        level: "B1",
+        viewedLessonIds: [],
+        errorLessonIds: available.filter((lesson) => lesson.id.startsWith("review-")).map((lesson) => lesson.id),
+        count: 10,
+      },
+    );
+
+    expect(result.filter((lesson) => lesson.selectionReason === "review")).toHaveLength(3);
+  });
+
+  it("allows reviews to fill the session when no new lesson remains", async () => {
+    const planner = new DailySessionPlanner(random);
+    const reviewOnly = Array.from({ length: 4 }, (_, index) => makeLesson(`review-only-${index + 1}`));
+    const result = await planner.plan({ ...catalog, listLessons: async () => reviewOnly }, {
+      level: "B1",
+      viewedLessonIds: [],
+      errorLessonIds: reviewOnly.map((lesson) => lesson.id),
+      count: 3,
+    });
+
+    expect(result).toHaveLength(3);
+    expect(result.every((lesson) => lesson.selectionReason === "review")).toBe(true);
+  });
 });

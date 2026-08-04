@@ -8,6 +8,7 @@ import { isCefrLevelFilter } from "@/core/models/level";
 import { createPracticeRunBodySchema, parseRequest } from "@/server/infrastructure/http/request-schemas";
 
 export const POST = withErrorHandling(async (request: Request) => {
+  await compositionRoot.identity.requireActor();
   const body = parseRequest(createPracticeRunBodySchema.safeParse(await request.json()));
 
   if (!isCefrLevelFilter(body.level)) {

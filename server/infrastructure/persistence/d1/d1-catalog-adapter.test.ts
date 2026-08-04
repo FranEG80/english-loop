@@ -3,6 +3,7 @@ import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import type { D1Result } from "./types/binding";
 import type { D1Operation } from "./types/operations";
 import { D1CatalogAdapter } from "./d1-catalog-adapter";
+import { encodeCursor } from "@/core/shared/kernel";
 
 const lessonRow = {
   id: "lesson-version-1", lessonId: "lesson-1", levelCode: "B1", category: "grammar", taxonomyNodeId: "grammar",
@@ -18,6 +19,8 @@ const activityRow = {
   tokens: "[]", pairs: "[]", lessonLinks: JSON.stringify([{ lessonId: "lesson-1", position: 0 }]),
   taxonomyLinks: JSON.stringify([{ taxonomyNodeId: "grammar", position: 0 }]),
 };
+const lessonRowNext = { ...lessonRow, id: "lesson-version-2", lessonId: "lesson-2" };
+const activityRowNext = { ...activityRow, id: "activity-version-2", activityId: "activity-2" };
 const taxonomyRows = [
   { nodeId: "grammar", parentId: null, kind: "category", labelsEn: "Grammar", labelsEs: "Gramática", levels: "[\"B1\"]", selectableForPractice: 1, sortOrder: 0 },
   { nodeId: "present", parentId: "grammar", kind: "topic", labelsEn: "Present", labelsEs: "Presente", levels: "[\"B1\"]", selectableForPractice: 1, sortOrder: 0 },
@@ -33,7 +36,7 @@ function transport(overrides: Partial<Record<D1Operation["name"], D1Result>> = {
       if (override) return override;
       if (request.name === "activeCatalogMetadata") return { success: true, results: [{ datasetVersion: "dataset-v1", checksum: "checksum" }] };
       if (request.name === "catalogLessons") return { success: true, results: [lessonRow] };
-      if (request.name === "catalogActivities" || request.name === "activityById") return { success: true, results: [activityRow] };
+      if (request.name === "catalogActivities" || request.name === "activityById" || request.name === "activityByVersionId") return { success: true, results: [activityRow] };
       if (request.name === "catalogTaxonomy") return { success: true, results: taxonomyRows };
       if (request.name === "catalogCounts") return { success: true, results: [{ count: 1 }] };
       return { success: true, results: [] };
@@ -49,13 +52,23 @@ describe("D1CatalogAdapter", () => {
     await expect(catalog.listLessons({ level: "B1", category: "grammar" })).resolves.toMatchObject([{ id: "lesson-1", relatedActivityIds: ["activity-1"] }]);
     await expect(catalog.getLessonById("lesson-1")).resolves.toMatchObject({ id: "lesson-1" });
     await expect(catalog.listActivities({ level: "both", taxonomyNodeId: "grammar", lessonIds: ["lesson-1"] })).resolves.toMatchObject([{ id: "activity-1", options: [{ id: "yes", feedback: "Correct" }] }]);
+    await expect(catalog.listLessonsPage(undefined, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }], hasMore: false, nextCursor: null });
+    await expect(catalog.listActivitiesPage(undefined, { limit: 2, cursor: encodeCursor("activity-0") })).resolves.toMatchObject({ items: [{ id: "activity-1" }], hasMore: false });
+    await expect(catalog.listLessonsPage({ level: "B1", category: "grammar" }, { limit: 2, cursor: encodeCursor("lesson-0") })).resolves.toMatchObject({ items: [{ id: "lesson-1" }] });
+    const paged = new D1CatalogAdapter(transport({ catalogLessons: { success: true, results: [lessonRow, lessonRowNext] }, catalogActivities: { success: true, results: [activityRow, activityRowNext] } }));
+    await expect(paged.listLessonsPage(undefined, { limit: 1 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }], hasMore: true });
+    await expect(paged.listActivitiesPage({ level: "B1", taxonomyNodeId: "grammar", lessonIds: ["lesson-1"] }, { limit: 1 })).resolves.toMatchObject({ items: [{ id: "activity-1" }], hasMore: true });
+    await expect(paged.listActivitiesPage({ level: "both", taxonomyNodeId: "grammar", lessonIds: ["lesson-1"] }, { limit: 1 })).resolves.toMatchObject({ items: [{ id: "activity-1" }], hasMore: true });
     await expect(catalog.getActivityById("activity-1")).resolves.toMatchObject({ id: "activity-1" });
+    await expect(catalog.getActivityByVersionId("activity-version-1")).resolves.toMatchObject({ id: "activity-1", versionId: "activity-version-1" });
+    await expect(new D1CatalogAdapter(transport({ activityByVersionId: { success: true, results: [] } })).getActivityByVersionId("missing-version")).resolves.toBeNull();
     await expect(catalog.countActivitiesByNode("grammar", "B1")).resolves.toBe(1);
     await expect(catalog.countActivitiesByNodes([], "B1")).resolves.toBe(0);
     await expect(catalog.countActivitiesByNodes(["grammar"], "both")).resolves.toBe(1);
     await expect(catalog.getContentVersion()).resolves.toMatchObject({ datasetVersion: "dataset-v1" });
     await expect(catalog.getCatalogMetadata()).resolves.toMatchObject({ lessonCount: 1, activityCount: 1, taxonomyNodeCount: 1 });
     expect(base.calls.some((request) => request.name === "catalogActivities")).toBe(true);
+    expect(base.calls).toContainEqual(expect.objectContaining({ name: "catalogActivities", cursor: "activity-0", limit: 3 }));
   });
 
   it("builds taxonomy descendants and paths and handles missing activities", async () => {

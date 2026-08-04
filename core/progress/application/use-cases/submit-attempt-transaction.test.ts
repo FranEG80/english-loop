@@ -4,6 +4,52 @@ import { PracticeRun } from "@/core/practice/domain/practice-run";
 import { submitAttemptTransaction } from "./submit-attempt-transaction";
 
 describe("submitAttemptTransaction", () => {
+  it("grades against the activity version pinned by the run", async () => {
+    const runRepository = new MemoryRuns();
+    const run = PracticeRun.create({
+      id: "versioned-run",
+      userId: actor.userId,
+      mode: "FOCUSED",
+      scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 },
+      activityIds: ["activity-1"],
+      activityVersionIds: ["activity-1-v1"],
+      currentIndex: 0,
+      status: "in_progress",
+      datasetVersion: "v1",
+      dailySessionId: null,
+      createdAt: clock.nowIso(),
+    });
+    await runRepository.save(run);
+    const oldVersion = { ...activity("activity-1"), versionId: "activity-1-v1", evaluator: { strategy: "boolean" as const, correct: false } };
+    const activeVersion = { ...activity("activity-1"), versionId: "activity-1-v2", evaluator: { strategy: "boolean" as const, correct: true } };
+    const catalog = {
+      getActivityById: async () => activeVersion,
+      getActivityByVersionId: async () => oldVersion,
+      listActivities: async () => [],
+      countActivitiesByNode: async () => 1,
+      countActivitiesByNodes: async () => 1,
+    };
+
+    const result = await submitAttemptTransaction(
+      identity,
+      uow,
+      new MemoryAttempts(),
+      runRepository,
+      catalog,
+      new MemoryProgress(),
+      new MemoryReviews(),
+      taxonomy,
+      ids,
+      clock,
+      collectEvents().dispatcher,
+      "1.0.0",
+      { runId: run.id, activityId: "activity-1", idempotencyKey: "version-key", response: { kind: "boolean", value: true } },
+    );
+
+    expect(result.attempt.isCorrect).toBe(false);
+    expect(result.attempt.activityVersionId).toBe("activity-1-v1");
+  });
+
   it("persists the attempt, projects progress/review and dispatches the event once", async () => {
     const runRepository = new MemoryRuns();
     const attemptRepository = new MemoryAttempts();

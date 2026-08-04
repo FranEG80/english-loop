@@ -74,6 +74,8 @@ export async function createFocusedPracticeRun(
       requestedCount: input.sessionSize,
     },
     activityIds: planned.activityIds,
+    activityVersionIds: planned.activityVersionIds,
+    activitySnapshots: planned.activitySnapshots,
     currentIndex: 0,
     status: "in_progress",
     datasetVersion,
