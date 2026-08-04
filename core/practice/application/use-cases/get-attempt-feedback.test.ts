@@ -28,7 +28,7 @@ describe("getAttemptFeedback", () => {
     ] as const;
     for (const [evaluator, correctAnswer] of values) {
       const attempt = ActivityAttempt.create({ id: `attempt-${evaluator.strategy}`, userId: actor.userId, practiceRunId: null, activityId: "activity-evaluator", origin: "FOCUSED", idempotencyKey: `key-${evaluator.strategy}`, response: { kind: "text", value: "answer" }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() });
-      const catalog = { getActivityById: async () => ({ ...activity("activity-evaluator"), evaluator }), listActivities: async () => [], countActivitiesByNode: async () => 0, countActivitiesByNodes: async () => 0 };
+      const catalog = { getActivityById: async () => ({ ...activity("activity-evaluator"), evaluator: evaluator as never }), listActivities: async () => [], countActivitiesByNode: async () => 0, countActivitiesByNodes: async () => 0 };
       await expect(getAttemptFeedback(catalog, attempt)).resolves.toMatchObject({ correctAnswer });
     }
   });

@@ -124,6 +124,9 @@ describe("D1 operation SQL dispatch", () => {
       expect(prepared.statement).toBeDefined();
     }
     expect(fake.queries.length).toBe(37);
+    prepareD1Operation(fake.database, { name: "catalogLessons" });
+    prepareD1Operation(fake.database, { name: "catalogActivities" });
+    prepareD1Operation(fake.database, { name: "catalogActivities", level: "both" });
   });
 
   it("prepares composite daily and practice snapshots with their child rows", () => {

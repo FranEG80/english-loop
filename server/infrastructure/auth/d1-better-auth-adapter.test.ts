@@ -60,9 +60,9 @@ describe("D1 Better Auth adapter", () => {
       model: "user",
       data: { id: "user-2", emailVerified: true, count: 2, nullable: null, createdAt: new Date("2026-01-02") },
     });
-    await adapter.findMany({ model: "session", where: undefined, select: [], sortBy: { field: "createdAt", direction: "asc" } });
-    await adapter.findOne({ model: "account", where: undefined });
-    await adapter.delete({ model: "verification", where: undefined });
+    await adapter.findMany({ model: "session", where: undefined as never, select: [], sortBy: { field: "createdAt", direction: "asc" } });
+    await adapter.findOne({ model: "account", where: undefined as never });
+    await adapter.delete({ model: "verification", where: undefined as never });
     expect(base.calls.map((call) => call.name)).toContain("authFindMany");
   });
 
@@ -82,8 +82,19 @@ describe("D1 Better Auth adapter", () => {
     await expect(adapter.consumeOne({ model: "user", where: [] })).resolves.toBeNull();
     await expect(adapter.incrementOne({ model: "user", where: [], increment: { emailVerified: 1 } })).resolves.toBeNull();
     await expect(adapter.count({ model: "user", where: [] })).resolves.toBe(0);
+    await expect(adapter.updateMany({ model: "user", where: [], update: { name: "x" } })).resolves.toBe(0);
+    await expect(adapter.deleteMany({ model: "user", where: [] })).resolves.toBe(0);
     await expect(adapter.create({ model: "user", data: { roles: ["admin", "editor"] } })).resolves.toEqual({});
     await expect(adapter.create({ model: "user", data: { emailVerified: true } })).resolves.toEqual({});
     await expect(adapter.create({ model: "user", data: [] as never })).resolves.toEqual({});
+  });
+
+  it("passes numeric and mixed where arrays through the scalar validator", async () => {
+    const base = transport();
+    const adapter = createD1BetterAuthAdapter(base)({} as never);
+    const numericWhere = [{ field: "id", operator: "in" as const, value: [1, 2], connector: "AND" as const }];
+    await expect(adapter.findOne({ model: "user", where: numericWhere })).resolves.toMatchObject({ id: "user-1" });
+    const mixedWhere = [{ field: "id", operator: "in" as const, value: [1, "two"], connector: "AND" as const }];
+    await expect(adapter.findOne({ model: "user", where: mixedWhere })).rejects.toBeInstanceOf(TypeError);
   });
 });

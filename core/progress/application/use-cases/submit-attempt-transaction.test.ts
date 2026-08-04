@@ -50,7 +50,7 @@ describe("submitAttemptTransaction", () => {
     await expect(submit(stale, { runId: "stale", activityId: "activity-1" })).rejects.toMatchObject({ message: "Activity is not the current activity of the practice run" });
     const unknownActivity = new MemoryRuns();
     await unknownActivity.save(PracticeRun.create({ id: "unknown", userId: actor.userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["missing-activity"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: clock.nowIso() }));
-    await expect(submit(unknownActivity, { runId: "unknown", activityId: "missing-activity" }, { getActivityById: async () => null })).rejects.toMatchObject({ message: "Activity not found: missing-activity" });
+    await expect(submit(unknownActivity, { runId: "unknown", activityId: "missing-activity" }, { getActivityById: async () => null as never })).rejects.toMatchObject({ message: "Activity not found: missing-activity" });
   });
 
   it("completes correct runs, protects repetition semantics and completes daily sessions", async () => {

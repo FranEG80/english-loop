@@ -103,6 +103,8 @@ describe("D1 practice repositories", () => {
     expect(foundRun?.activityIds).toEqual(["a1", "a2"]);
     expect(foundRun?.isCurrentActivityRepetition).toBe(false);
     await runs.save(run);
+    await runs.save(PracticeRun.create({ ...run.toSnapshot(), id: "r2", currentIndex: 1, originalActivityCount: 2 }));
+    await expect(new D1PracticeRunRepository(transport({ practiceRunGet: result([]) })).findById("missing")).resolves.toBeNull();
     await expect(attempts.findByUserIdAndIdempotencyKey("u1", "missing")).resolves.toBeNull();
     await expect(attempts.findByPracticeRunId("r1")).resolves.toHaveLength(1);
     await expect(attempts.findByUserIdAndActivityId("u1", "a1")).resolves.toHaveLength(0);
@@ -136,5 +138,14 @@ describe("D1 progress and review repositories", () => {
     await expect(reviews.findDueByUserId("u1", now)).resolves.toHaveLength(0);
     await expect(reviews.findUpcomingByUserId("u1", now)).resolves.toHaveLength(0);
     await reviews.save(ReviewItem.create({ id: "rv1", userId: "u1", activityId: "a1", taxonomyNodeId: "n1", level: "B1", stage: 1, consecutiveCorrect: 0, dueAt: now, failedAt: now, resolvedAt: null, attemptsCount: 1 }));
+
+    const mapped = transport({
+      activityProgressGet: result([{ userId: "u1", activityId: "a1", attemptsCount: 3, correctCount: 2, lastResult: 1, lastAttemptAt: now }]),
+      taxonomyProgressGet: result([{ userId: "u1", taxonomyNodeId: "n1", attemptsCount: 3, correctCount: 2 }]),
+    });
+    const mappedProgress = new D1ProgressRepository(mapped);
+    await expect(mappedProgress.getActivityProgress("u1", "a1")).resolves.toMatchObject({ lastResult: true, lastAttemptAt: now });
+    await expect(mappedProgress.getTaxonomyProgress("u1", "n1")).resolves.toMatchObject({ attemptsCount: 3 });
+    await new D1ReviewRepository(mapped).save(ReviewItem.create({ id: "rv2", userId: "u1", activityId: "a1", activityVersionId: "version-1", lessonId: "lesson-1", taxonomyNodeId: "n1", level: "B1", stage: 1, consecutiveCorrect: 0, dueAt: now, failedAt: now, resolvedAt: null, attemptsCount: 1 }));
   });
 });

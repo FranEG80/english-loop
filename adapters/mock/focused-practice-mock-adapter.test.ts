@@ -13,7 +13,7 @@ describe("focusedPracticeMockAdapter", () => {
   it("handles both levels, unknown scopes, missing runs and empty summaries", async () => {
     const availability = await focusedPracticeMockAdapter.getScopeAvailability("unknown.scope");
     expect(availability.every((item) => item.availableActivityCount === 0 && !item.isEligible)).toBe(true);
-    const run = await focusedPracticeMockAdapter.createRun({ taxonomyNodeId: "unknown.scope", level: "both", sessionSize: 3 });
+    const run = await focusedPracticeMockAdapter.createRun({ taxonomyNodeId: "unknown.scope", level: "both", sessionSize: 5 });
     expect(run.activityIds).toEqual([]);
     await expect(focusedPracticeMockAdapter.getRunSummary(run.id)).resolves.toMatchObject({ scorePercent: 0, coveredSubtopicIds: [] });
     await expect(focusedPracticeMockAdapter.submitRunAttempt("missing-run", { activityId: "x", response: { kind: "text", value: "x" } })).rejects.toMatchObject({ message: expect.stringContaining("No existe la sesión") });

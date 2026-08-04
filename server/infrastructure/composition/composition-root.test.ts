@@ -120,5 +120,17 @@ describe("CompositionRoot wiring", () => {
     mocks.config.betterAuthSecret = "";
     mocks.config.betterAuthUrl = "";
     expect(root.checkAuth()).toBe(false);
+
+    mocks.config.betterAuthSecret = "secret";
+    mocks.config.betterAuthUrl = "https://english-loop.test";
+    mocks.config.databaseProvider = "d1";
+    mocks.config.d1Transport = "binding";
+    const d1Root = new CompositionRoot({ binding: { DB: {} } as never });
+    expect(d1Root.getCatalogWritePort()).toBeTruthy();
+
+    mocks.config.databaseProvider = "sqlite";
+    mocks.config.nodeEnv = "production";
+    const productionRoot = new CompositionRoot();
+    expect(productionRoot.checkAuth()).toBe(true);
   });
 });
