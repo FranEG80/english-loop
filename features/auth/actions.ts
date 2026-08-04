@@ -21,7 +21,7 @@ export async function loginDemoAction(): Promise<void> {
     email: DEMO_USER_EMAIL,
     password: DEMO_USER_PASSWORD,
   });
-  redirect("/");
+  redirect("/dashboard");
 }
 
 export async function loginAction(
@@ -39,7 +39,7 @@ export async function loginAction(
     };
   }
 
-  redirect("/");
+  redirect("/dashboard");
 }
 
 export async function registerAction(
@@ -58,7 +58,7 @@ export async function registerAction(
     };
   }
 
-  redirect("/");
+  redirect("/dashboard");
 }
 
 export async function updateProfileAction(

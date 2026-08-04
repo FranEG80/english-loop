@@ -10,7 +10,7 @@ export default async function DemoPage() {
     getAuthPort().getSession(),
     getLocalePort().getLocale(),
   ]);
-  if (session?.isDemo) redirect("/");
+  if (session?.isDemo) redirect("/dashboard");
   const dictionary = getDictionary(locale);
 
   return (

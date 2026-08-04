@@ -25,7 +25,7 @@ export interface WorkspaceNavItem {
 }
 
 export const WORKSPACE_NAV_ITEMS: WorkspaceNavItem[] = [
-  { href: "/", labelKey: "dashboard", Icon: LayoutDashboard },
+  { href: "/dashboard", labelKey: "dashboard", Icon: LayoutDashboard },
   { href: "/lessons", labelKey: "lessons", Icon: BookOpen },
   { href: "/activities", labelKey: "activities", Icon: Dumbbell },
   { href: "/review", labelKey: "review", Icon: RotateCcw },

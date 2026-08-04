@@ -82,7 +82,7 @@ export function DailySummaryView({
       </div>
 
       <Link
-        href="/"
+        href="/dashboard"
         className="inline-flex h-14 items-center justify-center rounded-control border-2 border-foreground bg-primary-dark px-7 text-lg font-black text-white shadow-[4px_5px_0_var(--color-foreground)] transition-transform hover:-translate-y-1"
       >
         {dictionary.daily.summaryBackHome}

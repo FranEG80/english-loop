@@ -21,7 +21,7 @@ export default async function DailyLessonPage() {
   );
 
   if (!lesson) {
-    redirect("/");
+    redirect("/dashboard");
   }
 
   return (

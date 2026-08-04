@@ -14,7 +14,7 @@ export default async function RegisterPage() {
   const session = await getAuthPort().getSession();
 
   if (session) {
-    redirect("/");
+    redirect("/dashboard");
   }
 
   return (

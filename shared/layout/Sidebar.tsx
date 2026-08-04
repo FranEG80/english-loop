@@ -24,7 +24,7 @@ export function Sidebar({
         aria-label={dictionary.nav.home}
         className="flex h-full flex-col rounded-[2rem] border-2 border-foreground bg-primary-dark p-4 text-white shadow-[6px_8px_0_var(--color-foreground)]"
       >
-        <Link href="/" className="mb-8 flex items-center gap-3 px-2 pt-2">
+        <Link href="/dashboard" className="mb-8 flex items-center gap-3 px-2 pt-2">
           <span className="grid h-11 w-11 place-items-center rounded-2xl bg-accent">
             <Image
               src="/brand/englishloop-mark.webp"
@@ -42,7 +42,7 @@ export function Sidebar({
         </Link>
         <div className="flex flex-col gap-1.5">
           {WORKSPACE_NAV_ITEMS.map(({ href, labelKey, Icon }) => {
-            const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+            const isActive = pathname === href || pathname.startsWith(`${href}/`);
             return (
               <Link
                 key={href}

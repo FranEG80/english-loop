@@ -15,7 +15,7 @@ export function MobileNav({ dictionary }: { dictionary: Dictionary }) {
       className="fixed inset-x-1 bottom-1 z-40 flex rounded-2xl border-2 border-foreground bg-primary-dark p-1 shadow-[3px_4px_0_var(--color-foreground)] min-[430px]:inset-x-2 min-[430px]:bottom-2 min-[430px]:p-1.5 lg:hidden"
     >
       {WORKSPACE_NAV_ITEMS.map(({ href, labelKey, Icon }) => {
-        const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+        const isActive = pathname === href || pathname.startsWith(`${href}/`);
         return (
           <Link
             key={href}

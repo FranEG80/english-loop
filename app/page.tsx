@@ -1,8 +1,8 @@
 import { getAuthPort, getLocalePort } from "@/adapters/adapter-factory";
+import { redirect } from "next/navigation";
 import { getDictionary } from "@/shared/i18n";
 import { PublicShell } from "@/shared/layout/PublicShell";
 import { Landing } from "@/features/landing/Landing";
-import DashboardPage from "./dashboard/page";
 
 export default async function RootPage() {
   const locale = await getLocalePort().getLocale();
@@ -17,5 +17,5 @@ export default async function RootPage() {
     );
   }
 
-  return <DashboardPage />;
+  redirect("/dashboard");
 }
