@@ -97,6 +97,11 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
     const publishedRun = PracticeRun.create({ id: "run-published-version", userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["activity-1"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: "2026-08-03T00:00:00.000Z" });
     await runs.save(publishedRun);
     expect((await prisma.practiceRunItem.findUnique({ where: { practiceRunId_position: { practiceRunId: publishedRun.id, position: 0 } } }))?.activityVersionId).toBe("activity-version-integration");
+    const statusRun = PracticeRun.create({ id: "run-statuses", userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 2 }, activityIds: ["activity-1", "activity-2"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: "2026-08-03T00:00:00.000Z" });
+    await runs.save(statusRun);
+    statusRun.advance();
+    await runs.save(statusRun);
+    await expect(prisma.practiceRunItem.findUnique({ where: { practiceRunId_position: { practiceRunId: statusRun.id, position: 0 } } })).resolves.toMatchObject({ status: "answered" });
     await attempts.save(ActivityAttempt.create({ id: "attempt-integration", userId, practiceRunId: run.id, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "key", response: { kind: "boolean", value: true }, isCorrect: true, evaluatorVersion: "1", submittedAt: "2026-08-03T00:00:00.000Z" }));
     expect(await attempts.findByUserIdAndActivityId(userId, "activity-1")).toHaveLength(1);
     await progress.upsertActivityProgress({ userId, activityId: "activity-1", attemptsCount: 1, correctCount: 1, lastResult: true, lastAttemptAt: "2026-08-03T00:00:00.000Z" });

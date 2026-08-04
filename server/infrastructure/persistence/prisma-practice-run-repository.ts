@@ -59,6 +59,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
 
   async save(run: PracticeRun): Promise<void> {
     const snapshot = run.toSnapshot();
+    const originalActivityCount = run.originalActivityCount;
     const scope: ScopeSnapshot = {
       level: snapshot.scope.level,
       taxonomyNodeId: snapshot.scope.taxonomyNodeId,
@@ -76,14 +77,14 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
         status: snapshot.status,
         scopeSnapshot: JSON.stringify(scope),
         currentIndex: snapshot.currentIndex,
-        originalActivityCount: snapshot.originalActivityCount ?? snapshot.activityIds.length,
+        originalActivityCount,
         datasetVersion: snapshot.datasetVersion,
         createdAt: new Date(snapshot.createdAt),
       },
       update: {
         status: snapshot.status,
         currentIndex: snapshot.currentIndex,
-        originalActivityCount: snapshot.originalActivityCount ?? snapshot.activityIds.length,
+        originalActivityCount,
       },
     });
 
@@ -93,7 +94,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
     });
     for (let position = 0; position < snapshot.activityIds.length; position += 1) {
       const activityId = snapshot.activityIds[position];
-      const isRepetition = position >= (snapshot.originalActivityCount ?? snapshot.activityIds.length);
+      const isRepetition = position >= originalActivityCount;
       const activityVersion = publication
         ? await db.activityVersion.findFirst({
             where: { releaseId: publication.releaseId, activityId, statusCode: PUBLISHED_CONTENT_STATUS },

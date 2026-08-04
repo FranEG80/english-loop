@@ -53,4 +53,23 @@ describe("PersistenceBundle", () => {
     expect(bundle.catalogWritePort).toBeNull();
     await expect(bundle.databaseHealth()).resolves.toBe(true);
   });
+
+  it("selects the HTTP catalog writer and rejects D1 without a transport", () => {
+    const httpBundle = createPersistenceBundle({
+      prisma: {} as never,
+      config: {
+        databaseProvider: "d1", d1Transport: "http", d1HttpUrl: "https://proxy.example.test", d1HttpToken: "secret",
+        attemptRateLimitWindowMs: 60_000, attemptRateLimitMax: 30, authRateLimitWindowMs: 60_000, authRateLimitMax: 10,
+      },
+      fetch: async () => new Response(JSON.stringify({ success: true, results: [] })),
+    });
+    expect(httpBundle.catalogWritePort?.constructor.name).toBe("D1HttpCatalogWriteAdapter");
+    expect(() => createPersistenceBundle({
+      prisma: {} as never,
+      config: {
+        databaseProvider: "d1", d1Transport: "binding", d1HttpUrl: null, d1HttpToken: null,
+        attemptRateLimitWindowMs: 60_000, attemptRateLimitMax: 30, authRateLimitWindowMs: 60_000, authRateLimitMax: 10,
+      },
+    })).toThrow("D1_TRANSPORT=binding requires the Cloudflare D1 binding named DB");
+  });
 });

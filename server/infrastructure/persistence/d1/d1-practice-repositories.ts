@@ -17,7 +17,7 @@ export class D1PracticeRunRepository implements PracticeRunRepository {
 
   async save(run: PracticeRun): Promise<void> {
     const snapshot = run.toSnapshot();
-    const originalActivityCount = snapshot.originalActivityCount ?? snapshot.activityIds.length;
+    const originalActivityCount = run.originalActivityCount;
     const request: D1PracticeRunSnapshot = {
       id: snapshot.id, userId: snapshot.userId, mode: snapshot.mode, status: snapshot.status,
       scopeSnapshot: JSON.stringify(snapshot.scope), currentIndex: snapshot.currentIndex,

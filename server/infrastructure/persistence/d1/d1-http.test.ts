@@ -76,6 +76,41 @@ describe("D1 persistence boundary", () => {
     await expect(client.acceptReplayNonce("nonce", "now", "later")).resolves.toBe(true);
   });
 
+  it("returns false for unsuccessful health/nonce writes and handles missing batch metadata", async () => {
+    const failing = {
+      prepare() {
+        const statement: D1PreparedStatement = {
+          bind: () => statement,
+          first: async () => null,
+          all: async <T>() => ({ success: true, results: [{ ok: 0 }] as T[] }),
+          run: async () => ({ success: true, results: [], meta: { changes: 0 } }),
+        };
+        return statement;
+      },
+      batch: async () => [{ success: true, results: [] }],
+    } satisfies D1DatabaseLike;
+    const client = new D1BindingClient(failing);
+    await expect(client.health()).resolves.toBe(false);
+    await expect(client.consumeVerification("id", "value", "now")).resolves.toBe(false);
+    await expect(client.acceptReplayNonce("nonce", "now", "later")).resolves.toBe(false);
+
+    const noMetadata = {
+      prepare() {
+        const statement: D1PreparedStatement = {
+          bind: () => statement,
+          first: async () => null,
+          all: async () => ({ success: true, results: [] }),
+          run: async () => ({ success: true, results: [] }),
+        };
+        return statement;
+      },
+      batch: async () => [{ success: true, results: [] }, { success: true, results: [] }],
+    } satisfies D1DatabaseLike;
+    await expect(new D1BindingClient(noMetadata).execute({ name: "dailySessionSave", snapshot: {
+      id: "s2", userId: "u1", date: "2026-08-04", status: "lesson", datasetVersion: "v1", seed: "seed", practiceRunId: null, createdAt: "now", lessons: [],
+    } })).resolves.toMatchObject({ success: true, meta: { changes: 0 } });
+  });
+
   it("authenticates, expires timestamps and rejects nonce replay", async () => {
     const { database } = fakeDatabase();
     const now = 1_700_000_000_000;

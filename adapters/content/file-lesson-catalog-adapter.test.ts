@@ -1,5 +1,7 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
+import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import { FileLessonCatalogAdapter } from "./file-lesson-catalog-adapter";
 
@@ -11,5 +13,29 @@ describe("FileLessonCatalogAdapter", () => {
     expect(lessons.every((lesson) => lesson.status === "published" && lesson.level === "B1")).toBe(true);
     expect((await adapter.getLessonById(lessons[0].id))?.explanation).toBeTypeOf("string");
     expect(await adapter.getLessonById("missing")).toBeNull();
+  });
+
+  it("summarizes temporary lessons and tolerates a missing activity index", async () => {
+    const root = await mkdtemp(path.join(os.tmpdir(), "english-loop-lesson-catalog-"));
+    try {
+      await mkdir(path.join(root, "catalog", "lessons"), { recursive: true });
+      await writeFile(path.join(root, "catalog", "lesson-index.json"), JSON.stringify({ lessons: [{ id: "lesson-temp", path: "catalog/lessons/lesson.md", title: "Temp", level: "B2", category: "grammar", topic: "topic", subtopics: [], difficulty: 2, estimatedMinutes: 5, status: "published", contentVersion: 1 }] }));
+      await writeFile(path.join(root, "catalog", "lessons", "lesson.md"), "---\ntags: [temp]\n---\n# Resumen\nFirst paragraph\n\nSecond paragraph\n# Explanation\nBody");
+      const adapter = new FileLessonCatalogAdapter(root);
+      await expect(adapter.listLessons({ level: "B2", category: "grammar" })).resolves.toMatchObject([{ id: "lesson-temp", summary: "First paragraph Second paragraph", relatedActivityIds: [], tags: ["temp"] }]);
+      await expect(adapter.listLessons({ level: "B1" })).resolves.toEqual([]);
+      await expect(adapter.getLessonById("missing")).resolves.toBeNull();
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it("reports a missing lesson index as a dataset outage", async () => {
+    const root = await mkdtemp(path.join(os.tmpdir(), "english-loop-lesson-catalog-invalid-"));
+    try {
+      await expect(new FileLessonCatalogAdapter(root).listLessons()).rejects.toBeInstanceOf(Error);
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
   });
 });

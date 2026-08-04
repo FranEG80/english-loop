@@ -22,4 +22,15 @@ describe("review server actions", () => {
     await expect(submitFocusedAttemptAction("run-1", { activityId: "a1", response: { kind: "text", value: "x" } })).resolves.toEqual({ isCorrect: false });
     await expect(getFocusedSummaryAction("run-1")).resolves.toEqual({ runId: "run-1" });
   });
+
+  it("accepts every supported level and session size", async () => {
+    for (const [level, size] of [["B1", 10], ["B2", 15], ["B2", 20]] as const) {
+      focused.createRun.mockResolvedValueOnce({ id: `run-${size}`, activityIds: [] });
+      const form = new FormData();
+      form.set("taxonomyNodeId", "grammar");
+      form.set("level", level);
+      form.set("sessionSize", String(size));
+      await expect(createFocusedPracticeAction(form)).rejects.toMatchObject({ message: `REDIRECT:/review/session/run-${size}?` });
+    }
+  });
 });

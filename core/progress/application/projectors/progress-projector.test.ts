@@ -63,6 +63,26 @@ describe("ProgressProjector", () => {
     expect(projector.nowIso()).toBe("2026-08-03T00:00:00.000Z");
   });
 
+  it("falls back to the activity taxonomy id when its path is empty", async () => {
+    const orphan = { ...activity, id: "orphan", taxonomyNodeIds: ["unknown"], lessonIds: [] };
+    const { projector, progress, review } = harness(null, new Map());
+    await projector.project({ userId: "u", activity: orphan, origin: "DAILY", isCorrect: false, attemptedAt: "2026-08-03T00:00:00.000Z" });
+    expect(progress.upsertTaxonomyProgress).toHaveBeenCalledWith(expect.objectContaining({ taxonomyNodeId: "unknown" }));
+    expect(review.save).toHaveBeenCalledWith(expect.objectContaining({ taxonomyNodeId: "unknown", lessonId: null }));
+  });
+
+  it("does not update resolved reviews and keeps an active review pending after an early success", async () => {
+    const resolved = ReviewItem.create({ id: "resolved", userId: "u", activityId: activity.id, taxonomyNodeId: "child", level: "B1", stage: 3, consecutiveCorrect: 3, dueAt: "2026-08-02T00:00:00.000Z", failedAt: "2026-08-01T00:00:00.000Z", resolvedAt: "2026-08-02T00:00:00.000Z", attemptsCount: 3 });
+    const resolvedHarness = harness(resolved);
+    expect(await resolvedHarness.projector.project({ userId: "u", activity, origin: "SMART_REVIEW", isCorrect: true, attemptedAt: "2026-08-03T00:00:00.000Z" })).toBe(false);
+    expect(resolvedHarness.review.save).not.toHaveBeenCalled();
+
+    const active = ReviewItem.create({ id: "active", userId: "u", activityId: activity.id, taxonomyNodeId: "child", level: "B1", stage: 0, consecutiveCorrect: 0, dueAt: "2026-08-02T00:00:00.000Z", failedAt: "2026-08-01T00:00:00.000Z", resolvedAt: null, attemptsCount: 1 });
+    const activeHarness = harness(active);
+    expect(await activeHarness.projector.project({ userId: "u", activity, origin: "SMART_REVIEW", isCorrect: true, attemptedAt: "2026-08-03T00:00:00.000Z" })).toBe(true);
+    expect(activeHarness.review.save).toHaveBeenCalledWith(expect.objectContaining({ resolvedAt: null }));
+  });
+
   it("increments and later resolves lesson pending errors after the third smart-review success", async () => {
     const lessonProgress = new Map<string, { userId: string; lessonId: string; viewed: boolean; viewedAt: string | null; errorsPending: number }>();
     const repository = {

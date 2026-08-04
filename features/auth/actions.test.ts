@@ -13,6 +13,14 @@ describe("auth server actions", () => {
     expect(result).toEqual({ error: "invalid credentials" });
   });
 
+  it("uses safe fallback messages and empty values for non-Error failures", async () => {
+    authPort.login.mockRejectedValueOnce("invalid");
+    await expect(loginAction(undefined, new FormData())).resolves.toEqual({ error: "No se pudo iniciar sesión." });
+    authPort.register.mockRejectedValueOnce("invalid");
+    await expect(registerAction(undefined, new FormData())).resolves.toEqual({ error: "No se pudo crear la cuenta." });
+    expect(authPort.register).toHaveBeenLastCalledWith({ name: "", email: "", password: "" });
+  });
+
   it("passes credentials and redirects after login and registration", async () => {
     const login = new FormData();
     login.set("email", "alex@example.com");
