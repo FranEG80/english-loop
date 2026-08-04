@@ -1,12 +1,13 @@
 import { describe, expect, it, vi } from "vitest";
 
-const root = vi.hoisted(() => ({ identity: {}, unitOfWork: {}, dailySessionRepository: { findById: vi.fn(async () => ({ id: "session-1", practiceRunId: null })) }, lessonProgressRepository: {}, userSettingsRepository: {}, practiceRunRepository: { findById: vi.fn(async () => ({ id: "run-1" })) }, dailySessionPlanner: {}, dailyPracticePlanner: {}, getLessonCatalog: vi.fn(), getActivityCatalog: vi.fn(), getDatasetVersion: vi.fn(async () => "v1"), idGenerator: {}, clock: { nowIso: vi.fn(() => "now") }, domainEventDispatcher: {} }));
+type TestSession = { id: string; practiceRunId: string | null };
+const root = vi.hoisted(() => ({ identity: {}, unitOfWork: {}, dailySessionRepository: { findById: vi.fn(async (): Promise<TestSession | null> => ({ id: "session-1", practiceRunId: null })) }, lessonProgressRepository: {}, userSettingsRepository: {}, practiceRunRepository: { findById: vi.fn(async (): Promise<{ id: string } | null> => ({ id: "run-1" })) }, dailySessionPlanner: {}, dailyPracticePlanner: {}, getLessonCatalog: vi.fn(), getActivityCatalog: vi.fn(), getDatasetVersion: vi.fn(async () => "v1"), idGenerator: {}, clock: { nowIso: vi.fn(() => "now") }, domainEventDispatcher: {} }));
 const useCases = vi.hoisted(() => ({
-  getOrCreate: vi.fn(async () => ({ id: "session-1", practiceRunId: null })),
+  getOrCreate: vi.fn(async (): Promise<TestSession> => ({ id: "session-1", practiceRunId: null })),
   start: vi.fn(async () => ({ run: { id: "run-1" } })),
-  completeLesson: vi.fn(async () => ({ id: "session-1", practiceRunId: null })),
-  skip: vi.fn(async () => ({ id: "session-1", practiceRunId: null })),
-  completeDaily: vi.fn(async () => ({ id: "session-1", practiceRunId: null })),
+  completeLesson: vi.fn(async (): Promise<TestSession> => ({ id: "session-1", practiceRunId: null })),
+  skip: vi.fn(async (): Promise<TestSession> => ({ id: "session-1", practiceRunId: null })),
+  completeDaily: vi.fn(async (): Promise<TestSession> => ({ id: "session-1", practiceRunId: null })),
 }));
 vi.mock("@/server/infrastructure/composition/composition-root", () => ({ compositionRoot: root }));
 vi.mock("@/core/learning/application/use-cases/complete-lesson", () => ({ completeLesson: useCases.completeLesson }));

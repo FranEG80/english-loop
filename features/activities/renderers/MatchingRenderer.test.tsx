@@ -25,12 +25,12 @@ describe("MatchingRenderer", () => {
     await user.click(screen.getByRole("button", { name: "Left" }));
     await user.click(screen.getByRole("button", { name: "Right" }));
 
-    const incompleteSubmit = screen.getByRole("button", { name: en.daily.submitAnswer });
+    const incompleteSubmit = screen.getByRole("button", { name: en.daily.submitAnswer }) as HTMLButtonElement;
     incompleteSubmit.disabled = false;
     fireEvent.click(incompleteSubmit);
     expect(onSubmit).not.toHaveBeenCalled();
 
-    const pairedLeft = screen.getByRole("button", { name: "Left" });
+    const pairedLeft = screen.getByRole("button", { name: "Left" }) as HTMLButtonElement;
     pairedLeft.disabled = false;
     fireEvent.click(pairedLeft);
     await user.click(screen.getByRole("button", { name: en.activities.resetSelection }));
@@ -38,11 +38,11 @@ describe("MatchingRenderer", () => {
 
     const disabledSubmit = vi.fn();
     render(<MatchingRenderer activity={{ id: "disabled", level: "B1", taxonomyNodeId: "topic", interactionMode: "matching_pairs", type: "matching", leftItems: [{ id: "l1", label: "Disabled left" }], rightItems: [{ id: "r1", label: "Disabled right" }] }} dictionary={en} onSubmit={disabledSubmit} disabled />);
-    const disabledLeft = screen.getByRole("button", { name: "Disabled left" });
+    const disabledLeft = screen.getByRole("button", { name: "Disabled left" }) as HTMLButtonElement;
     disabledLeft.disabled = false;
     fireEvent.click(disabledLeft);
     expect(disabledLeft).toHaveAttribute("aria-pressed", "false");
-    const disabledReset = screen.getAllByRole("button", { name: en.activities.resetSelection })[1]!;
+    const disabledReset = screen.getAllByRole("button", { name: en.activities.resetSelection })[1] as HTMLButtonElement;
     disabledReset.disabled = false;
     fireEvent.click(disabledReset);
   });

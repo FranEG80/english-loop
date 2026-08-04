@@ -70,7 +70,7 @@ describe("loadConfig", () => {
 
   it("uses fallbacks when optional URL and environment values are absent", () => {
     delete process.env.BETTER_AUTH_URL;
-    delete process.env.NODE_ENV;
+    Reflect.deleteProperty(process.env, "NODE_ENV");
     expect(loadConfig()).toMatchObject({ betterAuthUrl: "http://localhost:3000", nodeEnv: "development" });
   });
 

@@ -56,7 +56,7 @@ describe("Better Auth configuration boundary", () => {
     expect(createD1Transport).toHaveBeenCalledWith(expect.objectContaining({ databaseProvider: "d1", d1Transport: "binding", binding }));
     expect(createD1BetterAuthAdapter).toHaveBeenCalled();
 
-    createD1Transport.mockReturnValueOnce(null);
+    createD1Transport.mockReturnValueOnce(null as never);
     expect(() => createAuth({ binding: binding as never })).toThrow("D1 auth requires a configured D1 transport");
   });
 
@@ -64,7 +64,7 @@ describe("Better Auth configuration boundary", () => {
     vi.resetModules();
     config.databaseProvider = "d1";
     config.d1Transport = "binding";
-    const bindingModule = await import("./auth?binding");
+    const bindingModule = await import("./auth");
     expect(() => (bindingModule.auth as Record<string, unknown>).request).toThrow("D1 binding auth must be created with createAuth");
   });
 });
