@@ -28,6 +28,7 @@ export interface CatalogSeedLesson {
   difficulty: number;
   contentVersion: number;
   status: string;
+  isDemo?: boolean;
 }
 
 export interface CatalogSeedActivity {
@@ -54,6 +55,7 @@ export interface CatalogSeedActivity {
   pairs: ActivityPair[];
   expectedAnswers: Array<{ gapId: string | null; answer: string; position: number }>;
   status: string;
+  isDemo?: boolean;
 }
 
 export interface CatalogSeedInput {

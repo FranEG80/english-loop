@@ -3145,6 +3145,7 @@ export const UserScalarFieldEnum = {
   email: 'email',
   emailVerified: 'emailVerified',
   image: 'image',
+  isDemo: 'isDemo',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
@@ -3445,7 +3446,8 @@ export type TaxonomyNodeVersionScalarFieldEnum = (typeof TaxonomyNodeVersionScal
 
 
 export const LessonScalarFieldEnum = {
-  id: 'id'
+  id: 'id',
+  isDemo: 'isDemo'
 } as const
 
 export type LessonScalarFieldEnum = (typeof LessonScalarFieldEnum)[keyof typeof LessonScalarFieldEnum]
@@ -3484,7 +3486,8 @@ export type LessonVersionTaxonomyScalarFieldEnum = (typeof LessonVersionTaxonomy
 
 
 export const ActivityScalarFieldEnum = {
-  id: 'id'
+  id: 'id',
+  isDemo: 'isDemo'
 } as const
 
 export type ActivityScalarFieldEnum = (typeof ActivityScalarFieldEnum)[keyof typeof ActivityScalarFieldEnum]

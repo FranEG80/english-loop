@@ -26,28 +26,34 @@ export type AggregateActivity = {
 
 export type ActivityMinAggregateOutputType = {
   id: string | null
+  isDemo: boolean | null
 }
 
 export type ActivityMaxAggregateOutputType = {
   id: string | null
+  isDemo: boolean | null
 }
 
 export type ActivityCountAggregateOutputType = {
   id: number
+  isDemo: number
   _all: number
 }
 
 
 export type ActivityMinAggregateInputType = {
   id?: true
+  isDemo?: true
 }
 
 export type ActivityMaxAggregateInputType = {
   id?: true
+  isDemo?: true
 }
 
 export type ActivityCountAggregateInputType = {
   id?: true
+  isDemo?: true
   _all?: true
 }
 
@@ -125,6 +131,7 @@ export type ActivityGroupByArgs<ExtArgs extends runtime.Types.Extensions.Interna
 
 export type ActivityGroupByOutputType = {
   id: string
+  isDemo: boolean
   _count: ActivityCountAggregateOutputType | null
   _min: ActivityMinAggregateOutputType | null
   _max: ActivityMaxAggregateOutputType | null
@@ -150,11 +157,13 @@ export type ActivityWhereInput = {
   OR?: Prisma.ActivityWhereInput[]
   NOT?: Prisma.ActivityWhereInput | Prisma.ActivityWhereInput[]
   id?: Prisma.StringFilter<"Activity"> | string
+  isDemo?: Prisma.BoolFilter<"Activity"> | boolean
   versions?: Prisma.ActivityVersionListRelationFilter
 }
 
 export type ActivityOrderByWithRelationInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
   versions?: Prisma.ActivityVersionOrderByRelationAggregateInput
 }
 
@@ -163,11 +172,13 @@ export type ActivityWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.ActivityWhereInput | Prisma.ActivityWhereInput[]
   OR?: Prisma.ActivityWhereInput[]
   NOT?: Prisma.ActivityWhereInput | Prisma.ActivityWhereInput[]
+  isDemo?: Prisma.BoolFilter<"Activity"> | boolean
   versions?: Prisma.ActivityVersionListRelationFilter
 }, "id">
 
 export type ActivityOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
   _count?: Prisma.ActivityCountOrderByAggregateInput
   _max?: Prisma.ActivityMaxOrderByAggregateInput
   _min?: Prisma.ActivityMinOrderByAggregateInput
@@ -178,50 +189,61 @@ export type ActivityScalarWhereWithAggregatesInput = {
   OR?: Prisma.ActivityScalarWhereWithAggregatesInput[]
   NOT?: Prisma.ActivityScalarWhereWithAggregatesInput | Prisma.ActivityScalarWhereWithAggregatesInput[]
   id?: Prisma.StringWithAggregatesFilter<"Activity"> | string
+  isDemo?: Prisma.BoolWithAggregatesFilter<"Activity"> | boolean
 }
 
 export type ActivityCreateInput = {
   id: string
+  isDemo?: boolean
   versions?: Prisma.ActivityVersionCreateNestedManyWithoutActivityInput
 }
 
 export type ActivityUncheckedCreateInput = {
   id: string
+  isDemo?: boolean
   versions?: Prisma.ActivityVersionUncheckedCreateNestedManyWithoutActivityInput
 }
 
 export type ActivityUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   versions?: Prisma.ActivityVersionUpdateManyWithoutActivityNestedInput
 }
 
 export type ActivityUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   versions?: Prisma.ActivityVersionUncheckedUpdateManyWithoutActivityNestedInput
 }
 
 export type ActivityCreateManyInput = {
   id: string
+  isDemo?: boolean
 }
 
 export type ActivityUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
 export type ActivityUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
 export type ActivityCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
 }
 
 export type ActivityMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
 }
 
 export type ActivityMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
 }
 
 export type ActivityScalarRelationFilter = {
@@ -245,10 +267,12 @@ export type ActivityUpdateOneRequiredWithoutVersionsNestedInput = {
 
 export type ActivityCreateWithoutVersionsInput = {
   id: string
+  isDemo?: boolean
 }
 
 export type ActivityUncheckedCreateWithoutVersionsInput = {
   id: string
+  isDemo?: boolean
 }
 
 export type ActivityCreateOrConnectWithoutVersionsInput = {
@@ -269,10 +293,12 @@ export type ActivityUpdateToOneWithWhereWithoutVersionsInput = {
 
 export type ActivityUpdateWithoutVersionsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
 export type ActivityUncheckedUpdateWithoutVersionsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
 
@@ -308,23 +334,27 @@ export type ActivityCountOutputTypeCountVersionsArgs<ExtArgs extends runtime.Typ
 
 export type ActivitySelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  isDemo?: boolean
   versions?: boolean | Prisma.Activity$versionsArgs<ExtArgs>
   _count?: boolean | Prisma.ActivityCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["activity"]>
 
 export type ActivitySelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  isDemo?: boolean
 }, ExtArgs["result"]["activity"]>
 
 export type ActivitySelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  isDemo?: boolean
 }, ExtArgs["result"]["activity"]>
 
 export type ActivitySelectScalar = {
   id?: boolean
+  isDemo?: boolean
 }
 
-export type ActivityOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id", ExtArgs["result"]["activity"]>
+export type ActivityOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "isDemo", ExtArgs["result"]["activity"]>
 export type ActivityInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   versions?: boolean | Prisma.Activity$versionsArgs<ExtArgs>
   _count?: boolean | Prisma.ActivityCountOutputTypeDefaultArgs<ExtArgs>
@@ -339,6 +369,7 @@ export type $ActivityPayload<ExtArgs extends runtime.Types.Extensions.InternalAr
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
+    isDemo: boolean
   }, ExtArgs["result"]["activity"]>
   composites: {}
 }
@@ -764,6 +795,7 @@ export interface Prisma__ActivityClient<T, Null = never, ExtArgs extends runtime
  */
 export interface ActivityFieldRefs {
   readonly id: Prisma.FieldRef<"Activity", 'String'>
+  readonly isDemo: Prisma.FieldRef<"Activity", 'Boolean'>
 }
     
 

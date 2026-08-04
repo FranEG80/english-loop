@@ -107,6 +107,12 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
           ...input.activities.map((activity) => activity.status),
         ]);
 
+        // The demo fixture is represented by the same catalog rows as normal
+        // content, but is explicitly hidden from normal catalog readers.
+        // Resetting first also removes stale flags when the dataset changes.
+        await tx.lesson.updateMany({ data: { isDemo: false } });
+        await tx.activity.updateMany({ data: { isDemo: false } });
+
         for (const code of activityTypes) {
           await tx.activityType.upsert({ where: { code }, update: {}, create: { code } });
         }
@@ -139,7 +145,11 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
         }
 
         for (const lesson of input.lessons) {
-          await tx.lesson.upsert({ where: { id: lesson.id }, update: {}, create: { id: lesson.id } });
+          await tx.lesson.upsert({
+            where: { id: lesson.id },
+            update: { isDemo: lesson.isDemo ?? false },
+            create: { id: lesson.id, isDemo: lesson.isDemo ?? false },
+          });
           const version = await tx.lessonVersion.create({
             data: {
               releaseId: release.id,
@@ -166,7 +176,11 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
         }
 
         for (const activity of input.activities) {
-          await tx.activity.upsert({ where: { id: activity.id }, update: {}, create: { id: activity.id } });
+          await tx.activity.upsert({
+            where: { id: activity.id },
+            update: { isDemo: activity.isDemo ?? false },
+            create: { id: activity.id, isDemo: activity.isDemo ?? false },
+          });
           const version = await tx.activityVersion.create({
             data: {
               releaseId: release.id,

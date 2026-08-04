@@ -4,7 +4,7 @@ import { restRequest } from "./http-client";
 
 export const progressRestAdapter: ProgressPort = {
   getOverview: () => restRequest<ProgressOverviewDto>("/progress/overview"),
-  getReviewQueue: () => restRequest<ReviewQueueDto>("/progress/review-queue"),
+  getReviewQueue: () => restRequest<ReviewQueueDto>("/review-queue"),
   getTaxonomyProgress: (nodeId) =>
     restRequest<TaxonomyProgressDto>(`/progress/taxonomy/${nodeId}`),
   getActivityHistory: (activityId) =>

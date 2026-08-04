@@ -192,12 +192,12 @@ export interface D1AuthQuery {
 export type D1Operation =
   | { name: "health" }
   | { name: "activeCatalogMetadata" }
-  | { name: "activityById"; activityId: string }
-  | { name: "activityByVersionId"; activityVersionId: string }
-  | { name: "catalogLessons"; level?: string; category?: string; cursor?: string; limit?: number }
-  | { name: "catalogActivities"; taxonomyNodeId?: string; level?: string; lessonIds?: string[]; cursor?: string; limit?: number }
+  | { name: "activityById"; activityId: string; includeDemo?: boolean }
+  | { name: "activityByVersionId"; activityVersionId: string; includeDemo?: boolean }
+  | { name: "catalogLessons"; level?: string; category?: string; cursor?: string; limit?: number; includeDemo?: boolean }
+  | { name: "catalogActivities"; taxonomyNodeId?: string; level?: string; lessonIds?: string[]; cursor?: string; limit?: number; includeDemo?: boolean }
   | { name: "catalogTaxonomy" }
-  | { name: "catalogCounts"; kind: "lessons" | "activities" | "taxonomy" }
+  | { name: "catalogCounts"; kind: "lessons" | "activities" | "taxonomy"; includeDemo?: boolean }
   | { name: "userSettingsGet"; userId: string }
   | { name: "userSettingsSave"; snapshot: D1UserSettingsSnapshot }
   | { name: "savedLessonsList"; userId: string }

@@ -26,28 +26,34 @@ export type AggregateLesson = {
 
 export type LessonMinAggregateOutputType = {
   id: string | null
+  isDemo: boolean | null
 }
 
 export type LessonMaxAggregateOutputType = {
   id: string | null
+  isDemo: boolean | null
 }
 
 export type LessonCountAggregateOutputType = {
   id: number
+  isDemo: number
   _all: number
 }
 
 
 export type LessonMinAggregateInputType = {
   id?: true
+  isDemo?: true
 }
 
 export type LessonMaxAggregateInputType = {
   id?: true
+  isDemo?: true
 }
 
 export type LessonCountAggregateInputType = {
   id?: true
+  isDemo?: true
   _all?: true
 }
 
@@ -125,6 +131,7 @@ export type LessonGroupByArgs<ExtArgs extends runtime.Types.Extensions.InternalA
 
 export type LessonGroupByOutputType = {
   id: string
+  isDemo: boolean
   _count: LessonCountAggregateOutputType | null
   _min: LessonMinAggregateOutputType | null
   _max: LessonMaxAggregateOutputType | null
@@ -150,12 +157,14 @@ export type LessonWhereInput = {
   OR?: Prisma.LessonWhereInput[]
   NOT?: Prisma.LessonWhereInput | Prisma.LessonWhereInput[]
   id?: Prisma.StringFilter<"Lesson"> | string
+  isDemo?: Prisma.BoolFilter<"Lesson"> | boolean
   versions?: Prisma.LessonVersionListRelationFilter
   activityLinks?: Prisma.ActivityVersionLessonListRelationFilter
 }
 
 export type LessonOrderByWithRelationInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
   versions?: Prisma.LessonVersionOrderByRelationAggregateInput
   activityLinks?: Prisma.ActivityVersionLessonOrderByRelationAggregateInput
 }
@@ -165,12 +174,14 @@ export type LessonWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.LessonWhereInput | Prisma.LessonWhereInput[]
   OR?: Prisma.LessonWhereInput[]
   NOT?: Prisma.LessonWhereInput | Prisma.LessonWhereInput[]
+  isDemo?: Prisma.BoolFilter<"Lesson"> | boolean
   versions?: Prisma.LessonVersionListRelationFilter
   activityLinks?: Prisma.ActivityVersionLessonListRelationFilter
 }, "id">
 
 export type LessonOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
   _count?: Prisma.LessonCountOrderByAggregateInput
   _max?: Prisma.LessonMaxOrderByAggregateInput
   _min?: Prisma.LessonMinOrderByAggregateInput
@@ -181,54 +192,65 @@ export type LessonScalarWhereWithAggregatesInput = {
   OR?: Prisma.LessonScalarWhereWithAggregatesInput[]
   NOT?: Prisma.LessonScalarWhereWithAggregatesInput | Prisma.LessonScalarWhereWithAggregatesInput[]
   id?: Prisma.StringWithAggregatesFilter<"Lesson"> | string
+  isDemo?: Prisma.BoolWithAggregatesFilter<"Lesson"> | boolean
 }
 
 export type LessonCreateInput = {
   id: string
+  isDemo?: boolean
   versions?: Prisma.LessonVersionCreateNestedManyWithoutLessonInput
   activityLinks?: Prisma.ActivityVersionLessonCreateNestedManyWithoutLessonInput
 }
 
 export type LessonUncheckedCreateInput = {
   id: string
+  isDemo?: boolean
   versions?: Prisma.LessonVersionUncheckedCreateNestedManyWithoutLessonInput
   activityLinks?: Prisma.ActivityVersionLessonUncheckedCreateNestedManyWithoutLessonInput
 }
 
 export type LessonUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   versions?: Prisma.LessonVersionUpdateManyWithoutLessonNestedInput
   activityLinks?: Prisma.ActivityVersionLessonUpdateManyWithoutLessonNestedInput
 }
 
 export type LessonUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   versions?: Prisma.LessonVersionUncheckedUpdateManyWithoutLessonNestedInput
   activityLinks?: Prisma.ActivityVersionLessonUncheckedUpdateManyWithoutLessonNestedInput
 }
 
 export type LessonCreateManyInput = {
   id: string
+  isDemo?: boolean
 }
 
 export type LessonUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
 export type LessonUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
 export type LessonCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
 }
 
 export type LessonMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
 }
 
 export type LessonMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  isDemo?: Prisma.SortOrder
 }
 
 export type LessonScalarRelationFilter = {
@@ -266,11 +288,13 @@ export type LessonUpdateOneRequiredWithoutActivityLinksNestedInput = {
 
 export type LessonCreateWithoutVersionsInput = {
   id: string
+  isDemo?: boolean
   activityLinks?: Prisma.ActivityVersionLessonCreateNestedManyWithoutLessonInput
 }
 
 export type LessonUncheckedCreateWithoutVersionsInput = {
   id: string
+  isDemo?: boolean
   activityLinks?: Prisma.ActivityVersionLessonUncheckedCreateNestedManyWithoutLessonInput
 }
 
@@ -292,21 +316,25 @@ export type LessonUpdateToOneWithWhereWithoutVersionsInput = {
 
 export type LessonUpdateWithoutVersionsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   activityLinks?: Prisma.ActivityVersionLessonUpdateManyWithoutLessonNestedInput
 }
 
 export type LessonUncheckedUpdateWithoutVersionsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   activityLinks?: Prisma.ActivityVersionLessonUncheckedUpdateManyWithoutLessonNestedInput
 }
 
 export type LessonCreateWithoutActivityLinksInput = {
   id: string
+  isDemo?: boolean
   versions?: Prisma.LessonVersionCreateNestedManyWithoutLessonInput
 }
 
 export type LessonUncheckedCreateWithoutActivityLinksInput = {
   id: string
+  isDemo?: boolean
   versions?: Prisma.LessonVersionUncheckedCreateNestedManyWithoutLessonInput
 }
 
@@ -328,11 +356,13 @@ export type LessonUpdateToOneWithWhereWithoutActivityLinksInput = {
 
 export type LessonUpdateWithoutActivityLinksInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   versions?: Prisma.LessonVersionUpdateManyWithoutLessonNestedInput
 }
 
 export type LessonUncheckedUpdateWithoutActivityLinksInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  isDemo?: Prisma.BoolFieldUpdateOperationsInput | boolean
   versions?: Prisma.LessonVersionUncheckedUpdateManyWithoutLessonNestedInput
 }
 
@@ -378,6 +408,7 @@ export type LessonCountOutputTypeCountActivityLinksArgs<ExtArgs extends runtime.
 
 export type LessonSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  isDemo?: boolean
   versions?: boolean | Prisma.Lesson$versionsArgs<ExtArgs>
   activityLinks?: boolean | Prisma.Lesson$activityLinksArgs<ExtArgs>
   _count?: boolean | Prisma.LessonCountOutputTypeDefaultArgs<ExtArgs>
@@ -385,17 +416,20 @@ export type LessonSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs =
 
 export type LessonSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  isDemo?: boolean
 }, ExtArgs["result"]["lesson"]>
 
 export type LessonSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  isDemo?: boolean
 }, ExtArgs["result"]["lesson"]>
 
 export type LessonSelectScalar = {
   id?: boolean
+  isDemo?: boolean
 }
 
-export type LessonOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id", ExtArgs["result"]["lesson"]>
+export type LessonOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "isDemo", ExtArgs["result"]["lesson"]>
 export type LessonInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   versions?: boolean | Prisma.Lesson$versionsArgs<ExtArgs>
   activityLinks?: boolean | Prisma.Lesson$activityLinksArgs<ExtArgs>
@@ -412,6 +446,7 @@ export type $LessonPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
+    isDemo: boolean
   }, ExtArgs["result"]["lesson"]>
   composites: {}
 }
@@ -838,6 +873,7 @@ export interface Prisma__LessonClient<T, Null = never, ExtArgs extends runtime.T
  */
 export interface LessonFieldRefs {
   readonly id: Prisma.FieldRef<"Lesson", 'String'>
+  readonly isDemo: Prisma.FieldRef<"Lesson", 'Boolean'>
 }
     
 

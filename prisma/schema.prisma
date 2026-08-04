@@ -21,6 +21,7 @@ model User {
   email         String    @unique
   emailVerified Boolean   @default(false)
   image         String?
+  isDemo        Boolean   @default(false)
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 
@@ -370,7 +371,8 @@ model TaxonomyNodeVersion {
 }
 
 model Lesson {
-  id       String @id
+  id       String  @id
+  isDemo   Boolean @default(false)
   versions LessonVersion[]
   activityLinks ActivityVersionLesson[]
 }
@@ -417,7 +419,8 @@ model LessonVersionTaxonomy {
 }
 
 model Activity {
-  id       String @id
+  id       String  @id
+  isDemo   Boolean @default(false)
   versions ActivityVersion[]
 }
 

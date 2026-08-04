@@ -17,6 +17,17 @@ import { loadConfig } from "@/server/infrastructure/config/config-core";
 import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructure/database/prisma-adapter-factory";
 import { D1HttpCatalogWriteAdapter } from "@/server/infrastructure/persistence/d1/catalog-write";
 
+export const DEMO_USER_ID = "user-demo";
+export const DEMO_USER_EMAIL = "demo@englishloop.local";
+export const DEMO_LESSON_IDS = new Set([
+  "b1-grammar-future-forms-will-going-to",
+  "b1-grammar-present-simple-continuous",
+  "b1-grammar-first-conditional",
+  "b1-phrasal-verbs-everyday-actions",
+  "b2-use-of-english-key-word-transformations",
+  "b1-grammar-second-conditional",
+]);
+
 export interface CliOptions {
   source: string;
   dryRun: boolean;
@@ -101,6 +112,7 @@ export function buildCatalogSeedInput(
     difficulty: lesson.frontmatter.difficulty,
     contentVersion: lesson.frontmatter.contentVersion,
     status: lesson.frontmatter.status,
+    isDemo: DEMO_LESSON_IDS.has(lesson.frontmatter.id),
   }));
   const activities: CatalogSeedActivity[] = dataset.activities.map((activity) => ({
     id: activity.id,
@@ -126,6 +138,7 @@ export function buildCatalogSeedInput(
     pairs: activity.pairs ?? [],
     expectedAnswers: expectedAnswers(activity.evaluator as CatalogSeedActivity["evaluator"]),
     status: activity.status,
+    isDemo: activity.lessonIds.some((lessonId) => DEMO_LESSON_IDS.has(lessonId)),
   }));
   return {
     datasetVersion,
@@ -170,10 +183,45 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
   });
   try {
     const result = await new PrismaCatalogWriteAdapter(prisma).seedCatalog(input);
+    await seedDemoAccount(prisma);
     console.log(`Release ${result.status}: ${result.releaseId ?? "dry-run"}`);
   } finally {
     await prisma.$disconnect();
   }
+}
+
+async function seedDemoAccount(prisma: PrismaClient): Promise<void> {
+  const demoUser = await prisma.user.upsert({
+    where: { email: DEMO_USER_EMAIL },
+    create: {
+      id: DEMO_USER_ID,
+      name: "Alex",
+      email: DEMO_USER_EMAIL,
+      emailVerified: true,
+      isDemo: true,
+    },
+    update: {
+      name: "Alex",
+      emailVerified: true,
+      isDemo: true,
+    },
+  });
+  await prisma.userSettings.upsert({
+    where: { userId: demoUser.id },
+    create: {
+      userId: demoUser.id,
+      activeLevels: JSON.stringify(["B1", "B2"]),
+      dailyGoalLessons: 1,
+      dailyGoalActivities: 3,
+      timezone: "UTC",
+    },
+    update: {
+      activeLevels: JSON.stringify(["B1", "B2"]),
+      dailyGoalLessons: 1,
+      dailyGoalActivities: 3,
+      timezone: "UTC",
+    },
+  });
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

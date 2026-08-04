@@ -5,7 +5,7 @@ import { generatedId, statement } from "./shared";
 export function activityStatements(database: D1DatabaseLike, releaseId: string, activities: CatalogSeedActivity[]): D1PreparedStatement[] {
   const statements: D1PreparedStatement[] = [];
   for (const activity of activities) {
-    statements.push(statement(database, "INSERT INTO Activity (id) VALUES (?) ON CONFLICT(id) DO NOTHING", [activity.id]));
+    statements.push(statement(database, "INSERT INTO Activity (id, isDemo) VALUES (?, ?) ON CONFLICT(id) DO UPDATE SET isDemo = excluded.isDemo", [activity.id, activity.isDemo ? 1 : 0]));
     const versionId = generatedId();
     statements.push(statement(database, `INSERT INTO ActivityVersion
       (id, releaseId, activityId, checksum, activityTypeCode, evaluatorStrategyCode, levelCode, category,

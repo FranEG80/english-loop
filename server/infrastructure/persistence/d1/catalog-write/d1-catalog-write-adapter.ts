@@ -72,6 +72,10 @@ export class D1CatalogWriteAdapter implements CatalogWritePort {
     const session = await this.start(input.datasetVersion, input.checksum, counts);
     if (session.result) return session.result;
     try {
+      await this.runBatches([
+        statement(this.database, "UPDATE Lesson SET isDemo = 0", []),
+        statement(this.database, "UPDATE Activity SET isDemo = 0", []),
+      ]);
       await this.applyChunk({ kind: "references", releaseId: session.releaseId,
         activityTypes: [...new Set(input.activities.map((activity) => activity.type))],
         evaluatorStrategies: [...new Set(input.activities.map((activity) => activity.evaluatorStrategy))],

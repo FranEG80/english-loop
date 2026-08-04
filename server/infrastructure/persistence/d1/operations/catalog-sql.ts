@@ -4,6 +4,10 @@ import { bind, type PreparedOperation } from "./shared";
 
 type CatalogOperation = Extract<D1Operation, { name: "activityById" | "activityByVersionId" | "catalogLessons" | "catalogActivities" | "catalogTaxonomy" | "catalogCounts" }>;
 
+function demoPredicate(alias: string, includeDemo = false): string {
+  return `${alias}.isDemo = ${includeDemo ? 1 : 0}`;
+}
+
 const activityProjection = `v.id, v.activityId, v.levelCode,
           v.activityTypeCode, v.category, v.topic, v.subtopic, v.difficulty,
           v.instructions, v.prompt, v.passage, v.explanation, v.tags, v.lessonIds,
@@ -27,22 +31,22 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
   switch (operation.name) {
     case "activityById":
       return bind(database, `SELECT ${activityProjection}
-        FROM ActivityVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId
-        WHERE p.id = 'active' AND v.statusCode = 'published' AND v.activityId = ?
+        FROM ActivityVersion v JOIN Activity a ON a.id = v.activityId JOIN CatalogPublication p ON p.releaseId = v.releaseId
+        WHERE p.id = 'active' AND v.statusCode = 'published' AND ${demoPredicate("a", operation.includeDemo)} AND v.activityId = ?
         ORDER BY v.id DESC LIMIT 1`, [operation.activityId]);
     case "activityByVersionId":
       return bind(database, `SELECT ${activityProjection}
-        FROM ActivityVersion v
-        WHERE v.id = ? AND v.statusCode = 'published'`, [operation.activityVersionId]);
+        FROM ActivityVersion v JOIN Activity a ON a.id = v.activityId
+        WHERE v.id = ? AND v.statusCode = 'published' AND ${demoPredicate("a", operation.includeDemo)}`, [operation.activityVersionId]);
     case "catalogLessons":
       return bind(database, `SELECT v.id, v.lessonId, v.levelCode, v.category, v.taxonomyNodeId,
           v.prerequisites, v.title, v.summary, v.explanation, v.examples, v.commonMistakes,
           v.tags, v.difficulty, v.contentVersion, v.statusCode,
           COALESCE((SELECT json_group_array(av.activityId)
-            FROM ActivityVersionLesson l JOIN ActivityVersion av ON av.id = l.activityVersionId
-            WHERE l.lessonId = v.lessonId AND av.releaseId = v.releaseId AND av.statusCode = 'published'), '[]') AS relatedActivityIds
-        FROM LessonVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId
-        WHERE p.id = 'active' AND v.statusCode = 'published'
+            FROM ActivityVersionLesson l JOIN ActivityVersion av ON av.id = l.activityVersionId JOIN Activity a ON a.id = av.activityId
+            WHERE l.lessonId = v.lessonId AND av.releaseId = v.releaseId AND av.statusCode = 'published' AND ${demoPredicate("a", operation.includeDemo)}), '[]') AS relatedActivityIds
+        FROM LessonVersion v JOIN Lesson le ON le.id = v.lessonId JOIN CatalogPublication p ON p.releaseId = v.releaseId
+        WHERE p.id = 'active' AND v.statusCode = 'published' AND ${demoPredicate("le", operation.includeDemo)}
           AND (? IS NULL OR v.levelCode = ?) AND (? IS NULL OR v.category = ?)
           ${operation.limit === undefined ? "" : "AND (? IS NULL OR v.lessonId > ?)"}
         ORDER BY v.lessonId ASC${operation.limit === undefined ? "" : " LIMIT ?"}`,
@@ -67,8 +71,8 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
             FROM ActivityVersionLesson l WHERE l.activityVersionId = v.id), '[]') AS lessonLinks,
           COALESCE((SELECT json_group_array(json_object('taxonomyNodeId', t.taxonomyNodeId, 'position', t.position))
             FROM ActivityVersionTaxonomy t WHERE t.activityVersionId = v.id), '[]') AS taxonomyLinks
-        FROM ActivityVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId
-        WHERE p.id = 'active' AND v.statusCode = 'published'
+        FROM ActivityVersion v JOIN Activity a ON a.id = v.activityId JOIN CatalogPublication p ON p.releaseId = v.releaseId
+        WHERE p.id = 'active' AND v.statusCode = 'published' AND ${demoPredicate("a", operation.includeDemo)}
           AND (? IS NULL OR v.levelCode = ?)
           AND (? IS NULL OR EXISTS (SELECT 1 FROM ActivityVersionTaxonomy t
             WHERE t.activityVersionId = v.id AND t.taxonomyNodeId = ?))
@@ -87,9 +91,9 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
     case "catalogCounts":
       return bind(database,
         operation.kind === "lessons"
-          ? `SELECT COUNT(*) AS count FROM LessonVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId WHERE p.id = 'active' AND v.statusCode = 'published'`
+          ? `SELECT COUNT(*) AS count FROM LessonVersion v JOIN Lesson le ON le.id = v.lessonId JOIN CatalogPublication p ON p.releaseId = v.releaseId WHERE p.id = 'active' AND v.statusCode = 'published' AND ${demoPredicate("le", operation.includeDemo)}`
           : operation.kind === "activities"
-            ? `SELECT COUNT(*) AS count FROM ActivityVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId WHERE p.id = 'active' AND v.statusCode = 'published'`
+            ? `SELECT COUNT(*) AS count FROM ActivityVersion v JOIN Activity a ON a.id = v.activityId JOIN CatalogPublication p ON p.releaseId = v.releaseId WHERE p.id = 'active' AND v.statusCode = 'published' AND ${demoPredicate("a", operation.includeDemo)}`
             : `SELECT COUNT(*) AS count FROM TaxonomyNodeVersion v JOIN CatalogPublication p ON p.releaseId = v.releaseId WHERE p.id = 'active'`, []);
   }
 }

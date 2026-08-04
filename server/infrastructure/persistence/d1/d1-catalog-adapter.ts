@@ -11,7 +11,14 @@ import { operation } from "./operations/request";
 import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
 
 export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePort, ActivityCatalogPort, ActivityCatalogPagePort, TaxonomyCatalogPort, CatalogMetadataPort {
-  constructor(private readonly transport: D1TransportClient) {}
+  constructor(
+    private readonly transport: D1TransportClient,
+    private readonly options: { includeDemo?: boolean } = {},
+  ) {}
+
+  private get includeDemo(): boolean {
+    return this.options.includeDemo === true;
+  }
 
   private async requireCatalog(): Promise<void> {
     const result = await this.transport.execute(operation({ name: "activeCatalogMetadata" }));
@@ -20,7 +27,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
 
   async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
     await this.requireCatalog();
-    return rows(await this.transport.execute(operation({ name: "catalogLessons", level: filters?.level, category: filters?.category }))).map((row) => mapPrismaLesson({
+    return rows(await this.transport.execute(operation({ name: "catalogLessons", level: filters?.level, category: filters?.category, includeDemo: this.includeDemo }))).map((row) => mapPrismaLesson({
       id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
     } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), []))); 
   }
@@ -38,6 +45,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       category: filters?.category,
       cursor,
       limit: pagination.limit + 1,
+      includeDemo: this.includeDemo,
     }));
     const mapped = rows(result).map((row) => mapPrismaLesson({
       id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
@@ -49,14 +57,14 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
 
   async getLessonById(lessonId: string): Promise<Lesson | null> {
     await this.requireCatalog();
-    const result = await this.transport.execute(operation({ name: "catalogLessons" }));
+    const result = await this.transport.execute(operation({ name: "catalogLessons", includeDemo: this.includeDemo }));
     const row = rows(result).find((candidate) => candidate.lessonId === lessonId);
     return row ? mapPrismaLesson({ id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode) } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), [])) : null;
   }
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {
     await this.requireCatalog();
-    const baseRows = rows(await this.transport.execute(operation({ name: "catalogActivities", taxonomyNodeId: filters?.taxonomyNodeId, level: filters?.level === "both" ? undefined : filters?.level, lessonIds: filters?.lessonIds })));
+    const baseRows = rows(await this.transport.execute(operation({ name: "catalogActivities", taxonomyNodeId: filters?.taxonomyNodeId, level: filters?.level === "both" ? undefined : filters?.level, lessonIds: filters?.lessonIds, includeDemo: this.includeDemo })));
     return baseRows.map((row) => mapPrismaActivity({
       id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
       options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
@@ -77,6 +85,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       lessonIds: filters?.lessonIds,
       cursor,
       limit: pagination.limit + 1,
+      includeDemo: this.includeDemo,
     }));
     const mapped = rows(result).map((row) => mapPrismaActivity({
       id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
@@ -89,7 +98,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
 
   async getActivityById(activityId: string): Promise<Activity | null> {
     await this.requireCatalog();
-    const result = await this.transport.execute(operation({ name: "activityById", activityId }));
+    const result = await this.transport.execute(operation({ name: "activityById", activityId, includeDemo: this.includeDemo }));
     const row = first<Row>(result);
     if (!row) return null;
     return mapPrismaActivity({
@@ -98,7 +107,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
   }
 
   async getActivityByVersionId(activityVersionId: string): Promise<Activity | null> {
-    const result = await this.transport.execute(operation({ name: "activityByVersionId", activityVersionId }));
+    const result = await this.transport.execute(operation({ name: "activityByVersionId", activityVersionId, includeDemo: this.includeDemo }));
     const row = first<Row>(result);
     if (!row) return null;
     return mapPrismaActivity({
@@ -156,8 +165,8 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
   async getCatalogMetadata(): Promise<CatalogMetadata> {
     const version = await this.getContentVersion();
     const [lessons, activities, taxonomy] = await Promise.all([
-      this.transport.execute(operation({ name: "catalogCounts", kind: "lessons" })),
-      this.transport.execute(operation({ name: "catalogCounts", kind: "activities" })),
+      this.transport.execute(operation({ name: "catalogCounts", kind: "lessons", includeDemo: this.includeDemo })),
+      this.transport.execute(operation({ name: "catalogCounts", kind: "activities", includeDemo: this.includeDemo })),
       this.transport.execute(operation({ name: "catalogCounts", kind: "taxonomy" })),
     ]);
     return { ...version, lessonCount: Number(first<Row>(lessons)?.count ?? 0), activityCount: Number(first<Row>(activities)?.count ?? 0), taxonomyNodeCount: Number(first<Row>(taxonomy)?.count ?? 0) };

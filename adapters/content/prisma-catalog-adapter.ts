@@ -34,7 +34,14 @@ import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson } from "./prisma-c
 export class PrismaCatalogAdapter
   implements LessonCatalogPort, LessonCatalogPagePort, ActivityCatalogPort, ActivityCatalogPagePort, TaxonomyCatalogPort, CatalogMetadataPort
 {
-  constructor(private readonly client: PrismaClient) {}
+  constructor(
+    private readonly client: PrismaClient,
+    private readonly options: { includeDemo?: boolean } = {},
+  ) {}
+
+  private get demoOnly(): boolean {
+    return this.options.includeDemo === true;
+  }
 
   private db() {
     return getPrismaClient(this.client);
@@ -61,7 +68,11 @@ export class PrismaCatalogAdapter
 
   private async relatedActivitiesByLesson(releaseId: string): Promise<Map<string, string[]>> {
     const rows = await this.db().activityVersion.findMany({
-      where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS },
+      where: {
+        releaseId,
+        statusCode: PUBLISHED_CONTENT_STATUS,
+        activity: { isDemo: this.demoOnly },
+      },
       select: {
         activityId: true,
         lessonLinks: { select: { lessonId: true, position: true }, orderBy: { position: "asc" } },
@@ -83,6 +94,7 @@ export class PrismaCatalogAdapter
     const where: Prisma.LessonVersionWhereInput = {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
+      lesson: { isDemo: this.demoOnly },
       ...(filters?.level ? { levelCode: filters.level } : {}),
       ...(filters?.category ? { category: filters.category } : {}),
     };
@@ -103,6 +115,7 @@ export class PrismaCatalogAdapter
     const where: Prisma.LessonVersionWhereInput = {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
+      lesson: { isDemo: this.demoOnly },
       ...(filters?.level ? { levelCode: filters.level } : {}),
       ...(filters?.category ? { category: filters.category } : {}),
       ...(cursor ? { lessonId: { gt: cursor } } : {}),
@@ -124,7 +137,12 @@ export class PrismaCatalogAdapter
     const releaseId = await this.requireActiveReleaseId();
     const [row, related] = await Promise.all([
       this.db().lessonVersion.findFirst({
-        where: { releaseId, lessonId, statusCode: PUBLISHED_CONTENT_STATUS },
+        where: {
+          releaseId,
+          lessonId,
+          statusCode: PUBLISHED_CONTENT_STATUS,
+          lesson: { isDemo: this.demoOnly },
+        },
         orderBy: { id: "desc" },
       }),
       this.relatedActivitiesByLesson(releaseId),
@@ -139,6 +157,7 @@ export class PrismaCatalogAdapter
     return {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
+      activity: { isDemo: this.demoOnly },
       ...(filters?.level && filters.level !== "both" ? { levelCode: filters.level } : {}),
       ...(filters?.taxonomyNodeId
         ? { taxonomyLinks: { some: { taxonomyNodeId: filters.taxonomyNodeId } } }
@@ -195,7 +214,12 @@ export class PrismaCatalogAdapter
   async getActivityById(activityId: string): Promise<Activity | null> {
     const releaseId = await this.requireActiveReleaseId();
     const row = await this.db().activityVersion.findFirst({
-      where: { releaseId, activityId, statusCode: PUBLISHED_CONTENT_STATUS },
+      where: {
+        releaseId,
+        activityId,
+        statusCode: PUBLISHED_CONTENT_STATUS,
+        activity: { isDemo: this.demoOnly },
+      },
       include: this.activityInclude,
       orderBy: { id: "desc" },
     });
@@ -204,7 +228,11 @@ export class PrismaCatalogAdapter
 
   async getActivityByVersionId(activityVersionId: string): Promise<Activity | null> {
     const row = await this.db().activityVersion.findFirst({
-      where: { id: activityVersionId, statusCode: PUBLISHED_CONTENT_STATUS },
+      where: {
+        id: activityVersionId,
+        statusCode: PUBLISHED_CONTENT_STATUS,
+        activity: { isDemo: this.demoOnly },
+      },
       include: this.activityInclude,
     });
     return row ? mapPrismaActivity(row) : null;
@@ -215,7 +243,8 @@ export class PrismaCatalogAdapter
     return this.db().activityVersion.count({
       where: {
         releaseId,
-      statusCode: PUBLISHED_CONTENT_STATUS,
+        statusCode: PUBLISHED_CONTENT_STATUS,
+        activity: { isDemo: this.demoOnly },
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: nodeId } },
       },
@@ -229,6 +258,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
+        activity: { isDemo: this.demoOnly },
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: { in: nodeIds } } },
       },
@@ -315,8 +345,8 @@ export class PrismaCatalogAdapter
     }
     const [release, lessonCount, activityCount, taxonomyNodeCount] = await Promise.all([
       this.db().catalogRelease.findUnique({ where: { id: releaseId }, select: { datasetVersion: true } }),
-      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS } }),
-      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS } }),
+      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, lesson: { isDemo: this.demoOnly } } }),
+      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, activity: { isDemo: this.demoOnly } } }),
       this.db().taxonomyNodeVersion.count({ where: { releaseId } }),
     ]);
     return {

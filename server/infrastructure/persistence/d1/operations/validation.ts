@@ -51,9 +51,9 @@ export function isD1Operation(value: unknown): value is D1Operation {
     case "catalogTaxonomy":
       return true;
     case "activityById":
-      return hasStrings(value, ["activityId"]);
+      return hasStrings(value, ["activityId"]) && (value.includeDemo === undefined || typeof value.includeDemo === "boolean");
     case "activityByVersionId":
-      return hasStrings(value, ["activityVersionId"]);
+      return hasStrings(value, ["activityVersionId"]) && (value.includeDemo === undefined || typeof value.includeDemo === "boolean");
     case "userSettingsGet":
     case "savedLessonsList":
     case "lessonProgressList":
@@ -62,14 +62,17 @@ export function isD1Operation(value: unknown): value is D1Operation {
     case "catalogLessons":
       return (value.level === undefined || typeof value.level === "string") &&
         (value.category === undefined || typeof value.category === "string") &&
+        (value.includeDemo === undefined || typeof value.includeDemo === "boolean") &&
         hasOptionalCursorPagination(value);
     case "catalogActivities":
       return (value.taxonomyNodeId === undefined || typeof value.taxonomyNodeId === "string") &&
         (value.level === undefined || typeof value.level === "string") &&
         (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string"))) &&
+        (value.includeDemo === undefined || typeof value.includeDemo === "boolean") &&
         hasOptionalCursorPagination(value);
     case "catalogCounts":
-      return value.kind === "lessons" || value.kind === "activities" || value.kind === "taxonomy";
+      return (value.kind === "lessons" || value.kind === "activities" || value.kind === "taxonomy") &&
+        (value.includeDemo === undefined || typeof value.includeDemo === "boolean");
     case "userSettingsSave":
       return hasSnapshot(value, ["userId", "locale", "activeLevels", "timezone"]) &&
         typeof value.snapshot.dailyGoalLessons === "number" && typeof value.snapshot.dailyGoalActivities === "number" &&

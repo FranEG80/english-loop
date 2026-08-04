@@ -7,10 +7,16 @@ import type {
 import { restRequest } from "./http-client";
 
 export const dailySessionRestAdapter: DailySessionPort = {
-  getTodaySession: (timezone) =>
-    restRequest<DailySessionDto>(
+  getTodaySession: async (timezone) => {
+    const existing = await restRequest<DailySessionDto | null>(
       `/daily-sessions/current?timezone=${encodeURIComponent(timezone)}`,
-    ),
+    );
+    if (existing) return existing;
+    return restRequest<DailySessionDto>("/daily-sessions/current", {
+      method: "PUT",
+      body: JSON.stringify({ timezone }),
+    });
+  },
   startDailyPractice: (sessionId) =>
     restRequest<DailySessionDto>(`/daily-sessions/${sessionId}/practice`, {
       method: "POST",

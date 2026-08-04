@@ -5,11 +5,12 @@ import { generatedId, statement } from "./shared";
 export function lessonStatements(database: D1DatabaseLike, releaseId: string, lessons: CatalogSeedLesson[]): D1PreparedStatement[] {
   const statements: D1PreparedStatement[] = [];
   for (const lesson of lessons) {
-    statements.push(statement(database, "INSERT INTO Lesson (id) VALUES (?) ON CONFLICT(id) DO NOTHING", [lesson.id]));
+    statements.push(statement(database, "INSERT INTO Lesson (id, isDemo) VALUES (?, ?) ON CONFLICT(id) DO UPDATE SET isDemo = excluded.isDemo", [lesson.id, lesson.isDemo ? 1 : 0]));
     const versionId = generatedId();
     statements.push(statement(database, `INSERT INTO LessonVersion
-      (id, releaseId, lessonId, checksum, levelCode, category, taxonomyNodeId, title, summary,
-       prerequisites, title, summary, explanation, examples, commonMistakes, tags, difficulty, contentVersion, statusCode)
+      (id, releaseId, lessonId, checksum, levelCode, category, taxonomyNodeId,
+       prerequisites, title, summary, explanation, examples, commonMistakes, tags,
+       difficulty, contentVersion, statusCode)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`, [versionId, releaseId, lesson.id, lesson.checksum,
       lesson.level, lesson.category, lesson.taxonomyNodeId, JSON.stringify(lesson.prerequisiteLessonIds), lesson.title, lesson.summary, lesson.explanation,
       JSON.stringify(lesson.examples), JSON.stringify(lesson.commonMistakes), JSON.stringify(lesson.tags), lesson.difficulty,

@@ -14,6 +14,6 @@ describe("progressRestAdapter", () => {
     await progressRestAdapter.getReviewQueue();
     await progressRestAdapter.getTaxonomyProgress("topic");
     await progressRestAdapter.getActivityHistory("activity");
-    expect(fetchMock.mock.calls.map(([url]) => String(url))).toEqual(["/api/v1/progress/overview", "/api/v1/progress/review-queue", "/api/v1/progress/taxonomy/topic", "/api/v1/progress/activities/activity/history"]);
+    expect(fetchMock.mock.calls.map(([url]) => String(url))).toEqual(["/api/v1/progress/overview", "/api/v1/review-queue", "/api/v1/progress/taxonomy/topic", "/api/v1/progress/activities/activity/history"]);
   });
 });
