@@ -12,9 +12,11 @@ import { LogoutButton } from "./LogoutButton";
 export function Sidebar({
   dictionary,
   session,
+  demo = false,
 }: {
   dictionary: Dictionary;
   session: AuthSession;
+  demo?: boolean;
 }) {
   const pathname = usePathname();
 
@@ -42,11 +44,12 @@ export function Sidebar({
         </Link>
         <div className="flex flex-col gap-1.5">
           {WORKSPACE_NAV_ITEMS.map(({ href, labelKey, Icon }) => {
-        const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+        const targetHref = demo ? "/demo" : href;
+        const isActive = demo ? href === "/" : href === "/" ? pathname === "/" : pathname.startsWith(href);
         return (
           <Link
             key={href}
-            href={href}
+            href={targetHref}
             aria-current={isActive ? "page" : undefined}
             className={cn(
               "group flex h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold transition-[transform,background-color,color]",
@@ -76,7 +79,13 @@ export function Sidebar({
             <p className="truncate text-sm font-black text-white">{session.name}</p>
             <p className="truncate text-xs text-white/50">{session.email}</p>
           </div>
-          <LogoutButton label={dictionary.nav.logout} theme="dark" compact />
+          {demo ? (
+            <span className="text-center text-[0.65rem] font-black uppercase tracking-wide text-accent">
+              Demo
+            </span>
+          ) : (
+            <LogoutButton label={dictionary.nav.logout} theme="dark" compact />
+          )}
         </div>
       </nav>
     </aside>

@@ -47,7 +47,7 @@ export default async function DashboardPage({ demo = false }: { demo?: boolean }
   ]);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
+    <WorkspaceShell dictionary={dictionary} locale={locale} session={session} demo={demo}>
       <div className="flex flex-col gap-8">
         <header className="flex flex-col gap-2">
           <p className="font-hand text-3xl font-bold text-coral">

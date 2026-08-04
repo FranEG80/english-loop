@@ -71,7 +71,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { isDemo: this.demoOnly },
+        activity: { is: { isDemo: this.demoOnly } },
       },
       select: {
         activityId: true,
@@ -94,7 +94,7 @@ export class PrismaCatalogAdapter
     const where: Prisma.LessonVersionWhereInput = {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
-      lesson: { isDemo: this.demoOnly },
+      lesson: { is: { isDemo: this.demoOnly } },
       ...(filters?.level ? { levelCode: filters.level } : {}),
       ...(filters?.category ? { category: filters.category } : {}),
     };
@@ -115,7 +115,7 @@ export class PrismaCatalogAdapter
     const where: Prisma.LessonVersionWhereInput = {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
-      lesson: { isDemo: this.demoOnly },
+      lesson: { is: { isDemo: this.demoOnly } },
       ...(filters?.level ? { levelCode: filters.level } : {}),
       ...(filters?.category ? { category: filters.category } : {}),
       ...(cursor ? { lessonId: { gt: cursor } } : {}),
@@ -141,7 +141,7 @@ export class PrismaCatalogAdapter
           releaseId,
           lessonId,
           statusCode: PUBLISHED_CONTENT_STATUS,
-          lesson: { isDemo: this.demoOnly },
+          lesson: { is: { isDemo: this.demoOnly } },
         },
         orderBy: { id: "desc" },
       }),
@@ -157,7 +157,7 @@ export class PrismaCatalogAdapter
     return {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
-      activity: { isDemo: this.demoOnly },
+      activity: { is: { isDemo: this.demoOnly } },
       ...(filters?.level && filters.level !== "both" ? { levelCode: filters.level } : {}),
       ...(filters?.taxonomyNodeId
         ? { taxonomyLinks: { some: { taxonomyNodeId: filters.taxonomyNodeId } } }
@@ -218,7 +218,7 @@ export class PrismaCatalogAdapter
         releaseId,
         activityId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { isDemo: this.demoOnly },
+        activity: { is: { isDemo: this.demoOnly } },
       },
       include: this.activityInclude,
       orderBy: { id: "desc" },
@@ -231,7 +231,7 @@ export class PrismaCatalogAdapter
       where: {
         id: activityVersionId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { isDemo: this.demoOnly },
+        activity: { is: { isDemo: this.demoOnly } },
       },
       include: this.activityInclude,
     });
@@ -244,7 +244,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { isDemo: this.demoOnly },
+        activity: { is: { isDemo: this.demoOnly } },
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: nodeId } },
       },
@@ -258,7 +258,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { isDemo: this.demoOnly },
+        activity: { is: { isDemo: this.demoOnly } },
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: { in: nodeIds } } },
       },
@@ -345,8 +345,8 @@ export class PrismaCatalogAdapter
     }
     const [release, lessonCount, activityCount, taxonomyNodeCount] = await Promise.all([
       this.db().catalogRelease.findUnique({ where: { id: releaseId }, select: { datasetVersion: true } }),
-      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, lesson: { isDemo: this.demoOnly } } }),
-      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, activity: { isDemo: this.demoOnly } } }),
+      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, lesson: { is: { isDemo: this.demoOnly } } } }),
+      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, activity: { is: { isDemo: this.demoOnly } } } }),
       this.db().taxonomyNodeVersion.count({ where: { releaseId } }),
     ]);
     return {

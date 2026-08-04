@@ -1,8 +1,8 @@
 import DashboardPage from "@/app/dashboard/page";
 
 /**
- * Espacio de demostración anónimo. Solo compone adaptadores mock de lectura;
- * las rutas de escritura siguen exigiendo una sesión real.
+ * Espacio de demostración anónimo. Lee el fixture demo sembrado en la base de
+ * datos y no crea una sesión Better Auth ni permite escrituras.
  */
 export default function DemoPage() {
   return <DashboardPage demo />;

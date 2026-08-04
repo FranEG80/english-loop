@@ -8,7 +8,7 @@ import type { ActivityCatalogPagePort } from "@/core/content/ports/catalog-ports
 import { paginateSortedItems, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
 import type { CefrLevel } from "@/core/models/level";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
-import { isDemoActivity, isDemoLessonId } from "@/core/content/domain/demo-fixture";
+import { isDemoActivityId } from "@/core/content/domain/demo-fixture";
 
 interface ActivityIndexEntry {
   id: string;
@@ -72,8 +72,7 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
     }
     return raw.activities.filter(
       (activity) => activity.status === PUBLISHED_CONTENT_STATUS &&
-        !isDemoActivity(activity.lessonIds) &&
-        !isDemoLessonId(activity.id),
+        !isDemoActivityId(activity.id),
     );
   }
 
@@ -99,8 +98,7 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
     }
     return raw.activities.filter(
       (activity) => activity.status === PUBLISHED_CONTENT_STATUS &&
-        !isDemoActivity(activity.lessonIds) &&
-        !isDemoLessonId(activity.id),
+        !isDemoActivityId(activity.id),
     );
   }
 

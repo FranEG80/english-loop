@@ -18,11 +18,12 @@ import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructu
 import { D1HttpCatalogWriteAdapter } from "@/server/infrastructure/persistence/d1/catalog-write";
 import {
   DEMO_LESSON_IDS,
+  DEMO_PROGRESS_ACTIVITY_LIMIT,
   DEMO_USER_ACTIVE_LEVELS,
   DEMO_USER_EMAIL,
   DEMO_USER_ID,
   DEMO_USER_NAME,
-  isDemoActivity,
+  isDemoActivityId,
   isDemoLessonId,
 } from "@/core/content/domain/demo-fixture";
 
@@ -142,7 +143,7 @@ export function buildCatalogSeedInput(
     pairs: activity.pairs ?? [],
     expectedAnswers: expectedAnswers(activity.evaluator as CatalogSeedActivity["evaluator"]),
     status: activity.status,
-    isDemo: isDemoActivity(activity.lessonIds),
+    isDemo: isDemoActivityId(activity.id),
   }));
   return {
     datasetVersion,
@@ -189,14 +190,18 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
   });
   try {
     const result = await new PrismaCatalogWriteAdapter(prisma).seedCatalog(input);
-    await seedDemoAccount(prisma);
+    await seedDemoAccount(prisma, input, result.releaseId);
     console.log(`Release ${result.status}: ${result.releaseId ?? "dry-run"}`);
   } finally {
     await prisma.$disconnect();
   }
 }
 
-async function seedDemoAccount(prisma: PrismaClient): Promise<void> {
+async function seedDemoAccount(
+  prisma: PrismaClient,
+  input: CatalogSeedInput,
+  releaseId: string | null,
+): Promise<void> {
   const demoUser = await prisma.user.upsert({
     where: { email: DEMO_USER_EMAIL },
     create: {
@@ -227,6 +232,69 @@ async function seedDemoAccount(prisma: PrismaClient): Promise<void> {
       dailyGoalActivities: 3,
       timezone: "UTC",
     },
+  });
+
+  const demoLessons = input.lessons.filter((lesson) => lesson.isDemo);
+  const demoActivities = input.activities
+    .filter((activity) => activity.isDemo)
+    .sort((left, right) => left.id.localeCompare(right.id))
+    .slice(0, DEMO_PROGRESS_ACTIVITY_LIMIT);
+  const versions = releaseId
+    ? await prisma.activityVersion.findMany({
+      where: { releaseId, activityId: { in: demoActivities.map((activity) => activity.id) } },
+      select: { id: true, activityId: true },
+    })
+    : [];
+  const versionByActivity = new Map(versions.map((version) => [version.activityId, version.id]));
+  const taxonomyStats = new Map<string, { attemptsCount: number; correctCount: number }>();
+  demoActivities.forEach((activity, index) => {
+    const correctCount = index % 5 === 0 ? 0 : 1;
+    for (const taxonomyNodeId of activity.taxonomyNodeIds) {
+      const current = taxonomyStats.get(taxonomyNodeId) ?? { attemptsCount: 0, correctCount: 0 };
+      current.attemptsCount += 1;
+      current.correctCount += correctCount;
+      taxonomyStats.set(taxonomyNodeId, current);
+    }
+  });
+
+  await prisma.$transaction(async (tx) => {
+    await tx.userLessonProgress.deleteMany({ where: { userId: DEMO_USER_ID } });
+    await tx.userActivityProgress.deleteMany({ where: { userId: DEMO_USER_ID } });
+    await tx.taxonomyProgress.deleteMany({ where: { userId: DEMO_USER_ID } });
+    await tx.reviewItem.deleteMany({ where: { userId: DEMO_USER_ID } });
+
+    for (const lesson of demoLessons) {
+      await tx.userLessonProgress.create({
+        data: { userId: DEMO_USER_ID, lessonId: lesson.id, viewed: true, viewedAt: new Date("2026-07-01T09:00:00.000Z"), errorsPending: 0 },
+      });
+    }
+    for (const [index, activity] of demoActivities.entries()) {
+      const attemptsCount = 1;
+      await tx.userActivityProgress.create({
+        data: { userId: DEMO_USER_ID, activityId: activity.id, attemptsCount, correctCount: index % 5 === 0 ? 0 : 1, lastResult: index % 5 !== 0, lastAttemptAt: new Date("2026-07-02T09:00:00.000Z") },
+      });
+    }
+    for (const [taxonomyNodeId, stats] of taxonomyStats) {
+      await tx.taxonomyProgress.create({ data: { userId: DEMO_USER_ID, taxonomyNodeId, ...stats } });
+    }
+    for (const [index, activity] of demoActivities.slice(0, 3).entries()) {
+      await tx.reviewItem.create({
+        data: {
+          id: `demo-review-${index + 1}`,
+          userId: DEMO_USER_ID,
+          activityId: activity.id,
+          activityVersionId: versionByActivity.get(activity.id) ?? null,
+          lessonId: activity.lessonIds[0] ?? null,
+          taxonomyNodeId: activity.taxonomyNodeIds[0] ?? "demo",
+          level: activity.level,
+          stage: 0,
+          consecutiveCorrect: 0,
+          dueAt: new Date(index < 2 ? "2026-07-03T00:00:00.000Z" : "2026-08-10T00:00:00.000Z"),
+          failedAt: new Date("2026-07-01T09:00:00.000Z"),
+          attemptsCount: 1,
+        },
+      });
+    }
   });
 }
 
