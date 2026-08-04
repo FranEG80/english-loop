@@ -57,6 +57,15 @@ describe("ActivityEvaluator", () => {
     expect(
       evaluate(evaluator, { kind: "text", value: "I live here" }),
     ).toBe(false);
+    const strict = {
+      trim: false,
+      collapseWhitespace: false,
+      caseSensitive: true,
+      ignoreTerminalPunctuation: false,
+      normaliseApostrophes: false,
+    };
+    expect(evaluate({ strategy: "exact_text", answer: "Exact", normalization: strict }, { kind: "text", value: "Exact" })).toBe(true);
+    expect(evaluate({ strategy: "exact_text", answer: "Exact", normalization: strict }, { kind: "text", value: " exact " })).toBe(false);
   });
 
   it("grades one_of_texts strategy", () => {

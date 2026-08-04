@@ -99,6 +99,7 @@ describeDatabase("normalized catalog seed integration", () => {
 
   it("publishes atomically, is idempotent and preserves feedback in read DTOs", async () => {
     const writer = new PrismaCatalogWriteAdapter(prisma);
+    await expect(writer.seedCatalog(seedInput("checksum-dry"), { dryRun: true })).resolves.toMatchObject({ status: "dry_run", releaseId: null });
     const first = await writer.seedCatalog(seedInput("checksum-1"));
     const repeated = await writer.seedCatalog(seedInput("checksum-1"));
     const catalog = new PrismaCatalogAdapter(prisma);
@@ -110,6 +111,10 @@ describeDatabase("normalized catalog seed integration", () => {
     expect(repeated.releaseId).toBe(first.releaseId);
     expect(activity?.options?.[0]?.feedback).toBe("That is correct.");
     expect(lesson?.relatedActivityIds).toEqual(["activity-1"]);
+    await prisma.catalogPublication.delete({ where: { id: "active" } });
+    const republished = await writer.seedCatalog(seedInput("checksum-1"));
+    expect(republished.status).toBe("unchanged");
+    expect((await prisma.catalogPublication.findUnique({ where: { id: "active" } }))?.releaseId).toBe(first.releaseId);
   });
 
   it("does not move the active pointer when a relationship fails", async () => {

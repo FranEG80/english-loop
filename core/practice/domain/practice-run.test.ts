@@ -63,4 +63,16 @@ describe("PracticeRun", () => {
     expect(run.isCurrentActivityRepetition).toBe(true);
     expect(run.scheduleRepetition("a1")).toBe(false);
   });
+
+  it("validates both index bounds and keeps snapshots isolated", () => {
+    expect(() => makeRun({ currentIndex: -1 })).toThrow(InvariantViolationException);
+    expect(() => makeRun({ currentIndex: 3 })).toThrow(InvariantViolationException);
+    const run = makeRun({ currentIndex: 2 });
+    expect(run.currentActivityId).toBeNull();
+    const snapshot = run.toSnapshot();
+    snapshot.activityIds.push("mutated");
+    snapshot.scope.descendantIds.push("mutated");
+    expect(run.activityIds).toEqual(["a1", "a2"]);
+    expect(run.scope.descendantIds).toEqual(["grammar"]);
+  });
 });

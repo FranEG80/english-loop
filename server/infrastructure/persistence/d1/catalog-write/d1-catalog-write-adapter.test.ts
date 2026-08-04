@@ -60,4 +60,28 @@ describe("D1CatalogWriteAdapter", () => {
     expect(fake.queries).toHaveLength(0);
     expect(fake.batches).toHaveLength(0);
   });
+
+  it("restarts preparing releases and handles no-op/failure paths", async () => {
+    const preparing = database({ id: "release-preparing", status: "preparing" });
+    const adapter = new D1CatalogWriteAdapter(preparing.db);
+    const session = await adapter.start("dataset", "checksum", { taxonomy: 0, lessons: 0, activities: 0 });
+    expect(session.status).toBe("started");
+    await adapter.publish({ ...session, status: "unchanged" }, "ignored");
+    await adapter.fail({ ...session, status: "unchanged" }, "ignored");
+    await adapter.fail(session, "text failure");
+    await adapter.applyChunk({ kind: "references", releaseId: session.releaseId, activityTypes: [], evaluatorStrategies: [], levels: [], statuses: [] });
+
+    const statementFailure = database();
+    statementFailure.db.prepare = () => ({
+      bind: () => statementFailure.db.prepare("unused"),
+      first: async () => null,
+      all: async () => ({ success: true, results: [] }),
+      run: async () => ({ success: false, results: [] }),
+    } as never);
+    await expect(new D1CatalogWriteAdapter(statementFailure.db).start("dataset", "checksum", { taxonomy: 0, lessons: 0, activities: 0 })).rejects.toMatchObject({ message: "D1 catalog statement failed" });
+
+    const batchFailure = database();
+    batchFailure.db.batch = async () => [{ success: false, results: [] }];
+    await expect(new D1CatalogWriteAdapter(batchFailure.db).seedCatalog(input)).rejects.toMatchObject({ message: "D1 catalog batch failed" });
+  });
 });

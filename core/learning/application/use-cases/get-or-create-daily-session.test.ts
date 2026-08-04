@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { UserSettings } from "@/core/account/domain/user-settings";
 import { getOrCreateDailySession } from "./get-or-create-daily-session";
+import { localDateForTimezone } from "./get-or-create-daily-session";
 import { DailySessionPlanner } from "../../domain/daily-session-planner";
 import {
   actor,
@@ -88,5 +89,12 @@ describe("getOrCreateDailySession", () => {
     );
 
     expect(result.date).toBe("2026-08-03");
+  });
+
+  it("rejects invalid timezones and propagates a write error when no concurrent winner exists", async () => {
+    expect(() => localDateForTimezone(new Date("2026-08-03T00:00:00.000Z"), "Not/A-Timezone")).toThrow("Invalid IANA timezone");
+    const sessions = new MemorySessions();
+    sessions.save = async () => { throw new Error("storage unavailable"); };
+    await expect(getOrCreateDailySession(identity, sessions, new MemorySettings(), catalog, lessonProgress, new DailySessionPlanner(random), ids, clock, collectEvents().dispatcher, "v1", { timezone: "UTC" })).rejects.toMatchObject({ message: "storage unavailable" });
   });
 });

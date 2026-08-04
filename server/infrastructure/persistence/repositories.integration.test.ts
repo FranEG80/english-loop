@@ -77,7 +77,8 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
     expect(await saved.findByUserId(userId)).toHaveLength(0);
     await saved.save(SavedLesson.create({ userId, lessonId: "lesson-1", savedAt: "2026-08-03T00:00:00.000Z" }));
     await lessons.upsert({ userId, lessonId: "lesson-1", viewed: true, viewedAt: "2026-08-03T00:00:00.000Z", errorsPending: 0 });
-    expect((await lessons.findByUserId(userId))[0]?.viewed).toBe(true);
+    await lessons.upsert({ userId, lessonId: "lesson-2", viewed: false, viewedAt: null, errorsPending: 2 });
+    expect((await lessons.findByUserId(userId)).map((item) => item.viewed)).toEqual([true, false]);
     const session = DailySession.create({ id: "session-integration", userId, date: "2026-08-03", status: "lesson", datasetVersion: "v1", seed: "seed", lessons: [{ lessonId: "lesson-1", order: 0, status: "pending", selectionReason: "new", completedAt: null }], practiceRunId: null, createdAt: "2026-08-03T00:00:00.000Z" });
     await sessions.save(session);
     expect((await sessions.findByUserIdAndDate(userId, "2026-08-03"))?.id).toBe(session.id);

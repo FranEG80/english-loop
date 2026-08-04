@@ -95,6 +95,6 @@ describe("D1 Better Auth adapter", () => {
     const numericWhere = [{ field: "id", operator: "in" as const, value: [1, 2], connector: "AND" as const }];
     await expect(adapter.findOne({ model: "user", where: numericWhere })).resolves.toMatchObject({ id: "user-1" });
     const mixedWhere = [{ field: "id", operator: "in" as const, value: [1, "two"], connector: "AND" as const }];
-    await expect(adapter.findOne({ model: "user", where: mixedWhere })).rejects.toBeInstanceOf(TypeError);
+    await expect(adapter.findOne({ model: "user", where: mixedWhere as never })).rejects.toBeInstanceOf(TypeError);
   });
 });
