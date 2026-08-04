@@ -66,6 +66,10 @@ describe("D1CatalogWriteAdapter", () => {
     const adapter = new D1CatalogWriteAdapter(preparing.db);
     const session = await adapter.start("dataset", "checksum", { taxonomy: 0, lessons: 0, activities: 0 });
     expect(session.status).toBe("started");
+    expect(preparing.queries).toContain("DELETE FROM ActivityVersion WHERE releaseId = ?");
+    expect(preparing.queries).toContain("DELETE FROM LessonVersion WHERE releaseId = ?");
+    expect(preparing.queries).toContain("DELETE FROM TaxonomyNodeVersion WHERE releaseId = ?");
+    expect(preparing.queries).not.toContain("DELETE FROM CatalogRelease WHERE id = ?");
     await adapter.publish({ ...session, status: "unchanged" }, "ignored");
     await adapter.fail({ ...session, status: "unchanged" }, "ignored");
     await adapter.fail(session, "text failure");

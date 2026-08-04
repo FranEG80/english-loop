@@ -24,10 +24,9 @@ import { localeCookiePortAdapter } from "./browser/locale-port-adapter";
 type DataSource = "mock" | "rest";
 
 /**
- * Selecciona la implementación de cada puerto. Hasta que exista backend,
- * `NEXT_PUBLIC_DATA_SOURCE` debe permanecer sin definir (o en "mock"): el
- * modo "rest" está preparado pero desactivado en la práctica, porque no hay
- * Route Handlers en `/api/v1` que lo respondan todavía.
+ * Selecciona la implementación de cada puerto. El modo "mock" es el valor
+ * predeterminado para demos deterministas; `NEXT_PUBLIC_DATA_SOURCE=rest`
+ * conecta la UI con los Route Handlers reales bajo `/api/v1`.
  *
  * Ningún componente de `features/` o `app/` debe importar `adapters/mock`
  * ni `adapters/rest` directamente: siempre a través de estas factories.

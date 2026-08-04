@@ -6,7 +6,7 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   // Reglas de dependencia de la arquitectura hexagonal ligera del frontend
-  // (ver core/README.md). `core/` no puede depender de React, Next.js ni de
+  // (ver DOC/ARCHITECTURE.md). `core/` no puede depender de React, Next.js ni de
   // los adapters/features/app; los adapters mock y REST no deben importarse
   // entre sí.
   {

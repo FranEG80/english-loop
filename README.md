@@ -85,6 +85,8 @@ las migraciones y el seed.
 | `pnpm verify` | Lint, tipos, arquitectura, tests y build de prueba |
 | `pnpm test:integration` | Integración Prisma sobre SQLite aislado |
 | `pnpm test:e2e` | Recorridos E2E sobre una base aislada |
+| `pnpm d1:dev` | Worker D1 local con Wrangler (tras copiar su configuración) |
+| `pnpm d1:migrate:local` | Migraciones D1 en el almacenamiento local de Wrangler |
 | `pnpm dataset:all` | Validación e informes del dataset |
 | `pnpm test:coverage` | Suite con cobertura y umbrales |
 

@@ -20,8 +20,20 @@ export class D1CatalogWriteAdapter implements CatalogWritePort {
     }
     const releaseId = existing?.id ?? generatedId();
     const importId = generatedId();
-    if (existing) await this.run(statement(this.database, "DELETE FROM CatalogRelease WHERE id = ?", [releaseId]));
-    await this.run(statement(this.database, "INSERT INTO CatalogRelease (id, datasetVersion, checksum, status) VALUES (?, ?, ?, ?)", [releaseId, datasetVersion, checksum, CATALOG_RELEASE_PREPARING]));
+    if (existing) {
+      // A failed/preparing release may already have version rows and a
+      // DatasetImport row. Deleting the parent first violates the foreign
+      // keys, so clear the release-owned versions and reuse the release ID.
+      // The previous import record remains as an audit trail.
+      await this.runBatches([
+        statement(this.database, "DELETE FROM ActivityVersion WHERE releaseId = ?", [releaseId]),
+        statement(this.database, "DELETE FROM LessonVersion WHERE releaseId = ?", [releaseId]),
+        statement(this.database, "DELETE FROM TaxonomyNodeVersion WHERE releaseId = ?", [releaseId]),
+        statement(this.database, "UPDATE CatalogRelease SET status = ?, publishedAt = NULL WHERE id = ?", [CATALOG_RELEASE_PREPARING, releaseId]),
+      ]);
+    } else {
+      await this.run(statement(this.database, "INSERT INTO CatalogRelease (id, datasetVersion, checksum, status) VALUES (?, ?, ?, ?)", [releaseId, datasetVersion, checksum, CATALOG_RELEASE_PREPARING]));
+    }
     await this.run(statement(this.database, `INSERT INTO DatasetImport (id, datasetVersion, checksum, status, releaseId) VALUES (?, ?, ?, ?, ?)`, [importId, datasetVersion, checksum, CATALOG_IMPORT_STARTED, releaseId]));
     return { releaseId, importId, status: "started" };
   }
