@@ -26,6 +26,24 @@ test("registers, keeps an authenticated session, logs out and logs in again", as
   expect((await request.get("/api/v1/progress/overview", { headers: { cookie } })).status()).toBe(200);
   expect((await request.get("/api/v1/me/settings", { headers: { cookie } })).status()).toBe(200);
 
+  const updatedProfile = await request.post("/api/auth/update-user", {
+    headers: { cookie, origin: "http://localhost:3000" },
+    data: { name: "Updated E2E User" },
+  });
+  expect(updatedProfile.status()).toBe(200);
+  await expect(updatedProfile.json()).resolves.toMatchObject({ status: true });
+  await expect(
+    request.get("/api/auth/get-session", { headers: { cookie } }).then((response) => response.json()),
+  ).resolves.toMatchObject({ user: { name: "Updated E2E User", email } });
+
+  const newPassword = "New-e2e-password-123!";
+  const changedPassword = await request.post("/api/auth/change-password", {
+    headers: { cookie, origin: "http://localhost:3000" },
+    data: { currentPassword: password, newPassword, revokeOtherSessions: true },
+  });
+  expect(changedPassword.status()).toBe(200);
+  cookie = cookieHeader(changedPassword) || cookie;
+
   const signOut = await request.post("/api/auth/sign-out", {
     headers: {
       cookie,
@@ -37,8 +55,13 @@ test("registers, keeps an authenticated session, logs out and logs in again", as
   expect([200, 204]).toContain(signOut.status());
   expect((await request.get("/api/v1/progress/overview", { headers: { cookie } })).status()).toBe(401);
 
-  const signIn = await request.post("/api/auth/sign-in/email", {
+  const oldPasswordSignIn = await request.post("/api/auth/sign-in/email", {
     data: { email, password },
+  });
+  expect(oldPasswordSignIn.status()).not.toBe(200);
+
+  const signIn = await request.post("/api/auth/sign-in/email", {
+    data: { email, password: newPassword },
   });
   expect(signIn.status()).toBe(200);
   await expect(signIn.json()).resolves.toMatchObject({ user: { email } });

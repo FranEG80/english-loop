@@ -9,7 +9,7 @@ import { localeCookiePortAdapter } from "./browser/locale-port-adapter";
 
 describe("core port implementations", () => {
   it.each([
-    ["AuthPort", authMockAdapter, ["getSession", "login", "register", "logout"]],
+    ["AuthPort", authMockAdapter, ["getSession", "login", "register", "updateProfile", "changePassword", "logout"]],
     ["DailySessionPort", dailySessionMockAdapter, ["getTodaySession", "startDailyPractice", "submitDailyAttempt", "completeDailySession"]],
     ["FocusedPracticePort", focusedPracticeMockAdapter, ["getScopeAvailability", "createRun", "submitRunAttempt", "getRunSummary"]],
     ["LearningContentPort", learningContentMockAdapter, ["listLessons", "getLessonById", "listActivities", "getActivityById", "getTaxonomyTree"]],

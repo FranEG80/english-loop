@@ -28,5 +28,13 @@ describe("authMockAdapter", () => {
     ).rejects.toMatchObject({ message: expect.stringMatching(/incorrectos/iu) });
     const session = await authMockAdapter.register({ name: "New", email: "new@example.com", password: "password" });
     expect(session).toMatchObject({ name: "New", email: "new@example.com" });
+    await authMockAdapter.updateProfile({ name: "Renamed" });
+    await expect(authMockAdapter.getSession()).resolves.toMatchObject({ name: "Renamed" });
+    await expect(
+      authMockAdapter.changePassword({ currentPassword: "wrong", newPassword: "new-password" }),
+    ).rejects.toMatchObject({ message: "La contraseña actual no es correcta." });
+    await authMockAdapter.changePassword({ currentPassword: "password", newPassword: "new-password" });
+    await expect(authMockAdapter.login({ email: "new@example.com", password: "new-password" })).resolves.toMatchObject({ name: "Renamed" });
+    await authMockAdapter.logout();
   });
 });

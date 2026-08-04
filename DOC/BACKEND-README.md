@@ -143,6 +143,29 @@ entregarlas. Un request demasiado grande devuelve `413`; una respuesta interna
 demasiado grande se registra como error de infraestructura sin exponer su
 contenido.
 
+## Cuenta y seguridad
+
+La ruta `app/api/auth/[...all]` delega en Better Auth y mantiene sus tipos
+aislados en infraestructura. La aplicación expone mediante `AuthPort` los
+comandos que necesita la pantalla de ajustes:
+
+- actualizar el nombre visible del perfil;
+- cambiar la contraseña indicando la contraseña actual;
+- revocar las demás sesiones al cambiarla.
+
+La pantalla está en
+[`ProfileSecurityForms.tsx`](../features/settings/ProfileSecurityForms.tsx) y
+las mutaciones atraviesan Server Actions, no lógica de negocio duplicada en
+un Client Component. Better Auth aplica la validación final de la contraseña y
+guarda su hash en `Account`; la UI solo ofrece validación inmediata y nunca
+registra contraseñas.
+
+Todavía no se habilitan cambio de email, recuperación de contraseña por correo
+ni borrado de cuenta. Esos flujos requieren verificación de email, un
+transportador de correo y decidir qué hacer con intentos, progreso, sesiones y
+datos editoriales asociados. Activar el borrado de Better Auth antes de esa
+política podría dejar datos de aprendizaje huérfanos.
+
 ### Paginación de los listados públicos
 
 `GET /api/v1/lessons` y `GET /api/v1/activities` devuelven un envelope estable:
@@ -341,14 +364,15 @@ Las pruebas relevantes incluyen:
 - métricas pedagógicas acotadas de intentos, idempotencia, sesiones, runs por
   modo/nodo, scopes insuficientes y tamaño de cola de repaso;
 - snapshot materializado de `PracticeRunItem` verificado en Prisma, D1 y E2E;
-- registro, login, logout y acceso autenticado contra una base E2E aislada;
+- registro, login, logout, actualización de perfil, cambio de contraseña y
+  acceso autenticado contra una base E2E aislada;
 - límites arquitectónicos con `dependency-cruiser`.
 
 La configuración de Vitest excluye módulos declarativos `types/`, `type.ts` y
 los contratos de puertos del cálculo ejecutable. Los umbrales globales son
 `80%` para statements, lines y functions, y `90%` para branches. La última
-ejecución global completa pasó con `95.93%` de statements, `90.50%` de
-branches, `96.30%` de functions y `97.43%` de lines. La validación directa del
+ejecución global completa pasó con `95.97%` de statements, `90.52%` de
+branches, `96.32%` de functions y `97.46%` de lines. La validación directa del
 dataset pasa con `124` lecciones, `12.100` actividades, `164` nodos y cero
 errores. El seed de `dev.db` se ejecutó dos veces: la primera publicó el release
 y la segunda devolvió `unchanged`, sin duplicar versiones.

@@ -17,3 +17,13 @@ export interface Credentials {
 export interface RegisterInput extends Credentials {
   name: string;
 }
+
+export interface UpdateProfileInput {
+  name: string;
+}
+
+export interface ChangePasswordInput {
+  currentPassword: string;
+  newPassword: string;
+  revokeOtherSessions?: boolean;
+}

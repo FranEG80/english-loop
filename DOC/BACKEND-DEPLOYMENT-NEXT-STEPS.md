@@ -108,8 +108,9 @@ Qué comprueba cada orden:
 - dataset:validate: que no falten referencias en Markdown o JSON.
 - --dry-run: construye el seed pero no escribe nada.
 - typecheck y lint: errores de TypeScript y estilo.
-- test:coverage: regresiones y cobertura global. El estado local actual
-  supera 80% de statements y 90% de branches.
+- test:coverage: regresiones y cobertura global. La última ejecución local
+  obtuvo 95,97% de statements, 90,52% de branches, 96,32% de functions y
+  97,46% de lines.
 - test:integration y test:e2e: persistencia y recorrido completo con bases
   aisladas.
 

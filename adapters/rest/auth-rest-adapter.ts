@@ -1,5 +1,11 @@
 import type { AuthPort } from "@/core/ports";
-import type { AuthSession, Credentials, RegisterInput } from "@/core/models";
+import type {
+  AuthSession,
+  ChangePasswordInput,
+  Credentials,
+  RegisterInput,
+  UpdateProfileInput,
+} from "@/core/models";
 import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
 import { RestApiError } from "./http-client";
 
@@ -37,5 +43,15 @@ export const authRestAdapter: AuthPort = {
       method: "POST",
       body: JSON.stringify(input),
     }).then((response) => toAuthSession(response) as AuthSession),
+  updateProfile: (input: UpdateProfileInput) =>
+    authRequest<void>("/update-user", {
+      method: "POST",
+      body: JSON.stringify(input),
+    }),
+  changePassword: (input: ChangePasswordInput) =>
+    authRequest<void>("/change-password", {
+      method: "POST",
+      body: JSON.stringify({ ...input, revokeOtherSessions: input.revokeOtherSessions ?? true }),
+    }),
   logout: () => authRequest<void>("/sign-out", { method: "POST" }),
 };

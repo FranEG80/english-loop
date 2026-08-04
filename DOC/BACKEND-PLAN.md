@@ -291,6 +291,12 @@ context/
 - [x] Configurar `SameSite`.
 - [x] Mantener credenciales y sesiones fuera del dominio de aprendizaje.
 - [x] Añadir rate limiting antes del despliegue productivo.
+- [x] Exponer actualización del nombre y cambio de contraseña mediante
+  `AuthPort`, adaptadores REST/mock y Server Actions; el cambio de contraseña
+  revoca las demás sesiones.
+- [~] Añadir cambio de email, recuperación por email y borrado de cuenta
+  cuando exista proveedor de correo, verificación de email y una política
+  explícita de retención/eliminación para progreso, intentos y sesiones.
 - [x] Probar registro, login y logout con una base SQLite aislada en E2E; la
   expiración temporal de sesión sigue pendiente de un reloj controlable en un
   proveedor real.

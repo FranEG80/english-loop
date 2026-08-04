@@ -21,6 +21,7 @@ import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
 import { LogoutButton } from "@/shared/layout/LogoutButton";
 import { requireSession } from "@/shared/lib/require-session";
 import { DailyGoalStepper } from "@/features/settings/DailyGoalStepper";
+import { ProfileSecurityForms } from "@/features/settings/ProfileSecurityForms";
 
 export default async function SettingsPage() {
   const [session, locale, settings] = await Promise.all([
@@ -57,6 +58,8 @@ export default async function SettingsPage() {
           </div>
           <LogoutButton label={dictionary.nav.logout} compact />
         </section>
+
+        <ProfileSecurityForms name={session.name} locale={locale} />
 
         <form action={updateSettingsAction} className="grid gap-5 lg:grid-cols-2">
           <fieldset className="ink-card rounded-[2rem] bg-primary-dark p-6 text-white sm:p-8">
