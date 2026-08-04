@@ -112,6 +112,38 @@ describe("D1 persistence boundary", () => {
     ).toBe(401);
   });
 
+  it("rejects malformed HTTP requests before touching D1", async () => {
+    const { database } = fakeDatabase();
+    const now = 1_700_000_000_000;
+    let nonce = 0;
+    const baseHeaders = () => ({
+      authorization: "Bearer shared-secret",
+      "x-d1-timestamp": String(now),
+      "x-d1-nonce": `invalid-${++nonce}`,
+    });
+    const options = { database, sharedToken: "shared-secret", replayGuard: { accept: async () => true }, now: () => now };
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "GET", headers: baseHeaders() }), options)).resolves.toMatchObject({ status: 405 });
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers: { ...baseHeaders(), "x-d1-timestamp": "not-a-number" }, body: "{}" }), options)).resolves.toMatchObject({ status: 401 });
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers: { ...baseHeaders(), authorization: "Basic wrong" }, body: "{}" }), options)).resolves.toMatchObject({ status: 401 });
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers: { ...baseHeaders(), "content-length": "100" }, body: "{}" }), { ...options, maxBodyBytes: 10 })).resolves.toMatchObject({ status: 413 });
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers: baseHeaders(), body: "not-json" }), options)).resolves.toMatchObject({ status: 400 });
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers: baseHeaders(), body: JSON.stringify({ operation: { name: "not-allowed" } }) }), options)).resolves.toMatchObject({ status: 400 });
+  });
+
+  it("returns operation failures and reports unsuccessful batch results", async () => {
+    const now = 1_700_000_000_000;
+    const failingDatabase = { prepare: () => { throw new Error("database down"); }, batch: async () => [] } as never;
+    const headers = { authorization: "Bearer shared-secret", "x-d1-timestamp": String(now), "x-d1-nonce": "failure-1" };
+    const options = { database: failingDatabase, sharedToken: "shared-secret", replayGuard: { accept: async () => true }, now: () => now };
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers, body: JSON.stringify({ operation: { name: "health" } }) }), options)).resolves.toMatchObject({ status: 502 });
+
+    const database: D1DatabaseLike = {
+      prepare: () => ({ bind: () => database.prepare("unused"), first: async () => null, all: async () => ({ success: false, results: [] }), run: async () => ({ success: false, results: [] }) }) as never,
+      batch: async () => [{ success: false, results: [] }],
+    };
+    await expect(handleD1HttpRequest(new Request("https://d1-proxy.test", { method: "POST", headers: { ...headers, "x-d1-nonce": "failure-2" }, body: JSON.stringify({ operations: [{ name: "health" }] }) }), { ...options, database })).resolves.toMatchObject({ status: 200 });
+  });
+
   it("sends typed operations through HTTP without exposing SQL", async () => {
     const seen: Request[] = [];
     const client = new D1HttpClient({
@@ -132,6 +164,37 @@ describe("D1 persistence boundary", () => {
     const body = await seen[0]?.json();
     expect(body).toEqual({ operation: { name: "health" } });
     expect(JSON.stringify(body)).not.toContain("SELECT");
+  });
+
+  it("uses default clock/nonce providers and surfaces HTTP errors", async () => {
+    const defaulted = new D1HttpClient({
+      url: "https://d1-proxy.test",
+      token: "secret",
+      fetch: async () => new Response(JSON.stringify({ success: true, results: [] }), { status: 200 }),
+    });
+    await expect(defaulted.execute({ name: "health" })).resolves.toMatchObject({ success: true });
+
+    const failing = new D1HttpClient({
+      url: "https://d1-proxy.test",
+      token: "secret",
+      now: () => 1,
+      nonce: () => "error",
+      fetch: async () => new Response(JSON.stringify({ error: "remote-failure" }), { status: 503 }),
+    });
+    await expect(failing.execute({ name: "health" })).rejects.toMatchObject({ message: "remote-failure" });
+    await expect(failing.batch([{ name: "health" }])).rejects.toMatchObject({ message: "remote-failure" });
+    await expect(failing.batch(Array.from({ length: 101 }, () => ({ name: "health" })))).rejects.toMatchObject({ message: expect.stringContaining("between 1 and 100") });
+  });
+
+  it("rejects a successful HTTP response without batch results", async () => {
+    const client = new D1HttpClient({
+      url: "https://d1-proxy.test",
+      token: "secret",
+      now: () => 1,
+      nonce: () => "missing-results",
+      fetch: async () => new Response(JSON.stringify({}), { status: 200 }),
+    });
+    await expect(client.batch([{ name: "health" }])).rejects.toMatchObject({ message: "D1 HTTP batch failed" });
   });
 
   it("supports bounded typed batches over HTTP", async () => {

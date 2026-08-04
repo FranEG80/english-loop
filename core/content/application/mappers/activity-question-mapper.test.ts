@@ -67,4 +67,17 @@ describe("toActivityQuestionDto", () => {
       interactionMode: "matching_pairs",
     });
   });
+
+  it("uses safe defaults when optional question content is absent", () => {
+    expect(toActivityQuestionDto(activity("word_formation", { tokens: [] }))).toMatchObject({ baseWord: "" });
+    expect(toActivityQuestionDto(activity("open_cloze", { tokens: undefined }))).toMatchObject({ gapCount: 0 });
+    expect(toActivityQuestionDto(activity("key_word_transformation", { tokens: [] }))).toMatchObject({ keyword: "" });
+    expect(toActivityQuestionDto(activity("complete_paragraph", { tokens: undefined }))).toMatchObject({ gapCount: 0 });
+    expect(toActivityQuestionDto(activity("single_choice", { options: undefined }))).toMatchObject({ options: [] });
+    expect(toActivityQuestionDto(activity("multiple_select", { options: undefined }))).toMatchObject({ options: [] });
+    expect(toActivityQuestionDto(activity("word_order", { tokens: undefined }))).toMatchObject({ shuffledWords: [] });
+    expect(toActivityQuestionDto(activity("matching", { pairs: undefined }))).toMatchObject({ leftItems: [], rightItems: [] });
+    expect(toActivityQuestionDto(activity("sentence_transformation", { tokens: undefined }))).toMatchObject({ wordBank: [] });
+    expect(toActivityQuestionDto(activity("complete_dialogue", { tokens: undefined }))).toMatchObject({ dialogueLines: [] });
+  });
 });

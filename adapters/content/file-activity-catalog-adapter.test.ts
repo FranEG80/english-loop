@@ -82,4 +82,42 @@ describe("FileActivityCatalogAdapter", () => {
       await rm(datasetRoot, { recursive: true, force: true });
     }
   });
+
+  it("handles all filters, batch caching and unavailable files", async () => {
+    const datasetRoot = await mkdtemp(path.join(os.tmpdir(), "english-loop-activity-catalog-errors-"));
+    try {
+      await mkdir(path.join(datasetRoot, "catalog"), { recursive: true });
+      await writeFile(path.join(datasetRoot, "catalog/activity-index.json"), JSON.stringify({ activities: [
+        { id: "a1", batchId: "b1", path: "a.json", level: "B1", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n1"], lessonIds: ["l1"], difficulty: 1, estimatedSeconds: 1, status: "published" },
+        { id: "a2", batchId: "b2", path: "b.json", level: "B2", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n2"], lessonIds: ["l2"], difficulty: 1, estimatedSeconds: 1, status: "published" },
+      ] }));
+      const activity = (id: string, status = "published") => ({ id, level: id === "a1" ? "B1" : "B2", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: [id === "a1" ? "n1" : "n2"], difficulty: 1, instructions: "", prompt: "", lessonIds: [id === "a1" ? "l1" : "l2"], tags: [], estimatedSeconds: 1, evaluator: { strategy: "exact_text", answer: "" }, explanation: "", status });
+      await writeFile(path.join(datasetRoot, "a.json"), JSON.stringify({ activities: [activity("a1"), activity("draft", "draft")] }));
+      await writeFile(path.join(datasetRoot, "b.json"), JSON.stringify({ activities: [activity("a2")] }));
+      const adapter = new FileActivityCatalogAdapter(datasetRoot);
+      await expect(adapter.listActivities({ level: "B2", taxonomyNodeId: "n2", lessonIds: ["l2"] })).resolves.toMatchObject([{ id: "a2" }]);
+      await expect(adapter.listActivities({ level: "B1", taxonomyNodeId: "missing" })).resolves.toEqual([]);
+      await expect(adapter.listActivities({ lessonIds: ["missing"] })).resolves.toEqual([]);
+      await expect(adapter.getActivityById("a1")).resolves.toMatchObject({ id: "a1" });
+      await expect(adapter.getActivityById("missing")).resolves.toBeNull();
+      await expect(adapter.countActivitiesByNode("n1", "both")).resolves.toBe(1);
+      await expect(adapter.countActivitiesByNodes(["n2"], "B1")).resolves.toBe(0);
+    } finally {
+      await rm(datasetRoot, { recursive: true, force: true });
+    }
+  });
+
+  it("reports malformed indexes and batches as dataset outages", async () => {
+    const datasetRoot = await mkdtemp(path.join(os.tmpdir(), "english-loop-activity-catalog-invalid-"));
+    try {
+      const adapter = new FileActivityCatalogAdapter(datasetRoot);
+      await expect(adapter.listActivities()).rejects.toBeInstanceOf(Error);
+      await mkdir(path.join(datasetRoot, "catalog"), { recursive: true });
+      await writeFile(path.join(datasetRoot, "catalog/activity-index.json"), JSON.stringify({ activities: [{ id: "a", batchId: "b", path: "missing.json", level: "B1", type: "fill_blank", taxonomyNodeIds: [], lessonIds: [], status: "published" }] }));
+      const missingBatch = new FileActivityCatalogAdapter(datasetRoot);
+      await expect(missingBatch.getActivityById("a")).rejects.toBeInstanceOf(Error);
+    } finally {
+      await rm(datasetRoot, { recursive: true, force: true });
+    }
+  });
 });

@@ -29,6 +29,7 @@ export function TrueFalseRenderer({
   const cards =
     activity.statements ?? [{ id: activity.id, statement: activity.statement }];
   const startX = useRef<number | null>(null);
+  const answering = useRef(false);
   const [dragX, setDragX] = useState(0);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<boolean[]>([]);
@@ -36,7 +37,8 @@ export function TrueFalseRenderer({
   const card = cards[index];
 
   function answer(value: boolean) {
-    if (disabled || exitDirection !== 0) return;
+    if (disabled || exitDirection !== 0 || answering.current) return;
+    answering.current = true;
     const next = [...answers, value];
     setExitDirection(value ? 1 : -1);
     window.setTimeout(() => {
@@ -51,6 +53,7 @@ export function TrueFalseRenderer({
         setIndex((current) => current + 1);
         setExitDirection(0);
         setDragX(0);
+        answering.current = false;
       }
     }, 220);
   }

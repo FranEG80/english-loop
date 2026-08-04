@@ -52,4 +52,38 @@ describe("D1 Better Auth adapter", () => {
     base.setFailed(true);
     await expect(adapter.findMany({ model: "user", where: [], limit: 1 })).rejects.toMatchObject({ message: "D1 Better Auth operation failed" });
   });
+
+  it("normalizes aliases, scalar values and query options", async () => {
+    const base = transport();
+    const adapter = createD1BetterAuthAdapter(base)({} as never);
+    await adapter.create({
+      model: "user",
+      data: { id: "user-2", emailVerified: true, count: 2, nullable: null, createdAt: new Date("2026-01-02") },
+    });
+    await adapter.findMany({ model: "session", where: undefined, select: [], sortBy: { field: "createdAt", direction: "asc" } });
+    await adapter.findOne({ model: "account", where: undefined });
+    await adapter.delete({ model: "verification", where: undefined });
+    expect(base.calls.map((call) => call.name)).toContain("authFindMany");
+  });
+
+  it("returns null for empty reads and validates unsupported Better Auth values", async () => {
+    const calls: D1Operation[] = [];
+    const base = {
+      calls,
+      execute: async (request: D1Operation): Promise<D1Result> => {
+        calls.push(request);
+        return { success: true, results: request.name === "authCount" ? [] : [] };
+      },
+      batch: async () => [],
+    };
+    const adapter = createD1BetterAuthAdapter(base)({} as never);
+    await expect(adapter.findOne({ model: "user", where: [] })).resolves.toBeNull();
+    await expect(adapter.update({ model: "user", where: [], update: { name: "x" } })).resolves.toBeNull();
+    await expect(adapter.consumeOne({ model: "user", where: [] })).resolves.toBeNull();
+    await expect(adapter.incrementOne({ model: "user", where: [], increment: { emailVerified: 1 } })).resolves.toBeNull();
+    await expect(adapter.count({ model: "user", where: [] })).resolves.toBe(0);
+    await expect(adapter.create({ model: "user", data: { roles: ["admin", "editor"] } })).resolves.toEqual({});
+    await expect(adapter.create({ model: "user", data: { emailVerified: true } })).resolves.toEqual({});
+    await expect(adapter.create({ model: "user", data: [] as never })).resolves.toEqual({});
+  });
 });

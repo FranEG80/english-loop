@@ -1,0 +1,104 @@
+import { describe, expect, it } from "vitest";
+import type { PrismaClient } from "@/generated/prisma/client";
+import { DatasetUnavailableException } from "@/core/shared/exceptions";
+import { UNKNOWN_DATASET_VERSION } from "@/core/content/domain/content-version";
+import { PrismaCatalogAdapter } from "./prisma-catalog-adapter";
+
+function catalogClient(options: { publication?: "published" | "draft" | null } = {}) {
+  const publication = options.publication === null
+    ? null
+    : {
+        releaseId: "release-1",
+        release: { status: options.publication ?? "published" },
+      };
+  const lessonRows = [
+    {
+      id: "lesson-version-1", lessonId: "lesson-1", levelCode: "B1", category: "grammar",
+      taxonomyNodeId: "grammar", title: "Grammar", summary: "Summary", explanation: "Explain",
+      examples: "[\"Example\"]", commonMistakes: "not-json", tags: "[\"tag\"]", difficulty: 1,
+      contentVersion: 1, statusCode: "published",
+    },
+  ];
+  const activityRows = [
+    {
+      id: "activity-version-1", activityId: "activity-1", levelCode: "B1", activityTypeCode: "choice",
+      category: "grammar", topic: "grammar", subtopic: "articles", difficulty: 2,
+      instructions: "Choose", prompt: "Prompt", passage: "Passage", explanation: "Explain",
+      tags: "[]", lessonIds: "[\"lesson-1\"]", estimatedSeconds: 30,
+      evaluatorData: "{\"strategy\":\"single_option\",\"correctOptionId\":\"correct\"}", statusCode: "published",
+      options: [
+        { optionId: "wrong", label: "Wrong", feedback: null, position: 1 },
+        { optionId: "correct", label: "Correct", feedback: "Good", position: 0 },
+      ],
+      tokens: [{ tokenId: "token-1", label: "word", feedback: null, position: 0 }],
+      pairs: [{ leftId: "left", leftLabel: "Left", rightId: "right", rightLabel: "Right", position: 0 }],
+      lessonLinks: [{ lessonId: "lesson-1", position: 0 }, { lessonId: "lesson-1", position: 1 }],
+      taxonomyLinks: [{ taxonomyNodeId: "grammar", position: 0 }],
+    },
+  ];
+  const taxonomyRows = [
+    { nodeId: "grammar", parentId: null, kind: "category", labelsEn: "Grammar", labelsEs: "Gramática", levels: "[\"B1\"]", selectableForPractice: true, sortOrder: 2 },
+    { nodeId: "articles", parentId: "grammar", kind: "topic", labelsEn: "Articles", labelsEs: "Artículos", levels: "[\"B1\"]", selectableForPractice: true, sortOrder: 1 },
+    { nodeId: "verbs", parentId: "grammar", kind: "topic", labelsEn: "Verbs", labelsEs: "Verbos", levels: "not-json", selectableForPractice: false, sortOrder: 0 },
+    { nodeId: "orphan", parentId: "missing", kind: "topic", labelsEn: "Orphan", labelsEs: "Huérfano", levels: "[]", selectableForPractice: true, sortOrder: 0 },
+    { nodeId: "vocabulary", parentId: null, kind: "category", labelsEn: "Vocabulary", labelsEs: "Vocabulario", levels: "[]", selectableForPractice: true, sortOrder: 0 },
+  ];
+  const db = {
+    catalogPublication: { findUnique: async () => publication },
+    catalogRelease: { findUnique: async () => ({ datasetVersion: "dataset-1" }) },
+    lessonVersion: {
+      findMany: async () => lessonRows,
+      findFirst: async ({ where }: { where: { lessonId: string } }) => where.lessonId === "lesson-1" ? lessonRows[0] : null,
+      count: async () => 1,
+    },
+    activityVersion: {
+      findMany: async (args: { select?: unknown }) => args.select ? activityRows.map((row) => ({ activityId: row.activityId, lessonLinks: row.lessonLinks })) : activityRows,
+      findFirst: async ({ where }: { where: { activityId: string } }) => where.activityId === "activity-1" ? activityRows[0] : null,
+      count: async () => 4,
+    },
+    taxonomyNodeVersion: { findMany: async () => taxonomyRows, count: async () => 5 },
+  };
+  return db as unknown as PrismaClient;
+}
+
+describe("PrismaCatalogAdapter", () => {
+  it("rejects reads while the publication is absent or not published", async () => {
+    for (const publication of [null, "draft"] as const) {
+      const adapter = new PrismaCatalogAdapter(catalogClient({ publication }));
+      await expect(adapter.listLessons()).rejects.toBeInstanceOf(DatasetUnavailableException);
+      await expect(adapter.getContentVersion()).resolves.toEqual({ datasetVersion: UNKNOWN_DATASET_VERSION, schemaVersion: "1.0.0" });
+      await expect(adapter.getCatalogMetadata()).resolves.toMatchObject({ lessonCount: 0, activityCount: 0, taxonomyNodeCount: 0 });
+    }
+  });
+
+  it("lists and resolves published lessons and activities through every filter shape", async () => {
+    const adapter = new PrismaCatalogAdapter(catalogClient());
+    await expect(adapter.listLessons()).resolves.toHaveLength(1);
+    await expect(adapter.listLessons({ level: "B1", category: "grammar" })).resolves.toMatchObject([{ id: "lesson-1", relatedActivityIds: ["activity-1"] }]);
+    await expect(adapter.getLessonById("lesson-1")).resolves.toMatchObject({ id: "lesson-1" });
+    await expect(adapter.getLessonById("missing")).resolves.toBeNull();
+
+    await expect(adapter.listActivities()).resolves.toMatchObject([{ id: "activity-1", options: [{ id: "correct" }, { id: "wrong" }] }]);
+    await expect(adapter.listActivities({ level: "B1", taxonomyNodeId: "grammar", lessonIds: ["lesson-1"] })).resolves.toHaveLength(1);
+    await expect(adapter.listActivities({ level: "both", lessonIds: [] })).resolves.toHaveLength(1);
+    await expect(adapter.getActivityById("activity-1")).resolves.toMatchObject({ id: "activity-1", passage: "Passage" });
+    await expect(adapter.getActivityById("missing")).resolves.toBeNull();
+    await expect(adapter.countActivitiesByNode("grammar", "B1")).resolves.toBe(4);
+    await expect(adapter.countActivitiesByNode("grammar", "both")).resolves.toBe(4);
+    await expect(adapter.countActivitiesByNodes([], "B1")).resolves.toBe(0);
+    await expect(adapter.countActivitiesByNodes(["grammar"], "both")).resolves.toBe(4);
+  });
+
+  it("builds taxonomy trees, descendant lists, paths and metadata", async () => {
+    const adapter = new PrismaCatalogAdapter(catalogClient());
+    const tree = await adapter.getTaxonomyTree();
+    expect(tree.map((node) => node.id)).toEqual(["vocabulary", "grammar"]);
+    expect(tree[1]?.children.map((node) => node.id)).toEqual(["verbs", "articles"]);
+    await expect(adapter.resolveNodeWithDescendants("grammar")).resolves.toHaveLength(3);
+    await expect(adapter.resolveNodeWithDescendants("missing")).resolves.toEqual([]);
+    await expect(adapter.getNodePath("articles")).resolves.toMatchObject([{ id: "grammar" }, { id: "articles" }]);
+    await expect(adapter.getNodePath("missing")).resolves.toEqual([]);
+    await expect(adapter.getContentVersion()).resolves.toEqual({ datasetVersion: "dataset-1", schemaVersion: "1.0.0" });
+    await expect(adapter.getCatalogMetadata()).resolves.toMatchObject({ datasetVersion: "dataset-1", lessonCount: 1, activityCount: 4, taxonomyNodeCount: 5 });
+  });
+});

@@ -149,6 +149,25 @@ describe("D1 operation SQL dispatch", () => {
     expect(() => prepareD1Operation(fake.database, { name: "authFindOne", query: { model: "user", where: [{ field: "notAllowed", value: "x" }] } })).toThrow("Unsupported Better Auth field");
   });
 
+  it("covers empty and default Better Auth predicates, pagination and updates", () => {
+    const fake = database();
+    const edgeQuery = {
+      model: "user" as const,
+      where: [
+        { field: "email", value: "user@example.com" },
+        { field: "id", value: [], operator: "in" as const, connector: "AND" as const },
+        { field: "id", value: [], operator: "not_in" as const, connector: "OR" as const },
+        { field: "id", value: ["user-1"], operator: "eq" as const, connector: "AND" as const },
+      ],
+      sortBy: { field: "createdAt", direction: "asc" as const },
+    };
+    expect(prepareD1Operation(fake.database, { name: "authFindMany", query: edgeQuery }).statement).toBeDefined();
+    expect(prepareD1Operation(fake.database, { name: "authFindOne", query: { model: "user", where: undefined, select: [] } }).statement).toBeDefined();
+    expect(prepareD1Operation(fake.database, { name: "authFindMany", query: { model: "user", where: [] } }).statement).toBeDefined();
+    expect(prepareD1Operation(fake.database, { name: "authIncrementOne", query: { model: "user", where: [] }, increment: { emailVerified: 1 } }).statement).toBeDefined();
+    expect(() => prepareD1Operation(fake.database, { name: "authUpdateMany", query: { model: "user", where: [] }, update: { unsupported: "x" } })).toThrow("Unsupported Better Auth field");
+  });
+
   it("keeps operation construction and D1 value binding explicit", () => {
     expect(operation({ name: "health" })).toEqual({ name: "health" });
     expect(d1Value(null)).toBeNull();

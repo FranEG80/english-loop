@@ -9,4 +9,11 @@ describe("learningContentMockAdapter", () => {
     expect(await learningContentMockAdapter.getActivityById("missing")).toBeNull();
     expect((await learningContentMockAdapter.getTaxonomyTree()).length).toBeGreaterThan(0);
   });
+
+  it("supports category, both-level and unknown taxonomy filters", async () => {
+    expect((await learningContentMockAdapter.listLessons({ category: "grammar" })).every((lesson) => lesson.category === "grammar")).toBe(true);
+    await expect(learningContentMockAdapter.listActivities({ level: "both" })).resolves.toHaveLength(14);
+    await expect(learningContentMockAdapter.listActivities({ taxonomyNodeId: "unknown" })).resolves.toEqual([]);
+    await expect(learningContentMockAdapter.getLessonById("missing")).resolves.toBeNull();
+  });
 });

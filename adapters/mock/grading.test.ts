@@ -57,4 +57,16 @@ describe("mock grader", () => {
     expect(feedback.submittedAt).toBeTypeOf("string");
     expect(() => gradeMockAttempt({ ...activity("activity-fill-blank-past-simple"), id: "missing" }, { kind: "text", value: "went" })).toThrow(/No hay clave/iu);
   });
+
+  it("rejects scalar/array mismatches and unknown response kinds", () => {
+    expect(gradeMockAttempt(activity("activity-single-choice-future-forms"), { kind: "multiple", value: ["opt-going-to"] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-multiple-choice-travel-vocabulary"), { kind: "single", value: "opt-anchor" }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-fill-blank-past-simple"), { kind: "ordered_list", value: ["wrong"] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-word-order-second-conditional"), { kind: "ordered_list", value: ["wrong"] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-matching-phrasal-verbs"), { kind: "pairs", value: [{ leftId: "wrong", rightId: "wrong" }] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-true-false-present-simple"), { kind: "boolean", value: true }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-single-choice-future-forms"), { kind: "boolean_list", value: [true] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-complete-dialogue-work-vocabulary"), { kind: "text", value: "work" }).isCorrect).toBe(true);
+    expect(gradeMockAttempt(activity("activity-fill-blank-past-simple"), { kind: "text", value: "went" } as never).isCorrect).toBe(true);
+  });
 });
