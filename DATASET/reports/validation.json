@@ -2,44 +2,14 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 96,
-    "activities": 9125,
-    "batches": 365,
+    "lessons": 111,
+    "activities": 10125,
+    "batches": 405,
     "taxonomyNodes": 164,
-    "errors": 130
+    "errors": 91
   },
   "issues": [
     {
-      "code": "activity-path",
-      "location": "activities/b1/reading/b1-reading-gapped-text-cohesion/b1-reading-gapped-text-cohesion/gapped_text/batch-001.json",
-      "message": "La ruta debe comenzar por activities/b1/reading/b1-reading-gapped-text/b1-reading-gapped-text-cohesion/gapped_text/ y terminar en batch-NNN.json."
-    },
-    {
-      "code": "activity-path",
-      "location": "activities/b1/reading/b1-reading-gapped-text-cohesion/b1-reading-gapped-text-cohesion/matching/batch-001.json",
-      "message": "La ruta debe comenzar por activities/b1/reading/b1-reading-gapped-text/b1-reading-gapped-text-cohesion/matching/ y terminar en batch-NNN.json."
-    },
-    {
-      "code": "activity-path",
-      "location": "activities/b1/reading/b1-reading-gapped-text-cohesion/b1-reading-gapped-text-cohesion/reading_matching/batch-001.json",
-      "message": "La ruta debe comenzar por activities/b1/reading/b1-reading-gapped-text/b1-reading-gapped-text-cohesion/reading_matching/ y terminar en batch-NNN.json."
-    },
-    {
-      "code": "activity-path",
-      "location": "activities/b1/reading/b1-reading-gapped-text-cohesion/b1-reading-gapped-text-cohesion/word_order/batch-001.json",
-      "message": "La ruta debe comenzar por activities/b1/reading/b1-reading-gapped-text/b1-reading-gapped-text-cohesion/word_order/ y terminar en batch-NNN.json."
-    },
-    {
-      "code": "global-activity-coverage",
-      "location": "catalog/coverage-targets.json",
-      "message": "Hay 9125 actividades publicadas; se requieren 10000."
-    },
-    {
-      "code": "global-lesson-coverage",
-      "location": "catalog/coverage-targets.json",
-      "message": "Hay 96 lecciones publicadas; se requieren 100."
-    },
-    {
       "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-collocations-daily-life",
       "message": "Hay 0 actividades; se requieren 100."
@@ -157,81 +127,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -356,76 +251,16 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
+      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
       "message": "Hay 25 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
+      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
       "message": "Hay 1 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-gapped-text",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-gapped-text",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-gapped-text",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-multiple-matching",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-multiple-matching",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-multiple-matching",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-argument-cohesion",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-writing-article-review",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -467,21 +302,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-writing-formal-email",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-report",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-report",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-writing-report",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -502,52 +322,12 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-phrasal-verbs-everyday-actions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-phrasal-verbs-study-relationships."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-phrasal-verbs-travel-services."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-prepositions-movement-travel."
     },
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-prepositions-time-place."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-writing-informal-email."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-writing-opinion-article."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-writing-review-description."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-writing-semi-formal-email."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-writing-story-sequencing."
     },
     {
       "code": "planned-lesson-missing",
@@ -590,44 +370,44 @@
       "message": "Falta la lección planificada b2-prepositions-abstract-relations."
     },
     {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-reading-argument-evidence."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-reading-multiple-matching."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-writing-argument-cohesion."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-writing-article-review."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-writing-essay-structure."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-writing-formal-email."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-writing-report."
+      "code": "lesson-path",
+      "location": "lessons/b1/guided-writing/b1-writing-opinion-article.md",
+      "message": "La ruta esperada es lessons/b1/guided-writing/b1-writing-opinion-article/b1-writing-opinion-article.md."
     },
     {
       "code": "lesson-path",
-      "location": "lessons/b1/reading/b1-reading-gapped-text-cohesion/b1-reading-gapped-text-cohesion.md",
-      "message": "La ruta esperada es lessons/b1/reading/b1-reading-gapped-text/b1-reading-gapped-text-cohesion.md."
+      "location": "lessons/b1/guided-writing/b1-writing-review-description.md",
+      "message": "La ruta esperada es lessons/b1/guided-writing/b1-writing-review-description/b1-writing-review-description.md."
+    },
+    {
+      "code": "lesson-path",
+      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-everyday-actions/b1-phrasal-verbs-everyday-actions.md",
+      "message": "La ruta esperada es lessons/b1/phrasal-verbs/b1-phrasal-everyday-actions/b1-phrasal-verbs-everyday-actions.md."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-everyday-actions/b1-phrasal-verbs-everyday-actions.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-path",
+      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-study-relationships/b1-phrasal-verbs-study-relationships.md",
+      "message": "La ruta esperada es lessons/b1/phrasal-verbs/b1-phrasal-study-relationships/b1-phrasal-verbs-study-relationships.md."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-study-relationships/b1-phrasal-verbs-study-relationships.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-path",
+      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-travel-services/b1-phrasal-verbs-travel-services.md",
+      "message": "La ruta esperada es lessons/b1/phrasal-verbs/b1-phrasal-travel-services/b1-phrasal-verbs-travel-services.md."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/phrasal-verbs/b1-phrasal-verbs-travel-services/b1-phrasal-verbs-travel-services.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
     },
     {
       "code": "lesson-path",
@@ -655,8 +435,33 @@
       "message": "La ruta esperada es lessons/b1/use-of-english/b1-word-formation/b1-use-of-english-word-formation.md."
     },
     {
+      "code": "lesson-path",
+      "location": "lessons/b2/guided-writing/b2-writing-article-review.md",
+      "message": "La ruta esperada es lessons/b2/guided-writing/b2-writing-article-review/b2-writing-article-review.md."
+    },
+    {
       "code": "lesson-without-activities",
-      "location": "lessons/b2/reading/b2-reading-gapped-text/b2-reading-gapped-text.md",
+      "location": "lessons/b2/guided-writing/b2-writing-article-review.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-path",
+      "location": "lessons/b2/guided-writing/b2-writing-essay-structure.md",
+      "message": "La ruta esperada es lessons/b2/guided-writing/b2-writing-essay-structure/b2-writing-essay-structure.md."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/guided-writing/b2-writing-essay-structure.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-path",
+      "location": "lessons/b2/guided-writing/b2-writing-formal-email.md",
+      "message": "La ruta esperada es lessons/b2/guided-writing/b2-writing-formal-email/b2-writing-formal-email.md."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/guided-writing/b2-writing-formal-email.md",
       "message": "Una lección publicada debe tener actividades publicadas."
     }
   ]

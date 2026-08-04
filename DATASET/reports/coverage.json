@@ -1,22 +1,23 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 96,
-    "publishedActivities": 9125,
+    "publishedLessons": 111,
+    "publishedActivities": 10125,
     "minimumLessons": 100,
     "minimumActivities": 10000,
-    "globalTargetMet": false,
-    "nodeTargetsMet": 90,
+    "globalTargetMet": true,
+    "nodeTargetsMet": 100,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 4950,
-      "B2": 4175
+      "B1": 5450,
+      "B2": 4675
     },
     "category": {
       "grammar": 4900,
-      "reading": 625,
+      "guided-writing": 625,
+      "reading": 1000,
       "use-of-english": 1200,
       "vocabulary": 2400
     },
@@ -45,6 +46,11 @@
       "b1-travel-transport": 100,
       "b1-word-formation": 100,
       "b1-work-jobs": 100,
+      "b1-writing-informal-email": 100,
+      "b1-writing-opinion-article": 100,
+      "b1-writing-review-description": 100,
+      "b1-writing-semi-formal-email": 100,
+      "b1-writing-story-sequencing": 100,
       "b2-advanced-fixed-expressions": 100,
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
@@ -58,13 +64,18 @@
       "b2-money-economics": 100,
       "b2-multiple-choice-cloze": 100,
       "b2-open-cloze": 100,
-      "b2-reading-attitude-tone": 25,
+      "b2-reading-argument-evidence": 100,
+      "b2-reading-attitude-tone": 100,
+      "b2-reading-gapped-text": 100,
       "b2-reading-gist-detail-inference": 100,
+      "b2-reading-multiple-matching": 100,
       "b2-register-rewriting": 100,
       "b2-science-research": 100,
       "b2-society-culture-public-life": 100,
       "b2-travel-tourism-urban-life": 100,
       "b2-word-formation": 100,
+      "b2-writing-argument-cohesion": 25,
+      "b2-writing-report": 100,
       "comparisons": 300,
       "conditionals": 250,
       "future-forms": 425,
@@ -113,6 +124,11 @@
       "b1-travel-transport": 100,
       "b1-word-formation": 100,
       "b1-work-jobs": 100,
+      "b1-writing-informal-email": 100,
+      "b1-writing-opinion-article": 100,
+      "b1-writing-review-description": 100,
+      "b1-writing-semi-formal-email": 100,
+      "b1-writing-story-sequencing": 100,
       "b2-advanced-fixed-expressions": 100,
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
@@ -126,13 +142,18 @@
       "b2-money-economics": 100,
       "b2-multiple-choice-cloze": 100,
       "b2-open-cloze": 100,
-      "b2-reading-attitude-tone": 25,
+      "b2-reading-argument-evidence": 100,
+      "b2-reading-attitude-tone": 100,
+      "b2-reading-gapped-text": 100,
       "b2-reading-gist-detail-inference": 100,
+      "b2-reading-multiple-matching": 100,
       "b2-register-rewriting": 100,
       "b2-science-research": 100,
       "b2-society-culture-public-life": 100,
       "b2-travel-tourism-urban-life": 100,
       "b2-word-formation": 100,
+      "b2-writing-argument-cohesion": 25,
+      "b2-writing-report": 100,
       "basic-linking-words": 100,
       "basic-verb-patterns": 100,
       "cleft-sentences-fronting": 100,
@@ -183,34 +204,35 @@
     },
     "activityType": {
       "collocation_choice": 50,
-      "complete_dialogue": 150,
-      "complete_paragraph": 50,
+      "complete_dialogue": 175,
+      "complete_paragraph": 150,
       "error_correction": 525,
       "error_identification": 75,
       "fill_blank": 1925,
-      "gapped_text": 25,
+      "gapped_text": 75,
+      "guided_writing": 100,
       "key_word_transformation": 75,
-      "matching": 150,
+      "matching": 400,
       "multi_gap_fill": 75,
       "multiple_choice_cloze": 150,
-      "multiple_select": 250,
+      "multiple_select": 325,
       "open_cloze": 50,
       "phrasal_verb_choice": 50,
-      "reading_comprehension": 125,
-      "reading_matching": 75,
-      "sentence_transformation": 175,
-      "single_choice": 2050,
-      "true_false": 1475,
-      "vocabulary_in_context": 50,
+      "reading_comprehension": 175,
+      "reading_matching": 125,
+      "sentence_transformation": 225,
+      "single_choice": 2175,
+      "true_false": 1500,
+      "vocabulary_in_context": 75,
       "word_formation": 50,
-      "word_order": 1525
+      "word_order": 1600
     },
     "difficulty": {
-      "1": 1050,
-      "2": 1955,
-      "3": 2079,
-      "4": 2039,
-      "5": 2002
+      "1": 1175,
+      "2": 2175,
+      "3": 2305,
+      "4": 2274,
+      "5": 2196
     }
   },
   "targets": [
@@ -1087,10 +1109,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-writing-opinion-article",
@@ -1104,10 +1132,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-writing-review-description",
@@ -1121,10 +1155,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-writing-semi-formal-email",
@@ -1138,10 +1178,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-writing-story-sequencing",
@@ -1155,10 +1201,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-advanced-fixed-expressions",
@@ -1572,10 +1624,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-reading-attitude-tone",
@@ -1588,15 +1645,15 @@
         4,
         5
       ],
-      "actualActivities": 25,
-      "actualActivityTypes": 1,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         2,
         3,
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-reading-gapped-text",
@@ -1609,10 +1666,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-reading-gist-detail-inference",
@@ -1646,10 +1708,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-register-rewriting",
@@ -1767,9 +1834,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 25,
+      "actualActivityTypes": 1,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -1831,10 +1904,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "basic-linking-words",
