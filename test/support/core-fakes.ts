@@ -30,6 +30,7 @@ export const ids = { generate: () => `id-${++nextId}` };
 
 export const lesson: Lesson = {
   id: "lesson-1", level: "B1", category: "grammar", taxonomyNodeId: "topic",
+  prerequisiteLessonIds: [],
   title: "Lesson", summary: "Summary", explanation: "Explanation", examples: [],
   commonMistakes: [], relatedActivityIds: ["activity-1", "activity-2"], tags: [],
   difficulty: 1, status: "published", contentVersion: 1,

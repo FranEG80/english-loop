@@ -9,7 +9,8 @@
       "binding": "DB",
       "database_name": "replace-with-your-d1-name",
       "database_id": "replace-with-your-d1-id",
-      "migrations_dir": "prisma/migrations"
+      "migrations_dir": "prisma/migrations",
+      "migrations_pattern": "prisma/migrations/*/migration.sql"
     }
   ],
   // Configure the shared token outside this file:

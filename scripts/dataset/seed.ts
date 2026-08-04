@@ -91,6 +91,7 @@ export function buildCatalogSeedInput(
     level: lesson.frontmatter.level,
     category: lesson.frontmatter.category,
     taxonomyNodeId: lesson.frontmatter.subtopics[0] ?? lesson.frontmatter.topic,
+    prerequisiteLessonIds: lesson.frontmatter.prerequisites,
     title: lesson.frontmatter.title,
     summary: extractSummary(lesson.content),
     explanation: lesson.content,

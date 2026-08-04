@@ -8,6 +8,7 @@ const makeLesson = (id: string): Lesson => ({
   level: "B1",
   category: "grammar",
   taxonomyNodeId: "topic",
+  prerequisiteLessonIds: [],
   title: id,
   summary: id,
   explanation: id,
@@ -95,5 +96,29 @@ describe("DailySessionPlanner", () => {
 
     expect(result).toHaveLength(3);
     expect(result.every((lesson) => lesson.selectionReason === "review")).toBe(true);
+  });
+
+  it("excludes lessons whose prerequisites are not completed", async () => {
+    const prerequisite = makeLesson("prerequisite");
+    const dependent = { ...makeLesson("dependent"), prerequisiteLessonIds: [prerequisite.id] };
+    const planner = new DailySessionPlanner(random);
+    const scopedCatalog = { ...catalog, listLessons: async () => [dependent, prerequisite] };
+
+    await expect(planner.plan(scopedCatalog, {
+      level: "B1",
+      viewedLessonIds: [],
+      errorLessonIds: [],
+      count: 2,
+    })).resolves.toEqual([{ lessonId: "prerequisite", selectionReason: "new" }]);
+
+    await expect(planner.plan(scopedCatalog, {
+      level: "B1",
+      viewedLessonIds: [prerequisite.id],
+      errorLessonIds: [],
+      count: 2,
+    })).resolves.toEqual([
+      { lessonId: "dependent", selectionReason: "new" },
+      { lessonId: "prerequisite", selectionReason: "reuse" },
+    ]);
   });
 });

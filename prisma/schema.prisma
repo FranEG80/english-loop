@@ -383,6 +383,7 @@ model LessonVersion {
   levelCode       String
   category        String
   taxonomyNodeId  String
+  prerequisites   String   @default("[]") // JSON array of prerequisite lesson IDs
   title           String
   summary         String
   explanation     String

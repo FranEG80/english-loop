@@ -38,6 +38,7 @@ describe("DailyPracticePlanner", () => {
     await expect(planner.plan(catalog, { lessonIds: ["lesson-1"], level: "B1", count: 2 })).resolves.toEqual({
       activityIds: ["a1", "a2"],
       activityVersionIds: ["a1-v1", null],
+      activitySnapshots: activities,
     });
   });
 

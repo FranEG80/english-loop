@@ -16,6 +16,7 @@ export interface PrismaLessonVersionRow {
   levelCode: string;
   category: string;
   taxonomyNodeId: string;
+  prerequisites: string;
   title: string;
   summary: string;
   explanation: string;
@@ -34,6 +35,7 @@ export function mapPrismaLesson(row: PrismaLessonVersionRow, relatedActivityIds:
     level: row.levelCode as Lesson["level"],
     category: row.category as Lesson["category"],
     taxonomyNodeId: row.taxonomyNodeId,
+    prerequisiteLessonIds: parseCatalogJson(row.prerequisites, []),
     title: row.title,
     summary: row.summary,
     explanation: row.explanation,

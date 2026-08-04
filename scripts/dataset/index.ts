@@ -16,6 +16,7 @@ export function buildIndexes(dataset: LoadedDataset) {
         category: frontmatter.category,
         topic: frontmatter.topic,
         subtopics: frontmatter.subtopics,
+        prerequisiteLessonIds: frontmatter.prerequisites,
         difficulty: frontmatter.difficulty,
         estimatedMinutes: frontmatter.estimatedMinutes,
         status: frontmatter.status,

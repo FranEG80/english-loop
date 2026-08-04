@@ -210,7 +210,7 @@ export function Landing({
                   sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 90vw"
                   className="h-48 w-full rounded-2xl object-contain"
                 />
-                <h3 className="mt-3 bg-[#fffdf7] text-xl font-bold">
+                <h3 className="mt-3 rounded-lg bg-surface px-2 py-1 text-xl font-bold text-foreground">
                   {locale === "es" ? item.es : item.en}
                 </h3>
               </article>

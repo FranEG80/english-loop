@@ -36,7 +36,7 @@ export function prepareCatalogOperation(database: D1DatabaseLike, operation: Cat
         WHERE v.id = ? AND v.statusCode = 'published'`, [operation.activityVersionId]);
     case "catalogLessons":
       return bind(database, `SELECT v.id, v.lessonId, v.levelCode, v.category, v.taxonomyNodeId,
-          v.title, v.summary, v.explanation, v.examples, v.commonMistakes,
+          v.prerequisites, v.title, v.summary, v.explanation, v.examples, v.commonMistakes,
           v.tags, v.difficulty, v.contentVersion, v.statusCode,
           COALESCE((SELECT json_group_array(av.activityId)
             FROM ActivityVersionLesson l JOIN ActivityVersion av ON av.id = l.activityVersionId

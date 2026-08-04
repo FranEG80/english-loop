@@ -17,6 +17,7 @@ export function toDailySessionDto(
     date: session.date,
     status: session.status,
     recommendedLessonId: pendingLessons[0]?.lessonId ?? "",
+    practiceRunId: session.practiceRunId,
     activityIds: run?.activityIds ?? [],
     goal: {
       targetActivities: run?.activityIds.length ?? DEFAULT_DAILY_GOAL_ACTIVITIES,

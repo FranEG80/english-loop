@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-const root = vi.hoisted(() => ({ identity: {}, practiceRunRepository: {}, attemptRepository: {}, progressRepository: {}, reviewRepository: {}, unitOfWork: {}, idGenerator: {}, clock: { nowIso: vi.fn(() => "now") }, domainEventDispatcher: {}, getDatasetVersion: vi.fn(async () => "v1"), getActivityCatalog: vi.fn(), getTaxonomyCatalog: vi.fn(), dailySessionRepository: {} }));
+const root = vi.hoisted(() => ({ identity: {}, practiceRunRepository: {}, attemptRepository: {}, progressRepository: {}, reviewRepository: {}, unitOfWork: {}, idGenerator: {}, clock: { nowIso: vi.fn(() => "now") }, domainEventDispatcher: {}, metrics: {}, getDatasetVersion: vi.fn(async () => "v1"), getActivityCatalog: vi.fn(), getTaxonomyCatalog: vi.fn(), dailySessionRepository: {} }));
 const calls = vi.hoisted(() => ({ create: vi.fn(async () => ({ run: { id: "run-1" } })), submit: vi.fn(async () => ({ attempt: { id: "attempt-1" } })), feedback: vi.fn(async () => ({ isCorrect: true })) }));
 vi.mock("@/server/infrastructure/composition/composition-root", () => ({ compositionRoot: root }));
 vi.mock("@/core/practice/application/use-cases/create-focused-practice-run", () => ({ createFocusedPracticeRun: calls.create }));
@@ -19,6 +19,6 @@ describe("app practice actions", () => {
 
   it("submits an attempt and resolves feedback", async () => {
     await expect(submitAttemptAction({ runId: "run-1", activityId: "a1", idempotencyKey: "key", response: { kind: "boolean", value: true } })).resolves.toEqual({ isCorrect: true });
-    expect(calls.feedback).toHaveBeenCalledWith(root.getActivityCatalog(), { id: "attempt-1" });
+    expect(calls.feedback).toHaveBeenCalledWith(root.getActivityCatalog(), { id: "attempt-1" }, root.reviewRepository);
   });
 });

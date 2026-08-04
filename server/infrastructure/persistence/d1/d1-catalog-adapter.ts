@@ -21,7 +21,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
   async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
     await this.requireCatalog();
     return rows(await this.transport.execute(operation({ name: "catalogLessons", level: filters?.level, category: filters?.category }))).map((row) => mapPrismaLesson({
-      id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
+      id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
     } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), []))); 
   }
 
@@ -40,7 +40,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       limit: pagination.limit + 1,
     }));
     const mapped = rows(result).map((row) => mapPrismaLesson({
-      id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
+      id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
     } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), [])));
     const hasMore = mapped.length > pagination.limit;
     const items = hasMore ? mapped.slice(0, pagination.limit) : mapped;
@@ -51,7 +51,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
     await this.requireCatalog();
     const result = await this.transport.execute(operation({ name: "catalogLessons" }));
     const row = rows(result).find((candidate) => candidate.lessonId === lessonId);
-    return row ? mapPrismaLesson({ id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode) } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), [])) : null;
+    return row ? mapPrismaLesson({ id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode) } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), [])) : null;
   }
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {

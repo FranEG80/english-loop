@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
 type TestSession = { id: string; practiceRunId: string | null };
-const root = vi.hoisted(() => ({ identity: {}, unitOfWork: {}, dailySessionRepository: { findById: vi.fn(async (): Promise<TestSession | null> => ({ id: "session-1", practiceRunId: null })) }, lessonProgressRepository: {}, userSettingsRepository: {}, practiceRunRepository: { findById: vi.fn(async (): Promise<{ id: string } | null> => ({ id: "run-1" })) }, dailySessionPlanner: {}, dailyPracticePlanner: {}, getLessonCatalog: vi.fn(), getActivityCatalog: vi.fn(), getDatasetVersion: vi.fn(async () => "v1"), idGenerator: {}, clock: { nowIso: vi.fn(() => "now") }, domainEventDispatcher: {} }));
+const root = vi.hoisted(() => ({ identity: {}, unitOfWork: {}, dailySessionRepository: { findById: vi.fn(async (): Promise<TestSession | null> => ({ id: "session-1", practiceRunId: null })) }, lessonProgressRepository: {}, userSettingsRepository: {}, practiceRunRepository: { findById: vi.fn(async (): Promise<{ id: string } | null> => ({ id: "run-1" })) }, dailySessionPlanner: {}, dailyPracticePlanner: {}, getLessonCatalog: vi.fn(), getActivityCatalog: vi.fn(), getDatasetVersion: vi.fn(async () => "v1"), idGenerator: {}, clock: { nowIso: vi.fn(() => "now") }, domainEventDispatcher: {}, metrics: {} }));
 const useCases = vi.hoisted(() => ({
   getOrCreate: vi.fn(async (): Promise<TestSession> => ({ id: "session-1", practiceRunId: null })),
   start: vi.fn(async () => ({ run: { id: "run-1" } })),
@@ -53,6 +53,7 @@ describe("app daily-session actions", () => {
       root.domainEventDispatcher,
       "v1",
       { timezone: "UTC" },
+      root.metrics,
     );
 
     root.dailySessionRepository.findById

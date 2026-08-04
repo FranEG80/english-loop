@@ -30,6 +30,7 @@ function seedInput(checksum: string, lessonIds = ["lesson-1"], status: CatalogSe
       level: "B1",
       category: "grammar",
       taxonomyNodeId: "grammar",
+      prerequisiteLessonIds: [],
       title: "Lesson",
       summary: "Summary",
       explanation: "Explanation",

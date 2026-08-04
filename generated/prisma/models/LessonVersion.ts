@@ -44,6 +44,7 @@ export type LessonVersionMinAggregateOutputType = {
   levelCode: string | null
   category: string | null
   taxonomyNodeId: string | null
+  prerequisites: string | null
   title: string | null
   summary: string | null
   explanation: string | null
@@ -63,6 +64,7 @@ export type LessonVersionMaxAggregateOutputType = {
   levelCode: string | null
   category: string | null
   taxonomyNodeId: string | null
+  prerequisites: string | null
   title: string | null
   summary: string | null
   explanation: string | null
@@ -82,6 +84,7 @@ export type LessonVersionCountAggregateOutputType = {
   levelCode: number
   category: number
   taxonomyNodeId: number
+  prerequisites: number
   title: number
   summary: number
   explanation: number
@@ -113,6 +116,7 @@ export type LessonVersionMinAggregateInputType = {
   levelCode?: true
   category?: true
   taxonomyNodeId?: true
+  prerequisites?: true
   title?: true
   summary?: true
   explanation?: true
@@ -132,6 +136,7 @@ export type LessonVersionMaxAggregateInputType = {
   levelCode?: true
   category?: true
   taxonomyNodeId?: true
+  prerequisites?: true
   title?: true
   summary?: true
   explanation?: true
@@ -151,6 +156,7 @@ export type LessonVersionCountAggregateInputType = {
   levelCode?: true
   category?: true
   taxonomyNodeId?: true
+  prerequisites?: true
   title?: true
   summary?: true
   explanation?: true
@@ -257,6 +263,7 @@ export type LessonVersionGroupByOutputType = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites: string
   title: string
   summary: string
   explanation: string
@@ -299,6 +306,7 @@ export type LessonVersionWhereInput = {
   levelCode?: Prisma.StringFilter<"LessonVersion"> | string
   category?: Prisma.StringFilter<"LessonVersion"> | string
   taxonomyNodeId?: Prisma.StringFilter<"LessonVersion"> | string
+  prerequisites?: Prisma.StringFilter<"LessonVersion"> | string
   title?: Prisma.StringFilter<"LessonVersion"> | string
   summary?: Prisma.StringFilter<"LessonVersion"> | string
   explanation?: Prisma.StringFilter<"LessonVersion"> | string
@@ -323,6 +331,7 @@ export type LessonVersionOrderByWithRelationInput = {
   levelCode?: Prisma.SortOrder
   category?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
+  prerequisites?: Prisma.SortOrder
   title?: Prisma.SortOrder
   summary?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
@@ -351,6 +360,7 @@ export type LessonVersionWhereUniqueInput = Prisma.AtLeast<{
   levelCode?: Prisma.StringFilter<"LessonVersion"> | string
   category?: Prisma.StringFilter<"LessonVersion"> | string
   taxonomyNodeId?: Prisma.StringFilter<"LessonVersion"> | string
+  prerequisites?: Prisma.StringFilter<"LessonVersion"> | string
   title?: Prisma.StringFilter<"LessonVersion"> | string
   summary?: Prisma.StringFilter<"LessonVersion"> | string
   explanation?: Prisma.StringFilter<"LessonVersion"> | string
@@ -375,6 +385,7 @@ export type LessonVersionOrderByWithAggregationInput = {
   levelCode?: Prisma.SortOrder
   category?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
+  prerequisites?: Prisma.SortOrder
   title?: Prisma.SortOrder
   summary?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
@@ -402,6 +413,7 @@ export type LessonVersionScalarWhereWithAggregatesInput = {
   levelCode?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
   category?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
   taxonomyNodeId?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
+  prerequisites?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
   title?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
   summary?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
   explanation?: Prisma.StringWithAggregatesFilter<"LessonVersion"> | string
@@ -418,6 +430,7 @@ export type LessonVersionCreateInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -441,6 +454,7 @@ export type LessonVersionUncheckedCreateInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -458,6 +472,7 @@ export type LessonVersionUpdateInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -481,6 +496,7 @@ export type LessonVersionUncheckedUpdateInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -501,6 +517,7 @@ export type LessonVersionCreateManyInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -517,6 +534,7 @@ export type LessonVersionUpdateManyMutationInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -535,6 +553,7 @@ export type LessonVersionUncheckedUpdateManyInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -569,6 +588,7 @@ export type LessonVersionCountOrderByAggregateInput = {
   levelCode?: Prisma.SortOrder
   category?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
+  prerequisites?: Prisma.SortOrder
   title?: Prisma.SortOrder
   summary?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
@@ -593,6 +613,7 @@ export type LessonVersionMaxOrderByAggregateInput = {
   levelCode?: Prisma.SortOrder
   category?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
+  prerequisites?: Prisma.SortOrder
   title?: Prisma.SortOrder
   summary?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
@@ -612,6 +633,7 @@ export type LessonVersionMinOrderByAggregateInput = {
   levelCode?: Prisma.SortOrder
   category?: Prisma.SortOrder
   taxonomyNodeId?: Prisma.SortOrder
+  prerequisites?: Prisma.SortOrder
   title?: Prisma.SortOrder
   summary?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
@@ -820,6 +842,7 @@ export type LessonVersionCreateWithoutReleaseInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -841,6 +864,7 @@ export type LessonVersionUncheckedCreateWithoutReleaseInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -889,6 +913,7 @@ export type LessonVersionScalarWhereInput = {
   levelCode?: Prisma.StringFilter<"LessonVersion"> | string
   category?: Prisma.StringFilter<"LessonVersion"> | string
   taxonomyNodeId?: Prisma.StringFilter<"LessonVersion"> | string
+  prerequisites?: Prisma.StringFilter<"LessonVersion"> | string
   title?: Prisma.StringFilter<"LessonVersion"> | string
   summary?: Prisma.StringFilter<"LessonVersion"> | string
   explanation?: Prisma.StringFilter<"LessonVersion"> | string
@@ -905,6 +930,7 @@ export type LessonVersionCreateWithoutLevelInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -926,6 +952,7 @@ export type LessonVersionUncheckedCreateWithoutLevelInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -968,6 +995,7 @@ export type LessonVersionCreateWithoutStatusInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -990,6 +1018,7 @@ export type LessonVersionUncheckedCreateWithoutStatusInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1031,6 +1060,7 @@ export type LessonVersionCreateWithoutLessonInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1052,6 +1082,7 @@ export type LessonVersionUncheckedCreateWithoutLessonInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1094,6 +1125,7 @@ export type LessonVersionCreateWithoutTaxonomyLinksInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1116,6 +1148,7 @@ export type LessonVersionUncheckedCreateWithoutTaxonomyLinksInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1148,6 +1181,7 @@ export type LessonVersionUpdateWithoutTaxonomyLinksInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1170,6 +1204,7 @@ export type LessonVersionUncheckedUpdateWithoutTaxonomyLinksInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1188,6 +1223,7 @@ export type LessonVersionCreateManyReleaseInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1204,6 +1240,7 @@ export type LessonVersionUpdateWithoutReleaseInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1225,6 +1262,7 @@ export type LessonVersionUncheckedUpdateWithoutReleaseInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1244,6 +1282,7 @@ export type LessonVersionUncheckedUpdateManyWithoutReleaseInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1262,6 +1301,7 @@ export type LessonVersionCreateManyLevelInput = {
   checksum: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1278,6 +1318,7 @@ export type LessonVersionUpdateWithoutLevelInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1299,6 +1340,7 @@ export type LessonVersionUncheckedUpdateWithoutLevelInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1318,6 +1360,7 @@ export type LessonVersionUncheckedUpdateManyWithoutLevelInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1337,6 +1380,7 @@ export type LessonVersionCreateManyStatusInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1352,6 +1396,7 @@ export type LessonVersionUpdateWithoutStatusInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1374,6 +1419,7 @@ export type LessonVersionUncheckedUpdateWithoutStatusInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1393,6 +1439,7 @@ export type LessonVersionUncheckedUpdateManyWithoutStatusInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1410,6 +1457,7 @@ export type LessonVersionCreateManyLessonInput = {
   levelCode: string
   category: string
   taxonomyNodeId: string
+  prerequisites?: string
   title: string
   summary: string
   explanation: string
@@ -1426,6 +1474,7 @@ export type LessonVersionUpdateWithoutLessonInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1447,6 +1496,7 @@ export type LessonVersionUncheckedUpdateWithoutLessonInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1466,6 +1516,7 @@ export type LessonVersionUncheckedUpdateManyWithoutLessonInput = {
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   taxonomyNodeId?: Prisma.StringFieldUpdateOperationsInput | string
+  prerequisites?: Prisma.StringFieldUpdateOperationsInput | string
   title?: Prisma.StringFieldUpdateOperationsInput | string
   summary?: Prisma.StringFieldUpdateOperationsInput | string
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1516,6 +1567,7 @@ export type LessonVersionSelect<ExtArgs extends runtime.Types.Extensions.Interna
   levelCode?: boolean
   category?: boolean
   taxonomyNodeId?: boolean
+  prerequisites?: boolean
   title?: boolean
   summary?: boolean
   explanation?: boolean
@@ -1541,6 +1593,7 @@ export type LessonVersionSelectCreateManyAndReturn<ExtArgs extends runtime.Types
   levelCode?: boolean
   category?: boolean
   taxonomyNodeId?: boolean
+  prerequisites?: boolean
   title?: boolean
   summary?: boolean
   explanation?: boolean
@@ -1564,6 +1617,7 @@ export type LessonVersionSelectUpdateManyAndReturn<ExtArgs extends runtime.Types
   levelCode?: boolean
   category?: boolean
   taxonomyNodeId?: boolean
+  prerequisites?: boolean
   title?: boolean
   summary?: boolean
   explanation?: boolean
@@ -1587,6 +1641,7 @@ export type LessonVersionSelectScalar = {
   levelCode?: boolean
   category?: boolean
   taxonomyNodeId?: boolean
+  prerequisites?: boolean
   title?: boolean
   summary?: boolean
   explanation?: boolean
@@ -1598,7 +1653,7 @@ export type LessonVersionSelectScalar = {
   statusCode?: boolean
 }
 
-export type LessonVersionOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "releaseId" | "lessonId" | "checksum" | "levelCode" | "category" | "taxonomyNodeId" | "title" | "summary" | "explanation" | "examples" | "commonMistakes" | "tags" | "difficulty" | "contentVersion" | "statusCode", ExtArgs["result"]["lessonVersion"]>
+export type LessonVersionOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "releaseId" | "lessonId" | "checksum" | "levelCode" | "category" | "taxonomyNodeId" | "prerequisites" | "title" | "summary" | "explanation" | "examples" | "commonMistakes" | "tags" | "difficulty" | "contentVersion" | "statusCode", ExtArgs["result"]["lessonVersion"]>
 export type LessonVersionInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   release?: boolean | Prisma.CatalogReleaseDefaultArgs<ExtArgs>
   lesson?: boolean | Prisma.LessonDefaultArgs<ExtArgs>
@@ -1637,6 +1692,7 @@ export type $LessonVersionPayload<ExtArgs extends runtime.Types.Extensions.Inter
     levelCode: string
     category: string
     taxonomyNodeId: string
+    prerequisites: string
     title: string
     summary: string
     explanation: string
@@ -2081,6 +2137,7 @@ export interface LessonVersionFieldRefs {
   readonly levelCode: Prisma.FieldRef<"LessonVersion", 'String'>
   readonly category: Prisma.FieldRef<"LessonVersion", 'String'>
   readonly taxonomyNodeId: Prisma.FieldRef<"LessonVersion", 'String'>
+  readonly prerequisites: Prisma.FieldRef<"LessonVersion", 'String'>
   readonly title: Prisma.FieldRef<"LessonVersion", 'String'>
   readonly summary: Prisma.FieldRef<"LessonVersion", 'String'>
   readonly explanation: Prisma.FieldRef<"LessonVersion", 'String'>

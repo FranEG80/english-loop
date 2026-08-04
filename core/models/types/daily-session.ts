@@ -15,6 +15,8 @@ export interface DailySessionDto {
   date: string;
   status: DailySessionStatus;
   recommendedLessonId: string;
+  /** Run asociado cuando la sesión ya ha entrado en práctica. */
+  practiceRunId: string | null;
   activityIds: string[];
   goal: DailySessionGoalDto;
   streakDays: number;

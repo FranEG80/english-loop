@@ -148,6 +148,7 @@ export class PrismaCatalogWriteAdapter implements CatalogWritePort {
               levelCode: lesson.level,
               category: lesson.category,
               taxonomyNodeId: lesson.taxonomyNodeId,
+              prerequisites: JSON.stringify(lesson.prerequisiteLessonIds),
               title: lesson.title,
               summary: lesson.summary,
               explanation: lesson.explanation,

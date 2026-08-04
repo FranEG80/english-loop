@@ -422,6 +422,7 @@ export const LessonVersionScalarFieldEnum = {
   levelCode: 'levelCode',
   category: 'category',
   taxonomyNodeId: 'taxonomyNodeId',
+  prerequisites: 'prerequisites',
   title: 'title',
   summary: 'summary',
   explanation: 'explanation',

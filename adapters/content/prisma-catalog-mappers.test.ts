@@ -45,6 +45,7 @@ describe("Prisma catalog mappers", () => {
         levelCode: "B1",
         category: "grammar",
         taxonomyNodeId: "topic",
+        prerequisites: '["lesson-0"]',
         title: "Lesson",
         summary: "Summary",
         explanation: "Explanation",
@@ -59,6 +60,7 @@ describe("Prisma catalog mappers", () => {
     );
 
     expect(lesson.versionId).toBe("lesson-v1");
+    expect(lesson.prerequisiteLessonIds).toEqual(["lesson-0"]);
     expect(lesson.relatedActivityIds).toEqual(["activity-1", "activity-2"]);
   });
 });

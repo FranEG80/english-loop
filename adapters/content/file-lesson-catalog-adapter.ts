@@ -16,6 +16,7 @@ interface LessonIndexEntry {
   category: string;
   topic: string;
   subtopics: string[];
+  prerequisiteLessonIds?: string[];
   difficulty: number;
   estimatedMinutes: number;
   status: string;
@@ -35,6 +36,7 @@ interface LessonFrontmatter {
   category: string;
   topic: string;
   subtopics: string[];
+  prerequisites?: string[];
   difficulty: number;
   tags: string[];
   status: string;
@@ -132,6 +134,7 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
       level: entry.level as Lesson["level"],
       category: entry.category as Lesson["category"],
       taxonomyNodeId: entry.subtopics[0] ?? entry.topic,
+      prerequisiteLessonIds: entry.prerequisiteLessonIds ?? frontmatter.prerequisites ?? [],
       title: entry.title,
       summary: this.extractSummary(content),
       explanation: content,

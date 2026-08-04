@@ -35,6 +35,37 @@ async function finishRun(
   throw new Error(`Practice run ${runId} did not complete within the bounded test loop`);
 }
 
+async function finishDailyRun(
+  request: APIRequestContext,
+  cookie: string,
+  sessionId: string,
+  initialActivityIds: string[],
+) {
+  let position = 0;
+  let activityIds = initialActivityIds;
+  let feedback: Record<string, unknown> | null = null;
+  for (let attemptNumber = 0; attemptNumber < 20; attemptNumber += 1) {
+    if (position >= activityIds.length) return feedback;
+    const response = await request.post(`/api/v1/daily-sessions/${sessionId}/attempts`, {
+      headers: { cookie },
+      data: {
+        activityId: activityIds[position],
+        idempotencyKey: `e2e-daily-${sessionId}-${attemptNumber}`,
+        response: { kind: "single", value: "__e2e_wrong_answer__" },
+      },
+    });
+    expect(response.status()).toBe(200);
+    feedback = await response.json();
+    position += 1;
+    const current = await request.get("/api/v1/daily-sessions/current", { headers: { cookie } });
+    expect(current.status()).toBe(200);
+    const session = await current.json();
+    activityIds = session.activityIds;
+    if (session.status === "completed") return feedback;
+  }
+  throw new Error(`Daily session ${sessionId} did not complete within the bounded test loop`);
+}
+
 test("runs the authenticated daily and focused learning journeys", async ({ request }) => {
   const email = `daily-e2e-${Date.now()}@example.com`;
   const password = "E2e-password-123!";
@@ -96,7 +127,7 @@ test("runs the authenticated daily and focused learning journeys", async ({ requ
   expect(dailySessionAfterStartResponse.status()).toBe(200);
   const dailySessionAfterStart = await dailySessionAfterStartResponse.json();
   expect(dailySessionAfterStart.practiceRunId).toBeTruthy();
-  const dailyFeedback = await finishRun(request, cookie, dailySessionAfterStart.practiceRunId);
+  const dailyFeedback = await finishDailyRun(request, cookie, session.id, dailyPracticeBody.activityIds);
   expect(dailyFeedback).toMatchObject({ isCorrect: false, normalizedResponse: { kind: "single" } });
   expect(dailyFeedback?.nextReviewAt).toBeTruthy();
 

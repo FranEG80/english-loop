@@ -6,6 +6,7 @@ export function buildMockDailySession(date: string): DailySessionDto {
     date,
     status: "not_started",
     recommendedLessonId: "lesson-future-forms",
+    practiceRunId: null,
     activityIds: [
       "activity-single-choice-future-forms",
       "activity-true-false-present-simple",

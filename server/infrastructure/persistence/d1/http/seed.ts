@@ -34,6 +34,7 @@ const lessonSchema = z.object({
   level: requiredString,
   category: requiredString,
   taxonomyNodeId: requiredString,
+  prerequisiteLessonIds: stringArray,
   title: requiredString,
   summary: z.string(),
   explanation: z.string(),

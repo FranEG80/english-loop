@@ -25,6 +25,7 @@ describe("toDailySessionDto", () => {
       date: "2026-08-04",
       status: "lesson",
       recommendedLessonId: "lesson-1",
+      practiceRunId: null,
       activityIds: [],
       goal: { targetActivities: 10, completedActivities: 0 },
       streakDays: 0,

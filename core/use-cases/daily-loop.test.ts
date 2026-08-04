@@ -5,7 +5,7 @@ import { getDailyLoop } from "./daily-loop";
 
 const lesson: LessonDetailDto = { id: "lesson-1", level: "B1", category: "grammar", taxonomyNodeId: "topic", title: "Lesson", summary: "Summary", tags: [], difficulty: 1, status: "new", explanation: "", examples: [], commonMistakes: [], relatedActivityIds: [] };
 const activity: ActivityQuestionDto = { id: "a1", level: "B1", taxonomyNodeId: "topic", interactionMode: "standard", type: "true_false", statement: "True" };
-const session: DailySessionDto = { id: "session-1", date: "2026-08-04", status: "practice", recommendedLessonId: "lesson-1", activityIds: ["a1", "missing"], goal: { targetActivities: 2, completedActivities: 0 }, streakDays: 0 };
+const session: DailySessionDto = { id: "session-1", date: "2026-08-04", status: "practice", recommendedLessonId: "lesson-1", practiceRunId: "run-1", activityIds: ["a1", "missing"], goal: { targetActivities: 2, completedActivities: 0 }, streakDays: 0 };
 
 describe("getDailyLoop", () => {
   it("loads the recommended lesson and filters missing activities", async () => {

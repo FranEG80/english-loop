@@ -4,6 +4,11 @@ import { loadDataset } from "./load";
 import { validateDataset } from "./validation";
 
 describe("dataset validation pipeline", () => {
+  it("accepts the checked-in dataset with canonical lesson paths and taxonomy references", async () => {
+    const issues = await validateDataset(await loadDataset());
+    expect(issues).toEqual([]);
+  });
+
   it("runs the checked-in validation pipeline and exposes unmet coverage as issues", async () => {
     const dataset = await loadDataset();
     const issues = await validateDataset({

@@ -25,6 +25,8 @@ export interface Lesson {
   level: CefrLevel;
   category: LessonCategory;
   taxonomyNodeId: string;
+  /** Lecciones que deben haberse completado antes de seleccionar esta. */
+  prerequisiteLessonIds: string[];
   title: string;
   summary: string;
   explanation: string;

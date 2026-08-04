@@ -37,12 +37,16 @@ export class DailySessionPlanner {
 
     const viewedSet = new Set(input.viewedLessonIds);
     const errorSet = new Set(input.errorLessonIds);
+    const completedSet = new Set(input.viewedLessonIds);
+    const eligible = lessons.filter((lesson) =>
+      lesson.prerequisiteLessonIds.every((prerequisiteId) => completedSet.has(prerequisiteId)),
+    );
 
-    const newLessons = lessons.filter(
+    const newLessons = eligible.filter(
       (lesson) => !viewedSet.has(lesson.id) && !errorSet.has(lesson.id),
     );
-    const errorLessons = lessons.filter((lesson) => errorSet.has(lesson.id));
-    const reuseLessons = lessons.filter((lesson) => viewedSet.has(lesson.id));
+    const errorLessons = eligible.filter((lesson) => errorSet.has(lesson.id));
+    const reuseLessons = eligible.filter((lesson) => viewedSet.has(lesson.id));
 
     const selections: LessonSelection[] = [];
 

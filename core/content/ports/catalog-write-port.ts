@@ -18,6 +18,7 @@ export interface CatalogSeedLesson {
   level: string;
   category: string;
   taxonomyNodeId: string;
+  prerequisiteLessonIds: string[];
   title: string;
   summary: string;
   explanation: string;

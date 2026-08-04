@@ -16,6 +16,7 @@ function catalogClient(options: { publication?: "published" | "draft" | null; pa
     {
       id: "lesson-version-1", lessonId: "lesson-1", levelCode: "B1", category: "grammar",
       taxonomyNodeId: "grammar", title: "Grammar", summary: "Summary", explanation: "Explain",
+      prerequisites: "[]",
       examples: "[\"Example\"]", commonMistakes: "not-json", tags: "[\"tag\"]", difficulty: 1,
       contentVersion: 1, statusCode: "published",
     },
