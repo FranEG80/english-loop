@@ -30,17 +30,18 @@ export default defineConfig({
         "**/index.ts",
         // Contracts erased by TypeScript have no runtime functions or classes.
         "core/**/ports/**",
-        "core/models/types/**",
-        "core/content/domain/types/**",
-        "core/shared/kernel/types/**",
+        // Declarative type-only modules have no runtime behavior to exercise.
+        "**/types/**",
+        "**/type.ts",
+        "**/*.type.ts",
       ],
       thresholds: {
-        // Umbral de la primera ola integral; se eleva junto con cada capa
-        // que se incorpora al inventario de tests.
-        lines: 70,
-        functions: 70,
-        statements: 70,
-        branches: 57,
+        // Baseline global del backend y frontend ejecutable. Los módulos
+        // declarativos están excluidos arriba y no reducen este baseline.
+        lines: 80,
+        functions: 80,
+        statements: 80,
+        branches: 90,
       },
     },
   },

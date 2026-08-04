@@ -79,10 +79,18 @@ describe("createD1Transport", () => {
       createD1Transport({
         databaseProvider: "d1",
         d1Transport: "http",
+        d1HttpUrl: null,
+        d1HttpToken: "shared-secret",
+      }),
+    ).toThrow("D1_HTTP_URL");
+
+    expect(() =>
+      createD1Transport({
+        databaseProvider: "d1",
+        d1Transport: "http",
         d1HttpUrl: "https://d1-proxy.example.test",
         d1HttpToken: null,
       }),
     ).toThrow("D1_HTTP_TOKEN");
   });
 });
-

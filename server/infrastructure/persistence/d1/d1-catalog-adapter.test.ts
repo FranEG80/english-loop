@@ -67,11 +67,18 @@ describe("D1CatalogAdapter", () => {
     await expect(catalog.getNodePath("present")).resolves.toMatchObject([{ id: "grammar" }, { id: "present" }]);
     await expect(catalog.getNodePath("missing")).resolves.toEqual([]);
     await expect(catalog.getActivityById("missing")).resolves.toBeNull();
+    const missingLesson = new D1CatalogAdapter(transport({ catalogLessons: { success: true, results: [] } }));
+    await expect(missingLesson.getLessonById("missing")).resolves.toBeNull();
   });
 
   it("rejects reads when no published release is active", async () => {
     const catalog = new D1CatalogAdapter(transport({ activeCatalogMetadata: { success: true, results: [] } }));
     await expect(catalog.listLessons()).rejects.toBeInstanceOf(DatasetUnavailableException);
     await expect(catalog.getContentVersion()).resolves.toMatchObject({ datasetVersion: "unknown" });
+  });
+
+  it("defaults missing catalog counts to zero", async () => {
+    const catalog = new D1CatalogAdapter(transport({ catalogCounts: { success: true, results: [] } }));
+    await expect(catalog.getCatalogMetadata()).resolves.toMatchObject({ lessonCount: 0, activityCount: 0, taxonomyNodeCount: 0 });
   });
 });

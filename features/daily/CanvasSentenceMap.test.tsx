@@ -30,6 +30,7 @@ describe("CanvasSentenceMap", () => {
 
   it("draws connections when a canvas context is available and can reset them", async () => {
     Object.defineProperty(HTMLCanvasElement.prototype, "getContext", { value: () => context, configurable: true });
+    Object.defineProperty(window, "devicePixelRatio", { value: 0, configurable: true });
     const user = userEvent.setup();
     render(<CanvasSentenceMap dictionary={en} locale="en" preview={{ title: { en: "Build", es: "Construye" }, description: { en: "Description", es: "Descripción" } } as never} />);
     await user.click(screen.getByRole("button", { name: /The student/ }));

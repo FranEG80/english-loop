@@ -72,4 +72,20 @@ describe("TrueFalseRenderer", () => {
     expect(activeSubmit).toHaveBeenCalledTimes(1);
     vi.useRealTimers();
   });
+
+  it("ignores pointer events without a drag and while disabled", () => {
+    const onSubmit = vi.fn();
+    const active = render(<TrueFalseRenderer activity={{ id: "pointer", level: "B1", taxonomyNodeId: "topic", interactionMode: "swipe", type: "true_false", statement: "Pointer" }} dictionary={en} onSubmit={onSubmit} />);
+    const card = screen.getByRole("group");
+    fireEvent.pointerUp(card);
+    expect(onSubmit).not.toHaveBeenCalled();
+    active.unmount();
+
+    render(<TrueFalseRenderer activity={{ id: "disabled-pointer", level: "B1", taxonomyNodeId: "topic", interactionMode: "swipe", type: "true_false", statement: "Disabled pointer" }} dictionary={en} onSubmit={onSubmit} disabled />);
+    const disabledCard = screen.getByRole("group");
+    fireEvent.pointerDown(disabledCard, { clientX: 10, pointerId: 1 });
+    fireEvent.pointerMove(disabledCard, { clientX: 100, pointerId: 1 });
+    fireEvent.pointerUp(disabledCard, { clientX: 100, pointerId: 1 });
+    expect(onSubmit).not.toHaveBeenCalled();
+  });
 });

@@ -56,6 +56,24 @@ describe("loadConfig", () => {
     expect(() => loadConfig()).toThrow("D1_HTTP_URL");
   });
 
+  it("rejects invalid source, provider, transport and missing D1 token values", () => {
+    process.env = { ...process.env, CONTENT_SOURCE: "invalid" };
+    expect(() => loadConfig()).toThrow("CONTENT_SOURCE");
+    process.env = { ...process.env, CONTENT_SOURCE: "dataset", DATABASE_PROVIDER: "invalid" };
+    expect(() => loadConfig()).toThrow("DATABASE_PROVIDER");
+    process.env = { ...process.env, DATABASE_PROVIDER: "d1", D1_TRANSPORT: "invalid" };
+    expect(() => loadConfig()).toThrow("D1_TRANSPORT");
+    process.env = { ...process.env, D1_TRANSPORT: "http", D1_HTTP_URL: "https://d1.example.test" };
+    delete process.env.D1_HTTP_TOKEN;
+    expect(() => loadConfig()).toThrow("D1_HTTP_TOKEN");
+  });
+
+  it("uses fallbacks when optional URL and environment values are absent", () => {
+    delete process.env.BETTER_AUTH_URL;
+    delete process.env.NODE_ENV;
+    expect(loadConfig()).toMatchObject({ betterAuthUrl: "http://localhost:3000", nodeEnv: "development" });
+  });
+
   it("requires the auth secret in production", () => {
     delete process.env.BETTER_AUTH_SECRET;
     process.env = { ...process.env, NODE_ENV: "production" };

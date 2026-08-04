@@ -181,4 +181,24 @@ describe("D1 operation SQL dispatch", () => {
     expect(d1Value(new Uint8Array([1]))).toBeInstanceOf(Uint8Array);
     expect(() => d1Value({ unsupported: true })).toThrow("D1 parameters must be scalar values");
   });
+
+  it("binds nullable and boolean persistence values on both sides", () => {
+    const fake = database();
+    expect(prepareD1Operation(fake.database, {
+      name: "attemptSave",
+      snapshot: { id: "attempt-2", userId: "user-1", practiceRunId: null, activityId: "activity-1", activityVersionId: "version-1", practiceRunItemId: "run-1:0", origin: "FOCUSED", idempotencyKey: "key-2", response: "answer", isCorrect: false, isRepetition: true, evaluatorVersion: "v1", submittedAt: "2026-08-04T00:00:00.000Z" },
+    }).statement).toBeDefined();
+    expect(prepareD1Operation(fake.database, {
+      name: "userSettingsSave",
+      snapshot: { ...settings, reducedMotion: true },
+    }).statement).toBeDefined();
+    expect(prepareD1Operation(fake.database, {
+      name: "activityProgressSave",
+      snapshot: { userId: "user-1", activityId: "activity-1", attemptsCount: 2, correctCount: 0, lastResult: false, lastAttemptAt: null },
+    }).statement).toBeDefined();
+    expect(prepareCompositeD1Operation(fake.database, {
+      name: "practiceRunSave",
+      snapshot: { ...practiceRun, items: [{ ...practiceRun.items[0]!, activityVersionId: "version-1", isRepetition: true, repetitionOfItemId: "run-1:0" }] },
+    }).length).toBe(3);
+  });
 });

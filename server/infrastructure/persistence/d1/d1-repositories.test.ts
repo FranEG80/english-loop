@@ -146,6 +146,9 @@ describe("D1 progress and review repositories", () => {
     const mappedProgress = new D1ProgressRepository(mapped);
     await expect(mappedProgress.getActivityProgress("u1", "a1")).resolves.toMatchObject({ lastResult: true, lastAttemptAt: now });
     await expect(mappedProgress.getTaxonomyProgress("u1", "n1")).resolves.toMatchObject({ attemptsCount: 3 });
+    const nullableProgress = transport({ activityProgressGet: result([{ userId: "u1", activityId: "a1", attemptsCount: 0, correctCount: 0, lastResult: null, lastAttemptAt: null }]) });
+    await expect(new D1ProgressRepository(nullableProgress).getActivityProgress("u1", "a1")).resolves.toMatchObject({ lastResult: null, lastAttemptAt: null });
     await new D1ReviewRepository(mapped).save(ReviewItem.create({ id: "rv2", userId: "u1", activityId: "a1", activityVersionId: "version-1", lessonId: "lesson-1", taxonomyNodeId: "n1", level: "B1", stage: 1, consecutiveCorrect: 0, dueAt: now, failedAt: now, resolvedAt: null, attemptsCount: 1 }));
+    await expect(new D1ReviewRepository(transport({ reviewGetByActivity: result([]) })).findByUserIdAndActivity("u1", "missing")).resolves.toBeNull();
   });
 });

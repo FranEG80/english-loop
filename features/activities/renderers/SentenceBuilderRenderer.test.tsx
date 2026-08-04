@@ -22,7 +22,7 @@ describe("SentenceBuilderRenderer", () => {
     const onSubmit = vi.fn();
     render(<SentenceBuilderRenderer activity={{ id: "empty", level: "B1", taxonomyNodeId: "topic", interactionMode: "sentence_builder", type: "sentence_transformation", originalSentence: "They go", instructionHint: "Change the tense", wordBank: ["They"] }} dictionary={en} onSubmit={onSubmit} />);
     const submit = screen.getByRole("button", { name: en.daily.submitAnswer });
-    submit.removeAttribute("disabled");
+    submit.disabled = false;
     fireEvent.click(submit);
     expect(onSubmit).not.toHaveBeenCalled();
     await user.click(screen.getByRole("button", { name: "They" }));
@@ -30,11 +30,11 @@ describe("SentenceBuilderRenderer", () => {
 
     const disabledSubmit = vi.fn();
     render(<SentenceBuilderRenderer activity={{ id: "disabled", level: "B1", taxonomyNodeId: "topic", interactionMode: "sentence_builder", type: "sentence_transformation", originalSentence: "They go", instructionHint: "Change the tense", wordBank: ["They"] }} dictionary={en} onSubmit={disabledSubmit} disabled />);
-    const disabledWord = screen.getAllByRole("button", { name: "They" })[1];
-    disabledWord.removeAttribute("disabled");
+    const disabledWord = screen.getAllByRole("button", { name: "They" })[1]!;
+    disabledWord.disabled = false;
     fireEvent.click(disabledWord);
     const disabledReset = screen.getAllByRole("button", { name: en.activities.resetSelection })[1];
-    disabledReset.removeAttribute("disabled");
+    disabledReset.disabled = false;
     fireEvent.click(disabledReset);
     expect(disabledSubmit).not.toHaveBeenCalled();
   });

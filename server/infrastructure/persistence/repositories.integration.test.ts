@@ -103,7 +103,11 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
     await runs.save(statusRun);
     await expect(prisma.practiceRunItem.findUnique({ where: { practiceRunId_position: { practiceRunId: statusRun.id, position: 0 } } })).resolves.toMatchObject({ status: "answered" });
     await attempts.save(ActivityAttempt.create({ id: "attempt-integration", userId, practiceRunId: run.id, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "key", response: { kind: "boolean", value: true }, isCorrect: true, evaluatorVersion: "1", submittedAt: "2026-08-03T00:00:00.000Z" }));
+    expect(await attempts.findByUserIdAndIdempotencyKey(userId, "key")).toMatchObject({ id: "attempt-integration", activityId: "activity-1" });
+    expect(await attempts.findByUserIdAndIdempotencyKey(userId, "missing-key")).toBeNull();
+    expect(await attempts.findByPracticeRunId(run.id)).toHaveLength(1);
     expect(await attempts.findByUserIdAndActivityId(userId, "activity-1")).toHaveLength(1);
+    expect(await attempts.findByUserIdAndActivityId(userId, "activity-1", 0)).toHaveLength(0);
     await progress.upsertActivityProgress({ userId, activityId: "activity-1", attemptsCount: 1, correctCount: 1, lastResult: true, lastAttemptAt: "2026-08-03T00:00:00.000Z" });
     await progress.upsertActivityProgress({ userId, activityId: "activity-2", attemptsCount: 2, correctCount: 1, lastResult: false, lastAttemptAt: null });
     await progress.upsertTaxonomyProgress({ userId, taxonomyNodeId: "topic", attemptsCount: 1, correctCount: 1 });

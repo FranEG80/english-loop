@@ -33,4 +33,10 @@ describe("review server actions", () => {
       await expect(createFocusedPracticeAction(form)).rejects.toMatchObject({ message: `REDIRECT:/review/session/run-${size}?` });
     }
   });
+
+  it("defaults missing form fields", async () => {
+    focused.createRun.mockResolvedValueOnce({ id: "run-defaults", activityIds: [] });
+    await expect(createFocusedPracticeAction(new FormData())).rejects.toMatchObject({ message: "REDIRECT:/review/session/run-defaults?" });
+    expect(focused.createRun).toHaveBeenLastCalledWith({ taxonomyNodeId: "", level: "both", sessionSize: 5 });
+  });
 });
