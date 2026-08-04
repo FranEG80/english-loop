@@ -1,22 +1,23 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 76,
-    "publishedActivities": 7150,
+    "publishedLessons": 82,
+    "publishedActivities": 7250,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 70,
+    "nodeTargetsMet": 71,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 3850,
-      "B2": 3300
+      "B1": 3875,
+      "B2": 3375
     },
     "category": {
       "grammar": 4900,
-      "vocabulary": 2250
+      "use-of-english": 25,
+      "vocabulary": 2325
     },
     "topic": {
       "articles-determiners": 200,
@@ -28,6 +29,7 @@
       "b1-health-body": 100,
       "b1-home-services": 100,
       "b1-leisure-sport-entertainment": 100,
+      "b1-multiple-choice-cloze": 25,
       "b1-shopping-clothes-money": 100,
       "b1-technology-digital-life": 100,
       "b1-travel-transport": 100,
@@ -35,6 +37,7 @@
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-climate-global-issues": 100,
+      "b2-creativity-innovation-decisions": 25,
       "b2-crime-justice": 100,
       "b2-education-learning": 100,
       "b2-health-psychology": 100,
@@ -42,7 +45,7 @@
       "b2-money-economics": 100,
       "b2-science-research": 100,
       "b2-society-culture-public-life": 100,
-      "b2-travel-tourism-urban-life": 50,
+      "b2-travel-tourism-urban-life": 100,
       "comparisons": 300,
       "conditionals": 250,
       "future-forms": 425,
@@ -76,6 +79,7 @@
       "b1-health-body": 100,
       "b1-home-services": 100,
       "b1-leisure-sport-entertainment": 100,
+      "b1-multiple-choice-cloze": 25,
       "b1-shopping-clothes-money": 100,
       "b1-technology-digital-life": 100,
       "b1-travel-transport": 100,
@@ -83,6 +87,7 @@
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-climate-global-issues": 100,
+      "b2-creativity-innovation-decisions": 25,
       "b2-crime-justice": 100,
       "b2-education-learning": 100,
       "b2-health-psychology": 100,
@@ -90,7 +95,7 @@
       "b2-money-economics": 100,
       "b2-science-research": 100,
       "b2-society-culture-public-life": 100,
-      "b2-travel-tourism-urban-life": 50,
+      "b2-travel-tourism-urban-life": 100,
       "basic-linking-words": 100,
       "basic-verb-patterns": 100,
       "cleft-sentences-fronting": 100,
@@ -145,18 +150,19 @@
       "error_identification": 50,
       "fill_blank": 1725,
       "key_word_transformation": 25,
+      "multiple_choice_cloze": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 1775,
-      "true_false": 1325,
-      "word_order": 1450
+      "single_choice": 1800,
+      "true_false": 1350,
+      "word_order": 1475
     },
     "difficulty": {
-      "1": 830,
-      "2": 1541,
-      "3": 1659,
-      "4": 1617,
-      "5": 1503
+      "1": 835,
+      "2": 1564,
+      "3": 1685,
+      "4": 1643,
+      "5": 1523
     }
   },
   "targets": [
@@ -637,9 +643,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 25,
+      "actualActivityTypes": 1,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -1162,9 +1174,14 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 25,
+      "actualActivityTypes": 1,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -1565,15 +1582,15 @@
         4,
         5
       ],
-      "actualActivities": 50,
-      "actualActivityTypes": 2,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         2,
         3,
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-word-formation",

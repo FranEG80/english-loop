@@ -2,22 +2,22 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 76,
-    "activities": 7150,
-    "batches": 286,
+    "lessons": 82,
+    "activities": 7250,
+    "batches": 290,
     "taxonomyNodes": 164,
-    "errors": 200
+    "errors": 195
   },
   "issues": [
     {
       "code": "global-activity-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 7150 actividades publicadas; se requieren 10000."
+      "message": "Hay 7250 actividades publicadas; se requieren 10000."
     },
     {
       "code": "global-lesson-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 76 lecciones publicadas; se requieren 100."
+      "message": "Hay 82 lecciones publicadas; se requieren 100."
     },
     {
       "code": "node-activity-coverage",
@@ -97,17 +97,12 @@
     {
       "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+      "message": "Hay 25 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
-      "message": "Hay 0 tipos; se requieren 4."
+      "message": "Hay 1 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -427,17 +422,12 @@
     {
       "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-creativity-innovation-decisions",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-creativity-innovation-decisions",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
+      "message": "Hay 25 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-creativity-innovation-decisions",
-      "message": "Hay 0 tipos; se requieren 4."
+      "message": "Hay 1 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -663,16 +653,6 @@
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-register-rewriting",
       "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-travel-tourism-urban-life",
-      "message": "Hay 50 actividades; se requieren 100."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-travel-tourism-urban-life",
-      "message": "Hay 2 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -837,16 +817,6 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-use-of-english-fixed-expressions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-use-of-english-multiple-choice-cloze."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-use-of-english-open-cloze."
     },
     {
@@ -957,27 +927,7 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-use-of-english-key-word-transformations."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-use-of-english-multiple-choice-cloze."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-use-of-english-open-cloze."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-use-of-english-register-rewriting."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-use-of-english-word-formation."
     },
     {
       "code": "planned-lesson-missing",
@@ -1006,7 +956,32 @@
     },
     {
       "code": "lesson-without-activities",
-      "location": "lessons/b2/vocabulary/b2-creativity-innovation-decisions/b2-vocabulary-creativity-innovation-decisions.md",
+      "location": "lessons/b1/use-of-english/b1-fixed-expressions/b1-use-of-english-fixed-expressions.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-path",
+      "location": "lessons/b1/use-of-english/b1-use-of-english-multiple-choice-cloze.md",
+      "message": "La ruta esperada es lessons/b1/use-of-english/b1-multiple-choice-cloze/b1-use-of-english-multiple-choice-cloze.md."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/use-of-english/b2-key-word-transformations/b2-use-of-english-key-word-transformations.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/use-of-english/b2-multiple-choice-cloze/b2-use-of-english-multiple-choice-cloze.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/use-of-english/b2-open-cloze/b2-use-of-english-open-cloze.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/use-of-english/b2-word-formation/b2-use-of-english-word-formation.md",
       "message": "Una lección publicada debe tener actividades publicadas."
     }
   ]
