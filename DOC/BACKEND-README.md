@@ -110,6 +110,7 @@ El fichero [.env.example](../.env.example) contiene una plantilla comentada.
 | `D1_TRANSPORT` | `binding`, `http` | Solo aplica cuando `DATABASE_PROVIDER=d1`. |
 | `D1_HTTP_URL` | URL HTTPS | Endpoint del Worker proxy para Node/Vercel. |
 | `D1_HTTP_TOKEN` | secreto | Token compartido entre Vercel y el Worker. |
+| `PRISMA_TRANSACTION_RETRY_MAX` | entero no negativo | Reintentos adicionales ante conflictos Prisma `P2034`; `0` desactiva. |
 | `PUBLIC_PAGE_DEFAULT_LIMIT` | entero positivo | Tamaño por defecto de los listados públicos. |
 | `PUBLIC_PAGE_MAX_LIMIT` | entero positivo | Límite máximo aceptado por petición. |
 | `BETTER_AUTH_SECRET` | secreto | Firma y protección de sesiones. Obligatorio en producción. |
@@ -125,13 +126,15 @@ ATTEMPT_RATE_LIMIT_WINDOW_MS=60000
 ATTEMPT_RATE_LIMIT_MAX=30
 AUTH_RATE_LIMIT_WINDOW_MS=60000
 AUTH_RATE_LIMIT_MAX=10
+PRISMA_TRANSACTION_RETRY_MAX=2
 PUBLIC_PAGE_DEFAULT_LIMIT=25
 PUBLIC_PAGE_MAX_LIMIT=100
 HTTP_MAX_REQUEST_BODY_BYTES=1048576
 HTTP_MAX_RESPONSE_BODY_BYTES=1048576
 ```
 
-Se validan como enteros positivos. Estas variables permiten ajustar una
+Se validan como enteros positivos, salvo `PRISMA_TRANSACTION_RETRY_MAX`, que
+acepta cero para desactivar reintentos. Estas variables permiten ajustar una
 instalación sin cambiar el código, pero no modifican las reglas pedagógicas.
 
 `withErrorHandling` rechaza cuerpos de petición que superen el límite incluso
@@ -247,15 +250,21 @@ pnpm db:render-schema postgresql prisma/generated/schema.postgresql.prisma
 # Validar y simular el seed sin escribir
 pnpm dataset:seed -- --dry-run
 
-# Aplicar migraciones a una base Prisma SQL (SQLite/PostgreSQL/MariaDB)
+# Aplicar la historia SQLite/D1 en local
 pnpm prisma migrate deploy
+
+# PostgreSQL/MariaDB: generar y revisar una baseline específica del proveedor
+# antes de aplicarla; no usar migrate deploy directamente sobre esos motores.
+pnpm db:render-schema postgresql /tmp/english-loop.schema.postgresql.prisma
+pnpm prisma migrate diff --from-empty --to-schema /tmp/english-loop.schema.postgresql.prisma --script
 
 # Seed estándar de Prisma SQL: lee Markdown y JSON del DATASET
 pnpm db:seed
 
-# D1: usa Wrangler y la configuración wrangler.d1.example.jsonc
-pnpm dlx wrangler d1 migrations list replace-with-your-d1-name --config wrangler.d1.example.jsonc --remote
-pnpm dlx wrangler d1 migrations apply replace-with-your-d1-name --config wrangler.d1.example.jsonc --remote
+# D1: copia la plantilla a una configuración local y usa Wrangler
+cp wrangler.d1.example.jsonc wrangler.d1.jsonc
+pnpm dlx wrangler d1 migrations list replace-with-your-d1-name --config wrangler.d1.jsonc --remote
+pnpm dlx wrangler d1 migrations apply replace-with-your-d1-name --config wrangler.d1.jsonc --remote
 
 # Seed directo para proveedores Prisma SQL o D1 HTTP
 pnpm dataset:seed
@@ -272,6 +281,9 @@ Para D1, el script de Node/Vercel usa el writer HTTP autenticado. En un
 Worker Cloudflare se puede usar directamente `D1CatalogWriteAdapter` con el
 binding `DB`; el script CLI no intenta inventar un binding, por lo que exige
 `D1_TRANSPORT=http` y las credenciales del proxy.
+La guía paso a paso para bootstrap, backup, Vercel, Cloudflare y las
+limitaciones actuales de PostgreSQL/MariaDB está en
+[`BACKEND-DEPLOYMENT-NEXT-STEPS.md`](./BACKEND-DEPLOYMENT-NEXT-STEPS.md).
 La configuración de Wrangler conserva `prisma/migrations` como directorio y
 declara `migrations_pattern=prisma/migrations/*/migration.sql` para descubrir
 la estructura anidada generada por Prisma; no se deben copiar ni editar esas
@@ -335,8 +347,8 @@ Las pruebas relevantes incluyen:
 La configuración de Vitest excluye módulos declarativos `types/`, `type.ts` y
 los contratos de puertos del cálculo ejecutable. Los umbrales globales son
 `80%` para statements, lines y functions, y `90%` para branches. La última
-ejecución global completa pasó con `95.88%` de statements, `90.39%` de
-branches, `96.28%` de functions y `97.42%` de lines. La validación directa del
+ejecución global completa pasó con `95.93%` de statements, `90.50%` de
+branches, `96.30%` de functions y `97.43%` de lines. La validación directa del
 dataset pasa con `124` lecciones, `12.100` actividades, `164` nodos y cero
 errores. El seed de `dev.db` se ejecutó dos veces: la primera publicó el release
 y la segunda devolvió `unchanged`, sin duplicar versiones.
@@ -347,6 +359,8 @@ cambio. No se debe usar `skip` para ocultar una regresión.
 ## Archivos de referencia
 
 - [`BACKEND-PLAN.md`](./BACKEND-PLAN.md): hoja de ruta y decisiones de trabajo.
+- [`BACKEND-DEPLOYMENT-NEXT-STEPS.md`](./BACKEND-DEPLOYMENT-NEXT-STEPS.md):
+  pasos pendientes para PostgreSQL, MariaDB, D1, Vercel y Cloudflare.
 - [`../.env.example`](../.env.example): configuración comentada.
 - [`../prisma/schema.prisma`](../prisma/schema.prisma): modelo persistente.
 - [`../server/infrastructure/composition/composition-root.ts`](../server/infrastructure/composition/composition-root.ts): composición de adaptadores.

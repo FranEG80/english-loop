@@ -842,7 +842,9 @@ la base en un directorio temporal y la elimina al terminar.
   integración con un proveedor externo.
 - [~] 18. Contract tests PostgreSQL; el runner real está implementado y queda
   ejecutarlo contra `TEST_POSTGRES_DATABASE_URL`.
-- [ ] 19. Preparación de producción.
+- [~] 19. Preparación de producción; los pasos están documentados en
+  `DOC/BACKEND-DEPLOYMENT-NEXT-STEPS.md`, pero la validación final depende del
+  proveedor y entorno reales.
 
 ## Criterios finales de aceptación
 
