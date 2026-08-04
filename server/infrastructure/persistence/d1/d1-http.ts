@@ -1,32 +1,15 @@
 import { z } from "zod";
-import type { D1Operation, D1OperationName } from "./d1-operations";
+import { isD1Operation, type D1Operation } from "./d1-operations";
 import { D1BindingClient } from "./d1-operations";
-import type { D1DatabaseLike, D1Result } from "./d1-types";
+import type { D1DatabaseLike, D1Result } from "./types/binding";
 
 /** Protocol/security bounds, intentionally code constants rather than secrets. */
 export const D1_HTTP_MAX_BATCH_OPERATIONS = 100;
 export const D1_HTTP_MAX_BODY_BYTES = 1_000_000;
 export const D1_HTTP_MAX_CLOCK_SKEW_MS = 5 * 60_000;
-const D1_HTTP_MAX_IDENTIFIER_LENGTH = 500;
-const D1_HTTP_MAX_ACTIVITY_ID_LENGTH = 200;
-
-const operationSchema = z.discriminatedUnion("name", [
-    z.object({ name: z.literal("health") }),
-    z.object({ name: z.literal("activeCatalogMetadata") }),
-    z.object({ name: z.literal("activityById"), activityId: z.string().min(1).max(D1_HTTP_MAX_ACTIVITY_ID_LENGTH) }),
-    z.object({
-      name: z.literal("consumeVerification"),
-      identifier: z.string().min(1).max(D1_HTTP_MAX_IDENTIFIER_LENGTH),
-      value: z.string().min(1).max(D1_HTTP_MAX_IDENTIFIER_LENGTH),
-      nowIso: z.string().datetime(),
-    }),
-    z.object({
-      name: z.literal("acceptReplayNonce"),
-      nonce: z.string().min(1).max(200),
-      nowIso: z.string().datetime(),
-      expiresAtIso: z.string().datetime(),
-    }),
-  ]);
+const operationSchema = z.custom<D1Operation>(isD1Operation, {
+  message: "Unsupported or malformed D1 operation",
+});
 
 const requestSchema = z.union([
   z.object({ operation: operationSchema }),
@@ -197,8 +180,3 @@ export class D1HttpClient {
   }
 }
 
-export function isD1OperationName(value: string): value is D1OperationName {
-  return ["health", "activeCatalogMetadata", "activityById", "consumeVerification", "acceptReplayNonce"].includes(
-    value as D1OperationName,
-  );
-}

@@ -5,7 +5,7 @@ import {
   InMemoryReplayGuard,
   handleD1HttpRequest,
 } from "./d1-http";
-import type { D1DatabaseLike, D1PreparedStatement, D1Result } from "./d1-types";
+import type { D1DatabaseLike, D1PreparedStatement, D1Result } from "./types/binding";
 
 function fakeDatabase() {
   const calls: Array<{ query: string; values: unknown[] }> = [];
@@ -133,3 +133,4 @@ describe("D1 persistence boundary", () => {
     });
   });
 });
+

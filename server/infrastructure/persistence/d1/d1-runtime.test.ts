@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { createD1Transport } from "./d1-runtime";
-import type { D1DatabaseLike, D1PreparedStatement } from "./d1-types";
+import type { D1DatabaseLike, D1PreparedStatement } from "./types/binding";
 
 function fakeDatabase(): D1DatabaseLike {
   return {
@@ -85,3 +85,4 @@ describe("createD1Transport", () => {
     ).toThrow("D1_HTTP_TOKEN");
   });
 });
+

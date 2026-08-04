@@ -1,14 +1,10 @@
 import type { AppConfig } from "@/server/infrastructure/config/config";
 import { D1BindingClient } from "./d1-operations";
 import { D1HttpClient, type D1HttpClientOptions } from "./d1-http";
-import type { D1DatabaseLike, D1Result } from "./d1-types";
-import type { D1Operation } from "./d1-operations";
+import type { D1DatabaseLike } from "./types/binding";
+import type { D1TransportClient } from "./types/transport";
 
-export interface D1TransportClient {
-  execute(operation: D1Operation): Promise<D1Result>;
-  batch(operations: D1Operation[]): Promise<D1Result[]>;
-}
-
+export type { D1TransportClient } from "./types/transport";
 export interface D1BindingRuntime {
   DB: D1DatabaseLike;
 }

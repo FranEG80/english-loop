@@ -8,12 +8,12 @@ import type {
   CatalogSeedLesson,
   CatalogSeedTaxonomyNode,
 } from "@/core/content/ports/catalog-write-port";
-import { PrismaCatalogWriteAdapter } from "@/server/infrastructure/persistence/prisma-catalog-write-adapter";
+import { PrismaCatalogWriteAdapter } from "@/server/infrastructure/persistence/prisma-catalog-write-core";
 import { sha256Checksum } from "./lib/checksum";
 import { loadDataset } from "./lib/load";
 import { validateDataset } from "./lib/validation";
 import type { Evaluator } from "./lib/types";
-import { loadConfig } from "@/server/infrastructure/config/config";
+import { loadConfig } from "@/server/infrastructure/config/config-core";
 import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructure/database/prisma-adapter-factory";
 
 export interface CliOptions {

@@ -1,8 +1,4 @@
-/** Minimal D1 surface used by the adapters.
- *
- * Keeping this boundary structural means the Node test suite can use a small
- * fake and the Worker build can provide the real Cloudflare-generated types.
- */
+/** Structural Cloudflare D1 binding types shared by Worker and Node tests. */
 export type D1Value = string | number | boolean | null | ArrayBuffer | Uint8Array;
 
 export interface D1Result<T = Record<string, unknown>> {
@@ -24,3 +20,4 @@ export interface D1DatabaseLike {
     statements: D1PreparedStatement[],
   ): Promise<D1Result<T>[]>;
 }
+

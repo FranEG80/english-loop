@@ -1,115 +1,38 @@
-import type { D1DatabaseLike, D1PreparedStatement, D1Result, D1Value } from "./d1-types";
+import type { D1DatabaseLike, D1Result } from "./types/binding";
+import type { D1Operation } from "./types/operations";
+import { prepareD1Operation, prepareCompositeD1Operation } from "./operations";
 
-export const d1OperationNames = [
-  "health",
-  "activeCatalogMetadata",
-  "activityById",
-  "consumeVerification",
-  "acceptReplayNonce",
-] as const;
-
-export type D1OperationName = (typeof d1OperationNames)[number];
-
-export type D1Operation =
-  | { name: "health" }
-  | { name: "activeCatalogMetadata" }
-  | { name: "activityById"; activityId: string }
-  | { name: "consumeVerification"; identifier: string; value: string; nowIso: string }
-  | { name: "acceptReplayNonce"; nonce: string; nowIso: string; expiresAtIso: string };
-
-interface PreparedOperation {
-  statement: D1PreparedStatement;
-  write: boolean;
-}
-
-/**
- * The only SQL known by the D1 transport. Callers select an operation name;
- * they never send SQL or identifiers over HTTP.
- */
-export function prepareD1Operation(
-  database: D1DatabaseLike,
-  operation: D1Operation,
-): PreparedOperation {
-  switch (operation.name) {
-    case "health":
-      return {
-        statement: database.prepare("SELECT 1 AS ok"),
-        write: false,
-      };
-    case "activeCatalogMetadata":
-      return {
-        statement: database.prepare(
-          `SELECT r.datasetVersion, r.checksum
-             FROM CatalogPublication p
-             JOIN CatalogRelease r ON r.id = p.releaseId
-            WHERE p.id = 'active' AND r.status = 'published'`,
-        ),
-        write: false,
-      };
-    case "activityById":
-      return {
-        statement: database
-          .prepare(
-            `SELECT v.activityId, v.id AS activityVersionId, v.levelCode,
-                    v.activityTypeCode, v.category, v.topic, v.subtopic,
-                    v.difficulty, v.instructions, v.prompt, v.passage,
-                    v.explanation, v.tags, v.lessonIds, v.estimatedSeconds,
-                    v.evaluatorData, v.statusCode
-               FROM ActivityVersion v
-               JOIN CatalogPublication p ON p.releaseId = v.releaseId
-              WHERE p.id = 'active' AND v.statusCode = 'published'
-                AND v.activityId = ?
-              ORDER BY v.id DESC
-              LIMIT 1`,
-          )
-          .bind(operation.activityId),
-        write: false,
-      };
-    case "consumeVerification":
-      return {
-        statement: database
-          .prepare(
-            `DELETE FROM Verification
-              WHERE identifier = ? AND value = ? AND expiresAt > ?`,
-          )
-          .bind(operation.identifier, operation.value, operation.nowIso),
-        write: true,
-      };
-    case "acceptReplayNonce":
-      return {
-        statement: database
-          .prepare(
-            `INSERT INTO RateLimitBucket (key, count, resetAt, updatedAt)
-             VALUES (?, 1, ?, ?)
-             ON CONFLICT(key) DO UPDATE SET
-               count = 1, resetAt = excluded.resetAt, updatedAt = excluded.updatedAt
-             WHERE RateLimitBucket.resetAt <= ?`,
-          )
-          .bind(
-            `d1:http:nonce:${operation.nonce}`,
-            operation.expiresAtIso,
-            operation.nowIso,
-            operation.nowIso,
-          ),
-        write: true,
-      };
-  }
-}
+export * from "./types/operations";
+export * from "./operations/validation";
 
 export class D1BindingClient {
   constructor(private readonly database: D1DatabaseLike) {}
 
   async execute(operation: D1Operation): Promise<D1Result> {
-    const prepared = prepareD1Operation(this.database, operation);
-    if (prepared.write) return prepared.statement.run();
-    return prepared.statement.all();
+    const prepared = operation.name === "dailySessionSave" || operation.name === "practiceRunSave"
+      ? prepareCompositeD1Operation(this.database, operation)
+      : [prepareD1Operation(this.database, operation)];
+    if (prepared.length > 1) {
+      const results = await this.database.batch(prepared.map(({ statement }) => statement));
+      return {
+        success: results.every((result) => result.success),
+        results: [],
+        meta: { changes: results.reduce((total, result) => total + (result.meta?.changes ?? 0), 0) },
+      };
+    }
+    const [single] = prepared;
+    if (!single) throw new Error("D1 operation produced no statement");
+    if (single.write) return single.statement.run();
+    return single.statement.all();
   }
 
   /** D1's native batch is the write boundary for operations that must share a request. */
   async batch(operations: D1Operation[]): Promise<D1Result[]> {
     if (operations.length === 0) return [];
-    const prepared = operations.map((operation) =>
-      prepareD1Operation(this.database, operation),
+    const prepared = operations.flatMap((operation) =>
+      operation.name === "dailySessionSave" || operation.name === "practiceRunSave"
+        ? prepareCompositeD1Operation(this.database, operation)
+        : [prepareD1Operation(this.database, operation)],
     );
     return this.database.batch(prepared.map(({ statement }) => statement));
   }
@@ -139,16 +62,6 @@ export class D1BindingClient {
   }
 }
 
-export function d1Value(value: unknown): D1Value {
-  if (
-    value === null ||
-    typeof value === "string" ||
-    typeof value === "number" ||
-    typeof value === "boolean" ||
-    value instanceof ArrayBuffer ||
-    value instanceof Uint8Array
-  ) {
-    return value;
-  }
-  throw new TypeError("D1 parameters must be scalar values");
-}
+
+
+export { prepareD1Operation, prepareCompositeD1Operation };
