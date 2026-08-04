@@ -7,6 +7,7 @@ import { taxonomyStatements } from "./taxonomy-statements";
 import { publishStatements } from "./release-statements";
 import { chunk, generatedId, statement } from "./shared";
 import type { D1CatalogReleaseRow, D1CatalogSeedChunk, D1CatalogSeedSession, D1CatalogWriteOptions } from "./types";
+import { demoAccountStatements } from "./demo-account-statements";
 
 export class D1CatalogWriteAdapter implements CatalogWritePort {
   constructor(private readonly database: D1DatabaseLike) {}
@@ -90,6 +91,10 @@ export class D1CatalogWriteAdapter implements CatalogWritePort {
       throw error;
     }
     return { releaseId: session.releaseId, datasetVersion: input.datasetVersion, checksum: input.checksum, status: "published", counts };
+  }
+
+  async seedDemoAccount(): Promise<void> {
+    await this.runBatches(demoAccountStatements(this.database));
   }
 
   private async run(statementToRun: ReturnType<typeof statement>): Promise<D1Result> {

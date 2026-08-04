@@ -7,6 +7,7 @@ import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version"
 import type { LessonListFilters, LessonCatalogPagePort, LessonCatalogPort } from "@/core/content/ports/catalog-ports";
 import { paginateSortedItems, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
+import { isDemoLessonId } from "@/core/content/domain/demo-fixture";
 
 interface LessonIndexEntry {
   id: string;
@@ -88,7 +89,9 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
         { path: this.indexPath },
       );
     }
-    return raw.lessons.filter((lesson) => lesson.status === PUBLISHED_CONTENT_STATUS);
+    return raw.lessons.filter(
+      (lesson) => lesson.status === PUBLISHED_CONTENT_STATUS && !isDemoLessonId(lesson.id),
+    );
   }
 
   private async relatedActivities(): Promise<Map<string, string[]>> {

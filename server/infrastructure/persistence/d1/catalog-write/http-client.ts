@@ -44,6 +44,10 @@ export class D1HttpCatalogWriteAdapter implements CatalogWritePort {
     return { releaseId: session.releaseId, datasetVersion: input.datasetVersion, checksum: input.checksum, status: "published", counts };
   }
 
+  async seedDemoAccount(): Promise<void> {
+    await this.post({ kind: "demo-account" });
+  }
+
   private async sendChunks(kind: "taxonomy" | "lessons" | "activities", session: D1CatalogSeedSession, values: unknown[]): Promise<void> {
     const maxBytes = this.options.maxBodyBytes ?? D1_HTTP_MAX_BODY_BYTES;
     let current: unknown[] = [];

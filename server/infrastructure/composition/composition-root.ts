@@ -87,6 +87,7 @@ export class CompositionRoot {
   private taxonomyCatalog: FileTaxonomyCatalogAdapter | null = null;
   private catalogMetadata: FileCatalogMetadataAdapter | null = null;
   private databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort | null = null;
+  private readonly demoCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
   private readonly datasetVersion = readDatasetVersionSync();
 
   private readonly persistence: PersistenceBundle;
@@ -107,6 +108,7 @@ export class CompositionRoot {
     this.dailySessionRepository = this.persistence.dailySessionRepository;
     this.lessonProgressRepository = this.persistence.lessonProgressRepository;
     this.databaseCatalog = this.persistence.databaseCatalog;
+    this.demoCatalog = this.persistence.demoCatalog;
     this.attemptRateLimiter = this.persistence.attemptRateLimiter ?? (config.nodeEnv === "production"
       ? new PrismaRateLimiter(prisma, config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock)
       : new InMemoryRateLimiter(config.attemptRateLimitWindowMs, config.attemptRateLimitMax, this.clock));
@@ -118,6 +120,11 @@ export class CompositionRoot {
   private getDatabaseCatalog(): LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort {
     if (!this.databaseCatalog) this.databaseCatalog = this.persistence.databaseCatalog;
     return this.databaseCatalog;
+  }
+
+  /** Catálogo sembrado marcado como demo; nunca se usa para usuarios normales. */
+  getDemoCatalog(): LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort {
+    return this.demoCatalog;
   }
 
   getCatalogWritePort(): CatalogWritePort {

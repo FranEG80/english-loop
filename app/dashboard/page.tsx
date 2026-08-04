@@ -9,15 +9,17 @@ import {
   RotateCcw,
 } from "lucide-react";
 import {
-  getDemoDailySessionPort,
-  getDemoLearningContentPort,
-  getDemoProgressPort,
-  getDemoSession,
   getDailySessionPort,
   getLearningContentPort,
   getLocalePort,
   getProgressPort,
 } from "@/adapters/adapter-factory";
+import {
+  demoDailySessionAdapter,
+  demoLearningContentAdapter,
+  demoProgressAdapter,
+  demoSession,
+} from "@/adapters/server/demo-adapters";
 import {
   getDailyLoop,
   getProgressSnapshot,
@@ -33,13 +35,13 @@ import { Progress } from "@/shared/ui/Progress";
 const TIMEZONE = "UTC";
 
 export default async function DashboardPage({ demo = false }: { demo?: boolean } = {}) {
-  const session = demo ? getDemoSession() : await requireSession();
+  const session = demo ? demoSession : await requireSession();
   const locale = await getLocalePort().getLocale();
   const dictionary = getDictionary(locale);
-  const content = demo ? getDemoLearningContentPort() : getLearningContentPort();
+  const content = demo ? demoLearningContentAdapter : getLearningContentPort();
   const [daily, progress, lessons, activities] = await Promise.all([
-    getDailyLoop(demo ? getDemoDailySessionPort() : getDailySessionPort(), content, TIMEZONE),
-    getProgressSnapshot(demo ? getDemoProgressPort() : getProgressPort(), content),
+    getDailyLoop(demo ? demoDailySessionAdapter : getDailySessionPort(), content, TIMEZONE),
+    getProgressSnapshot(demo ? demoProgressAdapter : getProgressPort(), content),
     listLessonCatalog(content, {}),
     listActivityCatalog(content, {}),
   ]);

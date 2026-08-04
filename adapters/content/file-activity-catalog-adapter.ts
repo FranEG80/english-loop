@@ -8,6 +8,7 @@ import type { ActivityCatalogPagePort } from "@/core/content/ports/catalog-ports
 import { paginateSortedItems, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
 import type { CefrLevel } from "@/core/models/level";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
+import { isDemoActivity, isDemoLessonId } from "@/core/content/domain/demo-fixture";
 
 interface ActivityIndexEntry {
   id: string;
@@ -69,7 +70,11 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
         { path: this.indexPath },
       );
     }
-    return raw.activities.filter((activity) => activity.status === PUBLISHED_CONTENT_STATUS);
+    return raw.activities.filter(
+      (activity) => activity.status === PUBLISHED_CONTENT_STATUS &&
+        !isDemoActivity(activity.lessonIds) &&
+        !isDemoLessonId(activity.id),
+    );
   }
 
   private loadBatch(batchId: string, batchPath: string): Promise<Activity[]> {
@@ -92,7 +97,11 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
         { path: filePath },
       );
     }
-    return raw.activities.filter((activity) => activity.status === PUBLISHED_CONTENT_STATUS);
+    return raw.activities.filter(
+      (activity) => activity.status === PUBLISHED_CONTENT_STATUS &&
+        !isDemoActivity(activity.lessonIds) &&
+        !isDemoLessonId(activity.id),
+    );
   }
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {

@@ -16,17 +16,21 @@ import type { Evaluator } from "./lib/types";
 import { loadConfig } from "@/server/infrastructure/config/config-core";
 import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructure/database/prisma-adapter-factory";
 import { D1HttpCatalogWriteAdapter } from "@/server/infrastructure/persistence/d1/catalog-write";
+import {
+  DEMO_LESSON_IDS,
+  DEMO_USER_ACTIVE_LEVELS,
+  DEMO_USER_EMAIL,
+  DEMO_USER_ID,
+  DEMO_USER_NAME,
+  isDemoActivity,
+  isDemoLessonId,
+} from "@/core/content/domain/demo-fixture";
 
-export const DEMO_USER_ID = "user-demo";
-export const DEMO_USER_EMAIL = "demo@englishloop.local";
-export const DEMO_LESSON_IDS = new Set([
-  "b1-grammar-future-forms-will-going-to",
-  "b1-grammar-present-simple-continuous",
-  "b1-grammar-first-conditional",
-  "b1-phrasal-verbs-everyday-actions",
-  "b2-use-of-english-key-word-transformations",
-  "b1-grammar-second-conditional",
-]);
+export {
+  DEMO_LESSON_IDS,
+  DEMO_USER_EMAIL,
+  DEMO_USER_ID,
+} from "@/core/content/domain/demo-fixture";
 
 export interface CliOptions {
   source: string;
@@ -112,7 +116,7 @@ export function buildCatalogSeedInput(
     difficulty: lesson.frontmatter.difficulty,
     contentVersion: lesson.frontmatter.contentVersion,
     status: lesson.frontmatter.status,
-    isDemo: DEMO_LESSON_IDS.has(lesson.frontmatter.id),
+    isDemo: isDemoLessonId(lesson.frontmatter.id),
   }));
   const activities: CatalogSeedActivity[] = dataset.activities.map((activity) => ({
     id: activity.id,
@@ -138,7 +142,7 @@ export function buildCatalogSeedInput(
     pairs: activity.pairs ?? [],
     expectedAnswers: expectedAnswers(activity.evaluator as CatalogSeedActivity["evaluator"]),
     status: activity.status,
-    isDemo: activity.lessonIds.some((lessonId) => DEMO_LESSON_IDS.has(lessonId)),
+    isDemo: isDemoActivity(activity.lessonIds),
   }));
   return {
     datasetVersion,
@@ -172,7 +176,9 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
     if (runtimeConfig.d1Transport !== "http" || !runtimeConfig.d1HttpUrl || !runtimeConfig.d1HttpToken) {
       throw new Error("D1 seed from the CLI requires DATABASE_PROVIDER=d1, D1_TRANSPORT=http, D1_HTTP_URL and D1_HTTP_TOKEN");
     }
-    const result = await new D1HttpCatalogWriteAdapter({ url: runtimeConfig.d1HttpUrl, token: runtimeConfig.d1HttpToken }).seedCatalog(input);
+    const writer = new D1HttpCatalogWriteAdapter({ url: runtimeConfig.d1HttpUrl, token: runtimeConfig.d1HttpToken });
+    const result = await writer.seedCatalog(input);
+    await writer.seedDemoAccount();
     console.log(`Release ${result.status}: ${result.releaseId ?? "dry-run"}`);
     return;
   }
@@ -195,13 +201,13 @@ async function seedDemoAccount(prisma: PrismaClient): Promise<void> {
     where: { email: DEMO_USER_EMAIL },
     create: {
       id: DEMO_USER_ID,
-      name: "Alex",
+      name: DEMO_USER_NAME,
       email: DEMO_USER_EMAIL,
       emailVerified: true,
       isDemo: true,
     },
     update: {
-      name: "Alex",
+      name: DEMO_USER_NAME,
       emailVerified: true,
       isDemo: true,
     },
@@ -210,13 +216,13 @@ async function seedDemoAccount(prisma: PrismaClient): Promise<void> {
     where: { userId: demoUser.id },
     create: {
       userId: demoUser.id,
-      activeLevels: JSON.stringify(["B1", "B2"]),
+      activeLevels: JSON.stringify(DEMO_USER_ACTIVE_LEVELS),
       dailyGoalLessons: 1,
       dailyGoalActivities: 3,
       timezone: "UTC",
     },
     update: {
-      activeLevels: JSON.stringify(["B1", "B2"]),
+      activeLevels: JSON.stringify(DEMO_USER_ACTIVE_LEVELS),
       dailyGoalLessons: 1,
       dailyGoalActivities: 3,
       timezone: "UTC",

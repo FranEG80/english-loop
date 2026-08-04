@@ -53,6 +53,19 @@ describe("D1HttpCatalogWriteAdapter", () => {
     expect(calls).toHaveLength(1);
   });
 
+  it("seeds the demo account through the authenticated worker endpoint", async () => {
+    const calls: string[] = [];
+    const writer = new D1HttpCatalogWriteAdapter({
+      url: "https://proxy.example.test", token: "secret", fetch: async (_input, init) => {
+        calls.push(String(init?.body));
+        return new Response(JSON.stringify({ success: true }), { status: 200 });
+      },
+    });
+
+    await expect(writer.seedDemoAccount()).resolves.toBeUndefined();
+    expect(JSON.parse(calls[0] ?? "{}")).toEqual({ kind: "demo-account" });
+  });
+
   it("reports a failed remote chunk and propagates HTTP errors", async () => {
     const kinds: string[] = [];
     const writer = new D1HttpCatalogWriteAdapter({

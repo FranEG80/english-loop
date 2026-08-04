@@ -49,6 +49,7 @@ export interface PersistenceBundle {
   taxonomyCatalog: TaxonomyCatalogPort;
   catalogMetadata: CatalogMetadataPort;
   databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
+  demoCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
   catalogWritePort: CatalogWritePort | null;
   databaseHealth: () => Promise<boolean>;
   attemptRateLimiter: RateLimiterPort | null;
@@ -70,6 +71,7 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
     if (!transport) throw new Error("D1 persistence requires a configured D1 transport");
     const coordinator = new D1TransactionCoordinator(transport);
     const catalog = new D1CatalogAdapter(transport);
+    const demoCatalog = new D1CatalogAdapter(transport, { includeDemo: true });
     return {
       unitOfWork: new D1UnitOfWorkAdapter(coordinator),
       userSettingsRepository: new D1UserSettingsRepository(coordinator),
@@ -85,6 +87,7 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
       taxonomyCatalog: catalog,
       catalogMetadata: catalog,
       databaseCatalog: catalog,
+      demoCatalog,
       catalogWritePort: options.binding?.DB
         ? new D1CatalogWriteAdapter(options.binding.DB)
         : options.config.d1HttpUrl && options.config.d1HttpToken
@@ -97,6 +100,7 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
   }
 
   const catalog = new PrismaCatalogAdapter(options.prisma);
+  const demoCatalog = new PrismaCatalogAdapter(options.prisma, { includeDemo: true });
   return {
     unitOfWork: new PrismaUnitOfWorkAdapter(options.prisma, options.config.prismaTransactionRetryMax),
     userSettingsRepository: new PrismaUserSettingsRepository(options.prisma),
@@ -112,6 +116,7 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
     taxonomyCatalog: catalog,
     catalogMetadata: catalog,
     databaseCatalog: catalog,
+    demoCatalog,
     catalogWritePort: null,
     databaseHealth: async () => {
       try {

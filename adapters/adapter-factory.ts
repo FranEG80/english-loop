@@ -20,7 +20,6 @@ import { focusedPracticeRestAdapter } from "./rest/focused-practice-rest-adapter
 import { progressRestAdapter } from "./rest/progress-rest-adapter";
 import { settingsRestAdapter } from "./rest/settings-rest-adapter";
 import { localeCookiePortAdapter } from "./browser/locale-port-adapter";
-import { mockAuthUser } from "./mock/data/auth";
 
 type DataSource = "mock" | "rest";
 
@@ -38,23 +37,6 @@ function getDataSource(): DataSource {
 
 export function getAuthPort(): AuthPort {
   return typeof window === "undefined" ? authServerAdapter : authRestAdapter;
-}
-
-/** Puertos de solo lectura para la experiencia de demostración anónima. */
-export function getDemoSession(): typeof mockAuthUser {
-  return mockAuthUser;
-}
-
-export function getDemoLearningContentPort(): LearningContentPort {
-  return learningContentMockAdapter;
-}
-
-export function getDemoDailySessionPort(): DailySessionPort {
-  return dailySessionMockAdapter;
-}
-
-export function getDemoProgressPort(): ProgressPort {
-  return progressMockAdapter;
 }
 
 export function getLearningContentPort(): LearningContentPort {

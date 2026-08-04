@@ -72,7 +72,7 @@ const activitySchema = z.object({
 }).passthrough();
 
 const chunkSchema = z.object({
-  kind: z.enum(["start", "references", "taxonomy", "lessons", "activities", "publish", "fail"]),
+  kind: z.enum(["start", "references", "taxonomy", "lessons", "activities", "publish", "fail", "demo-account"]),
   datasetVersion: z.string().optional(),
   checksum: z.string().optional(),
   releaseId: z.string().optional(),
@@ -128,6 +128,10 @@ export async function handleD1SeedHttpRequest(request: Request, options: D1SeedH
       if (!value.datasetVersion || !value.checksum || !value.counts) return jsonResponse({ error: "invalid_seed_start" }, 400);
       const session = await writer.start(value.datasetVersion, value.checksum, value.counts);
       return jsonResponse(session);
+    }
+    if (value.kind === "demo-account") {
+      await writer.seedDemoAccount();
+      return jsonResponse({ success: true });
     }
     if (!value.releaseId) return jsonResponse({ error: "missing_release" }, 400);
     if (value.kind === "publish") {

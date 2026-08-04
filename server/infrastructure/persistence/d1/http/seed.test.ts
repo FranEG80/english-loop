@@ -60,6 +60,7 @@ describe("D1 seed HTTP handler", () => {
       { kind: "activities", releaseId: "r1", chunk: activity },
       { kind: "publish", releaseId: "r1", importId: "i1", result: "{}" },
       { kind: "fail", releaseId: "r1", importId: "i1", error: "failed" },
+      { kind: "demo-account" },
     ]) {
       await expect(handleD1SeedHttpRequest(request(body), base)).resolves.toMatchObject({ status: 200 });
     }
