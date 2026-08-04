@@ -1,51 +1,69 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 82,
-    "publishedActivities": 7250,
+    "publishedLessons": 96,
+    "publishedActivities": 8950,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 71,
+    "nodeTargetsMet": 88,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 3875,
-      "B2": 3375
+      "B1": 4875,
+      "B2": 4075
     },
     "category": {
       "grammar": 4900,
-      "use-of-english": 25,
-      "vocabulary": 2325
+      "reading": 450,
+      "use-of-english": 1200,
+      "vocabulary": 2400
     },
     "topic": {
       "articles-determiners": 200,
       "b1-daily-routines-life": 100,
       "b1-education-study": 100,
       "b1-environment-weather-places": 100,
+      "b1-error-correction": 100,
       "b1-family-relationships": 100,
+      "b1-fixed-expressions": 100,
       "b1-food-cooking": 100,
       "b1-health-body": 100,
       "b1-home-services": 100,
       "b1-leisure-sport-entertainment": 100,
-      "b1-multiple-choice-cloze": 25,
+      "b1-multiple-choice-cloze": 100,
+      "b1-open-cloze": 100,
+      "b1-reading-gapped-text": 100,
+      "b1-reading-gist-detail": 100,
+      "b1-reading-notices-functional-texts": 100,
+      "b1-reading-opinion-purpose": 100,
+      "b1-reading-people-matching": 25,
+      "b1-sentence-rewriting": 100,
       "b1-shopping-clothes-money": 100,
       "b1-technology-digital-life": 100,
       "b1-travel-transport": 100,
+      "b1-word-formation": 100,
       "b1-work-jobs": 100,
+      "b2-advanced-fixed-expressions": 100,
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-climate-global-issues": 100,
-      "b2-creativity-innovation-decisions": 25,
+      "b2-creativity-innovation-decisions": 100,
       "b2-crime-justice": 100,
       "b2-education-learning": 100,
       "b2-health-psychology": 100,
+      "b2-key-word-transformations": 100,
       "b2-media-communication": 100,
       "b2-money-economics": 100,
+      "b2-multiple-choice-cloze": 100,
+      "b2-open-cloze": 100,
+      "b2-reading-gist-detail-inference": 25,
+      "b2-register-rewriting": 100,
       "b2-science-research": 100,
       "b2-society-culture-public-life": 100,
       "b2-travel-tourism-urban-life": 100,
+      "b2-word-formation": 100,
       "comparisons": 300,
       "conditionals": 250,
       "future-forms": 425,
@@ -74,28 +92,45 @@
       "b1-daily-routines-life": 100,
       "b1-education-study": 100,
       "b1-environment-weather-places": 100,
+      "b1-error-correction": 100,
       "b1-family-relationships": 100,
+      "b1-fixed-expressions": 100,
       "b1-food-cooking": 100,
       "b1-health-body": 100,
       "b1-home-services": 100,
       "b1-leisure-sport-entertainment": 100,
-      "b1-multiple-choice-cloze": 25,
+      "b1-multiple-choice-cloze": 100,
+      "b1-open-cloze": 100,
+      "b1-reading-gapped-text": 100,
+      "b1-reading-gist-detail": 100,
+      "b1-reading-notices-functional-texts": 100,
+      "b1-reading-opinion-purpose": 100,
+      "b1-reading-people-matching": 25,
+      "b1-sentence-rewriting": 100,
       "b1-shopping-clothes-money": 100,
       "b1-technology-digital-life": 100,
       "b1-travel-transport": 100,
+      "b1-word-formation": 100,
       "b1-work-jobs": 100,
+      "b2-advanced-fixed-expressions": 100,
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-climate-global-issues": 100,
-      "b2-creativity-innovation-decisions": 25,
+      "b2-creativity-innovation-decisions": 100,
       "b2-crime-justice": 100,
       "b2-education-learning": 100,
       "b2-health-psychology": 100,
+      "b2-key-word-transformations": 100,
       "b2-media-communication": 100,
       "b2-money-economics": 100,
+      "b2-multiple-choice-cloze": 100,
+      "b2-open-cloze": 100,
+      "b2-reading-gist-detail-inference": 25,
+      "b2-register-rewriting": 100,
       "b2-science-research": 100,
       "b2-society-culture-public-life": 100,
       "b2-travel-tourism-urban-life": 100,
+      "b2-word-formation": 100,
       "basic-linking-words": 100,
       "basic-verb-patterns": 100,
       "cleft-sentences-fronting": 100,
@@ -145,24 +180,35 @@
       "will-predictions": 25
     },
     "activityType": {
-      "complete_dialogue": 100,
-      "error_correction": 475,
-      "error_identification": 50,
-      "fill_blank": 1725,
-      "key_word_transformation": 25,
-      "multiple_choice_cloze": 25,
-      "multiple_select": 125,
-      "sentence_transformation": 100,
-      "single_choice": 1800,
-      "true_false": 1350,
-      "word_order": 1475
+      "collocation_choice": 50,
+      "complete_dialogue": 150,
+      "complete_paragraph": 50,
+      "error_correction": 525,
+      "error_identification": 75,
+      "fill_blank": 1925,
+      "gapped_text": 25,
+      "key_word_transformation": 75,
+      "matching": 125,
+      "multi_gap_fill": 75,
+      "multiple_choice_cloze": 150,
+      "multiple_select": 200,
+      "open_cloze": 50,
+      "phrasal_verb_choice": 50,
+      "reading_comprehension": 100,
+      "reading_matching": 75,
+      "sentence_transformation": 175,
+      "single_choice": 2000,
+      "true_false": 1450,
+      "vocabulary_in_context": 50,
+      "word_formation": 50,
+      "word_order": 1525
     },
     "difficulty": {
-      "1": 835,
-      "2": 1564,
-      "3": 1685,
-      "4": 1643,
-      "5": 1523
+      "1": 1035,
+      "2": 1916,
+      "3": 2040,
+      "4": 1998,
+      "5": 1961
     }
   },
   "targets": [
@@ -494,10 +540,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-family-relationships",
@@ -534,10 +586,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-food-cooking",
@@ -643,8 +701,8 @@
         4,
         5
       ],
-      "actualActivities": 25,
-      "actualActivityTypes": 1,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         1,
         2,
@@ -652,7 +710,7 @@
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-open-cloze",
@@ -666,10 +724,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-phrasal-everyday-actions",
@@ -768,10 +832,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-reading-gist-detail",
@@ -785,10 +855,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-reading-notices-functional-texts",
@@ -802,10 +878,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-reading-opinion-purpose",
@@ -819,10 +901,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-reading-people-matching",
@@ -836,9 +924,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 25,
+      "actualActivityTypes": 1,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -853,10 +947,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-shopping-clothes-money",
@@ -939,10 +1039,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-work-jobs",
@@ -1063,10 +1169,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-ai-digital-life",
@@ -1174,15 +1285,15 @@
         4,
         5
       ],
-      "actualActivities": 25,
-      "actualActivityTypes": 1,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         2,
         3,
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-crime-justice",
@@ -1274,10 +1385,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-media-communication",
@@ -1332,10 +1448,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-open-cloze",
@@ -1348,10 +1469,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-phrasal-attitudes-relationships",
@@ -1492,9 +1618,14 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 25,
+      "actualActivityTypes": 1,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -1524,10 +1655,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-science-research",
@@ -1603,10 +1739,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-writing-argument-cohesion",
