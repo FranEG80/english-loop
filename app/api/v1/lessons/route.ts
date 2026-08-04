@@ -15,7 +15,8 @@ export const GET = withErrorHandling(async (request: Request) => {
     throw new ValidationException("Invalid level", { level: ["Must be B1 or B2"] });
   }
 
-  const page = await listLessonsPage(compositionRoot.getLessonCatalog(), {
+  const actor = await compositionRoot.identity.getActor();
+  const page = await listLessonsPage(compositionRoot.getLessonCatalog(actor), {
     category,
     level: level as "B1" | "B2" | undefined,
     pagination: parsePublicCursorPagination(searchParams),

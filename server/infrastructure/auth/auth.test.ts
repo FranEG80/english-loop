@@ -9,6 +9,7 @@ const config = vi.hoisted(() => ({
   authSessionExpiresInSeconds: 3600,
   authSessionUpdateAgeSeconds: 600,
   authCookieCacheMaxAgeSeconds: 300,
+  authCookieSecure: false,
   databaseProvider: "sqlite",
   d1Transport: "binding",
   d1HttpUrl: null,
@@ -38,6 +39,17 @@ describe("Better Auth configuration boundary", () => {
       secret: "test-secret",
       baseURL: "https://english-loop.test",
       emailAndPassword: { enabled: true },
+      user: {
+        additionalFields: {
+          isDemo: {
+            type: "boolean",
+            required: false,
+            defaultValue: false,
+            input: false,
+            returned: true,
+          },
+        },
+      },
       session: {
         expiresIn: 3600,
         updateAge: 600,

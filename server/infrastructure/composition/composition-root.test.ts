@@ -103,6 +103,21 @@ describe("CompositionRoot wiring", () => {
     expect(root.getCatalogMetadata()).toBe(root.getCatalogMetadata());
     expect(root.getCatalogWritePort()).toBeTruthy();
     await expect(root.getDatasetVersion()).resolves.toBe("0.1.0");
+
+    const demoActor = {
+      userId: "user-demo",
+      name: "Alex",
+      email: "demo@englishloop.local",
+      isDemo: true,
+      activeLevels: ["B1" as const],
+    };
+    const demoCatalog = root.getLessonCatalog(demoActor);
+    expect(demoCatalog).toBe(root.getActivityCatalog(demoActor));
+    expect(demoCatalog).toBe(root.getTaxonomyCatalog(demoActor));
+    expect(demoCatalog).toBe(root.getCatalogMetadata(demoActor));
+    expect(demoCatalog).not.toBe(root.getLessonCatalog());
+    await expect(root.getDatasetVersion(demoActor)).resolves.toBe("db-0.1.0");
+
     await expect(root.checkDatabase()).resolves.toBe(true);
     await expect(root.checkCatalog()).resolves.toBe(true);
     expect(root.checkAuth()).toBe(true);

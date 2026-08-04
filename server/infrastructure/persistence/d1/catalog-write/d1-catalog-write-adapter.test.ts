@@ -61,6 +61,14 @@ describe("D1CatalogWriteAdapter", () => {
     expect(fake.batches).toHaveLength(0);
   });
 
+  it("seeds a credential account for the demo user", async () => {
+    const fake = database();
+    await new D1CatalogWriteAdapter(fake.db).seedDemoAccount();
+
+    expect(fake.queries).toContain("DELETE FROM Account WHERE userId = ? AND providerId = 'credential'");
+    expect(fake.queries.some((query) => query.includes("INSERT INTO Account"))).toBe(true);
+  });
+
   it("restarts preparing releases and handles no-op/failure paths", async () => {
     const preparing = database({ id: "release-preparing", status: "preparing" });
     const adapter = new D1CatalogWriteAdapter(preparing.db);

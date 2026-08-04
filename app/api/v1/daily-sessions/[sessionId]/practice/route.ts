@@ -6,16 +6,16 @@ import { toDailySessionDto } from "@/core/learning/application/mappers/daily-ses
 
 export const POST = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ sessionId: string }> }) => {
-    await compositionRoot.identity.requireActor();
+    const actor = await compositionRoot.identity.requireActor();
     const { sessionId } = await context.params;
-    const datasetVersion = await compositionRoot.getDatasetVersion();
+    const datasetVersion = await compositionRoot.getDatasetVersion(actor);
     const { run } = await startDailyPractice(
       compositionRoot.identity,
       compositionRoot.unitOfWork,
       compositionRoot.dailySessionRepository,
       compositionRoot.practiceRunRepository,
       compositionRoot.userSettingsRepository,
-      compositionRoot.getActivityCatalog(),
+      compositionRoot.getActivityCatalog(actor),
       compositionRoot.dailyPracticePlanner,
       compositionRoot.idGenerator,
       compositionRoot.clock,

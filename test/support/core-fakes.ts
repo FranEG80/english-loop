@@ -20,7 +20,7 @@ import type { ReviewRepository } from "@/core/progress/ports/review-repository";
 import type { ReviewItem } from "@/core/progress/domain/review-item";
 import type { DomainEvent, UnitOfWorkPort } from "@/core/shared/kernel";
 
-export const actor: Actor = { userId: "user-1", name: "Test", email: "test@example.com", activeLevels: ["B1", "B2"] };
+export const actor: Actor = { userId: "user-1", name: "Test", email: "test@example.com", isDemo: false, activeLevels: ["B1", "B2"] };
 export const identity: IdentityPort = { getActor: async () => actor, requireActor: async () => actor };
 export const clock = { now: () => new Date("2026-08-03T22:00:00.000Z"), nowIso: () => "2026-08-03T22:00:00.000Z" };
 export const random = { int: (max: number) => { void max; return 0; }, float: () => 0, shuffle: <T>(items: readonly T[]) => [...items] };

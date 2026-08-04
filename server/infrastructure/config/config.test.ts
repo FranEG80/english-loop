@@ -25,6 +25,7 @@ describe("loadConfig", () => {
       d1HttpToken: null,
       betterAuthSecret: "dev-secret",
       betterAuthUrl: "http://localhost:3000",
+      authCookieSecure: false,
       nodeEnv: "development",
     });
   });
@@ -86,6 +87,7 @@ describe("loadConfig", () => {
       AUTH_SESSION_EXPIRES_IN_SECONDS: "3600",
       AUTH_SESSION_UPDATE_AGE_SECONDS: "900",
       AUTH_COOKIE_CACHE_MAX_AGE_SECONDS: "120",
+      AUTH_COOKIE_SECURE: "true",
       ATTEMPT_RATE_LIMIT_WINDOW_MS: "30000",
       ATTEMPT_RATE_LIMIT_MAX: "12",
       AUTH_RATE_LIMIT_WINDOW_MS: "15000",
@@ -97,6 +99,7 @@ describe("loadConfig", () => {
       authSessionExpiresInSeconds: 3600,
       authSessionUpdateAgeSeconds: 900,
       authCookieCacheMaxAgeSeconds: 120,
+      authCookieSecure: true,
       attemptRateLimitWindowMs: 30000,
       attemptRateLimitMax: 12,
       authRateLimitWindowMs: 15000,
@@ -114,6 +117,8 @@ describe("loadConfig", () => {
     expect(() => loadConfig()).toThrow("AUTH_RATE_LIMIT_MAX must be a positive integer");
     process.env = { ...process.env, AUTH_RATE_LIMIT_MAX: "10", PRISMA_TRANSACTION_RETRY_MAX: "-1" };
     expect(() => loadConfig()).toThrow("PRISMA_TRANSACTION_RETRY_MAX must be a non-negative integer");
+    process.env = { ...process.env, PRISMA_TRANSACTION_RETRY_MAX: "2", AUTH_COOKIE_SECURE: "yes" };
+    expect(() => loadConfig()).toThrow("AUTH_COOKIE_SECURE must be true or false");
   });
 
   it("validates public pagination limits", () => {

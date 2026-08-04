@@ -14,6 +14,7 @@ vi.mock("next/navigation", () => ({ redirect: vi.fn((path: string) => { throw ne
 
 import {
   changePasswordAction,
+  loginDemoAction,
   loginAction,
   logoutAction,
   registerAction,
@@ -21,6 +22,14 @@ import {
 } from "./actions";
 
 describe("auth server actions", () => {
+  it("opens the seeded demo account and redirects to the workspace", async () => {
+    await expect(loginDemoAction()).rejects.toMatchObject({ message: "REDIRECT:/" });
+    expect(authPort.login).toHaveBeenCalledWith({
+      email: "demo@englishloop.local",
+      password: "EnglishLoop-demo-2026!",
+    });
+  });
+
   it("returns adapter errors instead of throwing", async () => {
     authPort.login.mockRejectedValueOnce(new Error("invalid credentials"));
     const result = await loginAction(undefined, new FormData());

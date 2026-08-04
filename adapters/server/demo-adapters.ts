@@ -1,6 +1,5 @@
 import "server-only";
 import type {
-  ActivityQuestionDto,
   AuthSession,
   DailySessionDto,
   ProgressOverviewDto,
@@ -26,6 +25,7 @@ export const demoSession: AuthSession = {
   userId: DEMO_USER_ID,
   name: DEMO_USER_NAME,
   email: DEMO_USER_EMAIL,
+  isDemo: true,
   activeLevels: [...DEMO_USER_ACTIVE_LEVELS],
 };
 

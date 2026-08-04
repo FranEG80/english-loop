@@ -6,6 +6,7 @@ export interface AuthSession {
   userId: UserId;
   name: string;
   email: string;
+  isDemo: boolean;
   activeLevels: CefrLevel[];
 }
 

@@ -15,7 +15,7 @@ vi.mock("next/headers", () => ({ headers: requestHeaders }));
 
 import { authServerAdapter } from "./auth-server-adapter";
 
-const user = { id: "u1", name: "User", email: "u@example.com" };
+const user = { id: "u1", name: "User", email: "u@example.com", isDemo: true };
 
 describe("authServerAdapter", () => {
   beforeEach(() => {
@@ -31,6 +31,7 @@ describe("authServerAdapter", () => {
   it("maps the Better Auth session and delegates account operations", async () => {
     await expect(authServerAdapter.getSession()).resolves.toMatchObject({
       userId: "u1",
+      isDemo: true,
       activeLevels: ["B1"],
     });
     await expect(authServerAdapter.login({ email: user.email, password: "secret" })).resolves.toMatchObject({ email: user.email });

@@ -8,6 +8,8 @@
 export const DEMO_USER_ID = "user-demo";
 export const DEMO_USER_EMAIL = "demo@englishloop.local";
 export const DEMO_USER_NAME = "Alex";
+/** Credencial pública usada exclusivamente para abrir la cuenta demo compartida. */
+export const DEMO_USER_PASSWORD = "EnglishLoop-demo-2026!";
 export const DEMO_USER_ACTIVE_LEVELS = ["B1", "B2"] as const;
 export const DEMO_DAILY_GOAL_ACTIVITIES = 3;
 

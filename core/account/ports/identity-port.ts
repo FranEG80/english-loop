@@ -5,6 +5,7 @@ export interface Actor {
   userId: string;
   name: string;
   email: string;
+  isDemo: boolean;
   activeLevels: CefrLevel[];
 }
 

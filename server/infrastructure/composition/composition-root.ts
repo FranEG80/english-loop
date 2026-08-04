@@ -23,6 +23,7 @@ import { config } from "@/server/infrastructure/config/config";
 import type { RateLimiterPort, UnitOfWorkPort } from "@/core/shared/kernel";
 import type { UserSettingsRepository } from "@/core/account/ports/user-settings-repository";
 import type { SavedLessonRepository } from "@/core/account/ports/saved-lesson-repository";
+import type { Actor } from "@/core/account/ports/identity-port";
 import type { AttemptRepository } from "@/core/practice/ports/attempt-repository";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import type { ProgressRepository } from "@/core/progress/ports/progress-repository";
@@ -137,7 +138,8 @@ export class CompositionRoot {
     return new PrismaCatalogWriteAdapter(prisma);
   }
 
-  getLessonCatalog(): LessonCatalogPort & LessonCatalogPagePort {
+  getLessonCatalog(actor: Actor | null = null): LessonCatalogPort & LessonCatalogPagePort {
+    if (actor?.isDemo) return this.demoCatalog;
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.lessonCatalog) {
       this.lessonCatalog = new FileLessonCatalogAdapter(DATASET_ROOT);
@@ -145,7 +147,8 @@ export class CompositionRoot {
     return this.lessonCatalog;
   }
 
-  getActivityCatalog(): ActivityCatalogPort & ActivityCatalogPagePort {
+  getActivityCatalog(actor: Actor | null = null): ActivityCatalogPort & ActivityCatalogPagePort {
+    if (actor?.isDemo) return this.demoCatalog;
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.activityCatalog) {
       this.activityCatalog = new FileActivityCatalogAdapter(DATASET_ROOT);
@@ -153,7 +156,8 @@ export class CompositionRoot {
     return this.activityCatalog;
   }
 
-  getTaxonomyCatalog(): TaxonomyCatalogPort {
+  getTaxonomyCatalog(actor: Actor | null = null): TaxonomyCatalogPort {
+    if (actor?.isDemo) return this.demoCatalog;
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.taxonomyCatalog) {
       this.taxonomyCatalog = new FileTaxonomyCatalogAdapter(
@@ -164,7 +168,8 @@ export class CompositionRoot {
     return this.taxonomyCatalog;
   }
 
-  getCatalogMetadata(): CatalogMetadataPort {
+  getCatalogMetadata(actor: Actor | null = null): CatalogMetadataPort {
+    if (actor?.isDemo) return this.demoCatalog;
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.catalogMetadata) {
       this.catalogMetadata = new FileCatalogMetadataAdapter(DATASET_ROOT);
@@ -172,7 +177,10 @@ export class CompositionRoot {
     return this.catalogMetadata;
   }
 
-  async getDatasetVersion(): Promise<string> {
+  async getDatasetVersion(actor: Actor | null = null): Promise<string> {
+    if (actor?.isDemo) {
+      return (await this.demoCatalog.getContentVersion()).datasetVersion;
+    }
     if (config.contentSource === "database") {
       return (await this.getDatabaseCatalog().getContentVersion()).datasetVersion;
     }

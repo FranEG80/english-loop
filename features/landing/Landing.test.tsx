@@ -6,6 +6,7 @@ import { Landing } from "./Landing";
 
 vi.mock("next/image", () => ({ default: ({ alt = "", ...props }: Record<string, unknown>) => <img {...props} alt={String(alt)} /> }));
 vi.mock("@/shared/layout/Mascot", () => ({ Mascot: () => <span aria-hidden="true" /> }));
+vi.mock("@/features/auth/actions", () => ({ loginDemoAction: vi.fn() }));
 
 describe("Landing", () => {
   it("renders localized hero calls to action", () => {
@@ -13,5 +14,6 @@ describe("Landing", () => {
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Keep your English");
     expect(screen.getAllByRole("link", { name: en.landing.heroCtaPrimary })[0]).toHaveAttribute("href", "/register");
     expect(screen.getByRole("link", { name: en.landing.heroCtaSecondary })).toHaveAttribute("href", "/login");
+    expect(screen.getByRole("button", { name: en.landing.demoCta })).toHaveAttribute("type", "submit");
   });
 });

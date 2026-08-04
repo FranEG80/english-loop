@@ -13,6 +13,7 @@ interface BetterAuthUser {
   id: string;
   name: string;
   email: string;
+  isDemo?: boolean | null;
 }
 
 interface BetterAuthSessionResponse {
@@ -35,6 +36,7 @@ function toAuthSession(response: BetterAuthSessionResponse | null): AuthSession 
     userId: response.user.id,
     name: response.user.name,
     email: response.user.email,
+    isDemo: Boolean(response.user.isDemo),
     activeLevels: [DEFAULT_CEFR_LEVEL],
   };
 }

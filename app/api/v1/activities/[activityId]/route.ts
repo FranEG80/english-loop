@@ -8,8 +8,9 @@ import { ResourceNotFoundException } from "@/core/shared/exceptions";
 export const GET = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ activityId: string }> }) => {
     const { activityId } = await context.params;
+    const actor = await compositionRoot.identity.getActor();
     const activity = await getActivity(
-      compositionRoot.getActivityCatalog(),
+      compositionRoot.getActivityCatalog(actor),
       activityId,
     );
     if (!activity) {

@@ -16,7 +16,8 @@ export const GET = withErrorHandling(async (request: Request) => {
     throw new ValidationException("Invalid level", { level: ["Must be B1, B2 or both"] });
   }
 
-  const page = await listActivitiesPage(compositionRoot.getActivityCatalog(), {
+  const actor = await compositionRoot.identity.getActor();
+  const page = await listActivitiesPage(compositionRoot.getActivityCatalog(actor), {
     taxonomyNodeId,
     level: level as "B1" | "B2" | "both" | undefined,
     lessonIds: lessonIds.length > 0 ? lessonIds : undefined,

@@ -4,6 +4,7 @@ export const mockAuthUser: AuthSession = {
   userId: "user-mock-1",
   name: "Alex",
   email: "alex@example.com",
+  isDemo: false,
   activeLevels: ["B1", "B2"],
 };
 

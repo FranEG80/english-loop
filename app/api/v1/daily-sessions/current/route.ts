@@ -6,14 +6,14 @@ import { toDailySessionDto } from "@/core/learning/application/mappers/daily-ses
 import { dailySessionBodySchema, parseRequest } from "@/server/infrastructure/http/request-schemas";
 
 export const PUT = withErrorHandling(async (request: Request) => {
-  await compositionRoot.identity.requireActor();
+  const actor = await compositionRoot.identity.requireActor();
   const body = parseRequest(dailySessionBodySchema.safeParse(await request.json()));
-  const datasetVersion = await compositionRoot.getDatasetVersion();
+  const datasetVersion = await compositionRoot.getDatasetVersion(actor);
   const session = await getOrCreateDailySession(
     compositionRoot.identity,
     compositionRoot.dailySessionRepository,
     compositionRoot.userSettingsRepository,
-    compositionRoot.getLessonCatalog(),
+    compositionRoot.getLessonCatalog(actor),
     compositionRoot.lessonProgressRepository,
     compositionRoot.dailySessionPlanner,
     compositionRoot.idGenerator,

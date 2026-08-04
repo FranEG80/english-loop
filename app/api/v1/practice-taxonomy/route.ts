@@ -5,6 +5,7 @@ import { getTaxonomyTree } from "@/core/content/application/use-cases/get-taxono
 import { toTaxonomyNodeDto } from "@/core/content/application/mappers/taxonomy-mapper";
 
 export const GET = withErrorHandling(async () => {
-  const tree = await getTaxonomyTree(compositionRoot.getTaxonomyCatalog());
+  const actor = await compositionRoot.identity.getActor();
+  const tree = await getTaxonomyTree(compositionRoot.getTaxonomyCatalog(actor));
   return NextResponse.json(tree.map(toTaxonomyNodeDto));
 });

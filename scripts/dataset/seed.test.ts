@@ -1,5 +1,10 @@
-import { describe, expect, it } from "vitest";
-import { buildCatalogSeedInput } from "./seed";
+import { describe, expect, it, vi } from "vitest";
+
+const hashPassword = vi.hoisted(() => vi.fn(async () => "hashed-demo-password"));
+vi.mock("better-auth/crypto", () => ({ hashPassword }));
+
+import { buildCatalogSeedInput, seedDemoAccount } from "./seed";
+import type { CatalogSeedInput } from "@/core/content/ports/catalog-write-port";
 import type { LoadedDataset } from "./lib/types";
 
 describe("dataset seed mapping", () => {
@@ -102,5 +107,43 @@ describe("dataset seed mapping", () => {
     }]);
     expect(input.datasetVersion).toBe("2026.08");
     expect(input.checksum).toMatch(/^[a-f0-9]{64}$/);
+  });
+
+  it("seeds a Better Auth credential for the demo user", async () => {
+    const transaction = {
+      userLessonProgress: { deleteMany: vi.fn(), create: vi.fn() },
+      userActivityProgress: { deleteMany: vi.fn(), create: vi.fn() },
+      taxonomyProgress: { deleteMany: vi.fn(), create: vi.fn() },
+      reviewItem: { deleteMany: vi.fn(), create: vi.fn() },
+    };
+    const prisma = {
+      user: { upsert: vi.fn(async () => ({ id: "user-demo" })) },
+      userSettings: { upsert: vi.fn() },
+      account: { deleteMany: vi.fn(), create: vi.fn() },
+      activityVersion: { findMany: vi.fn(async () => []) },
+      $transaction: vi.fn(async (work: (tx: typeof transaction) => Promise<void>) => work(transaction)),
+    };
+    const input: CatalogSeedInput = {
+      datasetVersion: "v1",
+      checksum: "checksum",
+      taxonomy: [],
+      lessons: [],
+      activities: [],
+    };
+
+    await seedDemoAccount(prisma as never, input, null);
+
+    expect(hashPassword).toHaveBeenCalledWith("EnglishLoop-demo-2026!");
+    expect(prisma.account.deleteMany).toHaveBeenCalledWith({
+      where: { userId: "user-demo", providerId: "credential" },
+    });
+    expect(prisma.account.create).toHaveBeenCalledWith({
+      data: {
+        accountId: "user-demo",
+        providerId: "credential",
+        password: "hashed-demo-password",
+        userId: "user-demo",
+      },
+    });
   });
 });

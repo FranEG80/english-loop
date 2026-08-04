@@ -1,4 +1,6 @@
+import { hashPassword } from "better-auth/crypto";
 import type { CatalogWritePort, CatalogSeedInput, CatalogSeedResult } from "@/core/content/ports/catalog-write-port";
+import { DEMO_USER_PASSWORD } from "@/core/content/domain/demo-fixture";
 import type { D1DatabaseLike, D1Result } from "../types/binding";
 import { CATALOG_IMPORT_FAILED, CATALOG_IMPORT_STARTED, CATALOG_RELEASE_PREPARING, D1_CATALOG_BATCH_SIZE } from "./constants";
 import { activityStatements } from "./activity-statements";
@@ -94,7 +96,8 @@ export class D1CatalogWriteAdapter implements CatalogWritePort {
   }
 
   async seedDemoAccount(): Promise<void> {
-    await this.runBatches(demoAccountStatements(this.database));
+    const passwordHash = await hashPassword(DEMO_USER_PASSWORD);
+    await this.runBatches(demoAccountStatements(this.database, passwordHash));
   }
 
   private async run(statementToRun: ReturnType<typeof statement>): Promise<D1Result> {

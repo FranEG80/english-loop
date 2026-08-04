@@ -11,8 +11,8 @@ describe("BetterAuthIdentityAdapter", () => {
   beforeEach(() => getSession.mockReset());
 
   it("translates an external session into the core actor", async () => {
-    getSession.mockResolvedValue({ user: { id: "u1", name: "User", email: "u@example.com" } });
-    await expect(new BetterAuthIdentityAdapter().getActor()).resolves.toEqual({ userId: "u1", name: "User", email: "u@example.com", activeLevels: ["B1"] });
+    getSession.mockResolvedValue({ user: { id: "u1", name: "User", email: "u@example.com", isDemo: true } });
+    await expect(new BetterAuthIdentityAdapter().getActor()).resolves.toEqual({ userId: "u1", name: "User", email: "u@example.com", isDemo: true, activeLevels: ["B1"] });
     expect(getSession).toHaveBeenCalledOnce();
   });
 

@@ -17,12 +17,13 @@ export interface DailySessionInput {
 /** Server Action para obtener/crear la sesión diaria. */
 export async function getOrCreateDailySessionAction(input: DailySessionInput = {}) {
   const timezone = input.timezone ?? "UTC";
-  const datasetVersion = await compositionRoot.getDatasetVersion();
+  const actor = await compositionRoot.identity.requireActor();
+  const datasetVersion = await compositionRoot.getDatasetVersion(actor);
   const session = await getOrCreateDailySession(
     compositionRoot.identity,
     compositionRoot.dailySessionRepository,
     compositionRoot.userSettingsRepository,
-    compositionRoot.getLessonCatalog(),
+    compositionRoot.getLessonCatalog(actor),
     compositionRoot.lessonProgressRepository,
     compositionRoot.dailySessionPlanner,
     compositionRoot.idGenerator,
@@ -39,14 +40,15 @@ export async function getOrCreateDailySessionAction(input: DailySessionInput = {
 }
 
 export async function startDailyPracticeAction(sessionId: string) {
-  const datasetVersion = await compositionRoot.getDatasetVersion();
+  const actor = await compositionRoot.identity.requireActor();
+  const datasetVersion = await compositionRoot.getDatasetVersion(actor);
   const { run } = await startDailyPractice(
     compositionRoot.identity,
     compositionRoot.unitOfWork,
     compositionRoot.dailySessionRepository,
     compositionRoot.practiceRunRepository,
     compositionRoot.userSettingsRepository,
-    compositionRoot.getActivityCatalog(),
+    compositionRoot.getActivityCatalog(actor),
     compositionRoot.dailyPracticePlanner,
     compositionRoot.idGenerator,
     compositionRoot.clock,

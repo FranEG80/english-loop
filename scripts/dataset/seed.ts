@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { hashPassword } from "better-auth/crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { PrismaClient } from "@/generated/prisma/client";
@@ -17,12 +18,12 @@ import { loadConfig } from "@/server/infrastructure/config/config-core";
 import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructure/database/prisma-adapter-factory";
 import { D1HttpCatalogWriteAdapter } from "@/server/infrastructure/persistence/d1/catalog-write";
 import {
-  DEMO_LESSON_IDS,
   DEMO_PROGRESS_ACTIVITY_LIMIT,
   DEMO_USER_ACTIVE_LEVELS,
   DEMO_USER_EMAIL,
   DEMO_USER_ID,
   DEMO_USER_NAME,
+  DEMO_USER_PASSWORD,
   isDemoActivityId,
   isDemoLessonId,
 } from "@/core/content/domain/demo-fixture";
@@ -197,7 +198,7 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
   }
 }
 
-async function seedDemoAccount(
+export async function seedDemoAccount(
   prisma: PrismaClient,
   input: CatalogSeedInput,
   releaseId: string | null,
@@ -231,6 +232,18 @@ async function seedDemoAccount(
       dailyGoalLessons: 1,
       dailyGoalActivities: 3,
       timezone: "UTC",
+    },
+  });
+  const passwordHash = await hashPassword(DEMO_USER_PASSWORD);
+  await prisma.account.deleteMany({
+    where: { userId: demoUser.id, providerId: "credential" },
+  });
+  await prisma.account.create({
+    data: {
+      accountId: demoUser.id,
+      providerId: "credential",
+      password: passwordHash,
+      userId: demoUser.id,
     },
   });
 

@@ -7,10 +7,10 @@ describe("authRestAdapter", () => {
   it("maps sessions and calls the Better Auth endpoints", async () => {
     const fetchMock = vi.fn(async (...args: Parameters<typeof fetch>) => {
       void args;
-      return new Response(JSON.stringify({ user: { id: "u1", name: "User", email: "u@example.com" } }), { status: 200, headers: { "Content-Type": "application/json" } });
+      return new Response(JSON.stringify({ user: { id: "u1", name: "User", email: "u@example.com", isDemo: true } }), { status: 200, headers: { "Content-Type": "application/json" } });
     });
     vi.stubGlobal("fetch", fetchMock);
-    expect((await authRestAdapter.getSession())?.userId).toBe("u1");
+    expect(await authRestAdapter.getSession()).toMatchObject({ userId: "u1", isDemo: true });
     await authRestAdapter.login({ email: "u@example.com", password: "secret" });
     await authRestAdapter.register({ name: "User", email: "u@example.com", password: "secret" });
     await authRestAdapter.updateProfile({ name: "Updated User" });

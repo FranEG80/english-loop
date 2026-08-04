@@ -16,10 +16,11 @@ export const GET = withErrorHandling(
     const levels: CefrLevelFilter[] = requested
       ? [requested as CefrLevelFilter]
       : ["B1", "B2", "both"];
+    const actor = await compositionRoot.identity.getActor();
     const availability = await Promise.all(
       levels.map((level) => getScopeAvailability(
-        compositionRoot.getActivityCatalog(),
-        compositionRoot.getTaxonomyCatalog(),
+        compositionRoot.getActivityCatalog(actor),
+        compositionRoot.getTaxonomyCatalog(actor),
         nodeId,
         level,
       )),

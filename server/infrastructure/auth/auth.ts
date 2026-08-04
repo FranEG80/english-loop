@@ -36,6 +36,17 @@ export function createAuth(options: AuthRuntimeOptions = {}) {
     emailAndPassword: {
       enabled: true,
     },
+    user: {
+      additionalFields: {
+        isDemo: {
+          type: "boolean",
+          required: false,
+          defaultValue: false,
+          input: false,
+          returned: true,
+        },
+      },
+    },
     session: {
       expiresIn: config.authSessionExpiresInSeconds,
       updateAge: config.authSessionUpdateAgeSeconds,
@@ -49,7 +60,7 @@ export function createAuth(options: AuthRuntimeOptions = {}) {
       defaultCookieAttributes: {
         httpOnly: true,
         sameSite: "lax",
-        secure: config.nodeEnv === "production",
+        secure: config.authCookieSecure,
       },
     },
     ...(options.plugins ? { plugins: options.plugins } : {}),

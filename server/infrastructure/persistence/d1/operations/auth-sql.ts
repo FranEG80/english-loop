@@ -4,7 +4,7 @@ import { d1Value } from "./values";
 import { bind, type PreparedOperation } from "./shared";
 
 const AUTH_FIELDS: Record<D1AuthModel, readonly string[]> = {
-  user: ["id", "name", "email", "emailVerified", "image", "createdAt", "updatedAt"],
+  user: ["id", "name", "email", "emailVerified", "image", "isDemo", "createdAt", "updatedAt"],
   session: ["id", "expiresAt", "token", "createdAt", "updatedAt", "ipAddress", "userAgent", "userId"],
   account: ["id", "accountId", "providerId", "accessToken", "refreshToken", "idToken", "accessTokenExpiresAt", "refreshTokenExpiresAt", "scope", "password", "createdAt", "updatedAt", "userId"],
   verification: ["id", "identifier", "value", "expiresAt", "createdAt", "updatedAt"],

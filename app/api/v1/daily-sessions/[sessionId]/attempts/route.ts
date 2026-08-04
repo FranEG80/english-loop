@@ -9,10 +9,9 @@ import { CONTENT_SCHEMA_VERSION } from "@/core/content/domain/content-version";
 
 export const POST = withErrorHandling(
   async (request: Request, context: { params: Promise<{ sessionId: string }> }) => {
-    await compositionRoot.identity.requireActor();
+    const actor = await compositionRoot.identity.requireActor();
     const { sessionId } = await context.params;
     const body = parseRequest(attemptBodySchema.safeParse(await request.json()));
-    const actor = await compositionRoot.identity.requireActor();
     if (await compositionRoot.attemptRateLimiter.isLimited(`attempt:${actor.userId}`)) {
       return NextResponse.json(
         {
@@ -38,10 +37,10 @@ export const POST = withErrorHandling(
       compositionRoot.unitOfWork,
       compositionRoot.attemptRepository,
       compositionRoot.practiceRunRepository,
-      compositionRoot.getActivityCatalog(),
+      compositionRoot.getActivityCatalog(actor),
       compositionRoot.progressRepository,
       compositionRoot.reviewRepository,
-      compositionRoot.getTaxonomyCatalog(),
+      compositionRoot.getTaxonomyCatalog(actor),
       compositionRoot.idGenerator,
       compositionRoot.clock,
       compositionRoot.domainEventDispatcher,
@@ -51,7 +50,7 @@ export const POST = withErrorHandling(
     );
     return NextResponse.json(
       await getAttemptFeedback(
-        compositionRoot.getActivityCatalog(),
+        compositionRoot.getActivityCatalog(actor),
         attempt,
         compositionRoot.reviewRepository,
       ),

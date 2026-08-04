@@ -18,12 +18,13 @@ export interface CreateRunInput {
 
 /** Server Action para crear un run de práctica dirigida. */
 export async function createPracticeRunAction(input: CreateRunInput) {
-  const datasetVersion = await compositionRoot.getDatasetVersion();
+  const actor = await compositionRoot.identity.requireActor();
+  const datasetVersion = await compositionRoot.getDatasetVersion(actor);
   const { run } = await createFocusedPracticeRun(
     compositionRoot.identity,
     compositionRoot.practiceRunRepository,
-    compositionRoot.getActivityCatalog(),
-    compositionRoot.getTaxonomyCatalog(),
+    compositionRoot.getActivityCatalog(actor),
+    compositionRoot.getTaxonomyCatalog(actor),
     compositionRoot.practiceRunPlanner,
     compositionRoot.idGenerator,
     compositionRoot.clock,
@@ -44,15 +45,17 @@ export interface SubmitAttemptInput {
 
 /** Server Action para enviar un intento. */
 export async function submitAttemptAction(input: SubmitAttemptInput) {
+  const actor = await compositionRoot.identity.requireActor();
+  const activityCatalog = compositionRoot.getActivityCatalog(actor);
   const { attempt } = await submitAttemptTransaction(
     compositionRoot.identity,
     compositionRoot.unitOfWork,
     compositionRoot.attemptRepository,
     compositionRoot.practiceRunRepository,
-    compositionRoot.getActivityCatalog(),
+    activityCatalog,
     compositionRoot.progressRepository,
     compositionRoot.reviewRepository,
-    compositionRoot.getTaxonomyCatalog(),
+    compositionRoot.getTaxonomyCatalog(actor),
     compositionRoot.idGenerator,
     compositionRoot.clock,
     compositionRoot.domainEventDispatcher,
@@ -65,5 +68,5 @@ export async function submitAttemptAction(input: SubmitAttemptInput) {
     },
     { dailySessionRepository: compositionRoot.dailySessionRepository, metrics: compositionRoot.metrics },
   );
-  return getAttemptFeedback(compositionRoot.getActivityCatalog(), attempt, compositionRoot.reviewRepository);
+  return getAttemptFeedback(activityCatalog, attempt, compositionRoot.reviewRepository);
 }

@@ -8,7 +8,8 @@ import { ResourceNotFoundException } from "@/core/shared/exceptions";
 export const GET = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ lessonId: string }> }) => {
     const { lessonId } = await context.params;
-    const lesson = await getLesson(compositionRoot.getLessonCatalog(), lessonId);
+    const actor = await compositionRoot.identity.getActor();
+    const lesson = await getLesson(compositionRoot.getLessonCatalog(actor), lessonId);
     if (!lesson) {
       throw new ResourceNotFoundException(
         `Lesson not found: ${lessonId}`,

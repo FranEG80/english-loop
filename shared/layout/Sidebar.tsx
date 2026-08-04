@@ -12,11 +12,9 @@ import { LogoutButton } from "./LogoutButton";
 export function Sidebar({
   dictionary,
   session,
-  demo = false,
 }: {
   dictionary: Dictionary;
   session: AuthSession;
-  demo?: boolean;
 }) {
   const pathname = usePathname();
 
@@ -44,29 +42,28 @@ export function Sidebar({
         </Link>
         <div className="flex flex-col gap-1.5">
           {WORKSPACE_NAV_ITEMS.map(({ href, labelKey, Icon }) => {
-        const targetHref = demo ? "/demo" : href;
-        const isActive = demo ? href === "/" : href === "/" ? pathname === "/" : pathname.startsWith(href);
-        return (
-          <Link
-            key={href}
-            href={targetHref}
-            aria-current={isActive ? "page" : undefined}
-            className={cn(
-              "group flex h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold transition-[transform,background-color,color]",
-              isActive
-                ? "translate-x-1 bg-accent text-foreground"
-                : "text-white/75 hover:translate-x-1 hover:bg-white/10 hover:text-white",
-            )}
-          >
-            <span className={cn(
-              "grid h-8 w-8 place-items-center rounded-lg",
-              isActive ? "bg-white/65" : "bg-white/10",
-            )}>
-              <Icon className="h-4.5 w-4.5" aria-hidden="true" />
-            </span>
-            {dictionary.nav[labelKey]}
-          </Link>
-        );
+            const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+            return (
+              <Link
+                key={href}
+                href={href}
+                aria-current={isActive ? "page" : undefined}
+                className={cn(
+                  "group flex h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold transition-[transform,background-color,color]",
+                  isActive
+                    ? "translate-x-1 bg-accent text-foreground"
+                    : "text-white/75 hover:translate-x-1 hover:bg-white/10 hover:text-white",
+                )}
+              >
+                <span className={cn(
+                  "grid h-8 w-8 place-items-center rounded-lg",
+                  isActive ? "bg-white/65" : "bg-white/10",
+                )}>
+                  <Icon className="h-4.5 w-4.5" aria-hidden="true" />
+                </span>
+                {dictionary.nav[labelKey]}
+              </Link>
+            );
           })}
         </div>
         <div
@@ -78,14 +75,11 @@ export function Sidebar({
           <div className="min-w-0">
             <p className="truncate text-sm font-black text-white">{session.name}</p>
             <p className="truncate text-xs text-white/50">{session.email}</p>
+            {session.isDemo ? (
+              <p className="text-[0.65rem] font-black uppercase tracking-wide text-accent">Demo</p>
+            ) : null}
           </div>
-          {demo ? (
-            <span className="text-center text-[0.65rem] font-black uppercase tracking-wide text-accent">
-              Demo
-            </span>
-          ) : (
-            <LogoutButton label={dictionary.nav.logout} theme="dark" compact />
-          )}
+          <LogoutButton label={dictionary.nav.logout} theme="dark" compact />
         </div>
       </nav>
     </aside>

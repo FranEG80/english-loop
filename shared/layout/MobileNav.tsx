@@ -6,7 +6,7 @@ import { WORKSPACE_NAV_ITEMS } from "./nav-items";
 import type { Dictionary } from "@/shared/i18n";
 import { cn } from "@/shared/lib/cn";
 
-export function MobileNav({ dictionary, demo = false }: { dictionary: Dictionary; demo?: boolean }) {
+export function MobileNav({ dictionary }: { dictionary: Dictionary }) {
   const pathname = usePathname();
 
   return (
@@ -15,12 +15,11 @@ export function MobileNav({ dictionary, demo = false }: { dictionary: Dictionary
       className="fixed inset-x-1 bottom-1 z-40 flex rounded-2xl border-2 border-foreground bg-primary-dark p-1 shadow-[3px_4px_0_var(--color-foreground)] min-[430px]:inset-x-2 min-[430px]:bottom-2 min-[430px]:p-1.5 lg:hidden"
     >
       {WORKSPACE_NAV_ITEMS.map(({ href, labelKey, Icon }) => {
-        const targetHref = demo ? "/demo" : href;
-        const isActive = demo ? href === "/" : href === "/" ? pathname === "/" : pathname.startsWith(href);
+        const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
         return (
           <Link
             key={href}
-            href={targetHref}
+            href={href}
             aria-current={isActive ? "page" : undefined}
             className={cn(
               "flex min-h-12 min-w-0 flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-0.5 py-1.5 text-[0.65rem] font-bold transition-colors",

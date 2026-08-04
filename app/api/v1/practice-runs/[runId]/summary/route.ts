@@ -7,11 +7,12 @@ import { toPracticeRunSummaryDto } from "@/core/practice/application/mappers/pra
 export const GET = withErrorHandling(
   async (_request: Request, context: { params: Promise<{ runId: string }> }) => {
     const { runId } = await context.params;
+    const actor = await compositionRoot.identity.requireActor();
     const runSummary = await getPracticeRunSummary(
       compositionRoot.identity,
       compositionRoot.practiceRunRepository,
       compositionRoot.attemptRepository,
-      compositionRoot.getActivityCatalog(),
+      compositionRoot.getActivityCatalog(actor),
       runId,
     );
     return NextResponse.json(

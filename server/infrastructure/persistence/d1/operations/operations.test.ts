@@ -153,7 +153,7 @@ describe("D1 operation SQL dispatch", () => {
   it("covers Better Auth query variants while keeping fields allowlisted", () => {
     const fake = database();
     const queries: D1Operation[] = [
-      { name: "authCreate", model: "user", data: { id: "user-1", email: "user@example.com" }, select: ["id"] },
+      { name: "authCreate", model: "user", data: { id: "user-1", email: "user@example.com", isDemo: true }, select: ["id", "isDemo"] },
       { name: "authCreate", model: "session", data: {} },
       { name: "authFindOne", query }, { name: "authFindMany", query }, { name: "authCount", query },
       { name: "authDelete", query }, { name: "authDeleteMany", query }, { name: "authConsumeOne", query },

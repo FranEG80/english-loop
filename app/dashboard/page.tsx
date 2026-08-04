@@ -15,12 +15,6 @@ import {
   getProgressPort,
 } from "@/adapters/adapter-factory";
 import {
-  demoDailySessionAdapter,
-  demoLearningContentAdapter,
-  demoProgressAdapter,
-  demoSession,
-} from "@/adapters/server/demo-adapters";
-import {
   getDailyLoop,
   getProgressSnapshot,
   listActivityCatalog,
@@ -34,20 +28,20 @@ import { Progress } from "@/shared/ui/Progress";
 
 const TIMEZONE = "UTC";
 
-export default async function DashboardPage({ demo = false }: { demo?: boolean } = {}) {
-  const session = demo ? demoSession : await requireSession();
+export default async function DashboardPage() {
+  const session = await requireSession();
   const locale = await getLocalePort().getLocale();
   const dictionary = getDictionary(locale);
-  const content = demo ? demoLearningContentAdapter : getLearningContentPort();
+  const content = getLearningContentPort();
   const [daily, progress, lessons, activities] = await Promise.all([
-    getDailyLoop(demo ? demoDailySessionAdapter : getDailySessionPort(), content, TIMEZONE),
-    getProgressSnapshot(demo ? demoProgressAdapter : getProgressPort(), content),
+    getDailyLoop(getDailySessionPort(), content, TIMEZONE),
+    getProgressSnapshot(getProgressPort(), content),
     listLessonCatalog(content, {}),
     listActivityCatalog(content, {}),
   ]);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session} demo={demo}>
+    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-8">
         <header className="flex flex-col gap-2">
           <p className="font-hand text-3xl font-bold text-coral">

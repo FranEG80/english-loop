@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check, Flame, Sparkles } from "lucide-react";
 import type { Dictionary } from "@/shared/i18n";
 import { Mascot } from "@/shared/layout/Mascot";
+import { loginDemoAction } from "@/features/auth/actions";
 
 const PRACTICE_AREAS = [
   ["Gramática", "Grammar"],
@@ -95,12 +96,14 @@ export function Landing({
             >
               {dictionary.landing.heroCtaSecondary}
             </Link>
-            <Link
-              href="/demo"
-              className="inline-flex h-14 items-center rounded-control border-2 border-foreground bg-accent px-6 text-base font-black text-foreground transition-transform hover:-rotate-1"
-            >
-              {dictionary.landing.demoCta}
-            </Link>
+            <form action={loginDemoAction}>
+              <button
+                type="submit"
+                className="inline-flex h-14 items-center rounded-control border-2 border-foreground bg-accent px-6 text-base font-black text-foreground transition-transform hover:-rotate-1"
+              >
+                {dictionary.landing.demoCta}
+              </button>
+            </form>
           </div>
           <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold text-foreground/65">
             {["B1 + B2", "14 activity types", "5–10 min/day"].map((item) => (

@@ -17,11 +17,13 @@ export class BetterAuthIdentityAdapter implements IdentityPort {
       headers: await headers(),
     });
     if (!session?.user) return null;
+    const user = session.user as typeof session.user & { isDemo?: boolean | null };
 
     return {
-      userId: session.user.id,
-      name: session.user.name,
-      email: session.user.email,
+      userId: user.id,
+      name: user.name,
+      email: user.email,
+      isDemo: Boolean(user.isDemo),
       activeLevels: [DEFAULT_CEFR_LEVEL],
     };
   }

@@ -105,7 +105,7 @@ El fichero [.env.example](../.env.example) contiene una plantilla comentada.
 | `CONTENT_SOURCE` | `dataset`, `database` | Fuente de lectura del catálogo. |
 | `DATABASE_PROVIDER` | `sqlite`, `d1`, `postgresql`, `mariadb` | Motor elegido para el despliegue. |
 | `DATABASE_URL` | URL del proveedor SQL | SQLite, PostgreSQL o MariaDB. No se usa para D1. |
-| `NEXT_PUBLIC_DATA_SOURCE` | `rest`, `mock` | Selecciona contenido y aprendizaje. La autenticación siempre es real; `/demo` usa datos de demostración de solo lectura. |
+| `NEXT_PUBLIC_DATA_SOURCE` | `rest`, `mock` | Selecciona contenido y aprendizaje. La autenticación siempre es real; la cuenta demo filtra el catálogo por `isDemo`. |
 | `D1_TRANSPORT` | `binding`, `http` | Solo aplica cuando `DATABASE_PROVIDER=d1`. |
 | `D1_HTTP_URL` | URL HTTPS | Endpoint del Worker proxy para Node/Vercel. |
 | `D1_HTTP_TOKEN` | secreto | Token compartido entre Vercel y el Worker. |

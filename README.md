@@ -58,8 +58,9 @@ La aplicación estará disponible en
 [`http://localhost:3000`](http://localhost:3000). Sin configuración adicional,
 el backend usa `DATASET` y SQLite local. La autenticación de registro, login y
 sesión siempre usa Better Auth real. Las personas no registradas pueden abrir
-`/demo` desde la landing para probar un panel de solo lectura con el usuario
-demo; no se escribe nada en la base de datos.
+`/demo` desde la landing para entrar con una cuenta demo autenticada. La cuenta
+navega por la aplicación normal y su catálogo queda limitado a las lecciones y
+actividades marcadas con `isDemo`.
 
 Para preparar el catálogo relacional local:
 

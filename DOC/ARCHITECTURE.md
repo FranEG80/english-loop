@@ -21,21 +21,23 @@ producto con el dataset local, con una base relacional o con Cloudflare D1.
 
 ## Dos puntos de composición
 
-La aplicación tiene dos recorridos de entrada, con responsabilidades distintas:
+La aplicación tiene un único recorrido autenticado, con dos tipos de cuenta:
 
 ```text
 Web de producto
 app/features → adapters/adapter-factory → REST real
-                         ↘ /demo → mocks de solo lectura
+                         ↘ /demo → login Better Auth de la cuenta demo
 
 Backend
-Route Handler / Server Action → CompositionRoot → core → persistencia
+Route Handler / Server Action → Actor(isDemo) → CompositionRoot → core → persistencia
 ```
 
 `adapters/adapter-factory.ts` selecciona los adaptadores REST para la aplicación
-real y expone factorías separadas para el espacio `/demo`. Los mocks no son
-código muerto: alimentan esa demo anónima y la cobertura de contratos del
-frontend. El registro, login y las sesiones siempre pasan por Better Auth real.
+real. `/demo` inicia una sesión Better Auth normal para la cuenta demo sembrada.
+El actor de esa sesión lleva `isDemo=true`, de modo que el punto de composición
+selecciona exclusivamente lecciones y actividades con `isDemo=true`; el resto
+de cuentas recibe el catálogo no-demo. La navegación y los casos de uso son los
+mismos para ambos tipos de cuenta.
 El backend real se compone en
 `server/infrastructure/composition/composition-root.ts` y comparte los casos de
 uso entre Route Handlers y Server Actions, sin peticiones HTTP internas.

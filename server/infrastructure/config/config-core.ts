@@ -23,6 +23,7 @@ export interface AppConfig {
   authSessionExpiresInSeconds: number;
   authSessionUpdateAgeSeconds: number;
   authCookieCacheMaxAgeSeconds: number;
+  authCookieSecure: boolean;
   attemptRateLimitWindowMs: number;
   attemptRateLimitMax: number;
   authRateLimitWindowMs: number;
@@ -69,6 +70,14 @@ function nonNegativeIntegerEnv(name: string, fallback: number): number {
   return value;
 }
 
+function booleanEnv(name: string, fallback: boolean): boolean {
+  const raw = process.env[name];
+  if (raw === undefined || raw === "") return fallback;
+  if (raw === "true") return true;
+  if (raw === "false") return false;
+  throw new Error(`${name} must be true or false`);
+}
+
 /** Carga y valida configuración desde variables de entorno. */
 export function loadConfig(): AppConfig {
   const databaseUrl = process.env.DATABASE_URL ?? "file:./dev.db";
@@ -108,6 +117,10 @@ export function loadConfig(): AppConfig {
   const betterAuthSecret = process.env.BETTER_AUTH_SECRET;
   const betterAuthUrl = process.env.BETTER_AUTH_URL ?? "http://localhost:3000";
   const nodeEnv = process.env.NODE_ENV ?? "development";
+  const authCookieSecure = booleanEnv(
+    "AUTH_COOKIE_SECURE",
+    nodeEnv === "production",
+  );
   const authSessionExpiresInSeconds = positiveIntegerEnv(
     "AUTH_SESSION_EXPIRES_IN_SECONDS",
     DEFAULT_AUTH_SESSION_EXPIRES_IN_SECONDS,
@@ -174,6 +187,7 @@ export function loadConfig(): AppConfig {
     authSessionExpiresInSeconds,
     authSessionUpdateAgeSeconds,
     authCookieCacheMaxAgeSeconds,
+    authCookieSecure,
     attemptRateLimitWindowMs,
     attemptRateLimitMax,
     authRateLimitWindowMs,

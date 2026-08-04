@@ -8,19 +8,19 @@ import { isCefrLevelFilter } from "@/core/models/level";
 import { createPracticeRunBodySchema, parseRequest } from "@/server/infrastructure/http/request-schemas";
 
 export const POST = withErrorHandling(async (request: Request) => {
-  await compositionRoot.identity.requireActor();
+  const actor = await compositionRoot.identity.requireActor();
   const body = parseRequest(createPracticeRunBodySchema.safeParse(await request.json()));
 
   if (!isCefrLevelFilter(body.level)) {
     throw new ValidationException("Invalid level", { level: ["Must be B1, B2 or both"] });
   }
 
-  const datasetVersion = await compositionRoot.getDatasetVersion();
+  const datasetVersion = await compositionRoot.getDatasetVersion(actor);
   const { run } = await createFocusedPracticeRun(
     compositionRoot.identity,
     compositionRoot.practiceRunRepository,
-    compositionRoot.getActivityCatalog(),
-    compositionRoot.getTaxonomyCatalog(),
+    compositionRoot.getActivityCatalog(actor),
+    compositionRoot.getTaxonomyCatalog(actor),
     compositionRoot.practiceRunPlanner,
     compositionRoot.idGenerator,
     compositionRoot.clock,

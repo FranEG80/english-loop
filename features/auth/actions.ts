@@ -3,6 +3,10 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { getAuthPort } from "@/adapters/adapter-factory";
+import {
+  DEMO_USER_EMAIL,
+  DEMO_USER_PASSWORD,
+} from "@/core/content/domain/demo-fixture";
 
 export interface AuthActionState {
   error?: string;
@@ -10,6 +14,15 @@ export interface AuthActionState {
 }
 
 const MIN_DISPLAY_NAME_LENGTH = 2;
+
+/** Abre la cuenta demo real; Better Auth escribe la cookie desde esta acción. */
+export async function loginDemoAction(): Promise<void> {
+  await getAuthPort().login({
+    email: DEMO_USER_EMAIL,
+    password: DEMO_USER_PASSWORD,
+  });
+  redirect("/");
+}
 
 export async function loginAction(
   _prevState: AuthActionState | undefined,

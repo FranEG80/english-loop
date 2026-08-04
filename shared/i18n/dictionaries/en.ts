@@ -160,7 +160,7 @@ export const en: Dictionary = {
     lessonsDescription: "Explore the lessons available for B1 and B2.",
     activitiesTitle: "Activity library",
     activitiesDescription:
-      "Browse every practice format available in the mock user.",
+      "Browse every practice format available in EnglishLoop.",
     noResults: "There are no results for these filters.",
     openLesson: "Open lesson",
     openActivity: "View activity",
@@ -196,12 +196,12 @@ export const en: Dictionary = {
   },
   settings: {
     title: "Settings",
-    description: "Current preferences for the mock user.",
+    description: "Your current account preferences.",
     locale: "Language",
     activeLevels: "Active levels",
     dailyGoal: "Daily goal",
     reducedMotion: "Reduce motion",
     mockNotice:
-      "This data comes from the mock adapter and can be replaced by the backend without changing the interface.",
+      "Your preferences are stored with your account.",
   },
 };
