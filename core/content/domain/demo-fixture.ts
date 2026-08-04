@@ -10,7 +10,6 @@ export const DEMO_USER_EMAIL = "demo@englishloop.local";
 export const DEMO_USER_NAME = "Alex";
 export const DEMO_USER_ACTIVE_LEVELS = ["B1", "B2"] as const;
 export const DEMO_DAILY_GOAL_ACTIVITIES = 3;
-export const DEMO_PROGRESS_ACTIVITY_LIMIT = 37;
 
 export const DEMO_LESSON_IDS = [
   "b1-grammar-future-forms-will-going-to",
