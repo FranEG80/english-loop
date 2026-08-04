@@ -145,6 +145,7 @@ export interface D1PracticeRunItemSnapshot {
   lessonId: string | null;
   activityId: string;
   activityVersionId: string | null;
+  activitySnapshot: string | null;
   origin: string;
   status: string;
   isRepetition: boolean;

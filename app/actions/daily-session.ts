@@ -30,6 +30,7 @@ export async function getOrCreateDailySessionAction(input: DailySessionInput = {
     compositionRoot.domainEventDispatcher,
     datasetVersion,
     { timezone },
+    compositionRoot.metrics,
   );
   const run = session.practiceRunId
     ? await compositionRoot.practiceRunRepository.findById(session.practiceRunId)
@@ -52,6 +53,7 @@ export async function startDailyPracticeAction(sessionId: string) {
     compositionRoot.domainEventDispatcher,
     datasetVersion,
     sessionId,
+    compositionRoot.metrics,
   );
   revalidatePath("/daily");
   const session = await compositionRoot.dailySessionRepository.findById(sessionId);
@@ -107,6 +109,7 @@ export async function completeDailySessionAction(sessionId: string) {
     sessionId,
     compositionRoot.clock.nowIso(),
     compositionRoot.domainEventDispatcher,
+    compositionRoot.metrics,
   );
   revalidatePath("/daily");
   const run = session.practiceRunId

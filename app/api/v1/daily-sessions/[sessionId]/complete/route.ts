@@ -15,6 +15,7 @@ export const POST = withErrorHandling(
       sessionId,
       compositionRoot.clock.nowIso(),
       compositionRoot.domainEventDispatcher,
+      compositionRoot.metrics,
     );
     return NextResponse.json(toDailySessionDto(session));
   },

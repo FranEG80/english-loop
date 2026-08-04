@@ -8,6 +8,7 @@ export const GET = withErrorHandling(async () => {
     compositionRoot.identity,
     compositionRoot.reviewRepository,
     compositionRoot.clock.nowIso(),
+    compositionRoot.metrics,
   );
   return NextResponse.json(queue);
 });

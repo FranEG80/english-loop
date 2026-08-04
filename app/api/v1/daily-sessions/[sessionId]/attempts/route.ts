@@ -47,7 +47,7 @@ export const POST = withErrorHandling(
       compositionRoot.domainEventDispatcher,
       CONTENT_SCHEMA_VERSION,
       { runId: session.practiceRunId, ...body },
-      { dailySessionRepository: compositionRoot.dailySessionRepository },
+      { dailySessionRepository: compositionRoot.dailySessionRepository, metrics: compositionRoot.metrics },
     );
     return NextResponse.json(
       await getAttemptFeedback(

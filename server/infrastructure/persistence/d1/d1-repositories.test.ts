@@ -87,8 +87,8 @@ describe("D1 practice repositories", () => {
   it("maps runs, attempts, repetitions and immutable attempt writes", async () => {
     const base = transport({
       practiceRunGet: result([
-        { id: "r1", userId: "u1", mode: "FOCUSED", status: "in_progress", scopeSnapshot: JSON.stringify({ level: "B1", taxonomyNodeId: "n1", taxonomyPath: [], descendantIds: ["n1"], requestedCount: 1 }), currentIndex: 0, originalActivityCount: 1, datasetVersion: "v1", createdAt: now, position: 0, activityId: "a1", isRepetition: 0 },
-        { id: "r1", userId: "u1", mode: "FOCUSED", status: "in_progress", scopeSnapshot: JSON.stringify({ level: "B1", taxonomyNodeId: "n1", taxonomyPath: [], descendantIds: ["n1"], requestedCount: 1 }), currentIndex: 0, originalActivityCount: 1, datasetVersion: "v1", createdAt: now, position: 1, activityId: "a2", isRepetition: 1 },
+        { id: "r1", userId: "u1", mode: "FOCUSED", status: "in_progress", scopeSnapshot: JSON.stringify({ level: "B1", taxonomyNodeId: "n1", taxonomyPath: [], descendantIds: ["n1"], requestedCount: 1 }), currentIndex: 0, originalActivityCount: 1, datasetVersion: "v1", createdAt: now, position: 0, activityId: "a1", activitySnapshot: JSON.stringify({ id: "a1", explanation: "Use the present" }), isRepetition: 0 },
+        { id: "r1", userId: "u1", mode: "FOCUSED", status: "in_progress", scopeSnapshot: JSON.stringify({ level: "B1", taxonomyNodeId: "n1", taxonomyPath: [], descendantIds: ["n1"], requestedCount: 1 }), currentIndex: 0, originalActivityCount: 1, datasetVersion: "v1", createdAt: now, position: 1, activityId: "a2", activitySnapshot: null, isRepetition: 1 },
       ]),
       attemptGetByIdempotency: result([]),
       attemptsGetByRun: result([{ id: "at1", userId: "u1", practiceRunId: "r1", activityId: "a1", activityVersionId: null, practiceRunItemId: null, origin: "FOCUSED", idempotencyKey: "k", response: JSON.stringify({ kind: "boolean", value: true }), isCorrect: 1, isRepetition: 0, evaluatorVersion: "v1", submittedAt: now }]),
@@ -101,6 +101,7 @@ describe("D1 practice repositories", () => {
     const foundRun = await runs.findById("r1");
     expect(foundRun?.id).toBe("r1");
     expect(foundRun?.activityIds).toEqual(["a1", "a2"]);
+    expect(foundRun?.currentActivitySnapshot).toMatchObject({ id: "a1", explanation: "Use the present" });
     expect(foundRun?.isCurrentActivityRepetition).toBe(false);
     await runs.save(run);
     await runs.save(PracticeRun.create({ ...run.toSnapshot(), id: "r2", currentIndex: 1, originalActivityCount: 2 }));

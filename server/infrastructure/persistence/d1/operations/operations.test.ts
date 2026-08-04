@@ -55,7 +55,7 @@ const practiceRun = {
   originalActivityCount: 1,
   datasetVersion: "1.0.0",
   createdAt: "2026-08-04T00:00:00.000Z",
-  items: [{ position: 0, lessonId: "lesson-1", activityId: "activity-1", activityVersionId: null, origin: "FOCUSED", status: "PENDING", isRepetition: false, repetitionOfItemId: null }],
+  items: [{ position: 0, lessonId: "lesson-1", activityId: "activity-1", activityVersionId: null, activitySnapshot: null, origin: "FOCUSED", status: "PENDING", isRepetition: false, repetitionOfItemId: null }],
 };
 
 const query = {

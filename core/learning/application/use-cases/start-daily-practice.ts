@@ -1,12 +1,12 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { UserSettingsRepository } from "@/core/account/ports/user-settings-repository";
 import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
-import { type ClockPort, type DomainEventDispatcherPort, type IdGeneratorPort, type UnitOfWorkPort, UniqueId } from "@/core/shared/kernel";
+import { type ClockPort, type DomainEventDispatcherPort, type IdGeneratorPort, type PedagogicalMetricsPort, type UnitOfWorkPort, UniqueId } from "@/core/shared/kernel";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import { PracticeRun } from "@/core/practice/domain/practice-run";
 import type { DailySessionRepository } from "../../ports/daily-session-repository";
 import type { DailyPracticePlanner } from "../../domain/daily-practice-planner";
-import { ForbiddenException, ResourceNotFoundException } from "@/core/shared/exceptions";
+import { ForbiddenException, InsufficientActivitiesForScopeException, ResourceNotFoundException } from "@/core/shared/exceptions";
 import { DEFAULT_DAILY_GOAL_ACTIVITIES } from "@/core/account/domain/user-settings";
 import type { SessionSize } from "@/core/models/session-size";
 import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
@@ -30,9 +30,10 @@ export async function startDailyPractice(
   domainEventDispatcher: DomainEventDispatcherPort,
   datasetVersion: string,
   sessionId: string,
+  metrics?: PedagogicalMetricsPort,
 ): Promise<StartDailyPracticeResult> {
   const actor = await identity.requireActor();
-  const { result, events } = await unitOfWork.transaction(async () => {
+  const { result, events, created } = await unitOfWork.transaction(async () => {
     const session = await sessionRepository.findById(sessionId);
     if (!session) {
       throw new ResourceNotFoundException(
@@ -48,17 +49,25 @@ export async function startDailyPractice(
     }
     if (session.practiceRunId) {
       const existingRun = await runRepository.findById(session.practiceRunId);
-      if (existingRun) return { result: { sessionId, run: existingRun }, events: [] };
+      if (existingRun) return { result: { sessionId, run: existingRun }, events: [], created: false };
     }
 
     const settings = await userSettingsRepository.findByUserId(actor.userId);
     const level = settings?.activeLevels[0] ?? actor.activeLevels[0] ?? DEFAULT_CEFR_LEVEL;
     const activityCount = settings?.dailyGoalActivities ?? DEFAULT_DAILY_GOAL_ACTIVITIES;
-    const planned = await planner.plan(activityCatalog, {
-      lessonIds: session.lessons.map((lesson) => lesson.lessonId),
-      level,
-      count: activityCount,
-    });
+    let planned: Awaited<ReturnType<DailyPracticePlanner["plan"]>>;
+    try {
+      planned = await planner.plan(activityCatalog, {
+        lessonIds: session.lessons.map((lesson) => lesson.lessonId),
+        level,
+        count: activityCount,
+      });
+    } catch (error) {
+      if (error instanceof InsufficientActivitiesForScopeException) {
+        metrics?.recordPedagogicalEvent("scope.insufficient", { taxonomyNodeId: "daily" });
+      }
+      throw error;
+    }
     const run = PracticeRun.create({
       id: UniqueId.create(idGenerator).toString(),
       userId: actor.userId,
@@ -84,9 +93,10 @@ export async function startDailyPractice(
     session.recordPracticeStarted(clock.nowIso(), run.id);
     await runRepository.save(run);
     await sessionRepository.save(session);
-    return { result: { sessionId, run }, events: session.pullDomainEvents() };
+    return { result: { sessionId, run }, events: session.pullDomainEvents(), created: true };
   });
 
+  if (created) metrics?.recordPedagogicalEvent("practice_run.created", { mode: result.run.mode, taxonomyNodeId: "daily" });
   if (events.length > 0) await domainEventDispatcher.dispatch(events);
   return result;
 }

@@ -1,6 +1,6 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { ActivityCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
-import { type ClockPort, type DomainEvent, type DomainEventDispatcherPort, type IdGeneratorPort, type UnitOfWorkPort, UniqueId } from "@/core/shared/kernel";
+import { type ClockPort, type DomainEvent, type DomainEventDispatcherPort, type IdGeneratorPort, type PedagogicalMetricsPort, type UnitOfWorkPort, UniqueId } from "@/core/shared/kernel";
 import type { ActivityResponseValue } from "@/core/models/types/attempt";
 import type { AttemptRepository } from "@/core/practice/ports/attempt-repository";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
@@ -35,6 +35,7 @@ export interface SubmitAttemptTransactionResult {
 export interface SubmitAttemptTransactionOptions {
   dailySessionRepository?: DailySessionRepository;
   lessonProgressRepository?: LessonProgressRepository;
+  metrics?: PedagogicalMetricsPort;
 }
 
 /** Persiste un intento y todas sus proyecciones en una única transacción. */
@@ -75,6 +76,7 @@ export async function submitAttemptTransaction(
         existing.activityId !== input.activityId ||
         JSON.stringify(existing.response) !== JSON.stringify(input.response)
       ) {
+        options.metrics?.recordPedagogicalEvent("attempt.idempotency_conflict");
         throw new IdempotencyConflictException(
           "Idempotency key reused with a different payload",
           "This request was already submitted with different content.",
@@ -190,5 +192,15 @@ export async function submitAttemptTransaction(
   });
 
   if (created) await domainEventDispatcher.dispatch(events);
+  if (created) {
+    options.metrics?.recordPedagogicalEvent("attempt.processed", {
+      correct: String(result.attempt.isCorrect),
+      mode: result.attempt.origin,
+      repetition: String(result.attempt.isRepetition),
+    });
+    if (result.runCompleted && result.attempt.origin === "DAILY") {
+      options.metrics?.recordPedagogicalEvent("daily_session.completed");
+    }
+  }
   return result;
 }

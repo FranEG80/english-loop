@@ -21,6 +21,7 @@ export const PUT = withErrorHandling(async (request: Request) => {
     compositionRoot.domainEventDispatcher,
     datasetVersion,
     { timezone: body.timezone },
+    compositionRoot.metrics,
   );
   const run = session.practiceRunId
     ? await compositionRoot.practiceRunRepository.findById(session.practiceRunId)

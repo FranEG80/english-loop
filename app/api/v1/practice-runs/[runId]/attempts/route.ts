@@ -50,6 +50,7 @@ export const POST = withErrorHandling(
       {
         dailySessionRepository: compositionRoot.dailySessionRepository,
         lessonProgressRepository: compositionRoot.lessonProgressRepository,
+        metrics: compositionRoot.metrics,
       },
     );
 

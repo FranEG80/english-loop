@@ -30,6 +30,7 @@ export const POST = withErrorHandling(async (request: Request) => {
       level: body.level,
       sessionSize: body.sessionSize,
     },
+    compositionRoot.metrics,
   );
 
   return NextResponse.json(toPracticeRunDto(run), { status: 201 });

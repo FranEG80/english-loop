@@ -1,12 +1,14 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { ReviewRepository } from "../../ports/review-repository";
 import type { ReviewQueueDto, ReviewQueueItemDto } from "@/core/models/types/review";
+import type { PedagogicalMetricsPort } from "@/core/shared/kernel";
 
 /** Obtiene la cola de repaso del usuario autenticado. */
 export async function getReviewQueue(
   identity: IdentityPort,
   reviewRepository: ReviewRepository,
   nowIso: string,
+  metrics?: PedagogicalMetricsPort,
 ): Promise<ReviewQueueDto> {
   const actor = await identity.requireActor();
   const [due, upcoming] = await Promise.all([
@@ -23,6 +25,7 @@ export async function getReviewQueue(
     dueAt: item.dueAt,
     attemptsCount: item.attemptsCount,
   });
+  metrics?.recordReviewQueueSize(due.length);
 
   return {
     dueItems: due.map(toDto),

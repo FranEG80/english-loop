@@ -1,4 +1,5 @@
 import "server-only";
+import type { PedagogicalMetricName, PedagogicalMetricsPort } from "@/core/shared/kernel";
 
 export interface RequestMetricInput {
   route: string;
@@ -22,17 +23,39 @@ export interface AggregatedMetricsSnapshot {
   averageDurationMs: number;
   errorCodes: Record<string, number>;
   endpoints: Record<string, EndpointMetric>;
+  pedagogicalEvents: Record<string, number>;
+  reviewQueueSize: number | null;
 }
 
 const MAX_ENDPOINT_CARDINALITY = 200;
+const MAX_PEDAGOGICAL_CARDINALITY = 200;
 
 /** Métricas acotadas por proceso para salud operativa sin almacenar payloads. */
-export class AggregatedMetrics {
+export class AggregatedMetrics implements PedagogicalMetricsPort {
   private requestCount = 0;
   private errorCount = 0;
   private totalDurationMs = 0;
   private readonly errorCodes = new Map<string, number>();
   private readonly endpoints = new Map<string, EndpointMetric>();
+  private readonly pedagogicalEvents = new Map<string, number>();
+  private reviewQueueSize: number | null = null;
+
+  recordPedagogicalEvent(
+    name: PedagogicalMetricName,
+    dimensions: Readonly<Record<string, string>> = {},
+  ): void {
+    const suffix = Object.entries(dimensions)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([key, value]) => `${key}=${value}`)
+      .join(",");
+    const key = suffix ? `${name}{${suffix}}` : name;
+    if (!this.pedagogicalEvents.has(key) && this.pedagogicalEvents.size >= MAX_PEDAGOGICAL_CARDINALITY) return;
+    this.pedagogicalEvents.set(key, (this.pedagogicalEvents.get(key) ?? 0) + 1);
+  }
+
+  recordReviewQueueSize(size: number): void {
+    this.reviewQueueSize = Math.max(0, Math.floor(size));
+  }
 
   recordRequest(input: RequestMetricInput): void {
     this.requestCount += 1;
@@ -67,6 +90,8 @@ export class AggregatedMetrics {
         totalDurationMs: value.totalDurationMs,
         statuses: { ...value.statuses },
       }])),
+      pedagogicalEvents: Object.fromEntries(this.pedagogicalEvents),
+      reviewQueueSize: this.reviewQueueSize,
     };
   }
 
@@ -76,5 +101,7 @@ export class AggregatedMetrics {
     this.totalDurationMs = 0;
     this.errorCodes.clear();
     this.endpoints.clear();
+    this.pedagogicalEvents.clear();
+    this.reviewQueueSize = null;
   }
 }

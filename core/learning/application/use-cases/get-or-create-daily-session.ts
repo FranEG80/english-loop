@@ -1,7 +1,7 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { UserSettingsRepository } from "@/core/account/ports/user-settings-repository";
 import type { LessonCatalogPort } from "@/core/content/ports/catalog-ports";
-import { UniqueId, type ClockPort, type DomainEventDispatcherPort, type IdGeneratorPort } from "@/core/shared/kernel";
+import { UniqueId, type ClockPort, type DomainEventDispatcherPort, type IdGeneratorPort, type PedagogicalMetricsPort } from "@/core/shared/kernel";
 import { ValidationException } from "@/core/shared/exceptions";
 import type { DailySessionRepository } from "../../ports/daily-session-repository";
 import { DEFAULT_DAILY_GOAL_LESSONS, DEFAULT_TIMEZONE } from "@/core/account/domain/user-settings";
@@ -47,6 +47,7 @@ export async function getOrCreateDailySession(
   domainEventDispatcher: DomainEventDispatcherPort,
   datasetVersion: string,
   input: GetOrCreateDailySessionInput = {},
+  metrics?: PedagogicalMetricsPort,
 ): Promise<DailySession> {
   const actor = await identity.requireActor();
   const settings = await userSettingsRepository.findByUserId(actor.userId);
@@ -99,6 +100,7 @@ export async function getOrCreateDailySession(
     if (concurrent) return concurrent;
     throw error;
   }
+  metrics?.recordPedagogicalEvent("daily_session.created");
   await domainEventDispatcher.dispatch(session.pullDomainEvents());
   return session;
 }

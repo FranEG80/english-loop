@@ -1,5 +1,6 @@
 import { ActivityAttempt } from "@/core/practice/domain/activity-attempt";
 import { PracticeRun } from "@/core/practice/domain/practice-run";
+import type { Activity } from "@/core/content/domain/types/activity";
 import { bool, iso, nullableText, text, type Row } from "./d1-row-mapper";
 
 export interface ScopeSnapshot {
@@ -8,6 +9,16 @@ export interface ScopeSnapshot {
   taxonomyPath: string[];
   descendantIds: string[];
   requestedCount: number;
+}
+
+function nullableActivitySnapshot(value: unknown): Activity | null {
+  const raw = nullableText(value);
+  if (!raw) return null;
+  try {
+    return JSON.parse(raw) as Activity;
+  } catch {
+    return null;
+  }
 }
 
 export function practiceRunRowsToDomain(input: Row[]): PracticeRun | null {
@@ -20,6 +31,7 @@ export function practiceRunRowsToDomain(input: Row[]): PracticeRun | null {
     scope: { level: scope.level as never, taxonomyNodeId: scope.taxonomyNodeId, taxonomyPath: scope.taxonomyPath, descendantIds: scope.descendantIds, requestedCount: scope.requestedCount },
     activityIds: items.map((row) => text(row.activityId)),
     activityVersionIds: items.map((row) => nullableText(row.activityVersionId)),
+    activitySnapshots: items.map((row) => nullableActivitySnapshot(row.activitySnapshot)),
     repetitionActivityIds: items.filter((row) => bool(row.isRepetition)).map((row) => text(row.activityId)),
     originalActivityCount: Number(base.originalActivityCount), currentIndex: Number(base.currentIndex),
     status: text(base.status) as never, datasetVersion: text(base.datasetVersion), dailySessionId: null, createdAt: iso(base.createdAt),

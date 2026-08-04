@@ -1,7 +1,7 @@
 import type { IdentityPort } from "@/core/account/ports/identity-port";
 import type { DailySessionRepository } from "../../ports/daily-session-repository";
 import type { DailySession } from "../../domain/daily-session";
-import type { DomainEventDispatcherPort, UnitOfWorkPort } from "@/core/shared/kernel";
+import type { DomainEventDispatcherPort, PedagogicalMetricsPort, UnitOfWorkPort } from "@/core/shared/kernel";
 import { ResourceNotFoundException, ForbiddenException } from "@/core/shared/exceptions";
 
 export async function completeDailySession(
@@ -11,6 +11,7 @@ export async function completeDailySession(
   sessionId: string,
   nowIso: string,
   domainEventDispatcher: DomainEventDispatcherPort,
+  metrics?: PedagogicalMetricsPort,
 ): Promise<DailySession> {
   const actor = await identity.requireActor();
   const { session, events } = await unitOfWork.transaction(async () => {
@@ -32,5 +33,6 @@ export async function completeDailySession(
     return { session, events: session.pullDomainEvents() };
   });
   await domainEventDispatcher.dispatch(events);
+  metrics?.recordPedagogicalEvent("daily_session.completed");
   return session;
 }

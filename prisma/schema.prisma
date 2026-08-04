@@ -543,6 +543,7 @@ model PracticeRunItem {
   lessonId          String?
   activityId        String
   activityVersionId String?
+  activitySnapshot   String?
   origin            String
   status            String   @default("pending") // pending | active | answered | repetition
   isRepetition      Boolean  @default(false)

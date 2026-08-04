@@ -22,6 +22,7 @@ export const POST = withErrorHandling(
       compositionRoot.domainEventDispatcher,
       datasetVersion,
       sessionId,
+      compositionRoot.metrics,
     );
     const session = await compositionRoot.dailySessionRepository.findById(sessionId);
     return NextResponse.json(session ? toDailySessionDto(session, run) : null);

@@ -39,8 +39,8 @@ export function prepareCompositeD1Operation(
     bind(database, `DELETE FROM PracticeRunItem WHERE practiceRunId = ?`, [s.id], true),
   ];
   for (const item of s.items) {
-    statements.push(bind(database, `INSERT INTO PracticeRunItem
-        (id, practiceRunId, position, lessonId, activityId, activityVersionId, origin,
+      statements.push(bind(database, `INSERT INTO PracticeRunItem
+        (id, practiceRunId, position, lessonId, activityId, activityVersionId, activitySnapshot, origin,
          status, isRepetition, repetitionOfItemId)
       VALUES (?, ?, ?, ?, ?, COALESCE(?, (
         SELECT av.id
@@ -49,9 +49,9 @@ export function prepareCompositeD1Operation(
         WHERE av.activityId = ? AND cr.datasetVersion = ?
           AND cr.status = 'published' AND av.statusCode = 'published'
         ORDER BY cr.publishedAt DESC LIMIT 1
-      )), ?, ?, ?, ?)`,
+      )), ?, ?, ?, ?, ?)`,
       [`${s.id}:${item.position}`, s.id, item.position, item.lessonId, item.activityId,
-        item.activityVersionId, item.activityId, s.datasetVersion, item.origin, item.status,
+        item.activityVersionId, item.activityId, s.datasetVersion, item.activitySnapshot, item.origin, item.status,
         item.isRepetition ? 1 : 0, item.repetitionOfItemId], true));
   }
   return statements;

@@ -3590,6 +3590,7 @@ export const PracticeRunItemScalarFieldEnum = {
   lessonId: 'lessonId',
   activityId: 'activityId',
   activityVersionId: 'activityVersionId',
+  activitySnapshot: 'activitySnapshot',
   origin: 'origin',
   status: 'status',
   isRepetition: 'isRepetition',

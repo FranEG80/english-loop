@@ -10,7 +10,7 @@ export function preparePracticeOperation(database: D1DatabaseLike, operation: Pr
       return bind(database, `SELECT r.id, r.userId, r.mode, r.status, r.scopeSnapshot,
           r.currentIndex, r.originalActivityCount, r.datasetVersion, r.createdAt,
           i.position, i.lessonId, i.activityId, i.activityVersionId, i.origin,
-          i.status AS itemStatus, i.isRepetition, i.repetitionOfItemId
+          i.activitySnapshot, i.status AS itemStatus, i.isRepetition, i.repetitionOfItemId
         FROM PracticeRun r LEFT JOIN PracticeRunItem i ON i.practiceRunId = r.id
         WHERE r.id = ? ORDER BY i.position ASC`, [operation.runId]);
     case "attemptGetByIdempotency":

@@ -25,6 +25,9 @@ export class D1PracticeRunRepository implements PracticeRunRepository {
       createdAt: snapshot.createdAt,
       items: snapshot.activityIds.map((activityId, position) => ({
         position, lessonId: null, activityId, activityVersionId: snapshot.activityVersionIds?.[position] ?? null, origin: snapshot.mode,
+        activitySnapshot: snapshot.activitySnapshots?.[position]
+          ? JSON.stringify(snapshot.activitySnapshots[position])
+          : null,
         status: position >= originalActivityCount ? "repetition" : position === snapshot.currentIndex ? "active" : position < snapshot.currentIndex ? "answered" : "pending",
         isRepetition: position >= originalActivityCount,
         repetitionOfItemId: position >= originalActivityCount ? `${snapshot.id}:${snapshot.activityIds.findIndex((id) => id === activityId)}` : null,

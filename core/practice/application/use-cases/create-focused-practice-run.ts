@@ -4,12 +4,13 @@ import {
   UniqueId,
   type ClockPort,
   type IdGeneratorPort,
+  type PedagogicalMetricsPort,
 } from "@/core/shared/kernel";
 import type { PracticeRunRepository } from "../../ports/practice-run-repository";
 import { PracticeRun } from "../../domain/practice-run";
 import { PracticeRunPlanner } from "../../domain/practice-run-planner";
 import type { SessionSize } from "@/core/models/session-size";
-import { InvalidPracticeScopeException } from "@/core/shared/exceptions";
+import { InsufficientActivitiesForScopeException, InvalidPracticeScopeException } from "@/core/shared/exceptions";
 import type { CefrLevelFilter } from "@/core/models/level";
 
 export interface CreateFocusedPracticeRunInput {
@@ -37,6 +38,7 @@ export async function createFocusedPracticeRun(
   clock: ClockPort,
   datasetVersion: string,
   input: CreateFocusedPracticeRunInput,
+  metrics?: PedagogicalMetricsPort,
 ): Promise<CreateFocusedPracticeRunResult> {
   const actor = await identity.requireActor();
 
@@ -55,12 +57,20 @@ export async function createFocusedPracticeRun(
   const taxonomyPath = (await taxonomyCatalog.getNodePath(input.taxonomyNodeId)).map(
     (node) => node.id,
   );
-  const planned = await planner.plan(activityCatalog, {
-    level: input.level,
-    taxonomyNodeId: input.taxonomyNodeId,
-    descendantIds,
-    requestedCount: input.sessionSize,
-  });
+  let planned: Awaited<ReturnType<PracticeRunPlanner["plan"]>>;
+  try {
+    planned = await planner.plan(activityCatalog, {
+      level: input.level,
+      taxonomyNodeId: input.taxonomyNodeId,
+      descendantIds,
+      requestedCount: input.sessionSize,
+    });
+  } catch (error) {
+    if (error instanceof InsufficientActivitiesForScopeException) {
+      metrics?.recordPedagogicalEvent("scope.insufficient", { taxonomyNodeId: input.taxonomyNodeId });
+    }
+    throw error;
+  }
 
   const run = PracticeRun.create({
     id: UniqueId.create(idGenerator).toString(),
@@ -84,5 +94,6 @@ export async function createFocusedPracticeRun(
   });
 
   await runRepository.save(run);
+  metrics?.recordPedagogicalEvent("practice_run.created", { mode: run.mode, taxonomyNodeId: input.taxonomyNodeId });
   return { run, coveredSubtopicIds: planned.coveredSubtopicIds };
 }

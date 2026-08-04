@@ -29,6 +29,7 @@ export async function createPracticeRunAction(input: CreateRunInput) {
     compositionRoot.clock,
     datasetVersion,
     input,
+    compositionRoot.metrics,
   );
   revalidatePath("/review/focus");
   return toPracticeRunDto(run);
@@ -62,7 +63,7 @@ export async function submitAttemptAction(input: SubmitAttemptInput) {
       idempotencyKey: input.idempotencyKey,
       response: input.response as never,
     },
-    { dailySessionRepository: compositionRoot.dailySessionRepository },
+    { dailySessionRepository: compositionRoot.dailySessionRepository, metrics: compositionRoot.metrics },
   );
   return getAttemptFeedback(compositionRoot.getActivityCatalog(), attempt, compositionRoot.reviewRepository);
 }

@@ -41,6 +41,7 @@ export type PracticeRunItemMinAggregateOutputType = {
   lessonId: string | null
   activityId: string | null
   activityVersionId: string | null
+  activitySnapshot: string | null
   origin: string | null
   status: string | null
   isRepetition: boolean | null
@@ -55,6 +56,7 @@ export type PracticeRunItemMaxAggregateOutputType = {
   lessonId: string | null
   activityId: string | null
   activityVersionId: string | null
+  activitySnapshot: string | null
   origin: string | null
   status: string | null
   isRepetition: boolean | null
@@ -69,6 +71,7 @@ export type PracticeRunItemCountAggregateOutputType = {
   lessonId: number
   activityId: number
   activityVersionId: number
+  activitySnapshot: number
   origin: number
   status: number
   isRepetition: number
@@ -93,6 +96,7 @@ export type PracticeRunItemMinAggregateInputType = {
   lessonId?: true
   activityId?: true
   activityVersionId?: true
+  activitySnapshot?: true
   origin?: true
   status?: true
   isRepetition?: true
@@ -107,6 +111,7 @@ export type PracticeRunItemMaxAggregateInputType = {
   lessonId?: true
   activityId?: true
   activityVersionId?: true
+  activitySnapshot?: true
   origin?: true
   status?: true
   isRepetition?: true
@@ -121,6 +126,7 @@ export type PracticeRunItemCountAggregateInputType = {
   lessonId?: true
   activityId?: true
   activityVersionId?: true
+  activitySnapshot?: true
   origin?: true
   status?: true
   isRepetition?: true
@@ -222,6 +228,7 @@ export type PracticeRunItemGroupByOutputType = {
   lessonId: string | null
   activityId: string
   activityVersionId: string | null
+  activitySnapshot: string | null
   origin: string
   status: string
   isRepetition: boolean
@@ -259,6 +266,7 @@ export type PracticeRunItemWhereInput = {
   lessonId?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
   activityId?: Prisma.StringFilter<"PracticeRunItem"> | string
   activityVersionId?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
+  activitySnapshot?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
   origin?: Prisma.StringFilter<"PracticeRunItem"> | string
   status?: Prisma.StringFilter<"PracticeRunItem"> | string
   isRepetition?: Prisma.BoolFilter<"PracticeRunItem"> | boolean
@@ -278,6 +286,7 @@ export type PracticeRunItemOrderByWithRelationInput = {
   lessonId?: Prisma.SortOrderInput | Prisma.SortOrder
   activityId?: Prisma.SortOrder
   activityVersionId?: Prisma.SortOrderInput | Prisma.SortOrder
+  activitySnapshot?: Prisma.SortOrderInput | Prisma.SortOrder
   origin?: Prisma.SortOrder
   status?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
@@ -301,6 +310,7 @@ export type PracticeRunItemWhereUniqueInput = Prisma.AtLeast<{
   lessonId?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
   activityId?: Prisma.StringFilter<"PracticeRunItem"> | string
   activityVersionId?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
+  activitySnapshot?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
   origin?: Prisma.StringFilter<"PracticeRunItem"> | string
   status?: Prisma.StringFilter<"PracticeRunItem"> | string
   isRepetition?: Prisma.BoolFilter<"PracticeRunItem"> | boolean
@@ -320,6 +330,7 @@ export type PracticeRunItemOrderByWithAggregationInput = {
   lessonId?: Prisma.SortOrderInput | Prisma.SortOrder
   activityId?: Prisma.SortOrder
   activityVersionId?: Prisma.SortOrderInput | Prisma.SortOrder
+  activitySnapshot?: Prisma.SortOrderInput | Prisma.SortOrder
   origin?: Prisma.SortOrder
   status?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
@@ -342,6 +353,7 @@ export type PracticeRunItemScalarWhereWithAggregatesInput = {
   lessonId?: Prisma.StringNullableWithAggregatesFilter<"PracticeRunItem"> | string | null
   activityId?: Prisma.StringWithAggregatesFilter<"PracticeRunItem"> | string
   activityVersionId?: Prisma.StringNullableWithAggregatesFilter<"PracticeRunItem"> | string | null
+  activitySnapshot?: Prisma.StringNullableWithAggregatesFilter<"PracticeRunItem"> | string | null
   origin?: Prisma.StringWithAggregatesFilter<"PracticeRunItem"> | string
   status?: Prisma.StringWithAggregatesFilter<"PracticeRunItem"> | string
   isRepetition?: Prisma.BoolWithAggregatesFilter<"PracticeRunItem"> | boolean
@@ -354,6 +366,7 @@ export type PracticeRunItemCreateInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -372,6 +385,7 @@ export type PracticeRunItemUncheckedCreateInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -386,6 +400,7 @@ export type PracticeRunItemUpdateInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -404,6 +419,7 @@ export type PracticeRunItemUncheckedUpdateInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -420,6 +436,7 @@ export type PracticeRunItemCreateManyInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -432,6 +449,7 @@ export type PracticeRunItemUpdateManyMutationInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -445,6 +463,7 @@ export type PracticeRunItemUncheckedUpdateManyInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -479,6 +498,7 @@ export type PracticeRunItemCountOrderByAggregateInput = {
   lessonId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
   activityVersionId?: Prisma.SortOrder
+  activitySnapshot?: Prisma.SortOrder
   origin?: Prisma.SortOrder
   status?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
@@ -497,6 +517,7 @@ export type PracticeRunItemMaxOrderByAggregateInput = {
   lessonId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
   activityVersionId?: Prisma.SortOrder
+  activitySnapshot?: Prisma.SortOrder
   origin?: Prisma.SortOrder
   status?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
@@ -511,6 +532,7 @@ export type PracticeRunItemMinOrderByAggregateInput = {
   lessonId?: Prisma.SortOrder
   activityId?: Prisma.SortOrder
   activityVersionId?: Prisma.SortOrder
+  activitySnapshot?: Prisma.SortOrder
   origin?: Prisma.SortOrder
   status?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
@@ -685,6 +707,7 @@ export type PracticeRunItemCreateWithoutPracticeRunInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -701,6 +724,7 @@ export type PracticeRunItemUncheckedCreateWithoutPracticeRunInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -745,6 +769,7 @@ export type PracticeRunItemScalarWhereInput = {
   lessonId?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
   activityId?: Prisma.StringFilter<"PracticeRunItem"> | string
   activityVersionId?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
+  activitySnapshot?: Prisma.StringNullableFilter<"PracticeRunItem"> | string | null
   origin?: Prisma.StringFilter<"PracticeRunItem"> | string
   status?: Prisma.StringFilter<"PracticeRunItem"> | string
   isRepetition?: Prisma.BoolFilter<"PracticeRunItem"> | boolean
@@ -757,6 +782,7 @@ export type PracticeRunItemCreateWithoutAttemptsInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -774,6 +800,7 @@ export type PracticeRunItemUncheckedCreateWithoutAttemptsInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -803,6 +830,7 @@ export type PracticeRunItemUpdateWithoutAttemptsInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -820,6 +848,7 @@ export type PracticeRunItemUncheckedUpdateWithoutAttemptsInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -833,6 +862,7 @@ export type PracticeRunItemCreateWithoutActivityVersionInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -849,6 +879,7 @@ export type PracticeRunItemUncheckedCreateWithoutActivityVersionInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -888,6 +919,7 @@ export type PracticeRunItemCreateWithoutRepetitionsInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -905,6 +937,7 @@ export type PracticeRunItemUncheckedCreateWithoutRepetitionsInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -923,6 +956,7 @@ export type PracticeRunItemCreateWithoutRepetitionOfItemInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -940,6 +974,7 @@ export type PracticeRunItemUncheckedCreateWithoutRepetitionOfItemInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -973,6 +1008,7 @@ export type PracticeRunItemUpdateWithoutRepetitionsInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -990,6 +1026,7 @@ export type PracticeRunItemUncheckedUpdateWithoutRepetitionsInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1020,6 +1057,7 @@ export type PracticeRunItemCreateManyPracticeRunInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -1032,6 +1070,7 @@ export type PracticeRunItemUpdateWithoutPracticeRunInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1048,6 +1087,7 @@ export type PracticeRunItemUncheckedUpdateWithoutPracticeRunInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1063,6 +1103,7 @@ export type PracticeRunItemUncheckedUpdateManyWithoutPracticeRunInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1076,6 +1117,7 @@ export type PracticeRunItemCreateManyActivityVersionInput = {
   position: number
   lessonId?: string | null
   activityId: string
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -1088,6 +1130,7 @@ export type PracticeRunItemUpdateWithoutActivityVersionInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1104,6 +1147,7 @@ export type PracticeRunItemUncheckedUpdateWithoutActivityVersionInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1119,6 +1163,7 @@ export type PracticeRunItemUncheckedUpdateManyWithoutActivityVersionInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1133,6 +1178,7 @@ export type PracticeRunItemCreateManyRepetitionOfItemInput = {
   lessonId?: string | null
   activityId: string
   activityVersionId?: string | null
+  activitySnapshot?: string | null
   origin: string
   status?: string
   isRepetition?: boolean
@@ -1144,6 +1190,7 @@ export type PracticeRunItemUpdateWithoutRepetitionOfItemInput = {
   position?: Prisma.IntFieldUpdateOperationsInput | number
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1161,6 +1208,7 @@ export type PracticeRunItemUncheckedUpdateWithoutRepetitionOfItemInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1176,6 +1224,7 @@ export type PracticeRunItemUncheckedUpdateManyWithoutRepetitionOfItemInput = {
   lessonId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   activityId?: Prisma.StringFieldUpdateOperationsInput | string
   activityVersionId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  activitySnapshot?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   origin?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
@@ -1229,6 +1278,7 @@ export type PracticeRunItemSelect<ExtArgs extends runtime.Types.Extensions.Inter
   lessonId?: boolean
   activityId?: boolean
   activityVersionId?: boolean
+  activitySnapshot?: boolean
   origin?: boolean
   status?: boolean
   isRepetition?: boolean
@@ -1249,6 +1299,7 @@ export type PracticeRunItemSelectCreateManyAndReturn<ExtArgs extends runtime.Typ
   lessonId?: boolean
   activityId?: boolean
   activityVersionId?: boolean
+  activitySnapshot?: boolean
   origin?: boolean
   status?: boolean
   isRepetition?: boolean
@@ -1266,6 +1317,7 @@ export type PracticeRunItemSelectUpdateManyAndReturn<ExtArgs extends runtime.Typ
   lessonId?: boolean
   activityId?: boolean
   activityVersionId?: boolean
+  activitySnapshot?: boolean
   origin?: boolean
   status?: boolean
   isRepetition?: boolean
@@ -1283,6 +1335,7 @@ export type PracticeRunItemSelectScalar = {
   lessonId?: boolean
   activityId?: boolean
   activityVersionId?: boolean
+  activitySnapshot?: boolean
   origin?: boolean
   status?: boolean
   isRepetition?: boolean
@@ -1290,7 +1343,7 @@ export type PracticeRunItemSelectScalar = {
   answeredAt?: boolean
 }
 
-export type PracticeRunItemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "practiceRunId" | "position" | "lessonId" | "activityId" | "activityVersionId" | "origin" | "status" | "isRepetition" | "repetitionOfItemId" | "answeredAt", ExtArgs["result"]["practiceRunItem"]>
+export type PracticeRunItemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "practiceRunId" | "position" | "lessonId" | "activityId" | "activityVersionId" | "activitySnapshot" | "origin" | "status" | "isRepetition" | "repetitionOfItemId" | "answeredAt", ExtArgs["result"]["practiceRunItem"]>
 export type PracticeRunItemInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   practiceRun?: boolean | Prisma.PracticeRunDefaultArgs<ExtArgs>
   activityVersion?: boolean | Prisma.PracticeRunItem$activityVersionArgs<ExtArgs>
@@ -1326,6 +1379,7 @@ export type $PracticeRunItemPayload<ExtArgs extends runtime.Types.Extensions.Int
     lessonId: string | null
     activityId: string
     activityVersionId: string | null
+    activitySnapshot: string | null
     origin: string
     status: string
     isRepetition: boolean
@@ -1765,6 +1819,7 @@ export interface PracticeRunItemFieldRefs {
   readonly lessonId: Prisma.FieldRef<"PracticeRunItem", 'String'>
   readonly activityId: Prisma.FieldRef<"PracticeRunItem", 'String'>
   readonly activityVersionId: Prisma.FieldRef<"PracticeRunItem", 'String'>
+  readonly activitySnapshot: Prisma.FieldRef<"PracticeRunItem", 'String'>
   readonly origin: Prisma.FieldRef<"PracticeRunItem", 'String'>
   readonly status: Prisma.FieldRef<"PracticeRunItem", 'String'>
   readonly isRepetition: Prisma.FieldRef<"PracticeRunItem", 'Boolean'>

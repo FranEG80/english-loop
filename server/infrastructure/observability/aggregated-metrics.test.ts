@@ -23,6 +23,22 @@ describe("AggregatedMetrics", () => {
     const metrics = new AggregatedMetrics();
     metrics.recordRequest({ route: "/health", method: "GET", status: 200, durationMs: 1 });
     metrics.reset();
-    expect(metrics.snapshot()).toEqual({ requests: 0, errors: 0, totalDurationMs: 0, averageDurationMs: 0, errorCodes: {}, endpoints: {} });
+    expect(metrics.snapshot()).toEqual({ requests: 0, errors: 0, totalDurationMs: 0, averageDurationMs: 0, errorCodes: {}, endpoints: {}, pedagogicalEvents: {}, reviewQueueSize: null });
+  });
+
+  it("aggregates low-cardinality pedagogical events and queue gauges", () => {
+    const metrics = new AggregatedMetrics();
+    metrics.recordPedagogicalEvent("attempt.processed", { correct: "true", mode: "FOCUSED" });
+    metrics.recordPedagogicalEvent("attempt.processed", { mode: "FOCUSED", correct: "true" });
+    metrics.recordPedagogicalEvent("practice_run.created", { mode: "DAILY", taxonomyNodeId: "daily" });
+    metrics.recordReviewQueueSize(3.9);
+
+    expect(metrics.snapshot()).toMatchObject({
+      pedagogicalEvents: {
+        "attempt.processed{correct=true,mode=FOCUSED}": 2,
+        "practice_run.created{mode=DAILY,taxonomyNodeId=daily}": 1,
+      },
+      reviewQueueSize: 3,
+    });
   });
 });

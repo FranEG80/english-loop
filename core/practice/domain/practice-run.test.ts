@@ -48,6 +48,40 @@ describe("PracticeRun", () => {
     expect(run.activityVersionIds).toEqual(["a1-v1", "a2-v1", "a1-v1"]);
   });
 
+  it("materializes and isolates the complete activity snapshot", () => {
+    const snapshot = {
+      id: "a1",
+      versionId: "a1-v1",
+      level: "B1" as const,
+      type: "choice",
+      category: "grammar",
+      topic: "grammar",
+      subtopic: "present",
+      taxonomyNodeIds: ["grammar"],
+      difficulty: 1,
+      instructions: "Choose",
+      prompt: "Choose yes",
+      options: [{ id: "yes", text: "Yes", feedback: "Correct" }],
+      lessonIds: ["lesson-1"],
+      tags: ["tag"],
+      estimatedSeconds: 10,
+      evaluator: { strategy: "single_option" as const, correctOptionId: "yes" },
+      explanation: "Use yes.",
+      status: "published" as const,
+    };
+    const run = makeRun({ activitySnapshots: [snapshot, null] });
+    const returned = run.activitySnapshots[0];
+    expect(returned).toEqual(snapshot);
+    if (returned?.options?.[0]) returned.options[0].text = "mutated";
+    expect(run.currentActivitySnapshot?.options?.[0]?.text).toBe("Yes");
+    const persisted = run.toSnapshot();
+    expect(persisted.activitySnapshots?.[0]).toEqual(snapshot);
+  });
+
+  it("requires one activity snapshot slot per activity", () => {
+    expect(() => makeRun({ activitySnapshots: [null] })).toThrow(InvariantViolationException);
+  });
+
   it("rejects a snapshot whose versions do not match its activities", () => {
     expect(() => makeRun({ activityVersionIds: ["a1-v1"] })).toThrow(InvariantViolationException);
   });

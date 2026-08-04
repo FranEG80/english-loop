@@ -3,6 +3,7 @@ import type { PrismaClient } from "@/generated/prisma/client";
 import type { PracticeRunRepository } from "@/core/practice/ports/practice-run-repository";
 import { PracticeRun } from "@/core/practice/domain/practice-run";
 import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
+import type { Activity } from "@/core/content/domain/types/activity";
 import { getPrismaClient } from "../database/prisma-transaction-context";
 
 interface ScopeSnapshot {
@@ -11,6 +12,15 @@ interface ScopeSnapshot {
   taxonomyPath: string[];
   descendantIds: string[];
   requestedCount: number;
+}
+
+function parseActivitySnapshot(value: string | null): Activity | null {
+  if (!value) return null;
+  try {
+    return JSON.parse(value) as Activity;
+  } catch {
+    return null;
+  }
 }
 
 /**
@@ -26,7 +36,12 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
         dailySession: { select: { id: true } },
         items: {
           orderBy: { position: "asc" },
-          select: { activityId: true, activityVersionId: true, isRepetition: true },
+          select: {
+            activityId: true,
+            activityVersionId: true,
+            activitySnapshot: true,
+            isRepetition: true,
+          },
         },
       },
     });
@@ -45,6 +60,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
       },
       activityIds: row.items.map((item) => item.activityId),
       activityVersionIds: row.items.map((item) => item.activityVersionId),
+      activitySnapshots: row.items.map((item) => parseActivitySnapshot(item.activitySnapshot)),
       repetitionActivityIds: row.items.filter((item) => item.isRepetition).map((item) => item.activityId),
       originalActivityCount: row.originalActivityCount || row.items.filter((item) => !item.isRepetition).length,
       currentIndex: row.currentIndex,
@@ -108,6 +124,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
             select: { id: true },
           })
         : null;
+      const activitySnapshot = snapshot.activitySnapshots?.[position] ?? null;
       await db.practiceRunItem.upsert({
         where: { practiceRunId_position: { practiceRunId: snapshot.id, position } },
         create: {
@@ -117,6 +134,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
           lessonId: null,
           activityId,
           activityVersionId: activityVersion?.id ?? null,
+          activitySnapshot: activitySnapshot ? JSON.stringify(activitySnapshot) : null,
           origin: snapshot.mode,
           status: isRepetition
             ? "repetition"
@@ -130,6 +148,7 @@ export class PrismaPracticeRunRepository implements PracticeRunRepository {
         },
         update: {
           activityVersionId: activityVersion?.id ?? null,
+          activitySnapshot: activitySnapshot ? JSON.stringify(activitySnapshot) : null,
           status: isRepetition
             ? "repetition"
             : position === snapshot.currentIndex
