@@ -102,8 +102,8 @@ instalación sin cambiar el código, pero no modifican las reglas pedagógicas.
 | SQLite | `@prisma/adapter-better-sqlite3` | Desarrollo local y tests de integración | Disponible |
 | PostgreSQL | `@prisma/adapter-pg` | Despliegues Node/Vercel convencionales | Adaptador disponible |
 | MariaDB | `@prisma/adapter-mariadb` | Despliegues MariaDB | Adaptador disponible |
-| D1 binding | `D1BindingClient` | Worker de Cloudflare | Transporte tipado disponible |
-| D1 HTTP | `D1HttpClient` + Worker proxy | Un proceso Node/Vercel que accede a D1 | Transporte tipado disponible |
+| D1 binding | `D1BindingClient` + `PersistenceBundle` | Worker de Cloudflare | Repositorios nativos y batch disponibles |
+| D1 HTTP | `D1HttpClient` + Worker proxy + `PersistenceBundle` | Un proceso Node/Vercel que accede a D1 | Repositorios nativos y batch disponibles |
 
 SQLite, PostgreSQL y MariaDB se seleccionan mediante la factoría
 [`prisma-adapter-factory.ts`](../server/infrastructure/database/prisma-adapter-factory.ts).
@@ -143,6 +143,9 @@ D1_HTTP_TOKEN=secreto-compartido
 
 [`createD1Transport`](../server/infrastructure/persistence/d1/d1-runtime.ts)
 selecciona `D1BindingClient` para `binding` y `D1HttpClient` para `http`.
+`PersistenceBundle` inyecta ese transporte en repositorios separados por
+contexto; la UoW D1 agrupa las escrituras del callback en un único
+`D1.batch()` atómico.
 El cliente HTTP envía operaciones tipadas con:
 
 - token Bearer;
@@ -156,14 +159,15 @@ El protocolo D1 actual permite operaciones explícitas de health, metadatos del
 catálogo, lectura de actividad, consumo de verificaciones y protección contra
 replay. Las sentencias SQL están en el adaptador del Worker y usan parámetros.
 
-### Límite actual de D1
+### Límites actuales de D1
 
-El transporte y el proxy están implementados y probados, pero la composición
-completa de la aplicación todavía usa Prisma para los repositorios generales
-y Better Auth. Por tanto, el soporte D1 end-to-end de usuarios, sesiones,
-progreso, intentos y repasos requiere completar el `PersistenceBundle` nativo
-de D1. No se debe declarar producción completa con `DATABASE_PROVIDER=d1`
-hasta cerrar esa parte.
+La persistencia de las entidades del core, el rate limiting y el seed editorial
+por chunks ya se seleccionan mediante `PersistenceBundle`; Better Auth dispone
+de un adaptador D1 nativo. El endpoint de auth de una aplicación Cloudflare
+debe construir `createAuth({ binding: { DB } })` en su entrypoint para inyectar
+el binding; el `auth` singleton de Next sigue siendo la ruta Node/Vercel por
+defecto. `getCatalogWritePort()` rechaza D1 solo si no existe transporte D1
+configurado.
 
 ## Migraciones y seed
 
@@ -183,7 +187,7 @@ pnpm dataset:seed -- --dry-run
 # Aplicar migraciones a la base configurada
 pnpm prisma migrate deploy
 
-# Seed real para proveedores Prisma SQL
+# Seed real para proveedores Prisma SQL o D1 HTTP
 pnpm dataset:seed
 ```
 
@@ -191,8 +195,10 @@ El seed actual valida el dataset, calcula checksum, crea un release y publica
 el puntero solo después de completar la carga. Es idempotente para la misma
 versión y checksum. `--dry-run` no abre ni modifica la base de datos.
 
-El seed nativo para D1 local/remoto todavía forma parte del trabajo pendiente
-del bundle D1; el script actual rechaza D1 antes de intentar usar SQLite.
+Para D1, el script de Node/Vercel usa el writer HTTP autenticado. En un
+Worker Cloudflare se puede usar directamente `D1CatalogWriteAdapter` con el
+binding `DB`; el script CLI no intenta inventar un binding, por lo que exige
+`D1_TRANSPORT=http` y las credenciales del proxy.
 
 ## Intentos, puntuación y repaso
 

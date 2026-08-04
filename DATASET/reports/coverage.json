@@ -1,17 +1,17 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 125,
-    "publishedActivities": 11800,
+    "publishedLessons": 124,
+    "publishedActivities": 12100,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": true,
-    "nodeTargetsMet": 117,
+    "nodeTargetsMet": 120,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 5950,
+      "B1": 6250,
       "B2": 5850
     },
     "category": {
@@ -19,7 +19,7 @@
       "grammar": 4900,
       "guided-writing": 1000,
       "phrasal-verbs": 600,
-      "prepositions": 300,
+      "prepositions": 600,
       "reading": 1000,
       "use-of-english": 1200,
       "vocabulary": 2400
@@ -29,6 +29,7 @@
       "b1-collocations-daily-life": 100,
       "b1-collocations-travel-work": 100,
       "b1-daily-routines-life": 100,
+      "b1-dependent-prepositions": 100,
       "b1-education-study": 100,
       "b1-environment-weather-places": 100,
       "b1-error-correction": 100,
@@ -43,6 +44,8 @@
       "b1-phrasal-everyday-actions": 100,
       "b1-phrasal-study-relationships": 100,
       "b1-phrasal-travel-services": 100,
+      "b1-prepositions-movement-travel": 100,
+      "b1-prepositions-time-place": 100,
       "b1-reading-gapped-text": 100,
       "b1-reading-gist-detail": 100,
       "b1-reading-notices-functional-texts": 100,
@@ -123,6 +126,7 @@
       "b1-collocations-daily-life": 100,
       "b1-collocations-travel-work": 100,
       "b1-daily-routines-life": 100,
+      "b1-dependent-prepositions": 100,
       "b1-education-study": 100,
       "b1-environment-weather-places": 100,
       "b1-error-correction": 100,
@@ -137,6 +141,8 @@
       "b1-phrasal-everyday-actions": 100,
       "b1-phrasal-study-relationships": 100,
       "b1-phrasal-travel-services": 100,
+      "b1-prepositions-movement-travel": 100,
+      "b1-prepositions-time-place": 100,
       "b1-reading-gapped-text": 100,
       "b1-reading-gist-detail": 100,
       "b1-reading-notices-functional-texts": 100,
@@ -243,17 +249,17 @@
       "complete_paragraph": 225,
       "error_correction": 550,
       "error_identification": 75,
-      "fill_blank": 2100,
+      "fill_blank": 2175,
       "gapped_text": 125,
       "guided_writing": 175,
       "key_word_transformation": 75,
-      "matching": 800,
+      "matching": 875,
       "multi_gap_fill": 75,
       "multiple_choice_cloze": 400,
       "multiple_select": 325,
-      "open_cloze": 100,
+      "open_cloze": 150,
       "phrasal_verb_choice": 200,
-      "preposition_choice": 75,
+      "preposition_choice": 150,
       "reading_comprehension": 175,
       "reading_matching": 125,
       "sentence_transformation": 275,
@@ -261,14 +267,14 @@
       "true_false": 1500,
       "vocabulary_in_context": 150,
       "word_formation": 75,
-      "word_order": 1625
+      "word_order": 1650
     },
     "difficulty": {
-      "1": 1290,
-      "2": 2618,
-      "3": 2723,
-      "4": 2679,
-      "5": 2490
+      "1": 1350,
+      "2": 2678,
+      "3": 2783,
+      "4": 2738,
+      "5": 2551
     }
   },
   "targets": [
@@ -549,10 +555,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-education-study",
@@ -888,10 +900,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-prepositions-time-place",
@@ -905,10 +923,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-reading-gapped-text",

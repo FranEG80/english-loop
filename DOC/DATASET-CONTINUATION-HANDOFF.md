@@ -186,117 +186,303 @@ marca la tanda como `HECHA` únicamente si las cinco parejas tienen lección y
 100 actividades válidas. Si una tanda está reservada, ningún otro agente puede
 tocar sus cinco nodos.
 
-#### TANDA-01 — Agent-01 — EN PROGRESO → HECHA
+#### TANDA-01 — Agent-01 — HECHA **
 
-- [-] `b1-daily-routines-life` → lesson `b1-vocabulary-daily-routines-life` + pack
-- [-] `b1-family-relationships` → lesson `b1-vocabulary-family-relationships` + pack
-- [-] `b1-home-services` → lesson `b1-vocabulary-home-services` + pack
-- [-] `b1-food-cooking` → lesson `b1-vocabulary-food-cooking` + pack
-- [-] `b1-health-body` → lesson `b1-vocabulary-health-body` + pack
+- [x] `b1-daily-routines-life` → lesson `b1-vocabulary-daily-routines-life` + pack
+- [x] `b1-family-relationships` → lesson `b1-vocabulary-family-relationships` + pack
+- [x] `b1-home-services` → lesson `b1-vocabulary-home-services` + pack
+- [x] `b1-food-cooking` → lesson `b1-vocabulary-food-cooking` + pack
+- [x] `b1-health-body` → lesson `b1-vocabulary-health-body` + pack
 
-#### TANDA-02 — Agent-02 — EN PROGRESO → HECHA
+#### TANDA-02 — Agent-02 — HECHA **
 
-- [-] `b1-education-study` → lesson `b1-vocabulary-education-study` + pack
-- [-] `b1-work-jobs` → lesson `b1-vocabulary-work-jobs` + pack
-- [-] `b1-travel-transport` → lesson `b1-vocabulary-travel-transport` + pack
-- [-] `b1-shopping-clothes-money` → lesson `b1-vocabulary-shopping-clothes-money` + pack
-- [-] `b1-leisure-sport-entertainment` → lesson `b1-vocabulary-leisure-sport-entertainment` + pack
+- [x] `b1-education-study` → lesson `b1-vocabulary-education-study` + pack
+- [x] `b1-work-jobs` → lesson `b1-vocabulary-work-jobs` + pack
+- [x] `b1-travel-transport` → lesson `b1-vocabulary-travel-transport` + pack
+- [x] `b1-shopping-clothes-money` → lesson `b1-vocabulary-shopping-clothes-money` + pack
+- [x] `b1-leisure-sport-entertainment` → lesson `b1-vocabulary-leisure-sport-entertainment` + pack
 
-#### TANDA-03 — Agent-03 — EN PROGRESO
+#### TANDA-03 — Agent-03 — HECHA **
 
-- [-] `b1-technology-digital-life` → lesson `b1-vocabulary-technology-digital-life` + pack
-- [-] `b1-environment-weather-places` → lesson `b1-vocabulary-environment-weather-places` + pack
-- [-] `b2-media-communication` → lesson `b2-vocabulary-media-communication` + pack
-- [-] `b2-climate-global-issues` → lesson `b2-vocabulary-climate-global-issues` + pack
-- [-] `b2-health-psychology` → lesson `b2-vocabulary-health-psychology` + pack
+- [x] `b1-technology-digital-life` → lesson `b1-vocabulary-technology-digital-life` + pack
+- [x] `b1-environment-weather-places` → lesson `b1-vocabulary-environment-weather-places` + pack
+- [x] `b2-media-communication` → lesson `b2-vocabulary-media-communication` + pack
+- [x] `b2-climate-global-issues` → lesson `b2-vocabulary-climate-global-issues` + pack
+- [x] `b2-health-psychology` → lesson `b2-vocabulary-health-psychology` + pack
 
-#### TANDA-04 — DISPONIBLE
+#### TANDA-04 — Agent-04 — HECHA **
 
-- [ ] `b2-crime-justice` → lesson `b2-vocabulary-crime-justice` + pack
-- [ ] `b2-society-culture-public-life` → lesson `b2-vocabulary-society-culture-public-life` + pack
-- [ ] `b2-money-economics` → lesson `b2-vocabulary-money-economics` + pack
-- [ ] `b2-travel-tourism-urban-life` → lesson `b2-vocabulary-travel-tourism-urban-life` + pack
-- [ ] `b2-creativity-innovation-decisions` → lesson `b2-vocabulary-creativity-innovation-decisions` + pack
+- [x] `b2-crime-justice` → lesson `b2-vocabulary-crime-justice` + pack
+- [x] `b2-society-culture-public-life` → lesson `b2-vocabulary-society-culture-public-life` + pack
+- [x] `b2-money-economics` → lesson `b2-vocabulary-money-economics` + pack
+- [x] `b2-travel-tourism-urban-life` → lesson `b2-vocabulary-travel-tourism-urban-life` + pack
+- [x] `b2-creativity-innovation-decisions` → lesson `b2-vocabulary-creativity-innovation-decisions` + pack
 
-#### TANDA-05 — DISPONIBLE
+#### TANDA-05 — Agent-05 — HECHA **
 
-- [ ] `b1-multiple-choice-cloze` → lesson `b1-use-of-english-multiple-choice-cloze` + pack
-- [ ] `b1-open-cloze` → lesson `b1-use-of-english-open-cloze` + pack
-- [ ] `b1-word-formation` → lesson `b1-use-of-english-word-formation` + pack
-- [ ] `b1-sentence-rewriting` → lesson `b1-use-of-english-sentence-rewriting` + pack
-- [ ] `b1-error-correction` → lesson `b1-use-of-english-error-correction` + pack
+- [x] `b1-multiple-choice-cloze` → lesson `b1-use-of-english-multiple-choice-cloze` + pack
+- [x] `b1-open-cloze` → lesson `b1-use-of-english-open-cloze` + pack
+- [x] `b1-word-formation` → lesson `b1-use-of-english-word-formation` + pack
+- [x] `b1-sentence-rewriting` → lesson `b1-use-of-english-sentence-rewriting` + pack
+- [x] `b1-error-correction` → lesson `b1-use-of-english-error-correction` + pack
 
-#### TANDA-06 — DISPONIBLE
+#### TANDA-06 — HECHA **
 
-- [ ] `b1-fixed-expressions` → lesson `b1-use-of-english-fixed-expressions` + pack
-- [ ] `b2-multiple-choice-cloze` → lesson `b2-use-of-english-multiple-choice-cloze` + pack
-- [ ] `b2-open-cloze` → lesson `b2-use-of-english-open-cloze` + pack
-- [ ] `b2-word-formation` → lesson `b2-use-of-english-word-formation` + pack
-- [ ] `b2-key-word-transformations` → lesson `b2-use-of-english-key-word-transformations` + pack
+- [x] `b1-fixed-expressions` → lesson `b1-use-of-english-fixed-expressions` + pack
+- [x] `b2-multiple-choice-cloze` → lesson `b2-use-of-english-multiple-choice-cloze` + pack
+- [x] `b2-open-cloze` → lesson `b2-use-of-english-open-cloze` + pack
+- [x] `b2-word-formation` → lesson `b2-use-of-english-word-formation` + pack
+- [x] `b2-key-word-transformations` → lesson `b2-use-of-english-key-word-transformations` + pack
 
-#### TANDA-07 — DISPONIBLE
+#### TANDA-07 — Agent-02 — HECHA **
 
-- [ ] `b2-register-rewriting` → lesson `b2-use-of-english-register-rewriting` + pack
-- [ ] `b2-advanced-fixed-expressions` → lesson `b2-use-of-english-fixed-expressions` + pack
-- [ ] `b1-reading-notices-functional-texts` → lesson `b1-reading-notices-functional-texts` + pack
-- [ ] `b1-reading-gist-detail` → lesson `b1-reading-gist-detail` + pack
-- [ ] `b1-reading-people-matching` → lesson `b1-reading-people-matching` + pack
+- [x] `b2-register-rewriting` → lesson `b2-use-of-english-register-rewriting` + pack
+- [x] `b2-advanced-fixed-expressions` → lesson `b2-use-of-english-fixed-expressions` + pack
+- [x] `b1-reading-notices-functional-texts` → lesson `b1-reading-notices-functional-texts` + pack
+- [x] `b1-reading-gist-detail` → lesson `b1-reading-gist-detail` + pack
+- [x] `b1-reading-people-matching` → lesson `b1-reading-people-matching` + pack
 
-#### TANDA-08 — DISPONIBLE
+#### TANDA-08 — Agent-04 — HECHA **
 
-- [ ] `b1-reading-gapped-text` → lesson `b1-reading-gapped-text-cohesion` + pack
-- [ ] `b1-reading-opinion-purpose` → lesson `b1-reading-opinion-purpose` + pack
-- [ ] `b2-reading-gist-detail-inference` → lesson `b2-reading-gist-detail-inference` + pack
-- [ ] `b2-reading-attitude-tone` → lesson `b2-reading-attitude-tone` + pack
-- [ ] `b2-reading-gapped-text` → lesson `b2-reading-gapped-text` + pack
+- [x] `b1-reading-gapped-text` → lesson `b1-reading-gapped-text-cohesion` + pack
+- [x] `b1-reading-opinion-purpose` → lesson `b1-reading-opinion-purpose` + pack
+- [x] `b2-reading-gist-detail-inference` → lesson `b2-reading-gist-detail-inference` + pack
+- [x] `b2-reading-attitude-tone` → lesson `b2-reading-attitude-tone` + pack
+- [x] `b2-reading-gapped-text` → lesson `b2-reading-gapped-text` + pack
 
-#### TANDA-09 — DISPONIBLE
+#### TANDA-09 — HECHA **
 
-- [ ] `b2-reading-multiple-matching` → lesson `b2-reading-multiple-matching` + pack
-- [ ] `b2-reading-argument-evidence` → lesson `b2-reading-argument-evidence` + pack
-- [ ] `b1-writing-informal-email` → lesson `b1-writing-informal-email` + pack
-- [ ] `b1-writing-semi-formal-email` → lesson `b1-writing-semi-formal-email` + pack
-- [ ] `b1-writing-story-sequencing` → lesson `b1-writing-story-sequencing` + pack
+- [x] `b2-reading-multiple-matching` → lesson `b2-reading-multiple-matching` + pack
+- [x] `b2-reading-argument-evidence` → lesson `b2-reading-argument-evidence` + pack
+- [x] `b1-writing-informal-email` → lesson `b1-writing-informal-email` + pack
+- [x] `b1-writing-semi-formal-email` → lesson `b1-writing-semi-formal-email` + pack
+- [x] `b1-writing-story-sequencing` → lesson `b1-writing-story-sequencing` + pack
 
-#### TANDA-10 — DISPONIBLE
+#### TANDA-10 — Agent-05 — HECHA **
 
-- [ ] `b1-writing-opinion-article` → lesson `b1-writing-opinion-article` + pack
-- [ ] `b1-writing-review-description` → lesson `b1-writing-review-description` + pack
-- [ ] `b2-writing-essay-structure` → lesson `b2-writing-essay-structure` + pack
-- [ ] `b2-writing-formal-email` → lesson `b2-writing-formal-email` + pack
-- [ ] `b2-writing-article-review` → lesson `b2-writing-article-review` + pack
+- [x] `b1-writing-opinion-article` → lesson `b1-writing-opinion-article` + pack
+- [x] `b1-writing-review-description` → lesson `b1-writing-review-description` + pack
+- [x] `b2-writing-essay-structure` → lesson `b2-writing-essay-structure` + pack
+- [x] `b2-writing-formal-email` → lesson `b2-writing-formal-email` + pack
+- [x] `b2-writing-article-review` → lesson `b2-writing-article-review` + pack
 
-#### TANDA-11 — DISPONIBLE
+#### TANDA-11 — Agent-02 — HECHA **
 
-- [ ] `b2-writing-report` → lesson `b2-writing-report` + pack
-- [ ] `b2-writing-argument-cohesion` → lesson `b2-writing-argument-cohesion` + pack
-- [ ] `b1-phrasal-everyday-actions` → lesson `b1-phrasal-verbs-everyday-actions` + pack
-- [ ] `b1-phrasal-travel-services` → lesson `b1-phrasal-verbs-travel-services` + pack
-- [ ] `b1-phrasal-study-relationships` → lesson `b1-phrasal-verbs-study-relationships` + pack
+- [x] `b2-writing-report` → lesson `b2-writing-report` + pack
+- [x] `b2-writing-argument-cohesion` → lesson `b2-writing-argument-cohesion` + pack
+- [x] `b1-phrasal-everyday-actions` → lesson `b1-phrasal-verbs-everyday-actions` + pack
+- [x] `b1-phrasal-travel-services` → lesson `b1-phrasal-verbs-travel-services` + pack
+- [x] `b1-phrasal-study-relationships` → lesson `b1-phrasal-verbs-study-relationships` + pack
 
-#### TANDA-12 — DISPONIBLE
+#### TANDA-12 — HECHA — Agent-06
 
-- [ ] `b2-phrasal-change-progress` → lesson `b2-phrasal-verbs-change-progress` + pack
-- [ ] `b2-phrasal-work-problems` → lesson `b2-phrasal-verbs-work-problems` + pack
-- [ ] `b2-phrasal-attitudes-relationships` → lesson `b2-phrasal-verbs-attitudes-relationships` + pack
-- [ ] `b1-collocations-daily-life` → lesson `b1-collocations-daily-life` + pack
-- [ ] `b1-collocations-travel-work` → lesson `b1-collocations-travel-work` + pack
+- [x] `b2-phrasal-change-progress` → lesson `b2-phrasal-verbs-change-progress` + pack
+- [x] `b2-phrasal-work-problems` → lesson `b2-phrasal-verbs-work-problems` + pack
+- [x] `b2-phrasal-attitudes-relationships` → lesson `b2-phrasal-verbs-attitudes-relationships` + pack
+- [x] `b1-collocations-daily-life` → lesson `b1-collocations-daily-life` + pack
+- [x] `b1-collocations-travel-work` → lesson `b1-collocations-travel-work` + pack
 
-#### TANDA-13 — DISPONIBLE
+#### TANDA-13 — Agent-04 — HECHA **
 
-- [ ] `b2-collocations-academic-business` → lesson `b2-collocations-academic-business` + pack
-- [ ] `b2-collocations-impact-attitudes` → lesson `b2-collocations-impact-attitudes` + pack
-- [ ] `b1-prepositions-time-place` → lesson `b1-prepositions-time-place` + pack
-- [ ] `b1-prepositions-movement-travel` → lesson `b1-prepositions-movement-travel` + pack
-- [ ] `b1-dependent-prepositions` → lesson `b1-dependent-prepositions` + pack
+- [x] `b2-collocations-academic-business` → lesson `b2-collocations-academic-business` + pack
+- [x] `b2-collocations-impact-attitudes` → lesson `b2-collocations-impact-attitudes` + pack
+- [x] `b1-prepositions-time-place` → lesson `b1-prepositions-time-place` + pack
+- [x] `b1-prepositions-movement-travel` → lesson `b1-prepositions-movement-travel` + pack
+- [x] `b1-dependent-prepositions` → lesson `b1-dependent-prepositions` + pack
 
-#### TANDA-14 — DISPONIBLE — 3 lecciones
+## TANDA-13 — completada
 
-- [ ] `b2-dependent-prepositions` → lesson `b2-dependent-prepositions` + pack
-- [ ] `b2-prepositions-abstract-relations` → lesson `b2-prepositions-abstract-relations` + pack
-- [ ] `b2-prepositional-fixed-phrases` → lesson `b2-prepositional-fixed-phrases` + pack
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-collocations-academic-business | b2-collocations-academic-business | sí | 100 |
+| 2 | b2-collocations-impact-attitudes | b2-collocations-impact-attitudes | sí | 100 |
+| 3 | b1-prepositions-time-place | b1-prepositions-time-place | sí | 100 |
+| 4 | b1-prepositions-movement-travel | b1-prepositions-movement-travel | sí | 100 |
+| 5 | b1-dependent-prepositions | b1-dependent-prepositions | sí | 100 |
+
+Siguiente tanda: no hay otra tanda disponible en este handoff; TANDA-14 ya está completada por Agent-06.
+Última validación global: ejecutada con `pnpm dataset:all`; 124 lecciones, 12.100 actividades, 484 lotes y 120/120 objetivos de nodo. La evaluación comprobó las 12.100 actividades; quedan 11 incidencias globales ajenas a TANDA-13.
+Incidencias abiertas: la auditoría específica de TANDA-13 muestra 0 errores de validación, 0 duplicados exactos y 0 pares cercanos. Las 11 incidencias globales restantes son cinco rutas antiguas de Use of English y seis referencias de taxonomía de Phrasal Verbs, todas fuera de esta tanda.
+
+#### TANDA-14 — HECHA — Agent-06 — 3 lecciones **
+
+- [x] `b2-dependent-prepositions` → lesson `b2-dependent-prepositions` + pack
+- [x] `b2-prepositions-abstract-relations` → lesson `b2-prepositions-abstract-relations` + pack
+- [x] `b2-prepositional-fixed-phrases` → lesson `b2-prepositional-fixed-phrases` + pack
 
 ### Formato de registro de cada tanda
+
+## TANDA-02 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b1-education-study | b1-vocabulary-education-study | sí | 100 |
+| 2 | b1-work-jobs | b1-vocabulary-work-jobs | sí | 100 |
+| 3 | b1-travel-transport | b1-vocabulary-travel-transport | sí | 100 |
+| 4 | b1-shopping-clothes-money | b1-vocabulary-shopping-clothes-money | sí | 100 |
+| 5 | b1-leisure-sport-entertainment | b1-vocabulary-leisure-sport-entertainment | sí | 100 |
+
+Siguiente tanda reservada: TANDA-07; TANDA-04, TANDA-05 y TANDA-06 siguen reservadas por otros agentes.
+Primer nodo pendiente libre al reservarla: `b2-register-rewriting`
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 82 lecciones, 7.250 actividades, 195 errores globales de cobertura/planificación de otras tandas. La validación de evaluación comprobó las 7.250 actividades.
+Incidencias abiertas: la auditoría de TANDA-02 no deja duplicados exactos ni pares cercanos propios; el único duplicado exacto global restante pertenece a contenido ajeno (`b2-vocabulary-crime-justice`).
+
+## TANDA-03 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b1-technology-digital-life | b1-vocabulary-technology-digital-life | sí | 100 |
+| 2 | b1-environment-weather-places | b1-vocabulary-environment-weather-places | sí | 100 |
+| 3 | b2-media-communication | b2-vocabulary-media-communication | sí | 100 |
+| 4 | b2-climate-global-issues | b2-vocabulary-climate-global-issues | sí | 100 |
+| 5 | b2-health-psychology | b2-vocabulary-health-psychology | sí | 100 |
+
+Siguiente tanda reservada: TANDA-06; TANDA-04 y TANDA-05 siguen reservadas por otros agentes.
+Primer nodo pendiente libre: `b1-fixed-expressions`
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 76 lecciones, 7.150 actividades y 200 errores de cobertura/planificación de otras tandas.
+Incidencias abiertas: se corrigió el duplicado exacto entre `b2-media-communication-wo-005` y contenido de TANDA-04 cambiando solo el prompt de TANDA-03. La auditoría actual muestra 0 duplicados exactos y 0 cercanos que incluyan TANDA-03; el informe global mantiene 11 grupos exactos ajenos.
+
+## TANDA-04 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-crime-justice | b2-vocabulary-crime-justice | sí | 100 |
+| 2 | b2-society-culture-public-life | b2-vocabulary-society-culture-public-life | sí | 100 |
+| 3 | b2-money-economics | b2-vocabulary-money-economics | sí | 100 |
+| 4 | b2-travel-tourism-urban-life | b2-vocabulary-travel-tourism-urban-life | sí | 100 |
+| 5 | b2-creativity-innovation-decisions | b2-vocabulary-creativity-innovation-decisions | sí | 100 |
+
+Siguiente tanda reservada: TANDA-05 (Agent-05); primer nodo: `b1-multiple-choice-cloze`.
+Última validación global: ejecutada con `pnpm dataset:all`; 88 lecciones, 7.650 actividades y 75/120 objetivos de nodo. El dataset global mantiene 182 errores de cobertura/planificación de otras tandas; ninguno corresponde a TANDA-04. `pnpm dataset:test-grading` comprobó las 7.650 actividades.
+Incidencias abiertas: TANDA-04 no tiene duplicados exactos ni pares cercanos; los 9 grupos exactos globales actuales pertenecen a contenido fuera de esta tanda.
+
+## TANDA-05 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b1-multiple-choice-cloze | b1-use-of-english-multiple-choice-cloze | sí | 100 |
+| 2 | b1-open-cloze | b1-use-of-english-open-cloze | sí | 100 |
+| 3 | b1-word-formation | b1-use-of-english-word-formation | sí | 100 |
+| 4 | b1-sentence-rewriting | b1-use-of-english-sentence-rewriting | sí | 100 |
+| 5 | b1-error-correction | b1-use-of-english-error-correction | sí | 100 |
+
+Siguiente tanda libre: TANDA-09; TANDA-06, TANDA-07 y TANDA-08 siguen en progreso por otros agentes.
+Primer nodo pendiente libre: `b2-reading-multiple-matching`.
+Última validación global: ejecutada con `pnpm dataset:all`; 96 lecciones, 9.125 actividades, 90/120 objetivos de nodo y 130 errores globales de cobertura/planificación de otras tandas. El grading comprobó las 9.125 actividades.
+Incidencias abiertas: TANDA-05 no tiene errores de validación ni duplicados exactos o pares cercanos propios; los 9 grupos exactos globales actuales pertenecen a contenido fuera de esta tanda.
+
+## TANDA-06 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b1-fixed-expressions | b1-use-of-english-fixed-expressions | sí | 100 |
+| 2 | b2-multiple-choice-cloze | b2-use-of-english-multiple-choice-cloze | sí | 100 |
+| 3 | b2-open-cloze | b2-use-of-english-open-cloze | sí | 100 |
+| 4 | b2-word-formation | b2-use-of-english-word-formation | sí | 100 |
+| 5 | b2-key-word-transformations | b2-use-of-english-key-word-transformations | sí | 100 |
+
+Siguiente tanda reservada: TANDA-09; TANDA-07 y TANDA-08 siguen en progreso por otros agentes.
+Primer nodo pendiente libre al reservarla: `b2-reading-multiple-matching`.
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 96 lecciones, 9.125 actividades, 90/120 objetivos de nodo, evaluación comprobada para 9.125 actividades. Quedan 130 errores globales de otras tandas.
+Incidencias abiertas: la auditoría específica de TANDA-06 muestra 0 errores de validación, 0 duplicados exactos y 0 pares cercanos; los duplicados y errores globales restantes pertenecen a contenido fuera de esta tanda.
+
+## TANDA-07 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-register-rewriting | b2-use-of-english-register-rewriting | sí | 100 |
+| 2 | b2-advanced-fixed-expressions | b2-use-of-english-fixed-expressions | sí | 100 |
+| 3 | b1-reading-notices-functional-texts | b1-reading-notices-functional-texts | sí | 100 |
+| 4 | b1-reading-gist-detail | b1-reading-gist-detail | sí | 100 |
+| 5 | b1-reading-people-matching | b1-reading-people-matching | sí | 100 |
+
+Siguiente tanda reservada: TANDA-11; TANDA-08, TANDA-09 y TANDA-10 siguen en progreso por otros agentes.
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 106 lecciones, 9.200 actividades, 91/120 objetivos de nodo, evaluación comprobada para 9.200 actividades. Quedan 132 errores globales de otras tandas.
+Incidencias abiertas: la auditoría específica de TANDA-07 muestra 0 errores de validación, 0 pares cercanos y ningún duplicado exacto propio; los 3 grupos exactos globales restantes pertenecen a contenido fuera de esta tanda.
+
+## TANDA-08 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b1-reading-gapped-text | b1-reading-gapped-text-cohesion | sí | 100 |
+| 2 | b1-reading-opinion-purpose | b1-reading-opinion-purpose | sí | 100 |
+| 3 | b2-reading-gist-detail-inference | b2-reading-gist-detail-inference | sí | 100 |
+| 4 | b2-reading-attitude-tone | b2-reading-attitude-tone | sí | 100 |
+| 5 | b2-reading-gapped-text | b2-reading-gapped-text | sí | 100 |
+
+Siguiente tanda reservada: TANDA-13; TANDA-10, TANDA-11 y TANDA-12 siguen reservadas por otros agentes.
+Primer nodo pendiente libre al reservarla: `b2-collocations-academic-business`.
+Última validación global: ejecutada con `pnpm dataset:all`; 111 lecciones, 10.125 actividades, 405 lotes, 100/120 objetivos de nodo y 91 errores globales de cobertura de otras tandas. `pnpm dataset:test-grading` comprobó las 10.125 actividades.
+Incidencias abiertas: la auditoría específica de TANDA-08 muestra 0 errores de validación, 0 duplicados exactos y 0 pares cercanos. La primera lección se reubicó bajo la ruta curricular exigida por el validador; los 91 errores globales restantes son ajenos a TANDA-08.
+
+## TANDA-09 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-reading-multiple-matching | b2-reading-multiple-matching | sí | 100 |
+| 2 | b2-reading-argument-evidence | b2-reading-argument-evidence | sí | 100 |
+| 3 | b1-writing-informal-email | b1-writing-informal-email | sí | 100 |
+| 4 | b1-writing-semi-formal-email | b1-writing-semi-formal-email | sí | 100 |
+| 5 | b1-writing-story-sequencing | b1-writing-story-sequencing | sí | 100 |
+
+Siguiente tanda reservada: TANDA-12; TANDA-08, TANDA-10 y TANDA-11 siguen en progreso por otros agentes.
+Primer nodo pendiente libre al reservarla: `b2-phrasal-change-progress`.
+Última validación global: bloqueada antes de cargar el dataset porque TANDA-08 mantiene un JSON malformado no perteneciente a esta tanda (`activities/b2/reading/b2-reading-gapped-text/b2-reading-gapped-text/gapped_text/batch-001.json`). La auditoría aislada de TANDA-09 comprobó 20 lotes, 500 actividades, 4 tipos por nodo y las dificultades requeridas.
+Incidencias abiertas: la auditoría específica de TANDA-09 muestra 0 errores de esquema/contrato, 0 fallos de grading, 0 duplicados exactos y 0 pares cercanos. No se modificó el archivo externo que bloquea el pipeline global.
+
+## TANDA-10 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b1-writing-opinion-article | b1-writing-opinion-article | sí | 100 |
+| 2 | b1-writing-review-description | b1-writing-review-description | sí | 100 |
+| 3 | b2-writing-essay-structure | b2-writing-essay-structure | sí | 100 |
+| 4 | b2-writing-formal-email | b2-writing-formal-email | sí | 100 |
+| 5 | b2-writing-article-review | b2-writing-article-review | sí | 100 |
+
+No queda otra tanda libre indicada en este handoff: TANDA-11, TANDA-12 y TANDA-13 siguen en progreso y TANDA-14 ya está hecha.
+Última validación global: ejecutada con `pnpm dataset:all`; 119 lecciones, 11.300 actividades, 112/120 objetivos de nodo, 0 duplicados exactos y 0 pares cercanos. La evaluación comprobó las 11.300 actividades; quedan 102 errores globales de otras tandas.
+Incidencias abiertas: la auditoría específica de TANDA-10 muestra 0 errores de validación, 0 duplicados exactos y 0 pares cercanos. Las 5 lecciones fueron reubicadas bajo las rutas curriculares exigidas por el validador.
+
+## TANDA-11 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-writing-report | b2-writing-report | sí | 100 |
+| 2 | b2-writing-argument-cohesion | b2-writing-argument-cohesion | sí | 100 |
+| 3 | b1-phrasal-everyday-actions | b1-phrasal-verbs-everyday-actions | sí | 100 |
+| 4 | b1-phrasal-travel-services | b1-phrasal-verbs-travel-services | sí | 100 |
+| 5 | b1-phrasal-study-relationships | b1-phrasal-verbs-study-relationships | sí | 100 |
+
+Siguiente tanda libre: no hay; TANDA-12 y TANDA-13 siguen en progreso por otros agentes y TANDA-14 ya está hecha.
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 125 lecciones, 11.500 actividades, 460 lotes, 114/120 objetivos de nodo y evaluación comprobada para 11.500 actividades. Quedan 59 errores globales de otras tandas.
+Incidencias abiertas: la auditoría específica de TANDA-11 muestra 0 errores de validación, 0 duplicados exactos y 0 pares cercanos. Los errores globales restantes pertenecen a contenido fuera de esta tanda.
+
+## TANDA-12 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-phrasal-change-progress | b2-phrasal-verbs-change-progress | sí | 100 |
+| 2 | b2-phrasal-work-problems | b2-phrasal-verbs-work-problems | sí | 100 |
+| 3 | b2-phrasal-attitudes-relationships | b2-phrasal-verbs-attitudes-relationships | sí | 100 |
+| 4 | b1-collocations-daily-life | b1-collocations-daily-life | sí | 100 |
+| 5 | b1-collocations-travel-work | b1-collocations-travel-work | sí | 100 |
+
+Siguiente tanda: no hay otra tanda disponible; TANDA-13 y TANDA-14 ya están hechas.
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 125 lecciones, 11.800 actividades, 472 lotes, 117/120 objetivos de nodo y evaluación comprobada para 11.800 actividades. El pipeline registra 47 errores globales de otras tandas; duplicados exactos y pares cercanos: 0.
+Incidencias abiertas: la auditoría específica de TANDA-12 muestra 0 errores de esquema/contrato, 0 fallos de grading, 0 duplicados exactos y 0 pares cercanos. Las 47 incidencias globales restantes pertenecen a contenido fuera de esta tanda.
+
+## TANDA-14 — completada
+
+| # | taxonomyNodeId | plannedLessonId | lección | actividades |
+|---|---|---|---:|---:|
+| 1 | b2-dependent-prepositions | b2-dependent-prepositions | sí | 100 |
+| 2 | b2-prepositions-abstract-relations | b2-prepositions-abstract-relations | sí | 100 |
+| 3 | b2-prepositional-fixed-phrases | b2-prepositional-fixed-phrases | sí | 100 |
+
+TANDA-14 cierra las tandas disponibles del handoff actual.
+Última validación global: ejecutada con `node --import tsx scripts/dataset/all.ts`; 120 lecciones, 10.950 actividades, 438 lotes, 108/120 objetivos de nodo. La evaluación comprobó las 10.950 actividades; quedan 144 errores globales de otras tandas.
+Incidencias abiertas: la auditoría específica de TANDA-14 muestra 0 errores de esquema/contrato, 0 fallos de grading, 0 duplicados exactos y 0 pares cercanos. El único duplicado exacto global y las incidencias de cobertura restantes pertenecen a contenido fuera de TANDA-14.
 
 Añadir al mensaje de relevo una sección como esta, sustituyendo los datos por
 los reales:
