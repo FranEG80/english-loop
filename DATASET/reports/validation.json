@@ -3,10 +3,10 @@
   "valid": false,
   "summary": {
     "lessons": 96,
-    "activities": 8950,
-    "batches": 358,
+    "activities": 9125,
+    "batches": 365,
     "taxonomyNodes": 164,
-    "errors": 168
+    "errors": 130
   },
   "issues": [
     {
@@ -30,169 +30,9 @@
       "message": "La ruta debe comenzar por activities/b1/reading/b1-reading-gapped-text/b1-reading-gapped-text-cohesion/word_order/ y terminar en batch-NNN.json."
     },
     {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'answer'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'answers'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'correct'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'correctOptionId'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'correctOptionIds'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'correctTokenIds'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'correctValues'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'gaps'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'normalization'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'normalization'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'normalization'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must have required property 'normalization'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must match exactly one schema in oneOf"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/pairs/1",
-      "message": "must have required property 'rightId'"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/pairs/1",
-      "message": "must NOT have additional properties"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "schema",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json/activities/20/evaluator/strategy",
-      "message": "must be equal to constant"
-    },
-    {
-      "code": "missing-pair",
-      "location": "activities/b1/reading/b1-reading-people-matching/b1-reading-people-matching/reading_matching/batch-001.json#b1-reading-people-matching-rm-021",
-      "message": "El elemento de matching undefined no existe en pairs."
-    },
-    {
       "code": "global-activity-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 8950 actividades publicadas; se requieren 10000."
+      "message": "Hay 9125 actividades publicadas; se requieren 10000."
     },
     {
       "code": "global-lesson-coverage",
@@ -321,241 +161,226 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
+      "message": "Faltan dificultades: 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
       "message": "Hay 25 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
+      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
       "message": "Hay 1 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-informal-email",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-opinion-article",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-review-description",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-semi-formal-email",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-writing-story-sequencing",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-collocations-impact-attitudes",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-attitudes-relationships",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-change-progress",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-phrasal-work-problems",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositional-fixed-phrases",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-prepositions-abstract-relations",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-argument-evidence",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-attitude-tone",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-reading-gapped-text",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -568,16 +393,6 @@
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-reading-gapped-text",
       "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-gist-detail-inference",
-      "message": "Hay 25 actividades; se requieren 100."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-reading-gist-detail-inference",
-      "message": "Hay 1 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -838,11 +653,6 @@
       "code": "lesson-path",
       "location": "lessons/b1/use-of-english/b1-use-of-english-word-formation.md",
       "message": "La ruta esperada es lessons/b1/use-of-english/b1-word-formation/b1-use-of-english-word-formation.md."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/reading/b2-reading-attitude-tone/b2-reading-attitude-tone.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
     },
     {
       "code": "lesson-without-activities",
