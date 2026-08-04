@@ -4,9 +4,9 @@ id: b2-phrasal-verbs-attitudes-relationships
 title: "Phrasal verbs de actitudes y relaciones B2"
 level: B2
 category: phrasal-verbs
-topic: b2-phrasal-verbs-attitudes-relationships
+topic: b2-phrasal-attitudes-relationships
 subtopics:
-  - b2-phrasal-verbs-attitudes-relationships
+  - b2-phrasal-attitudes-relationships
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:
@@ -83,5 +83,4 @@ Identifica la emoción, la persona afectada y el resultado; elige el phrasal ver
 
 1. ¿Qué expresa *look down on colleagues*? → `despreciarlos o considerarlos inferiores`.
 2. Completa: *They made ___ after the disagreement.* → `up`.
-
 

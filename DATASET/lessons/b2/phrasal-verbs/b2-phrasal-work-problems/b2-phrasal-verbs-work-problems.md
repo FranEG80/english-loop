@@ -4,9 +4,9 @@ id: b2-phrasal-verbs-work-problems
 title: "Phrasal verbs para trabajo y problemas B2"
 level: B2
 category: phrasal-verbs
-topic: b2-phrasal-verbs-work-problems
+topic: b2-phrasal-work-problems
 subtopics:
-  - b2-phrasal-verbs-work-problems
+  - b2-phrasal-work-problems
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:
@@ -84,5 +84,4 @@ Determina si necesitas investigar, idear, resolver, aplazar o rechazar; después
 
 1. Completa: *We need to ___ up with a better plan.* → `come`.
 2. ¿*Put off* significa cancelar? → `no, significa aplazar`.
-
 

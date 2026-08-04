@@ -4,9 +4,9 @@ id: b2-phrasal-verbs-change-progress
 title: "Phrasal verbs para cambio y progreso B2"
 level: B2
 category: phrasal-verbs
-topic: b2-phrasal-verbs-change-progress
+topic: b2-phrasal-change-progress
 subtopics:
-  - b2-phrasal-verbs-change-progress
+  - b2-phrasal-change-progress
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:
@@ -83,5 +83,4 @@ Identifica el resultado del proceso, elige el phrasal verb y revisa objeto, part
 
 1. Completa: *The study was ___ out in two hospitals.* → `carried`.
 2. ¿Qué reduce el consumo: *cut down* o *cut down on*? → `cut down on`.
-
 

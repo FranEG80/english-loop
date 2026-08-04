@@ -31,13 +31,16 @@ de producción:
 - `[x]` Fase 20 en su alcance implementado: logger estructurado, `requestId`,
   health, readiness y versión activa del dataset.
 - `[~]` Fase 18: SQLite, PostgreSQL y MariaDB tienen factorías y paridad de
-  esquema; quedan los contract tests ejecutados contra PostgreSQL y la
-  migración/baseline de producción.
+  esquema; el script `test:postgres` genera una baseline PostgreSQL desde el
+  esquema canónico y ejecuta contratos reales cuando se proporciona una base
+  aislada, pero falta ejecutarlo contra una instancia disponible.
 - `[~]` Fase 21: hay pruebas unitarias, de aplicación, contratos SQLite,
-  integración Prisma/D1, API, acciones e importador; quedan E2E de los
-  recorridos completos y PostgreSQL.
-- `[~]` Fases 20–22: métricas operativas avanzadas, `instrumentation.ts` y
-  preparación de producción quedan explícitamente pendientes.
+  integración Prisma/D1, API, acciones e importador y un E2E autenticado del
+  recorrido diario/focused; queda la ejecución PostgreSQL y ampliar la matriz
+  de scopes pedagógicos.
+- `[~]` Fases 20–22: métricas operativas y pedagógicas agregadas están en el
+  puerto del core y en `AggregatedMetrics`; sigue pendiente un proveedor
+  externo y la preparación final de producción.
 
 Los nombres del código son la fuente de verdad: el agregado persistido se
 llama `PracticeRunItem` (el plan antiguo decía `PracticeRunActivity`) y los
@@ -240,8 +243,9 @@ context/
 - [x] Crear `FileLessonCatalogAdapter`.
 - [x] Crear `FileActivityCatalogAdapter`.
 - [x] Crear `FileTaxonomyCatalogAdapter`.
-- [~] Generar `practice-index.json`; el runtime actual resuelve descendientes
-  desde el árbol cacheado y el índice queda disponible para tooling editorial.
+- [x] Generar `practice-index.json` mediante `scripts/dataset/practice-index.ts`;
+  el runtime puede resolver descendientes desde el árbol cacheado y el índice
+  queda disponible para tooling editorial.
 - [x] Leer los índices generados de `DATASET/`.
 - [x] No recorrer todos los archivos en cada request.
 - [x] Cargar y cachear los índices una vez por proceso.
@@ -483,16 +487,16 @@ context/
 ### Política de selección
 
 - [x] Filtrar por nivel activo.
-- [~] Filtrar por prerrequisitos cumplidos; el modelo editorial actual aún no
-  declara prerrequisitos, por lo que no hay filtro aplicable.
+- [x] Filtrar por prerrequisitos cumplidos; se cargan desde el dataset y se
+  persisten en `LessonVersion`, y `DailySessionPlanner` solo selecciona una
+  lección cuando sus prerrequisitos están completados.
 - [x] Priorizar lecciones no vistas.
 - [x] Incluir lecciones con errores pendientes cuando corresponda.
 - [x] No repetir lecciones vistas sin errores mientras exista contenido nuevo
   elegible.
 - [x] Reutilizar contenido visto cuando se agote el contenido nuevo elegible.
-- [~] Reservar como máximo el 30% para repasos si existe contenido nuevo; la
-  política actual prioriza errores a nivel de lección y queda pendiente el
-  límite porcentual explícito.
+- [x] Reservar como máximo el 30% para repasos si existe contenido nuevo; si
+  no queda contenido nuevo, los repasos pueden llenar la sesión.
 - [x] Usar un seed persistido para selección reproducible.
 - [x] Guardar el motivo de selección de cada elemento.
 - [x] Crear una única sesión por fecha local del usuario.
@@ -503,10 +507,9 @@ context/
 - [x] Delegar el snapshot de actividades en `PracticeRun`.
 - [x] Persistir la versión del dataset.
 - [x] Persistir la seed.
-- [~] Guardar snapshot servidor de pregunta, evaluador y feedback; el
-  `PracticeRunItem` conserva el `activityVersionId` y Prisma/D1 leen esa
-  versión inmutable al corregir y construir feedback. Sigue pendiente
-  materializar una copia completa del DTO/evaluador dentro del run.
+- [x] Guardar snapshot servidor de pregunta, evaluador y feedback; cada
+  `PracticeRunItem` materializa `activitySnapshot` junto a la versión fijada
+  y los adaptadores Prisma/D1 lo recuperan sin exponerlo en los DTO públicos.
 - [x] No enviar evaluador ni respuesta al cliente antes del intento.
 - [x] Mantener estable una sesión aunque cambie el dataset; el release, la
   versión y el `activityVersionId` están persistidos, y los adaptadores Prisma
@@ -537,15 +540,14 @@ context/
 - [x] Crear `PracticeRunSummaryDto`.
 - [x] Excluir respuesta, evaluador y explicación del DTO de pregunta.
 - [x] Crear `AttemptFeedbackDto`.
-- [~] Incluir en el feedback; actualmente están implementados el ID, resultado,
-  respuestas aceptadas, explicación y timestamp, pero falta devolver la
-  respuesta normalizada y el próximo repaso:
+- [x] Incluir en el feedback: ID, resultado, respuesta normalizada, respuestas
+  aceptadas, explicación, próximo repaso y timestamp:
   - ID del intento.
   - Resultado correcto/incorrecto.
-  - Respuesta normalizada (pendiente).
+  - Respuesta normalizada.
   - Respuestas aceptadas.
   - Explicación.
-  - Próximo repaso (pendiente).
+  - Próximo repaso.
 - [x] Usar ISO 8601 para timestamps.
 - [x] Usar paginación por cursor en los listados públicos. Las rutas devuelven
   `items`, `nextCursor` y `hasMore`; los adaptadores filesystem, Prisma y D1
@@ -673,9 +675,13 @@ pnpm dataset:import -- --source ./DATASET
 - [x] Evitar asumir el comportamiento de concurrencia de SQLite.
 - [x] Crear contract tests de repositorios.
 - [x] Ejecutar inicialmente los contratos contra SQLite.
-- [ ] Añadir PostgreSQL mediante Testcontainers antes de migrar.
-- [ ] Ejecutar los mismos contratos contra PostgreSQL.
-- [ ] Crear una baseline de migraciones PostgreSQL.
+- [~] Añadir PostgreSQL mediante un entorno aislado antes de migrar; el runner
+  `test:postgres` prepara la baseline desde el esquema canónico y acepta una
+  URL externa, pero esta workspace no tiene un servidor PostgreSQL disponible.
+- [~] Ejecutar los mismos contratos contra PostgreSQL; falta una ejecución real
+  con `TEST_POSTGRES_DATABASE_URL`.
+- [x] Crear la baseline de migraciones PostgreSQL bajo demanda desde el esquema
+  canónico con `prisma migrate diff --from-empty`.
 - [x] Probar la importación completa del dataset en SQLite/D1 contract path.
 - [ ] Probar migración de usuarios, settings, sesiones, intentos y progreso.
 - [ ] Comparar contadores y checksums antes de cambiar producción.
@@ -718,12 +724,12 @@ pnpm dataset:import -- --source ./DATASET
 - [x] Añadir `instrumentation.ts`.
 - [x] Medir latencia por endpoint de forma agregada en `AggregatedMetrics`.
 - [x] Medir errores por código de forma agregada en `AggregatedMetrics`.
-- [ ] Medir intentos procesados.
-- [ ] Medir conflictos de idempotencia.
-- [ ] Medir sesiones creadas y completadas.
-- [ ] Medir runs por modo y nodo de taxonomía.
-- [ ] Medir scopes solicitados sin suficiente contenido.
-- [ ] Medir tamaño de la cola de repaso.
+- [x] Medir intentos procesados.
+- [x] Medir conflictos de idempotencia.
+- [x] Medir sesiones creadas y completadas.
+- [x] Medir runs por modo y nodo de taxonomía.
+- [x] Medir scopes solicitados sin suficiente contenido.
+- [x] Medir tamaño de la cola de repaso.
 - [x] Exponer la versión activa del dataset.
 - [x] Hacer que `health` compruebe el proceso.
 - [x] Hacer que `ready` compruebe BD, auth y catálogo.
@@ -758,7 +764,8 @@ pnpm dataset:import -- --source ./DATASET
 - [x] Ejecutarlos contra Prisma cuando exista el catálogo en BD.
 - [x] Crear contract tests de repositorios.
 - [x] Ejecutarlos contra SQLite.
-- [ ] Ejecutarlos contra PostgreSQL futuro.
+- [~] Ejecutarlos contra PostgreSQL futuro; el runner queda preparado y requiere
+  una instancia aislada.
 - [x] Probar transacciones con SQLite temporal.
 - [~] Probar creación concurrente de Daily Session; hay cobertura de la carrera
   por restricción única y queda pendiente el stress de dos conexiones reales.
@@ -801,18 +808,15 @@ la base en un directorio temporal y la elimina al terminar.
 
 - [x] Probar registro.
 - [x] Probar login.
-- [ ] Probar creación de Daily Session.
-- [ ] Probar lección completada y omitida.
-- [ ] Probar actividad correcta.
-- [ ] Probar actividad fallada.
-- [ ] Probar feedback.
-- [ ] Probar resumen diario.
-- [ ] Probar aparición de un repaso.
-- [ ] Probar selección de gramática general.
-- [ ] Probar selección de un tiempo verbal específico.
-- [ ] Probar selección de vocabulario general y específico.
-- [ ] Probar selección de phrasal verbs.
-- [ ] Probar resumen de práctica dirigida.
+- [x] Probar creación de Daily Session.
+- [x] Probar lección completada y omitida.
+- [x] Probar actividad fallada y repetición acotada.
+- [x] Probar feedback y próximo repaso.
+- [x] Probar resumen diario.
+- [x] Probar aparición de un repaso.
+- [x] Probar disponibilidad de gramática general, tiempo verbal específico,
+  vocabulario y phrasal verbs.
+- [x] Probar resumen de práctica dirigida.
 
 ## Fase 22 — Orden recomendado de implementación
 
@@ -827,16 +831,16 @@ la base en un directorio temporal y la elimina al terminar.
 - [x] 9. Intentos y proyecciones.
 - [x] 10. Política de repaso.
 - [x] 11. PracticeRun y práctica dirigida.
-- [~] 12. Daily Session y snapshots; falta completar el snapshot materializado
-  por versión.
+- [x] 12. Daily Session y snapshots materializados por versión.
 - [x] 13. API REST.
 - [x] 14. Server Actions.
 - [x] 15. Dashboard.
 - [x] 16. Script de importación.
 - [~] 17. Observabilidad y seguridad; los límites HTTP y las métricas de
-  latencia/errores están implementados, pero faltan métricas pedagógicas
-  específicas y la integración con un proveedor externo.
-- [ ] 18. Contract tests PostgreSQL.
+  latencia/errores y pedagógicas están implementados localmente, pero falta
+  integración con un proveedor externo.
+- [~] 18. Contract tests PostgreSQL; el runner real está implementado y queda
+  ejecutarlo contra `TEST_POSTGRES_DATABASE_URL`.
 - [ ] 19. Preparación de producción.
 
 ## Criterios finales de aceptación
@@ -851,9 +855,8 @@ la base en un directorio temporal y la elimina al terminar.
 - [x] Las respuestas correctas no se exponen antes del intento.
 - [x] Los intentos son inmutables y auditables.
 - [x] Las proyecciones se actualizan atómicamente.
-- [~] Las Daily Sessions son estables e idempotentes; la idempotencia y la
-  lectura por versión están cubiertas, pero sigue pendiente materializar el
-  snapshot completo de pregunta/evaluador.
+- [x] Las Daily Sessions son estables e idempotentes; los runs fijan versión y
+  snapshot completo de pregunta/evaluador/feedback.
 - [x] Los tres modos reutilizan `PracticeRun` sin duplicar corrección.
 - [x] La práctica dirigida admite selección por categoría, tema, subtema y
   skill.
@@ -862,11 +865,11 @@ la base en un directorio temporal y la elimina al terminar.
 - [x] La práctica dirigida actualiza progreso sin completar el Daily Loop.
 - [x] Las sesiones respetan la timezone del usuario.
 - [x] Las lecciones no se repiten innecesariamente.
-- [~] Los repasos no superan el 30% cuando existe contenido nuevo; falta
-  imponer el límite porcentual explícito.
+- [x] Los repasos no superan el 30% cuando existe contenido nuevo.
 - [x] El backend funciona localmente con SQLite y `DATASET/`.
 - [x] El importador es idempotente y soporta dry-run.
-- [ ] Los contratos pueden ejecutarse contra PostgreSQL sin modificar el core.
+- [~] Los contratos pueden ejecutarse contra PostgreSQL sin modificar el core;
+  el runner requiere una instancia PostgreSQL aislada disponible.
 - [x] Los límites arquitectónicos están comprobados automáticamente.
 
 ## Fuera del alcance inicial

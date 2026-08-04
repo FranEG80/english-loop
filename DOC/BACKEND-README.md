@@ -16,9 +16,10 @@ progreso, repaso, API, Server Actions, SQLite y la persistencia D1 por binding
 o HTTP. El estado comprobable de cada requisito está en
 [`BACKEND-PLAN.md`](./BACKEND-PLAN.md).
 
-Siguen como preparación de producción los contract tests contra PostgreSQL, la
-expiración E2E con reloj controlable y las métricas pedagógicas agregadas. El
-runner E2E autenticado básico sí está implementado y usa una SQLite aislada.
+Siguen como preparación de producción la ejecución del runner PostgreSQL contra
+una instancia aislada, la expiración E2E con reloj controlable y la integración
+con un proveedor externo de observabilidad. El runner E2E autenticado cubre ya
+el recorrido diario/focused y usa una SQLite aislada.
 
 ## Arquitectura
 
@@ -72,14 +73,16 @@ El catálogo relacional separa identidades estables de versiones inmutables:
 - `CatalogRelease` registra una importación y su checksum.
 - `CatalogPublication(id = "active")` apunta al release publicado.
 - `Lesson` / `LessonVersion` representan lecciones versionadas.
+- `LessonVersion.prerequisites` conserva los IDs de lecciones que deben estar
+  completadas antes de que el planificador diario seleccione la lección.
 - `Activity` / `ActivityVersion` representan actividades versionadas.
 - `TaxonomyNode` / `TaxonomyNodeVersion` representan la taxonomía.
 - Las relaciones, opciones, tokens, pares y respuestas esperadas están
   normalizadas.
 - `ActivityAttempt` conserva el `activityVersionId` histórico.
-- `PracticeRunItem` conserva la actividad original, su `activityVersionId` y
-  sus repeticiones; la corrección y el feedback resuelven esa versión cuando
-  existe, aunque todavía no se duplica el DTO/evaluador dentro del run.
+- `PracticeRunItem` conserva la actividad original, su `activityVersionId`, sus
+  repeticiones y un `activitySnapshot` materializado; la corrección y el
+  feedback usan ese snapshot fijado sin exponer el DTO/evaluador al cliente.
 
 Los identificadores editoriales (`lessonId`, `activityId` y
 `taxonomyNodeId`) se mantienen como referencias estables del catálogo, no como
@@ -244,21 +247,35 @@ pnpm db:render-schema postgresql prisma/generated/schema.postgresql.prisma
 # Validar y simular el seed sin escribir
 pnpm dataset:seed -- --dry-run
 
-# Aplicar migraciones a la base configurada
+# Aplicar migraciones a una base Prisma SQL (SQLite/PostgreSQL/MariaDB)
 pnpm prisma migrate deploy
 
-# Seed real para proveedores Prisma SQL o D1 HTTP
+# Seed estándar de Prisma SQL: lee Markdown y JSON del DATASET
+pnpm db:seed
+
+# D1: usa Wrangler y la configuración wrangler.d1.example.jsonc
+pnpm dlx wrangler d1 migrations list replace-with-your-d1-name --config wrangler.d1.example.jsonc --remote
+pnpm dlx wrangler d1 migrations apply replace-with-your-d1-name --config wrangler.d1.example.jsonc --remote
+
+# Seed directo para proveedores Prisma SQL o D1 HTTP
 pnpm dataset:seed
 ```
 
-El seed actual valida el dataset, calcula checksum, crea un release y publica
-el puntero solo después de completar la carga. Es idempotente para la misma
-versión y checksum. `--dry-run` no abre ni modifica la base de datos.
+`pnpm db:seed` delega en el mismo importador que `pnpm dataset:seed`, por lo
+que ambos leen `DATASET/lessons/**/*.md` y `DATASET/activities/**/*.json`,
+validan el dataset, calculan el checksum, crean un release y publican el
+puntero solo después de completar la carga. Es idempotente para la misma
+versión y checksum. `--dry-run` no abre ni modifica la base de datos. El seed
+no crea usuarios ni credenciales: esas cuentas pertenecen a Better Auth.
 
 Para D1, el script de Node/Vercel usa el writer HTTP autenticado. En un
 Worker Cloudflare se puede usar directamente `D1CatalogWriteAdapter` con el
 binding `DB`; el script CLI no intenta inventar un binding, por lo que exige
 `D1_TRANSPORT=http` y las credenciales del proxy.
+La configuración de Wrangler conserva `prisma/migrations` como directorio y
+declara `migrations_pattern=prisma/migrations/*/migration.sql` para descubrir
+la estructura anidada generada por Prisma; no se deben copiar ni editar esas
+migraciones para crear una segunda historia de esquema.
 
 ## Intentos, puntuación y repaso
 
@@ -298,6 +315,7 @@ pnpm arch:check
 pnpm test:unit
 pnpm test:integration:catalog
 pnpm test:e2e
+TEST_POSTGRES_DATABASE_URL=postgresql://... pnpm test:postgres
 ```
 
 Las pruebas relevantes incluyen:
@@ -308,16 +326,20 @@ Las pruebas relevantes incluyen:
 - operaciones D1 binding/HTTP, batches, autenticación y anti-replay;
 - reglas de repetición, score y repaso;
 - límites HTTP y métricas agregadas de latencia/errores por endpoint;
+- métricas pedagógicas acotadas de intentos, idempotencia, sesiones, runs por
+  modo/nodo, scopes insuficientes y tamaño de cola de repaso;
+- snapshot materializado de `PracticeRunItem` verificado en Prisma, D1 y E2E;
 - registro, login, logout y acceso autenticado contra una base E2E aislada;
 - límites arquitectónicos con `dependency-cruiser`.
 
 La configuración de Vitest excluye módulos declarativos `types/`, `type.ts` y
 los contratos de puertos del cálculo ejecutable. Los umbrales globales son
 `80%` para statements, lines y functions, y `90%` para branches. La última
-ejecución global completa pasó con `96.15%` de statements, `90.73%` de
-branches, `96.46%` de functions y `97.63%` de lines. La validación directa del
-dataset sigue reportando incidencias de contenido presentes en el estado
-actual de `DATASET/`; no se han ocultado excluyéndola de la aplicación.
+ejecución global completa pasó con `95.88%` de statements, `90.39%` de
+branches, `96.28%` de functions y `97.42%` de lines. La validación directa del
+dataset pasa con `124` lecciones, `12.100` actividades, `164` nodos y cero
+errores. El seed de `dev.db` se ejecutó dos veces: la primera publicó el release
+y la segunda devolvió `unchanged`, sin duplicar versiones.
 
 Para cambios de comportamiento es obligatorio añadir la prueba en el mismo
 cambio. No se debe usar `skip` para ocultar una regresión.

@@ -40,6 +40,8 @@ El dataset también puede publicarse en la base normalizada de ejecución:
 ```bash
 pnpm dataset:seed -- --dry-run
 pnpm dataset:seed
+# equivalente para proveedores Prisma SQL
+pnpm db:seed
 ```
 
 El seed es idempotente por `DATASET/VERSION + checksum`, registra cada intento
