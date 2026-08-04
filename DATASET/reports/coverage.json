@@ -1,26 +1,29 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 56,
-    "publishedActivities": 5250,
+    "publishedLessons": 67,
+    "publishedActivities": 5525,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 51,
+    "nodeTargetsMet": 53,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 2650,
-      "B2": 2600
+      "B1": 2875,
+      "B2": 2650
     },
     "category": {
       "grammar": 4900,
-      "vocabulary": 350
+      "vocabulary": 625
     },
     "topic": {
       "articles-determiners": 200,
-      "b2-ai-digital-life": 50,
+      "b1-daily-routines-life": 100,
+      "b1-education-study": 75,
+      "b1-technology-digital-life": 50,
+      "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-education-learning": 100,
       "b2-science-research": 100,
@@ -49,7 +52,10 @@
       "advanced-passive-tenses": 100,
       "advice-possibility": 100,
       "articles-reference": 100,
-      "b2-ai-digital-life": 50,
+      "b1-daily-routines-life": 100,
+      "b1-education-study": 75,
+      "b1-technology-digital-life": 50,
+      "b2-ai-digital-life": 100,
       "b2-career-business": 100,
       "b2-education-learning": 100,
       "b2-science-research": 100,
@@ -105,20 +111,20 @@
       "complete_dialogue": 100,
       "error_correction": 475,
       "error_identification": 50,
-      "fill_blank": 1250,
+      "fill_blank": 1325,
       "key_word_transformation": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 1300,
-      "true_false": 850,
-      "word_order": 975
+      "single_choice": 1375,
+      "true_false": 925,
+      "word_order": 1025
     },
     "difficulty": {
-      "1": 590,
-      "2": 1142,
-      "3": 1243,
-      "4": 1188,
-      "5": 1087
+      "1": 635,
+      "2": 1199,
+      "3": 1304,
+      "4": 1245,
+      "5": 1142
     }
   },
   "targets": [
@@ -364,10 +370,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-dependent-prepositions",
@@ -398,9 +410,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 75,
+      "actualActivityTypes": 3,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -789,9 +807,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 50,
+      "actualActivityTypes": 2,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -957,15 +981,15 @@
         4,
         5
       ],
-      "actualActivities": 50,
-      "actualActivityTypes": 2,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         2,
         3,
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-career-business",

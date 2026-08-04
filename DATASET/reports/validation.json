@@ -2,22 +2,22 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 56,
-    "activities": 5250,
-    "batches": 210,
+    "lessons": 67,
+    "activities": 5525,
+    "batches": 221,
     "taxonomyNodes": 164,
-    "errors": 276
+    "errors": 266
   },
   "issues": [
     {
       "code": "global-activity-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 5250 actividades publicadas; se requieren 10000."
+      "message": "Hay 5525 actividades publicadas; se requieren 10000."
     },
     {
       "code": "global-lesson-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 56 lecciones publicadas; se requieren 100."
+      "message": "Hay 67 lecciones publicadas; se requieren 100."
     },
     {
       "code": "node-activity-coverage",
@@ -51,21 +51,6 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-daily-routines-life",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-daily-routines-life",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-daily-routines-life",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-dependent-prepositions",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -82,17 +67,12 @@
     {
       "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-education-study",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-education-study",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+      "message": "Hay 75 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-education-study",
-      "message": "Hay 0 tipos; se requieren 4."
+      "message": "Hay 3 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -427,17 +407,12 @@
     {
       "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-technology-digital-life",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-technology-digital-life",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+      "message": "Hay 50 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-technology-digital-life",
-      "message": "Hay 0 tipos; se requieren 4."
+      "message": "Hay 2 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -573,16 +548,6 @@
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-advanced-fixed-expressions",
       "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-ai-digital-life",
-      "message": "Hay 50 actividades; se requieren 100."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-ai-digital-life",
-      "message": "Hay 2 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -1147,21 +1112,6 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-daily-routines-life."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-education-study."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-environment-weather-places."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-vocabulary-family-relationships."
     },
     {
@@ -1178,31 +1128,6 @@
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-vocabulary-home-services."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-leisure-sport-entertainment."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-shopping-clothes-money."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-technology-digital-life."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-travel-transport."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-work-jobs."
     },
     {
       "code": "planned-lesson-missing",
@@ -1327,27 +1252,12 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-climate-global-issues."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-vocabulary-creativity-innovation-decisions."
     },
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-vocabulary-crime-justice."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-health-psychology."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-media-communication."
     },
     {
       "code": "planned-lesson-missing",
@@ -1388,6 +1298,46 @@
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-writing-report."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/vocabulary/b1-environment-weather-places/b1-vocabulary-environment-weather-places.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/vocabulary/b1-leisure-sport-entertainment/b1-vocabulary-leisure-sport-entertainment.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/vocabulary/b1-shopping-clothes-money/b1-vocabulary-shopping-clothes-money.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/vocabulary/b1-travel-transport/b1-vocabulary-travel-transport.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b1/vocabulary/b1-work-jobs/b1-vocabulary-work-jobs.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/vocabulary/b2-climate-global-issues/b2-vocabulary-climate-global-issues.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/vocabulary/b2-health-psychology/b2-vocabulary-health-psychology.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
+    },
+    {
+      "code": "lesson-without-activities",
+      "location": "lessons/b2/vocabulary/b2-media-communication/b2-vocabulary-media-communication.md",
+      "message": "Una lección publicada debe tener actividades publicadas."
     }
   ]
 }
