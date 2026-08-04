@@ -40,4 +40,17 @@ describe("PersistenceBundle", () => {
     expect(bundle.attemptRateLimiter).toBeTruthy();
     await expect(bundle.databaseHealth()).resolves.toBe(true);
   });
+
+  it("keeps Prisma composition for non-D1 providers", async () => {
+    const prisma = { $queryRaw: async () => [{ ok: 1 }] } as never;
+    const bundle = createPersistenceBundle({
+      prisma,
+      config: {
+        databaseProvider: "sqlite", d1Transport: "http", d1HttpUrl: null, d1HttpToken: null,
+        attemptRateLimitWindowMs: 60_000, attemptRateLimitMax: 30, authRateLimitWindowMs: 60_000, authRateLimitMax: 10,
+      },
+    });
+    expect(bundle.catalogWritePort).toBeNull();
+    await expect(bundle.databaseHealth()).resolves.toBe(true);
+  });
 });

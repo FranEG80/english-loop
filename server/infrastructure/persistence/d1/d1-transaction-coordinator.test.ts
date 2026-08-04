@@ -51,4 +51,40 @@ describe("D1TransactionCoordinator", () => {
     await expect(promise).rejects.toMatchObject({ message: "business rule failed" });
     expect(base.batches).toHaveLength(0);
   });
+
+  it("routes batches outside and inside a transaction according to operation kind", async () => {
+    const base = transport();
+    const coordinator = new D1TransactionCoordinator(base);
+    await coordinator.batch([{ name: "health" }]);
+    await coordinator.transaction(async () => {
+      await coordinator.batch([{ name: "savedLessonDelete", userId: "u1", lessonId: "l1" }]);
+      await coordinator.batch([{ name: "health" }, { name: "reviewSave", snapshot: {
+        id: "r1", userId: "u1", activityId: "a1", activityVersionId: null, lessonId: null,
+        taxonomyNodeId: "t1", level: "B1", stage: 0, consecutiveCorrect: 0,
+        dueAt: "2026-01-01T00:00:00.000Z", failedAt: "2026-01-01T00:00:00.000Z", resolvedAt: null, attemptsCount: 1,
+      } }]);
+      await coordinator.transaction(async () => undefined);
+    });
+    expect(base.executed).toHaveLength(0);
+    expect(base.batches.map((batch) => batch.map(({ name }) => name))).toEqual([
+      ["health"], ["health"], ["savedLessonDelete", "reviewSave"],
+    ]);
+  });
+
+  it("returns results for read-only transactions and fails on a rejected commit", async () => {
+    const readOnly = transport();
+    const coordinator = new D1TransactionCoordinator(readOnly);
+    await expect(coordinator.transaction(async () => "read-only")).resolves.toBe("read-only");
+
+    const failed = transport();
+    failed.batch = async (operations) => {
+      failed.batches.push(operations);
+      return operations.map(() => ({ success: false, results: [], meta: { changes: 0 } }));
+    };
+    const failingCoordinator = new D1TransactionCoordinator(failed);
+    await expect(failingCoordinator.transaction(async () => {
+      await failingCoordinator.execute({ name: "savedLessonDelete", userId: "u1", lessonId: "l1" });
+      return "done";
+    })).rejects.toMatchObject({ message: "D1 transaction batch failed" });
+  });
 });

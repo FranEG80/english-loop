@@ -98,7 +98,10 @@ describe("D1 practice repositories", () => {
     const attempts = new D1AttemptRepository(base);
     const run = PracticeRun.create({ id: "r1", userId: "u1", mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "n1", taxonomyPath: [], descendantIds: ["n1"], requestedCount: 1 }, activityIds: ["a1", "a2"], repetitionActivityIds: ["a2"], originalActivityCount: 1, currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: now });
 
-    await expect(runs.findById("r1")).resolves.toMatchObject({ id: "r1", activityIds: ["a1", "a2"], repetitionActivityIds: ["a2"] });
+    const foundRun = await runs.findById("r1");
+    expect(foundRun?.id).toBe("r1");
+    expect(foundRun?.activityIds).toEqual(["a1", "a2"]);
+    expect(foundRun?.isCurrentActivityRepetition).toBe(false);
     await runs.save(run);
     await expect(attempts.findByUserIdAndIdempotencyKey("u1", "missing")).resolves.toBeNull();
     await expect(attempts.findByPracticeRunId("r1")).resolves.toHaveLength(1);

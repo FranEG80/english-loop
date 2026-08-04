@@ -29,4 +29,20 @@ describe("dataset validation pipeline", () => {
     const issues = await validateDataset(broken);
     expect(issues.some((issue) => issue.code === "batch-lesson" && issue.location.includes("#"))).toBe(true);
   });
+
+  it("reports malformed lesson reference arrays without crashing the pipeline", async () => {
+    const dataset = await loadDataset();
+    const first = dataset.lessons[0];
+    expect(first).toBeDefined();
+    if (!first) return;
+    const broken = {
+      ...dataset,
+      lessons: [{
+        ...first,
+        frontmatter: { ...first.frontmatter, prerequisites: null as never },
+      }, ...dataset.lessons.slice(1)],
+    };
+    const issues = await validateDataset(broken);
+    expect(issues.some((issue) => issue.code === "schema")).toBe(true);
+  });
 });

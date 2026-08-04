@@ -15,6 +15,12 @@ export interface ValidationIssue {
   message: string;
 }
 
+function safeStringArray(value: unknown): string[] {
+  return Array.isArray(value)
+    ? value.filter((item): item is string => typeof item === "string")
+    : [];
+}
+
 const REQUIRED_LESSON_SECTIONS = [
   "Resumen",
   "Objetivos",
@@ -416,7 +422,10 @@ function validateReferences(
   const sourceIds = new Set(dataset.sources.sources.map(({ id }) => id));
 
   for (const lesson of dataset.lessons) {
-    for (const id of [...lesson.frontmatter.prerequisites, ...lesson.frontmatter.relatedLessonIds]) {
+    for (const id of [
+      ...safeStringArray(lesson.frontmatter.prerequisites),
+      ...safeStringArray(lesson.frontmatter.relatedLessonIds),
+    ]) {
       if (!allowedLessonIds.has(id)) {
         addIssue(
           issues,
@@ -429,7 +438,7 @@ function validateReferences(
     for (const nodeId of [
       lesson.frontmatter.category,
       lesson.frontmatter.topic,
-      ...lesson.frontmatter.subtopics,
+      ...safeStringArray(lesson.frontmatter.subtopics),
     ]) {
       if (!nodes.has(nodeId)) {
         addIssue(
@@ -440,7 +449,7 @@ function validateReferences(
         );
       }
     }
-    for (const sourceId of lesson.frontmatter.frameworkRefs) {
+    for (const sourceId of safeStringArray(lesson.frontmatter.frameworkRefs)) {
       if (!sourceIds.has(sourceId)) {
         addIssue(
           issues,

@@ -22,7 +22,7 @@ function fakeDatabase() {
         },
         async all<T>() {
           calls.push({ query, values });
-          return { success: true, results: [{ ok: 1 } as T] };
+          return { success: true, results: [{ ok: 1 } as T], meta: { changes: 1 } };
         },
         async run<T>() {
           calls.push({ query, values });
@@ -53,6 +53,27 @@ describe("D1 persistence boundary", () => {
       prepareD1Operation(database, { name: "activityById", activityId: "a' OR 1=1" }),
     ).not.toThrow();
     expect(calls[1]?.values).toEqual(["activity-1"]);
+  });
+
+  it("executes read, write and composite operations through the binding", async () => {
+    const { database, calls } = fakeDatabase();
+    const client = new D1BindingClient(database);
+    await expect(client.execute({ name: "health" })).resolves.toMatchObject({ success: true });
+    await expect(client.execute({ name: "savedLessonDelete", userId: "u1", lessonId: "l1" })).resolves.toMatchObject({ meta: { changes: 1 } });
+    await expect(client.execute({ name: "dailySessionSave", snapshot: {
+      id: "s1", userId: "u1", date: "2026-08-04", status: "lesson", datasetVersion: "v1", seed: "seed", practiceRunId: null, createdAt: "now",
+      lessons: [{ lessonId: "l1", order: 0, status: "pending", selectionReason: "new", completedAt: null }],
+    } })).resolves.toMatchObject({ meta: { changes: 3 } });
+    await expect(client.batch([])).resolves.toEqual([]);
+    expect(calls.some(({ query }) => query.includes("DELETE FROM SavedLesson"))).toBe(true);
+  });
+
+  it("maps health, verification and replay result metadata to booleans", async () => {
+    const { database } = fakeDatabase();
+    const client = new D1BindingClient(database);
+    await expect(client.health()).resolves.toBe(true);
+    await expect(client.consumeVerification("id", "value", "now")).resolves.toBe(true);
+    await expect(client.acceptReplayNonce("nonce", "now", "later")).resolves.toBe(true);
   });
 
   it("authenticates, expires timestamps and rejects nonce replay", async () => {
@@ -133,4 +154,3 @@ describe("D1 persistence boundary", () => {
     });
   });
 });
-

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import type { CatalogSeedInput } from "@/core/content/ports/catalog-write-port";
 import type { D1DatabaseLike, D1PreparedStatement } from "../types/binding";
 import { D1CatalogWriteAdapter } from "./d1-catalog-write-adapter";
 
@@ -24,12 +25,12 @@ function database(existing: { id: string; status: string } | null = null) {
   return { db, queries, batches };
 }
 
-const input = {
+const input: CatalogSeedInput = {
   datasetVersion: "2026.08.04",
   checksum: "checksum",
-  taxonomy: [],
-  lessons: [],
-  activities: [],
+  taxonomy: [{ id: "grammar", checksum: "taxonomy", parentId: null, kind: "category", labels: { en: "Grammar", es: "Gramática" }, levels: ["B1"], selectableForPractice: true, order: 0 }],
+  lessons: [{ id: "lesson-1", checksum: "lesson", level: "B1", category: "grammar", taxonomyNodeId: "grammar", title: "Lesson", summary: "Summary", explanation: "Explanation", examples: [], commonMistakes: [], tags: [], difficulty: 1, contentVersion: 1, status: "published" }],
+  activities: [{ id: "activity-1", checksum: "activity", type: "choice", evaluatorStrategy: "single_option", level: "B1", category: "grammar", topic: "grammar", subtopic: "present", difficulty: 1, instructions: "Choose", prompt: "Prompt", explanation: "Explanation", tags: [], lessonIds: ["lesson-1"], taxonomyNodeIds: ["grammar"], estimatedSeconds: 30, evaluator: { strategy: "single_option", correctOptionId: "correct" }, options: [{ id: "correct", text: "Correct", feedback: "Correct" }], tokens: [], pairs: [], expectedAnswers: [{ gapId: null, answer: "correct", position: 0 }], status: "published" }],
 };
 
 describe("D1CatalogWriteAdapter", () => {
