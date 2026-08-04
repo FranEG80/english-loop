@@ -145,7 +145,7 @@ describeDatabase("Prisma repository contracts on SQLite", () => {
   });
 
   it("rolls back writes made through the real transaction client", async () => {
-    const unitOfWork = new PrismaUnitOfWorkAdapter(prisma);
+    const unitOfWork = new PrismaUnitOfWorkAdapter(prisma, 0);
     const settings = new PrismaUserSettingsRepository(prisma);
     await prisma.userSettings.deleteMany({ where: { userId } });
     await expect(unitOfWork.transaction(async () => {

@@ -57,7 +57,7 @@ export interface PersistenceBundle {
 
 export interface PersistenceBundleOptions {
   prisma: PrismaClient;
-  config: Pick<AppConfig, "databaseProvider" | "d1Transport" | "d1HttpUrl" | "d1HttpToken" | "attemptRateLimitWindowMs" | "attemptRateLimitMax" | "authRateLimitWindowMs" | "authRateLimitMax">;
+  config: Pick<AppConfig, "databaseProvider" | "d1Transport" | "d1HttpUrl" | "d1HttpToken" | "attemptRateLimitWindowMs" | "attemptRateLimitMax" | "authRateLimitWindowMs" | "authRateLimitMax" | "prismaTransactionRetryMax">;
   binding?: D1RuntimeOptions["binding"];
   fetch?: D1RuntimeOptions["fetch"];
   now?: D1RuntimeOptions["now"];
@@ -98,7 +98,7 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
 
   const catalog = new PrismaCatalogAdapter(options.prisma);
   return {
-    unitOfWork: new PrismaUnitOfWorkAdapter(options.prisma),
+    unitOfWork: new PrismaUnitOfWorkAdapter(options.prisma, options.config.prismaTransactionRetryMax),
     userSettingsRepository: new PrismaUserSettingsRepository(options.prisma),
     savedLessonRepository: new PrismaSavedLessonRepository(options.prisma),
     attemptRepository: new PrismaAttemptRepository(options.prisma),

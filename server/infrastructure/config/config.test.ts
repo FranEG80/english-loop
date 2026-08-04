@@ -90,6 +90,7 @@ describe("loadConfig", () => {
       ATTEMPT_RATE_LIMIT_MAX: "12",
       AUTH_RATE_LIMIT_WINDOW_MS: "15000",
       AUTH_RATE_LIMIT_MAX: "4",
+      PRISMA_TRANSACTION_RETRY_MAX: "4",
     };
 
     expect(loadConfig()).toMatchObject({
@@ -100,6 +101,7 @@ describe("loadConfig", () => {
       attemptRateLimitMax: 12,
       authRateLimitWindowMs: 15000,
       authRateLimitMax: 4,
+      prismaTransactionRetryMax: 4,
       publicPageDefaultLimit: 25,
       publicPageMaxLimit: 100,
       httpMaxRequestBodyBytes: 1048576,
@@ -110,6 +112,8 @@ describe("loadConfig", () => {
   it("rejects invalid operational policy values", () => {
     process.env = { ...process.env, AUTH_RATE_LIMIT_MAX: "not-a-number" };
     expect(() => loadConfig()).toThrow("AUTH_RATE_LIMIT_MAX must be a positive integer");
+    process.env = { ...process.env, AUTH_RATE_LIMIT_MAX: "10", PRISMA_TRANSACTION_RETRY_MAX: "-1" };
+    expect(() => loadConfig()).toThrow("PRISMA_TRANSACTION_RETRY_MAX must be a non-negative integer");
   });
 
   it("validates public pagination limits", () => {

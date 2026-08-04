@@ -27,6 +27,7 @@ export interface AppConfig {
   attemptRateLimitMax: number;
   authRateLimitWindowMs: number;
   authRateLimitMax: number;
+  prismaTransactionRetryMax: number;
   publicPageDefaultLimit: number;
   publicPageMaxLimit: number;
   httpMaxRequestBodyBytes: number;
@@ -42,6 +43,7 @@ const DEFAULT_AUTH_COOKIE_CACHE_MAX_AGE_SECONDS = 60 * 5;
 const DEFAULT_RATE_LIMIT_WINDOW_MS = 60_000;
 const DEFAULT_ATTEMPT_RATE_LIMIT_MAX = 30;
 const DEFAULT_AUTH_RATE_LIMIT_MAX = 10;
+const DEFAULT_PRISMA_TRANSACTION_RETRY_MAX = 2;
 const DEFAULT_PUBLIC_PAGE_LIMIT = 25;
 const DEFAULT_PUBLIC_PAGE_MAX_LIMIT = 100;
 const DEFAULT_HTTP_MAX_REQUEST_BODY_BYTES = 1_048_576;
@@ -53,6 +55,16 @@ function positiveIntegerEnv(name: string, fallback: number): number {
   const value = Number(raw);
   if (!Number.isSafeInteger(value) || value <= 0) {
     throw new Error(`${name} must be a positive integer`);
+  }
+  return value;
+}
+
+function nonNegativeIntegerEnv(name: string, fallback: number): number {
+  const raw = process.env[name];
+  if (raw === undefined || raw === "") return fallback;
+  const value = Number(raw);
+  if (!Number.isSafeInteger(value) || value < 0) {
+    throw new Error(`${name} must be a non-negative integer`);
   }
   return value;
 }
@@ -124,6 +136,10 @@ export function loadConfig(): AppConfig {
     "AUTH_RATE_LIMIT_MAX",
     DEFAULT_AUTH_RATE_LIMIT_MAX,
   );
+  const prismaTransactionRetryMax = nonNegativeIntegerEnv(
+    "PRISMA_TRANSACTION_RETRY_MAX",
+    DEFAULT_PRISMA_TRANSACTION_RETRY_MAX,
+  );
   const publicPageDefaultLimit = positiveIntegerEnv(
     "PUBLIC_PAGE_DEFAULT_LIMIT",
     DEFAULT_PUBLIC_PAGE_LIMIT,
@@ -162,6 +178,7 @@ export function loadConfig(): AppConfig {
     attemptRateLimitMax,
     authRateLimitWindowMs,
     authRateLimitMax,
+    prismaTransactionRetryMax,
     publicPageDefaultLimit,
     publicPageMaxLimit,
     httpMaxRequestBodyBytes,

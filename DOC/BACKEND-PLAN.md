@@ -313,8 +313,9 @@ context/
 - [x] Crear `UnitOfWorkPort`.
 - [x] Crear `PrismaUnitOfWorkAdapter`.
 - [x] Mantener transacciones cortas.
-- [~] Añadir reintentos limitados para conflictos serializables; SQLite no los
-  necesita en el flujo actual y queda pendiente el contrato PostgreSQL.
+- [x] Añadir reintentos limitados y configurables mediante
+  `PRISMA_TRANSACTION_RETRY_MAX` para conflictos serializables/deadlocks Prisma
+  (`P2034`); el valor `0` los desactiva.
 
 ## Fase 8 — Modelo persistente
 
