@@ -1,32 +1,47 @@
 {
   "schemaVersion": "1.0.0",
   "summary": {
-    "publishedLessons": 67,
-    "publishedActivities": 5525,
+    "publishedLessons": 76,
+    "publishedActivities": 7025,
     "minimumLessons": 100,
     "minimumActivities": 10000,
     "globalTargetMet": false,
-    "nodeTargetsMet": 53,
+    "nodeTargetsMet": 68,
     "nodeTargetsTotal": 120
   },
   "dimensions": {
     "level": {
-      "B1": 2875,
-      "B2": 2650
+      "B1": 3800,
+      "B2": 3225
     },
     "category": {
       "grammar": 4900,
-      "vocabulary": 625
+      "vocabulary": 2125
     },
     "topic": {
       "articles-determiners": 200,
       "b1-daily-routines-life": 100,
-      "b1-education-study": 75,
-      "b1-technology-digital-life": 50,
+      "b1-education-study": 100,
+      "b1-environment-weather-places": 100,
+      "b1-family-relationships": 100,
+      "b1-food-cooking": 100,
+      "b1-health-body": 100,
+      "b1-home-services": 100,
+      "b1-leisure-sport-entertainment": 50,
+      "b1-shopping-clothes-money": 100,
+      "b1-technology-digital-life": 100,
+      "b1-travel-transport": 100,
+      "b1-work-jobs": 100,
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
+      "b2-climate-global-issues": 100,
+      "b2-crime-justice": 100,
       "b2-education-learning": 100,
+      "b2-health-psychology": 100,
+      "b2-media-communication": 100,
+      "b2-money-economics": 75,
       "b2-science-research": 100,
+      "b2-society-culture-public-life": 100,
       "comparisons": 300,
       "conditionals": 250,
       "future-forms": 425,
@@ -53,12 +68,27 @@
       "advice-possibility": 100,
       "articles-reference": 100,
       "b1-daily-routines-life": 100,
-      "b1-education-study": 75,
-      "b1-technology-digital-life": 50,
+      "b1-education-study": 100,
+      "b1-environment-weather-places": 100,
+      "b1-family-relationships": 100,
+      "b1-food-cooking": 100,
+      "b1-health-body": 100,
+      "b1-home-services": 100,
+      "b1-leisure-sport-entertainment": 50,
+      "b1-shopping-clothes-money": 100,
+      "b1-technology-digital-life": 100,
+      "b1-travel-transport": 100,
+      "b1-work-jobs": 100,
       "b2-ai-digital-life": 100,
       "b2-career-business": 100,
+      "b2-climate-global-issues": 100,
+      "b2-crime-justice": 100,
       "b2-education-learning": 100,
+      "b2-health-psychology": 100,
+      "b2-media-communication": 100,
+      "b2-money-economics": 75,
       "b2-science-research": 100,
+      "b2-society-culture-public-life": 100,
       "basic-linking-words": 100,
       "basic-verb-patterns": 100,
       "cleft-sentences-fronting": 100,
@@ -111,20 +141,20 @@
       "complete_dialogue": 100,
       "error_correction": 475,
       "error_identification": 50,
-      "fill_blank": 1325,
+      "fill_blank": 1700,
       "key_word_transformation": 25,
       "multiple_select": 125,
       "sentence_transformation": 100,
-      "single_choice": 1375,
-      "true_false": 925,
-      "word_order": 1025
+      "single_choice": 1750,
+      "true_false": 1300,
+      "word_order": 1400
     },
     "difficulty": {
-      "1": 635,
-      "2": 1199,
-      "3": 1304,
-      "4": 1245,
-      "5": 1142
+      "1": 820,
+      "2": 1513,
+      "3": 1628,
+      "4": 1586,
+      "5": 1478
     }
   },
   "targets": [
@@ -410,8 +440,8 @@
         4,
         5
       ],
-      "actualActivities": 75,
-      "actualActivityTypes": 3,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         1,
         2,
@@ -419,7 +449,7 @@
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-environment-weather-places",
@@ -433,10 +463,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-error-correction",
@@ -467,10 +503,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-fixed-expressions",
@@ -501,10 +543,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-health-body",
@@ -518,10 +566,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-home-services",
@@ -535,10 +589,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-leisure-sport-entertainment",
@@ -552,9 +612,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 50,
+      "actualActivityTypes": 2,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -790,10 +856,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-technology-digital-life",
@@ -807,8 +879,8 @@
         4,
         5
       ],
-      "actualActivities": 50,
-      "actualActivityTypes": 2,
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
       "actualDifficulties": [
         1,
         2,
@@ -816,7 +888,7 @@
         4,
         5
       ],
-      "met": false
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-travel-transport",
@@ -830,10 +902,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-word-formation",
@@ -864,10 +942,16 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b1-writing-informal-email",
@@ -1023,10 +1107,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-collocations-academic-business",
@@ -1087,10 +1176,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-dependent-prepositions",
@@ -1140,10 +1234,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-key-word-transformations",
@@ -1172,10 +1271,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-money-economics",
@@ -1188,9 +1292,14 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
+      "actualActivities": 75,
+      "actualActivityTypes": 3,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
       "met": false
     },
     {
@@ -1433,10 +1542,15 @@
         4,
         5
       ],
-      "actualActivities": 0,
-      "actualActivityTypes": 0,
-      "actualDifficulties": [],
-      "met": false
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
     },
     {
       "taxonomyNodeId": "b2-travel-tourism-urban-life",

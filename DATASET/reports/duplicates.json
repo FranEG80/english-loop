@@ -1,6 +1,65 @@
 {
   "schemaVersion": "1.0.0",
-  "exact": [],
+  "exact": [
+    {
+      "normalisedPrompt": "which sentence is correct?",
+      "activityIds": [
+        "b1-education-study-sc-016",
+        "b1-leisure-sport-entertainment-sc-016",
+        "b1-travel-transport-sc-016",
+        "b1-work-jobs-sc-016"
+      ]
+    },
+    {
+      "normalisedPrompt": "i study biology at college.",
+      "activityIds": [
+        "b1-education-study-tf-001",
+        "b1-education-study-wo-001"
+      ]
+    },
+    {
+      "normalisedPrompt": "which sentence uses borrow correctly?",
+      "activityIds": [
+        "b1-shopping-clothes-money-sc-011",
+        "b2-vocabulary-money-economics-sc-021"
+      ]
+    },
+    {
+      "normalisedPrompt": "these trousers are too tight.",
+      "activityIds": [
+        "b1-shopping-clothes-money-tf-001",
+        "b1-shopping-clothes-money-wo-001"
+      ]
+    },
+    {
+      "normalisedPrompt": "we travelled by train to york.",
+      "activityIds": [
+        "b1-travel-transport-tf-007",
+        "b1-travel-transport-wo-007"
+      ]
+    },
+    {
+      "normalisedPrompt": "the advert asks for two years of ___.",
+      "activityIds": [
+        "b1-work-jobs-fb-012",
+        "b1-work-jobs-sc-013"
+      ]
+    },
+    {
+      "normalisedPrompt": "describe the evidence.",
+      "activityIds": [
+        "b2-media-communication-wo-005",
+        "b2-vocabulary-crime-justice-wo-003"
+      ]
+    },
+    {
+      "normalisedPrompt": "the appeal court upheld the original ___.",
+      "activityIds": [
+        "b2-vocabulary-crime-justice-fb-019",
+        "b2-vocabulary-crime-justice-sc-023"
+      ]
+    }
+  ],
   "near": [],
   "nearDuplicateThreshold": 0.86
 }

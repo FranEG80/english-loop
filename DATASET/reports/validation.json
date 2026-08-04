@@ -2,22 +2,22 @@
   "schemaVersion": "1.0.0",
   "valid": false,
   "summary": {
-    "lessons": 67,
-    "activities": 5525,
-    "batches": 221,
+    "lessons": 76,
+    "activities": 7025,
+    "batches": 281,
     "taxonomyNodes": 164,
-    "errors": 266
+    "errors": 206
   },
   "issues": [
     {
       "code": "global-activity-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 5525 actividades publicadas; se requieren 10000."
+      "message": "Hay 7025 actividades publicadas; se requieren 10000."
     },
     {
       "code": "global-lesson-coverage",
       "location": "catalog/coverage-targets.json",
-      "message": "Hay 67 lecciones publicadas; se requieren 100."
+      "message": "Hay 76 lecciones publicadas; se requieren 100."
     },
     {
       "code": "node-activity-coverage",
@@ -66,31 +66,6 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-education-study",
-      "message": "Hay 75 actividades; se requieren 100."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-education-study",
-      "message": "Hay 3 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-environment-weather-places",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-environment-weather-places",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-environment-weather-places",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-error-correction",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -102,21 +77,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-error-correction",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-family-relationships",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-family-relationships",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-family-relationships",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -136,297 +96,207 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-food-cooking",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-food-cooking",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-food-cooking",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-health-body",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-health-body",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-health-body",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-home-services",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-home-services",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-home-services",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-leisure-sport-entertainment",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-leisure-sport-entertainment",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-leisure-sport-entertainment",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-open-cloze",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-open-cloze",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-open-cloze",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-prepositions-movement-travel",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-prepositions-movement-travel",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-prepositions-movement-travel",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-gapped-text",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-gapped-text",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-gapped-text",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-gist-detail",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-gist-detail",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-gist-detail",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-notices-functional-texts",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-notices-functional-texts",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-notices-functional-texts",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-opinion-purpose",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-opinion-purpose",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-opinion-purpose",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-sentence-rewriting",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-sentence-rewriting",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-sentence-rewriting",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-shopping-clothes-money",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-shopping-clothes-money",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-shopping-clothes-money",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-technology-digital-life",
       "message": "Hay 50 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-technology-digital-life",
+      "location": "catalog/coverage-targets.json#B1:b1-leisure-sport-entertainment",
       "message": "Hay 2 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-travel-transport",
+      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
       "message": "Hay 0 actividades; se requieren 100."
     },
     {
       "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-travel-transport",
+      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
       "message": "Faltan dificultades: 1, 2, 3, 4, 5."
     },
     {
       "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-travel-transport",
+      "location": "catalog/coverage-targets.json#B1:b1-multiple-choice-cloze",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-open-cloze",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-open-cloze",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-open-cloze",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-everyday-actions",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-study-relationships",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-phrasal-travel-services",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-prepositions-movement-travel",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-prepositions-movement-travel",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-prepositions-movement-travel",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-prepositions-time-place",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-gapped-text",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-gapped-text",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-gapped-text",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-gist-detail",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-gist-detail",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-gist-detail",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-notices-functional-texts",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-notices-functional-texts",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-notices-functional-texts",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-opinion-purpose",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-opinion-purpose",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-opinion-purpose",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-reading-people-matching",
+      "message": "Hay 0 tipos; se requieren 4."
+    },
+    {
+      "code": "node-activity-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-sentence-rewriting",
+      "message": "Hay 0 actividades; se requieren 100."
+    },
+    {
+      "code": "node-difficulty-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-sentence-rewriting",
+      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
+    },
+    {
+      "code": "node-type-coverage",
+      "location": "catalog/coverage-targets.json#B1:b1-sentence-rewriting",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -442,21 +312,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B1:b1-word-formation",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-work-jobs",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-work-jobs",
-      "message": "Faltan dificultades: 1, 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B1:b1-work-jobs",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -551,21 +406,6 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-climate-global-issues",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-climate-global-issues",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-climate-global-issues",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-collocations-academic-business",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -611,21 +451,6 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-crime-justice",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-crime-justice",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-crime-justice",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
       "message": "Hay 0 actividades; se requieren 100."
     },
@@ -637,21 +462,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-dependent-prepositions",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-health-psychology",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-health-psychology",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-health-psychology",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -671,33 +481,13 @@
     },
     {
       "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-media-communication",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-media-communication",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-media-communication",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-money-economics",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-money-economics",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
+      "message": "Hay 75 actividades; se requieren 100."
     },
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-money-economics",
-      "message": "Hay 0 tipos; se requieren 4."
+      "message": "Hay 3 tipos; se requieren 4."
     },
     {
       "code": "node-activity-coverage",
@@ -892,21 +682,6 @@
     {
       "code": "node-type-coverage",
       "location": "catalog/coverage-targets.json#B2:b2-register-rewriting",
-      "message": "Hay 0 tipos; se requieren 4."
-    },
-    {
-      "code": "node-activity-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-society-culture-public-life",
-      "message": "Hay 0 actividades; se requieren 100."
-    },
-    {
-      "code": "node-difficulty-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-society-culture-public-life",
-      "message": "Faltan dificultades: 2, 3, 4, 5."
-    },
-    {
-      "code": "node-type-coverage",
-      "location": "catalog/coverage-targets.json#B2:b2-society-culture-public-life",
       "message": "Hay 0 tipos; se requieren 4."
     },
     {
@@ -1112,26 +887,6 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-family-relationships."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-food-cooking."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-health-body."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b1-vocabulary-home-services."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b1-writing-informal-email."
     },
     {
@@ -1252,31 +1007,6 @@
     {
       "code": "planned-lesson-missing",
       "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-creativity-innovation-decisions."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-crime-justice."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-money-economics."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-society-culture-public-life."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
-      "message": "Falta la lección planificada b2-vocabulary-travel-tourism-urban-life."
-    },
-    {
-      "code": "planned-lesson-missing",
-      "location": "catalog/curriculum-map.json",
       "message": "Falta la lección planificada b2-writing-argument-cohesion."
     },
     {
@@ -1301,42 +1031,12 @@
     },
     {
       "code": "lesson-without-activities",
-      "location": "lessons/b1/vocabulary/b1-environment-weather-places/b1-vocabulary-environment-weather-places.md",
+      "location": "lessons/b2/vocabulary/b2-creativity-innovation-decisions/b2-vocabulary-creativity-innovation-decisions.md",
       "message": "Una lección publicada debe tener actividades publicadas."
     },
     {
       "code": "lesson-without-activities",
-      "location": "lessons/b1/vocabulary/b1-leisure-sport-entertainment/b1-vocabulary-leisure-sport-entertainment.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b1/vocabulary/b1-shopping-clothes-money/b1-vocabulary-shopping-clothes-money.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b1/vocabulary/b1-travel-transport/b1-vocabulary-travel-transport.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b1/vocabulary/b1-work-jobs/b1-vocabulary-work-jobs.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/vocabulary/b2-climate-global-issues/b2-vocabulary-climate-global-issues.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/vocabulary/b2-health-psychology/b2-vocabulary-health-psychology.md",
-      "message": "Una lección publicada debe tener actividades publicadas."
-    },
-    {
-      "code": "lesson-without-activities",
-      "location": "lessons/b2/vocabulary/b2-media-communication/b2-vocabulary-media-communication.md",
+      "location": "lessons/b2/vocabulary/b2-travel-tourism-urban-life/b2-vocabulary-travel-tourism-urban-life.md",
       "message": "Una lección publicada debe tener actividades publicadas."
     }
   ]
