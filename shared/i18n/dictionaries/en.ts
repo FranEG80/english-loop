@@ -45,7 +45,7 @@ export const en: Dictionary = {
     noAccount: "Don't have an account yet?",
     hasAccount: "Already have an account?",
     invalidCredentials: "Incorrect email or password.",
-    demoHint: "Demo: alex@example.com / password123",
+    demoHint: "You can also try the demo without signing up.",
   },
   landing: {
     heroEyebrow: "Daily B1 and B2 English practice",
@@ -54,6 +54,7 @@ export const en: Dictionary = {
       "Short lessons, varied written practice and smart review so you never forget what you already know.",
     heroCtaPrimary: "Create a free account",
     heroCtaSecondary: "I already have an account",
+    demoCta: "Try the demo",
     howItWorksTitle: "How it works",
     howItWorksSteps: [
       {

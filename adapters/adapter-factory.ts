@@ -7,26 +7,27 @@ import type {
   ProgressPort,
   SettingsPort,
 } from "@/core/ports";
-import { authMockAdapter } from "./mock/auth-mock-adapter";
 import { learningContentMockAdapter } from "./mock/learning-content-mock-adapter";
 import { dailySessionMockAdapter } from "./mock/daily-session-mock-adapter";
 import { focusedPracticeMockAdapter } from "./mock/focused-practice-mock-adapter";
 import { progressMockAdapter } from "./mock/progress-mock-adapter";
 import { settingsMockAdapter } from "./mock/settings-mock-adapter";
 import { authRestAdapter } from "./rest/auth-rest-adapter";
+import { authServerAdapter } from "./server/auth-server-adapter";
 import { learningContentRestAdapter } from "./rest/learning-content-rest-adapter";
 import { dailySessionRestAdapter } from "./rest/daily-session-rest-adapter";
 import { focusedPracticeRestAdapter } from "./rest/focused-practice-rest-adapter";
 import { progressRestAdapter } from "./rest/progress-rest-adapter";
 import { settingsRestAdapter } from "./rest/settings-rest-adapter";
 import { localeCookiePortAdapter } from "./browser/locale-port-adapter";
+import { mockAuthUser } from "./mock/data/auth";
 
 type DataSource = "mock" | "rest";
 
 /**
- * Selecciona la implementación de cada puerto. El modo "mock" es el valor
- * predeterminado para demos deterministas; `NEXT_PUBLIC_DATA_SOURCE=rest`
- * conecta la UI con los Route Handlers reales bajo `/api/v1`.
+ * Selecciona la implementación de los puertos de datos. El contenido y los
+ * datos de aprendizaje pueden ser mock o REST, pero la autenticación siempre
+ * es real: las cuentas no se crean nunca en memoria.
  *
  * Ningún componente de `features/` o `app/` debe importar `adapters/mock`
  * ni `adapters/rest` directamente: siempre a través de estas factories.
@@ -36,7 +37,24 @@ function getDataSource(): DataSource {
 }
 
 export function getAuthPort(): AuthPort {
-  return getDataSource() === "rest" ? authRestAdapter : authMockAdapter;
+  return typeof window === "undefined" ? authServerAdapter : authRestAdapter;
+}
+
+/** Puertos de solo lectura para la experiencia de demostración anónima. */
+export function getDemoSession(): typeof mockAuthUser {
+  return mockAuthUser;
+}
+
+export function getDemoLearningContentPort(): LearningContentPort {
+  return learningContentMockAdapter;
+}
+
+export function getDemoDailySessionPort(): DailySessionPort {
+  return dailySessionMockAdapter;
+}
+
+export function getDemoProgressPort(): ProgressPort {
+  return progressMockAdapter;
 }
 
 export function getLearningContentPort(): LearningContentPort {

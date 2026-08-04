@@ -1,6 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
 import { getAuthPort, getDailySessionPort, getFocusedPracticePort, getLearningContentPort, getLocalePort, getProgressPort, getSettingsPort } from "./adapter-factory";
-import { authMockAdapter } from "./mock/auth-mock-adapter";
 import { dailySessionMockAdapter } from "./mock/daily-session-mock-adapter";
 import { focusedPracticeMockAdapter } from "./mock/focused-practice-mock-adapter";
 import { learningContentMockAdapter } from "./mock/learning-content-mock-adapter";
@@ -18,8 +17,8 @@ afterEach(() => {
 });
 
 describe("adapter factory", () => {
-  it("selects mock ports by default", () => {
-    expect(getAuthPort()).toBe(authMockAdapter);
+  it("keeps authentication real even when content mocks are selected", () => {
+    expect(getAuthPort()).toBe(authRestAdapter);
     expect(getDailySessionPort()).toBe(dailySessionMockAdapter);
     expect(getFocusedPracticePort()).toBe(focusedPracticeMockAdapter);
     expect(getLearningContentPort()).toBe(learningContentMockAdapter);
@@ -28,7 +27,7 @@ describe("adapter factory", () => {
     expect(getLocalePort().getLocale).toBeTypeOf("function");
   });
 
-  it("selects every REST port explicitly", () => {
+  it("selects every REST data port explicitly", () => {
     process.env.NEXT_PUBLIC_DATA_SOURCE = "rest";
     expect(getAuthPort()).toBe(authRestAdapter);
     expect(getDailySessionPort()).toBe(dailySessionRestAdapter);

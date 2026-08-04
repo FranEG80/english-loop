@@ -1,4 +1,5 @@
 const API_BASE_PATH = "/api/v1";
+const DEFAULT_SERVER_ORIGIN = "http://127.0.0.1:3000";
 
 export class RestApiError extends Error {
   constructor(
@@ -10,19 +11,55 @@ export class RestApiError extends Error {
   }
 }
 
-/**
- * Cliente REST mínimo, preparado para `/api/v1` pero sin usar todavía: el
- * adapter factory solo lo selecciona si `NEXT_PUBLIC_DATA_SOURCE=rest`, y
- * hoy no existen Route Handlers que lo respondan.
- */
+interface ServerRequestContext {
+  origin: string;
+  cookie?: string;
+}
+
+async function getServerRequestContext(): Promise<ServerRequestContext> {
+  const configuredOrigin = process.env.BETTER_AUTH_URL ?? DEFAULT_SERVER_ORIGIN;
+  if (typeof window !== "undefined") return { origin: configuredOrigin };
+
+  const { headers } = await import("next/headers");
+  const incomingHeaders = await headers();
+  const host = incomingHeaders.get("x-forwarded-host") ?? incomingHeaders.get("host");
+  if (!host) {
+    return {
+      origin: new URL(configuredOrigin).origin,
+      cookie: incomingHeaders.get("cookie") ?? undefined,
+    };
+  }
+
+  const forwardedProtocol = incomingHeaders.get("x-forwarded-proto")?.split(",")[0]?.trim();
+  const protocol = forwardedProtocol || new URL(configuredOrigin).protocol.replace(":", "");
+  return {
+    origin: `${protocol}://${host}`,
+    cookie: incomingHeaders.get("cookie") ?? undefined,
+  };
+}
+
+/** Ejecuta una petición contra un Route Handler desde navegador o servidor. */
+export async function restFetch(path: string, init?: RequestInit): Promise<Response> {
+  const context = await getServerRequestContext();
+  const requestHeaders = new Headers(init?.headers);
+  if (!requestHeaders.has("Content-Type")) {
+    requestHeaders.set("Content-Type", "application/json");
+  }
+  if (context.cookie && !requestHeaders.has("cookie")) {
+    requestHeaders.set("cookie", context.cookie);
+  }
+
+  const url = typeof window === "undefined"
+    ? new URL(path, context.origin).toString()
+    : path;
+  return fetch(url, { ...init, headers: requestHeaders });
+}
+
 export async function restRequest<TResponse>(
   path: string,
   init?: RequestInit,
 ): Promise<TResponse> {
-  const response = await fetch(`${API_BASE_PATH}${path}`, {
-    ...init,
-    headers: { "Content-Type": "application/json", ...init?.headers },
-  });
+  const response = await restFetch(`${API_BASE_PATH}${path}`, init);
   if (!response.ok) {
     throw new RestApiError(
       `La petición a "${path}" falló con estado ${response.status}.`,

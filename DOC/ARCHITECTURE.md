@@ -25,15 +25,18 @@ La aplicación tiene dos recorridos de entrada, con responsabilidades distintas:
 
 ```text
 Web de producto
-app/features → adapters/adapter-factory → mock o REST → /api/v1
+app/features → adapters/adapter-factory → REST real
+                         ↘ /demo → mocks de solo lectura
 
 Backend
 Route Handler / Server Action → CompositionRoot → core → persistencia
 ```
 
-`adapters/adapter-factory.ts` permite ejecutar la UI con mocks deterministas o
-con los adaptadores REST. Los mocks no son código muerto: son el modo de demo y
-la cobertura de contratos del frontend. El backend real se compone en
+`adapters/adapter-factory.ts` selecciona los adaptadores REST para la aplicación
+real y expone factorías separadas para el espacio `/demo`. Los mocks no son
+código muerto: alimentan esa demo anónima y la cobertura de contratos del
+frontend. El registro, login y las sesiones siempre pasan por Better Auth real.
+El backend real se compone en
 `server/infrastructure/composition/composition-root.ts` y comparte los casos de
 uso entre Route Handlers y Server Actions, sin peticiones HTTP internas.
 

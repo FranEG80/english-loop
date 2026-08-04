@@ -69,3 +69,25 @@ test("registers, keeps an authenticated session, logs out and logs in again", as
   expect(cookie).not.toBe("");
   expect((await request.get("/api/v1/progress/overview", { headers: { cookie } })).status()).toBe(200);
 });
+
+test("registers from the UI and renders the persisted user instead of the demo", async ({ page }) => {
+  const email = `ui-e2e-${Date.now()}@example.com`;
+  const name = "UI E2E User";
+
+  await page.goto("/register");
+  await page.getByLabel("Nombre").fill(name);
+  await page.getByLabel("Email").fill(email);
+  await page.getByLabel("Contraseña").fill("Ui-e2e-password-123!");
+  await page.getByRole("button", { name: "Crear cuenta" }).click();
+
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByText(`¡Hola, ${name}!`)).toBeVisible();
+  await expect(page.getByText(email)).toBeVisible();
+  await expect(page.getByText("Alex", { exact: true })).toHaveCount(0);
+
+  const session = await page.evaluate(async () => {
+    const response = await fetch("/api/auth/get-session");
+    return response.json();
+  });
+  expect(session).toMatchObject({ user: { name, email } });
+});

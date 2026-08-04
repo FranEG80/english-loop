@@ -45,7 +45,7 @@ export const es: Dictionary = {
     noAccount: "¿Todavía no tienes cuenta?",
     hasAccount: "¿Ya tienes cuenta?",
     invalidCredentials: "Email o contraseña incorrectos.",
-    demoHint: "Demo: alex@example.com / password123",
+    demoHint: "También puedes probar la demo sin registrarte.",
   },
   landing: {
     heroEyebrow: "Práctica diaria de inglés B1 y B2",
@@ -54,6 +54,7 @@ export const es: Dictionary = {
       "Lecciones cortas, práctica escrita variada y repaso inteligente para no perder lo que ya sabes.",
     heroCtaPrimary: "Crear cuenta gratis",
     heroCtaSecondary: "Ya tengo cuenta",
+    demoCta: "Probar la demo",
     howItWorksTitle: "Cómo funciona",
     howItWorksSteps: [
       {

@@ -56,8 +56,10 @@ pnpm dev
 
 La aplicación estará disponible en
 [`http://localhost:3000`](http://localhost:3000). Sin configuración adicional,
-el backend usa `DATASET` y SQLite local; la UI conserva el modo mock por
-defecto para que la demo sea determinista.
+el backend usa `DATASET` y SQLite local. La autenticación de registro, login y
+sesión siempre usa Better Auth real. Las personas no registradas pueden abrir
+`/demo` desde la landing para probar un panel de solo lectura con el usuario
+demo; no se escribe nada en la base de datos.
 
 Para preparar el catálogo relacional local:
 

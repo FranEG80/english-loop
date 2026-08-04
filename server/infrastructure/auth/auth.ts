@@ -1,5 +1,5 @@
 import "server-only";
-import { betterAuth } from "better-auth";
+import { betterAuth, type BetterAuthOptions } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { prisma } from "@/server/infrastructure/database/prisma-client";
 import { config } from "@/server/infrastructure/config/config";
@@ -11,6 +11,7 @@ export interface AuthRuntimeOptions {
   fetch?: D1RuntimeOptions["fetch"];
   now?: D1RuntimeOptions["now"];
   nonce?: D1RuntimeOptions["nonce"];
+  plugins?: BetterAuthOptions["plugins"];
 }
 
 function authDatabase(options: AuthRuntimeOptions) {
@@ -51,6 +52,7 @@ export function createAuth(options: AuthRuntimeOptions = {}) {
         secure: config.nodeEnv === "production",
       },
     },
+    ...(options.plugins ? { plugins: options.plugins } : {}),
   });
 }
 

@@ -7,15 +7,14 @@ import type {
   UpdateProfileInput,
 } from "@/core/models";
 import { DEFAULT_CEFR_LEVEL } from "@/core/models/level";
-import { RestApiError } from "./http-client";
+import { restFetch, RestApiError } from "./http-client";
 
 const AUTH_BASE_PATH = "/api/auth";
 
 async function authRequest<T>(path: string, init?: RequestInit): Promise<T> {
-  const response = await fetch(`${AUTH_BASE_PATH}${path}`, {
+  const response = await restFetch(`${AUTH_BASE_PATH}${path}`, {
     ...init,
     credentials: "include",
-    headers: { "Content-Type": "application/json", ...init?.headers },
   });
   if (!response.ok) throw new RestApiError(`Auth request failed: ${response.status}`, response.status);
   if (response.status === 204) return undefined as T;

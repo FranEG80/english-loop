@@ -51,6 +51,7 @@ export interface Dictionary {
     heroSubtitle: string;
     heroCtaPrimary: string;
     heroCtaSecondary: string;
+    demoCta: string;
     howItWorksTitle: string;
     howItWorksSteps: Array<{ title: string; description: string }>;
     practiceAreasTitle: string;
