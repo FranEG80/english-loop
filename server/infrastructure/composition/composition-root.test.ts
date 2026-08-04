@@ -64,6 +64,7 @@ const mocks = vi.hoisted(() => {
 
 vi.mock("@/server/infrastructure/database/prisma-client", () => ({ prisma: mocks.prisma }));
 vi.mock("@/server/infrastructure/config/config", () => ({ config: mocks.config }));
+vi.mock("@/server/infrastructure/auth/auth", () => ({ auth: {}, createAuth: vi.fn(() => ({})) }));
 vi.mock("@/server/infrastructure/database/prisma-unit-of-work-adapter", () => ({ PrismaUnitOfWorkAdapter: mocks.PrismaUnitOfWorkAdapter }));
 vi.mock("@/server/infrastructure/auth/better-auth-identity-adapter", () => ({ BetterAuthIdentityAdapter: mocks.BetterAuthIdentityAdapter }));
 vi.mock("@/server/infrastructure/persistence/prisma-user-settings-repository", () => ({ PrismaUserSettingsRepository: mocks.PrismaUserSettingsRepository }));

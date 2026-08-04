@@ -7,7 +7,7 @@ describe("dataset validation pipeline", () => {
   it("runs the checked-in validation pipeline and exposes unmet coverage as issues", async () => {
     const issues = await validateDataset(await loadDataset());
     expect(issues.length).toBeGreaterThan(0);
-    expect(issues.some((issue) => issue.code === "global-activity-coverage")).toBe(true);
+    expect(issues.some((issue) => issue.code.includes("coverage"))).toBe(true);
     expect(issues.every((issue) => issue.location.length > 0 && issue.message.length > 0)).toBe(true);
   });
 

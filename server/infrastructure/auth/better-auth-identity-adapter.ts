@@ -10,8 +10,10 @@ import { UnauthorizedException } from "@/core/shared/exceptions";
  * `Actor` del core. Los tipos de Better Auth no salen de este adaptador.
  */
 export class BetterAuthIdentityAdapter implements IdentityPort {
+  constructor(private readonly authClient: typeof auth = auth) {}
+
   async getActor(): Promise<Actor | null> {
-    const session = await auth.api.getSession({
+    const session = await this.authClient.api.getSession({
       headers: await headers(),
     });
     if (!session?.user) return null;

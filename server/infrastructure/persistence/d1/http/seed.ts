@@ -5,17 +5,99 @@ import type { D1DatabaseLike } from "../types/binding";
 import { D1_HTTP_MAX_CLOCK_SKEW_MS, D1_HTTP_MAX_BODY_BYTES } from "../d1-http";
 import { authorizeD1HttpRequest, jsonResponse } from "./security";
 
+const requiredString = z.string().min(1);
+const stringArray = z.array(requiredString);
+const countsSchema = z.object({
+  taxonomy: z.number().int().nonnegative(),
+  lessons: z.number().int().nonnegative(),
+  activities: z.number().int().nonnegative(),
+});
+const referencesSchema = z.object({
+  activityTypes: stringArray,
+  evaluatorStrategies: stringArray,
+  levels: stringArray,
+  statuses: stringArray,
+});
+const taxonomyNodeSchema = z.object({
+  id: requiredString,
+  checksum: requiredString,
+  parentId: z.string().nullable(),
+  kind: requiredString,
+  labels: z.object({ en: requiredString, es: requiredString }),
+  levels: stringArray,
+  selectableForPractice: z.boolean(),
+  order: z.number().int(),
+}).passthrough();
+const lessonSchema = z.object({
+  id: requiredString,
+  checksum: requiredString,
+  level: requiredString,
+  category: requiredString,
+  taxonomyNodeId: requiredString,
+  title: requiredString,
+  summary: z.string(),
+  explanation: z.string(),
+  examples: z.array(z.unknown()),
+  commonMistakes: z.array(z.string()),
+  tags: z.array(z.string()),
+  difficulty: z.number().finite(),
+  contentVersion: z.number().int(),
+  status: requiredString,
+}).passthrough();
+const activitySchema = z.object({
+  id: requiredString,
+  checksum: requiredString,
+  type: requiredString,
+  evaluatorStrategy: requiredString,
+  level: requiredString,
+  category: requiredString,
+  topic: requiredString,
+  subtopic: requiredString,
+  difficulty: z.number().finite(),
+  instructions: z.string(),
+  prompt: z.string(),
+  passage: z.string().optional(),
+  explanation: z.string(),
+  tags: z.array(z.string()),
+  lessonIds: stringArray,
+  taxonomyNodeIds: stringArray,
+  estimatedSeconds: z.number().int().nonnegative(),
+  evaluator: z.unknown(),
+  options: z.array(z.unknown()),
+  tokens: z.array(z.unknown()),
+  pairs: z.array(z.unknown()),
+  expectedAnswers: z.array(z.unknown()),
+  status: requiredString,
+}).passthrough();
+
 const chunkSchema = z.object({
   kind: z.enum(["start", "references", "taxonomy", "lessons", "activities", "publish", "fail"]),
   datasetVersion: z.string().optional(),
   checksum: z.string().optional(),
   releaseId: z.string().optional(),
   importId: z.string().optional(),
-  counts: z.object({ taxonomy: z.number(), lessons: z.number(), activities: z.number() }).optional(),
+  counts: countsSchema.optional(),
   result: z.string().optional(),
   error: z.string().optional(),
   chunk: z.unknown().optional(),
 });
+
+function parseSeedChunk(
+  kind: "references" | "taxonomy" | "lessons" | "activities",
+  releaseId: string,
+  value: unknown,
+): D1CatalogSeedChunk | null {
+  if (kind === "references") {
+    const parsed = referencesSchema.safeParse(value);
+    return parsed.success ? { kind, releaseId, ...parsed.data } : null;
+  }
+  const schema = kind === "taxonomy" ? taxonomyNodeSchema : kind === "lessons" ? lessonSchema : activitySchema;
+  const parsed = z.array(schema).safeParse(value);
+  if (!parsed.success) return null;
+  if (kind === "taxonomy") return { kind, releaseId, nodes: parsed.data } as D1CatalogSeedChunk;
+  if (kind === "lessons") return { kind, releaseId, lessons: parsed.data } as D1CatalogSeedChunk;
+  return { kind, releaseId, activities: parsed.data } as D1CatalogSeedChunk;
+}
 
 export interface D1SeedHttpOptions {
   database: D1DatabaseLike;
@@ -57,10 +139,8 @@ export async function handleD1SeedHttpRequest(request: Request, options: D1SeedH
       return jsonResponse({ success: true });
     }
     if (!value.chunk) return jsonResponse({ error: "missing_seed_chunk" }, 400);
-    const chunk = (value.kind === "references"
-      ? { kind: value.kind, releaseId: value.releaseId, ...(value.chunk as object) }
-      : { kind: value.kind, releaseId: value.releaseId, [value.kind]: value.chunk }) as D1CatalogSeedChunk;
-    if (value.kind !== "references" && !Array.isArray(value.chunk)) return jsonResponse({ error: "invalid_seed_chunk" }, 400);
+    const chunk = parseSeedChunk(value.kind, value.releaseId, value.chunk);
+    if (!chunk) return jsonResponse({ error: "invalid_seed_chunk" }, 400);
     await writer.applyChunk(chunk);
     return jsonResponse({ success: true });
   } catch {

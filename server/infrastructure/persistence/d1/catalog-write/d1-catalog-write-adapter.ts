@@ -3,7 +3,6 @@ import type { D1DatabaseLike, D1Result } from "../types/binding";
 import { CATALOG_IMPORT_FAILED, CATALOG_IMPORT_STARTED, CATALOG_RELEASE_PREPARING, D1_CATALOG_BATCH_SIZE } from "./constants";
 import { activityStatements } from "./activity-statements";
 import { lessonStatements } from "./lesson-statements";
-import { referenceStatements } from "./reference-statements";
 import { taxonomyStatements } from "./taxonomy-statements";
 import { publishStatements } from "./release-statements";
 import { chunk, generatedId, statement } from "./shared";
@@ -58,37 +57,23 @@ export class D1CatalogWriteAdapter implements CatalogWritePort {
   async seedCatalog(input: CatalogSeedInput, options: D1CatalogWriteOptions = {}): Promise<CatalogSeedResult> {
     const counts = { taxonomy: input.taxonomy.length, lessons: input.lessons.length, activities: input.activities.length };
     if (options.dryRun) return { releaseId: null, datasetVersion: input.datasetVersion, checksum: input.checksum, status: "dry_run", counts };
-
-    const existing = await this.database.prepare(`SELECT id, status FROM CatalogRelease WHERE datasetVersion = ? AND checksum = ?`).bind(input.datasetVersion, input.checksum).first<D1CatalogReleaseRow>();
-    if (existing?.status === "published") {
-      await this.run(statement(this.database, `INSERT INTO CatalogPublication (id, releaseId, publishedAt) VALUES ('active', ?, CURRENT_TIMESTAMP)
-        ON CONFLICT(id) DO UPDATE SET releaseId = excluded.releaseId, publishedAt = CURRENT_TIMESTAMP`, [existing.id]));
-      return { releaseId: existing.id, datasetVersion: input.datasetVersion, checksum: input.checksum, status: "unchanged", counts };
-    }
-
-    const releaseId = existing?.id ?? generatedId();
-    const importId = generatedId();
-    if (existing) await this.run(statement(this.database, "DELETE FROM CatalogRelease WHERE id = ?", [releaseId]));
-    await this.run(statement(this.database, "INSERT INTO CatalogRelease (id, datasetVersion, checksum, status) VALUES (?, ?, ?, ?)", [releaseId, input.datasetVersion, input.checksum, CATALOG_RELEASE_PREPARING]));
-    await this.run(statement(this.database, `INSERT INTO DatasetImport (id, datasetVersion, checksum, status, releaseId)
-      VALUES (?, ?, ?, ?, ?)`, [importId, input.datasetVersion, input.checksum, CATALOG_IMPORT_STARTED, releaseId]));
-
+    const session = await this.start(input.datasetVersion, input.checksum, counts);
+    if (session.result) return session.result;
     try {
-      const levels = [...new Set([...input.lessons.map((lesson) => lesson.level), ...input.activities.map((activity) => activity.level)])];
-      const statuses = [...new Set([...input.lessons.map((lesson) => lesson.status), ...input.activities.map((activity) => activity.status)])];
-      await this.runBatches(referenceStatements(this.database, { activities: input.activities, levels, statuses }));
-      await this.runBatches(taxonomyStatements(this.database, releaseId, input.taxonomy));
-      await this.runBatches(lessonStatements(this.database, releaseId, input.lessons));
-      await this.runBatches(activityStatements(this.database, releaseId, input.activities));
-      await this.runBatches(publishStatements(this.database, releaseId, importId, JSON.stringify({ ...counts, checksum: input.checksum })));
+      await this.applyChunk({ kind: "references", releaseId: session.releaseId,
+        activityTypes: [...new Set(input.activities.map((activity) => activity.type))],
+        evaluatorStrategies: [...new Set(input.activities.map((activity) => activity.evaluatorStrategy))],
+        levels: [...new Set([...input.lessons.map((lesson) => lesson.level), ...input.activities.map((activity) => activity.level)])],
+        statuses: [...new Set([...input.lessons.map((lesson) => lesson.status), ...input.activities.map((activity) => activity.status)])] });
+      await this.applyChunk({ kind: "taxonomy", releaseId: session.releaseId, nodes: input.taxonomy });
+      await this.applyChunk({ kind: "lessons", releaseId: session.releaseId, lessons: input.lessons });
+      await this.applyChunk({ kind: "activities", releaseId: session.releaseId, activities: input.activities });
+      await this.publish(session, JSON.stringify({ ...counts, checksum: input.checksum }));
     } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      await this.run(statement(this.database, "UPDATE CatalogRelease SET status = ? WHERE id = ?", ["failed", releaseId])).catch(() => undefined);
-      await this.run(statement(this.database, "UPDATE DatasetImport SET status = ?, finishedAt = CURRENT_TIMESTAMP, error = ? WHERE id = ?", [CATALOG_IMPORT_FAILED, message, importId])).catch(() => undefined);
+      await this.fail(session, error);
       throw error;
     }
-
-    return { releaseId, datasetVersion: input.datasetVersion, checksum: input.checksum, status: "published", counts };
+    return { releaseId: session.releaseId, datasetVersion: input.datasetVersion, checksum: input.checksum, status: "published", counts };
   }
 
   private async run(statementToRun: ReturnType<typeof statement>): Promise<D1Result> {

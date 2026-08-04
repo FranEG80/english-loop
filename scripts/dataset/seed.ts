@@ -15,6 +15,7 @@ import { validateDataset } from "./lib/validation";
 import type { Evaluator } from "./lib/types";
 import { loadConfig } from "@/server/infrastructure/config/config-core";
 import { assertPrismaProvider, createPrismaAdapter } from "@/server/infrastructure/database/prisma-adapter-factory";
+import { D1HttpCatalogWriteAdapter } from "@/server/infrastructure/persistence/d1/catalog-write";
 
 export interface CliOptions {
   source: string;
@@ -153,6 +154,14 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
     return;
   }
   const runtimeConfig = loadConfig();
+  if (runtimeConfig.databaseProvider === "d1") {
+    if (runtimeConfig.d1Transport !== "http" || !runtimeConfig.d1HttpUrl || !runtimeConfig.d1HttpToken) {
+      throw new Error("D1 seed from the CLI requires DATABASE_PROVIDER=d1, D1_TRANSPORT=http, D1_HTTP_URL and D1_HTTP_TOKEN");
+    }
+    const result = await new D1HttpCatalogWriteAdapter({ url: runtimeConfig.d1HttpUrl, token: runtimeConfig.d1HttpToken }).seedCatalog(input);
+    console.log(`Release ${result.status}: ${result.releaseId ?? "dry-run"}`);
+    return;
+  }
   assertPrismaProvider(runtimeConfig.databaseProvider);
 
   const prisma = new PrismaClient({

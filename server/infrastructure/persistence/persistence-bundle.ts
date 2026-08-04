@@ -31,7 +31,7 @@ import { D1UnitOfWorkAdapter } from "./d1/d1-unit-of-work-adapter";
 import { D1TransactionCoordinator } from "./d1/d1-transaction-coordinator";
 import { createD1Transport, type D1RuntimeOptions } from "./d1/d1-runtime";
 import { D1RateLimiter } from "../security/d1-rate-limiter";
-import { D1CatalogWriteAdapter } from "./d1/catalog-write";
+import { D1CatalogWriteAdapter, D1HttpCatalogWriteAdapter } from "./d1/catalog-write";
 import type { AppConfig } from "../config/config";
 
 export interface PersistenceBundle {
@@ -58,7 +58,7 @@ export interface PersistenceBundle {
 export interface PersistenceBundleOptions {
   prisma: PrismaClient;
   config: Pick<AppConfig, "databaseProvider" | "d1Transport" | "d1HttpUrl" | "d1HttpToken" | "attemptRateLimitWindowMs" | "attemptRateLimitMax" | "authRateLimitWindowMs" | "authRateLimitMax">;
-  d1Binding?: D1RuntimeOptions["binding"];
+  binding?: D1RuntimeOptions["binding"];
   fetch?: D1RuntimeOptions["fetch"];
   now?: D1RuntimeOptions["now"];
   nonce?: D1RuntimeOptions["nonce"];
@@ -66,7 +66,7 @@ export interface PersistenceBundleOptions {
 
 export function createPersistenceBundle(options: PersistenceBundleOptions): PersistenceBundle {
   if (options.config.databaseProvider === "d1") {
-    const transport = createD1Transport({ ...options.config, binding: options.d1Binding, fetch: options.fetch, now: options.now, nonce: options.nonce });
+    const transport = createD1Transport({ ...options.config, binding: options.binding, fetch: options.fetch, now: options.now, nonce: options.nonce });
     if (!transport) throw new Error("D1 persistence requires a configured D1 transport");
     const coordinator = new D1TransactionCoordinator(transport);
     const catalog = new D1CatalogAdapter(transport);
@@ -85,7 +85,11 @@ export function createPersistenceBundle(options: PersistenceBundleOptions): Pers
       taxonomyCatalog: catalog,
       catalogMetadata: catalog,
       databaseCatalog: catalog,
-      catalogWritePort: options.d1Binding?.DB ? new D1CatalogWriteAdapter(options.d1Binding.DB) : null,
+      catalogWritePort: options.binding?.DB
+        ? new D1CatalogWriteAdapter(options.binding.DB)
+        : options.config.d1HttpUrl && options.config.d1HttpToken
+          ? new D1HttpCatalogWriteAdapter({ url: options.config.d1HttpUrl, token: options.config.d1HttpToken, fetch: options.fetch, now: options.now, nonce: options.nonce })
+          : null,
       databaseHealth: async () => (await coordinator.execute({ name: "health" })).success,
       attemptRateLimiter: new D1RateLimiter(coordinator, options.config.attemptRateLimitWindowMs, options.config.attemptRateLimitMax),
       authRateLimiter: new D1RateLimiter(coordinator, options.config.authRateLimitWindowMs, options.config.authRateLimitMax),

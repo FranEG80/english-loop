@@ -49,9 +49,19 @@ export function createAuth(options: AuthRuntimeOptions = {}) {
   });
 }
 
+function unavailableBindingAuth(): ReturnType<typeof betterAuth> {
+  return new Proxy({} as ReturnType<typeof betterAuth>, {
+    get() {
+      throw new Error("D1 binding auth must be created with createAuth({ binding: { DB } })");
+    },
+  });
+}
+
 /**
  * Configuración de Better Auth con email/contraseña y sesiones persistidas
  * en el proveedor seleccionado. Los tipos de Better Auth nunca salen de este módulo:
  * el core los traduce a `Actor` a través de `BetterAuthIdentityAdapter`.
  */
-export const auth = createAuth();
+export const auth = config.databaseProvider === "d1" && config.d1Transport === "binding"
+  ? unavailableBindingAuth()
+  : createAuth();

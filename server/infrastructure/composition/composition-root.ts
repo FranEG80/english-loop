@@ -1,6 +1,7 @@
 import "server-only";
 import { prisma } from "@/server/infrastructure/database/prisma-client";
 import { BetterAuthIdentityAdapter } from "@/server/infrastructure/auth/better-auth-identity-adapter";
+import { auth, createAuth, type AuthRuntimeOptions } from "@/server/infrastructure/auth/auth";
 import { createPersistenceBundle, type PersistenceBundle } from "@/server/infrastructure/persistence/persistence-bundle";
 import { FileLessonCatalogAdapter } from "@/adapters/content/file-lesson-catalog-adapter";
 import { FileActivityCatalogAdapter } from "@/adapters/content/file-activity-catalog-adapter";
@@ -89,7 +90,10 @@ export class CompositionRoot {
   constructor(options: Pick<D1RuntimeOptions, "binding" | "fetch" | "now" | "nonce"> = {}) {
     this.persistence = createPersistenceBundle({ prisma, config, ...options });
     this.unitOfWork = this.persistence.unitOfWork;
-    this.identity = new BetterAuthIdentityAdapter();
+    const authClient = config.databaseProvider === "d1" && config.d1Transport === "binding"
+      ? createAuth(options satisfies AuthRuntimeOptions)
+      : auth;
+    this.identity = new BetterAuthIdentityAdapter(authClient);
     this.userSettingsRepository = this.persistence.userSettingsRepository;
     this.savedLessonRepository = this.persistence.savedLessonRepository;
     this.attemptRepository = this.persistence.attemptRepository;

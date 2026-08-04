@@ -1,7 +1,7 @@
-import "server-only";
 import { z } from "zod";
 import type { CatalogSeedInput, CatalogSeedResult, CatalogWritePort } from "@/core/content/ports/catalog-write-port";
 import { D1_HTTP_MAX_BODY_BYTES } from "../d1-http";
+import { D1_CATALOG_HTTP_BODY_MARGIN_BYTES } from "./constants";
 import type { D1CatalogSeedSession } from "./types";
 
 const responseSchema = z.object({
@@ -50,7 +50,7 @@ export class D1HttpCatalogWriteAdapter implements CatalogWritePort {
     for (const value of values) {
       const candidate = [...current, value];
       const size = JSON.stringify({ kind, releaseId: session.releaseId, chunk: candidate }).length;
-      if (current.length > 0 && size > maxBytes - 4_096) {
+      if (current.length > 0 && size > maxBytes - D1_CATALOG_HTTP_BODY_MARGIN_BYTES) {
         await this.post({ kind, releaseId: session.releaseId, chunk: current });
         current = [value];
       } else current = candidate;
@@ -60,7 +60,9 @@ export class D1HttpCatalogWriteAdapter implements CatalogWritePort {
 
   private async post(body: Record<string, unknown>): Promise<unknown> {
     const timestamp = this.now();
-    const response = await this.fetcher(new URL("/seed", this.options.url), {
+    const seedUrl = new URL(this.options.url);
+    seedUrl.pathname = `${seedUrl.pathname.replace(/\/$/, "")}/seed`;
+    const response = await this.fetcher(seedUrl, {
       method: "POST",
       headers: {
         authorization: `Bearer ${this.options.token}`,

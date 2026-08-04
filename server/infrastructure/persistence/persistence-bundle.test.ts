@@ -31,7 +31,7 @@ describe("PersistenceBundle", () => {
         authRateLimitWindowMs: 60_000,
         authRateLimitMax: 10,
       },
-      d1Binding: { DB: d1Database() },
+      binding: { DB: d1Database() },
     });
 
     expect(bundle.userSettingsRepository.constructor.name).toBe("D1UserSettingsRepository");
