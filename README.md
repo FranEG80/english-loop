@@ -70,6 +70,11 @@ pnpm prisma migrate deploy
 pnpm db:seed
 ```
 
+`dev.db` es la base de datos SQLite local y no se versiona. El archivo se crea
+automáticamente en la raíz del proyecto al ejecutar `pnpm prisma migrate deploy`;
+`pnpm db:seed` carga después el catálogo de `DATASET/`. Si ya existe, las
+migraciones solo aplican los cambios pendientes y el seed es idempotente.
+
 Para usar la UI contra los endpoints reales, configura
 `NEXT_PUBLIC_DATA_SOURCE=rest` y `CONTENT_SOURCE=database` después de aplicar
 las migraciones y el seed.
