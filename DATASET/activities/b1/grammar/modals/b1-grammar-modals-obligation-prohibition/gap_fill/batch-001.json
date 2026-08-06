@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-modals-obligation-prohibition-gap-fill-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "obligation-necessity-prohibition",
+  "lessonId": "b1-grammar-modals-obligation-prohibition",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the rule with “have to”.",
+      "prompt": "Museum guides ___ wear their identification badges at all times.",
+      "gapText": "Museum guides [gap1] wear their identification badges at all times.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto plural usa «have to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with the third-person form of “have to”.",
+      "prompt": "Every applicant ___ provide a contact telephone number.",
+      "gapText": "Every applicant [gap1] provide a contact telephone number.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "has to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Every applicant» es singular, por lo que usamos «has to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the prohibition with “mustn't”.",
+      "prompt": "Guests ___ light candles inside the wooden cabin.",
+      "gapText": "Guests [gap1] light candles inside the wooden cabin.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "prohibition",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "mustn't"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El riesgo de incendio convierte la frase en una prohibición."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with “don't have to”.",
+      "prompt": "We ___ take any plates to the picnic because Lara is bringing reusable ones.",
+      "gapText": "We [gap1] take any plates to the picnic because Lara is bringing reusable ones.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "don't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Las placas ya están disponibles, así que llevarlas no es necesario."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the personal reminder with “must”.",
+      "prompt": "I ___ post this parcel before the collection at five.",
+      "gapText": "I [gap1] post this parcel before the collection at five.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "speaker-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "must"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El hablante expresa un recordatorio firme con «must»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the question with the correct auxiliary.",
+      "prompt": "___ your team have to register before Friday?",
+      "gapText": "[gap1] your team have to register before Friday?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Does"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Your team» funciona aquí como singular y la pregunta usa «Does»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with “doesn't have to”.",
+      "prompt": "Priya ___ commute on Fridays because she works from home.",
+      "gapText": "Priya [gap1] commute on Fridays because she works from home.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "doesn't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Para un sujeto singular, la ausencia de necesidad es «doesn't have to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the past obligation with “had to”.",
+      "prompt": "When the heating failed, the hotel ___ move us to another building.",
+      "gapText": "When the heating failed, the hotel [gap1] move us to another building.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "past-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La avería creó una obligación pasada, expresada con «had to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with “didn't have to”.",
+      "prompt": "Because Jo already had a visa, she ___ apply for a new one.",
+      "gapText": "Because Jo already had a visa, she [gap1] apply for a new one.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "didn't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El visado existente eliminó la necesidad de solicitar otro."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the future obligation with “will have to”.",
+      "prompt": "If the parcel exceeds two kilograms, you ___ pay an additional fee.",
+      "gapText": "If the parcel exceeds two kilograms, you [gap1] pay an additional fee.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "future-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La consecuencia futura usa «will have to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the warning with the form meaning “prohibited”.",
+      "prompt": "Drivers ___ stop on the yellow grid because it blocks the junction.",
+      "gapText": "Drivers [gap1] stop on the yellow grid because it blocks the junction.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "prohibition",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "mustn't"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Bloquear el cruce está prohibido, por eso usamos «mustn't»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with the form meaning “not necessary”.",
+      "prompt": "Attendees ___ print the schedule; it is available in the event app.",
+      "gapText": "Attendees [gap1] print the schedule; it is available in the event app.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "don't need to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La versión digital hace innecesaria la impresión."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the practical necessity with “needs to”.",
+      "prompt": "The loose shelf ___ be fixed before anyone places books on it.",
+      "gapText": "The loose shelf [gap1] be fixed before anyone places books on it.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "needs to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto singular «shelf» usa «needs to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the future no-necessity form with “won't have to”.",
+      "prompt": "With the direct service, travellers ___ change trains in Bristol.",
+      "gapText": "With the direct service, travellers [gap1] change trains in Bristol.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "won't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El servicio directo elimina una necesidad futura."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the past question with “Did”.",
+      "prompt": "___ the crew have to delay the departure because of the fog?",
+      "gapText": "[gap1] the crew have to delay the departure because of the fog?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "past-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta sobre una obligación pasada comienza con «Did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence so the action is forbidden, not optional.",
+      "prompt": "Researchers ___ remove original documents from the archive under any circumstances.",
+      "gapText": "Researchers [gap1] remove original documents from the archive under any circumstances.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "prohibition",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "mustn't"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Under any circumstances» refuerza una prohibición absoluta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence so the action remains possible but optional.",
+      "prompt": "Members ___ attend every meeting, but they are always welcome.",
+      "gapText": "Members [gap1] attend every meeting, but they are always welcome.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "don't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La invitación sigue abierta, pero asistir no es obligatorio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported past requirement with “had to”.",
+      "prompt": "The notice said that every stallholder ___ display a valid licence.",
+      "gapText": "The notice said that every stallholder [gap1] display a valid licence.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "past-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La regla se presenta desde un punto de vista pasado y usa «had to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the indirect question with “have to”.",
+      "prompt": "Could you tell me whether interns ___ complete the online module?",
+      "gapText": "Could you tell me whether interns [gap1] complete the online module?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Después de «whether interns», la pregunta indirecta mantiene el orden afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the personal resolution with “must”.",
+      "prompt": "After missing two deadlines, I ___ organise my calendar more carefully.",
+      "gapText": "After missing two deadlines, I [gap1] organise my calendar more carefully.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "speaker-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "must"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El hablante se impone una obligación personal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with the form meaning that paper copies are forbidden.",
+      "prompt": "Candidates ___ submit handwritten applications; only the online form is accepted.",
+      "gapText": "Candidates [gap1] submit handwritten applications; only the online form is accepted.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "prohibition",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "mustn't"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Aceptar únicamente el formulario en línea prohíbe las solicitudes manuscritas."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with the form meaning that the action is optional.",
+      "prompt": "You ___ nominate a substitute, though the rules allow you to do so.",
+      "gapText": "You [gap1] nominate a substitute, though the rules allow you to do so.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "don't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La acción está permitida, pero no es obligatoria."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the future clause with the correct obligation form.",
+      "prompt": "Last term we had to hire one assistant; next term we ___ hire two.",
+      "gapText": "Last term we had to hire one assistant; next term we [gap1] hire two.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "tense-contrast",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El contraste parte de «had to» y requiere «will have to» para el próximo trimestre."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the short answer with “didn't have to”.",
+      "prompt": "“Did Salma have to translate the entire report?” “No, she ___; only the summary was required.”",
+      "gapText": "“Did Salma have to translate the entire report?” “No, she [gap1]; only the summary was required.”",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "didn't have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Solo se exigía el resumen, así que traducir todo no era necesario."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-obligation-prohibition-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with the correct future question sequence.",
+      "prompt": "How often will the filters ___ be replaced under the new maintenance plan?",
+      "gapText": "How often will the filters [gap1] be replaced under the new maintenance plan?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "future-obligation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Después de «will» usamos «have to»; la pasiva continúa con «be replaced»."
+    }
+  ]
+}

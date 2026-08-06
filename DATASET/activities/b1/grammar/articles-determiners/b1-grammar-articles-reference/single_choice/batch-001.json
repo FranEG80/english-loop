@@ -1,105 +1,1262 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b1-articles-reference-single-choice-001","level":"B1","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","lessonId":"b1-grammar-articles-reference","activityType":"single_choice",
-  "activities":[
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-articles-reference-single-choice-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "articles-determiners",
+  "subtopic": "articles-reference",
+  "lessonId": "b1-grammar-articles-reference",
+  "activityType": "single_choice",
+  "activities": [
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-001","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Choose the correct article.","prompt":"I saw ___ dog in the park.","options":[{"id":"a","text":"a"},{"id":"b","text":"an"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":35,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Primera mención indefinida: «a»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Choose the correct article.",
+      "prompt": "I saw ___ dog in the park.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "b",
+          "text": "an"
+        },
+        {
+          "id": "c",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Primera mención indefinida: «a»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-002","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Choose the correct article.","prompt":"___ dog was chasing a ball.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":35,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Referencia ya conocida: «the»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ dog was chasing a ball.",
+      "options": [
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "a",
+          "text": "The"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Referencia ya conocida: «the»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-003","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Choose the correct article.","prompt":"She is ___ engineer.","options":[{"id":"a","text":"an"},{"id":"b","text":"a"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":35,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«engineer» empieza con sonido vocálico: «an»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Choose the correct article.",
+      "prompt": "She is ___ engineer.",
+      "options": [
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "a",
+          "text": "an"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«engineer» empieza con sonido vocálico: «an»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-004","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Choose the correct article.","prompt":"He works as ___ teacher.","options":[{"id":"a","text":"a"},{"id":"b","text":"an"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":35,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«teacher» empieza con sonido consonántico: «a»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Choose the correct article.",
+      "prompt": "He works as ___ teacher.",
+      "options": [
+        {
+          "id": "c",
+          "text": "the"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "b",
+          "text": "an"
+        },
+        {
+          "id": "a",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«teacher» empieza con sonido consonántico: «a»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-005","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Choose the correct article.","prompt":"___ water is essential for life.","options":[{"id":"a","text":"no article"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"The"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":35,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Incontable en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ water is essential for life.",
+      "options": [
+        {
+          "id": "a",
+          "text": "no article"
+        },
+        {
+          "id": "d",
+          "text": "The"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "b",
+          "text": "A"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Incontable en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-006","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Choose the correct article.","prompt":"___ sun rises in the east.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":40,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Lugar único: «the sun»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ sun rises in the east.",
+      "options": [
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "a",
+          "text": "The"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Lugar único: «the sun»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-007","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Choose the correct article.","prompt":"This is ___ best restaurant in town.","options":[{"id":"a","text":"the"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":40,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Superlativo: «the best»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the correct article.",
+      "prompt": "This is ___ best restaurant in town.",
+      "options": [
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "a",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Superlativo: «the best»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-008","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Choose the correct article.","prompt":"___ dogs need exercise.","options":[{"id":"a","text":"no article"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"The"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":40,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Plural en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ dogs need exercise.",
+      "options": [
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "d",
+          "text": "The"
+        },
+        {
+          "id": "a",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Plural en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-009","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Choose the correct article.","prompt":"I bought ___ umbrella yesterday.","options":[{"id":"a","text":"an"},{"id":"b","text":"a"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":40,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«umbrella» empieza con sonido vocálico: «an»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the correct article.",
+      "prompt": "I bought ___ umbrella yesterday.",
+      "options": [
+        {
+          "id": "c",
+          "text": "the"
+        },
+        {
+          "id": "a",
+          "text": "an"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«umbrella» empieza con sonido vocálico: «an»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-010","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Choose the correct article.","prompt":"She plays ___ piano.","options":[{"id":"a","text":"the"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":40,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Instrumentos musicales: «the piano»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the correct article.",
+      "prompt": "She plays ___ piano.",
+      "options": [
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "a",
+          "text": "the"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "c",
+          "text": "an"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Instrumentos musicales: «the piano»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-011","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Choose the correct article.","prompt":"I need ___ hour to finish.","options":[{"id":"a","text":"an"},{"id":"b","text":"a"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":45,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«hour» tiene «h» muda: «an hour»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Choose the correct article.",
+      "prompt": "I need ___ hour to finish.",
+      "options": [
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "the"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "a",
+          "text": "an"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«hour» tiene «h» muda: «an hour»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-012","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Choose the correct article.","prompt":"He is ___ honest man.","options":[{"id":"a","text":"an"},{"id":"b","text":"a"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":45,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«honest» tiene «h» muda: «an honest»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Choose the correct article.",
+      "prompt": "He is ___ honest man.",
+      "options": [
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "c",
+          "text": "the"
+        },
+        {
+          "id": "a",
+          "text": "an"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«honest» tiene «h» muda: «an honest»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-013","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Choose the correct article.","prompt":"___ moon looks bright tonight.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":45,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Lugar único: «the moon»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ moon looks bright tonight.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The"
+        },
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Lugar único: «the moon»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-014","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Choose the correct article.","prompt":"I go to ___ school by bus.","options":[{"id":"a","text":"no article"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"the"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":45,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Institución con función: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Choose the correct article.",
+      "prompt": "I go to ___ school by bus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "d",
+          "text": "the"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Institución con función: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-015","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Choose the correct article.","prompt":"She is ___ university student.","options":[{"id":"a","text":"a"},{"id":"b","text":"an"},{"id":"c","text":"the"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":45,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«university» suena «yu»: «a university»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Choose the correct article.",
+      "prompt": "She is ___ university student.",
+      "options": [
+        {
+          "id": "c",
+          "text": "the"
+        },
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "b",
+          "text": "an"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«university» suena «yu»: «a university»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-016","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Choose the correct article.","prompt":"___ Amazon is a very long river.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":55,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Ríos: «the Amazon»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ Amazon is a very long river.",
+      "options": [
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "a",
+          "text": "The"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Ríos: «the Amazon»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-017","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Choose the correct article.","prompt":"We visited ___ Alps last summer.","options":[{"id":"a","text":"the"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":55,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Cadenas montañosas: «the Alps»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Choose the correct article.",
+      "prompt": "We visited ___ Alps last summer.",
+      "options": [
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "a",
+          "text": "the"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Cadenas montañosas: «the Alps»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-018","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Choose the correct article.","prompt":"I had ___ breakfast at eight.","options":[{"id":"a","text":"no article"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"the"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":55,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Comidas en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Choose the correct article.",
+      "prompt": "I had ___ breakfast at eight.",
+      "options": [
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "a",
+          "text": "no article"
+        },
+        {
+          "id": "d",
+          "text": "the"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Comidas en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-019","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Choose the correct article.","prompt":"___ United States is a large country.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":55,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Países plurales: «the United States»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ United States is a large country.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "b",
+          "text": "A"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Países plurales: «the United States»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-020","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Choose the correct article.","prompt":"She speaks ___ English very well.","options":[{"id":"a","text":"no article"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"the"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":55,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Idiomas en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Choose the correct article.",
+      "prompt": "She speaks ___ English very well.",
+      "options": [
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "a",
+          "text": "no article"
+        },
+        {
+          "id": "d",
+          "text": "the"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Idiomas en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-021","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Choose the correct article.","prompt":"___ rich should help the poor.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":65,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Adjetivos como grupo: «the rich»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ rich should help the poor.",
+      "options": [
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "a",
+          "text": "The"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Adjetivos como grupo: «the rich»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-022","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Choose the correct article.","prompt":"I listen to ___ radio in the morning.","options":[{"id":"a","text":"the"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":65,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Medios: «the radio»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Choose the correct article.",
+      "prompt": "I listen to ___ radio in the morning.",
+      "options": [
+        {
+          "id": "a",
+          "text": "the"
+        },
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Medios: «the radio»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-023","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Choose the correct article.","prompt":"___ Nile flows through Egypt.","options":[{"id":"a","text":"The"},{"id":"b","text":"A"},{"id":"c","text":"An"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":65,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Ríos: «the Nile»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Choose the correct article.",
+      "prompt": "___ Nile flows through Egypt.",
+      "options": [
+        {
+          "id": "b",
+          "text": "A"
+        },
+        {
+          "id": "a",
+          "text": "The"
+        },
+        {
+          "id": "c",
+          "text": "An"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Ríos: «the Nile»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-024","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Choose the correct article.","prompt":"She is ___ only person who knows.","options":[{"id":"a","text":"the"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":65,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"«only» es único: «the only»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Choose the correct article.",
+      "prompt": "She is ___ only person who knows.",
+      "options": [
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        },
+        {
+          "id": "a",
+          "text": "the"
+        },
+        {
+          "id": "c",
+          "text": "an"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«only» es único: «the only»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-sc-025","status":"published","autoGradable":true,"level":"B1","type":"single_choice","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Choose the correct article.","prompt":"I play ___ guitar in a band.","options":[{"id":"a","text":"the"},{"id":"b","text":"a"},{"id":"c","text":"an"},{"id":"d","text":"no article"}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","single-choice"],"estimatedSeconds":65,"evaluator":{"strategy":"single_option","correctOptionId":"a"},"explanation":"Instrumentos musicales: «the guitar»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-sc-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "single_choice",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Choose the correct article.",
+      "prompt": "I play ___ guitar in a band.",
+      "options": [
+        {
+          "id": "c",
+          "text": "an"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "a",
+          "text": "the"
+        },
+        {
+          "id": "d",
+          "text": "no article"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "Instrumentos musicales: «the guitar»."
     }
   ]
 }

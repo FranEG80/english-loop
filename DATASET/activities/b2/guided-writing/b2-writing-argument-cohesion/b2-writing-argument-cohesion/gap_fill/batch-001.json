@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-writing-argument-cohesion-gap-fill-001",
+  "level": "B2",
+  "category": "guided-writing",
+  "topic": "b2-writing-argument-cohesion",
+  "subtopic": "b2-writing-argument-cohesion",
+  "lessonId": "b2-writing-argument-cohesion",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which reason completes the cycle-lane paragraph?",
+      "gapText": "More cycle lanes would make short journeys safer. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "reason"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "They would separate cyclists from heavy traffic"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence explains the safety benefit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which consequence closes the library argument?",
+      "gapText": "Libraries should open later once a week. Many residents work during the day. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "result"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "A later session would allow more workers to borrow books"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The consequence follows from the claim and reason."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which final sentence gives the effect on pupils?",
+      "gapText": "The school needs better pedestrian protection. A raised crossing could slow cars. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "effect"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This would make the morning journey safer for pupils"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "This would refer to the raised crossing clearly."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which sentence connects cleaner air to the main proposal?",
+      "gapText": "Fewer cars would improve air quality near the school. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "linker"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Therefore, reducing traffic at the gate would benefit nearby residents"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Therefore makes the conclusion explicit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which sentence summarises the paragraph?",
+      "gapText": "Reliable buses are essential for people who do not drive. They connect residents with work and education. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "summary"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For this reason, bus services should be protected from unnecessary cuts"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For this reason links the conclusion to both functions."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which conclusion follows the insulation concession?",
+      "gapText": "Home insulation can lower energy use. Although the initial cost is high, the improvement has lasting benefits. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "concession"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The long-term savings therefore make the investment worth considering"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Therefore returns from the concession to the main benefit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which action responds to the online-access limitation?",
+      "gapText": "Online appointments are quick for many users. However, some residents do not have reliable internet access. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "access"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "A phone option should therefore remain available"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Therefore turns the limitation into a relevant recommendation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which recommendation completes the waiting-time paragraph?",
+      "gapText": "The survey found that waiting times were the main complaint. This evidence suggests that delays are affecting user satisfaction. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "recommendation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The office should review its appointment system"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The recommendation follows the evidence and interpretation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which benefit completes the online-form paragraph?",
+      "gapText": "The new form gives users the information they need. As a result, routine phone calls have become less frequent. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "consequence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Staff can spend more time on complex enquiries"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The final sentence states the operational benefit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which concluding sentence completes the park argument?",
+      "gapText": "Public parks provide space to exercise and support local wildlife. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "closing"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For these reasons, their maintenance should remain a council priority"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The conclusion refers to both reasons."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which proposal follows the repeated evidence?",
+      "gapText": "Residents repeatedly mentioned the unsafe crossing. This evidence indicates that the current arrangement needs attention. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "evidence"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The council should install a raised crossing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The proposal follows the interpretation directly."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which sentence states the expected effect?",
+      "gapText": "Schools can reduce food waste. For example, they could offer surplus portions at the end of lunch. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "example"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This would prevent unopened food from being thrown away"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "This would refers to the concrete example."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which limitation should follow the pilot evidence?",
+      "gapText": "The pilot reduced average waiting time by ten minutes. This reduction was recorded during the four-week trial. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "scope"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Further monitoring is needed before the result is generalised"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The time limit means the evidence should not be generalised yet."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which measured next step follows the balanced claim?",
+      "gapText": "Free transport would help students reach college, although the scheme would be expensive. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "trial"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "A small pilot could show whether the benefits justify the cost"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A pilot tests the balance between benefit and cost."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which consequence completes the access paragraph?",
+      "gapText": "The library should open later because many residents work during the day. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "result"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This change would make the service more useful to those residents"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "This change refers to later opening and its effect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which reason explains the need for paper alternatives?",
+      "gapText": "Digital forms are quicker for many users; nevertheless, paper alternatives remain necessary. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "access"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Some residents may not have reliable internet access"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The reason makes the concession specific."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which monitoring sentence keeps the reference precise?",
+      "gapText": "The booking scheme has reduced missed appointments. The reduction was recorded during the trial. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "monitoring"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This improvement should be monitored over the next quarter"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "This improvement refers to the specific reduction, not the whole scheme."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which benefit should close the signage argument?",
+      "gapText": "Visitors often ask where the meeting rooms are. Clearer signs could therefore reduce routine enquiries. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "benefit"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Staff would then have more time for other tasks"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Then marks the consequence of fewer enquiries."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which recommendation responds to both sides?",
+      "gapText": "The online system is efficient for regular users. A further concern is that new users may find the instructions unclear. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "balance"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The service should keep the system but simplify its guidance"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence preserves the benefit while addressing the concern."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which conclusion returns to access?",
+      "gapText": "Some residents are concerned about the cost of the proposal. Even so, the long-term social benefit should be considered. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "conclusion"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "It would improve access for people without cars"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The final sentence states the main social benefit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which sentence prevents overgeneralisation?",
+      "gapText": "The pilot was successful for the participants who attended. This result applies to the pilot group and its four-week period. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "scope"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "It should not yet be presented as proof that the scheme works everywhere"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence draws the correct limit from the scope."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which sentence develops the long-term reasoning?",
+      "gapText": "Solar panels require an initial investment, but they could lower household bills. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "development"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The long-term reduction in energy costs makes the plan worth examining"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence completes the cost-benefit chain."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which sentence proposes a proportionate next step?",
+      "gapText": "The same problem appeared in several interviews. This repeated evidence suggests that the current process needs attention. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "next-step"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The service should test a clearer process before expanding it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A test responds to repeated evidence without overcommitting."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which precise effect follows from the route details?",
+      "gapText": "The alternative route avoids the closed bridge and connects directly with the northern bus stop. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "effect"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This could make journeys shorter for residents in the north"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "This could clearly refers to the alternative route."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-cohesion-cp-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the argument with one sentence.",
+      "prompt": "Which final sentence explains the trial's value?",
+      "gapText": "Evening access is limited, while daytime sessions are well used. For these reasons, the council should fund a one-year evening trial. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "recommendation"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This would test demand without changing the whole service"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The final sentence explains why the recommendation is proportionate."
+    }
+  ]
+}

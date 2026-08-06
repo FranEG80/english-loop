@@ -16,7 +16,7 @@
     "activities"
   ],
   "properties": {
-    "schemaVersion": { "const": "1.0.0" },
+    "schemaVersion": { "const": "2.0.0" },
     "batchId": { "$ref": "#/$defs/id" },
     "level": { "enum": ["B1", "B2"] },
     "category": { "$ref": "#/$defs/id" },
@@ -36,33 +36,37 @@
       "type": "string",
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
+    "skillFocus": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
     "activityType": {
       "enum": [
-        "true_false",
+        "gap_fill",
         "single_choice",
-        "multiple_select",
-        "fill_blank",
-        "multi_gap_fill",
-        "multiple_choice_cloze",
-        "open_cloze",
-        "word_formation",
-        "matching",
+        "multiple_choice",
+        "true_false",
+        "swipe_deck",
         "word_order",
-        "sentence_transformation",
-        "key_word_transformation",
-        "error_identification",
+        "matching",
         "error_correction",
-        "complete_dialogue",
-        "complete_paragraph",
-        "vocabulary_in_context",
-        "phrasal_verb_choice",
-        "collocation_choice",
-        "preposition_choice",
-        "reading_comprehension",
-        "reading_matching",
-        "gapped_text",
-        "guided_writing"
+        "guided_writing",
+        "word_formation",
+        "key_word_transformation",
+        "sentence_rewrite",
+        "mini_game"
       ]
+    },
+    "miniGameId": {
+      "enum": ["frog_leap", "lane_runner", "sentence_tower"]
+    },
+    "gapLayout": {
+      "enum": ["sentence", "paragraph", "dialogue"]
+    },
+    "gapText": {
+      "type": "string",
+      "minLength": 5,
+      "pattern": "\\[gap[0-9]+\\]"
     },
     "normalization": {
       "type": "object",
@@ -101,6 +105,33 @@
         "left": { "type": "string", "minLength": 1 },
         "rightId": { "$ref": "#/$defs/id" },
         "right": { "type": "string", "minLength": 1 }
+      }
+    },
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement", "explanation"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "statement": { "type": "string", "minLength": 5 },
+        "explanation": { "type": "string", "minLength": 10 }
+      }
+    },
+    "round": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "prompt", "options", "explanation"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "prompt": { "type": "string", "minLength": 5 },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/option" }
+        },
+        "explanation": { "type": "string", "minLength": 10 }
       }
     },
     "evaluator": {
@@ -206,21 +237,6 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["strategy", "correctValues", "normalization"],
-          "properties": {
-            "strategy": { "const": "unordered_set" },
-            "correctValues": {
-              "type": "array",
-              "minItems": 2,
-              "uniqueItems": true,
-              "items": { "type": "string", "minLength": 1 }
-            },
-            "normalization": { "$ref": "#/$defs/normalization" }
-          }
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
           "required": ["strategy", "pairs"],
           "properties": {
             "strategy": { "const": "matching_pairs" },
@@ -238,6 +254,50 @@
               }
             }
           }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "cards"],
+          "properties": {
+            "strategy": { "const": "deck_booleans" },
+            "cards": {
+              "type": "array",
+              "minItems": 5,
+              "maxItems": 10,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["cardId", "correct"],
+                "properties": {
+                  "cardId": { "$ref": "#/$defs/id" },
+                  "correct": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "rounds"],
+          "properties": {
+            "strategy": { "const": "game_rounds" },
+            "rounds": {
+              "type": "array",
+              "minItems": 5,
+              "maxItems": 10,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["roundId", "correctOptionId"],
+                "properties": {
+                  "roundId": { "$ref": "#/$defs/id" },
+                  "correctOptionId": { "$ref": "#/$defs/id" }
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -251,6 +311,7 @@
         "autoGradable",
         "level",
         "type",
+        "skillFocus",
         "category",
         "topic",
         "subtopic",
@@ -265,12 +326,13 @@
         "explanation"
       ],
       "properties": {
-        "schemaVersion": { "const": "1.0.0" },
+        "schemaVersion": { "const": "2.0.0" },
         "id": { "$ref": "#/$defs/id" },
         "status": { "enum": ["draft", "reviewed", "published"] },
         "autoGradable": { "const": true },
         "level": { "enum": ["B1", "B2"] },
         "type": { "$ref": "#/$defs/activityType" },
+        "skillFocus": { "$ref": "#/$defs/skillFocus" },
         "category": { "$ref": "#/$defs/id" },
         "topic": { "$ref": "#/$defs/id" },
         "subtopic": { "$ref": "#/$defs/id" },
@@ -283,13 +345,19 @@
         "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
         "instructions": { "type": "string", "minLength": 5 },
         "prompt": { "type": "string", "minLength": 5 },
+        "gapText": { "$ref": "#/$defs/gapText" },
+        "gapLayout": { "$ref": "#/$defs/gapLayout" },
         "passage": { "type": "string", "minLength": 20 },
+        "cueWord": { "type": "string", "pattern": "^[A-Z][A-Z -]{1,20}$" },
+        "keyWord": { "type": "string", "pattern": "^[A-Z][A-Z -]{1,20}$" },
+        "firstSentence": { "type": "string", "minLength": 5 },
         "options": {
           "type": "array",
           "minItems": 2,
           "uniqueItems": true,
           "items": { "$ref": "#/$defs/option" }
         },
+        "optionsOrdered": { "type": "boolean" },
         "tokens": {
           "type": "array",
           "minItems": 2,
@@ -299,6 +367,19 @@
           "type": "array",
           "minItems": 2,
           "items": { "$ref": "#/$defs/pair" }
+        },
+        "cards": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 10,
+          "items": { "$ref": "#/$defs/card" }
+        },
+        "game": { "$ref": "#/$defs/miniGameId" },
+        "rounds": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 10,
+          "items": { "$ref": "#/$defs/round" }
         },
         "lessonIds": {
           "type": "array",
@@ -319,7 +400,52 @@
         },
         "evaluator": { "$ref": "#/$defs/evaluator" },
         "explanation": { "type": "string", "minLength": 10 }
-      }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "swipe_deck" } }, "required": ["type"] },
+          "then": { "properties": { "cards": true }, "required": ["cards"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "mini_game" } }, "required": ["type"] },
+          "then": {
+            "properties": { "game": true, "rounds": true },
+            "required": ["game", "rounds"]
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "gap_fill" } }, "required": ["type"] },
+          "then": {
+            "properties": { "gapText": true, "gapLayout": true },
+            "required": ["gapText", "gapLayout"]
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "word_formation" } }, "required": ["type"] },
+          "then": {
+            "properties": { "gapText": true, "cueWord": true },
+            "required": ["gapText", "cueWord"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "key_word_transformation" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": { "gapText": true, "keyWord": true, "firstSentence": true },
+            "required": ["gapText", "keyWord", "firstSentence"]
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "word_order" } }, "required": ["type"] },
+          "then": { "properties": { "tokens": true }, "required": ["tokens"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "matching" } }, "required": ["type"] },
+          "then": { "properties": { "pairs": true }, "required": ["pairs"] }
+        }
+      ]
     }
   }
 }

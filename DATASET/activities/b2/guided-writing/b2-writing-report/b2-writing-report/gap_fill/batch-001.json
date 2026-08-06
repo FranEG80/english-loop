@@ -1,0 +1,1213 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-writing-report-gap-fill-001",
+  "level": "B2",
+  "category": "guided-writing",
+  "topic": "b2-writing-report",
+  "subtopic": "b2-writing-report",
+  "lessonId": "b2-writing-report",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which phrase completes the purpose paragraph?",
+      "gapText": "Which phrase completes the purpose paragraph? [gap1]",
+      "gapLayout": "paragraph",
+      "passage": "This report examines the sports centre. It focuses on users' views of the equipment and the staff.",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "purpose"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "It focuses on users' views of the equipment and the staff"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence defines the report's scope."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence reports the sample size objectively?",
+      "gapText": "The survey received 120 responses from regular users. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "method"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The findings are therefore based on a substantial group of respondents"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence interprets the method without claiming too much."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which conclusion follows the positive finding?",
+      "gapText": "Most visitors praised the exhibition. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "findings"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This suggests that the new displays have been well received"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "This suggests that links the finding to a cautious interpretation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which recommendation responds to the access problem?",
+      "gapText": "Several users could not find the side entrance. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "access"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Clearer signs should be installed near the entrance"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The recommendation addresses the reported difficulty."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence adds a related finding about the facilities?",
+      "gapText": "The centre is popular with families. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "findings"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "However, parents asked for more seating near the activity rooms"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "However introduces a relevant limitation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which result links the finding to a practical consequence?",
+      "gapText": "The timetable is available at reception, but many visitors do not see it. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "cohesion"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "As a result, the information is not reaching all users"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "As a result states the consequence of poor visibility."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which contrasting sentence introduces a service limitation?",
+      "gapText": "Respondents liked the staff's advice. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "contrast"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Nevertheless, several respondents reported long waiting times"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Nevertheless keeps the positive and negative findings together."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which recommendation uses this evidence?",
+      "gapText": "The report found that evening sessions were full. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "recommendations"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "It is recommended that one additional evening session be trialled"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The proposed trial responds proportionately to high demand."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which limitation should follow this small response?",
+      "gapText": "Only eight people completed the optional question. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "limitations"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This result should therefore be treated with caution"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The qualification matches the limited evidence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which final sentence summarises the finding?",
+      "gapText": "Most respondents preferred the new booking system. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "conclusion"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Overall, the change appears to have improved access to appointments"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Overall signals a concise interpretation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence limits the time frame?",
+      "gapText": "The survey was conducted during one busy week. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "method"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The findings may not reflect patterns at quieter times of year"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The limitation prevents the result from being overgeneralised."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which recommendation improves navigation?",
+      "gapText": "Users reported that the entrance was difficult to locate. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "recommendations"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The centre should add signs from the main road"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The action follows directly from the reported problem."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence keeps the finding separate from a proposal?",
+      "gapText": "The new equipment received positive comments. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "evidence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This is a finding rather than a recommendation for future spending"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence explicitly distinguishes evidence and action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence reports a cautious possible continuation?",
+      "gapText": "The project reduced paper use in the first month. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "caution"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "If maintained, this reduction could lower costs over time"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "If maintained makes the future claim conditional."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which conclusion ranks the actions clearly?",
+      "gapText": "The report identifies two urgent repairs and one optional upgrade. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "priorities"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The repairs should be completed before the upgrade is considered"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The conclusion follows the priority implied by the evidence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which recommendation balances popularity with access?",
+      "gapText": "Although the centre is well used, access after six o'clock remains limited. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "balance"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "A trial of one later opening should therefore be considered"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The trial is a measured response to the limitation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which cautious sentence acknowledges the missing evidence?",
+      "gapText": "Several respondents mentioned noise from deliveries, but no delivery times were recorded. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "limitations"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The possible link should be investigated before a permanent change is made"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The recommendation respects the evidence gap."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence contrasts efficiency with inclusion?",
+      "gapText": "The digital form was quicker for most users. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "access"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "However, an alternative should remain available for people without internet access"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence recognises a benefit while protecting access."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which sentence explains how the recommendation could be monitored?",
+      "gapText": "The recommendation is to publish response-time targets. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "monitoring"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Progress should be reviewed against the targets each quarter"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Monitoring turns a proposal into an accountable action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which qualification keeps the conclusion within the sample?",
+      "gapText": "The majority of surveyed users supported the scheme. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "precision"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "This support was recorded among respondents rather than the whole community"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The qualification prevents an unsupported wider claim."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which recommendation names an accessible response?",
+      "gapText": "The survey indicates that wheelchair users find the side entrance difficult. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "accessibility"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "A ramp and automatic door should be considered as a priority"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The proposal responds to the specific access evidence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which conclusion treats the result responsibly?",
+      "gapText": "Only a small number of people attended the trial session. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "caution"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Further sessions would be needed before judging demand"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The sentence avoids using one small trial as a final verdict."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which recommendation links timing to a concrete action?",
+      "gapText": "The data show that information is reaching users late. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "recommendations"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The notice should be issued at least one week before each change"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The action addresses the timing problem directly."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which final sentence balances the two main findings?",
+      "gapText": "The findings identify a popular service but also a lack of evening access. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "conclusion"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "The service should be retained while evening provision is tested"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The conclusion protects a successful service and tests an improvement."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-cp-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the report paragraph with one phrase.",
+      "prompt": "Which closing sentence states the next evidence-gathering step?",
+      "gapText": "The report cannot establish whether the change will work in winter. [gap1]",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "next-steps"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "A further review should take place during the winter period"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The next review directly addresses the stated limitation."
+    }
+  ]
+}

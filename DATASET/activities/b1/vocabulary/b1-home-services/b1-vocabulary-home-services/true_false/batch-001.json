@@ -1,29 +1,787 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b1-home-services-true-false-001","level":"B1","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","lessonId":"b1-vocabulary-home-services","activityType":"true_false","activities":[
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-001","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":1,"instructions":"Decide whether the statement is true or false.","prompt":"A kitchen is used for preparing food.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","rooms"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A kitchen is the room where food is prepared and cooked."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-002","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":1,"instructions":"Decide whether the statement is true or false.","prompt":"A wardrobe is normally used for washing dishes.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","furniture"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":false},"explanation":"A wardrobe stores clothes; a sink or dishwasher is used for dishes."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-003","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":1,"instructions":"Decide whether the statement is true or false.","prompt":"A balcony is usually outside a flat or house.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","rooms"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A balcony is an outdoor platform attached to a building."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-004","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":1,"instructions":"Decide whether the statement is true or false.","prompt":"A bathroom is normally where people sleep.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","rooms"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":false},"explanation":"People normally sleep in a bedroom, not a bathroom."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-005","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":1,"instructions":"Decide whether the statement is true or false.","prompt":"A sofa is a piece of furniture.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","furniture"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A sofa is furniture used for sitting."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-006","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"A leak is an unwanted flow of liquid.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","repairs"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A leak is liquid escaping from a pipe, roof or container."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-007","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"A blocked sink drains water normally and quickly.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","repairs"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":false},"explanation":"A blocked sink cannot drain water properly."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-008","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"A plumber repairs pipes and taps.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","services"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Plumbers work with water pipes, taps and similar systems."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-009","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"A tenant owns every property they live in.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","renting"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":false},"explanation":"A tenant rents and occupies a property; the landlord usually owns it."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-010","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Rent is a regular payment for a rented home.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","renting"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Rent is paid in exchange for using a property."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-011","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"A boiler can provide hot water and heating.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","repairs"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A boiler commonly heats water and supplies central heating."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-012","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"An electrician normally repairs blocked sinks.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","services"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"An electrician handles electricity; a plumber repairs sinks and pipes."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-013","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"A washing machine is an appliance.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","appliances"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A washing machine is a household appliance."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-014","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"A deposit is always the same thing as monthly rent.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","renting"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"A deposit is security money, while rent is the regular payment for the property."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-015","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"You can report a fault to the person responsible for the building.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","services"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Report a fault means inform the responsible person about a problem."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-016","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Give notice can mean formally tell a landlord you will leave.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","renting"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Give notice is a formal expression used before leaving a rented property."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-017","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"If a toilet is overflowing, water may be spilling over its edge.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","repairs"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Overflowing describes liquid spilling over the top or edge."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-018","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Repair and replace always mean exactly the same thing.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","repairs"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Repair means fix an item; replace means remove it and put in another one."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-019","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Furniture is normally used as an uncountable noun.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","furniture"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Say some furniture or a piece of furniture, not usually a furniture."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-020","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"A power cut is a temporary loss of electricity.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","electricity"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A power cut means the electricity supply stops temporarily."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-021","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"A tenant is usually the person who owns and rents out the property.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","renting"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"The owner who rents out the property is the landlord; the tenant rents it."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-022","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"A plumber is the most suitable professional for a dangerous fuse-box fault.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","services"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"An electrician should handle electrical faults; a plumber handles water systems."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-023","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"The sentence There is a furniture in the hall is standard English.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","furniture"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Furniture is uncountable; say there is some furniture or a piece of furniture."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-024","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"Arranging a repair means organising for someone to fix a problem.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","repairs"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Arrange a repair focuses on organising the service, not necessarily doing the repair yourself."},
-    {"schemaVersion":"1.0.0","id":"b1-home-services-tf-025","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-home-services","subtopic":"b1-home-services","taxonomyNodeIds":["b1-home-services"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"Home and house are interchangeable in every expression.","lessonIds":["b1-vocabulary-home-services"],"tags":["b1","rooms"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"We say at home and go home, but usually at the house or go to the house for a specific building."}
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-home-services-true-false-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-home-services",
+  "subtopic": "b1-home-services",
+  "lessonId": "b1-vocabulary-home-services",
+  "activityType": "true_false",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A kitchen is used for preparing food.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "rooms"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A kitchen is the room where food is prepared and cooked."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A wardrobe is normally used for washing dishes.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "furniture"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "A wardrobe stores clothes; a sink or dishwasher is used for dishes."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A balcony is usually outside a flat or house.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "rooms"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A balcony is an outdoor platform attached to a building."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A bathroom is normally where people sleep.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "rooms"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "People normally sleep in a bedroom, not a bathroom."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A sofa is a piece of furniture.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "furniture"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A sofa is furniture used for sitting."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A leak is an unwanted flow of liquid.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "repairs"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A leak is liquid escaping from a pipe, roof or container."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A blocked sink drains water normally and quickly.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "repairs"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "A blocked sink cannot drain water properly."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A plumber repairs pipes and taps.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Plumbers work with water pipes, taps and similar systems."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A tenant owns every property they live in.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "renting"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "A tenant rents and occupies a property; the landlord usually owns it."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Rent is a regular payment for a rented home.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "renting"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Rent is paid in exchange for using a property."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A boiler can provide hot water and heating.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "repairs"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A boiler commonly heats water and supplies central heating."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "An electrician normally repairs blocked sinks.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "An electrician handles electricity; a plumber repairs sinks and pipes."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A washing machine is an appliance.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "appliances"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A washing machine is a household appliance."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A deposit is always the same thing as monthly rent.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "renting"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "A deposit is security money, while rent is the regular payment for the property."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "You can report a fault to the person responsible for the building.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Report a fault means inform the responsible person about a problem."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Give notice can mean formally tell a landlord you will leave.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "renting"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Give notice is a formal expression used before leaving a rented property."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "If a toilet is overflowing, water may be spilling over its edge.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "repairs"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Overflowing describes liquid spilling over the top or edge."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Repair and replace always mean exactly the same thing.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "repairs"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Repair means fix an item; replace means remove it and put in another one."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Furniture is normally used as an uncountable noun.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "furniture"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Say some furniture or a piece of furniture, not usually a furniture."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A power cut is a temporary loss of electricity.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "electricity"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A power cut means the electricity supply stops temporarily."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A tenant is usually the person who owns and rents out the property.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "renting"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "The owner who rents out the property is the landlord; the tenant rents it."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A plumber is the most suitable professional for a dangerous fuse-box fault.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "An electrician should handle electrical faults; a plumber handles water systems."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "The sentence There is a furniture in the hall is standard English.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "furniture"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Furniture is uncountable; say there is some furniture or a piece of furniture."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Arranging a repair means organising for someone to fix a problem.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "repairs"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Arrange a repair focuses on organising the service, not necessarily doing the repair yourself."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-home-services-tf-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Home and house are interchangeable in every expression.",
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "rooms"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "We say at home and go home, but usually at the house or go to the house for a specific building."
+    }
   ]
 }

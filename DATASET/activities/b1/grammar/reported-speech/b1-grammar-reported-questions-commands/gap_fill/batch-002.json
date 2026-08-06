@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-reported-questions-commands-gap-fill-002",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reported-questions-commands",
+  "lessonId": "b1-grammar-reported-questions-commands",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the reported yes/no question with “if”.",
+      "prompt": "She asked me ___ I was ready.",
+      "gapText": "She asked me [gap1] I was ready.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "if"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Una pregunta sí/no puede introducirse con «if»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the reported question with the correct form of “be”.",
+      "prompt": "He asked where the ticket office ___.",
+      "gapText": "He asked where the ticket office [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La estructura usa orden afirmativo y backshift: «where ... was»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the reported instruction with “to”.",
+      "prompt": "The guard told us ___ wait behind the line.",
+      "gapText": "The guard told us [gap1] wait behind the line.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-command",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La instrucción usa «told us to wait»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the reported request with “asked”.",
+      "prompt": "Maya ___ Leo to help her.",
+      "gapText": "Maya [gap1] Leo to help her.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-request",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "asked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Una petición se expresa con «asked + persona + to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the negative instruction with “not to”.",
+      "prompt": "The technician told me ___ restart the device during the update.",
+      "gapText": "The technician told me [gap1] restart the device during the update.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-command",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La orden negativa usa «not to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete with the formal alternative to “if”.",
+      "prompt": "Nora asked ___ the lift was working.",
+      "gapText": "Nora asked [gap1] the lift was working.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "whether"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Whether» introduce una pregunta cerrada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported question with the past form of “want”.",
+      "prompt": "The driver asked us where we ___ to get off.",
+      "gapText": "The driver asked us where we [gap1] to get off.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wanted"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «where we» usamos orden afirmativo y «wanted»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported instruction with the correct reporting verb.",
+      "prompt": "The guide ___ us to turn left at the fountain.",
+      "gapText": "The guide [gap1] us to turn left at the fountain.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-command",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "told"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Una instrucción directa usa «told us to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the polite request with “to”.",
+      "prompt": "I asked the receptionist ___ speak more slowly.",
+      "gapText": "I asked the receptionist [gap1] speak more slowly.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-request",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La petición usa «asked + persona + to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported ability question with “could”.",
+      "prompt": "She asked me if I ___ swim.",
+      "gapText": "She asked me if I [gap1] swim.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Can» retrocede a «could»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the past perfect reported question.",
+      "prompt": "They asked when the meeting ___ started.",
+      "gapText": "They asked when the meeting [gap1] started.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El pasado simple directo retrocede a past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported present perfect question.",
+      "prompt": "Jo asked whether the parcel ___ arrived.",
+      "gapText": "Jo asked whether the parcel [gap1] arrived.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Present perfect pasa a past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the negative reported instruction.",
+      "prompt": "The marshal told the drivers ___ block the entrance.",
+      "gapText": "The marshal told the drivers [gap1] block the entrance.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-command",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La instrucción negativa usa «not to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the negative reported request.",
+      "prompt": "Maya asked me ___ mention her address.",
+      "gapText": "Maya asked me [gap1] mention her address.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-request",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Una petición negativa usa «asked me not to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the polite action request with the reporting verb.",
+      "prompt": "Sara ___ Leo to open the window.",
+      "gapText": "Sara [gap1] Leo to open the window.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-request",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "asked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La petición «Could you ... please?» se informa con «asked ... to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the backshifted future form.",
+      "prompt": "Nina asked Omar whether he ___ be there the next day.",
+      "gapText": "Nina asked Omar whether he [gap1] be there the next day.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "full-transformation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "would"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Will» pasa a «would»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the changed demonstrative.",
+      "prompt": "Amir asked Lena where she had put ___ keys, referring to “these keys”.",
+      "gapText": "Amir asked Lena where she had put [gap1] keys, referring to “these keys”.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reference-change",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "those"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«These» pasa a «those»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the subject question with the correct perfect auxiliary.",
+      "prompt": "Eva asked who ___ called her.",
+      "gapText": "Eva asked who [gap1] called her.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Who» es el sujeto y la acción anterior usa «had called»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the structure that asks about availability.",
+      "prompt": "The manager asked me ___ I could help.",
+      "gapText": "The manager asked me [gap1] I could help.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "meaning-contrast",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "if"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Asked me if» pregunta por disponibilidad."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the structure that requests an action.",
+      "prompt": "The manager asked me ___ help with the event.",
+      "gapText": "The manager asked me [gap1] help with the event.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "meaning-contrast",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Asked me to» solicita la acción."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the changed place reference.",
+      "prompt": "Rina asked Leo to bring those folders ___ the next day, replacing “here”.",
+      "gapText": "Rina asked Leo to bring those folders [gap1] the next day, replacing “here”.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "full-transformation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "there"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Al informar desde otro lugar, «here» pasa a «there»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the negative past perfect reported question.",
+      "prompt": "Nora asked Sam why he ___ sent her the revised figures.",
+      "gapText": "Nora asked Sam why he [gap1] sent her the revised figures.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "full-transformation",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "hadn't"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Haven't sent» retrocede a «hadn't sent»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the linked negative instruction.",
+      "prompt": "The guide told us to stay together and ___ cross the rope.",
+      "gapText": "The guide told us to stay together and [gap1] cross the rope.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-command",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La segunda instrucción negativa usa «not to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the formal reported-question phrase.",
+      "prompt": "The customer asked ___ or not the fee was refundable.",
+      "gapText": "The customer asked [gap1] or not the fee was refundable.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "whether"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La combinación formal es «whether or not»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reported-questions-commands-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the request structure, not the ability question.",
+      "prompt": "Ana first asked if I could drive, then asked me ___ drive her home.",
+      "gapText": "Ana first asked if I could drive, then asked me [gap1] drive her home.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "meaning-contrast",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La segunda parte solicita una acción y usa «asked me to»."
+    }
+  ]
+}

@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-writing-opinion-article-gap-fill-001",
+  "level": "B1",
+  "category": "guided-writing",
+  "topic": "b1-writing-opinion-article",
+  "subtopic": "b1-writing-opinion-article",
+  "lessonId": "b1-writing-opinion-article",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which linker introduces the second benefit?",
+      "gapText": "The article argues that local parks matter because they give families a place to relax. [gap1], they can also support outdoor exercise.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "linkers"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "In addition"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "In addition adds another benefit to the argument."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase introduces an example of a club benefit?",
+      "gapText": "The writer believes school clubs are valuable. [gap1], students can practise music, drama or sport with friends.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "examples"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For example"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For example introduces a concrete illustration."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which connector joins two supporting reasons?",
+      "gapText": "The article supports bus travel. It is cheaper than driving, [gap1] it can reduce traffic.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "connectors"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "and"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "And joins the two benefits in one sentence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase introduces the proposed action?",
+      "gapText": "The writer wants a cleaner town. [gap1], the council should plant trees along busy streets.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "recommendations"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For this reason"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For this reason links the recommendation to the previous aim."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase summarises the opinion?",
+      "gapText": "The article has explained two advantages of reading. [gap1], reading is a useful habit for everyone.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "summaries"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Overall"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Overall signals a final summary."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Which word introduces the opposing concern?",
+      "gapText": "The writer supports a new cycle lane, [gap1] some residents worry about the cost.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "contrast"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "although"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Although introduces a contrast within the sentence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase gives a supporting example?",
+      "gapText": "The article recommends a community garden. [gap1], neighbours could grow vegetables together.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "examples"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For instance"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For instance introduces a practical example."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Which word introduces the purpose of longer hours?",
+      "gapText": "The writer thinks libraries should stay open later [gap1] more workers could visit after work.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "purpose"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "so"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "So introduces the intended result."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Which conjunction adds a second advantage?",
+      "gapText": "The article argues that cycling is healthy [gap1] affordable for young people.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "advantages"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "and"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "And connects the two adjectives."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase draws the article's closing recommendation?",
+      "gapText": "The article has given reasons for repairing the square. [gap1], the council should act this year.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "conclusions"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For these reasons"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For these reasons refers back to the supporting points."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase adds a specific supporting point?",
+      "gapText": "The writer believes phones distract learners. [gap1], messages can interrupt a difficult task.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "support"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For example"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For example turns the general claim into a specific situation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Which conjunction introduces the limitation?",
+      "gapText": "The writer supports home working, [gap1] it may be difficult for people who need company.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "balance"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "although"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Although presents the less positive side."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase introduces a practical example?",
+      "gapText": "The article argues that practical lessons are useful. [gap1], students can learn how to plan a budget.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "evidence"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For instance"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For instance introduces a concrete learning task."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Which word introduces the intended purpose?",
+      "gapText": "The writer wants free sports facilities [gap1] everyone can exercise, not only people who can pay.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "purpose"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "so"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "So introduces the aim of free facilities."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase gives the writer's final view?",
+      "gapText": "The article has compared two ways to travel. [gap1], cycling is the better choice for short journeys.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "conclusions"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "In my view"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "In my view makes the final judgement explicit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which connector presents the other side of the cost?",
+      "gapText": "The proposal would cost money. [gap1], it could improve safety for thousands of pedestrians.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "contrast"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "On the other hand"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "On the other hand introduces the alternative benefit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which connector introduces the result of the change?",
+      "gapText": "The town added a frequent bus route. [gap1], fewer workers needed to drive to the industrial park.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "results"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "As a result"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "As a result presents the consequence of the new route."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase provides evidence for the proposal?",
+      "gapText": "The article proposes later library hours. [gap1], people who finish work late could still borrow books.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "evidence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For example"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For example illustrates who would benefit."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase connects the garden evidence to the school proposal?",
+      "gapText": "The writer has shown that gardens improve skills and community life. [gap1], schools should create one if they have space.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "recommendations"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For these reasons"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For these reasons refers to both arguments."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Which word introduces the writer's contrast?",
+      "gapText": "The writer accepts that cars are convenient, [gap1] argues that cleaner transport is a better long-term choice.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "contrast"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "but"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "But contrasts convenience with the preferred long-term choice."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase converts the argument into a recommendation?",
+      "gapText": "The article argues that safer crossings would protect children. [gap1], the council should redesign the busiest junction.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "recommendations"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "For this reason"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "For this reason links the proposal to the stated safety argument."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase introduces the counterpoint?",
+      "gapText": "Some students dislike uniforms because they cannot choose clothes. [gap1], uniforms may reduce pressure to wear expensive brands.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "counterpoint"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Nevertheless"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Nevertheless signals that the second point remains valid."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase introduces a conclusion based on several points?",
+      "gapText": "The article has considered cost, access and safety. [gap1], the town square should be repaired this year.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "conclusions"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Taking everything into account"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Taking everything into account signals a considered final judgement."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase gives a final call to action?",
+      "gapText": "The writer wants readers to support a reading campaign. [gap1], everyone can help a neighbour find a book.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "call-to-action"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Why not start today"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Why not start today directly invites readers to act."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-cp-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the sentence with one phrase.",
+      "prompt": "Which phrase gives the article's final proposal?",
+      "gapText": "The writer believes practical lessons prepare young people for adult life. [gap1], schools should include them in the timetable.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "proposals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "In my view"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "In my view makes the final proposal a clear personal judgement."
+    }
+  ]
+}

@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-direct-indirect-questions-gap-fill-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "questions",
+  "subtopic": "direct-indirect-questions",
+  "lessonId": "b1-grammar-direct-indirect-questions",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete A's direct question with “Where is the nearest pharmacy”.",
+      "prompt": "A: Excuse me, ___? B: It's beside the post office.",
+      "gapText": "A: Excuse me, [gap1]?\nB: It's beside the post office.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Where is the nearest pharmacy"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta con «be» usa inversión: «Where is ...?»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete A's direct question with “What time does the library close”.",
+      "prompt": "A: ___? B: At six o'clock.",
+      "gapText": "A: [gap1]?\nB: At six o'clock.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "What time does the library close"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El presente simple singular usa «does + forma base»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete A's direct question with “When did the exhibition open”.",
+      "prompt": "A: ___? B: It opened last Saturday.",
+      "gapText": "A: [gap1]?\nB: It opened last Saturday.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "When did the exhibition open"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta pasada usa «did + forma base»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete A's polite question with “Could you tell me where the station is”.",
+      "prompt": "A: ___? B: It's two streets ahead.",
+      "gapText": "A: [gap1]?\nB: It's two streets ahead.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you tell me where the station is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La parte integrada usa «where the station is»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete A's closed indirect question with “Do you know if the café is open”.",
+      "prompt": "A: ___? B: Yes, it closes at nine.",
+      "gapText": "A: [gap1]?\nB: Yes, it closes at nine.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you know if the café is open"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta cerrada integrada usa «if + orden afirmativo»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete A's direct question with “Do you accept cards at this desk”.",
+      "prompt": "A: ___? B: Yes, all major cards.",
+      "gapText": "A: [gap1]?\nB: Yes, all major cards.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you accept cards at this desk"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con «you» y un verbo ordinario usamos «Do you accept ...?»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete A's modal question with “Where should we wait for the shuttle”.",
+      "prompt": "A: ___? B: By the blue sign.",
+      "gapText": "A: [gap1]?\nB: By the blue sign.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Where should we wait for the shuttle"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El modal precede al sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete A's indirect question with “Do you know what time the museum closes”.",
+      "prompt": "A: ___? B: At half past five.",
+      "gapText": "A: [gap1]?\nB: At half past five.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you know what time the museum closes"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La parte integrada elimina «does» y usa «closes»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete A's statement with “I'd like to know why the payment failed”.",
+      "prompt": "A: ___. B: It was rejected because the address did not match.",
+      "gapText": "A: [gap1].\nB: It was rejected because the address did not match.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "I'd like to know why the payment failed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«I'd like to know» lleva orden afirmativo y termina como enunciado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete A's question with “Could you tell me whether breakfast is included”.",
+      "prompt": "A: ___? B: Yes, it is included in every room rate.",
+      "gapText": "A: [gap1]?\nB: Yes, it is included in every room rate.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you tell me whether breakfast is included"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Whether» introduce la pregunta cerrada con orden afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete A's question with “Can you explain why the screen is flashing”.",
+      "prompt": "A: ___? B: It is installing an update.",
+      "gapText": "A: [gap1]?\nB: It is installing an update.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Can you explain why the screen is flashing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «why» usamos «the screen is flashing»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete A's statement with “I'd like to know whether the replacement parts have arrived”.",
+      "prompt": "A: ___. B: They arrived this morning.",
+      "gapText": "A: [gap1].\nB: They arrived this morning.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "I'd like to know whether the replacement parts have arrived"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La parte integrada mantiene orden afirmativo en present perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete A's question with “Do you know why the printer isn't working”.",
+      "prompt": "A: ___? B: It has run out of paper.",
+      "gapText": "A: [gap1]?\nB: It has run out of paper.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you know why the printer isn't working"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La negación sigue al sujeto en la parte integrada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete A's subject question with “What caused the delay”.",
+      "prompt": "A: ___? B: A signal failure.",
+      "gapText": "A: [gap1]?\nB: A signal failure.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "What caused the delay"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«What» es sujeto y no necesita «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete A's object question with “Who did the manager call after the inspection”.",
+      "prompt": "A: ___? B: She called the building owner.",
+      "gapText": "A: [gap1]?\nB: She called the building owner.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Who did the manager call after the inspection"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta de objeto directa usa «did + sujeto + forma base»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete A's polite question with “Could you tell me how much delivery costs”.",
+      "prompt": "A: ___? B: Standard delivery costs five euros.",
+      "gapText": "A: [gap1]?\nB: Standard delivery costs five euros.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you tell me how much delivery costs"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El contenido integrado elimina «does»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete A's polite question with “Do you know when the branch opened”.",
+      "prompt": "A: ___? B: It opened in September.",
+      "gapText": "A: [gap1]?\nB: It opened in September.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "indirect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you know when the branch opened"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El contenido elimina «did» y mantiene «opened»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete A's statement with “I wonder where the bus stops”.",
+      "prompt": "A: ___. B: I think it stops opposite the theatre.",
+      "gapText": "A: [gap1].\nB: I think it stops opposite the theatre.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "punctuation",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "I wonder where the bus stops"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«I wonder» introduce un enunciado con orden afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete A's indirect subject question with “Do you know who manages the community garden”.",
+      "prompt": "A: ___? B: A neighbourhood charity manages it.",
+      "gapText": "A: [gap1]?\nB: A neighbourhood charity manages it.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you know who manages the community garden"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Who» funciona como sujeto de «manages»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete A's indirect object question with “Could you tell me who the committee selected”.",
+      "prompt": "A: ___? B: They selected Marta Ruiz.",
+      "gapText": "A: [gap1]?\nB: They selected Marta Ruiz.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you tell me who the committee selected"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto «the committee» aparece antes del verbo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete A's combined question with “Could you tell me if I need an appointment and how long the process takes”.",
+      "prompt": "A: ___? B: You need one, and the process takes about twenty minutes.",
+      "gapText": "A: [gap1]?\nB: You need one, and the process takes about twenty minutes.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "combined-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 75,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you tell me if I need an appointment and how long the process takes"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta cerrada usa «if» y ambas partes mantienen orden afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete A's diagnostic question with “What do you think the problem is”.",
+      "prompt": "A: ___? B: I think the battery is faulty.",
+      "gapText": "A: [gap1]?\nB: I think the battery is faulty.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "complex-indirect",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "What do you think the problem is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El contenido integrado usa «the problem is»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete A's perfect question with “Could you tell me how long the road has been closed”.",
+      "prompt": "A: ___? B: It has been closed since Monday.",
+      "gapText": "A: [gap1]?\nB: It has been closed since Monday.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "perfect-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 75,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you tell me how long the road has been closed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La parte integrada conserva el orden «the road has been closed»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete A's statement with “I'd like to know whether or not the deposit is refundable”.",
+      "prompt": "A: ___. B: Yes, you can cancel for a full refund.",
+      "gapText": "A: [gap1].\nB: Yes, you can cancel for a full refund.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "whether",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 70,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "I'd like to know whether or not the deposit is refundable"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Whether or not» va seguido de orden afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-direct-indirect-questions-cd-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete A's combined question with “Do you know who called and who they contacted”.",
+      "prompt": "A: ___? B: Elena called and contacted the maintenance team.",
+      "gapText": "A: [gap1]?\nB: Elena called and contacted the maintenance team.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "combined-question",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 75,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Do you know who called and who they contacted"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La primera «who» es sujeto y la segunda es objeto."
+    }
+  ]
+}

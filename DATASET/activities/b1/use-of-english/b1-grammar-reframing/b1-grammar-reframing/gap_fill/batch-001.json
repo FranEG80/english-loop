@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-reframing-gap-fill-001",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-grammar-reframing",
+  "subtopic": "b1-grammar-reframing",
+  "lessonId": "b1-grammar-reframing",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The market is cheaper than the department store. The department store is not ___ the market.",
+      "gapText": "The market is cheaper than the department store. The department store is not [gap1] the market.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "comparatives"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as cheap as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The equivalent reverse comparison is «not as cheap as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "Someone checks the alarms every morning. The alarms are ___ every morning.",
+      "gapText": "Someone checks the alarms every morning. The alarms are [gap1] every morning.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "checked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The present passive is «are checked»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "“I am hungry,” Leo said. Leo said that he was ___. ",
+      "gapText": "“I am hungry,” Leo said. Leo said that he was [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "hungry"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The adjective remains «hungry» after the backshifted verb «was»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "I started this course in January. I have attended it ___ January.",
+      "gapText": "I started this course in January. I have attended it [gap1] January.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "present-perfect"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "since"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The start month takes «since»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The cupboard is too low for the boxes. The cupboard is not ___ for the boxes.",
+      "gapText": "The cupboard is too low for the boxes. The cupboard is not [gap1] for the boxes.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "too-enough"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "high enough"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Too low» becomes «not high enough»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The train is quicker than the coach. The coach is not ___ the train.",
+      "gapText": "The train is quicker than the coach. The coach is not [gap1] the train.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "comparatives"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as quick as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The reverse comparison is «not as quick as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "They repaired the lift yesterday. The lift was ___ yesterday.",
+      "gapText": "They repaired the lift yesterday. The lift was [gap1] yesterday.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "repaired"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The past passive is «was repaired»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "“I will return next week,” Sara said. Sara said that she would return the ___ week.",
+      "gapText": "“I will return next week,” Sara said. Sara said that she would return the [gap1] week.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "following"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Next week» becomes «the following week» in reported speech."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "I last spoke to the tutor in May. I have not spoken to the tutor ___ May.",
+      "gapText": "I last spoke to the tutor in May. I have not spoken to the tutor [gap1] May.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "present-perfect"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "since"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The last contact provides the starting point «since May»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The bag is too small for all the towels. The bag is not ___ for all the towels.",
+      "gapText": "The bag is too small for all the towels. The bag is not [gap1] for all the towels.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "too-enough"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "big enough"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The equivalent capacity is «not big enough»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "People say the restaurant is excellent. The restaurant is ___ excellent.",
+      "gapText": "People say the restaurant is excellent. The restaurant is [gap1] excellent.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive-reporting"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "said to be"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The reporting passive is «is said to be excellent»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The yellow route is less steep than the purple route. The purple route is not ___ the yellow route.",
+      "gapText": "The yellow route is less steep than the purple route. The purple route is not [gap1] the yellow route.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "comparatives"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as easy as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The less steep route is easier, so the reverse is «not as easy as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The workers have completed the repairs. The repairs have ___ completed.",
+      "gapText": "The workers have completed the repairs. The repairs have [gap1] completed.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The present perfect passive needs «have been completed»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "“I can help with the boxes,” Nina told us. Nina told us that she ___ help with the boxes.",
+      "gapText": "“I can help with the boxes,” Nina told us. Nina told us that she [gap1] help with the boxes.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The modal «can» changes to «could» after a past reporting verb."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "I started this job two years ago. I have worked here ___ two years.",
+      "gapText": "I started this job two years ago. I have worked here [gap1] two years.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "present-perfect"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "for"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A duration takes «for»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The waves were so high that the small boat could not leave. The waves were too ___ for the small boat to leave.",
+      "gapText": "The waves were so high that the small boat could not leave. The waves were too [gap1] for the small boat to leave.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "too-enough"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "high"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The adjective «high» follows «too» in the equivalent pattern."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The council will widen the road. The road will be ___ by the council.",
+      "gapText": "The council will widen the road. The road will be [gap1] by the council.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "widened"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The future passive is «will be widened»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "“We have lost the map,” the hikers said. The hikers said that they had ___ the map.",
+      "gapText": "“We have lost the map,” the hikers said. The hikers said that they had [gap1] the map.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "lost"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The present perfect becomes «had lost» in reported speech."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The last time we used the old bridge was in 2019. We have not used it ___ 2019.",
+      "gapText": "The last time we used the old bridge was in 2019. We have not used it [gap1] 2019.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "present-perfect"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "since"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The year is the starting point of the period without use."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The talk was so useful that I took many notes. It was such a ___ talk that I took many notes.",
+      "gapText": "The talk was so useful that I took many notes. It was such a [gap1] talk that I took many notes.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "so-such"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "useful"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "After «such a» we need the adjective before the singular noun «talk»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "People believe the castle was built in the twelfth century. The castle is believed to have been ___ in the twelfth century.",
+      "gapText": "People believe the castle was built in the twelfth century. The castle is believed to have been [gap1] in the twelfth century.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive-reporting"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "built"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A completed past event after a reporting passive uses «to have been built»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "The long route is much harder than the short route. The short route is nowhere near as ___ as the long route.",
+      "gapText": "The long route is much harder than the short route. The short route is nowhere near as [gap1] as the long route.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "comparatives"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "difficult"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The comparative is preserved with «as difficult as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "“I may be late,” Priya said. Priya said that she ___ be late.",
+      "gapText": "“I may be late,” Priya said. Priya said that she [gap1] be late.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "might"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The modal «may» commonly backshifts to «might»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "Someone must sign the form today. The form must be ___ today.",
+      "gapText": "Someone must sign the form today. The form must be [gap1] today.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "signed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The modal passive is «must be signed»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the transformed sentence.",
+      "prompt": "I regret not saving the booking number. I wish I had ___ the booking number.",
+      "gapText": "I regret not saving the booking number. I wish I had [gap1] the booking number.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "wish"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "saved"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Past regret uses «wish I had saved»."
+    }
+  ]
+}

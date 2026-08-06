@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-subject-object-questions-tags-gap-fill-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "questions",
+  "subtopic": "subject-object-question-tags",
+  "lessonId": "b1-grammar-subject-object-questions-tags",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the subject question.",
+      "prompt": "___ opened the door?",
+      "gapText": "[gap1] opened the door?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who opened"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the object question.",
+      "prompt": "Who ___ the invoice?",
+      "gapText": "Who [gap1] the invoice?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "sent"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto; verbo directo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the question tag.",
+      "prompt": "The lift works, ___?",
+      "gapText": "The lift works, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "doesn't it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Presente simple: «doesn't it»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the question tag.",
+      "prompt": "The doors aren't locked, ___?",
+      "gapText": "The doors aren't locked, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are they"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Enunciado negativo plural: «are they»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the question tag.",
+      "prompt": "Nora is ready, ___?",
+      "gapText": "Nora is ready, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "isn't she"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Repetimos «is» y usamos «she»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the subject question.",
+      "prompt": "___ took my chair?",
+      "gapText": "[gap1] took my chair?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who took"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the object question.",
+      "prompt": "Who ___ the manager call?",
+      "gapText": "Who [gap1] the manager call?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Pasado con sujeto: «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the question tag.",
+      "prompt": "The team can finish today, ___?",
+      "gapText": "The team can finish today, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "can't they"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Repetimos «can» en negativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the question tag.",
+      "prompt": "Sam called earlier, ___?",
+      "gapText": "Sam called earlier, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "didn't he"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Pasado simple: «didn't he»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the question tag.",
+      "prompt": "The fee is included, ___?",
+      "gapText": "The fee is included, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "isn't it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Repetimos «is» y usamos «it»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the question tag.",
+      "prompt": "___ designed the poster?",
+      "gapText": "[gap1] designed the poster?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who designed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the question tag.",
+      "prompt": "Who ___ the designer consult?",
+      "gapText": "Who [gap1] the designer consult?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Pasado con sujeto: «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the question tag.",
+      "prompt": "This route is easier, ___?",
+      "gapText": "This route is easier, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "isn't it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Repetimos «is» y usamos «it»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the subject question.",
+      "prompt": "We met last year, ___?",
+      "gapText": "We met last year, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "didn't we"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Pasado simple: «didn't we»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the object question.",
+      "prompt": "The alarm is working, ___?",
+      "gapText": "The alarm is working, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "isn't it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Repetimos «is» y usamos «it»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the question tag.",
+      "prompt": "___ triggered the alarm?",
+      "gapText": "[gap1] triggered the alarm?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "what triggered"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«what» es sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the question tag.",
+      "prompt": "Who ___ the panel select?",
+      "gapText": "Who [gap1] the panel select?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Pasado con sujeto: «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the question tag.",
+      "prompt": "These keys aren't yours, ___?",
+      "gapText": "These keys aren't yours, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are they"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Enunciado negativo plural: «are they»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the question tag.",
+      "prompt": "The shop isn't closed, ___?",
+      "gapText": "The shop isn't closed, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Enunciado negativo: tag positiva."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the question tag.",
+      "prompt": "You can access the file, ___?",
+      "gapText": "You can access the file, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "can't you"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Repetimos «can» en negativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the question tag.",
+      "prompt": "___ completed the course?",
+      "gapText": "[gap1] completed the course?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who has completed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto en present perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the question tag.",
+      "prompt": "Who ___ the report?",
+      "gapText": "Who [gap1] the report?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wrote"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the subject question.",
+      "prompt": "___ the parcel? (quién envió)",
+      "gapText": "[gap1] the parcel? (quién envió)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who sent"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«who» es sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the object question.",
+      "prompt": "Nobody objected, ___?",
+      "gapText": "Nobody objected, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did they"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«nobody» es negativo: «did they»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the question tag.",
+      "prompt": "You haven't paid, ___?",
+      "gapText": "You haven't paid, [gap1]?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have you"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Enunciado negativo: tag positiva."
+    }
+  ]
+}

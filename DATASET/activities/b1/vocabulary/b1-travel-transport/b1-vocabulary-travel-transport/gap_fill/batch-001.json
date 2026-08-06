@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-travel-transport-gap-fill-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-travel-transport",
+  "subtopic": "b1-travel-transport",
+  "lessonId": "b1-vocabulary-travel-transport",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "I booked a return ___ to Leeds.",
+      "gapText": "I booked a return [gap1] to Leeds.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "ticket"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A return ticket incluye la ida y la vuelta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "The train leaves from platform ___.",
+      "gapText": "The train leaves from platform [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "four"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Platform es el andén del tren."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "Our flight leaves from ___ 12.",
+      "gapText": "Our flight leaves from [gap1] 12.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "gate"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Gate es la puerta de embarque."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "The bus was ___, so we arrived late.",
+      "gapText": "The bus was [gap1], so we arrived late.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "delayed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Delayed significa retrasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "Please keep your passport in your hand ___.",
+      "gapText": "Please keep your passport in your hand [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "luggage"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Hand luggage es el equipaje de mano."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "The guide took us on a walking ___ of the city.",
+      "gapText": "The guide took us on a walking [gap1] of the city.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "tour"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A walking tour es una visita guiada a pie."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "We travelled ___ train to Edinburgh.",
+      "gapText": "We travelled [gap1] train to Edinburgh.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "by"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "By train indica el medio de transporte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "We collected our ___ after landing.",
+      "gapText": "We collected our [gap1] after landing.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "luggage"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Collect luggage significa recoger el equipaje."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "I missed my ___ and had to buy another ticket.",
+      "gapText": "I missed my [gap1] and had to buy another ticket.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "connection"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A connection es el enlace con otro transporte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "The long ___ from Bristol took three hours.",
+      "gapText": "The long [gap1] from Bristol took three hours.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "journey"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Journey pone el foco en la duración del trayecto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "You must check ___ before the flight.",
+      "gapText": "You must check [gap1] before the flight.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "in"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Check in es registrarse para el vuelo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "The flight has a ___ at Frankfurt.",
+      "gapText": "The flight has a [gap1] at Frankfurt.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "connection"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A connection es un enlace que obliga a continuar con otro vuelo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "The baggage ___ is 20 kilos.",
+      "gapText": "The baggage [gap1] is 20 kilos.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "allowance"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Baggage allowance es la cantidad permitida de equipaje."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "We went on a school ___ to York.",
+      "gapText": "We went on a school [gap1] to York.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "trip"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "A trip es una visita o experiencia concreta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "Passengers are ready to ___ the plane.",
+      "gapText": "Passengers are ready to [gap1] the plane.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "board"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Board significa subir al avión."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "The train arrived ___ the station at noon.",
+      "gapText": "The train arrived [gap1] the station at noon.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "at"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Arrive at se usa con una estación concreta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the sentence with one word.",
+      "prompt": "We went through ___ after landing in Canada.",
+      "gapText": "We went through [gap1] after landing in Canada.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "customs"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Customs es el control de aduanas."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "Please report your missing ___ at the desk.",
+      "gapText": "Please report your missing [gap1] at the desk.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "luggage"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Missing luggage es equipaje que no aparece."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "The bus stop is on the same ___ as the hotel.",
+      "gapText": "The bus stop is on the same [gap1] as the hotel.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "route"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Route es la ruta o itinerario."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "We travelled by coach because it was ___.",
+      "gapText": "We travelled by coach because it was [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "cheaper"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Cheaper compara el precio del autocar con otra opción."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "The return ___ leaves at six tomorrow.",
+      "gapText": "The return [gap1] leaves at six tomorrow.",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "flight"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Return flight es el vuelo de vuelta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "The plane was delayed, so I missed my ___.",
+      "gapText": "The plane was delayed, so I missed my [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "connection"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Miss a connection significa perder el transporte de enlace."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "A guide leads visitors on a city ___.",
+      "gapText": "A guide leads visitors on a city [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "tour"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "City tour es una visita organizada por la ciudad."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "What is the baggage ___ for this airline?",
+      "gapText": "What is the baggage [gap1] for this airline?",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "allowance"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Allowance especifica la cantidad permitida."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the phrase with one word.",
+      "prompt": "After checking in, passengers can board the ___.",
+      "gapText": "After checking in, passengers can board the [gap1].",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "fill-blank"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "plane"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Board the plane es subir al avión después de facturar."
+    }
+  ]
+}

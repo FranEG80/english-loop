@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-reference-connectors-gap-fill-001",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-grammar-reference-connectors",
+  "subtopic": "b1-grammar-reference-connectors",
+  "lessonId": "b1-grammar-reference-connectors",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which article completes the paragraph?",
+      "gapText": "On Saturday, I visited [gap1] small market near my flat. I bought bread and fruit for lunch.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "articles"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "a"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The market is introduced for the first time, so the indefinite article «a» is appropriate."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition completes the paragraph?",
+      "gapText": "Our train stopped outside the town, so we waited [gap1] the next one. It arrived ten minutes later.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "prepositions"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "for"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The phrase is «wait for the next one»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which pronoun completes the paragraph?",
+      "gapText": "Lena forgot her umbrella, but her friend lent [gap1] one before they left the café.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "pronouns"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "her"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The possessive pronoun refers to Lena, so it is «her»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which linker completes the paragraph?",
+      "gapText": "The café was full, [gap1] we took our coffee outside and sat in the square.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "linkers"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "so"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«So» links the situation to its result."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which word completes the paragraph?",
+      "gapText": "I made a list before shopping because I did not want to forget [gap1] important.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "pronouns"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "anything"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "In a negative sentence, the indefinite pronoun «anything» means any item at all."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which time word completes the paragraph?",
+      "gapText": "The library has been closed [gap1] Monday because workers are painting the main room.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "time"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "since"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Since Monday» marks the point when the closure began."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which linker shows the result of the weather change?",
+      "gapText": "The weather forecast predicted heavy rain, [gap1] we changed the route and stayed near the station.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "linkers"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "so"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The route change is the result, so use «so»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which relative word completes the paragraph?",
+      "gapText": "The course is for people [gap1] want to improve their writing at work.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "relative-clauses"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Who» introduces a relative clause about people."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which time word gives the length of the exhibition preparation?",
+      "gapText": "We have been preparing the exhibition [gap1] three weeks, and it opens tomorrow.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "time"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "for"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«For three weeks» expresses the length of the preparation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which reporting word introduces the museum information?",
+      "gapText": "The guide told us [gap1] the museum closes at six, so we entered before five.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«That» introduces the reported statement after «told us»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which subject completes the paragraph?",
+      "gapText": "Although [gap1] was getting late, the volunteers continued sorting the donated clothes.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "linkers"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The expression «it was getting late» requires the dummy subject «it»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which question word completes the paragraph?",
+      "gapText": "The instructions explain [gap1] the device works and how to switch it off safely.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "linkers"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "how"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«How» introduces an explanation of the method or process."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which relative word identifies the entrance painting?",
+      "gapText": "The painting [gap1] hangs in the entrance was made by a former student.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "relative-clauses"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«That» can introduce a defining relative clause about the painting."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which time word marks the last contact with the tutor?",
+      "gapText": "I have not spoken to my tutor [gap1] the end of the course, although I have emailed her.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "time"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "since"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Since the end of the course» gives the starting point for the period."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which infinitive marker completes the paragraph?",
+      "gapText": "We left early in order [gap1] find a parking space near the theatre.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "infinitives"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The phrase «in order to» expresses purpose."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which intensifier introduces the lecture's result?",
+      "gapText": "The lecture was [gap1] useful that I downloaded the speaker's notes afterwards.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "so-such"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "so"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«So» modifies the adjective «useful» before the result clause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which auxiliary completes the paragraph?",
+      "gapText": "I wish I [gap1] checked the opening hours before travelling across town.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "wish"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The speaker regrets a past action, so «wish» takes past perfect «had checked»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which relative determiner completes the paragraph?",
+      "gapText": "The centre, [gap1] doors are painted blue, offers free classes in the evening.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "relative-clauses"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "whose"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Whose» connects the centre with its doors."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which comparison word completes the paragraph?",
+      "gapText": "The new timetable is easier to use [gap1] the old one because the information is grouped by route.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "comparatives"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "than"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Comparatives are followed by «than»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which deadline word completes the paragraph?",
+      "gapText": "The form must be submitted no later [gap1] Thursday afternoon, or the application will be delayed.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "time"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "than"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The deadline expression is «no later than»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which auxiliary shows what happened before the doors opened?",
+      "gapText": "By the time the doors opened, the queue [gap1] already stretched around the building.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The queue stretched before the doors opened, so past perfect «had stretched» is needed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which conjunction completes the paragraph?",
+      "gapText": "No sooner had the speaker begun [gap1] the microphone stopped working.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "inversion"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "than"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The fixed construction is «no sooner ... than»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition follows the verb apply in this policy notice?",
+      "gapText": "The new policy applies [gap1] every member of staff, including temporary workers.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "prepositions"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The verb «apply» is followed by «to» before the affected group."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which auxiliary belongs in the indirect interview question?",
+      "gapText": "The interviewer asked me where I [gap1] learned about the vacancy before moving to the next question.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "indirect-questions"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The learning happened before the interview question, so past perfect «had learned» fits."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reference-connectors-cp-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reference-connectors",
+      "subtopic": "b1-grammar-reference-connectors",
+      "taxonomyNodeIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition follows regardless during the demonstration?",
+      "gapText": "The guide asked visitors to remain quiet regardless [gap1] how exciting the demonstration became.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b1-grammar-reference-connectors"
+      ],
+      "tags": [
+        "b1",
+        "open-cloze",
+        "prepositions"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "of"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The fixed expression is «regardless of»."
+    }
+  ]
+}

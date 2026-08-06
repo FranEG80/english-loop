@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
-  "batchId": "b2-past-perfect-simple-continuous-single-choice-001",
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-past-perfect-simple-continuous-single-choice-001",
   "level": "B2",
   "category": "grammar",
   "topic": "past-tenses",
@@ -9,12 +9,13 @@
   "activityType": "single_choice",
   "activities": [
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-001",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -30,16 +31,16 @@
           "text": "had gone"
         },
         {
+          "id": "d",
+          "text": "was going"
+        },
+        {
           "id": "b",
           "text": "had been going"
         },
         {
           "id": "c",
           "text": "went"
-        },
-        {
-          "id": "d",
-          "text": "was going"
         }
       ],
       "lessonIds": [
@@ -58,12 +59,13 @@
       "explanation": "El evento completado usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-002",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -75,16 +77,16 @@
       "prompt": "She ___ for hours before the exam.",
       "options": [
         {
-          "id": "a",
-          "text": "had been revising"
-        },
-        {
           "id": "b",
           "text": "had revised"
         },
         {
           "id": "c",
           "text": "revised"
+        },
+        {
+          "id": "a",
+          "text": "had been revising"
         },
         {
           "id": "d",
@@ -107,12 +109,13 @@
       "explanation": "La actividad en curso usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-003",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -124,8 +127,8 @@
       "prompt": "I ___ that song before.",
       "options": [
         {
-          "id": "a",
-          "text": "had heard"
+          "id": "d",
+          "text": "was hearing"
         },
         {
           "id": "b",
@@ -136,8 +139,8 @@
           "text": "heard"
         },
         {
-          "id": "d",
-          "text": "was hearing"
+          "id": "a",
+          "text": "had heard"
         }
       ],
       "lessonIds": [
@@ -156,12 +159,13 @@
       "explanation": "«hear» como experiencia usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-004",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -177,12 +181,12 @@
           "text": "had been standing"
         },
         {
-          "id": "b",
-          "text": "had stood"
-        },
-        {
           "id": "c",
           "text": "stood"
+        },
+        {
+          "id": "b",
+          "text": "had stood"
         },
         {
           "id": "d",
@@ -205,12 +209,13 @@
       "explanation": "La duración usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-005",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -222,12 +227,12 @@
       "prompt": "He ___ the letter by noon.",
       "options": [
         {
-          "id": "a",
-          "text": "had posted"
-        },
-        {
           "id": "b",
           "text": "had been posting"
+        },
+        {
+          "id": "a",
+          "text": "had posted"
         },
         {
           "id": "c",
@@ -254,12 +259,13 @@
       "explanation": "La cantidad completada usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-006",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -271,16 +277,16 @@
       "prompt": "I ___ the fence.",
       "options": [
         {
+          "id": "c",
+          "text": "mended"
+        },
+        {
           "id": "a",
           "text": "had mended"
         },
         {
           "id": "b",
           "text": "had been mending"
-        },
-        {
-          "id": "c",
-          "text": "mended"
         },
         {
           "id": "d",
@@ -303,12 +309,13 @@
       "explanation": "El resultado terminado usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-007",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -320,20 +327,20 @@
       "prompt": "I ___ the fence all afternoon.",
       "options": [
         {
-          "id": "a",
-          "text": "had been mending"
+          "id": "d",
+          "text": "was mending"
         },
         {
           "id": "b",
           "text": "had mended"
         },
         {
-          "id": "c",
-          "text": "mended"
+          "id": "a",
+          "text": "had been mending"
         },
         {
-          "id": "d",
-          "text": "was mending"
+          "id": "c",
+          "text": "mended"
         }
       ],
       "lessonIds": [
@@ -352,12 +359,13 @@
       "explanation": "La actividad en curso usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-008",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -369,20 +377,20 @@
       "prompt": "I ___ three chapters.",
       "options": [
         {
-          "id": "a",
-          "text": "had finished"
+          "id": "d",
+          "text": "was finishing"
         },
         {
           "id": "b",
           "text": "had been finishing"
         },
         {
-          "id": "c",
-          "text": "finished"
+          "id": "a",
+          "text": "had finished"
         },
         {
-          "id": "d",
-          "text": "was finishing"
+          "id": "c",
+          "text": "finished"
         }
       ],
       "lessonIds": [
@@ -401,12 +409,13 @@
       "explanation": "La cantidad completada usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-009",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -418,20 +427,20 @@
       "prompt": "I ___ for ages.",
       "options": [
         {
-          "id": "a",
-          "text": "had been searching"
-        },
-        {
           "id": "b",
           "text": "had searched"
         },
         {
-          "id": "c",
-          "text": "searched"
+          "id": "a",
+          "text": "had been searching"
         },
         {
           "id": "d",
           "text": "was searching"
+        },
+        {
+          "id": "c",
+          "text": "searched"
         }
       ],
       "lessonIds": [
@@ -450,12 +459,13 @@
       "explanation": "La duración usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-010",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -467,16 +477,16 @@
       "prompt": "We ___ the gallery.",
       "options": [
         {
+          "id": "c",
+          "text": "toured"
+        },
+        {
           "id": "a",
           "text": "had toured"
         },
         {
           "id": "b",
           "text": "had been touring"
-        },
-        {
-          "id": "c",
-          "text": "toured"
         },
         {
           "id": "d",
@@ -499,12 +509,13 @@
       "explanation": "La cantidad completada usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-011",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -520,16 +531,16 @@
           "text": "had been employed"
         },
         {
-          "id": "b",
-          "text": "had employed"
-        },
-        {
           "id": "c",
           "text": "employed"
         },
         {
           "id": "d",
           "text": "was employing"
+        },
+        {
+          "id": "b",
+          "text": "had employed"
         }
       ],
       "lessonIds": [
@@ -548,12 +559,13 @@
       "explanation": "La duración con «since» usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-012",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -573,12 +585,12 @@
           "text": "had trained"
         },
         {
-          "id": "c",
-          "text": "trained"
-        },
-        {
           "id": "d",
           "text": "was training"
+        },
+        {
+          "id": "c",
+          "text": "trained"
         }
       ],
       "lessonIds": [
@@ -597,12 +609,13 @@
       "explanation": "El efecto visible usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-013",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -614,20 +627,20 @@
       "prompt": "He ___ two essays.",
       "options": [
         {
-          "id": "a",
-          "text": "had drafted"
-        },
-        {
           "id": "b",
           "text": "had been drafting"
+        },
+        {
+          "id": "d",
+          "text": "was drafting"
         },
         {
           "id": "c",
           "text": "drafted"
         },
         {
-          "id": "d",
-          "text": "was drafting"
+          "id": "a",
+          "text": "had drafted"
         }
       ],
       "lessonIds": [
@@ -646,12 +659,13 @@
       "explanation": "La cantidad completada usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-014",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -667,16 +681,16 @@
           "text": "had been weighing"
         },
         {
+          "id": "d",
+          "text": "was weighing"
+        },
+        {
           "id": "b",
           "text": "had weighed"
         },
         {
           "id": "c",
           "text": "weighed"
-        },
-        {
-          "id": "d",
-          "text": "was weighing"
         }
       ],
       "lessonIds": [
@@ -695,12 +709,13 @@
       "explanation": "El proceso usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-015",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -712,20 +727,20 @@
       "prompt": "I ___ to accept.",
       "options": [
         {
-          "id": "a",
-          "text": "had resolved"
+          "id": "c",
+          "text": "resolved"
         },
         {
           "id": "b",
           "text": "had been resolving"
         },
         {
-          "id": "c",
-          "text": "resolved"
-        },
-        {
           "id": "d",
           "text": "was resolving"
+        },
+        {
+          "id": "a",
+          "text": "had resolved"
         }
       ],
       "lessonIds": [
@@ -744,12 +759,13 @@
       "explanation": "La decisión tomada usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-016",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -765,12 +781,12 @@
           "text": "had locked"
         },
         {
-          "id": "b",
-          "text": "had been locking"
-        },
-        {
           "id": "c",
           "text": "locked"
+        },
+        {
+          "id": "b",
+          "text": "had been locking"
         },
         {
           "id": "d",
@@ -793,12 +809,13 @@
       "explanation": "El resultado terminado usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-017",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -810,16 +827,16 @@
       "prompt": "I ___ the gate all morning.",
       "options": [
         {
-          "id": "a",
-          "text": "had been locking"
-        },
-        {
           "id": "b",
           "text": "had locked"
         },
         {
           "id": "c",
           "text": "locked"
+        },
+        {
+          "id": "a",
+          "text": "had been locking"
         },
         {
           "id": "d",
@@ -842,12 +859,13 @@
       "explanation": "La actividad en curso usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-018",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -863,16 +881,16 @@
           "text": "had been residing"
         },
         {
-          "id": "b",
-          "text": "had resided"
-        },
-        {
           "id": "c",
           "text": "resided"
         },
         {
           "id": "d",
           "text": "was residing"
+        },
+        {
+          "id": "b",
+          "text": "had resided"
         }
       ],
       "lessonIds": [
@@ -891,12 +909,13 @@
       "explanation": "La duración con «for» usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-019",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -908,20 +927,20 @@
       "prompt": "His hands were dirty; he ___ the engine.",
       "options": [
         {
-          "id": "a",
-          "text": "had been repairing"
-        },
-        {
-          "id": "b",
-          "text": "had repaired"
+          "id": "d",
+          "text": "was repairing"
         },
         {
           "id": "c",
           "text": "repaired"
         },
         {
-          "id": "d",
-          "text": "was repairing"
+          "id": "a",
+          "text": "had been repairing"
+        },
+        {
+          "id": "b",
+          "text": "had repaired"
         }
       ],
       "lessonIds": [
@@ -940,12 +959,13 @@
       "explanation": "El efecto visible usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-020",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -957,6 +977,10 @@
       "prompt": "She ___ the assignment.",
       "options": [
         {
+          "id": "d",
+          "text": "was submitting"
+        },
+        {
           "id": "a",
           "text": "had submitted"
         },
@@ -967,10 +991,6 @@
         {
           "id": "c",
           "text": "submitted"
-        },
-        {
-          "id": "d",
-          "text": "was submitting"
         }
       ],
       "lessonIds": [
@@ -989,12 +1009,13 @@
       "explanation": "El resultado terminado usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-021",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -1010,16 +1031,16 @@
           "text": "had been rehearsing"
         },
         {
+          "id": "d",
+          "text": "was rehearsing"
+        },
+        {
           "id": "b",
           "text": "had rehearsed"
         },
         {
           "id": "c",
           "text": "rehearsed"
-        },
-        {
-          "id": "d",
-          "text": "was rehearsing"
         }
       ],
       "lessonIds": [
@@ -1038,12 +1059,13 @@
       "explanation": "La actividad en curso usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-022",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -1055,20 +1077,20 @@
       "prompt": "I ___ the entire novel.",
       "options": [
         {
-          "id": "a",
-          "text": "had devoured"
-        },
-        {
-          "id": "b",
-          "text": "had been devouring"
+          "id": "d",
+          "text": "was devouring"
         },
         {
           "id": "c",
           "text": "devoured"
         },
         {
-          "id": "d",
-          "text": "was devouring"
+          "id": "b",
+          "text": "had been devouring"
+        },
+        {
+          "id": "a",
+          "text": "had devoured"
         }
       ],
       "lessonIds": [
@@ -1087,12 +1109,13 @@
       "explanation": "La cantidad completada usa el simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-023",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -1104,16 +1127,16 @@
       "prompt": "They ___ since dawn.",
       "options": [
         {
-          "id": "a",
-          "text": "had been queuing"
+          "id": "c",
+          "text": "queued"
         },
         {
           "id": "b",
           "text": "had queued"
         },
         {
-          "id": "c",
-          "text": "queued"
+          "id": "a",
+          "text": "had been queuing"
         },
         {
           "id": "d",
@@ -1136,12 +1159,13 @@
       "explanation": "La duración usa el continuo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-024",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -1153,20 +1177,20 @@
       "prompt": "I ___ that house for years.",
       "options": [
         {
-          "id": "a",
-          "text": "had possessed"
-        },
-        {
-          "id": "b",
-          "text": "had been possessing"
-        },
-        {
           "id": "c",
           "text": "possessed"
         },
         {
           "id": "d",
           "text": "was possessing"
+        },
+        {
+          "id": "a",
+          "text": "had possessed"
+        },
+        {
+          "id": "b",
+          "text": "had been possessing"
         }
       ],
       "lessonIds": [
@@ -1185,12 +1209,13 @@
       "explanation": "«possess» es un verbo de estado."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-past-perfect-simple-continuous-sc-025",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "past-perfect-simple-vs-continuous",
@@ -1202,20 +1227,20 @@
       "prompt": "She ___ the windows.",
       "options": [
         {
-          "id": "a",
-          "text": "had polished"
-        },
-        {
-          "id": "b",
-          "text": "had been polishing"
-        },
-        {
           "id": "c",
           "text": "polished"
         },
         {
+          "id": "a",
+          "text": "had polished"
+        },
+        {
           "id": "d",
           "text": "was polishing"
+        },
+        {
+          "id": "b",
+          "text": "had been polishing"
         }
       ],
       "lessonIds": [

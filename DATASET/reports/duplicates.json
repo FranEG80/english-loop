@@ -1,16 +1,1789 @@
 {
   "schemaVersion": "1.0.0",
-  "exact": [],
+  "exact": [
+    {
+      "normalisedPrompt": "matching | discuss | discussion | observation | observe",
+      "activityIds": [
+        "b1-word-families-m-013",
+        "b1-word-families-m-022"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | as | behaves | building | he | owned | the | though",
+      "activityIds": [
+        "b2-advanced-comparisons-wo-009",
+        "b2-advanced-comparisons-wo-020"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | consequently, | expired; | stopped. | the permit | work",
+      "activityIds": [
+        "b2-advanced-connectors-discourse-wo-004",
+        "b2-advanced-connectors-discourse-wo-018"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | caution. | in other words, the sample was not representative; | needs | result | the",
+      "activityIds": [
+        "b2-advanced-connectors-discourse-wo-012",
+        "b2-advanced-connectors-discourse-wo-023"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | faster. | is | on the other hand, the first route is scenic; | second | the",
+      "activityIds": [
+        "b2-advanced-connectors-discourse-wo-014",
+        "b2-advanced-connectors-discourse-wo-022"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | approved | it was the finance team | request. | that | the",
+      "activityIds": [
+        "b2-cleft-sentences-fronting-wo-002",
+        "b2-cleft-sentences-fronting-wo-021"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | cost. | final | the | was | what surprised everyone",
+      "activityIds": [
+        "b2-cleft-sentences-fronting-wo-006",
+        "b2-cleft-sentences-fronting-wo-025"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | committee | on friday, the | published | report. | the",
+      "activityIds": [
+        "b2-cleft-sentences-fronting-wo-011",
+        "b2-cleft-sentences-fronting-wo-020",
+        "b2-cleft-sentences-fronting-wo-023"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | at the old | met. | routes | station, | the two",
+      "activityIds": [
+        "b2-cleft-sentences-fronting-wo-013",
+        "b2-cleft-sentences-fronting-wo-024"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | discuss | funding | on | speaker | the | the | to | went",
+      "activityIds": [
+        "b2-meaning-change-gerund-infinitive-wo-014",
+        "b2-meaning-change-gerund-infinitive-wo-024"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | appeared | called. | journalists | no sooner had the report | than",
+      "activityIds": [
+        "b2-negative-inversion-wo-016",
+        "b2-negative-inversion-wo-024"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | about | claim | noise. | the article makes a | urban",
+      "activityIds": [
+        "b2-science-research-wo-015",
+        "b2-science-research-wo-025"
+      ]
+    },
+    {
+      "normalisedPrompt": "word_order | a visitor | introduced | levy. | the city",
+      "activityIds": [
+        "b2-vocabulary-travel-tourism-urban-life-wo-015",
+        "b2-vocabulary-travel-tourism-urban-life-wo-024"
+      ]
+    }
+  ],
   "near": [
+    {
+      "leftId": "b1-collocations-daily-life-mat-009",
+      "rightId": "b1-collocations-daily-life-mat-015",
+      "similarity": 0.864
+    },
+    {
+      "leftId": "b1-defining-relative-clauses-sc-004",
+      "rightId": "b1-defining-relative-clauses-sc-019",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-001",
+      "rightId": "b1-dependent-prepositions-oc-001",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-002",
+      "rightId": "b1-dependent-prepositions-oc-002",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-003",
+      "rightId": "b1-dependent-prepositions-oc-003",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-004",
+      "rightId": "b1-dependent-prepositions-oc-004",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-005",
+      "rightId": "b1-dependent-prepositions-oc-005",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-006",
+      "rightId": "b1-dependent-prepositions-oc-006",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-007",
+      "rightId": "b1-dependent-prepositions-oc-007",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-008",
+      "rightId": "b1-dependent-prepositions-oc-008",
+      "similarity": 0.909
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-009",
+      "rightId": "b1-dependent-prepositions-oc-009",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-010",
+      "rightId": "b1-dependent-prepositions-oc-010",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-011",
+      "rightId": "b1-dependent-prepositions-oc-011",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-012",
+      "rightId": "b1-dependent-prepositions-oc-012",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-013",
+      "rightId": "b1-dependent-prepositions-oc-013",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-014",
+      "rightId": "b1-dependent-prepositions-oc-014",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-015",
+      "rightId": "b1-dependent-prepositions-oc-015",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-016",
+      "rightId": "b1-dependent-prepositions-oc-016",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-017",
+      "rightId": "b1-dependent-prepositions-oc-017",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-018",
+      "rightId": "b1-dependent-prepositions-oc-018",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-019",
+      "rightId": "b1-dependent-prepositions-oc-019",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-020",
+      "rightId": "b1-dependent-prepositions-oc-020",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-021",
+      "rightId": "b1-dependent-prepositions-oc-021",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-022",
+      "rightId": "b1-dependent-prepositions-oc-022",
+      "similarity": 0.917
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-023",
+      "rightId": "b1-dependent-prepositions-oc-023",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-024",
+      "rightId": "b1-dependent-prepositions-oc-024",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-dependent-prepositions-fb-025",
+      "rightId": "b1-dependent-prepositions-oc-025",
+      "similarity": 0.923
+    },
+    {
+      "leftId": "b1-future-will-predictions-tf-024",
+      "rightId": "b1-future-will-predictions-tf-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-reported-statements-fb-001",
+      "rightId": "b1-reported-statements-fb-002",
+      "similarity": 0.9
+    },
+    {
+      "leftId": "b1-reported-statements-sc-001",
+      "rightId": "b1-reported-statements-sc-002",
+      "similarity": 1
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-002",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-003",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-004",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-005",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-006",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-007",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-001",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-003",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-004",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-005",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-006",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-007",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-002",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-004",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-005",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-006",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-007",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-003",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-005",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-006",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-007",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-004",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-006",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-007",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-005",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-007",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-006",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-008",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-007",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-009",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-008",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-010",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-009",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-011",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-010",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-011",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-013",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-012",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-014",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-013",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-015",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-014",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-016",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-015",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-017",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-016",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-018",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-017",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-019",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-018",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-019",
+      "rightId": "b1-writing-informal-email-sc-020",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-019",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-019",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-019",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-019",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-019",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-020",
+      "rightId": "b1-writing-informal-email-sc-021",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-020",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-020",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-020",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-020",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-021",
+      "rightId": "b1-writing-informal-email-sc-022",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-021",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-021",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-021",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-022",
+      "rightId": "b1-writing-informal-email-sc-023",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-022",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-022",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-023",
+      "rightId": "b1-writing-informal-email-sc-024",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-023",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b1-writing-informal-email-sc-024",
+      "rightId": "b1-writing-informal-email-sc-025",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b2-advanced-connectors-discourse-wo-019",
+      "rightId": "b2-advanced-connectors-discourse-wo-025",
+      "similarity": 1
+    },
     {
       "leftId": "b2-advanced-grammar-reframing-kwt-033",
       "rightId": "b2-advanced-grammar-reframing-kwt-183",
-      "similarity": 0.889
+      "similarity": 0.917
     },
     {
       "leftId": "b2-advanced-grammar-reframing-kwt-045",
       "rightId": "b2-advanced-grammar-reframing-kwt-117",
-      "similarity": 0.909
+      "similarity": 0.929
+    },
+    {
+      "leftId": "b2-mixed-conditionals-ei-011",
+      "rightId": "b2-mixed-conditionals-ei-012",
+      "similarity": 0.867
+    },
+    {
+      "leftId": "b2-negative-inversion-wo-006",
+      "rightId": "b2-negative-inversion-wo-025",
+      "similarity": 1
+    },
+    {
+      "leftId": "b2-non-defining-relative-clauses-wo-012",
+      "rightId": "b2-non-defining-relative-clauses-wo-022",
+      "similarity": 1
+    },
+    {
+      "leftId": "b2-reading-text-cohesion-m-004",
+      "rightId": "b2-reading-text-cohesion-rm-004",
+      "similarity": 0.9
+    },
+    {
+      "leftId": "b2-reading-text-cohesion-m-006",
+      "rightId": "b2-reading-text-cohesion-rm-006",
+      "similarity": 0.964
     }
   ],
   "nearDuplicateThreshold": 0.86

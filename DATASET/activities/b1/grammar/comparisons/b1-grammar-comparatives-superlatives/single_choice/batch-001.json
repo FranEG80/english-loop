@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
-  "batchId": "b1-comparatives-superlatives-single-choice-001",
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-comparatives-superlatives-single-choice-001",
   "level": "B1",
   "category": "grammar",
   "topic": "comparisons",
@@ -9,12 +9,13 @@
   "activityType": "single_choice",
   "activities": [
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-001",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -26,20 +27,20 @@
       "prompt": "This bag is ___ than that one.",
       "options": [
         {
-          "id": "a",
-          "text": "lighter"
-        },
-        {
-          "id": "b",
-          "text": "more light"
-        },
-        {
           "id": "c",
           "text": "lightest"
         },
         {
           "id": "d",
           "text": "most light"
+        },
+        {
+          "id": "a",
+          "text": "lighter"
+        },
+        {
+          "id": "b",
+          "text": "more light"
         }
       ],
       "lessonIds": [
@@ -58,12 +59,13 @@
       "explanation": "«light» es corto; añadimos «-er»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-002",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -79,16 +81,16 @@
           "text": "most expensive"
         },
         {
+          "id": "d",
+          "text": "expensiver"
+        },
+        {
           "id": "b",
           "text": "expensivest"
         },
         {
           "id": "c",
           "text": "more expensive"
-        },
-        {
-          "id": "d",
-          "text": "expensiver"
         }
       ],
       "lessonIds": [
@@ -107,12 +109,13 @@
       "explanation": "«expensive» es largo; usamos «the most»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-003",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -124,20 +127,20 @@
       "prompt": "That was the ___ film of the year.",
       "options": [
         {
-          "id": "a",
-          "text": "worst"
-        },
-        {
-          "id": "b",
-          "text": "baddest"
-        },
-        {
           "id": "c",
           "text": "more bad"
         },
         {
           "id": "d",
           "text": "most bad"
+        },
+        {
+          "id": "b",
+          "text": "baddest"
+        },
+        {
+          "id": "a",
+          "text": "worst"
         }
       ],
       "lessonIds": [
@@ -157,12 +160,13 @@
       "explanation": "«bad» es irregular: «worse/worst»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-004",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -174,10 +178,6 @@
       "prompt": "My room is ___ big as yours.",
       "options": [
         {
-          "id": "a",
-          "text": "as"
-        },
-        {
           "id": "b",
           "text": "than"
         },
@@ -188,6 +188,10 @@
         {
           "id": "d",
           "text": "most"
+        },
+        {
+          "id": "a",
+          "text": "as"
         }
       ],
       "lessonIds": [
@@ -207,12 +211,13 @@
       "explanation": "La igualdad usa «as ... as»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-005",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -224,16 +229,16 @@
       "prompt": "The train is faster ___ the bus.",
       "options": [
         {
-          "id": "a",
-          "text": "than"
+          "id": "c",
+          "text": "that"
         },
         {
           "id": "b",
           "text": "as"
         },
         {
-          "id": "c",
-          "text": "that"
+          "id": "a",
+          "text": "than"
         },
         {
           "id": "d",
@@ -257,12 +262,13 @@
       "explanation": "La comparación usa «than»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-006",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -274,20 +280,20 @@
       "prompt": "Her new flat is ___ than the old one.",
       "options": [
         {
-          "id": "a",
-          "text": "bigger"
-        },
-        {
-          "id": "b",
-          "text": "more big"
+          "id": "d",
+          "text": "most big"
         },
         {
           "id": "c",
           "text": "bigest"
         },
         {
-          "id": "d",
-          "text": "most big"
+          "id": "a",
+          "text": "bigger"
+        },
+        {
+          "id": "b",
+          "text": "more big"
         }
       ],
       "lessonIds": [
@@ -306,12 +312,13 @@
       "explanation": "«big» dobla la consonante: «bigger»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-007",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -331,12 +338,12 @@
           "text": "comfortablest"
         },
         {
-          "id": "c",
-          "text": "more comfortable"
-        },
-        {
           "id": "d",
           "text": "comfortabler"
+        },
+        {
+          "id": "c",
+          "text": "more comfortable"
         }
       ],
       "lessonIds": [
@@ -355,12 +362,13 @@
       "explanation": "«comfortable» es largo; usamos «the most»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-008",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -372,16 +380,16 @@
       "prompt": "The second chapter is ___ than the first.",
       "options": [
         {
+          "id": "c",
+          "text": "most detailed"
+        },
+        {
           "id": "a",
           "text": "more detailed"
         },
         {
           "id": "b",
           "text": "detaileder"
-        },
-        {
-          "id": "c",
-          "text": "most detailed"
         },
         {
           "id": "d",
@@ -404,12 +412,13 @@
       "explanation": "«detailed» es largo; usamos «more»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-009",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -425,16 +434,16 @@
           "text": "better"
         },
         {
-          "id": "b",
-          "text": "gooder"
-        },
-        {
           "id": "c",
           "text": "more good"
         },
         {
           "id": "d",
           "text": "best"
+        },
+        {
+          "id": "b",
+          "text": "gooder"
         }
       ],
       "lessonIds": [
@@ -454,12 +463,13 @@
       "explanation": "«good» es irregular: «better»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-010",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -471,20 +481,20 @@
       "prompt": "This phone isn't ___ new as that one.",
       "options": [
         {
-          "id": "a",
-          "text": "as"
-        },
-        {
           "id": "b",
           "text": "than"
         },
         {
-          "id": "c",
-          "text": "more"
+          "id": "a",
+          "text": "as"
         },
         {
           "id": "d",
           "text": "so"
+        },
+        {
+          "id": "c",
+          "text": "more"
         }
       ],
       "lessonIds": [
@@ -504,12 +514,13 @@
       "explanation": "La desigualdad usa «not as ... as»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-011",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -521,20 +532,20 @@
       "prompt": "The mountain path is ___ than the coastal road.",
       "options": [
         {
-          "id": "a",
-          "text": "steeper"
-        },
-        {
           "id": "b",
           "text": "more steep"
         },
         {
-          "id": "c",
-          "text": "steepest"
-        },
-        {
           "id": "d",
           "text": "most steep"
+        },
+        {
+          "id": "a",
+          "text": "steeper"
+        },
+        {
+          "id": "c",
+          "text": "steepest"
         }
       ],
       "lessonIds": [
@@ -553,12 +564,13 @@
       "explanation": "«steep» es corto; añadimos «-er»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-012",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -574,16 +586,16 @@
           "text": "cheapest"
         },
         {
+          "id": "d",
+          "text": "cheaper"
+        },
+        {
           "id": "b",
           "text": "more cheap"
         },
         {
           "id": "c",
           "text": "most cheap"
-        },
-        {
-          "id": "d",
-          "text": "cheaper"
         }
       ],
       "lessonIds": [
@@ -602,12 +614,13 @@
       "explanation": "«cheap» es corto; usamos «-est»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-013",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -619,20 +632,20 @@
       "prompt": "This laptop is ___ than my previous one.",
       "options": [
         {
-          "id": "a",
-          "text": "lighter"
-        },
-        {
-          "id": "b",
-          "text": "more light"
+          "id": "d",
+          "text": "most light"
         },
         {
           "id": "c",
           "text": "lightest"
         },
         {
-          "id": "d",
-          "text": "most light"
+          "id": "a",
+          "text": "lighter"
+        },
+        {
+          "id": "b",
+          "text": "more light"
         }
       ],
       "lessonIds": [
@@ -651,12 +664,13 @@
       "explanation": "«light» es corto; añadimos «-er»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-014",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -668,16 +682,16 @@
       "prompt": "That was the ___ film I saw this year.",
       "options": [
         {
-          "id": "a",
-          "text": "worst"
-        },
-        {
           "id": "b",
           "text": "worser"
         },
         {
           "id": "c",
           "text": "most bad"
+        },
+        {
+          "id": "a",
+          "text": "worst"
         },
         {
           "id": "d",
@@ -701,12 +715,13 @@
       "explanation": "«bad» es irregular: «worst»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-015",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -718,12 +733,12 @@
       "prompt": "There are ___ students this year than last year.",
       "options": [
         {
-          "id": "a",
-          "text": "more"
-        },
-        {
           "id": "b",
           "text": "most"
+        },
+        {
+          "id": "a",
+          "text": "more"
         },
         {
           "id": "c",
@@ -751,12 +766,13 @@
       "explanation": "Comparamos cantidad con «more ... than»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-016",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -768,20 +784,20 @@
       "prompt": "The new model is ___ reliable than the old one.",
       "options": [
         {
-          "id": "a",
-          "text": "more"
-        },
-        {
-          "id": "b",
-          "text": "most"
+          "id": "d",
+          "text": "as"
         },
         {
           "id": "c",
           "text": "-er"
         },
         {
-          "id": "d",
-          "text": "as"
+          "id": "b",
+          "text": "most"
+        },
+        {
+          "id": "a",
+          "text": "more"
         }
       ],
       "lessonIds": [
@@ -800,12 +816,13 @@
       "explanation": "«reliable» es largo; usamos «more»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-017",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -821,16 +838,16 @@
           "text": "best"
         },
         {
-          "id": "b",
-          "text": "goodest"
+          "id": "d",
+          "text": "most good"
         },
         {
           "id": "c",
           "text": "more good"
         },
         {
-          "id": "d",
-          "text": "most good"
+          "id": "b",
+          "text": "goodest"
         }
       ],
       "lessonIds": [
@@ -850,12 +867,13 @@
       "explanation": "«good» es irregular: «best»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-018",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -867,20 +885,20 @@
       "prompt": "The early train is ___ fast as the express.",
       "options": [
         {
-          "id": "a",
-          "text": "as"
+          "id": "c",
+          "text": "more"
         },
         {
           "id": "b",
           "text": "than"
         },
         {
-          "id": "c",
-          "text": "more"
-        },
-        {
           "id": "d",
           "text": "most"
+        },
+        {
+          "id": "a",
+          "text": "as"
         }
       ],
       "lessonIds": [
@@ -900,12 +918,13 @@
       "explanation": "La igualdad usa «as ... as»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-019",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -917,20 +936,20 @@
       "prompt": "Marta is the ___ in her class.",
       "options": [
         {
-          "id": "a",
-          "text": "tallest"
-        },
-        {
-          "id": "b",
-          "text": "more tall"
-        },
-        {
           "id": "c",
           "text": "most tall"
         },
         {
           "id": "d",
           "text": "taller"
+        },
+        {
+          "id": "a",
+          "text": "tallest"
+        },
+        {
+          "id": "b",
+          "text": "more tall"
         }
       ],
       "lessonIds": [
@@ -949,12 +968,13 @@
       "explanation": "«tall» es corto; usamos «-est»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-020",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -966,20 +986,20 @@
       "prompt": "The blue shirt is ___ than the red one.",
       "options": [
         {
-          "id": "a",
-          "text": "cheaper"
-        },
-        {
           "id": "b",
           "text": "more cheap"
+        },
+        {
+          "id": "d",
+          "text": "most cheap"
         },
         {
           "id": "c",
           "text": "cheapest"
         },
         {
-          "id": "d",
-          "text": "most cheap"
+          "id": "a",
+          "text": "cheaper"
         }
       ],
       "lessonIds": [
@@ -998,12 +1018,13 @@
       "explanation": "«cheap» es corto; añadimos «-er»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-021",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -1015,20 +1036,20 @@
       "prompt": "The new building is ___ more impressive than the old one.",
       "options": [
         {
-          "id": "a",
-          "text": "far"
-        },
-        {
-          "id": "b",
-          "text": "more"
-        },
-        {
           "id": "c",
           "text": "most"
         },
         {
           "id": "d",
           "text": "as"
+        },
+        {
+          "id": "a",
+          "text": "far"
+        },
+        {
+          "id": "b",
+          "text": "more"
         }
       ],
       "lessonIds": [
@@ -1048,12 +1069,13 @@
       "explanation": "«far» intensifica el comparativo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-022",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -1065,20 +1087,20 @@
       "prompt": "This is the ___ comfortable chair in the office.",
       "options": [
         {
-          "id": "a",
-          "text": "most"
+          "id": "d",
+          "text": "as"
         },
         {
-          "id": "b",
-          "text": "more"
+          "id": "a",
+          "text": "most"
         },
         {
           "id": "c",
           "text": "-est"
         },
         {
-          "id": "d",
-          "text": "as"
+          "id": "b",
+          "text": "more"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1119,13 @@
       "explanation": "«comfortable» es largo; usamos «the most»."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-023",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -1114,20 +1137,20 @@
       "prompt": "This route is ___ longer than the other one.",
       "options": [
         {
-          "id": "a",
-          "text": "a bit"
+          "id": "d",
+          "text": "as"
         },
         {
           "id": "b",
           "text": "more"
         },
         {
-          "id": "c",
-          "text": "most"
+          "id": "a",
+          "text": "a bit"
         },
         {
-          "id": "d",
-          "text": "as"
+          "id": "c",
+          "text": "most"
         }
       ],
       "lessonIds": [
@@ -1147,12 +1170,13 @@
       "explanation": "«a bit» indica una pequeña diferencia."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-024",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -1164,20 +1188,20 @@
       "prompt": "This tablet is ___ cheaper than that one.",
       "options": [
         {
-          "id": "a",
-          "text": "much"
+          "id": "d",
+          "text": "as"
         },
         {
           "id": "b",
           "text": "more"
         },
         {
-          "id": "c",
-          "text": "most"
+          "id": "a",
+          "text": "much"
         },
         {
-          "id": "d",
-          "text": "as"
+          "id": "c",
+          "text": "most"
         }
       ],
       "lessonIds": [
@@ -1197,12 +1221,13 @@
       "explanation": "«much» intensifica el comparativo."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-comparatives-superlatives-sc-025",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "comparisons",
       "subtopic": "comparative-superlative",
@@ -1218,16 +1243,16 @@
           "text": "best"
         },
         {
-          "id": "b",
-          "text": "goodest"
-        },
-        {
           "id": "c",
           "text": "more good"
         },
         {
           "id": "d",
           "text": "most good"
+        },
+        {
+          "id": "b",
+          "text": "goodest"
         }
       ],
       "lessonIds": [

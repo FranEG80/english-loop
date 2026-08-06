@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
-  "batchId": "b2-future-likelihood-imminence-word-order-001",
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-future-likelihood-imminence-word-order-001",
   "level": "B2",
   "category": "grammar",
   "topic": "future-forms",
@@ -8,30 +8,1250 @@
   "lessonId": "b2-grammar-future-likelihood-imminence",
   "activityType": "word_order",
   "activities": [
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-001","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":2,"instructions":"Put the words in the correct order.","prompt":"The bus is about to leave the terminal.","tokens":[{"id":"t1","text":"The bus"},{"id":"t2","text":"is about to leave"},{"id":"t3","text":"the terminal."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"About to leave presenta una salida inminente."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-002","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":2,"instructions":"Put the words in the correct order.","prompt":"The visiting author is due to speak at seven.","tokens":[{"id":"t1","text":"The visiting author"},{"id":"t2","text":"is due to speak"},{"id":"t3","text":"at seven."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","due"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Due to speak presenta una intervención programada."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-003","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":2,"instructions":"Put the words in the correct order.","prompt":"The harvest is likely to improve local prices.","tokens":[{"id":"t1","text":"The harvest"},{"id":"t2","text":"is likely to improve"},{"id":"t3","text":"local prices."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Likely to improve expresa una consecuencia probable."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-004","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":2,"instructions":"Put the words in the correct order.","prompt":"The pilot is on the point of announcing a delay.","tokens":[{"id":"t1","text":"The pilot"},{"id":"t2","text":"is on the point of announcing"},{"id":"t3","text":"a delay."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"On the point of announcing enfoca el instante previo al anuncio."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-005","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":2,"instructions":"Put the words in the correct order.","prompt":"The new design is bound to attract attention.","tokens":[{"id":"t1","text":"The new design"},{"id":"t2","text":"is bound to attract"},{"id":"t3","text":"attention."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","certainty"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Bound to attract expresa una predicción muy fuerte."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-006","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"It is unlikely that the museum will close early.","tokens":[{"id":"t1","text":"It is unlikely"},{"id":"t2","text":"that the museum"},{"id":"t3","text":"will close early."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Unlikely that introduce una predicción poco probable."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-007","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"The committee is certain to approve the grant.","tokens":[{"id":"t1","text":"The committee"},{"id":"t2","text":"is certain to approve"},{"id":"t3","text":"the grant."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","certainty"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Certain to approve presenta la aprobación como segura."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-008","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"The ferry is due to depart after lunch.","tokens":[{"id":"t1","text":"The ferry"},{"id":"t2","text":"is due to depart"},{"id":"t3","text":"after lunch."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","due"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Due to depart indica un plan de salida previsto."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-009","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"The runner is about to cross the finish line.","tokens":[{"id":"t1","text":"The runner"},{"id":"t2","text":"is about to cross"},{"id":"t3","text":"the finish line."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"About to cross señala que el cruce ocurrirá enseguida."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-010","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"The company is unlikely to replace staff this year.","tokens":[{"id":"t1","text":"The company"},{"id":"t2","text":"is unlikely to replace"},{"id":"t3","text":"staff this year."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Unlikely to replace expresa una posibilidad baja."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-011","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"The scientist is on the point of publishing the results.","tokens":[{"id":"t1","text":"The scientist"},{"id":"t2","text":"is on the point of publishing"},{"id":"t3","text":"the results."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Publishing va en -ing después de on the point of."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-012","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":3,"instructions":"Put the words in the correct order.","prompt":"The storm is likely to reach the coast tonight.","tokens":[{"id":"t1","text":"The storm"},{"id":"t2","text":"is likely to reach"},{"id":"t3","text":"the coast tonight."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Likely to reach presenta una predicción basada en la información disponible."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-013","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"The old tunnel is bound to require repairs.","tokens":[{"id":"t1","text":"The old tunnel"},{"id":"t2","text":"is bound to require"},{"id":"t3","text":"repairs."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","certainty"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Bound to require presenta la necesidad como prácticamente segura."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-014","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"It is likely that the council will revise the timetable.","tokens":[{"id":"t1","text":"It is likely"},{"id":"t2","text":"that the council"},{"id":"t3","text":"will revise the timetable."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Likely that introduce correctamente una oración futura."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-015","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"The child is about to drop the glass.","tokens":[{"id":"t1","text":"The child"},{"id":"t2","text":"is about to drop"},{"id":"t3","text":"the glass."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"About to drop describe una acción que está a punto de ocurrir."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-016","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"The express train is due to pass platform four at noon.","tokens":[{"id":"t1","text":"The express train"},{"id":"t2","text":"is due to pass"},{"id":"t3","text":"platform four at noon."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","due"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Due to pass expresa el horario del tren."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-017","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"The campaign is unlikely to change public opinion.","tokens":[{"id":"t1","text":"The campaign"},{"id":"t2","text":"is unlikely to change"},{"id":"t3","text":"public opinion."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Unlikely to change expresa una predicción negativa."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-018","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"The witness is sure to remember the distinctive coat.","tokens":[{"id":"t1","text":"The witness"},{"id":"t2","text":"is sure to remember"},{"id":"t3","text":"the distinctive coat."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","certainty"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Sure to remember presenta el recuerdo como muy probable."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-019","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":4,"instructions":"Put the words in the correct order.","prompt":"The negotiations are on the point of breaking down.","tokens":[{"id":"t1","text":"The negotiations"},{"id":"t2","text":"are on the point of breaking down."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2"]},"explanation":"On the point of breaking down indica un colapso inminente."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-020","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":5,"instructions":"Put the words in the correct order.","prompt":"The new bridge is certain to reduce congestion.","tokens":[{"id":"t1","text":"The new bridge"},{"id":"t2","text":"is certain to reduce"},{"id":"t3","text":"congestion."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","certainty"],"estimatedSeconds":60,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Certain to reduce presenta el efecto como seguro."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-021","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":5,"instructions":"Put the words in the correct order.","prompt":"It is unlikely that the road will reopen before dawn.","tokens":[{"id":"t1","text":"It is unlikely"},{"id":"t2","text":"that the road"},{"id":"t3","text":"will reopen before dawn."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","likelihood"],"estimatedSeconds":60,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"La estructura unlikely that expresa una posibilidad baja."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-022","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":5,"instructions":"Put the words in the correct order.","prompt":"The spacecraft is about to enter the atmosphere.","tokens":[{"id":"t1","text":"The spacecraft"},{"id":"t2","text":"is about to enter"},{"id":"t3","text":"the atmosphere."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":60,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"About to enter presenta la entrada como inminente."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-023","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":5,"instructions":"Put the words in the correct order.","prompt":"The director is due to sign the contract tomorrow.","tokens":[{"id":"t1","text":"The director"},{"id":"t2","text":"is due to sign"},{"id":"t3","text":"the contract tomorrow."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","due"],"estimatedSeconds":60,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Due to sign presenta un acto planificado para mañana."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-024","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":5,"instructions":"Put the words in the correct order.","prompt":"The policy is bound to affect small businesses.","tokens":[{"id":"t1","text":"The policy"},{"id":"t2","text":"is bound to affect"},{"id":"t3","text":"small businesses."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","certainty"],"estimatedSeconds":60,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Bound to affect presenta el efecto como prácticamente inevitable."},
-    {"schemaVersion":"1.0.0","id":"b2-future-likelihood-imminence-wo-025","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"future-forms","subtopic":"future-likelihood-imminence","taxonomyNodeIds":["future-likelihood-imminence"],"difficulty":5,"instructions":"Put the words in the correct order.","prompt":"The speaker is on the point of answering the final question.","tokens":[{"id":"t1","text":"The speaker"},{"id":"t2","text":"is on the point of answering"},{"id":"t3","text":"the final question."}],"lessonIds":["b2-grammar-future-likelihood-imminence"],"tags":["b2","future-forms","imminence"],"estimatedSeconds":60,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"On the point of answering enfoca una respuesta inminente."}
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The bus is about to leave the terminal.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The bus"
+        },
+        {
+          "id": "t2",
+          "text": "is about to leave"
+        },
+        {
+          "id": "t3",
+          "text": "the terminal."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "About to leave presenta una salida inminente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The visiting author is due to speak at seven.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The visiting author"
+        },
+        {
+          "id": "t2",
+          "text": "is due to speak"
+        },
+        {
+          "id": "t3",
+          "text": "at seven."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "due"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Due to speak presenta una intervención programada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The harvest is likely to improve local prices.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The harvest"
+        },
+        {
+          "id": "t2",
+          "text": "is likely to improve"
+        },
+        {
+          "id": "t3",
+          "text": "local prices."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Likely to improve expresa una consecuencia probable."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The pilot is on the point of announcing a delay.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The pilot"
+        },
+        {
+          "id": "t2",
+          "text": "is on the point of announcing"
+        },
+        {
+          "id": "t3",
+          "text": "a delay."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "On the point of announcing enfoca el instante previo al anuncio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The new design is bound to attract attention.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The new design"
+        },
+        {
+          "id": "t2",
+          "text": "is bound to attract"
+        },
+        {
+          "id": "t3",
+          "text": "attention."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Bound to attract expresa una predicción muy fuerte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "It is unlikely that the museum will close early.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "It is unlikely"
+        },
+        {
+          "id": "t2",
+          "text": "that the museum"
+        },
+        {
+          "id": "t3",
+          "text": "will close early."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Unlikely that introduce una predicción poco probable."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The committee is certain to approve the grant.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The committee"
+        },
+        {
+          "id": "t2",
+          "text": "is certain to approve"
+        },
+        {
+          "id": "t3",
+          "text": "the grant."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Certain to approve presenta la aprobación como segura."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The ferry is due to depart after lunch.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The ferry"
+        },
+        {
+          "id": "t2",
+          "text": "is due to depart"
+        },
+        {
+          "id": "t3",
+          "text": "after lunch."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "due"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Due to depart indica un plan de salida previsto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The runner is about to cross the finish line.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The runner"
+        },
+        {
+          "id": "t2",
+          "text": "is about to cross"
+        },
+        {
+          "id": "t3",
+          "text": "the finish line."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "About to cross señala que el cruce ocurrirá enseguida."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The company is unlikely to replace staff this year.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The company"
+        },
+        {
+          "id": "t2",
+          "text": "is unlikely to replace"
+        },
+        {
+          "id": "t3",
+          "text": "staff this year."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Unlikely to replace expresa una posibilidad baja."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The scientist is on the point of publishing the results.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The scientist"
+        },
+        {
+          "id": "t2",
+          "text": "is on the point of publishing"
+        },
+        {
+          "id": "t3",
+          "text": "the results."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Publishing va en -ing después de on the point of."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The storm is likely to reach the coast tonight.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The storm"
+        },
+        {
+          "id": "t2",
+          "text": "is likely to reach"
+        },
+        {
+          "id": "t3",
+          "text": "the coast tonight."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Likely to reach presenta una predicción basada en la información disponible."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The old tunnel is bound to require repairs.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The old tunnel"
+        },
+        {
+          "id": "t2",
+          "text": "is bound to require"
+        },
+        {
+          "id": "t3",
+          "text": "repairs."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Bound to require presenta la necesidad como prácticamente segura."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "It is likely that the council will revise the timetable.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "It is likely"
+        },
+        {
+          "id": "t2",
+          "text": "that the council"
+        },
+        {
+          "id": "t3",
+          "text": "will revise the timetable."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Likely that introduce correctamente una oración futura."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The child is about to drop the glass.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The child"
+        },
+        {
+          "id": "t2",
+          "text": "is about to drop"
+        },
+        {
+          "id": "t3",
+          "text": "the glass."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "About to drop describe una acción que está a punto de ocurrir."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The express train is due to pass platform four at noon.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The express train"
+        },
+        {
+          "id": "t2",
+          "text": "is due to pass"
+        },
+        {
+          "id": "t3",
+          "text": "platform four at noon."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "due"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Due to pass expresa el horario del tren."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The campaign is unlikely to change public opinion.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The campaign"
+        },
+        {
+          "id": "t2",
+          "text": "is unlikely to change"
+        },
+        {
+          "id": "t3",
+          "text": "public opinion."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Unlikely to change expresa una predicción negativa."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The witness is sure to remember the distinctive coat.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The witness"
+        },
+        {
+          "id": "t2",
+          "text": "is sure to remember"
+        },
+        {
+          "id": "t3",
+          "text": "the distinctive coat."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Sure to remember presenta el recuerdo como muy probable."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The negotiations are on the point of breaking down.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The negotiations"
+        },
+        {
+          "id": "t2",
+          "text": "are on the point of breaking down."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2"
+        ]
+      },
+      "explanation": "On the point of breaking down indica un colapso inminente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The new bridge is certain to reduce congestion.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The new bridge"
+        },
+        {
+          "id": "t2",
+          "text": "is certain to reduce"
+        },
+        {
+          "id": "t3",
+          "text": "congestion."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Certain to reduce presenta el efecto como seguro."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "It is unlikely that the road will reopen before dawn.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "It is unlikely"
+        },
+        {
+          "id": "t2",
+          "text": "that the road"
+        },
+        {
+          "id": "t3",
+          "text": "will reopen before dawn."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "La estructura unlikely that expresa una posibilidad baja."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The spacecraft is about to enter the atmosphere.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The spacecraft"
+        },
+        {
+          "id": "t2",
+          "text": "is about to enter"
+        },
+        {
+          "id": "t3",
+          "text": "the atmosphere."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "About to enter presenta la entrada como inminente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The director is due to sign the contract tomorrow.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The director"
+        },
+        {
+          "id": "t2",
+          "text": "is due to sign"
+        },
+        {
+          "id": "t3",
+          "text": "the contract tomorrow."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "due"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Due to sign presenta un acto planificado para mañana."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The policy is bound to affect small businesses.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The policy"
+        },
+        {
+          "id": "t2",
+          "text": "is bound to affect"
+        },
+        {
+          "id": "t3",
+          "text": "small businesses."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Bound to affect presenta el efecto como prácticamente inevitable."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-future-likelihood-imminence-wo-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The speaker is on the point of answering the final question.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The speaker"
+        },
+        {
+          "id": "t2",
+          "text": "is on the point of answering"
+        },
+        {
+          "id": "t3",
+          "text": "the final question."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "imminence"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "On the point of answering enfoca una respuesta inminente."
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
-  "batchId": "b2-advanced-narrative-tenses-single-choice-001",
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-narrative-tenses-single-choice-001",
   "level": "B2",
   "category": "grammar",
   "topic": "past-tenses",
@@ -9,12 +9,13 @@
   "activityType": "single_choice",
   "activities": [
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-001",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -58,12 +59,13 @@
       "explanation": "El evento principal usa past simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-002",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -75,12 +77,12 @@
       "prompt": "The sun ___ as we arrived. (fondo)",
       "options": [
         {
-          "id": "a",
-          "text": "was setting"
-        },
-        {
           "id": "b",
           "text": "set"
+        },
+        {
+          "id": "a",
+          "text": "was setting"
         },
         {
           "id": "c",
@@ -107,12 +109,13 @@
       "explanation": "El fondo usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-003",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -124,16 +127,16 @@
       "prompt": "She ___ already eaten when I called. (anterior)",
       "options": [
         {
-          "id": "a",
-          "text": "had"
-        },
-        {
           "id": "b",
           "text": "has"
         },
         {
           "id": "c",
           "text": "was"
+        },
+        {
+          "id": "a",
+          "text": "had"
         },
         {
           "id": "d",
@@ -156,12 +159,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-004",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -173,20 +177,20 @@
       "prompt": "They ___ for an hour. (duración anterior)",
       "options": [
         {
-          "id": "a",
-          "text": "had been waiting"
-        },
-        {
-          "id": "b",
-          "text": "had waited"
-        },
-        {
           "id": "c",
           "text": "waited"
         },
         {
+          "id": "a",
+          "text": "had been waiting"
+        },
+        {
           "id": "d",
           "text": "were waiting"
+        },
+        {
+          "id": "b",
+          "text": "had waited"
         }
       ],
       "lessonIds": [
@@ -205,12 +209,13 @@
       "explanation": "La duración anterior usa past perfect continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-005",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -222,20 +227,20 @@
       "prompt": "I ___ when the phone rang. (fondo)",
       "options": [
         {
-          "id": "a",
-          "text": "was reading"
+          "id": "c",
+          "text": "had read"
         },
         {
           "id": "b",
           "text": "read"
         },
         {
-          "id": "c",
-          "text": "had read"
-        },
-        {
           "id": "d",
           "text": "had been reading"
+        },
+        {
+          "id": "a",
+          "text": "was reading"
         }
       ],
       "lessonIds": [
@@ -254,12 +259,13 @@
       "explanation": "El fondo usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-006",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -271,6 +277,10 @@
       "prompt": "By the time we got there, the show ___ ended. (anterior)",
       "options": [
         {
+          "id": "d",
+          "text": "did"
+        },
+        {
           "id": "a",
           "text": "had"
         },
@@ -281,10 +291,6 @@
         {
           "id": "c",
           "text": "was"
-        },
-        {
-          "id": "d",
-          "text": "did"
         }
       ],
       "lessonIds": [
@@ -303,12 +309,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-007",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -320,16 +327,16 @@
       "prompt": "While she ___ cooking, he set the table. (fondo)",
       "options": [
         {
+          "id": "c",
+          "text": "had"
+        },
+        {
           "id": "a",
           "text": "was"
         },
         {
           "id": "b",
           "text": "is"
-        },
-        {
-          "id": "c",
-          "text": "had"
         },
         {
           "id": "d",
@@ -352,12 +359,13 @@
       "explanation": "El fondo con «while» usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-008",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -373,12 +381,12 @@
           "text": "had"
         },
         {
-          "id": "b",
-          "text": "have"
-        },
-        {
           "id": "c",
           "text": "were"
+        },
+        {
+          "id": "b",
+          "text": "have"
         },
         {
           "id": "d",
@@ -401,12 +409,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-009",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -418,20 +427,20 @@
       "prompt": "I ___ reading when the phone rang. (fondo)",
       "options": [
         {
-          "id": "a",
-          "text": "was"
-        },
-        {
-          "id": "b",
-          "text": "am"
+          "id": "d",
+          "text": "did"
         },
         {
           "id": "c",
           "text": "had"
         },
         {
-          "id": "d",
-          "text": "did"
+          "id": "b",
+          "text": "am"
+        },
+        {
+          "id": "a",
+          "text": "was"
         }
       ],
       "lessonIds": [
@@ -450,12 +459,13 @@
       "explanation": "El fondo usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-010",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -499,12 +509,13 @@
       "explanation": "«know» es un verbo de estado."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-011",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -516,20 +527,20 @@
       "prompt": "When I arrived, she ___ left. (anterior)",
       "options": [
         {
-          "id": "a",
-          "text": "had"
-        },
-        {
           "id": "b",
           "text": "has"
         },
         {
-          "id": "c",
-          "text": "was"
-        },
-        {
           "id": "d",
           "text": "did"
+        },
+        {
+          "id": "a",
+          "text": "had"
+        },
+        {
+          "id": "c",
+          "text": "was"
         }
       ],
       "lessonIds": [
@@ -548,12 +559,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-012",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -565,16 +577,16 @@
       "prompt": "The rain ___ as she walked home. (fondo)",
       "options": [
         {
+          "id": "c",
+          "text": "had fallen"
+        },
+        {
           "id": "a",
           "text": "was falling"
         },
         {
           "id": "b",
           "text": "fell"
-        },
-        {
-          "id": "c",
-          "text": "had fallen"
         },
         {
           "id": "d",
@@ -597,12 +609,13 @@
       "explanation": "El fondo usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-013",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -618,16 +631,16 @@
           "text": "had been"
         },
         {
-          "id": "b",
-          "text": "had"
+          "id": "d",
+          "text": "did"
         },
         {
           "id": "c",
           "text": "were"
         },
         {
-          "id": "d",
-          "text": "did"
+          "id": "b",
+          "text": "had"
         }
       ],
       "lessonIds": [
@@ -646,12 +659,13 @@
       "explanation": "La duración anterior usa past perfect continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-014",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -663,16 +677,16 @@
       "prompt": "She ___ dinner when I called. (fondo)",
       "options": [
         {
-          "id": "a",
-          "text": "was cooking"
+          "id": "c",
+          "text": "had cooked"
         },
         {
           "id": "b",
           "text": "cooked"
         },
         {
-          "id": "c",
-          "text": "had cooked"
+          "id": "a",
+          "text": "was cooking"
         },
         {
           "id": "d",
@@ -695,12 +709,13 @@
       "explanation": "El fondo usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-015",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -716,16 +731,16 @@
           "text": "had finished"
         },
         {
-          "id": "b",
-          "text": "has finished"
-        },
-        {
           "id": "c",
           "text": "was finishing"
         },
         {
           "id": "d",
           "text": "finished"
+        },
+        {
+          "id": "b",
+          "text": "has finished"
         }
       ],
       "lessonIds": [
@@ -744,12 +759,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-016",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -761,8 +777,8 @@
       "prompt": "When I arrived, she stayed. (ella se quedó)",
       "options": [
         {
-          "id": "a",
-          "text": "stayed"
+          "id": "d",
+          "text": "had been staying"
         },
         {
           "id": "b",
@@ -773,8 +789,8 @@
           "text": "was staying"
         },
         {
-          "id": "d",
-          "text": "had been staying"
+          "id": "a",
+          "text": "stayed"
         }
       ],
       "lessonIds": [
@@ -793,12 +809,13 @@
       "explanation": "Si se quedó, usamos past simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-017",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -814,16 +831,16 @@
           "text": "had left"
         },
         {
+          "id": "d",
+          "text": "had been leaving"
+        },
+        {
           "id": "b",
           "text": "left"
         },
         {
           "id": "c",
           "text": "was leaving"
-        },
-        {
-          "id": "d",
-          "text": "had been leaving"
         }
       ],
       "lessonIds": [
@@ -842,12 +859,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-018",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -859,20 +877,20 @@
       "prompt": "While she was cooking, he ___ the table. (evento)",
       "options": [
         {
-          "id": "a",
-          "text": "set"
-        },
-        {
           "id": "b",
           "text": "was setting"
         },
         {
-          "id": "c",
-          "text": "had set"
+          "id": "a",
+          "text": "set"
         },
         {
           "id": "d",
           "text": "had been setting"
+        },
+        {
+          "id": "c",
+          "text": "had set"
         }
       ],
       "lessonIds": [
@@ -891,12 +909,13 @@
       "explanation": "El evento principal usa past simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-019",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -912,16 +931,16 @@
           "text": "rang"
         },
         {
-          "id": "b",
-          "text": "was ringing"
-        },
-        {
           "id": "c",
           "text": "had rung"
         },
         {
           "id": "d",
           "text": "had been ringing"
+        },
+        {
+          "id": "b",
+          "text": "was ringing"
         }
       ],
       "lessonIds": [
@@ -940,12 +959,13 @@
       "explanation": "La interrupción usa past simple."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-020",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -957,20 +977,20 @@
       "prompt": "By the time we arrived, they ___ left. (anterior)",
       "options": [
         {
-          "id": "a",
-          "text": "had"
+          "id": "d",
+          "text": "did"
         },
         {
-          "id": "b",
-          "text": "have"
+          "id": "a",
+          "text": "had"
         },
         {
           "id": "c",
           "text": "were"
         },
         {
-          "id": "d",
-          "text": "did"
+          "id": "b",
+          "text": "have"
         }
       ],
       "lessonIds": [
@@ -989,12 +1009,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-021",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -1038,12 +1059,13 @@
       "explanation": "La duración anterior usa past perfect continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-022",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -1055,20 +1077,20 @@
       "prompt": "As soon as she ___ the news, she called me. (anterior)",
       "options": [
         {
-          "id": "a",
-          "text": "had heard"
+          "id": "d",
+          "text": "heard"
         },
         {
           "id": "b",
           "text": "has heard"
         },
         {
-          "id": "c",
-          "text": "was hearing"
+          "id": "a",
+          "text": "had heard"
         },
         {
-          "id": "d",
-          "text": "heard"
+          "id": "c",
+          "text": "was hearing"
         }
       ],
       "lessonIds": [
@@ -1087,12 +1109,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-023",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -1104,16 +1127,16 @@
       "prompt": "The band ___ playing when we arrived. (fondo)",
       "options": [
         {
+          "id": "c",
+          "text": "had"
+        },
+        {
           "id": "a",
           "text": "was"
         },
         {
           "id": "b",
           "text": "is"
-        },
-        {
-          "id": "c",
-          "text": "had"
         },
         {
           "id": "d",
@@ -1136,12 +1159,13 @@
       "explanation": "El fondo usa past continuous."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-024",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -1157,16 +1181,16 @@
           "text": "had read"
         },
         {
-          "id": "b",
-          "text": "has read"
+          "id": "d",
+          "text": "read"
         },
         {
           "id": "c",
           "text": "was reading"
         },
         {
-          "id": "d",
-          "text": "read"
+          "id": "b",
+          "text": "has read"
         }
       ],
       "lessonIds": [
@@ -1185,12 +1209,13 @@
       "explanation": "El evento anterior usa past perfect."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b2-advanced-narrative-tenses-sc-025",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "past-tenses",
       "subtopic": "advanced-narrative-tenses",
@@ -1202,12 +1227,12 @@
       "prompt": "While they ___, the lights went out. (fondo)",
       "options": [
         {
-          "id": "a",
-          "text": "were eating"
-        },
-        {
           "id": "b",
           "text": "ate"
+        },
+        {
+          "id": "a",
+          "text": "were eating"
         },
         {
           "id": "c",

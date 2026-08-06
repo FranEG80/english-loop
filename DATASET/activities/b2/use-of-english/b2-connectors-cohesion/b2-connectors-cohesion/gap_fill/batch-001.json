@@ -1,0 +1,1187 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-connectors-cohesion-gap-fill-001",
+  "level": "B2",
+  "category": "use-of-english",
+  "topic": "b2-connectors-cohesion",
+  "subtopic": "b2-connectors-cohesion",
+  "lessonId": "b2-connectors-cohesion",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which sequence linker fits the school-trial paragraph?",
+      "gapText": "The project began with a small trial. [gap1], the method was extended to three other schools.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Subsequently"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Subsequently means afterwards."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which determiner fits the alternative-route paragraph?",
+      "gapText": "The road was closed because of flooding. We therefore had to find [gap1] route.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "another"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Another refers to one more route of the same kind."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which relative pronoun refers to the checking action?",
+      "gapText": "The figures were checked twice, [gap1] reduced the risk of an arithmetic error.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "which"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Which refers to the preceding checking action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which concessive linker fits the long-questions paragraph?",
+      "gapText": "The survey had a high response rate, [gap1] the questions were quite long.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "although"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Although introduces a contrast."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition belongs in the residents' request phrase?",
+      "gapText": "The report was written in response [gap1] requests from residents.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The phrase is in response to."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which full linker introduces the reduced-budget clause?",
+      "gapText": "The team continued its work despite [gap1] the budget had been reduced.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the fact that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Despite the fact that can introduce a finite clause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which demonstrative replaces the singular pilot sample?",
+      "gapText": "The second sample was larger than [gap1] used in the pilot study.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "That replaces the singular sample."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which method question word fits the interview paragraph?",
+      "gapText": "The author explains [gap1] the interviews were conducted and why the sample was selected.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "how"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "How introduces the method."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which concessive adverb fits the funded proposal?",
+      "gapText": "The proposal was ambitious; [gap1], the board agreed to fund it.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nevertheless"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Nevertheless signals concession."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which relative phrase refers to the adult participants?",
+      "gapText": "The study included adults, many [gap1] had never used the device before.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "of whom"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Many of whom refers to people."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition completes the manager's insistence?",
+      "gapText": "The manager insisted [gap1] seeing the original documents before signing.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "on"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Insist on is followed by an -ing form."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition completes the safety-report phrase?",
+      "gapText": "The decision was made on account [gap1] the latest safety report.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "of"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The fixed phrase is on account of."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which pronoun refers to the repeated survey?",
+      "gapText": "The survey was repeated, [gap1] made the comparison more reliable.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "which"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Which refers to the act of repeating the survey."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which comparison word fits the efficiency paragraph?",
+      "gapText": "The new process is not as efficient [gap1] the old one, but it is safer.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Not as ... as is the comparison pattern."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition completes the congestion-purpose phrase?",
+      "gapText": "The policy was introduced with a view [gap1] reducing congestion in the centre.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "With a view to is followed by an -ing form."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition belongs in the critics' reaction phrase?",
+      "gapText": "The proposal was accepted, much [gap1] the critics' disappointment.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Much to someone's disappointment is fixed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition limits the recommendation claim?",
+      "gapText": "The recommendation is valid insofar [gap1] it is based on current evidence.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Insofar as means to the extent that."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which correlative linker completes the researchers' explanation?",
+      "gapText": "The researchers explain not only what changed, [gap1] also why it changed.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "but"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Not only ... but also is correlative."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which infinitive marker completes the sampling-purpose phrase?",
+      "gapText": "The sample was selected so as [gap1] represent three age groups.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "So as to is followed by an infinitive."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which relative phrase refers to the examples?",
+      "gapText": "The report contains several examples, none [gap1] is entirely representative.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "of which"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "None of which refers to examples."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which word introduces the local-authority condition?",
+      "gapText": "The policy may work, provided [gap1] local authorities receive enough funding.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Provided that introduces a condition."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which particle completes the consistency phrasal verb?",
+      "gapText": "The evidence was weak at first, but it turned [gap1] to be consistent.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "out"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Turn out means eventually prove to be."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which reason word fits the specialised-terminology paragraph?",
+      "gapText": "The article is difficult to follow, not least [gap1] the terminology is highly specialised.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "because"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Because introduces the reason."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which plural pronoun refers to the results?",
+      "gapText": "The results are more convincing than [gap1] initially appeared.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "they"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "They refers to the plural results."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-connectors-cohesion-cp-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "complete_paragraph",
+      "category": "use-of-english",
+      "topic": "b2-connectors-cohesion",
+      "subtopic": "b2-connectors-cohesion",
+      "taxonomyNodeIds": [
+        "b2-connectors-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the paragraph with one word.",
+      "prompt": "Which preposition completes the reservations concession?",
+      "gapText": "The committee accepted the recommendation, albeit [gap1] some reservations.",
+      "gapLayout": "paragraph",
+      "lessonIds": [
+        "b2-connectors-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "open-cloze"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "with"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Albeit with some reservations is a reduced concessive phrase."
+    }
+  ]
+}

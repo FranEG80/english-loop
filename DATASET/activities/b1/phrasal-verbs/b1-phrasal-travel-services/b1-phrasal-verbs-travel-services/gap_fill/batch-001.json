@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-phrasal-verbs-travel-services-gap-fill-001",
+  "level": "B1",
+  "category": "phrasal-verbs",
+  "topic": "b1-phrasal-travel-services",
+  "subtopic": "b1-phrasal-travel-services",
+  "lessonId": "b1-phrasal-verbs-travel-services",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Have you registered? B: Yes, we ___ online.",
+      "gapText": "A: Have you registered?\nB: Yes, we [gap1] online.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "airport"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "checked in"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Checked in means registered for the flight."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: When must we leave the hotel? B: We have to ___ by eleven.",
+      "gapText": "A: When must we leave the hotel?\nB: We have to [gap1] by eleven.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "hotel"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "check out"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Check out means leave the hotel formally."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: What time do we leave? B: We ___ at six.",
+      "gapText": "A: What time do we leave?\nB: We [gap1] at six.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "departure"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "set off"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Set off means start the journey."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Are we on the right bus? B: Yes, we ___ near the station.",
+      "gapText": "A: Are we on the right bus?\nB: Yes, we [gap1] near the station.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "transport"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "got on"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Got on means boarded the bus."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Is this our stop? B: Yes, let us ___ here.",
+      "gapText": "A: Is this our stop?\nB: Yes, let us [gap1] here.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "transport"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "get off"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Get off means leave the bus."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Where will the taxi leave us? B: It will ___ us ___ at the hotel.",
+      "gapText": "A: Where will the taxi leave us?\nB: It will [gap1] us [gap2] at the hotel.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "arrival"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "drop off"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Drop off means take passengers to a destination."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Will the ferry sail? B: No, they may ___ it ___ because of the storm.",
+      "gapText": "A: Will the ferry sail?\nB: No, they may [gap1] it [gap2] because of the storm.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "cancellation"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "call off"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Call off means cancel."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Why have we stopped? B: The coach has ___.",
+      "gapText": "A: Why have we stopped?\nB: The coach has [gap1].",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "breakdown"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "broken down"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Broken down means stopped working."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Do we have enough fuel? B: No, we have ___ petrol.",
+      "gapText": "A: Do we have enough fuel?\nB: No, we have [gap1] petrol.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "fuel"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "run out of"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Run out of means have no more fuel."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Is the tank full? B: Not yet; we need to ___ it.",
+      "gapText": "A: Is the tank full?\nB: Not yet; we need to [gap1] it.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "fuel"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "fill up"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Fill up means fill the tank."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: When did you learn the departure time? B: I ___ it online.",
+      "gapText": "A: When did you learn the departure time?\nB: I [gap1] it online.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "information"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "looked it up"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Look up means search for information."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: What is the last ferry time? B: I will ___ for you.",
+      "gapText": "A: What is the last ferry time?\nB: I will [gap1] for you.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "information"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "find out"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Find out means discover the information."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: What will the guide do? B: She will ___ the safety rules.",
+      "gapText": "A: What will the guide do?\nB: She will [gap1] the safety rules.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "safety"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "go over"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Go over means explain or review."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: What do I do with my passport? B: Please ___ it ___ at the desk.",
+      "gapText": "A: What do I do with my passport?\nB: Please [gap1] it [gap2] at the desk.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "documents"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "hand in"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Hand in means submit a document."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: What can we do in the old town? B: We can ___ and take photos.",
+      "gapText": "A: What can we do in the old town?\nB: We can [gap1] and take photos.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "tour"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "look around"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Look around means explore a place."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Why is the flight tomorrow? B: The airline had to ___ it ___ .",
+      "gapText": "A: Why is the flight tomorrow?\nB: The airline had to [gap1] it [gap2] .",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "delay"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "put off"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Put off means postpone."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Why are we late? B: The train was ___ by a signal problem.",
+      "gapText": "A: Why are we late?\nB: The train was [gap1] by a signal problem.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "delay"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "held up"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Hold up means delay."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Is the luggage case closed? B: No, the airline will ___ it ___ .",
+      "gapText": "A: Is the luggage case closed?\nB: No, the airline will [gap1] it [gap2] .",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "luggage"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "follow up"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Follow up means continue dealing with a case."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Can we use this road? B: No, we must ___ because of the flood.",
+      "gapText": "A: Can we use this road?\nB: No, we must [gap1] because of the flood.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "route"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "turn back"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Turn back means return along the route."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Have you completed the customs form? B: Yes, I ___ it.",
+      "gapText": "A: Have you completed the customs form?\nB: Yes, I [gap1] it.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "documents"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "filled it in"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Filled it in means completed the form."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Who is investigating the hotel complaint? B: The manager is ___ it.",
+      "gapText": "A: Who is investigating the hotel complaint?\nB: The manager is [gap1] it.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "service"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "looking into"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Looking into means investigating."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Why did the driver reverse? B: We had to ___ at the flooded road.",
+      "gapText": "A: Why did the driver reverse?\nB: We had to [gap1] at the flooded road.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "route"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "turn back"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Turn back means return from an obstacle."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: What must passengers remove? B: They must ___ their laptops.",
+      "gapText": "A: What must passengers remove?\nB: They must [gap1] their laptops.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "security"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "take out"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Take out means remove from a bag."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Do you know the ferry time? B: No, I will ___ it ___ .",
+      "gapText": "A: Do you know the ferry time?\nB: No, I will [gap1] it [gap2] .",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "information"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "find out"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Find out means discover information."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-travel-cd-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the travel dialogue with a phrasal verb.",
+      "prompt": "A: Where will the coach leave us? B: It will ___ us ___ outside the gallery.",
+      "gapText": "A: Where will the coach leave us?\nB: It will [gap1] us [gap2] outside the gallery.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "arrival"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "drop off"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Drop off means leave passengers at a destination."
+    }
+  ]
+}

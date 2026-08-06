@@ -1,29 +1,1489 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b2-advanced-connectors-discourse-word-order-001","level":"B2","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","lessonId":"b2-grammar-advanced-connectors-discourse","activityType":"word_order","activities":[
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-001","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the concession.","prompt":"Use although with a full clause.","tokens":[{"id":"t5","text":"consistent."},{"id":"t4","text":"is"},{"id":"t3","text":"pattern"},{"id":"t2","text":"the"},{"id":"t1","text":"Although the evidence is limited,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","although"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Although the evidence is limited, the pattern is consistent."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-002","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the noun-phrase concession.","prompt":"Use despite before the noun phrase.","tokens":[{"id":"t5","text":"useful."},{"id":"t4","text":"is"},{"id":"t3","text":"pattern"},{"id":"t2","text":"the"},{"id":"t1","text":"Despite the limited evidence,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","despite"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Despite the limited evidence, the pattern is useful."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-003","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the contrast marker.","prompt":"Start the second sentence with nevertheless.","tokens":[{"id":"t5","text":"useful."},{"id":"t4","text":"was"},{"id":"t3","text":"result"},{"id":"t2","text":"the"},{"id":"t1","text":"Nevertheless,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","nevertheless"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Nevertheless, the result was useful."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-004","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the consequence.","prompt":"Use consequently after the semicolon.","tokens":[{"id":"t5","text":"stopped."},{"id":"t4","text":"work"},{"id":"t3","text":"consequently,"},{"id":"t2","text":"expired;"},{"id":"t1","text":"The permit"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","consequence"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"The permit expired; consequently, work stopped."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-005","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the additive sentence.","prompt":"Add a second advantage with moreover.","tokens":[{"id":"t5","text":"mentoring."},{"id":"t4","text":"includes"},{"id":"t3","text":"it"},{"id":"t2","text":"Moreover,"},{"id":"t1","text":"the course is practical."}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","moreover"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"The course is practical. Moreover, it includes mentoring."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-006","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the condition.","prompt":"Use provided that before the clause.","tokens":[{"id":"t5","text":"removed."},{"id":"t4","text":"are"},{"id":"t3","text":"names"},{"id":"t2","text":"the"},{"id":"t1","text":"provided that"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","provided-that"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Provided that the names are removed."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-007","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Arrange the warning.","prompt":"Use otherwise to introduce the negative result.","tokens":[{"id":"t5","text":"lost."},{"id":"t4","text":"be"},{"id":"t3","text":"may"},{"id":"t2","text":"changes"},{"id":"t1","text":"Otherwise, the"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","otherwise"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Otherwise, the changes may be lost."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-008","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Arrange the parallel contrast.","prompt":"Contrast the two models with whereas.","tokens":[{"id":"t5","text":"durable."},{"id":"t4","text":"more"},{"id":"t3","text":"is"},{"id":"t2","text":"the second"},{"id":"t1","text":"Whereas the first model is cheap,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","whereas"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Whereas the first model is cheap, the second is more durable."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-009","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Arrange the gerund concession.","prompt":"Use despite arriving late.","tokens":[{"id":"t5","text":"meeting."},{"id":"t4","text":"the"},{"id":"t3","text":"joined"},{"id":"t2","text":"we"},{"id":"t1","text":"Despite arriving late,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","despite","gerund"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Despite arriving late, we joined the meeting."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-010","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Arrange the clause with even though.","prompt":"Use a full subordinate clause.","tokens":[{"id":"t5","text":"out."},{"id":"t4","text":"sold"},{"id":"t3","text":"event"},{"id":"t2","text":"the"},{"id":"t1","text":"Even though the room was small,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","even-though"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Even though the room was small, the event sold out."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-011","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Arrange the result marker.","prompt":"Use therefore after the semicolon.","tokens":[{"id":"t5","text":"connection."},{"id":"t4","text":"the"},{"id":"t3","text":"missed"},{"id":"t2","text":"we"},{"id":"t1","text":"The flight was delayed; therefore,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","therefore"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"The flight was delayed; therefore, we missed the connection."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-012","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Arrange the reformulation.","prompt":"Use in other words to clarify the implication.","tokens":[{"id":"t5","text":"caution."},{"id":"t4","text":"needs"},{"id":"t3","text":"result"},{"id":"t2","text":"the"},{"id":"t1","text":"In other words, the sample was not representative;"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","reformulation"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"In other words, the sample was not representative; the result needs caution."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-013","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Arrange the additive sentence.","prompt":"Use in addition to add a benefit.","tokens":[{"id":"t5","text":"repeat."},{"id":"t4","text":"to"},{"id":"t3","text":"easy"},{"id":"t2","text":"is"},{"id":"t1","text":"In addition, the method is inexpensive; it"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","addition"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"In addition, the method is inexpensive; it is easy to repeat."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-014","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Arrange the contrast marker.","prompt":"Use on the other hand for the second option.","tokens":[{"id":"t5","text":"faster."},{"id":"t4","text":"is"},{"id":"t3","text":"second"},{"id":"t2","text":"the"},{"id":"t1","text":"On the other hand, the first route is scenic;"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","contrast"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"On the other hand, the first route is scenic; the second is faster."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-015","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Arrange the condition.","prompt":"Use as long as for the trial.","tokens":[{"id":"t5","text":"agrees."},{"id":"t4","text":"volunteer"},{"id":"t3","text":"each"},{"id":"t2","text":"as long as"},{"id":"t1","text":"We will extend the trial"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","as-long-as"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"We will extend the trial as long as each volunteer agrees."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-016","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Arrange the result with as a result.","prompt":"Link the server failure to the system stopping.","tokens":[{"id":"t5","text":"stopped."},{"id":"t4","text":"system"},{"id":"t3","text":"the"},{"id":"t2","text":"as a result,"},{"id":"t1","text":"The server failed;"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","as-a-result"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"The server failed; as a result, the system stopped."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-017","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Arrange the concessive sentence.","prompt":"Use in spite of before a gerund.","tokens":[{"id":"t5","text":"discussion."},{"id":"t4","text":"the"},{"id":"t3","text":"joined"},{"id":"t2","text":"we"},{"id":"t1","text":"In spite of arriving late,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","in-spite-of"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"In spite of arriving late, we joined the discussion."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-018","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Arrange the result sentence.","prompt":"Arrange the consequence caused by an expired permit.","tokens":[{"id":"t5","text":"stopped."},{"id":"t4","text":"work"},{"id":"t3","text":"consequently,"},{"id":"t2","text":"expired;"},{"id":"t1","text":"The permit"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","consequently"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"The permit expired; consequently, work stopped."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-019","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Arrange the concession.","prompt":"Use even though with a full clause.","tokens":[{"id":"t5","text":"acted."},{"id":"t4","text":"team"},{"id":"t3","text":"the"},{"id":"t2","text":"uncertain, the"},{"id":"t1","text":"Even though the forecast was"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","even-though"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Even though the forecast was uncertain, the team acted."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-020","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Arrange the formal result sentence.","prompt":"Use therefore with correct punctuation.","tokens":[{"id":"t5","text":"cautious."},{"id":"t4","text":"is"},{"id":"t3","text":"conclusion"},{"id":"t2","text":"the"},{"id":"t1","text":"The sample was small; therefore,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","therefore","punctuation"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"The sample was small; therefore, the conclusion is cautious."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-021","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Arrange the condition.","prompt":"Use provided that in a publication policy.","tokens":[{"id":"t5","text":"source."},{"id":"t4","text":"the"},{"id":"t3","text":"cite"},{"id":"t2","text":"you"},{"id":"t1","text":"You may quote the findings provided that"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","provided-that"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"You may quote the findings provided that you cite the source."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-022","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Arrange the contrast between routes.","prompt":"Use on the other hand to shift perspective.","tokens":[{"id":"t5","text":"faster."},{"id":"t4","text":"is"},{"id":"t3","text":"second"},{"id":"t2","text":"the"},{"id":"t1","text":"On the other hand, the first route is scenic;"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","contrast"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"On the other hand, the first route is scenic; the second is faster."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-023","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Arrange the reformulation.","prompt":"Clarify the limitation with in other words.","tokens":[{"id":"t5","text":"caution."},{"id":"t4","text":"needs"},{"id":"t3","text":"result"},{"id":"t2","text":"the"},{"id":"t1","text":"In other words, the sample was not representative;"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","reformulation"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"In other words, the sample was not representative; the result needs caution."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-024","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Arrange the warning sentence.","prompt":"Use otherwise as the final connector.","tokens":[{"id":"t5","text":"disappear."},{"id":"t4","text":"may"},{"id":"t3","text":"work"},{"id":"t2","text":"the"},{"id":"t1","text":"Back up the files; otherwise,"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","otherwise"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Back up the files; otherwise, the work may disappear."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-wo-025","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Arrange the final concession.","prompt":"Use even though to introduce uncertainty.","tokens":[{"id":"t5","text":"acted."},{"id":"t4","text":"team"},{"id":"t3","text":"the"},{"id":"t2","text":"uncertain,"},{"id":"t1","text":"Even though the forecast was"}],"lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","even-though"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Even though the forecast was uncertain, the team acted."}
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-connectors-discourse-word-order-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "linking-discourse",
+  "subtopic": "advanced-connectors-discourse-markers",
+  "lessonId": "b2-grammar-advanced-connectors-discourse",
+  "activityType": "word_order",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the concession.",
+      "prompt": "Use although with a full clause.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Although the evidence is limited,"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "pattern"
+        },
+        {
+          "id": "t4",
+          "text": "is"
+        },
+        {
+          "id": "t5",
+          "text": "consistent."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "although"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Although the evidence is limited, the pattern is consistent."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the noun-phrase concession.",
+      "prompt": "Use despite before the noun phrase.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Despite the limited evidence,"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "pattern"
+        },
+        {
+          "id": "t4",
+          "text": "is"
+        },
+        {
+          "id": "t5",
+          "text": "useful."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "despite"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Despite the limited evidence, the pattern is useful."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the contrast marker.",
+      "prompt": "Start the second sentence with nevertheless.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Nevertheless,"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "result"
+        },
+        {
+          "id": "t4",
+          "text": "was"
+        },
+        {
+          "id": "t5",
+          "text": "useful."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "nevertheless"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Nevertheless, the result was useful."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the consequence.",
+      "prompt": "Use consequently after the semicolon.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The permit"
+        },
+        {
+          "id": "t2",
+          "text": "expired;"
+        },
+        {
+          "id": "t3",
+          "text": "consequently,"
+        },
+        {
+          "id": "t4",
+          "text": "work"
+        },
+        {
+          "id": "t5",
+          "text": "stopped."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "consequence"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "The permit expired; consequently, work stopped."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the additive sentence.",
+      "prompt": "Add a second advantage with moreover.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "the course is practical."
+        },
+        {
+          "id": "t2",
+          "text": "Moreover,"
+        },
+        {
+          "id": "t3",
+          "text": "it"
+        },
+        {
+          "id": "t4",
+          "text": "includes"
+        },
+        {
+          "id": "t5",
+          "text": "mentoring."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "moreover"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "The course is practical. Moreover, it includes mentoring."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the condition.",
+      "prompt": "Use provided that before the clause.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "provided that"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "names"
+        },
+        {
+          "id": "t4",
+          "text": "are"
+        },
+        {
+          "id": "t5",
+          "text": "removed."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "provided-that"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Provided that the names are removed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the warning.",
+      "prompt": "Use otherwise to introduce the negative result.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Otherwise, the"
+        },
+        {
+          "id": "t2",
+          "text": "changes"
+        },
+        {
+          "id": "t3",
+          "text": "may"
+        },
+        {
+          "id": "t4",
+          "text": "be"
+        },
+        {
+          "id": "t5",
+          "text": "lost."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "otherwise"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Otherwise, the changes may be lost."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the parallel contrast.",
+      "prompt": "Contrast the two models with whereas.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Whereas the first model is cheap,"
+        },
+        {
+          "id": "t2",
+          "text": "the second"
+        },
+        {
+          "id": "t3",
+          "text": "is"
+        },
+        {
+          "id": "t4",
+          "text": "more"
+        },
+        {
+          "id": "t5",
+          "text": "durable."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "whereas"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Whereas the first model is cheap, the second is more durable."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the gerund concession.",
+      "prompt": "Use despite arriving late.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Despite arriving late,"
+        },
+        {
+          "id": "t2",
+          "text": "we"
+        },
+        {
+          "id": "t3",
+          "text": "joined"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "meeting."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "despite",
+        "gerund"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Despite arriving late, we joined the meeting."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the clause with even though.",
+      "prompt": "Use a full subordinate clause.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Even though the room was small,"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "event"
+        },
+        {
+          "id": "t4",
+          "text": "sold"
+        },
+        {
+          "id": "t5",
+          "text": "out."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "even-though"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Even though the room was small, the event sold out."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the result marker.",
+      "prompt": "Use therefore after the semicolon.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The flight was delayed; therefore,"
+        },
+        {
+          "id": "t2",
+          "text": "we"
+        },
+        {
+          "id": "t3",
+          "text": "missed"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "connection."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "therefore"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "The flight was delayed; therefore, we missed the connection."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the reformulation.",
+      "prompt": "Use in other words to clarify the implication.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "In other words, the sample was not representative;"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "result"
+        },
+        {
+          "id": "t4",
+          "text": "needs"
+        },
+        {
+          "id": "t5",
+          "text": "caution."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "reformulation"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "In other words, the sample was not representative; the result needs caution."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the additive sentence.",
+      "prompt": "Use in addition to add a benefit.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "In addition, the method is inexpensive; it"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "easy"
+        },
+        {
+          "id": "t4",
+          "text": "to"
+        },
+        {
+          "id": "t5",
+          "text": "repeat."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "addition"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "In addition, the method is inexpensive; it is easy to repeat."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the contrast marker.",
+      "prompt": "Use on the other hand for the second option.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "On the other hand, the first route is scenic;"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "second"
+        },
+        {
+          "id": "t4",
+          "text": "is"
+        },
+        {
+          "id": "t5",
+          "text": "faster."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "contrast"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "On the other hand, the first route is scenic; the second is faster."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the condition.",
+      "prompt": "Use as long as for the trial.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We will extend the trial"
+        },
+        {
+          "id": "t2",
+          "text": "as long as"
+        },
+        {
+          "id": "t3",
+          "text": "each"
+        },
+        {
+          "id": "t4",
+          "text": "volunteer"
+        },
+        {
+          "id": "t5",
+          "text": "agrees."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "as-long-as"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "We will extend the trial as long as each volunteer agrees."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the result with as a result.",
+      "prompt": "Link the server failure to the system stopping.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The server failed;"
+        },
+        {
+          "id": "t2",
+          "text": "as a result,"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "system"
+        },
+        {
+          "id": "t5",
+          "text": "stopped."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "as-a-result"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "The server failed; as a result, the system stopped."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the concessive sentence.",
+      "prompt": "Use in spite of before a gerund.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "In spite of arriving late,"
+        },
+        {
+          "id": "t2",
+          "text": "we"
+        },
+        {
+          "id": "t3",
+          "text": "joined"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "discussion."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "in-spite-of"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "In spite of arriving late, we joined the discussion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the result sentence.",
+      "prompt": "Arrange the consequence caused by an expired permit.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The permit"
+        },
+        {
+          "id": "t2",
+          "text": "expired;"
+        },
+        {
+          "id": "t3",
+          "text": "consequently,"
+        },
+        {
+          "id": "t4",
+          "text": "work"
+        },
+        {
+          "id": "t5",
+          "text": "stopped."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "consequently"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "The permit expired; consequently, work stopped."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the concession.",
+      "prompt": "Use even though with a full clause.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Even though the forecast was"
+        },
+        {
+          "id": "t2",
+          "text": "uncertain, the"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "team"
+        },
+        {
+          "id": "t5",
+          "text": "acted."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "even-though"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Even though the forecast was uncertain, the team acted."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the formal result sentence.",
+      "prompt": "Use therefore with correct punctuation.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The sample was small; therefore,"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "conclusion"
+        },
+        {
+          "id": "t4",
+          "text": "is"
+        },
+        {
+          "id": "t5",
+          "text": "cautious."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "therefore",
+        "punctuation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "The sample was small; therefore, the conclusion is cautious."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the condition.",
+      "prompt": "Use provided that in a publication policy.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "You may quote the findings provided that"
+        },
+        {
+          "id": "t2",
+          "text": "you"
+        },
+        {
+          "id": "t3",
+          "text": "cite"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "source."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "provided-that"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "You may quote the findings provided that you cite the source."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the contrast between routes.",
+      "prompt": "Use on the other hand to shift perspective.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "On the other hand, the first route is scenic;"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "second"
+        },
+        {
+          "id": "t4",
+          "text": "is"
+        },
+        {
+          "id": "t5",
+          "text": "faster."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "contrast"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "On the other hand, the first route is scenic; the second is faster."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the reformulation.",
+      "prompt": "Clarify the limitation with in other words.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "In other words, the sample was not representative;"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "result"
+        },
+        {
+          "id": "t4",
+          "text": "needs"
+        },
+        {
+          "id": "t5",
+          "text": "caution."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "reformulation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "In other words, the sample was not representative; the result needs caution."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the warning sentence.",
+      "prompt": "Use otherwise as the final connector.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Back up the files; otherwise,"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "work"
+        },
+        {
+          "id": "t4",
+          "text": "may"
+        },
+        {
+          "id": "t5",
+          "text": "disappear."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "otherwise"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Back up the files; otherwise, the work may disappear."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-wo-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the final concession.",
+      "prompt": "Use even though to introduce uncertainty.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Even though the forecast was"
+        },
+        {
+          "id": "t2",
+          "text": "uncertain,"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "team"
+        },
+        {
+          "id": "t5",
+          "text": "acted."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "even-though"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Even though the forecast was uncertain, the team acted."
+    }
   ]
 }

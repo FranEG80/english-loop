@@ -1,0 +1,829 @@
+{
+  "generatedFrom": "activities",
+  "totals": {
+    "sourceFiles": 492,
+    "sourceActivities": 12275,
+    "targetFiles": 491,
+    "targetActivities": 12275
+  },
+  "typeMoves": [
+    {
+      "from": "single_choice",
+      "to": "single_choice",
+      "activities": 2200
+    },
+    {
+      "from": "fill_blank",
+      "to": "gap_fill",
+      "activities": 2174
+    },
+    {
+      "from": "word_order",
+      "to": "word_order",
+      "activities": 1650
+    },
+    {
+      "from": "true_false",
+      "to": "true_false",
+      "activities": 1500
+    },
+    {
+      "from": "matching",
+      "to": "matching",
+      "activities": 875
+    },
+    {
+      "from": "error_correction",
+      "to": "error_correction",
+      "activities": 550
+    },
+    {
+      "from": "multiple_choice_cloze",
+      "to": "single_choice",
+      "activities": 400
+    },
+    {
+      "from": "multiple_select",
+      "to": "multiple_choice",
+      "activities": 325
+    },
+    {
+      "from": "sentence_transformation",
+      "to": "sentence_rewrite",
+      "activities": 275
+    },
+    {
+      "from": "key_word_transformation",
+      "to": "key_word_transformation",
+      "activities": 250
+    },
+    {
+      "from": "complete_paragraph",
+      "to": "gap_fill",
+      "activities": 226
+    },
+    {
+      "from": "complete_dialogue",
+      "to": "gap_fill",
+      "activities": 200
+    },
+    {
+      "from": "phrasal_verb_choice",
+      "to": "single_choice",
+      "activities": 200
+    },
+    {
+      "from": "guided_writing",
+      "to": "guided_writing",
+      "activities": 175
+    },
+    {
+      "from": "reading_comprehension",
+      "to": "single_choice",
+      "activities": 175
+    },
+    {
+      "from": "collocation_choice",
+      "to": "single_choice",
+      "activities": 150
+    },
+    {
+      "from": "vocabulary_in_context",
+      "to": "single_choice",
+      "activities": 150
+    },
+    {
+      "from": "open_cloze",
+      "to": "gap_fill",
+      "activities": 150
+    },
+    {
+      "from": "preposition_choice",
+      "to": "single_choice",
+      "activities": 150
+    },
+    {
+      "from": "gapped_text",
+      "to": "single_choice",
+      "activities": 125
+    },
+    {
+      "from": "reading_matching",
+      "to": "matching",
+      "activities": 125
+    },
+    {
+      "from": "error_identification",
+      "to": "true_false",
+      "activities": 75
+    },
+    {
+      "from": "multi_gap_fill",
+      "to": "gap_fill",
+      "activities": 75
+    },
+    {
+      "from": "word_formation",
+      "to": "word_formation",
+      "activities": 75
+    },
+    {
+      "from": "complete_dialogue",
+      "to": "single_choice",
+      "activities": 25
+    }
+  ],
+  "issuesByRule": [
+    {
+      "rule": "kwt-missing-key-word",
+      "activities": 25
+    },
+    {
+      "rule": "answer-inside-passage",
+      "activities": 25
+    },
+    {
+      "rule": "single-answer-multi-gap",
+      "activities": 23
+    },
+    {
+      "rule": "kwt-answer-length",
+      "activities": 21
+    },
+    {
+      "rule": "word-order-token-mismatch",
+      "activities": 13
+    },
+    {
+      "rule": "kwt-key-word-absent",
+      "activities": 11
+    },
+    {
+      "rule": "kwt-contraction",
+      "activities": 4
+    },
+    {
+      "rule": "answer-equals-prompt",
+      "activities": 3
+    },
+    {
+      "rule": "missing-gap",
+      "activities": 2
+    },
+    {
+      "rule": "word-formation-answer-equals-cue",
+      "activities": 1
+    },
+    {
+      "rule": "duplicate-option-text",
+      "activities": 1
+    }
+  ],
+  "issues": [
+    {
+      "activityId": "b1-direct-indirect-questions-ec-018",
+      "rule": "answer-equals-prompt",
+      "detail": "La respuesta es idéntica al enunciado: no hay nada que transformar."
+    },
+    {
+      "activityId": "b1-first-conditional-ec-013",
+      "rule": "answer-equals-prompt",
+      "detail": "La respuesta es idéntica al enunciado: no hay nada que transformar."
+    },
+    {
+      "activityId": "b1-first-conditional-ec-014",
+      "rule": "answer-equals-prompt",
+      "detail": "La respuesta es idéntica al enunciado: no hay nada que transformar."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-001",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-002",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-003",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-004",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-005",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-006",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-007",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-008",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-009",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-010",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-011",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-012",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-013",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-014",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-015",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-016",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-017",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-018",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-019",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-020",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-021",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-022",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-023",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-024",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-prepositions-abstract-relations-st-025",
+      "rule": "answer-inside-passage",
+      "detail": "La respuesta aparece literal en el pasaje de partida."
+    },
+    {
+      "activityId": "b2-lexical-precision-vic-003",
+      "rule": "duplicate-option-text",
+      "detail": "Dos opciones comparten el mismo texto."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-002",
+      "rule": "kwt-answer-length",
+      "detail": "«washed» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-003",
+      "rule": "kwt-answer-length",
+      "detail": "«late» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-004",
+      "rule": "kwt-answer-length",
+      "detail": "«since» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-007",
+      "rule": "kwt-answer-length",
+      "detail": "«painted» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-008",
+      "rule": "kwt-answer-length",
+      "detail": "«me» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-009",
+      "rule": "kwt-answer-length",
+      "detail": "«since» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-015",
+      "rule": "kwt-answer-length",
+      "detail": "«since» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-018",
+      "rule": "kwt-answer-length",
+      "detail": "«completed» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b1-grammar-reframing-kwt-019",
+      "rule": "kwt-answer-length",
+      "detail": "«since» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-009",
+      "rule": "kwt-answer-length",
+      "detail": "«had been working for two hours» cuenta 6 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-011",
+      "rule": "kwt-answer-length",
+      "detail": "«is thought to have discovered the pattern» cuenta 7 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-014",
+      "rule": "kwt-answer-length",
+      "detail": "«would not have missed the deadline» cuenta 6 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-016",
+      "rule": "kwt-answer-length",
+      "detail": "«is expected to have reopened by Friday» cuenta 7 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-022",
+      "rule": "kwt-answer-length",
+      "detail": "«had to submit the form that day» cuenta 7 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-046",
+      "rule": "kwt-answer-length",
+      "detail": "«left» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-067",
+      "rule": "kwt-answer-length",
+      "detail": "«stay» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-092",
+      "rule": "kwt-answer-length",
+      "detail": "«arrived» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-129",
+      "rule": "kwt-answer-length",
+      "detail": "«may» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-156",
+      "rule": "kwt-answer-length",
+      "detail": "«was» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-167",
+      "rule": "kwt-answer-length",
+      "detail": "«left» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-192",
+      "rule": "kwt-answer-length",
+      "detail": "«waited» cuenta 1 palabras; Part 4 exige entre 2 y 5."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-006",
+      "rule": "kwt-contraction",
+      "detail": "«hadn't worked» usa una contracción; Part 4 exige la forma completa."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-007",
+      "rule": "kwt-contraction",
+      "detail": "«hadn't frozen» usa una contracción; Part 4 exige la forma completa."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-017",
+      "rule": "kwt-contraction",
+      "detail": "«wouldn't have got» usa una contracción; Part 4 exige la forma completa."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-024",
+      "rule": "kwt-contraction",
+      "detail": "«wouldn't have needed» usa una contracción; Part 4 exige la forma completa."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-009",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"WORKED\" no aparece sin modificar en «had been working for two hours»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-045",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"SMOKED\" no aparece sin modificar en «did not smoke»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-067",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"STAYED\" no aparece sin modificar en «stay»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-113",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"IMPROVING\" no aparece sin modificar en «to be»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-116",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"COME\" no aparece sin modificar en «could not»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-117",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"SMOKED\" no aparece sin modificar en «did not smoke»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-140",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"GO\" no aparece sin modificar en «had to»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-142",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"INTERRUPTED\" no aparece sin modificar en «did not interrupt»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-165",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"LEAVE\" no aparece sin modificar en «had to»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-189",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"REJECTED\" no aparece sin modificar en «to have been»."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-190",
+      "rule": "kwt-key-word-absent",
+      "detail": "La clave \"LEAVE\" no aparece sin modificar en «had to»."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-001",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-002",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-003",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-004",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-005",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-006",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-007",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-008",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-009",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-010",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-011",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-012",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-013",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-014",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-015",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-016",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-017",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-018",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-019",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-020",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-021",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-022",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-023",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-024",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-third-conditional-kwt-025",
+      "rule": "kwt-missing-key-word",
+      "detail": "UoE Part 4 sin palabra clave en mayúsculas."
+    },
+    {
+      "activityId": "b2-advanced-grammar-reframing-kwt-015",
+      "rule": "missing-gap",
+      "detail": "El texto no contiene ningún hueco tras la normalización."
+    },
+    {
+      "activityId": "b2-writing-report-cp-001",
+      "rule": "missing-gap",
+      "detail": "El texto no contiene ningún hueco tras la normalización."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-006",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-007",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-014",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-016",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-018",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-024",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-cd-025",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-phrasal-travel-fb-006",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-advanced-backshift-fb-003",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-advanced-backshift-fb-005",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-advanced-backshift-fb-010",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-advanced-backshift-fb-015",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-advanced-backshift-fb-021",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-advanced-backshift-fb-024",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-008",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-011",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-014",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-015",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-018",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-019",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-020",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-022",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b2-reporting-passives-fb-024",
+      "rule": "single-answer-multi-gap",
+      "detail": "2 huecos con una sola respuesta; hay que desglosarla."
+    },
+    {
+      "activityId": "b1-word-families-wf-004",
+      "rule": "word-formation-answer-equals-cue",
+      "detail": "La respuesta es la raíz sin derivar."
+    },
+    {
+      "activityId": "b2-advanced-comparisons-wo-011",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 5 de 6 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-006",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 6 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-008",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 7 de 8 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-013",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 6 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-015",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 5 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-016",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 6 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-017",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 5 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-020",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 7 de 8 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-021",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 6 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-022",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 6 de 7 tokens."
+    },
+    {
+      "activityId": "b2-meaning-change-gerund-infinitive-wo-023",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 6 de 7 tokens."
+    },
+    {
+      "activityId": "b2-non-defining-relative-clauses-wo-011",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 5 de 6 tokens."
+    },
+    {
+      "activityId": "b2-perfect-passive-nonfinite-wo-003",
+      "rule": "word-order-token-mismatch",
+      "detail": "correctTokenIds cubre 5 de 6 tokens."
+    }
+  ]
+}

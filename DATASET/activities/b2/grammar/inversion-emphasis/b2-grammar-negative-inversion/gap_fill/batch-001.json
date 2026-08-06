@@ -1,0 +1,1188 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-negative-inversion-gap-fill-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "inversion-emphasis",
+  "subtopic": "negative-inversion",
+  "lessonId": "b2-grammar-negative-inversion",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the inverted sentence.",
+      "prompt": "Never ___ the laboratory recorded such a reading. (had)",
+      "gapText": "Never [gap1] the laboratory recorded such a reading. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "never"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had comes before the subject in past perfect inversion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the present-simple inversion.",
+      "prompt": "Rarely ___ researchers ignore the control group. (do)",
+      "gapText": "Rarely [gap1] researchers ignore the control group. (do)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rarely"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "do"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Do is the auxiliary for a plural present subject."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the fixed pair.",
+      "prompt": "No sooner had the train left ___ it began to snow. (than)",
+      "gapText": "No sooner had the train left [gap1] it began to snow. (than)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "no-sooner"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "than"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "No sooner is followed by than."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the fixed pair.",
+      "prompt": "Hardly had we arrived ___ the alarm sounded. (when)",
+      "gapText": "Hardly had we arrived [gap1] the alarm sounded. (when)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "hardly"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "when"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Hardly is paired with when."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the past-simple inversion.",
+      "prompt": "Not until Friday ___ they reply. (did)",
+      "gapText": "Not until Friday [gap1] they reply. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "not-until"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Did precedes the subject in the main clause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the formal prohibition.",
+      "prompt": "Under no circumstances ___ you open the valve. (should)",
+      "gapText": "Under no circumstances [gap1] you open the valve. (should)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "prohibition"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "should"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Should is inverted before you."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the emphatic sentence.",
+      "prompt": "Only then ___ we understand the risk. (did)",
+      "gapText": "Only then [gap1] we understand the risk. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "only-then"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Only then triggers past-simple inversion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sentence.",
+      "prompt": "Seldom ___ we encounter such a complex case. (do)",
+      "gapText": "Seldom [gap1] we encounter such a complex case. (do)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "seldom"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "do"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Do is needed before the plural subject we."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the past-perfect passive.",
+      "prompt": "At no time ___ the team been informed. (had)",
+      "gapText": "At no time [gap1] the team been informed. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "at-no-time"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had precedes the subject in had been informed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the not only structure.",
+      "prompt": "Not only ___ Lina solve the problem, but she documented it. (did)",
+      "gapText": "Not only [gap1] Lina solve the problem, but she documented it. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "not-only"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Did precedes Lina and solve remains in the base form."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the emphatic past sentence.",
+      "prompt": "Little ___ we realise how serious the delay was. (did)",
+      "gapText": "Little [gap1] we realise how serious the delay was. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "little"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Little at the front is negative in meaning."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the sequence.",
+      "prompt": "Barely ___ I sat down when the phone rang. (had)",
+      "gapText": "Barely [gap1] I sat down when the phone rang. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "barely"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had is inverted before I."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the prohibition.",
+      "prompt": "On no account ___ you share the code. (should)",
+      "gapText": "On no account [gap1] you share the code. (should)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "on-no-account"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "should"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Should comes before you."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the only after structure.",
+      "prompt": "Only after the audit ___ we change the policy. (did)",
+      "gapText": "Only after the audit [gap1] we change the policy. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "only-after"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "The main clause inverts with did."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the past-perfect statement.",
+      "prompt": "Never ___ I seen such a result. (have)",
+      "gapText": "Never [gap1] I seen such a result. (have)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "never"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Have precedes I in present perfect inversion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the no sooner pair.",
+      "prompt": "No sooner had the report appeared ___ journalists called. (than)",
+      "gapText": "No sooner had the report appeared [gap1] journalists called. (than)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "no-sooner"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "than"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Than follows the no sooner clause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the hardly pair.",
+      "prompt": "Hardly had the meeting begun ___ the alarm rang. (when)",
+      "gapText": "Hardly had the meeting begun [gap1] the alarm rang. (when)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "hardly"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "when"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "When follows hardly."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the present-simple inversion.",
+      "prompt": "Rarely ___ we receive complaints this detailed. (do)",
+      "gapText": "Rarely [gap1] we receive complaints this detailed. (do)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rarely"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "do"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Do is the auxiliary for receive."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the time restriction.",
+      "prompt": "Not until midnight ___ the repairs finish. (did)",
+      "gapText": "Not until midnight [gap1] the repairs finish. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "not-until"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Did forms the past-simple inversion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the modal inversion.",
+      "prompt": "At no time ___ staff reveal client data. (should)",
+      "gapText": "At no time [gap1] staff reveal client data. (should)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "at-no-time"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "should"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Should comes before staff."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the formal statement.",
+      "prompt": "Rarely ___ we receive such detailed feedback. (do)",
+      "gapText": "Rarely [gap1] we receive such detailed feedback. (do)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rarely"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "do"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Rarely triggers do-inversion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the not only structure.",
+      "prompt": "Not only ___ she answer, but she also supplied evidence. (did)",
+      "gapText": "Not only [gap1] she answer, but she also supplied evidence. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "not-only"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Did precedes she in the inverted clause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the only later structure.",
+      "prompt": "Only later ___ we discover the cause. (did)",
+      "gapText": "Only later [gap1] we discover the cause. (did)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "only-later"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Did is required before the subject we."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the prohibition.",
+      "prompt": "On no account ___ you open the cabinet. (should)",
+      "gapText": "On no account [gap1] you open the cabinet. (should)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "on-no-account"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "should"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Should is inverted before you."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-negative-inversion-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the emphatic statement.",
+      "prompt": "Never ___ I encountered such a complex case. (have)",
+      "gapText": "Never [gap1] I encountered such a complex case. (have)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "never",
+        "formal"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Have precedes I in the present perfect."
+    }
+  ]
+}

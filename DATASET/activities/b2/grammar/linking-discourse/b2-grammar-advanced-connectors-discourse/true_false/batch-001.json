@@ -1,29 +1,800 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b2-advanced-connectors-discourse-true-false-001","level":"B2","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","lessonId":"b2-grammar-advanced-connectors-discourse","activityType":"true_false","activities":[
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-001","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Although introduces a full clause.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","although"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Although is followed by a subject and verb."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-002","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Despite is normally followed directly by a finite clause.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","despite","error-spotting"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Despite normally takes a noun phrase or gerund."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-003","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Nevertheless presents a contrast with a previous idea.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","nevertheless"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"It signals an unexpected continuation."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-004","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Consequently introduces a cause rather than a result.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","consequence","error-spotting"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Consequently introduces a result."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-005","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Moreover adds information that supports or extends the previous point.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","moreover"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Moreover is an additive discourse marker."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-006","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Otherwise can mean “if the preceding action is not taken”.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","otherwise"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Save a copy; otherwise means if you do not save one."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-007","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":2,"instructions":"Decide whether the statement is true or false.","prompt":"Provided that expresses a sufficient condition.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","provided-that"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"It sets the condition under which something is allowed."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-008","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"Whereas can contrast two parallel clauses.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","whereas"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Whereas compares two situations."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-009","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"In spite of the delay is followed by a noun phrase.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","in-spite-of"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"The delay is a noun phrase."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-010","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"However should always be joined to the previous independent clause with a comma.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","however","punctuation"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"A full stop or semicolon is often needed before however in formal writing."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-011","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"Therefore can introduce the consequence of a previous statement.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","therefore"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"The sample was small; therefore, the conclusion is cautious."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-012","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"In other words introduces a new unrelated topic.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","reformulation","error-spotting"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"It reformulates or clarifies the previous idea."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-013","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"As a result and consequently can both express a consequence.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","result"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Both markers present an effect."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-014","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":3,"instructions":"Decide whether the statement is true or false.","prompt":"In addition is used to present a contrast.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","addition","error-spotting"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"In addition adds another point."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-015","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Despite arriving late is grammatical because arriving late functions as a gerund phrase.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","despite","gerund"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Despite can introduce a gerund phrase."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-016","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Although the delay is structurally equivalent to despite the delay.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","although","despite"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Both express concession, but their following structures differ."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-017","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Provided that can be followed by a clause with a subject and verb.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","condition"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Provided that the names are removed is a full clause."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-018","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"The comma in “The plan is costly, however it is realistic” is the clearest formal punctuation.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","however","error-spotting"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Use a full stop or semicolon before however."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-019","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"On the other hand can contrast two options without necessarily expressing cause and effect.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","contrast"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"It presents an alternative perspective."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-020","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":4,"instructions":"Decide whether the statement is true or false.","prompt":"Otherwise introduces an additional advantage of the previous action.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","otherwise","error-spotting"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Otherwise introduces the result if the action is not taken."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-021","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"“The sample was small; therefore, the conclusion is cautious” has a logical result relationship.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","therefore","punctuation"],"estimatedSeconds":55,"evaluator":{"strategy":"boolean","correct":true},"explanation":"The cautious conclusion follows from the small sample."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-022","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"Nevertheless and nonetheless normally introduce a consequence rather than a contrast.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","nevertheless","error-spotting"],"estimatedSeconds":55,"evaluator":{"strategy":"boolean","correct":false},"explanation":"They introduce a contrast or concession."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-023","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"A connector should be selected from the intended logical relation, not only from its level of formality.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","discourse","meaning"],"estimatedSeconds":55,"evaluator":{"strategy":"boolean","correct":true},"explanation":"A formal connector with the wrong relation makes the argument unclear."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-024","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"In a formal report, a chain of several connectors in every sentence always improves clarity.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","style","error-spotting"],"estimatedSeconds":55,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Too many markers can make a text heavy and obscure the logic."},
-    {"schemaVersion":"1.0.0","id":"b2-advanced-connectors-discourse-tf-025","status":"published","autoGradable":true,"level":"B2","type":"true_false","category":"grammar","topic":"linking-discourse","subtopic":"advanced-connectors-discourse-markers","taxonomyNodeIds":["advanced-connectors-discourse-markers"],"difficulty":5,"instructions":"Decide whether the statement is true or false.","prompt":"In “Although the forecast was uncertain, the team acted”, although introduces a concession.","lessonIds":["b2-grammar-advanced-connectors-discourse"],"tags":["b2","concession"],"estimatedSeconds":55,"evaluator":{"strategy":"boolean","correct":true},"explanation":"The action happened despite uncertainty."}
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-connectors-discourse-true-false-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "linking-discourse",
+  "subtopic": "advanced-connectors-discourse-markers",
+  "lessonId": "b2-grammar-advanced-connectors-discourse",
+  "activityType": "true_false",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Although introduces a full clause.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "although"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Although is followed by a subject and verb."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Despite is normally followed directly by a finite clause.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "despite",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Despite normally takes a noun phrase or gerund."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Nevertheless presents a contrast with a previous idea.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "nevertheless"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "It signals an unexpected continuation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Consequently introduces a cause rather than a result.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "consequence",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Consequently introduces a result."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Moreover adds information that supports or extends the previous point.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "moreover"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Moreover is an additive discourse marker."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Otherwise can mean “if the preceding action is not taken”.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "otherwise"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Save a copy; otherwise means if you do not save one."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Provided that expresses a sufficient condition.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "provided-that"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "It sets the condition under which something is allowed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Whereas can contrast two parallel clauses.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "whereas"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Whereas compares two situations."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "In spite of the delay is followed by a noun phrase.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "in-spite-of"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "The delay is a noun phrase."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "However should always be joined to the previous independent clause with a comma.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "however",
+        "punctuation"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "A full stop or semicolon is often needed before however in formal writing."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Therefore can introduce the consequence of a previous statement.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "therefore"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "The sample was small; therefore, the conclusion is cautious."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "In other words introduces a new unrelated topic.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "reformulation",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "It reformulates or clarifies the previous idea."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "As a result and consequently can both express a consequence.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "result"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Both markers present an effect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "In addition is used to present a contrast.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "addition",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "In addition adds another point."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Despite arriving late is grammatical because arriving late functions as a gerund phrase.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "despite",
+        "gerund"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Despite can introduce a gerund phrase."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Although the delay is structurally equivalent to despite the delay.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "although",
+        "despite"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Both express concession, but their following structures differ."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Provided that can be followed by a clause with a subject and verb.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "condition"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Provided that the names are removed is a full clause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "The comma in “The plan is costly, however it is realistic” is the clearest formal punctuation.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "however",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Use a full stop or semicolon before however."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "On the other hand can contrast two options without necessarily expressing cause and effect.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "contrast"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "It presents an alternative perspective."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Otherwise introduces an additional advantage of the previous action.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "otherwise",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Otherwise introduces the result if the action is not taken."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "“The sample was small; therefore, the conclusion is cautious” has a logical result relationship.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "therefore",
+        "punctuation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "The cautious conclusion follows from the small sample."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "Nevertheless and nonetheless normally introduce a consequence rather than a contrast.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "nevertheless",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "They introduce a contrast or concession."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "A connector should be selected from the intended logical relation, not only from its level of formality.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "discourse",
+        "meaning"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "A formal connector with the wrong relation makes the argument unclear."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "In a formal report, a chain of several connectors in every sentence always improves clarity.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "style",
+        "error-spotting"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Too many markers can make a text heavy and obscure the logic."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-connectors-discourse-tf-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide whether the statement is true or false.",
+      "prompt": "In “Although the forecast was uncertain, the team acted”, although introduces a concession.",
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "concession"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "The action happened despite uncertainty."
+    }
   ]
 }

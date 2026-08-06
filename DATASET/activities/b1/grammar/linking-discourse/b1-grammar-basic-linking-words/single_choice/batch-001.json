@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
-  "batchId": "b1-basic-linking-words-single-choice-001",
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-basic-linking-words-single-choice-001",
   "level": "B1",
   "category": "grammar",
   "topic": "linking-discourse",
@@ -9,12 +9,13 @@
   "activityType": "single_choice",
   "activities": [
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-001",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -26,20 +27,20 @@
       "prompt": "I was tired, ___ I went to bed early.",
       "options": [
         {
-          "id": "a",
-          "text": "so"
-        },
-        {
           "id": "b",
           "text": "because"
         },
         {
-          "id": "c",
-          "text": "but"
-        },
-        {
           "id": "d",
           "text": "although"
+        },
+        {
+          "id": "a",
+          "text": "so"
+        },
+        {
+          "id": "c",
+          "text": "but"
         }
       ],
       "lessonIds": [
@@ -58,12 +59,13 @@
       "explanation": "«so» introduce la consecuencia."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-002",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -75,6 +77,10 @@
       "prompt": "We stayed home ___ it was raining.",
       "options": [
         {
+          "id": "d",
+          "text": "or"
+        },
+        {
           "id": "a",
           "text": "because"
         },
@@ -85,10 +91,6 @@
         {
           "id": "c",
           "text": "but"
-        },
-        {
-          "id": "d",
-          "text": "or"
         }
       ],
       "lessonIds": [
@@ -107,12 +109,13 @@
       "explanation": "«because» introduce la causa."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-003",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -124,16 +127,16 @@
       "prompt": "The hotel was nice, ___ the room was small.",
       "options": [
         {
+          "id": "c",
+          "text": "because"
+        },
+        {
           "id": "a",
           "text": "but"
         },
         {
           "id": "b",
           "text": "so"
-        },
-        {
-          "id": "c",
-          "text": "because"
         },
         {
           "id": "d",
@@ -156,12 +159,13 @@
       "explanation": "«but» contrasta dos ideas."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-004",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -205,12 +209,13 @@
       "explanation": "«or» ofrece opciones."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-005",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -222,20 +227,20 @@
       "prompt": "___ it was cold, we went for a walk.",
       "options": [
         {
-          "id": "a",
-          "text": "Although"
-        },
-        {
-          "id": "b",
-          "text": "So"
-        },
-        {
           "id": "c",
           "text": "Because"
         },
         {
+          "id": "a",
+          "text": "Although"
+        },
+        {
           "id": "d",
           "text": "Or"
+        },
+        {
+          "id": "b",
+          "text": "So"
         }
       ],
       "lessonIds": [
@@ -254,12 +259,13 @@
       "explanation": "«although» introduce el contraste."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-006",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -275,16 +281,16 @@
           "text": "and"
         },
         {
-          "id": "b",
-          "text": "but"
-        },
-        {
           "id": "c",
           "text": "so"
         },
         {
           "id": "d",
           "text": "because"
+        },
+        {
+          "id": "b",
+          "text": "but"
         }
       ],
       "lessonIds": [
@@ -303,12 +309,13 @@
       "explanation": "«and» añade información."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-007",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -320,20 +327,20 @@
       "prompt": "It was late, ___ we took a taxi.",
       "options": [
         {
-          "id": "a",
-          "text": "so"
-        },
-        {
           "id": "b",
           "text": "because"
+        },
+        {
+          "id": "d",
+          "text": "or"
         },
         {
           "id": "c",
           "text": "but"
         },
         {
-          "id": "d",
-          "text": "or"
+          "id": "a",
+          "text": "so"
         }
       ],
       "lessonIds": [
@@ -352,12 +359,13 @@
       "explanation": "«so» introduce la consecuencia."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-008",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -369,16 +377,16 @@
       "prompt": "We booked a hotel near the station ___ the last train was cancelled.",
       "options": [
         {
-          "id": "a",
-          "text": "because"
-        },
-        {
           "id": "b",
           "text": "so"
         },
         {
           "id": "c",
           "text": "but"
+        },
+        {
+          "id": "a",
+          "text": "because"
         },
         {
           "id": "d",
@@ -401,12 +409,13 @@
       "explanation": "«because» introduce la causa."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-009",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -418,20 +427,20 @@
       "prompt": "The flat is small ___ cosy.",
       "options": [
         {
-          "id": "a",
-          "text": "but"
+          "id": "d",
+          "text": "or"
         },
         {
           "id": "b",
           "text": "so"
         },
         {
-          "id": "c",
-          "text": "because"
+          "id": "a",
+          "text": "but"
         },
         {
-          "id": "d",
-          "text": "or"
+          "id": "c",
+          "text": "because"
         }
       ],
       "lessonIds": [
@@ -450,12 +459,13 @@
       "explanation": "«but» contrasta dos ideas."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-010",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -467,10 +477,6 @@
       "prompt": "We can walk ___ take the bus.",
       "options": [
         {
-          "id": "a",
-          "text": "or"
-        },
-        {
           "id": "b",
           "text": "but"
         },
@@ -481,6 +487,10 @@
         {
           "id": "d",
           "text": "because"
+        },
+        {
+          "id": "a",
+          "text": "or"
         }
       ],
       "lessonIds": [
@@ -499,12 +509,13 @@
       "explanation": "«or» ofrece opciones."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-011",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -516,16 +527,16 @@
       "prompt": "The shop was closed, ___ we left.",
       "options": [
         {
+          "id": "c",
+          "text": "but"
+        },
+        {
           "id": "a",
           "text": "so"
         },
         {
           "id": "b",
           "text": "because"
-        },
-        {
-          "id": "c",
-          "text": "but"
         },
         {
           "id": "d",
@@ -548,12 +559,13 @@
       "explanation": "«so» introduce la consecuencia."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-012",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -565,16 +577,16 @@
       "prompt": "She wore a coat ___ the wind was freezing.",
       "options": [
         {
-          "id": "a",
-          "text": "because"
+          "id": "c",
+          "text": "but"
         },
         {
           "id": "b",
           "text": "so"
         },
         {
-          "id": "c",
-          "text": "but"
+          "id": "a",
+          "text": "because"
         },
         {
           "id": "d",
@@ -597,12 +609,13 @@
       "explanation": "«because» introduce la causa."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-013",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -614,20 +627,20 @@
       "prompt": "___ it rained, we enjoyed the trip.",
       "options": [
         {
-          "id": "a",
-          "text": "Although"
-        },
-        {
-          "id": "b",
-          "text": "So"
-        },
-        {
           "id": "c",
           "text": "Because"
         },
         {
           "id": "d",
           "text": "Or"
+        },
+        {
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "So"
         }
       ],
       "lessonIds": [
@@ -646,12 +659,13 @@
       "explanation": "«although» introduce el contraste."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-014",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -663,20 +677,20 @@
       "prompt": "I wanted to go, ___ I was too tired.",
       "options": [
         {
-          "id": "a",
-          "text": "but"
-        },
-        {
-          "id": "b",
-          "text": "so"
-        },
-        {
           "id": "c",
           "text": "because"
         },
         {
+          "id": "a",
+          "text": "but"
+        },
+        {
           "id": "d",
           "text": "or"
+        },
+        {
+          "id": "b",
+          "text": "so"
         }
       ],
       "lessonIds": [
@@ -695,12 +709,13 @@
       "explanation": "«but» contrasta dos ideas."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-015",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -712,12 +727,12 @@
       "prompt": "She studied hard, ___ she passed the exam.",
       "options": [
         {
-          "id": "a",
-          "text": "so"
-        },
-        {
           "id": "b",
           "text": "because"
+        },
+        {
+          "id": "a",
+          "text": "so"
         },
         {
           "id": "c",
@@ -744,12 +759,13 @@
       "explanation": "«so» introduce la consecuencia."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-016",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -761,16 +777,16 @@
       "prompt": "He was late ___ he missed the bus.",
       "options": [
         {
-          "id": "a",
-          "text": "because"
+          "id": "c",
+          "text": "but"
         },
         {
           "id": "b",
           "text": "so"
         },
         {
-          "id": "c",
-          "text": "but"
+          "id": "a",
+          "text": "because"
         },
         {
           "id": "d",
@@ -793,12 +809,13 @@
       "explanation": "«because» introduce la causa."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-017",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -810,20 +827,20 @@
       "prompt": "The food was good, ___ the service was slow.",
       "options": [
         {
-          "id": "a",
-          "text": "but"
+          "id": "c",
+          "text": "because"
         },
         {
           "id": "b",
           "text": "so"
         },
         {
-          "id": "c",
-          "text": "because"
-        },
-        {
           "id": "d",
           "text": "or"
+        },
+        {
+          "id": "a",
+          "text": "but"
         }
       ],
       "lessonIds": [
@@ -842,12 +859,13 @@
       "explanation": "«but» contrasta dos ideas."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-018",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -859,20 +877,20 @@
       "prompt": "The room was clean ___ bright.",
       "options": [
         {
-          "id": "a",
-          "text": "and"
-        },
-        {
           "id": "b",
           "text": "but"
         },
         {
-          "id": "c",
-          "text": "so"
+          "id": "a",
+          "text": "and"
         },
         {
           "id": "d",
           "text": "because"
+        },
+        {
+          "id": "c",
+          "text": "so"
         }
       ],
       "lessonIds": [
@@ -891,12 +909,13 @@
       "explanation": "«and» añade información."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-019",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -912,16 +931,16 @@
           "text": "or"
         },
         {
-          "id": "b",
-          "text": "but"
+          "id": "d",
+          "text": "because"
         },
         {
           "id": "c",
           "text": "so"
         },
         {
-          "id": "d",
-          "text": "because"
+          "id": "b",
+          "text": "but"
         }
       ],
       "lessonIds": [
@@ -940,12 +959,13 @@
       "explanation": "«or» ofrece opciones."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-020",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -957,20 +977,20 @@
       "prompt": "___ the film was long, it was interesting.",
       "options": [
         {
-          "id": "a",
-          "text": "Although"
-        },
-        {
-          "id": "b",
-          "text": "So"
+          "id": "d",
+          "text": "Or"
         },
         {
           "id": "c",
           "text": "Because"
         },
         {
-          "id": "d",
-          "text": "Or"
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "So"
         }
       ],
       "lessonIds": [
@@ -989,12 +1009,13 @@
       "explanation": "«although» introduce el contraste."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-021",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -1006,12 +1027,12 @@
       "prompt": "I like reading ___ cooking.",
       "options": [
         {
-          "id": "a",
-          "text": "and"
-        },
-        {
           "id": "b",
           "text": "but"
+        },
+        {
+          "id": "a",
+          "text": "and"
         },
         {
           "id": "c",
@@ -1038,12 +1059,13 @@
       "explanation": "«and» añade información."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-022",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -1059,12 +1081,12 @@
           "text": "so"
         },
         {
-          "id": "b",
-          "text": "because"
-        },
-        {
           "id": "c",
           "text": "but"
+        },
+        {
+          "id": "b",
+          "text": "because"
         },
         {
           "id": "d",
@@ -1087,12 +1109,13 @@
       "explanation": "«so» introduce la consecuencia."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-023",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -1112,12 +1135,12 @@
           "text": "so"
         },
         {
-          "id": "c",
-          "text": "but"
-        },
-        {
           "id": "d",
           "text": "or"
+        },
+        {
+          "id": "c",
+          "text": "but"
         }
       ],
       "lessonIds": [
@@ -1136,12 +1159,13 @@
       "explanation": "«because» introduce la causa."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-024",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -1153,20 +1177,20 @@
       "prompt": "It was cold, ___ we went out.",
       "options": [
         {
-          "id": "a",
-          "text": "but"
-        },
-        {
-          "id": "b",
-          "text": "so"
+          "id": "d",
+          "text": "or"
         },
         {
           "id": "c",
           "text": "because"
         },
         {
-          "id": "d",
-          "text": "or"
+          "id": "a",
+          "text": "but"
+        },
+        {
+          "id": "b",
+          "text": "so"
         }
       ],
       "lessonIds": [
@@ -1185,12 +1209,13 @@
       "explanation": "«but» contrasta dos ideas."
     },
     {
-      "schemaVersion": "1.0.0",
+      "schemaVersion": "2.0.0",
       "id": "b1-basic-linking-words-sc-025",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
+      "skillFocus": "single_choice",
       "category": "grammar",
       "topic": "linking-discourse",
       "subtopic": "basic-linking-words",
@@ -1202,20 +1227,20 @@
       "prompt": "___ the traffic was heavy, we arrived on time.",
       "options": [
         {
-          "id": "a",
-          "text": "Although"
-        },
-        {
-          "id": "b",
-          "text": "So"
-        },
-        {
           "id": "c",
           "text": "Because"
         },
         {
           "id": "d",
           "text": "Or"
+        },
+        {
+          "id": "b",
+          "text": "So"
+        },
+        {
+          "id": "a",
+          "text": "Although"
         }
       ],
       "lessonIds": [

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
-  "batchId": "b1-daily-routines-life-word-order-001",
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-daily-routines-life-word-order-001",
   "level": "B1",
   "category": "vocabulary",
   "topic": "b1-daily-routines-life",
@@ -8,30 +8,1625 @@
   "lessonId": "b1-vocabulary-daily-routines-life",
   "activityType": "word_order",
   "activities": [
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-001","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":1,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe the start of the day.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"get"},{"id":"t3","text":"up"},{"id":"t4","text":"at"},{"id":"t5","text":"seven."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","morning"],"estimatedSeconds":35,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"I get up at seven."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-002","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":1,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe the morning meal.","tokens":[{"id":"t1","text":"We"},{"id":"t2","text":"have"},{"id":"t3","text":"breakfast"},{"id":"t4","text":"together."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","meals"],"estimatedSeconds":35,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"We have breakfast together."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-003","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":1,"instructions":"Arrange the tokens to make a sentence.","prompt":"Give a simple housework instruction.","tokens":[{"id":"t1","text":"Make"},{"id":"t2","text":"the"},{"id":"t3","text":"bed"},{"id":"t4","text":"please."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","housework"],"estimatedSeconds":35,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Make the bed please."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-004","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":1,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe an evening routine.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"go"},{"id":"t3","text":"to"},{"id":"t4","text":"bed"},{"id":"t5","text":"early."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","evening"],"estimatedSeconds":35,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"I go to bed early."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-005","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":1,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a short rest at work.","tokens":[{"id":"t1","text":"We"},{"id":"t2","text":"have"},{"id":"t3","text":"a"},{"id":"t4","text":"break"},{"id":"t5","text":"at"},{"id":"t6","text":"eleven."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","rest"],"estimatedSeconds":35,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"We have a break at eleven."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-006","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":2,"instructions":"Arrange the tokens to make a sentence.","prompt":"Say what happens after washing clothes.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"do"},{"id":"t3","text":"the"},{"id":"t4","text":"laundry"},{"id":"t5","text":"on"},{"id":"t6","text":"Sundays."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","housework"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"I do the laundry on Sundays."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-007","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":2,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe the rubbish routine.","tokens":[{"id":"t1","text":"Please"},{"id":"t2","text":"take"},{"id":"t3","text":"out"},{"id":"t4","text":"the"},{"id":"t5","text":"rubbish."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","housework"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Please take out the rubbish."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-008","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":2,"instructions":"Arrange the tokens to make a sentence.","prompt":"Explain why someone is delayed.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"am"},{"id":"t3","text":"running"},{"id":"t4","text":"late"},{"id":"t5","text":"today."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","time-management"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"I am running late today."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-009","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":2,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe an alarm setting.","tokens":[{"id":"t1","text":"Set"},{"id":"t2","text":"an"},{"id":"t3","text":"alarm"},{"id":"t4","text":"for"},{"id":"t5","text":"six."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","morning"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Set an alarm for six."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-010","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":2,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a Saturday activity.","tokens":[{"id":"t1","text":"They"},{"id":"t2","text":"go"},{"id":"t3","text":"shopping"},{"id":"t4","text":"after"},{"id":"t5","text":"lunch."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","weekend"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"They go shopping after lunch."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-011","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":3,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a home-working day.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"work"},{"id":"t3","text":"from"},{"id":"t4","text":"home"},{"id":"t5","text":"on"},{"id":"t6","text":"Fridays."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","work"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"I work from home on Fridays."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-012","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":3,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe making time for exercise.","tokens":[{"id":"t1","text":"She"},{"id":"t2","text":"makes"},{"id":"t3","text":"time"},{"id":"t4","text":"for"},{"id":"t5","text":"exercise"},{"id":"t6","text":"daily."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","time-management"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"She makes time for exercise daily."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-013","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":3,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe personal care after sport.","tokens":[{"id":"t1","text":"He"},{"id":"t2","text":"has"},{"id":"t3","text":"a"},{"id":"t4","text":"shower"},{"id":"t5","text":"after"},{"id":"t6","text":"running."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","personal-care"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"He has a shower after running."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-014","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":3,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe the order of an evening task.","tokens":[{"id":"t1","text":"We"},{"id":"t2","text":"do"},{"id":"t3","text":"the"},{"id":"t4","text":"washing-up"},{"id":"t5","text":"after"},{"id":"t6","text":"dinner."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","housework"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"We do the washing-up after dinner."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-015","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":3,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a return home.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"get"},{"id":"t3","text":"home"},{"id":"t4","text":"at"},{"id":"t5","text":"six."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","evening"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"I get home at six."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-016","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":4,"instructions":"Arrange the tokens to make a sentence.","prompt":"Explain how someone prepares for work.","tokens":[{"id":"t1","text":"Maya"},{"id":"t2","text":"gets"},{"id":"t3","text":"ready"},{"id":"t4","text":"before"},{"id":"t5","text":"seven."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","preparation"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5"]},"explanation":"Maya gets ready before seven."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-017","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":4,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a walk during a lunch break.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"take"},{"id":"t3","text":"a"},{"id":"t4","text":"walk"},{"id":"t5","text":"at"},{"id":"t6","text":"lunchtime."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","rest"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"I take a walk at lunchtime."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-018","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":4,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a deadline at work.","tokens":[{"id":"t1","text":"We"},{"id":"t2","text":"must"},{"id":"t3","text":"meet"},{"id":"t4","text":"the"},{"id":"t5","text":"deadline"},{"id":"t6","text":"today."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","work"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"We must meet the deadline today."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-019","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":4,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe an afternoon rest.","tokens":[{"id":"t1","text":"Tom"},{"id":"t2","text":"takes"},{"id":"t3","text":"a"},{"id":"t4","text":"short"},{"id":"t5","text":"nap"},{"id":"t6","text":"after"},{"id":"t7","text":"lunch."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","rest"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Tom takes a short nap after lunch."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-020","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":4,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe making up for a delay.","tokens":[{"id":"t1","text":"We"},{"id":"t2","text":"need"},{"id":"t3","text":"to"},{"id":"t4","text":"make"},{"id":"t5","text":"up"},{"id":"t6","text":"lost"},{"id":"t7","text":"time."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","time-management"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"We need to make up lost time."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-021","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":5,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a busy morning before school.","tokens":[{"id":"t1","text":"The"},{"id":"t2","text":"children"},{"id":"t3","text":"get"},{"id":"t4","text":"ready"},{"id":"t5","text":"before"},{"id":"t6","text":"the"},{"id":"t7","text":"bus"},{"id":"t8","text":"arrives."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","morning"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"The children get ready before the bus arrives."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-022","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":5,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe how a worker protects time for family.","tokens":[{"id":"t1","text":"She"},{"id":"t2","text":"makes"},{"id":"t3","text":"time"},{"id":"t4","text":"for"},{"id":"t5","text":"her"},{"id":"t6","text":"family"},{"id":"t7","text":"every"},{"id":"t8","text":"evening."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","family-time"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"She makes time for her family every evening."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-023","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":5,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe the final tasks before bed.","tokens":[{"id":"t1","text":"I"},{"id":"t2","text":"take"},{"id":"t3","text":"out"},{"id":"t4","text":"the"},{"id":"t5","text":"rubbish"},{"id":"t6","text":"before"},{"id":"t7","text":"I"},{"id":"t8","text":"go"},{"id":"t9","text":"to"},{"id":"t10","text":"bed."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","evening"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"]},"explanation":"I take out the rubbish before I go to bed."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-024","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":5,"instructions":"Arrange the tokens to make a sentence.","prompt":"Explain how someone catches up after a delay.","tokens":[{"id":"t1","text":"They"},{"id":"t2","text":"make"},{"id":"t3","text":"up"},{"id":"t4","text":"lost"},{"id":"t5","text":"time"},{"id":"t6","text":"by"},{"id":"t7","text":"working"},{"id":"t8","text":"late."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","time-management"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"They make up lost time by working late."},
-    {"schemaVersion":"1.0.0","id":"b1-daily-routines-life-wo-025","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"vocabulary","topic":"b1-daily-routines-life","subtopic":"b1-daily-routines-life","taxonomyNodeIds":["b1-daily-routines-life"],"difficulty":5,"instructions":"Arrange the tokens to make a sentence.","prompt":"Describe a complete routine after arriving home.","tokens":[{"id":"t1","text":"Once"},{"id":"t2","text":"I"},{"id":"t3","text":"get"},{"id":"t4","text":"home"},{"id":"t5","text":"I"},{"id":"t6","text":"have"},{"id":"t7","text":"a"},{"id":"t8","text":"shower"},{"id":"t9","text":"and"},{"id":"t10","text":"cook."}],"lessonIds":["b1-vocabulary-daily-routines-life"],"tags":["b1","evening"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"]},"explanation":"Once I get home I have a shower and cook."}
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 1,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe the start of the day.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "get"
+        },
+        {
+          "id": "t3",
+          "text": "up"
+        },
+        {
+          "id": "t4",
+          "text": "at"
+        },
+        {
+          "id": "t5",
+          "text": "seven."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "morning"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "I get up at seven."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 1,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe the morning meal.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "have"
+        },
+        {
+          "id": "t3",
+          "text": "breakfast"
+        },
+        {
+          "id": "t4",
+          "text": "together."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "meals"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "We have breakfast together."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 1,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Give a simple housework instruction.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Make"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "bed"
+        },
+        {
+          "id": "t4",
+          "text": "please."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "housework"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Make the bed please."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 1,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe an evening routine.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "go"
+        },
+        {
+          "id": "t3",
+          "text": "to"
+        },
+        {
+          "id": "t4",
+          "text": "bed"
+        },
+        {
+          "id": "t5",
+          "text": "early."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "evening"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "I go to bed early."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 1,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a short rest at work.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "have"
+        },
+        {
+          "id": "t3",
+          "text": "a"
+        },
+        {
+          "id": "t4",
+          "text": "break"
+        },
+        {
+          "id": "t5",
+          "text": "at"
+        },
+        {
+          "id": "t6",
+          "text": "eleven."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "rest"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "We have a break at eleven."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Say what happens after washing clothes.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "do"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "laundry"
+        },
+        {
+          "id": "t5",
+          "text": "on"
+        },
+        {
+          "id": "t6",
+          "text": "Sundays."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "housework"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "I do the laundry on Sundays."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe the rubbish routine.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Please"
+        },
+        {
+          "id": "t2",
+          "text": "take"
+        },
+        {
+          "id": "t3",
+          "text": "out"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "rubbish."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "housework"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Please take out the rubbish."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Explain why someone is delayed.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "am"
+        },
+        {
+          "id": "t3",
+          "text": "running"
+        },
+        {
+          "id": "t4",
+          "text": "late"
+        },
+        {
+          "id": "t5",
+          "text": "today."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "time-management"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "I am running late today."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe an alarm setting.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Set"
+        },
+        {
+          "id": "t2",
+          "text": "an"
+        },
+        {
+          "id": "t3",
+          "text": "alarm"
+        },
+        {
+          "id": "t4",
+          "text": "for"
+        },
+        {
+          "id": "t5",
+          "text": "six."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "morning"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Set an alarm for six."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a Saturday activity.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "They"
+        },
+        {
+          "id": "t2",
+          "text": "go"
+        },
+        {
+          "id": "t3",
+          "text": "shopping"
+        },
+        {
+          "id": "t4",
+          "text": "after"
+        },
+        {
+          "id": "t5",
+          "text": "lunch."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "weekend"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "They go shopping after lunch."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a home-working day.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "work"
+        },
+        {
+          "id": "t3",
+          "text": "from"
+        },
+        {
+          "id": "t4",
+          "text": "home"
+        },
+        {
+          "id": "t5",
+          "text": "on"
+        },
+        {
+          "id": "t6",
+          "text": "Fridays."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "work"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "I work from home on Fridays."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe making time for exercise.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "makes"
+        },
+        {
+          "id": "t3",
+          "text": "time"
+        },
+        {
+          "id": "t4",
+          "text": "for"
+        },
+        {
+          "id": "t5",
+          "text": "exercise"
+        },
+        {
+          "id": "t6",
+          "text": "daily."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "time-management"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "She makes time for exercise daily."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe personal care after sport.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He"
+        },
+        {
+          "id": "t2",
+          "text": "has"
+        },
+        {
+          "id": "t3",
+          "text": "a"
+        },
+        {
+          "id": "t4",
+          "text": "shower"
+        },
+        {
+          "id": "t5",
+          "text": "after"
+        },
+        {
+          "id": "t6",
+          "text": "running."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "personal-care"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "He has a shower after running."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe the order of an evening task.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "do"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "washing-up"
+        },
+        {
+          "id": "t5",
+          "text": "after"
+        },
+        {
+          "id": "t6",
+          "text": "dinner."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "housework"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "We do the washing-up after dinner."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a return home.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "get"
+        },
+        {
+          "id": "t3",
+          "text": "home"
+        },
+        {
+          "id": "t4",
+          "text": "at"
+        },
+        {
+          "id": "t5",
+          "text": "six."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "evening"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "I get home at six."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Explain how someone prepares for work.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Maya"
+        },
+        {
+          "id": "t2",
+          "text": "gets"
+        },
+        {
+          "id": "t3",
+          "text": "ready"
+        },
+        {
+          "id": "t4",
+          "text": "before"
+        },
+        {
+          "id": "t5",
+          "text": "seven."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "preparation"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ]
+      },
+      "explanation": "Maya gets ready before seven."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a walk during a lunch break.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "take"
+        },
+        {
+          "id": "t3",
+          "text": "a"
+        },
+        {
+          "id": "t4",
+          "text": "walk"
+        },
+        {
+          "id": "t5",
+          "text": "at"
+        },
+        {
+          "id": "t6",
+          "text": "lunchtime."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "rest"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "I take a walk at lunchtime."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a deadline at work.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "must"
+        },
+        {
+          "id": "t3",
+          "text": "meet"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "deadline"
+        },
+        {
+          "id": "t6",
+          "text": "today."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "work"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "We must meet the deadline today."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe an afternoon rest.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Tom"
+        },
+        {
+          "id": "t2",
+          "text": "takes"
+        },
+        {
+          "id": "t3",
+          "text": "a"
+        },
+        {
+          "id": "t4",
+          "text": "short"
+        },
+        {
+          "id": "t5",
+          "text": "nap"
+        },
+        {
+          "id": "t6",
+          "text": "after"
+        },
+        {
+          "id": "t7",
+          "text": "lunch."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "rest"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Tom takes a short nap after lunch."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe making up for a delay.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "need"
+        },
+        {
+          "id": "t3",
+          "text": "to"
+        },
+        {
+          "id": "t4",
+          "text": "make"
+        },
+        {
+          "id": "t5",
+          "text": "up"
+        },
+        {
+          "id": "t6",
+          "text": "lost"
+        },
+        {
+          "id": "t7",
+          "text": "time."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "time-management"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "We need to make up lost time."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a busy morning before school.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The"
+        },
+        {
+          "id": "t2",
+          "text": "children"
+        },
+        {
+          "id": "t3",
+          "text": "get"
+        },
+        {
+          "id": "t4",
+          "text": "ready"
+        },
+        {
+          "id": "t5",
+          "text": "before"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        },
+        {
+          "id": "t7",
+          "text": "bus"
+        },
+        {
+          "id": "t8",
+          "text": "arrives."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "morning"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "The children get ready before the bus arrives."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe how a worker protects time for family.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "makes"
+        },
+        {
+          "id": "t3",
+          "text": "time"
+        },
+        {
+          "id": "t4",
+          "text": "for"
+        },
+        {
+          "id": "t5",
+          "text": "her"
+        },
+        {
+          "id": "t6",
+          "text": "family"
+        },
+        {
+          "id": "t7",
+          "text": "every"
+        },
+        {
+          "id": "t8",
+          "text": "evening."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "family-time"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "She makes time for her family every evening."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe the final tasks before bed.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "take"
+        },
+        {
+          "id": "t3",
+          "text": "out"
+        },
+        {
+          "id": "t4",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "rubbish"
+        },
+        {
+          "id": "t6",
+          "text": "before"
+        },
+        {
+          "id": "t7",
+          "text": "I"
+        },
+        {
+          "id": "t8",
+          "text": "go"
+        },
+        {
+          "id": "t9",
+          "text": "to"
+        },
+        {
+          "id": "t10",
+          "text": "bed."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "evening"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ]
+      },
+      "explanation": "I take out the rubbish before I go to bed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Explain how someone catches up after a delay.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "They"
+        },
+        {
+          "id": "t2",
+          "text": "make"
+        },
+        {
+          "id": "t3",
+          "text": "up"
+        },
+        {
+          "id": "t4",
+          "text": "lost"
+        },
+        {
+          "id": "t5",
+          "text": "time"
+        },
+        {
+          "id": "t6",
+          "text": "by"
+        },
+        {
+          "id": "t7",
+          "text": "working"
+        },
+        {
+          "id": "t8",
+          "text": "late."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "time-management"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "They make up lost time by working late."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-daily-routines-life-wo-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the tokens to make a sentence.",
+      "prompt": "Describe a complete routine after arriving home.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Once"
+        },
+        {
+          "id": "t2",
+          "text": "I"
+        },
+        {
+          "id": "t3",
+          "text": "get"
+        },
+        {
+          "id": "t4",
+          "text": "home"
+        },
+        {
+          "id": "t5",
+          "text": "I"
+        },
+        {
+          "id": "t6",
+          "text": "have"
+        },
+        {
+          "id": "t7",
+          "text": "a"
+        },
+        {
+          "id": "t8",
+          "text": "shower"
+        },
+        {
+          "id": "t9",
+          "text": "and"
+        },
+        {
+          "id": "t10",
+          "text": "cook."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "evening"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ]
+      },
+      "explanation": "Once I get home I have a shower and cook."
+    }
   ]
 }

@@ -244,12 +244,25 @@
       "will-predictions": 25
     },
     "activityType": {
+      "error_correction": 550,
+      "gap_fill": 2825,
+      "guided_writing": 175,
+      "key_word_transformation": 250,
+      "matching": 1000,
+      "multiple_choice": 325,
+      "sentence_rewrite": 275,
+      "single_choice": 3575,
+      "true_false": 1575,
+      "word_formation": 75,
+      "word_order": 1650
+    },
+    "skillFocus": {
       "collocation_choice": 150,
       "complete_dialogue": 225,
-      "complete_paragraph": 225,
+      "complete_paragraph": 226,
       "error_correction": 550,
       "error_identification": 75,
-      "fill_blank": 2175,
+      "fill_blank": 2174,
       "gapped_text": 125,
       "guided_writing": 175,
       "key_word_transformation": 250,

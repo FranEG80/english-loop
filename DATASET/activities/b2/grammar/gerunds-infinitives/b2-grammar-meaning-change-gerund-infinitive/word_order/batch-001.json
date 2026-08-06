@@ -1,37 +1,1760 @@
 {
-  "schemaVersion":"1.0.0",
-  "batchId":"b2-meaning-change-gerund-infinitive-word-order-001",
-  "level":"B2",
-  "category":"grammar",
-  "topic":"gerunds-infinitives",
-  "subtopic":"meaning-change-gerund-infinitive",
-  "lessonId":"b2-grammar-meaning-change-gerund-infinitive",
-  "activityType":"word_order",
-  "activities":[
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-001","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":2,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"At the reunion, arrange the sentence about a past memory.","tokens":[{"id":"t6","text":"summer"},{"id":"t5","text":"last"},{"id":"t4","text":"friends"},{"id":"t3","text":"meeting"},{"id":"t2","text":"remember"},{"id":"t1","text":"I"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","remember","gerund"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"Remember plus gerund recalls a past experience."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-002","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":2,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the departure checklist, arrange the task reminder.","tokens":[{"id":"t6","text":"the"},{"id":"t5","text":"pass"},{"id":"t4","text":"to"},{"id":"t3","text":"remember"},{"id":"t2","text":"return"},{"id":"t1","text":"Please"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","remember","to-infinitive"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"Remember to do introduces a task."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-003","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":2,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the travel diary, arrange the forgotten action.","tokens":[{"id":"t6","text":"the"},{"id":"t5","text":"form"},{"id":"t4","text":"to"},{"id":"t3","text":"forgot"},{"id":"t2","text":"submit"},{"id":"t1","text":"I"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","forget","to-infinitive"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"Forget to submit means the action was not completed."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-004","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":2,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the memoir, arrange the unforgettable experience.","tokens":[{"id":"t7","text":"the"},{"id":"t6","text":"summit"},{"id":"t5","text":"reaching"},{"id":"t4","text":"forget"},{"id":"t3","text":"never"},{"id":"t2","text":"will"},{"id":"t1","text":"She"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","forget","gerund"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Forget plus gerund refers to a past experience."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-005","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":2,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"At the theatre, arrange the sentence about ending an activity.","tokens":[{"id":"t6","text":"clapping"},{"id":"t5","text":"the"},{"id":"t4","text":"stopped"},{"id":"t3","text":"audience"},{"id":"t2","text":"when"},{"id":"t1","text":"The"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","stop","gerund"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6"]},"explanation":"Stop clapping means end the activity."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-006","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":2,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"On the platform, arrange the sentence about a purpose.","tokens":[{"id":"t7","text":"train"},{"id":"t6","text":"the"},{"id":"t5","text":"board"},{"id":"t4","text":"to"},{"id":"t3","text":"stopped"},{"id":"t2","text":"We"},{"id":"t1","text":"briefly"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","stop","purpose"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7"]},"explanation":"The target sentence should be We stopped to board the train; the token set must be ordered as a complete sentence."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-007","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the troubleshooting guide, arrange the proposed method.","tokens":[{"id":"t7","text":"the"},{"id":"t6","text":"router"},{"id":"t5","text":"restarting"},{"id":"t4","text":"try"},{"id":"t3","text":"first"},{"id":"t2","text":"you"},{"id":"t1","text":"Could"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","try","method"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Try restarting proposes a method."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-008","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the repair log, arrange the sentence about an effort.","tokens":[{"id":"t8","text":"sensor"},{"id":"t7","text":"the"},{"id":"t6","text":"replace"},{"id":"t5","text":"to"},{"id":"t4","text":"tried"},{"id":"t3","text":"engineer"},{"id":"t2","text":"The"},{"id":"t1","text":"carefully"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","try","effort"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7","t8"]},"explanation":"The target sentence is The engineer tried to replace the sensor carefully; the infinitive presents the effort."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-009","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the public notice, arrange the formal announcement.","tokens":[{"id":"t8","text":"delayed"},{"id":"t7","text":"is"},{"id":"t6","text":"service"},{"id":"t5","text":"the"},{"id":"t4","text":"inform"},{"id":"t3","text":"to"},{"id":"t2","text":"regret"},{"id":"t1","text":"We"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","regret","formal-notice"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"Regret to inform introduces a formal notice."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-010","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the apology, arrange the sentence about a past choice.","tokens":[{"id":"t7","text":"early"},{"id":"t6","text":"leaving"},{"id":"t5","text":"regrets"},{"id":"t4","text":"she"},{"id":"t3","text":"that"},{"id":"t2","text":"says"},{"id":"t1","text":"She"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","regret","gerund"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Regret leaving expresses regret about a past action."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-011","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the rota, arrange the sentence about a consequence.","tokens":[{"id":"t7","text":"earlier"},{"id":"t6","text":"arriving"},{"id":"t5","text":"means"},{"id":"t4","text":"now"},{"id":"t3","text":"rota"},{"id":"t2","text":"The"},{"id":"t1","text":"daily"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","mean","consequence"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Mean arriving expresses what the rota involves."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-012","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the message to a colleague, arrange the sentence about intention.","tokens":[{"id":"t7","text":"you"},{"id":"t6","text":"to"},{"id":"t5","text":"call"},{"id":"t4","text":"meant"},{"id":"t3","text":"yesterday"},{"id":"t2","text":"I"},{"id":"t1","text":"but"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","mean","intention"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7","t1"]},"explanation":"The intended sentence is I meant to call you yesterday but; the prompt deliberately tests the complement after meant."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-013","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the lecture recording, arrange the sentence about continuing.","tokens":[{"id":"t7","text":"questions"},{"id":"t6","text":"answering"},{"id":"t5","text":"on"},{"id":"t4","text":"went"},{"id":"t3","text":"lecturer"},{"id":"t2","text":"The"},{"id":"t1","text":"patiently"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","go-on","continuation"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7"]},"explanation":"Go on answering continues the same activity; patiently is an optional distractor token and should not be selected."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-014","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":3,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the seminar plan, arrange the sentence about a later topic.","tokens":[{"id":"t8","text":"funding"},{"id":"t7","text":"the"},{"id":"t6","text":"discuss"},{"id":"t5","text":"to"},{"id":"t4","text":"on"},{"id":"t3","text":"went"},{"id":"t2","text":"speaker"},{"id":"t1","text":"The"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","go-on","sequence"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"Go on to discuss introduces a subsequent topic."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-015","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":4,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the diary, arrange the sentence about a remembered meeting.","tokens":[{"id":"t7","text":"curator"},{"id":"t6","text":"the"},{"id":"t5","text":"meeting"},{"id":"t4","text":"remember"},{"id":"t3","text":"I"},{"id":"t2","text":"the"},{"id":"t1","text":"new"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","remember","gerund"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t3","t4","t5","t6","t7"]},"explanation":"The intended core is I remember meeting the new curator; the activity tests the gerund complement."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-016","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":4,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the checklist, arrange the task reminder.","tokens":[{"id":"t7","text":"samples"},{"id":"t6","text":"the"},{"id":"t5","text":"label"},{"id":"t4","text":"to"},{"id":"t3","text":"remember"},{"id":"t2","text":"Please"},{"id":"t1","text":"all"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","remember","to-infinitive"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7"]},"explanation":"Remember to label introduces a task."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-017","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":4,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the laboratory log, arrange the sentence about an ended activity.","tokens":[{"id":"t7","text":"solvent"},{"id":"t6","text":"using"},{"id":"t5","text":"stopped"},{"id":"t4","text":"laboratory"},{"id":"t3","text":"The"},{"id":"t2","text":"that"},{"id":"t1","text":"year"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","stop","gerund"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t3","t4","t5","t6","t7"]},"explanation":"Stop using means end the activity; the target clause is The laboratory stopped using solvent."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-018","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":4,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"At the roadside, arrange the sentence about a purposeful pause.","tokens":[{"id":"t7","text":"map"},{"id":"t6","text":"the"},{"id":"t5","text":"check"},{"id":"t4","text":"to"},{"id":"t3","text":"stopped"},{"id":"t2","text":"driver"},{"id":"t1","text":"The"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","stop","purpose"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Stop to check expresses the purpose of the pause."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-019","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":4,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the support article, arrange the recommended experiment.","tokens":[{"id":"t7","text":"brightness"},{"id":"t6","text":"screen"},{"id":"t5","text":"lowering"},{"id":"t4","text":"try"},{"id":"t3","text":"the"},{"id":"t2","text":"first"},{"id":"t1","text":"Try"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","try","method"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7"]},"explanation":"Try lowering presents a solution to test."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-020","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":4,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the engineering report, arrange the sentence about an effort.","tokens":[{"id":"t8","text":"valve"},{"id":"t7","text":"the"},{"id":"t6","text":"turn"},{"id":"t5","text":"to"},{"id":"t4","text":"tried"},{"id":"t3","text":"apprentice"},{"id":"t2","text":"The"},{"id":"t1","text":"carefully"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","try","effort"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7","t8"]},"explanation":"Try to turn describes an effort; carefully modifies the action."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-021","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":5,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the rota notice, arrange the sentence about an implication.","tokens":[{"id":"t7","text":"records"},{"id":"t6","text":"detailed"},{"id":"t5","text":"keeping"},{"id":"t4","text":"means"},{"id":"t3","text":"rule"},{"id":"t2","text":"The"},{"id":"t1","text":"new"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","mean","consequence"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7"]},"explanation":"Mean keeping describes what the rule involves."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-022","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":5,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the email draft, arrange the sentence about an intention.","tokens":[{"id":"t7","text":"forward"},{"id":"t6","text":"to"},{"id":"t5","text":"meant"},{"id":"t4","text":"I"},{"id":"t3","text":"report"},{"id":"t2","text":"the"},{"id":"t1","text":"but"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","mean","intention"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t4","t5","t6","t7","t2","t3"]},"explanation":"The target clause is I meant to forward the report; the infinitive expresses intention."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-023","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":5,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the lecture, arrange the sentence about continuing the same activity.","tokens":[{"id":"t7","text":"questions"},{"id":"t6","text":"answering"},{"id":"t5","text":"on"},{"id":"t4","text":"went"},{"id":"t3","text":"lecturer"},{"id":"t2","text":"The"},{"id":"t1","text":"calmly"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","go-on","continuation"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t2","t3","t4","t5","t6","t7"]},"explanation":"Go on answering continues the activity."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-024","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":5,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the workshop outline, arrange the sentence about moving on.","tokens":[{"id":"t8","text":"funding"},{"id":"t7","text":"the"},{"id":"t6","text":"discuss"},{"id":"t5","text":"to"},{"id":"t4","text":"on"},{"id":"t3","text":"went"},{"id":"t2","text":"speaker"},{"id":"t1","text":"The"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","go-on","sequence"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"Go on to discuss introduces a later topic."},
-    {"schemaVersion":"1.0.0","id":"b2-meaning-change-gerund-infinitive-wo-025","status":"published","autoGradable":true,"level":"B2","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"meaning-change-gerund-infinitive","taxonomyNodeIds":["meaning-change-gerund-infinitive"],"difficulty":5,"instructions":"Arrange the words to make a grammatical sentence.","prompt":"In the company notice, arrange the formal regret formula.","tokens":[{"id":"t8","text":"full"},{"id":"t7","text":"is"},{"id":"t6","text":"course"},{"id":"t5","text":"the"},{"id":"t4","text":"inform"},{"id":"t3","text":"to"},{"id":"t2","text":"regret"},{"id":"t1","text":"We"}],"lessonIds":["b2-grammar-meaning-change-gerund-infinitive"],"tags":["b2","regret","formal-notice"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4","t5","t6","t7","t8"]},"explanation":"Regret to inform introduces formal bad news."}
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-meaning-change-gerund-infinitive-word-order-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "gerunds-infinitives",
+  "subtopic": "meaning-change-gerund-infinitive",
+  "lessonId": "b2-grammar-meaning-change-gerund-infinitive",
+  "activityType": "word_order",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "At the reunion, arrange the sentence about a past memory.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "remember"
+        },
+        {
+          "id": "t3",
+          "text": "meeting"
+        },
+        {
+          "id": "t4",
+          "text": "friends"
+        },
+        {
+          "id": "t5",
+          "text": "last"
+        },
+        {
+          "id": "t6",
+          "text": "summer"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "remember",
+        "gerund"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "Remember plus gerund recalls a past experience."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the departure checklist, arrange the task reminder.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Please"
+        },
+        {
+          "id": "t2",
+          "text": "return"
+        },
+        {
+          "id": "t3",
+          "text": "remember"
+        },
+        {
+          "id": "t4",
+          "text": "to"
+        },
+        {
+          "id": "t5",
+          "text": "pass"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "remember",
+        "to-infinitive"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "Remember to do introduces a task."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the travel diary, arrange the forgotten action.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "submit"
+        },
+        {
+          "id": "t3",
+          "text": "forgot"
+        },
+        {
+          "id": "t4",
+          "text": "to"
+        },
+        {
+          "id": "t5",
+          "text": "form"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "forget",
+        "to-infinitive"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "Forget to submit means the action was not completed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the memoir, arrange the unforgettable experience.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "will"
+        },
+        {
+          "id": "t3",
+          "text": "never"
+        },
+        {
+          "id": "t4",
+          "text": "forget"
+        },
+        {
+          "id": "t5",
+          "text": "reaching"
+        },
+        {
+          "id": "t6",
+          "text": "summit"
+        },
+        {
+          "id": "t7",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "forget",
+        "gerund"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Forget plus gerund refers to a past experience."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "At the theatre, arrange the sentence about ending an activity.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The"
+        },
+        {
+          "id": "t2",
+          "text": "when"
+        },
+        {
+          "id": "t3",
+          "text": "audience"
+        },
+        {
+          "id": "t4",
+          "text": "stopped"
+        },
+        {
+          "id": "t5",
+          "text": "the"
+        },
+        {
+          "id": "t6",
+          "text": "clapping"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "stop",
+        "gerund"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ]
+      },
+      "explanation": "Stop clapping means end the activity."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "On the platform, arrange the sentence about a purpose.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "train"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "board"
+        },
+        {
+          "id": "t4",
+          "text": "to"
+        },
+        {
+          "id": "t3",
+          "text": "stopped"
+        },
+        {
+          "id": "t2",
+          "text": "We"
+        },
+        {
+          "id": "t1",
+          "text": "briefly"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "stop",
+        "purpose"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "The target sentence should be We stopped to board the train; the token set must be ordered as a complete sentence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the troubleshooting guide, arrange the proposed method.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Could"
+        },
+        {
+          "id": "t2",
+          "text": "you"
+        },
+        {
+          "id": "t3",
+          "text": "first"
+        },
+        {
+          "id": "t4",
+          "text": "try"
+        },
+        {
+          "id": "t5",
+          "text": "restarting"
+        },
+        {
+          "id": "t6",
+          "text": "router"
+        },
+        {
+          "id": "t7",
+          "text": "the"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "try",
+        "method"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Try restarting proposes a method."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the repair log, arrange the sentence about an effort.",
+      "tokens": [
+        {
+          "id": "t8",
+          "text": "sensor"
+        },
+        {
+          "id": "t7",
+          "text": "the"
+        },
+        {
+          "id": "t6",
+          "text": "replace"
+        },
+        {
+          "id": "t5",
+          "text": "to"
+        },
+        {
+          "id": "t4",
+          "text": "tried"
+        },
+        {
+          "id": "t3",
+          "text": "engineer"
+        },
+        {
+          "id": "t2",
+          "text": "The"
+        },
+        {
+          "id": "t1",
+          "text": "carefully"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "try",
+        "effort"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "The target sentence is The engineer tried to replace the sensor carefully; the infinitive presents the effort."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the public notice, arrange the formal announcement.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "regret"
+        },
+        {
+          "id": "t3",
+          "text": "to"
+        },
+        {
+          "id": "t4",
+          "text": "inform"
+        },
+        {
+          "id": "t5",
+          "text": "the"
+        },
+        {
+          "id": "t6",
+          "text": "service"
+        },
+        {
+          "id": "t7",
+          "text": "is"
+        },
+        {
+          "id": "t8",
+          "text": "delayed"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "regret",
+        "formal-notice"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "Regret to inform introduces a formal notice."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the apology, arrange the sentence about a past choice.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "says"
+        },
+        {
+          "id": "t3",
+          "text": "that"
+        },
+        {
+          "id": "t4",
+          "text": "she"
+        },
+        {
+          "id": "t5",
+          "text": "regrets"
+        },
+        {
+          "id": "t6",
+          "text": "leaving"
+        },
+        {
+          "id": "t7",
+          "text": "early"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "regret",
+        "gerund"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Regret leaving expresses regret about a past action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the rota, arrange the sentence about a consequence.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "daily"
+        },
+        {
+          "id": "t2",
+          "text": "The"
+        },
+        {
+          "id": "t3",
+          "text": "rota"
+        },
+        {
+          "id": "t4",
+          "text": "now"
+        },
+        {
+          "id": "t5",
+          "text": "means"
+        },
+        {
+          "id": "t6",
+          "text": "arriving"
+        },
+        {
+          "id": "t7",
+          "text": "earlier"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "mean",
+        "consequence"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Mean arriving expresses what the rota involves."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the message to a colleague, arrange the sentence about intention.",
+      "tokens": [
+        {
+          "id": "t2",
+          "text": "I"
+        },
+        {
+          "id": "t3",
+          "text": "yesterday"
+        },
+        {
+          "id": "t4",
+          "text": "meant"
+        },
+        {
+          "id": "t5",
+          "text": "call"
+        },
+        {
+          "id": "t6",
+          "text": "to"
+        },
+        {
+          "id": "t7",
+          "text": "you"
+        },
+        {
+          "id": "t1",
+          "text": "but"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "mean",
+        "intention"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t1"
+        ]
+      },
+      "explanation": "The intended sentence is I meant to call you yesterday but; the prompt deliberately tests the complement after meant."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the lecture recording, arrange the sentence about continuing.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "questions"
+        },
+        {
+          "id": "t6",
+          "text": "answering"
+        },
+        {
+          "id": "t5",
+          "text": "on"
+        },
+        {
+          "id": "t4",
+          "text": "went"
+        },
+        {
+          "id": "t3",
+          "text": "lecturer"
+        },
+        {
+          "id": "t2",
+          "text": "The"
+        },
+        {
+          "id": "t1",
+          "text": "patiently"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "go-on",
+        "continuation"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Go on answering continues the same activity; patiently is an optional distractor token and should not be selected."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the seminar plan, arrange the sentence about a later topic.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The"
+        },
+        {
+          "id": "t2",
+          "text": "speaker"
+        },
+        {
+          "id": "t3",
+          "text": "went"
+        },
+        {
+          "id": "t4",
+          "text": "on"
+        },
+        {
+          "id": "t5",
+          "text": "to"
+        },
+        {
+          "id": "t6",
+          "text": "discuss"
+        },
+        {
+          "id": "t7",
+          "text": "the"
+        },
+        {
+          "id": "t8",
+          "text": "funding"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "go-on",
+        "sequence"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "Go on to discuss introduces a subsequent topic."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the diary, arrange the sentence about a remembered meeting.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "curator"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "meeting"
+        },
+        {
+          "id": "t4",
+          "text": "remember"
+        },
+        {
+          "id": "t3",
+          "text": "I"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t1",
+          "text": "new"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "remember",
+        "gerund"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "The intended core is I remember meeting the new curator; the activity tests the gerund complement."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the checklist, arrange the task reminder.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "samples"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        },
+        {
+          "id": "t5",
+          "text": "label"
+        },
+        {
+          "id": "t4",
+          "text": "to"
+        },
+        {
+          "id": "t3",
+          "text": "remember"
+        },
+        {
+          "id": "t2",
+          "text": "Please"
+        },
+        {
+          "id": "t1",
+          "text": "all"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "remember",
+        "to-infinitive"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Remember to label introduces a task."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the laboratory log, arrange the sentence about an ended activity.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "solvent"
+        },
+        {
+          "id": "t6",
+          "text": "using"
+        },
+        {
+          "id": "t5",
+          "text": "stopped"
+        },
+        {
+          "id": "t4",
+          "text": "laboratory"
+        },
+        {
+          "id": "t3",
+          "text": "The"
+        },
+        {
+          "id": "t2",
+          "text": "that"
+        },
+        {
+          "id": "t1",
+          "text": "year"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "stop",
+        "gerund"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Stop using means end the activity; the target clause is The laboratory stopped using solvent."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "At the roadside, arrange the sentence about a purposeful pause.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The"
+        },
+        {
+          "id": "t2",
+          "text": "driver"
+        },
+        {
+          "id": "t3",
+          "text": "stopped"
+        },
+        {
+          "id": "t4",
+          "text": "to"
+        },
+        {
+          "id": "t5",
+          "text": "check"
+        },
+        {
+          "id": "t6",
+          "text": "the"
+        },
+        {
+          "id": "t7",
+          "text": "map"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "stop",
+        "purpose"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Stop to check expresses the purpose of the pause."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the support article, arrange the recommended experiment.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Try"
+        },
+        {
+          "id": "t2",
+          "text": "first"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "try"
+        },
+        {
+          "id": "t5",
+          "text": "lowering"
+        },
+        {
+          "id": "t6",
+          "text": "screen"
+        },
+        {
+          "id": "t7",
+          "text": "brightness"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "try",
+        "method"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Try lowering presents a solution to test."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the engineering report, arrange the sentence about an effort.",
+      "tokens": [
+        {
+          "id": "t8",
+          "text": "valve"
+        },
+        {
+          "id": "t7",
+          "text": "the"
+        },
+        {
+          "id": "t6",
+          "text": "turn"
+        },
+        {
+          "id": "t5",
+          "text": "to"
+        },
+        {
+          "id": "t4",
+          "text": "tried"
+        },
+        {
+          "id": "t3",
+          "text": "apprentice"
+        },
+        {
+          "id": "t2",
+          "text": "The"
+        },
+        {
+          "id": "t1",
+          "text": "carefully"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "try",
+        "effort"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "Try to turn describes an effort; carefully modifies the action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the rota notice, arrange the sentence about an implication.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "records"
+        },
+        {
+          "id": "t6",
+          "text": "detailed"
+        },
+        {
+          "id": "t5",
+          "text": "keeping"
+        },
+        {
+          "id": "t4",
+          "text": "means"
+        },
+        {
+          "id": "t3",
+          "text": "rule"
+        },
+        {
+          "id": "t2",
+          "text": "The"
+        },
+        {
+          "id": "t1",
+          "text": "new"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "mean",
+        "consequence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Mean keeping describes what the rule involves."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the email draft, arrange the sentence about an intention.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "forward"
+        },
+        {
+          "id": "t6",
+          "text": "to"
+        },
+        {
+          "id": "t5",
+          "text": "meant"
+        },
+        {
+          "id": "t4",
+          "text": "I"
+        },
+        {
+          "id": "t3",
+          "text": "report"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t1",
+          "text": "but"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "mean",
+        "intention"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "The target clause is I meant to forward the report; the infinitive expresses intention."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the lecture, arrange the sentence about continuing the same activity.",
+      "tokens": [
+        {
+          "id": "t7",
+          "text": "questions"
+        },
+        {
+          "id": "t6",
+          "text": "answering"
+        },
+        {
+          "id": "t5",
+          "text": "on"
+        },
+        {
+          "id": "t4",
+          "text": "went"
+        },
+        {
+          "id": "t3",
+          "text": "lecturer"
+        },
+        {
+          "id": "t2",
+          "text": "The"
+        },
+        {
+          "id": "t1",
+          "text": "calmly"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "go-on",
+        "continuation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ]
+      },
+      "explanation": "Go on answering continues the activity."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the workshop outline, arrange the sentence about moving on.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The"
+        },
+        {
+          "id": "t2",
+          "text": "speaker"
+        },
+        {
+          "id": "t3",
+          "text": "went"
+        },
+        {
+          "id": "t4",
+          "text": "on"
+        },
+        {
+          "id": "t5",
+          "text": "to"
+        },
+        {
+          "id": "t6",
+          "text": "discuss"
+        },
+        {
+          "id": "t7",
+          "text": "the"
+        },
+        {
+          "id": "t8",
+          "text": "funding"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "go-on",
+        "sequence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "Go on to discuss introduces a later topic."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-meaning-change-gerund-infinitive-wo-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 5,
+      "instructions": "Arrange the words to make a grammatical sentence.",
+      "prompt": "In the company notice, arrange the formal regret formula.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We"
+        },
+        {
+          "id": "t2",
+          "text": "regret"
+        },
+        {
+          "id": "t3",
+          "text": "to"
+        },
+        {
+          "id": "t4",
+          "text": "inform"
+        },
+        {
+          "id": "t5",
+          "text": "the"
+        },
+        {
+          "id": "t6",
+          "text": "course"
+        },
+        {
+          "id": "t7",
+          "text": "is"
+        },
+        {
+          "id": "t8",
+          "text": "full"
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "regret",
+        "formal-notice"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ]
+      },
+      "explanation": "Regret to inform introduces formal bad news."
+    }
   ]
 }

@@ -1,105 +1,1372 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b1-articles-reference-word-order-001","level":"B1","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","lessonId":"b1-grammar-articles-reference","activityType":"word_order",
-  "activities":[
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-articles-reference-word-order-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "articles-determiners",
+  "subtopic": "articles-reference",
+  "lessonId": "b1-grammar-articles-reference",
+  "activityType": "word_order",
+  "activities": [
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-001","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Put the words in the correct order.","prompt":"I saw a cat in the garden.","tokens":[{"id":"t1","text":"I saw"},{"id":"t2","text":"a cat"},{"id":"t3","text":"in"},{"id":"t4","text":"the garden."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Primera mención indefinida: «a cat»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "I saw a cat in the garden.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I saw"
+        },
+        {
+          "id": "t2",
+          "text": "a cat"
+        },
+        {
+          "id": "t3",
+          "text": "in"
+        },
+        {
+          "id": "t4",
+          "text": "the garden."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Primera mención indefinida: «a cat»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-002","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Put the words in the correct order.","prompt":"The cat was sleeping on the sofa.","tokens":[{"id":"t1","text":"The cat"},{"id":"t2","text":"was sleeping"},{"id":"t3","text":"on"},{"id":"t4","text":"the sofa."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Referencia ya conocida: «the cat»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The cat was sleeping on the sofa.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The cat"
+        },
+        {
+          "id": "t2",
+          "text": "was sleeping"
+        },
+        {
+          "id": "t3",
+          "text": "on"
+        },
+        {
+          "id": "t4",
+          "text": "the sofa."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Referencia ya conocida: «the cat»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-003","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Put the words in the correct order.","prompt":"She is an artist.","tokens":[{"id":"t1","text":"She"},{"id":"t2","text":"is"},{"id":"t3","text":"an"},{"id":"t4","text":"artist."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«artist» empieza con sonido vocálico: «an»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "She is an artist.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "an"
+        },
+        {
+          "id": "t4",
+          "text": "artist."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«artist» empieza con sonido vocálico: «an»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-004","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Put the words in the correct order.","prompt":"He works as a doctor.","tokens":[{"id":"t1","text":"He works"},{"id":"t2","text":"as"},{"id":"t3","text":"a"},{"id":"t4","text":"doctor."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«doctor» empieza con sonido consonántico: «a»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "He works as a doctor.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He works"
+        },
+        {
+          "id": "t2",
+          "text": "as"
+        },
+        {
+          "id": "t3",
+          "text": "a"
+        },
+        {
+          "id": "t4",
+          "text": "doctor."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«doctor» empieza con sonido consonántico: «a»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-005","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":1,
-      "instructions":"Put the words in the correct order.","prompt":"Milk is good for your bones.","tokens":[{"id":"t1","text":"Milk"},{"id":"t2","text":"is good"},{"id":"t3","text":"for"},{"id":"t4","text":"your bones."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":40,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Incontable en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "Milk is good for your bones.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Milk"
+        },
+        {
+          "id": "t2",
+          "text": "is good"
+        },
+        {
+          "id": "t3",
+          "text": "for"
+        },
+        {
+          "id": "t4",
+          "text": "your bones."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Incontable en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-006","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Put the words in the correct order.","prompt":"The earth goes around the sun.","tokens":[{"id":"t1","text":"The earth"},{"id":"t2","text":"goes around"},{"id":"t3","text":"the"},{"id":"t4","text":"sun."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Lugar único: «the earth»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The earth goes around the sun.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The earth"
+        },
+        {
+          "id": "t2",
+          "text": "goes around"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "sun."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Lugar único: «the earth»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-007","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Put the words in the correct order.","prompt":"This is the cheapest option.","tokens":[{"id":"t1","text":"This"},{"id":"t2","text":"is"},{"id":"t3","text":"the cheapest"},{"id":"t4","text":"option."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Superlativo: «the cheapest»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "This is the cheapest option.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "This"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "the cheapest"
+        },
+        {
+          "id": "t4",
+          "text": "option."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Superlativo: «the cheapest»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-008","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Put the words in the correct order.","prompt":"Birds can fly.","tokens":[{"id":"t1","text":"Birds"},{"id":"t2","text":"can"},{"id":"t3","text":"fly."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Plural en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "Birds can fly.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Birds"
+        },
+        {
+          "id": "t2",
+          "text": "can"
+        },
+        {
+          "id": "t3",
+          "text": "fly."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Plural en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-009","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Put the words in the correct order.","prompt":"I bought an orange at the market.","tokens":[{"id":"t1","text":"I bought"},{"id":"t2","text":"an orange"},{"id":"t3","text":"at"},{"id":"t4","text":"the market."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«orange» empieza con sonido vocálico: «an»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "I bought an orange at the market.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I bought"
+        },
+        {
+          "id": "t2",
+          "text": "an orange"
+        },
+        {
+          "id": "t3",
+          "text": "at"
+        },
+        {
+          "id": "t4",
+          "text": "the market."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«orange» empieza con sonido vocálico: «an»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-010","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":2,
-      "instructions":"Put the words in the correct order.","prompt":"He plays the violin.","tokens":[{"id":"t1","text":"He plays"},{"id":"t2","text":"the"},{"id":"t3","text":"violin."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":45,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Instrumentos musicales: «the violin»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "He plays the violin.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He plays"
+        },
+        {
+          "id": "t2",
+          "text": "the"
+        },
+        {
+          "id": "t3",
+          "text": "violin."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Instrumentos musicales: «the violin»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-011","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Put the words in the correct order.","prompt":"It took an hour to get there.","tokens":[{"id":"t1","text":"It took"},{"id":"t2","text":"an hour"},{"id":"t3","text":"to get"},{"id":"t4","text":"there."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«hour» tiene «h» muda: «an hour»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "It took an hour to get there.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "It took"
+        },
+        {
+          "id": "t2",
+          "text": "an hour"
+        },
+        {
+          "id": "t3",
+          "text": "to get"
+        },
+        {
+          "id": "t4",
+          "text": "there."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«hour» tiene «h» muda: «an hour»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-012","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Put the words in the correct order.","prompt":"She is an honest person.","tokens":[{"id":"t1","text":"She"},{"id":"t2","text":"is"},{"id":"t3","text":"an honest"},{"id":"t4","text":"person."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«honest» tiene «h» muda: «an honest»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "She is an honest person.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "an honest"
+        },
+        {
+          "id": "t4",
+          "text": "person."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«honest» tiene «h» muda: «an honest»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-013","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Put the words in the correct order.","prompt":"The sky is clear today.","tokens":[{"id":"t1","text":"The sky"},{"id":"t2","text":"is"},{"id":"t3","text":"clear"},{"id":"t4","text":"today."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Lugar único: «the sky»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The sky is clear today.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The sky"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "clear"
+        },
+        {
+          "id": "t4",
+          "text": "today."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Lugar único: «the sky»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-014","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Put the words in the correct order.","prompt":"He goes to work at nine.","tokens":[{"id":"t1","text":"He goes"},{"id":"t2","text":"to work"},{"id":"t3","text":"at"},{"id":"t4","text":"nine."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Institución con función: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "He goes to work at nine.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He goes"
+        },
+        {
+          "id": "t2",
+          "text": "to work"
+        },
+        {
+          "id": "t3",
+          "text": "at"
+        },
+        {
+          "id": "t4",
+          "text": "nine."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Institución con función: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-015","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":3,
-      "instructions":"Put the words in the correct order.","prompt":"He is a European citizen.","tokens":[{"id":"t1","text":"He"},{"id":"t2","text":"is"},{"id":"t3","text":"a European"},{"id":"t4","text":"citizen."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":50,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«European» suena «yu»: «a European»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "He is a European citizen.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "a European"
+        },
+        {
+          "id": "t4",
+          "text": "citizen."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«European» suena «yu»: «a European»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-016","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Put the words in the correct order.","prompt":"The Thames flows through London.","tokens":[{"id":"t1","text":"The Thames"},{"id":"t2","text":"flows"},{"id":"t3","text":"through"},{"id":"t4","text":"London."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Ríos: «the Thames»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The Thames flows through London.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The Thames"
+        },
+        {
+          "id": "t2",
+          "text": "flows"
+        },
+        {
+          "id": "t3",
+          "text": "through"
+        },
+        {
+          "id": "t4",
+          "text": "London."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Ríos: «the Thames»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-017","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Put the words in the correct order.","prompt":"We climbed the Andes last year.","tokens":[{"id":"t1","text":"We climbed"},{"id":"t2","text":"the Andes"},{"id":"t3","text":"last"},{"id":"t4","text":"year."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Cadenas montañosas: «the Andes»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "We climbed the Andes last year.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We climbed"
+        },
+        {
+          "id": "t2",
+          "text": "the Andes"
+        },
+        {
+          "id": "t3",
+          "text": "last"
+        },
+        {
+          "id": "t4",
+          "text": "year."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Cadenas montañosas: «the Andes»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-018","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Put the words in the correct order.","prompt":"We had lunch at noon.","tokens":[{"id":"t1","text":"We had"},{"id":"t2","text":"lunch"},{"id":"t3","text":"at"},{"id":"t4","text":"noon."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Comidas en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "We had lunch at noon.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We had"
+        },
+        {
+          "id": "t2",
+          "text": "lunch"
+        },
+        {
+          "id": "t3",
+          "text": "at"
+        },
+        {
+          "id": "t4",
+          "text": "noon."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Comidas en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-019","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Put the words in the correct order.","prompt":"The Netherlands is famous for tulips.","tokens":[{"id":"t1","text":"The Netherlands"},{"id":"t2","text":"is famous"},{"id":"t3","text":"for"},{"id":"t4","text":"tulips."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Países plurales: «the Netherlands»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The Netherlands is famous for tulips.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The Netherlands"
+        },
+        {
+          "id": "t2",
+          "text": "is famous"
+        },
+        {
+          "id": "t3",
+          "text": "for"
+        },
+        {
+          "id": "t4",
+          "text": "tulips."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Países plurales: «the Netherlands»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-020","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":4,
-      "instructions":"Put the words in the correct order.","prompt":"She speaks French fluently.","tokens":[{"id":"t1","text":"She speaks"},{"id":"t2","text":"French"},{"id":"t3","text":"fluently."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":55,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3"]},"explanation":"Idiomas en general: zero article."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "She speaks French fluently.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She speaks"
+        },
+        {
+          "id": "t2",
+          "text": "French"
+        },
+        {
+          "id": "t3",
+          "text": "fluently."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      "explanation": "Idiomas en general: zero article."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-021","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Put the words in the correct order.","prompt":"The young should respect the old.","tokens":[{"id":"t1","text":"The young"},{"id":"t2","text":"should respect"},{"id":"t3","text":"the"},{"id":"t4","text":"old."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":65,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Adjetivos como grupo: «the young»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The young should respect the old.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The young"
+        },
+        {
+          "id": "t2",
+          "text": "should respect"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "old."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Adjetivos como grupo: «the young»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-022","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Put the words in the correct order.","prompt":"I heard it on the news.","tokens":[{"id":"t1","text":"I heard it"},{"id":"t2","text":"on"},{"id":"t3","text":"the"},{"id":"t4","text":"news."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":65,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Medios: «the news»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "I heard it on the news.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I heard it"
+        },
+        {
+          "id": "t2",
+          "text": "on"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "news."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Medios: «the news»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-023","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Put the words in the correct order.","prompt":"The Danube crosses several countries.","tokens":[{"id":"t1","text":"The Danube"},{"id":"t2","text":"crosses"},{"id":"t3","text":"several"},{"id":"t4","text":"countries."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":65,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Ríos: «the Danube»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "The Danube crosses several countries.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The Danube"
+        },
+        {
+          "id": "t2",
+          "text": "crosses"
+        },
+        {
+          "id": "t3",
+          "text": "several"
+        },
+        {
+          "id": "t4",
+          "text": "countries."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Ríos: «the Danube»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-024","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Put the words in the correct order.","prompt":"She is the first to arrive.","tokens":[{"id":"t1","text":"She"},{"id":"t2","text":"is"},{"id":"t3","text":"the first"},{"id":"t4","text":"to arrive."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":65,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Ordinales: «the first»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "She is the first to arrive.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She"
+        },
+        {
+          "id": "t2",
+          "text": "is"
+        },
+        {
+          "id": "t3",
+          "text": "the first"
+        },
+        {
+          "id": "t4",
+          "text": "to arrive."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Ordinales: «the first»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-articles-reference-wo-025","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"articles-determiners","subtopic":"articles-reference","taxonomyNodeIds":["articles-reference"],"difficulty":5,
-      "instructions":"Put the words in the correct order.","prompt":"He plays the drums in a band.","tokens":[{"id":"t1","text":"He plays"},{"id":"t2","text":"the drums"},{"id":"t3","text":"in"},{"id":"t4","text":"a band."}],"lessonIds":["b1-grammar-articles-reference"],"tags":["b1","articles","word-order"],"estimatedSeconds":65,"evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Instrumentos musicales: «the drums»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-articles-reference-wo-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the words in the correct order.",
+      "prompt": "He plays the drums in a band.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He plays"
+        },
+        {
+          "id": "t2",
+          "text": "the drums"
+        },
+        {
+          "id": "t3",
+          "text": "in"
+        },
+        {
+          "id": "t4",
+          "text": "a band."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Instrumentos musicales: «the drums»."
     }
   ]
 }

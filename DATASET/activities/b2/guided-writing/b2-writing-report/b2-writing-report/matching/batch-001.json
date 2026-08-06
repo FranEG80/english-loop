@@ -1,29 +1,1387 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b2-writing-report-matching-001","level":"B2","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","lessonId":"b2-writing-report","activityType":"matching","activities":[
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-001","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":1,"instructions":"Match each report section with its purpose.","prompt":"Match the opening sections to their functions.","pairs":[{"leftId":"a","left":"Introduction","rightId":"x","right":"states purpose and scope"},{"leftId":"b","left":"Findings","rightId":"y","right":"presents evidence"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","sections"],"estimatedSeconds":45,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The introduction frames the report; findings present evidence."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-002","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":1,"instructions":"Match each phrase with its report role.","prompt":"Match these expressions with what they do in a report.","pairs":[{"leftId":"a","left":"This report examines","rightId":"x","right":"introduces the purpose"},{"leftId":"b","left":"It is recommended that","rightId":"y","right":"introduces an action"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","phrases"],"estimatedSeconds":45,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The two phrases signal different stages of a report."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-003","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":1,"instructions":"Match each evidence phrase with its meaning.","prompt":"Match report verbs with the evidence they introduce.","pairs":[{"leftId":"a","left":"The survey shows","rightId":"x","right":"a measured result"},{"leftId":"b","left":"Interviews revealed","rightId":"y","right":"information from interviews"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","evidence"],"estimatedSeconds":45,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Both verbs report evidence, but identify different sources."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-004","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":1,"instructions":"Match headings with their contents.","prompt":"Match each heading to the information it should contain.","pairs":[{"leftId":"a","left":"Method","rightId":"x","right":"how information was collected"},{"leftId":"b","left":"Recommendations","rightId":"y","right":"proposed improvements"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","headings"],"estimatedSeconds":45,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"A method describes collection; recommendations describe action."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-005","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":1,"instructions":"Match each sentence with its function.","prompt":"Match report sentences to their communicative purpose.","pairs":[{"leftId":"a","left":"Most users were satisfied","rightId":"x","right":"states a finding"},{"leftId":"b","left":"The centre should add signs","rightId":"y","right":"states a recommendation"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","functions"],"estimatedSeconds":45,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The first reports evidence and the second proposes action."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-006","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":2,"instructions":"Match each connector with its relationship.","prompt":"Match report connectors to the relationship they express.","pairs":[{"leftId":"a","left":"However","rightId":"x","right":"contrast"},{"leftId":"b","left":"As a result","rightId":"y","right":"consequence"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","connectors"],"estimatedSeconds":50,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"These connectors make the relationship between statements visible."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-007","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":2,"instructions":"Match each report expression with its register.","prompt":"Match neutral expressions with their report functions.","pairs":[{"leftId":"a","left":"A further issue is","rightId":"x","right":"adds a problem"},{"leftId":"b","left":"Overall","rightId":"y","right":"summarises"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","register"],"estimatedSeconds":50,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The expressions organise information without sounding personal."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-008","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":2,"instructions":"Match evidence with appropriate qualification.","prompt":"Match findings with the caution they require.","pairs":[{"leftId":"a","left":"One comment","rightId":"x","right":"cannot prove a general trend"},{"leftId":"b","left":"A large survey","rightId":"y","right":"may support a broader claim"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","evidence"],"estimatedSeconds":50,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The strength of a conclusion depends on the evidence."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-009","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":2,"instructions":"Match each action with its priority.","prompt":"Match report recommendations to their likely priority.","pairs":[{"leftId":"a","left":"Replace a broken sign","rightId":"x","right":"immediate practical fix"},{"leftId":"b","left":"Review the policy in six months","rightId":"y","right":"longer-term check"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","priorities"],"estimatedSeconds":50,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Recommendations can address immediate and later needs."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-010","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":2,"instructions":"Match each qualification with its purpose.","prompt":"Match cautious phrases with what they prevent.","pairs":[{"leftId":"a","left":"may be linked to","rightId":"x","right":"overstating a cause"},{"leftId":"b","left":"should be treated cautiously","rightId":"y","right":"overstating a conclusion"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","caution"],"estimatedSeconds":50,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Both phrases keep claims proportional to evidence."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-011","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":3,"instructions":"Match each source with its reporting verb.","prompt":"Match information sources with natural reporting phrases.","pairs":[{"leftId":"a","left":"The survey","rightId":"x","right":"shows that"},{"leftId":"b","left":"The interviews","rightId":"y","right":"revealed that"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","sources"],"estimatedSeconds":55,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The verbs fit the type of information source."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-012","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":3,"instructions":"Match findings with suitable headings.","prompt":"Match each result to the heading where it belongs.","pairs":[{"leftId":"a","left":"Users requested later sessions","rightId":"x","right":"Opening hours"},{"leftId":"b","left":"The entrance was difficult to find","rightId":"y","right":"Access and signage"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","organisation"],"estimatedSeconds":55,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Specific headings help readers locate related findings."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-013","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":3,"instructions":"Match proposals with the issue they address.","prompt":"Match recommendations to the findings behind them.","pairs":[{"leftId":"a","left":"Add a digital timetable","rightId":"x","right":"users cannot find schedules"},{"leftId":"b","left":"Provide more quiet desks","rightId":"y","right":"study areas are often full"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","evidence"],"estimatedSeconds":55,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"A recommendation is strongest when it responds to a stated issue."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-014","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":3,"instructions":"Match report stages with their order.","prompt":"Match each stage with its usual position.","pairs":[{"leftId":"a","left":"Purpose","rightId":"x","right":"at the beginning"},{"leftId":"b","left":"Recommendations","rightId":"y","right":"after findings"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","sequence"],"estimatedSeconds":55,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The order lets the reader understand why an action is proposed."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-015","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":3,"instructions":"Match each phrase with its level of certainty.","prompt":"Match evidence phrases to their certainty.","pairs":[{"leftId":"a","left":"The data confirms","rightId":"x","right":"strong evidence"},{"leftId":"b","left":"The pattern may reflect","rightId":"y","right":"qualified possibility"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","certainty"],"estimatedSeconds":55,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"A report should choose certainty language carefully."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-016","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":4,"instructions":"Match each recommendation with its measurable detail.","prompt":"Match proposed actions to useful targets.","pairs":[{"leftId":"a","left":"Answer enquiries","rightId":"x","right":"within two working days"},{"leftId":"b","left":"Review the scheme","rightId":"y","right":"after three months"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","targets"],"estimatedSeconds":60,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Targets make recommendations possible to monitor."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-017","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":4,"instructions":"Match each limitation with its effect.","prompt":"Match methodological limits with the claims they weaken.","pairs":[{"leftId":"a","left":"Small sample","rightId":"x","right":"generalisability"},{"leftId":"b","left":"Short time frame","rightId":"y","right":"long-term conclusions"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","limitations"],"estimatedSeconds":60,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Different limits affect different kinds of conclusions."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-018","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":4,"instructions":"Match a finding with a proportionate recommendation.","prompt":"Match evidence to the response it supports.","pairs":[{"leftId":"a","left":"Lighting is unreliable","rightId":"x","right":"repair existing fittings"},{"leftId":"b","left":"Users want more events","rightId":"y","right":"trial one monthly event"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","proportion"],"estimatedSeconds":60,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"A trial or repair can be more proportionate than a large expansion."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-019","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":4,"instructions":"Match wording with its register.","prompt":"Match direct wording with an objective report alternative.","pairs":[{"leftId":"a","left":"I think the service is poor","rightId":"x","right":"Several users reported delays"},{"leftId":"b","left":"Fix this now","rightId":"y","right":"It is recommended that this be reviewed"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","register"],"estimatedSeconds":60,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Objective alternatives foreground evidence or a measured proposal."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-020","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":4,"instructions":"Match each conclusion with its function.","prompt":"Match closing phrases to what they achieve.","pairs":[{"leftId":"a","left":"Overall","rightId":"x","right":"summarises findings"},{"leftId":"b","left":"For this reason","rightId":"y","right":"links evidence to action"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","conclusion"],"estimatedSeconds":60,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The conclusion can summarise and then justify action."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-021","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":5,"instructions":"Match evidence strength with suitable language.","prompt":"Match the evidence to a responsible claim.","pairs":[{"leftId":"a","left":"Repeated survey result","rightId":"x","right":"The results indicate"},{"leftId":"b","left":"Single anecdote","rightId":"y","right":"One comment suggests"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","claim"],"estimatedSeconds":65,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"The wording reflects how much evidence is available."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-022","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":5,"instructions":"Match recommendations with their implementation detail.","prompt":"Match an action with a practical way to implement it.","pairs":[{"leftId":"a","left":"Improve access","rightId":"x","right":"install a ramp at the side entrance"},{"leftId":"b","left":"Reduce waiting","rightId":"y","right":"publish live queue information"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","implementation"],"estimatedSeconds":65,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Concrete implementation details make proposals useful."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-023","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":5,"instructions":"Match a report claim with its necessary qualification.","prompt":"Match broad claims with the wording that makes them responsible.","pairs":[{"leftId":"a","left":"The scheme is popular","rightId":"x","right":"among surveyed users"},{"leftId":"b","left":"The change reduced calls","rightId":"y","right":"during the trial period"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","precision"],"estimatedSeconds":65,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Qualifying scope and time prevents overgeneralisation."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-024","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":5,"instructions":"Match report headings with their best wording.","prompt":"Match vague headings to precise alternatives.","pairs":[{"leftId":"a","left":"Other","rightId":"x","right":"Access and signage"},{"leftId":"b","left":"Things to do","rightId":"y","right":"Recommendations"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","precision"],"estimatedSeconds":65,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Specific headings help the reader navigate the report."},
-    {"schemaVersion":"1.0.0","id":"b2-writing-report-m-025","status":"published","autoGradable":true,"level":"B2","type":"matching","category":"guided-writing","topic":"b2-writing-report","subtopic":"b2-writing-report","taxonomyNodeIds":["b2-writing-report"],"difficulty":5,"instructions":"Match a finding to the conclusion it supports.","prompt":"Match final findings with proportionate conclusions.","pairs":[{"leftId":"a","left":"Evening demand is high","rightId":"x","right":"extend one evening session"},{"leftId":"b","left":"Signs are confusing","rightId":"y","right":"replace them with clearer versions"}],"lessonIds":["b2-writing-report"],"tags":["b2","report","conclusions"],"estimatedSeconds":65,"evaluator":{"strategy":"matching_pairs","pairs":[{"leftId":"a","rightId":"x"},{"leftId":"b","rightId":"y"}]},"explanation":"Each conclusion follows directly from its finding."}
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-writing-report-matching-001",
+  "level": "B2",
+  "category": "guided-writing",
+  "topic": "b2-writing-report",
+  "subtopic": "b2-writing-report",
+  "lessonId": "b2-writing-report",
+  "activityType": "matching",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Match each report section with its purpose.",
+      "prompt": "Match the opening sections to their functions.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Introduction",
+          "rightId": "x",
+          "right": "states purpose and scope"
+        },
+        {
+          "leftId": "b",
+          "left": "Findings",
+          "rightId": "y",
+          "right": "presents evidence"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "sections"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The introduction frames the report; findings present evidence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Match each phrase with its report role.",
+      "prompt": "Match these expressions with what they do in a report.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "This report examines",
+          "rightId": "x",
+          "right": "introduces the purpose"
+        },
+        {
+          "leftId": "b",
+          "left": "It is recommended that",
+          "rightId": "y",
+          "right": "introduces an action"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "phrases"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The two phrases signal different stages of a report."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Match each evidence phrase with its meaning.",
+      "prompt": "Match report verbs with the evidence they introduce.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "The survey shows",
+          "rightId": "x",
+          "right": "a measured result"
+        },
+        {
+          "leftId": "b",
+          "left": "Interviews revealed",
+          "rightId": "y",
+          "right": "information from interviews"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "evidence"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Both verbs report evidence, but identify different sources."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Match headings with their contents.",
+      "prompt": "Match each heading to the information it should contain.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Method",
+          "rightId": "x",
+          "right": "how information was collected"
+        },
+        {
+          "leftId": "b",
+          "left": "Recommendations",
+          "rightId": "y",
+          "right": "proposed improvements"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "headings"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "A method describes collection; recommendations describe action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 1,
+      "instructions": "Match each sentence with its function.",
+      "prompt": "Match report sentences to their communicative purpose.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Most users were satisfied",
+          "rightId": "x",
+          "right": "states a finding"
+        },
+        {
+          "leftId": "b",
+          "left": "The centre should add signs",
+          "rightId": "y",
+          "right": "states a recommendation"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "functions"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The first reports evidence and the second proposes action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Match each connector with its relationship.",
+      "prompt": "Match report connectors to the relationship they express.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "However",
+          "rightId": "x",
+          "right": "contrast"
+        },
+        {
+          "leftId": "b",
+          "left": "As a result",
+          "rightId": "y",
+          "right": "consequence"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "connectors"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "These connectors make the relationship between statements visible."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Match each report expression with its register.",
+      "prompt": "Match neutral expressions with their report functions.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "A further issue is",
+          "rightId": "x",
+          "right": "adds a problem"
+        },
+        {
+          "leftId": "b",
+          "left": "Overall",
+          "rightId": "y",
+          "right": "summarises"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "register"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The expressions organise information without sounding personal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Match evidence with appropriate qualification.",
+      "prompt": "Match findings with the caution they require.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "One comment",
+          "rightId": "x",
+          "right": "cannot prove a general trend"
+        },
+        {
+          "leftId": "b",
+          "left": "A large survey",
+          "rightId": "y",
+          "right": "may support a broader claim"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "evidence"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The strength of a conclusion depends on the evidence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Match each action with its priority.",
+      "prompt": "Match report recommendations to their likely priority.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Replace a broken sign",
+          "rightId": "x",
+          "right": "immediate practical fix"
+        },
+        {
+          "leftId": "b",
+          "left": "Review the policy in six months",
+          "rightId": "y",
+          "right": "longer-term check"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "priorities"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Recommendations can address immediate and later needs."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 2,
+      "instructions": "Match each qualification with its purpose.",
+      "prompt": "Match cautious phrases with what they prevent.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "may be linked to",
+          "rightId": "x",
+          "right": "overstating a cause"
+        },
+        {
+          "leftId": "b",
+          "left": "should be treated cautiously",
+          "rightId": "y",
+          "right": "overstating a conclusion"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "caution"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Both phrases keep claims proportional to evidence."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Match each source with its reporting verb.",
+      "prompt": "Match information sources with natural reporting phrases.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "The survey",
+          "rightId": "x",
+          "right": "shows that"
+        },
+        {
+          "leftId": "b",
+          "left": "The interviews",
+          "rightId": "y",
+          "right": "revealed that"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "sources"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The verbs fit the type of information source."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Match findings with suitable headings.",
+      "prompt": "Match each result to the heading where it belongs.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Users requested later sessions",
+          "rightId": "x",
+          "right": "Opening hours"
+        },
+        {
+          "leftId": "b",
+          "left": "The entrance was difficult to find",
+          "rightId": "y",
+          "right": "Access and signage"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "organisation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Specific headings help readers locate related findings."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Match proposals with the issue they address.",
+      "prompt": "Match recommendations to the findings behind them.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Add a digital timetable",
+          "rightId": "x",
+          "right": "users cannot find schedules"
+        },
+        {
+          "leftId": "b",
+          "left": "Provide more quiet desks",
+          "rightId": "y",
+          "right": "study areas are often full"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "evidence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "A recommendation is strongest when it responds to a stated issue."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Match report stages with their order.",
+      "prompt": "Match each stage with its usual position.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Purpose",
+          "rightId": "x",
+          "right": "at the beginning"
+        },
+        {
+          "leftId": "b",
+          "left": "Recommendations",
+          "rightId": "y",
+          "right": "after findings"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "sequence"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The order lets the reader understand why an action is proposed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 3,
+      "instructions": "Match each phrase with its level of certainty.",
+      "prompt": "Match evidence phrases to their certainty.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "The data confirms",
+          "rightId": "x",
+          "right": "strong evidence"
+        },
+        {
+          "leftId": "b",
+          "left": "The pattern may reflect",
+          "rightId": "y",
+          "right": "qualified possibility"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "certainty"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "A report should choose certainty language carefully."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Match each recommendation with its measurable detail.",
+      "prompt": "Match proposed actions to useful targets.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Answer enquiries",
+          "rightId": "x",
+          "right": "within two working days"
+        },
+        {
+          "leftId": "b",
+          "left": "Review the scheme",
+          "rightId": "y",
+          "right": "after three months"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "targets"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Targets make recommendations possible to monitor."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Match each limitation with its effect.",
+      "prompt": "Match methodological limits with the claims they weaken.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Small sample",
+          "rightId": "x",
+          "right": "generalisability"
+        },
+        {
+          "leftId": "b",
+          "left": "Short time frame",
+          "rightId": "y",
+          "right": "long-term conclusions"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "limitations"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Different limits affect different kinds of conclusions."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Match a finding with a proportionate recommendation.",
+      "prompt": "Match evidence to the response it supports.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Lighting is unreliable",
+          "rightId": "x",
+          "right": "repair existing fittings"
+        },
+        {
+          "leftId": "b",
+          "left": "Users want more events",
+          "rightId": "y",
+          "right": "trial one monthly event"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "proportion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "A trial or repair can be more proportionate than a large expansion."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Match wording with its register.",
+      "prompt": "Match direct wording with an objective report alternative.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "I think the service is poor",
+          "rightId": "x",
+          "right": "Several users reported delays"
+        },
+        {
+          "leftId": "b",
+          "left": "Fix this now",
+          "rightId": "y",
+          "right": "It is recommended that this be reviewed"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "register"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Objective alternatives foreground evidence or a measured proposal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 4,
+      "instructions": "Match each conclusion with its function.",
+      "prompt": "Match closing phrases to what they achieve.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Overall",
+          "rightId": "x",
+          "right": "summarises findings"
+        },
+        {
+          "leftId": "b",
+          "left": "For this reason",
+          "rightId": "y",
+          "right": "links evidence to action"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "conclusion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The conclusion can summarise and then justify action."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Match evidence strength with suitable language.",
+      "prompt": "Match the evidence to a responsible claim.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Repeated survey result",
+          "rightId": "x",
+          "right": "The results indicate"
+        },
+        {
+          "leftId": "b",
+          "left": "Single anecdote",
+          "rightId": "y",
+          "right": "One comment suggests"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "claim"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "The wording reflects how much evidence is available."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Match recommendations with their implementation detail.",
+      "prompt": "Match an action with a practical way to implement it.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Improve access",
+          "rightId": "x",
+          "right": "install a ramp at the side entrance"
+        },
+        {
+          "leftId": "b",
+          "left": "Reduce waiting",
+          "rightId": "y",
+          "right": "publish live queue information"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "implementation"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Concrete implementation details make proposals useful."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Match a report claim with its necessary qualification.",
+      "prompt": "Match broad claims with the wording that makes them responsible.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "The scheme is popular",
+          "rightId": "x",
+          "right": "among surveyed users"
+        },
+        {
+          "leftId": "b",
+          "left": "The change reduced calls",
+          "rightId": "y",
+          "right": "during the trial period"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "precision"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Qualifying scope and time prevents overgeneralisation."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Match report headings with their best wording.",
+      "prompt": "Match vague headings to precise alternatives.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Other",
+          "rightId": "x",
+          "right": "Access and signage"
+        },
+        {
+          "leftId": "b",
+          "left": "Things to do",
+          "rightId": "y",
+          "right": "Recommendations"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "precision"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Specific headings help the reader navigate the report."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-report-m-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "matching",
+      "skillFocus": "matching",
+      "category": "guided-writing",
+      "topic": "b2-writing-report",
+      "subtopic": "b2-writing-report",
+      "taxonomyNodeIds": [
+        "b2-writing-report"
+      ],
+      "difficulty": 5,
+      "instructions": "Match a finding to the conclusion it supports.",
+      "prompt": "Match final findings with proportionate conclusions.",
+      "pairs": [
+        {
+          "leftId": "a",
+          "left": "Evening demand is high",
+          "rightId": "x",
+          "right": "extend one evening session"
+        },
+        {
+          "leftId": "b",
+          "left": "Signs are confusing",
+          "rightId": "y",
+          "right": "replace them with clearer versions"
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-report"
+      ],
+      "tags": [
+        "b2",
+        "report",
+        "conclusions"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "matching_pairs",
+        "pairs": [
+          {
+            "leftId": "a",
+            "rightId": "x"
+          },
+          {
+            "leftId": "b",
+            "rightId": "y"
+          }
+        ]
+      },
+      "explanation": "Each conclusion follows directly from its finding."
+    }
   ]
 }

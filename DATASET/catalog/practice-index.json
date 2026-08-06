@@ -120,9 +120,8 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "single_choice": 25
         }
       }
@@ -244,7 +243,7 @@
           "5": 21
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -368,7 +367,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -492,7 +491,7 @@
           "5": 22
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -616,7 +615,7 @@
           "5": 22
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -741,7 +740,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -865,7 +864,7 @@
           "5": 24
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -990,9 +989,8 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "single_choice": 25
         }
       }
@@ -1218,7 +1216,7 @@
           "5": 40
         },
         "byType": {
-          "fill_blank": 50,
+          "gap_fill": 50,
           "single_choice": 50,
           "true_false": 50,
           "word_order": 50
@@ -1343,7 +1341,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -1468,10 +1466,9 @@
           "5": 20
         },
         "byType": {
-          "collocation_choice": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25
+          "single_choice": 50
         }
       }
     },
@@ -1593,10 +1590,9 @@
           "5": 20
         },
         "byType": {
-          "collocation_choice": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25
+          "single_choice": 50
         }
       }
     },
@@ -1718,7 +1714,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -1843,10 +1839,9 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 50,
           "matching": 25,
-          "open_cloze": 25,
-          "preposition_choice": 25
+          "single_choice": 25
         }
       }
     },
@@ -1968,7 +1963,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -2093,7 +2088,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -2218,7 +2213,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -2343,8 +2338,7 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "matching": 25,
           "single_choice": 25
         }
@@ -2468,7 +2462,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -2594,9 +2588,9 @@
         },
         "byType": {
           "error_correction": 25,
-          "error_identification": 25,
-          "multiple_select": 25,
-          "single_choice": 25
+          "multiple_choice": 25,
+          "single_choice": 25,
+          "true_false": 25
         }
       }
     },
@@ -2718,10 +2712,7 @@
           "5": 20
         },
         "byType": {
-          "complete_paragraph": 26,
-          "fill_blank": 24,
-          "multi_gap_fill": 25,
-          "open_cloze": 25
+          "gap_fill": 100
         }
       }
     },
@@ -2843,9 +2834,9 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "key_word_transformation": 25,
-          "sentence_transformation": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -2968,7 +2959,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -3093,7 +3084,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -3218,7 +3209,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -3343,10 +3334,7 @@
           "5": 20
         },
         "byType": {
-          "collocation_choice": 25,
-          "multiple_choice_cloze": 25,
-          "phrasal_verb_choice": 25,
-          "vocabulary_in_context": 25
+          "single_choice": 100
         }
       }
     },
@@ -3471,10 +3459,9 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "matching": 25,
-          "phrasal_verb_choice": 25
+          "single_choice": 25
         }
       }
     },
@@ -3596,10 +3583,9 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "phrasal_verb_choice": 25,
-          "vocabulary_in_context": 25
+          "single_choice": 50
         }
       }
     },
@@ -3724,10 +3710,9 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "matching": 25,
-          "phrasal_verb_choice": 25
+          "single_choice": 25
         }
       }
     },
@@ -3849,9 +3834,9 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "preposition_choice": 25,
+          "single_choice": 25,
           "word_order": 25
         }
       }
@@ -3974,10 +3959,9 @@
           "5": 21
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 50,
           "matching": 25,
-          "open_cloze": 25,
-          "preposition_choice": 25
+          "single_choice": 25
         }
       }
     },
@@ -4099,9 +4083,8 @@
           "5": 20
         },
         "byType": {
-          "multiple_select": 25,
-          "reading_comprehension": 25,
-          "single_choice": 25,
+          "multiple_choice": 25,
+          "single_choice": 50,
           "true_false": 25
         }
       }
@@ -4224,9 +4207,8 @@
           "5": 20
         },
         "byType": {
-          "reading_comprehension": 25,
-          "reading_matching": 25,
-          "single_choice": 25,
+          "matching": 25,
+          "single_choice": 50,
           "true_false": 25
         }
       }
@@ -4349,9 +4331,8 @@
           "5": 20
         },
         "byType": {
-          "multiple_select": 25,
-          "reading_comprehension": 25,
-          "single_choice": 25,
+          "multiple_choice": 25,
+          "single_choice": 50,
           "true_false": 25
         }
       }
@@ -4474,9 +4455,8 @@
           "5": 20
         },
         "byType": {
-          "matching": 25,
-          "multiple_select": 25,
-          "reading_matching": 25,
+          "matching": 50,
+          "multiple_choice": 25,
           "single_choice": 25
         }
       }
@@ -4599,9 +4579,8 @@
           "5": 20
         },
         "byType": {
-          "gapped_text": 25,
-          "matching": 25,
-          "reading_matching": 25,
+          "matching": 50,
+          "single_choice": 25,
           "word_order": 25
         }
       }
@@ -4724,7 +4703,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -4849,7 +4828,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -4974,7 +4953,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -5099,9 +5078,9 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
+          "single_choice": 25,
           "word_formation": 25
         }
       }
@@ -5224,7 +5203,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -5349,7 +5328,7 @@
           "5": 20
         },
         "byType": {
-          "complete_paragraph": 25,
+          "gap_fill": 25,
           "matching": 25,
           "single_choice": 25,
           "word_order": 25
@@ -5474,7 +5453,7 @@
           "5": 20
         },
         "byType": {
-          "complete_paragraph": 25,
+          "gap_fill": 25,
           "guided_writing": 25,
           "matching": 25,
           "single_choice": 25
@@ -5601,8 +5580,7 @@
         "byType": {
           "guided_writing": 25,
           "matching": 25,
-          "single_choice": 25,
-          "vocabulary_in_context": 25
+          "single_choice": 50
         }
       }
     },
@@ -5724,9 +5702,9 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "sentence_transformation": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -5849,9 +5827,9 @@
           "5": 20
         },
         "byType": {
-          "complete_paragraph": 25,
-          "gapped_text": 25,
+          "gap_fill": 25,
           "matching": 25,
+          "single_choice": 25,
           "word_order": 25
         }
       }
@@ -6148,10 +6126,10 @@
           "5": 70
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "key_word_transformation": 200,
-          "multiple_choice_cloze": 25,
-          "sentence_transformation": 25
+          "sentence_rewrite": 25,
+          "single_choice": 25
         }
       }
     },
@@ -6272,7 +6250,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -6396,7 +6374,7 @@
           "5": 18
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -6520,7 +6498,7 @@
           "5": 32
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -6644,9 +6622,8 @@
           "5": 24
         },
         "byType": {
-          "collocation_choice": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
+          "single_choice": 50,
           "word_formation": 25
         }
       }
@@ -6768,10 +6745,9 @@
           "5": 28
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "single_choice": 25
+          "single_choice": 50
         }
       }
     },
@@ -6892,10 +6868,8 @@
           "5": 24
         },
         "byType": {
-          "collocation_choice": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "vocabulary_in_context": 25
+          "single_choice": 75
         }
       }
     },
@@ -7016,10 +6990,7 @@
           "5": 40
         },
         "byType": {
-          "complete_paragraph": 25,
-          "fill_blank": 25,
-          "multi_gap_fill": 25,
-          "open_cloze": 25
+          "gap_fill": 100
         }
       }
     },
@@ -7140,7 +7111,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -7264,7 +7235,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -7388,10 +7359,9 @@
           "5": 16
         },
         "byType": {
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "open_cloze": 25,
-          "preposition_choice": 25
+          "single_choice": 50
         }
       }
     },
@@ -7512,7 +7482,7 @@
           "5": 18
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -7636,7 +7606,7 @@
           "5": 32
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -7760,10 +7730,7 @@
           "5": 40
         },
         "byType": {
-          "collocation_choice": 25,
-          "multiple_choice_cloze": 25,
-          "phrasal_verb_choice": 25,
-          "vocabulary_in_context": 25
+          "single_choice": 100
         }
       }
     },
@@ -7884,7 +7851,7 @@
           "5": 32
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -8008,7 +7975,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -8136,9 +8103,7 @@
         },
         "byType": {
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "phrasal_verb_choice": 25,
-          "vocabulary_in_context": 25
+          "single_choice": 75
         }
       }
     },
@@ -8262,10 +8227,9 @@
           "5": 16
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "phrasal_verb_choice": 25
+          "single_choice": 50
         }
       }
     },
@@ -8391,8 +8355,7 @@
         "byType": {
           "error_correction": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "phrasal_verb_choice": 25
+          "single_choice": 50
         }
       }
     },
@@ -8513,10 +8476,9 @@
           "5": 16
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "matching": 25,
-          "multiple_choice_cloze": 25,
-          "preposition_choice": 25
+          "single_choice": 50
         }
       }
     },
@@ -8637,10 +8599,9 @@
           "5": 16
         },
         "byType": {
-          "multiple_choice_cloze": 25,
-          "open_cloze": 25,
-          "preposition_choice": 25,
-          "sentence_transformation": 25
+          "gap_fill": 25,
+          "sentence_rewrite": 25,
+          "single_choice": 50
         }
       }
     },
@@ -8762,8 +8723,8 @@
         },
         "byType": {
           "matching": 25,
-          "multiple_select": 25,
-          "reading_comprehension": 25,
+          "multiple_choice": 25,
+          "single_choice": 25,
           "true_false": 25
         }
       }
@@ -8886,9 +8847,8 @@
         },
         "byType": {
           "matching": 25,
-          "multiple_select": 25,
-          "reading_comprehension": 25,
-          "single_choice": 25
+          "multiple_choice": 25,
+          "single_choice": 50
         }
       }
     },
@@ -9009,10 +8969,9 @@
           "5": 16
         },
         "byType": {
-          "matching": 25,
-          "multiple_select": 25,
-          "reading_comprehension": 25,
-          "reading_matching": 25
+          "matching": 50,
+          "multiple_choice": 25,
+          "single_choice": 25
         }
       }
     },
@@ -9133,9 +9092,8 @@
           "5": 28
         },
         "byType": {
-          "multiple_select": 25,
-          "reading_comprehension": 25,
-          "single_choice": 25,
+          "multiple_choice": 25,
+          "single_choice": 50,
           "true_false": 25
         }
       }
@@ -9257,9 +9215,8 @@
           "5": 22
         },
         "byType": {
-          "gapped_text": 25,
-          "matching": 25,
-          "reading_matching": 25,
+          "matching": 50,
+          "single_choice": 25,
           "word_order": 25
         }
       }
@@ -9381,10 +9338,9 @@
           "5": 28
         },
         "byType": {
-          "complete_dialogue": 25,
           "matching": 25,
-          "sentence_transformation": 25,
-          "single_choice": 25
+          "sentence_rewrite": 25,
+          "single_choice": 50
         }
       }
     },
@@ -9505,7 +9461,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -9629,7 +9585,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -9753,7 +9709,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -9878,8 +9834,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "multi_gap_fill": 25,
-          "multiple_choice_cloze": 25,
+          "gap_fill": 25,
+          "single_choice": 25,
           "word_formation": 25
         }
       }
@@ -10002,10 +9958,10 @@
           "5": 20
         },
         "byType": {
-          "complete_paragraph": 25,
-          "gapped_text": 25,
+          "gap_fill": 25,
           "guided_writing": 25,
-          "matching": 25
+          "matching": 25,
+          "single_choice": 25
         }
       }
     },
@@ -10126,10 +10082,10 @@
           "5": 10
         },
         "byType": {
-          "complete_paragraph": 25,
-          "gapped_text": 25,
+          "gap_fill": 25,
           "guided_writing": 25,
-          "matching": 25
+          "matching": 25,
+          "single_choice": 25
         }
       }
     },
@@ -10250,7 +10206,7 @@
           "5": 5
         },
         "byType": {
-          "complete_paragraph": 25,
+          "gap_fill": 25,
           "guided_writing": 25,
           "matching": 25,
           "word_order": 25
@@ -10376,7 +10332,7 @@
         "byType": {
           "guided_writing": 25,
           "matching": 25,
-          "sentence_transformation": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -10499,10 +10455,10 @@
           "5": 20
         },
         "byType": {
-          "complete_paragraph": 25,
+          "gap_fill": 25,
           "guided_writing": 25,
           "matching": 25,
-          "sentence_transformation": 25
+          "sentence_rewrite": 25
         }
       }
     },
@@ -10624,7 +10580,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -10750,7 +10706,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -10906,7 +10862,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -11337,11 +11293,9 @@
           "5": 88
         },
         "byType": {
-          "collocation_choice": 100,
-          "fill_blank": 50,
+          "gap_fill": 50,
           "matching": 100,
-          "multiple_choice_cloze": 100,
-          "vocabulary_in_context": 25,
+          "single_choice": 225,
           "word_formation": 25
         }
       }
@@ -11475,7 +11429,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -11805,7 +11759,7 @@
           "5": 60
         },
         "byType": {
-          "fill_blank": 75,
+          "gap_fill": 75,
           "single_choice": 75,
           "true_false": 75,
           "word_order": 75
@@ -12087,12 +12041,11 @@
         },
         "byType": {
           "error_correction": 25,
-          "error_identification": 25,
-          "fill_blank": 50,
+          "gap_fill": 50,
           "key_word_transformation": 25,
-          "multiple_select": 25,
+          "multiple_choice": 25,
           "single_choice": 50,
-          "true_false": 25,
+          "true_false": 50,
           "word_order": 25
         }
       }
@@ -12215,7 +12168,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -12340,8 +12293,8 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
           "error_correction": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -12441,7 +12394,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "true_false": 25
         }
       }
@@ -12563,7 +12516,7 @@
           "5": 22
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -13025,11 +12978,10 @@
           "5": 87
         },
         "byType": {
-          "error_identification": 25,
-          "fill_blank": 100,
-          "multiple_select": 25,
+          "gap_fill": 100,
+          "multiple_choice": 25,
           "single_choice": 100,
-          "true_false": 100,
+          "true_false": 125,
           "word_order": 75
         }
       }
@@ -13151,7 +13103,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -13275,7 +13227,7 @@
           "5": 23
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -13325,7 +13277,7 @@
           "5": 5
         },
         "byType": {
-          "error_identification": 25
+          "true_false": 25
         }
       }
     },
@@ -13754,7 +13706,7 @@
         },
         "byType": {
           "error_correction": 50,
-          "fill_blank": 100,
+          "gap_fill": 100,
           "single_choice": 100,
           "true_false": 50,
           "word_order": 100
@@ -13815,7 +13767,7 @@
           "5": 5
         },
         "byType": {
-          "multiple_select": 25
+          "multiple_choice": 25
         }
       }
     },
@@ -18824,15 +18776,13 @@
           "5": 1021
         },
         "byType": {
-          "complete_dialogue": 100,
           "error_correction": 475,
-          "error_identification": 50,
-          "fill_blank": 1150,
+          "gap_fill": 1250,
           "key_word_transformation": 25,
-          "multiple_select": 125,
-          "sentence_transformation": 100,
+          "multiple_choice": 125,
+          "sentence_rewrite": 100,
           "single_choice": 1200,
-          "true_false": 775,
+          "true_false": 825,
           "word_order": 900
         }
       }
@@ -19867,14 +19817,11 @@
           "5": 175
         },
         "byType": {
-          "complete_dialogue": 25,
-          "complete_paragraph": 175,
-          "gapped_text": 75,
+          "gap_fill": 200,
           "guided_writing": 175,
           "matching": 250,
-          "sentence_transformation": 75,
-          "single_choice": 125,
-          "vocabulary_in_context": 25,
+          "sentence_rewrite": 75,
+          "single_choice": 225,
           "word_order": 75
         }
       }
@@ -19996,7 +19943,7 @@
           "5": 21
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -20223,7 +20170,7 @@
           "5": 40
         },
         "byType": {
-          "fill_blank": 50,
+          "gap_fill": 50,
           "single_choice": 50,
           "true_false": 50,
           "word_order": 50
@@ -20452,7 +20399,7 @@
           "5": 42
         },
         "byType": {
-          "fill_blank": 50,
+          "gap_fill": 50,
           "single_choice": 50,
           "true_false": 50,
           "word_order": 50
@@ -20598,7 +20545,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -20671,8 +20618,8 @@
           "5": 19
         },
         "byType": {
-          "error_identification": 25,
-          "multiple_select": 25
+          "multiple_choice": 25,
+          "true_false": 25
         }
       }
     },
@@ -20815,7 +20762,7 @@
           "5": 12
         },
         "byType": {
-          "multiple_select": 25,
+          "multiple_choice": 25,
           "true_false": 25
         }
       }
@@ -21013,7 +20960,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "multiple_select": 25,
+          "multiple_choice": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -21573,10 +21520,9 @@
           "5": 111
         },
         "byType": {
-          "complete_dialogue": 50,
           "error_correction": 100,
-          "fill_blank": 100,
-          "multiple_select": 25,
+          "gap_fill": 150,
+          "multiple_choice": 25,
           "single_choice": 125,
           "true_false": 75,
           "word_order": 50
@@ -21700,7 +21646,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -21824,7 +21770,7 @@
           "5": 23
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -21950,7 +21896,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25
         }
@@ -22073,7 +22019,7 @@
           "5": 21
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -22606,8 +22552,8 @@
         },
         "byType": {
           "error_correction": 50,
-          "fill_blank": 125,
-          "sentence_transformation": 50,
+          "gap_fill": 125,
+          "sentence_rewrite": 50,
           "single_choice": 125,
           "true_false": 75,
           "word_order": 75
@@ -22733,7 +22679,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -22857,7 +22803,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -22983,7 +22929,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -23515,8 +23461,8 @@
         },
         "byType": {
           "error_correction": 75,
-          "fill_blank": 125,
-          "sentence_transformation": 25,
+          "gap_fill": 125,
+          "sentence_rewrite": 25,
           "single_choice": 125,
           "true_false": 50,
           "word_order": 100
@@ -23642,8 +23588,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
-          "sentence_transformation": 25,
+          "gap_fill": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -23765,7 +23711,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -24408,13 +24354,10 @@
           "5": 108
         },
         "byType": {
-          "complete_dialogue": 50,
           "error_correction": 25,
-          "fill_blank": 100,
+          "gap_fill": 150,
           "matching": 150,
-          "multiple_choice_cloze": 75,
-          "phrasal_verb_choice": 150,
-          "vocabulary_in_context": 50
+          "single_choice": 275
         }
       }
     },
@@ -25044,12 +24987,10 @@
           "5": 109
         },
         "byType": {
-          "fill_blank": 100,
+          "gap_fill": 200,
           "matching": 125,
-          "multiple_choice_cloze": 75,
-          "open_cloze": 100,
-          "preposition_choice": 150,
-          "sentence_transformation": 25,
+          "sentence_rewrite": 25,
+          "single_choice": 225,
           "word_order": 25
         }
       }
@@ -25220,8 +25161,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
-          "sentence_transformation": 25,
+          "gap_fill": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -25345,7 +25286,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -25470,7 +25411,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -25594,7 +25535,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -25720,8 +25661,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
-          "multiple_select": 25,
+          "gap_fill": 25,
+          "multiple_choice": 25,
           "single_choice": 25
         }
       }
@@ -25769,7 +25710,7 @@
           "5": 5
         },
         "byType": {
-          "fill_blank": 25
+          "gap_fill": 25
         }
       }
     },
@@ -25892,8 +25833,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
-          "multiple_select": 25,
+          "gap_fill": 25,
+          "multiple_choice": 25,
           "single_choice": 25
         }
       }
@@ -26424,8 +26365,8 @@
         },
         "byType": {
           "error_correction": 100,
-          "fill_blank": 125,
-          "multiple_select": 50,
+          "gap_fill": 125,
+          "multiple_choice": 50,
           "single_choice": 125,
           "true_false": 25,
           "word_order": 75
@@ -26561,7 +26502,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -26789,9 +26730,8 @@
           "5": 40
         },
         "byType": {
-          "complete_dialogue": 25,
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "single_choice": 50,
           "true_false": 25,
           "word_order": 50
@@ -27828,12 +27768,9 @@
           "5": 202
         },
         "byType": {
-          "gapped_text": 50,
-          "matching": 150,
-          "multiple_select": 175,
-          "reading_comprehension": 175,
-          "reading_matching": 125,
-          "single_choice": 150,
+          "matching": 275,
+          "multiple_choice": 175,
+          "single_choice": 375,
           "true_false": 125,
           "word_order": 50
         }
@@ -28162,7 +28099,7 @@
           "5": 64
         },
         "byType": {
-          "fill_blank": 75,
+          "gap_fill": 75,
           "single_choice": 75,
           "true_false": 75,
           "word_order": 75
@@ -28287,9 +28224,8 @@
           "5": 20
         },
         "byType": {
-          "complete_dialogue": 25,
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 50,
           "single_choice": 25
         }
       }
@@ -28718,10 +28654,9 @@
           "5": 85
         },
         "byType": {
-          "complete_dialogue": 25,
           "error_correction": 50,
-          "fill_blank": 100,
-          "sentence_transformation": 25,
+          "gap_fill": 125,
+          "sentence_rewrite": 25,
           "single_choice": 100,
           "true_false": 50,
           "word_order": 50
@@ -28847,8 +28782,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
-          "sentence_transformation": 25,
+          "gap_fill": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -28970,7 +28905,7 @@
           "5": 24
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -29094,7 +29029,7 @@
           "5": 24
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -29314,7 +29249,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -29413,7 +29348,7 @@
           "5": 23
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "key_word_transformation": 25,
           "single_choice": 25
         }
@@ -29537,7 +29472,7 @@
           "5": 20
         },
         "byType": {
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "true_false": 25,
           "word_order": 25
@@ -30951,22 +30886,14 @@
           "5": 366
         },
         "byType": {
-          "collocation_choice": 50,
-          "complete_dialogue": 50,
-          "complete_paragraph": 51,
           "error_correction": 50,
-          "error_identification": 25,
-          "fill_blank": 174,
+          "gap_fill": 375,
           "key_word_transformation": 225,
           "matching": 100,
-          "multi_gap_fill": 75,
-          "multiple_choice_cloze": 150,
-          "multiple_select": 25,
-          "open_cloze": 50,
-          "phrasal_verb_choice": 50,
-          "sentence_transformation": 75,
-          "single_choice": 125,
-          "vocabulary_in_context": 50,
+          "multiple_choice": 25,
+          "sentence_rewrite": 75,
+          "single_choice": 450,
+          "true_false": 25,
           "word_formation": 50
         }
       }
@@ -31090,8 +31017,8 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
-          "sentence_transformation": 25,
+          "gap_fill": 25,
+          "sentence_rewrite": 25,
           "single_choice": 25
         }
       }
@@ -31215,7 +31142,7 @@
         },
         "byType": {
           "error_correction": 25,
-          "fill_blank": 25,
+          "gap_fill": 25,
           "single_choice": 25,
           "word_order": 25
         }
@@ -31677,11 +31604,10 @@
           "5": 87
         },
         "byType": {
-          "error_identification": 25,
-          "fill_blank": 100,
-          "multiple_select": 25,
+          "gap_fill": 100,
+          "multiple_choice": 25,
           "single_choice": 100,
-          "true_false": 100,
+          "true_false": 125,
           "word_order": 75
         }
       }
@@ -34130,7 +34056,7 @@
           "5": 512
         },
         "byType": {
-          "fill_blank": 600,
+          "gap_fill": 600,
           "single_choice": 600,
           "true_false": 600,
           "word_order": 600

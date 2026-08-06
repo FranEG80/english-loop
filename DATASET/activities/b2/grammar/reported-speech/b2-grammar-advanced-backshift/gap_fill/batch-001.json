@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-backshift-gap-fill-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "advanced-backshift",
+  "lessonId": "b2-grammar-advanced-backshift",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The archivist said the reading room ___ closed after lunch. (was)",
+      "gapText": "The archivist said the reading room [gap1] closed after lunch. (was)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "backshift"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Is closed retrocede a was closed después de said."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The pilots told us they ___ landed before the fog arrived. (had)",
+      "gapText": "The pilots told us they [gap1] landed before the fog arrived. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El aterrizaje es anterior al momento del aviso: had landed."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported statement with the correct words.",
+      "prompt": "The organiser said the doors ___ ___ open at seven. (would be)",
+      "gapText": "The organiser said the doors [gap1] [gap2] open at seven. (would be)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "future-in-the-past"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "would be"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Will be open pasa a would be open desde una perspectiva pasada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "Nina said she ___ not access the server from home. (could)",
+      "gapText": "Nina said she [gap1] not access the server from home. (could)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "modal"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Can access retrocede a could access en la declaración indirecta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the reported statement with the correct words.",
+      "prompt": "The farmer explained that the fields ___ ___ flooded the previous night. (had been)",
+      "gapText": "The farmer explained that the fields [gap1] [gap2] flooded the previous night. (had been)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had been flooded sitúa la inundación antes de la explicación."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The technician said the screens ___ flickering during the test. (were)",
+      "gapText": "The technician said the screens [gap1] flickering during the test. (were)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "continuous"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "were"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Are flickering retrocede a were flickering."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "Omar told me ___ he had booked the last room. (that)",
+      "gapText": "Omar told me [gap1] he had booked the last room. (that)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "that-clause"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "That introduce la oración subordinada después de told me."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The lecturer said that gravity ___ objects towards the Earth. (affects)",
+      "gapText": "The lecturer said that gravity [gap1] objects towards the Earth. (affects)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "timeless-truth"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "affects"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El presente se mantiene porque la afirmación sigue siendo una verdad científica."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The manager said she ___ call the supplier later. (would)",
+      "gapText": "The manager said she [gap1] call the supplier later. (would)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "future-in-the-past"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "would"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Would es el backshift de will en una promesa o plan pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with two words.",
+      "prompt": "The nurse said I ___ ___ fast before the operation. (had to)",
+      "gapText": "The nurse said I [gap1] [gap2] fast before the operation. (had to)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "obligation"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Must se convierte en had to cuando la obligación queda situada en el pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The report said the river ___ risen after the storm. (had)",
+      "gapText": "The report said the river [gap1] risen after the storm. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Has risen retrocede a had risen en un informe pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The witness said he ___ waiting near the gate. (was)",
+      "gapText": "The witness said he [gap1] waiting near the gate. (was)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "continuous"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Was waiting es el backshift de am waiting."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The teacher said the Earth ___ around the Sun. (moves)",
+      "gapText": "The teacher said the Earth [gap1] around the Sun. (moves)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "timeless-truth"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "moves"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El presente se conserva para un hecho permanente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "Sara said she ___ the form earlier that morning. (had signed)",
+      "gapText": "Sara said she [gap1] the form earlier that morning. (had signed)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had signed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La firma ocurrió antes del momento en que Sara lo dijo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with two words.",
+      "prompt": "The guide said the tickets ___ ___ collected at the desk. (would be)",
+      "gapText": "The guide said the tickets [gap1] [gap2] collected at the desk. (would be)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "future-in-the-past"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "would be"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Will be collected pasa a would be collected desde el relato pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The editor told us the article ___ not ready for publication. (was)",
+      "gapText": "The editor told us the article [gap1] not ready for publication. (was)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "backshift"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Is not ready retrocede a was not ready."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The mayor said the council ___ reviewing the transport plan. (was)",
+      "gapText": "The mayor said the council [gap1] reviewing the transport plan. (was)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "continuous"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Is reviewing cambia a was reviewing después de said."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The engineer said the bridge ___ withstand heavy loads. (could)",
+      "gapText": "The engineer said the bridge [gap1] withstand heavy loads. (could)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "modal"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Can withstand retrocede a could withstand en el informe técnico."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The scientist explained that ice ___ when heated. (melts)",
+      "gapText": "The scientist explained that ice [gap1] when heated. (melts)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "timeless-truth"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "melts"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El presente se mantiene porque la explicación se refiere a una verdad general."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The passenger said her luggage ___ disappeared at the transfer desk. (had)",
+      "gapText": "The passenger said her luggage [gap1] disappeared at the transfer desk. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had disappeared marca que la desaparición precedió al testimonio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the reported statement with two words.",
+      "prompt": "The director said the film ___ ___ released in autumn. (would be)",
+      "gapText": "The director said the film [gap1] [gap2] released in autumn. (would be)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "future-in-the-past"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "would be"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Would be released expresa un futuro visto desde la declaración pasada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The doctor said the patient ___ remain under observation. (must)",
+      "gapText": "The doctor said the patient [gap1] remain under observation. (must)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "obligation"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "must"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Must puede mantenerse si la obligación sigue vigente para el paciente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The courier said he ___ delivered the parcel before noon. (had)",
+      "gapText": "The courier said he [gap1] delivered the parcel before noon. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had delivered expresa una entrega anterior al momento del aviso."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The historian said the statue ___ ___ moved in the eighteenth century. (had been)",
+      "gapText": "The historian said the statue [gap1] [gap2] moved in the eighteenth century. (had been)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had been moved es el past perfect pasivo de una acción anterior."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-backshift-fb-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "gap_fill",
+      "skillFocus": "fill_blank",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the reported statement with one word.",
+      "prompt": "The analyst said sales ___ fallen since January. (had)",
+      "gapText": "The analyst said sales [gap1] fallen since January. (had)",
+      "gapLayout": "sentence",
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "past-perfect"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Had fallen presenta la caída como anterior al análisis comunicado."
+    }
+  ]
+}

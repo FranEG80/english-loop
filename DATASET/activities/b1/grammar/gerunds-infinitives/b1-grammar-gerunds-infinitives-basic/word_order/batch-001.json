@@ -1,162 +1,1387 @@
 {
-  "schemaVersion":"1.0.0",
-  "batchId":"b1-gerunds-infinitives-basic-wo-001",
-  "level":"B1",
-  "category":"grammar",
-  "topic":"gerunds-infinitives",
-  "subtopic":"basic-verb-patterns",
-  "lessonId":"b1-grammar-gerunds-infinitives-basic",
-  "activityType":"word_order",
-  "activities":[
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-gerunds-infinitives-basic-word-order-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "gerunds-infinitives",
+  "subtopic": "basic-verb-patterns",
+  "lessonId": "b1-grammar-gerunds-infinitives-basic",
+  "activityType": "word_order",
+  "activities": [
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-001","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":1,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that you enjoy cooking.",
-      "tokens":[{"id":"t1","text":"I enjoy"},{"id":"t2","text":"cooking"},{"id":"t3","text":"at the"},{"id":"t4","text":"weekend."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":45,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Enjoy» va seguido del gerundio «cooking»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that you enjoy cooking.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I enjoy"
+        },
+        {
+          "id": "t2",
+          "text": "cooking"
+        },
+        {
+          "id": "t3",
+          "text": "at the"
+        },
+        {
+          "id": "t4",
+          "text": "weekend."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Enjoy» va seguido del gerundio «cooking»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-002","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":1,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that she wants to buy a car.",
-      "tokens":[{"id":"t1","text":"She wants"},{"id":"t2","text":"to buy"},{"id":"t3","text":"a new"},{"id":"t4","text":"car."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":45,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Want» va seguido del infinitivo con «to» «to buy»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that she wants to buy a car.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She wants"
+        },
+        {
+          "id": "t2",
+          "text": "to buy"
+        },
+        {
+          "id": "t3",
+          "text": "a new"
+        },
+        {
+          "id": "t4",
+          "text": "car."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Want» va seguido del infinitivo con «to» «to buy»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-003","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":1,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that she finished writing the report.",
-      "tokens":[{"id":"t1","text":"She finished"},{"id":"t2","text":"writing"},{"id":"t3","text":"the"},{"id":"t4","text":"report."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":45,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Finish» va seguido del gerundio «writing»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that she finished writing the report.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She finished"
+        },
+        {
+          "id": "t2",
+          "text": "writing"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "report."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Finish» va seguido del gerundio «writing»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-004","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":1,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that they decided to go home.",
-      "tokens":[{"id":"t1","text":"They decided"},{"id":"t2","text":"to go"},{"id":"t3","text":"home"},{"id":"t4","text":"early."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":45,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Decide» va seguido del infinitivo con «to» «to go»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that they decided to go home.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "They decided"
+        },
+        {
+          "id": "t2",
+          "text": "to go"
+        },
+        {
+          "id": "t3",
+          "text": "home"
+        },
+        {
+          "id": "t4",
+          "text": "early."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Decide» va seguido del infinitivo con «to» «to go»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-005","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":1,
-      "instructions":"Put the chunks in order to make a sentence with a gerund after a preposition.","prompt":"Say that he is good at drawing.",
-      "tokens":[{"id":"t1","text":"He's good"},{"id":"t2","text":"at drawing"},{"id":"t3","text":"pictures"},{"id":"t4","text":"and maps."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":45,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Después de la preposición «at» usamos el gerundio «drawing»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 1,
+      "instructions": "Put the chunks in order to make a sentence with a gerund after a preposition.",
+      "prompt": "Say that he is good at drawing.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He's good"
+        },
+        {
+          "id": "t2",
+          "text": "at drawing"
+        },
+        {
+          "id": "t3",
+          "text": "pictures"
+        },
+        {
+          "id": "t4",
+          "text": "and maps."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Después de la preposición «at» usamos el gerundio «drawing»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-006","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":2,
-      "instructions":"Put the chunks in order to make a question with a gerund.","prompt":"Ask whether someone minds opening the window.",
-      "tokens":[{"id":"t1","text":"Do you mind"},{"id":"t2","text":"opening"},{"id":"t3","text":"the"},{"id":"t4","text":"window?"}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":50,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Mind» va seguido del gerundio «opening»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the chunks in order to make a question with a gerund.",
+      "prompt": "Ask whether someone minds opening the window.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Do you mind"
+        },
+        {
+          "id": "t2",
+          "text": "opening"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "window?"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Mind» va seguido del gerundio «opening»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-007","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":2,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that she hopes to pass the exam.",
-      "tokens":[{"id":"t1","text":"She hopes"},{"id":"t2","text":"to pass"},{"id":"t3","text":"the"},{"id":"t4","text":"exam."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":50,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Hope» va seguido del infinitivo con «to» «to pass»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that she hopes to pass the exam.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She hopes"
+        },
+        {
+          "id": "t2",
+          "text": "to pass"
+        },
+        {
+          "id": "t3",
+          "text": "the"
+        },
+        {
+          "id": "t4",
+          "text": "exam."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Hope» va seguido del infinitivo con «to» «to pass»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-008","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":2,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that he suggested taking a taxi.",
-      "tokens":[{"id":"t1","text":"He suggested"},{"id":"t2","text":"taking"},{"id":"t3","text":"a"},{"id":"t4","text":"taxi."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":50,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Suggest» va seguido del gerundio «taking»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that he suggested taking a taxi.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He suggested"
+        },
+        {
+          "id": "t2",
+          "text": "taking"
+        },
+        {
+          "id": "t3",
+          "text": "a"
+        },
+        {
+          "id": "t4",
+          "text": "taxi."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Suggest» va seguido del gerundio «taking»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-009","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":2,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that you plan to visit the museum.",
-      "tokens":[{"id":"t1","text":"We plan"},{"id":"t2","text":"to visit"},{"id":"t3","text":"the museum"},{"id":"t4","text":"tomorrow."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":50,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Plan» va seguido del infinitivo con «to» «to visit»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that you plan to visit the museum.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We plan"
+        },
+        {
+          "id": "t2",
+          "text": "to visit"
+        },
+        {
+          "id": "t3",
+          "text": "the museum"
+        },
+        {
+          "id": "t4",
+          "text": "tomorrow."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Plan» va seguido del infinitivo con «to» «to visit»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-010","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":2,
-      "instructions":"Put the chunks in order to make a sentence with a gerund after a preposition.","prompt":"Say that you are interested in learning English.",
-      "tokens":[{"id":"t1","text":"I'm interested"},{"id":"t2","text":"in learning"},{"id":"t3","text":"English"},{"id":"t4","text":"at work."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":50,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Después de la preposición «in» usamos el gerundio «learning»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Put the chunks in order to make a sentence with a gerund after a preposition.",
+      "prompt": "Say that you are interested in learning English.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I'm interested"
+        },
+        {
+          "id": "t2",
+          "text": "in learning"
+        },
+        {
+          "id": "t3",
+          "text": "English"
+        },
+        {
+          "id": "t4",
+          "text": "at work."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Después de la preposición «in» usamos el gerundio «learning»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-011","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":3,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that you avoid driving in the rush hour.",
-      "tokens":[{"id":"t1","text":"We avoid"},{"id":"t2","text":"driving"},{"id":"t3","text":"in the"},{"id":"t4","text":"rush hour."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":55,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Avoid» va seguido del gerundio «driving»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that you avoid driving in the rush hour.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We avoid"
+        },
+        {
+          "id": "t2",
+          "text": "driving"
+        },
+        {
+          "id": "t3",
+          "text": "in the"
+        },
+        {
+          "id": "t4",
+          "text": "rush hour."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Avoid» va seguido del gerundio «driving»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-012","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":3,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that you need to book a table.",
-      "tokens":[{"id":"t1","text":"You need"},{"id":"t2","text":"to book"},{"id":"t3","text":"a table"},{"id":"t4","text":"for tonight."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":55,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Need» va seguido del infinitivo con «to» «to book»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that you need to book a table.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "You need"
+        },
+        {
+          "id": "t2",
+          "text": "to book"
+        },
+        {
+          "id": "t3",
+          "text": "a table"
+        },
+        {
+          "id": "t4",
+          "text": "for tonight."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Need» va seguido del infinitivo con «to» «to book»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-013","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":3,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive after an adjective.","prompt":"Say that the exercise is easy to do.",
-      "tokens":[{"id":"t1","text":"This exercise"},{"id":"t2","text":"is easy"},{"id":"t3","text":"to do"},{"id":"t4","text":"at home."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":55,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Después del adjetivo «easy» usamos el infinitivo con «to» «to do»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive after an adjective.",
+      "prompt": "Say that the exercise is easy to do.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "This exercise"
+        },
+        {
+          "id": "t2",
+          "text": "is easy"
+        },
+        {
+          "id": "t3",
+          "text": "to do"
+        },
+        {
+          "id": "t4",
+          "text": "at home."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Después del adjetivo «easy» usamos el infinitivo con «to» «to do»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-014","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":3,
-      "instructions":"Put the chunks in order to make a sentence with a gerund after a preposition.","prompt":"Say that you are tired of waiting for the bus.",
-      "tokens":[{"id":"t1","text":"I'm tired"},{"id":"t2","text":"of waiting"},{"id":"t3","text":"for the"},{"id":"t4","text":"bus."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":55,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Después de la preposición «of» usamos el gerundio «waiting»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the chunks in order to make a sentence with a gerund after a preposition.",
+      "prompt": "Say that you are tired of waiting for the bus.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I'm tired"
+        },
+        {
+          "id": "t2",
+          "text": "of waiting"
+        },
+        {
+          "id": "t3",
+          "text": "for the"
+        },
+        {
+          "id": "t4",
+          "text": "bus."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Después de la preposición «of» usamos el gerundio «waiting»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-015","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":3,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that she would like to order a coffee.",
-      "tokens":[{"id":"t1","text":"She would like"},{"id":"t2","text":"to order"},{"id":"t3","text":"a coffee"},{"id":"t4","text":"please."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":55,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Would like» va seguido del infinitivo con «to» «to order»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that she would like to order a coffee.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She would like"
+        },
+        {
+          "id": "t2",
+          "text": "to order"
+        },
+        {
+          "id": "t3",
+          "text": "a coffee"
+        },
+        {
+          "id": "t4",
+          "text": "please."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Would like» va seguido del infinitivo con «to» «to order»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-016","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":4,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that he suggested taking a break.",
-      "tokens":[{"id":"t1","text":"He suggested"},{"id":"t2","text":"taking"},{"id":"t3","text":"a short"},{"id":"t4","text":"break."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":60,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Suggest» rige el gerundio «taking»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that he suggested taking a break.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "He suggested"
+        },
+        {
+          "id": "t2",
+          "text": "taking"
+        },
+        {
+          "id": "t3",
+          "text": "a short"
+        },
+        {
+          "id": "t4",
+          "text": "break."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Suggest» rige el gerundio «taking»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-017","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":4,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that they decided to sell the car.",
-      "tokens":[{"id":"t1","text":"They decided"},{"id":"t2","text":"to sell"},{"id":"t3","text":"the old"},{"id":"t4","text":"car."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":60,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Decide» rige el infinitivo con «to» «to sell»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that they decided to sell the car.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "They decided"
+        },
+        {
+          "id": "t2",
+          "text": "to sell"
+        },
+        {
+          "id": "t3",
+          "text": "the old"
+        },
+        {
+          "id": "t4",
+          "text": "car."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Decide» rige el infinitivo con «to» «to sell»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-018","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":4,
-      "instructions":"Put the chunks in order to make a sentence with a gerund after a preposition.","prompt":"Say that you are thinking about moving house.",
-      "tokens":[{"id":"t1","text":"We're thinking"},{"id":"t2","text":"about moving"},{"id":"t3","text":"to a"},{"id":"t4","text":"new house."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":60,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Después de la preposición «about» usamos el gerundio «moving»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the chunks in order to make a sentence with a gerund after a preposition.",
+      "prompt": "Say that you are thinking about moving house.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We're thinking"
+        },
+        {
+          "id": "t2",
+          "text": "about moving"
+        },
+        {
+          "id": "t3",
+          "text": "to a"
+        },
+        {
+          "id": "t4",
+          "text": "new house."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Después de la preposición «about» usamos el gerundio «moving»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-019","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":4,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that you want to learn French next year.",
-      "tokens":[{"id":"t1","text":"I want"},{"id":"t2","text":"to learn"},{"id":"t3","text":"French"},{"id":"t4","text":"next year."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":60,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Want» rige el infinitivo con «to» «to learn»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that you want to learn French next year.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "I want"
+        },
+        {
+          "id": "t2",
+          "text": "to learn"
+        },
+        {
+          "id": "t3",
+          "text": "French"
+        },
+        {
+          "id": "t4",
+          "text": "next year."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Want» rige el infinitivo con «to» «to learn»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-020","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":4,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that she finished cleaning the kitchen.",
-      "tokens":[{"id":"t1","text":"She finished"},{"id":"t2","text":"cleaning"},{"id":"t3","text":"the whole"},{"id":"t4","text":"kitchen."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":60,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Finish» rige el gerundio «cleaning»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that she finished cleaning the kitchen.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She finished"
+        },
+        {
+          "id": "t2",
+          "text": "cleaning"
+        },
+        {
+          "id": "t3",
+          "text": "the whole"
+        },
+        {
+          "id": "t4",
+          "text": "kitchen."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Finish» rige el gerundio «cleaning»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-021","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":5,
-      "instructions":"Put the chunks in order to make a sentence with a gerund.","prompt":"Say that you avoid eating late at night.",
-      "tokens":[{"id":"t1","text":"We avoid"},{"id":"t2","text":"eating"},{"id":"t3","text":"late at"},{"id":"t4","text":"night."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":65,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Avoid» rige el gerundio «eating»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the chunks in order to make a sentence with a gerund.",
+      "prompt": "Say that you avoid eating late at night.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We avoid"
+        },
+        {
+          "id": "t2",
+          "text": "eating"
+        },
+        {
+          "id": "t3",
+          "text": "late at"
+        },
+        {
+          "id": "t4",
+          "text": "night."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Avoid» rige el gerundio «eating»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-022","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":5,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that she hopes to find a job soon.",
-      "tokens":[{"id":"t1","text":"She hopes"},{"id":"t2","text":"to find"},{"id":"t3","text":"a job"},{"id":"t4","text":"soon."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":65,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Hope» rige el infinitivo con «to» «to find»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that she hopes to find a job soon.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "She hopes"
+        },
+        {
+          "id": "t2",
+          "text": "to find"
+        },
+        {
+          "id": "t3",
+          "text": "a job"
+        },
+        {
+          "id": "t4",
+          "text": "soon."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Hope» rige el infinitivo con «to» «to find»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-023","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":5,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive after an adjective.","prompt":"Say that the question is difficult to answer.",
-      "tokens":[{"id":"t1","text":"The question"},{"id":"t2","text":"is difficult"},{"id":"t3","text":"to answer"},{"id":"t4","text":"quickly."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":65,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"Después del adjetivo «difficult» usamos el infinitivo con «to» «to answer»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive after an adjective.",
+      "prompt": "Say that the question is difficult to answer.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "The question"
+        },
+        {
+          "id": "t2",
+          "text": "is difficult"
+        },
+        {
+          "id": "t3",
+          "text": "to answer"
+        },
+        {
+          "id": "t4",
+          "text": "quickly."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "Después del adjetivo «difficult» usamos el infinitivo con «to» «to answer»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-024","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":5,
-      "instructions":"Put the chunks in order to make a question with a gerund.","prompt":"Ask whether someone minds waiting a moment.",
-      "tokens":[{"id":"t1","text":"Do you mind"},{"id":"t2","text":"waiting"},{"id":"t3","text":"a moment"},{"id":"t4","text":"outside?"}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":65,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Mind» rige el gerundio «waiting»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the chunks in order to make a question with a gerund.",
+      "prompt": "Ask whether someone minds waiting a moment.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "Do you mind"
+        },
+        {
+          "id": "t2",
+          "text": "waiting"
+        },
+        {
+          "id": "t3",
+          "text": "a moment"
+        },
+        {
+          "id": "t4",
+          "text": "outside?"
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Mind» rige el gerundio «waiting»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-gerunds-infinitives-basic-wo-025","status":"published","autoGradable":true,"level":"B1","type":"word_order","category":"grammar","topic":"gerunds-infinitives","subtopic":"basic-verb-patterns","taxonomyNodeIds":["basic-verb-patterns"],"difficulty":5,
-      "instructions":"Put the chunks in order to make a sentence with a to-infinitive.","prompt":"Say that you plan to leave early tomorrow.",
-      "tokens":[{"id":"t1","text":"We plan"},{"id":"t2","text":"to leave"},{"id":"t3","text":"early"},{"id":"t4","text":"tomorrow."}],"lessonIds":["b1-grammar-gerunds-infinitives-basic"],"tags":["b1","gerunds-infinitives","word-order"],"estimatedSeconds":65,
-      "evaluator":{"strategy":"ordered_tokens","correctTokenIds":["t1","t2","t3","t4"]},"explanation":"«Plan» rige el infinitivo con «to» «to leave»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-gerunds-infinitives-basic-wo-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_order",
+      "skillFocus": "word_order",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Put the chunks in order to make a sentence with a to-infinitive.",
+      "prompt": "Say that you plan to leave early tomorrow.",
+      "tokens": [
+        {
+          "id": "t1",
+          "text": "We plan"
+        },
+        {
+          "id": "t2",
+          "text": "to leave"
+        },
+        {
+          "id": "t3",
+          "text": "early"
+        },
+        {
+          "id": "t4",
+          "text": "tomorrow."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "word-order"
+      ],
+      "estimatedSeconds": 65,
+      "evaluator": {
+        "strategy": "ordered_tokens",
+        "correctTokenIds": [
+          "t1",
+          "t2",
+          "t3",
+          "t4"
+        ]
+      },
+      "explanation": "«Plan» rige el infinitivo con «to» «to leave»."
     }
   ]
 }

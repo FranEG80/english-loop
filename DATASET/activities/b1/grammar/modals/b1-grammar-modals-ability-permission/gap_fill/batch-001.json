@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-modals-ability-permission-gap-fill-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "ability-permission",
+  "lessonId": "b1-grammar-modals-ability-permission",
+  "activityType": "gap_fill",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the missing reply with the correct short answer.",
+      "prompt": "A: Can you swim? B: ___",
+      "gapText": "A: Can you swim?\nB: [gap1]",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Yes, I can"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La respuesta breve repite el modal: «Yes, I can»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the missing reply using «can't».",
+      "prompt": "A: Why are you asking me to repeat everything? B: ___; the line is very noisy.",
+      "gapText": "A: Why are you asking me to repeat everything?\nB: [gap1]; the line is very noisy.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "I can't hear you clearly"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La incapacidad presente usa «can't hear»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the missing reply with general past ability.",
+      "prompt": "A: Could Leo read before he started school? B: ___",
+      "gapText": "A: Could Leo read before he started school?\nB: [gap1]",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Yes, he could"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La respuesta breve a «Could he ...?» es «Yes, he could»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the missing reply with a specific successful past action.",
+      "prompt": "A: The lock was badly damaged. Did you get the door open? B: Yes, ___ after several attempts.",
+      "gapText": "A: The lock was badly damaged. Did you get the door open?\nB: Yes, [gap1] after several attempts.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "we were able to open it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El éxito puntual usa «were able to open it»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 1,
+      "instructions": "Complete the missing reply with a failed past attempt.",
+      "prompt": "A: Did the backup code work? B: No, ___ the account.",
+      "gapText": "A: Did the backup code work?\nB: No, [gap1] the account.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "we couldn't access"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El fracaso se expresa con «couldn't access»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the missing reply with future ability.",
+      "prompt": "A: What will I learn on the course? B: You ___ your own short videos.",
+      "gapText": "A: What will I learn on the course?\nB: You [gap1] your own short videos.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will be able to edit"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La capacidad futura usa «will be able to edit»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the missing reply with negative present perfect ability.",
+      "prompt": "A: Have you spoken to the supplier? B: No, I ___ them all week.",
+      "gapText": "A: Have you spoken to the supplier?\nB: No, I [gap1] them all week.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "haven't been able to contact"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La incapacidad hasta ahora usa «haven't been able to contact»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the missing reply with the infinitive of ability.",
+      "prompt": "A: Why is Mina taking lessons? B: She wants ___ before moving abroad.",
+      "gapText": "A: Why is Mina taking lessons?\nB: She wants [gap1] before moving abroad.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "to be able to drive"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Después de «wants» usamos «to be able to drive»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the missing informal permission request.",
+      "prompt": "A: My phone battery is almost empty. ___? B: Of course.",
+      "gapText": "A: My phone battery is almost empty. [gap1]?\nB: Of course.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Can I borrow your charger"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Entre conocidos, «Can I borrow ...?» es una petición natural."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 2,
+      "instructions": "Complete the missing courteous permission request.",
+      "prompt": "A: ___? I have a medical appointment. B: Yes, that's fine.",
+      "gapText": "A: [gap1]? I have a medical appointment.\nB: Yes, that's fine.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could I leave a little early today"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La petición a un responsable usa cortésmente «Could I ...?»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the missing formal permission request.",
+      "prompt": "Officer: ___? Visitor: Certainly. Here is my passport.",
+      "gapText": "Officer: [gap1]?\nVisitor: Certainly. Here is my passport.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "May I see your identification, please"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El contexto formal admite «May I ...?»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the missing reply with permission based on a rule.",
+      "prompt": "A: Can any employee enter the archive? B: No. Only records staff ___ go inside.",
+      "gapText": "A: Can any employee enter the archive?\nB: No. Only records staff [gap1] go inside.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are allowed to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La autorización institucional usa «are allowed to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the missing reply with a past perception form.",
+      "prompt": "A: Was the view hidden by the mist? B: Not completely. We ___ the harbour.",
+      "gapText": "A: Was the view hidden by the mist?\nB: Not completely. We [gap1] the harbour.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could see"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con percepción es natural «could see»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the missing reply with a past mental-state form.",
+      "prompt": "A: Did the second explanation help? B: Yes, then I ___ the problem.",
+      "gapText": "A: Did the second explanation help?\nB: Yes, then I [gap1] the problem.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could understand"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con «understand» puede usarse «could» en una situación concreta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Complete the missing short answer about present ability.",
+      "prompt": "A: Can Ravi repair hydraulic brakes? B: Yes, ___.",
+      "gapText": "A: Can Ravi repair hydraulic brakes?\nB: Yes, [gap1].",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "he can"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La respuesta breve repite «can»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the missing question about general past ability.",
+      "prompt": "A: ___ when you were five? B: No, I learned at seven.",
+      "gapText": "A: [gap1] when you were five?\nB: No, I learned at seven.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Could you swim"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pregunta usa «Could you swim ...?» sin `did`."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the missing reply without third-person «-s» on the modal.",
+      "prompt": "A: Does Sam speak Arabic? B: Yes, he ___ Arabic and French.",
+      "gapText": "A: Does Sam speak Arabic?\nB: Yes, he [gap1] Arabic and French.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "can speak"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La tercera persona mantiene «can speak»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the missing reply with a modal followed directly by an infinitive.",
+      "prompt": "A: Has the new keyboard helped? B: Yes, I ___ much faster now.",
+      "gapText": "A: Has the new keyboard helped?\nB: Yes, I [gap1] much faster now.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "can type"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La estructura correcta es «can type»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the missing response granting immediate permission.",
+      "prompt": "A: Could I open the window? B: ___ It's very warm in here.",
+      "gapText": "A: Could I open the window?\nB: [gap1] It's very warm in here.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Yes, you can"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El permiso inmediato se concede con «can»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 4,
+      "instructions": "Complete the missing reply with a clear rule-based prohibition.",
+      "prompt": "A: Can contractors enter the server room alone? B: No, they ___.",
+      "gapText": "A: Can contractors enter the server room alone?\nB: No, they [gap1].",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "aren't allowed to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Aren't allowed to» expresa falta de permiso."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the missing reply emphasizing effort and success.",
+      "prompt": "A: The beam was extremely heavy. Did the team move it? B: Yes. After three attempts, they ___.",
+      "gapText": "A: The beam was extremely heavy. Did the team move it?\nB: Yes. After three attempts, they [gap1].",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "managed to lift it"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Managed to» destaca el esfuerzo y el resultado conseguido."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the missing reply with a specific failed attempt.",
+      "prompt": "A: Did restarting the router restore the connection? B: No, we ___ it.",
+      "gapText": "A: Did restarting the router restore the connection?\nB: No, we [gap1] it.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "couldn't restore"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La negativa «couldn't restore» expresa fracaso."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the missing reply with permission granted in the past.",
+      "prompt": "A: Where did staff work during the renovation? B: They ___ work from the library.",
+      "gapText": "A: Where did staff work during the renovation?\nB: They [gap1] work from the library.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "were allowed to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El permiso pasado plural usa «were allowed to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the missing reply with future permission.",
+      "prompt": "A: When can volunteers start using the workshop? B: They ___ use it after induction.",
+      "gapText": "A: When can volunteers start using the workshop?\nB: They [gap1] use it after induction.",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "complete-dialogue"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will be allowed to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El permiso que comenzará después usa «will be allowed to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-ability-permission-cd-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "gap_fill",
+      "skillFocus": "complete_dialogue",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 5,
+      "instructions": "Complete the dialogue using future ability and formal permission.",
+      "prompt": "___. (trainer: after update/you/export reports / user: great/I test it now)",
+      "gapText": "[gap1]. (trainer: after update/you/export reports / user: great/I test it now)",
+      "gapLayout": "dialogue",
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "permission"
+      ],
+      "estimatedSeconds": 55,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Trainer: After the update, you will be able to export reports. User: Great. May I test it now"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La capacidad futura usa «will be able to» y la petición formal «May I»."
+    }
+  ]
+}

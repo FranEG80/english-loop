@@ -1,29 +1,812 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b1-travel-transport-tf-001","level":"B1","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","lessonId":"b1-vocabulary-travel-transport","activityType":"true_false","activities":[
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-001","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":1,"instructions":"Decide if the sentence is correct.","prompt":"I booked a return ticket to Bristol.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Return ticket incluye la vuelta."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-002","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":1,"instructions":"Decide if the sentence is correct.","prompt":"A train leaves from a gate.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Los trenes salen de un platform; los aviones salen de un gate."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-003","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":1,"instructions":"Decide if the sentence is correct.","prompt":"Our flight was delayed by an hour.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Delayed significa retrasado."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-004","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":1,"instructions":"Decide if the sentence is correct.","prompt":"Hand luggage is the suitcase that goes in the plane's hold.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Hand luggage viaja contigo en la cabina; el equipaje de bodega no es hand luggage."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-005","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":1,"instructions":"Decide if the sentence is correct.","prompt":"Passengers wait on a platform for a train.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Platform es el andén del tren."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-006","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":2,"instructions":"Decide if the sentence is correct.","prompt":"Travel means only one journey by train.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Travel es la actividad general de viajar, no solo un trayecto concreto."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-007","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":2,"instructions":"Decide if the sentence is correct.","prompt":"We travelled by train to York.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"By train indica el medio de transporte."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-008","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":2,"instructions":"Decide if the sentence is correct.","prompt":"You collect your luggage before you land.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Normalmente recoges el equipaje after landing."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-009","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":2,"instructions":"Decide if the sentence is correct.","prompt":"A connection is a second transport that continues your trip.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Connection es el enlace con otro tren, vuelo o transporte."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-010","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":2,"instructions":"Decide if the sentence is correct.","prompt":"A tour is usually an organised visit around places of interest.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Tour es un recorrido organizado."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-011","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":3,"instructions":"Decide if the sentence is correct.","prompt":"I made a journey to Rome last weekend.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Para la visita concreta es más natural I took a trip to Rome; journey se centra en el trayecto."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-012","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":3,"instructions":"Decide if the sentence is correct.","prompt":"You check in before boarding a plane.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Check in ocurre antes de embarcar."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-013","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":3,"instructions":"Decide if the sentence is correct.","prompt":"Baggage allowance tells you how much luggage you may take.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Allowance es la cantidad permitida."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-014","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":3,"instructions":"Decide if the sentence is correct.","prompt":"A trip focuses only on the exact road between two stations.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Journey pone el foco en el trayecto; trip incluye la visita o experiencia."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-015","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":3,"instructions":"Decide if the sentence is correct.","prompt":"A direct flight does not require changing planes.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Direct flight no tiene una conexión entre dos aviones."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-016","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":4,"instructions":"Decide if the sentence is correct.","prompt":"We arrived in the station at eight.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Se dice arrive at the station; arrive in se usa con ciudades o países."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-017","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":4,"instructions":"Decide if the sentence is correct.","prompt":"After an international flight, passengers may go through customs.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Customs es el control de aduanas."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-018","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":4,"instructions":"Decide if the sentence is correct.","prompt":"You board a plane before you check in online.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Normalmente primero check in y después board the plane."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-019","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":4,"instructions":"Decide if the sentence is correct.","prompt":"A platform is normally used for a bus at the airport gate.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Platform es principalmente el andén del tren; gate es la puerta del avión."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-020","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":4,"instructions":"Decide if the sentence is correct.","prompt":"A single ticket includes both the outward and return journeys.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":45,"evaluator":{"strategy":"boolean","correct":false},"explanation":"A single ticket es solo de ida; a return ticket incluye la vuelta."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-021","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":5,"instructions":"Decide if the sentence is correct.","prompt":"A journey can be one part of a larger trip.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Trip es la experiencia; journey puede ser cada trayecto."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-022","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":5,"instructions":"Decide if the sentence is correct.","prompt":"If your luggage is missing, you can report it at the airport desk.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Report missing luggage es una acción normal ante una incidencia."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-023","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":5,"instructions":"Decide if the sentence is correct.","prompt":"A connecting flight is always a flight with no stops.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Connecting flight implica una conexión, no un vuelo sin escalas."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-024","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":5,"instructions":"Decide if the sentence is correct.","prompt":"Travel is normally uncountable when it means the activity in general.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Decimos travel can be expensive, no normalmente a travel."},
-    {"schemaVersion":"1.0.0","id":"b1-travel-transport-tf-025","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"vocabulary","topic":"b1-travel-transport","subtopic":"b1-travel-transport","taxonomyNodeIds":["b1-travel-transport"],"difficulty":5,"instructions":"Decide if the sentence is correct.","prompt":"Baggage allowance is the place where you wait for a train.","lessonIds":["b1-vocabulary-travel-transport"],"tags":["b1","travel-transport","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Baggage allowance es la cantidad permitida; el lugar del tren es the platform."}
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-travel-transport-true-false-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-travel-transport",
+  "subtopic": "b1-travel-transport",
+  "lessonId": "b1-vocabulary-travel-transport",
+  "activityType": "true_false",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "I booked a return ticket to Bristol.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Return ticket incluye la vuelta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A train leaves from a gate.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Los trenes salen de un platform; los aviones salen de un gate."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Our flight was delayed by an hour.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Delayed significa retrasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Hand luggage is the suitcase that goes in the plane's hold.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Hand luggage viaja contigo en la cabina; el equipaje de bodega no es hand luggage."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Passengers wait on a platform for a train.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Platform es el andén del tren."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Travel means only one journey by train.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Travel es la actividad general de viajar, no solo un trayecto concreto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "We travelled by train to York.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "By train indica el medio de transporte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "You collect your luggage before you land.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Normalmente recoges el equipaje after landing."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A connection is a second transport that continues your trip.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Connection es el enlace con otro tren, vuelo o transporte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A tour is usually an organised visit around places of interest.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Tour es un recorrido organizado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "I made a journey to Rome last weekend.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Para la visita concreta es más natural I took a trip to Rome; journey se centra en el trayecto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "You check in before boarding a plane.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Check in ocurre antes de embarcar."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Baggage allowance tells you how much luggage you may take.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Allowance es la cantidad permitida."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A trip focuses only on the exact road between two stations.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Journey pone el foco en el trayecto; trip incluye la visita o experiencia."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A direct flight does not require changing planes.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Direct flight no tiene una conexión entre dos aviones."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "We arrived in the station at eight.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Se dice arrive at the station; arrive in se usa con ciudades o países."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "After an international flight, passengers may go through customs.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Customs es el control de aduanas."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "You board a plane before you check in online.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Normalmente primero check in y después board the plane."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A platform is normally used for a bus at the airport gate.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Platform es principalmente el andén del tren; gate es la puerta del avión."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A single ticket includes both the outward and return journeys.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "A single ticket es solo de ida; a return ticket incluye la vuelta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A journey can be one part of a larger trip.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Trip es la experiencia; journey puede ser cada trayecto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "If your luggage is missing, you can report it at the airport desk.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Report missing luggage es una acción normal ante una incidencia."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "A connecting flight is always a flight with no stops.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Connecting flight implica una conexión, no un vuelo sin escalas."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Travel is normally uncountable when it means the activity in general.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Decimos travel can be expensive, no normalmente a travel."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-travel-transport-tf-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the sentence is correct.",
+      "prompt": "Baggage allowance is the place where you wait for a train.",
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Baggage allowance es la cantidad permitida; el lugar del tren es the platform."
+    }
   ]
 }

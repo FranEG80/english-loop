@@ -1,105 +1,812 @@
 {
-  "schemaVersion":"1.0.0","batchId":"b1-subject-object-tags-true-false-001","level":"B1","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","lessonId":"b1-grammar-subject-object-questions-tags","activityType":"true_false",
-  "activities":[
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-subject-object-questions-tags-true-false-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "questions",
+  "subtopic": "subject-object-question-tags",
+  "lessonId": "b1-grammar-subject-object-questions-tags",
+  "activityType": "true_false",
+  "activities": [
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-001","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":1,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Who repaired the printer?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","subject-question","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«who» es sujeto; no necesita «did»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Who repaired the printer?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«who» es sujeto; no necesita «did»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-002","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":1,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Who did you call?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","object-question","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«you» es sujeto; usa «did»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Who did you call?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«you» es sujeto; usa «did»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-003","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":1,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"The office is open, isn't it?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Repetimos «is» y usamos «it»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "The office is open, isn't it?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Repetimos «is» y usamos «it»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-004","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":1,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"The rooms aren't ready, are they?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Enunciado negativo plural: «are they»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "The rooms aren't ready, are they?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Enunciado negativo plural: «are they»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-005","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":1,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Marta works here, isn't she?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":30,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Presente simple usa «doesn't she»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Marta works here, isn't she?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 30,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Presente simple usa «doesn't she»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-006","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":2,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"What causes this noise every morning?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","subject-question","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«what» es sujeto."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "What causes this noise every morning?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«what» es sujeto."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-007","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":2,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Which route did the driver take?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","object-question","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Pasado con sujeto «the driver»: «did»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Which route did the driver take?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Pasado con sujeto «the driver»: «did»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-008","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":2,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"They arrived yesterday, didn't they?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Pasado simple afirmativo: «didn't they»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "They arrived yesterday, didn't they?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Pasado simple afirmativo: «didn't they»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-009","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":2,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"You can access the folder, can't you?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Repetimos «can» en negativo."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "You can access the folder, can't you?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Repetimos «can» en negativo."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-010","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":2,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"The parcel has arrived, doesn't it?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":35,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Repetimos «has»: «hasn't it»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 2,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "The parcel has arrived, doesn't it?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 35,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Repetimos «has»: «hasn't it»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-011","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":3,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"You didn't call, did you?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Enunciado negativo: tag positiva."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "You didn't call, did you?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Enunciado negativo: tag positiva."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-012","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":3,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"The documents are ready, isn't it?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Plural: «aren't they»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "The documents are ready, isn't it?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Plural: «aren't they»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-013","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":3,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Maya and Leo left early, didn't they?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Dos personas se sustituyen por «they»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Maya and Leo left early, didn't they?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Dos personas se sustituyen por «they»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-014","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":3,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Who is waiting outside?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","subject-question","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«who» es sujeto en presente continuo."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Who is waiting outside?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«who» es sujeto en presente continuo."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-015","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":3,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Who has the manager invited?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","object-question","true-false"],"estimatedSeconds":40,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Present perfect de objeto: «has»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Who has the manager invited?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 40,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Present perfect de objeto: «has»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-016","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":4,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Nobody complained, did they?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«nobody» es negativo: «did they»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Nobody complained, did they?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«nobody» es negativo: «did they»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-017","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":4,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Nothing was damaged, wasn't it?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":false},"explanation":"«nothing» es negativo: «was it»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Nothing was damaged, wasn't it?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "«nothing» es negativo: «was it»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-018","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":4,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"There's a pharmacy nearby, isn't there?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"La tag de «there is» conserva «there»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "There's a pharmacy nearby, isn't there?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "La tag de «there is» conserva «there»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-019","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":4,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"I'm next, aren't I?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"La forma convencional es «aren't I?»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "I'm next, aren't I?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "La forma convencional es «aren't I?»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-020","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":4,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Let's take a break, shall we?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":50,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Con «let's» usamos «shall we?»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Let's take a break, shall we?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 50,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Con «let's» usamos «shall we?»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-021","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":5,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Close the window, will you?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":60,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Los imperativos usan «will you?»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Close the window, will you?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Los imperativos usan «will you?»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-022","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":5,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"There weren't any delays, weren't there?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":60,"evaluator":{"strategy":"boolean","correct":false},"explanation":"Enunciado negativo: tag positiva «were there»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "There weren't any delays, weren't there?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": false
+      },
+      "explanation": "Enunciado negativo: tag positiva «were there»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-023","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":5,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Who wrote the report?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","subject-question","true-false"],"estimatedSeconds":60,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«who» es sujeto."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Who wrote the report?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "subject-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«who» es sujeto."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-024","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":5,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"Who did the team choose?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","object-question","true-false"],"estimatedSeconds":60,"evaluator":{"strategy":"boolean","correct":true},"explanation":"«the team» es sujeto; usa «did»."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "Who did the team choose?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "true-false"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "«the team» es sujeto; usa «did»."
     },
     {
-      "schemaVersion":"1.0.0","id":"b1-subject-object-tags-tf-025","status":"published","autoGradable":true,"level":"B1","type":"true_false","category":"grammar","topic":"questions","subtopic":"subject-object-question-tags","taxonomyNodeIds":["subject-object-question-tags"],"difficulty":5,
-      "instructions":"Decide if the question is grammatically correct.","prompt":"You haven't changed the password, have you?","lessonIds":["b1-grammar-subject-object-questions-tags"],"tags":["b1","question-tag","true-false"],"estimatedSeconds":60,"evaluator":{"strategy":"boolean","correct":true},"explanation":"Enunciado negativo: tag positiva."
+      "schemaVersion": "2.0.0",
+      "id": "b1-subject-object-tags-tf-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "true_false",
+      "skillFocus": "true_false",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 5,
+      "instructions": "Decide if the question is grammatically correct.",
+      "prompt": "You haven't changed the password, have you?",
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "boolean",
+        "correct": true
+      },
+      "explanation": "Enunciado negativo: tag positiva."
     }
   ]
 }
