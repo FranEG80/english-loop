@@ -47,7 +47,8 @@ export function TextResponseRenderer({
   disabled?: boolean;
 }) {
   const gapCount = gapCountFor(activity);
-  const [values, setValues] = useState<string[]>(() => Array(gapCount).fill(""));
+  const inputCount = Math.max(1, gapCount);
+  const [values, setValues] = useState<string[]>(() => Array(inputCount).fill(""));
 
   function setValueAt(index: number, value: string) {
     setValues((prev) => prev.map((item, i) => (i === index ? value : item)));
@@ -58,7 +59,7 @@ export function TextResponseRenderer({
   function submit() {
     if (disabled || isIncomplete) return;
     onSubmit(
-      gapCount > 1
+      inputCount > 1
         ? { kind: "ordered_list", value: values }
         : { kind: "text", value: values[0] },
     );
@@ -155,13 +156,10 @@ function renderPrompt(
           />
         </>
       );
-    case "open_cloze":
-    case "complete_paragraph": {
-      const text =
-        activity.type === "open_cloze" ? activity.textWithGaps : activity.paragraphWithGaps;
+    case "open_cloze": {
       return (
         <>
-          <p className="text-lg font-medium text-foreground">{text}</p>
+          <p className="text-lg font-medium leading-8 text-foreground">{activity.textWithGaps}</p>
           <div className="grid gap-3 sm:grid-cols-2">
             {values.map((value, index) => (
               <Input
@@ -177,6 +175,29 @@ function renderPrompt(
         </>
       );
     }
+    case "complete_paragraph":
+      return (
+        <>
+          <div className="rounded-[1.5rem] border-2 border-foreground/15 bg-surface-muted/70 px-5 py-5 sm:px-7 sm:py-6">
+            <p className="text-lg font-bold text-foreground">{activity.question}</p>
+            <p className="mt-4 whitespace-pre-line text-lg font-medium leading-8 text-foreground">
+              {activity.paragraphWithGaps}
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {values.map((value, index) => (
+              <Input
+                key={index}
+                id={`text-response-${index}`}
+                label={dictionary.activities.gapHint.replace("{index}", String(index + 1))}
+                value={value}
+                disabled={disabled}
+                onChange={(event) => setValueAt(index, event.target.value)}
+              />
+            ))}
+          </div>
+        </>
+      );
     case "complete_dialogue": {
       let gapIndex = -1;
       return (

@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { DailyGoalStepper } from "./DailyGoalStepper";
 
 describe("DailyGoalStepper", () => {
@@ -20,5 +20,24 @@ describe("DailyGoalStepper", () => {
     unmount();
     render(<DailyGoalStepper defaultValue={20} label="Goal" />);
     expect(screen.getByRole("button", { name: "Goal: +1" })).toBeDisabled();
+  });
+
+  it("notifies the enclosing form after updating its hidden value", async () => {
+    const user = userEvent.setup();
+    const { container } = render(
+      <form>
+        <DailyGoalStepper defaultValue={11} label="Daily activities" />
+      </form>,
+    );
+    const form = container.querySelector("form");
+    const handleChange = vi.fn();
+    form?.addEventListener("change", handleChange);
+
+    await user.click(
+      screen.getByRole("button", { name: "Daily activities: +1" }),
+    );
+
+    expect(handleChange).toHaveBeenCalledOnce();
+    expect(new FormData(form ?? undefined).get("dailyGoal")).toBe("12");
   });
 });

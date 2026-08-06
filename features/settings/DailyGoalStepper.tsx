@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Minus, Plus } from "lucide-react";
 
 export function DailyGoalStepper({
@@ -11,6 +11,13 @@ export function DailyGoalStepper({
   label: string;
 }) {
   const [value, setValue] = useState(defaultValue);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    inputRef.current?.dispatchEvent(
+      new Event("change", { bubbles: true }),
+    );
+  }, [value]);
 
   function update(next: number) {
     setValue(Math.min(20, Math.max(1, next)));
@@ -18,7 +25,7 @@ export function DailyGoalStepper({
 
   return (
     <div>
-      <input type="hidden" name="dailyGoal" value={value} />
+      <input ref={inputRef} type="hidden" name="dailyGoal" value={value} />
       <div
         role="group"
         aria-label={label}

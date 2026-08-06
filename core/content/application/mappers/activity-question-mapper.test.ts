@@ -39,7 +39,7 @@ describe("toActivityQuestionDto", () => {
       ["open_cloze", { textWithGaps: "Prompt", gapCount: 1 }],
       ["key_word_transformation", { firstSentence: "Prompt", keyword: "one" }],
       ["complete_dialogue", { dialogueLines: [{ speaker: "t", text: "one", hasGap: false }] }],
-      ["complete_paragraph", { paragraphWithGaps: "Prompt", gapCount: 1 }],
+      ["complete_paragraph", { question: "Prompt", paragraphWithGaps: "Prompt", gapCount: 1 }],
     ] as const;
 
     for (const [type, expected] of cases) {
@@ -70,9 +70,13 @@ describe("toActivityQuestionDto", () => {
 
   it("uses safe defaults when optional question content is absent", () => {
     expect(toActivityQuestionDto(activity("word_formation", { tokens: [] }))).toMatchObject({ baseWord: "" });
-    expect(toActivityQuestionDto(activity("open_cloze", { tokens: undefined }))).toMatchObject({ gapCount: 0 });
+    expect(toActivityQuestionDto(activity("open_cloze", { tokens: undefined }))).toMatchObject({ gapCount: 1 });
     expect(toActivityQuestionDto(activity("key_word_transformation", { tokens: [] }))).toMatchObject({ keyword: "" });
-    expect(toActivityQuestionDto(activity("complete_paragraph", { tokens: undefined }))).toMatchObject({ gapCount: 0 });
+    expect(toActivityQuestionDto(activity("complete_paragraph", { passage: "First sentence with ___ here. Second sentence follows." , tokens: undefined }))).toMatchObject({
+      question: "Prompt",
+      paragraphWithGaps: "First sentence with ___ here. Second sentence follows.",
+      gapCount: 1,
+    });
     expect(toActivityQuestionDto(activity("single_choice", { options: undefined }))).toMatchObject({ options: [] });
     expect(toActivityQuestionDto(activity("multiple_select", { options: undefined }))).toMatchObject({ options: [] });
     expect(toActivityQuestionDto(activity("word_order", { tokens: undefined }))).toMatchObject({ shuffledWords: [] });

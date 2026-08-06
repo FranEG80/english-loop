@@ -25,7 +25,7 @@ describe("settings server actions", () => {
     form.append("activeLevels", "B2");
     form.set("dailyGoal", "99");
     form.set("reducedMotion", "on");
-    const result = await updateSettingsAction(undefined, form);
+    const result = await updateSettingsAction(form);
     expect(ports.updateSettings).toHaveBeenCalledWith({
       locale: "en",
       activeLevels: ["B1", "B2"],
@@ -41,7 +41,7 @@ describe("settings server actions", () => {
     const form = new FormData();
     form.set("locale", "es");
 
-    const result = await updateSettingsAction(undefined, form);
+    const result = await updateSettingsAction(form);
 
     expect(result).toEqual({
       error: "No se pudieron guardar los ajustes. Inténtalo de nuevo.",

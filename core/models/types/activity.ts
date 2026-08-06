@@ -128,6 +128,7 @@ export interface CompleteDialogueActivityDto extends ActivityBaseDto {
 
 export interface CompleteParagraphActivityDto extends ActivityBaseDto {
   type: "complete_paragraph";
+  question: string;
   paragraphWithGaps: string;
   gapCount: number;
 }

@@ -84,7 +84,7 @@ export function toActivityQuestionDto(activity: Activity): ActivityQuestionDto {
         ...base,
         type: "open_cloze",
         textWithGaps: activity.prompt,
-        gapCount: activity.tokens?.length ?? 0,
+        gapCount: gapCountFor(activity.prompt, activity),
       };
     case "key_word_transformation":
       return {
@@ -104,17 +104,28 @@ export function toActivityQuestionDto(activity: Activity): ActivityQuestionDto {
           hasGap: false,
         })),
       };
-    case "complete_paragraph":
+    case "complete_paragraph": {
+      const paragraph = activity.passage ?? activity.prompt;
       return {
         ...base,
         type: "complete_paragraph",
-        paragraphWithGaps: activity.prompt,
-        gapCount: activity.tokens?.length ?? 0,
+        question: activity.prompt,
+        paragraphWithGaps: paragraph,
+        gapCount: gapCountFor(paragraph, activity),
       };
+    }
     default:
       // Fallback seguro: no exponer datos sensibles.
       return { ...base, type: "fill_blank", textWithGap: activity.prompt };
   }
+}
+
+function gapCountFor(text: string, activity: Activity): number {
+  const markerCount = text.match(/___/gu)?.length ?? 0;
+  if (markerCount > 0) return markerCount;
+  if (activity.evaluator.strategy === "per_gap") return activity.evaluator.gaps.length;
+  if (activity.tokens && activity.tokens.length > 0) return activity.tokens.length;
+  return 1;
 }
 
 function toInteractionMode(type: string): InteractionMode {

@@ -48,7 +48,9 @@ describe("TextResponseRenderer", () => {
   it("renders paragraphs and dialogues with multiple and optional gaps", async () => {
     const user = userEvent.setup();
     const paragraphSubmit = vi.fn();
-    const paragraph = render(<TextResponseRenderer activity={{ id: "paragraph", level: "B1", taxonomyNodeId: "topic", interactionMode: "standard", type: "complete_paragraph", paragraphWithGaps: "I ___ and ___", gapCount: 2 }} dictionary={en} onSubmit={paragraphSubmit} />);
+    const paragraph = render(<TextResponseRenderer activity={{ id: "paragraph", level: "B1", taxonomyNodeId: "topic", interactionMode: "standard", type: "complete_paragraph", question: "Complete the paragraph.", paragraphWithGaps: "First sentence.\nI ___ and ___", gapCount: 2 }} dictionary={en} onSubmit={paragraphSubmit} />);
+    expect(screen.getByText("Complete the paragraph.")).toBeInTheDocument();
+    expect(screen.getByText(/First sentence\.\s*I ___ and ___/)).toBeInTheDocument();
     const paragraphInputs = screen.getAllByRole("textbox");
     await user.type(paragraphInputs[0]!, "read");
     await user.type(paragraphInputs[1]!, "write");

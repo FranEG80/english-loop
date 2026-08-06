@@ -78,7 +78,7 @@ describe("ActivityEvaluator", () => {
     expect(evaluate(evaluator, { kind: "text", value: "go" })).toBe(false);
   });
 
-  it("grades per_gap responses against an accepted answer", () => {
+  it("grades per_gap responses in order for multi-gap activities", () => {
     const evaluator: Evaluator = {
       strategy: "per_gap",
       gaps: [
@@ -87,9 +87,14 @@ describe("ActivityEvaluator", () => {
       ],
       normalization,
     };
-    expect(evaluate(evaluator, { kind: "text", value: " HOUSE " })).toBe(true);
-    expect(evaluate(evaluator, { kind: "text", value: "school" })).toBe(false);
+    expect(evaluate(evaluator, { kind: "ordered_list", value: ["WENT", " HOUSE "] })).toBe(true);
+    expect(evaluate(evaluator, { kind: "ordered_list", value: ["HOUSE", "WENT"] })).toBe(false);
+    expect(evaluate(evaluator, { kind: "ordered_list", value: ["went"] })).toBe(false);
+    expect(evaluate(evaluator, { kind: "text", value: " HOUSE " })).toBe(false);
+    expect(evaluate(evaluator, { kind: "text", value: "house" })).toBe(false);
     expect(evaluate(evaluator, { kind: "multiple", value: ["house"] })).toBe(false);
+
+    expect(evaluate({ ...evaluator, gaps: [{ gapId: "only", answers: ["house"] }] }, { kind: "text", value: " HOUSE " })).toBe(true);
   });
 
   it("grades ordered_tokens strategy", () => {

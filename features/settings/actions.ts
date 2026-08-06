@@ -13,7 +13,6 @@ export interface SettingsActionState {
 }
 
 export async function updateSettingsAction(
-  _prevState: SettingsActionState | undefined,
   formData: FormData,
 ): Promise<SettingsActionState> {
   const locale: Locale = formData.get("locale") === "en" ? "en" : "es";

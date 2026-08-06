@@ -169,6 +169,7 @@ export const mockActivities: ActivityQuestionDto[] = [
     level: "B2",
     taxonomyNodeId: "reading.general",
     interactionMode: "standard",
+    question: "Complete the paragraph with the missing words.",
     paragraphWithGaps:
       "Reading regularly in English helps you ___ (1) your vocabulary and understand grammar patterns in ___ (2).",
     gapCount: 2,

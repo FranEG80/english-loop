@@ -110,12 +110,19 @@ export function evaluate(
       );
 
     case "per_gap": {
-      if (response.kind !== "text") return false;
-      // La respuesta per_gap llega como texto plano; se compara contra cada gap.
-      return evaluator.gaps.some((gap) =>
-        gap.answers.some((answer) =>
-          equivalent(response.value, answer, evaluator.normalization),
-        ),
+      if (response.kind === "ordered_list") {
+        return (
+          response.value.length === evaluator.gaps.length &&
+          response.value.every((value, index) =>
+            evaluator.gaps[index]!.answers.some((answer) =>
+              equivalent(value, answer, evaluator.normalization),
+            ),
+          )
+        );
+      }
+      if (response.kind !== "text" || evaluator.gaps.length !== 1) return false;
+      return evaluator.gaps[0]!.answers.some((answer) =>
+        equivalent(response.value, answer, evaluator.normalization),
       );
     }
 
