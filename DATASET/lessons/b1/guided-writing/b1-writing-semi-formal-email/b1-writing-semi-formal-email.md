@@ -19,7 +19,7 @@ frameworkRefs:
   - cambridge-b1-preliminary-format
 relatedLessonIds:
   - b1-writing-informal-email
-  - b2-use-of-english-register-rewriting
+  - b2-register-politeness
 tags:
   - b1
   - writing

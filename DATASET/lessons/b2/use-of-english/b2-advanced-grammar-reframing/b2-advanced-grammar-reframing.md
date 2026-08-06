@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-advanced-grammar-reframing
-title: "Pasiva, condicionales y estilo indirecto B2"
+title: "Pasiva, condicionales y estilo indirecto B2 - Key word transformation"
 level: B2
 category: use-of-english
 topic: b2-advanced-grammar-reframing
@@ -185,7 +185,12 @@ Antes de reformular, decide qué relación expresa la primera frase. Cada tipo t
 
 # Contrastes importantes
 
-**Must / have to:** obligación del hablante frente a necesidad externa, aunque pueden coincidir en contexto. **Could have / should have:** posibilidad pasada frente a crítica o expectativa incumplida. **If I had... / I wish I had...:** condición hipotética frente a arrepentimiento. **Reported / direct speech:** palabras citadas frente a contenido comunicado. **Mustn't / don't have to:** prohibición frente a ausencia de necesidad. **May / might / could:** matices de posibilidad sin diferencias matemáticas exactas.
+- **Must / have to:** obligación del hablante frente a necesidad externa, aunque pueden coincidir en contexto. 
+- **Could have / should have:** posibilidad pasada frente a crítica o expectativa incumplida. 
+- **If I had... / I wish I had...:** condición hipotética frente a arrepentimiento. 
+- **Reported / direct speech:** palabras citadas frente a contenido comunicado. 
+- **Mustn't / don't have to:** prohibición frente a ausencia de necesidad.
+- **May / might / could:** matices de posibilidad sin diferencias matemáticas exactas.
 
 # Ejemplos
 

@@ -1,12 +1,18 @@
 {
   "schemaVersion": "1.0.0",
-  "valid": true,
+  "valid": false,
   "summary": {
     "lessons": 124,
     "activities": 12275,
     "batches": 491,
     "taxonomyNodes": 164,
-    "errors": 0
+    "errors": 1
   },
-  "issues": []
+  "issues": [
+    {
+      "code": "lesson-focus",
+      "location": "lessons/b2/use-of-english/b2-advanced-grammar-reframing/b2-advanced-grammar-reframing.md",
+      "message": "El título debe enseñar un contenido lingüístico, no nombrar el formato de una actividad."
+    }
+  ]
 }

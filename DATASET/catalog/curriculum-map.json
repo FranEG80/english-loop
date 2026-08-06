@@ -767,54 +767,54 @@
       "plannedLessonIds": ["b2-vocabulary-creativity-innovation-decisions"]
     },
     {
-      "id": "b1-use-multiple-choice-cloze",
-      "level": "B1", "category": "use-of-english", "topic": "b1-multiple-choice-cloze", "subtopic": "b1-multiple-choice-cloze",
-      "skills": ["b1-multiple-choice-cloze"],
-      "learningObjectives": ["Elegir vocabulario por significado, colocación y función dentro de un texto.", "Descartar distractores gramaticales o semánticos sin depender de traducción literal."],
+      "id": "b1-lexical-precision",
+      "level": "B1", "category": "use-of-english", "topic": "b1-lexical-precision", "subtopic": "b1-lexical-precision",
+      "skills": ["b1-lexical-precision"],
+      "learningObjectives": ["Distinguir palabras próximas por significado, registro y contexto.", "Reconocer colocaciones, verbos frasales y conectores frecuentes en situaciones cotidianas."],
       "prerequisites": ["b1-vocabulary-daily-routines-life", "b1-grammar-basic-linking-words"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["multiple_choice_cloze", "vocabulary_in_context", "collocation_choice", "phrasal_verb_choice"],
-      "plannedLessonIds": ["b1-use-of-english-multiple-choice-cloze"]
+      "plannedLessonIds": ["b1-lexical-precision"]
     },
     {
-      "id": "b1-use-open-cloze",
-      "level": "B1", "category": "use-of-english", "topic": "b1-open-cloze", "subtopic": "b1-open-cloze",
-      "skills": ["b1-open-cloze"],
-      "learningObjectives": ["Completar huecos de una palabra mediante gramática y cohesión.", "Reconocer artículos, auxiliares, pronombres, conectores y preposiciones previsibles."],
+      "id": "b1-grammar-reference-connectors",
+      "level": "B1", "category": "use-of-english", "topic": "b1-grammar-reference-connectors", "subtopic": "b1-grammar-reference-connectors",
+      "skills": ["b1-grammar-reference-connectors"],
+      "learningObjectives": ["Reconocer artículos, auxiliares, pronombres, conectores y preposiciones previsibles.", "Mantener la referencia y la lógica entre varias oraciones."],
       "prerequisites": ["b1-grammar-articles-reference", "b1-grammar-basic-linking-words"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["open_cloze", "multi_gap_fill", "fill_blank", "complete_paragraph"],
-      "plannedLessonIds": ["b1-use-of-english-open-cloze"]
+      "plannedLessonIds": ["b1-grammar-reference-connectors"]
     },
     {
-      "id": "b1-use-word-formation",
-      "level": "B1", "category": "use-of-english", "topic": "b1-word-formation", "subtopic": "b1-word-formation",
-      "skills": ["b1-word-formation"],
-      "learningObjectives": ["Formar nombres, verbos, adjetivos y adverbios frecuentes.", "Aplicar prefijos negativos y sufijos sin alterar ortografía indebidamente."],
+      "id": "b1-word-families",
+      "level": "B1", "category": "use-of-english", "topic": "b1-word-families", "subtopic": "b1-word-families",
+      "skills": ["b1-word-families"],
+      "learningObjectives": ["Reconocer la categoría gramatical que exige el contexto.", "Construir nombres, verbos, adjetivos y adverbios con ortografía correcta."],
       "prerequisites": [],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["word_formation", "fill_blank", "matching", "multiple_choice_cloze"],
-      "plannedLessonIds": ["b1-use-of-english-word-formation"]
+      "plannedLessonIds": ["b1-word-families"]
     },
     {
-      "id": "b1-use-sentence-rewriting",
-      "level": "B1", "category": "use-of-english", "topic": "b1-sentence-rewriting", "subtopic": "b1-sentence-rewriting",
-      "skills": ["b1-sentence-rewriting"],
-      "learningObjectives": ["Reformular comparaciones, pasivas, discurso indirecto y patrones verbales conservando significado.", "Producir respuestas dentro de conjuntos finitos y límites de palabras."],
+      "id": "b1-grammar-reframing",
+      "level": "B1", "category": "use-of-english", "topic": "b1-grammar-reframing", "subtopic": "b1-grammar-reframing",
+      "skills": ["b1-grammar-reframing"],
+      "learningObjectives": ["Reformular comparaciones, pasivas, discurso indirecto y patrones verbales conservando significado.", "Controlar sujeto, tiempo, negación y modalidad en la estructura nueva."],
       "prerequisites": ["b1-grammar-passive-present-past", "b1-grammar-reported-statements", "b1-grammar-comparatives-superlatives"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["sentence_transformation", "rewrite_sentence", "key_word_transformation", "fill_blank"],
-      "plannedLessonIds": ["b1-use-of-english-sentence-rewriting"]
+      "plannedLessonIds": ["b1-grammar-reframing"]
     },
     {
-      "id": "b1-use-error-correction",
-      "level": "B1", "category": "use-of-english", "topic": "b1-error-correction", "subtopic": "b1-error-correction",
-      "skills": ["b1-error-correction"],
-      "learningObjectives": ["Identificar errores frecuentes de tiempo, concordancia, auxiliar, artículo y preposición.", "Corregir exactamente el segmento defectuoso sin reescribir contenido válido."],
+      "id": "b1-grammar-accuracy",
+      "level": "B1", "category": "use-of-english", "topic": "b1-grammar-accuracy", "subtopic": "b1-grammar-accuracy",
+      "skills": ["b1-grammar-accuracy"],
+      "learningObjectives": ["Distinguir errores de tiempo, concordancia, auxiliar, artículo y preposición.", "Corregir solo la estructura que rompe el significado o la gramática."],
       "prerequisites": ["b1-grammar-present-perfect-vs-past-simple", "b1-grammar-articles-reference"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["error_identification", "error_correction", "multiple_select"],
-      "plannedLessonIds": ["b1-use-of-english-error-correction"]
+      "plannedLessonIds": ["b1-grammar-accuracy"]
     },
     {
       "id": "b1-use-fixed-expressions",
@@ -827,64 +827,64 @@
       "plannedLessonIds": ["b1-use-of-english-fixed-expressions"]
     },
     {
-      "id": "b2-use-multiple-choice-cloze",
-      "level": "B2", "category": "use-of-english", "topic": "b2-multiple-choice-cloze", "subtopic": "b2-multiple-choice-cloze",
-      "skills": ["b2-multiple-choice-cloze"],
-      "learningObjectives": ["Distinguir matiz, registro, colocación, phrasal verbs y expresiones idiomáticas.", "Justificar la opción correcta mediante evidencia local y global del texto."],
-      "prerequisites": ["b1-use-of-english-multiple-choice-cloze"],
+      "id": "b2-lexical-precision",
+      "level": "B2", "category": "use-of-english", "topic": "b2-lexical-precision", "subtopic": "b2-lexical-precision",
+      "skills": ["b2-lexical-precision"],
+      "learningObjectives": ["Distinguir palabras próximas por significado, registro y contexto.", "Reconocer colocaciones, verbos frasales y expresiones idiomáticas B2."],
+      "prerequisites": ["b1-lexical-precision"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["multiple_choice_cloze", "collocation_choice", "phrasal_verb_choice", "vocabulary_in_context"],
-      "plannedLessonIds": ["b2-use-of-english-multiple-choice-cloze"]
+      "plannedLessonIds": ["b2-lexical-precision"]
     },
     {
-      "id": "b2-use-open-cloze",
-      "level": "B2", "category": "use-of-english", "topic": "b2-open-cloze", "subtopic": "b2-open-cloze",
-      "skills": ["b2-open-cloze"],
-      "learningObjectives": ["Resolver dependencias gramaticales y cohesivas entre oraciones.", "Enumerar todas las respuestas de una palabra válidas cuando existe variación real."],
-      "prerequisites": ["b1-use-of-english-open-cloze", "b2-grammar-advanced-connectors-discourse"],
+      "id": "b2-connectors-cohesion",
+      "level": "B2", "category": "use-of-english", "topic": "b2-connectors-cohesion", "subtopic": "b2-connectors-cohesion",
+      "skills": ["b2-connectors-cohesion"],
+      "learningObjectives": ["Construir relaciones gramaticales y cohesivas entre oraciones.", "Usar artículos, auxiliares, pronombres, conectores y preposiciones con precisión."],
+      "prerequisites": ["b1-grammar-reference-connectors", "b2-grammar-advanced-connectors-discourse"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["open_cloze", "multi_gap_fill", "complete_paragraph", "fill_blank"],
-      "plannedLessonIds": ["b2-use-of-english-open-cloze"]
+      "plannedLessonIds": ["b2-connectors-cohesion"]
     },
     {
-      "id": "b2-use-word-formation",
-      "level": "B2", "category": "use-of-english", "topic": "b2-word-formation", "subtopic": "b2-word-formation",
-      "skills": ["b2-word-formation"],
+      "id": "b2-word-families",
+      "level": "B2", "category": "use-of-english", "topic": "b2-word-families", "subtopic": "b2-word-families",
+      "skills": ["b2-word-families"],
       "learningObjectives": ["Formar familias léxicas con cambios ortográficos y prefijos múltiples.", "Inferir categoría, polaridad y número a partir de la sintaxis del texto."],
-      "prerequisites": ["b1-use-of-english-word-formation"],
+      "prerequisites": ["b1-word-families"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["word_formation", "multi_gap_fill", "multiple_choice_cloze", "error_correction"],
-      "plannedLessonIds": ["b2-use-of-english-word-formation"]
+      "plannedLessonIds": ["b2-word-families"]
     },
     {
-      "id": "b2-use-key-word-transformations",
-      "level": "B2", "category": "use-of-english", "topic": "b2-key-word-transformations", "subtopic": "b2-key-word-transformations",
-      "skills": ["b2-key-word-transformations"],
-      "learningObjectives": ["Transformar pasivas, condicionales, reported speech, modales y comparaciones con palabra obligatoria.", "Conservar significado dentro de un límite finito de respuestas y palabras."],
-      "prerequisites": ["b1-use-of-english-sentence-rewriting", "b2-grammar-third-conditional", "b2-grammar-reporting-passives"],
+      "id": "b2-advanced-grammar-reframing",
+      "level": "B2", "category": "use-of-english", "topic": "b2-advanced-grammar-reframing", "subtopic": "b2-advanced-grammar-reframing",
+      "skills": ["b2-advanced-grammar-reframing"],
+      "learningObjectives": ["Construir pasivas, condicionales, estilo indirecto y modales con el tiempo adecuado.", "Comprobar que la estructura nueva conserva exactamente el significado original."],
+      "prerequisites": ["b1-grammar-reframing", "b2-grammar-third-conditional", "b2-grammar-reporting-passives"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["key_word_transformation", "sentence_transformation", "rewrite_sentence"],
-      "plannedLessonIds": ["b2-use-of-english-key-word-transformations"]
+      "plannedLessonIds": ["b2-advanced-grammar-reframing"]
     },
     {
-      "id": "b2-use-register-rewriting",
-      "level": "B2", "category": "use-of-english", "topic": "b2-register-rewriting", "subtopic": "b2-register-rewriting",
-      "skills": ["b2-register-rewriting"],
+      "id": "b2-register-politeness",
+      "level": "B2", "category": "use-of-english", "topic": "b2-register-politeness", "subtopic": "b2-register-politeness",
+      "skills": ["b2-register-politeness"],
       "learningObjectives": ["Transformar expresiones formales e informales sin cambiar el contenido proposicional.", "Elegir fórmulas, verbos y conectores adecuados al destinatario."],
       "prerequisites": ["b1-writing-semi-formal-email", "b2-grammar-advanced-connectors-discourse"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["guided_writing", "sentence_transformation", "matching", "single_choice", "complete_dialogue"],
-      "plannedLessonIds": ["b2-use-of-english-register-rewriting"]
+      "plannedLessonIds": ["b2-register-politeness"]
     },
     {
-      "id": "b2-use-fixed-expressions",
-      "level": "B2", "category": "use-of-english", "topic": "b2-advanced-fixed-expressions", "subtopic": "b2-advanced-fixed-expressions",
-      "skills": ["b2-advanced-fixed-expressions"],
+      "id": "b2-collocations-fixed-expressions",
+      "level": "B2", "category": "use-of-english", "topic": "b2-collocations-fixed-expressions", "subtopic": "b2-collocations-fixed-expressions",
+      "skills": ["b2-collocations-fixed-expressions"],
       "learningObjectives": ["Reconocer expresiones fijas, binomios y marcos idiomáticos de frecuencia alta.", "Distinguir significado literal de función idiomática mediante contexto."],
       "prerequisites": ["b1-use-of-english-fixed-expressions"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["multiple_choice_cloze", "single_choice", "matching", "fill_blank", "vocabulary_in_context"],
-      "plannedLessonIds": ["b2-use-of-english-fixed-expressions"]
+      "plannedLessonIds": ["b2-collocations-fixed-expressions"]
     },
     {
       "id": "b1-reading-functional",
@@ -907,24 +907,24 @@
       "plannedLessonIds": ["b1-reading-gist-detail"]
     },
     {
-      "id": "b1-reading-matching",
-      "level": "B1", "category": "reading", "topic": "b1-reading-people-matching", "subtopic": "b1-reading-people-matching",
-      "skills": ["b1-reading-people-matching"],
-      "learningObjectives": ["Extraer requisitos y preferencias de descripciones de personas.", "Relacionar cada perfil con un texto que satisfaga todas sus condiciones."],
+      "id": "b1-reading-profile-requirements",
+      "level": "B1", "category": "reading", "topic": "b1-reading-profile-requirements", "subtopic": "b1-reading-profile-requirements",
+      "skills": ["b1-reading-profile-requirements"],
+      "learningObjectives": ["Extraer necesidades, restricciones y preferencias de perfiles breves.", "Reconocer equivalencias léxicas y comprobar que cada texto cumple todas las condiciones."],
       "prerequisites": ["b1-reading-gist-detail"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["reading_matching", "matching", "multiple_select"],
-      "plannedLessonIds": ["b1-reading-people-matching"]
+      "plannedLessonIds": ["b1-reading-profile-requirements"]
     },
     {
-      "id": "b1-reading-gapped",
-      "level": "B1", "category": "reading", "topic": "b1-reading-gapped-text", "subtopic": "b1-reading-gapped-text",
-      "skills": ["b1-reading-gapped-text"],
-      "learningObjectives": ["Reconstruir cohesión mediante pronombres, conectores y continuidad temática.", "Descartar frases que contradicen referencia, tiempo o progresión informativa."],
+      "id": "b1-reading-text-cohesion",
+      "level": "B1", "category": "reading", "topic": "b1-reading-text-cohesion", "subtopic": "b1-reading-text-cohesion",
+      "skills": ["b1-reading-text-cohesion"],
+      "learningObjectives": ["Seguir referentes, conectores y continuidad temática entre oraciones.", "Reconocer relaciones de causa, contraste, secuencia y consecuencia."],
       "prerequisites": ["b1-grammar-basic-linking-words", "b1-reading-gist-detail"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b1-preliminary-format"],
       "compatibleActivityTypes": ["gapped_text", "reading_matching", "ordered_tokens"],
-      "plannedLessonIds": ["b1-reading-gapped-text-cohesion"]
+      "plannedLessonIds": ["b1-reading-text-cohesion"]
     },
     {
       "id": "b1-reading-opinion",
@@ -957,24 +957,24 @@
       "plannedLessonIds": ["b2-reading-attitude-tone"]
     },
     {
-      "id": "b2-reading-gapped",
-      "level": "B2", "category": "reading", "topic": "b2-reading-gapped-text", "subtopic": "b2-reading-gapped-text",
-      "skills": ["b2-reading-gapped-text"],
-      "learningObjectives": ["Reconstruir textos largos mediante referencia, progresión lógica y estructura retórica.", "Usar evidencia anterior y posterior para seleccionar cada fragmento."],
-      "prerequisites": ["b1-reading-gapped-text-cohesion", "b2-grammar-advanced-connectors-discourse"],
+      "id": "b2-reading-text-cohesion",
+      "level": "B2", "category": "reading", "topic": "b2-reading-text-cohesion", "subtopic": "b2-reading-text-cohesion",
+      "skills": ["b2-reading-text-cohesion"],
+      "learningObjectives": ["Seguir referencias a distancia, progresión lógica y estructura retórica.", "Reconocer si una oración ejemplifica, contrasta, explica o concluye una idea."],
+      "prerequisites": ["b1-reading-text-cohesion", "b2-grammar-advanced-connectors-discourse"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["gapped_text", "reading_matching", "ordered_tokens"],
-      "plannedLessonIds": ["b2-reading-gapped-text"]
+      "plannedLessonIds": ["b2-reading-text-cohesion"]
     },
     {
-      "id": "b2-reading-multiple-matching",
-      "level": "B2", "category": "reading", "topic": "b2-reading-multiple-matching", "subtopic": "b2-reading-multiple-matching",
-      "skills": ["b2-reading-multiple-matching"],
-      "learningObjectives": ["Localizar opiniones y experiencias equivalentes en varios textos.", "Distinguir coincidencia parcial de cumplimiento completo de una afirmación."],
-      "prerequisites": ["b1-reading-people-matching", "b2-reading-gist-detail-inference"],
+      "id": "b2-reading-cross-text-comparison",
+      "level": "B2", "category": "reading", "topic": "b2-reading-cross-text-comparison", "subtopic": "b2-reading-cross-text-comparison",
+      "skills": ["b2-reading-cross-text-comparison"],
+      "learningObjectives": ["Comparar opiniones y experiencias equivalentes en varios textos.", "Distinguir una coincidencia parcial de una idea completa, con su actitud y alcance."],
+      "prerequisites": ["b1-reading-profile-requirements", "b2-reading-gist-detail-inference"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["reading_matching", "matching", "multiple_select"],
-      "plannedLessonIds": ["b2-reading-multiple-matching"]
+      "plannedLessonIds": ["b2-reading-cross-text-comparison"]
     },
     {
       "id": "b2-reading-argument",
@@ -1051,7 +1051,7 @@
       "level": "B2", "category": "guided-writing", "topic": "b2-writing-formal-email", "subtopic": "b2-writing-formal-email",
       "skills": ["b2-writing-formal-email"],
       "learningObjectives": ["Elegir registro, cortesía, petición, queja y cierre formal.", "Reformular lenguaje directo mediante estructuras precisas y no ambiguas."],
-      "prerequisites": ["b1-writing-semi-formal-email", "b2-use-of-english-register-rewriting"],
+      "prerequisites": ["b1-writing-semi-formal-email", "b2-register-politeness"],
       "frameworkRefs": ["cefr-companion-volume-2020", "cambridge-b2-first-format"],
       "compatibleActivityTypes": ["guided_writing", "sentence_transformation", "matching", "complete_paragraph", "single_choice"],
       "plannedLessonIds": ["b2-writing-formal-email"]

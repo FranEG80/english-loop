@@ -19,7 +19,7 @@ frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b1-preliminary-format
 relatedLessonIds:
-  - b1-reading-gapped-text-cohesion
+  - b1-reading-text-cohesion
   - b1-grammar-past-perfect-narratives
 tags:
   - b1

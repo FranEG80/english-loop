@@ -21,7 +21,7 @@ frameworkRefs:
   - cambridge-b2-first-format
 relatedLessonIds:
   - b1-vocabulary-education-study
-  - b2-use-of-english-word-formation
+  - b2-word-families
 tags:
   - b2
   - vocabulary

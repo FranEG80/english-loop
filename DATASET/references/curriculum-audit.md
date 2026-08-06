@@ -90,19 +90,19 @@ preguntas ni textos de examen. Todo el material de EnglishLoop será original.
 
 ### Use of English — 6
 
-1. `b1-use-of-english-multiple-choice-cloze`
-2. `b1-use-of-english-open-cloze`
-3. `b1-use-of-english-word-formation`
-4. `b1-use-of-english-sentence-rewriting`
-5. `b1-use-of-english-error-correction`
+1. `b1-lexical-precision`
+2. `b1-grammar-reference-connectors`
+3. `b1-word-families`
+4. `b1-grammar-reframing`
+5. `b1-grammar-accuracy`
 6. `b1-use-of-english-fixed-expressions`
 
 ### Reading — 5
 
 1. `b1-reading-notices-functional-texts`
 2. `b1-reading-gist-detail`
-3. `b1-reading-people-matching`
-4. `b1-reading-gapped-text-cohesion`
+3. `b1-reading-profile-requirements`
+4. `b1-reading-text-cohesion`
 5. `b1-reading-opinion-purpose`
 
 ### Guided writing — 5
@@ -178,19 +178,19 @@ Total B1: **64 lecciones**.
 
 ### Use of English — 6
 
-1. `b2-use-of-english-multiple-choice-cloze`
-2. `b2-use-of-english-open-cloze`
-3. `b2-use-of-english-word-formation`
-4. `b2-use-of-english-key-word-transformations`
-5. `b2-use-of-english-register-rewriting`
-6. `b2-use-of-english-fixed-expressions`
+1. `b2-lexical-precision`
+2. `b2-connectors-cohesion`
+3. `b2-word-families`
+4. `b2-advanced-grammar-reframing`
+5. `b2-register-politeness`
+6. `b2-collocations-fixed-expressions`
 
 ### Reading — 5
 
 1. `b2-reading-gist-detail-inference`
 2. `b2-reading-attitude-tone`
-3. `b2-reading-gapped-text`
-4. `b2-reading-multiple-matching`
+3. `b2-reading-text-cohesion`
+4. `b2-reading-cross-text-comparison`
 5. `b2-reading-argument-evidence`
 
 ### Guided writing — 5

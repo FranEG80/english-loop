@@ -192,19 +192,6 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b1-error-correction",
-      "actualActivities": 100,
-      "actualActivityTypes": 4,
-      "actualDifficulties": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "met": true
-    },
-    {
       "taxonomyNodeId": "b1-family-relationships",
       "actualActivities": 100,
       "actualActivityTypes": 4,
@@ -232,6 +219,45 @@
     },
     {
       "taxonomyNodeId": "b1-food-cooking",
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "b1-grammar-accuracy",
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "b1-grammar-reference-connectors",
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "b1-grammar-reframing",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -283,20 +309,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b1-multiple-choice-cloze",
-      "actualActivities": 100,
-      "actualActivityTypes": 4,
-      "actualDifficulties": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "met": true
-    },
-    {
-      "taxonomyNodeId": "b1-open-cloze",
+      "taxonomyNodeId": "b1-lexical-precision",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -374,19 +387,6 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b1-reading-gapped-text",
-      "actualActivities": 100,
-      "actualActivityTypes": 4,
-      "actualDifficulties": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "met": true
-    },
-    {
       "taxonomyNodeId": "b1-reading-gist-detail",
       "actualActivities": 100,
       "actualActivityTypes": 4,
@@ -426,7 +426,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b1-reading-people-matching",
+      "taxonomyNodeId": "b1-reading-profile-requirements",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -439,7 +439,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b1-sentence-rewriting",
+      "taxonomyNodeId": "b1-reading-text-cohesion",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -491,7 +491,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b1-word-formation",
+      "taxonomyNodeId": "b1-word-families",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -582,8 +582,8 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b2-advanced-fixed-expressions",
-      "actualActivities": 100,
+      "taxonomyNodeId": "b2-advanced-grammar-reframing",
+      "actualActivities": 275,
       "actualActivityTypes": 4,
       "actualDifficulties": [
         2,
@@ -642,7 +642,31 @@
       "met": true
     },
     {
+      "taxonomyNodeId": "b2-collocations-fixed-expressions",
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
       "taxonomyNodeId": "b2-collocations-impact-attitudes",
+      "actualActivities": 100,
+      "actualActivityTypes": 4,
+      "actualDifficulties": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "met": true
+    },
+    {
+      "taxonomyNodeId": "b2-connectors-cohesion",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -714,8 +738,8 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b2-key-word-transformations",
-      "actualActivities": 275,
+      "taxonomyNodeId": "b2-lexical-precision",
+      "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
         2,
@@ -739,30 +763,6 @@
     },
     {
       "taxonomyNodeId": "b2-money-economics",
-      "actualActivities": 100,
-      "actualActivityTypes": 4,
-      "actualDifficulties": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "met": true
-    },
-    {
-      "taxonomyNodeId": "b2-multiple-choice-cloze",
-      "actualActivities": 100,
-      "actualActivityTypes": 4,
-      "actualDifficulties": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "met": true
-    },
-    {
-      "taxonomyNodeId": "b2-open-cloze",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -858,7 +858,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b2-reading-gapped-text",
+      "taxonomyNodeId": "b2-reading-cross-text-comparison",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -882,7 +882,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b2-reading-multiple-matching",
+      "taxonomyNodeId": "b2-reading-text-cohesion",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -894,7 +894,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b2-register-rewriting",
+      "taxonomyNodeId": "b2-register-politeness",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [
@@ -942,7 +942,7 @@
       "met": true
     },
     {
-      "taxonomyNodeId": "b2-word-formation",
+      "taxonomyNodeId": "b2-word-families",
       "actualActivities": 100,
       "actualActivityTypes": 4,
       "actualDifficulties": [

@@ -14,7 +14,7 @@ learningObjectives:
   - "Reformular lenguaje directo mediante estructuras precisas y no ambiguas."
 prerequisites:
   - b1-writing-semi-formal-email
-  - b2-use-of-english-register-rewriting
+  - b2-register-politeness
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format

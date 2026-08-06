@@ -83,8 +83,8 @@ El verbo posterior siempre aparece en infinitivo sin `to`: `will arrive` y
 
 `Look at those clouds! It's going to rain` se apoya en algo observable. `I
 expect it will rain next weekend` expresa una expectativa. En conversaciones
-reales puede haber zonas de solapamiento, pero una actividad autocorregible
-siempre aporta un contexto que hace inequívoca la perspectiva.
+reales puede haber zonas de solapamiento, pero un contexto claro ayuda a
+identificar la perspectiva correcta.
 
 Una cita ya acordada suele expresarse con presente continuo, no con `going to`.
 Compara `I'm going to speak to the manager` (intención) con `I'm speaking to the

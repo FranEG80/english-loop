@@ -19,7 +19,7 @@ frameworkRefs:
   - cambridge-b2-first-format
 relatedLessonIds:
   - b1-phrasal-verbs-study-relationships
-  - b2-use-of-english-register-rewriting
+  - b2-register-politeness
 tags:
   - b2
   - phrasal-verbs
