@@ -104,7 +104,12 @@ Antes de reformular, decide qué relación expresa la primera frase. Cada tipo t
 | must (obligación) | had to |
 
 **Cambios de referencia:**
-- `now` → `then`; `today` → `that day`; `tomorrow` → `the next day`; `yesterday` → `the day before`; `here` → `there`; `this` → `that`.
+- `now` → `then`
+- `today` → `that day`
+- `tomorrow` → `the next day`
+- `yesterday` → `the day before`
+- `here` → `there`
+- `this` → `that`.
 
 **Trampas:**
 - Las preguntas reportadas usan **orden afirmativo**: *She asked where the station was*, no *where was the station*.
