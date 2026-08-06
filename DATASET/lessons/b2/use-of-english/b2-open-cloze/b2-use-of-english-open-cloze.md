@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-use-of-english-open-cloze
-title: "Open cloze B2: cohesión y gramática en contexto"
+title: "Conectores y cohesión textual B2"
 level: B2
 category: use-of-english
 topic: b2-open-cloze
@@ -10,9 +10,9 @@ subtopics:
 difficulty: 4
 estimatedMinutes: 27
 learningObjectives:
-  - "Completar huecos de una palabra mediante gramática y cohesión."
-  - "Reconocer artículos, auxiliares, pronombres, conectores y preposiciones."
-  - "Revisar la respuesta dentro del párrafo completo y no solo de la frase."
+  - "Construir relaciones gramaticales y cohesivas entre oraciones."
+  - "Usar artículos, auxiliares, pronombres, conectores y preposiciones con precisión."
+  - "Revisar la referencia y la lógica de un párrafo completo."
 prerequisites:
   - b1-use-of-english-open-cloze
   - b2-grammar-advanced-connectors-discourse
@@ -24,7 +24,8 @@ relatedLessonIds:
 tags:
   - b2
   - use-of-english
-  - open-cloze
+  - cohesion
+  - connectors
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -33,31 +34,33 @@ contentVersion: 1
 
 # Resumen
 
-En un open cloze la palabra no aparece entre opciones. La clave está en las relaciones del texto: un artículo, un auxiliar, un pronombre relativo, una preposición dependiente o un conector. La respuesta debe ser una palabra exacta y encajar con la oración y con el párrafo.
+La cohesión textual hace que cada oración se conecte con la anterior y prepare la siguiente. Para escribir textos B2 hay que controlar artículos, referencias, auxiliares, preposiciones y conectores de causa, contraste, condición y consecuencia.
 
 # Objetivos
 
 - Reconocer palabras gramaticales pequeñas pero esenciales.
-- Usar referencias, elipsis y conectores para mantener cohesión.
+- Usar referencias, elipsis y conectores para mantener la continuidad del texto.
 - Distinguir preposiciones y auxiliares según el patrón verbal.
 
 # Explicación
 
-Se lee el texto entero, se identifica qué función falta y se comprueba la forma. Preguntas útiles: ¿falta determinante?, ¿el verbo necesita auxiliar?, ¿qué sustantivo retoma el pronombre?, ¿la relación es causa, contraste o tiempo? En el nivel B2 también se revisan inversiones, pasivas y conectores formales.
+Un texto coherente no es una lista de frases independientes. Los artículos indican si un referente es nuevo o conocido; los pronombres evitan repeticiones; los auxiliares construyen tiempos, preguntas, negativas y pasivas; los conectores muestran la relación lógica entre ideas.
+
+Cuando eliges una palabra funcional, mira más allá de la oración inmediata. Pregúntate qué sustantivo retoma un pronombre, si la relación expresa causa o contraste y qué preposición exige el verbo o el adjetivo. En B2 también debes controlar inversiones, pasivas y conectores formales.
 
 # Forma o estructura
 
-- **article/determiner:** a solution, the result, some evidence.
-- **auxiliary:** has changed, was built, did not agree.
-- **relative/reference:** which, whose, where, those.
-- **preposition:** interested in, responsible for, depend on.
-- **linker:** although, therefore, whereas, unless.
+- **article/determiner:** *a solution*, *the result*, *some evidence*.
+- **auxiliary:** *has changed*, *was built*, *did not agree*.
+- **reference:** *which*, *whose*, *where*, *those*.
+- **preposition:** *interested in*, *responsible for*, *depend on*.
+- **linker:** *although*, *therefore*, *whereas*, *unless*.
 
 # Usos principales
 
-1. Completar un texto informativo con cohesión.
-2. Mantener la referencia entre oraciones.
-3. Expresar condición, contraste, causa o consecuencia.
+1. Presentar información nueva y después retomarla sin repetirla.
+2. Expresar condición, contraste, causa o consecuencia.
+3. Mantener la referencia entre varias oraciones.
 4. Aplicar patrones de verbo, adjetivo y preposición.
 
 # Contrastes importantes
@@ -81,13 +84,13 @@ Se lee el texto entero, se identifica qué función falta y se comprueba la form
 
 # Excepciones relevantes
 
-En algunos textos son posibles dos conectores parecidos en la vida real, pero una actividad cerrada debe aportar contexto suficiente para elegir uno. *Since* puede expresar tiempo o causa; la oración completa debe desambiguarlo. *That* puede ser conjunción o relativo, así que no se debe aceptar automáticamente en ambos usos.
+En algunos textos son posibles dos conectores parecidos en la vida real, pero el significado cambia con el contexto. *Since* puede expresar tiempo o causa; *that* puede ser conjunción o relativo; *while* puede señalar tiempo o contraste. La oración completa debe desambiguar la relación.
 
 # Mini resumen
 
-- Decide primero la función gramatical del hueco.
+- Decide primero qué relación lógica o gramatical falta.
 - Revisa la oración anterior y la siguiente.
-- Comprueba que la palabra elegida no solo sea posible, sino necesaria para la cohesión.
+- Comprueba que la palabra elegida mantiene la referencia y el sentido del párrafo.
 
 # Comprobación rápida autocorregible
 
@@ -96,4 +99,3 @@ En algunos textos son posibles dos conectores parecidos en la vida real, pero un
 3. A bridge ___ built: **was**.
 4. Depend ___ data: **on**.
 5. A relative reference for a thing: **which**.
-

@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-use-of-english-key-word-transformations
-title: "Key word transformations B2: conservar el significado"
+title: "Pasiva, condicionales y estilo indirecto B2"
 level: B2
 category: use-of-english
 topic: b2-key-word-transformations
@@ -10,9 +10,9 @@ subtopics:
 difficulty: 5
 estimatedMinutes: 30
 learningObjectives:
-  - "Transformar pasivas, condicionales, estilo indirecto, modales y comparaciones."
-  - "Usar la palabra clave sin cambiarla y conservar el significado original."
-  - "Revisar gramática, número de palabras y equivalencia de sentido."
+  - "Construir pasivas y pasivas de reporting con el tiempo verbal adecuado."
+  - "Expresar hipótesis, arrepentimiento y modalidad mediante condicionales y modales."
+  - "Trasladar afirmaciones y preguntas al estilo indirecto conservando el significado."
 prerequisites:
   - b1-use-of-english-sentence-rewriting
   - b2-grammar-third-conditional
@@ -25,7 +25,9 @@ relatedLessonIds:
 tags:
   - b2
   - use-of-english
-  - transformations
+  - passive-voice
+  - conditionals
+  - reported-speech
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -34,7 +36,7 @@ contentVersion: 1
 
 # Resumen
 
-Una transformación con palabra clave exige expresar la misma idea desde otra estructura. La palabra dada debe aparecer sin cambiar y la respuesta debe respetar el límite de palabras del ejercicio. No basta con producir una frase gramatical: debe conservar tiempo, modalidad, negación, intensidad y referencia.
+La pasiva, los condicionales y el estilo indirecto permiten reorganizar la información sin perder tiempo, modalidad, negación ni referencia. La pasiva cambia el foco hacia el objeto; los condicionales relacionan una situación con su consecuencia; el estilo indirecto adapta tiempos, pronombres y expresiones de lugar o tiempo.
 
 # Objetivos
 
@@ -44,7 +46,14 @@ Una transformación con palabra clave exige expresar la misma idea desde otra es
 
 # Explicación
 
-Se empieza por identificar la relación central: quién realiza la acción, cuándo ocurre, qué grado de certeza hay y si la frase es afirmativa o negativa. Después se construye el patrón y se relee comparando las dos frases. La palabra clave no se puede modificar (*advice* no se convierte en *advised* si el ejercicio exige *ADVICE*).
+Se empieza por identificar la relación central: quién realiza la acción, cuándo ocurre, qué grado de certeza hay y si la frase es afirmativa o negativa. Después se construye el patrón y se relee comprobando que el significado no ha cambiado. La estructura elegida debe reflejar la misma obligación, posibilidad, causa o consecuencia.
+
+# Forma o estructura
+
+- **Pasiva:** `be + past participle`.
+- **Pasiva de reporting:** `be + believed/said/expected + to-infinitive`.
+- **Tercer condicional:** `if + past perfect`, `would have + past participle`.
+- **Estilo indirecto:** verbo introductor + oración con orden afirmativo y referencias ajustadas.
 
 # Cómo identificar cada tipo de transformación
 
@@ -223,4 +232,3 @@ Los hechos generales se mantienen en presente dentro de reported speech: *The te
 5. Strong necessity: **must**.
 6. “People believe it works” → **It is believed to work**.
 7. “The blue bag is not as heavy as the red one” → **The red bag is heavier than the blue one**.
-

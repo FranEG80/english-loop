@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-use-of-english-fixed-expressions
-title: "Expresiones fijas avanzadas B2 en contexto"
+title: "Expresiones y colocaciones B2"
 level: B2
 category: use-of-english
 topic: b2-advanced-fixed-expressions
@@ -10,9 +10,9 @@ subtopics:
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:
-  - "Reconocer expresiones fijas y binomios frecuentes en textos B2."
-  - "Distinguir significado literal, figurado y función discursiva."
-  - "Completar marcos idiomáticos con la preposición y el patrón correctos."
+  - "Reconocer expresiones fijas, binomios y colocaciones frecuentes en textos B2."
+  - "Distinguir significado literal, figurado y función discursiva mediante el contexto."
+  - "Usar preposiciones y patrones verbales sin romper la expresión establecida."
 prerequisites:
   - b1-use-of-english-fixed-expressions
 frameworkRefs:
@@ -24,6 +24,7 @@ tags:
   - b2
   - use-of-english
   - fixed-expressions
+  - collocations
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -32,7 +33,7 @@ contentVersion: 1
 
 # Resumen
 
-Las expresiones fijas avanzadas condensan una relación o una actitud: *by no means*, *in the long run*, *take something for granted* o *come to terms with*. Su significado depende del conjunto y del contexto, no de la suma de palabras aisladas.
+Las expresiones fijas y las colocaciones son bloques de lengua que conviene aprender completos: *by no means*, *in the long run*, *take something for granted* o *come to terms with*. Su significado depende del conjunto y del contexto, no de la suma de palabras aisladas.
 
 # Objetivos
 
@@ -42,21 +43,23 @@ Las expresiones fijas avanzadas condensan una relación o una actitud: *by no me
 
 # Explicación
 
-Aprende el marco completo y observa qué posición puede variar. *There is no point in + -ing* permite cambiar el verbo, pero no sustituir *in* por *to*. Algunas expresiones intensifican una negación (*by no means*); otras organizan el tiempo (*in the long run*) o expresan aceptación (*come to terms with*).
+Una colocación combina palabras que aparecen juntas de forma natural. Algunas son transparentes (*draw a conclusion*), mientras que otras tienen un sentido idiomático (*take something for granted*). Aprende el bloque completo y observa qué parte puede variar: el objeto, el tiempo verbal o el pronombre.
+
+También debes conservar las preposiciones dependientes. *There is no point in + -ing* permite cambiar el verbo, pero no sustituir *in* por *to*. Del mismo modo, *object to* y *cope with* mantienen su preposición aunque cambie el contexto.
 
 # Forma o estructura
 
-- **verb + object + particle:** take something for granted.
-- **preposition + noun phrase:** in the long run, at short notice.
-- **fixed negative frame:** by no means, under no circumstances.
-- **verb + dependent preposition:** object to, contribute to, cope with.
+- **verb + object + particle:** *take something for granted*.
+- **preposition + noun phrase:** *in the long run*, *at short notice*.
+- **fixed negative frame:** *by no means*, *under no circumstances*.
+- **verb + dependent preposition:** *object to*, *contribute to*, *cope with*.
 
 # Usos principales
 
 1. Expresar consecuencias a largo plazo.
 2. Describir adaptación, riesgo o dificultad.
 3. Intensificar una negación o una condición.
-4. Relacionar una acción con una colocación natural.
+4. Presentar conclusiones, problemas y resultados con lenguaje natural.
 
 # Contrastes importantes
 
@@ -91,4 +94,3 @@ Algunas expresiones permiten variación de número o de pronombre: *take it for 
 1. Completa: `There is no point ___ complaining.` → `in`.
 2. Completa: `The policy may help in the long ___.` → `run`.
 3. Explica: `take something for granted` → no valorar algo por considerarlo seguro.
-

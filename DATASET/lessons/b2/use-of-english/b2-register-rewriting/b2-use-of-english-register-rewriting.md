@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-use-of-english-register-rewriting
-title: "Reformular el registro y el estilo B2"
+title: "Registro y cortesía en inglés B2"
 level: B2
 category: use-of-english
 topic: b2-register-rewriting
@@ -10,9 +10,9 @@ subtopics:
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:
-  - "Transformar mensajes informales y formales sin cambiar su significado central."
-  - "Elegir verbos, peticiones y conectores adecuados al destinatario."
-  - "Revisar tono, cortesía y precisión después de reformular."
+  - "Distinguir tono informal, neutro y formal según el destinatario."
+  - "Elegir fórmulas, verbos y conectores adecuados para cada situación."
+  - "Mantener hechos, modalidad y significado al cambiar el registro."
 prerequisites:
   - b1-writing-semi-formal-email
   - b2-grammar-advanced-connectors-discourse
@@ -25,6 +25,7 @@ tags:
   - b2
   - use-of-english
   - register
+  - politeness
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -33,7 +34,7 @@ contentVersion: 1
 
 # Resumen
 
-Reformular el registro significa mantener la información y cambiar la relación con el lector. Un mensaje a un amigo puede usar contracciones y verbos frasales; una queja a una empresa necesita cortesía, precisión y una estructura más distante.
+El registro adapta la relación con el lector sin cambiar la información principal. Un mensaje a un amigo puede usar contracciones y verbos frasales; una queja a una empresa necesita cortesía, precisión y una estructura más distante.
 
 # Objetivos
 
@@ -43,18 +44,20 @@ Reformular el registro significa mantener la información y cambiar la relación
 
 # Explicación
 
-Primero identifica el destinatario, el propósito y la distancia social. Después sustituye solo los elementos que marcan el tono: *Can you...?* puede convertirse en *Could you possibly...?*; *I want a refund* en *I would like to request a refund*. No añadas una opinión ni cambies la obligación original.
+Antes de elegir una palabra, identifica al destinatario, el propósito y la distancia social. Después cambia solo los elementos que marcan el tono: *Can you...?* puede convertirse en *Could you possibly...?*; *I want a refund* en *I would like to request a refund*.
+
+La formalidad no consiste en hacer cada frase más larga. Consiste en escoger verbos, estructuras y fórmulas que respeten la situación. No añadas una opinión ni cambies la obligación, la posibilidad o la intensidad del mensaje original.
 
 # Forma o estructura
 
-- Informal: *Hi, Can you send me the details?* / *I can't make it.*
-- Neutro: *Hello, Could you send me the details?* / *I am unable to attend.*
-- Formal: *Dear Sir or Madam, I would be grateful if you could...*
-- Cierre: *Best wishes* es cercano; *Yours faithfully* sigue a un saludo sin nombre.
+- **Informal:** *Hi, can you send me the details?* / *I can't make it.*
+- **Neutro:** *Hello, could you send me the details?* / *I am unable to attend.*
+- **Formal:** *Dear Sir or Madam, I would be grateful if you could...*
+- **Cierre:** *Best wishes* es cercano; *Yours faithfully* sigue a un saludo sin nombre.
 
 # Usos principales
 
-1. Reescribir correos de trabajo y solicitudes.
+1. Redactar correos de trabajo y solicitudes.
 2. Suavizar desacuerdos y quejas.
 3. Convertir instrucciones bruscas en peticiones profesionales.
 4. Ajustar saludos, despedidas y conectores a una carta.
@@ -79,7 +82,7 @@ Primero identifica el destinatario, el propósito y la distancia social. Despué
 
 # Excepciones relevantes
 
-La formalidad no consiste en hacer cada frase más larga. *Please send the form* puede ser perfectamente profesional. En cambio, algunas fórmulas muy solemnes suenan extrañas en un correo interno; el contexto decide cuánto distanciamiento hace falta.
+La formalidad depende de la relación y del canal. *Please send the form* puede ser perfectamente profesional, mientras que una fórmula muy solemne puede sonar extraña en un correo interno. El inglés británico y el estadounidense también pueden preferir fórmulas distintas sin que una sea incorrecta.
 
 # Mini resumen
 
@@ -93,4 +96,3 @@ La formalidad no consiste en hacer cada frase más larga. *Please send the form*
 1. Reformula para una empresa: `I want my money back.` → `I would like to request a refund.`
 2. Suaviza: `Send the file today.` → `Could you please send the file today?`
 3. Completa: `I look forward to ___ from you.` → `hearing`.
-

@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-use-of-english-word-formation
-title: "Word formation B2: familias léxicas y precisión"
+title: "Familias léxicas y precisión B2"
 level: B2
 category: use-of-english
 topic: b2-word-formation
@@ -23,7 +23,8 @@ relatedLessonIds:
 tags:
   - b2
   - use-of-english
-  - word-formation
+  - word-families
+  - lexical-precision
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -32,7 +33,7 @@ contentVersion: 1
 
 # Resumen
 
-La formación de palabras combina sintaxis y vocabulario. El hueco puede necesitar un sustantivo, un adjetivo, un verbo o un adverbio; después hay que decidir si hace falta una forma negativa, plural o abstracta. La raíz ayuda, pero no garantiza la respuesta: *rely* produce *reliable*, mientras que *responsible* produce *responsibility* con cambios ortográficos.
+Las familias léxicas permiten expresar una misma idea con categorías y matices distintos. Una raíz puede convertirse en sustantivo, verbo, adjetivo o adverbio, y también admitir una forma negativa, plural o abstracta. La relación no siempre es mecánica: *rely* produce *reliable*, mientras que *responsible* produce *responsibility* con cambios ortográficos.
 
 # Objetivos
 
@@ -95,4 +96,3 @@ No todos los sufijos son productivos con todas las raíces. Algunas formas cambi
 3. Negative of possible: **impossible**.
 4. Adverb from unexpected: **unexpectedly**.
 5. Noun from responsible: **responsibility**.
-

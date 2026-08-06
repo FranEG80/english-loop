@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1.0.0
 id: b2-use-of-english-multiple-choice-cloze
-title: "Multiple-choice cloze B2: matiz y colocación"
+title: "Colocaciones y matiz léxico B2"
 level: B2
 category: use-of-english
 topic: b2-multiple-choice-cloze
@@ -11,8 +11,8 @@ difficulty: 4
 estimatedMinutes: 28
 learningObjectives:
   - "Distinguir palabras próximas por significado, registro y contexto."
-  - "Reconocer colocaciones, phrasal verbs y expresiones idiomáticas B2."
-  - "Justificar una opción mediante información local y global del texto."
+  - "Reconocer colocaciones, verbos frasales y expresiones idiomáticas B2."
+  - "Elegir vocabulario preciso a partir de la gramática y del sentido global."
 prerequisites:
   - b1-use-of-english-multiple-choice-cloze
 frameworkRefs:
@@ -23,7 +23,8 @@ relatedLessonIds:
 tags:
   - b2
   - use-of-english
-  - cloze
+  - collocations
+  - lexical-precision
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -32,31 +33,34 @@ contentVersion: 1
 
 # Resumen
 
-Un multiple-choice cloze no se resuelve siempre por traducción: la respuesta puede depender de una colocación, una preposición, el registro o el significado que construye el párrafo entero. Esta lección enseña a leer alrededor del hueco y a descartar opciones plausibles pero incompatibles.
+La precisión léxica B2 depende de elegir la palabra que encaja con la colocación, el registro y el significado del contexto. Dos palabras pueden parecer sinónimas, pero diferir en la estructura que admiten o en la idea que expresan.
 
 # Objetivos
 
-- Identificar la categoría y función que necesita un hueco.
+- Identificar la categoría y función que necesita una oración.
 - Usar colocaciones y patrones verbales naturales.
 - Distinguir matices como *raise/rise*, *economic/economical* o *say/tell*.
 
 # Explicación
 
-Primero se lee la oración completa y después el párrafo. Hay que comprobar cuatro pistas: gramática, colocación, significado y registro. Si el hueco sigue a un auxiliar, probablemente necesita un verbo; si aparece después de una preposición, puede requerir nombre o gerundio. Finalmente se relee el texto con la opción elegida.
+Empieza por el significado general y después comprueba la combinación concreta de palabras. *Make a decision* y *draw a conclusion* no se construyen intercambiando sus verbos. Del mismo modo, *rely on*, *contribute to* y *result in* exigen preposiciones distintas.
+
+Los verbos frasales también cambian el significado completo: *look into* es investigar, *look after* es cuidar y *look for* es buscar. En un registro formal pueden preferirse alternativas como *investigate*, *require* o *resolve*, pero la elección debe conservar el tono y la intención del mensaje.
 
 # Forma o estructura
 
-- **verb + dependent preposition:** rely on, contribute to, result in.
-- **collocation:** reach an agreement, pose a threat, draw a conclusion.
-- **near synonyms:** effective/efficient, sensible/sensitive, historic/historical.
-- **discourse choice:** however, therefore, although, whereas.
+- **collocation:** *reach an agreement*, *pose a threat*, *draw a conclusion*.
+- **dependent preposition:** *rely on*, *contribute to*, *result in*.
+- **near synonyms:** *effective/efficient*, *sensible/sensitive*, *historic/historical*.
+- **phrasal verb:** *look into*, *put off*, *carry out*.
+- **discourse choice:** *however*, *therefore*, *although*, *whereas*.
 
 # Usos principales
 
-1. Completar un artículo informativo sin romper su lógica.
+1. Describir decisiones, cambios y consecuencias con precisión.
 2. Elegir el verbo que encaja con un nombre concreto.
 3. Ajustar intensidad, formalidad y actitud.
-4. Detectar una opción gramaticalmente posible pero semánticamente absurda.
+4. Expresar relaciones de contraste, causa y resultado.
 
 # Contrastes importantes
 
@@ -72,20 +76,20 @@ Primero se lee la oración completa y después el párrafo. Hay que comprobar cu
 
 # Errores frecuentes
 
-- ❌ Elegir un sinónimo solo porque parece traducirse igual. ✅ Comprobar la colocación completa.
 - ❌ *Tell that the plan is ready.* ✅ *Say that the plan is ready.*
 - ❌ *The costs raised last year.* ✅ *The costs rose last year.*
-- ❌ Ignorar la oración siguiente. ✅ Leer el párrafo antes de decidir.
+- ❌ *make a conclusion*. ✅ *draw a conclusion*.
+- ❌ *depend of the results*. ✅ *depend on the results*.
 
 # Excepciones relevantes
 
-Algunas colocaciones aceptan más de un verbo según el matiz: *make/take a decision* no siempre son intercambiables en todos los registros, aunque ambas aparecen en inglés real. En una actividad autocorregible solo se debe mantener una respuesta cuando el contexto la haga inequívoca; si no, hay que reescribir el enunciado.
+Algunas colocaciones aceptan más de un verbo según el matiz: *make a decision* y *take a decision* existen, pero su frecuencia y distribución varían según la región y el registro. Cuando dos opciones son posibles, el contexto debe aclarar la diferencia; no conviene presentar como única una respuesta que el inglés real admite en más de una forma.
 
 # Mini resumen
 
-- Lee antes y después del hueco.
-- Comprueba patrón, colocación, significado y registro.
-- Los distractores pueden ser gramaticales, pero no naturales en ese contexto.
+- Comprueba la combinación completa, no solo la traducción.
+- Distingue significado, registro y patrón gramatical.
+- Relee la oración y el párrafo para confirmar la elección.
 
 # Comprobación rápida autocorregible
 
@@ -94,4 +98,3 @@ Algunas colocaciones aceptan más de un verbo según el matiz: *make/take a deci
 3. Save money or energy: **economical**.
 4. Depend on something: **rely on**.
 5. Finish an argument: **draw a conclusion**.
-
