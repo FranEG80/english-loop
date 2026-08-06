@@ -25,7 +25,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -38,13 +38,7 @@ Para hablar de un día normal no basta con traducir literalmente cada verbo. En 
 - Elegir colocaciones frecuentes para tareas domésticas, comidas y descansos.
 - Explicar cuándo una actividad es habitual, puntual o una obligación pendiente.
 
-# Explicación
-
-Las rutinas se expresan a menudo con verbos frasales y colocaciones. **Get up** significa levantarse de la cama, mientras que **wake up** solo indica despertarse. Después podemos **get dressed** o **get ready**, **have breakfast** y **leave home**. Para desplazarnos, usamos **go to work**, **go to school** o **work from home**.
-
-Las tareas domésticas forman grupos bastante estables. Decimos **do the laundry**, **do the washing-up**, **do the ironing** y **do chores**, pero **make the bed**, **take out the rubbish** y **tidy the room**. Para gestionar el tiempo son útiles **meet a deadline**, **make time for something**, **run late**, **have a break** y **set an alarm**.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - **get + expresión:** get up, get dressed, get ready, get home, get back.
 - **have + actividad o comida:** have breakfast, have a shower, have lunch, have a break.
@@ -52,7 +46,7 @@ Las tareas domésticas forman grupos bastante estables. Decimos **do the laundry
 - **make / take:** make the bed, make time, take a break, take out the rubbish, take a nap.
 - **go + destino o actividad:** go to work, go shopping, go for a walk, go to bed.
 
-# Usos principales
+# Situaciones de uso
 
 1. **Ordenar una rutina:** *I wake up at seven, but I do not get up until half past seven.*
 2. **Describir obligaciones:** *I have to do the laundry before my flatmate comes home.*
@@ -60,7 +54,13 @@ Las tareas domésticas forman grupos bastante estables. Decimos **do the laundry
 4. **Explicar hábitos de estudio o trabajo:** *I usually set an alarm and check my timetable before I leave.*
 5. **Contar cambios temporales:** *This week I am working from home, so I do not commute.*
 
-# Contrastes importantes
+# Explicación
+
+Las rutinas se expresan a menudo con verbos frasales y colocaciones. **Get up** significa levantarse de la cama, mientras que **wake up** solo indica despertarse. Después podemos **get dressed** o **get ready**, **have breakfast** y **leave home**. Para desplazarnos, usamos **go to work**, **go to school** o **work from home**.
+
+Las tareas domésticas forman grupos bastante estables. Decimos **do the laundry**, **do the washing-up**, **do the ironing** y **do chores**, pero **make the bed**, **take out the rubbish** y **tidy the room**. Para gestionar el tiempo son útiles **meet a deadline**, **make time for something**, **run late**, **have a break** y **set an alarm**.
+
+# Palabras que se confunden
 
 ## Wake up y get up
 
@@ -87,25 +87,33 @@ Ambas expresiones son naturales. **Have a break** es especialmente frecuente en 
 
 # Errores frecuentes
 
-- ❌ *I make the laundry on Saturdays.* ✅ **I do the laundry on Saturdays.**
-- ❌ *I wake up at 7 and get up at 7, too.* ✅ **I wake up at 7 but get up at 7:15.**
-- ❌ *She does the bed before breakfast.* ✅ **She makes the bed before breakfast.**
-- ❌ *We do a break at eleven.* ✅ **We have a break at eleven.**
-- ❌ *I go in bed at ten.* ✅ **I go to bed at ten.**
-- ❌ *He arrives lately when he has a lot of work.* ✅ **He arrives late when he has a lot of work.**
+- ❌ *I make the laundry on Saturdays.*
+- ✅ **I do the laundry on Saturdays.**
+- ❌ *I wake up at 7 and get up at 7, too.*
+- ✅ **I wake up at 7 but get up at 7:15.**
+- ❌ *She does the bed before breakfast.*
+- ✅ **She makes the bed before breakfast.**
+- ❌ *We do a break at eleven.*
+- ✅ **We have a break at eleven.**
+- ❌ *I go in bed at ten.*
+- ✅ **I go to bed at ten.**
+- ❌ *He arrives lately when he has a lot of work.*
+- ✅ **He arrives late when he has a lot of work.**
 
-# Excepciones relevantes
+# Variación de uso
 
-**Have** no siempre habla de posesión: *have breakfast, have a shower* describen actividades. En cambio, *have a car* expresa posesión. **Go shopping** no necesita *to* delante de *shopping*, pero sí usamos **go to the shops** cuando hablamos de un lugar.
+- **Have** no siempre habla de posesión: *have breakfast, have a shower* describen actividades.
+- En cambio, *have a car* expresa posesión.
+- **Go shopping** no necesita *to* delante de *shopping*, pero sí usamos **go to the shops** cuando hablamos de un lugar.
 
-# Mini resumen
+# Para recordar
 
 - **Wake up** es despertarse; **get up** es levantarse.
 - **Do** acompaña muchas tareas; **make** aparece en *make the bed* y *make time*.
 - **Have breakfast**, **have a shower** y **have a break** son colocaciones naturales.
 - **Go to bed**, **take out the rubbish** y **set an alarm** ayudan a describir un día completo.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. I ___ the laundry every Sunday. (`do`)
    - Respuesta: `do`

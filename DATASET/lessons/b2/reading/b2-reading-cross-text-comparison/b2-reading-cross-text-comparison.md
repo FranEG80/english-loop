@@ -28,8 +28,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Cuando comparas varios textos breves, la clave es relacionar significado, alcance y actitud, no perseguir palabras idénticas.
@@ -39,23 +40,31 @@ Cuando comparas varios textos breves, la clave es relacionar significado, alcanc
 - Localizar opiniones y experiencias equivalentes en varios textos.
 - Distinguir coincidencia parcial de cumplimiento completo de una afirmación.
 
-# Explicación
+# Pistas que debes localizar
 
-Lee primero las afirmaciones y conviértelas en rasgos comprobables: una opinión, una experiencia, una condición o una reacción. Después localiza una paráfrasis en cada texto y comprueba si el autor expresa la misma idea o solo una parte. Una coincidencia completa conserva quién piensa algo, con qué intensidad y en qué contexto.
+- Las afirmaciones suelen contener verbos de actitud (*regrets, recommends, doubts*) y marcadores de alcance (*only, mainly, partly*).
+- Los textos pueden reformularlos con expresiones como *was disappointed by*, *would suggest* o *was not entirely convinced*.
+- Anota una evidencia breve y descarta coincidencias que cambien el sujeto o el grado de certeza.
 
-# Forma o estructura
-
-Las afirmaciones suelen contener verbos de actitud (*regrets, recommends, doubts*) y marcadores de alcance (*only, mainly, partly*). Los textos pueden reformularlos con expresiones como *was disappointed by*, *would suggest* o *was not entirely convinced*. Anota una evidencia breve y descarta coincidencias que cambien el sujeto o el grado de certeza.
-
-# Usos principales
+# Aplicación en textos
 
 - Comparar reseñas, entrevistas y testimonios.
 - Relacionar necesidades con experiencias equivalentes.
 - Distinguir una causa mencionada de la opinión principal de una persona.
 
-# Contrastes importantes
+# Explicación
 
-*Enjoyed the location* no equivale a *recommended the location*. *Somewhat worried* es más débil que *extremely worried*. Si una persona menciona una idea solo para rechazarla, no la relaciones con una afirmación que la apoya.
+Lee primero las afirmaciones y conviértelas en rasgos comprobables: una opinión, una experiencia, una condición o una reacción. Después localiza una paráfrasis en cada texto y comprueba si el autor expresa la misma idea o solo una parte. Una coincidencia completa conserva quién piensa algo, con qué intensidad y en qué contexto.
+
+Construye un pequeño mapa por autor: postura, motivo, reserva y conclusión. No unas frases de personas diferentes para fabricar una coincidencia. Si una afirmación dice que alguien cambió de opinión, necesitas evidencia de la postura inicial y de la final; una valoración aislada solo confirma una de las dos.
+
+Cuando dos textos parecen válidos, compara el verbo de actitud y el alcance. *Would consider returning* expresa una disposición cauta; *will definitely return* comunica una decisión firme. Esa diferencia puede ser la pista decisiva aunque ambos autores describan la experiencia de forma positiva.
+
+# Distractores y matices
+
+- *Enjoyed the location* no equivale a *recommended the location*.
+- *Somewhat worried* es más débil que *extremely worried*.
+- Si una persona menciona una idea solo para rechazarla, no la relaciones con una afirmación que la apoya.
 
 # Ejemplos
 
@@ -65,21 +74,22 @@ Las afirmaciones suelen contener verbos de actitud (*regrets, recommends, doubts
 
 # Errores frecuentes
 
-❌ Elegir un texto porque repite una palabra de la afirmación.
-✅ Parafrasear la relación completa y verificar el sentido.
-❌ Ignorar *not*, *hardly* o *only*.
-✅ Registrar también las negaciones y los límites.
+- ❌ Elegir un texto porque repite una palabra de la afirmación.
+- ✅ Parafrasear la relación completa y verificar el sentido.
+- ❌ Ignorar *not*, *hardly* o *only*.
+- ✅ Registrar también las negaciones y los límites.
 
-# Excepciones relevantes
+# Casos menos evidentes
 
-Una misma palabra puede aparecer en varios textos. Si ocurre, decide por la idea completa y por la actitud del hablante. Dos textos pueden compartir un detalle y, sin embargo, expresar conclusiones distintas.
+- Una misma palabra puede aparecer en varios textos.
+- Si ocurre, decide por la idea completa y por la actitud del hablante.
+- Dos textos pueden compartir un detalle y, sin embargo, expresar conclusiones distintas.
 
-# Mini resumen
+# Lista de comprobación
 
 Divide cada afirmación en significado, sujeto y alcance; busca paráfrasis; confirma la actitud; descarta coincidencias parciales.
 
-# Comprobación rápida autocorregible
+# Comprueba tu lectura
 
 1. **The guide was useful, although too detailed for a short visit.** ¿Qué afirmación encaja? → `valora la información pero critica su extensión`.
 2. ¿Basta con que otro texto diga *useful*? → `no`: también debe expresar la misma reserva sobre la extensión.
-

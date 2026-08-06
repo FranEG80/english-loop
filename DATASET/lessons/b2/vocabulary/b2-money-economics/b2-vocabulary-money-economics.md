@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,13 +42,7 @@ El vocabulario económico permite explicar decisiones personales y tendencias co
 - Explicar el efecto de la inflación, los tipos de interés y el crecimiento.
 - Interpretar expresiones frecuentes de noticias económicas.
 
-# Explicación
-
-Un **income** es el dinero que entra, por ejemplo mediante un salario o una actividad comercial. **Earnings** suele referirse a lo que gana una persona o una empresa. Un **expense** es un gasto concreto; **expenditure** es una forma más formal de hablar del gasto total o de una partida presupuestaria. Si los gastos superan los ingresos, aparece un **deficit**; si se guarda una parte del dinero, se construye **savings**.
-
-**Borrow** significa recibir dinero con la obligación de devolverlo; **lend** significa prestarlo. Una **loan** es el dinero prestado y **interest** es el coste de utilizarlo. **Invest** es poner dinero en algo esperando un rendimiento, pero siempre implica algún riesgo. A escala nacional, **inflation** es una subida general de precios; **economic growth** es un aumento de la producción o actividad económica.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - earn a salary / receive an income / generate revenue
 - cut spending / reduce expenditure / meet a budget
@@ -58,7 +52,7 @@ Un **income** es el dinero que entra, por ejemplo mediante un salario o una acti
 - fuel inflation / curb inflation / stimulate growth
 - create jobs / increase productivity / face a deficit
 
-# Usos principales
+# Situaciones de uso
 
 1. **Presupuestar:** *We cut our monthly spending to build up an emergency fund.*
 2. **Hablar de deuda:** *The company took out a loan to expand the warehouse.*
@@ -66,7 +60,13 @@ Un **income** es el dinero que entra, por ejemplo mediante un salario o una acti
 4. **Describir políticas:** *The government raised interest rates to curb demand.*
 5. **Valorar una inversión:** *The project could generate revenue, but its returns are uncertain.*
 
-# Contrastes importantes
+# Explicación
+
+Un **income** es el dinero que entra, por ejemplo mediante un salario o una actividad comercial. **Earnings** suele referirse a lo que gana una persona o una empresa. Un **expense** es un gasto concreto; **expenditure** es una forma más formal de hablar del gasto total o de una partida presupuestaria. Si los gastos superan los ingresos, aparece un **deficit**; si se guarda una parte del dinero, se construye **savings**.
+
+**Borrow** significa recibir dinero con la obligación de devolverlo; **lend** significa prestarlo. Una **loan** es el dinero prestado y **interest** es el coste de utilizarlo. **Invest** es poner dinero en algo esperando un rendimiento, pero siempre implica algún riesgo. A escala nacional, **inflation** es una subida general de precios; **economic growth** es un aumento de la producción o actividad económica.
+
+# Palabras que se confunden
 
 ## Borrow y lend
 
@@ -92,24 +92,31 @@ El *price* es la cantidad que paga el comprador. El *cost* es lo que cuesta prod
 
 # Errores frecuentes
 
-- ❌ *The bank borrowed me money.* ✅ *The bank lent me money.*
-- ❌ *We must reduce the costs of living.* ✅ *We must reduce the cost of living.*
-- ❌ *The company made many revenues.* ✅ *The company generated a lot of revenue.*
-- ❌ *Inflations are rising.* ✅ *Inflation is rising.*
-- ❌ *I am saving money since January.* ✅ *I have been saving money since January.*
+- ❌ *The bank borrowed me money.*
+- ✅ *The bank lent me money.*
+- ❌ *We must reduce the costs of living.*
+- ✅ *We must reduce the cost of living.*
+- ❌ *The company made many revenues.*
+- ✅ *The company generated a lot of revenue.*
+- ❌ *Inflations are rising.*
+- ✅ *Inflation is rising.*
+- ❌ *I am saving money since January.*
+- ✅ *I have been saving money since January.*
 
-# Excepciones relevantes
+# Variación de uso
 
-**Money**, **income**, **revenue**, **spending** e **inflation** suelen ser incontables. Para cantidades concretas se usan *sums of money*, *income streams* o *revenue figures*. **Earnings** suele aparecer en plural cuando se habla de resultados de una empresa o de ganancias periódicas: *quarterly earnings*.
+- **Money**, **income**, **revenue**, **spending** e **inflation** suelen ser incontables.
+- Para cantidades concretas se usan *sums of money*, *income streams* o *revenue figures*.
+- **Earnings** suele aparecer en plural cuando se habla de resultados de una empresa o de ganancias periódicas: *quarterly earnings*.
 
-# Mini resumen
+# Para recordar
 
 - *Income* entra; *spending* sale; *savings* es lo que se reserva.
 - *Borrow* recibe y *lend* entrega; una *loan* se devuelve con *interest*.
 - *Revenue* no equivale a *profit*: primero hay que restar costes.
 - *Inflation* sube precios en general; *growth* aumenta la actividad económica.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The bank ___ the start-up money for the equipment. (lent)
    - Respuesta: `lent`

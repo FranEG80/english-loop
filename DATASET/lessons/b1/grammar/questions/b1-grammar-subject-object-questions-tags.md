@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -65,58 +65,6 @@ pronombre adecuado.
 - Sustituir nombres y grupos nominales por el pronombre correcto.
 - Formar tags con `be`, modales, perfectos e imperativos frecuentes.
 - Reconocer excepciones B1 como `aren't I?`, `shall we?` y `will you?`.
-
-# Explicación
-
-## Preguntas de sujeto
-
-Partimos de:
-
-`Someone repaired the lift.`
-
-Queremos saber quién realizó la acción:
-
-`Who repaired the lift?`
-
-No decimos `Who did repair the lift?` en una pregunta neutral. El verbo mantiene
-la forma que tendría con un sujeto singular desconocido:
-
-`Who works here?`  
-`What causes this noise?`
-
-## Preguntas de objeto
-
-Partimos de:
-
-`Maya repaired something.`
-
-Sabemos quién actuó, pero preguntamos por el objeto:
-
-`What did Maya repair?`
-
-En presente simple:
-
-`Who does Leo supervise?`
-
-Después de `does/did`, el verbo queda en forma base.
-
-## Question tags
-
-Una tag básica contiene:
-
-1. El auxiliar correspondiente.
-2. Polaridad opuesta.
-3. Pronombre que representa al sujeto.
-
-`Nora is ready, isn't she?`  
-`The doors aren't locked, are they?`
-
-Si la oración no contiene un auxiliar visible en presente o pasado simple,
-usamos `do/does/did`:
-
-`You work here, don't you?`  
-`Marta lives nearby, doesn't she?`  
-`They arrived yesterday, didn't they?`
 
 # Forma o estructura
 
@@ -175,6 +123,58 @@ Con contracciones:
 8. **Recordar información:** `We met last year, didn't we?`
 9. **Comprobar capacidad:** `You can access the folder, can't you?`
 10. **Comprobar resultado:** `The parcel has arrived, hasn't it?`
+
+# Explicación
+
+## Preguntas de sujeto
+
+Partimos de:
+
+`Someone repaired the lift.`
+
+Queremos saber quién realizó la acción:
+
+`Who repaired the lift?`
+
+No decimos `Who did repair the lift?` en una pregunta neutral. El verbo mantiene
+la forma que tendría con un sujeto singular desconocido:
+
+`Who works here?`  
+`What causes this noise?`
+
+## Preguntas de objeto
+
+Partimos de:
+
+`Maya repaired something.`
+
+Sabemos quién actuó, pero preguntamos por el objeto:
+
+`What did Maya repair?`
+
+En presente simple:
+
+`Who does Leo supervise?`
+
+Después de `does/did`, el verbo queda en forma base.
+
+## Question tags
+
+Una tag básica contiene:
+
+1. El auxiliar correspondiente.
+2. Polaridad opuesta.
+3. Pronombre que representa al sujeto.
+
+`Nora is ready, isn't she?`  
+`The doors aren't locked, are they?`
+
+Si la oración no contiene un auxiliar visible en presente o pasado simple,
+usamos `do/does/did`:
+
+`You work here, don't you?`  
+`Marta lives nearby, doesn't she?`  
+`They arrived yesterday, didn't they?`
 
 # Contrastes importantes
 
@@ -266,31 +266,13 @@ No repetimos normalmente el nombre dentro de la tag.
 
 # Excepciones relevantes
 
-Con `I am`, la tag negativa habitual es `aren't I?`:
-
-`I'm next, aren't I?`
-
-Con `Let's ...`, usamos normalmente `shall we?`:
-
-`Let's take a break, shall we?`
-
-Los imperativos suelen usar `will you?`, especialmente para instrucciones o
-peticiones:
-
-`Close the window, will you?`
-
-Con `there is/are`, la tag conserva `there`:
-
-`There's a pharmacy nearby, isn't there?`  
-`There weren't any delays, were there?`
-
-Con `nobody/no one`, el pronombre de la tag suele ser `they`:
-
-`Nobody complained, did they?`
-
-La entonación cambia la intención: una entonación descendente busca acuerdo; una
-ascendente expresa una pregunta más genuina. Como el dataset es textual, el
-contexto explica la intención cuando sea relevante.
+- Con `I am`, la tag negativa habitual es `aren't I?`: `I'm next, aren't I?`
+- Con `Let's ...`, usamos normalmente `shall we?`: `Let's take a break, shall we?`
+- Los imperativos suelen usar `will you?`, especialmente para instrucciones o peticiones: `Close the window, will you?`
+- Con `there is/are`, la tag conserva `there`: `There's a pharmacy nearby, isn't there?` `There weren't any delays, were there?`
+- Con `nobody/no one`, el pronombre de la tag suele ser `they`: `Nobody complained, did they?`
+- La entonación cambia la intención: una entonación descendente busca acuerdo; una ascendente expresa una pregunta más genuina.
+- Como el dataset es textual, el contexto explica la intención cuando sea relevante.
 
 # Mini resumen
 

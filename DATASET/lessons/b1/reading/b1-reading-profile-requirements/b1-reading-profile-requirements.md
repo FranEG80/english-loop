@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,34 +40,41 @@ Cada perfil combina varias condiciones: actividad, horario, precio, ubicación o
 - Buscar equivalencias léxicas y no solo palabras idénticas.
 - Explicar por qué una opción encaja mejor que otra.
 
-# Explicación
-
-Convierte cada perfil en una lista breve. Por ejemplo: «sábado por la mañana + principiantes + cerca del centro». Lee los textos buscando primero la condición más específica. Si una opción cumple dos pistas pero contradice una restricción, queda descartada.
-
-# Forma o estructura
+# Pistas que debes localizar
 
 - Preferencia: *would like, enjoys, is interested in*.
 - Restricción: *cannot, must, only, not available*.
 - Equivalencia: *near the centre* = *within walking distance of the centre*.
 - Contraste: *weekdays* no incluye automáticamente el sábado.
 
-# Usos principales
+# Aplicación en textos
 
 1. Comparar cursos, clubes, alojamientos o actividades.
 2. Relacionar anuncios con necesidades concretas.
 3. Detectar información implícita pero necesaria.
 4. Justificar una elección con dos o más evidencias.
 
-# Contrastes importantes
+# Explicación
 
-*Free* significa sin coste; *discounted* todavía tiene precio. *Suitable for beginners* no equivale a «solo para principiantes». *Evening* no cubre necesariamente *late afternoon*.
+Convierte cada perfil en una lista breve. Por ejemplo: «sábado por la mañana + principiantes + cerca del centro». Lee los textos buscando primero la condición más específica. Si una opción cumple dos pistas pero contradice una restricción, queda descartada.
+
+Separa las condiciones obligatorias de las preferencias. *Needs*, *must* y *cannot* crean límites; *would prefer* o *would like* indican deseos que solo puedes flexibilizar si la tarea lo permite. Una tabla mental ayuda: marca cada requisito como cumplido, contradicho o no mencionado. «No mencionado» no equivale a cumplido.
+
+Empieza por el rasgo menos frecuente —por ejemplo, acceso para silla de ruedas o una franja horaria concreta— y confirma después precio, nivel y ubicación. Así reduces opciones sin depender de coincidencias superficiales.
+
+# Distractores y matices
+
+- *Free* significa sin coste; *discounted* todavía tiene precio.
+- *Suitable for beginners* no equivale a «solo para principiantes».
+- *Evening* no cubre necesariamente *late afternoon*.
 
 # Ejemplos
 
 Perfil: **Marta wants a free art class on Saturday morning near the station.**
 
-- Encaja: *Free watercolour workshop, Saturday 10–12, two minutes from Central Station.*
-- No encaja: *Paid evening class, Tuesday and Thursday.*
+1. **Encaja:** *Free watercolour workshop, Saturday 10–12, two minutes from Central Station.*
+2. **No encaja por horario y precio:** *Paid evening class, Tuesday and Thursday.*
+3. **No basta:** *Free Saturday class for advanced painters* contradice el nivel si Marta es principiante.
 
 # Errores frecuentes
 
@@ -76,17 +83,18 @@ Perfil: **Marta wants a free art class on Saturday morning near the station.**
 - Suponer que una ciudad grande tiene una estación cerca del anuncio.
 - Confundir una recomendación con un requisito.
 
-# Excepciones relevantes
+# Casos menos evidentes
 
-Un texto puede usar una paráfrasis completa y no repetir ninguna palabra del perfil. La coincidencia correcta debe ser lógica, aunque el vocabulario cambie.
+- Un texto puede usar una paráfrasis completa y no repetir ninguna palabra del perfil.
+- La coincidencia correcta debe ser lógica, aunque el vocabulario cambie.
 
-# Mini resumen
+# Lista de comprobación
 
 1. Divide el perfil en condiciones.
 2. Busca la pista más específica.
 3. Comprueba todas las condiciones y descarta contradicciones.
 
-# Comprobación rápida autocorregible
+# Comprueba tu lectura
 
 Perfil: `Leo needs a cheap room with breakfast, close to the university.`
 

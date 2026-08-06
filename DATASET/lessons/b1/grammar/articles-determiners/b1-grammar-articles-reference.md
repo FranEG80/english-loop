@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -59,6 +59,27 @@ En plural y con sustantivos incontables, a menudo no usamos ningún artículo
 - Aplicar `the` con superlativos y lugares únicos.
 - Reconocer el zero article con plurales e incontables en general.
 - Distinguir referencia general de referencia específica.
+
+# Forma o estructura
+
+| Uso | Forma | Ejemplo |
+| --- | --- | --- |
+| Indefinido singular | `a` + consonante | `a car` |
+| Indefinido singular | `an` + vocal | `an apple` |
+| Definido | `the` + cualquier sustantivo | `the car`, `the apples` |
+| General plural | sin artículo | `cars` |
+| General incontable | sin artículo | `water` |
+
+`The` no cambia de forma: sirve para singular, plural, contable e incontable.
+
+# Usos principales
+
+- `a/an` para presentar algo nuevo: `There's a café on the corner.`
+- `the` para algo ya mencionado: `The café is closed today.`
+- `the` con lugares únicos: `the moon`, `the sky`, `the sea`.
+- `the` con superlativos: `the best film`, `the tallest building`.
+- `the` con grupos definidos por una frase: `the people in this room`.
+- Zero article con generalizaciones: `Books are a great source of knowledge.`
 
 # Explicación
 
@@ -98,27 +119,6 @@ No usamos artículo con:
 - Nombres propios: `Marta lives in London.`
 - Comidas, deportes y materias en sentido general: `I have breakfast at eight.`
 
-# Forma o estructura
-
-| Uso | Forma | Ejemplo |
-| --- | --- | --- |
-| Indefinido singular | `a` + consonante | `a car` |
-| Indefinido singular | `an` + vocal | `an apple` |
-| Definido | `the` + cualquier sustantivo | `the car`, `the apples` |
-| General plural | sin artículo | `cars` |
-| General incontable | sin artículo | `water` |
-
-`The` no cambia de forma: sirve para singular, plural, contable e incontable.
-
-# Usos principales
-
-- `a/an` para presentar algo nuevo: `There's a café on the corner.`
-- `the` para algo ya mencionado: `The café is closed today.`
-- `the` con lugares únicos: `the moon`, `the sky`, `the sea`.
-- `the` con superlativos: `the best film`, `the tallest building`.
-- `the` con grupos definidos por una frase: `the people in this room`.
-- Zero article con generalizaciones: `Books are a great source of knowledge.`
-
 # Contrastes importantes
 
 - Primera mención vs mención conocida: `I saw a cat. The cat was black.`
@@ -128,12 +128,12 @@ No usamos artículo con:
 
 # Ejemplos
 
-`I need a pen.`  
-`Can I borrow an umbrella?`  
-`The train arrives at nine.`  
-`She is the best student in the class.`  
-`Children love playing outside.`  
-`We had dinner at a restaurant. The restaurant was very busy.`
+- `I need a pen.`
+- `Can I borrow an umbrella?`
+- `The train arrives at nine.`
+- `She is the best student in the class.`
+- `Children love playing outside.`
+- `We had dinner at a restaurant. The restaurant was very busy.`
 
 # Errores frecuentes
 

@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,31 +40,34 @@ En viajes, un pequeño cambio de partícula puede distinguir registrarse, subir,
 - Describir averías y recursos con *break down* y *run out of*.
 - Elegir expresiones naturales para problemas de viaje.
 
-# Explicación
+# Verbo, partícula y objeto
 
-*Check in* se usa para registrarse en un vuelo u hotel; *check out* para dejar el hotel y pagar. *Set off* indica comenzar un viaje, mientras que *get on* y *get off* se usan con transporte público. *Run out of* significa quedarse sin algo.
+- Usa *run out of* seguido de un nombre: *We ran out of water*.
+- Con transporte, *get on the bus* y *get off the train* llevan el vehículo después de la partícula.
+- Para una avería, *The coach broke down* no necesita objeto.
 
-# Forma o estructura
-
-Usa *run out of* seguido de un nombre: *We ran out of water*. Con transporte, *get on the bus* y *get off the train* llevan el vehículo después de la partícula. Para una avería, *The coach broke down* no necesita objeto.
-
-# Usos principales
+# Contextos de uso
 
 - Explicar pasos en un aeropuerto u hotel.
 - Narrar una salida y una llegada.
 - Resolver falta de combustible, batería o billetes.
 
-# Contrastes importantes
+# Explicación
 
-*Get on* es subir a un autobús, tren o avión; *get in* suele usarse con coche o taxi. *Check in* es registrarse; *check out* es marcharse del hotel siguiendo el procedimiento.
+*Check in* se usa para registrarse en un vuelo u hotel; *check out* para dejar el hotel y pagar. *Set off* indica comenzar un viaje, mientras que *get on* y *get off* se usan con transporte público. *Run out of* significa quedarse sin algo.
+
+Fíjate en si el verbo necesita complemento. *The coach broke down* es intransitivo; no se avería «algo» con este patrón. *Run out of* sí necesita nombrar el recurso (*run out of fuel*, *run out of it*) y sus tres partes permanecen juntas. *Check in* puede aparecer sin objeto o con *at*: *We checked in at the desk*.
+
+# Phrasal verbs que se confunden
+
+- *Get on* es subir a un autobús, tren o avión; *get in* suele usarse con coche o taxi.
+- *Check in* es registrarse; *check out* es marcharse del hotel siguiendo el procedimiento.
 
 # Ejemplos
 
-*We checked in online and set off before dawn.*
-
-*The bus broke down, so we got off and waited for another one.*
-
-*The café ran out of sandwiches during the delay.*
+- *We checked in online and set off before dawn.*
+- *The bus broke down, so we got off and waited for another one.*
+- *The café ran out of sandwiches during the delay.*
 
 # Errores frecuentes
 
@@ -73,15 +76,16 @@ Usa *run out of* seguido de un nombre: *We ran out of water*. Con transporte, *g
 - ❌ *The train broke it down* para una avería del tren.
 - ✅ *The train broke down*.
 
-# Excepciones relevantes
+# Cambios de significado y registro
 
-En algunos contextos *check in* también puede significar avisar brevemente a alguien, pero en viajes normalmente se refiere al registro. *Get off* puede referirse a abandonar un transporte o una superficie.
+- En algunos contextos *check in* también puede significar avisar brevemente a alguien, pero en viajes normalmente se refiere al registro.
+- *Get off* puede referirse a abandonar un transporte o una superficie.
 
-# Mini resumen
+# Para recordar
 
 Relaciona cada partícula con la etapa del viaje: registro, salida, transporte, avería o falta de recursos.
 
-# Comprobación rápida autocorregible
+# Comprueba el phrasal verb
 
 1. **Which verb means register for a flight?** — `Check in`.
 2. **Which phrase means have no more fuel?** — `Run out of fuel`.

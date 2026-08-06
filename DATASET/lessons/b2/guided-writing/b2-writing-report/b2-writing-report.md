@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,31 +42,36 @@ Un informe presenta información para que otra persona pueda tomar una decisión
 - Usar un registro objetivo y preciso.
 - Diferenciar lo observado de lo que propones hacer.
 
-# Explicación
+# Estructura del texto
 
-Comienza indicando el propósito del informe y el método o alcance. Después presenta los hallazgos agrupados por temas; finalmente propone acciones justificadas. Un informe profesional evita opiniones vagas y hace visible la relación entre evidencia y propuesta.
+- Una estructura útil es **Introduction**, **Findings** y **Recommendations**.
+- Usa encabezados informativos, párrafos breves y datos concretos.
+- Fórmulas como *The survey shows that...*, *A further issue is...* y *It is recommended that...* mantienen claridad y distancia.
 
-# Forma o estructura
-
-Una estructura útil es **Introduction**, **Findings** y **Recommendations**. Usa encabezados informativos, párrafos breves y datos concretos. Fórmulas como *The survey shows that...*, *A further issue is...* y *It is recommended that...* mantienen claridad y distancia.
-
-# Usos principales
+# Funciones comunicativas
 
 - Informar sobre una encuesta, visita o proyecto.
 - Resumir problemas de un servicio y proponer mejoras.
 - Presentar conclusiones a un comité o responsable.
 
-# Contrastes importantes
+# Explicación
 
-*Most participants requested longer opening hours* comunica un hallazgo; *The centre should extend its hours* es una recomendación. *I think the service is poor* resulta menos objetivo que *Several users reported delays*.
+Comienza indicando el propósito del informe y el método o alcance. Después presenta los hallazgos agrupados por temas; finalmente propone acciones justificadas. Un informe profesional evita opiniones vagas y hace visible la relación entre evidencia y propuesta.
+
+Clasifica las notas antes de escribir: dato observado, interpretación o recomendación. Los hallazgos deben indicar su fuente y su alcance: *Six of the ten participants reported delays* es más preciso que *Everyone complained*. En las recomendaciones, explica qué problema resolvería cada medida y, cuando sea relevante, qué prioridad tiene.
+
+Los encabezados deben permitir una lectura rápida, pero no sustituyen la cohesión dentro del párrafo. Bajo **Opening hours**, por ejemplo, presenta primero el patrón encontrado, luego su efecto y finalmente la recomendación correspondiente.
+
+# Registro y decisiones de estilo
+
+- *Most participants requested longer opening hours* comunica un hallazgo; *The centre should extend its hours* es una recomendación.
+- *I think the service is poor* resulta menos objetivo que *Several users reported delays*.
 
 # Ejemplos
 
-**Purpose:** *This report examines users' views of the sports centre.*
-
-**Finding:** *The majority of respondents were satisfied with the equipment.*
-
-**Recommendation:** *It is recommended that the centre publish a weekly timetable.*
+- **Purpose:** *This report examines users' views of the sports centre.*
+- **Finding:** *The majority of respondents were satisfied with the equipment.*
+- **Recommendation:** *It is recommended that the centre publish a weekly timetable.*
 
 # Errores frecuentes
 
@@ -75,16 +80,16 @@ Una estructura útil es **Introduction**, **Findings** y **Recommendations**. Us
 - ❌ Usar encabezados vacíos como *Other*.
 - ✅ Elegir títulos que indiquen el contenido del apartado.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-Un informe breve puede combinar introducción y alcance en un solo párrafo, pero debe conservar una conclusión clara. Si la consigna pide recomendaciones, no basta con repetir los resultados.
+- Un informe breve puede combinar introducción y alcance en un solo párrafo, pero debe conservar una conclusión clara.
+- Si la consigna pide recomendaciones, no basta con repetir los resultados.
 
-# Mini resumen
+# Lista de revisión
 
 Explica el propósito, agrupa los hallazgos y convierte la evidencia en recomendaciones concretas.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. **Which section normally contains proposed actions?** — `Recommendations`.
 2. **Which is a finding?** — `Most respondents preferred the morning sessions`.
-

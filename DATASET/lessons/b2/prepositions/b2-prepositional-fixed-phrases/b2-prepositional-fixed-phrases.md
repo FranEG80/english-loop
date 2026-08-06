@@ -27,8 +27,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Las frases preposicionales fijas funcionan como bloques de significado. Aprenderás a elegirlas según la situación y a evitar sustituciones que producen una expresión incorrecta.
@@ -38,23 +39,32 @@ Las frases preposicionales fijas funcionan como bloques de significado. Aprender
 - Usar frases fijas como *in charge of*, *on behalf of*, *at risk* y *under pressure*.
 - Elegir la frase completa por significado, registro y patrón sintáctico.
 
-# Explicación
+# Patrones con preposición
 
-Memoriza la frase completa y su función. *In charge of* identifica responsabilidad, *on behalf of* representa a otra persona, *at risk* señala peligro y *under pressure* describe una situación exigente. La preposición no se puede cambiar libremente.
+- Responsabilidad: *in charge of the budget*.
+- Representación: *on behalf of the committee*.
+- Estado o riesgo: *at risk*, *under threat*, *out of date*.
+- Situación o condición: *in advance*, *by mistake*, *within reach*, *under review*.
 
-# Forma o estructura
-
-Responsabilidad: *in charge of the budget*. Representación: *on behalf of the committee*. Estado o riesgo: *at risk*, *under threat*, *out of date*. Situación o condición: *in advance*, *by mistake*, *within reach*, *under review*.
-
-# Usos principales
+# Contextos de uso
 
 - Describir funciones y responsabilidades profesionales.
 - Explicar estados, riesgos y procedimientos en comunicaciones formales.
 - Redactar avisos, informes y mensajes de servicio con fórmulas naturales.
 
-# Contrastes importantes
+# Explicación
 
-*In charge of* significa responsable de; *in control of* enfatiza el control. *At risk* indica posibilidad de daño; *in danger* suele ser más inmediato. *By mistake* expresa accidente; *on purpose* expresa intención.
+Memoriza la frase completa y su función. *In charge of* identifica responsabilidad, *on behalf of* representa a otra persona, *at risk* señala peligro y *under pressure* describe una situación exigente. La preposición no se puede cambiar libremente.
+
+Observa qué partes son fijas y cuáles pueden variar. En *in charge of the budget*, cambia el complemento; en *under review*, la expresión puede funcionar sin complemento; en *book in advance*, cambia el verbo y el momento concreto. Aprender un ejemplo completo revela la posición natural de la frase.
+
+Las expresiones cercanas no siempre son equivalentes. *At risk of closure* indica una posibilidad negativa; *in danger* suele sugerir peligro más inmediato; *under threat from flooding* nombra la fuente de la amenaza.
+
+# Contrastes de significado
+
+- *In charge of* significa responsable de; *in control of* enfatiza el control.
+- *At risk* indica posibilidad de daño; *in danger* suele ser más inmediato.
+- *By mistake* expresa accidente; *on purpose* expresa intención.
 
 # Ejemplos
 
@@ -66,22 +76,21 @@ Responsabilidad: *in charge of the budget*. Representación: *on behalf of the c
 
 # Errores frecuentes
 
-❌ Cambiar *on behalf of* por *in behalf of* en un mensaje estándar.
-✅ Mantener la fórmula completa.
-❌ Escribir *in risk* o *under charge of*.
-✅ Asociar cada frase con su función y ejemplo.
+- ❌ Cambiar *on behalf of* por *in behalf of* en un mensaje estándar.
+- ✅ Mantener la fórmula completa.
+- ❌ Escribir *in risk* o *under charge of*.
+- ✅ Asociar cada frase con su función y ejemplo.
 
-# Excepciones relevantes
+# Variación y expresiones fijadas
 
-Algunas variantes existen en registros distintos: *on behalf of* es la forma habitual de representación, mientras *in behalf of* aparece en ciertos usos regionales. En una tarea académica o profesional, elige la forma más extendida y conserva el significado exacto.
+- Algunas variantes existen en registros distintos: *on behalf of* es la forma habitual de representación, mientras *in behalf of* aparece en ciertos usos regionales.
+- En una tarea académica o profesional, elige la forma más extendida y conserva el significado exacto.
 
-# Mini resumen
+# Para recordar
 
 Aprende cada frase como una unidad, identifica su función y comprueba si describe responsabilidad, riesgo, intención o procedimiento.
 
-# Comprobación rápida autocorregible
+# Comprueba la preposición
 
 1. Completa: *She spoke ___ behalf of the whole team.* → `on`.
 2. Completa: *Please submit the form ___ advance.* → `in`.
-
-

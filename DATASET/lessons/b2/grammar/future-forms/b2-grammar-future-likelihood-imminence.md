@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -48,6 +48,28 @@ y `be certain to` para expresar distintos grados de probabilidad futura.
 - Presentar una predicción como probable, improbable o prácticamente segura.
 - Diferenciar una inminencia observable de una predicción más general.
 - Construir correctamente estas expresiones con infinitivo y con sustantivos.
+
+# Forma o estructura
+
+- `subject + am/is/are + about to + base verb`.
+- `subject + am/is/are + on the point of + verb-ing`.
+- `subject + am/is/are + likely/unlikely to + base verb`.
+- `subject + am/is/are + bound/sure/certain to + base verb`.
+- `It + is + likely/unlikely + that + subject + verb`.
+- `subject + is due to + base verb` para un horario o acontecimiento previsto.
+
+Después de `to` usamos la forma base: `is likely to increase`, no *is likely to
+increases*. Después de `on the point of` usamos `-ing`: `on the point of
+announcing`, no *on the point to announce*.
+
+# Usos principales
+
+1. **Acción inminente:** `The goalkeeper is about to kick the ball.`
+2. **Instante previo:** `I was on the point of calling you when you arrived.`
+3. **Predicción probable:** `The road is likely to be busy after the concert.`
+4. **Predicción improbable:** `The repair is unlikely to finish today.`
+5. **Conclusión casi segura:** `The witness is bound to remember that detail.`
+6. **Horario previsto:** `The delegation is due to arrive at noon.`
 
 # Explicación
 
@@ -71,28 +93,6 @@ También podemos usar `It is likely/unlikely that + clause`.
 `Be bound to`, `be sure to` y `be certain to` presentan una predicción muy
 segura, aunque `bound to` suele basarse en una conclusión o en circunstancias
 claras: `With that much support, the proposal is bound to succeed.`
-
-# Forma o estructura
-
-- `subject + am/is/are + about to + base verb`.
-- `subject + am/is/are + on the point of + verb-ing`.
-- `subject + am/is/are + likely/unlikely to + base verb`.
-- `subject + am/is/are + bound/sure/certain to + base verb`.
-- `It + is + likely/unlikely + that + subject + verb`.
-- `subject + is due to + base verb` para un horario o acontecimiento previsto.
-
-Después de `to` usamos la forma base: `is likely to increase`, no *is likely to
-increases*. Después de `on the point of` usamos `-ing`: `on the point of
-announcing`, no *on the point to announce*.
-
-# Usos principales
-
-1. **Acción inminente:** `The goalkeeper is about to kick the ball.`
-2. **Instante previo:** `I was on the point of calling you when you arrived.`
-3. **Predicción probable:** `The road is likely to be busy after the concert.`
-4. **Predicción improbable:** `The repair is unlikely to finish today.`
-5. **Conclusión casi segura:** `The witness is bound to remember that detail.`
-6. **Horario previsto:** `The delegation is due to arrive at noon.`
 
 # Contrastes importantes
 
@@ -150,17 +150,12 @@ to depart at 16:30.` `Be likely to` expresa una predicción, no una hora fijada:
 
 # Excepciones relevantes
 
-`Be about to` normalmente no se combina con un momento futuro lejano: no
-decimos *I am about to travel next summer* si solo hablamos de un plan remoto.
-Para eso usamos `I am going to travel next summer`.
-
-`Be bound to` expresa una predicción muy fuerte, no una obligación. Para una
-obligación usamos `be bound by` o un modal como `must`: `The contract binds us
-to the schedule`, pero `The plan is bound to change` significa que el cambio es
-casi seguro.
-
-`Be due to` también puede introducir una causa cuando `due to` significa
-"causado por": `The delay was due to fog`. Ese uso no es un futuro planificado.
+- `Be about to` normalmente no se combina con un momento futuro lejano: no decimos *I am about to travel next summer* si solo hablamos de un plan remoto.
+- Para eso usamos `I am going to travel next summer`.
+- `Be bound to` expresa una predicción muy fuerte, no una obligación.
+- Para una obligación usamos `be bound by` o un modal como `must`: `The contract binds us to the schedule`, pero `The plan is bound to change` significa que el cambio es casi seguro.
+- `Be due to` también puede introducir una causa cuando `due to` significa "causado por": `The delay was due to fog`.
+- Ese uso no es un futuro planificado.
 
 # Mini resumen
 

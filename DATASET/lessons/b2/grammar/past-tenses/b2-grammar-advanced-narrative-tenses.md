@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,6 +46,22 @@ y el past perfect sitúa eventos anteriores.
 - Usar past continuous para acciones de fondo.
 - Usar past perfect para eventos anteriores.
 - Ordenar la secuencia con conectores temporales.
+
+# Forma o estructura
+
+- Evento principal: `past simple`
+- Fondo: `past continuous`
+- Anterior: `past perfect`
+- En curso anterior: `past perfect continuous`
+- Conectores: `when`, `while`, `by the time`, `as soon as`, `after`, `before`
+
+# Usos principales
+
+1. **Secuencia:** `He locked the door and left.`
+2. **Fondo:** `The sun was setting as we arrived.`
+3. **Evento anterior:** `She had already eaten when I called.`
+4. **Duración anterior:** `They had been waiting for an hour.`
+5. **Interrupción:** `I was reading when the phone rang.`
 
 # Explicación
 
@@ -72,22 +88,6 @@ Sitúa un evento anterior a otro:
 Describe una acción en curso antes de un punto pasado:
 
 `They had been driving for hours when they stopped.`
-
-# Forma o estructura
-
-- Evento principal: `past simple`
-- Fondo: `past continuous`
-- Anterior: `past perfect`
-- En curso anterior: `past perfect continuous`
-- Conectores: `when`, `while`, `by the time`, `as soon as`, `after`, `before`
-
-# Usos principales
-
-1. **Secuencia:** `He locked the door and left.`
-2. **Fondo:** `The sun was setting as we arrived.`
-3. **Evento anterior:** `She had already eaten when I called.`
-4. **Duración anterior:** `They had been waiting for an hour.`
-5. **Interrupción:** `I was reading when the phone rang.`
 
 # Contrastes importantes
 
@@ -128,13 +128,8 @@ Describe una acción en curso antes de un punto pasado:
 
 # Excepciones relevantes
 
-Con `while` normalmente usamos past continuous para ambas acciones:
-
-`While she was cooking, he was setting the table.`
-
-Con `by the time` y `as soon as`, el past perfect marca la anterioridad:
-
-`By the time we arrived, they had left.`
+- Con `while` normalmente usamos past continuous para ambas acciones: `While she was cooking, he was setting the table.`
+- Con `by the time` y `as soon as`, el past perfect marca la anterioridad: `By the time we arrived, they had left.`
 
 # Mini resumen
 

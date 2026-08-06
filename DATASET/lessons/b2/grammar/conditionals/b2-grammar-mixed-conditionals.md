@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,17 +46,6 @@ wouldn't have missed the deadline`.
 - Mantener una secuencia lógica entre past perfect, pasado simple, `would` y
   `would have`.
 - Explicar los hechos reales que la oración contradice.
-
-# Explicación
-
-En `If she had accepted the scholarship, she would be in Canada now`, la
-decisión pertenece al pasado y la ubicación imaginada al presente. Por eso la
-condición adopta la forma del tercer condicional, mientras que el resultado usa
-la del segundo.
-
-En `If he were more careful, he wouldn't have deleted the file`, el rasgo
-general pertenece al presente y explica un resultado pasado. La condición usa
-pasado hipotético; el resultado, `would have + participio`.
 
 # Forma o estructura
 
@@ -79,14 +68,23 @@ pasado hipotético; el resultado, `would have + participio`.
 5. Circunstancia pasada y posibilidad actual: `If they had invested earlier,
    they might be profitable now.`
 
+# Explicación
+
+En `If she had accepted the scholarship, she would be in Canada now`, la
+decisión pertenece al pasado y la ubicación imaginada al presente. Por eso la
+condición adopta la forma del tercer condicional, mientras que el resultado usa
+la del segundo.
+
+En `If he were more careful, he wouldn't have deleted the file`, el rasgo
+general pertenece al presente y explica un resultado pasado. La condición usa
+pasado hipotético; el resultado, `would have + participio`.
+
 # Contrastes importantes
 
-El tercer condicional mantiene ambos momentos en el pasado: `If we'd checked,
-we wouldn't have got lost`. El mixto desplaza el resultado al presente: `If
-we'd checked, we wouldn't be lost now`.
-
-No toda combinación de tiempos es un condicional mixto válido. El contexto debe
-justificar una relación causal clara entre los dos momentos.
+- El tercer condicional mantiene ambos momentos en el pasado: `If we'd checked, we wouldn't have got lost`.
+- El mixto desplaza el resultado al presente: `If we'd checked, we wouldn't be lost now`.
+- No toda combinación de tiempos es un condicional mixto válido.
+- El contexto debe justificar una relación causal clara entre los dos momentos.
 
 # Ejemplos
 
@@ -110,9 +108,8 @@ justificar una relación causal clara entre los dos momentos.
 
 # Excepciones relevantes
 
-Los estados pueden extenderse durante largos periodos y hacer menos visible el
-límite temporal. La actividad debe incluir marcadores como `now`, `yesterday` o
-`at the time` cuando sean necesarios para garantizar una sola interpretación.
+- Los estados pueden extenderse durante largos periodos y hacer menos visible el límite temporal.
+- La actividad debe incluir marcadores como `now`, `yesterday` o `at the time` cuando sean necesarios para garantizar una sola interpretación.
 
 # Mini resumen
 

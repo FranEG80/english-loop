@@ -24,7 +24,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,6 +40,24 @@ el coste y resolver el pago o una devolución. Las diferencias entre `price`,
 - Distinguir `cost`, `price`, `value` y `worth`.
 - Hablar de ahorrar, gastar, pedir prestado y devolver un producto.
 
+# Léxico y combinaciones
+
+| Idea | Combinación natural | Ejemplo |
+| --- | --- | --- |
+| precio de algo | `the price of + noun` | `What is the price of this coat?` |
+| costar | `cost + amount` | `The shoes cost £60.` |
+| gastar | `spend + money + on + noun` | `I spent £20 on a shirt.` |
+| pagar con | `pay by card / in cash` | `Can I pay by card?` |
+| probarse | `try on + clothes` | `Can I try on these jeans?` |
+| devolver | `return / take back + item` | `I want to return this jumper.` |
+
+# Situaciones de uso
+
+- Para la ropa, `size`, `fit`, `loose`, `tight`, `comfortable`, `wool`, `cotton` y `leather` son palabras frecuentes.
+- Una prenda `fits` bien cuando la talla y la forma son adecuadas; `suits` a alguien cuando le queda bien por estilo o color: `That colour suits you.`
+- En una tienda puedes preguntar `Do you have this in a larger size?`, `Is there a discount?` o `Can I get a refund?` `A receipt` es el recibo; `a refund` es el dinero devuelto; `an exchange` es cambiar un producto por otro.
+- `On sale` puede significar rebajado, mientras que `for sale` solo significa que está a la venta.
+
 # Explicación
 
 `The price` es la cantidad que aparece en la etiqueta; `the cost` es lo que algo
@@ -53,30 +71,7 @@ afford that coat.`
 con dinero o tiempo: `She spent £30 on shoes` y `He spent an hour shopping.`
 `Save` es guardar dinero; `waste` es gastarlo sin buen resultado.
 
-# Forma o estructura
-
-| Idea | Combinación natural | Ejemplo |
-| --- | --- | --- |
-| precio de algo | `the price of + noun` | `What is the price of this coat?` |
-| costar | `cost + amount` | `The shoes cost £60.` |
-| gastar | `spend + money + on + noun` | `I spent £20 on a shirt.` |
-| pagar con | `pay by card / in cash` | `Can I pay by card?` |
-| probarse | `try on + clothes` | `Can I try on these jeans?` |
-| devolver | `return / take back + item` | `I want to return this jumper.` |
-
-# Usos principales
-
-Para la ropa, `size`, `fit`, `loose`, `tight`, `comfortable`, `wool`, `cotton` y
-`leather` son palabras frecuentes. Una prenda `fits` bien cuando la talla y la
-forma son adecuadas; `suits` a alguien cuando le queda bien por estilo o color:
-`That colour suits you.`
-
-En una tienda puedes preguntar `Do you have this in a larger size?`, `Is there a
-discount?` o `Can I get a refund?` `A receipt` es el recibo; `a refund` es el
-dinero devuelto; `an exchange` es cambiar un producto por otro. `On sale` puede
-significar rebajado, mientras que `for sale` solo significa que está a la venta.
-
-# Contrastes importantes
+# Palabras que se confunden
 
 - `The shirt fits me` habla de talla y forma; `the shirt suits me` habla de
   aspecto y estilo.
@@ -99,32 +94,33 @@ significar rebajado, mientras que `for sale` solo significa que está a la venta
 
 # Errores frecuentes
 
-- ❌ *How much costs this jacket?* → ✅ **How much does this jacket cost?**
-- ❌ *Can you borrow me your umbrella?* → ✅ **Can you lend me your umbrella?**
-- ❌ *I spent £25 for a jumper.* → ✅ **I spent £25 on a jumper.**
-- ❌ *These shoes suit me; they are the right size.* → ✅ **These shoes fit me;
+- ❌ *How much costs this jacket?* →
+- ✅ **How much does this jacket cost?**
+- ❌ *Can you borrow me your umbrella?* →
+- ✅ **Can you lend me your umbrella?**
+- ❌ *I spent £25 for a jumper.* →
+- ✅ **I spent £25 on a jumper.**
+- ❌ *These shoes suit me; they are the right size.* →
+- ✅ **These shoes fit me;
   they are the right size.**
 
-# Excepciones relevantes
+# Variación de uso
 
-`Clothes` es plural aunque se refiera a un conjunto; decimos `a piece of
-clothing` para una prenda. `A pair of trousers` y `a pair of jeans` son
-singulares en la estructura, aunque `trousers` y `jeans` sean plurales. `Cheap`
-describe un precio bajo y puede sugerir mala calidad; `inexpensive` es más
-neutral.
+- `Clothes` es plural aunque se refiera a un conjunto; decimos `a piece of clothing` para una prenda.
+- `A pair of trousers` y `a pair of jeans` son singulares en la estructura, aunque `trousers` y `jeans` sean plurales.
+- `Cheap` describe un precio bajo y puede sugerir mala calidad; `inexpensive` es más neutral.
 
-# Mini resumen
+# Para recordar
 
 Pregunta por `price`, describe cuánto `costs` y valora si merece la pena con
 `value` o `worth`. `Afford` es poder pagar; `spend` es usar dinero; `save` es
 guardarlo. `Borrow` recibe y `lend` presta. En ropa, una prenda puede `fit` por
 talla y `suit` por estilo.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. `Can I try ___ these shoes?` → `on`
 2. `I spent £15 ___ a belt.` → `on`
 3. `This colour ___ you.` → `suits`
 4. `Could I get a ___ if the size is wrong?` → `refund`
 5. `I cannot ___ that expensive watch.` → `afford`
-

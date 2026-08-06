@@ -29,8 +29,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Viajar y trabajar requieren combinaciones precisas: *catch a train*, *miss a flight*, *meet a deadline* y *make progress*. Aprenderás a elegir la pareja natural.
@@ -40,23 +41,30 @@ Viajar y trabajar requieren combinaciones precisas: *catch a train*, *miss a fli
 - Usar colocaciones sobre transporte, horarios, tareas, decisiones y progreso.
 - Distinguir miss/catch, make/do y spend/save en contexto.
 
-# Explicación
+# Patrones y combinaciones
 
-Fíjate en la relación entre acción y objeto. *Catch* implica alcanzar un transporte; *miss* no llegar a tiempo. En el trabajo, *meet a deadline* cumple un plazo y *make progress* describe avance. Las colocaciones reducen traducciones literales.
+- Viajes: *catch/miss a train*, *book a ticket*, *change trains*, *pack a suitcase*, *reach a destination*.
+- Trabajo: *meet a deadline*, *make progress*, *take responsibility*, *solve a problem*, *save time*.
 
-# Forma o estructura
-
-Viajes: *catch/miss a train*, *book a ticket*, *change trains*, *pack a suitcase*, *reach a destination*. Trabajo: *meet a deadline*, *make progress*, *take responsibility*, *solve a problem*, *save time*.
-
-# Usos principales
+# Contextos de uso
 
 - Planificar trayectos y resolver incidencias.
 - Describir tareas, plazos y avances laborales.
 - Escribir mensajes breves sobre viajes y trabajo.
 
-# Contrastes importantes
+# Explicación
 
-*Catch a bus* no significa atraparlo físicamente. *Reach a destination* no lleva *to*: decimos *reach the office*. *Save time* conserva tiempo; *spend time* lo utiliza.
+Fíjate en la relación entre acción y objeto. *Catch* implica alcanzar un transporte; *miss* no llegar a tiempo. En el trabajo, *meet a deadline* cumple un plazo y *make progress* describe avance. Las colocaciones reducen traducciones literales.
+
+Aprende juntas las palabras que representan las dos caras de una situación: *catch/miss a train*, *meet/miss a deadline*, *save/waste time*. Así podrás elegir por el resultado real, no por una traducción aislada. El tiempo verbal cambia con la frase, pero la combinación se mantiene: *We met the deadline* y *We have met every deadline*.
+
+Destino y llegada requieren patrones distintos. *Reach* lleva el lugar directamente (*reach the office*); *arrive* necesita normalmente *at* para un punto y *in* para una ciudad o país (*arrive at the station*, *arrive in Madrid*).
+
+# Combinaciones que se confunden
+
+- *Catch a bus* no significa atraparlo físicamente.
+- *Reach a destination* no lleva *to*: decimos *reach the office*.
+- *Save time* conserva tiempo; *spend time* lo utiliza.
 
 # Ejemplos
 
@@ -67,22 +75,21 @@ Viajes: *catch/miss a train*, *book a ticket*, *change trains*, *pack a suitcase
 
 # Errores frecuentes
 
-❌ Decir *arrive to the station*.
-✅ Usa *arrive at the station* o *reach the station*.
-❌ Confundir *do a decision* con *make a decision*.
-✅ *Make a decision* es la combinación natural.
+- ❌ Decir *arrive to the station*.
+- ✅ Usa *arrive at the station* o *reach the station*.
+- ❌ Confundir *do a decision* con *make a decision*.
+- ✅ *Make a decision* es la combinación natural.
 
-# Excepciones relevantes
+# Variación y registro
 
-*Work on a project* y *work at a company* usan preposiciones distintas, pero ambas son combinaciones frecuentes. *Take a trip* y *go on a trip* pueden ser correctas según la estructura; no combines sus partes.
+- *Work on a project* y *work at a company* usan preposiciones distintas, pero ambas son combinaciones frecuentes.
+- *Take a trip* y *go on a trip* pueden ser correctas según la estructura; no combines sus partes.
 
-# Mini resumen
+# Regla práctica
 
 Identifica si hablas de transporte, destino, plazo o avance; selecciona el verbo que forma la colocación estable.
 
-# Comprobación rápida autocorregible
+# Comprueba la colocación
 
 1. Si llegas tarde al tren, ¿lo *catch* o lo *miss*? → `miss`.
 2. Completa: *We must ___ the deadline.* → `meet`.
-
-

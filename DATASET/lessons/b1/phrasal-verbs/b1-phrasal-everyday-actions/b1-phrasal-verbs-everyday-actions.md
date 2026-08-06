@@ -26,7 +26,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -39,31 +39,35 @@ Los phrasal verbs aparecen constantemente al hablar de rutinas, objetos y tareas
 - Usar pronombres con verbos separables.
 - Elegir el phrasal verb adecuado en situaciones diarias.
 
-# Explicación
+# Verbo, partícula y objeto
 
-La partícula cambia el significado del verbo: *put on* es ponerse algo y *put away* es guardarlo. Con muchos verbos separables, un nombre puede ir después de la partícula o entre verbo y partícula (*turn off the light / turn the light off*), pero un pronombre debe ir en medio (*turn it off*).
+- En presente usa el verbo conjugado y la partícula: *She gets up at seven*.
+- En preguntas y órdenes conserva el verbo auxiliar o el imperativo: *Did you turn off the oven?*; *Put your coat on*.
+- *Look after* y *run into* no se separan de la misma manera.
 
-# Forma o estructura
-
-En presente usa el verbo conjugado y la partícula: *She gets up at seven*. En preguntas y órdenes conserva el verbo auxiliar o el imperativo: *Did you turn off the oven?*; *Put your coat on*. *Look after* y *run into* no se separan de la misma manera.
-
-# Usos principales
+# Contextos de uso
 
 - Hablar de levantarse, vestirse y ordenar.
 - Describir el uso de aparatos y objetos.
 - Explicar cómo cuidar a una persona o animal.
 
-# Contrastes importantes
+# Explicación
 
-*Take off* significa quitarse algo; *take up* significa empezar una actividad. *Look after* es cuidar; *look for* es buscar. No elijas la partícula solo por la traducción literal.
+La partícula cambia el significado del verbo: *put on* es ponerse algo y *put away* es guardarlo. Con muchos verbos separables, un nombre puede ir después de la partícula o entre verbo y partícula (*turn off the light / turn the light off*), pero un pronombre debe ir en medio (*turn it off*).
+
+Aprende tres datos con cada unidad: significado, tipo de objeto y separabilidad. *Look after* necesita un complemento y no se separa (*look after the child*, *look after her*); *get up* puede usarse sin objeto; *pick up* es separable cuando significa recoger (*pick the parcel up*, *pick it up*).
+
+# Phrasal verbs que se confunden
+
+- *Take off* significa quitarse algo; *take up* significa empezar una actividad.
+- *Look after* es cuidar; *look for* es buscar.
+- No elijas la partícula solo por la traducción literal.
 
 # Ejemplos
 
-*I get up early and put on my uniform.*
-
-*Please turn the fan off before you leave.*
-
-*Marta looks after her neighbour's cat at weekends.*
+- *I get up early and put on my uniform.*
+- *Please turn the fan off before you leave.*
+- *Marta looks after her neighbour's cat at weekends.*
 
 # Errores frecuentes
 
@@ -72,15 +76,15 @@ En presente usa el verbo conjugado y la partícula: *She gets up at seven*. En p
 - ❌ Confundir *look after* con *look for*.
 - ✅ Identificar si la acción es cuidar o buscar.
 
-# Excepciones relevantes
+# Cambios de significado y registro
 
-Algunos verbos admiten variación regional o estilística, pero la posición del pronombre en *pick it up*, *put it away* y *take it off* es estable en el inglés estándar.
+- Algunos verbos admiten variación regional o estilística, pero la posición del pronombre en *pick it up*, *put it away* y *take it off* es estable en el inglés estándar.
 
-# Mini resumen
+# Para recordar
 
 Aprende el verbo con su partícula, comprueba si es separable y coloca el pronombre entre el verbo y la partícula.
 
-# Comprobación rápida autocorregible
+# Comprueba el phrasal verb
 
 1. **Which sentence is correct?** — `Turn it off`.
 2. **Which verb means care for?** — `Look after`.

@@ -31,7 +31,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,12 +44,6 @@ Las cleft sentences dividen una oración en dos partes para enfocar un elemento 
 - Usar who con personas y where con lugares cuando el elemento enfocado lo requiere.
 - Construir what-clefts con What + cláusula + is/was + complemento.
 - Reconocer el efecto de adelantar tiempo, lugar o complemento en una frase.
-
-# Explicación
-
-La oración normal The finance team approved the request puede convertirse en It was the finance team that approved the request. El foco está en the finance team. Para una persona es frecuente It was Maya who called. Con un lugar podemos decir It was in Bristol that the study began.
-
-Las what-clefts presentan una actividad o hecho como tema: What we need is more reliable data. What surprised me was the sudden change. El verbo is/was concuerda con la parte enfocada en el uso estándar. El fronting no exige una estructura it: On Friday, the committee published the report; In the final paragraph, the author answers the objection.
 
 # Forma o estructura
 
@@ -68,6 +62,12 @@ Las what-clefts presentan una actividad o hecho como tema: What we need is more 
 4. **Presentar una necesidad:** What the team needs is clearer guidance.
 5. **Presentar un resultado:** What surprised everyone was the final cost.
 6. **Crear marco discursivo:** In the closing paragraph, the writer addresses the risks.
+
+# Explicación
+
+La oración normal The finance team approved the request puede convertirse en It was the finance team that approved the request. El foco está en the finance team. Para una persona es frecuente It was Maya who called. Con un lugar podemos decir It was in Bristol that the study began.
+
+Las what-clefts presentan una actividad o hecho como tema: What we need is more reliable data. What surprised me was the sudden change. El verbo is/was concuerda con la parte enfocada en el uso estándar. El fronting no exige una estructura it: On Friday, the committee published the report; In the final paragraph, the author answers the objection.
 
 # Contrastes importantes
 
@@ -95,15 +95,22 @@ That es común después de muchos focos, pero who es natural cuando se enfoca un
 
 # Errores frecuentes
 
-- ❌ It was Maya which called.  ✅ It was Maya who called.
-- ❌ It was the finance team approved the request.  ✅ It was the finance team that approved the request.
-- ❌ What we need are more reliable data.  ✅ What we need is more reliable data. (en el patrón estándar)
-- ❌ What did we need is clearer guidance.  ✅ What we need is clearer guidance.
-- ❌ At the final paragraph, the writer addresses risks.  ✅ In the final paragraph, the writer addresses risks.
+- ❌ It was Maya which called.
+- ✅ It was Maya who called.
+- ❌ It was the finance team approved the request.
+- ✅ It was the finance team that approved the request.
+- ❌ What we need are more reliable data.
+- ✅ What we need is more reliable data. (en el patrón estándar)
+- ❌ What did we need is clearer guidance.
+- ✅ What we need is clearer guidance.
+- ❌ At the final paragraph, the writer addresses risks.
+- ✅ In the final paragraph, the writer addresses risks.
 
 # Excepciones relevantes
 
-En inglés informal se oyen variantes con who, that y concordancia variable en what-clefts. La concordancia depende del foco y del registro; en una redacción de examen o informe conviene mantener el patrón estándar. El fronting de un objeto puede requerir una coma y una entonación contrastiva, pero no debe separar sujeto y verbo sin motivo.
+- En inglés informal se oyen variantes con who, that y concordancia variable en what-clefts.
+- La concordancia depende del foco y del registro; en una redacción de examen o informe conviene mantener el patrón estándar.
+- El fronting de un objeto puede requerir una coma y una entonación contrastiva, pero no debe separar sujeto y verbo sin motivo.
 
 # Mini resumen
 

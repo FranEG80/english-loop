@@ -24,7 +24,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,6 +40,23 @@ qué tipo de obra o deporte prefieres y por qué una experiencia te parece
 - Expresar preferencias con razones y comparaciones.
 - Elegir adjetivos que describan la experiencia y no solo a la persona.
 
+# Léxico y combinaciones
+
+| Idea | Combinación natural | Ejemplo |
+| --- | --- | --- |
+| preferencia | `be keen on + noun/-ing` | `I am keen on hiking.` |
+| interés | `be interested in + noun/-ing` | `She is interested in photography.` |
+| deporte con pelota | `play + sport` | `They play basketball.` |
+| actividad en -ing | `go + -ing` | `We go cycling at weekends.` |
+| arte o ejercicio | `do + activity` | `He does yoga every morning.` |
+| opinión | `find + noun + adjective` | `I found the film moving.` |
+
+# Situaciones de uso
+
+- Para recomendar algo: `You should see it`, `It is well worth watching` y `I would definitely recommend it`.
+- Para explicar una opinión usa `because`, `so` y `although`: `The plot was simple, but the acting was excellent.`
+- Los adjetivos terminados en `-ing` describen la cosa que produce la emoción: `The match was exciting.` Los terminados en `-ed` describen cómo se siente la persona: `We were excited.` La misma diferencia aparece con `boring/bored`, `confusing/confused` y `disappointing/disappointed`.
+
 # Explicación
 
 Una `hobby` es una actividad que haces regularmente por placer; `free time` es
@@ -53,29 +70,7 @@ Un `plot` es la trama, `a character` un personaje y `the setting` el lugar y
 época. Un libro puede tener `a narrator` y `a chapter`; una canción tiene
 `lyrics`, `a tune` y `a beat`.
 
-# Forma o estructura
-
-| Idea | Combinación natural | Ejemplo |
-| --- | --- | --- |
-| preferencia | `be keen on + noun/-ing` | `I am keen on hiking.` |
-| interés | `be interested in + noun/-ing` | `She is interested in photography.` |
-| deporte con pelota | `play + sport` | `They play basketball.` |
-| actividad en -ing | `go + -ing` | `We go cycling at weekends.` |
-| arte o ejercicio | `do + activity` | `He does yoga every morning.` |
-| opinión | `find + noun + adjective` | `I found the film moving.` |
-
-# Usos principales
-
-Para recomendar algo: `You should see it`, `It is well worth watching` y `I
-would definitely recommend it`. Para explicar una opinión usa `because`, `so`
-y `although`: `The plot was simple, but the acting was excellent.`
-
-Los adjetivos terminados en `-ing` describen la cosa que produce la emoción:
-`The match was exciting.` Los terminados en `-ed` describen cómo se siente la
-persona: `We were excited.` La misma diferencia aparece con `boring/bored`,
-`confusing/confused` y `disappointing/disappointed`.
-
-# Contrastes importantes
+# Palabras que se confunden
 
 - `Play tennis` pero `go swimming` y `do yoga`.
 - `A supporter` anima a un equipo; `a player` participa; `a coach` lo entrena.
@@ -99,31 +94,32 @@ persona: `We were excited.` La misma diferencia aparece con `boring/bored`,
 
 # Errores frecuentes
 
-- ❌ *I play swimming on Sundays.* → ✅ **I go swimming on Sundays.**
-- ❌ *The match was very excited.* → ✅ **The match was very exciting.**
-- ❌ *I am interested on music.* → ✅ **I am interested in music.**
-- ❌ *She does tennis every week.* → ✅ **She plays tennis every week.**
+- ❌ *I play swimming on Sundays.* →
+- ✅ **I go swimming on Sundays.**
+- ❌ *The match was very excited.* →
+- ✅ **The match was very exciting.**
+- ❌ *I am interested on music.* →
+- ✅ **I am interested in music.**
+- ❌ *She does tennis every week.* →
+- ✅ **She plays tennis every week.**
 
-# Excepciones relevantes
+# Variación de uso
 
-El patrón `play` no es totalmente literal: decimos `play the piano` para un
-instrumento, pero `do photography` y `go running`. Algunos nombres admiten más
-de una combinación según el significado: `go skiing` describe la actividad y
-`do a ski course` describe el curso. `Sport` suele ser incontable en general,
-pero `sports` se usa para varias disciplinas.
+- El patrón `play` no es totalmente literal: decimos `play the piano` para un instrumento, pero `do photography` y `go running`.
+- Algunos nombres admiten más de una combinación según el significado: `go skiing` describe la actividad y `do a ski course` describe el curso.
+- `Sport` suele ser incontable en general, pero `sports` se usa para varias disciplinas.
 
-# Mini resumen
+# Para recordar
 
 Usa `play`, `go` y `do` según la actividad. Expresa preferencias con `be keen
 on`, `be interested in` y `recommend`. Los adjetivos en `-ing` describen la
 experiencia; los de `-ed`, a la persona. Añade una razón concreta para que tu
 opinión sea útil.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. `We ___ cycling every Saturday.` → `go`
 2. `My brother ___ basketball at school.` → `plays`
 3. `The story was ___, so I could not stop reading.` → `exciting`
 4. `I am interested ___ live music.` → `in`
 5. `This book is worth ___` → `reading`
-

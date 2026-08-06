@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -61,6 +61,45 @@ posesivos y expresiones como `now`, `today` o `tomorrow` al nuevo punto de vista
 - Ajustar pronombres, posesivos, demostrativos, lugar y tiempo.
 - Mantener el tiempo cuando la información sigue siendo cierta y el contexto lo
   justifica.
+
+# Forma o estructura
+
+## Con say
+
+- `sujeto + said + (that) + oración`
+- `sujeto + said to + persona + (that) + oración`
+
+`Ravi said that the bus was late.`  
+`Ravi said to me that the bus was late.`
+
+## Con tell
+
+- `sujeto + told + persona + (that) + oración`
+
+`Ravi told me that the bus was late.`
+
+No usamos `to` después de `told`: no `told to me`.
+
+## Negativas
+
+La negación pertenece a la información comunicada:
+
+`“I don't recognise the number.”`  
+`She said that she didn't recognise the number.`
+
+`“We haven't received the parts.”`  
+`They said that they hadn't received the parts.`
+
+# Usos principales
+
+1. **Comunicar una opinión:** `He said that the plan was too expensive.`
+2. **Transmitir información:** `She told us that the train had been cancelled.`
+3. **Explicar una promesa:** `Maya said that she would call the supplier.`
+4. **Informar de capacidad:** `Leo said that he could repair the lock.`
+5. **Contar un hecho anterior:** `Nora said that she had missed the bus.`
+6. **Transmitir una negativa:** `They said that they weren't available.`
+7. **Cambiar referencias:** `He said that he would return there the next day.`
+8. **Mantener un hecho general:** `The guide said that water boils at 100°C.`
 
 # Explicación
 
@@ -121,69 +160,6 @@ Los cambios dependen de quién habla y de quién informa:
 
 No existe una sustitución automática de `I` por `he`: si la persona es Ana,
 usaremos `she`; si quien informa habla de sí mismo, puede mantenerse `I`.
-
-# Forma o estructura
-
-## Con say
-
-- `sujeto + said + (that) + oración`
-- `sujeto + said to + persona + (that) + oración`
-
-`Ravi said that the bus was late.`  
-`Ravi said to me that the bus was late.`
-
-## Con tell
-
-- `sujeto + told + persona + (that) + oración`
-
-`Ravi told me that the bus was late.`
-
-No usamos `to` después de `told`: no `told to me`.
-
-## Negativas
-
-La negación pertenece a la información comunicada:
-
-`“I don't recognise the number.”`  
-`She said that she didn't recognise the number.`
-
-`“We haven't received the parts.”`  
-`They said that they hadn't received the parts.`
-
-# Cambios de referencia
-
-Cuando el lugar o el momento han cambiado, son frecuentes estas adaptaciones:
-
-- `now` → `then`
-- `today` → `that day`
-- `tonight` → `that night`
-- `yesterday` → `the day before` / `the previous day`
-- `tomorrow` → `the next day` / `the following day`
-- `last week` → `the week before` / `the previous week`
-- `next month` → `the following month`
-- `here` → `there`
-- `this` → `that`
-- `these` → `those`
-
-Ejemplo:
-
-`On Monday, Eva said, “I will finish this report tomorrow.”`  
-`On Wednesday, I reported: Eva said that she would finish that report the next
-day.`
-
-Los cambios no son mecánicos si la referencia sigue siendo la misma. Si
-informamos la frase durante el mismo día, `today` puede mantenerse.
-
-# Usos principales
-
-1. **Comunicar una opinión:** `He said that the plan was too expensive.`
-2. **Transmitir información:** `She told us that the train had been cancelled.`
-3. **Explicar una promesa:** `Maya said that she would call the supplier.`
-4. **Informar de capacidad:** `Leo said that he could repair the lock.`
-5. **Contar un hecho anterior:** `Nora said that she had missed the bus.`
-6. **Transmitir una negativa:** `They said that they weren't available.`
-7. **Cambiar referencias:** `He said that he would return there the next day.`
-8. **Mantener un hecho general:** `The guide said that water boils at 100°C.`
 
 # Contrastes importantes
 
@@ -279,22 +255,13 @@ Las actividades B1 usan contextos claros de obligación.
 
 # Excepciones relevantes
 
-El backshift es una elección relacionada con tiempo, distancia y vigencia de la
-información, no una transformación matemática en todos los contextos. Si Ana
-dice hace un minuto `I am outside` y sabemos que sigue allí, podemos decir `Ana
-said that she is outside`. Para actividades autocorregibles, la consigna
-especifica si informamos más tarde o si la situación sigue vigente.
-
-El past perfect no suele retroceder más:
-
-`“I had already eaten.”` → He said that he had already eaten.
-
-`Could`, `would`, `should` y `might` suelen mantenerse:
-
-`“I could help.”` → She said that she could help.
-
-En conversación espontánea es frecuente omitir `that`. Ambas variantes pueden
-ser correctas, pero una actividad de texto exacto indicará si debe incluirse.
+- El backshift es una elección relacionada con tiempo, distancia y vigencia de la información, no una transformación matemática en todos los contextos.
+- Si Ana dice hace un minuto `I am outside` y sabemos que sigue allí, podemos decir `Ana said that she is outside`.
+- Para actividades autocorregibles, la consigna especifica si informamos más tarde o si la situación sigue vigente.
+- El past perfect no suele retroceder más: `“I had already eaten.”` → He said that he had already eaten.
+- `Could`, `would`, `should` y `might` suelen mantenerse: `“I could help.”` → She said that she could help.
+- En conversación espontánea es frecuente omitir `that`.
+- Ambas variantes pueden ser correctas, pero una actividad de texto exacto indicará si debe incluirse.
 
 # Mini resumen
 

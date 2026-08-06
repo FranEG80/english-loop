@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -54,6 +54,40 @@ visible: `ought` lleva `to`: `ought to check`.
 - Formar posibilidades negativas con `may not` y `might not`.
 - Evitar usar `will` cuando el hablante solo considera una posibilidad.
 - Reconocer los distintos significados de `could` según el contexto.
+
+# Forma o estructura
+
+## Consejo
+
+- Afirmativa: sujeto + `should + infinitivo`
+- Negativa: sujeto + `shouldn't + infinitivo`
+- Pregunta: `Should + sujeto + infinitivo?`
+- Alternativa: sujeto + `ought to + infinitivo`
+- Negativa formal: sujeto + `ought not to + infinitivo`
+
+## Posibilidad
+
+- Afirmativa: sujeto + `may/might/could + infinitivo`
+- Negativa: sujeto + `may not/might not + infinitivo`
+
+`Could not` suele interpretarse como incapacidad o imposibilidad, no simplemente
+como una posibilidad negativa. Para decir que quizá algo no ocurra preferimos
+`may not` o `might not`:
+
+`The shop might not be open on Sunday.`
+
+# Usos principales
+
+1. **Consejo práctico:** `You should label both boxes.`
+2. **Consejo negativo:** `You shouldn't leave the bicycle unlocked.`
+3. **Pedir consejo:** `Should I accept the earlier appointment?`
+4. **Recomendación más formal:** `The council ought to repair the pavement.`
+5. **Posibilidad presente:** `Nora may be in the archive.`
+6. **Posibilidad futura:** `The temperature might fall tonight.`
+7. **Consecuencia posible:** `A loose cable could cause interruptions.`
+8. **Posibilidad negativa:** `The replacement part may not arrive today.`
+9. **Varias opciones:** `We could meet online or postpone the discussion.`
+10. **Expectativa razonable:** `The journey should take about forty minutes.`
 
 # Explicación
 
@@ -106,40 +140,6 @@ regla matemática.
 `Could` suele destacar una posibilidad entre varias:
 
 `We could miss the last train if the meeting finishes late.`
-
-# Forma o estructura
-
-## Consejo
-
-- Afirmativa: sujeto + `should + infinitivo`
-- Negativa: sujeto + `shouldn't + infinitivo`
-- Pregunta: `Should + sujeto + infinitivo?`
-- Alternativa: sujeto + `ought to + infinitivo`
-- Negativa formal: sujeto + `ought not to + infinitivo`
-
-## Posibilidad
-
-- Afirmativa: sujeto + `may/might/could + infinitivo`
-- Negativa: sujeto + `may not/might not + infinitivo`
-
-`Could not` suele interpretarse como incapacidad o imposibilidad, no simplemente
-como una posibilidad negativa. Para decir que quizá algo no ocurra preferimos
-`may not` o `might not`:
-
-`The shop might not be open on Sunday.`
-
-# Usos principales
-
-1. **Consejo práctico:** `You should label both boxes.`
-2. **Consejo negativo:** `You shouldn't leave the bicycle unlocked.`
-3. **Pedir consejo:** `Should I accept the earlier appointment?`
-4. **Recomendación más formal:** `The council ought to repair the pavement.`
-5. **Posibilidad presente:** `Nora may be in the archive.`
-6. **Posibilidad futura:** `The temperature might fall tonight.`
-7. **Consecuencia posible:** `A loose cable could cause interruptions.`
-8. **Posibilidad negativa:** `The replacement part may not arrive today.`
-9. **Varias opciones:** `We could meet online or postpone the discussion.`
-10. **Expectativa razonable:** `The journey should take about forty minutes.`
 
 # Contrastes importantes
 
@@ -242,22 +242,15 @@ El sujeto no recibe una recomendación; el hablante dice qué espera que ocurra.
 
 # Excepciones relevantes
 
-`Should` puede expresar obligación moral, consejo firme o expectativa. El
-contexto indica la interpretación: `People should treat each other with
-respect` formula un principio; `The parcel should arrive tomorrow` expresa una
-expectativa.
-
-`May` también se usa para permiso formal (`May I come in?`). Una pregunta con
-`May I ...?` no expresa posibilidad. Ese uso se trabaja en la lección de
-capacidad y permiso.
-
-`Might` es históricamente una forma relacionada con `may`, pero no funciona aquí
-como un simple pasado. Puede referirse al presente o al futuro: `She might be at
-home now`; `She might travel next week`.
-
-`Had better` comunica un consejo fuerte, a menudo asociado a una consecuencia
-negativa: `You'd better leave before the storm`. Es una ampliación útil, pero
-las actividades objetivo de esta lección priorizan `should` y `ought to`.
+- `Should` puede expresar obligación moral, consejo firme o expectativa.
+- El contexto indica la interpretación: `People should treat each other with respect` formula un principio; `The parcel should arrive tomorrow` expresa una expectativa.
+- `May` también se usa para permiso formal (`May I come in?`).
+- Una pregunta con `May I ...?` no expresa posibilidad.
+- Ese uso se trabaja en la lección de capacidad y permiso.
+- `Might` es históricamente una forma relacionada con `may`, pero no funciona aquí como un simple pasado.
+- Puede referirse al presente o al futuro: `She might be at home now`; `She might travel next week`.
+- `Had better` comunica un consejo fuerte, a menudo asociado a una consecuencia negativa: `You'd better leave before the storm`.
+- Es una ampliación útil, pero las actividades objetivo de esta lección priorizan `should` y `ought to`.
 
 # Mini resumen
 

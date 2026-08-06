@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -49,29 +49,6 @@ evento futuro.
 - Distinguir el punto de referencia de `at` del plazo de `by`.
 - Mantener una secuencia temporal clara en contextos de trabajo, viajes y
   proyectos.
-
-# Explicación
-
-## Future continuous
-
-Usamos `will be + verbo-ing` para enfocar una actividad que estará en progreso
-en un momento futuro:
-
-`This time next week, we will be hiking in the hills.`
-
-El momento de referencia suele aparecer con `at`, `this time`, `when` o `while`.
-No afirmamos necesariamente que la actividad empiece o termine en ese momento;
-solo que estará ocurriendo entonces.
-
-## Future perfect
-
-Usamos `will have + participio` para presentar una acción como completada antes
-de un momento futuro:
-
-`By Friday, I will have completed the application form.`
-
-El marcador `by` introduce el límite temporal. La acción puede terminar antes o
-exactamente en ese límite, pero no después.
 
 # Forma o estructura
 
@@ -97,6 +74,29 @@ Después de `will` usamos la forma base `be` o `have`, no `is`, `are`, `has` ni
    the staff will have decorated the hall.`
 5. **Referencia a una etapa futura de un proyecto:** `This time next year, she
    will be studying at university.`
+
+# Explicación
+
+## Future continuous
+
+Usamos `will be + verbo-ing` para enfocar una actividad que estará en progreso
+en un momento futuro:
+
+`This time next week, we will be hiking in the hills.`
+
+El momento de referencia suele aparecer con `at`, `this time`, `when` o `while`.
+No afirmamos necesariamente que la actividad empiece o termine en ese momento;
+solo que estará ocurriendo entonces.
+
+## Future perfect
+
+Usamos `will have + participio` para presentar una acción como completada antes
+de un momento futuro:
+
+`By Friday, I will have completed the application form.`
+
+El marcador `by` introduce el límite temporal. La acción puede terminar antes o
+exactamente en ese límite, pero no después.
 
 # Contrastes importantes
 
@@ -149,15 +149,9 @@ sin `will` en esta estructura.
 
 # Excepciones relevantes
 
-Los verbos de estado normalmente no se usan en continuo: `By next year, I will
-have known her for ten years`, no *will be knowing*. En cambio, algunos verbos
-cambian de significado en continuo: `will be thinking about the proposal`
-describe un proceso, mientras que `will have thought about the proposal`
-presenta una reflexión ya completada.
-
-No todo evento con `by` necesita future perfect si el sentido es distinto, pero
-cuando se quiere destacar que una acción estará terminada antes del límite,
-`will have + participle` es la forma más precisa.
+- Los verbos de estado normalmente no se usan en continuo: `By next year, I will have known her for ten years`, no *will be knowing*.
+- En cambio, algunos verbos cambian de significado en continuo: `will be thinking about the proposal` describe un proceso, mientras que `will have thought about the proposal` presenta una reflexión ya completada.
+- No todo evento con `by` necesita future perfect si el sentido es distinto, pero cuando se quiere destacar que una acción estará terminada antes del límite, `will have + participle` es la forma más precisa.
 
 # Mini resumen
 

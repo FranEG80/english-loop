@@ -25,7 +25,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -38,13 +38,7 @@ Las recetas combinan ingredientes, cantidades y acciones: **chop the onion, add 
 - Describir sabor, textura y grado de cocción.
 - Pedir platos y explicar alergias o preferencias de forma clara.
 
-# Explicación
-
-Los ingredientes son los alimentos que usamos para preparar un plato. **Flour, rice, garlic, onion, oil** y **herbs** aparecen en muchas recetas. Los verbos indican acciones concretas: **chop** es cortar en trozos, **slice** es cortar en láminas, **stir** es mover una mezcla y **pour** es verter un líquido.
-
-Los métodos de cocción también importan. **Boil** se hace en agua caliente, **fry** en aceite, **grill** con calor directo, **roast** en el horno y **bake** se usa especialmente para pan, pasteles y otros alimentos hechos con masa. **Raw** significa crudo; **well done** significa muy hecho y **tender** describe una carne fácil de cortar.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - **chop / slice / peel + ingrediente:** *chop the garlic, slice the tomatoes, peel the potatoes.*
 - **add / mix / stir / pour:** *add the salt, mix the flour, stir the sauce, pour the milk.*
@@ -53,7 +47,7 @@ Los métodos de cocción también importan. **Boil** se hace en agua caliente, *
 - **be allergic to + ingrediente:** *She is allergic to peanuts.*
 - **without + ingrediente:** *Can I have the salad without cheese?*
 
-# Usos principales
+# Situaciones de uso
 
 1. **Seguir una receta:** *Mix the eggs with the flour and add a little oil.*
 2. **Describir sabor:** *The curry is spicy but not too salty.*
@@ -61,7 +55,13 @@ Los métodos de cocción también importan. **Boil** se hace en agua caliente, *
 4. **Pedir una modificación:** *Could I have the sauce on the side?*
 5. **Explicar una restricción:** *I cannot eat prawns because I am allergic to shellfish.*
 
-# Contrastes importantes
+# Explicación
+
+Los ingredientes son los alimentos que usamos para preparar un plato. **Flour, rice, garlic, onion, oil** y **herbs** aparecen en muchas recetas. Los verbos indican acciones concretas: **chop** es cortar en trozos, **slice** es cortar en láminas, **stir** es mover una mezcla y **pour** es verter un líquido.
+
+Los métodos de cocción también importan. **Boil** se hace en agua caliente, **fry** en aceite, **grill** con calor directo, **roast** en el horno y **bake** se usa especialmente para pan, pasteles y otros alimentos hechos con masa. **Raw** significa crudo; **well done** significa muy hecho y **tender** describe una carne fácil de cortar.
+
+# Palabras que se confunden
 
 ## Boil y fry
 
@@ -88,24 +88,31 @@ Los métodos de cocción también importan. **Boil** se hace en agua caliente, *
 
 # Errores frecuentes
 
-- ❌ *I cut the onion in small pieces with a recipe.* ✅ **I chop the onion into small pieces.**
-- ❌ *The soup is tasting salty.* ✅ **The soup tastes salty.**
-- ❌ *I am allergic with nuts.* ✅ **I am allergic to nuts.**
-- ❌ *Please boil the cake.* ✅ **Please bake the cake.**
-- ❌ *Can I have it without of cheese?* ✅ **Can I have it without cheese?**
+- ❌ *I cut the onion in small pieces with a recipe.*
+- ✅ **I chop the onion into small pieces.**
+- ❌ *The soup is tasting salty.*
+- ✅ **The soup tastes salty.**
+- ❌ *I am allergic with nuts.*
+- ✅ **I am allergic to nuts.**
+- ❌ *Please boil the cake.*
+- ✅ **Please bake the cake.**
+- ❌ *Can I have it without of cheese?*
+- ✅ **Can I have it without cheese?**
 
-# Excepciones relevantes
+# Variación de uso
 
-**Chicken, fish** y **lamb** pueden referirse al alimento como incontables (*some chicken*) o al animal según el contexto. **Bread** y **rice** también suelen ser incontables: *a slice of bread*, *a bowl of rice*. Para pedir una cantidad concreta usamos **a portion of**, **a piece of**, **a slice of** o **a bowl of**.
+- **Chicken, fish** y **lamb** pueden referirse al alimento como incontables (*some chicken*) o al animal según el contexto.
+- **Bread** y **rice** también suelen ser incontables: *a slice of bread*, *a bowl of rice*.
+- Para pedir una cantidad concreta usamos **a portion of**, **a piece of**, **a slice of** o **a bowl of**.
 
-# Mini resumen
+# Para recordar
 
 - **Chop, slice, stir, pour** describen acciones de preparación.
 - **Boil, fry, grill, roast** y **bake** no expresan el mismo método.
 - **Sweet, sour, salty, spicy** hablan del sabor; **crispy, creamy, tender** de la textura.
 - **Allergic to** y **without** permiten explicar restricciones y preferencias.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. ___ the onion into small pieces. (Chop)
    - Respuesta: `Chop`

@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -47,27 +47,6 @@ have found the documents`.
 - Transformar una oración a `subject + passive reporting verb + infinitive`.
 - Distinguir `to be`, `to do` y `to have done` según la cronología.
 - Mantener el significado y la fuente implícita al reformular información.
-
-# Explicación
-
-## Patrón impersonal
-
-Con información general usamos `It is said that + clause`, `It is believed
-that + clause` o `It is reported that + clause`: `It is reported that the
-company will expand abroad.` El sujeto `it` no se refiere a una cosa concreta;
-introduce la afirmación.
-
-## Patrón personal
-
-También podemos convertir el sujeto de la oración subordinada en sujeto
-principal: `The company is reported to be expanding abroad.` El verbo de informe
-va en pasiva y la acción siguiente se expresa con un infinitivo.
-
-## Cronología
-
-Para una situación simultánea o general usamos `to be` o el infinitivo simple:
-`The painting is believed to be authentic.` Para una acción anterior usamos
-`to have + past participle`: `The painting is believed to have been stolen.`
 
 # Forma o estructura
 
@@ -89,6 +68,27 @@ El sujeto de la estructura personal es el sujeto lógico de la oración original
 4. **Creencia sobre una acción anterior:** `The sculpture is believed to have been stolen.`
 5. **Expectativa:** `The new centre is expected to open in May.`
 6. **Negación prudente:** `The figures are not thought to be reliable.`
+
+# Explicación
+
+## Patrón impersonal
+
+Con información general usamos `It is said that + clause`, `It is believed
+that + clause` o `It is reported that + clause`: `It is reported that the
+company will expand abroad.` El sujeto `it` no se refiere a una cosa concreta;
+introduce la afirmación.
+
+## Patrón personal
+
+También podemos convertir el sujeto de la oración subordinada en sujeto
+principal: `The company is reported to be expanding abroad.` El verbo de informe
+va en pasiva y la acción siguiente se expresa con un infinitivo.
+
+## Cronología
+
+Para una situación simultánea o general usamos `to be` o el infinitivo simple:
+`The painting is believed to be authentic.` Para una acción anterior usamos
+`to have + past participle`: `The painting is believed to have been stolen.`
 
 # Contrastes importantes
 
@@ -141,14 +141,10 @@ ha comunicado la información. No siempre son intercambiables.
 
 # Excepciones relevantes
 
-Con algunos verbos de informe también son posibles estructuras con `to have` o
-`to be`, pero el significado cambia según la cronología. `The witness is said to
-have left` significa que la salida ocurrió antes de la afirmación; `The witness
-is said to be leaving` presenta la salida como simultánea o próxima.
-
-En lenguaje periodístico se omite a menudo la fuente porque se considera
-irrelevante o se quiere mantener cautela. La estructura no demuestra que la
-información sea verdadera; solo atribuye la afirmación.
+- Con algunos verbos de informe también son posibles estructuras con `to have` o `to be`, pero el significado cambia según la cronología.
+- `The witness is said to have left` significa que la salida ocurrió antes de la afirmación; `The witness is said to be leaving` presenta la salida como simultánea o próxima.
+- En lenguaje periodístico se omite a menudo la fuente porque se considera irrelevante o se quiere mantener cautela.
+- La estructura no demuestra que la información sea verdadera; solo atribuye la afirmación.
 
 # Mini resumen
 

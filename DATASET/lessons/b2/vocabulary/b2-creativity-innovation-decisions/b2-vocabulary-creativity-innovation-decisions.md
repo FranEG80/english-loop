@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,13 +41,7 @@ Las ideas creativas necesitan algo más que entusiasmo: deben analizarse, probar
 - Valorar viabilidad, impacto, riesgo, coste y restricciones.
 - Explicar decisiones, compromisos y cambios de estrategia.
 
-# Explicación
-
-Una **idea** es una posibilidad inicial; una **proposal** es una propuesta desarrollada para que otras personas la valoren. Durante un **brainstorming**, el grupo genera opciones antes de juzgarlas. Un **prototype** es una versión inicial que permite probar una solución. **Trial** y **pilot** son pruebas controladas, mientras que **launch** es la puesta a disposición del público o del mercado.
-
-Para evaluar una propuesta se puede preguntar si es **feasible** (viable en la práctica), **cost-effective** (ofrece una buena relación entre coste y resultado) y **scalable** (puede crecer sin perder eficacia). Una **constraint** limita lo que se puede hacer; un **trade-off** es un compromiso entre beneficios y costes. Si se **weigh up** las opciones, se comparan antes de tomar una decisión.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - generate ideas / brainstorm solutions / explore an option
 - develop a proposal / design a prototype / run a pilot
@@ -56,7 +50,7 @@ Para evaluar una propuesta se puede preguntar si es **feasible** (viable en la p
 - reach a decision / opt for an approach / rule out an option
 - implement a plan / scale up a project / learn from failure
 
-# Usos principales
+# Situaciones de uso
 
 1. **Generar opciones:** *The team brainstormed several ways to reduce waste.*
 2. **Evaluar una propuesta:** *We need to assess whether the idea is financially feasible.*
@@ -64,7 +58,13 @@ Para evaluar una propuesta se puede preguntar si es **feasible** (viable en la p
 4. **Decidir:** *After weighing up the evidence, the committee opted for a pilot.*
 5. **Aplicar y revisar:** *The organisation implemented the plan and measured its impact.*
 
-# Contrastes importantes
+# Explicación
+
+Una **idea** es una posibilidad inicial; una **proposal** es una propuesta desarrollada para que otras personas la valoren. Durante un **brainstorming**, el grupo genera opciones antes de juzgarlas. Un **prototype** es una versión inicial que permite probar una solución. **Trial** y **pilot** son pruebas controladas, mientras que **launch** es la puesta a disposición del público o del mercado.
+
+Para evaluar una propuesta se puede preguntar si es **feasible** (viable en la práctica), **cost-effective** (ofrece una buena relación entre coste y resultado) y **scalable** (puede crecer sin perder eficacia). Una **constraint** limita lo que se puede hacer; un **trade-off** es un compromiso entre beneficios y costes. Si se **weigh up** las opciones, se comparan antes de tomar una decisión.
+
+# Palabras que se confunden
 
 ## Invention, innovation y improvement
 
@@ -90,24 +90,32 @@ Un *risk* es la posibilidad de un resultado negativo. *Uncertainty* significa qu
 
 # Errores frecuentes
 
-- ❌ *We discussed about three alternatives.* ✅ *We discussed three alternatives.*
-- ❌ *The idea is feasible to implement it.* ✅ *The idea is feasible to implement.*
-- ❌ *They did a brainstorming yesterday.* ✅ *They held a brainstorming session yesterday.*
-- ❌ *The team opted the safer design.* ✅ *The team opted for the safer design.*
-- ❌ *We must weigh the options up carefully them.* ✅ *We must weigh the options up carefully.*
+- ❌ *We discussed about three alternatives.*
+- ✅ *We discussed three alternatives.*
+- ❌ *The idea is feasible to implement it.*
+- ✅ *The idea is feasible to implement.*
+- ❌ *They did a brainstorming yesterday.*
+- ✅ *They held a brainstorming session yesterday.*
+- ❌ *The team opted the safer design.*
+- ✅ *The team opted for the safer design.*
+- ❌ *We must weigh the options up carefully them.*
+- ✅ *We must weigh the options up carefully.*
 
-# Excepciones relevantes
+# Variación de uso
 
-**Brainstorming** suele ser incontable cuando describe la actividad: *We did some brainstorming*. Para un evento concreto se usa *a brainstorming session*. **Research** también es normalmente incontable, mientras que **study** puede ser contable: *a research study*. **Feedback** no suele tener plural *feedbacks* en inglés estándar.
+- **Brainstorming** suele ser incontable cuando describe la actividad: *We did some brainstorming*.
+- Para un evento concreto se usa *a brainstorming session*.
+- **Research** también es normalmente incontable, mientras que **study** puede ser contable: *a research study*.
+- **Feedback** no suele tener plural *feedbacks* en inglés estándar.
 
-# Mini resumen
+# Para recordar
 
 - Primero se pueden *generate ideas* y luego *assess* su impacto y viabilidad.
 - Un *prototype* prueba una solución; un *pilot* prueba una aplicación en pequeña escala.
 - Una *constraint* limita; un *trade-off* obliga a equilibrar dos beneficios o costes.
 - *Opt for* y *rule out* explican decisiones concretas.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The team created a small ___ before building the final product. (prototype)
    - Respuesta: `prototype`

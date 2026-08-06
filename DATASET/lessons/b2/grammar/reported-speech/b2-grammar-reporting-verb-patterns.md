@@ -31,7 +31,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,12 +44,6 @@ Los reporting verbs no solo introducen lo que alguien dijo: también indican si 
 - Usar correctamente los patrones con objeto, como warn someone not to do.
 - Distinguir verbos próximos: suggest y recommend, say y tell, o advise y urge.
 - Mantener la cronología con infinitivos perfectos y gerundios perfectos cuando el hecho informado ocurrió antes.
-
-# Explicación
-
-Un verbo de reporte puede describir el contenido y la actitud del hablante. En The witness admitted changing the date, admitted expresa reconocimiento y changing nombra la acción reconocida. En The editor refused to print the rumour, refused presenta una decisión y to print la acción rechazada.
-
-No es seguro traducir mecánicamente el infinitivo español. Suggest se combina normalmente con gerundio o con that + sujeto + verbo base: They suggested waiting / They suggested that we wait. No usamos normalmente suggested to wait. En cambio, agree, offer, promise, refuse y threaten suelen llevar to + infinitivo.
 
 # Forma o estructura
 
@@ -83,6 +77,12 @@ Algunos verbos admiten una cláusula completa: She suggested that we delay the l
 4. **Advertir, recordar y animar:** The guide warned us not to swim; The tutor encouraged us to question the results.
 5. **Proponer y recomendar:** The panel suggested taking a break; The editor recommended that the team revise the headline.
 6. **Comprometerse o negarse:** The builder agreed to repair the steps; The publisher refused to print the rumour.
+
+# Explicación
+
+Un verbo de reporte puede describir el contenido y la actitud del hablante. En The witness admitted changing the date, admitted expresa reconocimiento y changing nombra la acción reconocida. En The editor refused to print the rumour, refused presenta una decisión y to print la acción rechazada.
+
+No es seguro traducir mecánicamente el infinitivo español. Suggest se combina normalmente con gerundio o con that + sujeto + verbo base: They suggested waiting / They suggested that we wait. No usamos normalmente suggested to wait. En cambio, agree, offer, promise, refuse y threaten suelen llevar to + infinitivo.
 
 # Contrastes importantes
 
@@ -132,11 +132,14 @@ El gerundio perfecto, admitted having misread the figures, y el infinitivo perfe
 
 # Excepciones relevantes
 
-Algunos verbos admiten más de un patrón, pero el cambio puede afectar al significado. Remember doing mira hacia atrás a una acción ya realizada, mientras remember to do expresa una obligación pendiente. Regret doing comenta una acción pasada; regret to inform introduce una noticia que el hablante está a punto de comunicar.
-
-Advise también aparece como advise doing cuando no se menciona quién recibe el consejo: The leaflet advises wearing a helmet. Cuando aparece una persona, es natural advise cyclists to wear a helmet. Del mismo modo, recommend puede introducir un sustantivo o una cláusula that; el patrón debe elegirse según lo que sigue.
-
-La variante británica usa normalmente recommend that he extend the hours en registro formal, aunque también se oye recommend that he extends the hours en variedades donde se prefiere una forma finita ordinaria. En actividades autocorregibles se especifica el patrón objetivo para que la respuesta sea determinista.
+- Algunos verbos admiten más de un patrón, pero el cambio puede afectar al significado.
+- Remember doing mira hacia atrás a una acción ya realizada, mientras remember to do expresa una obligación pendiente.
+- Regret doing comenta una acción pasada; regret to inform introduce una noticia que el hablante está a punto de comunicar.
+- Advise también aparece como advise doing cuando no se menciona quién recibe el consejo: The leaflet advises wearing a helmet.
+- Cuando aparece una persona, es natural advise cyclists to wear a helmet.
+- Del mismo modo, recommend puede introducir un sustantivo o una cláusula that; el patrón debe elegirse según lo que sigue.
+- La variante británica usa normalmente recommend that he extend the hours en registro formal, aunque también se oye recommend that he extends the hours en variedades donde se prefiere una forma finita ordinaria.
+- En actividades autocorregibles se especifica el patrón objetivo para que la respuesta sea determinista.
 
 # Mini resumen
 

@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,23 +41,31 @@ El tono de un texto depende de más que palabras positivas o negativas. Practica
 - Relacionar verbos modales y adverbios con el grado de certeza.
 - Distinguir ironía leve de una afirmación literal mediante el contexto.
 
-# Explicación
+# Pistas que debes localizar
 
-Compara *The proposal is useful*, *The proposal is remarkably useful* y *The proposal may be useful*. La primera evalúa, la segunda intensifica y la tercera introduce reserva. El tono también aparece en verbos como *admits*, *dismisses*, *questions* y *welcomes*, que muestran cómo trata el autor la información.
+- Busca modificadores: *slightly*, *largely*, *hardly*, *apparently* y *undoubtedly* cambian la fuerza.
+- Las concesiones (*although*, *while*, *despite*) suelen indicar una actitud equilibrada.
+- Una frase entre comillas, un adjetivo inesperado o una exageración pueden señalar ironía, pero solo si el contexto la apoya.
 
-# Forma o estructura
-
-Busca modificadores: *slightly*, *largely*, *hardly*, *apparently* y *undoubtedly* cambian la fuerza. Las concesiones (*although*, *while*, *despite*) suelen indicar una actitud equilibrada. Una frase entre comillas, un adjetivo inesperado o una exageración pueden señalar ironía, pero solo si el contexto la apoya.
-
-# Usos principales
+# Aplicación en textos
 
 - Interpretar reseñas, editoriales, entrevistas y artículos de opinión.
 - Distinguir desacuerdo directo de crítica diplomática.
 - Detectar cuándo el autor afirma, duda, concede o rechaza una idea.
 
-# Contrastes importantes
+# Explicación
 
-No confundas neutralidad con aprobación débil. *The report describes the change* es neutral; *The report welcomes the change* es positivo. Tampoco confundas certeza con intensidad: *strongly criticises* es intenso, mientras que *may criticise* es incierto.
+Compara *The proposal is useful*, *The proposal is remarkably useful* y *The proposal may be useful*. La primera evalúa, la segunda intensifica y la tercera introduce reserva. El tono también aparece en verbos como *admits*, *dismisses*, *questions* y *welcomes*, que muestran cómo trata el autor la información.
+
+No clasifiques el tono hasta haber leído la concesión y la conclusión. *The idea is attractive, but unrealistic* termina en una crítica; *The idea is costly, but ultimately worthwhile* termina en una valoración favorable. El conector no borra la primera parte, pero suele indicar qué información recibe mayor peso argumentativo.
+
+Para justificar una etiqueta como «escéptico» o «entusiasta», reúne al menos dos señales compatibles: un verbo de actitud y un modificador, o una evaluación y su conclusión. La ironía exige además una incompatibilidad contextual; unas comillas por sí solas no bastan.
+
+# Distractores y matices
+
+- No confundas neutralidad con aprobación débil.
+- *The report describes the change* es neutral; *The report welcomes the change* es positivo.
+- Tampoco confundas certeza con intensidad: *strongly criticises* es intenso, mientras que *may criticise* es incierto.
 
 # Ejemplos
 
@@ -72,15 +80,17 @@ No confundas neutralidad con aprobación débil. *The report describes the chang
 - ❌ Llamar negativo a todo texto que menciona un problema.
 - ✅ Valorar si la conclusión critica, propone o simplemente describe.
 
-# Excepciones relevantes
+# Casos menos evidentes
 
-El mismo adjetivo puede cambiar de tono según el contexto. *Ambitious* puede elogiar un plan o sugerir que es poco realista. La ironía no se decide por una palabra aislada: exige una contradicción o señal contextual clara.
+- El mismo adjetivo puede cambiar de tono según el contexto.
+- *Ambitious* puede elogiar un plan o sugerir que es poco realista.
+- La ironía no se decide por una palabra aislada: exige una contradicción o señal contextual clara.
 
-# Mini resumen
+# Lista de comprobación
 
 Localiza el verbo de actitud, los modificadores de intensidad y los modales de certeza. Después comprueba si el autor concede algo, suaviza una crítica o expresa una valoración directa.
 
-# Comprobación rápida autocorregible
+# Comprueba tu lectura
 
 1. **The plan is promising, but its costs remain unclear.** ¿Qué actitud expresa?
    - Respuesta: `aprobación cautelosa`
@@ -88,4 +98,3 @@ Localiza el verbo de actitud, los modificadores de intensidad y los modales de c
 2. **The article claims that the measure will certainly work.** ¿Qué grado de certeza aparece?
    - Respuesta: `alto`
    - Explicación: *certainly* presenta el resultado como seguro.
-

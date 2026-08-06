@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,16 +43,6 @@ habla necesariamente del pasado. La consecuencia se construye normalmente con
 - Interpretar el pasado de la cláusula condicional como distancia hipotética.
 - Formular consecuencias con `would`, `could` o `might`.
 - Dar consejos con la expresión fija `If I were you`.
-
-# Explicación
-
-`If I lived near the coast, I would swim every morning` describe una realidad
-imaginada: actualmente no vivo allí. El pasado `lived` marca distancia respecto
-de los hechos; `would swim` presenta el resultado de esa hipótesis.
-
-El orden de las cláusulas es flexible: `I would cycle to work if the roads were
-safer`. Como en el primer condicional, normalmente solo usamos coma cuando la
-cláusula con `if` aparece primero.
 
 # Forma o estructura
 
@@ -75,14 +65,22 @@ were you` es la forma establecida para dar consejos.
 4. Consejo: `If I were you, I'd check the contract again.`
 5. Petición más indirecta: `Would you mind if I opened the window?`
 
+# Explicación
+
+`If I lived near the coast, I would swim every morning` describe una realidad
+imaginada: actualmente no vivo allí. El pasado `lived` marca distancia respecto
+de los hechos; `would swim` presenta el resultado de esa hipótesis.
+
+El orden de las cláusulas es flexible: `I would cycle to work if the roads were
+safer`. Como en el primer condicional, normalmente solo usamos coma cuando la
+cláusula con `if` aparece primero.
+
 # Contrastes importantes
 
-`If I have time, I'll help` deja abierta una posibilidad real. `If I had more
-time, I'd help` sugiere que ahora no dispongo de ese tiempo. La elección expresa
-la perspectiva del hablante, no una probabilidad matemática fija.
-
-No usamos normalmente `would` en la cláusula con `if`: `If I would know` es
-incorrecto para una condición hipotética normal.
+- `If I have time, I'll help` deja abierta una posibilidad real.
+- `If I had more time, I'd help` sugiere que ahora no dispongo de ese tiempo.
+- La elección expresa la perspectiva del hablante, no una probabilidad matemática fija.
+- No usamos normalmente `would` en la cláusula con `if`: `If I would know` es incorrecto para una condición hipotética normal.
 
 # Ejemplos
 
@@ -108,9 +106,8 @@ incorrecto para una condición hipotética normal.
 
 # Excepciones relevantes
 
-`Would` puede aparecer tras `if` para hablar de voluntad o de una conducta
-molesta: `If you would just listen, I could explain`. No es la estructura básica
-del segundo condicional y no debe confundirse con `if + pasado`.
+- `Would` puede aparecer tras `if` para hablar de voluntad o de una conducta molesta: `If you would just listen, I could explain`.
+- No es la estructura básica del segundo condicional y no debe confundirse con `if + pasado`.
 
 # Mini resumen
 

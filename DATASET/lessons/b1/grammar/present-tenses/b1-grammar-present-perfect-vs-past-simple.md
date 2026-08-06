@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,19 +46,6 @@ experiencia y después pregunta por sus detalles.
 - Detectar marcadores de tiempo pasado terminado.
 - Reconocer periodos que aún incluyen el presente.
 - Mantener participios y formas de past simple irregulares correctamente.
-
-# Explicación
-
-`I've lost my keys` explica una situación actual: no las tengo. `I lost my keys
-yesterday, but I found them later` cuenta una secuencia terminada.
-
-`Have you ever visited Prague?` pregunta por toda la experiencia vital hasta
-ahora. Una vez que la persona responde, los detalles usan past simple: `When did
-you go?` y `Who did you travel with?`
-
-La misma expresión puede ser abierta o cerrada según el momento. `I've had two
-meetings this morning` es natural si aún es por la mañana. Por la tarde: `I had
-two meetings this morning`.
 
 # Forma o estructura
 
@@ -83,19 +70,28 @@ Marcadores frecuentes del present perfect: `ever`, `never`, `just`, `already`,
 5. **Periodo abierto:** `We've received twelve applications so far.`
 6. **Periodo cerrado:** `We received twelve applications last month.`
 
+# Explicación
+
+`I've lost my keys` explica una situación actual: no las tengo. `I lost my keys
+yesterday, but I found them later` cuenta una secuencia terminada.
+
+`Have you ever visited Prague?` pregunta por toda la experiencia vital hasta
+ahora. Una vez que la persona responde, los detalles usan past simple: `When did
+you go?` y `Who did you travel with?`
+
+La misma expresión puede ser abierta o cerrada según el momento. `I've had two
+meetings this morning` es natural si aún es por la mañana. Por la tarde: `I had
+two meetings this morning`.
+
 # Contrastes importantes
 
-No basta con que una acción sea reciente. `I sent the file ten minutes ago` usa
-past simple porque `ago` crea un momento terminado. `I've just sent the file`
-usa present perfect porque `just` conecta el envío con el presente.
-
-`Been` y `gone` también cambian la interpretación actual. `Marta has been to the
-bank` suele indicar que ya regresó; `Marta has gone to the bank` indica que sigue
-fuera.
-
-En inglés americano informal es más común el past simple con `just`, `already`
-y `yet`. El dataset acepta variantes americanas solo cuando la actividad no
-evalúa específicamente el contraste editorial británico.
+- No basta con que una acción sea reciente.
+- `I sent the file ten minutes ago` usa past simple porque `ago` crea un momento terminado.
+- `I've just sent the file` usa present perfect porque `just` conecta el envío con el presente.
+- `Been` y `gone` también cambian la interpretación actual.
+- `Marta has been to the bank` suele indicar que ya regresó; `Marta has gone to the bank` indica que sigue fuera.
+- En inglés americano informal es más común el past simple con `just`, `already` y `yet`.
+- El dataset acepta variantes americanas solo cuando la actividad no evalúa específicamente el contraste editorial británico.
 
 # Ejemplos
 
@@ -126,12 +122,9 @@ evalúa específicamente el contraste editorial británico.
 
 # Excepciones relevantes
 
-Cuando alguien ha fallecido o una institución ya no existe, su periodo de
-actividad está cerrado: `The author wrote six novels`. Con una persona viva,
-`The author has written six novels` permite que la producción continúe.
-
-Un titular puede usar present perfect para presentar una noticia y el cuerpo de
-la noticia pasar a past simple para narrar detalles fechados.
+- Cuando alguien ha fallecido o una institución ya no existe, su periodo de actividad está cerrado: `The author wrote six novels`.
+- Con una persona viva, `The author has written six novels` permite que la producción continúe.
+- Un titular puede usar present perfect para presentar una noticia y el cuerpo de la noticia pasar a past simple para narrar detalles fechados.
 
 # Mini resumen
 

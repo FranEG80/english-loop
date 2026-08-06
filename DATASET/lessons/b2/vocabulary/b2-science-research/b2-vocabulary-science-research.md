@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,13 +44,7 @@ La comunicación científica exige distinguir lo que se observa, lo que se inter
 - Expresar correlación, causalidad, fiabilidad y limitaciones.
 - Hablar de publicación, peer review y replicación.
 
-# Explicación
-
-Una hypothesis es una explicación que se puede comprobar; una theory es una explicación amplia apoyada por mucha evidencia. Data son los datos recogidos y findings son los hallazgos. Evidence es la información que apoya o debilita una afirmación; un claim es la afirmación que se quiere defender.
-
-Research methods pueden ser qualitative o quantitative. Una sample es el grupo estudiado y una variable es un factor que puede cambiar. Si dos variables correlate, cambian juntas, pero eso no demuestra que una cause la otra. A reliable result es consistente; a valid method mide lo que pretende medir.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - formulate/test a hypothesis / collect/analyse data
 - conduct/carry out research / draw a conclusion
@@ -59,7 +53,7 @@ Research methods pueden ser qualitative o quantitative. Una sample es el grupo e
 - replicate a study / account for limitations
 - a representative sample / a significant difference / preliminary results
 
-# Usos principales
+# Situaciones de uso
 
 1. **Método:** The team collected data from three sites.
 2. **Interpretación:** The findings support the original hypothesis.
@@ -68,7 +62,13 @@ Research methods pueden ser qualitative o quantitative. Una sample es el grupo e
 5. **Publicación:** The paper underwent peer review.
 6. **Argumento:** Correlation alone does not establish causation.
 
-# Contrastes importantes
+# Explicación
+
+Una hypothesis es una explicación que se puede comprobar; una theory es una explicación amplia apoyada por mucha evidencia. Data son los datos recogidos y findings son los hallazgos. Evidence es la información que apoya o debilita una afirmación; un claim es la afirmación que se quiere defender.
+
+Research methods pueden ser qualitative o quantitative. Una sample es el grupo estudiado y una variable es un factor que puede cambiar. Si dos variables correlate, cambian juntas, pero eso no demuestra que una cause la otra. A reliable result es consistente; a valid method mide lo que pretende medir.
+
+# Palabras que se confunden
 
 ## Data, evidence y findings
 
@@ -94,17 +94,24 @@ Reliable significa consistente o reproducible. Valid significa que el método mi
 
 # Errores frecuentes
 
-- ❌ The researchers did a research.  ✅ The researchers conducted research.
-- ❌ The data proves the theory.  ✅ The data support the theory. (o shows, según la fuerza)
-- ❌ Correlation causes causation.  ✅ Correlation does not establish causation.
-- ❌ The sample was very representative small.  ✅ The sample was too small to be representative.
-- ❌ They made a conclusion.  ✅ They drew a conclusion.
+- ❌ The researchers did a research.
+- ✅ The researchers conducted research.
+- ❌ The data proves the theory.
+- ✅ The data support the theory. (o shows, según la fuerza)
+- ❌ Correlation causes causation.
+- ✅ Correlation does not establish causation.
+- ❌ The sample was very representative small.
+- ✅ The sample was too small to be representative.
+- ❌ They made a conclusion.
+- ✅ They drew a conclusion.
 
-# Excepciones relevantes
+# Variación de uso
 
-Data puede tratarse como plural en estilos tradicionales y como incontable en muchos textos actuales; la concordancia depende del registro institucional. Significant puede tener un sentido estadístico preciso, no solo “importante”. Preliminary no significa necesariamente incorrecto, sino todavía no confirmado.
+- Data puede tratarse como plural en estilos tradicionales y como incontable en muchos textos actuales; la concordancia depende del registro institucional.
+- Significant puede tener un sentido estadístico preciso, no solo “importante”.
+- Preliminary no significa necesariamente incorrecto, sino todavía no confirmado.
 
-# Mini resumen
+# Para recordar
 
 - Formulate/test a hypothesis; collect/analyse data.
 - Findings son hallazgos; evidence apoya o cuestiona un claim.
@@ -112,7 +119,7 @@ Data puede tratarse como plural en estilos tradicionales y como incontable en mu
 - Correlation no prueba causation.
 - Draw a conclusion, undergo peer review y replicate a study son colocaciones clave.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The researchers ___ a testable hypothesis. (formulated)
    - Respuesta: formulated

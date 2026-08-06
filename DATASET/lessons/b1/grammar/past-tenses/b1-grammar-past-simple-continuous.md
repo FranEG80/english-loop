@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -52,26 +52,6 @@ report`).
 - Combinar una acción de fondo con un evento puntual.
 - Describir dos acciones que avanzaban al mismo tiempo.
 - Evitar el uso continuo de verbos que normalmente expresan estados.
-
-# Explicación
-
-Usamos **past simple** para acontecimientos terminados y para secuencias:
-`The alarm rang, I got up and I opened the window`. Cada verbo hace avanzar la
-historia.
-
-Usamos **past continuous** para observar una acción desde dentro:
-`At 7.30, I was waiting for the bus`. No se afirma cuándo empezó o terminó la
-espera; importa lo que estaba ocurriendo a esa hora.
-
-En una interrupción, la acción que ya estaba en progreso suele ir en past
-continuous y el acontecimiento que aparece, en past simple:
-
-`We were having dinner when the lights went out.`
-
-La expresión `when` no obliga por sí sola a usar un tiempo determinado. Puede
-introducir el evento breve (`when the lights went out`) o una situación más
-larga (`When I was living in Cork, I met Ana`). El significado de cada acción
-decide el tiempo.
 
 # Forma o estructura
 
@@ -106,6 +86,26 @@ Cambios ortográficos frecuentes:
 5. **Interrupción:** `The phone rang while I was driving.`
 6. **Dos acciones paralelas:** `While I was cooking, Leo was setting the table.`
 7. **Situación temporal de fondo:** `I met Jo when I was working in Madrid.`
+
+# Explicación
+
+Usamos **past simple** para acontecimientos terminados y para secuencias:
+`The alarm rang, I got up and I opened the window`. Cada verbo hace avanzar la
+historia.
+
+Usamos **past continuous** para observar una acción desde dentro:
+`At 7.30, I was waiting for the bus`. No se afirma cuándo empezó o terminó la
+espera; importa lo que estaba ocurriendo a esa hora.
+
+En una interrupción, la acción que ya estaba en progreso suele ir en past
+continuous y el acontecimiento que aparece, en past simple:
+
+`We were having dinner when the lights went out.`
+
+La expresión `when` no obliga por sí sola a usar un tiempo determinado. Puede
+introducir el evento breve (`when the lights went out`) o una situación más
+larga (`When I was living in Cork, I met Ana`). El significado de cada acción
+decide el tiempo.
 
 # Contrastes importantes
 
@@ -191,20 +191,12 @@ Algunos verbos cambian según el significado:
 
 # Excepciones relevantes
 
-Una acción larga también puede aparecer en past simple si se presenta como
-completa: `She worked in Nairobi for five years`. Una acción muy breve puede
-usar past continuous si se repite o se observa en desarrollo:
-`The warning light was flashing`.
-
-Con hábitos repetidos que causaban molestia, el continuo puede aparecer con
-`always`: `He was always borrowing my charger`. Para un hábito pasado neutral,
-esta lección usa past simple (`He often borrowed my charger`) y la lección sobre
-`used to` amplía otras posibilidades.
-
-Dos acciones unidas por `when` pueden ir en past simple si forman una secuencia:
-`When I reached the station, I bought a ticket`. También pueden combinar simple
-y continuo si una estaba en marcha: `When I reached the station, people were
-running towards the exit`.
+- Una acción larga también puede aparecer en past simple si se presenta como completa: `She worked in Nairobi for five years`.
+- Una acción muy breve puede usar past continuous si se repite o se observa en desarrollo: `The warning light was flashing`.
+- Con hábitos repetidos que causaban molestia, el continuo puede aparecer con `always`: `He was always borrowing my charger`.
+- Para un hábito pasado neutral, esta lección usa past simple (`He often borrowed my charger`) y la lección sobre `used to` amplía otras posibilidades.
+- Dos acciones unidas por `when` pueden ir en past simple si forman una secuencia: `When I reached the station, I bought a ticket`.
+- También pueden combinar simple y continuo si una estaba en marcha: `When I reached the station, people were running towards the exit`.
 
 # Mini resumen
 

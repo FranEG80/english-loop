@@ -24,7 +24,7 @@ estimatedMinutes: 20
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -36,43 +36,55 @@ contentVersion: 1
 - Usar *at* con horas y puntos, *on* con días y superficies e *in* con periodos y espacios.
 - Reconocer excepciones frecuentes como *at night* y *at school*.
 
+# Patrones con preposición
+
+- Tiempo: *at six*, *on Monday*, *in July*.
+- Lugar: *at the station*, *on the wall*, *in the room*.
+
+# Contextos de uso
+
+- **At:** horas y puntos concretos: *at six*, *at the entrance*.
+- **On:** días, fechas y superficies: *on Monday*, *on the wall*.
+- **In:** meses, años, periodos y espacios delimitados: *in July*, *in the room*.
+
 # Explicación
 
 Piensa primero en la escala: un punto suele llevar *at*, una fecha o superficie *on* y un periodo o espacio interior *in*.
 
-# Forma o estructura
+En tiempo, la escala va de lo más preciso a lo más amplio: *at 8:30*, *on Tuesday*, *in September*, *in 2026*. En lugar, *at* sitúa una actividad o punto de encuentro, *on* indica contacto con una superficie y *in* sitúa algo dentro de un área o espacio.
 
-Tiempo: *at six*, *on Monday*, *in July*. Lugar: *at the station*, *on the wall*, *in the room*.
+La intención puede cambiar la elección. *Sam is at the hospital* puede presentar el hospital como lugar o actividad; *Sam is in the hospital* destaca que está dentro y, en inglés estadounidense, suele implicar que es paciente. Aprende aparte expresiones fijadas como *at home*, *at night* y *in the morning*.
 
-# Usos principales
+# Contrastes de significado
 
-Usa *at* para horas, direcciones y actividades; *on* para días, fechas y superficies; *in* para meses, años, partes del día y espacios delimitados.
-
-# Contrastes importantes
-
-Compara *at school* como actividad con *in the school* como ubicación física. *At night* es una excepción frente a *in the morning*.
+- Compara *at school* como actividad con *in the school* como ubicación física.
+- *At night* es una excepción frente a *in the morning*.
 
 # Ejemplos
 
 1. **The meeting is at nine on Tuesday in March.** — La reunión es a las nueve el martes de marzo.
 2. **The keys are on the table in the kitchen.** — Las llaves están sobre la mesa en la cocina.
+3. **We met at the station and waited in the café.** — Nos encontramos en la estación y esperamos dentro de la cafetería.
+4. **There is a notice on the door.** — Hay un aviso en la puerta.
 
 # Errores frecuentes
 
-- ❌ *in Monday* / ✅ *on Monday*.
-- ❌ *on eight o'clock* / ✅ *at eight o'clock*.
+- ❌ *in Monday*.
+- ✅ *on Monday*.
+- ❌ *on eight o'clock*.
+- ✅ *at eight o'clock*.
 
-# Excepciones relevantes
+# Variación y expresiones fijadas
 
-Decimos *at the weekend* en inglés británico y *on the weekend* en inglés americano. Ambas formas son válidas según la variedad.
+- Decimos *at the weekend* en inglés británico y *on the weekend* en inglés americano.
+- Ambas formas son válidas según la variedad.
 
-# Mini resumen
+# Para recordar
 
 Punto: *at*. Día o superficie: *on*. Periodo o interior: *in*.
 
-# Comprobación rápida autocorregible
+# Comprueba la preposición
 
 1. Completa: *Our class starts ___ ten ___ Friday.*
    - Respuesta: `at, on`
    - Explicación: una hora lleva *at* y un día lleva *on*.
-

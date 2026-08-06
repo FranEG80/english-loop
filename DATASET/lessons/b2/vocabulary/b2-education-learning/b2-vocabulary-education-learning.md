@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,13 +44,7 @@ Esta lección permite hablar de educación más allá de school y university. Pr
 - Hablar de evaluación, plagio, revisión y feedback.
 - Explicar educación profesional, universitaria y aprendizaje permanente.
 
-# Explicación
-
-Compulsory education es la educación obligatoria; vocational education prepara para un oficio o sector. Un undergraduate estudia una primera titulación universitaria y un postgraduate continúa después. Tuition fees son las tasas de matrícula y una scholarship ayuda a financiar los estudios.
-
-En una institución, una lecture suele ser una exposición para un grupo grande, un seminar permite debate, un workshop es práctico y un tutorial ofrece orientación más individual. Un assignment es una tarea evaluada; una dissertation es un trabajo extenso de investigación, normalmente de una titulación avanzada.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - enrol on/in a course / attend a lecture / submit an assignment
 - meet a deadline / receive feedback / revise for an exam
@@ -58,7 +52,7 @@ En una institución, una lecture suele ser una exposición para un grupo grande,
 - pay tuition fees / apply for a scholarship
 - commit plagiarism / gain a qualification / pursue a degree
 
-# Usos principales
+# Situaciones de uso
 
 1. **Etapa:** She is an undergraduate studying engineering.
 2. **Curso:** He enrolled on a vocational programme.
@@ -67,7 +61,13 @@ En una institución, una lecture suele ser una exposición para un grupo grande,
 5. **Financiación:** A scholarship covered part of the tuition fees.
 6. **Aprendizaje:** Lifelong learning helps adults update their skills.
 
-# Contrastes importantes
+# Explicación
+
+Compulsory education es la educación obligatoria; vocational education prepara para un oficio o sector. Un undergraduate estudia una primera titulación universitaria y un postgraduate continúa después. Tuition fees son las tasas de matrícula y una scholarship ayuda a financiar los estudios.
+
+En una institución, una lecture suele ser una exposición para un grupo grande, un seminar permite debate, un workshop es práctico y un tutorial ofrece orientación más individual. Un assignment es una tarea evaluada; una dissertation es un trabajo extenso de investigación, normalmente de una titulación avanzada.
+
+# Palabras que se confunden
 
 ## Lecture, seminar y workshop
 
@@ -93,17 +93,24 @@ Degree es una titulación universitaria; qualification es un término general pa
 
 # Errores frecuentes
 
-- ❌ I assisted a lecture.  ✅ I attended a lecture.
-- ❌ She made a research.  ✅ She conducted/carried out research.
-- ❌ He gave an exam.  ✅ He took/sat an exam.
-- ❌ The course costs tuition.  ✅ The course has tuition fees.
-- ❌ She is studying a scholarship.  ✅ She has/applied for a scholarship.
+- ❌ I assisted a lecture.
+- ✅ I attended a lecture.
+- ❌ She made a research.
+- ✅ She conducted/carried out research.
+- ❌ He gave an exam.
+- ✅ He took/sat an exam.
+- ❌ The course costs tuition.
+- ✅ The course has tuition fees.
+- ❌ She is studying a scholarship.
+- ✅ She has/applied for a scholarship.
 
-# Excepciones relevantes
+# Variación de uso
 
-Research suele ser incontable, aunque research studies o pieces of research son contables. En inglés británico se usa revise para preparar un examen; en otros contextos puede aparecer review. Enrol on y enrol in varían por región e institución, pero ambas formas son habituales.
+- Research suele ser incontable, aunque research studies o pieces of research son contables.
+- En inglés británico se usa revise para preparar un examen; en otros contextos puede aparecer review.
+- Enrol on y enrol in varían por región e institución, pero ambas formas son habituales.
 
-# Mini resumen
+# Para recordar
 
 - Undergraduate y postgraduate describen etapas universitarias.
 - Vocational prepara para un oficio; lifelong learning continúa durante la vida.
@@ -111,7 +118,7 @@ Research suele ser incontable, aunque research studies o pieces of research son 
 - Submit an assignment, meet a deadline y receive feedback son colocaciones clave.
 - Tuition fees se pagan; una scholarship puede ayudar a cubrirlas.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. She ___ on a postgraduate course. (enrolled)
    - Respuesta: enrolled

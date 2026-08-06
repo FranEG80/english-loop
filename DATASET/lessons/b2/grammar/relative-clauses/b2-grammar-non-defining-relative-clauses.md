@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,12 +42,6 @@ Una non-defining relative clause aporta información adicional sobre una persona
 - Elegir who, which, whose, where y when con personas, cosas, posesión, lugares y momentos.
 - Mantener las comas y evitar that en este tipo de cláusula.
 - Usar preposición más which/who en registros formales cuando sea apropiado.
-
-# Explicación
-
-Compara The researcher who designed the survey won the prize con Dr Patel, who designed the survey, won the prize. En la primera frase la cláusula identifica a la investigadora; en la segunda Dr Patel ya está identificado y la cláusula solo añade un dato. Por eso la segunda va entre comas.
-
-En una cláusula no definitoria usamos who para personas, which para cosas o ideas, whose para posesión, where para lugares y when para momentos. That no se usa normalmente después de coma. Tampoco se omite el pronombre: la cláusula necesita un sujeto o un objeto explícito.
 
 # Forma o estructura
 
@@ -65,6 +59,12 @@ En una cláusula no definitoria usamos who para personas, which para cosas o ide
 3. **Identificar posesión:** Omar, whose team won the grant, thanked the volunteers.
 4. **Precisar lugar o tiempo:** The village, where my grandmother grew up, is now protected.
 5. **Escribir con registro formal:** The framework, within which the study operates, is transparent.
+
+# Explicación
+
+Compara The researcher who designed the survey won the prize con Dr Patel, who designed the survey, won the prize. En la primera frase la cláusula identifica a la investigadora; en la segunda Dr Patel ya está identificado y la cláusula solo añade un dato. Por eso la segunda va entre comas.
+
+En una cláusula no definitoria usamos who para personas, which para cosas o ideas, whose para posesión, where para lugares y when para momentos. That no se usa normalmente después de coma. Tampoco se omite el pronombre: la cláusula necesita un sujeto o un objeto explícito.
 
 # Contrastes importantes
 
@@ -92,15 +92,22 @@ No se puede omitir el relativo cuando es sujeto: The analyst, who checked the fi
 
 # Errores frecuentes
 
-- ❌ My manager, that works remotely, called.  ✅ My manager, who works remotely, called.
-- ❌ The report which was published yesterday, is online.  ✅ The report, which was published yesterday, is online.
-- ❌ The museum, where it opened in 1890, is popular.  ✅ The museum, which opened in 1890, is popular.
-- ❌ Sara, who proposal won, presented it.  ✅ Sara, whose proposal won, presented it.
-- ❌ The train, which I missed it, was the last one.  ✅ The train, which I missed, was the last one.
+- ❌ My manager, that works remotely, called.
+- ✅ My manager, who works remotely, called.
+- ❌ The report which was published yesterday, is online.
+- ✅ The report, which was published yesterday, is online.
+- ❌ The museum, where it opened in 1890, is popular.
+- ✅ The museum, which opened in 1890, is popular.
+- ❌ Sara, who proposal won, presented it.
+- ✅ Sara, whose proposal won, presented it.
+- ❌ The train, which I missed it, was the last one.
+- ✅ The train, which I missed, was the last one.
 
 # Excepciones relevantes
 
-En conversación se oyen formas menos formales, pero la puntuación y la elección de which o who son especialmente importantes en textos académicos y profesionales. Which también puede referirse a toda la idea anterior: The permit was delayed, which affected the opening date. Where y when pueden sustituirse por in which o on which en registros más formales, aunque no siempre suenan igual de naturales.
+- En conversación se oyen formas menos formales, pero la puntuación y la elección de which o who son especialmente importantes en textos académicos y profesionales.
+- Which también puede referirse a toda la idea anterior: The permit was delayed, which affected the opening date.
+- Where y when pueden sustituirse por in which o on which en registros más formales, aunque no siempre suenan igual de naturales.
 
 # Mini resumen
 

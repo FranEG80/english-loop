@@ -25,7 +25,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -38,13 +38,7 @@ Para describir una familia hay que distinguir el vínculo (*sibling, cousin, in-
 - Describir confianza, apoyo, admiración, desacuerdo y reconciliación.
 - Hablar de convivencia y contacto con colocaciones naturales.
 
-# Explicación
-
-Un **sibling** es un hermano o hermana; **brother** y **sister** especifican el género. Un **cousin** es un primo o prima y un **relative** puede ser cualquier familiar. En una familia reconstituida, **stepbrother**, **stepsister** y **stepparent** indican el vínculo por matrimonio o por una nueva pareja. **In-laws** son los familiares de la pareja, como *mother-in-law*.
-
-Las relaciones se describen con verbos y adjetivos concretos. **Get on with someone** significa llevarse bien; **fall out with someone** es enfadarse o romper la relación; **make up** es reconciliarse. **Look up to** expresa admiración y **rely on** confianza práctica. Una familia **close-knit** mantiene lazos estrechos y una persona **supportive** ofrece ayuda.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - **get on with + persona:** *I get on well with my cousins.*
 - **fall out with + persona / make up with + persona:** enfadarse y reconciliarse.
@@ -53,7 +47,7 @@ Las relaciones se describen con verbos y adjetivos concretos. **Get on with some
 - **be close to + persona:** tener una relación estrecha.
 - **a close-knit family, a supportive friend, an only child, a blended family.**
 
-# Usos principales
+# Situaciones de uso
 
 1. **Nombrar el vínculo:** *My aunt's daughter is my cousin.*
 2. **Hablar de convivencia:** *I share a flat with my older sister.*
@@ -61,7 +55,13 @@ Las relaciones se describen con verbos y adjetivos concretos. **Get on with some
 4. **Describir conflicto:** *They fell out over money but made up later.*
 5. **Hablar de contacto:** *We live in different countries but keep in touch online.*
 
-# Contrastes importantes
+# Explicación
+
+Un **sibling** es un hermano o hermana; **brother** y **sister** especifican el género. Un **cousin** es un primo o prima y un **relative** puede ser cualquier familiar. En una familia reconstituida, **stepbrother**, **stepsister** y **stepparent** indican el vínculo por matrimonio o por una nueva pareja. **In-laws** son los familiares de la pareja, como *mother-in-law*.
+
+Las relaciones se describen con verbos y adjetivos concretos. **Get on with someone** significa llevarse bien; **fall out with someone** es enfadarse o romper la relación; **make up** es reconciliarse. **Look up to** expresa admiración y **rely on** confianza práctica. Una familia **close-knit** mantiene lazos estrechos y una persona **supportive** ofrece ayuda.
+
+# Palabras que se confunden
 
 ## Relative y relation
 
@@ -88,24 +88,30 @@ Un **sibling** comparte al menos un progenitor contigo. Un **cousin** suele ser 
 
 # Errores frecuentes
 
-- ❌ *My cousin sister lives nearby.* ✅ **My cousin lives nearby.**
-- ❌ *I get on my brother.* ✅ **I get on with my brother.**
-- ❌ *She looks after her father.* (si queremos decir admira) ✅ **She looks up to her father.**
-- ❌ *We made up each other after the argument.* ✅ **We made up after the argument.**
-- ❌ *I am close with my aunt.* ✅ **I am close to my aunt.**
+- ❌ *My cousin sister lives nearby.*
+- ✅ **My cousin lives nearby.**
+- ❌ *I get on my brother.*
+- ✅ **I get on with my brother.**
+- ❌ *She looks after her father.* (si queremos decir admira)
+- ✅ **She looks up to her father.**
+- ❌ *We made up each other after the argument.*
+- ✅ **We made up after the argument.**
+- ❌ *I am close with my aunt.*
+- ✅ **I am close to my aunt.**
 
-# Excepciones relevantes
+# Variación de uso
 
-**Family** puede ser singular cuando se considera una unidad (*My family is very supportive*) y plural en algunas variedades cuando se destaca a los miembros (*My family are meeting tonight*). **In-laws** suele aparecer en plural para hablar de la familia política en conjunto; una persona concreta es *a mother-in-law* o *a brother-in-law*.
+- **Family** puede ser singular cuando se considera una unidad (*My family is very supportive*) y plural en algunas variedades cuando se destaca a los miembros (*My family are meeting tonight*).
+- **In-laws** suele aparecer en plural para hablar de la familia política en conjunto; una persona concreta es *a mother-in-law* o *a brother-in-law*.
 
-# Mini resumen
+# Para recordar
 
 - **Sibling**, **cousin**, **relative** e **in-law** no describen el mismo vínculo.
 - **Get on with**, **fall out with** y **make up** describen la evolución de una relación.
 - **Look up to** es admirar; **look after** es cuidar.
 - **Rely on**, **keep in touch with** y **be close to** llevan preposiciones concretas.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. My aunt's daughter is my ___. (cousin)
    - Respuesta: `cousin`

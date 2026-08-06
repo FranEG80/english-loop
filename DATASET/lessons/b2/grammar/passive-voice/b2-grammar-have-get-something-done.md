@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -48,16 +48,6 @@ painted`. La construcción también puede describir una experiencia negativa:
   modal.
 - Usar `get` con un sentido más coloquial o de resultado conseguido.
 - Distinguir un servicio planificado de un hecho sufrido por el sujeto.
-
-# Explicación
-
-En la causativa, el objeto recibe la acción y una persona no mencionada la
-realiza: `The dentist checked my teeth` → `I had my teeth checked`. El verbo
-principal marca el tiempo y el participio permanece después del objeto.
-
-`Have` es frecuente en servicios organizados: `We have the heating serviced
-every autumn`. `Get` es habitual en conversaciones y puede sugerir esfuerzo o
-resultado: `I need to get the printer fixed today`.
 
 # Forma o estructura
 
@@ -88,6 +78,16 @@ servicio encargado.
 4. **Cambio de aspecto o pertenencias:** `He is having a new suit made.`
 5. **Experiencia negativa:** `The shop had its window broken during the
    protest.`
+
+# Explicación
+
+En la causativa, el objeto recibe la acción y una persona no mencionada la
+realiza: `The dentist checked my teeth` → `I had my teeth checked`. El verbo
+principal marca el tiempo y el participio permanece después del objeto.
+
+`Have` es frecuente en servicios organizados: `We have the heating serviced
+every autumn`. `Get` es habitual en conversaciones y puede sugerir esfuerzo o
+resultado: `I need to get the printer fixed today`.
 
 # Contrastes importantes
 
@@ -140,15 +140,11 @@ marca el servicio o la acción recibida.
 
 # Excepciones relevantes
 
-En la experiencia negativa, `have + object + participle` no significa que el
-sujeto encargara la acción: `The company had its files leaked`. El contexto
-indica que lo sufrió. Con partes del cuerpo también es posible una pasiva
-causativa: `She had her wisdom tooth removed`.
-
-Cuando queremos mencionar al agente, añadimos `by`: `We had the roof repaired
-by a local builder`. Si el verbo es `make`, no se usa esta construcción para
-obligar a alguien: `The manager made us sign the form`, no *made us had the form
-signed*.
+- En la experiencia negativa, `have + object + participle` no significa que el sujeto encargara la acción: `The company had its files leaked`.
+- El contexto indica que lo sufrió.
+- Con partes del cuerpo también es posible una pasiva causativa: `She had her wisdom tooth removed`.
+- Cuando queremos mencionar al agente, añadimos `by`: `We had the roof repaired by a local builder`.
+- Si el verbo es `make`, no se usa esta construcción para obligar a alguien: `The manager made us sign the form`, no *made us had the form signed*.
 
 # Mini resumen
 

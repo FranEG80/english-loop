@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,29 +42,36 @@ Un argumento cohesionado permite seguir la idea desde la afirmación hasta la co
 - Introducir concesiones sin perder el hilo principal.
 - Evitar referencias vagas y repeticiones innecesarias.
 
-# Explicación
+# Estructura del texto
 
-Cada párrafo debe tener una idea central y avanzar hacia una consecuencia o ejemplo. *This evidence* debe referirse a un dato identificable, no a una frase lejana. Usa *however*, *therefore*, *for instance* y *as a result* solo cuando expresen la relación lógica real.
+- **Secuencia básica:** afirmación → explicación → evidencia → consecuencia.
+- **Concesión:** reconoce el límite y vuelve a la tesis: *Although the scheme is expensive, it would reduce long-term costs.*
+- **Entre párrafos:** usa una transición que conecte el argumento anterior con el siguiente.
+- **Referencias:** sustituye *this* por un grupo nominal preciso cuando pueda haber ambigüedad.
 
-# Forma o estructura
-
-Una secuencia eficaz es afirmación → explicación → evidencia → consecuencia. Para contrastar, concede primero y vuelve a la tesis: *Although the scheme is expensive, it would reduce long-term costs.* Divide las ideas con puntos y enlaza los párrafos con una transición que anticipe el siguiente paso.
-
-# Usos principales
+# Funciones comunicativas
 
 - Redactar un ensayo con razones y ejemplos.
 - Comparar ventajas y limitaciones de una propuesta.
 - Revisar un texto cuyo argumento salta o se repite.
 
-# Contrastes importantes
+# Explicación
 
-*However* introduce una oposición; *therefore* introduce un resultado. *This* puede ser ambiguo si tiene varios antecedentes, mientras que *this reduction in waiting time* identifica exactamente la referencia.
+Cada párrafo debe tener una idea central y avanzar hacia una consecuencia o ejemplo. *This evidence* debe referirse a un dato identificable, no a una frase lejana. Usa *however*, *therefore*, *for instance* y *as a result* solo cuando expresen la relación lógica real.
+
+La cohesión no consiste en añadir conectores a todas las frases. También se construye mediante repetición controlada, sinónimos y cadenas de referencia: *the proposal → the measure → this change*. Cada elemento debe conservar el mismo referente; si el sustantivo cambia el alcance, el argumento se vuelve impreciso.
+
+Revisa el movimiento de cada párrafo. Si presentas una causa, la frase siguiente debe desarrollarla o mostrar su consecuencia, no saltar a otro tema. Después elimina conectores redundantes: *because... therefore...* puede marcar dos veces una relación que ya estaba clara.
+
+# Registro y decisiones de estilo
+
+- *However* introduce una oposición; *therefore* introduce un resultado.
+- *This* puede ser ambiguo si tiene varios antecedentes, mientras que *this reduction in waiting time* identifica exactamente la referencia.
 
 # Ejemplos
 
-*The timetable is easier to access online. As a result, fewer users need to phone the office.*
-
-*Some residents object to the cost. Nevertheless, the proposal would improve access for people without cars.*
+- *The timetable is easier to access online. As a result, fewer users need to phone the office.*
+- *Some residents object to the cost. Nevertheless, the proposal would improve access for people without cars.*
 
 # Errores frecuentes
 
@@ -73,16 +80,16 @@ Una secuencia eficaz es afirmación → explicación → evidencia → consecuen
 - ❌ Escribir *This is important* sin indicar qué es *this*.
 - ✅ Nombrar el dato o la consecuencia concreta.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-No todos los párrafos necesitan un conector explícito: una relación evidente puede expresarse con una frase bien ordenada. En cambio, una concesión compleja suele necesitar una señal clara para no parecer una contradicción.
+- No todos los párrafos necesitan un conector explícito: una relación evidente puede expresarse con una frase bien ordenada.
+- En cambio, una concesión compleja suele necesitar una señal clara para no parecer una contradicción.
 
-# Mini resumen
+# Lista de revisión
 
 Construye una cadena visible de afirmación, explicación, evidencia y resultado; revisa cada referencia y cada conector.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. **Which linker introduces a result?** — `Therefore`.
 2. **Which phrase is more precise?** — `This reduction in waiting time`.
-

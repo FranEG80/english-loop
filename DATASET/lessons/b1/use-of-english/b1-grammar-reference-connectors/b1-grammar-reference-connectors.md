@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -39,21 +39,32 @@ Los artículos, pronombres, auxiliares, preposiciones y conectores construyen la
 - Detectar qué relación gramatical falta alrededor del hueco.
 - Leer más allá de la palabra anterior y usar la cohesión de toda la oración o el párrafo.
 
+# Patrones de cohesión
+
+- **Artículos:** `a`, `an`, `the` o ausencia de artículo.
+- **Preposiciones:** `to`, `of`, `for`, `in`, según el patrón.
+- **Referencia:** `that`, `who`, `which`, `it`.
+- **Auxiliares y negación:** `has`, `did`, `not`.
+- **Conectores:** `although`, `because`, `so`, `if`.
+
+Cada palabra debe encajar en la estructura local y, al mismo tiempo, mantener el sentido del párrafo.
+
+# Relaciones discursivas
+
+- Estas relaciones ayudan a consolidar artículos y referencia, auxiliares en preguntas y negativas, preposiciones después de verbos y adjetivos, pronombres y conectores de causa, contraste, tiempo y condición.
+
 # Explicación
 
 Mira primero la estructura: un nombre contable singular necesita un determinante adecuado; un verbo en participio puede necesitar un auxiliar; dos ideas relacionadas pueden requerir un conector. Después lee la frase completa y comprueba que la elección mantiene el tiempo, la referencia y el significado.
 
-# Forma o estructura
+No todos los huecos se resuelven con la palabra anterior. Un pronombre puede retomar una idea de la frase previa y un conector puede depender del resultado que aparece después. Identifica primero la función —determinar, auxiliar, relacionar o referir— y solo entonces elige la forma concreta.
 
-Las palabras funcionales más frecuentes son `a`, `the`, `to`, `of`, `for`, `that`, `who`, `it`, `has`, `did`, `not` y conectores como `although` y `because`. Cada una debe encajar en la estructura local y, al mismo tiempo, mantener el sentido del párrafo.
+# Relaciones que se confunden
 
-# Usos principales
-
-Estas relaciones ayudan a consolidar artículos y referencia, auxiliares en preguntas y negativas, preposiciones después de verbos y adjetivos, pronombres y conectores de causa, contraste, tiempo y condición.
-
-# Contrastes importantes
-
-`a` introduce algo no identificado y `the` algo específico. `for` expresa duración y `since` un punto de inicio. En preguntas indirectas no se invierte el orden: `I know where she lives`, no `where does she live`. `Although` introduce contraste; `because` introduce causa.
+- `a` introduce algo no identificado y `the` algo específico.
+- `for` expresa duración y `since` un punto de inicio.
+- En preguntas indirectas no se invierte el orden: `I know where she lives`, no `where does she live`.
+- `Although` introduce contraste; `because` introduce causa.
 
 # Ejemplos
 
@@ -71,18 +82,19 @@ Estas relaciones ayudan a consolidar artículos y referencia, auxiliares en preg
 - ❌ *He bought the umbrella because it was raining.* cuando no se ha mencionado un paraguas concreto antes.
 - ✅ *He bought an umbrella because it was raining.*
 
-# Excepciones relevantes
+# Posición, puntuación y registro
 
-Los artículos dependen del contexto, no solo de la traducción. No usamos artículo con muchos nombres incontables cuando hablamos en general (`Water is essential`), pero sí podemos usar `the` cuando se trata de una cantidad concreta (`The water in this bottle is warm`).
+- Los artículos dependen del contexto, no solo de la traducción.
+- No usamos artículo con muchos nombres incontables cuando hablamos en general (`Water is essential`), pero sí podemos usar `the` cuando se trata de una cantidad concreta (`The water in this bottle is warm`).
 
-# Mini resumen
+# Para recordar
 
 1. Identifica la función del hueco.
 2. Comprueba la estructura que lo rodea.
 3. Usa las referencias y conectores del texto.
 4. Lee de nuevo la oración completa.
 
-# Comprobación rápida autocorregible
+# Comprueba la cohesión
 
 1. Completa: `I have been studying English ___ 2022.`
    - Respuesta: `since`

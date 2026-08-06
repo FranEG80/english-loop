@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,13 +41,7 @@ Una persona con nivel B2 necesita algo más que *news* y *information* para anal
 - Identificar audiencia, tono, sesgo y propósito.
 - Explicar cómo se verifica o se difunde una información.
 
-# Explicación
-
-Una **source** es el origen de una información y su **reliability** indica hasta qué punto merece confianza. Una noticia ofrece **coverage** de un hecho; un **headline** resume lo más llamativo. Una **claim** es una afirmación que puede necesitar **evidence**, mientras que una **opinion** expresa una valoración.
-
-El mensaje cambia según su **audience** y su **purpose**. Un texto puede adoptar un tono **neutral**, **critical**, **sarcastic** o **alarmist**. El **bias** no siempre consiste en una mentira: puede aparecer al seleccionar hechos, omitir voces o usar adjetivos cargados. **Misinformation** es información falsa o inexacta compartida sin intención clara de engañar; **disinformation** se crea o difunde deliberadamente para engañar.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - **report + a fact / a development / a claim**
 - **provide + evidence / context / analysis**
@@ -55,16 +49,25 @@ El mensaje cambia según su **audience** y su **purpose**. Un texto puede adopta
 - **verify + a source / an image / a figure**
 - **appeal to + an audience**; **be aimed at + a group**
 
-# Usos principales
+# Situaciones de uso
 
 1. Para resumir: *The report focuses on the impact of rising rents.*
 2. Para valorar una fuente: *The article provides figures but gives little context.*
 3. Para describir intención: *The campaign is aimed at first-time voters.*
 4. Para expresar cautela: *The claim has not yet been independently verified.*
 
-# Contrastes importantes
+# Explicación
 
-**Fact / opinion:** un hecho puede comprobarse; una opinión evalúa. **Bias / misinformation:** el sesgo afecta a la selección o presentación; la desinformación es información inexacta. **Audience / source:** la audiencia recibe el mensaje; la fuente lo origina. **Reach / impact:** el alcance mide cuántas personas reciben algo; el impacto describe su efecto.
+Una **source** es el origen de una información y su **reliability** indica hasta qué punto merece confianza. Una noticia ofrece **coverage** de un hecho; un **headline** resume lo más llamativo. Una **claim** es una afirmación que puede necesitar **evidence**, mientras que una **opinion** expresa una valoración.
+
+El mensaje cambia según su **audience** y su **purpose**. Un texto puede adoptar un tono **neutral**, **critical**, **sarcastic** o **alarmist**. El **bias** no siempre consiste en una mentira: puede aparecer al seleccionar hechos, omitir voces o usar adjetivos cargados. **Misinformation** es información falsa o inexacta compartida sin intención clara de engañar; **disinformation** se crea o difunde deliberadamente para engañar.
+
+# Palabras que se confunden
+
+- **Fact / opinion:** un hecho puede comprobarse; una opinión evalúa.
+- **Bias / misinformation:** el sesgo afecta a la selección o presentación; la desinformación es información inexacta.
+- **Audience / source:** la audiencia recibe el mensaje; la fuente lo origina.
+- **Reach / impact:** el alcance mide cuántas personas reciben algo; el impacto describe su efecto.
 
 # Ejemplos
 
@@ -77,27 +80,32 @@ El mensaje cambia según su **audience** y su **purpose**. Un texto puede adopta
 
 # Errores frecuentes
 
-- ❌ *The article is based in three sources.* ✅ *The article is based on three sources.*
-- ❌ *The journalist made a research.* ✅ *The journalist carried out research.*
-- ❌ *This proves that the claim is true for sure.* ✅ *This supports the claim, but further evidence is needed.*
-- ❌ *The news are unreliable.* ✅ *The news is unreliable.* / *The reports are unreliable.*
+- ❌ *The article is based in three sources.*
+- ✅ *The article is based on three sources.*
+- ❌ *The journalist made a research.*
+- ✅ *The journalist carried out research.*
+- ❌ *This proves that the claim is true for sure.*
+- ✅ *This supports the claim, but further evidence is needed.*
+- ❌ *The news are unreliable.*
+- ✅ *The news is unreliable.* / *The reports are unreliable.*
 
-# Excepciones relevantes
+# Variación de uso
 
-**News** es incontable: *some news*, *a piece of news*. **Media** puede ser plural de *medium* en registro formal, pero en el uso cotidiano aparece también como nombre colectivo. **Evidence** es incontable: *a piece of evidence*, no *an evidence*.
+- **News** es incontable: *some news*, *a piece of news*.
+- **Media** puede ser plural de *medium* en registro formal, pero en el uso cotidiano aparece también como nombre colectivo.
+- **Evidence** es incontable: *a piece of evidence*, no *an evidence*.
 
-# Mini resumen
+# Para recordar
 
 - Pregunta siempre quién comunica, a quién, con qué propósito y con qué pruebas.
 - El tono y la selección de detalles pueden introducir sesgo aunque no haya una falsedad directa.
 - Verificar una fuente o imagen es distinto de compartirla rápidamente.
 - Usa colocaciones precisas: *provide evidence*, *raise awareness*, *reach an audience*.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. A statement that needs support: **claim**.
 2. The people a message is intended for: **audience**.
 3. Deliberately false information: **disinformation**.
 4. Checking whether a report or image is genuine: **fact-checking**.
 5. The emotional attitude of a text: **tone**.
-

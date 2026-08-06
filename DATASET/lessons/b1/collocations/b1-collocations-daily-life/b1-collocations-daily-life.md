@@ -27,8 +27,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Las colocaciones son combinaciones naturales como *make a decision*, *do the washing-up* y *take a break*. Practicarás el verbo que encaja con cada actividad cotidiana.
@@ -38,23 +39,35 @@ Las colocaciones son combinaciones naturales como *make a decision*, *do the was
 - Combinar make, do, have, take, get, keep y pay con nombres frecuentes.
 - Evitar combinaciones traducidas literalmente que no son naturales.
 
-# Explicación
+# Patrones y combinaciones
 
-Aprende la combinación, no solo el sustantivo. *Make* suele crear o producir algo; *do* se usa para tareas; *have* para experiencias; *take* para pausas o decisiones de acción; *pay* para dinero y atención.
+- **Make:** *make a mistake*, *make a plan*, *make a noise*.
+- **Do:** *do homework*, *do housework*, *do exercise*.
+- **Have:** *have breakfast*, *have a shower*, *have a rest*.
+- **Take:** *take a photo*, *take a break*, *take a bus*.
+- **Get:** *get ready*, *get lost*, *get permission*.
+- **Pay:** *pay attention*, *pay a bill*, *pay a fare*.
 
-# Forma o estructura
-
-*make a mistake/plan/noise*, *do homework/housework/exercise*, *have breakfast/a shower/a rest*, *take a photo/break/bus*, *get ready/lost/permission*, *pay attention/a bill/fare*.
-
-# Usos principales
+# Contextos de uso
 
 - Hablar de rutinas y tareas domésticas.
 - Describir planes, errores y decisiones.
 - Comprender instrucciones y conversaciones cotidianas.
 
-# Contrastes importantes
+# Explicación
 
-Decimos *make a decision* pero *take a break*. *Do exercise* es posible, aunque *get some exercise* es muy natural. *Pay a bill* no es *make a bill*. Elige según la combinación completa.
+Aprende la combinación, no solo el sustantivo. *Make* suele crear o producir algo; *do* se usa para tareas; *have* para experiencias; *take* para pausas o decisiones de acción; *pay* para dinero y atención.
+
+Estas tendencias ayudan, pero no sustituyen a la colocación completa. *Make a mistake* describe un resultado, aunque el error no se produzca de forma intencionada; *take a photo* presenta una acción concreta; *have a rest* describe una experiencia o estado breve. Guarda cada bloque con un ejemplo y con la forma que puede cambiar: *make/made a mistake*, *take/took a break*.
+
+Observa también los determinantes. Se dice *do homework* sin artículo cuando se habla de la tarea en general, pero *do the housework* suele referirse al trabajo doméstico de una casa concreta.
+
+# Combinaciones que se confunden
+
+- Decimos *make a decision* pero *take a break*.
+- *Do exercise* es posible, aunque *get some exercise* es muy natural.
+- *Pay a bill* no es *make a bill*.
+- Elige según la combinación completa.
 
 # Ejemplos
 
@@ -65,22 +78,22 @@ Decimos *make a decision* pero *take a break*. *Do exercise* es posible, aunque 
 
 # Errores frecuentes
 
-❌ Traducir literalmente *hacer* como *make* siempre.
-✅ Memorizar *do homework* y *make a plan* como bloques.
-❌ Decir *take attention*.
-✅ La combinación natural es *pay attention*.
+- ❌ Traducir literalmente *hacer* como *make* siempre.
+- ✅ Memorizar *do homework* y *make a plan* como bloques.
+- ❌ Decir *take attention*.
+- ✅ La combinación natural es *pay attention*.
 
-# Excepciones relevantes
+# Variación y registro
 
-Algunas combinaciones varían por región o contexto. *Do the washing-up* es muy habitual en inglés británico; *do the dishes* es también frecuente. En una respuesta de examen, usa la opción que encaja con el nombre dado.
+- Algunas combinaciones varían por región o contexto.
+- *Do the washing-up* es muy habitual en inglés británico; *do the dishes* es también frecuente.
+- En una respuesta de examen, usa la opción que encaja con el nombre dado.
 
-# Mini resumen
+# Regla práctica
 
 Identifica la acción y recupera el verbo que forma la combinación natural con ese nombre.
 
-# Comprobación rápida autocorregible
+# Comprueba la colocación
 
 1. Completa: *Please ___ attention.* → `pay`.
 2. Completa: *I need to ___ a decision today.* → `make`.
-
-

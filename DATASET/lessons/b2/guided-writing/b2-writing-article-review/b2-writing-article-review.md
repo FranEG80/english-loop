@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,27 +41,37 @@ Aprenderás a escribir textos híbridos que informen, valoren y recomienden una 
 - Desarrollar una valoración mediante ejemplos.
 - Cerrar con una recomendación justificada.
 
-# Explicación
+# Estructura del texto
 
-Un artículo-reseña no es una lista de adjetivos. Selecciona detalles relevantes, explica su efecto y vincula la evaluación con la persona que leerá el texto.
+- **Presentación:** identifica la experiencia y ofrece un ángulo que interese al lector.
+- **Descripción selectiva:** explica los rasgos necesarios para entender la valoración.
+- **Evaluación:** relaciona ventajas y límites con ejemplos concretos.
+- **Recomendación:** toma una decisión adecuada para una audiencia definida.
 
-# Forma o estructura
-
-Presenta el objeto, describe sus rasgos principales, evalúa ventajas y límites y recomienda según la audiencia. Los párrafos deben avanzar de información a valoración y de valoración a decisión.
-
-# Usos principales
+# Funciones comunicativas
 
 - Publicar una reseña cultural o de ocio.
 - Recomendar una exposición, aplicación, libro o evento.
 - Escribir para lectores que necesitan una decisión razonada.
 
-# Contrastes importantes
+# Explicación
 
-*The exhibition contains twelve photographs* informa; *The strongest photographs create a quiet atmosphere* interpreta y valora. Una recomendación debe apoyarse en ambos tipos de contenido.
+Un artículo-reseña no es una lista de adjetivos. Selecciona detalles relevantes, explica su efecto y vincula la evaluación con la persona que leerá el texto.
+
+Alterna información y juicio. Después de un dato como *The app offers ten-minute lessons*, explica su valor: *This makes it practical for commuters*. Los modificadores (*particularly*, *slightly*, *rather*) permiten una evaluación más precisa que una sucesión de *good* y *bad*.
+
+Mantén una voz coherente con el medio y el público. Un artículo puede usar una apertura atractiva y dirigirse al lector, mientras que la reseña necesita conservar evidencia suficiente para que la recomendación no parezca arbitraria. La conclusión debe decir para quién funciona la experiencia y bajo qué condiciones.
+
+# Registro y decisiones de estilo
+
+- *The exhibition contains twelve photographs* informa; *The strongest photographs create a quiet atmosphere* interpreta y valora.
+- Una recomendación debe apoyarse en ambos tipos de contenido.
 
 # Ejemplos
 
-*The festival offers workshops for beginners and evening performances. The workshops are well organised, although the evening queue can be long. I would recommend it to visitors who enjoy trying new activities.*
+1. **Información:** *The festival offers workshops for beginners and evening performances.*
+2. **Valoración equilibrada:** *The workshops are well organised, although the evening queue can be long.*
+3. **Recomendación:** *I would recommend it to visitors who enjoy trying new activities.*
 
 # Errores frecuentes
 
@@ -70,15 +80,15 @@ Presenta el objeto, describe sus rasgos principales, evalúa ventajas y límites
 - ❌ Describir ventajas sin mencionar una limitación relevante.
 - ✅ Usar *although*, *however* o *despite* para equilibrar la reseña.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-Una reseña muy positiva puede no necesitar una crítica extensa, pero debe explicar qué hace que la experiencia sea valiosa para esa audiencia.
+- Una reseña muy positiva puede no necesitar una crítica extensa, pero debe explicar qué hace que la experiencia sea valiosa para esa audiencia.
 
-# Mini resumen
+# Lista de revisión
 
 Informa con precisión, evalúa con pruebas y recomienda según propósito y audiencia.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. **Which phrase introduces a balanced limitation?** — `Although the queue was long`.
 2. **What should a recommendation include?** — `A reason linked to the audience`.

@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -58,40 +58,6 @@ obligación pasada y `will have to` para una obligación futura.
 - Expresar obligación futura con `will have to`.
 - Diferenciar prohibición de ausencia de necesidad.
 - Usar `need to` y `don't need to` como formas habituales de necesidad.
-
-# Explicación
-
-## Must
-
-`Must` es un verbo modal. Va seguido de infinitivo sin `to`, no añade `-s` en
-tercera persona y forma la negativa directamente:
-
-`I must remember her birthday.`  
-`All passengers must wear a seat belt.`  
-`You mustn't touch that wire.`
-
-No decimos `musts`, `must to` ni `don't must`.
-
-## Have to
-
-`Have to` se comporta como un verbo ordinario:
-
-`I have to leave at six.`  
-`Marta has to wear a uniform.`  
-`We don't have to book in advance.`  
-`Does Amir have to bring his passport?`
-
-La tercera persona usa `has to`, pero después de `does` vuelve a `have to`.
-
-## Need to
-
-`Need to` expresa que algo es necesario:
-
-`You need to charge the battery.`  
-`She doesn't need to print the form.`
-
-En este nivel usamos principalmente `need to` como verbo ordinario. `Don't need
-to` y `don't have to` suelen comunicar que una acción no es necesaria.
 
 # Forma o estructura
 
@@ -133,6 +99,40 @@ to` y `don't have to` suelen comunicar que una acción no es necesaria.
 8. **Ausencia de necesidad:** `You don't have to bring a towel; we provide one.`
 9. **Necesidad práctica:** `The application needs to include two references.`
 10. **No necesidad pasada:** `She didn't have to queue because she had a pass.`
+
+# Explicación
+
+## Must
+
+`Must` es un verbo modal. Va seguido de infinitivo sin `to`, no añade `-s` en
+tercera persona y forma la negativa directamente:
+
+`I must remember her birthday.`  
+`All passengers must wear a seat belt.`  
+`You mustn't touch that wire.`
+
+No decimos `musts`, `must to` ni `don't must`.
+
+## Have to
+
+`Have to` se comporta como un verbo ordinario:
+
+`I have to leave at six.`  
+`Marta has to wear a uniform.`  
+`We don't have to book in advance.`  
+`Does Amir have to bring his passport?`
+
+La tercera persona usa `has to`, pero después de `does` vuelve a `have to`.
+
+## Need to
+
+`Need to` expresa que algo es necesario:
+
+`You need to charge the battery.`  
+`She doesn't need to print the form.`
+
+En este nivel usamos principalmente `need to` como verbo ordinario. `Don't need
+to` y `don't have to` suelen comunicar que una acción no es necesaria.
 
 # Contrastes importantes
 
@@ -236,21 +236,14 @@ importa, el contexto debe aclararlo: `We didn't have to reserve, so we didn't`.
 
 # Excepciones relevantes
 
-En inglés británico formal puede aparecer `needn't` con el significado de
-`don't need to`: `You needn't reply today`. El dataset acepta esta forma cuando
-la actividad la presenta expresamente, pero prioriza `don't need to` en B1.
-
-`Must` también sirve para deducciones: `She must be at home`. Ese uso no expresa
-obligación y se estudia en la lección de deducción modal.
-
-Las reglas reales pueden formularse con `must`, `have to`, `be required to` o
-`be allowed to`, según el registro. En esta lección practicamos las formas B1
-más frecuentes y mantenemos el contexto explícito para que la respuesta sea
-inequívoca.
-
-En inglés americano, `have to` es muy frecuente incluso cuando el hablante
-impone la obligación. Por eso no tratamos `must` y `have to` como opuestos
-absolutos: el contexto y el significado negativo son más importantes.
+- En inglés británico formal puede aparecer `needn't` con el significado de `don't need to`: `You needn't reply today`.
+- El dataset acepta esta forma cuando la actividad la presenta expresamente, pero prioriza `don't need to` en B1.
+- `Must` también sirve para deducciones: `She must be at home`.
+- Ese uso no expresa obligación y se estudia en la lección de deducción modal.
+- Las reglas reales pueden formularse con `must`, `have to`, `be required to` o `be allowed to`, según el registro.
+- En esta lección practicamos las formas B1 más frecuentes y mantenemos el contexto explícito para que la respuesta sea inequívoca.
+- En inglés americano, `have to` es muy frecuente incluso cuando el hablante impone la obligación.
+- Por eso no tratamos `must` y `have to` como opuestos absolutos: el contexto y el significado negativo son más importantes.
 
 # Mini resumen
 

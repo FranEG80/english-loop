@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,19 +43,6 @@ introduce el momento en que comenzó. La pregunta habitual es `How long ...?`.
 - Clasificar complementos como periodos o puntos de inicio.
 - Mantener present perfect cuando la situación sigue vigente.
 - Cambiar a past simple cuando el periodo ya terminó.
-
-# Explicación
-
-`We've lived here for six years` mide un periodo: seis años. `We've lived here
-since 2020` nombra el inicio. En ambos casos seguimos viviendo aquí.
-
-`Since` puede introducir una fecha, una hora, un acontecimiento o una oración en
-past simple: `I've known Jo since we started university`. La situación principal
-continúa; el acontecimiento que marca su inicio está terminado.
-
-`For` también aparece con past simple si la situación terminó: `We lived there
-for six years, then we moved`. No es la preposición la que decide el tiempo, sino
-si el periodo continúa.
 
 # Forma o estructura
 
@@ -76,18 +63,26 @@ Puntos iniciales: `Monday`, `2019`, `lunchtime`, `I was a child`.
 5. **Estado negativo:** `We haven't used the meeting room for weeks.`
 6. **Tiempo transcurrido:** `It's been three months since I last drove.`
 
+# Explicación
+
+`We've lived here for six years` mide un periodo: seis años. `We've lived here
+since 2020` nombra el inicio. En ambos casos seguimos viviendo aquí.
+
+`Since` puede introducir una fecha, una hora, un acontecimiento o una oración en
+past simple: `I've known Jo since we started university`. La situación principal
+continúa; el acontecimiento que marca su inicio está terminado.
+
+`For` también aparece con past simple si la situación terminó: `We lived there
+for six years, then we moved`. No es la preposición la que decide el tiempo, sino
+si el periodo continúa.
+
 # Contrastes importantes
 
-Los verbos de estado como `know`, `own`, `belong` y `have` usan normalmente
-present perfect simple: `I've known her for years`, no `I've been knowing`.
-
-Con actividades dinámicas, el nivel B2 introduce present perfect continuous:
-`I've been working here for six years`. En B1, el simple sigue siendo correcto
-para presentar la duración como hecho, especialmente con `live`, `work`, `study`
-y `teach`.
-
-`During` sitúa algo dentro de un periodo; no expresa por sí solo cuánto dura una
-situación: `I met her during the course`, pero `I've known her since the course`.
+- Los verbos de estado como `know`, `own`, `belong` y `have` usan normalmente present perfect simple: `I've known her for years`, no `I've been knowing`.
+- Con actividades dinámicas, el nivel B2 introduce present perfect continuous: `I've been working here for six years`.
+- En B1, el simple sigue siendo correcto para presentar la duración como hecho, especialmente con `live`, `work`, `study` y `teach`.
+- `During` sitúa algo dentro de un periodo
+- no expresa por sí solo cuánto dura una situación: `I met her during the course`, pero `I've known her since the course`.
 
 # Ejemplos
 
@@ -118,12 +113,9 @@ situación: `I met her during the course`, pero `I've known her since the course
 
 # Excepciones relevantes
 
-`For` puede omitirse en expresiones de duración informales: `We've been here
-three hours`. El dataset acepta esta omisión solo cuando la actividad evalúa la
-estructura completa y la respuesta sigue siendo inequívoca.
-
-`Since` también puede significar `porque`, pero ese uso no expresa duración:
-`Since everyone is ready, we can begin`.
+- `For` puede omitirse en expresiones de duración informales: `We've been here three hours`.
+- El dataset acepta esta omisión solo cuando la actividad evalúa la estructura completa y la respuesta sigue siendo inequívoca.
+- `Since` también puede significar `porque`, pero ese uso no expresa duración: `Since everyone is ready, we can begin`.
 
 # Mini resumen
 

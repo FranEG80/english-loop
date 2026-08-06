@@ -28,8 +28,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Las relaciones personales exigen matices: podemos *look up to*, *look down on*, *put up with* o *make up for* algo. Aprenderás a interpretar la actitud y la consecuencia.
@@ -39,23 +40,32 @@ Las relaciones personales exigen matices: podemos *look up to*, *look down on*, 
 - Usar phrasal verbs de admiración, desprecio, tolerancia, recuperación y compensación.
 - Interpretar actitud y relación interpersonal mediante contexto.
 
-# Explicación
+# Verbo, partícula y objeto
 
-Relaciona el phrasal verb con la emoción o la respuesta social. *Look up to* expresa admiración; *look down on* desprecio. *Put up with* indica tolerar algo molesto; *get over* ayuda a superar una experiencia. El contexto determina si la actitud es positiva, negativa o resignada.
+- Admiración: *look up to someone*.
+- Desprecio: *look down on someone*.
+- Tolerancia: *put up with noise*.
+- Recuperación: *get over a disappointment*.
+- Compensación: *make up for lost time*.
+- Reconciliación: *make up with a friend*.
 
-# Forma o estructura
-
-Admiración: *look up to someone*. Desprecio: *look down on someone*. Tolerancia: *put up with noise*. Recuperación: *get over a disappointment*. Compensación: *make up for lost time*. Reconciliación: *make up with a friend*.
-
-# Usos principales
+# Contextos de uso
 
 - Describir conflictos y reconciliaciones.
 - Expresar opiniones sobre personas y comportamientos.
 - Comprender reseñas, conversaciones y testimonios con tono implícito.
 
-# Contrastes importantes
+# Explicación
 
-*Make up for* compensa una carencia; *make up with* reconcilia a dos personas. *Take after* se refiere al parecido familiar; *take to* expresa empezar a gustar. *Fall out with* implica conflicto, no simplemente una caída.
+Relaciona el phrasal verb con la emoción o la respuesta social. *Look up to* expresa admiración; *look down on* desprecio. *Put up with* indica tolerar algo molesto; *get over* ayuda a superar una experiencia. El contexto determina si la actitud es positiva, negativa o resignada.
+
+Las unidades de tres partes permanecen juntas: *look up to her*, *look down on them*, *put up with it*. *Make up for* introduce aquello que se compensa, mientras que *make up with* introduce a la persona con quien se restablece la relación. La preposición final determina el papel del complemento.
+
+# Phrasal verbs que se confunden
+
+- *Make up for* compensa una carencia; *make up with* reconcilia a dos personas.
+- *Take after* se refiere al parecido familiar; *take to* expresa empezar a gustar.
+- *Fall out with* implica conflicto, no simplemente una caída.
 
 # Ejemplos
 
@@ -66,21 +76,22 @@ Admiración: *look up to someone*. Desprecio: *look down on someone*. Tolerancia
 
 # Errores frecuentes
 
-❌ Confundir *look up to* con buscar información.
-✅ Con una persona, significa admirar.
-❌ Usar *get on* cuando quieres decir reconciliarte.
-✅ *Make up with someone* expresa reconciliación.
+- ❌ Confundir *look up to* con buscar información.
+- ✅ Con una persona, significa admirar.
+- ❌ Usar *get on* cuando quieres decir reconciliarte.
+- ✅ *Make up with someone* expresa reconciliación.
 
-# Excepciones relevantes
+# Cambios de significado y registro
 
-*Put up with* es informal y muy frecuente; en un informe formal puede preferirse *tolerate*. Aun así, reconocerlo es esencial para comprender conversaciones. Las partículas pueden separarse en algunos verbos, pero no todos permiten la misma posición del pronombre.
+- *Put up with* es informal y muy frecuente; en un informe formal puede preferirse *tolerate*.
+- Aun así, reconocerlo es esencial para comprender conversaciones.
+- Las partículas pueden separarse en algunos verbos, pero no todos permiten la misma posición del pronombre.
 
-# Mini resumen
+# Para recordar
 
 Identifica la emoción, la persona afectada y el resultado; elige el phrasal verb que conserva esos tres elementos.
 
-# Comprobación rápida autocorregible
+# Comprueba el phrasal verb
 
 1. ¿Qué expresa *look down on colleagues*? → `despreciarlos o considerarlos inferiores`.
 2. Completa: *They made ___ after the disagreement.* → `up`.
-

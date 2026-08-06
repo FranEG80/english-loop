@@ -20,7 +20,7 @@ describe("dataset validation pipeline", () => {
     expect(issues.some((issue) => issue.location === reference?.relativePath)).toBe(false);
   });
 
-  it("requires structured cases in form and contrast sections", async () => {
+  it("requires structured cases in category-specific form and contrast sections", async () => {
     const dataset = await loadDataset();
     const target = dataset.lessons.find(
       (lesson) => lesson.frontmatter.id === "b1-collocations-daily-life",
@@ -35,8 +35,8 @@ describe("dataset validation pipeline", () => {
           ? {
               ...lesson,
               content: lesson.content.replace(
-                /# Forma o estructura\n[\s\S]*?(?=\n# Usos principales)/u,
-                "# Forma o estructura\n\nPrimera forma. Segunda forma.\n",
+                /# Patrones y combinaciones\n[\s\S]*?(?=\n# Contextos de uso)/u,
+                "# Patrones y combinaciones\n\nPrimera combinación. Segunda combinación.\n",
               ),
             }
           : lesson,
@@ -46,6 +46,64 @@ describe("dataset validation pipeline", () => {
     expect(issues).toEqual(
       expect.arrayContaining([
         expect.objectContaining({ code: "lesson-structure", location: target.relativePath }),
+      ]),
+    );
+  });
+
+  it("allows optional recap sections to vary by lesson", async () => {
+    const dataset = await loadDataset();
+    const target = dataset.lessons.find(
+      (lesson) => lesson.frontmatter.id === "b1-collocations-daily-life",
+    );
+    expect(target).toBeDefined();
+    if (!target) return;
+
+    const issues = await validateDataset({
+      ...dataset,
+      lessons: dataset.lessons.map((lesson) =>
+        lesson === target
+          ? {
+              ...lesson,
+              content: lesson.content.replace(
+                /\n# Regla práctica\n[\s\S]*?(?=\n# Comprueba la colocación)/u,
+                "",
+              ),
+            }
+          : lesson,
+      ),
+    });
+
+    expect(issues.some((issue) => issue.location === target.relativePath)).toBe(false);
+  });
+
+  it("rejects the repeated legacy template and explanations placed before uses", async () => {
+    const dataset = await loadDataset();
+    const target = dataset.lessons.find(
+      (lesson) => lesson.frontmatter.id === "b1-reading-gist-detail",
+    );
+    expect(target).toBeDefined();
+    if (!target) return;
+
+    const explanation = target.content.match(
+      /# Explicación\n[\s\S]*?(?=\n# Distractores y matices)/u,
+    )?.[0];
+    expect(explanation).toBeDefined();
+    if (!explanation) return;
+
+    const brokenContent = target.content
+      .replace(`${explanation}\n\n`, "")
+      .replace("# Pistas que debes localizar", `${explanation}\n\n## Procedimiento paso a paso\n\nTexto genérico.\n\n# Pistas que debes localizar`);
+    const issues = await validateDataset({
+      ...dataset,
+      lessons: dataset.lessons.map((lesson) =>
+        lesson === target ? { ...lesson, content: brokenContent } : lesson,
+      ),
+    });
+
+    expect(issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ code: "lesson-order", location: target.relativePath }),
+        expect.objectContaining({ code: "lesson-template", location: target.relativePath }),
       ]),
     );
   });

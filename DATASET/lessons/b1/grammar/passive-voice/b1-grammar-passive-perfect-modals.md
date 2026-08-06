@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -63,42 +63,6 @@ diferencia evita dos errores muy frecuentes: `has be sent` y `must been sent`.
 - Usar `may/might be + participio` para posibilidades.
 - Transformar activas sin cambiar el significado ni el tiempo.
 - Distinguir `modal + be` de `have/has been`.
-
-# Explicación
-
-## Present perfect passive
-
-Activa:
-
-`The team has repaired the lift.`
-
-Pasiva:
-
-`The lift has been repaired.`
-
-El objeto activo `the lift` pasa a ser sujeto. El auxiliar `has` se mantiene,
-se añade `been` y el verbo principal pasa al participio `repaired`.
-
-Con sujeto plural:
-
-`The team has repaired both lifts.`  
-`Both lifts have been repaired.`
-
-La concordancia se ajusta al nuevo sujeto: `both lifts have`.
-
-## Pasiva con modales
-
-Activa:
-
-`Visitors can download the map.`  
-Pasiva: `The map can be downloaded.`
-
-Activa:
-
-`Staff must lock the gate at dusk.`  
-Pasiva: `The gate must be locked at dusk.`
-
-El modal no cambia. Después usamos la forma base `be` y el participio.
 
 # Forma o estructura
 
@@ -140,6 +104,42 @@ Los adverbios habituales mantienen una posición natural:
 8. **Prohibición:** `Original documents mustn't be removed.`
 9. **Recomendación:** `The batteries should be replaced together.`
 10. **Posibilidad incierta:** `The outdoor event may be cancelled.`
+
+# Explicación
+
+## Present perfect passive
+
+Activa:
+
+`The team has repaired the lift.`
+
+Pasiva:
+
+`The lift has been repaired.`
+
+El objeto activo `the lift` pasa a ser sujeto. El auxiliar `has` se mantiene,
+se añade `been` y el verbo principal pasa al participio `repaired`.
+
+Con sujeto plural:
+
+`The team has repaired both lifts.`  
+`Both lifts have been repaired.`
+
+La concordancia se ajusta al nuevo sujeto: `both lifts have`.
+
+## Pasiva con modales
+
+Activa:
+
+`Visitors can download the map.`  
+Pasiva: `The map can be downloaded.`
+
+Activa:
+
+`Staff must lock the gate at dusk.`  
+Pasiva: `The gate must be locked at dusk.`
+
+El modal no cambia. Después usamos la forma base `be` y el participio.
 
 # Contrastes importantes
 
@@ -196,26 +196,6 @@ Imprimirlo no es necesario.
 La diferencia entre prohibición y ausencia de necesidad se conserva dentro de
 la pasiva.
 
-# Participios frecuentes
-
-- `approve → approved`
-- `break → broken`
-- `choose → chosen`
-- `complete → completed`
-- `find → found`
-- `give → given`
-- `hold → held`
-- `make → made`
-- `pay → paid`
-- `publish → published`
-- `replace → replaced`
-- `send → sent`
-- `take → taken`
-- `write → written`
-
-La palabra `been` no sustituye al participio principal: `has been written`, no
-`has been write`.
-
 # Ejemplos
 
 1. **Your reservation has been confirmed.**
@@ -261,25 +241,14 @@ La palabra `been` no sustituye al participio principal: `has been written`, no
 
 # Excepciones relevantes
 
-`Should have been + participio` y otros patrones como `might have been sent`
-hablan de situaciones anteriores desde una perspectiva modal. Son estructuras
-de modal perfect que pertenecen al nivel B2 y no deben confundirse con la
-pasiva modal B1 `should be sent`.
-
-`Need to be + participio` y `have to be + participio` no contienen un modal
-puro, pero funcionan de forma similar:
-
-`The filter needs to be replaced.`  
-`All visitors have to be registered.`
-
-Se incluyen cuando el contexto deja una única respuesta clara.
-
-Algunas frases de present perfect passive describen un estado resultante:
-`The door has been locked`. Si necesitamos destacar quién actuó, podemos añadir
-`by`, pero normalmente el resultado es la información principal.
-
-La pasiva no elimina la necesidad de usar un verbo transitivo. No decimos `has
-been happened`; decimos `has happened`.
+- `Should have been + participio` y otros patrones como `might have been sent` hablan de situaciones anteriores desde una perspectiva modal.
+- Son estructuras de modal perfect que pertenecen al nivel B2 y no deben confundirse con la pasiva modal B1 `should be sent`.
+- `Need to be + participio` y `have to be + participio` no contienen un modal puro, pero funcionan de forma similar: `The filter needs to be replaced.` `All visitors have to be registered.`
+- Se incluyen cuando el contexto deja una única respuesta clara.
+- Algunas frases de present perfect passive describen un estado resultante: `The door has been locked`.
+- Si necesitamos destacar quién actuó, podemos añadir `by`, pero normalmente el resultado es la información principal.
+- La pasiva no elimina la necesidad de usar un verbo transitivo.
+- No decimos `has been happened`; decimos `has happened`.
 
 # Mini resumen
 

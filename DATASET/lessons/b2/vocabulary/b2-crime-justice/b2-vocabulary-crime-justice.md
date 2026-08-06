@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,13 +41,7 @@ Hablar de delitos y justicia exige distinguir entre lo que se sospecha, lo que s
 - Hablar de pruebas, testigos, veredictos, fianzas y apelaciones.
 - Explicar medidas de prevención y reinserción con un tono equilibrado.
 
-# Explicación
-
-Un **crime** es un delito; una persona que puede haberlo cometido es un **suspect**. La policía puede **investigate** un caso y reunir **evidence**. Si existen motivos suficientes, la fiscalía puede **charge** a alguien with an offence: eso es una acusación formal, no una condena. Un tribunal puede **acquit** a la persona si no la considera culpable o **convict** la persona si el veredicto es de culpabilidad.
-
-Los nombres también tienen funciones distintas. Una **allegation** es una afirmación que todavía no se ha demostrado; un **testimony** es lo que declara un testigo; un **verdict** es la decisión del jurado o del juez; una **sentence** es la pena impuesta después de una condena. Una persona puede **appeal against** una decisión, mientras que **bail** es la libertad provisional bajo ciertas condiciones.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - investigate a crime / gather evidence / interview a witness
 - be suspected of a crime / be charged with theft / be accused of fraud
@@ -56,7 +50,7 @@ Los nombres también tienen funciones distintas. Una **allegation** es una afirm
 - receive a sentence / serve a sentence / appeal against a conviction
 - impose a fine / grant bail / prevent reoffending
 
-# Usos principales
+# Situaciones de uso
 
 1. **Informar con cautela:** *The newspaper reported an allegation, not a proven fact.*
 2. **Describir un proceso:** *The suspect was charged after investigators reviewed the footage.*
@@ -64,7 +58,13 @@ Los nombres también tienen funciones distintas. Una **allegation** es una afirm
 4. **Hablar de penas:** *The judge imposed a fine because it was a first offence.*
 5. **Debatir prevención:** *Better lighting may deter crime in busy areas.*
 
-# Contrastes importantes
+# Explicación
+
+Un **crime** es un delito; una persona que puede haberlo cometido es un **suspect**. La policía puede **investigate** un caso y reunir **evidence**. Si existen motivos suficientes, la fiscalía puede **charge** a alguien with an offence: eso es una acusación formal, no una condena. Un tribunal puede **acquit** a la persona si no la considera culpable o **convict** la persona si el veredicto es de culpabilidad.
+
+Los nombres también tienen funciones distintas. Una **allegation** es una afirmación que todavía no se ha demostrado; un **testimony** es lo que declara un testigo; un **verdict** es la decisión del jurado o del juez; una **sentence** es la pena impuesta después de una condena. Una persona puede **appeal against** una decisión, mientras que **bail** es la libertad provisional bajo ciertas condiciones.
+
+# Palabras que se confunden
 
 ## Charge, accuse y convict
 
@@ -90,24 +90,31 @@ El *verdict* responde a si la persona es culpable o no culpable. La *sentence* i
 
 # Errores frecuentes
 
-- ❌ *The police charged him of robbery.* ✅ *The police charged him with robbery.*
-- ❌ *The judge gave a verdict of five years.* ✅ *The judge gave a sentence of five years.*
-- ❌ *The jury convicted him guilty.* ✅ *The jury convicted him of the offence.*
-- ❌ *The evidence were weak.* ✅ *The evidence was weak.*
-- ❌ *She was accused for fraud.* ✅ *She was accused of fraud.*
+- ❌ *The police charged him of robbery.*
+- ✅ *The police charged him with robbery.*
+- ❌ *The judge gave a verdict of five years.*
+- ✅ *The judge gave a sentence of five years.*
+- ❌ *The jury convicted him guilty.*
+- ✅ *The jury convicted him of the offence.*
+- ❌ *The evidence were weak.*
+- ✅ *The evidence was weak.*
+- ❌ *She was accused for fraud.*
+- ✅ *She was accused of fraud.*
 
-# Excepciones relevantes
+# Variación de uso
 
-En inglés jurídico, **the accused** puede funcionar como nombre para la persona acusada y no cambia de forma en plural en muchos contextos. **Crime** es incontable cuando hablamos del fenómeno en general (*Crime is falling*), pero puede ser contable cuando se habla de delitos concretos (*three crimes*). **Police** suele llevar verbo plural: *The police are investigating*.
+- En inglés jurídico, **the accused** puede funcionar como nombre para la persona acusada y no cambia de forma en plural en muchos contextos.
+- **Crime** es incontable cuando hablamos del fenómeno en general (*Crime is falling*), pero puede ser contable cuando se habla de delitos concretos (*three crimes*).
+- **Police** suele llevar verbo plural: *The police are investigating*.
 
-# Mini resumen
+# Para recordar
 
 - *Suspect* describe una posibilidad; *charge* es una acusación formal.
 - La evidencia puede llevar a un *verdict*; la pena posterior es la *sentence*.
 - *Acquit* y *convict* describen decisiones opuestas del tribunal.
 - Usa *with* tras *charge* y *of* tras *accuse* y *convict*.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The court declared that the defendant was not guilty. He was ___. (acquitted)
    - Respuesta: `acquitted`

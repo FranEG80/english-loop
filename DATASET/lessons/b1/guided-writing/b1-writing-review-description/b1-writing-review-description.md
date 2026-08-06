@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,31 +40,38 @@ Practicarás reseñas de películas, lugares, eventos y productos combinando inf
 - Evaluar aspectos concretos con adjetivos y modificadores.
 - Recomendarlo a una audiencia determinada.
 
-# Explicación
+# Estructura del texto
 
-Una reseña responde a tres preguntas: ¿qué se está reseñando?, ¿qué funciona o no funciona?, y ¿a quién se lo recomendarías? La valoración es más convincente cuando incluye un detalle que la demuestra.
+- **Presentación:** identifica la obra, el lugar, el evento o el producto.
+- **Descripción:** selecciona dos aspectos relevantes para el lector.
+- **Valoración:** explica qué funciona y qué limitación existe.
+- **Recomendación:** indica a quién podría interesarle y por qué.
+- **Recursos útiles:** *the best part was*, *although*, *especially* y *I would recommend it to*.
 
-# Forma o estructura
-
-Empieza identificando la obra o el lugar. Después describe dos aspectos, valora cada uno y termina con una recomendación. *The best part was*, *although*, *especially* y *I would recommend it to* son recursos útiles.
-
-# Usos principales
+# Funciones comunicativas
 
 - Reseñar un concierto, restaurante, libro o actividad.
 - Informar a lectores que deben decidir si asistir o comprar.
 - Comparar ventajas y limitaciones de una experiencia.
 
-# Contrastes importantes
+# Explicación
 
-*The cinema has three screens* es descripción; *The sound was excellent* es valoración. *It is suitable for families* conecta la opinión con una audiencia concreta.
+Una reseña responde a tres preguntas: ¿qué se está reseñando?, ¿qué funciona o no funciona?, y ¿a quién se lo recomendarías? La valoración es más convincente cuando incluye un detalle que la demuestra.
+
+Selecciona información que ayude a decidir. En una reseña de un restaurante, el número de ventanas puede ser irrelevante, mientras que el precio, el servicio y las opciones del menú sí afectan a la recomendación. Une cada adjetivo valorativo con una causa: *The service was efficient because our order arrived within minutes*.
+
+Una recomendación puede ser parcial. *I would recommend it to families, although teenagers may find it too quiet* delimita la audiencia y demuestra que la conclusión procede de los detalles anteriores.
+
+# Registro y decisiones de estilo
+
+- *The cinema has three screens* es descripción; *The sound was excellent* es valoración.
+- *It is suitable for families* conecta la opinión con una audiencia concreta.
 
 # Ejemplos
 
-**Descripción:** *The museum has a small science room and a café.*
-
-**Valoración:** *The interactive exhibits are particularly effective.*
-
-**Recomendación:** *I would recommend it to families who enjoy practical activities.*
+- **Descripción:** *The museum has a small science room and a café.*
+- **Valoración:** *The interactive exhibits are particularly effective.*
+- **Recomendación:** *I would recommend it to families who enjoy practical activities.*
 
 # Errores frecuentes
 
@@ -73,15 +80,16 @@ Empieza identificando la obra o el lugar. Después describe dos aspectos, valora
 - ❌ Decir *It was nice* sin explicar por qué.
 - ✅ Añadir un detalle: *The friendly staff made the visit relaxing*.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-Una reseña equilibrada puede recomendar algo aunque tenga un defecto. Usa *although* o *despite* para mostrar que la decisión considera ambos lados.
+- Una reseña equilibrada puede recomendar algo aunque tenga un defecto.
+- Usa *although* o *despite* para mostrar que la decisión considera ambos lados.
 
-# Mini resumen
+# Lista de revisión
 
 Describe, evalúa con pruebas y recomienda para una audiencia concreta.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. **Which phrase gives a recommendation?** — `I would recommend it to families`.
 2. **Which connector introduces a limitation?** — `Although`.

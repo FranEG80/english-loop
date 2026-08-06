@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -47,16 +47,6 @@ noticias, el presente puede mantenerse.
 - Distinguir un hecho anterior con past perfect de una acción simultánea.
 - Mantener o cambiar expresiones como `today`, `tomorrow`, `here` y `this`.
 - Elegir entre backshift obligatorio, natural u opcional según el significado.
-
-# Explicación
-
-Con `said`, `told` o `explained` en pasado, normalmente retrocedemos un tiempo:
-`“The archive is closed,” the guard said` → `The guard said that the archive was
-closed`. El cambio muestra que la afirmación se contempla desde un punto pasado.
-
-El presente simple suele pasar a past simple y el presente continuo a past
-continuous. Un past simple anterior pasa a past perfect: `“We finished the
-survey,” they said` → `They said that they had finished the survey`.
 
 # Forma o estructura
 
@@ -83,6 +73,16 @@ us that the train was delayed`, no *She told that...*.
    100°C.`
 5. **Reproducir noticias desde una perspectiva pasada:** `The report stated
    that exports had fallen.`
+
+# Explicación
+
+Con `said`, `told` o `explained` en pasado, normalmente retrocedemos un tiempo:
+`“The archive is closed,” the guard said` → `The guard said that the archive was
+closed`. El cambio muestra que la afirmación se contempla desde un punto pasado.
+
+El presente simple suele pasar a past simple y el presente continuo a past
+continuous. Un past simple anterior pasa a past perfect: `“We finished the
+survey,” they said` → `They said that they had finished the survey`.
 
 # Contrastes importantes
 
@@ -139,15 +139,11 @@ momento. El significado y el punto de referencia deciden la elección.
 
 # Excepciones relevantes
 
-No hace falta backshift si el hecho sigue siendo verdadero y el hablante quiere
-presentarlo como tal: `The teacher said that the Earth moves around the Sun`.
-Las rutinas, leyes naturales y hechos permanentes suelen mantener el presente.
-
-Los modales no retroceden todos igual: `should`, `could`, `might` y `ought to`
-normalmente se mantienen. `Must` puede expresar obligación actual o cambiar a
-`had to` si la obligación terminó. Las expresiones de tiempo dependen del punto
-de vista: `today` puede pasar a `that day`, pero puede mantenerse si todavía es
-el mismo día.
+- No hace falta backshift si el hecho sigue siendo verdadero y el hablante quiere presentarlo como tal: `The teacher said that the Earth moves around the Sun`.
+- Las rutinas, leyes naturales y hechos permanentes suelen mantener el presente.
+- Los modales no retroceden todos igual: `should`, `could`, `might` y `ought to` normalmente se mantienen.
+- `Must` puede expresar obligación actual o cambiar a `had to` si la obligación terminó.
+- Las expresiones de tiempo dependen del punto de vista: `today` puede pasar a `that day`, pero puede mantenerse si todavía es el mismo día.
 
 # Mini resumen
 

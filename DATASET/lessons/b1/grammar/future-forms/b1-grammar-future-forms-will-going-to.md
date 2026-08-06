@@ -31,7 +31,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,20 +46,6 @@ y predicciones basadas en una señal que podemos observar ahora.
 - Reconocer qué información del contexto justifica cada forma.
 - Evitar mezclar el auxiliar `will` con la estructura `be going to`.
 - Formular respuestas naturales sin depender únicamente de palabras clave.
-
-# Explicación
-
-La diferencia principal no es la distancia temporal. Una acción de mañana puede
-expresarse con cualquiera de las dos formas; cambia la perspectiva.
-
-Cuando una persona dice `I think`, `probably` o expresa una creencia personal,
-la predicción suele construirse con `will`. Si la situación presente ofrece una
-prueba visible —unas nubes negras, un vaso al borde de la mesa o un coche sin
-combustible—, `be going to` conecta esa evidencia con la consecuencia esperada.
-
-Para las decisiones ocurre algo parecido. `I'll answer the phone` comunica una
-decisión tomada en ese momento. `I'm going to phone Marta after lunch` presenta
-una intención que el hablante ya tenía.
 
 # Forma o estructura
 
@@ -79,16 +65,28 @@ El verbo posterior siempre aparece en infinitivo sin `to`: `will arrive` y
 4. **Intención previa:** `I'm going to save for a new laptop.`
 5. **Predicción con evidencia:** `The road is icy. Someone is going to fall.`
 
+# Explicación
+
+La diferencia principal no es la distancia temporal. Una acción de mañana puede
+expresarse con cualquiera de las dos formas; cambia la perspectiva.
+
+Cuando una persona dice `I think`, `probably` o expresa una creencia personal,
+la predicción suele construirse con `will`. Si la situación presente ofrece una
+prueba visible —unas nubes negras, un vaso al borde de la mesa o un coche sin
+combustible—, `be going to` conecta esa evidencia con la consecuencia esperada.
+
+Para las decisiones ocurre algo parecido. `I'll answer the phone` comunica una
+decisión tomada en ese momento. `I'm going to phone Marta after lunch` presenta
+una intención que el hablante ya tenía.
+
 # Contrastes importantes
 
-`Look at those clouds! It's going to rain` se apoya en algo observable. `I
-expect it will rain next weekend` expresa una expectativa. En conversaciones
-reales puede haber zonas de solapamiento, pero un contexto claro ayuda a
-identificar la perspectiva correcta.
-
-Una cita ya acordada suele expresarse con presente continuo, no con `going to`.
-Compara `I'm going to speak to the manager` (intención) con `I'm speaking to the
-manager at three` (cita fijada).
+- `Look at those clouds!
+- It's going to rain` se apoya en algo observable.
+- `I expect it will rain next weekend` expresa una expectativa.
+- En conversaciones reales puede haber zonas de solapamiento, pero un contexto claro ayuda a identificar la perspectiva correcta.
+- Una cita ya acordada suele expresarse con presente continuo, no con `going to`.
+- Compara `I'm going to speak to the manager` (intención) con `I'm speaking to the manager at three` (cita fijada).
 
 # Ejemplos
 
@@ -123,10 +121,8 @@ manager at three` (cita fijada).
 
 # Excepciones relevantes
 
-`Will` también expresa voluntad, rechazo y hábitos característicos: `The car
-won't start` no es necesariamente una predicción. `Be going to` puede aparecer
-con `go` y `come` (`We're going to go early`), aunque en conversación es habitual
-preferir el presente continuo: `We're going early`.
+- `Will` también expresa voluntad, rechazo y hábitos característicos: `The car won't start` no es necesariamente una predicción.
+- `Be going to` puede aparecer con `go` y `come` (`We're going to go early`), aunque en conversación es habitual preferir el presente continuo: `We're going early`.
 
 # Mini resumen
 

@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,14 +43,6 @@ Las comparaciones B2 permiten expresar proporción, semejanza, hipótesis y dife
 - Usar as...as, not so...as y formas intensificadas como nowhere near as.
 - Distinguir like + nombre de as + cláusula o función.
 - Elegir as if y as though según una apariencia real o hipotética.
-
-# Explicación
-
-En The more carefully we plan, the fewer delays we have, la primera parte expresa una variable y la segunda muestra el cambio relacionado. Ambas partes llevan comparativo y artículo the; no se trata de un superlativo.
-
-Para igualdad usamos as + adjetivo o adverbio + as: The second route is as reliable as the first. Para desigualdad usamos not as/so...as: The second route is not as reliable as the first. Nowhere near as y almost as permiten graduar la diferencia.
-
-Like funciona normalmente como preposición ante un nombre o pronombre: She sings like her mother. As introduce una cláusula o una función: As the project coordinator, he approves the timetable; As I expected, the train was late. As if y as though introducen una apariencia: He talks as if he knew the answer.
 
 # Forma o estructura
 
@@ -71,6 +63,14 @@ Like funciona normalmente como preposición ante un nombre o pronombre: She sing
 4. **Semejanza:** The new sculpture looks like a folded sail.
 5. **Función o papel:** As the duty manager, Priya handles late arrivals.
 6. **Apariencia:** The child looks as if she has heard surprising news.
+
+# Explicación
+
+En The more carefully we plan, the fewer delays we have, la primera parte expresa una variable y la segunda muestra el cambio relacionado. Ambas partes llevan comparativo y artículo the; no se trata de un superlativo.
+
+Para igualdad usamos as + adjetivo o adverbio + as: The second route is as reliable as the first. Para desigualdad usamos not as/so...as: The second route is not as reliable as the first. Nowhere near as y almost as permiten graduar la diferencia.
+
+Like funciona normalmente como preposición ante un nombre o pronombre: She sings like her mother. As introduce una cláusula o una función: As the project coordinator, he approves the timetable; As I expected, the train was late. As if y as though introducen una apariencia: He talks as if he knew the answer.
 
 # Contrastes importantes
 
@@ -112,9 +112,12 @@ Fewer acompaña nombres contables plurales: fewer complaints, fewer meetings. Le
 
 # Excepciones relevantes
 
-En contextos informales, like puede aparecer delante de una cláusula, especialmente en conversación. En un texto académico o profesional, as o as if suele hacer más clara la relación. Algunas expresiones lexicalizadas, como as well as y as soon as, no son comparaciones libres y deben aprenderse como unidades.
-
-En as if y as though, el indicativo y el pasado pueden alternar según la perspectiva del hablante. El pasado puede expresar distancia, no necesariamente anterioridad. La forma debe elegirse junto con el significado que se quiere transmitir.
+- En contextos informales, like puede aparecer delante de una cláusula, especialmente en conversación.
+- En un texto académico o profesional, as o as if suele hacer más clara la relación.
+- Algunas expresiones lexicalizadas, como as well as y as soon as, no son comparaciones libres y deben aprenderse como unidades.
+- En as if y as though, el indicativo y el pasado pueden alternar según la perspectiva del hablante.
+- El pasado puede expresar distancia, no necesariamente anterioridad.
+- La forma debe elegirse junto con el significado que se quiere transmitir.
 
 # Mini resumen
 

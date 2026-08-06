@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -49,28 +49,6 @@ pasivo para planes, obligaciones y expectativas.
 - Usar pasivas perfectas y continuas con la cronología adecuada.
 - Construir infinitivos pasivos simples y perfectos.
 - Elegir entre `being`, `been` y el participio principal sin confundir sus funciones.
-
-# Explicación
-
-## Pasiva continua
-
-`Am/is/are/was/were being + past participle` presenta una acción que estaba en
-curso en un momento concreto: `The road is being resurfaced this week.` En
-pasado: `The road was being resurfaced when the accident happened.`
-
-## Pasiva perfecta
-
-`Has/have/had been + past participle` enfoca un resultado anterior a otro
-momento: `The documents have been signed.` `By the time the auditor arrived, the
-files had been archived.` Con modales usamos `modal + have been + participle`:
-`The payment may have been delayed.`
-
-## Infinitivos pasivos
-
-`To be + past participle` aparece después de verbos y adjetivos que presentan
-planes, necesidad o expectativa: `The equipment needs to be replaced.`
-`To have been + past participle` sitúa la acción antes de otra: `The files seem
-to have been deleted.`
 
 # Forma o estructura
 
@@ -94,6 +72,28 @@ El verbo principal debe estar en participio: `being repaired`, `been repaired`,
 5. **Necesidad o plan:** `The wiring needs to be replaced.`
 6. **Expectativa:** `The package is expected to be delivered today.`
 7. **Acción anterior inferida:** `The files seem to have been moved.`
+
+# Explicación
+
+## Pasiva continua
+
+`Am/is/are/was/were being + past participle` presenta una acción que estaba en
+curso en un momento concreto: `The road is being resurfaced this week.` En
+pasado: `The road was being resurfaced when the accident happened.`
+
+## Pasiva perfecta
+
+`Has/have/had been + past participle` enfoca un resultado anterior a otro
+momento: `The documents have been signed.` `By the time the auditor arrived, the
+files had been archived.` Con modales usamos `modal + have been + participle`:
+`The payment may have been delayed.`
+
+## Infinitivos pasivos
+
+`To be + past participle` aparece después de verbos y adjetivos que presentan
+planes, necesidad o expectativa: `The equipment needs to be replaced.`
+`To have been + past participle` sitúa la acción antes de otra: `The files seem
+to have been deleted.`
 
 # Contrastes importantes
 
@@ -151,14 +151,9 @@ almacenamiento como anterior a otro punto de referencia.
 
 # Excepciones relevantes
 
-Algunos verbos no suelen pasivizarse porque no tienen objeto directo natural,
-como `arrive`, `sleep` o `happen`. Tampoco todas las pasivas necesitan mencionar
-el agente: `The decision was announced` es completa si el foco está en el
-resultado.
-
-`Get + past participle` puede funcionar como pasiva informal para cambios o
-eventos, como en `The window got broken`, pero no sustituye siempre a la pasiva
-con `be`, especialmente en registro formal.
+- Algunos verbos no suelen pasivizarse porque no tienen objeto directo natural, como `arrive`, `sleep` o `happen`.
+- Tampoco todas las pasivas necesitan mencionar el agente: `The decision was announced` es completa si el foco está en el resultado.
+- `Get + past participle` puede funcionar como pasiva informal para cambios o eventos, como en `The window got broken`, pero no sustituye siempre a la pasiva con `be`, especialmente en registro formal.
 
 # Mini resumen
 

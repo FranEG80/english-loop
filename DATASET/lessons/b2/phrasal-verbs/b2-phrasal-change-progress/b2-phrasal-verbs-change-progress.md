@@ -28,8 +28,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Los procesos de cambio se describen con verbos como *bring about*, *carry out*, *cut down on* y *move on*. Aprenderás su significado, partículas y registro.
@@ -39,23 +40,31 @@ Los procesos de cambio se describen con verbos como *bring about*, *carry out*, 
 - Usar phrasal verbs para causar, ejecutar, reducir, avanzar y terminar procesos.
 - Distinguir combinaciones adecuadas a contextos formales y neutrales.
 
-# Explicación
+# Verbo, partícula y objeto
 
-No traduzcas la partícula por separado: identifica el resultado del verbo completo. *Bring about* causa un cambio, *carry out* ejecuta un plan o investigación y *cut down on* reduce el consumo. Comprueba si el verbo es separable, qué objeto admite y si el contexto es formal.
+- Causa: *bring about a change*.
+- Ejecución: *carry out a survey*.
+- Reducción: *cut down on waste*.
+- Progreso: *move on to the next stage*, *build up experience*.
+- Final: *wind down a project*, *phase out a system*.
 
-# Forma o estructura
-
-Causa: *bring about a change*. Ejecución: *carry out a survey*. Reducción: *cut down on waste*. Progreso: *move on to the next stage*, *build up experience*. Final: *wind down a project*, *phase out a system*.
-
-# Usos principales
+# Contextos de uso
 
 - Describir proyectos y reformas.
 - Explicar cómo una organización avanza o reduce un problema.
 - Redactar informes con verbos más precisos que *do* o *make*.
 
-# Contrastes importantes
+# Explicación
 
-*Carry out* significa ejecutar; *work out* puede significar resolver o calcular. *Cut down on* reduce una cantidad; *cut down* un árbol. *Move on* indica avanzar, no simplemente moverse de lugar.
+No traduzcas la partícula por separado: identifica el resultado del verbo completo. *Bring about* causa un cambio, *carry out* ejecuta un plan o investigación y *cut down on* reduce el consumo. Comprueba si el verbo es separable, qué objeto admite y si el contexto es formal.
+
+La posición del pronombre depende del patrón. *Carry out*, *phase out* y *bring about* son separables (*carry it out*, *phase it out*, *bring it about*); con un nombre también son naturales *carry out a survey* y *bring about a change*. *Cut down on* y *move on to* son unidades de tres partes y el complemento aparece al final (*cut down on it*, *move on to the next stage*).
+
+# Phrasal verbs que se confunden
+
+- *Carry out* significa ejecutar; *work out* puede significar resolver o calcular.
+- *Cut down on* reduce una cantidad; *cut down* un árbol.
+- *Move on* indica avanzar, no simplemente moverse de lugar.
 
 # Ejemplos
 
@@ -66,21 +75,21 @@ Causa: *bring about a change*. Ejecución: *carry out a survey*. Reducción: *cu
 
 # Errores frecuentes
 
-❌ Usar *make about* para expresar causar un cambio.
-✅ Aprender la unidad *bring about*.
-❌ Confundir *phase out* con *phase in*.
-✅ *Phase out* elimina gradualmente; *phase in* introduce gradualmente.
+- ❌ Usar *make about* para expresar causar un cambio.
+- ✅ Aprender la unidad *bring about*.
+- ❌ Confundir *phase out* con *phase in*.
+- ✅ *Phase out* elimina gradualmente; *phase in* introduce gradualmente.
 
-# Excepciones relevantes
+# Cambios de significado y registro
 
-Algunos phrasal verbs admiten una alternativa de una sola palabra más formal, como *carry out* y *conduct*. En un examen de uso de inglés, la colocación exacta sigue siendo importante aunque ambas opciones sean posibles en la vida real.
+- Algunos phrasal verbs admiten una alternativa de una sola palabra más formal, como *carry out* y *conduct*.
+- En un examen de uso de inglés, la colocación exacta sigue siendo importante aunque ambas opciones sean posibles en la vida real.
 
-# Mini resumen
+# Para recordar
 
 Identifica el resultado del proceso, elige el phrasal verb y revisa objeto, partícula y registro.
 
-# Comprobación rápida autocorregible
+# Comprueba el phrasal verb
 
 1. Completa: *The study was ___ out in two hospitals.* → `carried`.
 2. ¿Qué reduce el consumo: *cut down* o *cut down on*? → `cut down on`.
-

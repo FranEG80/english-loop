@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,11 +41,7 @@ Las familias léxicas permiten expresar una misma idea con categorías y matices
 - Aplicar sufijos frecuentes y prefijos negativos.
 - Revisar ortografía, número y registro de la forma final.
 
-# Explicación
-
-Los sufijos cambian la categoría: *-ness*, *-tion* y *-ity* suelen formar nombres; *-able*, *-al* y *-ive* adjetivos; *-ly* adverbios; *-ise* verbos. Los prefijos *un-*, *in-*, *im-*, *ir-* y *dis-* pueden expresar negación, pero no se eligen libremente.
-
-# Forma o estructura
+# Familias y afijos
 
 - **decide → decision → decisive → decisively**
 - **rely → reliable → reliability**
@@ -53,16 +49,27 @@ Los sufijos cambian la categoría: *-ness*, *-tion* y *-ity* suelen formar nombr
 - **economy → economic → economically**
 - **legal → illegal; regular → irregular**
 
-# Usos principales
+# Cambios de categoría
 
 1. Completar un texto formal con la categoría correcta.
 2. Expresar una cualidad o proceso abstracto.
 3. Crear una negación precisa.
 4. Mantener el registro de un artículo, informe o ensayo.
 
-# Contrastes importantes
+# Explicación
 
-**Economic / economical:** relacionado con economía frente a que ahorra dinero o recursos. **Sensitive / sensible:** que percibe fácilmente frente a razonable. **Industrial / industrious:** relacionado con la industria frente a trabajador. **Success / successful / successfully:** nombre, adjetivo y adverbio.
+Los sufijos cambian la categoría: *-ness*, *-tion* y *-ity* suelen formar nombres; *-able*, *-al* y *-ive* adjetivos; *-ly* adverbios; *-ise* verbos. Los prefijos *un-*, *in-*, *im-*, *ir-* y *dis-* pueden expresar negación, pero no se eligen libremente.
+
+Empieza por la sintaxis, no por el afijo. Un determinante seguido de un hueco puede pedir un nombre; un hueco entre un auxiliar y un complemento puede pedir un participio; un modificador de un adjetivo puede ser un adverbio. Después comprueba si la frase exige negación, plural o un matiz evaluativo.
+
+La ortografía forma parte de la respuesta: *rely → reliable* pierde la *y*, *responsible → responsibility* cambia la terminación y *permit → permission* transforma la raíz. Aprende familias completas y registra las irregularidades junto a un ejemplo.
+
+# Formas que se confunden
+
+- **Economic / economical:** relacionado con economía frente a que ahorra dinero o recursos.
+- **Sensitive / sensible:** que percibe fácilmente frente a razonable.
+- **Industrial / industrious:** relacionado con la industria frente a trabajador.
+- **Success / successful / successfully:** nombre, adjetivo y adverbio.
 
 # Ejemplos
 
@@ -74,22 +81,28 @@ Los sufijos cambian la categoría: *-ness*, *-tion* y *-ity* suelen formar nombr
 
 # Errores frecuentes
 
-- ❌ *The result was success.* ✅ *The result was successful.*
-- ❌ *He answered very quick.* ✅ *He answered very quickly.*
-- ❌ *Unpossible* ✅ *Impossible*.
-- ❌ *Responsability* ✅ *Responsibility*.
+- ❌ *The result was success.*
+- ✅ *The result was successful.*
+- ❌ *He answered very quick.*
+- ✅ *He answered very quickly.*
+- ❌ *Unpossible*
+- ✅ *Impossible*.
+- ❌ *Responsability*
+- ✅ *Responsibility*.
 
-# Excepciones relevantes
+# Restricciones y variaciones
 
-No todos los sufijos son productivos con todas las raíces. Algunas formas cambian la vocal (*strong → strength*), duplican consonantes o tienen una forma irregular (*wide → width*). Cuando la palabra formada no existe, no se debe inventar una variante por analogía.
+- No todos los sufijos son productivos con todas las raíces.
+- Algunas formas cambian la vocal (*strong → strength*), duplican consonantes o tienen una forma irregular (*wide → width*).
+- Cuando la palabra formada no existe, no se debe inventar una variante por analogía.
 
-# Mini resumen
+# Para recordar
 
 - Mira las palabras que rodean al término para decidir la categoría.
 - Comprueba polaridad, número, ortografía y registro.
 - Aprende familias completas, no solo la raíz.
 
-# Comprobación rápida autocorregible
+# Comprueba la formación de palabras
 
 1. Noun from decide: **decision**.
 2. Adjective from rely: **reliable**.

@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -55,32 +55,6 @@ allowed to` cuando importa una norma o autorización externa.
 - Usar `be able to` en futuro, present perfect e infinitivo.
 - Ajustar una petición de permiso a la situación y formalidad.
 - Distinguir incapacidad de ausencia de permiso.
-
-# Explicación
-
-`Can` y `could` son verbos modales. No añaden `-s` en tercera persona y van
-seguidos de infinitivo sin `to`:
-
-`Mina can swim.`  
-No: `Mina cans swim` ni `Mina can to swim`.
-
-Para capacidad presente:
-
-`I can repair a bicycle.`  
-`I can't repair an engine.`
-
-Para capacidad general pasada:
-
-`When he was six, Leo could count to a hundred.`  
-`I couldn't understand spoken Italian then.`
-
-Si una situación pasada exigió un esfuerzo concreto y terminó con éxito:
-
-`The door was jammed, but we were able to open it.`  
-`The door was jammed, but we managed to open it.`
-
-En negativas, `couldn't` funciona tanto para incapacidad general como para un
-fracaso puntual: `We couldn't open the door`.
 
 # Forma o estructura
 
@@ -124,6 +98,32 @@ regla.
 10. **Permiso cortés:** `Could I leave a little early today?`
 11. **Permiso formal:** `May I see your identification, please?`
 12. **Norma:** `Visitors aren't allowed to enter this room.`
+
+# Explicación
+
+`Can` y `could` son verbos modales. No añaden `-s` en tercera persona y van
+seguidos de infinitivo sin `to`:
+
+`Mina can swim.`  
+No: `Mina cans swim` ni `Mina can to swim`.
+
+Para capacidad presente:
+
+`I can repair a bicycle.`  
+`I can't repair an engine.`
+
+Para capacidad general pasada:
+
+`When he was six, Leo could count to a hundred.`  
+`I couldn't understand spoken Italian then.`
+
+Si una situación pasada exigió un esfuerzo concreto y terminó con éxito:
+
+`The door was jammed, but we were able to open it.`  
+`The door was jammed, but we managed to open it.`
+
+En negativas, `couldn't` funciona tanto para incapacidad general como para un
+fracaso puntual: `We couldn't open the door`.
 
 # Contrastes importantes
 
@@ -216,21 +216,14 @@ forma normal de conceder permiso inmediato.
 
 # Excepciones relevantes
 
-En lenguaje cotidiano, especialmente con verbos como `find`, `get` o `finish`,
-algunos hablantes usan `could` para un éxito puntual cuando el contexto es muy
-claro. La norma editorial principal del dataset usa `was/were able to` o
-`managed to` para mantener el contraste pedagógico.
-
-`Could` también expresa posibilidad o hace peticiones: `It could rain` y `Could
-you help me?`. Esos usos no significan capacidad pasada; el contexto los
-distingue.
-
-`May not` puede ser ambiguo entre falta de permiso y posibilidad negativa. Para
-una prohibición clara en B1 preferimos `mustn't` o `not be allowed to`, según la
-lección correspondiente.
-
-`Can` no tiene participio ni infinitivo propios. Por eso no se combina con
-auxiliares como `have` o `will`; usamos las formas de `be able to`.
+- En lenguaje cotidiano, especialmente con verbos como `find`, `get` o `finish`, algunos hablantes usan `could` para un éxito puntual cuando el contexto es muy claro.
+- La norma editorial principal del dataset usa `was/were able to` o `managed to` para mantener el contraste pedagógico.
+- `Could` también expresa posibilidad o hace peticiones: `It could rain` y `Could you help me?`.
+- Esos usos no significan capacidad pasada; el contexto los distingue.
+- `May not` puede ser ambiguo entre falta de permiso y posibilidad negativa.
+- Para una prohibición clara en B1 preferimos `mustn't` o `not be allowed to`, según la lección correspondiente.
+- `Can` no tiene participio ni infinitivo propios.
+- Por eso no se combina con auxiliares como `have` o `will`; usamos las formas de `be able to`.
 
 # Mini resumen
 

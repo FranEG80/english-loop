@@ -31,7 +31,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -65,6 +65,52 @@ Las formas negativas usan `not to`: `He told us not to wait`.
 - Usar `asked + persona + to + infinitivo` para peticiones.
 - Formar órdenes y peticiones negativas con `not to`.
 - Distinguir `asked me if ...` de `asked me to ...`.
+
+# Forma o estructura
+
+## Pregunta sí/no
+
+- `asked + persona + if/whether + sujeto + verbo`
+
+`He asked me if I was ready.`  
+`She asked whether the payment had arrived.`
+
+## Pregunta con wh-
+
+- `asked + persona + wh-word + sujeto + verbo`
+
+`They asked us where we were staying.`  
+`I asked her what she wanted.`
+
+## Orden
+
+- `told + persona + to + infinitivo`
+- `told + persona + not to + infinitivo`
+
+`She told him to wait outside.`  
+`She told him not to block the entrance.`
+
+## Petición
+
+- `asked + persona + to + infinitivo`
+- `asked + persona + not to + infinitivo`
+
+`He asked me to speak more slowly.`  
+`He asked me not to share the code.`
+
+# Usos principales
+
+1. **Pregunta cerrada:** `She asked if the room was available.`
+2. **Elección formal:** `He asked whether I wanted tea or coffee.`
+3. **Lugar:** `They asked where we had parked.`
+4. **Motivo:** `The manager asked why the order was late.`
+5. **Cantidad:** `She asked how much the repair would cost.`
+6. **Instrucción:** `The guard told us to use the side entrance.`
+7. **Prohibición:** `The guide told visitors not to feed the animals.`
+8. **Petición:** `Marta asked me to check the address.`
+9. **Petición negativa:** `Leo asked us not to call before nine.`
+10. **Referencia cambiada:** `He asked whether I could meet him there the next
+    day.`
 
 # Explicación
 
@@ -137,70 +183,6 @@ La negación se coloca antes del infinitivo:
 `Maya asked me not to mention her address.`
 
 No usamos `to not` como patrón editorial principal en B1.
-
-# Forma o estructura
-
-## Pregunta sí/no
-
-- `asked + persona + if/whether + sujeto + verbo`
-
-`He asked me if I was ready.`  
-`She asked whether the payment had arrived.`
-
-## Pregunta con wh-
-
-- `asked + persona + wh-word + sujeto + verbo`
-
-`They asked us where we were staying.`  
-`I asked her what she wanted.`
-
-## Orden
-
-- `told + persona + to + infinitivo`
-- `told + persona + not to + infinitivo`
-
-`She told him to wait outside.`  
-`She told him not to block the entrance.`
-
-## Petición
-
-- `asked + persona + to + infinitivo`
-- `asked + persona + not to + infinitivo`
-
-`He asked me to speak more slowly.`  
-`He asked me not to share the code.`
-
-# Backshift y referencias
-
-Se aplican los mismos cambios que en los enunciados:
-
-`“Are you working today?”`  
-Al informar después: `She asked me if I was working that day.`
-
-`“Where did you put these boxes?”`  
-`He asked where I had put those boxes.`
-
-`“Will you be here tomorrow?”`  
-`They asked whether I would be there the next day.`
-
-En órdenes y peticiones, el verbo principal se convierte en infinitivo y no
-necesita un tiempo pasado:
-
-`“Wait here.”` → He told me to wait there.
-
-# Usos principales
-
-1. **Pregunta cerrada:** `She asked if the room was available.`
-2. **Elección formal:** `He asked whether I wanted tea or coffee.`
-3. **Lugar:** `They asked where we had parked.`
-4. **Motivo:** `The manager asked why the order was late.`
-5. **Cantidad:** `She asked how much the repair would cost.`
-6. **Instrucción:** `The guard told us to use the side entrance.`
-7. **Prohibición:** `The guide told visitors not to feed the animals.`
-8. **Petición:** `Marta asked me to check the address.`
-9. **Petición negativa:** `Leo asked us not to call before nine.`
-10. **Referencia cambiada:** `He asked whether I could meet him there the next
-    day.`
 
 # Contrastes importantes
 
@@ -290,28 +272,12 @@ No añadimos otro sujeto: no `who someone had called`.
 
 # Excepciones relevantes
 
-`Whether` es especialmente útil antes de `or not` y en elecciones:
-
-`She asked whether I wanted to stay or leave.`  
-`He asked whether or not the fee was refundable.`
-
-En conversación, `if` es muy frecuente en preguntas cerradas ordinarias.
-
-Una petición formulada con `Could you ...?` o `Would you ...?` se transforma
-normalmente con `asked + persona + to`, no como pregunta sobre capacidad:
-
-`“Could you open the window, please?”`  
-`She asked me to open the window.`
-
-Sin embargo, `“Can you swim?”` sí pregunta por capacidad:
-
-`She asked me if I could swim.`
-
-La intención comunicativa decide la estructura.
-
-Las preguntas reportadas integradas en una oración suelen terminar con punto,
-no con signo de interrogación, porque toda la frase es declarativa: `She asked
-where I lived.`
+- `Whether` es especialmente útil antes de `or not` y en elecciones: `She asked whether I wanted to stay or leave.` `He asked whether or not the fee was refundable.`
+- En conversación, `if` es muy frecuente en preguntas cerradas ordinarias.
+- Una petición formulada con `Could you ...?` o `Would you ...?` se transforma normalmente con `asked + persona + to`, no como pregunta sobre capacidad: `“Could you open the window, please?”` `She asked me to open the window.`
+- Sin embargo, `“Can you swim?”` sí pregunta por capacidad: `She asked me if I could swim.`
+- La intención comunicativa decide la estructura.
+- Las preguntas reportadas integradas en una oración suelen terminar con punto, no con signo de interrogación, porque toda la frase es declarativa: `She asked where I lived.`
 
 # Mini resumen
 

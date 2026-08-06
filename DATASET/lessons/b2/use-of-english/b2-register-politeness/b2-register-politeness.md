@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,29 +42,32 @@ El registro adapta la relación con el lector sin cambiar la información princi
 - Convertir peticiones directas en fórmulas corteses.
 - Mantener tiempos, hechos, cantidades y negaciones al cambiar el registro.
 
-# Explicación
-
-Antes de elegir una palabra, identifica al destinatario, el propósito y la distancia social. Después cambia solo los elementos que marcan el tono: *Can you...?* puede convertirse en *Could you possibly...?*; *I want a refund* en *I would like to request a refund*.
-
-La formalidad no consiste en hacer cada frase más larga. Consiste en escoger verbos, estructuras y fórmulas que respeten la situación. No añadas una opinión ni cambies la obligación, la posibilidad o la intensidad del mensaje original.
-
-# Forma o estructura
+# Recursos de registro y cortesía
 
 - **Informal:** *Hi, can you send me the details?* / *I can't make it.*
 - **Neutro:** *Hello, could you send me the details?* / *I am unable to attend.*
 - **Formal:** *Dear Sir or Madam, I would be grateful if you could...*
 - **Cierre:** *Best wishes* es cercano; *Yours faithfully* sigue a un saludo sin nombre.
 
-# Usos principales
+# Situaciones comunicativas
 
 1. Redactar correos de trabajo y solicitudes.
 2. Suavizar desacuerdos y quejas.
 3. Convertir instrucciones bruscas en peticiones profesionales.
 4. Ajustar saludos, despedidas y conectores a una carta.
 
-# Contrastes importantes
+# Explicación
 
-*I want* es directo; *I would like* es más cortés. *Tell me* es una orden; *Could you let me know...?* es una petición. *But* es neutro; *however* suele ser más formal. *Thanks* es cercano; *Thank you for your assistance* es profesional.
+Antes de elegir una palabra, identifica al destinatario, el propósito y la distancia social. Después cambia solo los elementos que marcan el tono: *Can you...?* puede convertirse en *Could you possibly...?*; *I want a refund* en *I would like to request a refund*.
+
+La formalidad no consiste en hacer cada frase más larga. Consiste en escoger verbos, estructuras y fórmulas que respeten la situación. No añadas una opinión ni cambies la obligación, la posibilidad o la intensidad del mensaje original.
+
+# Grados de formalidad
+
+- *I want* es directo; *I would like* es más cortés.
+- *Tell me* es una orden; *Could you let me know...?* es una petición.
+- *But* es neutro; *however* suele ser más formal.
+- *Thanks* es cercano; *Thank you for your assistance* es profesional.
 
 # Ejemplos
 
@@ -80,18 +83,20 @@ La formalidad no consiste en hacer cada frase más larga. Consiste en escoger ve
 - Usar *I am writing to complain* y después una despedida informal.
 - Añadir *perhaps* cuando el mensaje original expresa una obligación segura.
 
-# Excepciones relevantes
+# Variación pragmática
 
-La formalidad depende de la relación y del canal. *Please send the form* puede ser perfectamente profesional, mientras que una fórmula muy solemne puede sonar extraña en un correo interno. El inglés británico y el estadounidense también pueden preferir fórmulas distintas sin que una sea incorrecta.
+- La formalidad depende de la relación y del canal.
+- *Please send the form* puede ser perfectamente profesional, mientras que una fórmula muy solemne puede sonar extraña en un correo interno.
+- El inglés británico y el estadounidense también pueden preferir fórmulas distintas sin que una sea incorrecta.
 
-# Mini resumen
+# Lista de control del tono
 
 1. Identifica destinatario y propósito.
 2. Conserva hechos, tiempo, modalidad y negación.
 3. Cambia solo tono, cortesía y fórmulas de contacto.
 4. Lee el resultado como si fueras el destinatario.
 
-# Comprobación rápida autocorregible
+# Comprueba el registro
 
 1. Reformula para una empresa: `I want my money back.` → `I would like to request a refund.`
 2. Suaviza: `Send the file today.` → `Could you please send the file today?`

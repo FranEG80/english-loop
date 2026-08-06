@@ -29,8 +29,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Una historia breve necesita una línea temporal fácil de seguir. Practicarás cómo presentar la situación, introducir un problema, describir la reacción y cerrar con un resultado.
@@ -40,23 +41,33 @@ Una historia breve necesita una línea temporal fácil de seguir. Practicarás c
 - Ordenar situación inicial, incidente, reacción y desenlace.
 - Elegir tiempos narrativos y conectores temporales coherentes.
 
-# Explicación
+# Estructura del texto
 
-Decide qué ocurrió primero antes de ordenar las frases. Usa pasado simple para los acontecimientos principales, pasado continuo para una acción en curso y pasado perfecto para algo anterior al punto narrativo. Los conectores *first, suddenly, while, after that, finally* hacen visible la secuencia.
+- Una estructura segura es: contexto → incidente → reacción → desenlace.
+- *While I was walking* introduce una acción en progreso.
+- *Suddenly* marca un cambio inesperado.
+- *By the time*, *already* y *had + participle* señalan anterioridad.
+- *Eventually* prepara el resultado final tras un proceso o una dificultad.
 
-# Forma o estructura
-
-Una estructura segura es: contexto → incidente → reacción → desenlace. *While I was walking*, introduce una acción en progreso; *suddenly* marca un cambio; *by the time*, *already* y *had + participle* señalan anterioridad; *eventually* prepara el resultado final.
-
-# Usos principales
+# Funciones comunicativas
 
 - Escribir una anécdota de examen.
 - Ordenar notas antes de redactar.
 - Conectar acciones y consecuencias en un relato corto.
 
-# Contrastes importantes
+# Explicación
 
-*When I arrived* puede presentar el momento principal; *when I had arrived* cambia la relación temporal. *Finally* indica el último paso, mientras *at first* introduce la situación inicial. No uses *suddenly* para una consecuencia planificada.
+Decide qué ocurrió primero antes de ordenar las frases. Usa pasado simple para los acontecimientos principales, pasado continuo para una acción en curso y pasado perfecto para algo anterior al punto narrativo. Los conectores *first, suddenly, while, after that, finally* hacen visible la secuencia.
+
+No confundas el orden de las frases con el orden real de los hechos. En *When I reached the station, the train had left*, la llegada se menciona primero, pero la salida ocurrió antes. Dibuja una línea temporal breve cuando haya dos acciones pasadas y decide cuál sirve de punto de referencia.
+
+Para que la historia avance, alterna escena y acción. El pasado continuo crea el fondo; el pasado simple introduce el evento que lo interrumpe. El desenlace debe resolver el incidente o mostrar su consecuencia, no terminar justo cuando comienza el problema.
+
+# Registro y decisiones de estilo
+
+- *When I arrived* puede presentar el momento principal; *when I had arrived* cambia la relación temporal.
+- *Finally* indica el último paso, mientras *at first* introduce la situación inicial.
+- No uses *suddenly* para una consecuencia planificada.
 
 # Ejemplos
 
@@ -66,22 +77,22 @@ Una estructura segura es: contexto → incidente → reacción → desenlace. *W
 
 # Errores frecuentes
 
-❌ Ordenar las frases solo por el tiempo verbal.
-✅ Seguir las relaciones de causa, referencia y tiempo.
-❌ Usar pasado continuo para cada acción.
-✅ Reservarlo para el fondo o la acción interrumpida.
+- ❌ Ordenar las frases solo por el tiempo verbal.
+- ✅ Seguir las relaciones de causa, referencia y tiempo.
+- ❌ Usar pasado continuo para cada acción.
+- ✅ Reservarlo para el fondo o la acción interrumpida.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-En narraciones informales se puede empezar por el incidente y reconstruir después el contexto. Aun así, el lector debe poder identificar qué ocurrió antes. *Then* puede repetirse, pero alternarlo con conectores más precisos mejora la claridad.
+- En narraciones informales se puede empezar por el incidente y reconstruir después el contexto.
+- Aun así, el lector debe poder identificar qué ocurrió antes.
+- *Then* puede repetirse, pero alternarlo con conectores más precisos mejora la claridad.
 
-# Mini resumen
+# Lista de revisión
 
 Sitúa el contexto, marca el incidente, explica la reacción y cierra con un desenlace; comprueba cada relación temporal.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. ¿Qué expresa *While I was cycling, I saw a fox*? → `una acción en curso interrumpida por otra`.
 2. Completa: *By the time we arrived, the film ___* → `had started`.
-
-

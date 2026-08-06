@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,12 +43,6 @@ La inversión negativa coloca una expresión negativa o restrictiva al principio
 - Usar hardly/scarcely/barely y no sooner en secuencias de acciones.
 - Construir not until y only then con inversión en la oración principal.
 - Diferenciar inversión obligatoria de una colocación enfática opcional.
-
-# Explicación
-
-En orden normal decimos The team had never faced such a delay. Con énfasis: Never had the team faced such a delay. Si no hay auxiliar, añadimos do/does/did: Rarely do researchers ignore the control group. Con be o un modal, invertimos directamente: Under no circumstances should you share the code.
-
-Hardly, scarcely y barely suelen combinarse con when: Hardly had we arrived when the alarm sounded. No sooner se combina con than: No sooner had the meeting begun than the fire alarm rang. Not until y only then también desencadenan inversión en la principal: Not until midnight did the repairs finish; Only then did we understand the risk.
 
 # Forma o estructura
 
@@ -66,6 +60,12 @@ Hardly, scarcely y barely suelen combinarse con when: Hardly had we arrived when
 3. **Secuencia inmediata:** No sooner had the train left than it began to snow.
 4. **Límite temporal:** Not until the audit ended did the figures make sense.
 5. **Adición enfática:** Not only did Lina solve the problem, but she documented it.
+
+# Explicación
+
+En orden normal decimos The team had never faced such a delay. Con énfasis: Never had the team faced such a delay. Si no hay auxiliar, añadimos do/does/did: Rarely do researchers ignore the control group. Con be o un modal, invertimos directamente: Under no circumstances should you share the code.
+
+Hardly, scarcely y barely suelen combinarse con when: Hardly had we arrived when the alarm sounded. No sooner se combina con than: No sooner had the meeting begun than the fire alarm rang. Not until y only then también desencadenan inversión en la principal: Not until midnight did the repairs finish; Only then did we understand the risk.
 
 # Contrastes importantes
 
@@ -93,15 +93,22 @@ Only then, only later, only after the audit y expresiones parecidas provocan inv
 
 # Errores frecuentes
 
-- ❌ Never the team had faced this delay.  ✅ Never had the team faced this delay.
-- ❌ Rarely researchers do ignore the control group.  ✅ Rarely do researchers ignore the control group.
-- ❌ No sooner had she left when I called.  ✅ No sooner had she left than I called.
-- ❌ Not until Friday they replied.  ✅ Not until Friday did they reply.
-- ❌ Under no circumstances you should share the code.  ✅ Under no circumstances should you share the code.
+- ❌ Never the team had faced this delay.
+- ✅ Never had the team faced this delay.
+- ❌ Rarely researchers do ignore the control group.
+- ✅ Rarely do researchers ignore the control group.
+- ❌ No sooner had she left when I called.
+- ✅ No sooner had she left than I called.
+- ❌ Not until Friday they replied.
+- ✅ Not until Friday did they reply.
+- ❌ Under no circumstances you should share the code.
+- ✅ Under no circumstances should you share the code.
 
 # Excepciones relevantes
 
-La inversión es especialmente común en escritura formal y puede sonar marcada en conversación. Si la expresión negativa no está al principio, la inversión no suele ser necesaria: We rarely receive complaints. Algunas expresiones enfáticas como only once pueden variar según la intención, pero la claridad debe tener prioridad sobre la ornamentación.
+- La inversión es especialmente común en escritura formal y puede sonar marcada en conversación.
+- Si la expresión negativa no está al principio, la inversión no suele ser necesaria: We rarely receive complaints.
+- Algunas expresiones enfáticas como only once pueden variar según la intención, pero la claridad debe tener prioridad sobre la ornamentación.
 
 # Mini resumen
 

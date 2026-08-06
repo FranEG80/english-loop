@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,15 +43,6 @@ resultado es una instrucción, una posibilidad o un consejo.
 - Mantener presente después de `if`, aunque la condición sea futura.
 - Expresar consecuencias con el grado adecuado de certeza u obligación.
 - Colocar correctamente la coma cuando la cláusula condicional aparece primero.
-
-# Explicación
-
-En `If the weather improves, we'll eat outside`, la mejora todavía no es segura,
-pero se considera una posibilidad real. El presente `improves` no describe el
-presente cronológico: forma parte de la construcción condicional.
-
-El orden puede invertirse sin cambiar el significado: `We'll eat outside if the
-weather improves`. Cuando `if` aparece en medio, normalmente no escribimos coma.
 
 # Forma o estructura
 
@@ -71,14 +62,22 @@ book now, you won't get a seat`.
 4. Posibilidad: `If the parcel arrives today, we might deliver it tomorrow.`
 5. Oferta: `If you need a lift, I can take you home.`
 
+# Explicación
+
+En `If the weather improves, we'll eat outside`, la mejora todavía no es segura,
+pero se considera una posibilidad real. El presente `improves` no describe el
+presente cronológico: forma parte de la construcción condicional.
+
+El orden puede invertirse sin cambiar el significado: `We'll eat outside if the
+weather improves`. Cuando `if` aparece en medio, normalmente no escribimos coma.
+
 # Contrastes importantes
 
-`If` comunica incertidumbre: quizá ocurra. `When` presenta el evento como
-esperado: `When the train arrives, we'll get on`. `Unless` equivale normalmente
-a `if ... not`: `Unless you hurry` significa `If you don't hurry`.
-
-El primer condicional no exige siempre `will`; la principal debe reflejar el
-significado real. Un imperativo es más natural en `If you see Dan, tell him`.
+- `If` comunica incertidumbre: quizá ocurra.
+- `When` presenta el evento como esperado: `When the train arrives, we'll get on`.
+- `Unless` equivale normalmente a `if ... not`: `Unless you hurry` significa `If you don't hurry`.
+- El primer condicional no exige siempre `will`; la principal debe reflejar el significado real.
+- Un imperativo es más natural en `If you see Dan, tell him`.
 
 # Ejemplos
 
@@ -104,9 +103,8 @@ significado real. Un imperativo es más natural en `If you see Dan, tell him`.
 
 # Excepciones relevantes
 
-`Will` puede aparecer después de `if` cuando expresa voluntad o petición, no
-simple futuro: `If you'll wait here, the manager will see you shortly`. Este uso
-es menos frecuente en B1 y siempre necesita un contexto claro.
+- `Will` puede aparecer después de `if` cuando expresa voluntad o petición, no simple futuro: `If you'll wait here, the manager will see you shortly`.
+- Este uso es menos frecuente en B1 y siempre necesita un contexto claro.
 
 # Mini resumen
 

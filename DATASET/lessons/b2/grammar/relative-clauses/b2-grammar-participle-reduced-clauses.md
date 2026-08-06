@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,12 +43,6 @@ Las participle clauses permiten condensar información que comparte sujeto con l
 - Usar past participle en pasivas y estados resultantes.
 - Usar having + past participle para una acción anterior ya terminada.
 - Reconocer cuándo conviene conservar una cláusula completa para evitar ambigüedad.
-
-# Explicación
-
-La forma -ing puede reducir una cláusula activa: While she was travelling, she kept a diary se convierte en While travelling, she kept a diary. El sujeto de travelling es she. Una forma pasada puede reducir una pasiva: The samples that were collected in May became contaminated se convierte en The samples collected in May became contaminated.
-
-Para marcar anterioridad usamos having + participio: Having checked the figures, the analyst signed the report. La acción de comprobar terminó antes de firmar. En una reducción pasiva anterior usamos having been + participio: Having been warned about the ice, the hikers changed route.
 
 # Forma o estructura
 
@@ -67,6 +61,12 @@ Para marcar anterioridad usamos having + participio: Having checked the figures,
 4. **Tiempo anterior:** Having reviewed the contract, Maya asked one question.
 5. **Pasiva reducida:** The documents submitted after noon will be processed tomorrow.
 6. **Resultado o comentario:** The device overheated, leaving the room without power.
+
+# Explicación
+
+La forma -ing puede reducir una cláusula activa: While she was travelling, she kept a diary se convierte en While travelling, she kept a diary. El sujeto de travelling es she. Una forma pasada puede reducir una pasiva: The samples that were collected in May became contaminated se convierte en The samples collected in May became contaminated.
+
+Para marcar anterioridad usamos having + participio: Having checked the figures, the analyst signed the report. La acción de comprobar terminó antes de firmar. En una reducción pasiva anterior usamos having been + participio: Having been warned about the ice, the hikers changed route.
 
 # Contrastes importantes
 
@@ -94,15 +94,22 @@ Checking the figures, the analyst found an error puede sugerir simultaneidad o u
 
 # Errores frecuentes
 
-- ❌ Walking to work, the traffic was heavy.  ✅ Walking to work, I found the traffic heavy.
-- ❌ The forms sending yesterday are incomplete.  ✅ The forms sent yesterday are incomplete.
-- ❌ Having check the figures, she signed.  ✅ Having checked the figures, she signed.
-- ❌ The applicants waiting shortlisted received an email.  ✅ The applicants shortlisted received an email.
-- ❌ If using carefully, the solvent is safe.  ✅ If used carefully, the solvent is safe.
+- ❌ Walking to work, the traffic was heavy.
+- ✅ Walking to work, I found the traffic heavy.
+- ❌ The forms sending yesterday are incomplete.
+- ✅ The forms sent yesterday are incomplete.
+- ❌ Having check the figures, she signed.
+- ✅ Having checked the figures, she signed.
+- ❌ The applicants waiting shortlisted received an email.
+- ✅ The applicants shortlisted received an email.
+- ❌ If using carefully, the solvent is safe.
+- ✅ If used carefully, the solvent is safe.
 
 # Excepciones relevantes
 
-Algunos participios funcionan como adjetivos lexicalizados, como concerned, interested, based y involved. La reducción puede aparecer después de una conjunción o una preposición, pero no todos los conectores admiten el mismo patrón. En instrucciones y titulares se omite a veces el sujeto por economía, aunque en textos de aprendizaje y redacción formal conviene mantener una relación sin ambigüedad.
+- Algunos participios funcionan como adjetivos lexicalizados, como concerned, interested, based y involved.
+- La reducción puede aparecer después de una conjunción o una preposición, pero no todos los conectores admiten el mismo patrón.
+- En instrucciones y titulares se omite a veces el sujeto por economía, aunque en textos de aprendizaje y redacción formal conviene mantener una relación sin ambigüedad.
 
 # Mini resumen
 

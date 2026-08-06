@@ -25,7 +25,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -38,27 +38,33 @@ Los avisos, carteles, mensajes y normas breves suelen pedir una acción concreta
 - Reconocer paráfrasis de instrucciones y horarios.
 - Separar lo obligatorio de lo aconsejable.
 
-# Explicación
-
-Lee primero el título y las palabras destacadas. Después busca verbos de acción como *must*, *please*, *do not*, *available* o *closed*. No añadas información que el aviso no dice: *Please keep the door closed* no significa que la puerta esté rota.
-
-# Forma o estructura
+# Pistas que debes localizar
 
 - Prohibición: *No entry*, *Do not leave bags here*.
 - Obligación: *You must show your ticket*.
 - Petición: *Please queue on the right*.
 - Cambio: *The meeting has been moved to Room 4*.
 
-# Usos principales
+# Aplicación en textos
 
 1. Leer horarios, instrucciones y normas.
 2. Identificar una modificación de última hora.
 3. Comprender mensajes de servicios públicos y comercios.
 4. Elegir la acción que corresponde al destinatario.
 
-# Contrastes importantes
+# Explicación
 
-*Closed until Friday* no es lo mismo que *closed on Friday*. *You may use* concede permiso; *you must use* expresa obligación. *No parking* prohíbe aparcar, mientras que *short-stay parking* describe una opción limitada.
+Lee primero el título y las palabras destacadas. Después busca verbos de acción como *must*, *please*, *do not*, *available* o *closed*. No añadas información que el aviso no dice: *Please keep the door closed* no significa que la puerta esté rota.
+
+Reconstruye el mensaje como una frase completa: «el responsable pide/prohíbe/permite que el destinatario haga X en el momento Y». Este paso evita interpretar una palabra aislada. En *Staff entrance only after 6 p.m.*, por ejemplo, *only* limita quién puede usar la entrada y *after 6 p.m.* limita cuándo; ninguna de las dos condiciones se puede omitir.
+
+Las fechas límite también requieren atención. *By Friday* significa no más tarde del viernes; *from Friday* marca el inicio; *until Friday* mantiene la situación hasta ese límite. Si el aviso no precisa una hora, no la inventes.
+
+# Distractores y matices
+
+- *Closed until Friday* no es lo mismo que *closed on Friday*.
+- *You may use* concede permiso; *you must use* expresa obligación.
+- *No parking* prohíbe aparcar, mientras que *short-stay parking* describe una opción limitada.
 
 # Ejemplos
 
@@ -73,21 +79,21 @@ Lee primero el título y las palabras destacadas. Después busca verbos de acci�
 - Elegir una respuesta verdadera en general pero no indicada por el aviso.
 - Ignorar el destinatario: un aviso para *staff* no se aplica necesariamente a visitantes.
 
-# Excepciones relevantes
+# Casos menos evidentes
 
-Los carteles usan frases nominales y formas abreviadas: *No food or drink* equivale a una prohibición completa. El contexto visual y el título ayudan, pero la respuesta debe apoyarse en las palabras del texto.
+- Los carteles usan frases nominales y formas abreviadas: *No food or drink* equivale a una prohibición completa.
+- El contexto visual y el título ayudan, pero la respuesta debe apoyarse en las palabras del texto.
 
-# Mini resumen
+# Lista de comprobación
 
 1. Identifica destinatario y propósito.
 2. Busca acción, tiempo y lugar.
 3. Distingue permiso, obligación y prohibición.
 
-# Comprobación rápida autocorregible
+# Comprueba tu lectura
 
 Aviso: `The pool is closed until 10 June.`
 
 1. ¿Se puede nadar el 8 de junio? No.
 2. ¿Vuelve a abrir el 10? El aviso no aclara si abre al principio o al final del día.
 3. ¿Qué palabra marca el límite? `until`.
-

@@ -31,7 +31,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,20 +46,6 @@ as`, usamos presente para referirnos al futuro.
 - Identificar si existe una cita o acuerdo con detalles concretos.
 - Reconocer eventos fijados por calendarios, horarios o programas.
 - Construir oraciones temporales futuras sin colocar `will` en la subordinada.
-
-# Explicación
-
-Un **arrangement** suele implicar coordinación con otra persona o una reserva:
-`I'm meeting the architect at eleven`. El presente continuo comunica que el
-plan está organizado, a menudo con hora o lugar.
-
-El presente simple se usa para acontecimientos que forman parte de un horario:
-`The workshop starts at nine`. No importa que el evento sea mañana; el programa
-se trata como un hecho establecido.
-
-En una oración como `I'll text you when I arrive`, las dos acciones son futuras.
-Sin embargo, `when I arrive` lleva presente simple. La forma de futuro aparece
-en la oración principal, no después del conector temporal.
 
 # Forma o estructura
 
@@ -79,16 +65,25 @@ En preguntas sobre acuerdos usamos `Are you seeing... ?`; para horarios usamos
 4. Eventos de un programa: `The second talk begins after the break.`
 5. Secuencia futura: `We'll begin as soon as everyone is ready.`
 
+# Explicación
+
+Un **arrangement** suele implicar coordinación con otra persona o una reserva:
+`I'm meeting the architect at eleven`. El presente continuo comunica que el
+plan está organizado, a menudo con hora o lugar.
+
+El presente simple se usa para acontecimientos que forman parte de un horario:
+`The workshop starts at nine`. No importa que el evento sea mañana; el programa
+se trata como un hecho establecido.
+
+En una oración como `I'll text you when I arrive`, las dos acciones son futuras.
+Sin embargo, `when I arrive` lleva presente simple. La forma de futuro aparece
+en la oración principal, no después del conector temporal.
+
 # Contrastes importantes
 
-`We're going to visit Leeds` expresa una intención; `We're visiting Leeds on
-Saturday with Jo` presenta un acuerdo concreto. `The plane is taking off at
-six` puede oírse al describir un plan de viaje, pero `The plane takes off at six`
-enfatiza el horario oficial.
-
-`When` puede introducir una pregunta directa y entonces sí admite `will`: `When
-will you know the result?` La restricción afecta a la subordinada temporal:
-`I'll call when I know the result`.
+- `We're going to visit Leeds` expresa una intención; `We're visiting Leeds on Saturday with Jo` presenta un acuerdo concreto.
+- `The plane is taking off at six` puede oírse al describir un plan de viaje, pero `The plane takes off at six` enfatiza el horario oficial.
+- `When` puede introducir una pregunta directa y entonces sí admite `will`: `When will you know the result?` La restricción afecta a la subordinada temporal: `I'll call when I know the result`.
 
 # Ejemplos
 
@@ -119,10 +114,8 @@ will you know the result?` La restricción afecta a la subordinada temporal:
 
 # Excepciones relevantes
 
-El presente simple también puede expresar planes muy formales o instrucciones
-de un itinerario: `On Friday, the delegation visits the research centre`.
-Algunos eventos programados admiten presente continuo si se interpretan como un
-acuerdo; el contexto de las actividades hará visible la lectura prevista.
+- El presente simple también puede expresar planes muy formales o instrucciones de un itinerario: `On Friday, the delegation visits the research centre`.
+- Algunos eventos programados admiten presente continuo si se interpretan como un acuerdo; el contexto de las actividades hará visible la lectura prevista.
 
 # Mini resumen
 

@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,31 +42,35 @@ Los phrasal verbs ayudan a explicar cómo continúa un curso, cómo se abandona 
 - Distinguir *find out*, *get on with* y *fall out* en relaciones.
 - Interpretar la partícula junto con el verbo completo.
 
-# Explicación
+# Verbo, partícula y objeto
 
-*Carry on* significa continuar y *give up* abandonar o dejar de intentar algo. *Look up* es buscar información, mientras que *find out* es descubrir un dato. Para relaciones, *get on with* expresa llevarse bien y *fall out with* tener una discusión y dejar de estar en buena relación.
+- Usa *carry on + -ing* o *carry on with + nombre*: *carry on studying*; *carry on with the exercise*.
+- *Look up* puede llevar un objeto: *look it up online*.
+- *Get on with* y *fall out with* van seguidos de la persona o grupo.
 
-# Forma o estructura
-
-Usa *carry on + -ing* o *carry on with + nombre*: *carry on studying*; *carry on with the exercise*. *Look up* puede llevar un objeto: *look it up online*. *Get on with* y *fall out with* van seguidos de la persona o grupo.
-
-# Usos principales
+# Contextos de uso
 
 - Hablar de hábitos y tareas académicas.
 - Explicar cómo se obtiene una respuesta.
 - Describir cooperación, desacuerdos y reconciliación.
 
-# Contrastes importantes
+# Explicación
 
-*Look for* es buscar una cosa; *look up* es buscar información en una fuente. *Find out* es llegar a saber algo, no simplemente buscarlo. *Make up with* alguien significa reconciliarse después de una discusión.
+*Carry on* significa continuar y *give up* abandonar o dejar de intentar algo. *Look up* es buscar información, mientras que *find out* es descubrir un dato. Para relaciones, *get on with* expresa llevarse bien y *fall out with* tener una discusión y dejar de estar en buena relación.
+
+La posición del objeto ayuda a construir la frase. *Look up* es separable (*look the word up*, *look it up*); *find out* puede introducir una pregunta indirecta (*find out where the room is*); *get on with* y *fall out with* mantienen juntas sus partículas y preposiciones.
+
+# Phrasal verbs que se confunden
+
+- *Look for* es buscar una cosa; *look up* es buscar información en una fuente.
+- *Find out* es llegar a saber algo, no simplemente buscarlo.
+- *Make up with* alguien significa reconciliarse después de una discusión.
 
 # Ejemplos
 
-*Carry on revising and you will feel more confident.*
-
-*I looked up the word and found out what it meant.*
-
-*They fell out last month but have made up now.*
+- *Carry on revising and you will feel more confident.*
+- *I looked up the word and found out what it meant.*
+- *They fell out last month but have made up now.*
 
 # Errores frecuentes
 
@@ -75,15 +79,15 @@ Usa *carry on + -ing* o *carry on with + nombre*: *carry on studying*; *carry on
 - ❌ Confundir *give up* con *give back*.
 - ✅ *Give up* es abandonar; *give back* es devolver.
 
-# Excepciones relevantes
+# Cambios de significado y registro
 
-*Get on with* puede significar continuar con una tarea (*get on with your work*) o llevarse bien con una persona; el complemento y el contexto determinan el sentido.
+- *Get on with* puede significar continuar con una tarea (*get on with your work*) o llevarse bien con una persona; el complemento y el contexto determinan el sentido.
 
-# Mini resumen
+# Para recordar
 
 Para estudiar, distingue continuar, abandonar, buscar y descubrir; para relaciones, identifica cooperación, conflicto y reconciliación.
 
-# Comprobación rápida autocorregible
+# Comprueba el phrasal verb
 
 1. **Which verb means discover information?** — `Find out`.
 2. **Which phrase means become friendly again after an argument?** — `Make up with someone`.

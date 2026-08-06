@@ -27,8 +27,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Algunas palabras exigen una preposición concreta: *rely on*, *capable of* o *an increase in*. Aprenderás a reconocer la combinación completa y a distinguir patrones parecidos.
@@ -38,23 +39,31 @@ Algunas palabras exigen una preposición concreta: *rely on*, *capable of* o *an
 - Usar dependencias menos transparentes con verbos, adjetivos y nombres B2.
 - Distinguir combinaciones cercanas que cambian significado o patrón.
 
-# Explicación
+# Patrones con preposición
 
-No conviene traducir la preposición palabra por palabra. Guarda cada combinación como una unidad y comprueba qué aparece después: un nombre, un pronombre o una forma en *-ing*. En B2 también debes distinguir dependencias cercanas, como *responsible for* frente a *responsibility for*.
+- Los verbos pueden seguirse de una preposición y un nombre (*object to the plan*, *comply with the rules*).
+- Los adjetivos suelen formar patrones como *keen on*, *aware of* y *consistent with*.
+- Los nombres prefieren estructuras como *demand for*, *access to* e *impact on*.
 
-# Forma o estructura
-
-Los verbos pueden seguirse de una preposición y un nombre (*object to the plan*, *comply with the rules*). Los adjetivos suelen formar patrones como *keen on*, *aware of* y *consistent with*. Los nombres prefieren estructuras como *demand for*, *access to* e *impact on*.
-
-# Usos principales
+# Contextos de uso
 
 - Describir obligaciones, opiniones y reacciones en contextos académicos y laborales.
 - Explicar relaciones entre decisiones, resultados y responsabilidades.
 - Redactar informes y solicitudes con colocaciones precisas.
 
-# Contrastes importantes
+# Explicación
 
-*Agree with a person* y *agree on a plan* no tienen el mismo complemento. *Depend on* expresa relación o condición; *depend upon* puede ser más formal. *Interested in* va seguido de nombre o *-ing*, no de infinitivo con *to*.
+No conviene traducir la preposición palabra por palabra. Guarda cada combinación como una unidad y comprueba qué aparece después: un nombre, un pronombre o una forma en *-ing*. En B2 también debes distinguir dependencias cercanas, como *responsible for* frente a *responsibility for*.
+
+Clasifica primero la palabra núcleo. Un verbo puede exigir *to* como preposición (*object to changing the plan*), que no debe confundirse con el *to* de infinitivo; por eso aparece *-ing*. Los nombres derivados no siempre conservan el patrón del verbo: *access to*, *an increase in* e *a demand for* deben aprenderse por separado.
+
+Cuando una palabra admite dos preposiciones, compara complemento y sentido. *Agree with someone* se refiere a la persona o postura; *agree on something* presenta el asunto decidido; *agree to a proposal* indica aceptación.
+
+# Contrastes de significado
+
+- *Agree with a person* y *agree on a plan* no tienen el mismo complemento.
+- *Depend on* expresa relación o condición; *depend upon* puede ser más formal.
+- *Interested in* va seguido de nombre o *-ing*, no de infinitivo con *to*.
 
 # Ejemplos
 
@@ -65,22 +74,22 @@ Los verbos pueden seguirse de una preposición y un nombre (*object to the plan*
 
 # Errores frecuentes
 
-❌ Traducir literalmente la preposición de la lengua materna.
-✅ Aprender el verbo, adjetivo o nombre junto con su patrón.
-❌ Escribir *responsible of* o *interested on*.
-✅ Comprobar la dependencia en un contexto completo.
+- ❌ Traducir literalmente la preposición de la lengua materna.
+- ✅ Aprender el verbo, adjetivo o nombre junto con su patrón.
+- ❌ Escribir *responsible of* o *interested on*.
+- ✅ Comprobar la dependencia en un contexto completo.
 
-# Excepciones relevantes
+# Variación y expresiones fijadas
 
-Algunas palabras admiten más de una preposición con un cambio pequeño de significado o registro. *Concerned about* expresa preocupación; *concerned with* presenta el tema tratado. Si la preposición introduce una acción, suele aparecer un gerundio: *object to changing*.
+- Algunas palabras admiten más de una preposición con un cambio pequeño de significado o registro.
+- *Concerned about* expresa preocupación; *concerned with* presenta el tema tratado.
+- Si la preposición introduce una acción, suele aparecer un gerundio: *object to changing*.
 
-# Mini resumen
+# Para recordar
 
 Identifica la palabra núcleo, memoriza su preposición y verifica el tipo de complemento que sigue.
 
-# Comprobación rápida autocorregible
+# Comprueba la preposición
 
 1. Completa: *The result depends ___ accurate data.* → `on`.
 2. Completa: *She is capable ___ leading the project.* → `of`.
-
-

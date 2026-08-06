@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -45,6 +45,20 @@ El present perfect continuous se centra en la actividad en curso y su duración.
 - Usar el continuo para acciones en curso con duración.
 - Distinguir verbos de estado que no usan el continuo.
 - Elegir la forma según el énfasis.
+
+# Forma o estructura
+
+- Simple: `have/has + participio`
+- Continuo: `have/has + been + -ing`
+- Con `for`/`since` ambos son posibles según el énfasis.
+
+# Usos principales
+
+1. **Resultado:** `I have fixed the car.`
+2. **Actividad en curso:** `I have been fixing the car all day.`
+3. **Cantidad completada:** `She has written three emails.`
+4. **Duración de la actividad:** `They have been travelling for a month.`
+5. **Efecto visible:** `You have been crying.`
 
 # Explicación
 
@@ -68,20 +82,6 @@ Los verbos de estado no suelen usar el continuo:
 
 `I have known her for years.`  
 No decimos `I have been knowing her`.
-
-# Forma o estructura
-
-- Simple: `have/has + participio`
-- Continuo: `have/has + been + -ing`
-- Con `for`/`since` ambos son posibles según el énfasis.
-
-# Usos principales
-
-1. **Resultado:** `I have fixed the car.`
-2. **Actividad en curso:** `I have been fixing the car all day.`
-3. **Cantidad completada:** `She has written three emails.`
-4. **Duración de la actividad:** `They have been travelling for a month.`
-5. **Efecto visible:** `You have been crying.`
 
 # Contrastes importantes
 
@@ -122,15 +122,8 @@ No decimos `I have been knowing her`.
 
 # Excepciones relevantes
 
-Algunos verbos pueden usarse en continuo con cambio de significado, como `think`
-y `have`:
-
-`I have been thinking about it.` (proceso)  
-`I have thought about it.` (decisión)
-
-Con `for`/`since`, el continuo enfatiza la duración:
-
-`I have been living here for ten years.`
+- Algunos verbos pueden usarse en continuo con cambio de significado, como `think` y `have`: `I have been thinking about it.` (proceso) `I have thought about it.` (decisión)
+- Con `for`/`since`, el continuo enfatiza la duración: `I have been living here for ten years.`
 
 # Mini resumen
 

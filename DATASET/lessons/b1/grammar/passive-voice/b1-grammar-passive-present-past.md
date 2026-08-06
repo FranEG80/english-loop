@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -58,6 +58,50 @@ desconocido, evidente o poco importante.
 - Formar negativas y preguntas pasivas.
 - Decidir cuándo conviene mencionar el agente con `by`.
 - Evitar formar pasivas con verbos que no tienen objeto.
+
+# Forma o estructura
+
+## Presente simple
+
+- Afirmativa: sujeto + `am/is/are + participio`
+- Negativa: sujeto + `am not/isn't/aren't + participio`
+- Pregunta: `Am/Is/Are + sujeto + participio?`
+
+`The fee is included.`  
+`Meals aren't served after ten.`  
+`Are bicycles allowed on this train?`
+
+## Pasado simple
+
+- Afirmativa: sujeto + `was/were + participio`
+- Negativa: sujeto + `wasn't/weren't + participio`
+- Pregunta: `Was/Were + sujeto + participio?`
+
+`The package was delivered yesterday.`  
+`The windows weren't damaged.`  
+`Were the witnesses interviewed?`
+
+## Presente y pasado continuos
+
+- Presente: `am/is/are being + participio`
+- Pasado: `was/were being + participio`
+
+`A new footpath is being built beside the river.`  
+`The computers were being updated during the power cut.`
+
+# Usos principales
+
+1. **Agente desconocido:** `My bicycle was stolen last night.`
+2. **Agente evidente:** `The suspect was arrested.` La policía es el agente
+   esperable.
+3. **Proceso:** `The bottles are washed before they are reused.`
+4. **Producto o servicio:** `Breakfast is served from seven.`
+5. **Resultado:** `All the seats were sold within an hour.`
+6. **Información formal:** `Applications are accepted until 30 June.`
+7. **Descripción histórica:** `The theatre was built in 1912.`
+8. **Acción en progreso:** `The entrance is being widened.`
+9. **Pregunta sobre el receptor:** `When was the decision announced?`
+10. **Agente relevante:** `The mural was painted by local students.`
 
 # Explicación
 
@@ -110,50 +154,6 @@ Cuando una acción está en progreso:
 
 La secuencia es `be + being + participio`. No omitimos `being`.
 
-# Forma o estructura
-
-## Presente simple
-
-- Afirmativa: sujeto + `am/is/are + participio`
-- Negativa: sujeto + `am not/isn't/aren't + participio`
-- Pregunta: `Am/Is/Are + sujeto + participio?`
-
-`The fee is included.`  
-`Meals aren't served after ten.`  
-`Are bicycles allowed on this train?`
-
-## Pasado simple
-
-- Afirmativa: sujeto + `was/were + participio`
-- Negativa: sujeto + `wasn't/weren't + participio`
-- Pregunta: `Was/Were + sujeto + participio?`
-
-`The package was delivered yesterday.`  
-`The windows weren't damaged.`  
-`Were the witnesses interviewed?`
-
-## Presente y pasado continuos
-
-- Presente: `am/is/are being + participio`
-- Pasado: `was/were being + participio`
-
-`A new footpath is being built beside the river.`  
-`The computers were being updated during the power cut.`
-
-# Usos principales
-
-1. **Agente desconocido:** `My bicycle was stolen last night.`
-2. **Agente evidente:** `The suspect was arrested.` La policía es el agente
-   esperable.
-3. **Proceso:** `The bottles are washed before they are reused.`
-4. **Producto o servicio:** `Breakfast is served from seven.`
-5. **Resultado:** `All the seats were sold within an hour.`
-6. **Información formal:** `Applications are accepted until 30 June.`
-7. **Descripción histórica:** `The theatre was built in 1912.`
-8. **Acción en progreso:** `The entrance is being widened.`
-9. **Pregunta sobre el receptor:** `When was the decision announced?`
-10. **Agente relevante:** `The mural was painted by local students.`
-
 # Contrastes importantes
 
 ## Activa frente a pasiva
@@ -201,26 +201,6 @@ Acción en progreso en un momento pasado.
 
 No decimos que el marcador es el agente humano.
 
-# Participios frecuentes
-
-- `build → built`
-- `choose → chosen`
-- `design → designed`
-- `find → found`
-- `grow → grown`
-- `hold → held`
-- `make → made`
-- `sell → sold`
-- `send → sent`
-- `speak → spoken`
-- `steal → stolen`
-- `take → taken`
-- `teach → taught`
-- `write → written`
-
-El participio no cambia por número: `The ticket was sold`; `The tickets were
-sold`.
-
 # Ejemplos
 
 1. **The library is closed on public holidays.**
@@ -266,22 +246,14 @@ sold`.
 
 # Excepciones relevantes
 
-Solo los verbos transitivos, es decir, los que pueden llevar objeto, forman una
-pasiva normal. `Arrive`, `happen`, `sleep` y `die` no transfieren una acción a un
-objeto: no decimos `was arrived` ni `was happened`.
-
-Algunas combinaciones que parecen pasivas funcionan también como adjetivos:
-`The shop is closed` puede describir un estado o una acción habitual según el
-contexto. El análisis práctico sigue siendo el mismo para la concordancia:
-`shop is`, `shops are`.
-
-En conversaciones, una pasiva sin agente puede ocultar responsabilidad:
-`A mistake was made`. Si saber quién actuó es importante, la activa suele ser
-más clara: `The supplier entered the wrong address`.
-
-Los verbos con dos objetos permiten más de una pasiva (`Mina was given a
-certificate`; `A certificate was given to Mina`), pero esta ampliación se usa
-solo cuando la respuesta está completamente determinada por la consigna.
+- Solo los verbos transitivos, es decir, los que pueden llevar objeto, forman una pasiva normal.
+- `Arrive`, `happen`, `sleep` y `die` no transfieren una acción a un objeto: no decimos `was arrived` ni `was happened`.
+- Algunas combinaciones que parecen pasivas funcionan también como adjetivos: `The shop is closed` puede describir un estado o una acción habitual según el contexto.
+- El análisis práctico sigue siendo el mismo para la concordancia: `shop is`, `shops are`.
+- En conversaciones, una pasiva sin agente puede ocultar responsabilidad: `A mistake was made`.
+- Si saber quién actuó es importante, la activa suele ser más clara: `The supplier entered the wrong address`.
+- Los verbos con dos objetos permiten más de una pasiva (`Mina was given a certificate`
+- `A certificate was given to Mina`), pero esta ampliación se usa solo cuando la respuesta está completamente determinada por la consigna.
 
 # Mini resumen
 

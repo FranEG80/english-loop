@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,20 +44,6 @@ con `have/has + participio`.
 - Formar participios regulares e irregulares con el auxiliar adecuado.
 - Evitar añadir una fecha pasada terminada a una experiencia en present perfect.
 - Elegir y colocar adverbios de experiencia y recencia.
-
-# Explicación
-
-`I've visited Edinburgh twice` cuenta experiencias acumuladas hasta ahora sin
-decir cuándo. Si añadimos `in 2022`, el marco temporal termina y usamos past
-simple: `I visited Edinburgh in 2022`.
-
-`Nora has broken her glasses` no solo informa de una rotura; normalmente implica
-que las gafas siguen rotas o que el resultado importa ahora. `Nora broke her
-glasses, but she's had them repaired` sitúa el evento como terminado.
-
-`Today`, `this week` y `so far` pueden acompañar present perfect cuando el
-periodo continúa: `I've answered six emails this morning` si aún es por la
-mañana.
 
 # Forma o estructura
 
@@ -79,15 +65,27 @@ unidad: `go–went–gone`, `see–saw–seen`, `write–wrote–written`.
 6. **Hasta ahora, en negativas o preguntas:** `Has Leo replied yet?`
 7. **Periodo abierto:** `We've had three meetings this week.`
 
+# Explicación
+
+`I've visited Edinburgh twice` cuenta experiencias acumuladas hasta ahora sin
+decir cuándo. Si añadimos `in 2022`, el marco temporal termina y usamos past
+simple: `I visited Edinburgh in 2022`.
+
+`Nora has broken her glasses` no solo informa de una rotura; normalmente implica
+que las gafas siguen rotas o que el resultado importa ahora. `Nora broke her
+glasses, but she's had them repaired` sitúa el evento como terminado.
+
+`Today`, `this week` y `so far` pueden acompañar present perfect cuando el
+periodo continúa: `I've answered six emails this morning` si aún es por la
+mañana.
+
 # Contrastes importantes
 
-`Ever` aparece habitualmente en preguntas y superlativos: `It's the best meal
-I've ever had`. `Never` ya es negativo, por lo que no usamos `haven't never`.
-
-`Just` y `already` se colocan normalmente entre el auxiliar y el participio.
-`Yet` suele ir al final de preguntas y negativas. En inglés americano informal,
-el past simple puede aparecer con `just`, pero la variante editorial principal
-del dataset usa el patrón británico con present perfect.
+- `Ever` aparece habitualmente en preguntas y superlativos: `It's the best meal I've ever had`.
+- `Never` ya es negativo, por lo que no usamos `haven't never`.
+- `Just` y `already` se colocan normalmente entre el auxiliar y el participio.
+- `Yet` suele ir al final de preguntas y negativas.
+- En inglés americano informal, el past simple puede aparecer con `just`, pero la variante editorial principal del dataset usa el patrón británico con present perfect.
 
 # Ejemplos
 
@@ -118,12 +116,9 @@ del dataset usa el patrón británico con present perfect.
 
 # Excepciones relevantes
 
-`Been to` significa haber visitado y regresado: `She's been to Oslo`. `Gone to`
-indica que la persona se ha marchado y todavía está allí o de camino: `She's
-gone to Oslo`.
-
-Con personas fallecidas y periodos de vida cerrados usamos past simple: `Marie
-Curie won two Nobel Prizes`, no present perfect.
+- `Been to` significa haber visitado y regresado: `She's been to Oslo`.
+- `Gone to` indica que la persona se ha marchado y todavía está allí o de camino: `She's gone to Oslo`.
+- Con personas fallecidas y periodos de vida cerrados usamos past simple: `Marie Curie won two Nobel Prizes`, no present perfect.
 
 # Mini resumen
 

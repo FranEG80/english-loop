@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,13 +44,7 @@ Hablar de carrera profesional y empresa exige más precisión que decir job o mo
 - Distinguir salary, wage, income, revenue, turnover y profit.
 - Describir contratación, externalización, fusiones y relaciones con stakeholders.
 
-# Explicación
-
-Una vacancy es un puesto disponible; un applicant solicita ese puesto y un candidate puede pasar a la fase final. Una role describe las funciones, mientras que position puede referirse al puesto formal dentro de una organización. Career path es la trayectoria profesional y transferable skills son habilidades útiles en más de un sector.
-
-En finanzas, salary suele ser una cantidad fija periódica para un empleado; wages suelen calcularse por hora o por trabajo. Revenue es el dinero que entra por ventas, turnover puede referirse a las ventas totales o a la rotación de personal según el contexto, y profit es lo que queda después de costes.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - apply for a vacancy / shortlist candidates / conduct an interview
 - take on staff / meet a deadline / manage a workload
@@ -59,7 +53,7 @@ En finanzas, salary suele ser una cantidad fija periódica para un empleado; wag
 - outsource a service / merge with a competitor / satisfy stakeholders
 - work freelance / hold a position / take responsibility for
 
-# Usos principales
+# Situaciones de uso
 
 1. **Contratación:** The firm shortlisted six applicants.
 2. **Trayectoria:** She moved into management after gaining experience abroad.
@@ -68,7 +62,13 @@ En finanzas, salary suele ser una cantidad fija periódica para un empleado; wag
 5. **Estrategia:** The company outsourced its IT support.
 6. **Personas afectadas:** The director consulted key stakeholders before the merger.
 
-# Contrastes importantes
+# Explicación
+
+Una vacancy es un puesto disponible; un applicant solicita ese puesto y un candidate puede pasar a la fase final. Una role describe las funciones, mientras que position puede referirse al puesto formal dentro de una organización. Career path es la trayectoria profesional y transferable skills son habilidades útiles en más de un sector.
+
+En finanzas, salary suele ser una cantidad fija periódica para un empleado; wages suelen calcularse por hora o por trabajo. Revenue es el dinero que entra por ventas, turnover puede referirse a las ventas totales o a la rotación de personal según el contexto, y profit es lo que queda después de costes.
+
+# Palabras que se confunden
 
 ## Salary, wage e income
 
@@ -94,17 +94,24 @@ Staff es el conjunto de trabajadores; employee es una persona contratada y emplo
 
 # Errores frecuentes
 
-- ❌ I searched a vacancy.  ✅ I looked for/applied for a vacancy.
-- ❌ She has many experiences.  ✅ She has a lot of experience.
-- ❌ The business won much money.  ✅ The business made a large profit.
-- ❌ He is responsible of the budget.  ✅ He is responsible for the budget.
-- ❌ The firm did a merger.  ✅ The firm carried out/completed a merger.
+- ❌ I searched a vacancy.
+- ✅ I looked for/applied for a vacancy.
+- ❌ She has many experiences.
+- ✅ She has a lot of experience.
+- ❌ The business won much money.
+- ✅ The business made a large profit.
+- ❌ He is responsible of the budget.
+- ✅ He is responsible for the budget.
+- ❌ The firm did a merger.
+- ✅ The firm carried out/completed a merger.
 
-# Excepciones relevantes
+# Variación de uso
 
-Turnover cambia de significado entre finanzas y recursos humanos. Staff puede ser incontable cuando se refiere al conjunto de empleados, aunque staff members es contable. Career y job tampoco son intercambiables: una career es una trayectoria más amplia y un job es un puesto o trabajo concreto.
+- Turnover cambia de significado entre finanzas y recursos humanos.
+- Staff puede ser incontable cuando se refiere al conjunto de empleados, aunque staff members es contable.
+- Career y job tampoco son intercambiables: una career es una trayectoria más amplia y un job es un puesto o trabajo concreto.
 
-# Mini resumen
+# Para recordar
 
 - Vacancy, applicant, candidate y shortlist pertenecen a la contratación.
 - Salary, wage, income, revenue y profit describen conceptos distintos.
@@ -112,7 +119,7 @@ Turnover cambia de significado entre finanzas y recursos humanos. Staff puede se
 - Stakeholders pueden estar dentro o fuera de la plantilla.
 - Apply for, be responsible for y seek promotion son combinaciones frecuentes.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The firm ___ six applicants for a second interview. (shortlisted)
    - Respuesta: shortlisted

@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -51,6 +51,23 @@ Algunos adjetivos son irregulares: `good → better → best`.
 - Comparar con `than` y expresar igualdad con `as ... as`.
 - Elegir entre comparativo y superlativo según el número de elementos.
 - Usar `the` delante del superlativo.
+
+# Forma o estructura
+
+- Comparativo corto: `adjetivo + -er + than`
+- Comparativo largo: `more + adjetivo + than`
+- Superlativo corto: `the + adjetivo + -est`
+- Superlativo largo: `the most + adjetivo`
+- Igualdad: `as + adjetivo + as`
+- Desigualdad: `not as + adjetivo + as`
+
+# Usos principales
+
+1. **Comparar dos opciones:** `The blue shirt is cheaper than the red one.`
+2. **Destacar el mejor de un grupo:** `This is the best café in the area.`
+3. **Expresar igualdad:** `My flat is as big as yours.`
+4. **Expresar diferencia:** `The new model isn't as reliable as the old one.`
+5. **Comparar cantidades:** `There are more students this year than last year.`
 
 # Explicación
 
@@ -99,23 +116,6 @@ Dos o más sílabas: usamos `more` y `most`.
 `not as ... as` expresa desigualdad:
 
 `This phone isn't as new as that one.`
-
-# Forma o estructura
-
-- Comparativo corto: `adjetivo + -er + than`
-- Comparativo largo: `more + adjetivo + than`
-- Superlativo corto: `the + adjetivo + -est`
-- Superlativo largo: `the most + adjetivo`
-- Igualdad: `as + adjetivo + as`
-- Desigualdad: `not as + adjetivo + as`
-
-# Usos principales
-
-1. **Comparar dos opciones:** `The blue shirt is cheaper than the red one.`
-2. **Destacar el mejor de un grupo:** `This is the best café in the area.`
-3. **Expresar igualdad:** `My flat is as big as yours.`
-4. **Expresar diferencia:** `The new model isn't as reliable as the old one.`
-5. **Comparar cantidades:** `There are more students this year than last year.`
 
 # Contrastes importantes
 
@@ -171,18 +171,9 @@ No decimos `as light than`.
 
 # Excepciones relevantes
 
-Algunos adjetivos de dos sílabas aceptan ambas formas, como `clever`, `quiet` y
-`simple`:
-
-`quieter` o `more quiet`.
-
-`far` tiene dos comparativos: `farther` (distancia física) y `further`
-(distancia o extensión figurada).
-
-Con `the` delante del superlativo, a veces se omite cuando va seguido de un
-posesivo:
-
-`my best friend`, no `my the best friend`.
+- Algunos adjetivos de dos sílabas aceptan ambas formas, como `clever`, `quiet` y `simple`: `quieter` o `more quiet`.
+- `far` tiene dos comparativos: `farther` (distancia física) y `further` (distancia o extensión figurada).
+- Con `the` delante del superlativo, a veces se omite cuando va seguido de un posesivo: `my best friend`, no `my the best friend`.
 
 # Mini resumen
 

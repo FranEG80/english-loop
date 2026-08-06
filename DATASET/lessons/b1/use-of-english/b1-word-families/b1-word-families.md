@@ -24,7 +24,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -36,21 +36,29 @@ Una familia léxica reúne palabras relacionadas que cumplen funciones gramatica
 - Reconocer la categoría gramatical que falta en una oración.
 - Construir formas frecuentes con sufijos y prefijos sin perder la ortografía correcta.
 
+# Familias y afijos
+
+- **Nombres:** `-er`, `-ness`, `-ment`, `-tion`, `-ity`.
+- **Adjetivos:** `-ful`, `-less`, `-able`, `-ive`.
+- **Adverbios:** normalmente `-ly` a partir de un adjetivo.
+- **Negación:** `un-`, `im-`, `in-` y `dis-`, según la palabra.
+- **Cambios ortográficos:** `decide → decision`, `happy → happiness`.
+- **Forma final:** comprueba plural, terminación verbal y concordancia.
+
+# Cambios de categoría
+
+- Se practica la formación de vocabulario en situaciones de estudio, trabajo, viajes, servicios, tecnología y vida cotidiana.
+- La decisión principal es gramatical: primero se identifica la función y después se elige la forma.
+
 # Explicación
 
 Mira las palabras que rodean al término. Después de un artículo suele aparecer un nombre (`a decision`); antes de un nombre suele aparecer un adjetivo (`a useful guide`); un verbo puede necesitar un adverbio (`carefully`). La raíz es una pista, pero no siempre basta con añadir un sufijo: algunas palabras cambian una letra o tienen una forma irregular.
 
-# Forma o estructura
+# Formas que se confunden
 
-Los sufijos habituales son `-er`, `-ness`, `-ment`, `-tion`, `-ful`, `-less`, `-able`, `-ive`, `-ly` y `-ity`. Los prefijos `un-`, `im-`, `in-` y `dis-` pueden crear significados negativos. Hay que comprobar si la palabra resultante es plural, si necesita una terminación verbal o si la raíz cambia (`decide → decision`, `happy → happiness`).
-
-# Usos principales
-
-Se practica la formación de vocabulario en situaciones de estudio, trabajo, viajes, servicios, tecnología y vida cotidiana. La decisión principal es gramatical: primero se identifica la función y después se elige la forma.
-
-# Contrastes importantes
-
-`-ed` describe cómo se siente una persona (`I am bored`), mientras que `-ing` describe lo que causa la sensación (`The film is boring`). `Success` es un nombre y `successful` un adjetivo. `Economic` significa relacionado con la economía; `economical` significa que ahorra recursos.
+- `-ed` describe cómo se siente una persona (`I am bored`), mientras que `-ing` describe lo que causa la sensación (`The film is boring`).
+- `Success` es un nombre y `successful` un adjetivo.
+- `Economic` significa relacionado con la economía; `economical` significa que ahorra recursos.
 
 # Ejemplos
 
@@ -68,18 +76,20 @@ Se practica la formación de vocabulario en situaciones de estudio, trabajo, via
 - ❌ *His decide surprised us.*
 - ✅ *His decision surprised us.*
 
-# Excepciones relevantes
+# Restricciones y variaciones
 
-No todos los sufijos producen una palabra real y algunos cambios son irregulares. `strong` forma `strength`, no *strongness* en todos los contextos; `possible` forma `impossible`, no *unpossible*. Cuando una forma parece extraña, comprueba la categoría que exige la oración y la palabra completa.
+- No todos los sufijos producen una palabra real y algunos cambios son irregulares.
+- `strong` forma `strength`, no *strongness* en todos los contextos; `possible` forma `impossible`, no *unpossible*.
+- Cuando una forma parece extraña, comprueba la categoría que exige la oración y la palabra completa.
 
-# Mini resumen
+# Para recordar
 
 1. Decide qué tipo de palabra falta.
 2. Usa la raíz indicada como punto de partida.
 3. Comprueba el sufijo, el prefijo y la ortografía.
 4. Lee la frase final para confirmar el significado.
 
-# Comprobación rápida autocorregible
+# Comprueba la formación de palabras
 
 1. Completa: `The guide gave a very ___ explanation. (HELP)`
    - Respuesta: `helpful`

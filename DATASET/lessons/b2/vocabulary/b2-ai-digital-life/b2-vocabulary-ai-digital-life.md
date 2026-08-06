@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,13 +42,7 @@ La inteligencia artificial aparece en el trabajo, la educación, los servicios p
 - Valorar sesgos, privacidad, seguridad y huella digital.
 - Resolver problemas de compatibilidad, actualizaciones y configuración.
 
-# Explicación
-
-Un **algorithm** es un conjunto de instrucciones; un sistema de **machine learning** aprende patrones a partir de ejemplos. El conjunto de ejemplos se llama **dataset** y el resultado puede depender de la calidad de esos datos. Un **chatbot** conversa con usuarios, mientras que una **user interface** permite manejar una aplicación.
-
-En el uso responsable conviene hablar de **privacy**, **encryption**, **consent** y **bias**. Una herramienta puede ser eficiente y, a la vez, producir resultados sesgados si el dataset no representa a todas las personas. Un **data breach** expone información sin autorización; una **digital footprint** es el rastro que dejamos al usar servicios en línea.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - train a model / process data / detect a pattern
 - automate a task / generate a response / recognise an image
@@ -57,7 +51,7 @@ En el uso responsable conviene hablar de **privacy**, **encryption**, **consent*
 - a biased dataset / a data breach / a digital footprint
 - compatible with / dependent on / vulnerable to
 
-# Usos principales
+# Situaciones de uso
 
 1. **Describir:** The model detects unusual activity.
 2. **Explicar:** The recommendation system is trained on user data.
@@ -66,7 +60,13 @@ En el uso responsable conviene hablar de **privacy**, **encryption**, **consent*
 5. **Solucionar:** Restart the router and troubleshoot the connection.
 6. **Evaluar:** The tool is useful, but its results still require human review.
 
-# Contrastes importantes
+# Explicación
+
+Un **algorithm** es un conjunto de instrucciones; un sistema de **machine learning** aprende patrones a partir de ejemplos. El conjunto de ejemplos se llama **dataset** y el resultado puede depender de la calidad de esos datos. Un **chatbot** conversa con usuarios, mientras que una **user interface** permite manejar una aplicación.
+
+En el uso responsable conviene hablar de **privacy**, **encryption**, **consent** y **bias**. Una herramienta puede ser eficiente y, a la vez, producir resultados sesgados si el dataset no representa a todas las personas. Un **data breach** expone información sin autorización; una **digital footprint** es el rastro que dejamos al usar servicios en línea.
+
+# Palabras que se confunden
 
 ## Algorithm, model y dataset
 
@@ -92,24 +92,31 @@ Un error es una respuesta incorrecta concreta. Bias es un patrón sistemático q
 
 # Errores frecuentes
 
-- ❌ The app learns by an algorithm. ✅ The app uses an algorithm.
-- ❌ We must protect the private of users. ✅ We must protect users' privacy.
-- ❌ The model has a biased result. ✅ The model produces a biased result.
-- ❌ I updated the patch. ✅ I installed the patch / updated the software.
-- ❌ The file is compatible to my phone. ✅ The file is compatible with my phone.
+- ❌ The app learns by an algorithm.
+- ✅ The app uses an algorithm.
+- ❌ We must protect the private of users.
+- ✅ We must protect users' privacy.
+- ❌ The model has a biased result.
+- ✅ The model produces a biased result.
+- ❌ I updated the patch.
+- ✅ I installed the patch / updated the software.
+- ❌ The file is compatible to my phone.
+- ✅ The file is compatible with my phone.
 
-# Excepciones relevantes
+# Variación de uso
 
-**Data** puede usarse como incontable en muchos contextos actuales: *The data is stored securely*. **AI** suele ser incontable: *AI is changing the industry*. **Software** no tiene plural regular; para hablar de elementos concretos se usa *software tools* o *programs*.
+- **Data** puede usarse como incontable en muchos contextos actuales: *The data is stored securely*.
+- **AI** suele ser incontable: *AI is changing the industry*.
+- **Software** no tiene plural regular; para hablar de elementos concretos se usa *software tools* o *programs*.
 
-# Mini resumen
+# Para recordar
 
 - Algorithms process instructions; models learn patterns from datasets.
 - Privacy, consent, encryption y security describen dimensiones distintas.
 - Bias es un patrón sistemático, no solo un error aislado.
 - Update software, install a patch y troubleshoot a problem son colocaciones útiles.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The model was trained on a large ___. (dataset)
    - Respuesta: dataset

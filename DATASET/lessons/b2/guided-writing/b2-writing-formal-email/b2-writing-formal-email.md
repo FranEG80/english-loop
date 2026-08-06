@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,31 +40,38 @@ Practicarás correos formales para solicitar información, presentar una queja o
 - Formular peticiones claras y justificar una queja.
 - Usar saludos y cierres coherentes con el destinatario.
 
-# Explicación
+# Estructura del texto
 
-Un correo formal debe dejar claro el motivo desde el principio. Divide la información en párrafos y expresa las peticiones con *Could you please...* o *I would be grateful if...* en vez de imperativos directos.
+- **Asunto y saludo:** permiten identificar el tema y la relación con el destinatario.
+- **Motivo:** explica de inmediato por qué escribes.
+- **Detalles:** presenta fechas, referencias y efectos en un orden comprobable.
+- **Petición o siguiente paso:** indica con precisión qué respuesta esperas.
+- **Cierre:** *I look forward to hearing from you* y *Yours faithfully* forman un registro reconocible cuando no conoces el nombre.
 
-# Forma o estructura
-
-Incluye asunto, saludo, motivo, detalles, petición o siguiente paso y cierre. *Dear Sir or Madam*, *I am writing to enquire about*, *I look forward to hearing from you* y *Yours faithfully* forman un registro reconocible.
-
-# Usos principales
+# Funciones comunicativas
 
 - Contactar con una empresa, institución o responsable de un servicio.
 - Pedir un reembolso o explicar un problema.
 - Solicitar fechas, documentos o cambios de una reserva.
 
-# Contrastes importantes
+# Explicación
 
-*Send me the form* es directo; *Could you please send me the form?* es más cortés. *I want* puede sustituirse por *I would like* o *I would be grateful for*.
+Un correo formal debe dejar claro el motivo desde el principio. Divide la información en párrafos y expresa las peticiones con *Could you please...* o *I would be grateful if...* en vez de imperativos directos.
+
+En una queja, separa hechos y evaluación. Incluye la fecha, el servicio contratado, el problema y su consecuencia antes de pedir una solución proporcionada. Evita acusaciones que no puedes demostrar: *The room had not been cleaned when I arrived* es más preciso que *Your hotel is terrible*.
+
+La distancia formal se mantiene con vocabulario neutral y fórmulas consistentes, no con frases innecesariamente complicadas. Una petición clara y breve puede ser más profesional que una oración larga que oculta el siguiente paso.
+
+# Registro y decisiones de estilo
+
+- *Send me the form* es directo; *Could you please send me the form?* es más cortés.
+- *I want* puede sustituirse por *I would like* o *I would be grateful for*.
 
 # Ejemplos
 
-**Motivo:** *I am writing to complain about the noise during the renovation.*
-
-**Petición:** *I would be grateful if you could confirm when the work will finish.*
-
-**Cierre:** *I look forward to your response.*
+- **Motivo:** *I am writing to complain about the noise during the renovation.*
+- **Petición:** *I would be grateful if you could confirm when the work will finish.*
+- **Cierre:** *I look forward to your response.*
 
 # Errores frecuentes
 
@@ -73,15 +80,16 @@ Incluye asunto, saludo, motivo, detalles, petición o siguiente paso y cierre. *
 - ❌ Hacer una acusación sin explicar el impacto.
 - ✅ Describir el problema, la fecha y la solución solicitada.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-Si conoces el nombre del destinatario, usa *Dear Ms Brown* y normalmente cierra con *Yours sincerely*. Si no lo conoces, *Dear Sir or Madam* y *Yours faithfully* son coherentes.
+- Si conoces el nombre del destinatario, usa *Dear Ms Brown* y normalmente cierra con *Yours sincerely*.
+- Si no lo conoces, *Dear Sir or Madam* y *Yours faithfully* son coherentes.
 
-# Mini resumen
+# Lista de revisión
 
 Sé claro, cortés y específico: motivo, detalles, petición y cierre.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. **Which phrase makes a polite request?** — `I would be grateful if you could`.
 2. **Which closing follows Dear Sir or Madam?** — `Yours faithfully`.

@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -58,6 +58,21 @@ someone does`.
 - Formar preguntas con esta estructura.
 - Distinguir verbos que admiten objeto + infinitivo de los que no.
 - Evitar el error de usar `suggest` o `recommend` con objeto + infinitivo.
+
+# Forma o estructura
+
+- **Afirmativa:** `subject + verb + object + to-infinitive`: `She asked me to help.`
+- **Negativa:** colocamos `not` antes del infinitivo: `He told us not to worry.`
+- **Pregunta:** invertimos el sujeto y el verbo: `Did she ask you to help?`
+- **Con `want` en negativo:** a menudo usamos `don't want`: `I don't want you to wait.`
+
+# Usos principales
+
+- **Pedir o mandar**: `ask`, `tell`, `order`.
+- **Desear o esperar**: `want`, `expect`, `would like`.
+- **Invitar o permitir**: `invite`, `allow`, `permit`.
+- **Animar o recordar**: `encourage`, `remind`, `advise`.
+- **Enseñar o ayudar**: `teach`, `help` (con o sin `to`).
 
 # Explicación
 
@@ -91,34 +106,6 @@ Los verbos más comunes en nivel B1 son:
 - `She suggested taking a break.`
 - `She suggested that we take a break.`
 
-# Forma o estructura
-
-Afirmativa:
-
-`subject + verb + object + to-infinitive`
-
-`She asked me to help.`
-
-Negativa: colocamos `not` antes del infinitivo.
-
-`He told us not to worry.`
-
-Pregunta: invertimos el sujeto y el verbo.
-
-`Did she ask you to help?`
-
-Con `want` en negativo, a menudo usamos `don't want`:
-
-`I don't want you to wait.`
-
-# Usos principales
-
-- **Pedir o mandar**: `ask`, `tell`, `order`.
-- **Desear o esperar**: `want`, `expect`, `would like`.
-- **Invitar o permitir**: `invite`, `allow`, `permit`.
-- **Animar o recordar**: `encourage`, `remind`, `advise`.
-- **Enseñar o ayudar**: `teach`, `help` (con o sin `to`).
-
 # Contrastes importantes
 
 - `want` + objeto + infinitivo frente a `want` + infinitivo sin objeto:
@@ -130,25 +117,16 @@ Con `want` en negativo, a menudo usamos `don't want`:
 
 # Ejemplos
 
-`I want you to finish the report today.`
-
-`She asked me to open the window.`
-
-`The teacher told us to be quiet.`
-
-`They invited us to join them for dinner.`
-
-`We expect the train to arrive on time.`
-
-`The rules allow you to bring one guest.`
-
-`My coach encouraged me to keep training.`
-
-`Please remind me to buy some milk.`
-
-`He told us not to worry about the test.`
-
-`She suggested taking a taxi.`
+- `I want you to finish the report today.`
+- `She asked me to open the window.`
+- `The teacher told us to be quiet.`
+- `They invited us to join them for dinner.`
+- `We expect the train to arrive on time.`
+- `The rules allow you to bring one guest.`
+- `My coach encouraged me to keep training.`
+- `Please remind me to buy some milk.`
+- `He told us not to worry about the test.`
+- `She suggested taking a taxi.`
 
 # Errores frecuentes
 

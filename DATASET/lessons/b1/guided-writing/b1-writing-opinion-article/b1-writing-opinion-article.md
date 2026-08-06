@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,31 +40,39 @@ Aprenderás a escribir un artículo corto que presente una opinión clara, la ap
 - Usar conectores para relacionar ideas.
 - Mantener un tono apropiado para lectores generales.
 
-# Explicación
+# Estructura del texto
 
-Un artículo de opinión necesita una postura reconocible. Después de expresarla, añade una razón y un ejemplo concreto. El cierre debe reforzar la idea principal, no introducir un tema completamente nuevo.
+- **Título:** anticipa el tema y despierta interés.
+- **Apertura:** presenta la cuestión y la postura.
+- **Desarrollo:** explica una razón y añade un ejemplo o una consecuencia.
+- **Cierre:** retoma la opinión sin abrir un tema nuevo.
+- **Recursos útiles:** *in my view*, *because*, *for example*, *however* y *overall*.
 
-# Forma o estructura
-
-Una estructura útil es: título atractivo, apertura que presenta el tema, párrafo con opinión y razón, ejemplo o consecuencia, y conclusión. *In my view*, *because*, *for example*, *however* y *overall* ayudan a guiar al lector.
-
-# Usos principales
+# Funciones comunicativas
 
 - Expresar una opinión sobre hábitos, ocio, tecnología o vida comunitaria.
 - Responder a una revista escolar o a un blog.
 - Comparar dos opciones sin perder una postura clara.
 
-# Contrastes importantes
+# Explicación
 
-*I think cycling is useful* expresa opinión; *Cycling takes ten minutes* aporta un dato. *For example* introduce evidencia ilustrativa, mientras *however* introduce un contraste.
+Un artículo de opinión necesita una postura reconocible. Después de expresarla, añade una razón y un ejemplo concreto. El cierre debe reforzar la idea principal, no introducir un tema completamente nuevo.
+
+Antes de redactar, convierte la consigna en una pregunta y respóndela en una frase. Esa respuesta será el hilo del texto. Cada párrafo debe hacer un trabajo distinto: presentar, justificar, ejemplificar o concluir. Si dos frases cumplen la misma función, combina o elimina una.
+
+El tono puede ser cercano y directo, pero las afirmaciones deben quedar conectadas. *Cycling is better* resulta demasiado general; *Cycling is often quicker for short journeys because riders avoid traffic queues* ofrece alcance y una razón comprobable.
+
+# Registro y decisiones de estilo
+
+- *I think cycling is useful* expresa opinión; *Cycling takes ten minutes* aporta un dato.
+- *For example* introduce evidencia ilustrativa, mientras *however* introduce un contraste.
 
 # Ejemplos
 
-**Título:** *Why our town needs more cycle lanes*.
-
-**Apertura:** *In my view, safer cycle lanes would improve daily travel.*
-
-**Desarrollo:** *They would reduce traffic because more people could cycle to work. For example, students could reach school without crossing the busiest road.*
+- **Título:** *Why our town needs more cycle lanes*.
+- **Apertura:** *In my view, safer cycle lanes would improve daily travel.*
+- **Desarrollo:** *They would reduce traffic because more people could cycle to work. For example, students could reach school without crossing the busiest road.*
+- **Cierre:** *Overall, a safer network would make short journeys easier for everyone.*
 
 # Errores frecuentes
 
@@ -73,15 +81,16 @@ Una estructura útil es: título atractivo, apertura que presenta el tema, párr
 - ❌ Repetir *good* y *bad* en cada frase.
 - ✅ Usar adjetivos precisos y un ejemplo concreto.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-Un artículo puede incluir una objeción. Preséntala con *some people may argue*, responde a ella y vuelve a tu idea principal.
+- Un artículo puede incluir una objeción.
+- Preséntala con *some people may argue*, responde a ella y vuelve a tu idea principal.
 
-# Mini resumen
+# Lista de revisión
 
 Planifica la postura, añade razón y ejemplo, conecta los párrafos y termina con una conclusión breve.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. **Which phrase introduces a personal view?** — `In my view`.
 2. **Which connector introduces an example?** — `For example`.

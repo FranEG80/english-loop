@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -62,6 +62,49 @@ En la parte indirecta no usamos inversión ni los auxiliares `do`, `does` o
 - Evitar conservar dos estructuras interrogativas en la misma frase.
 - Reconocer cuándo `who` o `what` funciona como sujeto.
 - Puntuar según la estructura principal.
+
+# Forma o estructura
+
+## Wh-question indirecta
+
+- introducción + partícula + sujeto + verbo
+
+`Do you know how much the ticket costs?`  
+`I wonder where Maya put the keys.`  
+`Could you explain why the screen is flashing?`
+
+## Pregunta cerrada indirecta
+
+- introducción + `if/whether` + sujeto + verbo
+
+`Do you know if the office is open?`  
+`I'd like to know whether the fee is refundable.`  
+`Could you tell me if I need an appointment?`
+
+No usamos `that` para una pregunta cerrada.
+
+## Negativas
+
+La negación permanece dentro del orden afirmativo:
+
+`Why isn't the printer working?`  
+`Do you know why the printer isn't working?`
+
+`Didn't Sara receive the email?`  
+`Do you know why Sara didn't receive the email?`
+
+# Usos principales
+
+1. **Información directa:** `Where is the nearest cash machine?`
+2. **Horario:** `What time does the last train leave?`
+3. **Pasado:** `Why did the alarm stop?`
+4. **Permiso o posibilidad:** `Can the date be changed?`
+5. **Pregunta cortés:** `Could you tell me where the entrance is?`
+6. **Conocimiento:** `Do you know whether the café has reopened?`
+7. **Duda:** `I wonder how long the repair will take.`
+8. **Información deseada:** `I'd like to know if parking is included.`
+9. **Sujeto desconocido:** `Who designed this building?`
+10. **Objeto desconocido:** `Who did the committee choose?`
 
 # Explicación
 
@@ -103,94 +146,6 @@ El modal o auxiliar se coloca antes del sujeto:
 `Where should we wait?`  
 `Have the results arrived?`  
 `How long has the shop been closed?`
-
-# Preguntas indirectas
-
-Las introducciones habituales incluyen:
-
-- `Could you tell me ...?`
-- `Can you explain ...?`
-- `Do you know ...?`
-- `Do you remember ...?`
-- `I'd like to know ...`
-- `I wonder ...`
-- `I'm not sure ...`
-
-Después usamos orden afirmativo:
-
-`Could you tell me where the platform is?`  
-No: `where is the platform`.
-
-`Do you know when the bus leaves?`  
-No: `when does the bus leave`.
-
-`I'd like to know why the payment failed.`  
-No: `why did the payment fail`.
-
-# Forma o estructura
-
-## Wh-question indirecta
-
-- introducción + partícula + sujeto + verbo
-
-`Do you know how much the ticket costs?`  
-`I wonder where Maya put the keys.`  
-`Could you explain why the screen is flashing?`
-
-## Pregunta cerrada indirecta
-
-- introducción + `if/whether` + sujeto + verbo
-
-`Do you know if the office is open?`  
-`I'd like to know whether the fee is refundable.`  
-`Could you tell me if I need an appointment?`
-
-No usamos `that` para una pregunta cerrada.
-
-## Negativas
-
-La negación permanece dentro del orden afirmativo:
-
-`Why isn't the printer working?`  
-`Do you know why the printer isn't working?`
-
-`Didn't Sara receive the email?`  
-`Do you know why Sara didn't receive the email?`
-
-# Preguntas de sujeto y de objeto
-
-En una pregunta de sujeto, `who` o `what` realiza la acción:
-
-`Who called the office?`  
-`What caused the delay?`
-
-No usamos `do/did` porque no hay otro sujeto que invertir.
-
-En una pregunta de objeto, otra persona realiza la acción:
-
-`Who did you call?`  
-Aquí `you` es sujeto y `who` es objeto.
-
-En forma indirecta:
-
-`Do you know who called the office?`  
-`Could you tell me who you called?`
-
-Las dos usan orden afirmativo, pero solo la segunda contiene un sujeto adicional
-(`you`).
-
-# Usos principales
-
-1. **Información directa:** `Where is the nearest cash machine?`
-2. **Horario:** `What time does the last train leave?`
-3. **Pasado:** `Why did the alarm stop?`
-4. **Permiso o posibilidad:** `Can the date be changed?`
-5. **Pregunta cortés:** `Could you tell me where the entrance is?`
-6. **Conocimiento:** `Do you know whether the café has reopened?`
-7. **Duda:** `I wonder how long the repair will take.`
-8. **Información deseada:** `I'd like to know if parking is included.`
-9. **Sujeto desconocido:** `Who designed this building?`
-10. **Objeto desconocido:** `Who did the committee choose?`
 
 # Contrastes importantes
 
@@ -281,19 +236,12 @@ speech trabaja cambios de tiempo y referencia.
 
 # Excepciones relevantes
 
-En preguntas muy breves o conversaciones informales puede oírse una pregunta
-directa después de una pausa: `Can you tell me—where is the station?` Son dos
-unidades discursivas distintas. En la estructura integrada que practica el
-dataset usamos `where the station is`.
-
-Con expresiones como `What do you think ...?`, la partícula puede pertenecer al
-contenido: `What do you think the problem is?` No decimos `What do you think is
-the problem?` cuando `the problem` es el sujeto de `is`. Estas estructuras se
-introducen en dificultad alta con contexto inequívoco.
-
-`Whether` puede ir antes de un infinitivo (`I don't know whether to wait`), pero
-esa construcción no equivale a `whether I should wait` en todas las tareas. Las
-actividades B1 especifican la estructura esperada.
+- En preguntas muy breves o conversaciones informales puede oírse una pregunta directa después de una pausa: `Can you tell me—where is the station?` Son dos unidades discursivas distintas.
+- En la estructura integrada que practica el dataset usamos `where the station is`.
+- Con expresiones como `What do you think ...?`, la partícula puede pertenecer al contenido: `What do you think the problem is?` No decimos `What do you think is the problem?` cuando `the problem` es el sujeto de `is`.
+- Estas estructuras se introducen en dificultad alta con contexto inequívoco.
+- `Whether` puede ir antes de un infinitivo (`I don't know whether to wait`), pero esa construcción no equivale a `whether I should wait` en todas las tareas.
+- Las actividades B1 especifican la estructura esperada.
 
 # Mini resumen
 

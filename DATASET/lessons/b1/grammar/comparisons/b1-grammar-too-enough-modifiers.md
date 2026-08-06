@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -51,6 +51,22 @@ También podemos precisar cuánto difieren dos cosas:
 - Usar `enough` delante de sustantivos.
 - Modificar comparativos con `much`, `a lot`, `a bit` y `far`.
 - Distinguir el matiz negativo de `too` del neutro de `enough`.
+
+# Forma o estructura
+
+- `too + adjetivo`
+- `adjetivo + enough`
+- `enough + sustantivo`
+- `much / a lot / far + comparativo`
+- `a bit / slightly + comparativo`
+
+# Usos principales
+
+1. **Exceso que impide:** `The box is too heavy to lift.`
+2. **Cantidad suficiente:** `We have enough time to finish.`
+3. **Gran diferencia:** `This phone is much cheaper than that one.`
+4. **Pequeña diferencia:** `The new plan is a bit better than the old one.`
+5. **Capacidad:** `She is old enough to drive.`
 
 # Explicación
 
@@ -87,22 +103,6 @@ Podemos precisar la diferencia:
 `far` también intensifica:
 
 `The new office is far more spacious than the old one.`
-
-# Forma o estructura
-
-- `too + adjetivo`
-- `adjetivo + enough`
-- `enough + sustantivo`
-- `much / a lot / far + comparativo`
-- `a bit / slightly + comparativo`
-
-# Usos principales
-
-1. **Exceso que impide:** `The box is too heavy to lift.`
-2. **Cantidad suficiente:** `We have enough time to finish.`
-3. **Gran diferencia:** `This phone is much cheaper than that one.`
-4. **Pequeña diferencia:** `The new plan is a bit better than the old one.`
-5. **Capacidad:** `She is old enough to drive.`
 
 # Contrastes importantes
 
@@ -153,15 +153,9 @@ Con adjetivo va después; con sustantivo va delante:
 
 # Excepciones relevantes
 
-`too` puede ir seguido de `for + persona`:
-
-`The test was too difficult for me.`
-
-`enough` puede ir seguido de `to + infinitivo`:
-
-`She is old enough to travel alone.`
-
-Con `too ... to` y `enough ... to`, el infinitivo no repite el sujeto objeto.
+- `too` puede ir seguido de `for + persona`: `The test was too difficult for me.`
+- `enough` puede ir seguido de `to + infinitivo`: `She is old enough to travel alone.`
+- Con `too ... to` y `enough ... to`, el infinitivo no repite el sujeto objeto.
 
 # Mini resumen
 

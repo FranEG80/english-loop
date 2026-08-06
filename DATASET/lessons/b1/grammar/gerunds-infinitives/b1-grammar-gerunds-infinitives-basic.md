@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -59,6 +59,50 @@ Las preposiciones van seguidas de gerundio:
 - Usar infinitivo con `to` tras adjetivos frecuentes.
 - Distinguir cuándo cada patrón es correcto.
 - Corregir errores comunes de mezcla entre ambos patrones.
+
+# Forma o estructura
+
+## Verb + gerundio
+
+- `enjoy + -ing`: `I enjoy playing tennis.`
+- `finish + -ing`: `She finished cleaning the kitchen.`
+- `mind + -ing`: `Do you mind waiting a moment?`
+- `suggest + -ing`: `He suggested taking a break.`
+- `avoid + -ing`: `We avoid driving in the city.`
+
+## Verb + to-infinitive
+
+- `want + to + verbo`: `I want to learn Spanish.`
+- `decide + to + verbo`: `They decided to move house.`
+- `hope + to + verbo`: `She hopes to pass the exam.`
+- `plan + to + verbo`: `We plan to visit Rome.`
+- `need + to + verbo`: `You need to book a table.`
+
+## Preposición + gerundio
+
+- `good at + -ing`: `She's good at drawing.`
+- `interested in + -ing`: `He's interested in photography.`
+- `tired of + -ing`: `I'm tired of waiting.`
+- `think about + -ing`: `We're thinking about moving.`
+
+## Adjetivo + to-infinitive
+
+- `easy to + verbo`: `This exercise is easy to do.`
+- `happy to + verbo`: `I'm happy to help.`
+- `difficult to + verbo`: `The question is difficult to answer.`
+
+# Usos principales
+
+1. **Expresar disfrute:** `I enjoy cooking.`
+2. **Expresar finalización:** `She finished writing the report.`
+3. **Preguntar por molestia:** `Do you mind opening the window?`
+4. **Hacer una sugerencia:** `He suggested going for a walk.`
+5. **Evitar algo:** `We avoid eating late.`
+6. **Expresar deseo:** `I want to travel.`
+7. **Tomar una decisión:** `They decided to stay.`
+8. **Expresar esperanza:** `She hopes to find a job.`
+9. **Expresar un plan:** `We plan to leave early.`
+10. **Expresar necesidad:** `You need to rest.`
 
 # Explicación
 
@@ -107,50 +151,6 @@ Otros verbos frecuentes van seguidos de infinitivo con `to`:
 `want`, `decide`, `hope`, `plan`, `need`, `would like`, `agree`, `offer`
 
 No existe una regla general para saber cuál usar: hay que memorizar cada verbo.
-
-# Forma o estructura
-
-## Verb + gerundio
-
-- `enjoy + -ing`: `I enjoy playing tennis.`
-- `finish + -ing`: `She finished cleaning the kitchen.`
-- `mind + -ing`: `Do you mind waiting a moment?`
-- `suggest + -ing`: `He suggested taking a break.`
-- `avoid + -ing`: `We avoid driving in the city.`
-
-## Verb + to-infinitive
-
-- `want + to + verbo`: `I want to learn Spanish.`
-- `decide + to + verbo`: `They decided to move house.`
-- `hope + to + verbo`: `She hopes to pass the exam.`
-- `plan + to + verbo`: `We plan to visit Rome.`
-- `need + to + verbo`: `You need to book a table.`
-
-## Preposición + gerundio
-
-- `good at + -ing`: `She's good at drawing.`
-- `interested in + -ing`: `He's interested in photography.`
-- `tired of + -ing`: `I'm tired of waiting.`
-- `think about + -ing`: `We're thinking about moving.`
-
-## Adjetivo + to-infinitive
-
-- `easy to + verbo`: `This exercise is easy to do.`
-- `happy to + verbo`: `I'm happy to help.`
-- `difficult to + verbo`: `The question is difficult to answer.`
-
-# Usos principales
-
-1. **Expresar disfrute:** `I enjoy cooking.`
-2. **Expresar finalización:** `She finished writing the report.`
-3. **Preguntar por molestia:** `Do you mind opening the window?`
-4. **Hacer una sugerencia:** `He suggested going for a walk.`
-5. **Evitar algo:** `We avoid eating late.`
-6. **Expresar deseo:** `I want to travel.`
-7. **Tomar una decisión:** `They decided to stay.`
-8. **Expresar esperanza:** `She hopes to find a job.`
-9. **Expresar un plan:** `We plan to leave early.`
-10. **Expresar necesidad:** `You need to rest.`
 
 # Contrastes importantes
 
@@ -221,22 +221,10 @@ Aquí el infinitivo sigue al adjetivo, no al verbo principal.
 
 # Excepciones relevantes
 
-Algunos verbos pueden ir seguidos de gerundio o de infinitivo con `to` con
-significados distintos, pero en este nivel básico nos centramos en los patrones
-fijos. Verbos como `like`, `love` y `hate` aceptan ambos con poca diferencia de
-significado:
-
-`I like swimming.`  
-`I like to swim.`
-
-`Would like` siempre va seguido de infinitivo con `to`:
-
-`I would like to order a coffee.`
-
-El verbo `need` puede ir seguido de gerundio con sentido pasivo en algunos
-contextos, pero en este nivel lo usamos con infinitivo con `to`:
-
-`You need to rest.`
+- Algunos verbos pueden ir seguidos de gerundio o de infinitivo con `to` con significados distintos, pero en este nivel básico nos centramos en los patrones fijos.
+- Verbos como `like`, `love` y `hate` aceptan ambos con poca diferencia de significado: `I like swimming.` `I like to swim.`
+- `Would like` siempre va seguido de infinitivo con `to`: `I would like to order a coffee.`
+- El verbo `need` puede ir seguido de gerundio con sentido pasivo en algunos contextos, pero en este nivel lo usamos con infinitivo con `to`: `You need to rest.`
 
 # Mini resumen
 

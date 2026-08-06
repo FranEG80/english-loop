@@ -31,7 +31,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -50,6 +50,27 @@ to` presenta una conclusión muy segura; `be likely to` expresa probabilidad.
 - Expresar permiso y prohibición en distintos tiempos.
 - Graduar probabilidad con `likely`, `unlikely`, `bound` y `certain`.
 - Interpretar si una afirmación se basa en una norma, un plan o una deducción.
+
+# Forma o estructura
+
+- `subject + am/is/are/was/were + supposed to + base verb`.
+- `subject + am/is/are/was/were + allowed to + base verb`.
+- `subject + am/is/are + likely/unlikely/bound/sure/certain to + base verb`.
+- Negación: `is not supposed to`, `is not allowed to`, `is unlikely to`.
+- Pregunta: `Are we supposed to sign here?` / `Were they allowed to enter?`.
+
+Después de todas estas expresiones usamos la forma base: `is supposed to leave`,
+`was allowed to enter`, `is likely to improve`. No añadimos una `-s` al verbo
+principal ni otro `to` después de `supposed` o `likely`.
+
+# Usos principales
+
+1. **Plan o expectativa:** `The courier is supposed to arrive by noon.`
+2. **Regla o instrucción:** `You are supposed to wear a helmet on this route.`
+3. **Permiso:** `Researchers are allowed to use the archive.`
+4. **Prohibición:** `Guests are not allowed to park here.`
+5. **Probabilidad:** `The revised timetable is likely to reduce delays.`
+6. **Certeza deducida:** `That loose shelf is bound to fall eventually.`
 
 # Explicación
 
@@ -74,27 +95,6 @@ podemos usar `will be allowed to`.
 likely to affect connecting flights.` `Be bound to`, `be certain to` y `be sure
 to` expresan una conclusión muy segura, no una orden: `The shortcut is bound to
 save time.`
-
-# Forma o estructura
-
-- `subject + am/is/are/was/were + supposed to + base verb`.
-- `subject + am/is/are/was/were + allowed to + base verb`.
-- `subject + am/is/are + likely/unlikely/bound/sure/certain to + base verb`.
-- Negación: `is not supposed to`, `is not allowed to`, `is unlikely to`.
-- Pregunta: `Are we supposed to sign here?` / `Were they allowed to enter?`.
-
-Después de todas estas expresiones usamos la forma base: `is supposed to leave`,
-`was allowed to enter`, `is likely to improve`. No añadimos una `-s` al verbo
-principal ni otro `to` después de `supposed` o `likely`.
-
-# Usos principales
-
-1. **Plan o expectativa:** `The courier is supposed to arrive by noon.`
-2. **Regla o instrucción:** `You are supposed to wear a helmet on this route.`
-3. **Permiso:** `Researchers are allowed to use the archive.`
-4. **Prohibición:** `Guests are not allowed to park here.`
-5. **Probabilidad:** `The revised timetable is likely to reduce delays.`
-6. **Certeza deducida:** `That loose shelf is bound to fall eventually.`
 
 # Contrastes importantes
 
@@ -153,17 +153,11 @@ minutes` frente a `The shortcut is bound to save time`.
 
 # Excepciones relevantes
 
-`Be supposed to` también puede introducir una expectativa irónica o una
-pregunta sobre una función: `What am I supposed to do now?` No significa
-necesariamente que exista una regla formal.
-
-`Be allowed to` no equivale siempre a que la acción sea posible en la práctica:
-`We are allowed to use the roof terrace, but it is closed today`. El permiso y
-la posibilidad material son ideas diferentes.
-
-`Bound to` también aparece en la expresión `bound by`, que significa obligado o
-limitado por una norma: `The committee is bound by the agreement`. No debemos
-confundirla con `bound to improve`, que expresa certeza.
+- `Be supposed to` también puede introducir una expectativa irónica o una pregunta sobre una función: `What am I supposed to do now?` No significa necesariamente que exista una regla formal.
+- `Be allowed to` no equivale siempre a que la acción sea posible en la práctica: `We are allowed to use the roof terrace, but it is closed today`.
+- El permiso y la posibilidad material son ideas diferentes.
+- `Bound to` también aparece en la expresión `bound by`, que significa obligado o limitado por una norma: `The committee is bound by the agreement`.
+- No debemos confundirla con `bound to improve`, que expresa certeza.
 
 # Mini resumen
 

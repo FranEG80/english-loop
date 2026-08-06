@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -40,23 +40,32 @@ En textos B2, la respuesta rara vez aparece con las mismas palabras que la pregu
 - Separar el mensaje global de un detalle secundario.
 - Rechazar opciones posibles en el mundo real pero no demostradas por el texto.
 
-# Explicación
+# Pistas que debes localizar
 
-Una inferencia válida combina evidencia textual y una conclusión moderada. Si el texto dice que el proyecto empezó tarde, tuvo poco presupuesto y aun así alcanzó a sus usuarios, puedes inferir que el equipo trabajó con recursos limitados; no puedes inferir que todos estaban satisfechos si no hay señales de ello.
+- **Idea general:** resume quién o qué ocupa el centro del texto, qué problema se plantea y cuál es el resultado.
+- **Detalle:** vuelve al párrafo exacto y busca paráfrasis, no solo palabras repetidas.
+- **Inferencia:** conecta afirmaciones compatibles de lugares distintos.
+- **Alcance:** desconfía de *always*, *everyone* o *completely* salvo que el texto respalde esa fuerza.
 
-# Forma o estructura
-
-Lee la pregunta y localiza palabras clave, pero busca paráfrasis. Para el gist, resume quién, qué problema y qué resultado. Para el detalle, vuelve al párrafo exacto. Para inferir, conecta afirmaciones de lugares distintos y evita opciones absolutas como *always*, *everyone* o *completely* salvo que el texto las respalde.
-
-# Usos principales
+# Aplicación en textos
 
 - Comprender artículos divulgativos, entrevistas y reportajes.
 - Interpretar consecuencias, causas implícitas y actitudes moderadas.
 - Evaluar si una afirmación está apoyada, contradicha o no mencionada.
 
-# Contrastes importantes
+# Explicación
 
-El gist responde “¿de qué trata principalmente?”, no “¿qué dato aparece?”. Un detalle puede ser correcto y aun así no resumir el texto. Una inferencia tampoco es una opinión personal: debe poder explicarse con dos o más pistas visibles.
+Una inferencia válida combina evidencia textual y una conclusión moderada. Si el texto dice que el proyecto empezó tarde, tuvo poco presupuesto y aun así alcanzó a sus usuarios, puedes inferir que el equipo trabajó con recursos limitados; no puedes inferir que todos estaban satisfechos si no hay señales de ello.
+
+Distingue entre «posible» y «demostrable». Muchas historias serían compatibles con el texto, pero una respuesta de lectura necesita la explicación que mejor reúne las pistas disponibles y añade menos supuestos. Formula la inferencia con tus palabras y señala después las frases que la sostienen.
+
+Para la idea general, observa qué información recibe más espacio y cómo termina el texto. Para un detalle, limita la búsqueda a la sección pertinente. Mezclar ambos niveles produce distractores típicos: un dato exacto puede ser irrelevante para el propósito global.
+
+# Distractores y matices
+
+- El gist responde “¿de qué trata principalmente?”, no “¿qué dato aparece?”.
+- Un detalle puede ser correcto y aun así no resumir el texto.
+- Una inferencia tampoco es una opinión personal: debe poder explicarse con dos o más pistas visibles.
 
 # Ejemplos
 
@@ -71,15 +80,16 @@ El gist responde “¿de qué trata principalmente?”, no “¿qué dato aparec
 - ❌ Convertir *some* en *all* o *may* en *will*.
 - ✅ Mantener la misma fuerza que tiene la evidencia.
 
-# Excepciones relevantes
+# Casos menos evidentes
 
-Una inferencia puede ser razonable aunque el texto no la formule literalmente, pero debe ser la única conclusión compatible con las pistas. Si dos interpretaciones son posibles, la respuesta correcta suele ser “no se puede saber” o una opción más prudente.
+- Una inferencia puede ser razonable aunque el texto no la formule literalmente, pero debe ser la única conclusión compatible con las pistas.
+- Si dos interpretaciones son posibles, la respuesta correcta suele ser “no se puede saber” o una opción más prudente.
 
-# Mini resumen
+# Lista de comprobación
 
 Primero identifica la idea global; luego verifica detalles; por último combina pistas y controla el alcance de tu conclusión. La evidencia manda sobre tus conocimientos previos.
 
-# Comprobación rápida autocorregible
+# Comprueba tu lectura
 
 1. **The café reduced its menu, shortened opening hours and hired fewer staff.** ¿Qué inferencia es segura?
    - Respuesta: `está reduciendo costes`
@@ -87,4 +97,3 @@ Primero identifica la idea global; luego verifica detalles; por último combina 
 2. ¿Puedes concluir que el café cerrará pronto?
    - Respuesta: `no`
    - Explicación: el texto no afirma ni demuestra un cierre futuro.
-

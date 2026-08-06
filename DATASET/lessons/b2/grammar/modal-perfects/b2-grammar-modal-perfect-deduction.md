@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,18 +42,6 @@ considerarla incompatible con la evidencia.
 - Elegir un modal según el grado de certeza que ofrece el contexto.
 - Formar correctamente `modal + have + participio`.
 - Evitar interpretar `must have` como una obligación pasada.
-
-# Explicación
-
-En `The lights are off; they must have left`, el hablante no vio la salida, pero
-considera que es la explicación más lógica. En `They might have gone for
-coffee`, la salida sigue siendo solo una posibilidad. `They can't have left`
-indica que alguna evidencia hace imposible o extremadamente improbable esa
-conclusión.
-
-La certeza se aplica al pasado porque el modal va seguido de `have + participio`.
-La forma no cambia según la persona: `I may have`, `she may have`, `they may
-have`.
 
 # Forma o estructura
 
@@ -73,14 +61,24 @@ La contracción oral `must've` representa `must have`, nunca `must of`.
 4. Imposibilidad: `Jon can't have written this; he was abroad.`
 5. Proceso pasado: `They must have been waiting for hours.`
 
+# Explicación
+
+En `The lights are off; they must have left`, el hablante no vio la salida, pero
+considera que es la explicación más lógica. En `They might have gone for
+coffee`, la salida sigue siendo solo una posibilidad. `They can't have left`
+indica que alguna evidencia hace imposible o extremadamente improbable esa
+conclusión.
+
+La certeza se aplica al pasado porque el modal va seguido de `have + participio`.
+La forma no cambia según la persona: `I may have`, `she may have`, `they may
+have`.
+
 # Contrastes importantes
 
-`Had to` expresa obligación real: `We had to leave at six`. `Must have left`
-expresa una deducción: el hablante concluye que alguien se marchó.
-
-En inglés británico, `can't have` es la forma habitual para una deducción
-negativa fuerte. `Mustn't have` suele interpretarse como prohibición o no es la
-opción natural para concluir que algo no ocurrió.
+- `Had to` expresa obligación real: `We had to leave at six`.
+- `Must have left` expresa una deducción: el hablante concluye que alguien se marchó.
+- En inglés británico, `can't have` es la forma habitual para una deducción negativa fuerte.
+- `Mustn't have` suele interpretarse como prohibición o no es la opción natural para concluir que algo no ocurrió.
 
 # Ejemplos
 
@@ -106,10 +104,9 @@ opción natural para concluir que algo no ocurrió.
 
 # Excepciones relevantes
 
-`Could have` puede expresar tanto posibilidad pasada como oportunidad no
-aprovechada. `The key could have fallen out` es una deducción; `You could have
-called me` suele ser una crítica. El contexto y la lección relacionada
-determinan la lectura.
+- `Could have` puede expresar tanto posibilidad pasada como oportunidad no aprovechada.
+- `The key could have fallen out` es una deducción; `You could have called me` suele ser una crítica.
+- El contexto y la lección relacionada determinan la lectura.
 
 # Mini resumen
 

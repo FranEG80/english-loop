@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,6 +46,20 @@ antes de ese punto.
 - Usar el continuo para actividades en curso antes de un punto pasado.
 - Distinguir verbos de estado que no usan el continuo.
 - Elegir la forma según el énfasis.
+
+# Forma o estructura
+
+- Simple: `had + participio`
+- Continuo: `had + been + -ing`
+- Con `for`/`since` ambos son posibles según el énfasis.
+
+# Usos principales
+
+1. **Evento completado:** `The film had started before we arrived.`
+2. **Actividad en curso:** `She had been studying all night.`
+3. **Resultado anterior:** `He had finished the report by noon.`
+4. **Duración anterior:** `They had been travelling for a week.`
+5. **Efecto visible:** `Her eyes were red; she had been crying.`
 
 # Explicación
 
@@ -67,20 +81,6 @@ Los verbos de estado no suelen usar el continuo:
 
 `I had known her for years.`  
 No decimos `I had been knowing her`.
-
-# Forma o estructura
-
-- Simple: `had + participio`
-- Continuo: `had + been + -ing`
-- Con `for`/`since` ambos son posibles según el énfasis.
-
-# Usos principales
-
-1. **Evento completado:** `The film had started before we arrived.`
-2. **Actividad en curso:** `She had been studying all night.`
-3. **Resultado anterior:** `He had finished the report by noon.`
-4. **Duración anterior:** `They had been travelling for a week.`
-5. **Efecto visible:** `Her eyes were red; she had been crying.`
 
 # Contrastes importantes
 
@@ -121,15 +121,8 @@ No decimos `I had been knowing her`.
 
 # Excepciones relevantes
 
-Algunos verbos pueden usarse en continuo con cambio de significado, como `think`
-y `have`:
-
-`I had been thinking about it.` (proceso)  
-`I had thought about it.` (decisión)
-
-Con `for`/`since`, el continuo enfatiza la duración:
-
-`I had been living there for ten years.`
+- Algunos verbos pueden usarse en continuo con cambio de significado, como `think` y `have`: `I had been thinking about it.` (proceso) `I had thought about it.` (decisión)
+- Con `for`/`since`, el continuo enfatiza la duración: `I had been living there for ten years.`
 
 # Mini resumen
 

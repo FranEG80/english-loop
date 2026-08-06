@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -51,33 +51,6 @@ continuar en past simple.
 - Explicar una situación pasada mediante una causa aún más antigua.
 - Colocar `already`, `just`, `never` y `yet` de forma natural.
 - Elegir past simple cuando el orden narrativo ya está claro.
-
-# Explicación
-
-Comparamos dos acontecimientos:
-
-`The train left at 8.00. We arrived at 8.10.`
-
-Si empezamos por la llegada, necesitamos retroceder:
-
-`When we arrived, the train had left.`
-
-El past simple (`arrived`) establece el punto de referencia. El past perfect
-(`had left`) mira hacia atrás desde ese punto.
-
-También explica causas:
-
-`Lena was tired because she hadn't slept well.`
-
-El cansancio pertenece al momento narrado; la mala noche ocurrió antes.
-
-Cuando contamos eventos en el mismo orden en que sucedieron, el past simple
-suele ser suficiente:
-
-`I opened the door, walked inside and switched on the light.`
-
-Usar `had opened`, `had walked` y `had switched` no aporta una relación de
-anterioridad útil y hace la narración innecesariamente pesada.
 
 # Forma o estructura
 
@@ -111,6 +84,33 @@ la forma es `had gone`.
 5. **Expectativa incumplida:** `I thought I had saved the document, but I hadn't.`
 6. **Noticia ya ocurrida:** `When I called, Omar had already heard the news.`
 7. **Acción inmediatamente anterior:** `The guests had just left when we arrived.`
+
+# Explicación
+
+Comparamos dos acontecimientos:
+
+`The train left at 8.00. We arrived at 8.10.`
+
+Si empezamos por la llegada, necesitamos retroceder:
+
+`When we arrived, the train had left.`
+
+El past simple (`arrived`) establece el punto de referencia. El past perfect
+(`had left`) mira hacia atrás desde ese punto.
+
+También explica causas:
+
+`Lena was tired because she hadn't slept well.`
+
+El cansancio pertenece al momento narrado; la mala noche ocurrió antes.
+
+Cuando contamos eventos en el mismo orden en que sucedieron, el past simple
+suele ser suficiente:
+
+`I opened the door, walked inside and switched on the light.`
+
+Usar `had opened`, `had walked` y `had switched` no aporta una relación de
+anterioridad útil y hace la narración innecesariamente pesada.
 
 # Contrastes importantes
 
@@ -203,21 +203,13 @@ En esta oración, `had left` aclara que la salida ocurrió antes del regreso.
 
 # Excepciones relevantes
 
-En conversaciones informales, el contexto y palabras como `before` o `after`
-pueden hacer innecesario el past perfect: `I ate after I finished work`. No es
-un error si el orden está claro.
-
-El past perfect no significa que una acción durara mucho ni que sucediera hace
-mucho tiempo. `The lift had stopped a second before we entered` es correcto: lo
-relevante es que el fallo fue anterior a la entrada.
-
-Con verbos de estado, el past perfect puede describir una situación vigente
-hasta un punto pasado: `They had known each other for years before they worked
-together`.
-
-En una narración extensa, no necesitamos mantener el past perfect en cada
-oración. Lo usamos para retroceder y, una vez situado el periodo anterior,
-podemos narrar sus eventos en past simple si la secuencia queda clara.
+- En conversaciones informales, el contexto y palabras como `before` o `after` pueden hacer innecesario el past perfect: `I ate after I finished work`.
+- No es un error si el orden está claro.
+- El past perfect no significa que una acción durara mucho ni que sucediera hace mucho tiempo.
+- `The lift had stopped a second before we entered` es correcto: lo relevante es que el fallo fue anterior a la entrada.
+- Con verbos de estado, el past perfect puede describir una situación vigente hasta un punto pasado: `They had known each other for years before they worked together`.
+- En una narración extensa, no necesitamos mantener el past perfect en cada oración.
+- Lo usamos para retroceder y, una vez situado el periodo anterior, podemos narrar sus eventos en past simple si la secuencia queda clara.
 
 # Mini resumen
 

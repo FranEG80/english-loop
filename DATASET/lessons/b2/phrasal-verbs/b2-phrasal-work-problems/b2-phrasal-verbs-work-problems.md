@@ -29,8 +29,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 En el trabajo, los problemas se *sort out*, las ideas se *come up with* y las propuestas se *look into*. Practicarás estas combinaciones en situaciones profesionales.
@@ -40,23 +41,32 @@ En el trabajo, los problemas se *sort out*, las ideas se *come up with* y las pr
 - Usar phrasal verbs para idear, investigar, resolver, aplazar y descartar.
 - Elegir partículas según significado y patrón transitivo.
 
-# Explicación
+# Verbo, partícula y objeto
 
-La partícula cambia el significado: *look into* investiga, *look over* revisa por encima y *look after* cuida. *Come up with* produce una idea; *come across* encuentra algo por casualidad. Observa si el objeto va entre el verbo y la partícula o después de ella.
+- Idear: *come up with a solution*.
+- Investigar: *look into a complaint*.
+- Resolver: *sort out a problem*.
+- Aplazar: *put off a meeting*.
+- Rechazar: *turn down an offer*.
+- Revisar: *go over the figures*.
 
-# Forma o estructura
-
-Idear: *come up with a solution*. Investigar: *look into a complaint*. Resolver: *sort out a problem*. Aplazar: *put off a meeting*. Rechazar: *turn down an offer*. Revisar: *go over the figures*.
-
-# Usos principales
+# Contextos de uso
 
 - Gestionar incidencias y reclamaciones.
 - Proponer soluciones y tomar decisiones.
 - Describir tareas de reuniones, informes y proyectos.
 
-# Contrastes importantes
+# Explicación
 
-*Put off* aplaza; *call off* cancela. *Turn down* rechaza; *turn up* aumenta o aparece. *Look into* investiga un asunto; *look for* busca una cosa.
+La partícula cambia el significado: *look into* investiga, *look over* revisa por encima y *look after* cuida. *Come up with* produce una idea; *come across* encuentra algo por casualidad. Observa si el objeto va entre el verbo y la partícula o después de ella.
+
+Clasifica también el patrón. *Put off*, *turn down* y *sort out* son separables con pronombre: *put it off*, *turn it down*, *sort it out*. *Go over*, *look into* y *come up with* mantienen la unidad delante del objeto: *go over them*, *look into it*, *come up with one*. Esta diferencia evita colocar el pronombre en una posición imposible.
+
+# Phrasal verbs que se confunden
+
+- *Put off* aplaza; *call off* cancela.
+- *Turn down* rechaza; *turn up* aumenta o aparece.
+- *Look into* investiga un asunto; *look for* busca una cosa.
 
 # Ejemplos
 
@@ -67,21 +77,22 @@ Idear: *come up with a solution*. Investigar: *look into a complaint*. Resolver:
 
 # Errores frecuentes
 
-❌ Elegir la partícula por traducción literal.
-✅ Leer la frase completa y el resultado esperado.
-❌ Confundir *sort out* con *set out*.
-✅ *Sort out* resuelve; *set out* empieza o presenta algo.
+- ❌ Elegir la partícula por traducción literal.
+- ✅ Leer la frase completa y el resultado esperado.
+- ❌ Confundir *sort out* con *set out*.
+- ✅ *Sort out* resuelve; *set out* empieza un viaje o presenta algo de forma organizada.
 
-# Excepciones relevantes
+# Cambios de significado y registro
 
-Algunos verbos cambian de significado según el objeto. *Work out a problem* puede significar resolverlo, mientras *work out at the gym* describe ejercicio. En registros formales puedes ver verbos equivalentes, pero el phrasal verb es frecuente en conversaciones laborales.
+- Algunos verbos cambian de significado según el objeto.
+- *Work out a problem* puede significar resolverlo, mientras *work out at the gym* describe ejercicio.
+- En registros formales puedes ver verbos equivalentes, pero el phrasal verb es frecuente en conversaciones laborales.
 
-# Mini resumen
+# Para recordar
 
 Determina si necesitas investigar, idear, resolver, aplazar o rechazar; después selecciona la partícula.
 
-# Comprobación rápida autocorregible
+# Comprueba el phrasal verb
 
 1. Completa: *We need to ___ up with a better plan.* → `come`.
 2. ¿*Put off* significa cancelar? → `no, significa aplazar`.
-

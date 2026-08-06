@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,13 +42,7 @@ Viajar y vivir en una ciudad implica mucho más que reservar un hotel. En debate
 - Hablar de vivienda, transporte, accesibilidad e infraestructura.
 - Proponer medidas que mejoren la sostenibilidad y la calidad de vida.
 
-# Explicación
-
-Una **destination** es el lugar al que viaja una persona; una **attraction** es un lugar o actividad que atrae visitantes. La **infrastructure** incluye redes y servicios como transporte, carreteras, agua y energía. La **public transport network** conecta zonas, mientras que **mobility** se refiere a la facilidad de desplazarse.
-
-Cuando llegan muchos visitantes, una ciudad puede experimentar **tourist pressure**, **overcrowding** o **congestion**. El turismo puede generar **revenue** y empleos, pero también aumentar el precio de la vivienda o producir **displacement**. Una medida **sustainable** intenta satisfacer las necesidades actuales sin deteriorar los recursos y la vida urbana a largo plazo. **Accessible** puede significar fácil de usar para personas con distintas capacidades, no solo fácil de alcanzar.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - attract visitors / boost local revenue / create seasonal jobs
 - cope with demand / manage visitor numbers / reduce congestion
@@ -57,7 +51,7 @@ Cuando llegan muchos visitantes, una ciudad puede experimentar **tourist pressur
 - improve accessibility / make a district pedestrian-friendly
 - promote sustainable tourism / protect a natural site
 
-# Usos principales
+# Situaciones de uso
 
 1. **Describir una ciudad:** *The historic centre is well connected but vulnerable to overcrowding.*
 2. **Analizar una política:** *A visitor levy could raise funds for public transport.*
@@ -65,7 +59,13 @@ Cuando llegan muchos visitantes, una ciudad puede experimentar **tourist pressur
 4. **Hablar de vivienda:** *Short-term rentals have driven up rents in some neighbourhoods.*
 5. **Proponer mejoras:** *The council should invest in accessible cycling routes.*
 
-# Contrastes importantes
+# Explicación
+
+Una **destination** es el lugar al que viaja una persona; una **attraction** es un lugar o actividad que atrae visitantes. La **infrastructure** incluye redes y servicios como transporte, carreteras, agua y energía. La **public transport network** conecta zonas, mientras que **mobility** se refiere a la facilidad de desplazarse.
+
+Cuando llegan muchos visitantes, una ciudad puede experimentar **tourist pressure**, **overcrowding** o **congestion**. El turismo puede generar **revenue** y empleos, pero también aumentar el precio de la vivienda o producir **displacement**. Una medida **sustainable** intenta satisfacer las necesidades actuales sin deteriorar los recursos y la vida urbana a largo plazo. **Accessible** puede significar fácil de usar para personas con distintas capacidades, no solo fácil de alcanzar.
+
+# Palabras que se confunden
 
 ## Destination, attraction y landmark
 
@@ -91,24 +91,31 @@ Un lugar *accessible* puede ser utilizable por personas con diferentes necesidad
 
 # Errores frecuentes
 
-- ❌ *The city suffers of congestion.* ✅ *The city suffers from congestion.*
-- ❌ *Tourism makes pressure on housing.* ✅ *Tourism puts pressure on housing.*
-- ❌ *The council should invest on transport.* ✅ *The council should invest in transport.*
-- ❌ *Many tourists are visiting in the destination.* ✅ *Many tourists are visiting the destination.*
-- ❌ *The area is convenient for wheelchairs.* ✅ *The area is accessible to wheelchair users.*
+- ❌ *The city suffers of congestion.*
+- ✅ *The city suffers from congestion.*
+- ❌ *Tourism makes pressure on housing.*
+- ✅ *Tourism puts pressure on housing.*
+- ❌ *The council should invest on transport.*
+- ✅ *The council should invest in transport.*
+- ❌ *Many tourists are visiting in the destination.*
+- ✅ *Many tourists are visiting the destination.*
+- ❌ *The area is convenient for wheelchairs.*
+- ✅ *The area is accessible to wheelchair users.*
 
-# Excepciones relevantes
+# Variación de uso
 
-**Transport** es normalmente incontable en inglés británico: *public transport is reliable*. Para vehículos concretos se usa *means of transport* o *types of transport*. **Travel** es incontable cuando habla de la actividad y contable en expresiones como *business travels* es poco frecuente; para desplazamientos concretos suele ser mejor **journey** o **trip**.
+- **Transport** es normalmente incontable en inglés británico: *public transport is reliable*.
+- Para vehículos concretos se usa *means of transport* o *types of transport*.
+- **Travel** es incontable cuando habla de la actividad y contable en expresiones como *business travels* es poco frecuente; para desplazamientos concretos suele ser mejor **journey** o **trip**.
 
-# Mini resumen
+# Para recordar
 
 - *Infrastructure* y *mobility* describen cómo funciona una ciudad.
 - *Overcrowding* es exceso de personas; *congestion* suele ser saturación de tráfico o redes.
 - El turismo puede *boost revenue* y *put pressure on housing* a la vez.
 - *Accessible* expresa inclusión; *convenient* expresa practicidad.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. The city is investing ___ its transport network. (in)
    - Respuesta: `in`

@@ -25,7 +25,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,6 +41,24 @@ experiencia completa del viaje.
 - Diferenciar `journey`, `trip`, `travel`, `tour` y `voyage`.
 - Informar de retrasos, cancelaciones y objetos perdidos.
 
+# Léxico y combinaciones
+
+| Idea | Combinación natural | Ejemplo |
+| --- | --- | --- |
+| comprar billete | `book / buy a ticket` | `I booked a return ticket.` |
+| ida y vuelta | `a return ticket` | `Is this a return ticket?` |
+| facturar | `check in` | `We checked in online.` |
+| subir | `board a train / plane` | `Passengers are boarding now.` |
+| retraso | `be delayed` | `The flight was delayed.` |
+| cambiar de transporte | `change trains / lines` | `Change trains at Bristol.` |
+
+# Situaciones de uso
+
+- `A single ticket` es solo de ida; `a return ticket` incluye la vuelta.
+- `A direct flight` no hace escalas y `a connecting flight` exige cambiar de avión.
+- `A suitcase` es una maleta; `hand luggage` o `carry-on luggage` viaja contigo; `baggage allowance` es el peso permitido.
+- Para pedir ayuda: `Where can I buy a ticket?`, `Which platform does it leave from?`, `How long is the delay?` y `Could you tell me how to get to the station?` Para una incidencia, `miss a connection`, `lose your luggage` y `make a complaint` son combinaciones útiles.
+
 # Explicación
 
 `Travel` es la actividad de viajar y suele ser incontable: `Travel can be
@@ -55,30 +73,7 @@ plane`. En la llegada, `collect your luggage` y `go through customs`. `A
 platform` corresponde normalmente al tren; `a gate` al aeropuerto; `a stop` al
 autobús o tranvía.
 
-# Forma o estructura
-
-| Idea | Combinación natural | Ejemplo |
-| --- | --- | --- |
-| comprar billete | `book / buy a ticket` | `I booked a return ticket.` |
-| ida y vuelta | `a return ticket` | `Is this a return ticket?` |
-| facturar | `check in` | `We checked in online.` |
-| subir | `board a train / plane` | `Passengers are boarding now.` |
-| retraso | `be delayed` | `The flight was delayed.` |
-| cambiar de transporte | `change trains / lines` | `Change trains at Bristol.` |
-
-# Usos principales
-
-`A single ticket` es solo de ida; `a return ticket` incluye la vuelta. `A
-direct flight` no hace escalas y `a connecting flight` exige cambiar de avión.
-`A suitcase` es una maleta; `hand luggage` o `carry-on luggage` viaja contigo;
-`baggage allowance` es el peso permitido.
-
-Para pedir ayuda: `Where can I buy a ticket?`, `Which platform does it leave
-from?`, `How long is the delay?` y `Could you tell me how to get to the
-station?` Para una incidencia, `miss a connection`, `lose your luggage` y `make
-a complaint` son combinaciones útiles.
-
-# Contrastes importantes
+# Palabras que se confunden
 
 - `go by train` y `travel by train` no llevan artículo después de `by`; `take
   the train` sí lleva `the`.
@@ -103,32 +98,33 @@ a complaint` son combinaciones útiles.
 
 # Errores frecuentes
 
-- ❌ *I made a journey to Paris last weekend.* → ✅ **I took a trip to Paris last
+- ❌ *I made a journey to Paris last weekend.* →
+- ✅ **I took a trip to Paris last
   weekend.**
-- ❌ *We travelled with train.* → ✅ **We travelled by train.**
-- ❌ *The plane leaves in gate 4.* → ✅ **The plane leaves from gate 4.**
-- ❌ *Where is the train stop?* → ✅ **Where is the train platform?**
+- ❌ *We travelled with train.* →
+- ✅ **We travelled by train.**
+- ❌ *The plane leaves in gate 4.* →
+- ✅ **The plane leaves from gate 4.**
+- ❌ *Where is the train stop?* →
+- ✅ **Where is the train platform?**
 
-# Excepciones relevantes
+# Variación de uso
 
-`Travel` puede ser contable en contextos específicos o literarios (`his travels
-around Asia`), aunque el uso incontable es el más útil en B1. `A ride` puede ser
-un trayecto corto o la experiencia de montar en algo: `a bus ride`, `a ride on a
-horse`. En inglés británico `return ticket` es normal; `round-trip ticket` es
-frecuente en inglés americano.
+- `Travel` puede ser contable en contextos específicos o literarios (`his travels around Asia`), aunque el uso incontable es el más útil en B1.
+- `A ride` puede ser un trayecto corto o la experiencia de montar en algo: `a bus ride`, `a ride on a horse`.
+- En inglés británico `return ticket` es normal; `round-trip ticket` es frecuente en inglés americano.
 
-# Mini resumen
+# Para recordar
 
 Usa `travel` para la actividad, `journey` para el desplazamiento y `trip` para
 una visita concreta. Antes de salir puedes `book`, `check in` y `board`; durante
 el trayecto puedes consultar `platform`, `gate`, `route` y `delay`; al llegar
 puedes `collect luggage` y pasar por `customs`.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. `We travelled ___ train.` → `by`
 2. `I bought a ___ ticket because I am coming back on Sunday.` → `return`
 3. `The flight leaves from ___ 7.` → `gate`
 4. `Our train was late, so we missed the ___` → `connection`
 5. `A visit to several places with a guide is a ___` → `tour`
-

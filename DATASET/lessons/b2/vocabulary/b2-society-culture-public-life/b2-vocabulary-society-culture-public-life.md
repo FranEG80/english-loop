@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,13 +41,7 @@ Para debatir sobre sociedad y vida pública no basta con decir que algo es “bu
 - Distinguir derechos, responsabilidades, acceso y participación.
 - Valorar tradiciones, patrimonio y cambios en la vida pública.
 
-# Explicación
-
-Una **community** puede definirse por un lugar, un interés o una experiencia compartida. La **diversity** describe la presencia de diferencias; **inclusion** se refiere a que las personas puedan participar realmente; **equality** destaca la igualdad de derechos u oportunidades. Una política puede ser **inclusive** sin que todos los resultados sean idénticos, porque puede eliminar barreras específicas.
-
-En la vida pública, un **right** es algo que las personas pueden reclamar o ejercer, mientras que una **responsibility** o **duty** es una obligación moral o legal. **Access** indica si se puede utilizar un servicio o espacio. **Representation** indica quién habla o aparece en una institución. Una **heritage site** o una **cultural tradition** conecta el presente con la historia, aunque las tradiciones también pueden adaptarse.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - promote inclusion / improve access / protect rights
 - take part in public life / participate in a consultation
@@ -56,7 +50,7 @@ En la vida pública, un **right** es algo que las personas pueden reclamar o eje
 - face a barrier / tackle inequality / challenge a stereotype
 - have a duty to / be entitled to / be excluded from
 
-# Usos principales
+# Situaciones de uso
 
 1. **Describir cambios:** *The new library has improved access to information.*
 2. **Explicar participación:** *Residents took part in a consultation before the plan was approved.*
@@ -64,7 +58,13 @@ En la vida pública, un **right** es algo que las personas pueden reclamar o eje
 4. **Valorar una política:** *The measure is affordable, but its impact on inclusion is unclear.*
 5. **Discrepar con respeto:** *I recognise the aim, but I question whether the proposal represents rural communities.*
 
-# Contrastes importantes
+# Explicación
+
+Una **community** puede definirse por un lugar, un interés o una experiencia compartida. La **diversity** describe la presencia de diferencias; **inclusion** se refiere a que las personas puedan participar realmente; **equality** destaca la igualdad de derechos u oportunidades. Una política puede ser **inclusive** sin que todos los resultados sean idénticos, porque puede eliminar barreras específicas.
+
+En la vida pública, un **right** es algo que las personas pueden reclamar o ejercer, mientras que una **responsibility** o **duty** es una obligación moral o legal. **Access** indica si se puede utilizar un servicio o espacio. **Representation** indica quién habla o aparece en una institución. Una **heritage site** o una **cultural tradition** conecta el presente con la historia, aunque las tradiciones también pueden adaptarse.
+
+# Palabras que se confunden
 
 ## Equality, equity e inclusion
 
@@ -90,24 +90,31 @@ Un *citizen* tiene una relación legal con un Estado. Un *resident* vive en un l
 
 # Errores frecuentes
 
-- ❌ *Everyone should have the same access to every service.* ✅ *Everyone should have equal access to essential services.*
-- ❌ *The festival represents of the town.* ✅ *The festival represents the town.*
-- ❌ *People participated on the consultation.* ✅ *People participated in the consultation.*
-- ❌ *The policy excludes with young residents.* ✅ *The policy excludes young residents.*
-- ❌ *We must preserve the tradition from disappearing.* ✅ *We must preserve the tradition / prevent the tradition from disappearing.*
+- ❌ *Everyone should have the same access to every service.*
+- ✅ *Everyone should have equal access to essential services.*
+- ❌ *The festival represents of the town.*
+- ✅ *The festival represents the town.*
+- ❌ *People participated on the consultation.*
+- ✅ *People participated in the consultation.*
+- ❌ *The policy excludes with young residents.*
+- ✅ *The policy excludes young residents.*
+- ❌ *We must preserve the tradition from disappearing.*
+- ✅ *We must preserve the tradition / prevent the tradition from disappearing.*
 
-# Excepciones relevantes
+# Variación de uso
 
-**People** puede referirse a la población en general y lleva verbo plural. **The public** suele tratarse como un grupo singular en expresiones como *the public is concerned*, aunque *members of the public are...* exige plural. **Culture** puede ser incontable cuando hablamos de prácticas en general y contable cuando comparamos culturas concretas.
+- **People** puede referirse a la población en general y lleva verbo plural.
+- **The public** suele tratarse como un grupo singular en expresiones como *the public is concerned*, aunque *members of the public are...* exige plural.
+- **Culture** puede ser incontable cuando hablamos de prácticas en general y contable cuando comparamos culturas concretas.
 
-# Mini resumen
+# Para recordar
 
 - *Equality* se centra en la igualdad; *inclusion* en la participación efectiva.
 - *Access* describe la posibilidad de usar un recurso; *representation*, quién tiene voz.
 - *Tradition* es una práctica transmitida; *heritage* es un legado que se conserva.
 - Usa *participate in*, *have access to* y *be entitled to*.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. Residents took part ___ a public consultation. (in)
    - Respuesta: `in`

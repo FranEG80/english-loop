@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -41,30 +41,33 @@ La precisión léxica B2 depende de elegir la palabra que encaja con la colocaci
 - Usar colocaciones y patrones verbales naturales.
 - Distinguir matices como *raise/rise*, *economic/economical* o *say/tell*.
 
-# Explicación
+# Patrones léxicos
 
-Empieza por el significado general y después comprueba la combinación concreta de palabras. *Make a decision* y *draw a conclusion* no se construyen intercambiando sus verbos. Del mismo modo, *rely on*, *contribute to* y *result in* exigen preposiciones distintas.
+- **Collocation:** *reach an agreement*, *pose a threat*, *draw a conclusion*.
+- **Dependent preposition:** *rely on*, *contribute to*, *result in*.
+- **Near synonyms:** *effective/efficient*, *sensible/sensitive*, *historic/historical*.
+- **Phrasal verb:** *look into*, *put off*, *carry out*.
+- **Discourse choice:** *however*, *therefore*, *although*, *whereas*.
 
-Los verbos frasales también cambian el significado completo: *look into* es investigar, *look after* es cuidar y *look for* es buscar. En un registro formal pueden preferirse alternativas como *investigate*, *require* o *resolve*, pero la elección debe conservar el tono y la intención del mensaje.
-
-# Forma o estructura
-
-- **collocation:** *reach an agreement*, *pose a threat*, *draw a conclusion*.
-- **dependent preposition:** *rely on*, *contribute to*, *result in*.
-- **near synonyms:** *effective/efficient*, *sensible/sensitive*, *historic/historical*.
-- **phrasal verb:** *look into*, *put off*, *carry out*.
-- **discourse choice:** *however*, *therefore*, *although*, *whereas*.
-
-# Usos principales
+# Contextos de uso
 
 1. Describir decisiones, cambios y consecuencias con precisión.
 2. Elegir el verbo que encaja con un nombre concreto.
 3. Ajustar intensidad, formalidad y actitud.
 4. Expresar relaciones de contraste, causa y resultado.
 
-# Contrastes importantes
+# Explicación
 
-**Raise / rise:** algo aumenta otra cosa frente a aumentar por sí mismo. **Say / tell:** decir algo frente a comunicar algo a alguien. **Economic / economical:** relacionado con la economía frente a que ahorra recursos. **Eventually / possibly:** finalmente frente a posiblemente.
+Empieza por el significado general y después comprueba la combinación concreta de palabras. *Make a decision* y *draw a conclusion* no se construyen intercambiando sus verbos. Del mismo modo, *rely on*, *contribute to* y *result in* exigen preposiciones distintas.
+
+Los verbos frasales también cambian el significado completo: *look into* es investigar, *look after* es cuidar y *look for* es buscar. En un registro formal pueden preferirse alternativas como *investigate*, *require* o *resolve*, pero la elección debe conservar el tono y la intención del mensaje.
+
+# Opciones que se confunden
+
+- **Raise / rise:** algo aumenta otra cosa frente a aumentar por sí mismo.
+- **Say / tell:** decir algo frente a comunicar algo a alguien.
+- **Economic / economical:** relacionado con la economía frente a que ahorra recursos.
+- **Eventually / possibly:** finalmente frente a posiblemente.
 
 # Ejemplos
 
@@ -76,22 +79,27 @@ Los verbos frasales también cambian el significado completo: *look into* es inv
 
 # Errores frecuentes
 
-- ❌ *Tell that the plan is ready.* ✅ *Say that the plan is ready.*
-- ❌ *The costs raised last year.* ✅ *The costs rose last year.*
-- ❌ *make a conclusion*. ✅ *draw a conclusion*.
-- ❌ *depend of the results*. ✅ *depend on the results*.
+- ❌ *Tell that the plan is ready.*
+- ✅ *Say that the plan is ready.*
+- ❌ *The costs raised last year.*
+- ✅ *The costs rose last year.*
+- ❌ *make a conclusion*.
+- ✅ *draw a conclusion*.
+- ❌ *depend of the results*.
+- ✅ *depend on the results*.
 
-# Excepciones relevantes
+# Variación y registro
 
-Algunas colocaciones aceptan más de un verbo según el matiz: *make a decision* y *take a decision* existen, pero su frecuencia y distribución varían según la región y el registro. Cuando dos opciones son posibles, el contexto debe aclarar la diferencia; no conviene presentar como única una respuesta que el inglés real admite en más de una forma.
+- Algunas colocaciones aceptan más de un verbo según el matiz: *make a decision* y *take a decision* existen, pero su frecuencia y distribución varían según la región y el registro.
+- Cuando dos opciones son posibles, el contexto debe aclarar la diferencia; no conviene presentar como única una respuesta que el inglés real admite en más de una forma.
 
-# Mini resumen
+# Reglas de elección
 
 - Comprueba la combinación completa, no solo la traducción.
 - Distingue significado, registro y patrón gramatical.
 - Relee la oración y el párrafo para confirmar la elección.
 
-# Comprobación rápida autocorregible
+# Comprueba tu elección
 
 1. Costs increase themselves: **rise**.
 2. Communicate information to a person: **tell**.

@@ -28,8 +28,9 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
+
 # Resumen
 
 Un email informal suena cercano, pero sigue una estructura clara. Practicarás cómo saludar, responder a cada punto y cerrar el mensaje sin saltos bruscos.
@@ -39,23 +40,32 @@ Un email informal suena cercano, pero sigue una estructura clara. Practicarás c
 - Ordenar saludo, apertura, respuesta a puntos, cierre y despedida.
 - Elegir fórmulas informales naturales y conectores básicos.
 
-# Explicación
+# Estructura del texto
 
-Empieza con un saludo apropiado para una persona conocida y una frase de apertura. Responde a las preguntas o peticiones en párrafos breves; añade detalles con *also*, *because* y *by the way*. Termina con una frase de cierre y una despedida coherentes con la relación.
+- Saludos habituales: *Hi Sam,* o *Dear Anna,* cuando existe confianza.
+- Aperturas: *Thanks for your message* y *Great to hear from you*.
+- Cierres: *Write soon*, *Hope to see you*, *Take care*.
+- Usa contracciones y un tono natural, pero evita olvidar la información solicitada.
 
-# Forma o estructura
-
-Saludos habituales: *Hi Sam,* o *Dear Anna,* cuando existe confianza. Aperturas: *Thanks for your message* y *Great to hear from you*. Cierres: *Write soon*, *Hope to see you*, *Take care*. Usa contracciones y un tono natural, pero evita olvidar la información solicitada.
-
-# Usos principales
+# Funciones comunicativas
 
 - Responder invitaciones y planes.
 - Dar noticias personales y pedir información.
 - Organizar una respuesta breve con varios puntos.
 
-# Contrastes importantes
+# Explicación
 
-*Hi* es más cercano que *Dear Sir or Madam*. *See you soon* funciona con alguien conocido, no con una institución. Un email informal puede ser educado sin usar fórmulas rígidas como *I am writing to inform you*.
+Empieza con un saludo apropiado para una persona conocida y una frase de apertura. Responde a las preguntas o peticiones en párrafos breves; añade detalles con *also*, *because* y *by the way*. Termina con una frase de cierre y una despedida coherentes con la relación.
+
+Convierte cada punto de la consigna en una pequeña función: aceptar o rechazar, explicar una razón, proponer un plan y hacer una pregunta. Puedes agrupar funciones relacionadas en el mismo párrafo, pero ninguna debe desaparecer. Añade detalles concretos para que el mensaje resulte personal: hora, lugar, preferencia o motivo.
+
+Las contracciones (*I’m*, *we’ll*, *can’t*) y las preguntas directas son naturales entre personas conocidas. Aun así, evita un texto telegráfico compuesto solo por frases sueltas; los conectores deben mostrar cómo se relacionan las noticias y los planes.
+
+# Registro y decisiones de estilo
+
+- *Hi* es más cercano que *Dear Sir or Madam*.
+- *See you soon* funciona con alguien conocido, no con una institución.
+- Un email informal puede ser educado sin usar fórmulas rígidas como *I am writing to inform you*.
 
 # Ejemplos
 
@@ -65,22 +75,21 @@ Saludos habituales: *Hi Sam,* o *Dear Anna,* cuando existe confianza. Aperturas:
 
 # Errores frecuentes
 
-❌ Responder solo al primer punto del mensaje.
-✅ Revisar la consigna y marcar cada respuesta.
-❌ Mezclar *Hi* con un cierre excesivamente formal.
-✅ Mantener un registro cercano de principio a fin.
+- ❌ Responder solo al primer punto del mensaje.
+- ✅ Revisar la consigna y marcar cada respuesta.
+- ❌ Mezclar *Hi* con un cierre excesivamente formal.
+- ✅ Mantener un registro cercano de principio a fin.
 
-# Excepciones relevantes
+# Variaciones permitidas
 
-*Dear + nombre* puede ser cálido en algunos contextos, aunque *Hi + nombre* suele sonar más informal. Una amistad nueva puede requerir algo menos coloquial que una amistad íntima; el destinatario y la situación mandan.
+- *Dear + nombre* puede ser cálido en algunos contextos, aunque *Hi + nombre* suele sonar más informal.
+- Una amistad nueva puede requerir algo menos coloquial que una amistad íntima; el destinatario y la situación mandan.
 
-# Mini resumen
+# Lista de revisión
 
 Saluda, abre el contacto, responde todos los puntos, añade conectores y despídete de forma coherente.
 
-# Comprobación rápida autocorregible
+# Comprueba tu texto
 
 1. ¿Qué falta después de *Thanks for your email*? → `una respuesta a la situación o al primer punto`.
 2. ¿Es natural cerrar un email a un amigo con *Yours faithfully*? → `no: es demasiado formal para ese destinatario`.
-
-

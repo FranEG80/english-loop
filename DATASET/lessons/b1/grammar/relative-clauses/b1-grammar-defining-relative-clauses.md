@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -45,6 +45,20 @@ Sin ella, la frase pierde su sentido.
 - Usar `where` para lugares.
 - Reconocer cuándo el pronombre relativo es objeto y puede omitirse.
 - Distinguir defining de non-defining.
+
+# Forma o estructura
+
+- Persona: `who` / `that`
+- Cosa: `which` / `that`
+- Lugar: `where`
+- Objeto omitible: `(that/which/who)`
+
+# Usos principales
+
+1. **Identificar a una persona:** `The teacher who taught me is retired.`
+2. **Identificar una cosa:** `The phone that I bought is cheap.`
+3. **Identificar un lugar:** `This is the town where I grew up.`
+4. **Añadir información esencial:** `The keys that are on the desk are mine.`
 
 # Explicación
 
@@ -76,20 +90,6 @@ Cuando el pronombre es el objeto, puede omitirse:
 ## Sin comas
 
 Las defining clauses no llevan comas porque son esenciales.
-
-# Forma o estructura
-
-- Persona: `who` / `that`
-- Cosa: `which` / `that`
-- Lugar: `where`
-- Objeto omitible: `(that/which/who)`
-
-# Usos principales
-
-1. **Identificar a una persona:** `The teacher who taught me is retired.`
-2. **Identificar una cosa:** `The phone that I bought is cheap.`
-3. **Identificar un lugar:** `This is the town where I grew up.`
-4. **Añadir información esencial:** `The keys that are on the desk are mine.`
 
 # Contrastes importantes
 
@@ -136,17 +136,9 @@ Non-defining: `My car, which is red, is parked outside.` (no esencial, con comas
 
 # Excepciones relevantes
 
-`that` puede usarse para personas en lugar de `who` en registro informal:
-
-`The man that called is my uncle.`
-
-`whose` expresa posesión:
-
-`The woman whose car was stolen called the police.`
-
-Cuando el pronombre es objeto, omitirlo es natural en inglés hablado:
-
-`The film (that) we saw was great.`
+- `that` puede usarse para personas en lugar de `who` en registro informal: `The man that called is my uncle.`
+- `whose` expresa posesión: `The woman whose car was stolen called the police.`
+- Cuando el pronombre es objeto, omitirlo es natural en inglés hablado: `The film (that) we saw was great.`
 
 # Mini resumen
 

@@ -27,7 +27,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -39,21 +39,26 @@ Reescribir una oración significa expresar la misma idea con una estructura dife
 - Transformar una oración sin introducir un cambio de significado.
 - Controlar patrones de pasiva, comparativos, estilo indirecto y verbos con infinitivo o gerundio.
 
+# Patrones de reformulación
+
+- Las transformaciones se apoyan en patrones finitos: `People say that...` → `It is said that...`
+- `more expensive than` → `not as cheap as`
+- `I started learning` → `I have learned since...`
+- `The mechanic repaired the bike` → `The bike was repaired by the mechanic`.
+
+# Relaciones que se conservan
+
+- Esta flexibilidad gramatical permite escribir y hablar con precisión en situaciones de estudio, trabajo, viajes, servicios y comunicación cotidiana.
+
 # Explicación
 
 Lee primero la oración completa y subraya la información que no puede cambiar. Después identifica la estructura solicitada: una pasiva necesita `be + past participle`; un estilo indirecto puede requerir cambio de pronombres y tiempos; una comparación puede pasar de `not as ... as` a un comparativo. Finalmente, comprueba que la respuesta conserva quién hace la acción, cuándo ocurre y si la oración es negativa.
 
-# Forma o estructura
+# Transformaciones que se confunden
 
-Las transformaciones se apoyan en patrones finitos: `People say that...` → `It is said that...`; `more expensive than` → `not as cheap as`; `I started learning` → `I have learned since...`; `The mechanic repaired the bike` → `The bike was repaired by the mechanic`.
-
-# Usos principales
-
-Esta flexibilidad gramatical permite escribir y hablar con precisión en situaciones de estudio, trabajo, viajes, servicios y comunicación cotidiana.
-
-# Contrastes importantes
-
-La pasiva cambia el foco, no el tiempo: `repaired` pasa a `was repaired`, no a `is repaired` si el original está en pasado. En estilo indirecto, `said` no lleva objeto directo de persona, mientras que `told` sí (`said that`, `told me that`). `Too` expresa exceso y `enough` suficiencia, por lo que la reformulación debe conservar la intensidad.
+- La pasiva cambia el foco, no el tiempo: `repaired` pasa a `was repaired`, no a `is repaired` si el original está en pasado.
+- En estilo indirecto, `said` no lleva objeto directo de persona, mientras que `told` sí (`said that`, `told me that`).
+- `Too` expresa exceso y `enough` suficiencia, por lo que la reformulación debe conservar la intensidad.
 
 # Ejemplos
 
@@ -71,18 +76,19 @@ La pasiva cambia el foco, no el tiempo: `repaired` pasa a `was repaired`, no a `
 - ❌ *The room is not enough big.*
 - ✅ *The room is not big enough.*
 
-# Excepciones relevantes
+# Casos con más de una solución
 
-Algunas reformulaciones admiten más de una frase natural. No añadas información que no aparece en el original y no cambies un tiempo verbal solo porque otra forma también sería posible en una conversación distinta.
+- Algunas reformulaciones admiten más de una frase natural.
+- No añadas información que no aparece en el original y no cambies un tiempo verbal solo porque otra forma también sería posible en una conversación distinta.
 
-# Mini resumen
+# Lista de control
 
 1. Conserva la información esencial.
 2. Identifica el patrón exigido.
 3. Cambia solo la estructura necesaria.
 4. Comprueba sujeto, tiempo, negación y significado.
 
-# Comprobación rápida autocorregible
+# Comprueba la equivalencia
 
 1. Reformula: `The blue car is cheaper than the red car.` → `The red car is not ___ the blue car.`
    - Respuesta: `as cheap as`

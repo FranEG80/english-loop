@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,12 +43,6 @@ Las formas no finitas pueden expresar anterioridad y voz pasiva sin crear otra o
 - Formar to be + participle, to have been + participle y having been + participle.
 - Relacionar la forma con la cronología y el papel de sujeto o paciente.
 - Evitar omitir been en infinitivos y gerundios pasivos perfectos.
-
-# Explicación
-
-En The researcher is believed to have found the key, el infinitivo perfecto sitúa el hallazgo antes de la creencia. En She denied having copied the file, el gerundio perfecto sitúa la copia antes de la negación. La forma perfecta no significa por sí sola que la acción sea pasiva.
-
-Para expresar que el sujeto recibe la acción, usamos to be + participle en una forma simple, to have been + participle para anterioridad y having been + participle después de verbos que admiten gerundio: The applicants hope to be selected; They claimed to have been misled; He resented having been excluded.
 
 # Forma o estructura
 
@@ -67,6 +61,12 @@ Para expresar que el sujeto recibe la acción, usamos to be + participle en una 
 4. **Lamento por una experiencia recibida:** She regretted having been left out.
 5. **Expectativa de una acción pasiva:** The files are expected to be archived tomorrow.
 6. **Valoración de un resultado:** The team was pleased to have completed the trial.
+
+# Explicación
+
+En The researcher is believed to have found the key, el infinitivo perfecto sitúa el hallazgo antes de la creencia. En She denied having copied the file, el gerundio perfecto sitúa la copia antes de la negación. La forma perfecta no significa por sí sola que la acción sea pasiva.
+
+Para expresar que el sujeto recibe la acción, usamos to be + participle en una forma simple, to have been + participle para anterioridad y having been + participle después de verbos que admiten gerundio: The applicants hope to be selected; They claimed to have been misled; He resented having been excluded.
 
 # Contrastes importantes
 
@@ -108,9 +108,11 @@ The bridge is believed to be safe describe un estado actual. The bridge is belie
 
 # Excepciones relevantes
 
-No todos los verbos aceptan las mismas formas no finitas. Deny suele llevar gerundio, mientras claim suele llevar infinitivo. La forma perfecta debe respetar el patrón del verbo principal: no se puede añadir to have a cualquier verbo solo para marcar anterioridad.
-
-El agente con by solo merece aparecer cuando identifica quién hizo la acción: The archive is believed to have been digitised by the university team. Si el agente es desconocido o irrelevante, se omite para mantener el foco en el resultado.
+- No todos los verbos aceptan las mismas formas no finitas.
+- Deny suele llevar gerundio, mientras claim suele llevar infinitivo.
+- La forma perfecta debe respetar el patrón del verbo principal: no se puede añadir to have a cualquier verbo solo para marcar anterioridad.
+- El agente con by solo merece aparecer cuando identifica quién hizo la acción: The archive is believed to have been digitised by the university team.
+- Si el agente es desconocido o irrelevante, se omite para mantener el foco en el resultado.
 
 # Mini resumen
 

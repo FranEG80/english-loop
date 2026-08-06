@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -44,20 +44,6 @@ una palabra temporal.
 - Identificar si una situación es habitual, estable, temporal o está en curso.
 - Formar afirmativas, negativas y preguntas con los auxiliares correctos.
 - Evitar usar normalmente el continuo con verbos que describen estado.
-
-# Explicación
-
-`I work in Bristol` presenta el empleo como un dato estable. `I'm working in
-Bristol this month` limita la situación a un periodo temporal. Ambas oraciones
-pueden ser ciertas para la misma persona; cambia la perspectiva.
-
-El present simple se forma con el verbo base, añadiendo `-s` o `-es` en tercera
-persona singular. Las preguntas y negativas usan `do/does`. El present
-continuous usa `am/is/are + verbo-ing`.
-
-Expresiones como `usually`, `every Friday` y `once a week` suelen acompañar
-hábitos. `At the moment`, `currently` y `this week` suelen señalar temporalidad,
-pero el contexto sigue siendo decisivo.
 
 # Forma o estructura
 
@@ -79,20 +65,28 @@ pero el contexto sigue siendo decisivo.
 6. **Cambio:** `More residents are using the new bus route.`
 7. **Conducta repetida llamativa:** `You're always leaving cups on my desk.`
 
+# Explicación
+
+`I work in Bristol` presenta el empleo como un dato estable. `I'm working in
+Bristol this month` limita la situación a un periodo temporal. Ambas oraciones
+pueden ser ciertas para la misma persona; cambia la perspectiva.
+
+El present simple se forma con el verbo base, añadiendo `-s` o `-es` en tercera
+persona singular. Las preguntas y negativas usan `do/does`. El present
+continuous usa `am/is/are + verbo-ing`.
+
+Expresiones como `usually`, `every Friday` y `once a week` suelen acompañar
+hábitos. `At the moment`, `currently` y `this week` suelen señalar temporalidad,
+pero el contexto sigue siendo decisivo.
+
 # Contrastes importantes
 
-Los verbos `know`, `believe`, `understand`, `need`, `want`, `belong`, `own` y
-`seem` describen normalmente estados y no se usan en continuo: `I understand
-the problem`.
-
-Algunos verbos cambian de significado. `I think the plan is practical` expresa
-una opinión; `I'm thinking about the plan` describe una actividad mental. `The
-soup tastes salty` describe una propiedad; `The chef is tasting the soup`
-describe una acción.
-
-El present continuous también expresa acuerdos futuros: `I'm meeting Jo at
-seven`. En ese uso, un marcador futuro y un acuerdo concreto evitan confundirlo
-con una acción presente.
+- Los verbos `know`, `believe`, `understand`, `need`, `want`, `belong`, `own` y `seem` describen normalmente estados y no se usan en continuo: `I understand the problem`.
+- Algunos verbos cambian de significado.
+- `I think the plan is practical` expresa una opinión; `I'm thinking about the plan` describe una actividad mental.
+- `The soup tastes salty` describe una propiedad; `The chef is tasting the soup` describe una acción.
+- El present continuous también expresa acuerdos futuros: `I'm meeting Jo at seven`.
+- En ese uso, un marcador futuro y un acuerdo concreto evitan confundirlo con una acción presente.
 
 # Ejemplos
 
@@ -123,12 +117,9 @@ con una acción presente.
 
 # Excepciones relevantes
 
-En publicidad y lenguaje informal pueden aparecer continuos deliberados con
-verbos de estado, como `I'm loving it`. Son elecciones estilísticas marcadas, no
-el patrón neutral que se espera en actividades B1.
-
-`Have` es de estado cuando significa posesión (`I have a bicycle`) y dinámico en
-actividades o experiencias (`I'm having a shower`, `We're having trouble`).
+- En publicidad y lenguaje informal pueden aparecer continuos deliberados con verbos de estado, como `I'm loving it`.
+- Son elecciones estilísticas marcadas, no el patrón neutral que se espera en actividades B1.
+- `Have` es de estado cuando significa posesión (`I have a bicycle`) y dinámico en actividades o experiencias (`I'm having a shower`, `We're having trouble`).
 
 # Mini resumen
 

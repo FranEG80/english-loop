@@ -25,14 +25,87 @@ const REQUIRED_LESSON_SECTIONS = [
   "Resumen",
   "Objetivos",
   "Explicación",
-  "Forma o estructura",
-  "Usos principales",
-  "Contrastes importantes",
   "Ejemplos",
   "Errores frecuentes",
-  "Excepciones relevantes",
-  "Mini resumen",
-  "Comprobación rápida autocorregible",
+] as const;
+
+interface LessonArchitecture {
+  form: readonly string[];
+  uses: readonly string[];
+  contrasts: readonly string[];
+}
+
+const LESSON_ARCHITECTURES: Record<string, LessonArchitecture> = {
+  grammar: {
+    form: ["Forma o estructura"],
+    uses: ["Usos principales"],
+    contrasts: ["Contrastes importantes"],
+  },
+  vocabulary: {
+    form: ["Léxico y combinaciones"],
+    uses: ["Situaciones de uso"],
+    contrasts: ["Palabras que se confunden"],
+  },
+  collocations: {
+    form: ["Patrones y combinaciones"],
+    uses: ["Contextos de uso"],
+    contrasts: ["Combinaciones que se confunden"],
+  },
+  "phrasal-verbs": {
+    form: ["Verbo, partícula y objeto"],
+    uses: ["Contextos de uso"],
+    contrasts: ["Phrasal verbs que se confunden"],
+  },
+  prepositions: {
+    form: ["Patrones con preposición"],
+    uses: ["Contextos de uso"],
+    contrasts: ["Contrastes de significado"],
+  },
+  reading: {
+    form: ["Pistas que debes localizar"],
+    uses: ["Aplicación en textos"],
+    contrasts: ["Distractores y matices"],
+  },
+  "guided-writing": {
+    form: ["Estructura del texto"],
+    uses: ["Funciones comunicativas"],
+    contrasts: ["Registro y decisiones de estilo"],
+  },
+  "use-of-english": {
+    form: [
+      "Forma o estructura",
+      "Familias y afijos",
+      "Patrones de cohesión",
+      "Patrones de reformulación",
+      "Patrones que debes controlar",
+      "Recursos de registro y cortesía",
+      "Patrones léxicos",
+    ],
+    uses: [
+      "Usos principales",
+      "Cambios de categoría",
+      "Relaciones discursivas",
+      "Relaciones que se conservan",
+      "Contextos de uso",
+      "Situaciones comunicativas",
+    ],
+    contrasts: [
+      "Contrastes importantes",
+      "Formas que se confunden",
+      "Relaciones que se confunden",
+      "Transformaciones que se confunden",
+      "Errores que se parecen",
+      "Grados de formalidad",
+      "Opciones que se confunden",
+    ],
+  },
+};
+
+const LEGACY_TEMPLATE_HEADINGS = [
+  "Cómo entenderlo antes de practicar",
+  "Procedimiento paso a paso",
+  "Ejemplos razonados",
+  "Transferencia y autocontrol",
 ] as const;
 
 export async function validateDataset(
@@ -83,8 +156,18 @@ export async function validateDataset(
       issues,
     );
     validateLessonPath(lesson.relativePath, lesson.frontmatter, issues);
-    validateLessonSections(lesson.relativePath, lesson.content, issues);
-    validateStructuredLessonSections(lesson.relativePath, lesson.content, issues);
+    validateLessonSections(
+      lesson.relativePath,
+      lesson.frontmatter,
+      lesson.content,
+      issues,
+    );
+    validateStructuredLessonSections(
+      lesson.relativePath,
+      lesson.frontmatter,
+      lesson.content,
+      issues,
+    );
     validateLessonInstructionalFocus(
       lesson.relativePath,
       lesson.frontmatter,
@@ -163,11 +246,13 @@ function validateLessonPath(
 
 function validateLessonSections(
   relativePath: string,
+  lesson: { id: string; category: string },
   content: string,
   issues: ValidationIssue[],
 ): void {
+  const headings = lessonHeadings(content);
   for (const section of REQUIRED_LESSON_SECTIONS) {
-    if (!content.includes(`# ${section}`)) {
+    if (!headings.includes(section)) {
       addIssue(
         issues,
         "lesson-section",
@@ -176,24 +261,90 @@ function validateLessonSections(
       );
     }
   }
+
+  const architecture = LESSON_ARCHITECTURES[lesson.category];
+  if (!architecture) return;
+
+  for (const [role, alternatives] of Object.entries(architecture)) {
+    if (alternatives.some((heading) => headings.includes(heading))) continue;
+    addIssue(
+      issues,
+      "lesson-section",
+      relativePath,
+      `Falta un apartado de ${role} adaptado a la categoría. Opciones válidas: ${alternatives.join(", ")}.`,
+    );
+  }
+
+  if (headings.length < 8) {
+    addIssue(
+      issues,
+      "lesson-section",
+      relativePath,
+      "La lección necesita al menos ocho apartados de primer nivel para desarrollar el contenido con suficiente profundidad.",
+    );
+  }
+
+  if (lesson.id !== "b2-advanced-grammar-reframing") {
+    const usesIndex = headings.findIndex((heading) =>
+      architecture.uses.includes(heading),
+    );
+    const explanationIndex = headings.indexOf("Explicación");
+    if (usesIndex >= 0 && explanationIndex >= 0 && explanationIndex < usesIndex) {
+      addIssue(
+        issues,
+        "lesson-order",
+        relativePath,
+        'La sección "Explicación" debe aparecer después del apartado de usos o aplicación.',
+      );
+    }
+  }
+
+  for (const heading of LEGACY_TEMPLATE_HEADINGS) {
+    if (!new RegExp(`^#{1,6} ${heading}$`, "mu").test(content)) continue;
+    addIssue(
+      issues,
+      "lesson-template",
+      relativePath,
+      `El apartado genérico "${heading}" debe sustituirse por contenido y títulos adaptados a la lección.`,
+    );
+  }
+}
+
+function lessonHeadings(content: string): string[] {
+  return [...content.matchAll(/^# (.+)$/gmu)].map((match) => match[1].trim());
 }
 
 function sectionBody(content: string, heading: string): string {
-  const start = content.indexOf(`# ${heading}`);
-  if (start < 0) return "";
-  const after = content.slice(start + heading.length + 2);
-  const next = after.search(/\n#{1,2} /u);
+  const match = [...content.matchAll(/^# (.+)$/gmu)].find(
+    (candidate) => candidate[1].trim() === heading,
+  );
+  if (!match || match.index === undefined) return "";
+  const after = content.slice(match.index + match[0].length);
+  const next = after.search(/\n# /u);
   return (next < 0 ? after : after.slice(0, next)).trim();
 }
 
 function validateStructuredLessonSections(
   relativePath: string,
+  lesson: { category: string },
   content: string,
   issues: ValidationIssue[],
 ): void {
-  for (const heading of ["Forma o estructura", "Contrastes importantes"]) {
+  const architecture = LESSON_ARCHITECTURES[lesson.category];
+  if (!architecture) return;
+  const headings = lessonHeadings(content);
+  const candidates = [...architecture.form, ...architecture.contrasts].filter(
+    (heading) => headings.includes(heading),
+  );
+
+  for (const heading of candidates) {
     const body = sectionBody(content, heading);
-    if (!body || /^(?:[ \t]*[-*] |[ \t]*[0-9]+\. |[ \t]*\|)/mu.test(body)) continue;
+    if (
+      !body ||
+      /^(?:[ \t]*[-*] |[ \t]*[0-9]+\. |[ \t]*\||## )/mu.test(body)
+    ) {
+      continue;
+    }
     addIssue(
       issues,
       "lesson-structure",

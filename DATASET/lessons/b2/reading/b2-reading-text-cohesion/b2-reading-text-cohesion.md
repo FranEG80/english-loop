@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,23 +42,32 @@ Los textos B2 organizan ideas con referencias, concesiones, ejemplos y cambios d
 - Reconocer el papel retórico de una frase: ejemplo, contraste, consecuencia o conclusión.
 - Confirmar una interpretación con evidencia en el párrafo completo.
 
-# Explicación
+# Pistas que debes localizar
 
-Empieza por el mapa del texto: tema, postura y movimiento entre párrafos. Después busca cadenas de referencia (*this approach*, *the latter*, *such concerns*) y conectores de alto nivel (*nevertheless*, *in contrast*, *consequently*). Una frase puede parecer adecuada localmente y fallar porque repite una conclusión ya dada o introduce una idea antes de su explicación.
+- Las frases de ejemplo suelen contener *for instance* o concretar un concepto anterior.
+- Las de contraste retoman la idea previa y la limitan.
+- Las conclusiones resumen y no suelen introducir participantes nuevos.
+- Comprueba también la concordancia de tiempo, número y registro.
 
-# Forma o estructura
-
-Las frases de ejemplo suelen contener *for instance* o concretar un concepto anterior. Las de contraste retoman la idea previa y la limitan. Las conclusiones resumen y no suelen introducir participantes nuevos. Comprueba también la concordancia de tiempo, número y registro.
-
-# Usos principales
+# Aplicación en textos
 
 - Reconstruir artículos argumentativos y textos divulgativos.
 - Seguir una tesis desde la introducción hasta la conclusión.
 - Identificar la función de cada frase dentro de un párrafo.
 
-# Contrastes importantes
+# Explicación
 
-Una referencia anafórica mira hacia atrás; una catafórica puede anunciar información posterior: *The following issue was crucial: access*. *However* no significa simplemente “después”; necesita una relación de contraste. *Moreover* añade apoyo y *therefore* expresa consecuencia.
+Empieza por el mapa del texto: tema, postura y movimiento entre párrafos. Después busca cadenas de referencia (*this approach*, *the latter*, *such concerns*) y conectores de alto nivel (*nevertheless*, *in contrast*, *consequently*). Una frase puede parecer adecuada localmente y fallar porque repite una conclusión ya dada o introduce una idea antes de su explicación.
+
+Analiza cada hueco desde ambos lados. La frase anterior puede proporcionar el antecedente y la relación lógica; la siguiente puede exigir una explicación, un ejemplo o un cambio de perspectiva. Comprueba artículos y demostrativos: *the solution* presupone una solución conocida, mientras que *a solution* puede introducirla por primera vez.
+
+En el nivel del párrafo, identifica su recorrido retórico: afirmación → desarrollo → ejemplo → consecuencia, o problema → respuesta → evaluación. Una frase correcta debe ocupar una posición compatible con ese recorrido y con la progresión del texto completo.
+
+# Distractores y matices
+
+- Una referencia anafórica mira hacia atrás; una catafórica puede anunciar información posterior: *The following issue was crucial: access*.
+- *However* no significa simplemente “después”; necesita una relación de contraste.
+- *Moreover* añade apoyo y *therefore* expresa consecuencia.
 
 # Ejemplos
 
@@ -73,15 +82,16 @@ Una referencia anafórica mira hacia atrás; una catafórica puede anunciar info
 - ❌ Ignorar *the latter*, *such a change* o *this concern*.
 - ✅ Localizar siempre el antecedente y comprobar que coincide en significado.
 
-# Excepciones relevantes
+# Casos menos evidentes
 
-Algunas frases pueden encajar gramaticalmente en dos lugares, pero solo uno mantiene el orden de la argumentación. En caso de duda, mira el párrafo completo y la relación entre el último detalle y la tesis siguiente.
+- Algunas frases pueden encajar gramaticalmente en dos lugares, pero solo uno mantiene el orden de la argumentación.
+- En caso de duda, mira el párrafo completo y la relación entre el último detalle y la tesis siguiente.
 
-# Mini resumen
+# Lista de comprobación
 
 Lee el texto como una estructura: referencia, función retórica, relación lógica y continuidad temática. Cada oración debe encajar con el movimiento de ideas del párrafo.
 
-# Comprobación rápida autocorregible
+# Comprueba tu lectura
 
 1. **The proposal was costly. Nevertheless, the council approved it.** ¿Qué relación expresa *nevertheless*?
    - Respuesta: `contraste`

@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,15 +43,6 @@ arrepentimiento, crítica, alivio o análisis de causas.
 - Formar `if + past perfect` sin introducir `would` en la condición.
 - Construir el resultado con `would/could/might have + participio`.
 - Reconstruir los hechos reales implícitos en una oración condicional.
-
-# Explicación
-
-`If we had left earlier, we would have caught the train` implica dos hechos:
-salimos tarde y no cogimos el tren. La condición usa `had left`; el resultado
-alternativo usa `would have caught`.
-
-El orden puede cambiar: `We would have caught the train if we had left earlier`.
-La coma se usa normalmente cuando la cláusula con `if` aparece primero.
 
 # Forma o estructura
 
@@ -71,14 +62,20 @@ have acted differently`.
 4. Alternativa: `We could have stayed longer if the hotel had had a room.`
 5. Análisis causal: `The match would have continued if the pitch hadn't frozen.`
 
+# Explicación
+
+`If we had left earlier, we would have caught the train` implica dos hechos:
+salimos tarde y no cogimos el tren. La condición usa `had left`; el resultado
+alternativo usa `would have caught`.
+
+El orden puede cambiar: `We would have caught the train if we had left earlier`.
+La coma se usa normalmente cuando la cláusula con `if` aparece primero.
+
 # Contrastes importantes
 
-El segundo condicional imagina presente o futuro: `If I had more time, I would
-study`. El tercer condicional usa `had had` para un pasado irreal: `If I had had
-more time, I would have studied`.
-
-`Would have` no pertenece normalmente a la cláusula con `if`: `If we would have
-known` debe ser `If we had known`.
+- El segundo condicional imagina presente o futuro: `If I had more time, I would study`.
+- El tercer condicional usa `had had` para un pasado irreal: `If I had had more time, I would have studied`.
+- `Would have` no pertenece normalmente a la cláusula con `if`: `If we would have known` debe ser `If we had known`.
 
 # Ejemplos
 
@@ -101,9 +98,9 @@ known` debe ser `If we had known`.
 
 # Excepciones relevantes
 
-En conversación, la contracción `'d` puede representar `had` o `would`. En `If
-I'd known`, significa `had`; en `I'd have helped`, significa `would`. La
-posición dentro de la estructura permite distinguirlas.
+- En conversación, la contracción `'d` puede representar `had` o `would`.
+- En `If I'd known`, significa `had`; en `I'd have helped`, significa `would`.
+- La posición dentro de la estructura permite distinguirlas.
 
 # Mini resumen
 

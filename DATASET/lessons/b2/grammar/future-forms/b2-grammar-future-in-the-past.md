@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -49,27 +49,6 @@ going to` para intenciones y planes, `was/were about to` para inminencia y
 - Describir planes pasados, tanto realizados como cancelados.
 - Expresar que una acción estaba a punto de suceder.
 - Referirse a eventos programados desde una narración en pasado.
-
-# Explicación
-
-## `Would` como futuro visto desde el pasado
-
-`Would + infinitive` presenta una predicción o una expectativa posterior a un
-momento pasado: `In 2019, experts thought the bridge would open in 2021.` No
-afirma por sí solo que la apertura ocurriera; solo recoge la predicción desde
-ese punto de vista.
-
-## `Was/were going to`
-
-Usamos `was/were going to + infinitive` para planes o intenciones que existían
-en el pasado: `I was going to call you, but I lost your number.` El plan puede
-haberse realizado, cancelado o quedado sin confirmar; el contexto lo aclara.
-
-## `Was/were about to` y `was/were due to`
-
-`Was/were about to + infinitive` indica que una acción era inminente: `The
-concert was about to begin when the power failed.` `Was/were due to + infinitive`
-presenta un horario o compromiso: `The minister was due to arrive at noon.`
 
 # Forma o estructura
 
@@ -92,6 +71,27 @@ El auxiliar `was/were` concuerda con el sujeto.
 4. **Plan cancelado o interrumpido:** `I was going to complain, but the manager apologised.`
 5. **Acción inminente en una narración:** `The match was about to start.`
 6. **Horario o compromiso pasado:** `The train was due to leave at 06:15.`
+
+# Explicación
+
+## `Would` como futuro visto desde el pasado
+
+`Would + infinitive` presenta una predicción o una expectativa posterior a un
+momento pasado: `In 2019, experts thought the bridge would open in 2021.` No
+afirma por sí solo que la apertura ocurriera; solo recoge la predicción desde
+ese punto de vista.
+
+## `Was/were going to`
+
+Usamos `was/were going to + infinitive` para planes o intenciones que existían
+en el pasado: `I was going to call you, but I lost your number.` El plan puede
+haberse realizado, cancelado o quedado sin confirmar; el contexto lo aclara.
+
+## `Was/were about to` y `was/were due to`
+
+`Was/were about to + infinitive` indica que una acción era inminente: `The
+concert was about to begin when the power failed.` `Was/were due to + infinitive`
+presenta un horario o compromiso: `The minister was due to arrive at noon.`
 
 # Contrastes importantes
 
@@ -148,14 +148,11 @@ the ferry would depart at nine.`
 
 # Excepciones relevantes
 
-`Would` también puede expresar hábitos pasados o cortesía, no solo futuro en el
-pasado. En `Every summer, we would camp by the lake`, el significado es un
-hábito repetido. El contexto distingue ese uso del de `She said we would camp
-by the lake`, que es una expectativa futura desde el pasado.
-
-`Was/were due to` puede hablar de un evento que finalmente no ocurrió: `The
-flight was due to leave at eight, but it was cancelled`. La expresión conserva
-el horario previsto, no garantiza que el evento se realizara.
+- `Would` también puede expresar hábitos pasados o cortesía, no solo futuro en el pasado.
+- En `Every summer, we would camp by the lake`, el significado es un hábito repetido.
+- El contexto distingue ese uso del de `She said we would camp by the lake`, que es una expectativa futura desde el pasado.
+- `Was/were due to` puede hablar de un evento que finalmente no ocurrió: `The flight was due to leave at eight, but it was cancelled`.
+- La expresión conserva el horario previsto, no garantiza que el evento se realizara.
 
 # Mini resumen
 

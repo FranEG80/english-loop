@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -43,12 +43,6 @@ Los conectores avanzados muestran cómo se relacionan las ideas: contraste, conc
 - Elegir despite/in spite of ante nombre o gerundio y although ante cláusula.
 - Usar moreover, in addition, consequently, otherwise y provided that en contextos reales.
 - Colocar los marcadores con puntuación y registro adecuados.
-
-# Explicación
-
-Although, even though y whereas introducen una cláusula: Although the route is longer, it is safer. Despite e in spite of introducen un nombre, un pronombre o un gerundio: Despite the delay, we arrived; In spite of arriving late, we joined the meeting. However y therefore son sentence adverbs: suelen ir al principio de una nueva cláusula y se separan con coma, aunque también pueden ocupar otras posiciones.
-
-Los conectores deben reflejar la relación exacta. However y nevertheless presentan contraste; therefore, consequently y as a result presentan consecuencia; moreover e in addition añaden información; otherwise introduce una consecuencia negativa si no se cumple una condición; provided that expresa una condición suficiente.
 
 # Forma o estructura
 
@@ -67,6 +61,12 @@ Los conectores deben reflejar la relación exacta. However y nevertheless presen
 4. **Adición:** The course is practical; moreover, it includes mentoring.
 5. **Condición:** You may quote the findings provided that you cite the source.
 6. **Reformulación:** The sample was not representative; in other words, the result needs caution.
+
+# Explicación
+
+Although, even though y whereas introducen una cláusula: Although the route is longer, it is safer. Despite e in spite of introducen un nombre, un pronombre o un gerundio: Despite the delay, we arrived; In spite of arriving late, we joined the meeting. However y therefore son sentence adverbs: suelen ir al principio de una nueva cláusula y se separan con coma, aunque también pueden ocupar otras posiciones.
+
+Los conectores deben reflejar la relación exacta. However y nevertheless presentan contraste; therefore, consequently y as a result presentan consecuencia; moreover e in addition añaden información; otherwise introduce una consecuencia negativa si no se cumple una condición; provided that expresa una condición suficiente.
 
 # Contrastes importantes
 
@@ -94,15 +94,23 @@ Because introduce la causa; therefore introduce el resultado. The flight was del
 
 # Errores frecuentes
 
-- ❌ Despite the road was flooded, buses stopped.  ✅ Although the road was flooded, buses stopped.
-- ❌ Although the delay, we continued.  ✅ Despite the delay, we continued.
-- ❌ The plan is costly, however it is realistic.  ✅ The plan is costly. However, it is realistic.
-- ❌ The sample was small, therefore the conclusion is cautious.  ✅ The sample was small; therefore, the conclusion is cautious.
-- ❌ We will publish it providing that names removed.  ✅ We will publish it provided that the names are removed.
+- ❌ Despite the road was flooded, buses stopped.
+- ✅ Although the road was flooded, buses stopped.
+- ❌ Although the delay, we continued.
+- ✅ Despite the delay, we continued.
+- ❌ The plan is costly, however it is realistic.
+- ✅ The plan is costly. However, it is realistic.
+- ❌ The sample was small, therefore the conclusion is cautious.
+- ✅ The sample was small; therefore, the conclusion is cautious.
+- ❌ We will publish it providing that names removed.
+- ✅ We will publish it provided that the names are removed.
 
 # Excepciones relevantes
 
-In spite of y despite son muy parecidos, aunque in spite of suele sonar algo más explícito. Nevertheless y nonetheless son intercambiables en muchos contextos. On the other hand puede introducir una alternativa o un contraste, pero no siempre expresa una consecuencia lógica. En textos breves, un conector sencillo puede ser más claro que una cadena de marcadores formales.
+- In spite of y despite son muy parecidos, aunque in spite of suele sonar algo más explícito.
+- Nevertheless y nonetheless son intercambiables en muchos contextos.
+- On the other hand puede introducir una alternativa o un contraste, pero no siempre expresa una consecuencia lógica.
+- En textos breves, un conector sencillo puede ser más claro que una cadena de marcadores formales.
 
 # Mini resumen
 

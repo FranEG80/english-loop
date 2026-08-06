@@ -29,7 +29,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -42,14 +42,6 @@ Algunos verbos aceptan gerundio e infinitivo, pero la elección no es solo una c
 - Explicar el contraste entre stop doing y stop to do.
 - Usar try doing para experimentar con un método y try to do para realizar un esfuerzo.
 - Interpretar regret doing, regret to do, mean doing, mean to do, go on doing y go on to do.
-
-# Explicación
-
-Con remember, forget y regret, el gerundio suele mirar hacia una acción anterior: She remembers meeting the curator; He regrets missing the train. El infinitivo presenta una tarea, una decisión o una noticia que sigue al verbo: Remember to send the form; We regret to inform you that the gallery is closed.
-
-Con stop, el gerundio es la actividad que termina: The speaker stopped answering questions. El infinitivo expresa el propósito de una pausa: The speaker stopped to answer a question.
-
-Con try, try doing propone un método o experimento: Try restarting the router. Try to do presenta un esfuerzo, a menudo con dificultad: She tried to restart the router, but the screen stayed blank.
 
 # Forma o estructura
 
@@ -73,6 +65,14 @@ Con try, try doing propone un método o experimento: Try restarting the router. 
 5. **Esfuerzo con resultado incierto:** They tried to repair the sensor.
 6. **Consecuencia o intención:** The change means working longer; I meant to call you.
 7. **Continuación o transición:** She went on explaining the process; She went on to describe the final stage.
+
+# Explicación
+
+Con remember, forget y regret, el gerundio suele mirar hacia una acción anterior: She remembers meeting the curator; He regrets missing the train. El infinitivo presenta una tarea, una decisión o una noticia que sigue al verbo: Remember to send the form; We regret to inform you that the gallery is closed.
+
+Con stop, el gerundio es la actividad que termina: The speaker stopped answering questions. El infinitivo expresa el propósito de una pausa: The speaker stopped to answer a question.
+
+Con try, try doing propone un método o experimento: Try restarting the router. Try to do presenta un esfuerzo, a menudo con dificultad: She tried to restart the router, but the screen stayed blank.
 
 # Contrastes importantes
 
@@ -120,9 +120,12 @@ Regret leaving early expresa pesar por un hecho pasado. Regret to announce es un
 
 # Excepciones relevantes
 
-El contexto puede hacer que una misma acción sea compatible con más de una lectura. Try calling the help desk recomienda una estrategia; try to call the help desk describe el intento. Además, algunas variedades y registros usan otros verbos con ambos complementos sin un contraste tan fuerte.
-
-Go on doing puede referirse a una repetición o a la continuación de una explicación. Go on to do suele marcar un paso posterior, pero el cambio de tema también puede expresarse con un nuevo verbo finito. Estas estructuras no deben aprenderse como reglas de traducción palabra por palabra.
+- El contexto puede hacer que una misma acción sea compatible con más de una lectura.
+- Try calling the help desk recomienda una estrategia; try to call the help desk describe el intento.
+- Además, algunas variedades y registros usan otros verbos con ambos complementos sin un contraste tan fuerte.
+- Go on doing puede referirse a una repetición o a la continuación de una explicación.
+- Go on to do suele marcar un paso posterior, pero el cambio de tema también puede expresarse con un nuevo verbo finito.
+- Estas estructuras no deben aprenderse como reglas de traducción palabra por palabra.
 
 # Mini resumen
 

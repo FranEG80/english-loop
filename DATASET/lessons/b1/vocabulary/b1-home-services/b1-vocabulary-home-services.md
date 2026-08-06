@@ -25,7 +25,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -38,13 +38,7 @@ Hablar de una vivienda exige distinguir el espacio (*room, flat, house*), los ob
 - Describir averías y explicar qué servicio se necesita.
 - Usar expresiones funcionales para alquilar, reparar y mantener una casa.
 
-# Explicación
-
-Un **flat** tiene habitaciones como **bedroom, living room, kitchen** y **bathroom**; una casa puede tener **upstairs**, **downstairs**, un **hallway**, un **balcony** o un **garden**. **Furniture** es incontable: *a piece of furniture*, no *a furniture*. Los aparatos son **appliances**, como una **washing machine**, un **oven** o un **dishwasher**.
-
-Para describir problemas conviene indicar el objeto, el síntoma y el lugar: **The tap is leaking in the kitchen** o **The boiler has broken down**. Un **blocked sink** no deja pasar el agua; una **power cut** corta la electricidad. El **landlord** es el propietario que alquila, el **tenant** es quien vive de alquiler y el **deposit** es la cantidad que se entrega como garantía.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - **There is / There are + problema:** *There is a leak under the sink.*
 - **be + -ing:** *The tap is leaking; the toilet is overflowing.*
@@ -53,7 +47,7 @@ Para describir problemas conviene indicar el objeto, el síntoma y el lugar: **T
 - **call + profesional:** *call a plumber, call an electrician, contact the landlord.*
 - **pay the rent / pay a deposit / give notice.**
 
-# Usos principales
+# Situaciones de uso
 
 1. **Describir una vivienda:** *The flat has two bedrooms and a small balcony.*
 2. **Localizar una avería:** *There is water on the floor under the washing machine.*
@@ -61,7 +55,13 @@ Para describir problemas conviene indicar el objeto, el síntoma y el lugar: **T
 4. **Alquilar:** *The tenant pays the rent on the first day of each month.*
 5. **Explicar una urgencia:** *The fuse box is making a strange noise, so I have switched off the power.*
 
-# Contrastes importantes
+# Explicación
+
+Un **flat** tiene habitaciones como **bedroom, living room, kitchen** y **bathroom**; una casa puede tener **upstairs**, **downstairs**, un **hallway**, un **balcony** o un **garden**. **Furniture** es incontable: *a piece of furniture*, no *a furniture*. Los aparatos son **appliances**, como una **washing machine**, un **oven** o un **dishwasher**.
+
+Para describir problemas conviene indicar el objeto, el síntoma y el lugar: **The tap is leaking in the kitchen** o **The boiler has broken down**. Un **blocked sink** no deja pasar el agua; una **power cut** corta la electricidad. El **landlord** es el propietario que alquila, el **tenant** es quien vive de alquiler y el **deposit** es la cantidad que se entrega como garantía.
+
+# Palabras que se confunden
 
 ## Flat, house y room
 
@@ -88,24 +88,31 @@ El **landlord** alquila la vivienda y suele gestionar reparaciones estructurales
 
 # Errores frecuentes
 
-- ❌ *There is a furniture in the hall.* ✅ **There is a piece of furniture in the hall.**
-- ❌ *The boiler is broken down.* ✅ **The boiler has broken down.**
-- ❌ *I need a plumber to repair the electricity.* ✅ **I need an electrician to repair the electricity.**
-- ❌ *We paid a rent and a deposit.* ✅ **We paid the rent and a deposit.**
-- ❌ *The sink leaks water everywhere.* ✅ **The sink is leaking / There is a leak under the sink.**
+- ❌ *There is a furniture in the hall.*
+- ✅ **There is a piece of furniture in the hall.**
+- ❌ *The boiler is broken down.*
+- ✅ **The boiler has broken down.**
+- ❌ *I need a plumber to repair the electricity.*
+- ✅ **I need an electrician to repair the electricity.**
+- ❌ *We paid a rent and a deposit.*
+- ✅ **We paid the rent and a deposit.**
+- ❌ *The sink leaks water everywhere.*
+- ✅ **The sink is leaking / There is a leak under the sink.**
 
-# Excepciones relevantes
+# Variación de uso
 
-**Home** suele usarse sin artículo para hablar del propio hogar: *I am at home; I went home*. Para un edificio o una vivienda concreta usamos **the house**, **the flat** o **the apartment**. **Accommodation** puede ser incontable cuando habla del lugar donde se vive en general: *We need accommodation near the station*.
+- **Home** suele usarse sin artículo para hablar del propio hogar: *I am at home; I went home*.
+- Para un edificio o una vivienda concreta usamos **the house**, **the flat** o **the apartment**.
+- **Accommodation** puede ser incontable cuando habla del lugar donde se vive en general: *We need accommodation near the station*.
 
-# Mini resumen
+# Para recordar
 
 - **Furniture** es incontable; para una unidad usamos **a piece of furniture**.
 - Describe una avería con objeto, síntoma y lugar: **The tap is leaking in the kitchen**.
 - **Landlord**, **tenant** y **deposit** son vocabulario básico de alquiler.
 - **Plumber** trabaja con agua y tuberías; **electrician** trabaja con electricidad.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. There is a ___ under the sink. (leak)
    - Respuesta: `leak`

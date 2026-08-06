@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -46,18 +46,6 @@ pero resultó innecesaria.
 - Elegir la estructura que expresa consejo retrospectivo, oportunidad o falta
   de necesidad.
 - Utilizar participios irregulares correctos.
-
-# Explicación
-
-`You should have checked the address` implica que no lo comprobaste y que
-hacerlo habría evitado un problema. `You shouldn't have shared the link` implica
-que sí lo compartiste.
-
-`We could have taken a taxi` presenta una alternativa disponible que no se
-eligió. `You needn't have bought any bread` confirma que compraste pan, aunque
-no hacía falta. En cambio, `You didn't need to buy bread` solo afirma que no era
-necesario; a menudo se entiende que no lo compraste, pero la frase no lo
-garantiza por sí sola.
 
 # Forma o estructura
 
@@ -76,14 +64,24 @@ garantiza por sí sola.
 4. Esfuerzo innecesario: `You needn't have printed every page.`
 5. Consejo retrospectivo: `They should have tested the update first.`
 
+# Explicación
+
+`You should have checked the address` implica que no lo comprobaste y que
+hacerlo habría evitado un problema. `You shouldn't have shared the link` implica
+que sí lo compartiste.
+
+`We could have taken a taxi` presenta una alternativa disponible que no se
+eligió. `You needn't have bought any bread` confirma que compraste pan, aunque
+no hacía falta. En cambio, `You didn't need to buy bread` solo afirma que no era
+necesario; a menudo se entiende que no lo compraste, pero la frase no lo
+garantiza por sí sola.
+
 # Contrastes importantes
 
-`Couldn't have` suele expresar imposibilidad: `I couldn't have finished without
-your help`. `Could have` afirmativo puede indicar una oportunidad perdida:
-`I could have finished earlier`.
-
-`Had to` indica obligación; `needn't have` indica precisamente que no existía
-necesidad, aunque la acción se realizó.
+- `Couldn't have` suele expresar imposibilidad: `I couldn't have finished without your help`.
+- `Could have` afirmativo puede indicar una oportunidad perdida: `I could have finished earlier`.
+- `Had to` indica obligación
+- `needn't have` indica precisamente que no existía necesidad, aunque la acción se realizó.
 
 # Ejemplos
 
@@ -109,10 +107,8 @@ necesidad, aunque la acción se realizó.
 
 # Excepciones relevantes
 
-`Could have` no siempre comunica arrepentimiento: en una deducción como `The
-error could have originated in the database`, significa posibilidad. El
-resultado pragmático depende de si el contexto presenta una alternativa
-disponible o una explicación incierta.
+- `Could have` no siempre comunica arrepentimiento: en una deducción como `The error could have originated in the database`, significa posibilidad.
+- El resultado pragmático depende de si el contexto presenta una alternativa disponible o una explicación incierta.
 
 # Mini resumen
 

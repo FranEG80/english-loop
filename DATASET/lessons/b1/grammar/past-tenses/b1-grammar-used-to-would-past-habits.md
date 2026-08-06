@@ -30,7 +30,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -55,26 +55,6 @@ una narración evocadora de acciones repetidas.
 - Introducir un periodo antes de usar `would` para acciones repetidas.
 - Formar preguntas y negativas sin añadir `-d` después de `did`.
 - Diferenciar `used to do` de `be used to doing`.
-
-# Explicación
-
-`I used to work nights` comunica normalmente dos ideas: trabajar de noche era
-habitual y ahora ya no lo es. El contraste puede aparecer de forma explícita:
-`I used to work nights, but now I work mornings`.
-
-`Would` se entiende mejor cuando primero situamos la etapa:
-
-`When we stayed with our grandparents, we would help in the garden after
-breakfast.`
-
-Sin ese marco, `We would help in the garden` puede interpretarse como una
-situación hipotética o como disposición, no necesariamente como hábito pasado.
-
-Con estados, posesión o características estables usamos `used to`, no `would`:
-
-- `The town used to be much quieter.`
-- `I used to have very long hair.`
-- `We used to know all our neighbours.`
 
 # Forma o estructura
 
@@ -110,6 +90,26 @@ El verbo permanece en infinitivo sin `to`:
 6. **Pregunta sobre un hábito:** `Did you use to collect anything?`
 7. **Ausencia de hábito:** `We didn't use to lock the back door.`
 8. **Past simple neutral:** `We visited our cousins every August.`
+
+# Explicación
+
+`I used to work nights` comunica normalmente dos ideas: trabajar de noche era
+habitual y ahora ya no lo es. El contraste puede aparecer de forma explícita:
+`I used to work nights, but now I work mornings`.
+
+`Would` se entiende mejor cuando primero situamos la etapa:
+
+`When we stayed with our grandparents, we would help in the garden after
+breakfast.`
+
+Sin ese marco, `We would help in the garden` puede interpretarse como una
+situación hipotética o como disposición, no necesariamente como hábito pasado.
+
+Con estados, posesión o características estables usamos `used to`, no `would`:
+
+- `The town used to be much quieter.`
+- `I used to have very long hair.`
+- `We used to know all our neighbours.`
 
 # Contrastes importantes
 
@@ -192,20 +192,12 @@ Después de `be/get used to`, `to` es una preposición y va seguida de nombre o
 
 # Excepciones relevantes
 
-`Wouldn't` puede describir una negativa repetida, pero también rechazo o falta
-de disposición: `The old printer wouldn't start` significa que se negaba o no
-conseguía arrancar, no simplemente que no tenía ese hábito.
-
-`Would` puede aparecer con algunos verbos que parecen estados cuando adquieren
-un significado repetido y dinámico: `On cold mornings, the engine would sound
-rough for a minute`. El motor producía ese sonido en ocasiones repetidas.
-
-`Used to` no tiene forma de presente. Para hábitos actuales usamos present
-simple y adverbios de frecuencia: `I usually cycle to work`, no `I use to cycle
-to work`.
-
-En preguntas informales puede verse `used to` después de `did`, pero la norma
-editorial de este dataset usa `Did ... use to ...?`.
+- `Wouldn't` puede describir una negativa repetida, pero también rechazo o falta de disposición: `The old printer wouldn't start` significa que se negaba o no conseguía arrancar, no simplemente que no tenía ese hábito.
+- `Would` puede aparecer con algunos verbos que parecen estados cuando adquieren un significado repetido y dinámico: `On cold mornings, the engine would sound rough for a minute`.
+- El motor producía ese sonido en ocasiones repetidas.
+- `Used to` no tiene forma de presente.
+- Para hábitos actuales usamos present simple y adverbios de frecuencia: `I usually cycle to work`, no `I use to cycle to work`.
+- En preguntas informales puede verse `used to` después de `did`, pero la norma editorial de este dataset usa `Did ... use to ...?`.
 
 # Mini resumen
 

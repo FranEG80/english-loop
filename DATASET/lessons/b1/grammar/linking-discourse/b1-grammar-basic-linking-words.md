@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -45,6 +45,22 @@ Los conectores unen ideas y muestran su relación.
 - Expresar consecuencia con `so`.
 - Expresar causa con `because`.
 - Expresar contraste con `although`.
+
+# Forma o estructura
+
+- `idea + and/but/or + idea`
+- `causa + so + consecuencia`
+- `consecuencia + because + causa`
+- `Although + contraste, + resultado`
+
+# Usos principales
+
+1. **Añadir:** `I like reading and cooking.`
+2. **Contrastar:** `The flat is small but cosy.`
+3. **Elegir:** `We can walk or take the bus.`
+4. **Consecuencia:** `The shop was closed, so we left.`
+5. **Causa:** `We left because the shop was closed.`
+6. **Contraste:** `Although it rained, we enjoyed the trip.`
 
 # Explicación
 
@@ -77,22 +93,6 @@ Los conectores unen ideas y muestran su relación.
 `although` introduce un contraste:
 
 `Although it was expensive, we bought it.`
-
-# Forma o estructura
-
-- `idea + and/but/or + idea`
-- `causa + so + consecuencia`
-- `consecuencia + because + causa`
-- `Although + contraste, + resultado`
-
-# Usos principales
-
-1. **Añadir:** `I like reading and cooking.`
-2. **Contrastar:** `The flat is small but cosy.`
-3. **Elegir:** `We can walk or take the bus.`
-4. **Consecuencia:** `The shop was closed, so we left.`
-5. **Causa:** `We left because the shop was closed.`
-6. **Contraste:** `Although it rained, we enjoyed the trip.`
 
 # Contrastes importantes
 
@@ -137,15 +137,8 @@ Los conectores unen ideas y muestran su relación.
 
 # Excepciones relevantes
 
-`because` puede ir al principio o en medio:
-
-`Because it was late, we left.`  
-`We left because it was late.`
-
-`although` puede ir al principio o en medio:
-
-`Although it was late, we stayed.`  
-`We stayed although it was late.`
+- `because` puede ir al principio o en medio: `Because it was late, we left.` `We left because it was late.`
+- `although` puede ir al principio o en medio: `Although it was late, we stayed.` `We stayed although it was late.`
 
 # Mini resumen
 

@@ -26,7 +26,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -39,13 +39,7 @@ Para explicar un problema de salud conviene nombrar la zona del cuerpo, el sínt
 - Distinguir dolor, enfermedad, lesión y recuperación.
 - Explicar cuándo se necesita una cita o ayuda profesional.
 
-# Explicación
-
-Para dolores usamos **have** o **feel**: *I have a headache; I feel dizzy*. También podemos decir **My back hurts** o **There is a pain in my shoulder**. Los síntomas comunes incluyen **a cough, a fever, a sore throat, a rash, a runny nose** y **stomach ache**. **Swollen** describe una parte del cuerpo más grande por inflamación; **bruised** indica una marca causada por un golpe.
-
-Las lesiones tienen vocabulario específico. Un **cut** rompe la piel, una **bruise** es un moratón, una **sprain** afecta a una articulación y una **burn** se produce por calor. Para recibir ayuda podemos **make an appointment**, **see a doctor**, **visit a pharmacist** o **ask for advice**. Las recomendaciones básicas se expresan con **should**, pero una lección de vocabulario no sustituye una evaluación médica.
-
-# Forma o estructura
+# Léxico y combinaciones
 
 - **have + síntoma:** have a headache, have a cough, have a fever.
 - **feel + estado:** feel dizzy, feel sick, feel weak.
@@ -54,7 +48,7 @@ Las lesiones tienen vocabulario específico. Un **cut** rompe la piel, una **bru
 - **make an appointment / see a doctor / take medicine.**
 - **get some rest / drink plenty of water / keep the wound clean.**
 
-# Usos principales
+# Situaciones de uso
 
 1. **Describir síntomas:** *I have a sore throat and a dry cough.*
 2. **Localizar un dolor:** *The pain is in my lower back.*
@@ -62,7 +56,13 @@ Las lesiones tienen vocabulario específico. Un **cut** rompe la piel, una **bru
 4. **Pedir atención:** *I would like to make an appointment for tomorrow.*
 5. **Dar un consejo general:** *You should rest and ask a pharmacist for advice.*
 
-# Contrastes importantes
+# Explicación
+
+Para dolores usamos **have** o **feel**: *I have a headache; I feel dizzy*. También podemos decir **My back hurts** o **There is a pain in my shoulder**. Los síntomas comunes incluyen **a cough, a fever, a sore throat, a rash, a runny nose** y **stomach ache**. **Swollen** describe una parte del cuerpo más grande por inflamación; **bruised** indica una marca causada por un golpe.
+
+Las lesiones tienen vocabulario específico. Un **cut** rompe la piel, una **bruise** es un moratón, una **sprain** afecta a una articulación y una **burn** se produce por calor. Para recibir ayuda podemos **make an appointment**, **see a doctor**, **visit a pharmacist** o **ask for advice**. Las recomendaciones básicas se expresan con **should**, pero una lección de vocabulario no sustituye una evaluación médica.
+
+# Palabras que se confunden
 
 ## Ache, pain y hurt
 
@@ -89,24 +89,30 @@ Un **doctor** puede examinar, diagnosticar y tratar. Un **pharmacist** trabaja c
 
 # Errores frecuentes
 
-- ❌ *I have pain in my head ache.* ✅ **I have a headache.**
-- ❌ *My ankle has swollen.* ✅ **My ankle is swollen.**
-- ❌ *I feel a headache.* ✅ **I have a headache.**
-- ❌ *I am allergic with pollen.* ✅ **I am allergic to pollen.**
-- ❌ *I need make an appointment.* ✅ **I need to make an appointment.**
+- ❌ *I have pain in my head ache.*
+- ✅ **I have a headache.**
+- ❌ *My ankle has swollen.*
+- ✅ **My ankle is swollen.**
+- ❌ *I feel a headache.*
+- ✅ **I have a headache.**
+- ❌ *I am allergic with pollen.*
+- ✅ **I am allergic to pollen.**
+- ❌ *I need make an appointment.*
+- ✅ **I need to make an appointment.**
 
-# Excepciones relevantes
+# Variación de uso
 
-En inglés británico se dice con frecuencia **have a temperature** para hablar de fiebre, mientras que **have a fever** es muy común y se entiende ampliamente. **Medicine** suele ser incontable cuando habla de tratamiento en general (*take some medicine*); para unidades concretas usamos **a tablet**, **a pill** o **a dose**.
+- En inglés británico se dice con frecuencia **have a temperature** para hablar de fiebre, mientras que **have a fever** es muy común y se entiende ampliamente.
+- **Medicine** suele ser incontable cuando habla de tratamiento en general (*take some medicine*); para unidades concretas usamos **a tablet**, **a pill** o **a dose**.
 
-# Mini resumen
+# Para recordar
 
 - **Have a headache**, **feel dizzy** y **my knee hurts** tienen estructuras distintas.
 - **Swollen, bruised, sprained** y **cut** describen lesiones o signos visibles.
 - **Make an appointment**, **see a doctor** y **visit a pharmacist** son acciones funcionales.
 - **Should** sirve para consejos generales; los síntomas intensos o persistentes requieren ayuda profesional.
 
-# Comprobación rápida autocorregible
+# Comprueba lo aprendido
 
 1. I have a sore ___. (throat)
    - Respuesta: `throat`

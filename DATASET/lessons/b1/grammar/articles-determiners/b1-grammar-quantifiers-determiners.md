@@ -28,7 +28,7 @@ tags:
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
-contentVersion: 1
+contentVersion: 2
 ---
 
 # Resumen
@@ -47,6 +47,22 @@ sustantivo (contable o incontable) y el tipo de oración.
 - Usar `much` con incontables y `many` con contables.
 - Usar `a lot of` con ambos.
 - Diferenciar `a few`/`a little` de `few`/`little`.
+
+# Forma o estructura
+
+- `some + sustantivo` (afirmativa)
+- `any + sustantivo` (negativa/pregunta)
+- `much + incontable`; `many + contable`
+- `a lot of + contable/incontable`
+- `a few / few + contable`; `a little / little + incontable`
+
+# Usos principales
+
+1. **Ofrecer:** `Would you like some coffee?`
+2. **Preguntar por existencia:** `Are there any tickets left?`
+3. **Cantidad grande:** `There are many reasons to visit.`
+4. **Cantidad pequeña positiva:** `I have a few suggestions.`
+5. **Cantidad pequeña negativa:** `There is little time to decide.`
 
 # Explicación
 
@@ -98,22 +114,6 @@ En ofrecimientos y peticiones usamos `some` aunque sea una pregunta:
 
 `There is little hope.`
 
-# Forma o estructura
-
-- `some + sustantivo` (afirmativa)
-- `any + sustantivo` (negativa/pregunta)
-- `much + incontable`; `many + contable`
-- `a lot of + contable/incontable`
-- `a few / few + contable`; `a little / little + incontable`
-
-# Usos principales
-
-1. **Ofrecer:** `Would you like some coffee?`
-2. **Preguntar por existencia:** `Are there any tickets left?`
-3. **Cantidad grande:** `There are many reasons to visit.`
-4. **Cantidad pequeña positiva:** `I have a few suggestions.`
-5. **Cantidad pequeña negativa:** `There is little time to decide.`
-
 # Contrastes importantes
 
 ## some frente a any
@@ -162,15 +162,10 @@ En ofrecimientos y peticiones usamos `some` aunque sea una pregunta:
 
 # Excepciones relevantes
 
-`some` se usa en preguntas cuando ofrecemos o pedimos:
-
-`Would you like some tea?`
-
-`any` puede usarse en afirmativas con el sentido de "cualquiera":
-
-`You can take any seat.`
-
-`a lot of` es informal; en registros formales se prefiere `much` o `many`.
+- `some` se usa en preguntas cuando ofrecemos o pedimos: `Would you like some tea?`
+- `any` puede usarse en afirmativas con el sentido de "cualquiera": `You can take any seat.`
+- `a lot of` es informal
+- en registros formales se prefiere `much` o `many`.
 
 # Mini resumen
 
