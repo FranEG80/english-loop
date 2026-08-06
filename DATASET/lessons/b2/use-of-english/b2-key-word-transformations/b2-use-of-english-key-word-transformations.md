@@ -46,13 +46,126 @@ Una transformación con palabra clave exige expresar la misma idea desde otra es
 
 Se empieza por identificar la relación central: quién realiza la acción, cuándo ocurre, qué grado de certeza hay y si la frase es afirmativa o negativa. Después se construye el patrón y se relee comparando las dos frases. La palabra clave no se puede modificar (*advice* no se convierte en *advised* si el ejercicio exige *ADVICE*).
 
-# Forma o estructura
+# Cómo identificar cada tipo de transformación
 
-- **passive:** People believe the plan works. → The plan is believed to work.
-- **reported speech:** “I am tired,” she said. → She said that she was tired.
-- **conditionals:** I missed the bus because I left late. → If I had left earlier, I would have caught it.
-- **modals:** It is necessary to book. → You must book.
-- **comparison:** No river is longer here. → This is the longest river here.
+Antes de escribir la respuesta, decide qué relación expresa la primera frase. Cada tipo tiene señales propias que apuntan a un patrón concreto.
+
+## 1. Pasiva (active → passive)
+
+**Señales en la frase original:**
+- Un verbo transitivo con objeto: *They built it*, *People use this room*, *Someone has stolen it*.
+- Palabras como *people*, *they*, *someone*, *nobody* como sujeto genérico.
+- La palabra clave suele ser un **participio** (`BUILT`, `STOLEN`, `USED`) o el auxiliar de la pasiva (`BEEN`, `BEING`).
+
+**Patrón:**
+| Tiempo | Activa | Pasiva |
+| --- | --- | --- |
+| presente | They check it. | It **is checked**. |
+| pasado | They checked it. | It **was checked**. |
+| futuro | They will check it. | It **will be checked**. |
+| presente continuo | They are checking it. | It **is being checked**. |
+| present perfect | They have checked it. | It **has been checked**. |
+
+**Variantes frecuentes:**
+- Pasiva con modales: *It must be done*, *It can be opened*, *It should be fixed*.
+- Pasivas de reporting con infinitivo: *People believe it works* → *It **is believed to work***; *People believe it worked* → *It **is believed to have worked***; *People believe it was built* → *It **is believed to have been built***.
+
+**Trampas:**
+- No omitir `be`: *It checked* ❌ → *It is checked* ✅.
+- No usar el pasado del participio: *was built* ✅, no *was build*.
+- Con reporting passives, la forma del infinitivo depende del tiempo: `to work` (presente), `to have worked` (pasado), `to have been built` (pasado pasivo).
+
+## 2. Reported speech (directo → indirecto)
+
+**Señales en la frase original:**
+- Comillas con una cita: *“I am tired,” she said*, *“Will you come?” he asked*.
+- Verbos introductorios: *said*, *told*, *asked*, *reported*.
+- La palabra clave suele ser un **verbo ya conjugado** (`SAID`, `ASKED`, `TOLD`) o un **modal en pasado** (`WOULD`, `COULD`, `MIGHT`).
+
+**Patrón:**
+| Directo | Indirecto |
+| --- | --- |
+| present simple | past simple |
+| present continuous | past continuous |
+| present perfect | past perfect |
+| past simple | past perfect |
+| will | would |
+| can | could |
+| may | might |
+| must (obligación) | had to |
+
+**Cambios de referencia:**
+- `now` → `then`; `today` → `that day`; `tomorrow` → `the next day`; `yesterday` → `the day before`; `here` → `there`; `this` → `that`.
+
+**Trampas:**
+- Las preguntas reportadas usan **orden afirmativo**: *She asked where the station was*, no *where was the station*.
+- No usar `do/does/did` en la pregunta indirecta: *He asked if I worked* ✅, no *if did I work*.
+- Las preguntas sí/no se introducen con `if` o `whether`.
+
+## 3. Condicionales (condiciones y resultados)
+
+**Señales en la frase original:**
+- Causa y consecuencia relacionadas: *I missed the bus because I left late*.
+- Expresiones de arrepentimiento: *I regret...*, *It was a mistake...*.
+- La palabra clave suele ser un **participio pasado** (`MISSED`, `GONE`, `BOUGHT`) que revela si el resultado es real o hipotético.
+
+**Patrón (tercer condicional):**
+*If + past perfect, would + have + participio.*
+
+- *I missed the bus because I left late.* → *If I had left earlier, I **would not have missed** it.*
+- *I regret not applying.* → *I wish I **had applied**.*
+
+**Variantes frecuentes:**
+- `I wish + past perfect` para arrepentimiento: *I wish I had studied*.
+- `should have + participio` para crítica: *You should have called*.
+- `needn't have + participio` para acción innecesaria: *You needn't have come*.
+
+**Trampas:**
+- No usar *I wish I would have* ❌; el arrepentimiento pasado usa *I wish I had + participio* ✅.
+- No mezclar tiempos: la condición pasada requiere *had + participio* y el resultado *would have + participio*.
+
+## 4. Modales (obligación, posibilidad, deducción)
+
+**Señales en la frase original:**
+- Expresiones de necesidad o ausencia de ella: *It is necessary...*, *It is not necessary...*, *It is forbidden...*.
+- Expresiones de certeza o posibilidad: *I am sure...*, *Perhaps...*, *It is possible that...*.
+- La palabra clave suele ser el **propio modal** (`MUST`, `MAY`, `MIGHT`, `NEED`, `HAVE`) o un **participio** (`BEEN`, `LEFT`).
+
+**Patrón:**
+| Significado | Original | Transformación |
+| --- | --- | --- |
+| obligación | It is necessary to book. | You **must book**. |
+| prohibición | It is forbidden to park. | You **must not park**. |
+| no necesidad | It is not necessary to tip. | You **don't have to tip**. |
+| posibilidad futura | It is possible she will come. | She **may come**. |
+| deducción presente | I am sure he is at home. | He **must be** at home. |
+| deducción pasada | I am sure he saw it. | He **must have seen** it. |
+| deducción negativa pasada | I am sure he didn't see it. | He **cannot have seen** it. |
+| posibilidad pasada | Perhaps he entered. | He **might have entered**. |
+
+**Trampas:**
+- `must not` ≠ `don't have to`: prohibición frente a ausencia de necesidad.
+- `could have` (posibilidad pasada) ≠ `should have` (crítica o expectativa incumplida).
+- `needn't have + participio` expresa que una acción pasada fue innecesaria; no confundir con `didn't need to`.
+
+## 5. Comparaciones (comparativo y superlativo)
+
+**Señales en la frase original:**
+- Dos elementos comparados: *A is cheaper than B*, *B is not as expensive as A*.
+- Un elemento destacado sobre un grupo: *No hotel is as luxurious as this one*, *This is the best film*.
+- La palabra clave suele ser un **adjetivo en comparativo o superlativo** (`CHEAPER`, `MOST`, `BEST`, `HIGHEST`) o la base del adjetivo (`EXPENSIVE`, `FAST`).
+
+**Patrón:**
+- Comparativo: `not as + adjetivo + as` = `comparativo + than` (se invierte el orden de los sujetos).
+  *The blue bag is not as heavy as the red one.* → *The red bag **is heavier than** the blue one.*
+- Superlativo: `No + sustantivo + is as + adjetivo + as + X` = `X is the + superlativo`.
+  *No mountain is as high as this one.* → *This is **the highest** mountain.*
+- Superlativo con presente perfecto de experiencia: *This is the best film I **have ever seen**.*
+
+**Trampas:**
+- No mezclar `more` con `-er`: *more cheaper* ❌ → *cheaper* ✅.
+- En el patrón `not as ... as`, la inversión de sujetos debe conservar el significado: si *A is not as fast as B*, entonces *B is faster than A*.
+- Con adjetivos largos, el comparativo usa `more`: *more expensive*, no *expensiver*.
 
 # Usos principales
 
@@ -63,15 +176,17 @@ Se empieza por identificar la relación central: quién realiza la acción, cuá
 
 # Contrastes importantes
 
-**Must / have to:** obligación del hablante frente a necesidad externa, aunque pueden coincidir en contexto. **Could have / should have:** posibilidad pasada frente a crítica o expectativa incumplida. **If I had... / I wish I had...:** condición hipotética frente a arrepentimiento. **Reported / direct speech:** palabras citadas frente a contenido comunicado.
+**Must / have to:** obligación del hablante frente a necesidad externa, aunque pueden coincidir en contexto. **Could have / should have:** posibilidad pasada frente a crítica o expectativa incumplida. **If I had... / I wish I had...:** condición hipotética frente a arrepentimiento. **Reported / direct speech:** palabras citadas frente a contenido comunicado. **Mustn't / don't have to:** prohibición frente a ausencia de necesidad. **May / might / could:** matices de posibilidad sin diferencias matemáticas exactas.
 
 # Ejemplos
 
-1. **They cancelled the flight.** → **The flight was cancelled.**
-2. **“I will call you,” Ben said.** → **Ben said he would call me.**
-3. **It was a mistake not to check.** → **We should have checked.**
-4. **I regret not applying earlier.** → **I wish I had applied earlier.**
-5. **This route is cheaper than the other one.** → **The other route is not as cheap as this one.**
+1. **They cancelled the flight.** → **The flight was cancelled.** (pasiva)
+2. **“I will call you,” Ben said.** → **Ben said he would call me.** (reported speech)
+3. **It was a mistake not to check.** → **We should have checked.** (crítica pasada)
+4. **I regret not applying earlier.** → **I wish I had applied earlier.** (arrepentimiento)
+5. **This route is cheaper than the other one.** → **The other route is not as cheap as this one.** (comparación inversa)
+6. **People believe the plan works.** → **The plan is believed to work.** (reporting passive)
+7. **Perhaps the train is delayed.** → **The train might be delayed.** (posibilidad)
 
 # Errores frecuentes
 
@@ -79,15 +194,24 @@ Se empieza por identificar la relación central: quién realiza la acción, cuá
 - ❌ Alterar la palabra clave. ✅ Copiarla exactamente.
 - ❌ Añadir información nueva. ✅ Comparar significado, no solo forma.
 - ❌ *I wish I would studied.* ✅ *I wish I had studied.*
+- ❌ *It is checked* cuando la frase pide otra voz. ✅ Revisar si el sujeto realiza o recibe la acción.
+- ❌ *She asked where was the station.* ✅ *She asked where the station was.*
+- ❌ *You mustn't bring a towel* (cuando no es necesario). ✅ *You don't have to bring a towel.*
 
 # Excepciones relevantes
 
 Algunas transformaciones admiten más de una respuesta natural; una actividad autocorregible debe enumerar todas las variantes conocidas o elegir una redacción inequívoca. Las contracciones pueden depender de la normalización, pero no se debe aceptar una transformación que cambie el significado o el registro exigido.
 
+Los hechos generales se mantienen en presente dentro de reported speech: *The teacher said that water boils at 100°C*. `Help` admite infinitivo con o sin `to`: *She helped me (to) carry the bags*.
+
 # Mini resumen
 
 - Identifica el significado antes de elegir la estructura.
-- Conserva tiempo, polaridad, modalidad y referentes.
+- Pasiva: conserva el tiempo en `be + participio`; reporting passive con `to be` / `to have been`.
+- Reported speech: backshift un paso; preguntas en orden afirmativo; `if/whether` para sí/no.
+- Condicionales: `If + past perfect, would have + participio`; `wish + past perfect` para arrepentimiento.
+- Modales: `must not` (prohibición) ≠ `don't have to` (no necesidad); `should have` = crítica; `needn't have` = innecesario.
+- Comparación: `not as + adjetivo + as` invierte el comparativo; `No ... is as ... as` → superlativo.
 - Revisa palabra clave, número de palabras y equivalencia final.
 
 # Comprobación rápida autocorregible
@@ -97,4 +221,6 @@ Algunas transformaciones admiten más de una respuesta natural; una actividad au
 3. Past criticism: **should have**.
 4. Regret about the past: **wish + past perfect**.
 5. Strong necessity: **must**.
+6. “People believe it works” → **It is believed to work**.
+7. “The blue bag is not as heavy as the red one” → **The red bag is heavier than the blue one**.
 
