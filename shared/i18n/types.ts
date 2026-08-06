@@ -129,8 +129,16 @@ export interface Dictionary {
   catalog: {
     searchLabel: string;
     searchPlaceholder: string;
+    filtersTitle: string;
+    filtersDescription: string;
+    activeFilters: string;
+    resultsLabel: string;
     levelLabel: string;
     allLevels: string;
+    categoryLabel: string;
+    allCategories: string;
+    allActivityTypes: string;
+    allInteractionModes: string;
     filterButton: string;
     clearFilters: string;
     lessonsTitle: string;
@@ -153,6 +161,18 @@ export interface Dictionary {
     upcomingTitle: string;
     focusTitle: string;
     focusDescription: string;
+    focusEyebrow: string;
+    scopeTitle: string;
+    scopeDescription: string;
+    categoryLabel: string;
+    topicLabel: string;
+    subtopicLabel: string;
+    skillLabel: string;
+    wholeScope: string;
+    selectedScope: string;
+    availableIn: string;
+    sessionLength: string;
+    activitiesCount: string;
     startFocus: string;
     attempts: string;
     dueDate: string;

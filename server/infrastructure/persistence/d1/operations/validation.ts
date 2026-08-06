@@ -62,16 +62,31 @@ export function isD1Operation(value: unknown): value is D1Operation {
     case "catalogLessons":
       return (value.level === undefined || typeof value.level === "string") &&
         (value.category === undefined || typeof value.category === "string") &&
+        (value.queryTerms === undefined || (Array.isArray(value.queryTerms) && value.queryTerms.every((term) => typeof term === "string"))) &&
+        (value.offset === undefined || (typeof value.offset === "number" && value.offset >= 0)) &&
         (value.includeDemo === undefined || typeof value.includeDemo === "boolean") &&
         hasOptionalCursorPagination(value);
     case "catalogActivities":
       return (value.taxonomyNodeId === undefined || typeof value.taxonomyNodeId === "string") &&
+        (value.taxonomyNodeIds === undefined || (Array.isArray(value.taxonomyNodeIds) && value.taxonomyNodeIds.every((id) => typeof id === "string"))) &&
         (value.level === undefined || typeof value.level === "string") &&
         (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string"))) &&
+        (value.queryTerms === undefined || (Array.isArray(value.queryTerms) && value.queryTerms.every((term) => typeof term === "string"))) &&
+        (value.activityType === undefined || typeof value.activityType === "string") &&
+        (value.interactionMode === undefined || typeof value.interactionMode === "string") &&
+        (value.offset === undefined || (typeof value.offset === "number" && value.offset >= 0)) &&
         (value.includeDemo === undefined || typeof value.includeDemo === "boolean") &&
         hasOptionalCursorPagination(value);
     case "catalogCounts":
       return (value.kind === "lessons" || value.kind === "activities" || value.kind === "taxonomy") &&
+        (value.level === undefined || typeof value.level === "string") &&
+        (value.category === undefined || typeof value.category === "string") &&
+        (value.taxonomyNodeId === undefined || typeof value.taxonomyNodeId === "string") &&
+        (value.taxonomyNodeIds === undefined || (Array.isArray(value.taxonomyNodeIds) && value.taxonomyNodeIds.every((id) => typeof id === "string"))) &&
+        (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string"))) &&
+        (value.queryTerms === undefined || (Array.isArray(value.queryTerms) && value.queryTerms.every((term) => typeof term === "string"))) &&
+        (value.activityType === undefined || typeof value.activityType === "string") &&
+        (value.interactionMode === undefined || typeof value.interactionMode === "string") &&
         (value.includeDemo === undefined || typeof value.includeDemo === "boolean");
     case "userSettingsSave":
       return hasSnapshot(value, ["userId", "locale", "activeLevels", "timezone"]) &&

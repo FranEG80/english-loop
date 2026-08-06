@@ -40,6 +40,10 @@ export const demoLearningContentAdapter: LearningContentPort = {
     const lesson = await demoCatalog.getLessonById(lessonId);
     return lesson ? toLessonDetailDto(lesson) : null;
   },
+  async searchLessonsPage(filters, pagination) {
+    const page = await demoCatalog.searchLessonsPage(filters, pagination);
+    return { ...page, items: page.items.map(toLessonSummaryDto) };
+  },
   async listActivities(filters) {
     const activities = await demoCatalog.listActivities(filters);
     return activities.map(toActivityQuestionDto);
@@ -47,6 +51,22 @@ export const demoLearningContentAdapter: LearningContentPort = {
   async getActivityById(activityId) {
     const activity = await demoCatalog.getActivityById(activityId);
     return activity ? toActivityQuestionDto(activity) : null;
+  },
+  async searchActivitiesPage(filters, pagination) {
+    const page = await demoCatalog.searchActivitiesPage(
+      {
+        taxonomyNodeId: filters?.taxonomyNodeId,
+        level: filters?.level,
+        lessonIds: filters?.lessonIds,
+        query: filters?.query,
+        activityType: filters?.type === "multiple_choice"
+          ? "multiple_select"
+          : filters?.type,
+        interactionMode: filters?.interactionMode,
+      },
+      pagination,
+    );
+    return { ...page, items: page.items.map(toActivityQuestionDto) };
   },
   async getTaxonomyTree() {
     const tree = await demoCatalog.getTaxonomyTree();

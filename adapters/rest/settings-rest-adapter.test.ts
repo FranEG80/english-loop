@@ -18,4 +18,24 @@ describe("settingsRestAdapter", () => {
       message: expect.stringMatching(/mock mode/iu),
     });
   });
+
+  it("maps the UI daily goal to the REST activity goal field", async () => {
+    const fetchMock = vi.fn(async (...args: Parameters<typeof fetch>) => {
+      void args;
+      return new Response("{}", { status: 200 });
+    });
+    vi.stubGlobal("fetch", fetchMock);
+
+    await settingsRestAdapter.updateSettings({
+      locale: "en",
+      dailyGoal: 7,
+      reducedMotion: true,
+    });
+
+    expect(JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body))).toEqual({
+      locale: "en",
+      dailyGoalActivities: 7,
+      reducedMotion: true,
+    });
+  });
 });

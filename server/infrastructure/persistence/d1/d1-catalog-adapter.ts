@@ -1,4 +1,4 @@
-import type { ActivityCatalogPagePort, ActivityCatalogPort, ActivityListFilters, CatalogMetadata, CatalogMetadataPort, LessonCatalogPagePort, LessonCatalogPort, LessonListFilters, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
+import type { ActivityCatalogPagePort, ActivityCatalogPort, ActivityCatalogSearchPort, ActivityListFilters, CatalogMetadata, CatalogMetadataPort, LessonCatalogPagePort, LessonCatalogPort, LessonCatalogSearchPort, LessonListFilters, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { Activity } from "@/core/content/domain/types/activity";
 import type { Lesson } from "@/core/content/domain/types/lesson";
 import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
@@ -8,9 +8,14 @@ import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson, type PrismaActivityVersionRow, type PrismaLessonVersionRow } from "@/adapters/content/prisma-catalog-mappers";
 import { bool, first, nullableText, rows, text, type Row } from "./mappers/d1-row-mapper";
 import { operation } from "./operations/request";
-import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
+import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams, type NumberedPage, type NumberedPaginationParams } from "@/core/shared/kernel";
+import {
+  assertNumberedPagination,
+  catalogSearchTerms,
+  numberedPage,
+} from "@/core/content/domain/catalog-search";
 
-export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePort, ActivityCatalogPort, ActivityCatalogPagePort, TaxonomyCatalogPort, CatalogMetadataPort {
+export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePort, LessonCatalogSearchPort, ActivityCatalogPort, ActivityCatalogPagePort, ActivityCatalogSearchPort, TaxonomyCatalogPort, CatalogMetadataPort {
   constructor(
     private readonly transport: D1TransportClient,
     private readonly options: { includeDemo?: boolean } = {},
@@ -27,7 +32,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
 
   async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
     await this.requireCatalog();
-    return rows(await this.transport.execute(operation({ name: "catalogLessons", level: filters?.level, category: filters?.category, includeDemo: this.includeDemo }))).map((row) => mapPrismaLesson({
+    return rows(await this.transport.execute(operation({ name: "catalogLessons", level: filters?.level, category: filters?.category, queryTerms: catalogSearchTerms(filters?.query), includeDemo: this.includeDemo }))).map((row) => mapPrismaLesson({
       id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
     } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), []))); 
   }
@@ -43,6 +48,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       name: "catalogLessons",
       level: filters?.level,
       category: filters?.category,
+      queryTerms: catalogSearchTerms(filters?.query),
       cursor,
       limit: pagination.limit + 1,
       includeDemo: this.includeDemo,
@@ -55,6 +61,39 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
     return { items, hasMore, nextCursor: hasMore ? encodeCursor(items.at(-1)!.id) : null };
   }
 
+  async searchLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Lesson>> {
+    assertNumberedPagination(pagination.page, pagination.pageSize);
+    await this.requireCatalog();
+    const queryTerms = catalogSearchTerms(filters?.query);
+    const [result, countResult] = await Promise.all([
+      this.transport.execute(operation({
+        name: "catalogLessons",
+        level: filters?.level,
+        category: filters?.category,
+        queryTerms,
+        offset: (pagination.page - 1) * pagination.pageSize,
+        limit: pagination.pageSize,
+        includeDemo: this.includeDemo,
+      })),
+      this.transport.execute(operation({
+        name: "catalogCounts",
+        kind: "lessons",
+        level: filters?.level,
+        category: filters?.category,
+        queryTerms,
+        includeDemo: this.includeDemo,
+      })),
+    ]);
+    const items = rows(result).map((row) => mapPrismaLesson({
+      id: text(row.id), lessonId: text(row.lessonId), levelCode: text(row.levelCode), category: text(row.category), taxonomyNodeId: text(row.taxonomyNodeId), prerequisites: text(row.prerequisites), title: text(row.title), summary: text(row.summary), explanation: text(row.explanation), examples: text(row.examples), commonMistakes: text(row.commonMistakes), tags: text(row.tags), difficulty: Number(row.difficulty), contentVersion: Number(row.contentVersion), statusCode: text(row.statusCode),
+    } satisfies PrismaLessonVersionRow, parseCatalogJson(text(row.relatedActivityIds), [])));
+    const total = Number(first<Row>(countResult)?.count ?? 0);
+    return numberedPage(items, total, pagination.page, pagination.pageSize);
+  }
+
   async getLessonById(lessonId: string): Promise<Lesson | null> {
     await this.requireCatalog();
     const result = await this.transport.execute(operation({ name: "catalogLessons", includeDemo: this.includeDemo }));
@@ -64,7 +103,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {
     await this.requireCatalog();
-    const baseRows = rows(await this.transport.execute(operation({ name: "catalogActivities", taxonomyNodeId: filters?.taxonomyNodeId, level: filters?.level === "both" ? undefined : filters?.level, lessonIds: filters?.lessonIds, includeDemo: this.includeDemo })));
+    const baseRows = rows(await this.transport.execute(operation({ name: "catalogActivities", taxonomyNodeId: filters?.taxonomyNodeId, taxonomyNodeIds: filters?.taxonomyNodeIds, level: filters?.level === "both" ? undefined : filters?.level, lessonIds: filters?.lessonIds, queryTerms: catalogSearchTerms(filters?.query), activityType: filters?.activityType, interactionMode: filters?.interactionMode, includeDemo: this.includeDemo })));
     return baseRows.map((row) => mapPrismaActivity({
       id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
       options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
@@ -81,8 +120,12 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
     const result = await this.transport.execute(operation({
       name: "catalogActivities",
       taxonomyNodeId: filters?.taxonomyNodeId,
+      taxonomyNodeIds: filters?.taxonomyNodeIds,
       level: filters?.level === "both" ? undefined : filters?.level,
       lessonIds: filters?.lessonIds,
+      queryTerms: catalogSearchTerms(filters?.query),
+      activityType: filters?.activityType,
+      interactionMode: filters?.interactionMode,
       cursor,
       limit: pagination.limit + 1,
       includeDemo: this.includeDemo,
@@ -94,6 +137,44 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
     const hasMore = mapped.length > pagination.limit;
     const items = hasMore ? mapped.slice(0, pagination.limit) : mapped;
     return { items, hasMore, nextCursor: hasMore ? encodeCursor(items.at(-1)!.id) : null };
+  }
+
+  async searchActivitiesPage(
+    filters: ActivityListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Activity>> {
+    assertNumberedPagination(pagination.page, pagination.pageSize);
+    await this.requireCatalog();
+    const queryTerms = catalogSearchTerms(filters?.query);
+    const operationFilters = {
+      level: filters?.level === "both" ? undefined : filters?.level,
+      taxonomyNodeId: filters?.taxonomyNodeId,
+      taxonomyNodeIds: filters?.taxonomyNodeIds,
+      lessonIds: filters?.lessonIds,
+      queryTerms,
+      activityType: filters?.activityType,
+      interactionMode: filters?.interactionMode,
+      includeDemo: this.includeDemo,
+    };
+    const [result, countResult] = await Promise.all([
+      this.transport.execute(operation({
+        name: "catalogActivities",
+        ...operationFilters,
+        offset: (pagination.page - 1) * pagination.pageSize,
+        limit: pagination.pageSize,
+      })),
+      this.transport.execute(operation({
+        name: "catalogCounts",
+        kind: "activities",
+        ...operationFilters,
+      })),
+    ]);
+    const items = rows(result).map((row) => mapPrismaActivity({
+      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
+      options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
+    } satisfies PrismaActivityVersionRow));
+    const total = Number(first<Row>(countResult)?.count ?? 0);
+    return numberedPage(items, total, pagination.page, pagination.pageSize);
   }
 
   async getActivityById(activityId: string): Promise<Activity | null> {

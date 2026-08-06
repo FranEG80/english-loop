@@ -11,3 +11,19 @@ export interface CursorPaginationParams {
   cursor?: string;
   limit: number;
 }
+
+/** Página numerada para catálogos navegables y búsquedas con total real. */
+export interface NumberedPage<TItem> {
+  items: TItem[];
+  page: number;
+  pageSize: number;
+  total: number;
+  totalPages: number;
+  hasNextPage: boolean;
+  hasPreviousPage: boolean;
+}
+
+export interface NumberedPaginationParams {
+  page: number;
+  pageSize: number;
+}

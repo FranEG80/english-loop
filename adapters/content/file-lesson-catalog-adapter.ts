@@ -4,10 +4,14 @@ import path from "node:path";
 import matter from "gray-matter";
 import type { Lesson } from "@/core/content/domain/types/lesson";
 import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
-import type { LessonListFilters, LessonCatalogPagePort, LessonCatalogPort } from "@/core/content/ports/catalog-ports";
-import { paginateSortedItems, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
+import type { LessonListFilters, LessonCatalogPagePort, LessonCatalogPort, LessonCatalogSearchPort } from "@/core/content/ports/catalog-ports";
+import { paginateSortedItems, type CursorPage, type CursorPaginationParams, type NumberedPage, type NumberedPaginationParams } from "@/core/shared/kernel";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
-import { isDemoLessonId } from "@/core/content/domain/demo-fixture";
+import {
+  assertNumberedPagination,
+  matchesCatalogSearch,
+  numberedPage,
+} from "@/core/content/domain/catalog-search";
 
 interface LessonIndexEntry {
   id: string;
@@ -59,7 +63,7 @@ interface ActivityIndex {
  * Adaptador de lecciones que lee `DATASET/catalog/lesson-index.json` y los
  * archivos markdown. Cachea el índice una vez por proceso.
  */
-export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalogPagePort {
+export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalogPagePort, LessonCatalogSearchPort {
   private readonly datasetRoot: string;
   private readonly indexPath: string;
   private indexPromise: Promise<LessonIndexEntry[]> | null = null;
@@ -90,7 +94,7 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
       );
     }
     return raw.lessons.filter(
-      (lesson) => lesson.status === PUBLISHED_CONTENT_STATUS && !isDemoLessonId(lesson.id),
+      (lesson) => lesson.status === PUBLISHED_CONTENT_STATUS,
     );
   }
 
@@ -171,6 +175,10 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
     const filtered = entries.filter((entry) => {
       if (filters?.level && entry.level !== filters.level) return false;
       if (filters?.category && entry.category !== filters.category) return false;
+      if (!matchesCatalogSearch(
+        [entry.id, entry.title, entry.category, entry.topic, ...entry.subtopics],
+        filters?.query,
+      )) return false;
       return true;
     });
     return Promise.all(filtered.map((entry) => this.readLesson(entry, related.get(entry.id) ?? [])));
@@ -186,6 +194,10 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
       .filter((entry) => {
         if (filters?.level && entry.level !== filters.level) return false;
         if (filters?.category && entry.category !== filters.category) return false;
+        if (!matchesCatalogSearch(
+          [entry.id, entry.title, entry.category, entry.topic, ...entry.subtopics],
+          filters?.query,
+        )) return false;
         return true;
       })
       .sort((left, right) => left.id.localeCompare(right.id));
@@ -194,6 +206,37 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
       ...page,
       items: await Promise.all(page.items.map((entry) => this.readLesson(entry, related.get(entry.id) ?? []))),
     };
+  }
+
+  async searchLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Lesson>> {
+    assertNumberedPagination(pagination.page, pagination.pageSize);
+    const entries = (await this.loadIndex())
+      .filter((entry) => {
+        if (filters?.level && entry.level !== filters.level) return false;
+        if (filters?.category && entry.category !== filters.category) return false;
+        return matchesCatalogSearch(
+          [entry.id, entry.title, entry.category, entry.topic, ...entry.subtopics],
+          filters?.query,
+        );
+      })
+      .sort((left, right) => left.id.localeCompare(right.id));
+    const related = await this.relatedActivities();
+    const start = (pagination.page - 1) * pagination.pageSize;
+    const pageEntries = entries.slice(start, start + pagination.pageSize);
+    const items = await Promise.all(
+      pageEntries.map((entry) =>
+        this.readLesson(entry, related.get(entry.id) ?? []),
+      ),
+    );
+    return numberedPage(
+      items,
+      entries.length,
+      pagination.page,
+      pagination.pageSize,
+    );
   }
 
   async getLessonById(lessonId: string): Promise<Lesson | null> {

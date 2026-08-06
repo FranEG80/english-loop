@@ -10,7 +10,7 @@ import type { ProgressRepository } from "@/core/progress/ports/progress-reposito
 import type { ReviewRepository } from "@/core/progress/ports/review-repository";
 import type { UnitOfWorkPort } from "@/core/shared/kernel";
 import type { RateLimiterPort } from "@/core/shared/kernel";
-import type { ActivityCatalogPagePort, ActivityCatalogPort, CatalogMetadataPort, LessonCatalogPagePort, LessonCatalogPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
+import type { ActivityCatalogPagePort, ActivityCatalogPort, ActivityCatalogSearchPort, CatalogMetadataPort, LessonCatalogPagePort, LessonCatalogPort, LessonCatalogSearchPort, TaxonomyCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { CatalogWritePort } from "@/core/content/ports/catalog-write-port";
 import { PrismaUnitOfWorkAdapter } from "../database/prisma-unit-of-work-adapter";
 import { PrismaUserSettingsRepository } from "./prisma-user-settings-repository";
@@ -48,8 +48,8 @@ export interface PersistenceBundle {
   activityCatalog: ActivityCatalogPort;
   taxonomyCatalog: TaxonomyCatalogPort;
   catalogMetadata: CatalogMetadataPort;
-  databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
-  demoCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
+  databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort & ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort & TaxonomyCatalogPort & CatalogMetadataPort;
+  demoCatalog: LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort & ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort & TaxonomyCatalogPort & CatalogMetadataPort;
   catalogWritePort: CatalogWritePort | null;
   databaseHealth: () => Promise<boolean>;
   attemptRateLimiter: RateLimiterPort | null;

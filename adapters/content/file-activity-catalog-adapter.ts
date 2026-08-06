@@ -4,11 +4,15 @@ import path from "node:path";
 import type { Activity } from "@/core/content/domain/types/activity";
 import { PUBLISHED_CONTENT_STATUS } from "@/core/content/domain/content-version";
 import type { ActivityListFilters, ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
-import type { ActivityCatalogPagePort } from "@/core/content/ports/catalog-ports";
-import { paginateSortedItems, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
+import type { ActivityCatalogPagePort, ActivityCatalogSearchPort } from "@/core/content/ports/catalog-ports";
+import { paginateSortedItems, type CursorPage, type CursorPaginationParams, type NumberedPage, type NumberedPaginationParams } from "@/core/shared/kernel";
 import type { CefrLevel } from "@/core/models/level";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
-import { isDemoActivityId } from "@/core/content/domain/demo-fixture";
+import {
+  assertNumberedPagination,
+  matchesCatalogSearch,
+  numberedPage,
+} from "@/core/content/domain/catalog-search";
 
 interface ActivityIndexEntry {
   id: string;
@@ -42,7 +46,7 @@ interface ActivityBatch {
  * Adaptador de actividades que lee `DATASET/catalog/activity-index.json` y
  * carga los batches bajo demanda. Cachea los batches ya leídos.
  */
-export class FileActivityCatalogAdapter implements ActivityCatalogPort, ActivityCatalogPagePort {
+export class FileActivityCatalogAdapter implements ActivityCatalogPort, ActivityCatalogPagePort, ActivityCatalogSearchPort {
   private readonly datasetRoot: string;
   private readonly indexPath: string;
   private indexPromise: Promise<ActivityIndexEntry[]> | null = null;
@@ -71,8 +75,7 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
       );
     }
     return raw.activities.filter(
-      (activity) => activity.status === PUBLISHED_CONTENT_STATUS &&
-        !isDemoActivityId(activity.id),
+      (activity) => activity.status === PUBLISHED_CONTENT_STATUS,
     );
   }
 
@@ -97,23 +100,47 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
       );
     }
     return raw.activities.filter(
-      (activity) => activity.status === PUBLISHED_CONTENT_STATUS &&
-        !isDemoActivityId(activity.id),
+      (activity) => activity.status === PUBLISHED_CONTENT_STATUS,
+    );
+  }
+
+  private matchesFilters(
+    entry: ActivityIndexEntry,
+    filters?: ActivityListFilters,
+  ): boolean {
+    if (filters?.level && filters.level !== "both" && entry.level !== filters.level) return false;
+    const taxonomyNodeIds = filters?.taxonomyNodeIds ??
+      (filters?.taxonomyNodeId ? [filters.taxonomyNodeId] : []);
+    if (
+      taxonomyNodeIds.length > 0 &&
+      !entry.taxonomyNodeIds.some((nodeId) => taxonomyNodeIds.includes(nodeId))
+    ) return false;
+    if (filters?.lessonIds && !entry.lessonIds.some((lessonId) => filters.lessonIds?.includes(lessonId))) return false;
+    if (filters?.activityType && entry.type !== filters.activityType) return false;
+    if (filters?.interactionMode) {
+      const interactionMode = entry.type === "matching"
+        ? "matching_pairs"
+        : entry.type === "word_order"
+          ? "sentence_builder"
+          : "standard";
+      if (interactionMode !== filters.interactionMode) return false;
+    }
+    return matchesCatalogSearch(
+      [
+        entry.id,
+        entry.type,
+        entry.category,
+        entry.topic,
+        entry.subtopic,
+        ...entry.taxonomyNodeIds,
+      ],
+      filters?.query,
     );
   }
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {
     const entries = await this.loadIndex();
-    const filtered = entries.filter((entry) => {
-      if (filters?.level && filters.level !== "both" && entry.level !== filters.level) return false;
-      if (filters?.taxonomyNodeId && !entry.taxonomyNodeIds.includes(filters.taxonomyNodeId)) {
-        return false;
-      }
-      if (filters?.lessonIds && !entry.lessonIds.some((lessonId) => filters.lessonIds?.includes(lessonId))) {
-        return false;
-      }
-      return true;
-    });
+    const filtered = entries.filter((entry) => this.matchesFilters(entry, filters));
 
     const byBatch = new Map<string, ActivityIndexEntry[]>();
     for (const entry of filtered) {
@@ -137,12 +164,7 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
   ): Promise<CursorPage<Activity>> {
     const entries = await this.loadIndex();
     const filtered = entries
-      .filter((entry) => {
-        if (filters?.level && filters.level !== "both" && entry.level !== filters.level) return false;
-        if (filters?.taxonomyNodeId && !entry.taxonomyNodeIds.includes(filters.taxonomyNodeId)) return false;
-        if (filters?.lessonIds && !entry.lessonIds.some((lessonId) => filters.lessonIds?.includes(lessonId))) return false;
-        return true;
-      })
+      .filter((entry) => this.matchesFilters(entry, filters))
       .sort((left, right) => left.id.localeCompare(right.id));
     const page = paginateSortedItems(filtered, pagination, (entry) => entry.id);
     const byBatch = new Map<string, ActivityIndexEntry[]>();
@@ -160,6 +182,38 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
       }
     }
     return { ...page, items: page.items.flatMap((entry) => activitiesById.get(entry.id) ?? []) };
+  }
+
+  async searchActivitiesPage(
+    filters: ActivityListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Activity>> {
+    assertNumberedPagination(pagination.page, pagination.pageSize);
+    const entries = (await this.loadIndex())
+      .filter((entry) => this.matchesFilters(entry, filters))
+      .sort((left, right) => left.id.localeCompare(right.id));
+    const start = (pagination.page - 1) * pagination.pageSize;
+    const pageEntries = entries.slice(start, start + pagination.pageSize);
+    const byBatch = new Map<string, ActivityIndexEntry[]>();
+    for (const entry of pageEntries) {
+      const list = byBatch.get(entry.batchId) ?? [];
+      list.push(entry);
+      byBatch.set(entry.batchId, list);
+    }
+    const activitiesById = new Map<string, Activity>();
+    for (const [batchId, batchEntries] of byBatch) {
+      const activities = await this.loadBatch(batchId, batchEntries[0].path);
+      const wanted = new Set(batchEntries.map((entry) => entry.id));
+      for (const activity of activities) {
+        if (wanted.has(activity.id)) activitiesById.set(activity.id, activity);
+      }
+    }
+    return numberedPage(
+      pageEntries.flatMap((entry) => activitiesById.get(entry.id) ?? []),
+      entries.length,
+      pagination.page,
+      pagination.pageSize,
+    );
   }
 
   async getActivityById(activityId: string): Promise<Activity | null> {

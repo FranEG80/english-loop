@@ -1,28 +1,34 @@
 import type { CefrLevel } from "../level";
 
-export type ActivityType =
-  | "true_false"
-  | "single_choice"
-  | "multiple_choice"
-  | "fill_blank"
-  | "sentence_transformation"
-  | "error_correction"
-  | "word_formation"
-  | "open_cloze"
-  | "key_word_transformation"
-  | "matching"
-  | "word_order"
-  | "rewrite_sentence"
-  | "complete_dialogue"
-  | "complete_paragraph";
+export const ACTIVITY_TYPES = [
+  "true_false",
+  "single_choice",
+  "multiple_choice",
+  "fill_blank",
+  "sentence_transformation",
+  "error_correction",
+  "word_formation",
+  "open_cloze",
+  "key_word_transformation",
+  "matching",
+  "word_order",
+  "rewrite_sentence",
+  "complete_dialogue",
+  "complete_paragraph",
+] as const;
+
+export type ActivityType = (typeof ACTIVITY_TYPES)[number];
 
 /** Cómo se presenta/interactúa con la actividad; no decide cómo se corrige. */
-export type InteractionMode =
-  | "standard"
-  | "swipe"
-  | "drag_drop"
-  | "matching_pairs"
-  | "sentence_builder";
+export const INTERACTION_MODES = [
+  "standard",
+  "swipe",
+  "drag_drop",
+  "matching_pairs",
+  "sentence_builder",
+] as const;
+
+export type InteractionMode = (typeof INTERACTION_MODES)[number];
 
 export interface ActivityOptionDto {
   id: string;

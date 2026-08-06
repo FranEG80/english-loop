@@ -34,8 +34,10 @@ import type { D1RuntimeOptions } from "@/server/infrastructure/persistence/d1/d1
 import type {
   ActivityCatalogPort,
   ActivityCatalogPagePort,
+  ActivityCatalogSearchPort,
   LessonCatalogPort,
   LessonCatalogPagePort,
+  LessonCatalogSearchPort,
   TaxonomyCatalogPort,
   CatalogMetadataPort,
 } from "@/core/content/ports/catalog-ports";
@@ -87,8 +89,8 @@ export class CompositionRoot {
   private activityCatalog: FileActivityCatalogAdapter | null = null;
   private taxonomyCatalog: FileTaxonomyCatalogAdapter | null = null;
   private catalogMetadata: FileCatalogMetadataAdapter | null = null;
-  private databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort | null = null;
-  private readonly demoCatalog: LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort;
+  private databaseCatalog: LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort & ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort & TaxonomyCatalogPort & CatalogMetadataPort | null = null;
+  private readonly demoCatalog: LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort & ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort & TaxonomyCatalogPort & CatalogMetadataPort;
   private readonly datasetVersion = readDatasetVersionSync();
 
   private readonly persistence: PersistenceBundle;
@@ -118,13 +120,13 @@ export class CompositionRoot {
       : new InMemoryRateLimiter(config.authRateLimitWindowMs, config.authRateLimitMax, this.clock));
   }
 
-  private getDatabaseCatalog(): LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort {
+  private getDatabaseCatalog(): LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort & ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort & TaxonomyCatalogPort & CatalogMetadataPort {
     if (!this.databaseCatalog) this.databaseCatalog = this.persistence.databaseCatalog;
     return this.databaseCatalog;
   }
 
   /** Catálogo sembrado marcado como demo; nunca se usa para usuarios normales. */
-  getDemoCatalog(): LessonCatalogPort & LessonCatalogPagePort & ActivityCatalogPort & ActivityCatalogPagePort & TaxonomyCatalogPort & CatalogMetadataPort {
+  getDemoCatalog(): LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort & ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort & TaxonomyCatalogPort & CatalogMetadataPort {
     return this.demoCatalog;
   }
 
@@ -138,7 +140,7 @@ export class CompositionRoot {
     return new PrismaCatalogWriteAdapter(prisma);
   }
 
-  getLessonCatalog(actor: Actor | null = null): LessonCatalogPort & LessonCatalogPagePort {
+  getLessonCatalog(actor: Actor | null = null): LessonCatalogPort & LessonCatalogPagePort & LessonCatalogSearchPort {
     if (actor?.isDemo) return this.demoCatalog;
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.lessonCatalog) {
@@ -147,7 +149,7 @@ export class CompositionRoot {
     return this.lessonCatalog;
   }
 
-  getActivityCatalog(actor: Actor | null = null): ActivityCatalogPort & ActivityCatalogPagePort {
+  getActivityCatalog(actor: Actor | null = null): ActivityCatalogPort & ActivityCatalogPagePort & ActivityCatalogSearchPort {
     if (actor?.isDemo) return this.demoCatalog;
     if (config.contentSource === "database") return this.getDatabaseCatalog();
     if (!this.activityCatalog) {

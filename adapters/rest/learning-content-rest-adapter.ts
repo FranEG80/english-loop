@@ -1,6 +1,6 @@
 import type { LearningContentPort } from "@/core/ports";
 import type { ActivityQuestionDto, LessonDetailDto, LessonSummaryDto, TaxonomyNodeDto } from "@/core/models";
-import type { CursorPage } from "@/core/shared/kernel";
+import type { CursorPage, NumberedPage } from "@/core/shared/kernel";
 import { restRequest } from "./http-client";
 
 function toQueryString<T extends object>(params?: T): string {
@@ -18,13 +18,33 @@ function toQueryString<T extends object>(params?: T): string {
   return query ? `?${query}` : "";
 }
 
+function toApiFilters<T extends { query?: string; interactionMode?: string }>(
+  filters?: T,
+) {
+  if (!filters) return undefined;
+  const { query, interactionMode, ...rest } = filters;
+  return {
+    ...rest,
+    q: query,
+    interaction: interactionMode,
+  };
+}
+
 export const learningContentRestAdapter: LearningContentPort = {
   listLessons: async (filters) =>
-    (await restRequest<CursorPage<LessonSummaryDto>>(`/lessons${toQueryString(filters)}`)).items,
+    (await restRequest<CursorPage<LessonSummaryDto>>(`/lessons${toQueryString(toApiFilters(filters))}`)).items,
+  searchLessonsPage: (filters, pagination) =>
+    restRequest<NumberedPage<LessonSummaryDto>>(
+      `/lessons${toQueryString({ ...toApiFilters(filters), ...pagination })}`,
+    ),
   getLessonById: (lessonId) =>
     restRequest<LessonDetailDto | null>(`/lessons/${lessonId}`),
   listActivities: async (filters) =>
-    (await restRequest<CursorPage<ActivityQuestionDto>>(`/activities${toQueryString(filters)}`)).items,
+    (await restRequest<CursorPage<ActivityQuestionDto>>(`/activities${toQueryString(toApiFilters(filters))}`)).items,
+  searchActivitiesPage: (filters, pagination) =>
+    restRequest<NumberedPage<ActivityQuestionDto>>(
+      `/activities${toQueryString({ ...toApiFilters(filters), ...pagination })}`,
+    ),
   getActivityById: (activityId) =>
     restRequest<ActivityQuestionDto | null>(`/activities/${activityId}`),
   getTaxonomyTree: () => restRequest<TaxonomyNodeDto[]>("/practice-taxonomy"),

@@ -60,4 +60,33 @@ describe("dataset validation pipeline", () => {
     const issues = await validateDataset(broken);
     expect(issues.some((issue) => issue.code === "schema")).toBe(true);
   });
+
+  it("rejects B2 lesson cards that are named after activity formats", async () => {
+    const dataset = await loadDataset();
+    const target = dataset.lessons.find(
+      (lesson) => lesson.frontmatter.id === "b2-use-of-english-open-cloze",
+    );
+    expect(target).toBeDefined();
+    if (!target) return;
+
+    const broken = {
+      ...target,
+      frontmatter: {
+        ...target.frontmatter,
+        title: "Open cloze B2: completar huecos",
+      },
+      content: target.content.replace(
+        /# Resumen\n[\s\S]*?(?=\n# Objetivos)/u,
+        "# Resumen\n\nEn un open cloze se completa un texto.\n",
+      ),
+    };
+    const issues = await validateDataset({
+      ...dataset,
+      lessons: dataset.lessons.map((lesson) =>
+        lesson === target ? broken : lesson,
+      ),
+    });
+
+    expect(issues.filter((issue) => issue.code === "lesson-focus")).toHaveLength(2);
+  });
 });

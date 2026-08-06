@@ -13,26 +13,33 @@ import type { TaxonomyNode } from "@/core/content/domain/types/taxonomy";
 import type {
   ActivityCatalogPort,
   ActivityCatalogPagePort,
+  ActivityCatalogSearchPort,
   ActivityListFilters,
   CatalogMetadata,
   CatalogMetadataPort,
   LessonCatalogPort,
   LessonCatalogPagePort,
+  LessonCatalogSearchPort,
   LessonListFilters,
   TaxonomyCatalogPort,
 } from "@/core/content/ports/catalog-ports";
 import type { CefrLevel } from "@/core/models/level";
-import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams } from "@/core/shared/kernel";
+import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams, type NumberedPage, type NumberedPaginationParams } from "@/core/shared/kernel";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import { getPrismaClient } from "@/server/infrastructure/database/prisma-transaction-context";
 import { mapPrismaActivity, mapPrismaLesson, parseCatalogJson } from "./prisma-catalog-mappers";
+import {
+  assertNumberedPagination,
+  catalogSearchTerms,
+  numberedPage,
+} from "@/core/content/domain/catalog-search";
 
 /**
  * Read adapter for the normalized published catalog. It only follows the
  * active publication pointer, so an in-progress or failed seed is invisible.
  */
 export class PrismaCatalogAdapter
-  implements LessonCatalogPort, LessonCatalogPagePort, ActivityCatalogPort, ActivityCatalogPagePort, TaxonomyCatalogPort, CatalogMetadataPort
+  implements LessonCatalogPort, LessonCatalogPagePort, LessonCatalogSearchPort, ActivityCatalogPort, ActivityCatalogPagePort, ActivityCatalogSearchPort, TaxonomyCatalogPort, CatalogMetadataPort
 {
   constructor(
     private readonly client: PrismaClient,
@@ -71,7 +78,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { is: { isDemo: this.demoOnly } },
+        ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
       },
       select: {
         activityId: true,
@@ -89,15 +96,37 @@ export class PrismaCatalogAdapter
     return related;
   }
 
-  async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
-    const releaseId = await this.requireActiveReleaseId();
-    const where: Prisma.LessonVersionWhereInput = {
+  private lessonWhere(
+    releaseId: string,
+    filters?: LessonListFilters,
+  ): Prisma.LessonVersionWhereInput {
+    const terms = catalogSearchTerms(filters?.query);
+    return {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
-      lesson: { is: { isDemo: this.demoOnly } },
+      ...(this.demoOnly ? { lesson: { is: { isDemo: true } } } : {}),
       ...(filters?.level ? { levelCode: filters.level } : {}),
       ...(filters?.category ? { category: filters.category } : {}),
+      ...(terms.length > 0
+        ? {
+            AND: terms.map((term) => ({
+              OR: [
+                { lessonId: { contains: term } },
+                { title: { contains: term } },
+                { summary: { contains: term } },
+                { category: { contains: term } },
+                { taxonomyNodeId: { contains: term } },
+                { tags: { contains: term } },
+              ],
+            })),
+          }
+        : {}),
     };
+  }
+
+  async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {
+    const releaseId = await this.requireActiveReleaseId();
+    const where = this.lessonWhere(releaseId, filters);
     const [rows, related] = await Promise.all([
       this.db().lessonVersion.findMany({ where, orderBy: { lessonId: "asc" } }),
       this.relatedActivitiesByLesson(releaseId),
@@ -113,11 +142,7 @@ export class PrismaCatalogAdapter
     const releaseId = await this.requireActiveReleaseId();
     const cursor = pagination.cursor ? decodeCursor(pagination.cursor) : undefined;
     const where: Prisma.LessonVersionWhereInput = {
-      releaseId,
-      statusCode: PUBLISHED_CONTENT_STATUS,
-      lesson: { is: { isDemo: this.demoOnly } },
-      ...(filters?.level ? { levelCode: filters.level } : {}),
-      ...(filters?.category ? { category: filters.category } : {}),
+      ...this.lessonWhere(releaseId, filters),
       ...(cursor ? { lessonId: { gt: cursor } } : {}),
     };
     const [rows, related] = await Promise.all([
@@ -133,6 +158,31 @@ export class PrismaCatalogAdapter
     };
   }
 
+  async searchLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Lesson>> {
+    assertNumberedPagination(pagination.page, pagination.pageSize);
+    const releaseId = await this.requireActiveReleaseId();
+    const where = this.lessonWhere(releaseId, filters);
+    const [rows, total, related] = await Promise.all([
+      this.db().lessonVersion.findMany({
+        where,
+        skip: (pagination.page - 1) * pagination.pageSize,
+        take: pagination.pageSize,
+        orderBy: { lessonId: "asc" },
+      }),
+      this.db().lessonVersion.count({ where }),
+      this.relatedActivitiesByLesson(releaseId),
+    ]);
+    return numberedPage(
+      rows.map((row) => mapPrismaLesson(row, related.get(row.lessonId) ?? [])),
+      total,
+      pagination.page,
+      pagination.pageSize,
+    );
+  }
+
   async getLessonById(lessonId: string): Promise<Lesson | null> {
     const releaseId = await this.requireActiveReleaseId();
     const [row, related] = await Promise.all([
@@ -141,7 +191,7 @@ export class PrismaCatalogAdapter
           releaseId,
           lessonId,
           statusCode: PUBLISHED_CONTENT_STATUS,
-          lesson: { is: { isDemo: this.demoOnly } },
+          ...(this.demoOnly ? { lesson: { is: { isDemo: true } } } : {}),
         },
         orderBy: { id: "desc" },
       }),
@@ -154,16 +204,56 @@ export class PrismaCatalogAdapter
     releaseId: string,
     filters?: ActivityListFilters,
   ): Prisma.ActivityVersionWhereInput {
+    const terms = catalogSearchTerms(filters?.query);
+    const taxonomyNodeIds = filters?.taxonomyNodeIds ??
+      (filters?.taxonomyNodeId ? [filters.taxonomyNodeId] : []);
+    const interactionWhere: Prisma.ActivityVersionWhereInput =
+      filters?.interactionMode === "matching_pairs"
+        ? { activityTypeCode: "matching" }
+        : filters?.interactionMode === "sentence_builder"
+          ? { activityTypeCode: "word_order" }
+          : filters?.interactionMode === "standard"
+            ? { activityTypeCode: { notIn: ["matching", "word_order"] } }
+            : filters?.interactionMode
+              ? { activityTypeCode: "__unsupported_interaction__" }
+              : {};
     return {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
-      activity: { is: { isDemo: this.demoOnly } },
+      ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
       ...(filters?.level && filters.level !== "both" ? { levelCode: filters.level } : {}),
-      ...(filters?.taxonomyNodeId
-        ? { taxonomyLinks: { some: { taxonomyNodeId: filters.taxonomyNodeId } } }
+      ...(taxonomyNodeIds.length > 0
+        ? { taxonomyLinks: { some: { taxonomyNodeId: { in: taxonomyNodeIds } } } }
         : {}),
       ...(filters?.lessonIds && filters.lessonIds.length > 0
         ? { lessonLinks: { some: { lessonId: { in: filters.lessonIds } } } }
+        : {}),
+      ...(filters?.activityType
+        ? { activityTypeCode: filters.activityType }
+        : {}),
+      ...(terms.length > 0 || filters?.interactionMode
+        ? {
+            AND: [
+              ...(filters?.interactionMode ? [interactionWhere] : []),
+              ...terms.map((term) => ({
+                OR: [
+                  { activityId: { contains: term } },
+                  { activityTypeCode: { contains: term } },
+                  { category: { contains: term } },
+                  { topic: { contains: term } },
+                  { subtopic: { contains: term } },
+                  { instructions: { contains: term } },
+                  { prompt: { contains: term } },
+                  { tags: { contains: term } },
+                  {
+                    taxonomyLinks: {
+                      some: { taxonomyNodeId: { contains: term } },
+                    },
+                  },
+                ],
+              })),
+            ],
+          }
         : {}),
     };
   }
@@ -211,6 +301,31 @@ export class PrismaCatalogAdapter
     };
   }
 
+  async searchActivitiesPage(
+    filters: ActivityListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Activity>> {
+    assertNumberedPagination(pagination.page, pagination.pageSize);
+    const releaseId = await this.requireActiveReleaseId();
+    const where = this.activityWhere(releaseId, filters);
+    const [rows, total] = await Promise.all([
+      this.db().activityVersion.findMany({
+        where,
+        include: this.activityInclude,
+        skip: (pagination.page - 1) * pagination.pageSize,
+        take: pagination.pageSize,
+        orderBy: { activityId: "asc" },
+      }),
+      this.db().activityVersion.count({ where }),
+    ]);
+    return numberedPage(
+      rows.map((row) => mapPrismaActivity(row)),
+      total,
+      pagination.page,
+      pagination.pageSize,
+    );
+  }
+
   async getActivityById(activityId: string): Promise<Activity | null> {
     const releaseId = await this.requireActiveReleaseId();
     const row = await this.db().activityVersion.findFirst({
@@ -218,7 +333,7 @@ export class PrismaCatalogAdapter
         releaseId,
         activityId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { is: { isDemo: this.demoOnly } },
+        ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
       },
       include: this.activityInclude,
       orderBy: { id: "desc" },
@@ -231,7 +346,7 @@ export class PrismaCatalogAdapter
       where: {
         id: activityVersionId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { is: { isDemo: this.demoOnly } },
+        ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
       },
       include: this.activityInclude,
     });
@@ -244,7 +359,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { is: { isDemo: this.demoOnly } },
+        ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: nodeId } },
       },
@@ -258,7 +373,7 @@ export class PrismaCatalogAdapter
       where: {
         releaseId,
         statusCode: PUBLISHED_CONTENT_STATUS,
-        activity: { is: { isDemo: this.demoOnly } },
+        ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
         ...(level !== "both" ? { levelCode: level } : {}),
         taxonomyLinks: { some: { taxonomyNodeId: { in: nodeIds } } },
       },
@@ -345,8 +460,8 @@ export class PrismaCatalogAdapter
     }
     const [release, lessonCount, activityCount, taxonomyNodeCount] = await Promise.all([
       this.db().catalogRelease.findUnique({ where: { id: releaseId }, select: { datasetVersion: true } }),
-      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, lesson: { is: { isDemo: this.demoOnly } } } }),
-      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, activity: { is: { isDemo: this.demoOnly } } } }),
+      this.db().lessonVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, ...(this.demoOnly ? { lesson: { is: { isDemo: true } } } : {}) } }),
+      this.db().activityVersion.count({ where: { releaseId, statusCode: PUBLISHED_CONTENT_STATUS, ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}) } }),
       this.db().taxonomyNodeVersion.count({ where: { releaseId } }),
     ]);
     return {

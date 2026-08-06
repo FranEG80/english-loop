@@ -84,6 +84,12 @@ export async function validateDataset(
     );
     validateLessonPath(lesson.relativePath, lesson.frontmatter, issues);
     validateLessonSections(lesson.relativePath, lesson.content, issues);
+    validateLessonInstructionalFocus(
+      lesson.relativePath,
+      lesson.frontmatter,
+      lesson.content,
+      issues,
+    );
   }
 
   for (const { relativePath, batch } of dataset.batches) {
@@ -168,6 +174,42 @@ function validateLessonSections(
         `Falta la sección obligatoria "${section}".`,
       );
     }
+  }
+}
+
+function validateLessonInstructionalFocus(
+  relativePath: string,
+  lesson: { level: string; category: string; title: string },
+  content: string,
+  issues: ValidationIssue[],
+): void {
+  if (lesson.level !== "B2" || lesson.category !== "use-of-english") return;
+
+  if (
+    /\b(?:open cloze|multiple[- ]choice cloze|key word transformations?|word formation|sentence rewriting|error correction)\b/iu.test(
+      lesson.title,
+    )
+  ) {
+    addIssue(
+      issues,
+      "lesson-focus",
+      relativePath,
+      "El título debe enseñar un contenido lingüístico, no nombrar el formato de una actividad.",
+    );
+  }
+
+  const summary = content.match(/(?:^|\n)# Resumen\s*\n([\s\S]*?)(?=\n# |$)/u)?.[1].trim() ?? "";
+  if (
+    /^(?:una actividad|el open cloze|en un open cloze|una transformación|en word formation)\b/iu.test(
+      summary,
+    )
+  ) {
+    addIssue(
+      issues,
+      "lesson-focus",
+      relativePath,
+      "El resumen debe explicar el contenido lingüístico, no cómo resolver una actividad.",
+    );
   }
 }
 

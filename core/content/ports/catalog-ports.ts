@@ -3,17 +3,41 @@ import type { Lesson } from "../domain/types/lesson";
 import type { Activity } from "../domain/types/activity";
 import type { TaxonomyNode } from "../domain/types/taxonomy";
 import type { ContentVersion } from "../domain/content-version";
-import type { CursorPage, CursorPaginationParams } from "@/core/shared/kernel";
+import type {
+  CursorPage,
+  CursorPaginationParams,
+  NumberedPage,
+  NumberedPaginationParams,
+} from "@/core/shared/kernel";
 
 export interface LessonListFilters {
   category?: string;
   level?: CefrLevel;
+  query?: string;
 }
 
 export interface ActivityListFilters {
   taxonomyNodeId?: string;
+  taxonomyNodeIds?: string[];
   level?: CefrLevelFilter;
   lessonIds?: string[];
+  query?: string;
+  activityType?: string;
+  interactionMode?: string;
+}
+
+export interface LessonCatalogSearchPort {
+  searchLessonsPage(
+    filters: LessonListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Lesson>>;
+}
+
+export interface ActivityCatalogSearchPort {
+  searchActivitiesPage(
+    filters: ActivityListFilters | undefined,
+    pagination: NumberedPaginationParams,
+  ): Promise<NumberedPage<Activity>>;
 }
 
 export interface LessonCatalogPagePort {

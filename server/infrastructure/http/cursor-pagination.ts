@@ -1,5 +1,5 @@
 import "server-only";
-import { decodeCursor, type CursorPaginationParams } from "@/core/shared/kernel";
+import { decodeCursor, type CursorPaginationParams, type NumberedPaginationParams } from "@/core/shared/kernel";
 import { ValidationException } from "@/core/shared/exceptions";
 import { config } from "@/server/infrastructure/config/config";
 
@@ -24,4 +24,28 @@ export function parsePublicCursorPagination(searchParams: URLSearchParams): Curs
   }
 
   return { cursor, limit };
+}
+
+export function parsePublicNumberedPagination(
+  searchParams: URLSearchParams,
+): NumberedPaginationParams {
+  const rawPage = searchParams.get("page");
+  const rawPageSize = searchParams.get("pageSize");
+  const page = rawPage === null ? 1 : Number(rawPage);
+  const pageSize = rawPageSize === null ? 12 : Number(rawPageSize);
+  if (!Number.isSafeInteger(page) || page < 1) {
+    throw new ValidationException("Invalid page", {
+      page: ["Must be a positive integer"],
+    });
+  }
+  if (
+    !Number.isSafeInteger(pageSize) ||
+    pageSize < 1 ||
+    pageSize > config.publicPageMaxLimit
+  ) {
+    throw new ValidationException("Invalid page size", {
+      pageSize: [`Must be an integer between 1 and ${config.publicPageMaxLimit}`],
+    });
+  }
+  return { page, pageSize };
 }
