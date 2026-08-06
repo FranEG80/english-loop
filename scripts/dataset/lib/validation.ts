@@ -271,7 +271,8 @@ function validateLessonSections(
   const architecture = LESSON_ARCHITECTURES[lesson.category];
   if (!architecture) return;
 
-  for (const [role, alternatives] of Object.entries(architecture)) {
+  for (const role of ["form", "uses", "contrasts"] as const) {
+    const alternatives = architecture[role];
     if (alternatives.some((heading) => headings.includes(heading))) continue;
     addIssue(
       issues,

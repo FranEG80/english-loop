@@ -217,25 +217,38 @@ El frontmatter define, entre otros:
 - estado editorial;
 - autor, revisor y versión de contenido.
 
-Las once secciones obligatorias son:
+El núcleo obligatorio es:
 
-1. `Resumen`
-2. `Objetivos`
-3. `Explicación`
-4. `Forma o estructura`
-5. `Usos principales`
-6. `Contrastes importantes`
-7. `Ejemplos`
-8. `Errores frecuentes`
-9. `Excepciones relevantes`
-10. `Mini resumen`
-11. `Comprobación rápida autocorregible`
+1. `Resumen`;
+2. `Objetivos`;
+3. un apartado que organice las formas, el léxico, las pistas o la estructura textual;
+4. un apartado de usos, contextos o aplicación;
+5. `Explicación`, situada después de los usos;
+6. un apartado de contrastes, distractores o decisiones de estilo;
+7. `Ejemplos`;
+8. `Errores frecuentes`.
+
+Los títulos se adaptan a la categoría. Por ejemplo, grammar usa `Forma o
+estructura`; vocabulary, `Léxico y combinaciones`; reading, `Pistas que debes
+localizar`; y guided-writing, `Estructura del texto`. Las excepciones, notas de
+registro, recapitulaciones y comprobaciones son opcionales y solo se añaden
+cuando aportan contenido real.
+
+Toda lesson de `vocabulary` incluye además `Vocabulario específico`: una tabla
+`Inglés | Español | Nota breve` con un mínimo de diez términos propios del tema.
+Los casos múltiples se presentan como listas, tablas o subapartados, no como una
+enumeración comprimida en una sola línea.
 
 Los encabezados deben escribirse como encabezados Markdown de primer nivel:
 
 ```markdown
 # Resumen
 ```
+
+Los encabezados de segundo nivel quedan dentro de la tarjeta del encabezado de
+primer nivel anterior. Por ello, solo deben usarse para subdividir ese contenido
+y nunca para colocar una explicación general dentro de excepciones u otro
+apartado no relacionado.
 
 La plantilla canónica está en
 [`templates/lesson.template.md`](../DATASET/templates/lesson.template.md).

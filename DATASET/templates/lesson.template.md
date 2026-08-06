@@ -33,21 +33,23 @@ Resumen breve en español.
 
 - Objetivo concreto.
 
-# Explicación
-
-Explicación clara en español.
-
 # Forma o estructura
 
-Estructura y restricciones.
+- **Patrón uno:** estructura y restricción.
+- **Patrón dos:** estructura y restricción.
 
 # Usos principales
 
-Usos con contexto.
+- Uso con contexto.
+- Uso con contexto diferente.
+
+# Explicación
+
+Explicación clara en español, situada después de presentar formas y usos.
 
 # Contrastes importantes
 
-Comparación con formas que suelen confundirse.
+- **Forma A / forma B:** diferencia de significado o patrón.
 
 # Ejemplos
 
@@ -60,11 +62,13 @@ Comparación con formas que suelen confundirse.
 
 # Excepciones relevantes
 
-Excepciones y límites de la regla.
+Excepciones y límites de la regla. Elimina este apartado si no aporta un caso
+realmente excepcional; en otras categorías puede llamarse `Variación y
+registro`, `Casos menos evidentes` o de otra forma específica.
 
 # Mini resumen
 
-Síntesis operativa.
+Síntesis operativa opcional.
 
 # Comprobación rápida autocorregible
 
