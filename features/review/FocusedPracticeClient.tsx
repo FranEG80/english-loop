@@ -36,6 +36,7 @@ export function FocusedPracticeClient({
       setFeedback(
         await submitFocusedAttemptAction(runId, {
           activityId: activity.id,
+          idempotencyKey: `${runId}:${index}`,
           response,
         }),
       );

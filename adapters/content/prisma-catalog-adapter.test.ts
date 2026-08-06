@@ -5,7 +5,7 @@ import { UNKNOWN_DATASET_VERSION } from "@/core/content/domain/content-version";
 import { PrismaCatalogAdapter } from "./prisma-catalog-adapter";
 import { encodeCursor } from "@/core/shared/kernel";
 
-function catalogClient(options: { publication?: "published" | "draft" | null; pageRows?: boolean } = {}) {
+function catalogClient(options: { publication?: "published" | "draft" | null; pageRows?: boolean; calls?: Array<{ model: string; args: unknown }> } = {}) {
   const publication = options.publication === null
     ? null
     : {
@@ -49,14 +49,30 @@ function catalogClient(options: { publication?: "published" | "draft" | null; pa
     catalogPublication: { findUnique: async () => publication },
     catalogRelease: { findUnique: async () => ({ datasetVersion: "dataset-1" }) },
     lessonVersion: {
-      findMany: async (args: { take?: number } = {}) => options.pageRows && args.take ? [...lessonRows, { ...lessonRows[0], id: "lesson-version-2", lessonId: "lesson-2" }] : lessonRows,
+      findMany: async (args: { take?: number } = {}) => {
+        options.calls?.push({ model: "lesson", args });
+        return options.pageRows && args.take ? [...lessonRows, { ...lessonRows[0], id: "lesson-version-2", lessonId: "lesson-2" }] : lessonRows;
+      },
       findFirst: async ({ where }: { where: { lessonId: string } }) => where.lessonId === "lesson-1" ? lessonRows[0] : null,
       count: async () => 1,
     },
     activityVersion: {
-      findMany: async (args: { select?: unknown; take?: number } = {}) => args.select ? activityRows.map((row) => ({ activityId: row.activityId, lessonLinks: row.lessonLinks })) : options.pageRows && args.take ? [...activityRows, { ...activityRows[0], id: "activity-version-2", activityId: "activity-2" }] : activityRows,
+      findMany: async (args: { select?: unknown; take?: number } = {}) => {
+        options.calls?.push({ model: "activity", args });
+        return args.select ? activityRows.map((row) => ({ activityId: row.activityId, lessonLinks: row.lessonLinks })) : options.pageRows && args.take ? [...activityRows, { ...activityRows[0], id: "activity-version-2", activityId: "activity-2" }] : activityRows;
+      },
       findFirst: async ({ where }: { where: { activityId?: string; id?: string } }) => where.activityId === "activity-1" || where.id === "activity-version-1" ? activityRows[0] : null,
       count: async () => 4,
+    },
+    activityVersionLesson: {
+      findMany: async (args: unknown = {}) => {
+        options.calls?.push({ model: "activity-lesson", args });
+        return activityRows.flatMap((row) => row.lessonLinks.map((link) => ({
+          lessonId: link.lessonId,
+          position: link.position,
+          activityVersion: { activityId: row.activityId },
+        })));
+      },
     },
     taxonomyNodeVersion: { findMany: async () => taxonomyRows, count: async () => 5 },
   };
@@ -86,11 +102,13 @@ describe("PrismaCatalogAdapter", () => {
     await expect(adapter.listActivities({ level: "both", lessonIds: [] })).resolves.toHaveLength(1);
     await expect(adapter.listActivitiesPage(undefined, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "activity-1" }], hasMore: false, nextCursor: null });
     await expect(adapter.listLessonsPage({ level: "B1", category: "grammar" }, { limit: 2, cursor: encodeCursor("lesson-0") })).resolves.toMatchObject({ items: [{ id: "lesson-1" }] });
+    await expect(adapter.searchLessonsPage({ level: "B1", query: "grammar" }, { page: 1, pageSize: 12 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }], total: 1 });
 
     const pagedAdapter = new PrismaCatalogAdapter(catalogClient({ pageRows: true }));
     await expect(pagedAdapter.listLessonsPage(undefined, { limit: 1 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }], hasMore: true });
     await expect(pagedAdapter.listLessonsPage(undefined, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }, { id: "lesson-2" }], hasMore: false });
     await expect(pagedAdapter.listActivitiesPage({ level: "B1", taxonomyNodeId: "grammar", lessonIds: ["lesson-1"] }, { limit: 1, cursor: encodeCursor("activity-0") })).resolves.toMatchObject({ items: [{ id: "activity-1" }], hasMore: true });
+    await expect(adapter.searchActivitiesPage({ query: "prompt", taxonomyNodeIds: ["grammar"], activityType: "choice", interactionMode: "standard" }, { page: 1, pageSize: 12 })).resolves.toMatchObject({ items: [{ id: "activity-1" }], total: 4 });
     await expect(adapter.getActivityById("activity-1")).resolves.toMatchObject({ id: "activity-1", passage: "Passage" });
     await expect(adapter.getActivityById("missing")).resolves.toBeNull();
     await expect(adapter.getActivityByVersionId("activity-version-1")).resolves.toMatchObject({ id: "activity-1", versionId: "activity-version-1" });
@@ -99,6 +117,30 @@ describe("PrismaCatalogAdapter", () => {
     await expect(adapter.countActivitiesByNode("grammar", "both")).resolves.toBe(4);
     await expect(adapter.countActivitiesByNodes([], "B1")).resolves.toBe(0);
     await expect(adapter.countActivitiesByNodes(["grammar"], "both")).resolves.toBe(4);
+  });
+
+  it("includes demo-marked content for regular users and restricts demo users", async () => {
+    const regularCalls: Array<{ model: string; args: unknown }> = [];
+    await new PrismaCatalogAdapter(catalogClient({ calls: regularCalls })).listLessons();
+    const regularLessonWhere = (regularCalls.find((call) => call.model === "lesson")?.args as { where: Record<string, unknown> }).where;
+    expect(regularLessonWhere).not.toHaveProperty("lesson");
+
+    const demoCalls: Array<{ model: string; args: unknown }> = [];
+    await new PrismaCatalogAdapter(catalogClient({ calls: demoCalls }), { includeDemo: true }).listLessons();
+    const demoLessonWhere = (demoCalls.find((call) => call.model === "lesson")?.args as { where: Record<string, unknown> }).where;
+    expect(demoLessonWhere).toMatchObject({ lesson: { is: { isDemo: true } } });
+  });
+
+  it("resolves related activities through the junction table", async () => {
+    const calls: Array<{ model: string; args: unknown }> = [];
+    const adapter = new PrismaCatalogAdapter(catalogClient({ calls }));
+
+    await adapter.searchLessonsPage(undefined, { page: 1, pageSize: 12 });
+
+    const junctionCall = calls.find((call) => call.model === "activity-lesson");
+    expect(junctionCall).toBeDefined();
+    expect(junctionCall?.args).toMatchObject({ where: { lessonId: { in: ["lesson-1"] } } });
+    expect(calls.some((call) => call.model === "activity" && Boolean((call.args as { select?: unknown }).select))).toBe(false);
   });
 
   it("builds taxonomy trees, descendant lists, paths and metadata", async () => {

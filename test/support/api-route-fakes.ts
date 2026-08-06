@@ -1,5 +1,9 @@
 import { PracticeRunPlanner } from "@/core/practice/domain/practice-run-planner";
 import { paginateSortedItems } from "@/core/shared/kernel";
+import {
+  matchesCatalogSearch,
+  numberedPage,
+} from "@/core/content/domain/catalog-search";
 import type { ActivityListFilters, LessonListFilters } from "@/core/content/ports/catalog-ports";
 import { DailyPracticePlanner } from "@/core/learning/domain/daily-practice-planner";
 import { DailySessionPlanner } from "@/core/learning/domain/daily-session-planner";
@@ -40,9 +44,32 @@ function createActivityCatalog() {
       const lessons = await this.listLessons(filters);
       return paginateSortedItems([...lessons].sort((left, right) => left.id.localeCompare(right.id)), pagination, (item) => item.id);
     },
+    async searchLessonsPage(filters: LessonListFilters | undefined, pagination: { page: number; pageSize: number }) {
+      const lessons = (await this.listLessons(filters)).filter((item) =>
+        matchesCatalogSearch(
+          [item.id, item.title, item.summary, item.category, item.taxonomyNodeId, ...item.tags],
+          filters?.query,
+        ),
+      );
+      const start = (pagination.page - 1) * pagination.pageSize;
+      return numberedPage(lessons.slice(start, start + pagination.pageSize), lessons.length, pagination.page, pagination.pageSize);
+    },
     async listActivitiesPage(filters: ActivityListFilters | undefined, pagination: { cursor?: string; limit: number }) {
       const listed = await this.listActivities(filters);
       return paginateSortedItems([...listed].sort((left, right) => left.id.localeCompare(right.id)), pagination, (item) => item.id);
+    },
+    async searchActivitiesPage(filters: ActivityListFilters | undefined, pagination: { page: number; pageSize: number }) {
+      const listed = (await this.listActivities(filters)).filter((item) =>
+        (!filters?.taxonomyNodeIds || item.taxonomyNodeIds.some((id) => filters.taxonomyNodeIds?.includes(id))) &&
+        (!filters?.activityType || item.type === filters.activityType) &&
+        (!filters?.interactionMode || filters.interactionMode === "standard") &&
+        matchesCatalogSearch(
+          [item.id, item.type, item.category, item.topic, item.subtopic, ...item.taxonomyNodeIds],
+          filters?.query,
+        ),
+      );
+      const start = (pagination.page - 1) * pagination.pageSize;
+      return numberedPage(listed.slice(start, start + pagination.pageSize), listed.length, pagination.page, pagination.pageSize);
     },
     async getActivityById(id: string) {
       return activities.find((item) => item.id === id) ?? null;

@@ -2,15 +2,17 @@
 import { describe, expect, it, vi } from "vitest";
 import { NextResponse } from "next/server";
 
+const httpMocks = vi.hoisted(() => ({ loggerError: vi.fn() }));
+
 vi.mock("@/server/infrastructure/composition/composition-root", () => ({
   compositionRoot: {
     idGenerator: { generate: () => "request-id" },
     metrics: { recordRequest: vi.fn() },
-    logger: { debug: vi.fn(), info: vi.fn(), warn: vi.fn(), error: vi.fn() },
+    logger: { debug: vi.fn(), info: vi.fn(), warn: vi.fn(), error: httpMocks.loggerError },
   },
 }));
 vi.mock("@/server/infrastructure/config/config", () => ({
-  config: { httpMaxRequestBodyBytes: 16, httpMaxResponseBodyBytes: 16 },
+  config: { httpMaxRequestBodyBytes: 16, httpMaxResponseBodyBytes: 16, nodeEnv: "development" },
 }));
 
 import { withErrorHandling } from "./with-error-handling";
@@ -22,6 +24,17 @@ describe("withErrorHandling", () => {
     const failure = await withErrorHandling(async () => { throw new Error("private details"); })();
     expect(failure.status).toBe(500);
     expect(await failure.json()).toEqual({ error: { code: "INTERNAL_ERROR", message: "An unexpected error occurred.", fieldErrors: {}, requestId: "request-id" } });
+    expect(httpMocks.loggerError).toHaveBeenCalledWith(
+      expect.objectContaining({
+        errorCode: "INTERNAL_ERROR",
+        metadata: expect.objectContaining({
+          errorName: "Error",
+          errorMessage: "private details",
+          requestId: "request-id",
+          status: 500,
+        }),
+      }),
+    );
   });
 
   it("rejects declared and streamed request bodies over the configured limit", async () => {

@@ -12,6 +12,7 @@ import {
   matchesCatalogSearch,
   numberedPage,
 } from "@/core/content/domain/catalog-search";
+import { parseLessonMarkdown } from "@/core/content/domain/lesson-markdown";
 
 interface LessonIndexEntry {
   id: string;
@@ -135,6 +136,7 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
     const parsed = matter(source);
     const frontmatter = parsed.data as LessonFrontmatter;
     const content = parsed.content.trim();
+    const lessonContent = parseLessonMarkdown(content);
 
     return {
       id: entry.id,
@@ -143,30 +145,16 @@ export class FileLessonCatalogAdapter implements LessonCatalogPort, LessonCatalo
       taxonomyNodeId: entry.subtopics[0] ?? entry.topic,
       prerequisiteLessonIds: entry.prerequisiteLessonIds ?? frontmatter.prerequisites ?? [],
       title: entry.title,
-      summary: this.extractSummary(content),
+      summary: lessonContent.summary,
       explanation: content,
-      examples: [],
-      commonMistakes: [],
+      examples: lessonContent.examples,
+      commonMistakes: lessonContent.commonMistakes,
       relatedActivityIds: [...new Set(relatedActivityIds)].sort(),
       tags: frontmatter.tags ?? [],
       difficulty: entry.difficulty as 1 | 2 | 3,
       status: entry.status as Lesson["status"],
       contentVersion: entry.contentVersion,
     };
-  }
-
-  private extractSummary(content: string): string {
-    const lines = content.split("\n");
-    const summaryStart = lines.findIndex((line) => line.trim() === "# Resumen");
-    if (summaryStart === -1) return "";
-    const paragraphs: string[] = [];
-    for (let i = summaryStart + 1; i < lines.length; i++) {
-      const line = lines[i].trim();
-      if (line.startsWith("#") && line !== "# Resumen") break;
-      if (line.length > 0) paragraphs.push(line);
-      if (paragraphs.length >= 2) break;
-    }
-    return paragraphs.join(" ");
   }
 
   async listLessons(filters?: LessonListFilters): Promise<Lesson[]> {

@@ -29,9 +29,10 @@ export async function getPracticeRunSummary(
 
   await Promise.all(
     attempts.map(async (attempt) => {
-      const activity = attempt.activityVersionId && activityCatalog.getActivityByVersionId
+      const pinnedActivity = attempt.activityVersionId && activityCatalog.getActivityByVersionId
         ? await activityCatalog.getActivityByVersionId(attempt.activityVersionId)
-        : await activityCatalog.getActivityById(attempt.activityId);
+        : null;
+      const activity = pinnedActivity ?? await activityCatalog.getActivityById(attempt.activityId);
       for (const taxonomyNodeId of activity?.taxonomyNodeIds ?? []) {
         coveredSubtopicIds.add(taxonomyNodeId);
       }

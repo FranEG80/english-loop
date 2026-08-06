@@ -9,6 +9,7 @@ export type ActivityResponseValue =
 
 export interface SubmitAttemptInputDto {
   activityId: string;
+  idempotencyKey: string;
   response: ActivityResponseValue;
 }
 

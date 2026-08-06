@@ -110,6 +110,7 @@ export interface Dictionary {
     summaryBackHome: string;
   };
   activities: {
+    yourTurnLabel: string;
     trueLabel: string;
     falseLabel: string;
     selectOne: string;
@@ -118,10 +119,15 @@ export interface Dictionary {
     buildSentenceHint: string;
     wordBankHint: string;
     matchPairsHint: string;
+    wordOrderTitle: string;
     wordOrderHint: string;
+    wordOrderSentenceLabel: string;
+    wordOrderEmptyHint: string;
+    wordOrderAllPlaced: string;
     resetSelection: string;
-    moveUp: string;
-    moveDown: string;
+    dragToReorder: string;
+    moveEarlier: string;
+    moveLater: string;
     removeWord: string;
     dialogueHint: string;
     gapHint: string;
@@ -133,6 +139,10 @@ export interface Dictionary {
     filtersDescription: string;
     activeFilters: string;
     resultsLabel: string;
+    pageLabel: string;
+    ofLabel: string;
+    paginationTop: string;
+    paginationBottom: string;
     levelLabel: string;
     allLevels: string;
     categoryLabel: string;
@@ -171,6 +181,10 @@ export interface Dictionary {
     wholeScope: string;
     selectedScope: string;
     availableIn: string;
+    checkingAvailability: string;
+    availableActivities: string;
+    notEnoughActivities: string;
+    availabilityError: string;
     sessionLength: string;
     activitiesCount: string;
     startFocus: string;

@@ -102,8 +102,8 @@ export function ActivityRenderer({ activity, dictionary, onSubmit, disabled }: A
   }
 
   return (
-    <section className="overflow-hidden rounded-[2rem] border-2 border-foreground bg-surface shadow-[6px_8px_0_var(--color-foreground)]">
-      <header className="flex items-center justify-between gap-4 border-b-2 border-foreground bg-surface-muted px-5 py-3">
+    <section className="w-full min-w-0 overflow-hidden rounded-[2rem] border-2 border-foreground bg-surface shadow-[6px_8px_0_var(--color-foreground)]">
+      <header className="flex flex-col items-start gap-2 border-b-2 border-foreground bg-surface-muted px-6 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4 lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.16em] text-primary">
             {activity.type.replaceAll("_", " ")}
@@ -112,21 +112,29 @@ export function ActivityRenderer({ activity, dictionary, onSubmit, disabled }: A
             {activity.level} · {activity.interactionMode.replaceAll("_", " ")}
           </p>
         </div>
-        <span className="font-hand -rotate-2 text-2xl font-bold text-coral">
-          Your turn!
+        <span className="font-hand -rotate-2 self-end text-2xl font-bold text-coral sm:self-auto">
+          {dictionary.activities.yourTurnLabel}
         </span>
       </header>
-      <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(12rem,17rem)]">
-        <div className="min-w-0 p-5 sm:p-7 lg:p-9">{renderer}</div>
-        <aside className="relative hidden min-h-64 border-l-2 border-foreground bg-accent/35 lg:block">
-          <Image
-            src={ACTIVITY_ILLUSTRATION_BY_TYPE[activity.type]}
-            alt=""
-            fill
-            sizes="272px"
-            className="object-contain p-5"
-          />
-        </aside>
+      <div
+        className={
+          activity.type === "word_order"
+            ? ""
+            : "grid lg:grid-cols-[minmax(0,1fr)_minmax(18rem,22rem)]"
+        }
+      >
+        <div className="min-w-0 p-6 sm:p-8 lg:p-10 xl:p-12">{renderer}</div>
+        {activity.type === "word_order" ? null : (
+          <aside className="relative hidden min-h-72 border-l-2 border-foreground bg-accent/35 lg:block">
+            <Image
+              src={ACTIVITY_ILLUSTRATION_BY_TYPE[activity.type]}
+              alt=""
+              fill
+              sizes="272px"
+              className="object-contain p-5"
+            />
+          </aside>
+        )}
       </div>
     </section>
   );

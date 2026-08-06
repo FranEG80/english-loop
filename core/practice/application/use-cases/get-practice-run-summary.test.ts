@@ -17,6 +17,19 @@ describe("getPracticeRunSummary", () => {
     expect(result.coveredSubtopicIds).toEqual(["root", "subtopic", "topic"]);
   });
 
+  it("falls back to the activity id when an attempt version is unavailable", async () => {
+    const runs = new MemoryRuns();
+    const attempts = new MemoryAttempts();
+    const run = PracticeRun.create({ id: "legacy-summary", userId: actor.userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["activity-1"], currentIndex: 0, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: clock.nowIso() });
+    await runs.save(run);
+    await attempts.save(ActivityAttempt.create({ id: "legacy-attempt", userId: actor.userId, practiceRunId: run.id, activityId: "activity-1", activityVersionId: "database-version", origin: "FOCUSED", idempotencyKey: "legacy-attempt", response: { kind: "boolean", value: true }, isCorrect: true, evaluatorVersion: "1", submittedAt: clock.nowIso() }));
+    const catalog = { getActivityById: async () => activity("activity-1", ["root", "legacy-topic"]), getActivityByVersionId: async () => null, listActivities: async () => [], countActivitiesByNode: async () => 1, countActivitiesByNodes: async () => 1 };
+
+    const result = await getPracticeRunSummary(identity, runs, attempts, catalog, run.id);
+
+    expect(result.coveredSubtopicIds).toEqual(["legacy-topic", "root"]);
+  });
+
   it("does not inflate the original score with a recovered repetition", async () => {
     const runs = new MemoryRuns();
     const attempts = new MemoryAttempts();

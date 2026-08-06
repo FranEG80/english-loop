@@ -4,7 +4,7 @@ import type { LearningContentPort } from "@/core/ports";
 import { getActivityDetail, getLessonDetail, getTaxonomy, listActivityCatalog, listLessonCatalog } from "./catalog";
 
 const lessonSummary: LessonSummaryDto = { id: "lesson-1", level: "B1", category: "grammar", taxonomyNodeId: "future", title: "Future forms", summary: "will and going to", tags: ["future"], difficulty: 1, status: "new" };
-const keyWordTransformationLesson: LessonSummaryDto = { id: "b2-use-of-english-key-word-transformations", level: "B2", category: "use_of_english", taxonomyNodeId: "b2-key-word-transformations", title: "Key word transformations B2: conservar el significado", summary: "Transforma frases", tags: ["transformations"], difficulty: 3, status: "new" };
+const advancedGrammarReframingLesson: LessonSummaryDto = { id: "b2-advanced-grammar-reframing", level: "B2", category: "use_of_english", taxonomyNodeId: "b2-advanced-grammar-reframing", title: "Pasiva, condicionales y estilo indirecto B2", summary: "Reformulación gramatical", tags: ["grammar-reframing"], difficulty: 3, status: "new" };
 const lesson: LessonDetailDto = { ...lessonSummary, explanation: "Explanation", examples: [], commonMistakes: [], relatedActivityIds: ["activity-1"] };
 const activity: ActivityQuestionDto = { id: "activity-1", level: "B1", taxonomyNodeId: "future", interactionMode: "standard", type: "true_false", statement: "True" };
 const wordOrderActivity: ActivityQuestionDto = { id: "activity-2", level: "B2", taxonomyNodeId: "word-order", interactionMode: "sentence_builder", type: "word_order", shuffledWords: ["I", "agree"] };
@@ -22,12 +22,12 @@ describe("catalog use cases", () => {
   it("finds lessons by id, category and taxonomy with normalized separators", async () => {
     const variedContent: LearningContentPort = {
       ...content,
-      listLessons: async () => [lessonSummary, keyWordTransformationLesson],
+      listLessons: async () => [lessonSummary, advancedGrammarReframingLesson],
     };
 
-    await expect(listLessonCatalog(variedContent, { query: "b2-use-of-english-key-word-transformations" })).resolves.toEqual([keyWordTransformationLesson]);
-    await expect(listLessonCatalog(variedContent, { query: "use of english" })).resolves.toEqual([keyWordTransformationLesson]);
-    await expect(listLessonCatalog(variedContent, { query: "b2 key word transformations" })).resolves.toEqual([keyWordTransformationLesson]);
+    await expect(listLessonCatalog(variedContent, { query: "b2-advanced-grammar-reframing" })).resolves.toEqual([advancedGrammarReframingLesson]);
+    await expect(listLessonCatalog(variedContent, { query: "use of english" })).resolves.toEqual([advancedGrammarReframingLesson]);
+    await expect(listLessonCatalog(variedContent, { query: "b2 advanced grammar reframing" })).resolves.toEqual([advancedGrammarReframingLesson]);
   });
 
   it("filters activities by format and interaction mode", async () => {

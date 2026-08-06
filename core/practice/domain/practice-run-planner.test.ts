@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import type { ActivityCatalogPort } from "@/core/content/ports/catalog-ports";
 import type { Activity } from "@/core/content/domain/types/activity";
 import { InsufficientActivitiesForScopeException } from "@/core/shared/exceptions";
@@ -34,6 +34,22 @@ const catalog: ActivityCatalogPort = {
 };
 
 describe("PracticeRunPlanner", () => {
+  it("requests activities for the selected level", async () => {
+    const listActivities = vi.fn(async () => activities);
+
+    await new PracticeRunPlanner(random).plan(
+      { ...catalog, listActivities },
+      {
+        level: "B1",
+        taxonomyNodeId: "grammar",
+        descendantIds: ["grammar"],
+        requestedCount: 5,
+      },
+    );
+
+    expect(listActivities).toHaveBeenCalledWith({ level: "B1" });
+  });
+
   it("excludes recent activities when the remaining pool is sufficient and balances subtopics", async () => {
     const result = await new PracticeRunPlanner(random).plan(catalog, {
       level: "B1",

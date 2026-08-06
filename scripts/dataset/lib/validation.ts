@@ -84,6 +84,7 @@ export async function validateDataset(
     );
     validateLessonPath(lesson.relativePath, lesson.frontmatter, issues);
     validateLessonSections(lesson.relativePath, lesson.content, issues);
+    validateStructuredLessonSections(lesson.relativePath, lesson.content, issues);
     validateLessonInstructionalFocus(
       lesson.relativePath,
       lesson.frontmatter,
@@ -177,16 +178,42 @@ function validateLessonSections(
   }
 }
 
-function validateLessonInstructionalFocus(
+function sectionBody(content: string, heading: string): string {
+  const start = content.indexOf(`# ${heading}`);
+  if (start < 0) return "";
+  const after = content.slice(start + heading.length + 2);
+  const next = after.search(/\n#{1,2} /u);
+  return (next < 0 ? after : after.slice(0, next)).trim();
+}
+
+function validateStructuredLessonSections(
   relativePath: string,
-  lesson: { level: string; category: string; title: string },
   content: string,
   issues: ValidationIssue[],
 ): void {
-  if (lesson.level !== "B2" || lesson.category !== "use-of-english") return;
+  for (const heading of ["Forma o estructura", "Contrastes importantes"]) {
+    const body = sectionBody(content, heading);
+    if (!body || /^(?:[ \t]*[-*] |[ \t]*[0-9]+\. |[ \t]*\|)/mu.test(body)) continue;
+    addIssue(
+      issues,
+      "lesson-structure",
+      relativePath,
+      `La sección "${heading}" debe presentar sus casos como lista, tabla o apartados estructurados.`,
+    );
+  }
+}
+
+function validateLessonInstructionalFocus(
+  relativePath: string,
+  lesson: { id: string; level: string; category: string; title: string },
+  content: string,
+  issues: ValidationIssue[],
+): void {
+  if (lesson.id === "b2-advanced-grammar-reframing") return;
+  if (lesson.category !== "use-of-english" && lesson.category !== "reading") return;
 
   if (
-    /\b(?:open cloze|multiple[- ]choice cloze|key word transformations?|word formation|sentence rewriting|error correction)\b/iu.test(
+    /\b(?:open cloze|multiple[- ]choice cloze|key word transformations?|word formation|sentence rewriting|error correction|multiple matching|gapped text)\b/iu.test(
       lesson.title,
     )
   ) {
@@ -200,7 +227,7 @@ function validateLessonInstructionalFocus(
 
   const summary = content.match(/(?:^|\n)# Resumen\s*\n([\s\S]*?)(?=\n# |$)/u)?.[1].trim() ?? "";
   if (
-    /^(?:una actividad|el open cloze|en un open cloze|una transformación|en word formation)\b/iu.test(
+    /^(?:una actividad|el open cloze|en un open cloze|una transformación|en word formation|en multiple matching|en una tarea de matching|aprende a reconstruir)\b/iu.test(
       summary,
     )
   ) {
@@ -209,6 +236,19 @@ function validateLessonInstructionalFocus(
       "lesson-focus",
       relativePath,
       "El resumen debe explicar el contenido lingüístico, no cómo resolver una actividad.",
+    );
+  }
+
+  if (
+    /\b(?:multiple[- ]choice cloze|open cloze|key word transformations?|word formation|sentence rewriting|error correction|multiple matching|gapped text)\b/iu.test(
+      content,
+    ) || /\bactividad autocorregible\b/iu.test(content)
+  ) {
+    addIssue(
+      issues,
+      "lesson-focus",
+      relativePath,
+      "La lección no debe explicar el formato de una actividad; debe desarrollar el contenido lingüístico o la destreza lectora.",
     );
   }
 }

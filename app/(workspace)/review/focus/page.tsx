@@ -3,7 +3,10 @@ import {
   getLocalePort,
 } from "@/adapters/adapter-factory";
 import { getTaxonomy } from "@/core/use-cases";
-import { createFocusedPracticeAction } from "@/features/review/actions";
+import {
+  createFocusedPracticeAction,
+  getFocusedAvailabilityAction,
+} from "@/features/review/actions";
 import { FocusedPracticeConfigurator } from "@/features/review/FocusedPracticeConfigurator";
 import { getDictionary } from "@/shared/i18n";
 
@@ -34,6 +37,7 @@ export default async function FocusPage({
       </header>
       <FocusedPracticeConfigurator
         action={createFocusedPracticeAction}
+        loadAvailability={getFocusedAvailabilityAction}
         copy={{
           common: dictionary.common,
           catalog: dictionary.catalog,

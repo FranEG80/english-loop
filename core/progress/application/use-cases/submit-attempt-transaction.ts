@@ -18,6 +18,7 @@ import {
   IdempotencyConflictException,
   ResourceNotFoundException,
 } from "@/core/shared/exceptions";
+import { resolvePracticeRunActivity } from "@/core/practice/application/use-cases/resolve-practice-run-activity";
 
 export interface SubmitAttemptTransactionInput {
   runId: string;
@@ -117,9 +118,11 @@ export async function submitAttemptTransaction(
       );
     }
 
-    const activity = run.currentActivityVersionId && activityCatalog.getActivityByVersionId
-      ? await activityCatalog.getActivityByVersionId(run.currentActivityVersionId)
-      : await activityCatalog.getActivityById(input.activityId);
+    const activity = await resolvePracticeRunActivity(
+      activityCatalog,
+      run,
+      input.activityId,
+    );
     if (!activity) {
       throw new ResourceNotFoundException(
         `Activity not found: ${input.activityId}`,

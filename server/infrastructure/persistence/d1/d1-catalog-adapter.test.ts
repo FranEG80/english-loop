@@ -46,6 +46,66 @@ function transport(overrides: Partial<Record<D1Operation["name"], D1Result>> = {
 }
 
 describe("D1CatalogAdapter", () => {
+  it("searches and counts the complete D1 catalogue before applying the page window", async () => {
+    const base = transport();
+    const catalog = new D1CatalogAdapter(base);
+
+    await expect(
+      catalog.searchLessonsPage(
+        { level: "B2", category: "grammar", query: "key word" },
+        { page: 2, pageSize: 12 },
+      ),
+    ).resolves.toMatchObject({
+      items: [{ id: "lesson-1" }],
+      page: 2,
+      pageSize: 12,
+      total: 1,
+    });
+    await expect(
+      catalog.searchActivitiesPage(
+        {
+          taxonomyNodeIds: ["grammar", "present"],
+          query: "choose answer",
+          activityType: "single_choice",
+          interactionMode: "standard",
+        },
+        { page: 3, pageSize: 10 },
+      ),
+    ).resolves.toMatchObject({
+      items: [{ id: "activity-1" }],
+      page: 3,
+      pageSize: 10,
+      total: 1,
+    });
+
+    expect(base.calls).toContainEqual(
+      expect.objectContaining({
+        name: "catalogLessons",
+        queryTerms: ["key", "word"],
+        offset: 12,
+        limit: 12,
+      }),
+    );
+    expect(base.calls).toContainEqual(
+      expect.objectContaining({
+        name: "catalogCounts",
+        kind: "lessons",
+        queryTerms: ["key", "word"],
+      }),
+    );
+    expect(base.calls).toContainEqual(
+      expect.objectContaining({
+        name: "catalogActivities",
+        taxonomyNodeIds: ["grammar", "present"],
+        queryTerms: ["choose", "answer"],
+        activityType: "single_choice",
+        interactionMode: "standard",
+        offset: 20,
+        limit: 10,
+      }),
+    );
+  });
+
   it("reads published lessons, activities and metadata through typed operations", async () => {
     const base = transport();
     const catalog = new D1CatalogAdapter(base);

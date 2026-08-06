@@ -18,7 +18,7 @@ export const DEMO_LESSON_IDS = [
   "b1-grammar-present-simple-continuous",
   "b1-grammar-first-conditional",
   "b1-phrasal-verbs-everyday-actions",
-  "b2-use-of-english-key-word-transformations",
+  "b2-advanced-grammar-reframing",
   "b1-grammar-second-conditional",
 ] as const;
 

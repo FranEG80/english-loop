@@ -185,6 +185,24 @@ p {
 .stagger-in > :nth-child(4) { animation-delay: 210ms; }
 .stagger-in > :nth-child(5) { animation-delay: 280ms; }
 
+@media (min-width: 64rem) {
+  .lesson-section-masonry {
+    --lesson-masonry-row-height: 1;
+
+    grid-auto-flow: row;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lesson-section-masonry[data-masonry-ready="true"] {
+    grid-auto-rows: calc(var(--lesson-masonry-row-height) * 1px);
+  }
+
+  .lesson-section-masonry[data-masonry-ready="true"] > [data-lesson-section-card] {
+    grid-row: var(--lesson-section-row-start) / span var(--lesson-section-rows);
+    align-self: start;
+  }
+}
+
 .activity-text-response > p:first-child,
 .activity-text-response > div:first-child p:not(.text-sm) {
   font-family: var(--font-newsreader), Georgia, serif;

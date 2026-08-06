@@ -39,6 +39,7 @@ export function DailyPracticeClient({
     setPending(true);
     const result = await submitDailyAttemptAction(sessionId, {
       activityId: activity.id,
+      idempotencyKey: `${sessionId}:${index}`,
       response,
     });
     setFeedback(result);

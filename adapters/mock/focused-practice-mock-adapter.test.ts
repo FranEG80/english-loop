@@ -6,7 +6,7 @@ describe("focusedPracticeMockAdapter", () => {
     const availability = await focusedPracticeMockAdapter.getScopeAvailability("grammar.conditionals");
     expect(availability).toHaveLength(3);
     const run = await focusedPracticeMockAdapter.createRun({ taxonomyNodeId: "grammar.conditionals", level: "B1", sessionSize: 5 });
-    await focusedPracticeMockAdapter.submitRunAttempt(run.id, { activityId: run.activityIds[0], response: { kind: "text", value: "wrong" } });
+    await focusedPracticeMockAdapter.submitRunAttempt(run.id, { activityId: run.activityIds[0], idempotencyKey: `${run.id}:0`, response: { kind: "text", value: "wrong" } });
     expect(await focusedPracticeMockAdapter.getRunSummary(run.id)).toMatchObject({ runId: run.id, incorrectCount: 1 });
   });
 
@@ -16,7 +16,7 @@ describe("focusedPracticeMockAdapter", () => {
     const run = await focusedPracticeMockAdapter.createRun({ taxonomyNodeId: "unknown.scope", level: "both", sessionSize: 5 });
     expect(run.activityIds).toEqual([]);
     await expect(focusedPracticeMockAdapter.getRunSummary(run.id)).resolves.toMatchObject({ scorePercent: 0, coveredSubtopicIds: [] });
-    await expect(focusedPracticeMockAdapter.submitRunAttempt("missing-run", { activityId: "x", response: { kind: "text", value: "x" } })).rejects.toMatchObject({ message: expect.stringContaining("No existe la sesión") });
-    await expect(focusedPracticeMockAdapter.submitRunAttempt(run.id, { activityId: "missing-activity", response: { kind: "text", value: "x" } })).rejects.toMatchObject({ message: expect.stringContaining("No existe la actividad") });
+    await expect(focusedPracticeMockAdapter.submitRunAttempt("missing-run", { activityId: "x", idempotencyKey: "missing-run:0", response: { kind: "text", value: "x" } })).rejects.toMatchObject({ message: expect.stringContaining("No existe la sesión") });
+    await expect(focusedPracticeMockAdapter.submitRunAttempt(run.id, { activityId: "missing-activity", idempotencyKey: `${run.id}:0`, response: { kind: "text", value: "x" } })).rejects.toMatchObject({ message: expect.stringContaining("No existe la actividad") });
   });
 });

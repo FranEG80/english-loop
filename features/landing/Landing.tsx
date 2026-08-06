@@ -12,7 +12,7 @@ const PRACTICE_AREAS = [
   ["Phrasal verbs", "Phrasal verbs"],
   ["Collocations", "Collocations"],
   ["Preposiciones", "Prepositions"],
-  ["Word formation", "Word formation"],
+  ["Familias léxicas", "Word families"],
   ["Writing", "Writing"],
   ["Reading", "Reading"],
 ] as const;

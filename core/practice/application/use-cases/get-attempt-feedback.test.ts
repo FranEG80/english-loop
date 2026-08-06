@@ -29,6 +29,22 @@ describe("getAttemptFeedback", () => {
     await expect(getAttemptFeedback(catalog, attempt)).resolves.toMatchObject({ correctAnswer: "false", explanation: "Pinned explanation" });
   });
 
+  it("falls back to the activity id when the pinned version is not in the current catalog", async () => {
+    const attempt = ActivityAttempt.create({ id: "attempt-version-missing", userId: actor.userId, practiceRunId: null, activityId: "activity-1", activityVersionId: "database-version", origin: "FOCUSED", idempotencyKey: "key-version-missing", response: { kind: "boolean", value: true }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() });
+    const catalog = {
+      getActivityById: async () => ({ ...activity("activity-1"), explanation: "Current explanation", evaluator: { strategy: "boolean" as const, correct: true } }),
+      getActivityByVersionId: async () => null,
+      listActivities: async () => [],
+      countActivitiesByNode: async () => 0,
+      countActivitiesByNodes: async () => 0,
+    };
+
+    await expect(getAttemptFeedback(catalog, attempt)).resolves.toMatchObject({
+      correctAnswer: "true",
+      explanation: "Current explanation",
+    });
+  });
+
   it("returns the normalized response and the next review date", async () => {
     const attempt = ActivityAttempt.create({ id: "attempt-review", userId: actor.userId, practiceRunId: null, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "key-review", response: { kind: "text", value: "  YES.  " }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() });
     const catalog = {

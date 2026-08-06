@@ -3,15 +3,16 @@ import {
   getLocalePort,
 } from "@/adapters/adapter-factory";
 import type { CefrLevel } from "@/core/models";
-import { getTaxonomy, listLessonCatalog } from "@/core/use-cases";
+import { getTaxonomy, searchLessonCatalogPage } from "@/core/use-cases";
 import { CatalogFilters } from "@/features/catalog/CatalogFilters";
 import { LessonCatalog } from "@/features/catalog/LessonCatalog";
+import { CatalogPagination } from "@/features/catalog/CatalogPagination";
 import { getDictionary } from "@/shared/i18n";
 
 export default async function LessonsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; q?: string; level?: string }>;
+  searchParams: Promise<{ category?: string; q?: string; level?: string; page?: string }>;
 }) {
   const content = getLearningContentPort();
   const [locale, params, taxonomy] = await Promise.all([
@@ -24,14 +25,19 @@ export default async function LessonsPage({
     params.level === "B1" || params.level === "B2"
       ? (params.level as CefrLevel)
       : undefined;
-  const category = taxonomy.some((node) => node.id === params.category)
+  const categories = taxonomy.filter((node) => node.type === "category");
+  const category = categories.some((node) => node.id === params.category)
     ? params.category
     : undefined;
-  const lessons = await listLessonCatalog(content, {
-    query: params.q,
-    level,
-    category,
-  });
+  const requestedPage = Number(params.page ?? "1");
+  const page = Number.isSafeInteger(requestedPage) && requestedPage > 0
+    ? requestedPage
+    : 1;
+  const lessonsPage = await searchLessonCatalogPage(
+    content,
+    { query: params.q, level, category },
+    { page, pageSize: 12 },
+  );
 
   return (
       <div className="flex flex-col gap-6">
@@ -47,21 +53,39 @@ export default async function LessonsPage({
           clearHref="/lessons"
           query={params.q}
           level={level}
-          resultCount={lessons.length}
+          resultCount={lessonsPage.total}
           fields={[
             {
               name: "category",
               label: dictionary.catalog.categoryLabel,
               allLabel: dictionary.catalog.allCategories,
               value: category,
-              options: taxonomy.map((node) => ({
+              options: categories.map((node) => ({
                 value: node.id,
                 label: node.label[locale],
               })),
             },
           ]}
         />
-        <LessonCatalog lessons={lessons} dictionary={dictionary} />
+        <CatalogPagination
+          basePath="/lessons"
+          dictionary={dictionary}
+          page={lessonsPage.page}
+          placement="top"
+          totalItems={lessonsPage.total}
+          totalPages={lessonsPage.totalPages}
+          params={{ q: params.q, level, category }}
+        />
+        <LessonCatalog lessons={lessonsPage.items} dictionary={dictionary} />
+        <CatalogPagination
+          basePath="/lessons"
+          dictionary={dictionary}
+          page={lessonsPage.page}
+          placement="bottom"
+          totalItems={lessonsPage.total}
+          totalPages={lessonsPage.totalPages}
+          params={{ q: params.q, level, category }}
+        />
       </div>
   );
 }

@@ -1,5 +1,6 @@
 import type { Activity } from "@/core/content/domain/types/activity";
 import type { Lesson } from "@/core/content/domain/types/lesson";
+import { parseLessonMarkdown } from "@/core/content/domain/lesson-markdown";
 
 export function parseCatalogJson<T>(value: string | null | undefined, fallback: T): T {
   if (!value) return fallback;
@@ -29,6 +30,9 @@ export interface PrismaLessonVersionRow {
 }
 
 export function mapPrismaLesson(row: PrismaLessonVersionRow, relatedActivityIds: string[]): Lesson {
+  const parsedMarkdown = parseLessonMarkdown(row.explanation);
+  const examples = parseCatalogJson<Lesson["examples"]>(row.examples, []);
+  const commonMistakes = parseCatalogJson<Lesson["commonMistakes"]>(row.commonMistakes, []);
   return {
     id: row.lessonId,
     versionId: row.id,
@@ -39,8 +43,10 @@ export function mapPrismaLesson(row: PrismaLessonVersionRow, relatedActivityIds:
     title: row.title,
     summary: row.summary,
     explanation: row.explanation,
-    examples: parseCatalogJson(row.examples, []),
-    commonMistakes: parseCatalogJson(row.commonMistakes, []),
+    examples: examples.length > 0 ? examples : parsedMarkdown.examples,
+    commonMistakes: commonMistakes.length > 0
+      ? commonMistakes
+      : parsedMarkdown.commonMistakes,
     relatedActivityIds: [...new Set(relatedActivityIds)].sort(),
     tags: parseCatalogJson(row.tags, []),
     difficulty: row.difficulty as 1 | 2 | 3,

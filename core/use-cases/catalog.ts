@@ -66,6 +66,9 @@ export function searchLessonCatalogPage(
   query: CatalogQuery & { category?: string },
   pagination: NumberedPaginationParams,
 ): Promise<NumberedPage<LessonSummaryDto>> {
+  if (!content.searchLessonsPage) {
+    throw new Error("The learning content adapter does not support catalog search");
+  }
   return content.searchLessonsPage(
     {
       query: query.query,
@@ -119,6 +122,9 @@ export function searchActivityCatalogPage(
   },
   pagination: NumberedPaginationParams,
 ): Promise<NumberedPage<ActivityQuestionDto>> {
+  if (!content.searchActivitiesPage) {
+    throw new Error("The learning content adapter does not support catalog search");
+  }
   return content.searchActivitiesPage(
     {
       query: query.query,

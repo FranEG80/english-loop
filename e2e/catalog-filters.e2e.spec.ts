@@ -21,19 +21,35 @@ test.describe("catalog discovery", () => {
       .selectOption("use-of-english");
     await page
       .getByRole("textbox", { name: /Buscar|Search/ })
-      .fill("b2-use-of-english-key-word-transformations");
+      .fill("b2-advanced-grammar-reframing");
     await page
       .getByRole("button", { name: /Aplicar filtros|Apply filters/ })
       .click();
 
     await expect(page).toHaveURL(/category=use-of-english/);
-    await expect(page).toHaveURL(/q=b2-use-of-english-key-word-transformations/);
+    await expect(page).toHaveURL(/q=b2-advanced-grammar-reframing/);
     await expect(
       page.getByRole("heading", {
-        name: "Key word transformations B2: conservar el significado",
+        name: "Pasiva, condicionales y estilo indirecto B2",
       }),
     ).toBeVisible();
     await expect(page.getByRole("status").first()).toContainText(/1/);
+
+    await page
+      .getByRole("link", { name: /Abrir lección|Open lesson/i })
+      .click();
+
+    await expect(page).toHaveURL(/\/lessons\/b2-advanced-grammar-reframing$/);
+    await expect(
+      page.getByRole("link", {
+        name: /Practicar este tema|Practice this topic/i,
+      }),
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", {
+        name: /Actividades relacionadas|Related activities/i,
+      }),
+    ).toHaveCount(0);
   });
 
   test("shows activity-specific category, type and interaction filters", async ({

@@ -146,18 +146,18 @@ export const mockTaxonomyTree: TaxonomyNodeDto[] = [
     levels: ["B2"],
     children: [
       {
-        id: "use-of-english.open-cloze",
+        id: "use-of-english.connectors-cohesion",
         type: "skill",
-        label: { es: "Open cloze", en: "Open cloze" },
+        label: { es: "Conectores y cohesión", en: "Connectors and cohesion" },
         levels: ["B2"],
         children: [],
       },
       {
-        id: "use-of-english.key-word-transformation",
+        id: "use-of-english.advanced-grammar-reframing",
         type: "skill",
         label: {
-          es: "Key word transformation",
-          en: "Key word transformation",
+          es: "Reformulación gramatical avanzada",
+          en: "Advanced grammar reframing",
         },
         levels: ["B2"],
         children: [],

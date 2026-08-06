@@ -27,6 +27,7 @@ import {
   isDemoActivityId,
   isDemoLessonId,
 } from "@/core/content/domain/demo-fixture";
+import { parseLessonMarkdown } from "@/core/content/domain/lesson-markdown";
 
 export {
   DEMO_LESSON_IDS,
@@ -47,20 +48,6 @@ export function parseArgs(argv: string[]): CliOptions {
     else if (arg === "--dry-run") options.dryRun = true;
   }
   return options;
-}
-
-function extractSummary(content: string): string {
-  const lines = content.split("\n");
-  const summaryStart = lines.findIndex((line) => line.trim() === "# Resumen");
-  if (summaryStart === -1) return "";
-  const paragraphs: string[] = [];
-  for (let i = summaryStart + 1; i < lines.length; i += 1) {
-    const line = lines[i].trim();
-    if (line.startsWith("#") && line !== "# Resumen") break;
-    if (line) paragraphs.push(line);
-    if (paragraphs.length >= 2) break;
-  }
-  return paragraphs.join(" ");
 }
 
 function expectedAnswers(activity: CatalogSeedActivity["evaluator"]): CatalogSeedActivity["expectedAnswers"] {
@@ -102,24 +89,27 @@ export function buildCatalogSeedInput(
     selectableForPractice: node.selectableForPractice,
     order: node.order,
   }));
-  const lessons: CatalogSeedLesson[] = dataset.lessons.map((lesson) => ({
-    id: lesson.frontmatter.id,
-    checksum: sha256Checksum.checksum({ frontmatter: lesson.frontmatter, content: lesson.content }),
-    level: lesson.frontmatter.level,
-    category: lesson.frontmatter.category,
-    taxonomyNodeId: lesson.frontmatter.subtopics[0] ?? lesson.frontmatter.topic,
-    prerequisiteLessonIds: lesson.frontmatter.prerequisites,
-    title: lesson.frontmatter.title,
-    summary: extractSummary(lesson.content),
-    explanation: lesson.content,
-    examples: [],
-    commonMistakes: [],
-    tags: lesson.frontmatter.tags,
-    difficulty: lesson.frontmatter.difficulty,
-    contentVersion: lesson.frontmatter.contentVersion,
-    status: lesson.frontmatter.status,
-    isDemo: isDemoLessonId(lesson.frontmatter.id),
-  }));
+  const lessons: CatalogSeedLesson[] = dataset.lessons.map((lesson) => {
+    const content = parseLessonMarkdown(lesson.content);
+    return {
+      id: lesson.frontmatter.id,
+      checksum: sha256Checksum.checksum({ frontmatter: lesson.frontmatter, content: lesson.content }),
+      level: lesson.frontmatter.level,
+      category: lesson.frontmatter.category,
+      taxonomyNodeId: lesson.frontmatter.subtopics[0] ?? lesson.frontmatter.topic,
+      prerequisiteLessonIds: lesson.frontmatter.prerequisites,
+      title: lesson.frontmatter.title,
+      summary: content.summary,
+      explanation: lesson.content,
+      examples: content.examples,
+      commonMistakes: content.commonMistakes,
+      tags: lesson.frontmatter.tags,
+      difficulty: lesson.frontmatter.difficulty,
+      contentVersion: lesson.frontmatter.contentVersion,
+      status: lesson.frontmatter.status,
+      isDemo: isDemoLessonId(lesson.frontmatter.id),
+    };
+  });
   const activities: CatalogSeedActivity[] = dataset.activities.map((activity) => ({
     id: activity.id,
     checksum: sha256Checksum.checksum(activity),

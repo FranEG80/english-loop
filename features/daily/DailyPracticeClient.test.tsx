@@ -15,6 +15,11 @@ describe("DailyPracticeClient", () => {
     render(<DailyPracticeClient sessionId="session-1" activities={[{ id: "activity-1", level: "B1", taxonomyNodeId: "grammar", type: "true_false", interactionMode: "swipe", statement: "True?" } as never]} dictionary={en} />);
     fireEvent.click(screen.getByRole("button", { name: "Answer" }));
     await waitFor(() => expect(screen.getByRole("status")).toBeInTheDocument());
+    expect(actions.submitDailyAttemptAction).toHaveBeenCalledWith("session-1", {
+      activityId: "activity-1",
+      idempotencyKey: "session-1:0",
+      response: { kind: "boolean", value: true },
+    });
     expect(screen.getByRole("button", { name: en.daily.finishSession })).toBeInTheDocument();
   });
 });

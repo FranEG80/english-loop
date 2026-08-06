@@ -30,7 +30,7 @@ function toApiFilters<T extends { query?: string; interactionMode?: string }>(
   };
 }
 
-export const learningContentRestAdapter: LearningContentPort = {
+export const learningContentRestAdapter = {
   listLessons: async (filters) =>
     (await restRequest<CursorPage<LessonSummaryDto>>(`/lessons${toQueryString(toApiFilters(filters))}`)).items,
   searchLessonsPage: (filters, pagination) =>
@@ -48,4 +48,4 @@ export const learningContentRestAdapter: LearningContentPort = {
   getActivityById: (activityId) =>
     restRequest<ActivityQuestionDto | null>(`/activities/${activityId}`),
   getTaxonomyTree: () => restRequest<TaxonomyNodeDto[]>("/practice-taxonomy"),
-};
+} satisfies LearningContentPort;

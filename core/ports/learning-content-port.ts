@@ -25,13 +25,13 @@ export interface ActivityListFilters {
 
 export interface LearningContentPort {
   listLessons(filters?: LessonListFilters): Promise<LessonSummaryDto[]>;
-  searchLessonsPage(
+  searchLessonsPage?(
     filters: LessonListFilters | undefined,
     pagination: NumberedPaginationParams,
   ): Promise<NumberedPage<LessonSummaryDto>>;
   getLessonById(lessonId: string): Promise<LessonDetailDto | null>;
   listActivities(filters?: ActivityListFilters): Promise<ActivityQuestionDto[]>;
-  searchActivitiesPage(
+  searchActivitiesPage?(
     filters: ActivityListFilters | undefined,
     pagination: NumberedPaginationParams,
   ): Promise<NumberedPage<ActivityQuestionDto>>;

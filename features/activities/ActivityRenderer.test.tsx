@@ -2,6 +2,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import { en } from "@/shared/i18n/dictionaries/en";
+import { es } from "@/shared/i18n/dictionaries/es";
 import { ActivityRenderer } from "./ActivityRenderer";
 
 vi.mock("next/image", () => ({ default: ({ alt = "", ...props }: Record<string, unknown>) => <img {...props} alt={String(alt)} /> }));
@@ -24,5 +25,43 @@ describe("ActivityRenderer", () => {
   it("renders an accessible fallback for unsupported activity types", () => {
     render(<ActivityRenderer activity={{ ...base, type: "unsupported", interactionMode: "standard" } as never} dictionary={en} onSubmit={vi.fn()} />);
     expect(screen.getByRole("alert")).toBeInTheDocument();
+  });
+
+  it("gives word order the full width without a misleading decorative drop zone", () => {
+    const { container } = render(
+      <ActivityRenderer
+        activity={{
+          ...base,
+          type: "word_order",
+          interactionMode: "sentence_builder",
+          shuffledWords: ["a cat", "I saw"],
+        }}
+        dictionary={en}
+        onSubmit={vi.fn()}
+      />,
+    );
+
+    expect(
+      screen.getByRole("region", { name: en.activities.wordOrderSentenceLabel }),
+    ).toBeInTheDocument();
+    expect(container.querySelector("img")).not.toBeInTheDocument();
+  });
+
+  it("localizes the activity call to action", () => {
+    render(
+      <ActivityRenderer
+        activity={{
+          ...base,
+          type: "word_order",
+          interactionMode: "sentence_builder",
+          shuffledWords: ["I saw", "a cat"],
+        }}
+        dictionary={es}
+        onSubmit={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByText(es.activities.yourTurnLabel)).toBeInTheDocument();
+    expect(screen.queryByText(en.activities.yourTurnLabel)).not.toBeInTheDocument();
   });
 });

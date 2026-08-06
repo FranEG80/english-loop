@@ -22,25 +22,20 @@ export default async function LessonDetailPage({
   const dictionary = getDictionary(locale);
 
   return (
-      <div className="flex flex-col gap-6">
-        <Link href="/lessons" className="font-medium text-primary-dark">
-          ← {dictionary.nav.lessons}
-        </Link>
-        <DailyLessonView dictionary={dictionary} lesson={lesson} />
-        <section className="flex flex-col gap-3">
-          <h2 className="text-xl font-semibold">
-            {dictionary.catalog.relatedActivities}
-          </h2>
-          {lesson.relatedActivityIds.map((activityId) => (
-            <Link
-              key={activityId}
-              href={`/activities/${activityId}`}
-              className="rounded-control border border-border bg-white p-3 font-medium text-primary-dark"
-            >
-              {activityId.replaceAll("-", " ")}
-            </Link>
-          ))}
-        </section>
-      </div>
+    <div className="flex flex-col gap-6">
+      <Link
+        href="/lessons"
+        className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary-dark transition-colors hover:text-coral"
+      >
+        <span aria-hidden="true">←</span>
+        {dictionary.nav.lessons}
+      </Link>
+      <DailyLessonView
+        dictionary={dictionary}
+        lesson={lesson}
+        practiceHref={`/review/focus?taxonomyNodeId=${encodeURIComponent(lesson.taxonomyNodeId)}`}
+        practiceLabel={dictionary.catalog.practiceTopic}
+      />
+    </div>
   );
 }

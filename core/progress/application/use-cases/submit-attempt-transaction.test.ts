@@ -50,6 +50,56 @@ describe("submitAttemptTransaction", () => {
     expect(result.attempt.activityVersionId).toBe("activity-1-v1");
   });
 
+  it("uses the run snapshot when its pinned version is unavailable in the current catalog", async () => {
+    const runRepository = new MemoryRuns();
+    const snapshot = {
+      ...activity("activity-1"),
+      versionId: "database-version",
+      evaluator: { strategy: "boolean" as const, correct: false },
+    };
+    const run = PracticeRun.create({
+      id: "snapshot-run",
+      userId: actor.userId,
+      mode: "FOCUSED",
+      scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 },
+      activityIds: ["activity-1"],
+      activityVersionIds: ["database-version"],
+      activitySnapshots: [snapshot],
+      currentIndex: 0,
+      status: "in_progress",
+      datasetVersion: "v1",
+      dailySessionId: null,
+      createdAt: clock.nowIso(),
+    });
+    await runRepository.save(run);
+    const catalog = {
+      getActivityById: async () => null,
+      getActivityByVersionId: async () => null,
+      listActivities: async () => [],
+      countActivitiesByNode: async () => 1,
+      countActivitiesByNodes: async () => 1,
+    };
+
+    const result = await submitAttemptTransaction(
+      identity,
+      uow,
+      new MemoryAttempts(),
+      runRepository,
+      catalog,
+      new MemoryProgress(),
+      new MemoryReviews(),
+      taxonomy,
+      ids,
+      clock,
+      collectEvents().dispatcher,
+      "1.0.0",
+      { runId: run.id, activityId: "activity-1", idempotencyKey: "snapshot-key", response: { kind: "boolean", value: true } },
+    );
+
+    expect(result.attempt.isCorrect).toBe(false);
+    expect(result.attempt.activityVersionId).toBe("database-version");
+  });
+
   it("persists the attempt, projects progress/review and dispatches the event once", async () => {
     const runRepository = new MemoryRuns();
     const attemptRepository = new MemoryAttempts();

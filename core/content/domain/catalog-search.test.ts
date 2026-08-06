@@ -16,8 +16,8 @@ describe("catalog search", () => {
     ]);
     expect(
       matchesCatalogSearch(
-        ["b2-use-of-english-key-word-transformations"],
-        "key word transformations",
+        ["b2-advanced-grammar-reframing"],
+        "advanced grammar reframing",
       ),
     ).toBe(true);
   });

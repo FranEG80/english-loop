@@ -11,6 +11,7 @@ import type { PracticeRunRepository } from "../../ports/practice-run-repository"
 import { ActivityAttempt } from "../../domain/activity-attempt";
 import { evaluate } from "../../domain/activity-evaluator";
 import { ResourceNotFoundException, ForbiddenException, IdempotencyConflictException } from "@/core/shared/exceptions";
+import { resolvePracticeRunActivity } from "./resolve-practice-run-activity";
 
 export interface SubmitAttemptInput {
   runId: string;
@@ -71,9 +72,11 @@ export async function submitActivityAttempt(
     );
   }
 
-  const activity = run.currentActivityVersionId && activityCatalog.getActivityByVersionId
-    ? await activityCatalog.getActivityByVersionId(run.currentActivityVersionId)
-    : await activityCatalog.getActivityById(input.activityId);
+  const activity = await resolvePracticeRunActivity(
+    activityCatalog,
+    run,
+    input.activityId,
+  );
   if (!activity) {
     throw new ResourceNotFoundException(
       `Activity not found: ${input.activityId}`,

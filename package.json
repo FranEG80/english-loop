@@ -35,9 +35,10 @@
     "test:a11y": "playwright test e2e/accessibility.spec.ts",
     "test:integration": "INTEGRATION_DB_DIR=$(mktemp -d) && trap 'rm -rf \"$INTEGRATION_DB_DIR\"' EXIT && INTEGRATION_DB_PATH=\"$INTEGRATION_DB_DIR/integration.db\" && touch \"$INTEGRATION_DB_PATH\" && DATABASE_URL=file:$INTEGRATION_DB_PATH pnpm prisma migrate deploy && DATABASE_URL=file:$INTEGRATION_DB_PATH TEST_DATABASE_URL=file:$INTEGRATION_DB_PATH RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/repositories.integration.test.ts && DATABASE_URL=file:$INTEGRATION_DB_PATH TEST_DATABASE_URL=file:$INTEGRATION_DB_PATH RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/prisma-catalog-write-adapter.integration.test.ts",
     "test:integration:catalog": "INTEGRATION_DB_DIR=$(mktemp -d) && trap 'rm -rf \"$INTEGRATION_DB_DIR\"' EXIT && INTEGRATION_DB_PATH=\"$INTEGRATION_DB_DIR/catalog.db\" && touch \"$INTEGRATION_DB_PATH\" && DATABASE_URL=file:$INTEGRATION_DB_PATH pnpm prisma migrate deploy && DATABASE_URL=file:$INTEGRATION_DB_PATH TEST_DATABASE_URL=file:$INTEGRATION_DB_PATH RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/prisma-catalog-write-adapter.integration.test.ts",
+    "test:integration:focused-practice": "FOCUS_DB_DIR=$(mktemp -d) && trap 'rm -rf \"$FOCUS_DB_DIR\"' EXIT && FOCUS_DB_PATH=\"$FOCUS_DB_DIR/focused-practice.db\" && touch \"$FOCUS_DB_PATH\" && DATABASE_URL=file:$FOCUS_DB_PATH pnpm prisma migrate deploy && DATABASE_URL=file:$FOCUS_DB_PATH DATABASE_PROVIDER=sqlite CONTENT_SOURCE=database node --import tsx scripts/dataset/seed.ts && DATABASE_URL=file:$FOCUS_DB_PATH TEST_DATABASE_URL=file:$FOCUS_DB_PATH DATABASE_PROVIDER=sqlite CONTENT_SOURCE=database RUN_DB_INTEGRATION=1 vitest run server/infrastructure/persistence/focused-practice-flow.integration.test.ts app/api/v1/practice-runs/route.integration.test.ts",
     "test:postgres": "tsx scripts/database/postgresql-contracts.ts",
     "verify": "pnpm lint && pnpm typecheck && pnpm arch:check && pnpm test && pnpm build:test",
-    "verify:full": "pnpm verify && pnpm test:coverage && pnpm test:integration && pnpm test:e2e"
+    "verify:full": "pnpm verify && pnpm test:coverage && pnpm test:integration && pnpm test:integration:focused-practice && pnpm test:e2e"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

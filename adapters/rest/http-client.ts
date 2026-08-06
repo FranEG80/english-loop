@@ -5,6 +5,8 @@ export class RestApiError extends Error {
   constructor(
     message: string,
     public readonly status: number,
+    public readonly code?: string,
+    public readonly fieldErrors: Record<string, string[]> = {},
   ) {
     super(message);
     this.name = "RestApiError";
@@ -60,12 +62,40 @@ export async function restRequest<TResponse>(
   init?: RequestInit,
 ): Promise<TResponse> {
   const response = await restFetch(`${API_BASE_PATH}${path}`, init);
+  const payload = response.status === 204
+    ? undefined
+    : await response.json().catch(() => undefined) as unknown;
   if (!response.ok) {
+    const apiError = parseApiError(payload);
     throw new RestApiError(
-      `La petición a "${path}" falló con estado ${response.status}.`,
+      apiError?.message ??
+        `La petición a "${path}" falló con estado ${response.status}.`,
       response.status,
+      apiError?.code,
+      apiError?.fieldErrors,
     );
   }
   if (response.status === 204) return undefined as TResponse;
-  return (await response.json()) as TResponse;
+  return payload as TResponse;
+}
+
+function parseApiError(payload: unknown): {
+  code?: string;
+  fieldErrors: Record<string, string[]>;
+  message?: string;
+} | null {
+  if (!payload || typeof payload !== "object") return null;
+  const error = "error" in payload
+    ? (payload as { error?: unknown }).error
+    : null;
+  if (!error || typeof error !== "object") return null;
+  const record = error as Record<string, unknown>;
+  return {
+    code: typeof record.code === "string" ? record.code : undefined,
+    message: typeof record.message === "string" ? record.message : undefined,
+    fieldErrors:
+      record.fieldErrors && typeof record.fieldErrors === "object"
+        ? (record.fieldErrors as Record<string, string[]>)
+        : {},
+  };
 }

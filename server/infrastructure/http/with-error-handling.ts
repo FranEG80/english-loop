@@ -100,6 +100,29 @@ function recordRequestMetric(request: Request | null, status: number, durationMs
   });
 }
 
+function unexpectedErrorMetadata(
+  error: unknown,
+  requestId: string,
+  status: number,
+): Record<string, unknown> {
+  const metadata: Record<string, unknown> = { requestId, status };
+  if (error instanceof Error) {
+    metadata.errorName = error.name;
+    if (config.nodeEnv === "development") {
+      metadata.errorMessage = error.message;
+    }
+  }
+  if (
+    error &&
+    typeof error === "object" &&
+    "code" in error &&
+    typeof error.code === "string"
+  ) {
+    metadata.causeCode = error.code;
+  }
+  return metadata;
+}
+
 /**
  * Envuelve un route handler para capturar errores del core y devolverlos en
  * el envelope de error HTTP estándar con un requestId.
@@ -128,7 +151,7 @@ export function withErrorHandling<TArgs extends unknown[]>(
           message: "Request failed",
           context: "http",
           errorCode: body.error.code,
-          metadata: { requestId, status },
+          metadata: unexpectedErrorMetadata(error, requestId, status),
         });
       }
       return NextResponse.json(body, { status });

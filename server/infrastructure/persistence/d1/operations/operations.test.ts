@@ -141,6 +141,35 @@ describe("D1 operation SQL dispatch", () => {
     expect(fake.queries.filter((query) => query.includes("activityId > ?"))).toHaveLength(2);
   });
 
+  it("uses server-side search, offset pagination and full regular visibility", () => {
+    const fake = database();
+    prepareD1Operation(fake.database, {
+      name: "catalogLessons",
+      queryTerms: ["key", "word"],
+      offset: 12,
+      limit: 12,
+    });
+    prepareD1Operation(fake.database, {
+      name: "catalogActivities",
+      taxonomyNodeIds: ["use-of-english", "transformations"],
+      queryTerms: ["unless"],
+      activityType: "key_word_transformation",
+      interactionMode: "standard",
+      offset: 0,
+      limit: 12,
+    });
+    prepareD1Operation(fake.database, {
+      name: "catalogLessons",
+      includeDemo: true,
+    });
+    expect(fake.queries[0]).toContain("v.lessonId LIKE ?");
+    expect(fake.queries[0]).toContain("LIMIT ? OFFSET ?");
+    expect(fake.queries[0]).toContain("1 = 1");
+    expect(fake.queries[1]).toContain("json_each(?)");
+    expect(fake.queries[1]).toContain("v.activityTypeCode = ?");
+    expect(fake.queries[2]).toContain("le.isDemo = 1");
+  });
+
   it("prepares composite daily and practice snapshots with their child rows", () => {
     const fake = database();
     expect(prepareCompositeD1Operation(fake.database, { name: "dailySessionSave", snapshot: dailySession })).toHaveLength(3);

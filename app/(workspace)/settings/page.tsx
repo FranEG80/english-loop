@@ -4,7 +4,6 @@ import {
   Languages,
   MonitorCog,
   RotateCcw,
-  Save,
   Sparkles,
   UserRound,
 } from "lucide-react";
@@ -12,15 +11,13 @@ import {
   getLocalePort,
   getSettingsPort,
 } from "@/adapters/adapter-factory";
-import {
-  resetSettingsAction,
-  updateSettingsAction,
-} from "@/features/settings/actions";
+import { resetSettingsAction } from "@/features/settings/actions";
 import { getDictionary } from "@/shared/i18n";
 import { LogoutButton } from "@/shared/layout/LogoutButton";
 import { requireSession } from "@/shared/lib/require-session";
 import { DailyGoalStepper } from "@/features/settings/DailyGoalStepper";
 import { ProfileSecurityForms } from "@/features/settings/ProfileSecurityForms";
+import { SettingsForm } from "@/features/settings/SettingsForm";
 
 export default async function SettingsPage() {
   const [session, locale, settings] = await Promise.all([
@@ -59,7 +56,12 @@ export default async function SettingsPage() {
 
         <ProfileSecurityForms name={session.name} locale={locale} />
 
-        <form action={updateSettingsAction} className="grid gap-5 lg:grid-cols-2">
+        <SettingsForm
+          initialValues={settings}
+          locale={locale}
+          notice={dictionary.settings.mockNotice}
+          saveLabel={dictionary.common.save}
+        >
           <fieldset className="ink-card rounded-[2rem] bg-primary-dark p-6 text-white sm:p-8">
             <legend className="sr-only">{dictionary.settings.locale}</legend>
             <div className="mb-6 flex items-center gap-3">
@@ -200,16 +202,7 @@ export default async function SettingsPage() {
             </label>
           </section>
 
-          <div className="flex flex-col gap-3 lg:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-            <p className="max-w-2xl text-sm font-semibold text-foreground/55">
-              {dictionary.settings.mockNotice}
-            </p>
-            <button className="inline-flex h-14 items-center justify-center gap-2 rounded-control border-2 border-foreground bg-primary-dark px-7 font-black text-white shadow-[4px_5px_0_var(--color-foreground)] transition-transform hover:-translate-y-1">
-              <Save className="h-5 w-5" aria-hidden="true" />
-              {dictionary.common.save}
-            </button>
-          </div>
-        </form>
+        </SettingsForm>
 
         <section className="rounded-[2rem] border-2 border-danger bg-danger-surface p-6 sm:flex sm:items-center sm:justify-between">
           <div>

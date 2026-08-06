@@ -7,9 +7,10 @@ import {
   INTERACTION_MODES,
   type CefrLevel,
 } from "@/core/models";
-import { getTaxonomy, listActivityCatalog } from "@/core/use-cases";
+import { getTaxonomy, searchActivityCatalogPage } from "@/core/use-cases";
 import { ActivityCatalog } from "@/features/catalog/ActivityCatalog";
 import { CatalogFilters } from "@/features/catalog/CatalogFilters";
+import { CatalogPagination } from "@/features/catalog/CatalogPagination";
 import { getDictionary } from "@/shared/i18n";
 
 export default async function ActivitiesPage({
@@ -21,6 +22,7 @@ export default async function ActivitiesPage({
     level?: string;
     q?: string;
     type?: string;
+    page?: string;
   }>;
 }) {
   const content = getLearningContentPort();
@@ -34,20 +36,29 @@ export default async function ActivitiesPage({
     params.level === "B1" || params.level === "B2"
       ? (params.level as CefrLevel)
       : undefined;
-  const category = taxonomy.some((node) => node.id === params.category)
+  const categories = taxonomy.filter((node) => node.type === "category");
+  const category = categories.some((node) => node.id === params.category)
     ? params.category
     : undefined;
   const activityType = ACTIVITY_TYPES.find((type) => type === params.type);
   const interactionMode = INTERACTION_MODES.find(
     (mode) => mode === params.interaction,
   );
-  const activities = await listActivityCatalog(content, {
-    query: params.q,
-    level,
-    taxonomyNodeId: category,
-    type: activityType,
-    interactionMode,
-  });
+  const requestedPage = Number(params.page ?? "1");
+  const page = Number.isSafeInteger(requestedPage) && requestedPage > 0
+    ? requestedPage
+    : 1;
+  const activitiesPage = await searchActivityCatalogPage(
+    content,
+    {
+      query: params.q,
+      level,
+      taxonomyNodeId: category,
+      type: activityType,
+      interactionMode,
+    },
+    { page, pageSize: 12 },
+  );
 
   return (
       <div className="flex flex-col gap-6">
@@ -65,14 +76,14 @@ export default async function ActivitiesPage({
           clearHref="/activities"
           query={params.q}
           level={level}
-          resultCount={activities.length}
+          resultCount={activitiesPage.total}
           fields={[
             {
               name: "category",
               label: dictionary.catalog.categoryLabel,
               allLabel: dictionary.catalog.allCategories,
               value: category,
-              options: taxonomy.map((node) => ({
+              options: categories.map((node) => ({
                 value: node.id,
                 label: node.label[locale],
               })),
@@ -99,7 +110,37 @@ export default async function ActivitiesPage({
             },
           ]}
         />
-        <ActivityCatalog activities={activities} dictionary={dictionary} />
+        <CatalogPagination
+          basePath="/activities"
+          dictionary={dictionary}
+          page={activitiesPage.page}
+          placement="top"
+          totalItems={activitiesPage.total}
+          totalPages={activitiesPage.totalPages}
+          params={{
+            q: params.q,
+            level,
+            category,
+            type: activityType,
+            interaction: interactionMode,
+          }}
+        />
+        <ActivityCatalog activities={activitiesPage.items} dictionary={dictionary} />
+        <CatalogPagination
+          basePath="/activities"
+          dictionary={dictionary}
+          page={activitiesPage.page}
+          placement="bottom"
+          totalItems={activitiesPage.total}
+          totalPages={activitiesPage.totalPages}
+          params={{
+            q: params.q,
+            level,
+            category,
+            type: activityType,
+            interaction: interactionMode,
+          }}
+        />
       </div>
   );
 }

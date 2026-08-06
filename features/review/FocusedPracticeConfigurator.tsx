@@ -1,9 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useActionState, useEffect, useMemo, useState } from "react";
 import { Check, ChevronRight, Layers3, Sparkles } from "lucide-react";
 import type {
   Locale,
+  CefrLevelFilter,
+  PracticeScopeAvailabilityDto,
   TaxonomyNodeDto,
   TaxonomyNodeType,
 } from "@/core/models";
@@ -15,9 +17,15 @@ import { Card } from "@/shared/ui/Card";
 type FocusCopy = Pick<Dictionary, "common" | "catalog" | "review">;
 
 interface FocusedPracticeConfiguratorProps {
-  action: (formData: FormData) => void | Promise<void>;
+  action: (
+    previousState: { error?: string },
+    formData: FormData,
+  ) => Promise<{ error?: string }>;
   copy: FocusCopy;
   initialNodeId?: string;
+  loadAvailability: (
+    taxonomyNodeId: string,
+  ) => Promise<PracticeScopeAvailabilityDto[]>;
   locale: Locale;
   taxonomy: TaxonomyNodeDto[];
 }
@@ -51,10 +59,43 @@ function selectClassName() {
   return "h-12 w-full rounded-control border-2 border-foreground/45 bg-surface px-3 font-semibold text-foreground transition-colors hover:border-primary focus:border-primary";
 }
 
+function supportsLevel(
+  node: TaxonomyNodeDto | undefined,
+  level: CefrLevelFilter,
+): boolean {
+  return (
+    node !== undefined &&
+    (level === "both" || node.levels.includes(level))
+  );
+}
+
+function trimPathToLevel(
+  currentPath: TaxonomyNodeDto[],
+  taxonomy: TaxonomyNodeDto[],
+  level: CefrLevelFilter,
+): TaxonomyNodeDto[] {
+  if (level === "both") return currentPath;
+
+  const currentRoot = currentPath[0];
+  const root = supportsLevel(currentRoot, level)
+    ? currentRoot
+    : taxonomy.find((node) => supportsLevel(node, level));
+  if (!root) return [];
+  if (root.id !== currentRoot?.id) return [root];
+
+  const compatiblePath = [root];
+  for (const node of currentPath.slice(1)) {
+    if (!supportsLevel(node, level)) break;
+    compatiblePath.push(node);
+  }
+  return compatiblePath;
+}
+
 export function FocusedPracticeConfigurator({
   action,
   copy,
   initialNodeId,
+  loadAvailability,
   locale,
   taxonomy,
 }: FocusedPracticeConfiguratorProps) {
@@ -63,11 +104,68 @@ export function FocusedPracticeConfigurator({
     [initialNodeId, taxonomy],
   );
   const [path, setPath] = useState(initialPath);
+  const [selectedLevel, setSelectedLevel] =
+    useState<CefrLevelFilter>("both");
+  const [sessionSize, setSessionSize] = useState(5);
+  const [availabilityResult, setAvailabilityResult] = useState<{
+    error: boolean;
+    items: PracticeScopeAvailabilityDto[];
+    nodeId: string;
+  } | null>(null);
+  const [actionState, formAction, actionPending] = useActionState(action, {});
   const selectedNode = path.at(-1);
+
+  useEffect(() => {
+    if (!selectedNode) return;
+    let active = true;
+    void loadAvailability(selectedNode.id)
+      .then((result) => {
+        if (active) {
+          setAvailabilityResult({
+            error: false,
+            items: result,
+            nodeId: selectedNode.id,
+          });
+        }
+      })
+      .catch(() => {
+        if (active) {
+          setAvailabilityResult({
+            error: true,
+            items: [],
+            nodeId: selectedNode.id,
+          });
+        }
+      });
+    return () => {
+      active = false;
+    };
+  }, [loadAvailability, selectedNode]);
 
   if (!selectedNode) return null;
 
+  const effectiveLevel = selectedLevel;
+  const currentAvailability =
+    availabilityResult?.nodeId === selectedNode.id
+      ? availabilityResult
+      : null;
+  const selectedAvailability = currentAvailability?.items.find(
+    (item) => item.level === effectiveLevel,
+  );
+  const availabilityError = currentAvailability?.error === true;
+  const availableActivityCount =
+    selectedAvailability?.availableActivityCount ?? 0;
+  const canStart =
+    !availabilityError &&
+    selectedAvailability !== undefined &&
+    availableActivityCount >= sessionSize;
+
   const chooseCategory = (node: TaxonomyNodeDto) => setPath([node]);
+
+  const chooseLevel = (level: CefrLevelFilter) => {
+    setSelectedLevel(level);
+    setPath((current) => trimPathToLevel(current, taxonomy, level));
+  };
 
   const chooseChild = (depth: number, childId: string) => {
     if (!childId) {
@@ -77,7 +175,10 @@ export function FocusedPracticeConfigurator({
 
     setPath((current) => {
       const parent = current[depth - 1];
-      const child = parent?.children.find((node) => node.id === childId);
+      const child = parent?.children.find(
+        (node) =>
+          node.id === childId && supportsLevel(node, selectedLevel),
+      );
       return child ? [...current.slice(0, depth), child] : current;
     });
   };
@@ -86,13 +187,21 @@ export function FocusedPracticeConfigurator({
     depth: number;
     parent: TaxonomyNodeDto;
     selected?: TaxonomyNodeDto;
+    visibleChildren: TaxonomyNodeDto[];
   }> = [];
   let parent = path[0];
   let depth = 1;
 
-  while (parent?.children.length) {
-    const selected = path[depth];
-    drillDownLevels.push({ depth, parent, selected });
+  while (parent) {
+    const visibleChildren = parent.children.filter((node) =>
+      supportsLevel(node, selectedLevel),
+    );
+    if (visibleChildren.length === 0) break;
+    const selectedCandidate = path[depth];
+    const selected = visibleChildren.find(
+      (node) => node.id === selectedCandidate?.id,
+    );
+    drillDownLevels.push({ depth, parent, selected, visibleChildren });
     if (!selected) break;
     parent = selected;
     depth += 1;
@@ -100,7 +209,7 @@ export function FocusedPracticeConfigurator({
 
   return (
     <Card className="overflow-hidden p-0">
-      <form action={action}>
+      <form action={formAction}>
         <input
           type="hidden"
           name="taxonomyNodeId"
@@ -129,69 +238,81 @@ export function FocusedPracticeConfigurator({
                 {copy.review.categoryLabel}
               </legend>
               <div className="flex flex-wrap gap-2">
-                {taxonomy.map((node) => {
-                  const isSelected = path[0]?.id === node.id;
-                  return (
-                    <button
-                      key={node.id}
-                      type="button"
-                      aria-pressed={isSelected}
-                      onClick={() => chooseCategory(node)}
-                      className={`min-h-11 rounded-full border-2 px-4 py-2 text-left text-sm font-black transition-[transform,background-color,color,box-shadow] hover:-translate-y-0.5 ${
-                        isSelected
-                          ? "border-foreground bg-primary-dark text-white shadow-[2px_3px_0_var(--color-foreground)]"
-                          : "border-foreground/35 bg-surface text-foreground hover:border-primary"
-                      }`}
-                    >
-                      {isSelected ? (
-                        <Check aria-hidden="true" className="mr-1.5 inline size-4" />
-                      ) : null}
-                      {node.label[locale]}
-                    </button>
-                  );
-                })}
+                {taxonomy
+                  .filter((node) => supportsLevel(node, selectedLevel))
+                  .map((node) => {
+                    const isSelected = path[0]?.id === node.id;
+                    return (
+                      <button
+                        key={node.id}
+                        type="button"
+                        aria-pressed={isSelected}
+                        onClick={() => chooseCategory(node)}
+                        className={`min-h-11 rounded-full border-2 px-4 py-2 text-left text-sm font-black transition-[transform,background-color,color,box-shadow] hover:-translate-y-0.5 ${
+                          isSelected
+                            ? "border-foreground bg-primary-dark text-white shadow-[2px_3px_0_var(--color-foreground)]"
+                            : "border-foreground/35 bg-surface text-foreground hover:border-primary"
+                        }`}
+                      >
+                        {isSelected ? (
+                          <Check
+                            aria-hidden="true"
+                            className="mr-1.5 inline size-4"
+                          />
+                        ) : null}
+                        {node.label[locale]}
+                      </button>
+                    );
+                  })}
               </div>
             </fieldset>
 
             {drillDownLevels.length > 0 ? (
               <div className="grid gap-4 sm:grid-cols-2">
-                {drillDownLevels.map(({ depth: levelDepth, parent: levelParent, selected }) => {
-                  const childType = levelParent.children[0]?.type ?? "skill";
-                  const label = copy.review[SCOPE_LABEL_KEYS[childType]];
-                  return (
-                    <label
-                      key={`${levelParent.id}-${levelDepth}`}
-                      className="flex min-w-0 flex-col gap-1.5 text-sm font-bold"
-                    >
-                      <span>
-                        <span className="mr-2 text-coral">
-                          {String(levelDepth + 1).padStart(2, "0")}
-                        </span>
-                        {label}
-                      </span>
-                      <select
-                        aria-label={label}
-                        value={selected?.id ?? ""}
-                        onChange={(event) =>
-                          chooseChild(levelDepth, event.target.value)
-                        }
-                        className={selectClassName()}
+                {drillDownLevels.map(
+                  ({
+                    depth: levelDepth,
+                    parent: levelParent,
+                    selected,
+                    visibleChildren,
+                  }) => {
+                    const childType = visibleChildren[0]?.type ?? "skill";
+                    const label = copy.review[SCOPE_LABEL_KEYS[childType]];
+                    return (
+                      <label
+                        key={`${levelParent.id}-${levelDepth}`}
+                        className="flex min-w-0 flex-col gap-1.5 text-sm font-bold"
                       >
-                        <option value="">
-                          {copy.review.wholeScope.replace(
-                            "{label}",
-                            levelParent.label[locale],
-                          )}
-                        </option>
-                        {levelParent.children.map((node) => (
-                          <option key={node.id} value={node.id}>
-                            {node.label[locale]}
+                        <span>
+                          <span className="mr-2 text-coral">
+                            {String(levelDepth + 1).padStart(2, "0")}
+                          </span>
+                          {label}
+                        </span>
+                        <select
+                          aria-label={label}
+                          value={selected?.id ?? ""}
+                          onChange={(event) =>
+                            chooseChild(levelDepth, event.target.value)
+                          }
+                          className={selectClassName()}
+                        >
+                          <option value="">
+                            {copy.review.wholeScope.replace(
+                              "{label}",
+                              levelParent.label[locale],
+                            )}
                           </option>
-                        ))}
-                      </select>
-                    </label>
-                  );
-                })}
+                          {visibleChildren.map((node) => (
+                            <option key={node.id} value={node.id}>
+                              {node.label[locale]}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    );
+                  },
+                )}
               </div>
             ) : null}
 
@@ -205,7 +326,8 @@ export function FocusedPracticeConfigurator({
               <div className="flex flex-wrap gap-2">
                 {(["both", "B1", "B2"] as const).map((level) => {
                   const unavailable =
-                    level !== "both" && !selectedNode.levels.includes(level);
+                    level !== "both" &&
+                    !taxonomy.some((node) => supportsLevel(node, level));
                   return (
                     <label
                       key={level}
@@ -215,7 +337,8 @@ export function FocusedPracticeConfigurator({
                         type="radio"
                         name="level"
                         value={level}
-                        defaultChecked={level === "both"}
+                        checked={effectiveLevel === level}
+                        onChange={() => chooseLevel(level)}
                         disabled={unavailable}
                         className="peer sr-only"
                       />
@@ -242,7 +365,8 @@ export function FocusedPracticeConfigurator({
                       type="radio"
                       name="sessionSize"
                       value={size}
-                      defaultChecked={size === 5}
+                      checked={sessionSize === size}
+                      onChange={() => setSessionSize(size)}
                       className="peer sr-only"
                     />
                     <span className="inline-flex min-h-11 items-center rounded-control border-2 border-foreground/35 bg-surface px-4 font-black transition-colors peer-checked:border-foreground peer-checked:bg-level-b1 peer-focus-visible:outline peer-focus-visible:outline-3 peer-focus-visible:outline-offset-3 peer-focus-visible:outline-coral">
@@ -282,11 +406,40 @@ export function FocusedPracticeConfigurator({
             <p className="mt-5 text-sm font-semibold text-white/70">
               {copy.review.availableIn}: {selectedNode.levels.join(" · ")}
             </p>
+            <div
+              role="status"
+              className="mt-4 rounded-control border border-white/20 bg-white/10 px-3 py-2 text-sm font-bold text-white/85"
+            >
+              {availabilityError
+                ? copy.review.availabilityError
+                : selectedAvailability
+                  ? copy.review.availableActivities.replace(
+                      "{count}",
+                      String(availableActivityCount),
+                    )
+                  : copy.review.checkingAvailability}
+            </div>
+            {selectedAvailability && !canStart ? (
+              <p className="mt-2 text-sm font-bold text-accent" role="alert">
+                {copy.review.notEnoughActivities
+                  .replace("{available}", String(availableActivityCount))
+                  .replace("{requested}", String(sessionSize))}
+              </p>
+            ) : null}
+            {actionState.error ? (
+              <p
+                className="mt-3 rounded-control border border-coral/50 bg-coral/15 px-3 py-2 text-sm font-bold text-white"
+                role="alert"
+              >
+                {actionState.error}
+              </p>
+            ) : null}
             <Button
               type="submit"
+              disabled={!canStart || actionPending}
               className="mt-auto w-full bg-accent text-foreground hover:bg-accent/90"
             >
-              {copy.common.start}
+              {actionPending ? copy.common.loading : copy.common.start}
               <ChevronRight aria-hidden="true" className="size-5" />
             </Button>
           </aside>

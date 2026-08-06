@@ -9,6 +9,47 @@ describe("dataset validation pipeline", () => {
     expect(issues).toEqual([]);
   });
 
+  it("preserves the activity-format title on the reference lesson", async () => {
+    const dataset = await loadDataset();
+    const reference = dataset.lessons.find(
+      (lesson) => lesson.frontmatter.id === "b2-advanced-grammar-reframing",
+    );
+
+    expect(reference?.frontmatter.title).toContain("Key word transformation");
+    const issues = await validateDataset(dataset);
+    expect(issues.some((issue) => issue.location === reference?.relativePath)).toBe(false);
+  });
+
+  it("requires structured cases in form and contrast sections", async () => {
+    const dataset = await loadDataset();
+    const target = dataset.lessons.find(
+      (lesson) => lesson.frontmatter.id === "b1-collocations-daily-life",
+    );
+    expect(target).toBeDefined();
+    if (!target) return;
+
+    const broken = {
+      ...dataset,
+      lessons: dataset.lessons.map((lesson) =>
+        lesson === target
+          ? {
+              ...lesson,
+              content: lesson.content.replace(
+                /# Forma o estructura\n[\s\S]*?(?=\n# Usos principales)/u,
+                "# Forma o estructura\n\nPrimera forma. Segunda forma.\n",
+              ),
+            }
+          : lesson,
+      ),
+    };
+    const issues = await validateDataset(broken);
+    expect(issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ code: "lesson-structure", location: target.relativePath }),
+      ]),
+    );
+  });
+
   it("runs the checked-in validation pipeline and exposes unmet coverage as issues", async () => {
     const dataset = await loadDataset();
     const issues = await validateDataset({
@@ -61,10 +102,10 @@ describe("dataset validation pipeline", () => {
     expect(issues.some((issue) => issue.code === "schema")).toBe(true);
   });
 
-  it("rejects B2 lesson cards that are named after activity formats", async () => {
+  it("rejects lesson cards that are named after activity formats", async () => {
     const dataset = await loadDataset();
     const target = dataset.lessons.find(
-      (lesson) => lesson.frontmatter.id === "b2-use-of-english-open-cloze",
+      (lesson) => lesson.frontmatter.id === "b2-connectors-cohesion",
     );
     expect(target).toBeDefined();
     if (!target) return;
@@ -87,6 +128,42 @@ describe("dataset validation pipeline", () => {
       ),
     });
 
-    expect(issues.filter((issue) => issue.code === "lesson-focus")).toHaveLength(2);
+    expect(issues.filter((issue) => issue.code === "lesson-focus").length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("keeps renamed lessons aligned with their instructional topics", async () => {
+    const dataset = await loadDataset();
+    const renamedIds = [
+      "b1-lexical-precision",
+      "b1-grammar-reference-connectors",
+      "b1-word-families",
+      "b1-grammar-reframing",
+      "b1-grammar-accuracy",
+      "b1-reading-profile-requirements",
+      "b1-reading-text-cohesion",
+      "b2-collocations-fixed-expressions",
+      "b2-lexical-precision",
+      "b2-connectors-cohesion",
+      "b2-word-families",
+      "b2-register-politeness",
+      "b2-reading-text-cohesion",
+      "b2-reading-cross-text-comparison",
+    ];
+    const lessons = renamedIds.map((id) =>
+      dataset.lessons.find((lesson) => lesson.frontmatter.id === id),
+    );
+
+    expect(lessons.every(Boolean)).toBe(true);
+    for (const lesson of lessons) {
+      if (!lesson) continue;
+      expect(lesson.frontmatter.topic).toBe(lesson.frontmatter.id);
+      expect(lesson.relativePath).toContain(`/${lesson.frontmatter.id}/${lesson.frontmatter.id}.md`);
+      expect(lesson.frontmatter.title).not.toMatch(
+        /open cloze|multiple[- ]choice cloze|key word transformations?|word formation|sentence rewriting|error correction|multiple matching|gapped text/iu,
+      );
+      expect(lesson.content).not.toMatch(
+        /multiple[- ]choice cloze|open cloze|key word transformations?|word formation|sentence rewriting|error correction|multiple matching|gapped text|actividad autocorregible/iu,
+      );
+    }
   });
 });

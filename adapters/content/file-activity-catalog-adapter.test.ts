@@ -115,6 +115,7 @@ describe("FileActivityCatalogAdapter", () => {
       await expect(adapter.listActivitiesPage({ taxonomyNodeId: "n2" }, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "a2" }] });
       await expect(adapter.listActivitiesPage({ lessonIds: ["l2"] }, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "a2" }] });
       await expect(adapter.listActivitiesPage({ lessonIds: ["l3"] }, { limit: 2 })).resolves.toMatchObject({ items: [], hasMore: false });
+      await expect(adapter.searchActivitiesPage({ query: "a2", taxonomyNodeIds: ["n2"], activityType: "fill_blank", interactionMode: "standard" }, { page: 1, pageSize: 1 })).resolves.toMatchObject({ items: [{ id: "a2" }], total: 1, totalPages: 1 });
       await expect(adapter.getActivityById("a3")).resolves.toBeNull();
     } finally {
       await rm(datasetRoot, { recursive: true, force: true });

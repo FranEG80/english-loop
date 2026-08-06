@@ -11,8 +11,8 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 
 const TONE_CLASSES: Record<BadgeTone, string> = {
   neutral: "bg-surface-muted text-foreground",
-  b1: "bg-level-b1 text-level-b1-strong",
-  b2: "bg-level-b2 text-level-b2-strong",
+  b1: "border border-level-b1-strong/50 bg-level-b1 text-level-b1-strong",
+  b2: "border border-level-b2-strong/50 bg-level-b2 text-level-b2-strong",
   success: "bg-success-surface text-success",
   danger: "bg-danger-surface text-danger",
   accent: "bg-accent/10 text-primary-dark",

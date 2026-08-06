@@ -73,25 +73,33 @@ export class PrismaCatalogAdapter
     return releaseId;
   }
 
-  private async relatedActivitiesByLesson(releaseId: string): Promise<Map<string, string[]>> {
-    const rows = await this.db().activityVersion.findMany({
+  private async relatedActivitiesByLesson(
+    releaseId: string,
+    lessonIds?: string[],
+  ): Promise<Map<string, string[]>> {
+    if (lessonIds?.length === 0) return new Map();
+
+    const rows = await this.db().activityVersionLesson.findMany({
       where: {
-        releaseId,
-        statusCode: PUBLISHED_CONTENT_STATUS,
-        ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
+        ...(lessonIds ? { lessonId: { in: lessonIds } } : {}),
+        activityVersion: {
+          releaseId,
+          statusCode: PUBLISHED_CONTENT_STATUS,
+          ...(this.demoOnly ? { activity: { is: { isDemo: true } } } : {}),
+        },
       },
       select: {
-        activityId: true,
-        lessonLinks: { select: { lessonId: true, position: true }, orderBy: { position: "asc" } },
+        lessonId: true,
+        position: true,
+        activityVersion: { select: { activityId: true } },
       },
+      orderBy: [{ lessonId: "asc" }, { position: "asc" }],
     });
     const related = new Map<string, string[]>();
     for (const row of rows) {
-      for (const link of row.lessonLinks) {
-        const ids = related.get(link.lessonId) ?? [];
-        ids.push(row.activityId);
-        related.set(link.lessonId, ids);
-      }
+      const ids = related.get(row.lessonId) ?? [];
+      ids.push(row.activityVersion.activityId);
+      related.set(row.lessonId, ids);
     }
     return related;
   }
@@ -145,10 +153,15 @@ export class PrismaCatalogAdapter
       ...this.lessonWhere(releaseId, filters),
       ...(cursor ? { lessonId: { gt: cursor } } : {}),
     };
-    const [rows, related] = await Promise.all([
-      this.db().lessonVersion.findMany({ where, take: pagination.limit + 1, orderBy: { lessonId: "asc" } }),
-      this.relatedActivitiesByLesson(releaseId),
-    ]);
+    const rows = await this.db().lessonVersion.findMany({
+      where,
+      take: pagination.limit + 1,
+      orderBy: { lessonId: "asc" },
+    });
+    const related = await this.relatedActivitiesByLesson(
+      releaseId,
+      rows.map((row) => row.lessonId),
+    );
     const hasMore = rows.length > pagination.limit;
     const pageRows = hasMore ? rows.slice(0, pagination.limit) : rows;
     return {
@@ -165,7 +178,7 @@ export class PrismaCatalogAdapter
     assertNumberedPagination(pagination.page, pagination.pageSize);
     const releaseId = await this.requireActiveReleaseId();
     const where = this.lessonWhere(releaseId, filters);
-    const [rows, total, related] = await Promise.all([
+    const [rows, total] = await Promise.all([
       this.db().lessonVersion.findMany({
         where,
         skip: (pagination.page - 1) * pagination.pageSize,
@@ -173,8 +186,11 @@ export class PrismaCatalogAdapter
         orderBy: { lessonId: "asc" },
       }),
       this.db().lessonVersion.count({ where }),
-      this.relatedActivitiesByLesson(releaseId),
     ]);
+    const related = await this.relatedActivitiesByLesson(
+      releaseId,
+      rows.map((row) => row.lessonId),
+    );
     return numberedPage(
       rows.map((row) => mapPrismaLesson(row, related.get(row.lessonId) ?? [])),
       total,
@@ -195,7 +211,7 @@ export class PrismaCatalogAdapter
         },
         orderBy: { id: "desc" },
       }),
-      this.relatedActivitiesByLesson(releaseId),
+      this.relatedActivitiesByLesson(releaseId, [lessonId]),
     ]);
     return row ? mapPrismaLesson(row, related.get(lessonId) ?? []) : null;
   }

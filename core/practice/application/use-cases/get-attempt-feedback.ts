@@ -11,9 +11,10 @@ export async function getAttemptFeedback(
   attempt: ActivityAttempt,
   reviewRepository?: ReviewRepository,
 ): Promise<AttemptFeedbackDto> {
-  const activity = attempt.activityVersionId && activityCatalog.getActivityByVersionId
+  const pinnedActivity = attempt.activityVersionId && activityCatalog.getActivityByVersionId
     ? await activityCatalog.getActivityByVersionId(attempt.activityVersionId)
-    : await activityCatalog.getActivityById(attempt.activityId);
+    : null;
+  const activity = pinnedActivity ?? await activityCatalog.getActivityById(attempt.activityId);
   const correctAnswer = activity
     ? extractCorrectAnswer(activity.evaluator)
     : [];
