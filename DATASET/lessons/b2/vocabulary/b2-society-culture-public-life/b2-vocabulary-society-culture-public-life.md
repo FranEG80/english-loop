@@ -41,6 +41,23 @@ Para debatir sobre sociedad y vida pública no basta con decir que algo es “bu
 - Distinguir derechos, responsabilidades, acceso y participación.
 - Valorar tradiciones, patrimonio y cambios en la vida pública.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `community` | comunidad | Grupo unido por lugar, interés o experiencia. |
+| `diversity` | diversidad | Presencia de diferencias dentro de un grupo. |
+| `inclusion` | inclusión | Participación real de personas diversas. |
+| `equality` | igualdad | Igualdad de derechos, trato u oportunidades. |
+| `equity` | equidad | Ajuste de recursos para lograr justicia. |
+| `representation` | representación | Presencia o voz en una institución. |
+| `heritage` | patrimonio | Bienes y tradiciones heredados. |
+| `duty` | deber | Obligación moral o legal. |
+| `consultation` | consulta pública | Proceso para recoger opiniones. |
+| `barrier` | barrera, obstáculo | Factor que dificulta el acceso. |
+| `stereotype` | estereotipo | Idea simplificada sobre un grupo. |
+| `citizenship` | ciudadanía | Condición y participación como ciudadano. |
+
 # Léxico y combinaciones
 
 - promote inclusion / improve access / protect rights

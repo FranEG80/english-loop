@@ -44,6 +44,23 @@ La comunicación científica exige distinguir lo que se observa, lo que se inter
 - Expresar correlación, causalidad, fiabilidad y limitaciones.
 - Hablar de publicación, peer review y replicación.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `hypothesis` | hipótesis | Explicación que puede comprobarse. |
+| `theory` | teoría | Marco explicativo amplio respaldado por evidencia. |
+| `variable` | variable | Factor que puede cambiar. |
+| `sample` | muestra | Grupo o material estudiado. |
+| `data` | datos | Información recogida. |
+| `findings` | hallazgos | Resultados interpretados de una investigación. |
+| `evidence` | pruebas, evidencia | Información que apoya o debilita una afirmación. |
+| `correlation` | correlación | Relación estadística entre variables. |
+| `causation` | causalidad | Relación en la que un factor produce otro. |
+| `peer review` | revisión por pares | Evaluación por especialistas del mismo campo. |
+| `reliable` | fiable | Produce resultados consistentes. |
+| `valid` | válido | Mide o demuestra lo que pretende medir. |
+
 # Léxico y combinaciones
 
 - formulate/test a hypothesis / collect/analyse data
@@ -66,7 +83,7 @@ La comunicación científica exige distinguir lo que se observa, lo que se inter
 
 Una hypothesis es una explicación que se puede comprobar; una theory es una explicación amplia apoyada por mucha evidencia. Data son los datos recogidos y findings son los hallazgos. Evidence es la información que apoya o debilita una afirmación; un claim es la afirmación que se quiere defender.
 
-Research methods pueden ser qualitative o quantitative. Una sample es el grupo estudiado y una variable es un factor que puede cambiar. Si dos variables correlate, cambian juntas, pero eso no demuestra que una cause la otra. A reliable result es consistente; a valid method mide lo que pretende medir.
+Los **research methods** pueden ser **qualitative** o **quantitative**. Una **sample** es el grupo estudiado y una **variable** es un factor que puede cambiar. Si dos variables muestran **correlation**, cambian juntas, pero eso no demuestra **causation**. Un resultado **reliable** es consistente; un método **valid** mide lo que pretende medir.
 
 # Palabras que se confunden
 

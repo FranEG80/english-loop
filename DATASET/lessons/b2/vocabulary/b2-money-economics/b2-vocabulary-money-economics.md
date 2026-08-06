@@ -33,7 +33,7 @@ contentVersion: 2
 
 # Resumen
 
-El vocabulario económico permite explicar decisiones personales y tendencias colectivas con más precisión que *cheap*, *expensive* o *rich*. En esta lección se conectan ingresos, gasto, ahorro, deuda e inversión con inflación, crecimiento, empleo y productividad. Las actividades y ejemplos se sitúan en presupuestos familiares, pequeñas empresas, noticias y debates sobre políticas económicas.
+El vocabulario económico permite explicar decisiones personales y tendencias colectivas con más precisión que *cheap*, *expensive* o *rich*. En esta lección se conectan ingresos, gasto, ahorro, deuda e inversión con inflación, crecimiento, empleo y productividad. Los ejemplos se sitúan en presupuestos familiares, pequeñas empresas, noticias y debates sobre políticas económicas.
 
 # Objetivos
 
@@ -41,6 +41,23 @@ El vocabulario económico permite explicar decisiones personales y tendencias co
 - Distinguir ahorrar, invertir, pedir prestado y endeudarse.
 - Explicar el efecto de la inflación, los tipos de interés y el crecimiento.
 - Interpretar expresiones frecuentes de noticias económicas.
+
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `income` | ingresos | Dinero que recibe una persona u organización. |
+| `earnings` | ganancias, ingresos | Cantidad obtenida por trabajo o actividad comercial. |
+| `expense` | gasto | Coste concreto. |
+| `expenditure` | gasto, desembolso | Término más formal o agregado. |
+| `savings` | ahorros | Dinero reservado para el futuro. |
+| `debt` | deuda | Dinero que se debe. |
+| `loan` | préstamo | Dinero prestado que debe devolverse. |
+| `interest` | interés | Coste o rendimiento asociado al dinero. |
+| `interest rate` | tipo de interés | Porcentaje aplicado a un préstamo o ahorro. |
+| `inflation` | inflación | Subida general de precios. |
+| `productivity` | productividad | Producción obtenida con unos recursos. |
+| `deficit` | déficit | Gastos superiores a los ingresos. |
 
 # Léxico y combinaciones
 

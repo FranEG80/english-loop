@@ -108,6 +108,35 @@ describe("dataset validation pipeline", () => {
     );
   });
 
+  it("requires a translated topic glossary in every vocabulary lesson", async () => {
+    const dataset = await loadDataset();
+    const target = dataset.lessons.find(
+      (lesson) => lesson.frontmatter.id === "b1-vocabulary-work-jobs",
+    );
+    expect(target).toBeDefined();
+    if (!target) return;
+
+    const brokenContent = target.content.replace(
+      /# Vocabulario específico\n[\s\S]*?(?=\n# Léxico y combinaciones)/u,
+      "# Vocabulario específico\n\n| Inglés | Español |\n| --- | --- |\n| `job` | empleo |\n",
+    );
+    const issues = await validateDataset({
+      ...dataset,
+      lessons: dataset.lessons.map((lesson) =>
+        lesson === target ? { ...lesson, content: brokenContent } : lesson,
+      ),
+    });
+
+    expect(issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "lesson-vocabulary",
+          location: target.relativePath,
+        }),
+      ]),
+    );
+  });
+
   it("runs the checked-in validation pipeline and exposes unmet coverage as issues", async () => {
     const dataset = await loadDataset();
     const issues = await validateDataset({

@@ -40,6 +40,23 @@ una oferta y las condiciones laborales con naturalidad.
 - Hablar de sueldo, horario, contrato y condiciones.
 - Explicar pasos básicos de una búsqueda de empleo.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `job` | empleo, puesto | Sustantivo contable. |
+| `work` | trabajo | Actividad normalmente incontable. |
+| `career` | carrera profesional | Trayectoria a largo plazo. |
+| `employer` | empleador | Persona u organización que contrata. |
+| `employee` | empleado | Persona contratada. |
+| `colleague` | compañero de trabajo | Trabaja en la misma organización o equipo. |
+| `vacancy` | vacante | Puesto disponible. |
+| `application` | solicitud | Documento o proceso para pedir un empleo. |
+| `interview` | entrevista | Conversación de selección. |
+| `salary` | sueldo | Pago fijo por periodo. |
+| `wage` | salario, jornal | A menudo se calcula por hora o día. |
+| `shift` | turno | Franja de trabajo asignada. |
+
 # Léxico y combinaciones
 
 | Idea | Combinación natural | Ejemplo |

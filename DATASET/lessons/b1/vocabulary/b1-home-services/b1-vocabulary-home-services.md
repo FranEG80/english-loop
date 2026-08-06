@@ -38,6 +38,23 @@ Hablar de una vivienda exige distinguir el espacio (*room, flat, house*), los ob
 - Describir averías y explicar qué servicio se necesita.
 - Usar expresiones funcionales para alquilar, reparar y mantener una casa.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `flat` | piso | Vivienda dentro de un edificio. |
+| `landlord` | casero, arrendador | Propietario que alquila la vivienda. |
+| `tenant` | inquilino | Persona que vive de alquiler. |
+| `rent` | alquiler | Pago periódico por la vivienda. |
+| `deposit` | fianza | Cantidad entregada como garantía. |
+| `leak` | fuga, gotera | Salida no deseada de agua o gas. |
+| `blockage` | atasco | Obstáculo que impide el paso. |
+| `boiler` | caldera | Aparato que calienta agua o vivienda. |
+| `tap` | grifo | *Faucet* en inglés americano. |
+| `plumber` | fontanero | Profesional de tuberías y agua. |
+| `appliance` | electrodoméstico | Aparato doméstico eléctrico. |
+| `furniture` | muebles, mobiliario | Sustantivo incontable. |
+
 # Léxico y combinaciones
 
 - **There is / There are + problema:** *There is a leak under the sink.*

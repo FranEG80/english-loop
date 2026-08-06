@@ -164,8 +164,7 @@ En ofrecimientos y peticiones usamos `some` aunque sea una pregunta:
 
 - `some` se usa en preguntas cuando ofrecemos o pedimos: `Would you like some tea?`
 - `any` puede usarse en afirmativas con el sentido de "cualquiera": `You can take any seat.`
-- `a lot of` es informal
-- en registros formales se prefiere `much` o `many`.
+- `A lot of` es neutral en muchos contextos; en afirmativas formales pueden preferirse `much` o `many` cuando el tono y la estructura lo permiten.
 
 # Mini resumen
 

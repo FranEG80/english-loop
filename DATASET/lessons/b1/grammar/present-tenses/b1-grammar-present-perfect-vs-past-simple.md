@@ -91,7 +91,7 @@ two meetings this morning`.
 - `Been` y `gone` también cambian la interpretación actual.
 - `Marta has been to the bank` suele indicar que ya regresó; `Marta has gone to the bank` indica que sigue fuera.
 - En inglés americano informal es más común el past simple con `just`, `already` y `yet`.
-- El dataset acepta variantes americanas solo cuando la actividad no evalúa específicamente el contraste editorial británico.
+- En inglés británico cuidado se prefiere a menudo el present perfect en esos contextos; mantén una variedad coherente dentro del mismo texto.
 
 # Ejemplos
 

@@ -38,6 +38,25 @@ Las recetas combinan ingredientes, cantidades y acciones: **chop the onion, add 
 - Describir sabor, textura y grado de cocción.
 - Pedir platos y explicar alergias o preferencias de forma clara.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `ingredient` | ingrediente | Elemento usado para preparar un plato. |
+| `flour` | harina | Base de panes y masas. |
+| `herbs` | hierbas aromáticas | Plantas usadas para dar sabor. |
+| `chop` | picar, trocear | Cortar en piezas pequeñas. |
+| `slice` | cortar en rodajas | Crear láminas finas. |
+| `stir` | remover | Mover una mezcla con una cuchara. |
+| `pour` | verter | Hacer pasar un líquido a otro recipiente. |
+| `boil` | hervir | Cocinar en agua muy caliente. |
+| `fry` | freír | Cocinar en aceite o grasa. |
+| `bake` | hornear | Cocinar con calor seco, especialmente masas. |
+| `spicy` | picante, especiado | Con especias intensas o picantes. |
+| `bland` | soso | Con poco sabor. |
+| `crispy` | crujiente | Textura seca que cruje. |
+| `tender` | tierno | Fácil de cortar o masticar. |
+
 # Léxico y combinaciones
 
 - **chop / slice / peel + ingrediente:** *chop the garlic, slice the tomatoes, peel the potatoes.*

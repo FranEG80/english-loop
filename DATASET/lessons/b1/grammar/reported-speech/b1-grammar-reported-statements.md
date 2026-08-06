@@ -124,8 +124,8 @@ No: `Nora told that ...` ni `Nora said me that ...`.
 `He said that he was busy.`  
 `He said he was busy.`
 
-El dataset suele conservar `that` en respuestas largas para hacer visible la
-estructura, salvo que la consigna indique lo contrario.
+En registro neutral, `that` puede mantenerse para hacer más clara una oración
+larga; en conversación es frecuente omitirlo.
 
 ## Backshift básico
 
@@ -193,9 +193,8 @@ Si la información sigue siendo verdadera, es posible mantener el presente:
 
 `The teacher said that the Earth moves around the Sun.`
 
-También puede aparecer backshift (`moved`) en ciertos estilos, pero para hechos
-generales el dataset prioriza el presente para evitar sugerir que dejaron de ser
-ciertos.
+También puede aparecer backshift (`moved`) en ciertos estilos. Mantener el
+presente deja especialmente claro que el hecho general sigue siendo válido.
 
 ## Must
 
@@ -209,7 +208,7 @@ Cuando expresa una deducción lógica, puede mantenerse:
 `“That must be the delivery driver.”`  
 `He said that it must be the delivery driver.`
 
-Las actividades B1 usan contextos claros de obligación.
+El contexto debe aclarar si `must` expresa obligación o deducción.
 
 # Ejemplos
 
@@ -257,11 +256,11 @@ Las actividades B1 usan contextos claros de obligación.
 
 - El backshift es una elección relacionada con tiempo, distancia y vigencia de la información, no una transformación matemática en todos los contextos.
 - Si Ana dice hace un minuto `I am outside` y sabemos que sigue allí, podemos decir `Ana said that she is outside`.
-- Para actividades autocorregibles, la consigna especifica si informamos más tarde o si la situación sigue vigente.
+- Si informamos desde un momento posterior o ya no sabemos si la situación continúa, el pasado suele ser la opción más prudente.
 - El past perfect no suele retroceder más: `“I had already eaten.”` → He said that he had already eaten.
 - `Could`, `would`, `should` y `might` suelen mantenerse: `“I could help.”` → She said that she could help.
 - En conversación espontánea es frecuente omitir `that`.
-- Ambas variantes pueden ser correctas, pero una actividad de texto exacto indicará si debe incluirse.
+- Conservar u omitir `that` no cambia normalmente el contenido; decide según claridad y registro.
 
 # Mini resumen
 

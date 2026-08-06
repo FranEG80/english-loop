@@ -41,6 +41,23 @@ Hablar de delitos y justicia exige distinguir entre lo que se sospecha, lo que s
 - Hablar de pruebas, testigos, veredictos, fianzas y apelaciones.
 - Explicar medidas de prevención y reinserción con un tono equilibrado.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `suspect` | sospechoso | Persona que puede haber cometido un delito. |
+| `offence` | delito, infracción | Acto contrario a la ley. |
+| `evidence` | pruebas | Información usada para demostrar hechos. |
+| `witness` | testigo | Persona que observa o declara sobre un hecho. |
+| `charge` | acusación formal, cargo | Imputación oficial de un delito. |
+| `allegation` | acusación no probada | Afirmación pendiente de demostración. |
+| `trial` | juicio | Proceso judicial para decidir un caso. |
+| `verdict` | veredicto | Decisión sobre culpabilidad. |
+| `sentence` | pena, condena | Castigo impuesto por el tribunal. |
+| `conviction` | condena | Declaración formal de culpabilidad. |
+| `acquittal` | absolución | Decisión de no culpabilidad. |
+| `bail` | libertad bajo fianza | Libertad provisional sujeta a condiciones. |
+
 # Léxico y combinaciones
 
 - investigate a crime / gather evidence / interview a witness
@@ -60,7 +77,7 @@ Hablar de delitos y justicia exige distinguir entre lo que se sospecha, lo que s
 
 # Explicación
 
-Un **crime** es un delito; una persona que puede haberlo cometido es un **suspect**. La policía puede **investigate** un caso y reunir **evidence**. Si existen motivos suficientes, la fiscalía puede **charge** a alguien with an offence: eso es una acusación formal, no una condena. Un tribunal puede **acquit** a la persona si no la considera culpable o **convict** la persona si el veredicto es de culpabilidad.
+Un **crime** es un delito; una persona que puede haberlo cometido es un **suspect**. La policía puede **investigate** un caso y reunir **evidence**. Si existen motivos suficientes, la fiscalía puede **charge someone with an offence**: eso es una acusación formal, no una condena. Un tribunal puede **acquit** (absolver) o **convict** (declarar culpable) a la persona.
 
 Los nombres también tienen funciones distintas. Una **allegation** es una afirmación que todavía no se ha demostrado; un **testimony** es lo que declara un testigo; un **verdict** es la decisión del jurado o del juez; una **sentence** es la pena impuesta después de una condena. Una persona puede **appeal against** una decisión, mientras que **bail** es la libertad provisional bajo ciertas condiciones.
 

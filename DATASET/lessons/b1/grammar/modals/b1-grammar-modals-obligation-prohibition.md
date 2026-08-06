@@ -237,7 +237,7 @@ importa, el contexto debe aclararlo: `We didn't have to reserve, so we didn't`.
 # Excepciones relevantes
 
 - En inglés británico formal puede aparecer `needn't` con el significado de `don't need to`: `You needn't reply today`.
-- El dataset acepta esta forma cuando la actividad la presenta expresamente, pero prioriza `don't need to` en B1.
+- `Don't need to` y `don't have to` son alternativas neutrales y frecuentes para expresar ausencia de necesidad.
 - `Must` también sirve para deducciones: `She must be at home`.
 - Ese uso no expresa obligación y se estudia en la lección de deducción modal.
 - Las reglas reales pueden formularse con `must`, `have to`, `be required to` o `be allowed to`, según el registro.

@@ -197,7 +197,7 @@ Después de `be/get used to`, `to` es una preposición y va seguida de nombre o
 - El motor producía ese sonido en ocasiones repetidas.
 - `Used to` no tiene forma de presente.
 - Para hábitos actuales usamos present simple y adverbios de frecuencia: `I usually cycle to work`, no `I use to cycle to work`.
-- En preguntas informales puede verse `used to` después de `did`, pero la norma editorial de este dataset usa `Did ... use to ...?`.
+- Después de `did`, la escritura estándar usa la base `use`: `Did you use to live here?`; la pronunciación hace que *use to* y *used to* suenen prácticamente igual.
 
 # Mini resumen
 

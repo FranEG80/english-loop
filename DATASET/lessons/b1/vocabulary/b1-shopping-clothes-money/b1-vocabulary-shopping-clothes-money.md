@@ -40,6 +40,23 @@ el coste y resolver el pago o una devolución. Las diferencias entre `price`,
 - Distinguir `cost`, `price`, `value` y `worth`.
 - Hablar de ahorrar, gastar, pedir prestado y devolver un producto.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `receipt` | recibo, tique | Prueba de compra. |
+| `refund` | reembolso | Dinero que se devuelve al cliente. |
+| `exchange` | cambio | Sustitución por otro artículo. |
+| `fitting room` | probador | Lugar para probarse ropa. |
+| `size` | talla | Medida de una prenda o calzado. |
+| `loose` | holgado | No queda ajustado. |
+| `tight` | ajustado, apretado | Queda demasiado cerca del cuerpo. |
+| `bargain` | ganga | Producto con precio especialmente bueno. |
+| `afford` | poder permitirse | Tener dinero suficiente para pagar algo. |
+| `price` | precio | Cantidad que paga el comprador. |
+| `value` | valor | Utilidad o calidad en relación con el precio. |
+| `cash` | efectivo | Dinero en monedas y billetes. |
+
 # Léxico y combinaciones
 
 | Idea | Combinación natural | Ejemplo |

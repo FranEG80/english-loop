@@ -85,7 +85,7 @@ mañana.
 - `Never` ya es negativo, por lo que no usamos `haven't never`.
 - `Just` y `already` se colocan normalmente entre el auxiliar y el participio.
 - `Yet` suele ir al final de preguntas y negativas.
-- En inglés americano informal, el past simple puede aparecer con `just`, pero la variante editorial principal del dataset usa el patrón británico con present perfect.
+- En inglés americano informal, el past simple puede aparecer con `just`; en inglés británico es frecuente el present perfect para una noticia reciente conectada con el presente.
 
 # Ejemplos
 

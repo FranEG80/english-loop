@@ -168,6 +168,12 @@ export async function validateDataset(
       lesson.content,
       issues,
     );
+    validateVocabularyGlossary(
+      lesson.relativePath,
+      lesson.frontmatter,
+      lesson.content,
+      issues,
+    );
     validateLessonInstructionalFocus(
       lesson.relativePath,
       lesson.frontmatter,
@@ -350,6 +356,48 @@ function validateStructuredLessonSections(
       "lesson-structure",
       relativePath,
       `La sección "${heading}" debe presentar sus casos como lista, tabla o apartados estructurados.`,
+    );
+  }
+}
+
+function validateVocabularyGlossary(
+  relativePath: string,
+  lesson: { category: string },
+  content: string,
+  issues: ValidationIssue[],
+): void {
+  if (lesson.category !== "vocabulary") return;
+
+  const body = sectionBody(content, "Vocabulario específico");
+  if (!body) {
+    addIssue(
+      issues,
+      "lesson-vocabulary",
+      relativePath,
+      'Las lecciones de vocabulario deben incluir la sección "Vocabulario específico".',
+    );
+    return;
+  }
+
+  const rows = body
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("|"));
+  const hasTranslatedHeader = rows.some((line) =>
+    /^\|\s*Inglés\s*\|\s*Español\s*\|/iu.test(line),
+  );
+  const entries = rows.filter(
+    (line) =>
+      !/^\|\s*Inglés\s*\|/iu.test(line) &&
+      !/^\|(?:\s*:?-+:?\s*\|)+$/u.test(line),
+  );
+
+  if (!hasTranslatedHeader || entries.length < 10) {
+    addIssue(
+      issues,
+      "lesson-vocabulary",
+      relativePath,
+      "El vocabulario específico debe presentarse en una tabla Inglés/Español con al menos diez entradas temáticas.",
     );
   }
 }

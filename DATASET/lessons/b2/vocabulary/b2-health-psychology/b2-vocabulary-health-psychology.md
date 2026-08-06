@@ -41,6 +41,23 @@ Hablar de salud en B2 exige describir experiencias y servicios con cuidado. Esta
 - Diferenciar síntomas, condiciones, tratamientos y recuperación.
 - Expresar incertidumbre y cuidado al hablar de salud mental.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `condition` | afección, trastorno | Problema de salud definido. |
+| `diagnosis` | diagnóstico | Valoración profesional de una afección. |
+| `treatment` | tratamiento | Medida para mejorar o controlar un problema. |
+| `recovery` | recuperación | Proceso de volver a encontrarse bien. |
+| `prevention` | prevención | Acción para reducir un riesgo antes de que aparezca. |
+| `wellbeing` | bienestar | Estado general físico y emocional. |
+| `anxiety` | ansiedad | Preocupación o malestar intenso; también término clínico. |
+| `mood` | estado de ánimo | Estado emocional en un periodo. |
+| `self-esteem` | autoestima | Valoración que una persona hace de sí misma. |
+| `resilience` | resiliencia | Capacidad para adaptarse y recuperarse. |
+| `burnout` | agotamiento profesional | Cansancio extremo asociado a estrés prolongado. |
+| `seek support` | buscar apoyo | Pedir ayuda personal o profesional. |
+
 # Léxico y combinaciones
 
 - **experience / report / develop + a symptom or condition**

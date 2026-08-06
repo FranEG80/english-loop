@@ -40,6 +40,23 @@ persona exacta, no traducir cada palabra de forma aislada.
 - Hablar de aprobar, suspender y presentarse a un examen.
 - Explicar cómo mejora o empeora el progreso de un estudiante.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `subject` | asignatura | Materia de estudio. |
+| `course` | curso | Programa de estudio completo. |
+| `class` | clase | Sesión, grupo o asignatura según contexto. |
+| `assignment` | tarea, trabajo | Encargo que debe entregarse. |
+| `homework` | deberes | Sustantivo incontable. |
+| `mark` | nota | Uso frecuente en inglés británico. |
+| `grade` | nota, calificación | Muy frecuente en inglés americano. |
+| `revise` | repasar | Prepararse para un examen en inglés británico. |
+| `pass` | aprobar | Obtener un resultado suficiente. |
+| `fail` | suspender | No alcanzar el resultado requerido. |
+| `teacher` | profesor, docente | Persona que enseña. |
+| `skill` | habilidad, destreza | Capacidad aprendida o desarrollada. |
+
 # Léxico y combinaciones
 
 | Idea | Combinación natural | Ejemplo |

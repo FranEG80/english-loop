@@ -80,8 +80,7 @@ garantiza por sí sola.
 
 - `Couldn't have` suele expresar imposibilidad: `I couldn't have finished without your help`.
 - `Could have` afirmativo puede indicar una oportunidad perdida: `I could have finished earlier`.
-- `Had to` indica obligación
-- `needn't have` indica precisamente que no existía necesidad, aunque la acción se realizó.
+- `Had to` indica obligación; `needn't have` indica que no existía necesidad, aunque la acción se realizó.
 
 # Ejemplos
 

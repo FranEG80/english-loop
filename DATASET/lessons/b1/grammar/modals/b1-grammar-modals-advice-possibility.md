@@ -250,7 +250,7 @@ El sujeto no recibe una recomendación; el hablante dice qué espera que ocurra.
 - `Might` es históricamente una forma relacionada con `may`, pero no funciona aquí como un simple pasado.
 - Puede referirse al presente o al futuro: `She might be at home now`; `She might travel next week`.
 - `Had better` comunica un consejo fuerte, a menudo asociado a una consecuencia negativa: `You'd better leave before the storm`.
-- Es una ampliación útil, pero las actividades objetivo de esta lección priorizan `should` y `ought to`.
+- No equivale exactamente a `should`: suele sonar más urgente y puede implicar una advertencia.
 
 # Mini resumen
 

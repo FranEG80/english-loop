@@ -39,6 +39,23 @@ Para explicar un problema de salud conviene nombrar la zona del cuerpo, el sínt
 - Distinguir dolor, enfermedad, lesión y recuperación.
 - Explicar cuándo se necesita una cita o ayuda profesional.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `symptom` | síntoma | Señal de un problema de salud. |
+| `pain` | dolor | Término general. |
+| `ache` | dolor persistente | Aparece en *headache* o *stomach ache*. |
+| `sore throat` | dolor de garganta | Molestia al tragar o hablar. |
+| `swollen` | hinchado | Aumentado por inflamación. |
+| `bruise` | moratón | Marca producida por un golpe. |
+| `sprain` | esguince | Lesión de una articulación. |
+| `rash` | sarpullido, erupción | Cambio visible en la piel. |
+| `dizzy` | mareado | Sensación de pérdida de equilibrio. |
+| `fever` | fiebre | Temperatura corporal elevada. |
+| `appointment` | cita | Hora acordada con un profesional. |
+| `pharmacist` | farmacéutico | Profesional que dispensa medicamentos. |
+
 # Léxico y combinaciones
 
 - **have + síntoma:** have a headache, have a cough, have a fever.

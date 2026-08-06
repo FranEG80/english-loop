@@ -81,8 +81,7 @@ si el periodo continúa.
 - Los verbos de estado como `know`, `own`, `belong` y `have` usan normalmente present perfect simple: `I've known her for years`, no `I've been knowing`.
 - Con actividades dinámicas, el nivel B2 introduce present perfect continuous: `I've been working here for six years`.
 - En B1, el simple sigue siendo correcto para presentar la duración como hecho, especialmente con `live`, `work`, `study` y `teach`.
-- `During` sitúa algo dentro de un periodo
-- no expresa por sí solo cuánto dura una situación: `I met her during the course`, pero `I've known her since the course`.
+- `During` sitúa algo dentro de un periodo, pero no expresa por sí solo cuánto dura una situación: `I met her during the course`, frente a `I've known her since the course`.
 
 # Ejemplos
 
@@ -114,7 +113,7 @@ si el periodo continúa.
 # Excepciones relevantes
 
 - `For` puede omitirse en expresiones de duración informales: `We've been here three hours`.
-- El dataset acepta esta omisión solo cuando la actividad evalúa la estructura completa y la respuesta sigue siendo inequívoca.
+- En registro neutral o cuidado, mantener `for` suele hacer explícita la relación de duración.
 - `Since` también puede significar `porque`, pero ese uso no expresa duración: `Since everyone is ready, we can begin`.
 
 # Mini resumen

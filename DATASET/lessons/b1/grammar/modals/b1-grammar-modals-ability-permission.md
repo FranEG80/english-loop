@@ -217,7 +217,7 @@ forma normal de conceder permiso inmediato.
 # Excepciones relevantes
 
 - En lenguaje cotidiano, especialmente con verbos como `find`, `get` o `finish`, algunos hablantes usan `could` para un éxito puntual cuando el contexto es muy claro.
-- La norma editorial principal del dataset usa `was/were able to` o `managed to` para mantener el contraste pedagógico.
+- Para expresar con claridad un logro puntual, `was/were able to` o `managed to` suelen ser opciones más precisas.
 - `Could` también expresa posibilidad o hace peticiones: `It could rain` y `Could you help me?`.
 - Esos usos no significan capacidad pasada; el contexto los distingue.
 - `May not` puede ser ambiguo entre falta de permiso y posibilidad negativa.

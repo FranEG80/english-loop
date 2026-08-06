@@ -42,6 +42,23 @@ Viajar y vivir en una ciudad implica mucho más que reservar un hotel. En debate
 - Hablar de vivienda, transporte, accesibilidad e infraestructura.
 - Proponer medidas que mejoren la sostenibilidad y la calidad de vida.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `destination` | destino | Lugar al que se viaja. |
+| `attraction` | atracción turística | Lugar o actividad que atrae visitantes. |
+| `infrastructure` | infraestructura | Redes y servicios básicos. |
+| `mobility` | movilidad | Facilidad para desplazarse. |
+| `congestion` | congestión, saturación | Exceso de tráfico o uso de una red. |
+| `overcrowding` | masificación | Exceso de personas en un espacio. |
+| `tourist pressure` | presión turística | Impacto de muchos visitantes sobre un lugar. |
+| `revenue` | ingresos | Dinero generado por una actividad. |
+| `displacement` | desplazamiento, expulsión | Salida de residentes por presión económica o social. |
+| `accessibility` | accesibilidad | Facilidad de uso para personas con distintas capacidades. |
+| `pedestrian-friendly` | adecuado para peatones | Diseñado para caminar con seguridad. |
+| `housing` | vivienda | Sector o conjunto de viviendas. |
+
 # Léxico y combinaciones
 
 - attract visitors / boost local revenue / create seasonal jobs
@@ -106,7 +123,7 @@ Un lugar *accessible* puede ser utilizable por personas con diferentes necesidad
 
 - **Transport** es normalmente incontable en inglés británico: *public transport is reliable*.
 - Para vehículos concretos se usa *means of transport* o *types of transport*.
-- **Travel** es incontable cuando habla de la actividad y contable en expresiones como *business travels* es poco frecuente; para desplazamientos concretos suele ser mejor **journey** o **trip**.
+- **Travel** suele ser incontable cuando designa la actividad: *business travel* y *international travel*. El plural literario *travels* se refiere a viajes o recorridos amplios; para un desplazamiento concreto suelen ser más naturales **journey** o **trip**.
 
 # Para recordar
 

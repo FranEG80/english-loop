@@ -41,6 +41,23 @@ Esta lección permite pasar de describir el tiempo a debatir el cambio climátic
 - Relacionar recursos, desigualdad, salud y cooperación internacional.
 - Valorar medidas sin confundir objetivos con resultados.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `emissions` | emisiones | Gases liberados a la atmósfera. |
+| `carbon footprint` | huella de carbono | Emisiones asociadas a una actividad o producto. |
+| `mitigation` | mitigación | Reducción de las causas del cambio climático. |
+| `adaptation` | adaptación | Preparación frente a sus efectos. |
+| `biodiversity` | biodiversidad | Variedad de seres vivos y ecosistemas. |
+| `food security` | seguridad alimentaria | Acceso estable a alimentos suficientes. |
+| `renewable energy` | energía renovable | Energía de fuentes que se regeneran. |
+| `drought` | sequía | Periodo prolongado con poca lluvia. |
+| `flooding` | inundaciones | Acumulación o desbordamiento de agua. |
+| `target` | objetivo, meta | Resultado concreto que se pretende alcanzar. |
+| `inequality` | desigualdad | Distribución no equitativa de recursos u oportunidades. |
+| `resilience` | resiliencia | Capacidad para resistir y recuperarse. |
+
 # Léxico y combinaciones
 
 - **reduce / cut / offset emissions**
@@ -60,7 +77,7 @@ Esta lección permite pasar de describir el tiempo a debatir el cambio climátic
 
 Las **greenhouse-gas emissions** contribuyen al calentamiento global. La **carbon footprint** estima las emisiones asociadas a una persona, producto o actividad. **Mitigation** intenta reducir la causa —por ejemplo, mediante eficiencia o energías renovables—, mientras que **adaptation** prepara a una comunidad para impactos que ya no se pueden evitar completamente.
 
-Un **ecosystem** depende de la **biodiversity**. La presión sobre el agua, el suelo y los alimentos afecta a la **food security**. Los efectos no se distribuyen de forma igual: la **inequality** puede aumentar la vulnerabilidad de ciertas comunidades. Una **policy** puede fijar un **target**, financiar una transición o require **international cooperation**.
+Un **ecosystem** depende de la **biodiversity**. La presión sobre el agua, el suelo y los alimentos afecta a la **food security**. Los efectos no se distribuyen de forma igual: la **inequality** puede aumentar la vulnerabilidad de ciertas comunidades. Una **policy** puede fijar un **target**, financiar una transición o exigir **international cooperation**.
 
 # Palabras que se confunden
 

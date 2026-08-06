@@ -72,9 +72,9 @@ Distingue posición de movimiento: *in the shop* sitúa a alguien dentro, mientr
 
 # Errores frecuentes
 
-- ❌ *walk in the shop* para expresar entrada /
+- ❌ *walk in the shop* para expresar entrada.
 - ✅ *walk into the shop*.
-- ❌ *cross through the road* /
+- ❌ *cross through the road*.
 - ✅ *cross the road* o *walk across the road*.
 
 # Variación y expresiones fijadas

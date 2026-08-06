@@ -115,7 +115,7 @@ en la oración principal, no después del conector temporal.
 # Excepciones relevantes
 
 - El presente simple también puede expresar planes muy formales o instrucciones de un itinerario: `On Friday, the delegation visits the research centre`.
-- Algunos eventos programados admiten presente continuo si se interpretan como un acuerdo; el contexto de las actividades hará visible la lectura prevista.
+- Algunos eventos programados admiten presente continuo si se interpretan como un acuerdo; el contexto y el foco del hablante hacen visible la lectura prevista.
 
 # Mini resumen
 

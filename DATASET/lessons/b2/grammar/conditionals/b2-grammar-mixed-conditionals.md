@@ -109,7 +109,7 @@ pasado hipotético; el resultado, `would have + participio`.
 # Excepciones relevantes
 
 - Los estados pueden extenderse durante largos periodos y hacer menos visible el límite temporal.
-- La actividad debe incluir marcadores como `now`, `yesterday` o `at the time` cuando sean necesarios para garantizar una sola interpretación.
+- Marcadores como `now`, `yesterday` o `at the time` ayudan a hacer explícita la relación entre causa y consecuencia.
 
 # Mini resumen
 

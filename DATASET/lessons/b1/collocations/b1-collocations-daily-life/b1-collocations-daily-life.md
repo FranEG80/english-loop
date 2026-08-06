@@ -87,7 +87,7 @@ Observa también los determinantes. Se dice *do homework* sin artículo cuando s
 
 - Algunas combinaciones varían por región o contexto.
 - *Do the washing-up* es muy habitual en inglés británico; *do the dishes* es también frecuente.
-- En una respuesta de examen, usa la opción que encaja con el nombre dado.
+- Si el contexto exige una combinación concreta, elige la opción que encaja naturalmente con el nombre dado.
 
 # Regla práctica
 

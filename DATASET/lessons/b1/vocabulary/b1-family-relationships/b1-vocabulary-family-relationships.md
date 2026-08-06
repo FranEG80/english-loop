@@ -38,6 +38,23 @@ Para describir una familia hay que distinguir el vínculo (*sibling, cousin, in-
 - Describir confianza, apoyo, admiración, desacuerdo y reconciliación.
 - Hablar de convivencia y contacto con colocaciones naturales.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `sibling` | hermano o hermana | Término sin marca de género. |
+| `relative` | familiar, pariente | Cualquier miembro de la familia. |
+| `cousin` | primo o prima | La misma palabra para ambos géneros. |
+| `in-laws` | familia política | Familia de la pareja. |
+| `stepparent` | padrastro o madrastra | Progenitor por una nueva unión familiar. |
+| `only child` | hijo o hija única | Persona sin hermanos. |
+| `close-knit` | muy unido | Describe un grupo con lazos estrechos. |
+| `supportive` | comprensivo, que apoya | Ofrece ayuda emocional o práctica. |
+| `bring up` | criar | Educar a un niño durante su crecimiento. |
+| `get on with` | llevarse bien con | Describe una buena relación. |
+| `fall out with` | enfadarse con | Implica una discusión o ruptura. |
+| `make up` | reconciliarse | Recuperar la relación tras un conflicto. |
+
 # Léxico y combinaciones
 
 - **get on with + persona:** *I get on well with my cousins.*

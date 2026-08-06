@@ -41,6 +41,23 @@ Una persona con nivel B2 necesita algo más que *news* y *information* para anal
 - Identificar audiencia, tono, sesgo y propósito.
 - Explicar cómo se verifica o se difunde una información.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `source` | fuente | Origen de una información. |
+| `coverage` | cobertura informativa | Tratamiento de un hecho por los medios. |
+| `headline` | titular | Texto principal que presenta una noticia. |
+| `claim` | afirmación | Idea que puede requerir pruebas. |
+| `evidence` | pruebas, evidencia | Información que apoya o refuta una afirmación. |
+| `bias` | sesgo | Tendencia que influye en la selección o presentación. |
+| `audience` | audiencia, público | Personas a quienes se dirige el mensaje. |
+| `tone` | tono | Actitud comunicada por el lenguaje. |
+| `misinformation` | información errónea | Información falsa sin intención clara de engañar. |
+| `disinformation` | desinformación deliberada | Información creada o difundida para engañar. |
+| `fact-checking` | verificación de hechos | Comprobación de afirmaciones y datos. |
+| `reliability` | fiabilidad | Grado de confianza que merece una fuente. |
+
 # Léxico y combinaciones
 
 - **report + a fact / a development / a claim**

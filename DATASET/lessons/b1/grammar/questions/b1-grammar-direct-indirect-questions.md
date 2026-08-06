@@ -237,11 +237,11 @@ speech trabaja cambios de tiempo y referencia.
 # Excepciones relevantes
 
 - En preguntas muy breves o conversaciones informales puede oírse una pregunta directa después de una pausa: `Can you tell me—where is the station?` Son dos unidades discursivas distintas.
-- En la estructura integrada que practica el dataset usamos `where the station is`.
+- En una pregunta indirecta integrada usamos orden afirmativo: `Can you tell me where the station is?`.
 - Con expresiones como `What do you think ...?`, la partícula puede pertenecer al contenido: `What do you think the problem is?` No decimos `What do you think is the problem?` cuando `the problem` es el sujeto de `is`.
 - Estas estructuras se introducen en dificultad alta con contexto inequívoco.
 - `Whether` puede ir antes de un infinitivo (`I don't know whether to wait`), pero esa construcción no equivale a `whether I should wait` en todas las tareas.
-- Las actividades B1 especifican la estructura esperada.
+- La elección entre cláusula e infinitivo depende de si hace falta expresar sujeto, tiempo o modalidad.
 
 # Mini resumen
 

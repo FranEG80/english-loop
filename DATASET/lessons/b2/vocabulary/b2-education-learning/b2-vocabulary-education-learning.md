@@ -44,6 +44,23 @@ Esta lección permite hablar de educación más allá de school y university. Pr
 - Hablar de evaluación, plagio, revisión y feedback.
 - Explicar educación profesional, universitaria y aprendizaje permanente.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `compulsory education` | educación obligatoria | Etapa exigida por la ley. |
+| `vocational education` | formación profesional | Prepara para un oficio o sector. |
+| `undergraduate` | estudiante de grado | Cursa una primera titulación universitaria. |
+| `postgraduate` | estudiante de posgrado | Continúa después de una titulación inicial. |
+| `tuition fees` | tasas de matrícula | Coste académico de la institución. |
+| `scholarship` | beca | Ayuda económica para estudiar. |
+| `lecture` | clase magistral | Exposición ante un grupo, normalmente grande. |
+| `seminar` | seminario | Sesión con debate especializado. |
+| `workshop` | taller | Sesión práctica y participativa. |
+| `tutorial` | tutoría | Orientación individual o en grupo pequeño. |
+| `assignment` | trabajo evaluado | Tarea que debe entregarse. |
+| `dissertation` | trabajo de investigación | Proyecto extenso de una titulación. |
+
 # Léxico y combinaciones
 
 - enrol on/in a course / attend a lecture / submit an assignment

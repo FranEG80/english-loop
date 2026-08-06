@@ -40,6 +40,23 @@ qué tipo de obra o deporte prefieres y por qué una experiencia te parece
 - Expresar preferencias con razones y comparaciones.
 - Elegir adjetivos que describan la experiencia y no solo a la persona.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `hobby` | afición | Actividad habitual por placer. |
+| `leisure` | ocio | Término general, algo más formal. |
+| `plot` | trama | Secuencia de hechos de una obra. |
+| `setting` | ambientación | Lugar y época de la historia. |
+| `character` | personaje | Persona o figura de una obra. |
+| `lyrics` | letra de una canción | Palabras cantadas; suele usarse en plural. |
+| `tune` | melodía | Sucesión musical reconocible. |
+| `beat` | ritmo, pulso | Golpe regular de la música. |
+| `performance` | actuación | Presentación ante un público. |
+| `audience` | público | Personas que ven o escuchan. |
+| `thrilling` | emocionante | Produce mucha emoción. |
+| `moving` | conmovedor | Produce una emoción profunda. |
+
 # Léxico y combinaciones
 
 | Idea | Combinación natural | Ejemplo |

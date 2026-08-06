@@ -41,6 +41,23 @@ Las ideas creativas necesitan algo más que entusiasmo: deben analizarse, probar
 - Valorar viabilidad, impacto, riesgo, coste y restricciones.
 - Explicar decisiones, compromisos y cambios de estrategia.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `brainstorming` | lluvia de ideas | Generación inicial de opciones. |
+| `proposal` | propuesta | Idea desarrollada para evaluación. |
+| `prototype` | prototipo | Primera versión para probar una solución. |
+| `pilot` | prueba piloto | Aplicación limitada antes de ampliar. |
+| `launch` | lanzamiento | Presentación pública de un producto o proyecto. |
+| `feasible` | viable | Posible con los recursos disponibles. |
+| `cost-effective` | rentable, eficiente en costes | Ofrece buen resultado por su coste. |
+| `scalable` | escalable | Puede crecer sin perder eficacia. |
+| `constraint` | limitación, restricción | Factor que reduce las opciones. |
+| `trade-off` | compromiso entre ventajas y costes | Ganancia que exige renunciar a otra cosa. |
+| `assumption` | supuesto | Idea aceptada provisionalmente como cierta. |
+| `rule out` | descartar | Eliminar una opción de la consideración. |
+
 # Léxico y combinaciones
 
 - generate ideas / brainstorm solutions / explore an option

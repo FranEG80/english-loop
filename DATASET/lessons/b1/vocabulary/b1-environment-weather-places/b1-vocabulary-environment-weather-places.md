@@ -38,6 +38,23 @@ Aquí se aprende a describir el tiempo atmosférico, los paisajes y los lugares 
 - Describir ciudad, campo, costa, montaña y espacios protegidos.
 - Hablar de reciclaje, contaminación, energía y transporte.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `weather` | tiempo meteorológico | Condiciones de un momento concreto. |
+| `climate` | clima | Patrón habitual durante muchos años. |
+| `forecast` | previsión | Predicción del tiempo. |
+| `drought` | sequía | Periodo largo con poca lluvia. |
+| `flood` | inundación | Agua que cubre terreno normalmente seco. |
+| `litter` | basura tirada | Residuos abandonados en espacios públicos. |
+| `waste` | residuos, desperdicio | Material no aprovechado. |
+| `pollution` | contaminación | Daño al aire, agua o suelo. |
+| `wildlife` | fauna y flora silvestres | Seres vivos no domesticados. |
+| `countryside` | campo | Zona rural. |
+| `coast` | costa | Zona junto al mar. |
+| `renewable energy` | energía renovable | Energía de fuentes que se regeneran. |
+
 # Léxico y combinaciones
 
 - **It is + adjective:** It is cloudy but warm.

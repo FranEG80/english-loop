@@ -252,8 +252,8 @@ No decimos que el marcador es el agente humano.
 - El análisis práctico sigue siendo el mismo para la concordancia: `shop is`, `shops are`.
 - En conversaciones, una pasiva sin agente puede ocultar responsabilidad: `A mistake was made`.
 - Si saber quién actuó es importante, la activa suele ser más clara: `The supplier entered the wrong address`.
-- Los verbos con dos objetos permiten más de una pasiva (`Mina was given a certificate`
-- `A certificate was given to Mina`), pero esta ampliación se usa solo cuando la respuesta está completamente determinada por la consigna.
+- Los verbos con dos objetos permiten más de una pasiva: `Mina was given a certificate` y `A certificate was given to Mina`.
+- La primera destaca a la persona receptora; la segunda, el objeto transferido.
 
 # Mini resumen
 

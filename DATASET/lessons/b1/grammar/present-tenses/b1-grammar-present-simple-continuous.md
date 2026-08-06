@@ -118,7 +118,7 @@ pero el contexto sigue siendo decisivo.
 # Excepciones relevantes
 
 - En publicidad y lenguaje informal pueden aparecer continuos deliberados con verbos de estado, como `I'm loving it`.
-- Son elecciones estilísticas marcadas, no el patrón neutral que se espera en actividades B1.
+- Son elecciones estilísticas marcadas, no el patrón neutral para expresar un estado.
 - `Have` es de estado cuando significa posesión (`I have a bicycle`) y dinámico en actividades o experiencias (`I'm having a shower`, `We're having trouble`).
 
 # Mini resumen

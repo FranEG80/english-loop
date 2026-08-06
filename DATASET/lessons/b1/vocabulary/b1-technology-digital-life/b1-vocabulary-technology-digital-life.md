@@ -38,6 +38,23 @@ Esta lección reúne el vocabulario que se necesita para hablar de móviles, ord
 - Hablar de archivos, mensajes, cuentas y navegación.
 - Explicar problemas de conexión y pasos sencillos para resolverlos.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `device` | dispositivo | Aparato electrónico. |
+| `screen` | pantalla | Superficie donde aparece la imagen. |
+| `keyboard` | teclado | Conjunto de teclas. |
+| `charger` | cargador | Aparato o cable para cargar. |
+| `battery` | batería | Almacena energía. |
+| `account` | cuenta | Perfil de acceso a un servicio. |
+| `username` | nombre de usuario | Identifica la cuenta. |
+| `password` | contraseña | Protege el acceso. |
+| `attachment` | archivo adjunto | Archivo unido a un mensaje. |
+| `download` | descargar | Copiar al dispositivo desde un servicio. |
+| `upload` | subir, cargar | Enviar desde el dispositivo a un servicio. |
+| `offline` | sin conexión | No conectado a internet o a la red. |
+
 # Léxico y combinaciones
 
 - **device + function:** a phone stores contacts; a printer produces copies.

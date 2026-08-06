@@ -139,7 +139,7 @@ El gerundio perfecto, admitted having misread the figures, y el infinitivo perfe
 - Cuando aparece una persona, es natural advise cyclists to wear a helmet.
 - Del mismo modo, recommend puede introducir un sustantivo o una cláusula that; el patrón debe elegirse según lo que sigue.
 - La variante británica usa normalmente recommend that he extend the hours en registro formal, aunque también se oye recommend that he extends the hours en variedades donde se prefiere una forma finita ordinaria.
-- En actividades autocorregibles se especifica el patrón objetivo para que la respuesta sea determinista.
+- Cuando existen varios patrones válidos, el complemento y el registro determinan cuál resulta más natural.
 
 # Mini resumen
 

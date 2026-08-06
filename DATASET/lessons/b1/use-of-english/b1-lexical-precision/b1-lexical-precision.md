@@ -82,7 +82,7 @@ Aplica tres filtros en orden. Primero, descarta la opción que no encaja gramati
 # Variación y registro
 
 - Algunas opciones pueden ser gramaticalmente posibles en otro contexto, pero solo una encaja con las palabras concretas de la oración.
-- En una pregunta de examen se busca la combinación más natural y precisa, no una frase que podría entenderse con mucho esfuerzo.
+- En inglés cuidado se busca la combinación más natural y precisa, no una frase que solo pueda entenderse con esfuerzo.
 
 # Reglas de elección
 

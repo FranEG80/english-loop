@@ -272,7 +272,7 @@ No repetimos normalmente el nombre dentro de la tag.
 - Con `there is/are`, la tag conserva `there`: `There's a pharmacy nearby, isn't there?` `There weren't any delays, were there?`
 - Con `nobody/no one`, el pronombre de la tag suele ser `they`: `Nobody complained, did they?`
 - La entonación cambia la intención: una entonación descendente busca acuerdo; una ascendente expresa una pregunta más genuina.
-- Como el dataset es textual, el contexto explica la intención cuando sea relevante.
+- En un texto escrito, el contexto, la puntuación y la situación comunicativa ayudan a interpretar esa intención.
 
 # Mini resumen
 

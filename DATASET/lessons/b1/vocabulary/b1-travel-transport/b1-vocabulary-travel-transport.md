@@ -41,6 +41,23 @@ experiencia completa del viaje.
 - Diferenciar `journey`, `trip`, `travel`, `tour` y `voyage`.
 - Informar de retrasos, cancelaciones y objetos perdidos.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `ticket` | billete | Documento para viajar. |
+| `return ticket` | billete de ida y vuelta | En inglés americano suele decirse *round-trip ticket*. |
+| `platform` | andén | Para trenes. |
+| `gate` | puerta de embarque | En aeropuertos. |
+| `luggage` | equipaje | Normalmente incontable. |
+| `customs` | aduana | Control de bienes al entrar en un país. |
+| `delay` | retraso | Sustantivo; *be delayed* es «sufrir un retraso». |
+| `cancellation` | cancelación | Cuando un servicio no se realiza. |
+| `journey` | trayecto, viaje | Destaca el desplazamiento. |
+| `trip` | viaje, excursión | Experiencia concreta, normalmente con regreso. |
+| `accommodation` | alojamiento | Normalmente incontable. |
+| `destination` | destino | Lugar final del viaje. |
+
 # Léxico y combinaciones
 
 | Idea | Combinación natural | Ejemplo |

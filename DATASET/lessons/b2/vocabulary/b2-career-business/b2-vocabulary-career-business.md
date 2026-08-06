@@ -44,6 +44,23 @@ Hablar de carrera profesional y empresa exige más precisión que decir job o mo
 - Distinguir salary, wage, income, revenue, turnover y profit.
 - Describir contratación, externalización, fusiones y relaciones con stakeholders.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `vacancy` | vacante | Puesto disponible. |
+| `applicant` | solicitante | Persona que presenta una solicitud. |
+| `candidate` | candidato | Persona considerada para un puesto. |
+| `role` | función, puesto | Responsabilidades dentro de una organización. |
+| `career path` | trayectoria profesional | Progresión de puestos y experiencia. |
+| `transferable skills` | competencias transferibles | Habilidades útiles en distintos sectores. |
+| `workload` | carga de trabajo | Cantidad de trabajo asignada. |
+| `revenue` | ingresos por ventas | Dinero que entra antes de descontar costes. |
+| `turnover` | facturación; rotación | El sentido depende del contexto empresarial. |
+| `profit` | beneficio | Cantidad restante después de los costes. |
+| `stakeholder` | parte interesada | Persona o grupo afectado por una organización. |
+| `outsourcing` | externalización | Contratación externa de una función o servicio. |
+
 # Léxico y combinaciones
 
 - apply for a vacancy / shortlist candidates / conduct an interview
@@ -64,9 +81,9 @@ Hablar de carrera profesional y empresa exige más precisión que decir job o mo
 
 # Explicación
 
-Una vacancy es un puesto disponible; un applicant solicita ese puesto y un candidate puede pasar a la fase final. Una role describe las funciones, mientras que position puede referirse al puesto formal dentro de una organización. Career path es la trayectoria profesional y transferable skills son habilidades útiles en más de un sector.
+Una **vacancy** es un puesto disponible; un **applicant** solicita ese puesto y un **candidate** puede pasar a la fase final. **Role** describe las funciones, mientras que **position** puede referirse al puesto formal dentro de una organización. **Career path** es la trayectoria profesional y **transferable skills** son habilidades útiles en más de un sector.
 
-En finanzas, salary suele ser una cantidad fija periódica para un empleado; wages suelen calcularse por hora o por trabajo. Revenue es el dinero que entra por ventas, turnover puede referirse a las ventas totales o a la rotación de personal según el contexto, y profit es lo que queda después de costes.
+En finanzas, **salary** suele ser una cantidad fija periódica para un empleado; **wages** suelen calcularse por hora o por trabajo. **Revenue** es el dinero que entra por ventas, **turnover** puede referirse a las ventas totales o a la rotación de personal según el contexto, y **profit** es lo que queda después de costes.
 
 # Palabras que se confunden
 

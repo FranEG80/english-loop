@@ -38,6 +38,23 @@ Para hablar de un día normal no basta con traducir literalmente cada verbo. En 
 - Elegir colocaciones frecuentes para tareas domésticas, comidas y descansos.
 - Explicar cuándo una actividad es habitual, puntual o una obligación pendiente.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `wake up` | despertarse | Dejar de dormir. |
+| `get up` | levantarse | Salir de la cama. |
+| `get dressed` | vestirse | Ponerse la ropa. |
+| `get ready` | prepararse | Estar listo para salir o empezar. |
+| `commute` | desplazarse al trabajo o estudio | Trayecto habitual de ida y vuelta. |
+| `chores` | tareas domésticas | Pequeños trabajos de la casa. |
+| `laundry` | colada, ropa para lavar | Ropa y proceso de lavado. |
+| `washing-up` | fregado de platos | *Dishes* es frecuente en inglés americano. |
+| `tidy` | ordenar | Colocar las cosas en su sitio. |
+| `rubbish` | basura | *Trash/garbage* en inglés americano. |
+| `nap` | siesta | Sueño breve durante el día. |
+| `run late` | ir con retraso | No ajustarse al horario previsto. |
+
 # Léxico y combinaciones
 
 - **get + expresión:** get up, get dressed, get ready, get home, get back.

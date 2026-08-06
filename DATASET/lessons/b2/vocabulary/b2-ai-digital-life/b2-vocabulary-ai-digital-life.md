@@ -42,6 +42,23 @@ La inteligencia artificial aparece en el trabajo, la educación, los servicios p
 - Valorar sesgos, privacidad, seguridad y huella digital.
 - Resolver problemas de compatibilidad, actualizaciones y configuración.
 
+# Vocabulario específico
+
+| Inglés | Español | Nota breve |
+| --- | --- | --- |
+| `algorithm` | algoritmo | Conjunto de reglas o pasos. |
+| `dataset` | conjunto de datos | Datos organizados para análisis o entrenamiento. |
+| `model` | modelo | Sistema entrenado para producir resultados. |
+| `machine learning` | aprendizaje automático | Métodos que aprenden patrones de datos. |
+| `bias` | sesgo | Patrón sistemático que distorsiona resultados. |
+| `privacy` | privacidad | Control sobre los datos personales. |
+| `consent` | consentimiento | Permiso informado. |
+| `encryption` | cifrado | Protección de datos mediante codificación. |
+| `data breach` | brecha de datos | Acceso o exposición no autorizados. |
+| `digital footprint` | huella digital | Rastro dejado al usar servicios digitales. |
+| `patch` | parche, actualización correctiva | Corrige un fallo o vulnerabilidad. |
+| `troubleshoot` | diagnosticar y resolver fallos | Buscar la causa de un problema técnico. |
+
 # Léxico y combinaciones
 
 - train a model / process data / detect a pattern
