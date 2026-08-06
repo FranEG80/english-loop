@@ -6,8 +6,6 @@ import {
 import type { ActivityQuestionDto } from "@/core/models";
 import { FocusedPracticeClient } from "@/features/review/FocusedPracticeClient";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 
 export default async function FocusedSessionPage({
   params,
@@ -16,10 +14,9 @@ export default async function FocusedSessionPage({
   params: Promise<{ runId: string }>;
   searchParams: Promise<{ activityId?: string | string[] }>;
 }) {
-  const [{ runId }, query, session, locale] = await Promise.all([
+  const [{ runId }, query, locale] = await Promise.all([
     params,
     searchParams,
-    requireSession(),
     getLocalePort().getLocale(),
   ]);
   const ids = Array.isArray(query.activityId)
@@ -37,7 +34,6 @@ export default async function FocusedSessionPage({
   const dictionary = getDictionary(locale);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="mx-auto max-w-3xl">
         <FocusedPracticeClient
           runId={runId}
@@ -45,6 +41,5 @@ export default async function FocusedSessionPage({
           dictionary={dictionary}
         />
       </div>
-    </WorkspaceShell>
   );
 }

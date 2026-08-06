@@ -6,14 +6,11 @@ import {
 } from "@/adapters/adapter-factory";
 import { getReviewHub, taxonomyLabel } from "@/core/use-cases";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 import { Badge } from "@/shared/ui/Badge";
 import { Card } from "@/shared/ui/Card";
 import { EmptyState } from "@/shared/ui/EmptyState";
 
 export default async function ReviewPage() {
-  const session = await requireSession();
   const locale = await getLocalePort().getLocale();
   const dictionary = getDictionary(locale);
   const hub = await getReviewHub(
@@ -66,7 +63,6 @@ export default async function ReviewPage() {
   );
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-9">
         <header>
           <p className="font-hand text-3xl font-bold text-coral">Remember longer</p>
@@ -91,6 +87,5 @@ export default async function ReviewPage() {
         {renderItems(dictionary.review.dueTitle, hub.queue.dueItems)}
         {renderItems(dictionary.review.upcomingTitle, hub.queue.upcomingItems)}
       </div>
-    </WorkspaceShell>
   );
 }

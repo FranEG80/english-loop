@@ -7,8 +7,6 @@ import {
 import { getLessonDetail } from "@/core/use-cases";
 import { DailyLessonView } from "@/features/daily/DailyLessonView";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 
 export default async function LessonDetailPage({
   params,
@@ -16,8 +14,7 @@ export default async function LessonDetailPage({
   params: Promise<{ lessonId: string }>;
 }) {
   const { lessonId } = await params;
-  const [session, locale, lesson] = await Promise.all([
-    requireSession(),
+  const [locale, lesson] = await Promise.all([
     getLocalePort().getLocale(),
     getLessonDetail(getLearningContentPort(), lessonId),
   ]);
@@ -25,7 +22,6 @@ export default async function LessonDetailPage({
   const dictionary = getDictionary(locale);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-6">
         <Link href="/lessons" className="font-medium text-primary-dark">
           ← {dictionary.nav.lessons}
@@ -46,6 +42,5 @@ export default async function LessonDetailPage({
           ))}
         </section>
       </div>
-    </WorkspaceShell>
   );
 }

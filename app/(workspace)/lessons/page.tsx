@@ -7,15 +7,12 @@ import { listLessonCatalog } from "@/core/use-cases";
 import { CatalogFilters } from "@/features/catalog/CatalogFilters";
 import { LessonCatalog } from "@/features/catalog/LessonCatalog";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 
 export default async function LessonsPage({
   searchParams,
 }: {
   searchParams: Promise<{ q?: string; level?: string }>;
 }) {
-  const session = await requireSession();
   const [locale, params] = await Promise.all([
     getLocalePort().getLocale(),
     searchParams,
@@ -31,7 +28,6 @@ export default async function LessonsPage({
   });
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-6">
         <header>
           <p className="font-hand text-3xl font-bold text-coral">Learn the pattern</p>
@@ -48,6 +44,5 @@ export default async function LessonsPage({
         />
         <LessonCatalog lessons={lessons} dictionary={dictionary} />
       </div>
-    </WorkspaceShell>
   );
 }

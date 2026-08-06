@@ -5,8 +5,6 @@ import {
   getProgressPort,
 } from "@/adapters/adapter-factory";
 import { getDictionary } from "@/shared/i18n";
-import { requireSession } from "@/shared/lib/require-session";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
 import { DailySummaryView } from "@/features/daily/DailySummaryView";
 
 const TIMEZONE = "UTC";
@@ -16,7 +14,6 @@ export default async function DailySummaryPage({
 }: {
   searchParams: Promise<{ correct?: string; incorrect?: string }>;
 }) {
-  const session = await requireSession();
   const locale = await getLocalePort().getLocale();
   const dictionary = getDictionary(locale);
   const params = await searchParams;
@@ -28,7 +25,6 @@ export default async function DailySummaryPage({
   ]);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <DailySummaryView
         dictionary={dictionary}
         locale={locale}
@@ -38,6 +34,5 @@ export default async function DailySummaryPage({
         correctCount={Number(params.correct ?? 0)}
         incorrectCount={Number(params.incorrect ?? 0)}
       />
-    </WorkspaceShell>
   );
 }

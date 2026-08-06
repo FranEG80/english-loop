@@ -7,15 +7,12 @@ import { listActivityCatalog } from "@/core/use-cases";
 import { ActivityCatalog } from "@/features/catalog/ActivityCatalog";
 import { CatalogFilters } from "@/features/catalog/CatalogFilters";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 
 export default async function ActivitiesPage({
   searchParams,
 }: {
   searchParams: Promise<{ q?: string; level?: string }>;
 }) {
-  const session = await requireSession();
   const [locale, params] = await Promise.all([
     getLocalePort().getLocale(),
     searchParams,
@@ -31,7 +28,6 @@ export default async function ActivitiesPage({
   });
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-6">
         <header>
           <p className="font-hand text-3xl font-bold text-coral">Try every format</p>
@@ -50,6 +46,5 @@ export default async function ActivitiesPage({
         />
         <ActivityCatalog activities={activities} dictionary={dictionary} />
       </div>
-    </WorkspaceShell>
   );
 }

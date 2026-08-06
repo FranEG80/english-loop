@@ -23,7 +23,7 @@ import {
 
 describe("auth server actions", () => {
   it("opens the seeded demo account and redirects to the workspace", async () => {
-    await expect(loginDemoAction()).rejects.toMatchObject({ message: "REDIRECT:/" });
+    await expect(loginDemoAction()).rejects.toMatchObject({ message: "REDIRECT:/dashboard" });
     expect(authPort.login).toHaveBeenCalledWith({
       email: "demo@englishloop.local",
       password: "EnglishLoop-demo-2026!",
@@ -48,14 +48,14 @@ describe("auth server actions", () => {
     const login = new FormData();
     login.set("email", "alex@example.com");
     login.set("password", "secret");
-    await expect(loginAction(undefined, login)).rejects.toMatchObject({ message: "REDIRECT:/" });
+    await expect(loginAction(undefined, login)).rejects.toMatchObject({ message: "REDIRECT:/dashboard" });
     expect(authPort.login).toHaveBeenCalledWith({ email: "alex@example.com", password: "secret" });
 
     const register = new FormData();
     register.set("name", "Alex");
     register.set("email", "alex@example.com");
     register.set("password", "secret");
-    await expect(registerAction(undefined, register)).rejects.toMatchObject({ message: "REDIRECT:/" });
+    await expect(registerAction(undefined, register)).rejects.toMatchObject({ message: "REDIRECT:/dashboard" });
     expect(authPort.register).toHaveBeenCalledWith({ name: "Alex", email: "alex@example.com", password: "secret" });
   });
 

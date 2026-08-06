@@ -17,7 +17,6 @@ import {
   updateSettingsAction,
 } from "@/features/settings/actions";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
 import { LogoutButton } from "@/shared/layout/LogoutButton";
 import { requireSession } from "@/shared/lib/require-session";
 import { DailyGoalStepper } from "@/features/settings/DailyGoalStepper";
@@ -32,7 +31,6 @@ export default async function SettingsPage() {
   const dictionary = getDictionary(locale);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-8">
         <header>
           <p className="font-hand text-3xl font-bold text-coral">Make it yours</p>
@@ -226,6 +224,5 @@ export default async function SettingsPage() {
           </form>
         </section>
       </div>
-    </WorkspaceShell>
   );
 }

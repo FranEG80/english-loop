@@ -80,7 +80,7 @@ test("registers from the UI and renders the persisted user instead of the demo",
   await page.getByLabel("Contraseña").fill("Ui-e2e-password-123!");
   await page.getByRole("button", { name: "Crear cuenta" }).click();
 
-  await expect(page).toHaveURL(/\/$/);
+  await expect(page).toHaveURL(/\/dashboard$/);
   await expect(page.getByText(`¡Hola, ${name}!`)).toBeVisible();
   await expect(page.getByText(email)).toBeVisible();
   await expect(page.getByText("Alex", { exact: true })).toHaveCount(0);

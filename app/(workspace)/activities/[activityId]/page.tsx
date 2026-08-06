@@ -8,8 +8,6 @@ import { getActivityDetail } from "@/core/use-cases";
 import { ActivityPreviewClient } from "@/features/activities/ActivityPreviewClient";
 import { getActivityDefinition } from "@/features/activities/activity-registry";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 import { Badge } from "@/shared/ui/Badge";
 
 export default async function ActivityDetailPage({
@@ -18,8 +16,7 @@ export default async function ActivityDetailPage({
   params: Promise<{ activityId: string }>;
 }) {
   const { activityId } = await params;
-  const [session, locale, activity] = await Promise.all([
-    requireSession(),
+  const [locale, activity] = await Promise.all([
     getLocalePort().getLocale(),
     getActivityDetail(getLearningContentPort(), activityId),
   ]);
@@ -28,7 +25,6 @@ export default async function ActivityDetailPage({
   const definition = getActivityDefinition(activity);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="mx-auto flex max-w-3xl flex-col gap-6">
         <Link href="/activities" className="font-medium text-primary-dark">
           ← {dictionary.nav.activities}
@@ -66,6 +62,5 @@ export default async function ActivityDetailPage({
           {dictionary.catalog.practiceTopic}
         </Link>
       </div>
-    </WorkspaceShell>
   );
 }

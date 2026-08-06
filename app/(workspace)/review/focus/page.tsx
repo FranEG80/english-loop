@@ -7,8 +7,6 @@ import { ALLOWED_SESSION_SIZES } from "@/core/models/session-size";
 import { getTaxonomy } from "@/core/use-cases";
 import { createFocusedPracticeAction } from "@/features/review/actions";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 import { Card } from "@/shared/ui/Card";
 
 function flatten(nodes: TaxonomyNodeDto[]): TaxonomyNodeDto[] {
@@ -20,8 +18,7 @@ export default async function FocusPage({
 }: {
   searchParams: Promise<{ taxonomyNodeId?: string }>;
 }) {
-  const [session, locale, params, taxonomy] = await Promise.all([
-    requireSession(),
+  const [locale, params, taxonomy] = await Promise.all([
     getLocalePort().getLocale(),
     searchParams,
     getTaxonomy(getLearningContentPort()),
@@ -30,7 +27,6 @@ export default async function FocusPage({
   const nodes = flatten(taxonomy);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="mx-auto flex max-w-2xl flex-col gap-6">
         <header>
           <p className="font-hand text-3xl font-bold text-coral">Build your own loop</p>
@@ -85,6 +81,5 @@ export default async function FocusPage({
           </form>
         </Card>
       </div>
-    </WorkspaceShell>
   );
 }

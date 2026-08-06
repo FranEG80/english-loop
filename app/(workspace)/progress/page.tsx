@@ -5,14 +5,11 @@ import {
 } from "@/adapters/adapter-factory";
 import { getProgressSnapshot, taxonomyLabel } from "@/core/use-cases";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
-import { requireSession } from "@/shared/lib/require-session";
 import { Badge } from "@/shared/ui/Badge";
 import { Card } from "@/shared/ui/Card";
 import { WeeklyActivityChart } from "@/features/progress/WeeklyActivityChart";
 
 export default async function ProgressPage() {
-  const session = await requireSession();
   const locale = await getLocalePort().getLocale();
   const dictionary = getDictionary(locale);
   const { overview, reviewQueue, taxonomy } = await getProgressSnapshot(
@@ -21,7 +18,6 @@ export default async function ProgressPage() {
   );
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-8">
         <header>
           <p className="font-hand text-3xl font-bold text-coral">Track the loop</p>
@@ -99,6 +95,5 @@ export default async function ProgressPage() {
           {dictionary.home.pendingReviews}: {reviewQueue.dueItems.length}
         </p>
       </div>
-    </WorkspaceShell>
   );
 }

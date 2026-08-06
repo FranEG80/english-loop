@@ -11,6 +11,6 @@ describe("DailySummaryView", () => {
     expect(screen.getByText("4")).toBeInTheDocument();
     expect(screen.getByText("Child")).toBeInTheDocument();
     expect(screen.getByText("missing")).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: en.daily.summaryBackHome })).toHaveAttribute("href", "/");
+    expect(screen.getByRole("link", { name: en.daily.summaryBackHome })).toHaveAttribute("href", "/dashboard");
   });
 });

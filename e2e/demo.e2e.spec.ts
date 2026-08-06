@@ -5,7 +5,7 @@ test.describe("demo account", () => {
     await page.goto("/");
     await page.getByRole("button", { name: /Probar la demo|Try the demo/i }).click();
 
-    await expect(page).toHaveURL(/\/$/);
+    await expect(page).toHaveURL(/\/dashboard$/);
     await expect(page.getByText("¡Hola, Alex!")).toBeVisible();
     await expect(page.getByText("75%", { exact: true })).toBeVisible();
     await expect(page.getByText("6 available")).toBeVisible();
@@ -27,11 +27,21 @@ test.describe("demo account", () => {
     expect(result.lessons.items).toHaveLength(6);
     expect(result.activities.items).toHaveLength(12);
 
+    let documentNavigationRequests = 0;
+    page.on("request", (request) => {
+      if (request.isNavigationRequest() && request.resourceType() === "document") {
+        documentNavigationRequests += 1;
+      }
+    });
+
     for (const path of ["/lessons", "/activities", "/review", "/progress", "/settings"]) {
-      await page.goto("/");
       await page.locator(`aside a[href="${path}"]`).click();
       await expect(page).toHaveURL(new RegExp(`${path}$`));
       await expect(page.getByRole("main")).toBeVisible();
+      await expect(page.locator("aside")).toBeVisible();
+      expect(documentNavigationRequests).toBe(0);
+      await page.locator('aside a[href="/dashboard"]').click();
+      await expect(page).toHaveURL(/\/dashboard$/);
     }
   });
 });

@@ -21,7 +21,6 @@ import {
   listLessonCatalog,
 } from "@/core/use-cases";
 import { getDictionary } from "@/shared/i18n";
-import { WorkspaceShell } from "@/shared/layout/WorkspaceShell";
 import { requireSession } from "@/shared/lib/require-session";
 import { Badge } from "@/shared/ui/Badge";
 import { Progress } from "@/shared/ui/Progress";
@@ -41,7 +40,6 @@ export default async function DashboardPage() {
   ]);
 
   return (
-    <WorkspaceShell dictionary={dictionary} locale={locale} session={session}>
       <div className="flex flex-col gap-8">
         <header className="flex flex-col gap-2">
           <p className="font-hand text-3xl font-bold text-coral">
@@ -134,6 +132,5 @@ export default async function DashboardPage() {
           </Link>
         </div>
       </div>
-    </WorkspaceShell>
   );
 }
