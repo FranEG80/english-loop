@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b2-use-of-english-register-rewriting
+id: b2-register-politeness
 title: "Registro y cortesía en inglés B2"
 level: B2
 category: use-of-english
-topic: b2-register-rewriting
+topic: b2-register-politeness
 subtopics:
-  - b2-register-rewriting
+  - b2-register-politeness
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:

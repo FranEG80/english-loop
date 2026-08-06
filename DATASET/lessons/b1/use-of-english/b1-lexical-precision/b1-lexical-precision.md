@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b1-use-of-english-multiple-choice-cloze
-title: "Multiple-choice cloze: elegir por contexto, gramática y colocación"
+id: b1-lexical-precision
+title: "Colocaciones y contexto B1"
 level: B1
 category: use-of-english
-topic: b1-multiple-choice-cloze
+topic: b1-lexical-precision
 subtopics:
-  - b1-multiple-choice-cloze
+  - b1-lexical-precision
 difficulty: 3
 estimatedMinutes: 30
 learningObjectives:
@@ -22,7 +22,7 @@ relatedLessonIds: []
 tags:
   - b1
   - use-of-english
-  - multiple-choice-cloze
+  - lexical-precision
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -31,7 +31,7 @@ contentVersion: 1
 
 # Resumen
 
-Una actividad de multiple-choice cloze no se resuelve traduciendo cada palabra de forma aislada. Primero se entiende la situación y después se comprueba qué opción encaja en significado, gramática y combinación habitual.
+La precisión léxica no consiste en traducir cada palabra de forma aislada. Primero se entiende la situación y después se comprueba qué palabra encaja en significado, gramática y combinación habitual.
 
 # Objetivos
 
@@ -40,15 +40,15 @@ Una actividad de multiple-choice cloze no se resuelve traduciendo cada palabra d
 
 # Explicación
 
-Lee la oración completa y localiza qué función necesita el hueco: un verbo, una preposición, un conector, un adjetivo o una expresión fija. Después compara las opciones dentro de la frase, no como traducciones sueltas. En un texto real, una opción puede parecer posible por su significado general, pero fallar porque exige otra preposición o porque no forma la colocación habitual.
+Lee la oración completa y localiza qué función cumple cada palabra: verbo, preposición, conector, adjetivo o expresión fija. Después compara las alternativas dentro de la frase, no como traducciones sueltas. Una palabra puede parecer posible por su significado general, pero fallar porque exige otra preposición o porque no forma la colocación habitual.
 
 # Forma o estructura
 
-El hueco puede aparecer después de un auxiliar, una preposición, un artículo o un conector. Comprueba la forma verbal, el número, el tiempo y el patrón que sigue: `make a decision`, `apologise for`, `look after` y `put off` no se pueden completar cambiando libremente la palabra que los acompaña.
+La elección léxica depende de la estructura que rodea a la palabra. Comprueba la forma verbal, el número, el tiempo y el patrón que sigue: `make a decision`, `apologise for`, `look after` y `put off` no permiten cambiar libremente la palabra que los acompaña.
 
 # Usos principales
 
-Este formato practica decisiones léxicas y gramaticales en contextos cotidianos: rutinas, viajes, trabajo, compras, estudio y comunicación. También ayuda a reconocer conectores como `although`, `so` y `despite`, además de verbos con partícula y combinaciones frecuentes.
+Estas relaciones léxicas aparecen en contextos cotidianos: rutinas, viajes, trabajo, compras, estudio y comunicación. También conviene reconocer conectores como `although`, `so` y `despite`, además de verbos con partícula y combinaciones frecuentes.
 
 # Contrastes importantes
 

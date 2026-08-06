@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b1-reading-gapped-text-cohesion
-title: "Reconstruir la cohesión en textos con huecos"
+id: b1-reading-text-cohesion
+title: "Cohesión y progresión en textos B1"
 level: B1
 category: reading
-topic: b1-reading-gapped-text
+topic: b1-reading-text-cohesion
 subtopics:
-  - b1-reading-gapped-text
+  - b1-reading-text-cohesion
 difficulty: 2
 estimatedMinutes: 20
 learningObjectives:
@@ -23,7 +23,7 @@ relatedLessonIds:
 tags:
   - b1
   - reading
-  - gapped-text
+  - text-cohesion
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -32,7 +32,7 @@ contentVersion: 1
 
 # Resumen
 
-Aprende a reconstruir un texto breve cuando faltan frases. La clave no es solo la gramática: también importan los pronombres, los conectores, el tiempo verbal y la progresión de ideas.
+La cohesión permite seguir un texto breve sin perder de vista sus referentes ni la progresión de ideas. No depende solo de la gramática: también importan los pronombres, los conectores, el tiempo verbal y la relación entre las oraciones.
 
 # Objetivos
 
@@ -42,7 +42,7 @@ Aprende a reconstruir un texto breve cuando faltan frases. La clave no es solo l
 
 # Explicación
 
-Lee primero el texto completo para identificar tema, participantes y dirección. Después observa la frase anterior y la posterior al hueco. Una opción correcta suele repetir una idea con palabras nuevas, explicar un pronombre o preparar la información siguiente. Una opción incorrecta puede ser gramatical, pero introduce un tema nuevo, cambia de tiempo sin motivo o contradice un detalle.
+Lee el texto completo para identificar tema, participantes y dirección. Observa cómo una oración retoma la anterior y cómo prepara la información siguiente. Una relación cohesiva suele repetir una idea con palabras nuevas, explicar un pronombre o desarrollar la información previa. Una relación débil introduce un tema nuevo, cambia de tiempo sin motivo o contradice un detalle.
 
 # Forma o estructura
 
@@ -50,8 +50,8 @@ Busca señales pequeñas: *however* suele introducir contraste; *as a result* an
 
 # Usos principales
 
-- Ordenar una experiencia personal o una noticia breve.
-- Reconstruir instrucciones, reseñas y mensajes informativos.
+- Seguir una experiencia personal o una noticia breve.
+- Interpretar instrucciones, reseñas y mensajes informativos.
 - Relacionar una causa con su efecto y una propuesta con su justificación.
 
 # Contrastes importantes
@@ -77,7 +77,7 @@ Un conector no siempre aparece al principio de la frase: *The result, however, w
 
 # Mini resumen
 
-Ante cada hueco, identifica el antecedente, la relación lógica y el tiempo verbal. Lee después del hueco: muchas respuestas se confirman por la frase que viene a continuación.
+Ante cada oración, identifica el antecedente, la relación lógica y el tiempo verbal. Comprueba también cómo la frase siguiente desarrolla o limita la información anterior.
 
 # Comprobación rápida autocorregible
 
@@ -87,4 +87,3 @@ Ante cada hueco, identifica el antecedente, la relación lógica y el tiempo ver
 2. **The volunteers arrived early. ___ prepared the room.**
    - Respuesta: `They`
    - Explicación: el pronombre plural retoma a *the volunteers*.
-

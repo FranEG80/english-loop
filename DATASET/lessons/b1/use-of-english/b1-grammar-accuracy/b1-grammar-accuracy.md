@@ -1,17 +1,17 @@
 ---
 schemaVersion: 1.0.0
-id: b1-use-of-english-error-correction
-title: "Error correction: localizar y corregir un único error"
+id: b1-grammar-accuracy
+title: "Precisión gramatical B1: tiempo, concordancia y régimen"
 level: B1
 category: use-of-english
-topic: b1-error-correction
+topic: b1-grammar-accuracy
 subtopics:
-  - b1-error-correction
+  - b1-grammar-accuracy
 difficulty: 3
 estimatedMinutes: 30
 learningObjectives:
   - "Identificar errores frecuentes de tiempo, concordancia, auxiliar, artículo y preposición."
-  - "Corregir exactamente el segmento defectuoso sin reescribir contenido válido."
+  - "Revisar una oración y corregir solo la estructura que rompe el significado o la gramática."
 prerequisites:
   - b1-grammar-present-perfect-vs-past-simple
   - b1-grammar-articles-reference
@@ -22,7 +22,7 @@ relatedLessonIds: []
 tags:
   - b1
   - use-of-english
-  - error-correction
+  - grammar-accuracy
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -31,7 +31,7 @@ contentVersion: 1
 
 # Resumen
 
-Corregir errores no significa cambiar una oración que ya es correcta. Primero hay que decidir si existe un problema y después localizar el segmento exacto: tiempo verbal, auxiliar, concordancia, artículo, preposición o patrón de palabras.
+La precisión gramatical depende de revisar la oración completa y distinguir un error real de una variante aceptable. Los puntos más sensibles en B1 son el tiempo verbal, los auxiliares, la concordancia, los artículos, las preposiciones y los patrones de palabras.
 
 # Objetivos
 
@@ -40,7 +40,7 @@ Corregir errores no significa cambiar una oración que ya es correcta. Primero h
 
 # Explicación
 
-Lee la oración de principio a fin. Comprueba el sujeto y el verbo, las referencias temporales, los auxiliares de preguntas y negativas, los artículos y las preposiciones. Si todo encaja, la respuesta debe ser “no error” o la opción equivalente. Si hay un error, cambia solo la palabra o el grupo necesario y vuelve a leer la frase.
+Lee la oración de principio a fin. Comprueba el sujeto y el verbo, las referencias temporales, los auxiliares de preguntas y negativas, los artículos y las preposiciones. Si todo encaja, conserva la oración. Si algo falla, cambia solo la palabra o el grupo necesario y vuelve a leer la frase para comprobar que el significado sigue intacto.
 
 # Forma o estructura
 
@@ -48,7 +48,7 @@ Los errores habituales incluyen `She go` → `She goes`, `I have seen him yester
 
 # Usos principales
 
-Este formato sirve para revisar mensajes, formularios, avisos, conversaciones y textos de estudio. También ayuda a detectar interferencias del español, especialmente en artículos, preposiciones, auxiliares y concordancia.
+Estos contrastes aparecen al redactar mensajes, formularios, avisos, conversaciones y textos de estudio. También ayudan a detectar interferencias del español, especialmente en artículos, preposiciones, auxiliares y concordancia.
 
 # Contrastes importantes
 
@@ -72,7 +72,7 @@ Este formato sirve para revisar mensajes, formularios, avisos, conversaciones y 
 
 # Excepciones relevantes
 
-Algunas expresiones admiten más de una variante según la variedad del inglés o el contexto. En estas actividades se corrigen únicamente errores inequívocos del estándar B1. No se debe marcar una oración correcta solo porque otra formulación también sería posible.
+Algunas expresiones admiten más de una variante según la variedad del inglés o el contexto. La corrección debe centrarse en errores inequívocos del estándar B1 y no rechazar una oración solo porque otra formulación también sería posible.
 
 # Mini resumen
 

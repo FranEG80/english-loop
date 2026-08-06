@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b1-reading-people-matching
-title: "Relacionar personas y textos B1"
+id: b1-reading-profile-requirements
+title: "Perfiles, requisitos y equivalencias B1"
 level: B1
 category: reading
-topic: b1-reading-people-matching
+topic: b1-reading-profile-requirements
 subtopics:
-  - b1-reading-people-matching
+  - b1-reading-profile-requirements
 difficulty: 3
 estimatedMinutes: 28
 learningObjectives:
@@ -23,7 +23,7 @@ relatedLessonIds:
 tags:
   - b1
   - reading
-  - matching
+  - profile-requirements
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -32,7 +32,7 @@ contentVersion: 1
 
 # Resumen
 
-En una tarea de matching, cada perfil contiene varias condiciones: actividad, horario, precio, ubicación o preferencia. No basta con encontrar una palabra igual; hay que comprobar que el texto satisface todas las pistas importantes.
+Cada perfil combina varias condiciones: actividad, horario, precio, ubicación o preferencia. No basta con encontrar una palabra igual; hay que comprobar que el texto satisface todas las pistas importantes.
 
 # Objetivos
 
@@ -53,7 +53,7 @@ Convierte cada perfil en una lista breve. Por ejemplo: «sábado por la mañana 
 
 # Usos principales
 
-1. Elegir cursos, clubes, alojamientos o actividades.
+1. Comparar cursos, clubes, alojamientos o actividades.
 2. Relacionar anuncios con necesidades concretas.
 3. Detectar información implícita pero necesaria.
 4. Justificar una elección con dos o más evidencias.
@@ -71,7 +71,7 @@ Perfil: **Marta wants a free art class on Saturday morning near the station.**
 
 # Errores frecuentes
 
-- Elegir el primer texto que menciona la actividad.
+- Elegir el primer texto que menciona una palabra del perfil.
 - Ignorar *only*, *except* o *not included*.
 - Suponer que una ciudad grande tiene una estación cerca del anuncio.
 - Confundir una recomendación con un requisito.
@@ -93,4 +93,3 @@ Perfil: `Leo needs a cheap room with breakfast, close to the university.`
 1. `£20 per night, breakfast included, five minutes from the university` encaja.
 2. `£15 per night, breakfast not available, city centre` no encaja.
 3. La palabra decisiva puede ser `included`.
-

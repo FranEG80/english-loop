@@ -1,30 +1,30 @@
 ---
 schemaVersion: 1.0.0
-id: b2-reading-multiple-matching
-title: "Multiple matching: localizar coincidencias B2"
+id: b2-reading-cross-text-comparison
+title: "Opiniones y experiencias en varios textos B2"
 level: B2
 category: reading
-topic: b2-reading-multiple-matching
+topic: b2-reading-cross-text-comparison
 subtopics:
-  - b2-reading-multiple-matching
+  - b2-reading-cross-text-comparison
 difficulty: 3
 estimatedMinutes: 30
 learningObjectives:
   - "Localizar opiniones y experiencias equivalentes en varios textos."
   - "Distinguir coincidencia parcial de cumplimiento completo de una afirmación."
 prerequisites:
-  - b1-reading-people-matching
+  - b1-reading-profile-requirements
   - b2-reading-gist-detail-inference
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-reading-people-matching
+  - b1-reading-profile-requirements
   - b2-reading-gist-detail-inference
 tags:
   - b2
   - reading
-  - multiple-matching
+  - cross-text-comparison
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -32,7 +32,7 @@ contentVersion: 1
 ---
 # Resumen
 
-En multiple matching debes relacionar afirmaciones con varios textos breves. La clave es comparar significado, alcance y actitud, no perseguir palabras idénticas.
+Cuando comparas varios textos breves, la clave es relacionar significado, alcance y actitud, no perseguir palabras idénticas.
 
 # Objetivos
 
@@ -72,7 +72,7 @@ Las afirmaciones suelen contener verbos de actitud (*regrets, recommends, doubts
 
 # Excepciones relevantes
 
-Una misma palabra puede aparecer en varios textos. Si ocurre, decide por la idea completa y por la actitud del hablante. En una tarea bien construida cada afirmación tiene una coincidencia principal, pero los distractores pueden compartir un detalle.
+Una misma palabra puede aparecer en varios textos. Si ocurre, decide por la idea completa y por la actitud del hablante. Dos textos pueden compartir un detalle y, sin embargo, expresar conclusiones distintas.
 
 # Mini resumen
 
@@ -82,5 +82,4 @@ Divide cada afirmación en significado, sujeto y alcance; busca paráfrasis; con
 
 1. **The guide was useful, although too detailed for a short visit.** ¿Qué afirmación encaja? → `valora la información pero critica su extensión`.
 2. ¿Basta con que otro texto diga *useful*? → `no`: también debe expresar la misma reserva sobre la extensión.
-
 

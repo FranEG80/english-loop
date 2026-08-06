@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b2-use-of-english-open-cloze
+id: b2-connectors-cohesion
 title: "Conectores y cohesión textual B2"
 level: B2
 category: use-of-english
-topic: b2-open-cloze
+topic: b2-connectors-cohesion
 subtopics:
-  - b2-open-cloze
+  - b2-connectors-cohesion
 difficulty: 4
 estimatedMinutes: 27
 learningObjectives:
@@ -14,13 +14,13 @@ learningObjectives:
   - "Usar artículos, auxiliares, pronombres, conectores y preposiciones con precisión."
   - "Revisar la referencia y la lógica de un párrafo completo."
 prerequisites:
-  - b1-use-of-english-open-cloze
+  - b1-grammar-reference-connectors
   - b2-grammar-advanced-connectors-discourse
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-use-of-english-open-cloze
+  - b1-grammar-reference-connectors
 tags:
   - b2
   - use-of-english

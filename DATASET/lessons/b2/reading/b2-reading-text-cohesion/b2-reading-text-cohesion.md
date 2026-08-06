@@ -1,30 +1,30 @@
 ---
 schemaVersion: 1.0.0
-id: b2-reading-gapped-text
+id: b2-reading-text-cohesion
 title: "Reconstruir textos B2 mediante cohesión y estructura"
 level: B2
 category: reading
-topic: b2-reading-gapped-text
+topic: b2-reading-text-cohesion
 subtopics:
-  - b2-reading-gapped-text
+  - b2-reading-text-cohesion
 difficulty: 3
 estimatedMinutes: 25
 learningObjectives:
   - "Reconstruir textos largos mediante referencia, progresión lógica y estructura retórica."
   - "Usar evidencia anterior y posterior para seleccionar cada fragmento."
 prerequisites:
-  - b1-reading-gapped-text-cohesion
+  - b1-reading-text-cohesion
   - b2-grammar-advanced-connectors-discourse
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-reading-gapped-text-cohesion
+  - b1-reading-text-cohesion
   - b2-reading-gist-detail-inference
 tags:
   - b2
   - reading
-  - gapped-text
+  - text-cohesion
   - cohesion
 status: published
 author: openai-codex
@@ -34,13 +34,13 @@ contentVersion: 1
 
 # Resumen
 
-Los textos B2 organizan ideas con referencias, concesiones, ejemplos y cambios de perspectiva. Esta lección enseña a reconstruirlos usando señales del párrafo completo, no solo la frase inmediata.
+Los textos B2 organizan ideas con referencias, concesiones, ejemplos y cambios de perspectiva. Comprender esa arquitectura exige usar señales del párrafo completo, no solo interpretar cada frase de manera aislada.
 
 # Objetivos
 
 - Seguir referencias léxicas y gramaticales a distancia.
 - Reconocer el papel retórico de una frase: ejemplo, contraste, consecuencia o conclusión.
-- Confirmar una opción con evidencia antes y después del hueco.
+- Confirmar una interpretación con evidencia en el párrafo completo.
 
 # Explicación
 
@@ -68,8 +68,8 @@ Una referencia anafórica mira hacia atrás; una catafórica puede anunciar info
 
 # Errores frecuentes
 
-- ❌ Elegir una frase porque suena bien sin comprobar su función retórica.
-- ✅ Preguntar si el hueco necesita un ejemplo, una causa o una conclusión.
+- ❌ Aceptar una frase porque suena bien sin comprobar su función retórica.
+- ✅ Decidir si la relación expresa un ejemplo, una causa o una conclusión.
 - ❌ Ignorar *the latter*, *such a change* o *this concern*.
 - ✅ Localizar siempre el antecedente y comprobar que coincide en significado.
 
@@ -79,7 +79,7 @@ Algunas frases pueden encajar gramaticalmente en dos lugares, pero solo uno mant
 
 # Mini resumen
 
-Lee el texto como una estructura: referencia, función retórica, relación lógica y continuidad temática. La mejor opción debe funcionar antes y después del hueco.
+Lee el texto como una estructura: referencia, función retórica, relación lógica y continuidad temática. Cada oración debe encajar con el movimiento de ideas del párrafo.
 
 # Comprobación rápida autocorregible
 
@@ -89,4 +89,3 @@ Lee el texto como una estructura: referencia, función retórica, relación lóg
 2. **Many residents supported the idea. For instance, local groups offered volunteers.** ¿Qué función tiene la segunda frase?
    - Respuesta: `ejemplo`
    - Explicación: concreta cómo se manifestó el apoyo.
-

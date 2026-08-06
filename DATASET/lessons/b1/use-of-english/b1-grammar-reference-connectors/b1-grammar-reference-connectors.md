@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b1-use-of-english-open-cloze
-title: "Open cloze: completar huecos con gramática y cohesión"
+id: b1-grammar-reference-connectors
+title: "Artículos, referencia y conectores B1"
 level: B1
 category: use-of-english
-topic: b1-open-cloze
+topic: b1-grammar-reference-connectors
 subtopics:
-  - b1-open-cloze
+  - b1-grammar-reference-connectors
 difficulty: 3
 estimatedMinutes: 30
 learningObjectives:
@@ -22,7 +22,8 @@ relatedLessonIds: []
 tags:
   - b1
   - use-of-english
-  - open-cloze
+  - grammar-reference
+  - connectors
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -31,7 +32,7 @@ contentVersion: 1
 
 # Resumen
 
-El open cloze presenta una oración o un texto breve con un hueco y sin opciones. La respuesta suele ser una sola palabra gramatical: un artículo, una preposición, un pronombre, un auxiliar o un conector.
+Los artículos, pronombres, auxiliares, preposiciones y conectores construyen las relaciones que mantienen unido un texto. Su elección depende de la estructura de la oración y de la referencia que se desarrolla en el contexto.
 
 # Objetivos
 
@@ -40,15 +41,15 @@ El open cloze presenta una oración o un texto breve con un hueco y sin opciones
 
 # Explicación
 
-Mira primero la estructura: si aparece un nombre contable singular, quizá falte un artículo; si hay un verbo en participio, puede faltar un auxiliar; si hay dos ideas relacionadas, puede necesitarse un conector. Después lee la frase completa y comprueba que la palabra elegida mantiene el tiempo, la referencia y el significado.
+Mira primero la estructura: un nombre contable singular necesita un determinante adecuado; un verbo en participio puede necesitar un auxiliar; dos ideas relacionadas pueden requerir un conector. Después lee la frase completa y comprueba que la elección mantiene el tiempo, la referencia y el significado.
 
 # Forma o estructura
 
-Cada hueco se completa normalmente con una palabra. Pueden faltar `a`, `the`, `to`, `of`, `for`, `that`, `who`, `it`, `has`, `did`, `not` o conectores como `although` y `because`. En una actividad de varios huecos, cada respuesta se comprueba por separado, pero todas deben encajar en el mismo contexto.
+Las palabras funcionales más frecuentes son `a`, `the`, `to`, `of`, `for`, `that`, `who`, `it`, `has`, `did`, `not` y conectores como `although` y `because`. Cada una debe encajar en la estructura local y, al mismo tiempo, mantener el sentido del párrafo.
 
 # Usos principales
 
-Este formato ayuda a consolidar artículos y referencia, auxiliares en preguntas y negativas, preposiciones después de verbos y adjetivos, pronombres y conectores de causa, contraste, tiempo y condición.
+Estas relaciones ayudan a consolidar artículos y referencia, auxiliares en preguntas y negativas, preposiciones después de verbos y adjetivos, pronombres y conectores de causa, contraste, tiempo y condición.
 
 # Contrastes importantes
 

@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b2-use-of-english-word-formation
+id: b2-word-families
 title: "Familias léxicas y precisión B2"
 level: B2
 category: use-of-english
-topic: b2-word-formation
+topic: b2-word-families
 subtopics:
-  - b2-word-formation
+  - b2-word-families
 difficulty: 4
 estimatedMinutes: 28
 learningObjectives:
@@ -14,12 +14,12 @@ learningObjectives:
   - "Inferir categoría, polaridad, número y registro a partir de la sintaxis."
   - "Comprobar que la palabra formada encaja con el significado del texto."
 prerequisites:
-  - b1-use-of-english-word-formation
+  - b1-word-families
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-use-of-english-word-formation
+  - b1-word-families
 tags:
   - b2
   - use-of-english
@@ -85,7 +85,7 @@ No todos los sufijos son productivos con todas las raíces. Algunas formas cambi
 
 # Mini resumen
 
-- Mira las palabras que rodean el hueco para decidir la categoría.
+- Mira las palabras que rodean al término para decidir la categoría.
 - Comprueba polaridad, número, ortografía y registro.
 - Aprende familias completas, no solo la raíz.
 

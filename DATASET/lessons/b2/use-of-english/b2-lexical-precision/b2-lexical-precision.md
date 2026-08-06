@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b2-use-of-english-multiple-choice-cloze
+id: b2-lexical-precision
 title: "Colocaciones y matiz léxico B2"
 level: B2
 category: use-of-english
-topic: b2-multiple-choice-cloze
+topic: b2-lexical-precision
 subtopics:
-  - b2-multiple-choice-cloze
+  - b2-lexical-precision
 difficulty: 4
 estimatedMinutes: 28
 learningObjectives:
@@ -14,12 +14,12 @@ learningObjectives:
   - "Reconocer colocaciones, verbos frasales y expresiones idiomáticas B2."
   - "Elegir vocabulario preciso a partir de la gramática y del sentido global."
 prerequisites:
-  - b1-use-of-english-multiple-choice-cloze
+  - b1-lexical-precision
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-use-of-english-multiple-choice-cloze
+  - b1-lexical-precision
 tags:
   - b2
   - use-of-english

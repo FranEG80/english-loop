@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b2-use-of-english-fixed-expressions
+id: b2-collocations-fixed-expressions
 title: "Expresiones y colocaciones B2"
 level: B2
 category: use-of-english
-topic: b2-advanced-fixed-expressions
+topic: b2-collocations-fixed-expressions
 subtopics:
-  - b2-advanced-fixed-expressions
+  - b2-collocations-fixed-expressions
 difficulty: 4
 estimatedMinutes: 30
 learningObjectives:

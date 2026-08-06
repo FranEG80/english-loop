@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b1-use-of-english-word-formation
-title: "Word formation: crear la palabra que necesita la oración"
+id: b1-word-families
+title: "Familias léxicas y categorías gramaticales B1"
 level: B1
 category: use-of-english
-topic: b1-word-formation
+topic: b1-word-families
 subtopics:
-  - b1-word-formation
+  - b1-word-families
 difficulty: 3
 estimatedMinutes: 30
 learningObjectives:
@@ -20,7 +20,7 @@ relatedLessonIds: []
 tags:
   - b1
   - use-of-english
-  - word-formation
+  - word-families
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -29,7 +29,7 @@ contentVersion: 1
 
 # Resumen
 
-En word formation se da una palabra base y hay que transformarla para que encaje en una oración. El contexto indica si hace falta un nombre, un verbo, un adjetivo, un adverbio o una forma negativa.
+Una familia léxica reúne palabras relacionadas que cumplen funciones gramaticales distintas. El contexto indica si necesitamos un nombre, un verbo, un adjetivo, un adverbio o una forma negativa.
 
 # Objetivos
 
@@ -38,7 +38,7 @@ En word formation se da una palabra base y hay que transformarla para que encaje
 
 # Explicación
 
-Mira las palabras que rodean el hueco. Después de un artículo suele aparecer un nombre (`a decision`); antes de un nombre suele aparecer un adjetivo (`a useful guide`); un verbo puede necesitar un adverbio (`carefully`). La palabra base entre paréntesis es una pista, pero no siempre basta con añadir un sufijo: algunas palabras cambian una letra o tienen una forma irregular.
+Mira las palabras que rodean al término. Después de un artículo suele aparecer un nombre (`a decision`); antes de un nombre suele aparecer un adjetivo (`a useful guide`); un verbo puede necesitar un adverbio (`carefully`). La raíz es una pista, pero no siempre basta con añadir un sufijo: algunas palabras cambian una letra o tienen una forma irregular.
 
 # Forma o estructura
 

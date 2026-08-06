@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b2-use-of-english-key-word-transformations
+id: b2-advanced-grammar-reframing
 title: "Pasiva, condicionales y estilo indirecto B2"
 level: B2
 category: use-of-english
-topic: b2-key-word-transformations
+topic: b2-advanced-grammar-reframing
 subtopics:
-  - b2-key-word-transformations
+  - b2-advanced-grammar-reframing
 difficulty: 5
 estimatedMinutes: 30
 learningObjectives:
@@ -14,14 +14,14 @@ learningObjectives:
   - "Expresar hipótesis, arrepentimiento y modalidad mediante condicionales y modales."
   - "Trasladar afirmaciones y preguntas al estilo indirecto conservando el significado."
 prerequisites:
-  - b1-use-of-english-sentence-rewriting
+  - b1-grammar-reframing
   - b2-grammar-third-conditional
   - b2-grammar-reporting-passives
 frameworkRefs:
   - cefr-companion-volume-2020
   - cambridge-b2-first-format
 relatedLessonIds:
-  - b1-use-of-english-sentence-rewriting
+  - b1-grammar-reframing
 tags:
   - b2
   - use-of-english
@@ -42,7 +42,7 @@ La pasiva, los condicionales y el estilo indirecto permiten reorganizar la infor
 
 - Transformar activa y pasiva, estilo directo e indirecto y condicionales.
 - Reformular obligación, posibilidad, comparación y resultado.
-- Controlar la palabra clave y verificar la equivalencia exacta.
+- Comprobar que la estructura nueva conserva exactamente el significado original.
 
 # Explicación
 
@@ -55,16 +55,16 @@ Se empieza por identificar la relación central: quién realiza la acción, cuá
 - **Tercer condicional:** `if + past perfect`, `would have + past participle`.
 - **Estilo indirecto:** verbo introductor + oración con orden afirmativo y referencias ajustadas.
 
-# Cómo identificar cada tipo de transformación
+# Patrones combinados de gramática B2
 
-Antes de escribir la respuesta, decide qué relación expresa la primera frase. Cada tipo tiene señales propias que apuntan a un patrón concreto.
+Antes de reformular, decide qué relación expresa la primera frase. Cada tipo tiene señales propias que apuntan a un patrón concreto.
 
 ## 1. Pasiva (active → passive)
 
 **Señales en la frase original:**
 - Un verbo transitivo con objeto: *They built it*, *People use this room*, *Someone has stolen it*.
 - Palabras como *people*, *they*, *someone*, *nobody* como sujeto genérico.
-- La palabra clave suele ser un **participio** (`BUILT`, `STOLEN`, `USED`) o el auxiliar de la pasiva (`BEEN`, `BEING`).
+- La forma decisiva suele ser un **participio** (`BUILT`, `STOLEN`, `USED`) o el auxiliar de la pasiva (`BEEN`, `BEING`).
 
 **Patrón:**
 | Tiempo | Activa | Pasiva |
@@ -89,7 +89,7 @@ Antes de escribir la respuesta, decide qué relación expresa la primera frase. 
 **Señales en la frase original:**
 - Comillas con una cita: *“I am tired,” she said*, *“Will you come?” he asked*.
 - Verbos introductorios: *said*, *told*, *asked*, *reported*.
-- La palabra clave suele ser un **verbo ya conjugado** (`SAID`, `ASKED`, `TOLD`) o un **modal en pasado** (`WOULD`, `COULD`, `MIGHT`).
+- La estructura suele depender de un **verbo introductor** (`SAID`, `ASKED`, `TOLD`) o un **modal en pasado** (`WOULD`, `COULD`, `MIGHT`).
 
 **Patrón:**
 | Directo | Indirecto |
@@ -116,7 +116,7 @@ Antes de escribir la respuesta, decide qué relación expresa la primera frase. 
 **Señales en la frase original:**
 - Causa y consecuencia relacionadas: *I missed the bus because I left late*.
 - Expresiones de arrepentimiento: *I regret...*, *It was a mistake...*.
-- La palabra clave suele ser un **participio pasado** (`MISSED`, `GONE`, `BOUGHT`) que revela si el resultado es real o hipotético.
+- Un **participio pasado** (`MISSED`, `GONE`, `BOUGHT`) puede revelar si el resultado es real o hipotético.
 
 **Patrón (tercer condicional):**
 *If + past perfect, would + have + participio.*
@@ -138,7 +138,7 @@ Antes de escribir la respuesta, decide qué relación expresa la primera frase. 
 **Señales en la frase original:**
 - Expresiones de necesidad o ausencia de ella: *It is necessary...*, *It is not necessary...*, *It is forbidden...*.
 - Expresiones de certeza o posibilidad: *I am sure...*, *Perhaps...*, *It is possible that...*.
-- La palabra clave suele ser el **propio modal** (`MUST`, `MAY`, `MIGHT`, `NEED`, `HAVE`) o un **participio** (`BEEN`, `LEFT`).
+- La relación suele expresarse mediante un **modal** (`MUST`, `MAY`, `MIGHT`, `NEED`, `HAVE`) o un **participio** (`BEEN`, `LEFT`).
 
 **Patrón:**
 | Significado | Original | Transformación |
@@ -162,7 +162,7 @@ Antes de escribir la respuesta, decide qué relación expresa la primera frase. 
 **Señales en la frase original:**
 - Dos elementos comparados: *A is cheaper than B*, *B is not as expensive as A*.
 - Un elemento destacado sobre un grupo: *No hotel is as luxurious as this one*, *This is the best film*.
-- La palabra clave suele ser un **adjetivo en comparativo o superlativo** (`CHEAPER`, `MOST`, `BEST`, `HIGHEST`) o la base del adjetivo (`EXPENSIVE`, `FAST`).
+- La comparación suele reconocerse por un **adjetivo en comparativo o superlativo** (`CHEAPER`, `MOST`, `BEST`, `HIGHEST`) o por la base del adjetivo (`EXPENSIVE`, `FAST`).
 
 **Patrón:**
 - Comparativo: `not as + adjetivo + as` = `comparativo + than` (se invierte el orden de los sujetos).
@@ -200,7 +200,7 @@ Antes de escribir la respuesta, decide qué relación expresa la primera frase. 
 # Errores frecuentes
 
 - ❌ Cambiar el tiempo verbal sin justificarlo. ✅ Mantener la referencia temporal.
-- ❌ Alterar la palabra clave. ✅ Copiarla exactamente.
+- ❌ Cambiar la referencia temporal o el agente. ✅ Conservar quién actúa y cuándo ocurre.
 - ❌ Añadir información nueva. ✅ Comparar significado, no solo forma.
 - ❌ *I wish I would studied.* ✅ *I wish I had studied.*
 - ❌ *It is checked* cuando la frase pide otra voz. ✅ Revisar si el sujeto realiza o recibe la acción.
@@ -209,7 +209,7 @@ Antes de escribir la respuesta, decide qué relación expresa la primera frase. 
 
 # Excepciones relevantes
 
-Algunas transformaciones admiten más de una respuesta natural; una actividad autocorregible debe enumerar todas las variantes conocidas o elegir una redacción inequívoca. Las contracciones pueden depender de la normalización, pero no se debe aceptar una transformación que cambie el significado o el registro exigido.
+Algunas reformulaciones admiten más de una frase natural. Las contracciones pueden depender de la variedad del inglés, pero no se debe aceptar una estructura que cambie el significado o el registro exigido.
 
 Los hechos generales se mantienen en presente dentro de reported speech: *The teacher said that water boils at 100°C*. `Help` admite infinitivo con o sin `to`: *She helped me (to) carry the bags*.
 
@@ -221,7 +221,7 @@ Los hechos generales se mantienen en presente dentro de reported speech: *The te
 - Condicionales: `If + past perfect, would have + participio`; `wish + past perfect` para arrepentimiento.
 - Modales: `must not` (prohibición) ≠ `don't have to` (no necesidad); `should have` = crítica; `needn't have` = innecesario.
 - Comparación: `not as + adjetivo + as` invierte el comparativo; `No ... is as ... as` → superlativo.
-- Revisa palabra clave, número de palabras y equivalencia final.
+- Revisa tiempo, modalidad, referencia y equivalencia final.
 
 # Comprobación rápida autocorregible
 

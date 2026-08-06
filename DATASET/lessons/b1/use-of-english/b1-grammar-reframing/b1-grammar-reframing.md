@@ -1,12 +1,12 @@
 ---
 schemaVersion: 1.0.0
-id: b1-use-of-english-sentence-rewriting
-title: "Sentence rewriting: reformular sin cambiar el significado"
+id: b1-grammar-reframing
+title: "Pasiva, comparativos y estilo indirecto B1"
 level: B1
 category: use-of-english
-topic: b1-sentence-rewriting
+topic: b1-grammar-reframing
 subtopics:
-  - b1-sentence-rewriting
+  - b1-grammar-reframing
 difficulty: 3
 estimatedMinutes: 30
 learningObjectives:
@@ -23,7 +23,7 @@ relatedLessonIds: []
 tags:
   - b1
   - use-of-english
-  - sentence-rewriting
+  - grammar-reframing
 status: published
 author: openai-codex
 reviewer: publication-authorised-by-project-owner
@@ -49,7 +49,7 @@ Las transformaciones se apoyan en patrones finitos: `People say that...` → `It
 
 # Usos principales
 
-Este formato desarrolla flexibilidad gramatical para escribir y hablar con precisión. Practica reformulaciones de situaciones de estudio, trabajo, viajes, servicios y comunicación cotidiana.
+Esta flexibilidad gramatical permite escribir y hablar con precisión en situaciones de estudio, trabajo, viajes, servicios y comunicación cotidiana.
 
 # Contrastes importantes
 
@@ -73,7 +73,7 @@ La pasiva cambia el foco, no el tiempo: `repaired` pasa a `was repaired`, no a `
 
 # Excepciones relevantes
 
-Algunas transformaciones admiten más de una frase natural, pero una actividad autocorregible debe fijar la forma indicada por la instrucción. No añadas información que no aparece en el original y no cambies un tiempo verbal solo porque otra forma también sería posible en una conversación distinta.
+Algunas reformulaciones admiten más de una frase natural. No añadas información que no aparece en el original y no cambies un tiempo verbal solo porque otra forma también sería posible en una conversación distinta.
 
 # Mini resumen
 
