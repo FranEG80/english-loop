@@ -22,13 +22,22 @@ function isCorrectResponse(
   switch (response.kind) {
     case "boolean":
       return String(response.value) === correctAnswer;
-    case "boolean_list":
+    case "deck":
+      return Array.isArray(correctAnswer)
+        ? arraysMatch(response.value.map((card) => String(card.value)), correctAnswer)
+        : false;
+    case "rounds":
+      return Array.isArray(correctAnswer)
+        ? arraysMatch(response.value.map((round) => round.optionId), correctAnswer)
+        : false;
+    case "gaps":
       return Array.isArray(correctAnswer)
         ? arraysMatch(
-            response.value.map(String),
-            correctAnswer,
+            response.value.map((gap) => normalizeText(gap.text)),
+            correctAnswer.map(normalizeText),
           )
-        : false;
+        : normalizeText(response.value.map((gap) => gap.text).join(" ")) ===
+            normalizeText(correctAnswer);
     case "single":
       return Array.isArray(correctAnswer)
         ? correctAnswer.includes(response.value)
@@ -76,10 +85,44 @@ export function gradeMockAttempt(
     attemptId: generateId("attempt"),
     activityId: activity.id,
     isCorrect: isCorrectResponse(response, answerKey.correctAnswer),
+    score: isCorrectResponse(response, answerKey.correctAnswer) ? 1 : 0,
     correctAnswer: answerKey.correctAnswer,
     normalizedResponse: response,
+    items: [
+      {
+        itemId: "answer",
+        label: "answer",
+        given: describeResponse(response),
+        expected: Array.isArray(answerKey.correctAnswer)
+          ? answerKey.correctAnswer
+          : [answerKey.correctAnswer],
+        isCorrect: isCorrectResponse(response, answerKey.correctAnswer),
+      },
+    ],
     explanation: answerKey.explanation,
     nextReviewAt: null,
     submittedAt: new Date().toISOString(),
   };
+}
+
+/** Representación legible de la respuesta, solo para el feedback mock. */
+function describeResponse(response: ActivityResponseValue): string {
+  switch (response.kind) {
+    case "boolean":
+      return String(response.value);
+    case "single":
+    case "text":
+      return response.value;
+    case "multiple":
+    case "ordered_list":
+      return response.value.join(", ");
+    case "pairs":
+      return response.value.map((pair) => `${pair.leftId}:${pair.rightId}`).join(", ");
+    case "gaps":
+      return response.value.map((gap) => gap.text).join(", ");
+    case "deck":
+      return response.value.map((card) => `${card.cardId}:${card.value}`).join(", ");
+    case "rounds":
+      return response.value.map((round) => round.optionId).join(", ");
+  }
 }

@@ -84,7 +84,7 @@ export async function submitActivityAttempt(
     );
   }
 
-  const isCorrect = evaluate(activity.evaluator, input.response);
+  const evaluation = evaluate(activity.evaluator, input.response);
 
   const attempt = ActivityAttempt.create({
     id: UniqueId.create(idGenerator).toString(),
@@ -97,7 +97,9 @@ export async function submitActivityAttempt(
     origin: run.mode,
     idempotencyKey: input.idempotencyKey,
     response: input.response,
-    isCorrect,
+    isCorrect: evaluation.isCorrect,
+    score: evaluation.score,
+    detail: evaluation.items,
     evaluatorVersion,
     submittedAt: clock.nowIso(),
   });

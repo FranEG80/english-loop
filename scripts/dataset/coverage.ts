@@ -19,6 +19,9 @@ export async function runCoverage(): Promise<void> {
     topic: countBy(activities, ({ topic }) => topic),
     subtopic: countBy(activities, ({ subtopic }) => subtopic),
     activityType: countBy(activities, ({ type }) => type),
+    // Variedad real de ejercicios: la homogeneización fusionó 24 tipos en 13
+    // sin cambiar lo que el alumno practica.
+    skillFocus: countBy(activities, ({ skillFocus, type }) => skillFocus ?? type),
     difficulty: countBy(activities, ({ difficulty }) => String(difficulty)),
   };
 
@@ -33,7 +36,9 @@ export async function runCoverage(): Promise<void> {
       ).filter(
         ({ level }) => level === target.level,
       );
-      const activityTypes = new Set(matching.map(({ type }) => type));
+      const activityTypes = new Set(
+        matching.map(({ skillFocus, type }) => skillFocus ?? type),
+      );
       const difficulties = new Set(matching.map(({ difficulty }) => difficulty));
       return {
         ...target,

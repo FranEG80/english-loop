@@ -56,7 +56,7 @@ describe("toActivityQuestionDto", () => {
 
   it("uses safe fallbacks for unknown types and interaction modes", () => {
     expect(toActivityQuestionDto(activity("unknown"))).toMatchObject({
-      type: "fill_blank",
+      type: "fill_blank", skillFocus: "fill_blank",
       interactionMode: "standard",
       textWithGap: "Prompt",
     });

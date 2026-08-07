@@ -114,6 +114,7 @@ export function buildCatalogSeedInput(
     id: activity.id,
     checksum: sha256Checksum.checksum(activity),
     type: activity.type,
+    skillFocus: activity.skillFocus,
     evaluatorStrategy: activity.evaluator.strategy,
     level: activity.level,
     category: activity.category,
@@ -122,7 +123,16 @@ export function buildCatalogSeedInput(
     difficulty: activity.difficulty,
     instructions: activity.instructions,
     prompt: activity.prompt,
+    ...(activity.gapText ? { gapText: activity.gapText } : {}),
+    ...(activity.gapLayout ? { gapLayout: activity.gapLayout } : {}),
     ...(activity.passage ? { passage: activity.passage } : {}),
+    ...(activity.cueWord ? { cueWord: activity.cueWord } : {}),
+    ...(activity.keyWord ? { keyWord: activity.keyWord } : {}),
+    ...(activity.firstSentence ? { firstSentence: activity.firstSentence } : {}),
+    ...(activity.optionsOrdered ? { optionsOrdered: true } : {}),
+    ...(activity.game ? { game: activity.game } : {}),
+    ...(activity.cards ? { cards: activity.cards } : {}),
+    ...(activity.rounds ? { rounds: activity.rounds } : {}),
     explanation: activity.explanation,
     tags: activity.tags,
     lessonIds: activity.lessonIds,
@@ -152,8 +162,9 @@ export async function runSeed(argv: string[] = process.argv.slice(2)): Promise<v
 
   const dataset = await loadDataset(datasetRoot);
   const issues = await validateDataset(dataset);
-  if (issues.length > 0) {
-    throw new Error(`Dataset inválido: ${issues.length} error(es).`);
+  const errors = issues.filter(({ severity }) => severity === "error");
+  if (errors.length > 0) {
+    throw new Error(`Dataset inválido: ${errors.length} error(es).`);
   }
   const datasetVersion = (await readFile(path.join(datasetRoot, "VERSION"), "utf8")).trim();
   const input = buildCatalogSeedInput(dataset, datasetVersion);

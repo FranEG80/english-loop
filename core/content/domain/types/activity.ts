@@ -1,4 +1,5 @@
 import type { CefrLevel } from "@/core/models/level";
+import type { GapLayout, MiniGameId } from "@/core/models/types/activity";
 import type { ContentStatus } from "../content-version";
 
 /** Reglas de normalización de texto para evaluadores textuales. */
@@ -23,12 +24,19 @@ export type Evaluator =
       normalization: NormalizationRules;
     }
   | { strategy: "ordered_tokens"; correctTokenIds: string[] }
-  | { strategy: "unordered_set"; correctValues: string[]; normalization: NormalizationRules }
-  | { strategy: "matching_pairs"; pairs: Array<{ leftId: string; rightId: string }> };
+  | { strategy: "matching_pairs"; pairs: Array<{ leftId: string; rightId: string }> }
+  | { strategy: "deck_booleans"; cards: Array<{ cardId: string; correct: boolean }> }
+  | {
+      strategy: "game_rounds";
+      rounds: Array<{ roundId: string; correctOptionId: string }>;
+    };
+
+export type EvaluatorStrategy = Evaluator["strategy"];
 
 export interface ActivityOption {
   id: string;
   text: string;
+  /** Por qué este distractor es incorrecto. Lo muestra el resumen de errores. */
   feedback?: string;
 }
 
@@ -37,6 +45,21 @@ export interface ActivityPair {
   left: string;
   rightId: string;
   right: string;
+}
+
+/** Carta de un `swipe_deck`. La respuesta correcta vive en el evaluador. */
+export interface ActivityCard {
+  id: string;
+  statement: string;
+  explanation: string;
+}
+
+/** Ronda de un `mini_game`. La respuesta correcta vive en el evaluador. */
+export interface ActivityRound {
+  id: string;
+  prompt: string;
+  options: ActivityOption[];
+  explanation: string;
 }
 
 /**
@@ -49,6 +72,8 @@ export interface Activity {
   versionId?: string;
   level: CefrLevel;
   type: string;
+  /** Ejercicio de origen antes de la homogeneización de tipos. */
+  skillFocus: string;
   category: string;
   topic: string;
   subtopic: string;
@@ -56,10 +81,25 @@ export interface Activity {
   difficulty: number;
   instructions: string;
   prompt: string;
+  /** Texto con marcadores `[gapN]`. Solo en tipos con huecos. */
+  gapText?: string;
+  gapLayout?: GapLayout;
+  /** Contexto de lectura. Nunca contiene huecos. */
   passage?: string;
+  /** UoE Part 3: raíz en mayúsculas de la que derivar. */
+  cueWord?: string;
+  /** UoE Part 4: palabra clave que debe aparecer sin modificar. */
+  keyWord?: string;
+  /** UoE Part 4: frase de partida. */
+  firstSentence?: string;
   options?: ActivityOption[];
+  /** El orden de `options` es significativo y no debe barajarse. */
+  optionsOrdered?: boolean;
   tokens?: ActivityOption[];
   pairs?: ActivityPair[];
+  cards?: ActivityCard[];
+  game?: MiniGameId;
+  rounds?: ActivityRound[];
   lessonIds: string[];
   tags: string[];
   estimatedSeconds: number;

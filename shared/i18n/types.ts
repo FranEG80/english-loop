@@ -1,3 +1,4 @@
+import type { ActivityPresentation, ActivityType } from "@/core/models";
 export interface Dictionary {
   app: {
     name: string;
@@ -109,6 +110,8 @@ export interface Dictionary {
     summaryNextReview: string;
     summaryBackHome: string;
   };
+  activityTypes: Record<ActivityType, string>;
+  activityPresentations: Record<ActivityPresentation, string>;
   activities: {
     yourTurnLabel: string;
     trueLabel: string;
@@ -131,8 +134,23 @@ export interface Dictionary {
     removeWord: string;
     dialogueHint: string;
     gapHint: string;
+    swipeDeckTitle: string;
+    swipeHint: string;
+    swipeLeftHint: string;
+    swipeRightHint: string;
+    gapOfTotal: string;
+    cueWordLabel: string;
+    keyWordLabel: string;
+    maxWordsHint: string;
+    addFragment: string;
+    removeFragment: string;
+    gameRoundLabel: string;
+    gameScoreLabel: string;
+    gameStartLabel: string;
+    gameAccessibleModeLabel: string;
   };
   catalog: {
+    activityLab: string;
     searchLabel: string;
     searchPlaceholder: string;
     filtersTitle: string;
@@ -148,7 +166,7 @@ export interface Dictionary {
     categoryLabel: string;
     allCategories: string;
     allActivityTypes: string;
-    allInteractionModes: string;
+    allPresentations: string;
     filterButton: string;
     clearFilters: string;
     lessonsTitle: string;
@@ -161,7 +179,7 @@ export interface Dictionary {
     practiceTopic: string;
     relatedActivities: string;
     activityType: string;
-    interactionMode: string;
+    presentation: string;
     previewNotice: string;
   };
   review: {

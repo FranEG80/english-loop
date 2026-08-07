@@ -60,13 +60,23 @@ export interface PrismaActivityVersionRow {
   activityId: string;
   levelCode: string;
   activityTypeCode: string;
+  skillFocus: string;
   category: string;
   topic: string;
   subtopic: string;
   difficulty: number;
   instructions: string;
   prompt: string;
+  gapText: string | null;
+  gapLayout: string | null;
   passage: string | null;
+  cueWord: string | null;
+  keyWord: string | null;
+  firstSentence: string | null;
+  optionsOrdered: boolean;
+  game: string | null;
+  cardsData: string | null;
+  roundsData: string | null;
   explanation: string;
   tags: string;
   lessonIds: string;
@@ -111,6 +121,7 @@ export function mapPrismaActivity(row: PrismaActivityVersionRow): Activity {
     versionId: row.id,
     level: row.levelCode as Activity["level"],
     type: row.activityTypeCode,
+    skillFocus: row.skillFocus || row.activityTypeCode,
     category: row.category,
     topic: row.topic,
     subtopic: row.subtopic,
@@ -118,10 +129,23 @@ export function mapPrismaActivity(row: PrismaActivityVersionRow): Activity {
     difficulty: row.difficulty,
     instructions: row.instructions,
     prompt: row.prompt,
+    ...(row.gapText ? { gapText: row.gapText } : {}),
+    ...(row.gapLayout ? { gapLayout: row.gapLayout as Activity["gapLayout"] } : {}),
     ...(row.passage ? { passage: row.passage } : {}),
+    ...(row.cueWord ? { cueWord: row.cueWord } : {}),
+    ...(row.keyWord ? { keyWord: row.keyWord } : {}),
+    ...(row.firstSentence ? { firstSentence: row.firstSentence } : {}),
+    ...(row.game ? { game: row.game as Activity["game"] } : {}),
     options: options.length > 0 ? options : undefined,
+    ...(row.optionsOrdered ? { optionsOrdered: true } : {}),
     tokens: tokens.length > 0 ? tokens : undefined,
     pairs: pairs.length > 0 ? pairs : undefined,
+    ...(row.cardsData
+      ? { cards: parseCatalogJson(row.cardsData, []) as Activity["cards"] }
+      : {}),
+    ...(row.roundsData
+      ? { rounds: parseCatalogJson(row.roundsData, []) as Activity["rounds"] }
+      : {}),
     lessonIds,
     tags: parseCatalogJson(row.tags, []),
     estimatedSeconds: row.estimatedSeconds,

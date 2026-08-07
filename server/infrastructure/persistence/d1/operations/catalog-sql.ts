@@ -1,3 +1,7 @@
+import {
+  activityTypesForPresentation,
+  type ActivityPresentation,
+} from "@/core/models/types/activity";
 import type { D1DatabaseLike } from "../types/binding";
 import type { D1Operation } from "../types/operations";
 import { bind, type PreparedOperation } from "./shared";
@@ -56,15 +60,12 @@ function activityFilters(operation: Extract<CatalogOperation, { name: "catalogAc
     ],
     operation.queryTerms,
   );
-  const interactionSql = operation.interactionMode === "matching_pairs"
-    ? "AND v.activityTypeCode = 'matching'"
-    : operation.interactionMode === "sentence_builder"
-      ? "AND v.activityTypeCode = 'word_order'"
-      : operation.interactionMode === "standard"
-        ? "AND v.activityTypeCode NOT IN ('matching', 'word_order')"
-        : operation.interactionMode
-          ? "AND 0 = 1"
-          : "";
+  const presentationTypes = operation.presentation
+    ? activityTypesForPresentation(operation.presentation as ActivityPresentation)
+    : [];
+  const presentationSql = operation.presentation
+    ? `AND v.activityTypeCode IN (${presentationTypes.map((type) => `'${type}'`).join(", ") || "''"})`
+    : "";
   return {
     sql: `AND (? IS NULL OR v.levelCode = ?)
           AND (? = 0 OR EXISTS (SELECT 1 FROM ActivityVersionTaxonomy t
@@ -72,7 +73,7 @@ function activityFilters(operation: Extract<CatalogOperation, { name: "catalogAc
           AND (? = 0 OR EXISTS (SELECT 1 FROM ActivityVersionLesson l
             WHERE l.activityVersionId = v.id AND l.lessonId IN (SELECT value FROM json_each(?))))
           AND (? IS NULL OR v.activityTypeCode = ?)
-          ${interactionSql}
+          ${presentationSql}
           ${search.sql}`,
     bindings: [
       operation.level ?? null,
@@ -89,8 +90,11 @@ function activityFilters(operation: Extract<CatalogOperation, { name: "catalogAc
 }
 
 const activityProjection = `v.id, v.activityId, v.levelCode,
-          v.activityTypeCode, v.category, v.topic, v.subtopic, v.difficulty,
-          v.instructions, v.prompt, v.passage, v.explanation, v.tags, v.lessonIds,
+          v.activityTypeCode, v.skillFocus, v.category, v.topic, v.subtopic, v.difficulty,
+          v.instructions, v.prompt, v.gapText, v.gapLayout, v.passage,
+          v.cueWord, v.keyWord, v.firstSentence, v.optionsOrdered,
+          v.game, v.cardsData, v.roundsData,
+          v.explanation, v.tags, v.lessonIds,
           v.estimatedSeconds, v.evaluatorData, v.statusCode,
           COALESCE((SELECT json_group_array(json_object(
             'optionId', o.optionId, 'label', o.label, 'feedback', o.feedback, 'position', o.position))

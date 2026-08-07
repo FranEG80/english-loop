@@ -4,7 +4,19 @@ import type { AttemptRepository } from "@/core/practice/ports/attempt-repository
 import { ActivityAttempt } from "@/core/practice/domain/activity-attempt";
 import { getPrismaClient } from "../database/prisma-transaction-context";
 
+import type { EvaluationItem } from "@/core/practice/domain/activity-evaluator";
+
 const DEFAULT_ATTEMPT_HISTORY_LIMIT = 50;
+
+/** Los intentos anteriores a la migración v2 no tienen desglose guardado. */
+function parseAttemptDetail(detail: string): EvaluationItem[] {
+  try {
+    const parsed: unknown = JSON.parse(detail);
+    return Array.isArray(parsed) ? (parsed as EvaluationItem[]) : [];
+  } catch {
+    return [];
+  }
+}
 
 /**
  * Adaptador Prisma del repositorio de intentos. Los intentos son inmutables.
@@ -31,6 +43,8 @@ export class PrismaAttemptRepository implements AttemptRepository {
       idempotencyKey: row.idempotencyKey,
       response: JSON.parse(row.response) as never,
       isCorrect: row.isCorrect,
+      score: row.score,
+      detail: parseAttemptDetail(row.detail),
       isRepetition: row.isRepetition,
       evaluatorVersion: row.evaluatorVersion,
       submittedAt: row.submittedAt.toISOString(),
@@ -54,6 +68,8 @@ export class PrismaAttemptRepository implements AttemptRepository {
         idempotencyKey: row.idempotencyKey,
         response: JSON.parse(row.response) as never,
         isCorrect: row.isCorrect,
+        score: row.score,
+        detail: parseAttemptDetail(row.detail),
         isRepetition: row.isRepetition,
         evaluatorVersion: row.evaluatorVersion,
         submittedAt: row.submittedAt.toISOString(),
@@ -83,6 +99,8 @@ export class PrismaAttemptRepository implements AttemptRepository {
         idempotencyKey: row.idempotencyKey,
         response: JSON.parse(row.response) as never,
         isCorrect: row.isCorrect,
+        score: row.score,
+        detail: parseAttemptDetail(row.detail),
         isRepetition: row.isRepetition,
         evaluatorVersion: row.evaluatorVersion,
         submittedAt: row.submittedAt.toISOString(),
@@ -103,6 +121,8 @@ export class PrismaAttemptRepository implements AttemptRepository {
         idempotencyKey: attempt.idempotencyKey,
         response: JSON.stringify(attempt.response),
         isCorrect: attempt.isCorrect,
+        score: attempt.score,
+        detail: JSON.stringify(attempt.detail),
         isRepetition: attempt.isRepetition,
         evaluatorVersion: attempt.evaluatorVersion,
         submittedAt: new Date(attempt.submittedAt),

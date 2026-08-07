@@ -1,4 +1,10 @@
-import type { Evaluator, ActivityOption, ActivityPair } from "../domain/types/activity";
+import type {
+  ActivityCard,
+  ActivityOption,
+  ActivityPair,
+  ActivityRound,
+  Evaluator,
+} from "../domain/types/activity";
 import type { LessonExample } from "../domain/types/lesson";
 
 export interface CatalogSeedTaxonomyNode {
@@ -35,6 +41,8 @@ export interface CatalogSeedActivity {
   id: string;
   checksum: string;
   type: string;
+  /** Ejercicio de origen antes de la homogeneización de tipos (schema v2). */
+  skillFocus: string;
   evaluatorStrategy: string;
   level: string;
   category: string;
@@ -43,7 +51,16 @@ export interface CatalogSeedActivity {
   difficulty: number;
   instructions: string;
   prompt: string;
+  gapText?: string;
+  gapLayout?: string;
   passage?: string;
+  cueWord?: string;
+  keyWord?: string;
+  firstSentence?: string;
+  optionsOrdered?: boolean;
+  game?: string;
+  cards?: ActivityCard[];
+  rounds?: ActivityRound[];
   explanation: string;
   tags: string[];
   lessonIds: string[];

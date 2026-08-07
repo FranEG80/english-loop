@@ -130,6 +130,7 @@ export async function submitAttemptTransaction(
       );
     }
 
+    const evaluation = evaluate(activity.evaluator, input.response);
     const attempt = ActivityAttempt.create({
       id: UniqueId.create(idGenerator).toString(),
       userId: actor.userId,
@@ -141,7 +142,9 @@ export async function submitAttemptTransaction(
       origin: run.mode,
       idempotencyKey: input.idempotencyKey,
       response: input.response,
-      isCorrect: evaluate(activity.evaluator, input.response),
+      isCorrect: evaluation.isCorrect,
+      score: evaluation.score,
+      detail: evaluation.items,
       evaluatorVersion,
       submittedAt: nowIso,
     });

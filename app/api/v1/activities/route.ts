@@ -6,9 +6,9 @@ import { toActivityQuestionDto } from "@/core/content/application/mappers/activi
 import { isCefrLevelFilter } from "@/core/models/level";
 import {
   ACTIVITY_TYPES,
-  INTERACTION_MODES,
+  ACTIVITY_PRESENTATIONS,
   type ActivityType,
-  type InteractionMode,
+  type ActivityPresentation,
 } from "@/core/models/types/activity";
 import { ValidationException } from "@/core/shared/exceptions";
 import { parsePublicNumberedPagination } from "@/server/infrastructure/http/cursor-pagination";
@@ -24,7 +24,7 @@ export const GET = withErrorHandling(async (request: Request) => {
   const lessonIds = searchParams.getAll("lessonIds");
   const query = searchParams.get("q")?.trim() || undefined;
   const type = searchParams.get("type") ?? undefined;
-  const interactionMode = searchParams.get("interaction") ?? undefined;
+  const presentation = searchParams.get("interaction") ?? undefined;
   if (level && !isCefrLevelFilter(level)) {
     throw new ValidationException("Invalid level", { level: ["Must be B1, B2 or both"] });
   }
@@ -34,8 +34,8 @@ export const GET = withErrorHandling(async (request: Request) => {
     });
   }
   if (
-    interactionMode &&
-    !INTERACTION_MODES.includes(interactionMode as InteractionMode)
+    presentation &&
+    !ACTIVITY_PRESENTATIONS.includes(presentation as ActivityPresentation)
   ) {
     throw new ValidationException("Invalid interaction mode", {
       interaction: ["Must be a supported interaction mode"],
@@ -59,7 +59,7 @@ export const GET = withErrorHandling(async (request: Request) => {
     lessonIds: lessonIds.length > 0 ? lessonIds : undefined,
     query,
     activityType: toCatalogActivityType(type as ActivityType | undefined),
-    interactionMode,
+    presentation,
     pagination: parsePublicNumberedPagination(searchParams),
   });
   return NextResponse.json({

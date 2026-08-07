@@ -15,6 +15,7 @@
     "test:contract": "vitest run server/infrastructure/persistence/review-repository.contract.test.ts server/infrastructure/persistence/user-settings-repository.contract.test.ts adapters/port-contracts.test.ts adapters/rest server/infrastructure/http",
     "arch:check": "depcruise --config .dependency-cruiser.cjs core adapters features shared app",
     "arch:check:core": "depcruise --config .dependency-cruiser.cjs core",
+    "dataset:migrate-v2": "tsx scripts/dataset/migrate-v2.ts",
     "dataset:validate": "tsx scripts/dataset/validate.ts",
     "dataset:index": "tsx scripts/dataset/index.ts",
     "dataset:coverage": "tsx scripts/dataset/coverage.ts",

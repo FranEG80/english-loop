@@ -103,9 +103,9 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
 
   async listActivities(filters?: ActivityListFilters): Promise<Activity[]> {
     await this.requireCatalog();
-    const baseRows = rows(await this.transport.execute(operation({ name: "catalogActivities", taxonomyNodeId: filters?.taxonomyNodeId, taxonomyNodeIds: filters?.taxonomyNodeIds, level: filters?.level === "both" ? undefined : filters?.level, lessonIds: filters?.lessonIds, queryTerms: catalogSearchTerms(filters?.query), activityType: filters?.activityType, interactionMode: filters?.interactionMode, includeDemo: this.includeDemo })));
+    const baseRows = rows(await this.transport.execute(operation({ name: "catalogActivities", taxonomyNodeId: filters?.taxonomyNodeId, taxonomyNodeIds: filters?.taxonomyNodeIds, level: filters?.level === "both" ? undefined : filters?.level, lessonIds: filters?.lessonIds, queryTerms: catalogSearchTerms(filters?.query), activityType: filters?.activityType, presentation: filters?.presentation, includeDemo: this.includeDemo })));
     return baseRows.map((row) => mapPrismaActivity({
-      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
+      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), skillFocus: text(row.skillFocus), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), gapText: nullableText(row.gapText), gapLayout: nullableText(row.gapLayout), passage: nullableText(row.passage), cueWord: nullableText(row.cueWord), keyWord: nullableText(row.keyWord), firstSentence: nullableText(row.firstSentence), optionsOrdered: Boolean(row.optionsOrdered), game: nullableText(row.game), cardsData: nullableText(row.cardsData), roundsData: nullableText(row.roundsData), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
       options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
       } satisfies PrismaActivityVersionRow));
   }
@@ -125,13 +125,13 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       lessonIds: filters?.lessonIds,
       queryTerms: catalogSearchTerms(filters?.query),
       activityType: filters?.activityType,
-      interactionMode: filters?.interactionMode,
+      presentation: filters?.presentation,
       cursor,
       limit: pagination.limit + 1,
       includeDemo: this.includeDemo,
     }));
     const mapped = rows(result).map((row) => mapPrismaActivity({
-      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
+      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), skillFocus: text(row.skillFocus), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), gapText: nullableText(row.gapText), gapLayout: nullableText(row.gapLayout), passage: nullableText(row.passage), cueWord: nullableText(row.cueWord), keyWord: nullableText(row.keyWord), firstSentence: nullableText(row.firstSentence), optionsOrdered: Boolean(row.optionsOrdered), game: nullableText(row.game), cardsData: nullableText(row.cardsData), roundsData: nullableText(row.roundsData), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
       options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
     } satisfies PrismaActivityVersionRow));
     const hasMore = mapped.length > pagination.limit;
@@ -153,7 +153,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       lessonIds: filters?.lessonIds,
       queryTerms,
       activityType: filters?.activityType,
-      interactionMode: filters?.interactionMode,
+      presentation: filters?.presentation,
       includeDemo: this.includeDemo,
     };
     const [result, countResult] = await Promise.all([
@@ -170,7 +170,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
       })),
     ]);
     const items = rows(result).map((row) => mapPrismaActivity({
-      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
+      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), skillFocus: text(row.skillFocus), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), gapText: nullableText(row.gapText), gapLayout: nullableText(row.gapLayout), passage: nullableText(row.passage), cueWord: nullableText(row.cueWord), keyWord: nullableText(row.keyWord), firstSentence: nullableText(row.firstSentence), optionsOrdered: Boolean(row.optionsOrdered), game: nullableText(row.game), cardsData: nullableText(row.cardsData), roundsData: nullableText(row.roundsData), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode),
       options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
     } satisfies PrismaActivityVersionRow));
     const total = Number(first<Row>(countResult)?.count ?? 0);
@@ -183,7 +183,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
     const row = first<Row>(result);
     if (!row) return null;
     return mapPrismaActivity({
-      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode), options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
+      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), skillFocus: text(row.skillFocus), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), gapText: nullableText(row.gapText), gapLayout: nullableText(row.gapLayout), passage: nullableText(row.passage), cueWord: nullableText(row.cueWord), keyWord: nullableText(row.keyWord), firstSentence: nullableText(row.firstSentence), optionsOrdered: Boolean(row.optionsOrdered), game: nullableText(row.game), cardsData: nullableText(row.cardsData), roundsData: nullableText(row.roundsData), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode), options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
     });
   }
 
@@ -192,7 +192,7 @@ export class D1CatalogAdapter implements LessonCatalogPort, LessonCatalogPagePor
     const row = first<Row>(result);
     if (!row) return null;
     return mapPrismaActivity({
-      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), passage: nullableText(row.passage), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode), options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
+      id: text(row.id), activityId: text(row.activityId), levelCode: text(row.levelCode), activityTypeCode: text(row.activityTypeCode), skillFocus: text(row.skillFocus), category: text(row.category), topic: text(row.topic), subtopic: text(row.subtopic), difficulty: Number(row.difficulty), instructions: text(row.instructions), prompt: text(row.prompt), gapText: nullableText(row.gapText), gapLayout: nullableText(row.gapLayout), passage: nullableText(row.passage), cueWord: nullableText(row.cueWord), keyWord: nullableText(row.keyWord), firstSentence: nullableText(row.firstSentence), optionsOrdered: Boolean(row.optionsOrdered), game: nullableText(row.game), cardsData: nullableText(row.cardsData), roundsData: nullableText(row.roundsData), explanation: text(row.explanation), tags: text(row.tags), lessonIds: text(row.lessonIds), estimatedSeconds: Number(row.estimatedSeconds), evaluatorData: text(row.evaluatorData), statusCode: text(row.statusCode), options: parseCatalogJson(text(row.options), []), tokens: parseCatalogJson(text(row.tokens), []), pairs: parseCatalogJson(text(row.pairs), []), lessonLinks: parseCatalogJson(text(row.lessonLinks), []), taxonomyLinks: parseCatalogJson(text(row.taxonomyLinks), []),
     });
   }
 

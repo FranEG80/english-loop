@@ -3,8 +3,9 @@ import {
   getLocalePort,
 } from "@/adapters/adapter-factory";
 import {
+  ACTIVITY_PRESENTATIONS,
   ACTIVITY_TYPES,
-  INTERACTION_MODES,
+  type ActivityPresentation,
   type CefrLevel,
 } from "@/core/models";
 import { getTaxonomy, searchActivityCatalogPage } from "@/core/use-cases";
@@ -41,8 +42,8 @@ export default async function ActivitiesPage({
     ? params.category
     : undefined;
   const activityType = ACTIVITY_TYPES.find((type) => type === params.type);
-  const interactionMode = INTERACTION_MODES.find(
-    (mode) => mode === params.interaction,
+  const presentation = ACTIVITY_PRESENTATIONS.find(
+    (candidate): candidate is ActivityPresentation => candidate === params.interaction,
   );
   const requestedPage = Number(params.page ?? "1");
   const page = Number.isSafeInteger(requestedPage) && requestedPage > 0
@@ -55,7 +56,7 @@ export default async function ActivitiesPage({
       level,
       taxonomyNodeId: category,
       type: activityType,
-      interactionMode,
+      presentation,
     },
     { page, pageSize: 12 },
   );
@@ -100,10 +101,10 @@ export default async function ActivitiesPage({
             },
             {
               name: "interaction",
-              label: dictionary.catalog.interactionMode,
-              allLabel: dictionary.catalog.allInteractionModes,
-              value: interactionMode,
-              options: INTERACTION_MODES.map((mode) => ({
+              label: dictionary.catalog.presentation,
+              allLabel: dictionary.catalog.allPresentations,
+              value: presentation,
+              options: ACTIVITY_PRESENTATIONS.map((mode) => ({
                 value: mode,
                 label: mode.replaceAll("_", " "),
               })),
@@ -122,7 +123,7 @@ export default async function ActivitiesPage({
             level,
             category,
             type: activityType,
-            interaction: interactionMode,
+            interaction: presentation,
           }}
         />
         <ActivityCatalog activities={activitiesPage.items} dictionary={dictionary} />
@@ -138,7 +139,7 @@ export default async function ActivitiesPage({
             level,
             category,
             type: activityType,
-            interaction: interactionMode,
+            interaction: presentation,
           }}
         />
       </div>

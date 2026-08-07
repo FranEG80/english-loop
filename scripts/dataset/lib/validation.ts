@@ -2,6 +2,7 @@ import path from "node:path";
 import Ajv2020, { type ErrorObject, type ValidateFunction } from "ajv/dist/2020";
 import addFormats from "ajv-formats";
 import { DATASET_ROOT, readJson } from "./io";
+import { validateActivityRules, validateBatchRules, type RuleSeverity } from "./activity-rules";
 import type {
   Activity,
   ActivityBatch,
@@ -13,7 +14,29 @@ export interface ValidationIssue {
   code: string;
   location: string;
   message: string;
+  /** Solo los `error` rompen el build; los `warning` quedan registrados. */
+  severity: RuleSeverity;
 }
+
+/**
+ * Reglas de contenido que la fase 2 todavía tiene que reparar. Se registran
+ * como aviso para no bloquear el build; pasarán a `error` al cerrarla.
+ */
+export const PENDING_CONTENT_RULES: ReadonlySet<string> = new Set([
+  "answer-visible-in-prompt",
+  "answer-inside-passage",
+  "answer-equals-prompt",
+  "gap-marker-mismatch",
+  "kwt-answer-length",
+  "kwt-contraction",
+  "kwt-key-word",
+  "kwt-key-word-absent",
+  "word-formation-answer-equals-cue",
+  "word-formation-unrelated-answer",
+  "word-order-token-mismatch",
+  "duplicate-option-text",
+  "answer-position-bias",
+]);
 
 function safeStringArray(value: unknown): string[] {
   return Array.isArray(value)
@@ -186,8 +209,10 @@ export async function validateDataset(
     validateSchema(validators.activity, batch, relativePath, issues);
     validateBatchPath(relativePath, batch, issues);
     validateBatchConsistency(relativePath, batch, issues);
+    issues.push(...downgradePending(validateBatchRules(relativePath, batch)));
     for (const activity of batch.activities) {
       validateActivityContract(relativePath, activity, issues);
+      issues.push(...downgradePending(validateActivityRules(relativePath, activity)));
     }
   }
 
@@ -205,6 +230,12 @@ export async function validateDataset(
   );
 }
 
+function downgradePending(issues: ValidationIssue[]): ValidationIssue[] {
+  return issues.map((issue) =>
+    PENDING_CONTENT_RULES.has(issue.code) ? { ...issue, severity: "warning" as const } : issue,
+  );
+}
+
 function validateSchema(
   validator: ValidateFunction,
   value: unknown,
@@ -217,6 +248,7 @@ function validateSchema(
       code: "schema",
       location: `${location}${error.instancePath}`,
       message: formatAjvError(error),
+      severity: "error",
     });
   }
 }
@@ -592,7 +624,8 @@ function validateActivityContract(
     case "boolean":
     case "exact_text":
     case "one_of_texts":
-    case "unordered_set":
+    case "deck_booleans":
+    case "game_rounds":
       break;
   }
 
@@ -968,7 +1001,9 @@ function validateCoverage(
         (Array.isArray(taxonomyNodeIds) &&
           taxonomyNodeIds.some((id) => acceptedNodeIds.has(id))),
     );
-    const types = new Set(matching.map(({ type }) => type));
+    // La variedad se mide por `skillFocus`, no por `type`: la homogeneización
+    // fusionó 24 tipos en 13 sin reducir los ejercicios que el alumno ve.
+    const types = new Set(matching.map(({ skillFocus, type }) => skillFocus ?? type));
     const difficulties = new Set(matching.map(({ difficulty }) => difficulty));
 
     if (matching.length < target.minimumActivities) {
@@ -984,7 +1019,7 @@ function validateCoverage(
         issues,
         "node-type-coverage",
         location,
-        `Hay ${types.size} tipos; se requieren ${target.minimumActivityTypes}.`,
+        `Hay ${types.size} ejercicios distintos; se requieren ${target.minimumActivityTypes}.`,
       );
     }
     const missingDifficulties = target.requiredDifficulties.filter(
@@ -1016,6 +1051,7 @@ function addIssue(
   code: string,
   location: string,
   message: string,
+  severity: RuleSeverity = "error",
 ): void {
-  issues.push({ code, location, message });
+  issues.push({ code, location, message, severity });
 }

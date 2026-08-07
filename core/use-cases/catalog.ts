@@ -2,7 +2,7 @@ import type {
   ActivityQuestionDto,
   ActivityType,
   CefrLevel,
-  InteractionMode,
+  ActivityPresentation,
   LessonDetailDto,
   LessonSummaryDto,
   TaxonomyNodeDto,
@@ -89,7 +89,7 @@ export async function getLessonDetail(
 export async function listActivityCatalog(
   content: LearningContentPort,
   query: CatalogQuery & {
-    interactionMode?: InteractionMode;
+    presentation?: ActivityPresentation;
     taxonomyNodeId?: string;
     type?: ActivityType;
   },
@@ -101,8 +101,8 @@ export async function listActivityCatalog(
   return activities.filter((activity) => {
     if (query.type && activity.type !== query.type) return false;
     if (
-      query.interactionMode &&
-      activity.interactionMode !== query.interactionMode
+      query.presentation &&
+      activity.presentation !== query.presentation
     ) {
       return false;
     }
@@ -116,7 +116,7 @@ export async function listActivityCatalog(
 export function searchActivityCatalogPage(
   content: LearningContentPort,
   query: CatalogQuery & {
-    interactionMode?: InteractionMode;
+    presentation?: ActivityPresentation;
     taxonomyNodeId?: string;
     type?: ActivityType;
   },
@@ -131,7 +131,7 @@ export function searchActivityCatalogPage(
       level: query.level,
       taxonomyNodeId: query.taxonomyNodeId,
       type: query.type,
-      interactionMode: query.interactionMode,
+      presentation: query.presentation,
     },
     pagination,
   );

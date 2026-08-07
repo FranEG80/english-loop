@@ -176,6 +176,10 @@ model ActivityAttempt {
   idempotencyKey String
   response       String // JSON
   isCorrect      Boolean
+  /// Media de aciertos entre 0 y 1. Vale 0 o 1 sin sub-ítems.
+  score          Float    @default(0)
+  /// JSON con EvaluationItem[]: desglose por hueco, carta, ronda o par.
+  detail         String   @default("[]")
   isRepetition   Boolean  @default(false)
   evaluatorVersion String
   submittedAt    DateTime @default(now())
@@ -432,13 +436,32 @@ model ActivityVersion {
   activityTypeCode      String
   evaluatorStrategyCode String
   levelCode             String
+  /// Ejercicio de origen antes de la homogeneización de tipos (schema v2).
+  skillFocus            String
   category              String
   topic                 String
   subtopic              String
   difficulty            Int
   instructions          String
   prompt                String
+  /// Texto con marcadores [gapN]. Solo en tipos con huecos.
+  gapText               String?
+  gapLayout             String?
   passage               String?
+  /// UoE Part 3: raíz en mayúsculas de la que derivar.
+  cueWord               String?
+  /// UoE Part 4: palabra clave que debe aparecer sin modificar.
+  keyWord               String?
+  /// UoE Part 4: frase de partida.
+  firstSentence         String?
+  /// El orden de las opciones es significativo y no debe barajarse.
+  optionsOrdered        Boolean  @default(false)
+  /// Identificador del minijuego en las actividades de tipo mini_game.
+  game                  String?
+  /// JSON con las cartas de un swipe_deck.
+  cardsData             String?
+  /// JSON con las rondas de un mini_game.
+  roundsData            String?
   explanation           String
   tags                  String   // JSON array
   lessonIds             String   // JSON compatibility snapshot

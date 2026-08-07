@@ -2,7 +2,7 @@ import type { LessonDetailDto, LessonSummaryDto } from "../models/types/lesson";
 import type { ActivityQuestionDto } from "../models/types/activity";
 import type { TaxonomyNodeDto } from "../models/types/taxonomy";
 import type { CefrLevel, CefrLevelFilter } from "../models/level";
-import type { ActivityType, InteractionMode } from "../models/types/activity";
+import type { ActivityType, ActivityPresentation } from "../models/types/activity";
 import type {
   NumberedPage,
   NumberedPaginationParams,
@@ -20,7 +20,7 @@ export interface ActivityListFilters {
   lessonIds?: string[];
   query?: string;
   type?: ActivityType;
-  interactionMode?: InteractionMode;
+  presentation?: ActivityPresentation;
 }
 
 export interface LearningContentPort {

@@ -195,9 +195,9 @@ export type D1Operation =
   | { name: "activityById"; activityId: string; includeDemo?: boolean }
   | { name: "activityByVersionId"; activityVersionId: string; includeDemo?: boolean }
   | { name: "catalogLessons"; level?: string; category?: string; queryTerms?: string[]; cursor?: string; offset?: number; limit?: number; includeDemo?: boolean }
-  | { name: "catalogActivities"; taxonomyNodeId?: string; taxonomyNodeIds?: string[]; level?: string; lessonIds?: string[]; queryTerms?: string[]; activityType?: string; interactionMode?: string; cursor?: string; offset?: number; limit?: number; includeDemo?: boolean }
+  | { name: "catalogActivities"; taxonomyNodeId?: string; taxonomyNodeIds?: string[]; level?: string; lessonIds?: string[]; queryTerms?: string[]; activityType?: string; presentation?: string; cursor?: string; offset?: number; limit?: number; includeDemo?: boolean }
   | { name: "catalogTaxonomy" }
-  | { name: "catalogCounts"; kind: "lessons" | "activities" | "taxonomy"; level?: string; category?: string; taxonomyNodeId?: string; taxonomyNodeIds?: string[]; lessonIds?: string[]; queryTerms?: string[]; activityType?: string; interactionMode?: string; includeDemo?: boolean }
+  | { name: "catalogCounts"; kind: "lessons" | "activities" | "taxonomy"; level?: string; category?: string; taxonomyNodeId?: string; taxonomyNodeIds?: string[]; lessonIds?: string[]; queryTerms?: string[]; activityType?: string; presentation?: string; includeDemo?: boolean }
   | { name: "userSettingsGet"; userId: string }
   | { name: "userSettingsSave"; snapshot: D1UserSettingsSnapshot }
   | { name: "savedLessonsList"; userId: string }

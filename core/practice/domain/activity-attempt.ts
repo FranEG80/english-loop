@@ -1,4 +1,5 @@
 import type { ActivityResponseValue } from "@/core/models/types/attempt";
+import type { EvaluationItem } from "./activity-evaluator";
 
 export type AttemptOrigin = "DAILY" | "SMART_REVIEW" | "FOCUSED";
 
@@ -13,6 +14,10 @@ export interface ActivityAttemptProps {
   idempotencyKey: string;
   response: ActivityResponseValue;
   isCorrect: boolean;
+  /** Media de aciertos entre 0 y 1. */
+  score?: number;
+  /** Desglose por sub-ítem: hueco, carta, ronda o par. */
+  detail?: EvaluationItem[];
   isRepetition?: boolean;
   evaluatorVersion: string;
   submittedAt: string;
@@ -71,6 +76,14 @@ export class ActivityAttempt {
 
   get isCorrect(): boolean {
     return this.props.isCorrect;
+  }
+
+  get score(): number {
+    return this.props.score ?? (this.props.isCorrect ? 1 : 0);
+  }
+
+  get detail(): EvaluationItem[] {
+    return this.props.detail ?? [];
   }
 
   get evaluatorVersion(): string {

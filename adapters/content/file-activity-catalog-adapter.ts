@@ -7,6 +7,7 @@ import type { ActivityListFilters, ActivityCatalogPort } from "@/core/content/po
 import type { ActivityCatalogPagePort, ActivityCatalogSearchPort } from "@/core/content/ports/catalog-ports";
 import { paginateSortedItems, type CursorPage, type CursorPaginationParams, type NumberedPage, type NumberedPaginationParams } from "@/core/shared/kernel";
 import type { CefrLevel } from "@/core/models/level";
+import { PRESENTATION_BY_TYPE, type ActivityType } from "@/core/models/types/activity";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import {
   assertNumberedPagination,
@@ -117,13 +118,11 @@ export class FileActivityCatalogAdapter implements ActivityCatalogPort, Activity
     ) return false;
     if (filters?.lessonIds && !entry.lessonIds.some((lessonId) => filters.lessonIds?.includes(lessonId))) return false;
     if (filters?.activityType && entry.type !== filters.activityType) return false;
-    if (filters?.interactionMode) {
-      const interactionMode = entry.type === "matching"
-        ? "matching_pairs"
-        : entry.type === "word_order"
-          ? "sentence_builder"
-          : "standard";
-      if (interactionMode !== filters.interactionMode) return false;
+    if (
+      filters?.presentation &&
+      PRESENTATION_BY_TYPE[entry.type as ActivityType] !== filters.presentation
+    ) {
+      return false;
     }
     return matchesCatalogSearch(
       [

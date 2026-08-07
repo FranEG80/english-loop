@@ -24,6 +24,10 @@ import type {
   TaxonomyCatalogPort,
 } from "@/core/content/ports/catalog-ports";
 import type { CefrLevel } from "@/core/models/level";
+import {
+  activityTypesForPresentation,
+  type ActivityPresentation,
+} from "@/core/models/types/activity";
 import { assertCursorPageLimit, decodeCursor, encodeCursor, type CursorPage, type CursorPaginationParams, type NumberedPage, type NumberedPaginationParams } from "@/core/shared/kernel";
 import { DatasetUnavailableException } from "@/core/shared/exceptions";
 import { getPrismaClient } from "@/server/infrastructure/database/prisma-transaction-context";
@@ -223,16 +227,13 @@ export class PrismaCatalogAdapter
     const terms = catalogSearchTerms(filters?.query);
     const taxonomyNodeIds = filters?.taxonomyNodeIds ??
       (filters?.taxonomyNodeId ? [filters.taxonomyNodeId] : []);
-    const interactionWhere: Prisma.ActivityVersionWhereInput =
-      filters?.interactionMode === "matching_pairs"
-        ? { activityTypeCode: "matching" }
-        : filters?.interactionMode === "sentence_builder"
-          ? { activityTypeCode: "word_order" }
-          : filters?.interactionMode === "standard"
-            ? { activityTypeCode: { notIn: ["matching", "word_order"] } }
-            : filters?.interactionMode
-              ? { activityTypeCode: "__unsupported_interaction__" }
-              : {};
+    const presentationWhere: Prisma.ActivityVersionWhereInput = filters?.presentation
+      ? {
+          activityTypeCode: {
+            in: activityTypesForPresentation(filters.presentation as ActivityPresentation),
+          },
+        }
+      : {};
     return {
       releaseId,
       statusCode: PUBLISHED_CONTENT_STATUS,
@@ -247,10 +248,10 @@ export class PrismaCatalogAdapter
       ...(filters?.activityType
         ? { activityTypeCode: filters.activityType }
         : {}),
-      ...(terms.length > 0 || filters?.interactionMode
+      ...(terms.length > 0 || filters?.presentation
         ? {
             AND: [
-              ...(filters?.interactionMode ? [interactionWhere] : []),
+              ...(filters?.presentation ? [presentationWhere] : []),
               ...terms.map((term) => ({
                 OR: [
                   { activityId: { contains: term } },

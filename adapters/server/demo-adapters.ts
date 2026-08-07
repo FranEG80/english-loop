@@ -62,7 +62,7 @@ export const demoLearningContentAdapter: LearningContentPort = {
         activityType: filters?.type === "multiple_choice"
           ? "multiple_select"
           : filters?.type,
-        interactionMode: filters?.interactionMode,
+        presentation: filters?.presentation,
       },
       pagination,
     );

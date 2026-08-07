@@ -1,31 +1,41 @@
 export type Level = "B1" | "B2";
 export type Status = "draft" | "reviewed" | "published";
 
-export type ActivityType =
-  | "true_false"
-  | "single_choice"
-  | "multiple_select"
-  | "fill_blank"
-  | "multi_gap_fill"
-  | "multiple_choice_cloze"
-  | "open_cloze"
-  | "word_formation"
-  | "matching"
-  | "word_order"
-  | "sentence_transformation"
-  | "key_word_transformation"
-  | "error_identification"
-  | "error_correction"
-  | "complete_dialogue"
-  | "complete_paragraph"
-  | "vocabulary_in_context"
-  | "phrasal_verb_choice"
-  | "collocation_choice"
-  | "preposition_choice"
-  | "reading_comprehension"
-  | "reading_matching"
-  | "gapped_text"
-  | "guided_writing";
+/**
+ * Tipos canónicos del catálogo (schema v2). Coinciden 1:1 con
+ * `core/models/types/activity.ts`; no hay traducción entre vocabularios.
+ * El ejercicio original de cada item se conserva en `skillFocus`.
+ */
+export const ACTIVITY_TYPES = [
+  "gap_fill",
+  "single_choice",
+  "multiple_choice",
+  "true_false",
+  "swipe_deck",
+  "word_order",
+  "matching",
+  "error_correction",
+  "guided_writing",
+  "word_formation",
+  "key_word_transformation",
+  "sentence_rewrite",
+  "mini_game",
+] as const;
+
+export type ActivityType = (typeof ACTIVITY_TYPES)[number];
+
+export const MINI_GAME_IDS = [
+  "frog_leap",
+  "lane_runner",
+  "sentence_tower",
+] as const;
+
+export type MiniGameId = (typeof MINI_GAME_IDS)[number];
+
+/** Cómo se dispone el texto con huecos de un `gap_fill`. */
+export const GAP_LAYOUTS = ["sentence", "paragraph", "dialogue"] as const;
+
+export type GapLayout = (typeof GAP_LAYOUTS)[number];
 
 export interface NormalizationRules {
   trim: boolean;
@@ -56,28 +66,58 @@ export type Evaluator =
     }
   | { strategy: "ordered_tokens"; correctTokenIds: string[] }
   | {
-      strategy: "unordered_set";
-      correctValues: string[];
-      normalization: NormalizationRules;
-    }
-  | {
       strategy: "matching_pairs";
       pairs: Array<{ leftId: string; rightId: string }>;
+    }
+  | {
+      strategy: "deck_booleans";
+      cards: Array<{ cardId: string; correct: boolean }>;
+    }
+  | {
+      strategy: "game_rounds";
+      rounds: Array<{ roundId: string; correctOptionId: string }>;
     };
+
+export type EvaluatorStrategy = Evaluator["strategy"];
 
 export interface ActivityOption {
   id: string;
   text: string;
+  /** Por qué este distractor está mal. Lo consume el resumen de errores. */
   feedback?: string;
 }
 
+export interface ActivityPair {
+  leftId: string;
+  left: string;
+  rightId: string;
+  right: string;
+}
+
+/** Una carta de un `swipe_deck`. La respuesta correcta vive en el evaluador. */
+export interface ActivityCard {
+  id: string;
+  statement: string;
+  explanation: string;
+}
+
+/** Una ronda de un `mini_game`. La respuesta correcta vive en el evaluador. */
+export interface ActivityRound {
+  id: string;
+  prompt: string;
+  options: ActivityOption[];
+  explanation: string;
+}
+
 export interface Activity {
-  schemaVersion: "1.0.0";
+  schemaVersion: "2.0.0";
   id: string;
   status: Status;
   autoGradable: true;
   level: Level;
   type: ActivityType;
+  /** Ejercicio original antes de la homogeneización (p. ej. "open_cloze"). */
+  skillFocus: string;
   category: string;
   topic: string;
   subtopic: string;
@@ -85,15 +125,30 @@ export interface Activity {
   difficulty: 1 | 2 | 3 | 4 | 5;
   instructions: string;
   prompt: string;
+  /** Texto que contiene los huecos `[gapN]`. Solo en tipos con huecos. */
+  gapText?: string;
+  /** Disposición del `gapText`. Solo en `gap_fill`. */
+  gapLayout?: GapLayout;
+  /** Contexto de lectura. NUNCA contiene huecos. */
   passage?: string;
+  /** UoE Part 3: la raíz en mayúsculas de la que derivar. */
+  cueWord?: string;
+  /** UoE Part 4: la palabra clave que debe aparecer sin modificar. */
+  keyWord?: string;
+  /** UoE Part 4: la frase de partida. */
+  firstSentence?: string;
   options?: ActivityOption[];
+  /**
+   * El orden de `options` es significativo y no debe barajarse: opciones de
+   * cierre («all of the above»), escalas numéricas o secuencias ordinales.
+   * Lo respetan tanto el codemod como el renderer.
+   */
+  optionsOrdered?: boolean;
   tokens?: ActivityOption[];
-  pairs?: Array<{
-    leftId: string;
-    left: string;
-    rightId: string;
-    right: string;
-  }>;
+  pairs?: ActivityPair[];
+  cards?: ActivityCard[];
+  game?: MiniGameId;
+  rounds?: ActivityRound[];
   lessonIds: string[];
   tags: string[];
   estimatedSeconds: number;
@@ -102,7 +157,7 @@ export interface Activity {
 }
 
 export interface ActivityBatch {
-  schemaVersion: "1.0.0";
+  schemaVersion: "2.0.0";
   batchId: string;
   level: Level;
   category: string;

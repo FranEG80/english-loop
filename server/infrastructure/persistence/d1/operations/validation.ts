@@ -73,7 +73,7 @@ export function isD1Operation(value: unknown): value is D1Operation {
         (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string"))) &&
         (value.queryTerms === undefined || (Array.isArray(value.queryTerms) && value.queryTerms.every((term) => typeof term === "string"))) &&
         (value.activityType === undefined || typeof value.activityType === "string") &&
-        (value.interactionMode === undefined || typeof value.interactionMode === "string") &&
+        (value.presentation === undefined || typeof value.presentation === "string") &&
         (value.offset === undefined || (typeof value.offset === "number" && value.offset >= 0)) &&
         (value.includeDemo === undefined || typeof value.includeDemo === "boolean") &&
         hasOptionalCursorPagination(value);
@@ -86,7 +86,7 @@ export function isD1Operation(value: unknown): value is D1Operation {
         (value.lessonIds === undefined || (Array.isArray(value.lessonIds) && value.lessonIds.every((id) => typeof id === "string"))) &&
         (value.queryTerms === undefined || (Array.isArray(value.queryTerms) && value.queryTerms.every((term) => typeof term === "string"))) &&
         (value.activityType === undefined || typeof value.activityType === "string") &&
-        (value.interactionMode === undefined || typeof value.interactionMode === "string") &&
+        (value.presentation === undefined || typeof value.presentation === "string") &&
         (value.includeDemo === undefined || typeof value.includeDemo === "boolean");
     case "userSettingsSave":
       return hasSnapshot(value, ["userId", "locale", "activeLevels", "timezone"]) &&

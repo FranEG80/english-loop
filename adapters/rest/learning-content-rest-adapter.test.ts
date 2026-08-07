@@ -18,7 +18,7 @@ describe("learningContentRestAdapter", () => {
     await learningContentRestAdapter.getLessonById("lesson");
     await learningContentRestAdapter.listActivities({ level: "both", lessonIds: ["l1", "l2"] });
     await learningContentRestAdapter.searchActivitiesPage(
-      { type: "key_word_transformation", interactionMode: "standard", query: "unless" },
+      { type: "key_word_transformation", presentation: "choice", query: "unless" },
       { page: 1, pageSize: 12 },
     );
     await learningContentRestAdapter.getActivityById("activity");

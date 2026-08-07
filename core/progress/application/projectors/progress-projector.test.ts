@@ -8,7 +8,7 @@ import { ReviewItem } from "@/core/progress/domain/review-item";
 import { ProgressProjector } from "./progress-projector";
 
 const activity: Activity = {
-  id: "activity-1", level: "B1", type: "true_false", category: "grammar", topic: "t", subtopic: "s",
+  id: "activity-1", level: "B1", type: "true_false", skillFocus: "fill_blank", category: "grammar", topic: "t", subtopic: "s",
   taxonomyNodeIds: ["child", "root"], difficulty: 1, instructions: "", prompt: "", lessonIds: [], tags: [], estimatedSeconds: 10,
   evaluator: { strategy: "boolean", correct: true }, explanation: "", status: "published",
 };

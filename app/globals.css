@@ -127,6 +127,20 @@ p {
   box-shadow: var(--shadow-ink);
 }
 
+/*
+ * La carta del mazo deslizable necesita fondo propio y opaco. Con `bg-surface`
+ * quedaba del mismo color que la sección que la contiene y parecía
+ * transparente: solo se veía moverse el borde.
+ */
+.ink-card--deck {
+  background: #ffffff;
+  background-image: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 249, 240, 1) 100%
+  );
+}
+
 .workspace-canvas {
   position: relative;
   isolation: isolate;

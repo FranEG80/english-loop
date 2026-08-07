@@ -33,7 +33,7 @@ function filterActivities(filters?: Parameters<LearningContentPort["listActiviti
       if (!scopedIds.has(activity.taxonomyNodeId)) return false;
     }
     if (filters?.type && activity.type !== filters.type) return false;
-    if (filters?.interactionMode && activity.interactionMode !== filters.interactionMode) return false;
+    if (filters?.presentation && activity.presentation !== filters.presentation) return false;
     return matchesCatalogSearch(
       [activity.id, activity.type, activity.taxonomyNodeId],
       filters?.query,

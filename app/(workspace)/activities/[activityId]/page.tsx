@@ -6,10 +6,10 @@ import {
 } from "@/adapters/adapter-factory";
 import { getActivityDetail } from "@/core/use-cases";
 import { ActivityPreviewClient } from "@/features/activities/ActivityPreviewClient";
-import { getActivityDefinition } from "@/features/activities/activity-registry";
 import {
   formatActivityTitle,
   formatActivityType,
+  formatPresentation,
 } from "@/features/activities/activity-display";
 import { getDictionary } from "@/shared/i18n";
 import { Badge } from "@/shared/ui/Badge";
@@ -26,7 +26,6 @@ export default async function ActivityDetailPage({
   ]);
   if (!activity) notFound();
   const dictionary = getDictionary(locale);
-  const definition = getActivityDefinition(activity);
   const activityTitle = formatActivityTitle(activity.id, activity.level);
 
   return (
@@ -41,7 +40,7 @@ export default async function ActivityDetailPage({
         <header className="flex max-w-5xl flex-col gap-2">
           <div className="flex flex-wrap items-center gap-3">
             <p className="font-hand text-2xl font-bold leading-none text-coral sm:text-3xl">
-              Activity lab
+              {dictionary.catalog.activityLab}
             </p>
             <span className="hidden h-6 w-px bg-coral/30 sm:block" aria-hidden="true" />
             <Badge tone={activity.level === "B1" ? "b1" : "b2"}>
@@ -59,13 +58,13 @@ export default async function ActivityDetailPage({
             <dt className="text-sm text-foreground/60">
               {dictionary.catalog.activityType}
             </dt>
-            <dd className="font-medium">{definition.renderer}</dd>
+            <dd className="font-medium">{formatActivityType(activity.type)}</dd>
           </div>
           <div>
             <dt className="text-sm text-foreground/60">
-              {dictionary.catalog.interactionMode}
+              {dictionary.catalog.presentation}
             </dt>
-            <dd className="font-medium">{activity.interactionMode}</dd>
+            <dd className="font-medium">{formatPresentation(activity.presentation)}</dd>
           </div>
         </dl>
         <Link

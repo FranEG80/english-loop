@@ -6,10 +6,56 @@ import type { Activity } from "./lib/types";
 
 const NEAR_DUPLICATE_THRESHOLD = 0.86;
 
+/**
+ * Huella de lo que el alumno ve realmente. Comparar solo `prompt` da falsos
+ * positivos: en `word_order` el prompt es la solución y nunca se muestra, y en
+ * `gap_fill` el texto con huecos vive en `gapText`. Dos actividades solo son
+ * duplicadas si plantean la misma tarea con el mismo material visible.
+ */
+export function visibleFingerprint(activity: Activity): string {
+  const parts: string[] = [activity.type];
+
+  switch (activity.type) {
+    case "word_order":
+      parts.push(...sortForComparison((activity.tokens ?? []).map(({ text }) => text)));
+      break;
+    case "matching":
+      parts.push(
+        ...sortForComparison(
+          (activity.pairs ?? []).flatMap(({ left, right }) => [left, right]),
+        ),
+      );
+      break;
+    case "swipe_deck":
+      parts.push(...(activity.cards ?? []).map(({ statement }) => statement));
+      break;
+    case "mini_game":
+      parts.push(...(activity.rounds ?? []).map(({ prompt }) => prompt));
+      break;
+    default:
+      parts.push(activity.prompt, activity.gapText ?? "", activity.passage ?? "");
+      parts.push(...sortForComparison((activity.options ?? []).map(({ text }) => text)));
+      break;
+  }
+
+  return normalizePrompt(parts.filter(Boolean).join(" | "));
+}
+
+/**
+ * Orden estable e insensible a mayúsculas. El `sort()` por defecto ordena por
+ * unidad de código, así que «I saw» iría antes que «a cat» y la huella
+ * cambiaría solo por el uso de mayúsculas.
+ */
+function sortForComparison(values: string[]): string[] {
+  return [...values].sort((left, right) =>
+    normalizePrompt(left).localeCompare(normalizePrompt(right), "en"),
+  );
+}
+
 export function findDuplicates(activities: Activity[]) {
   const exactGroups = new Map<string, Activity[]>();
   for (const activity of activities) {
-    const key = normalizePrompt(activity.prompt);
+    const key = visibleFingerprint(activity);
     const group = exactGroups.get(key) ?? [];
     group.push(activity);
     exactGroups.set(key, group);
@@ -37,8 +83,10 @@ export function findDuplicates(activities: Activity[]) {
       for (let rightIndex = leftIndex + 1; rightIndex < bucket.length; rightIndex += 1) {
         const left = bucket[leftIndex];
         const right = bucket[rightIndex];
-        if (normalizePrompt(left.prompt) === normalizePrompt(right.prompt)) continue;
-        const similarity = jaccard(left.prompt, right.prompt);
+        const leftText = visibleFingerprint(left);
+        const rightText = visibleFingerprint(right);
+        if (leftText === rightText) continue;
+        const similarity = jaccard(leftText, rightText);
         if (similarity >= NEAR_DUPLICATE_THRESHOLD) near.push({ leftId: left.id, rightId: right.id, similarity: Number(similarity.toFixed(3)) });
       }
     }

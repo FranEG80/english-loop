@@ -44,13 +44,23 @@ export type ActivityVersionMinAggregateOutputType = {
   activityTypeCode: string | null
   evaluatorStrategyCode: string | null
   levelCode: string | null
+  skillFocus: string | null
   category: string | null
   topic: string | null
   subtopic: string | null
   difficulty: number | null
   instructions: string | null
   prompt: string | null
+  gapText: string | null
+  gapLayout: string | null
   passage: string | null
+  cueWord: string | null
+  keyWord: string | null
+  firstSentence: string | null
+  optionsOrdered: boolean | null
+  game: string | null
+  cardsData: string | null
+  roundsData: string | null
   explanation: string | null
   tags: string | null
   lessonIds: string | null
@@ -67,13 +77,23 @@ export type ActivityVersionMaxAggregateOutputType = {
   activityTypeCode: string | null
   evaluatorStrategyCode: string | null
   levelCode: string | null
+  skillFocus: string | null
   category: string | null
   topic: string | null
   subtopic: string | null
   difficulty: number | null
   instructions: string | null
   prompt: string | null
+  gapText: string | null
+  gapLayout: string | null
   passage: string | null
+  cueWord: string | null
+  keyWord: string | null
+  firstSentence: string | null
+  optionsOrdered: boolean | null
+  game: string | null
+  cardsData: string | null
+  roundsData: string | null
   explanation: string | null
   tags: string | null
   lessonIds: string | null
@@ -90,13 +110,23 @@ export type ActivityVersionCountAggregateOutputType = {
   activityTypeCode: number
   evaluatorStrategyCode: number
   levelCode: number
+  skillFocus: number
   category: number
   topic: number
   subtopic: number
   difficulty: number
   instructions: number
   prompt: number
+  gapText: number
+  gapLayout: number
   passage: number
+  cueWord: number
+  keyWord: number
+  firstSentence: number
+  optionsOrdered: number
+  game: number
+  cardsData: number
+  roundsData: number
   explanation: number
   tags: number
   lessonIds: number
@@ -125,13 +155,23 @@ export type ActivityVersionMinAggregateInputType = {
   activityTypeCode?: true
   evaluatorStrategyCode?: true
   levelCode?: true
+  skillFocus?: true
   category?: true
   topic?: true
   subtopic?: true
   difficulty?: true
   instructions?: true
   prompt?: true
+  gapText?: true
+  gapLayout?: true
   passage?: true
+  cueWord?: true
+  keyWord?: true
+  firstSentence?: true
+  optionsOrdered?: true
+  game?: true
+  cardsData?: true
+  roundsData?: true
   explanation?: true
   tags?: true
   lessonIds?: true
@@ -148,13 +188,23 @@ export type ActivityVersionMaxAggregateInputType = {
   activityTypeCode?: true
   evaluatorStrategyCode?: true
   levelCode?: true
+  skillFocus?: true
   category?: true
   topic?: true
   subtopic?: true
   difficulty?: true
   instructions?: true
   prompt?: true
+  gapText?: true
+  gapLayout?: true
   passage?: true
+  cueWord?: true
+  keyWord?: true
+  firstSentence?: true
+  optionsOrdered?: true
+  game?: true
+  cardsData?: true
+  roundsData?: true
   explanation?: true
   tags?: true
   lessonIds?: true
@@ -171,13 +221,23 @@ export type ActivityVersionCountAggregateInputType = {
   activityTypeCode?: true
   evaluatorStrategyCode?: true
   levelCode?: true
+  skillFocus?: true
   category?: true
   topic?: true
   subtopic?: true
   difficulty?: true
   instructions?: true
   prompt?: true
+  gapText?: true
+  gapLayout?: true
   passage?: true
+  cueWord?: true
+  keyWord?: true
+  firstSentence?: true
+  optionsOrdered?: true
+  game?: true
+  cardsData?: true
+  roundsData?: true
   explanation?: true
   tags?: true
   lessonIds?: true
@@ -281,13 +341,23 @@ export type ActivityVersionGroupByOutputType = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText: string | null
+  gapLayout: string | null
   passage: string | null
+  cueWord: string | null
+  keyWord: string | null
+  firstSentence: string | null
+  optionsOrdered: boolean
+  game: string | null
+  cardsData: string | null
+  roundsData: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -327,13 +397,23 @@ export type ActivityVersionWhereInput = {
   activityTypeCode?: Prisma.StringFilter<"ActivityVersion"> | string
   evaluatorStrategyCode?: Prisma.StringFilter<"ActivityVersion"> | string
   levelCode?: Prisma.StringFilter<"ActivityVersion"> | string
+  skillFocus?: Prisma.StringFilter<"ActivityVersion"> | string
   category?: Prisma.StringFilter<"ActivityVersion"> | string
   topic?: Prisma.StringFilter<"ActivityVersion"> | string
   subtopic?: Prisma.StringFilter<"ActivityVersion"> | string
   difficulty?: Prisma.IntFilter<"ActivityVersion"> | number
   instructions?: Prisma.StringFilter<"ActivityVersion"> | string
   prompt?: Prisma.StringFilter<"ActivityVersion"> | string
+  gapText?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  gapLayout?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
   passage?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  cueWord?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  keyWord?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  firstSentence?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  optionsOrdered?: Prisma.BoolFilter<"ActivityVersion"> | boolean
+  game?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  cardsData?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  roundsData?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
   explanation?: Prisma.StringFilter<"ActivityVersion"> | string
   tags?: Prisma.StringFilter<"ActivityVersion"> | string
   lessonIds?: Prisma.StringFilter<"ActivityVersion"> | string
@@ -364,13 +444,23 @@ export type ActivityVersionOrderByWithRelationInput = {
   activityTypeCode?: Prisma.SortOrder
   evaluatorStrategyCode?: Prisma.SortOrder
   levelCode?: Prisma.SortOrder
+  skillFocus?: Prisma.SortOrder
   category?: Prisma.SortOrder
   topic?: Prisma.SortOrder
   subtopic?: Prisma.SortOrder
   difficulty?: Prisma.SortOrder
   instructions?: Prisma.SortOrder
   prompt?: Prisma.SortOrder
+  gapText?: Prisma.SortOrderInput | Prisma.SortOrder
+  gapLayout?: Prisma.SortOrderInput | Prisma.SortOrder
   passage?: Prisma.SortOrderInput | Prisma.SortOrder
+  cueWord?: Prisma.SortOrderInput | Prisma.SortOrder
+  keyWord?: Prisma.SortOrderInput | Prisma.SortOrder
+  firstSentence?: Prisma.SortOrderInput | Prisma.SortOrder
+  optionsOrdered?: Prisma.SortOrder
+  game?: Prisma.SortOrderInput | Prisma.SortOrder
+  cardsData?: Prisma.SortOrderInput | Prisma.SortOrder
+  roundsData?: Prisma.SortOrderInput | Prisma.SortOrder
   explanation?: Prisma.SortOrder
   tags?: Prisma.SortOrder
   lessonIds?: Prisma.SortOrder
@@ -405,13 +495,23 @@ export type ActivityVersionWhereUniqueInput = Prisma.AtLeast<{
   activityTypeCode?: Prisma.StringFilter<"ActivityVersion"> | string
   evaluatorStrategyCode?: Prisma.StringFilter<"ActivityVersion"> | string
   levelCode?: Prisma.StringFilter<"ActivityVersion"> | string
+  skillFocus?: Prisma.StringFilter<"ActivityVersion"> | string
   category?: Prisma.StringFilter<"ActivityVersion"> | string
   topic?: Prisma.StringFilter<"ActivityVersion"> | string
   subtopic?: Prisma.StringFilter<"ActivityVersion"> | string
   difficulty?: Prisma.IntFilter<"ActivityVersion"> | number
   instructions?: Prisma.StringFilter<"ActivityVersion"> | string
   prompt?: Prisma.StringFilter<"ActivityVersion"> | string
+  gapText?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  gapLayout?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
   passage?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  cueWord?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  keyWord?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  firstSentence?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  optionsOrdered?: Prisma.BoolFilter<"ActivityVersion"> | boolean
+  game?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  cardsData?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  roundsData?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
   explanation?: Prisma.StringFilter<"ActivityVersion"> | string
   tags?: Prisma.StringFilter<"ActivityVersion"> | string
   lessonIds?: Prisma.StringFilter<"ActivityVersion"> | string
@@ -442,13 +542,23 @@ export type ActivityVersionOrderByWithAggregationInput = {
   activityTypeCode?: Prisma.SortOrder
   evaluatorStrategyCode?: Prisma.SortOrder
   levelCode?: Prisma.SortOrder
+  skillFocus?: Prisma.SortOrder
   category?: Prisma.SortOrder
   topic?: Prisma.SortOrder
   subtopic?: Prisma.SortOrder
   difficulty?: Prisma.SortOrder
   instructions?: Prisma.SortOrder
   prompt?: Prisma.SortOrder
+  gapText?: Prisma.SortOrderInput | Prisma.SortOrder
+  gapLayout?: Prisma.SortOrderInput | Prisma.SortOrder
   passage?: Prisma.SortOrderInput | Prisma.SortOrder
+  cueWord?: Prisma.SortOrderInput | Prisma.SortOrder
+  keyWord?: Prisma.SortOrderInput | Prisma.SortOrder
+  firstSentence?: Prisma.SortOrderInput | Prisma.SortOrder
+  optionsOrdered?: Prisma.SortOrder
+  game?: Prisma.SortOrderInput | Prisma.SortOrder
+  cardsData?: Prisma.SortOrderInput | Prisma.SortOrder
+  roundsData?: Prisma.SortOrderInput | Prisma.SortOrder
   explanation?: Prisma.SortOrder
   tags?: Prisma.SortOrder
   lessonIds?: Prisma.SortOrder
@@ -473,13 +583,23 @@ export type ActivityVersionScalarWhereWithAggregatesInput = {
   activityTypeCode?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   evaluatorStrategyCode?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   levelCode?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
+  skillFocus?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   category?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   topic?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   subtopic?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   difficulty?: Prisma.IntWithAggregatesFilter<"ActivityVersion"> | number
   instructions?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   prompt?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
+  gapText?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  gapLayout?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
   passage?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  cueWord?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  keyWord?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  firstSentence?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  optionsOrdered?: Prisma.BoolWithAggregatesFilter<"ActivityVersion"> | boolean
+  game?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  cardsData?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
+  roundsData?: Prisma.StringNullableWithAggregatesFilter<"ActivityVersion"> | string | null
   explanation?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   tags?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
   lessonIds?: Prisma.StringWithAggregatesFilter<"ActivityVersion"> | string
@@ -491,13 +611,23 @@ export type ActivityVersionScalarWhereWithAggregatesInput = {
 export type ActivityVersionCreateInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -527,13 +657,23 @@ export type ActivityVersionUncheckedCreateInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -553,13 +693,23 @@ export type ActivityVersionUncheckedCreateInput = {
 export type ActivityVersionUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -589,13 +739,23 @@ export type ActivityVersionUncheckedUpdateInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -620,13 +780,23 @@ export type ActivityVersionCreateManyInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -638,13 +808,23 @@ export type ActivityVersionCreateManyInput = {
 export type ActivityVersionUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -660,13 +840,23 @@ export type ActivityVersionUncheckedUpdateManyInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -703,13 +893,23 @@ export type ActivityVersionCountOrderByAggregateInput = {
   activityTypeCode?: Prisma.SortOrder
   evaluatorStrategyCode?: Prisma.SortOrder
   levelCode?: Prisma.SortOrder
+  skillFocus?: Prisma.SortOrder
   category?: Prisma.SortOrder
   topic?: Prisma.SortOrder
   subtopic?: Prisma.SortOrder
   difficulty?: Prisma.SortOrder
   instructions?: Prisma.SortOrder
   prompt?: Prisma.SortOrder
+  gapText?: Prisma.SortOrder
+  gapLayout?: Prisma.SortOrder
   passage?: Prisma.SortOrder
+  cueWord?: Prisma.SortOrder
+  keyWord?: Prisma.SortOrder
+  firstSentence?: Prisma.SortOrder
+  optionsOrdered?: Prisma.SortOrder
+  game?: Prisma.SortOrder
+  cardsData?: Prisma.SortOrder
+  roundsData?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
   tags?: Prisma.SortOrder
   lessonIds?: Prisma.SortOrder
@@ -731,13 +931,23 @@ export type ActivityVersionMaxOrderByAggregateInput = {
   activityTypeCode?: Prisma.SortOrder
   evaluatorStrategyCode?: Prisma.SortOrder
   levelCode?: Prisma.SortOrder
+  skillFocus?: Prisma.SortOrder
   category?: Prisma.SortOrder
   topic?: Prisma.SortOrder
   subtopic?: Prisma.SortOrder
   difficulty?: Prisma.SortOrder
   instructions?: Prisma.SortOrder
   prompt?: Prisma.SortOrder
+  gapText?: Prisma.SortOrder
+  gapLayout?: Prisma.SortOrder
   passage?: Prisma.SortOrder
+  cueWord?: Prisma.SortOrder
+  keyWord?: Prisma.SortOrder
+  firstSentence?: Prisma.SortOrder
+  optionsOrdered?: Prisma.SortOrder
+  game?: Prisma.SortOrder
+  cardsData?: Prisma.SortOrder
+  roundsData?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
   tags?: Prisma.SortOrder
   lessonIds?: Prisma.SortOrder
@@ -754,13 +964,23 @@ export type ActivityVersionMinOrderByAggregateInput = {
   activityTypeCode?: Prisma.SortOrder
   evaluatorStrategyCode?: Prisma.SortOrder
   levelCode?: Prisma.SortOrder
+  skillFocus?: Prisma.SortOrder
   category?: Prisma.SortOrder
   topic?: Prisma.SortOrder
   subtopic?: Prisma.SortOrder
   difficulty?: Prisma.SortOrder
   instructions?: Prisma.SortOrder
   prompt?: Prisma.SortOrder
+  gapText?: Prisma.SortOrder
+  gapLayout?: Prisma.SortOrder
   passage?: Prisma.SortOrder
+  cueWord?: Prisma.SortOrder
+  keyWord?: Prisma.SortOrder
+  firstSentence?: Prisma.SortOrder
+  optionsOrdered?: Prisma.SortOrder
+  game?: Prisma.SortOrder
+  cardsData?: Prisma.SortOrder
+  roundsData?: Prisma.SortOrder
   explanation?: Prisma.SortOrder
   tags?: Prisma.SortOrder
   lessonIds?: Prisma.SortOrder
@@ -1150,13 +1370,23 @@ export type ActivityVersionUpdateOneWithoutPracticeRunItemsNestedInput = {
 export type ActivityVersionCreateWithoutAttemptsInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1185,13 +1415,23 @@ export type ActivityVersionUncheckedCreateWithoutAttemptsInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1226,13 +1466,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutAttemptsInput = {
 export type ActivityVersionUpdateWithoutAttemptsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1261,13 +1511,23 @@ export type ActivityVersionUncheckedUpdateWithoutAttemptsInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1286,13 +1546,23 @@ export type ActivityVersionUncheckedUpdateWithoutAttemptsInput = {
 export type ActivityVersionCreateWithoutReleaseInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1320,13 +1590,23 @@ export type ActivityVersionUncheckedCreateWithoutReleaseInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1379,13 +1659,23 @@ export type ActivityVersionScalarWhereInput = {
   activityTypeCode?: Prisma.StringFilter<"ActivityVersion"> | string
   evaluatorStrategyCode?: Prisma.StringFilter<"ActivityVersion"> | string
   levelCode?: Prisma.StringFilter<"ActivityVersion"> | string
+  skillFocus?: Prisma.StringFilter<"ActivityVersion"> | string
   category?: Prisma.StringFilter<"ActivityVersion"> | string
   topic?: Prisma.StringFilter<"ActivityVersion"> | string
   subtopic?: Prisma.StringFilter<"ActivityVersion"> | string
   difficulty?: Prisma.IntFilter<"ActivityVersion"> | number
   instructions?: Prisma.StringFilter<"ActivityVersion"> | string
   prompt?: Prisma.StringFilter<"ActivityVersion"> | string
+  gapText?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  gapLayout?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
   passage?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  cueWord?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  keyWord?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  firstSentence?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  optionsOrdered?: Prisma.BoolFilter<"ActivityVersion"> | boolean
+  game?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  cardsData?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
+  roundsData?: Prisma.StringNullableFilter<"ActivityVersion"> | string | null
   explanation?: Prisma.StringFilter<"ActivityVersion"> | string
   tags?: Prisma.StringFilter<"ActivityVersion"> | string
   lessonIds?: Prisma.StringFilter<"ActivityVersion"> | string
@@ -1397,13 +1687,23 @@ export type ActivityVersionScalarWhereInput = {
 export type ActivityVersionCreateWithoutActivityTypeInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1431,13 +1731,23 @@ export type ActivityVersionUncheckedCreateWithoutActivityTypeInput = {
   checksum: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1482,13 +1792,23 @@ export type ActivityVersionUpdateManyWithWhereWithoutActivityTypeInput = {
 export type ActivityVersionCreateWithoutEvaluatorStrategyInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1516,13 +1836,23 @@ export type ActivityVersionUncheckedCreateWithoutEvaluatorStrategyInput = {
   checksum: string
   activityTypeCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1567,13 +1897,23 @@ export type ActivityVersionUpdateManyWithWhereWithoutEvaluatorStrategyInput = {
 export type ActivityVersionCreateWithoutLevelInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1601,13 +1941,23 @@ export type ActivityVersionUncheckedCreateWithoutLevelInput = {
   checksum: string
   activityTypeCode: string
   evaluatorStrategyCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1652,13 +2002,23 @@ export type ActivityVersionUpdateManyWithWhereWithoutLevelInput = {
 export type ActivityVersionCreateWithoutStatusInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1687,13 +2047,23 @@ export type ActivityVersionUncheckedCreateWithoutStatusInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1737,13 +2107,23 @@ export type ActivityVersionUpdateManyWithWhereWithoutStatusInput = {
 export type ActivityVersionCreateWithoutActivityInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1771,13 +2151,23 @@ export type ActivityVersionUncheckedCreateWithoutActivityInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1822,13 +2212,23 @@ export type ActivityVersionUpdateManyWithWhereWithoutActivityInput = {
 export type ActivityVersionCreateWithoutLessonLinksInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1857,13 +2257,23 @@ export type ActivityVersionUncheckedCreateWithoutLessonLinksInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1898,13 +2308,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutLessonLinksInput = {
 export type ActivityVersionUpdateWithoutLessonLinksInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1933,13 +2353,23 @@ export type ActivityVersionUncheckedUpdateWithoutLessonLinksInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1958,13 +2388,23 @@ export type ActivityVersionUncheckedUpdateWithoutLessonLinksInput = {
 export type ActivityVersionCreateWithoutTaxonomyLinksInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -1993,13 +2433,23 @@ export type ActivityVersionUncheckedCreateWithoutTaxonomyLinksInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2034,13 +2484,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutTaxonomyLinksInput = {
 export type ActivityVersionUpdateWithoutTaxonomyLinksInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2069,13 +2529,23 @@ export type ActivityVersionUncheckedUpdateWithoutTaxonomyLinksInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2094,13 +2564,23 @@ export type ActivityVersionUncheckedUpdateWithoutTaxonomyLinksInput = {
 export type ActivityVersionCreateWithoutOptionsInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2129,13 +2609,23 @@ export type ActivityVersionUncheckedCreateWithoutOptionsInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2170,13 +2660,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutOptionsInput = {
 export type ActivityVersionUpdateWithoutOptionsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2205,13 +2705,23 @@ export type ActivityVersionUncheckedUpdateWithoutOptionsInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2230,13 +2740,23 @@ export type ActivityVersionUncheckedUpdateWithoutOptionsInput = {
 export type ActivityVersionCreateWithoutTokensInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2265,13 +2785,23 @@ export type ActivityVersionUncheckedCreateWithoutTokensInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2306,13 +2836,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutTokensInput = {
 export type ActivityVersionUpdateWithoutTokensInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2341,13 +2881,23 @@ export type ActivityVersionUncheckedUpdateWithoutTokensInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2366,13 +2916,23 @@ export type ActivityVersionUncheckedUpdateWithoutTokensInput = {
 export type ActivityVersionCreateWithoutPairsInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2401,13 +2961,23 @@ export type ActivityVersionUncheckedCreateWithoutPairsInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2442,13 +3012,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutPairsInput = {
 export type ActivityVersionUpdateWithoutPairsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2477,13 +3057,23 @@ export type ActivityVersionUncheckedUpdateWithoutPairsInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2502,13 +3092,23 @@ export type ActivityVersionUncheckedUpdateWithoutPairsInput = {
 export type ActivityVersionCreateWithoutExpectedAnswersInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2537,13 +3137,23 @@ export type ActivityVersionUncheckedCreateWithoutExpectedAnswersInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2578,13 +3188,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutExpectedAnswersInput = {
 export type ActivityVersionUpdateWithoutExpectedAnswersInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2613,13 +3233,23 @@ export type ActivityVersionUncheckedUpdateWithoutExpectedAnswersInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2638,13 +3268,23 @@ export type ActivityVersionUncheckedUpdateWithoutExpectedAnswersInput = {
 export type ActivityVersionCreateWithoutPracticeRunItemsInput = {
   id?: string
   checksum: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2673,13 +3313,23 @@ export type ActivityVersionUncheckedCreateWithoutPracticeRunItemsInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2714,13 +3364,23 @@ export type ActivityVersionUpdateToOneWithWhereWithoutPracticeRunItemsInput = {
 export type ActivityVersionUpdateWithoutPracticeRunItemsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2749,13 +3409,23 @@ export type ActivityVersionUncheckedUpdateWithoutPracticeRunItemsInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2778,13 +3448,23 @@ export type ActivityVersionCreateManyReleaseInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2796,13 +3476,23 @@ export type ActivityVersionCreateManyReleaseInput = {
 export type ActivityVersionUpdateWithoutReleaseInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2830,13 +3520,23 @@ export type ActivityVersionUncheckedUpdateWithoutReleaseInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2860,13 +3560,23 @@ export type ActivityVersionUncheckedUpdateManyWithoutReleaseInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2882,13 +3592,23 @@ export type ActivityVersionCreateManyActivityTypeInput = {
   checksum: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -2900,13 +3620,23 @@ export type ActivityVersionCreateManyActivityTypeInput = {
 export type ActivityVersionUpdateWithoutActivityTypeInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2934,13 +3664,23 @@ export type ActivityVersionUncheckedUpdateWithoutActivityTypeInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2964,13 +3704,23 @@ export type ActivityVersionUncheckedUpdateManyWithoutActivityTypeInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -2986,13 +3736,23 @@ export type ActivityVersionCreateManyEvaluatorStrategyInput = {
   checksum: string
   activityTypeCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -3004,13 +3764,23 @@ export type ActivityVersionCreateManyEvaluatorStrategyInput = {
 export type ActivityVersionUpdateWithoutEvaluatorStrategyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3038,13 +3808,23 @@ export type ActivityVersionUncheckedUpdateWithoutEvaluatorStrategyInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3068,13 +3848,23 @@ export type ActivityVersionUncheckedUpdateManyWithoutEvaluatorStrategyInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3090,13 +3880,23 @@ export type ActivityVersionCreateManyLevelInput = {
   checksum: string
   activityTypeCode: string
   evaluatorStrategyCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -3108,13 +3908,23 @@ export type ActivityVersionCreateManyLevelInput = {
 export type ActivityVersionUpdateWithoutLevelInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3142,13 +3952,23 @@ export type ActivityVersionUncheckedUpdateWithoutLevelInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3172,13 +3992,23 @@ export type ActivityVersionUncheckedUpdateManyWithoutLevelInput = {
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3195,13 +4025,23 @@ export type ActivityVersionCreateManyStatusInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -3212,13 +4052,23 @@ export type ActivityVersionCreateManyStatusInput = {
 export type ActivityVersionUpdateWithoutStatusInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3247,13 +4097,23 @@ export type ActivityVersionUncheckedUpdateWithoutStatusInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3277,13 +4137,23 @@ export type ActivityVersionUncheckedUpdateManyWithoutStatusInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3298,13 +4168,23 @@ export type ActivityVersionCreateManyActivityInput = {
   activityTypeCode: string
   evaluatorStrategyCode: string
   levelCode: string
+  skillFocus: string
   category: string
   topic: string
   subtopic: string
   difficulty: number
   instructions: string
   prompt: string
+  gapText?: string | null
+  gapLayout?: string | null
   passage?: string | null
+  cueWord?: string | null
+  keyWord?: string | null
+  firstSentence?: string | null
+  optionsOrdered?: boolean
+  game?: string | null
+  cardsData?: string | null
+  roundsData?: string | null
   explanation: string
   tags: string
   lessonIds: string
@@ -3316,13 +4196,23 @@ export type ActivityVersionCreateManyActivityInput = {
 export type ActivityVersionUpdateWithoutActivityInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   checksum?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3350,13 +4240,23 @@ export type ActivityVersionUncheckedUpdateWithoutActivityInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3380,13 +4280,23 @@ export type ActivityVersionUncheckedUpdateManyWithoutActivityInput = {
   activityTypeCode?: Prisma.StringFieldUpdateOperationsInput | string
   evaluatorStrategyCode?: Prisma.StringFieldUpdateOperationsInput | string
   levelCode?: Prisma.StringFieldUpdateOperationsInput | string
+  skillFocus?: Prisma.StringFieldUpdateOperationsInput | string
   category?: Prisma.StringFieldUpdateOperationsInput | string
   topic?: Prisma.StringFieldUpdateOperationsInput | string
   subtopic?: Prisma.StringFieldUpdateOperationsInput | string
   difficulty?: Prisma.IntFieldUpdateOperationsInput | number
   instructions?: Prisma.StringFieldUpdateOperationsInput | string
   prompt?: Prisma.StringFieldUpdateOperationsInput | string
+  gapText?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  gapLayout?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   passage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cueWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  keyWord?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  firstSentence?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  optionsOrdered?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  game?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  cardsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  roundsData?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   explanation?: Prisma.StringFieldUpdateOperationsInput | string
   tags?: Prisma.StringFieldUpdateOperationsInput | string
   lessonIds?: Prisma.StringFieldUpdateOperationsInput | string
@@ -3497,13 +4407,23 @@ export type ActivityVersionSelect<ExtArgs extends runtime.Types.Extensions.Inter
   activityTypeCode?: boolean
   evaluatorStrategyCode?: boolean
   levelCode?: boolean
+  skillFocus?: boolean
   category?: boolean
   topic?: boolean
   subtopic?: boolean
   difficulty?: boolean
   instructions?: boolean
   prompt?: boolean
+  gapText?: boolean
+  gapLayout?: boolean
   passage?: boolean
+  cueWord?: boolean
+  keyWord?: boolean
+  firstSentence?: boolean
+  optionsOrdered?: boolean
+  game?: boolean
+  cardsData?: boolean
+  roundsData?: boolean
   explanation?: boolean
   tags?: boolean
   lessonIds?: boolean
@@ -3535,13 +4455,23 @@ export type ActivityVersionSelectCreateManyAndReturn<ExtArgs extends runtime.Typ
   activityTypeCode?: boolean
   evaluatorStrategyCode?: boolean
   levelCode?: boolean
+  skillFocus?: boolean
   category?: boolean
   topic?: boolean
   subtopic?: boolean
   difficulty?: boolean
   instructions?: boolean
   prompt?: boolean
+  gapText?: boolean
+  gapLayout?: boolean
   passage?: boolean
+  cueWord?: boolean
+  keyWord?: boolean
+  firstSentence?: boolean
+  optionsOrdered?: boolean
+  game?: boolean
+  cardsData?: boolean
+  roundsData?: boolean
   explanation?: boolean
   tags?: boolean
   lessonIds?: boolean
@@ -3564,13 +4494,23 @@ export type ActivityVersionSelectUpdateManyAndReturn<ExtArgs extends runtime.Typ
   activityTypeCode?: boolean
   evaluatorStrategyCode?: boolean
   levelCode?: boolean
+  skillFocus?: boolean
   category?: boolean
   topic?: boolean
   subtopic?: boolean
   difficulty?: boolean
   instructions?: boolean
   prompt?: boolean
+  gapText?: boolean
+  gapLayout?: boolean
   passage?: boolean
+  cueWord?: boolean
+  keyWord?: boolean
+  firstSentence?: boolean
+  optionsOrdered?: boolean
+  game?: boolean
+  cardsData?: boolean
+  roundsData?: boolean
   explanation?: boolean
   tags?: boolean
   lessonIds?: boolean
@@ -3593,13 +4533,23 @@ export type ActivityVersionSelectScalar = {
   activityTypeCode?: boolean
   evaluatorStrategyCode?: boolean
   levelCode?: boolean
+  skillFocus?: boolean
   category?: boolean
   topic?: boolean
   subtopic?: boolean
   difficulty?: boolean
   instructions?: boolean
   prompt?: boolean
+  gapText?: boolean
+  gapLayout?: boolean
   passage?: boolean
+  cueWord?: boolean
+  keyWord?: boolean
+  firstSentence?: boolean
+  optionsOrdered?: boolean
+  game?: boolean
+  cardsData?: boolean
+  roundsData?: boolean
   explanation?: boolean
   tags?: boolean
   lessonIds?: boolean
@@ -3608,7 +4558,7 @@ export type ActivityVersionSelectScalar = {
   statusCode?: boolean
 }
 
-export type ActivityVersionOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "releaseId" | "activityId" | "checksum" | "activityTypeCode" | "evaluatorStrategyCode" | "levelCode" | "category" | "topic" | "subtopic" | "difficulty" | "instructions" | "prompt" | "passage" | "explanation" | "tags" | "lessonIds" | "estimatedSeconds" | "evaluatorData" | "statusCode", ExtArgs["result"]["activityVersion"]>
+export type ActivityVersionOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "releaseId" | "activityId" | "checksum" | "activityTypeCode" | "evaluatorStrategyCode" | "levelCode" | "skillFocus" | "category" | "topic" | "subtopic" | "difficulty" | "instructions" | "prompt" | "gapText" | "gapLayout" | "passage" | "cueWord" | "keyWord" | "firstSentence" | "optionsOrdered" | "game" | "cardsData" | "roundsData" | "explanation" | "tags" | "lessonIds" | "estimatedSeconds" | "evaluatorData" | "statusCode", ExtArgs["result"]["activityVersion"]>
 export type ActivityVersionInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   release?: boolean | Prisma.CatalogReleaseDefaultArgs<ExtArgs>
   activity?: boolean | Prisma.ActivityDefaultArgs<ExtArgs>
@@ -3669,13 +4619,50 @@ export type $ActivityVersionPayload<ExtArgs extends runtime.Types.Extensions.Int
     activityTypeCode: string
     evaluatorStrategyCode: string
     levelCode: string
+    /**
+     * Ejercicio de origen antes de la homogeneización de tipos (schema v2).
+     */
+    skillFocus: string
     category: string
     topic: string
     subtopic: string
     difficulty: number
     instructions: string
     prompt: string
+    /**
+     * Texto con marcadores [gapN]. Solo en tipos con huecos.
+     */
+    gapText: string | null
+    gapLayout: string | null
     passage: string | null
+    /**
+     * UoE Part 3: raíz en mayúsculas de la que derivar.
+     */
+    cueWord: string | null
+    /**
+     * UoE Part 4: palabra clave que debe aparecer sin modificar.
+     */
+    keyWord: string | null
+    /**
+     * UoE Part 4: frase de partida.
+     */
+    firstSentence: string | null
+    /**
+     * El orden de las opciones es significativo y no debe barajarse.
+     */
+    optionsOrdered: boolean
+    /**
+     * Identificador del minijuego en las actividades de tipo mini_game.
+     */
+    game: string | null
+    /**
+     * JSON con las cartas de un swipe_deck.
+     */
+    cardsData: string | null
+    /**
+     * JSON con las rondas de un mini_game.
+     */
+    roundsData: string | null
     explanation: string
     tags: string
     lessonIds: string
@@ -4126,13 +5113,23 @@ export interface ActivityVersionFieldRefs {
   readonly activityTypeCode: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly evaluatorStrategyCode: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly levelCode: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly skillFocus: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly category: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly topic: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly subtopic: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly difficulty: Prisma.FieldRef<"ActivityVersion", 'Int'>
   readonly instructions: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly prompt: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly gapText: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly gapLayout: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly passage: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly cueWord: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly keyWord: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly firstSentence: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly optionsOrdered: Prisma.FieldRef<"ActivityVersion", 'Boolean'>
+  readonly game: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly cardsData: Prisma.FieldRef<"ActivityVersion", 'String'>
+  readonly roundsData: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly explanation: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly tags: Prisma.FieldRef<"ActivityVersion", 'String'>
   readonly lessonIds: Prisma.FieldRef<"ActivityVersion", 'String'>

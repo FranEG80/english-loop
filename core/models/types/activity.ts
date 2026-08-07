@@ -1,154 +1,188 @@
 import type { CefrLevel } from "../level";
 
+/**
+ * Tipos canónicos del catálogo. Coinciden 1:1 con
+ * `DATASET/schemas/activity.schema.json` y con `scripts/dataset/lib/types.ts`:
+ * no hay traducción de vocabularios ni alias.
+ */
 export const ACTIVITY_TYPES = [
-  "true_false",
+  "gap_fill",
   "single_choice",
   "multiple_choice",
-  "fill_blank",
-  "sentence_transformation",
-  "error_correction",
-  "word_formation",
-  "open_cloze",
-  "key_word_transformation",
-  "matching",
+  "true_false",
+  "swipe_deck",
   "word_order",
-  "rewrite_sentence",
-  "complete_dialogue",
-  "complete_paragraph",
+  "matching",
+  "error_correction",
+  "guided_writing",
+  "word_formation",
+  "key_word_transformation",
+  "sentence_rewrite",
+  "mini_game",
 ] as const;
 
 export type ActivityType = (typeof ACTIVITY_TYPES)[number];
 
-/** Cómo se presenta/interactúa con la actividad; no decide cómo se corrige. */
-export const INTERACTION_MODES = [
-  "standard",
-  "swipe",
-  "drag_drop",
-  "matching_pairs",
-  "sentence_builder",
+/**
+ * Familia de presentación: qué renderer pinta la actividad. Varios tipos
+ * comparten familia (`gap_fill` y `word_formation` son ambos huecos en línea),
+ * pero cada familia tiene un único DTO, así que el renderer no puede recibir
+ * una forma que no sepa pintar.
+ */
+export const ACTIVITY_PRESENTATIONS = [
+  "gap_fill",
+  "key_word_transformation",
+  "choice",
+  "true_false",
+  "swipe_deck",
+  "word_order",
+  "matching",
+  "free_text",
+  "mini_game",
 ] as const;
 
-export type InteractionMode = (typeof INTERACTION_MODES)[number];
+export type ActivityPresentation = (typeof ACTIVITY_PRESENTATIONS)[number];
+
+export const MINI_GAME_IDS = ["frog_leap", "lane_runner", "sentence_tower"] as const;
+
+export type MiniGameId = (typeof MINI_GAME_IDS)[number];
+
+/** Disposición del texto con huecos. */
+export const GAP_LAYOUTS = ["sentence", "paragraph", "dialogue"] as const;
+
+export type GapLayout = (typeof GAP_LAYOUTS)[number];
 
 export interface ActivityOptionDto {
   id: string;
   label: string;
 }
 
-export interface DialogueLineDto {
-  speaker: string;
-  text: string;
-  hasGap: boolean;
-}
+/** Trozo de texto o hueco dentro de un enunciado con huecos en línea. */
+export type ActivitySegment =
+  | { kind: "text"; value: string }
+  | { kind: "gap"; gapId: string; position: number }
+  | { kind: "break" }
+  | { kind: "speaker"; label: string };
 
 interface ActivityBaseDto {
   id: string;
   level: CefrLevel;
   taxonomyNodeId: string;
-  interactionMode: InteractionMode;
+  /** Tipo pedagógico, para etiquetas y filtros. */
+  type: ActivityType;
+  /** Ejercicio de origen antes de la homogeneización. */
+  skillFocus: string;
+  /** Consigna de la actividad. Siempre presente. */
+  instructions: string;
+  /** Texto de apoyo sin huecos (pasaje de lectura, contexto). */
+  context?: string;
 }
 
-export interface TrueFalseActivityDto extends ActivityBaseDto {
-  type: "true_false";
-  statement: string;
-  /** Mazo opcional para resolver varias afirmaciones dentro del mismo swipe. */
-  statements?: Array<{ id: string; statement: string }>;
-}
-
-export interface SingleChoiceActivityDto extends ActivityBaseDto {
-  type: "single_choice";
-  question: string;
-  options: ActivityOptionDto[];
-}
-
-export interface MultipleChoiceActivityDto extends ActivityBaseDto {
-  type: "multiple_choice";
-  question: string;
-  options: ActivityOptionDto[];
-}
-
-export interface FillBlankActivityDto extends ActivityBaseDto {
-  type: "fill_blank";
-  /** Usa "___" como marcador del hueco. */
-  textWithGap: string;
-}
-
-export interface SentenceTransformationActivityDto extends ActivityBaseDto {
-  type: "sentence_transformation";
-  originalSentence: string;
-  instructionHint: string;
-  wordBank: string[];
-}
-
-export interface ErrorCorrectionActivityDto extends ActivityBaseDto {
-  type: "error_correction";
-  sentenceWithError: string;
-}
-
-export interface WordFormationActivityDto extends ActivityBaseDto {
-  type: "word_formation";
-  sentenceWithGap: string;
-  baseWord: string;
-}
-
-export interface OpenClozeActivityDto extends ActivityBaseDto {
-  type: "open_cloze";
-  textWithGaps: string;
-  gapCount: number;
+export interface GapFillActivityDto extends ActivityBaseDto {
+  presentation: "gap_fill";
+  /** Pregunta o encabezado sobre el texto con huecos, si aporta algo. */
+  question?: string;
+  segments: ActivitySegment[];
+  layout: GapLayout;
+  gapIds: string[];
+  /** UoE Part 3: raíz en mayúsculas de la que derivar. */
+  cueWord?: string;
 }
 
 export interface KeyWordTransformationActivityDto extends ActivityBaseDto {
-  type: "key_word_transformation";
+  presentation: "key_word_transformation";
   firstSentence: string;
-  keyword: string;
-  secondSentenceStart: string;
+  keyWord: string;
+  segments: ActivitySegment[];
+  gapIds: string[];
+  /** Límite de palabras de UoE Part 4 (contracciones cuentan doble). */
+  maxWords: number;
+}
+
+export interface ChoiceActivityDto extends ActivityBaseDto {
+  presentation: "choice";
+  question: string;
+  options: ActivityOptionDto[];
+  selection: "single" | "multiple";
+}
+
+export interface TrueFalseActivityDto extends ActivityBaseDto {
+  presentation: "true_false";
+  statement: string;
+}
+
+export interface SwipeDeckActivityDto extends ActivityBaseDto {
+  presentation: "swipe_deck";
+  cards: Array<{ id: string; statement: string }>;
+}
+
+export interface WordOrderActivityDto extends ActivityBaseDto {
+  presentation: "word_order";
+  /** Fragmentos ya barajados de forma determinista. */
+  tokens: Array<{ id: string; text: string }>;
 }
 
 export interface MatchingActivityDto extends ActivityBaseDto {
-  type: "matching";
+  presentation: "matching";
   leftItems: ActivityOptionDto[];
   rightItems: ActivityOptionDto[];
 }
 
-export interface WordOrderActivityDto extends ActivityBaseDto {
-  type: "word_order";
-  shuffledWords: string[];
+export interface FreeTextActivityDto extends ActivityBaseDto {
+  presentation: "free_text";
+  prompt: string;
+  /** Restricción de la tarea, si la hay ("usa la tercera condicional"). */
+  constraintHint?: string;
 }
 
-export interface RewriteSentenceActivityDto extends ActivityBaseDto {
-  type: "rewrite_sentence";
-  originalSentence: string;
-  constraintHint: string;
+export interface MiniGameRoundDto {
+  id: string;
+  prompt: string;
+  options: ActivityOptionDto[];
 }
 
-export interface CompleteDialogueActivityDto extends ActivityBaseDto {
-  type: "complete_dialogue";
-  dialogueLines: DialogueLineDto[];
-}
-
-export interface CompleteParagraphActivityDto extends ActivityBaseDto {
-  type: "complete_paragraph";
-  question: string;
-  paragraphWithGaps: string;
-  gapCount: number;
+export interface MiniGameActivityDto extends ActivityBaseDto {
+  presentation: "mini_game";
+  game: MiniGameId;
+  /** Sin la opción correcta: la corrección vive solo en el servidor. */
+  rounds: MiniGameRoundDto[];
 }
 
 /**
- * Unión discriminada por `type`. Nunca incluye la respuesta correcta: la
- * corrección vive únicamente en el adapter mock (o, en el futuro, el backend).
+ * Unión discriminada por `presentation`. Nunca incluye la respuesta correcta:
+ * la corrección vive únicamente en el servidor.
  */
 export type ActivityQuestionDto =
-  | TrueFalseActivityDto
-  | SingleChoiceActivityDto
-  | MultipleChoiceActivityDto
-  | FillBlankActivityDto
-  | SentenceTransformationActivityDto
-  | ErrorCorrectionActivityDto
-  | WordFormationActivityDto
-  | OpenClozeActivityDto
+  | GapFillActivityDto
   | KeyWordTransformationActivityDto
-  | MatchingActivityDto
+  | ChoiceActivityDto
+  | TrueFalseActivityDto
+  | SwipeDeckActivityDto
   | WordOrderActivityDto
-  | RewriteSentenceActivityDto
-  | CompleteDialogueActivityDto
-  | CompleteParagraphActivityDto;
+  | MatchingActivityDto
+  | FreeTextActivityDto
+  | MiniGameActivityDto;
+
+/** Tipos que se presentan con una familia dada. Sirve para filtrar el catálogo. */
+export function activityTypesForPresentation(
+  presentation: ActivityPresentation,
+): ActivityType[] {
+  return ACTIVITY_TYPES.filter((type) => PRESENTATION_BY_TYPE[type] === presentation);
+}
+
+/** Tabla única tipo -> presentación. */
+export const PRESENTATION_BY_TYPE: Readonly<Record<ActivityType, ActivityPresentation>> = {
+  gap_fill: "gap_fill",
+  word_formation: "gap_fill",
+  key_word_transformation: "key_word_transformation",
+  single_choice: "choice",
+  multiple_choice: "choice",
+  true_false: "true_false",
+  swipe_deck: "swipe_deck",
+  word_order: "word_order",
+  matching: "matching",
+  error_correction: "free_text",
+  guided_writing: "free_text",
+  sentence_rewrite: "free_text",
+  mini_game: "mini_game",
+};

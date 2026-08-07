@@ -53,7 +53,7 @@ describe("PracticeRun", () => {
       id: "a1",
       versionId: "a1-v1",
       level: "B1" as const,
-      type: "choice",
+      type: "choice", skillFocus: "fill_blank",
       category: "grammar",
       topic: "grammar",
       subtopic: "present",

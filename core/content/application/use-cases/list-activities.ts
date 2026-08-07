@@ -16,7 +16,7 @@ export interface ListActivitiesInput {
   lessonIds?: string[];
   query?: string;
   activityType?: string;
-  interactionMode?: string;
+  presentation?: string;
 }
 
 /** Lista actividades publicadas, opcionalmente filtradas. */
@@ -57,7 +57,7 @@ export async function searchActivitiesPage(
       lessonIds: input.lessonIds,
       query: input.query,
       activityType: input.activityType,
-      interactionMode: input.interactionMode,
+      presentation: input.presentation,
     },
     input.pagination,
   );

@@ -108,7 +108,7 @@ describe("PrismaCatalogAdapter", () => {
     await expect(pagedAdapter.listLessonsPage(undefined, { limit: 1 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }], hasMore: true });
     await expect(pagedAdapter.listLessonsPage(undefined, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "lesson-1" }, { id: "lesson-2" }], hasMore: false });
     await expect(pagedAdapter.listActivitiesPage({ level: "B1", taxonomyNodeId: "grammar", lessonIds: ["lesson-1"] }, { limit: 1, cursor: encodeCursor("activity-0") })).resolves.toMatchObject({ items: [{ id: "activity-1" }], hasMore: true });
-    await expect(adapter.searchActivitiesPage({ query: "prompt", taxonomyNodeIds: ["grammar"], activityType: "choice", interactionMode: "standard" }, { page: 1, pageSize: 12 })).resolves.toMatchObject({ items: [{ id: "activity-1" }], total: 4 });
+    await expect(adapter.searchActivitiesPage({ query: "prompt", taxonomyNodeIds: ["grammar"], activityType: "choice", presentation: "choice" }, { page: 1, pageSize: 12 })).resolves.toMatchObject({ items: [{ id: "activity-1" }], total: 4 });
     await expect(adapter.getActivityById("activity-1")).resolves.toMatchObject({ id: "activity-1", passage: "Passage" });
     await expect(adapter.getActivityById("missing")).resolves.toBeNull();
     await expect(adapter.getActivityByVersionId("activity-version-1")).resolves.toMatchObject({ id: "activity-1", versionId: "activity-version-1" });

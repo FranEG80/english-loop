@@ -13,8 +13,8 @@ const normalization = {
 describe("ActivityEvaluator", () => {
   it("grades boolean strategy", () => {
     const evaluator: Evaluator = { strategy: "boolean", correct: true };
-    expect(evaluate(evaluator, { kind: "boolean", value: true })).toBe(true);
-    expect(evaluate(evaluator, { kind: "boolean", value: false })).toBe(false);
+    expect(evaluate(evaluator, { kind: "boolean", value: true }).isCorrect).toBe(true);
+    expect(evaluate(evaluator, { kind: "boolean", value: false }).isCorrect).toBe(false);
   });
 
   it("grades single_option strategy", () => {
@@ -22,8 +22,8 @@ describe("ActivityEvaluator", () => {
       strategy: "single_option",
       correctOptionId: "a",
     };
-    expect(evaluate(evaluator, { kind: "single", value: "a" })).toBe(true);
-    expect(evaluate(evaluator, { kind: "single", value: "b" })).toBe(false);
+    expect(evaluate(evaluator, { kind: "single", value: "a" }).isCorrect).toBe(true);
+    expect(evaluate(evaluator, { kind: "single", value: "b" }).isCorrect).toBe(false);
   });
 
   it("grades multiple_options strategy", () => {
@@ -32,16 +32,16 @@ describe("ActivityEvaluator", () => {
       correctOptionIds: ["a", "b"],
     };
     expect(
-      evaluate(evaluator, { kind: "multiple", value: ["a", "b"] }),
+      evaluate(evaluator, { kind: "multiple", value: ["a", "b"] }).isCorrect,
     ).toBe(true);
     expect(
-      evaluate(evaluator, { kind: "multiple", value: ["a", "c"] }),
+      evaluate(evaluator, { kind: "multiple", value: ["a", "c"] }).isCorrect,
     ).toBe(false);
     expect(
-      evaluate(evaluator, { kind: "multiple", value: ["a", "a", "b"] }),
+      evaluate(evaluator, { kind: "multiple", value: ["a", "a", "b"] }).isCorrect,
     ).toBe(false);
     expect(
-      evaluate(evaluator, { kind: "text", value: "a" }),
+      evaluate(evaluator, { kind: "text", value: "a" }).isCorrect,
     ).toBe(false);
   });
 
@@ -52,10 +52,10 @@ describe("ActivityEvaluator", () => {
       normalization,
     };
     expect(
-      evaluate(evaluator, { kind: "text", value: "  I have lived here.  " }),
+      evaluate(evaluator, { kind: "text", value: "  I have lived here.  " }).isCorrect,
     ).toBe(true);
     expect(
-      evaluate(evaluator, { kind: "text", value: "I live here" }),
+      evaluate(evaluator, { kind: "text", value: "I live here" }).isCorrect,
     ).toBe(false);
     const strict = {
       trim: false,
@@ -64,8 +64,8 @@ describe("ActivityEvaluator", () => {
       ignoreTerminalPunctuation: false,
       normaliseApostrophes: false,
     };
-    expect(evaluate({ strategy: "exact_text", answer: "Exact", normalization: strict }, { kind: "text", value: "Exact" })).toBe(true);
-    expect(evaluate({ strategy: "exact_text", answer: "Exact", normalization: strict }, { kind: "text", value: " exact " })).toBe(false);
+    expect(evaluate({ strategy: "exact_text", answer: "Exact", normalization: strict }, { kind: "text", value: "Exact" }).isCorrect).toBe(true);
+    expect(evaluate({ strategy: "exact_text", answer: "Exact", normalization: strict }, { kind: "text", value: " exact " }).isCorrect).toBe(false);
   });
 
   it("grades one_of_texts strategy", () => {
@@ -74,8 +74,8 @@ describe("ActivityEvaluator", () => {
       answers: ["went", "have gone"],
       normalization,
     };
-    expect(evaluate(evaluator, { kind: "text", value: "WENT" })).toBe(true);
-    expect(evaluate(evaluator, { kind: "text", value: "go" })).toBe(false);
+    expect(evaluate(evaluator, { kind: "text", value: "WENT" }).isCorrect).toBe(true);
+    expect(evaluate(evaluator, { kind: "text", value: "go" }).isCorrect).toBe(false);
   });
 
   it("grades per_gap responses in order for multi-gap activities", () => {
@@ -87,14 +87,14 @@ describe("ActivityEvaluator", () => {
       ],
       normalization,
     };
-    expect(evaluate(evaluator, { kind: "ordered_list", value: ["WENT", " HOUSE "] })).toBe(true);
-    expect(evaluate(evaluator, { kind: "ordered_list", value: ["HOUSE", "WENT"] })).toBe(false);
-    expect(evaluate(evaluator, { kind: "ordered_list", value: ["went"] })).toBe(false);
-    expect(evaluate(evaluator, { kind: "text", value: " HOUSE " })).toBe(false);
-    expect(evaluate(evaluator, { kind: "text", value: "house" })).toBe(false);
-    expect(evaluate(evaluator, { kind: "multiple", value: ["house"] })).toBe(false);
+    expect(evaluate(evaluator, { kind: "ordered_list", value: ["WENT", " HOUSE "] }).isCorrect).toBe(true);
+    expect(evaluate(evaluator, { kind: "ordered_list", value: ["HOUSE", "WENT"] }).isCorrect).toBe(false);
+    expect(evaluate(evaluator, { kind: "ordered_list", value: ["went"] }).isCorrect).toBe(false);
+    expect(evaluate(evaluator, { kind: "text", value: " HOUSE " }).isCorrect).toBe(false);
+    expect(evaluate(evaluator, { kind: "text", value: "house" }).isCorrect).toBe(false);
+    expect(evaluate(evaluator, { kind: "multiple", value: ["house"] }).isCorrect).toBe(false);
 
-    expect(evaluate({ ...evaluator, gaps: [{ gapId: "only", answers: ["house"] }] }, { kind: "text", value: " HOUSE " })).toBe(true);
+    expect(evaluate({ ...evaluator, gaps: [{ gapId: "only", answers: ["house"] }] }, { kind: "text", value: " HOUSE " }).isCorrect).toBe(true);
   });
 
   it("grades ordered_tokens strategy", () => {
@@ -103,25 +103,39 @@ describe("ActivityEvaluator", () => {
       correctTokenIds: ["t1", "t2", "t3"],
     };
     expect(
-      evaluate(evaluator, { kind: "ordered_list", value: ["t1", "t2", "t3"] }),
+      evaluate(evaluator, { kind: "ordered_list", value: ["t1", "t2", "t3"] }).isCorrect,
     ).toBe(true);
     expect(
-      evaluate(evaluator, { kind: "ordered_list", value: ["t3", "t2", "t1"] }),
+      evaluate(evaluator, { kind: "ordered_list", value: ["t3", "t2", "t1"] }).isCorrect,
     ).toBe(false);
   });
 
-  it("grades unordered_set strategy", () => {
+  it("grades deck_booleans strategy", () => {
     const evaluator: Evaluator = {
-      strategy: "unordered_set",
-      correctValues: ["apple", "banana"],
-      normalization,
+      strategy: "deck_booleans",
+      cards: [
+        { cardId: "c1", correct: true },
+        { cardId: "c2", correct: false },
+      ],
     };
     expect(
-      evaluate(evaluator, { kind: "multiple", value: ["banana", "apple"] }),
+      evaluate(evaluator, {
+        kind: "deck",
+        value: [
+          { cardId: "c1", value: true },
+          { cardId: "c2", value: false },
+        ],
+      }).isCorrect,
     ).toBe(true);
     expect(
-      evaluate(evaluator, { kind: "multiple", value: ["apple", "pear"] }),
-    ).toBe(false);
+      evaluate(evaluator, {
+        kind: "deck",
+        value: [
+          { cardId: "c1", value: true },
+          { cardId: "c2", value: true },
+        ],
+      }).score,
+    ).toBe(0.5);
   });
 
   it("grades matching_pairs strategy", () => {
@@ -139,7 +153,7 @@ describe("ActivityEvaluator", () => {
           { leftId: "l1", rightId: "r1" },
           { leftId: "l2", rightId: "r2" },
         ],
-      }),
+      }).isCorrect,
     ).toBe(true);
     expect(
       evaluate(evaluator, {
@@ -148,7 +162,7 @@ describe("ActivityEvaluator", () => {
           { leftId: "l1", rightId: "r2" },
           { leftId: "l2", rightId: "r1" },
         ],
-      }),
+      }).isCorrect,
     ).toBe(false);
     expect(
       evaluate(evaluator, {
@@ -157,7 +171,7 @@ describe("ActivityEvaluator", () => {
           { leftId: "l1", rightId: "r1" },
           { leftId: "l1", rightId: "r1" },
         ],
-      }),
+      }).isCorrect,
     ).toBe(false);
   });
 

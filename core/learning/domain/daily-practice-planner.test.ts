@@ -8,7 +8,7 @@ const makeActivity = (id: string, versionId?: string): Activity => ({
   id,
   versionId,
   level: "B1",
-  type: "true_false",
+  type: "true_false", skillFocus: "fill_blank",
   category: "grammar",
   topic: "topic",
   subtopic: "subtopic",

@@ -13,7 +13,6 @@ const sessionSizeSchema = z.custom<SessionSize>(
 
 export const activityResponseSchema = z.discriminatedUnion("kind", [
   z.object({ kind: z.literal("boolean"), value: z.boolean() }),
-  z.object({ kind: z.literal("boolean_list"), value: z.array(z.boolean()) }),
   z.object({ kind: z.literal("single"), value: z.string() }),
   z.object({ kind: z.literal("multiple"), value: z.array(z.string()) }),
   z.object({ kind: z.literal("text"), value: z.string() }),
@@ -21,6 +20,18 @@ export const activityResponseSchema = z.discriminatedUnion("kind", [
   z.object({
     kind: z.literal("pairs"),
     value: z.array(z.object({ leftId: z.string(), rightId: z.string() })),
+  }),
+  z.object({
+    kind: z.literal("gaps"),
+    value: z.array(z.object({ gapId: z.string(), text: z.string() })),
+  }),
+  z.object({
+    kind: z.literal("deck"),
+    value: z.array(z.object({ cardId: z.string(), value: z.boolean() })),
+  }),
+  z.object({
+    kind: z.literal("rounds"),
+    value: z.array(z.object({ roundId: z.string(), optionId: z.string() })),
   }),
 ]);
 

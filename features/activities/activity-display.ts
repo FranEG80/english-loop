@@ -1,23 +1,22 @@
-import type { ActivityType } from "@/core/models";
+import type { ActivityPresentation, ActivityType } from "@/core/models";
+import type { Dictionary } from "@/shared/i18n";
 
-const activityTypeLabels: Record<ActivityType, string> = {
-  true_false: "True or false",
-  single_choice: "Single choice",
-  multiple_choice: "Multiple choice",
-  fill_blank: "Fill in the blank",
-  sentence_transformation: "Sentence transformation",
-  error_correction: "Error correction",
-  word_formation: "Word formation",
-  open_cloze: "Open cloze",
-  key_word_transformation: "Keyword transformation",
-  matching: "Matching",
-  word_order: "Word order",
-  rewrite_sentence: "Rewrite the sentence",
-  complete_dialogue: "Complete the dialogue",
-  complete_paragraph: "Complete the paragraph",
-};
+/**
+ * Etiquetas de catálogo. Se leen del diccionario para no dejar inglés
+ * incrustado en una interfaz bilingüe.
+ */
+export function formatActivityType(type: ActivityType, dictionary?: Dictionary): string {
+  return dictionary?.activityTypes[type] ?? FALLBACK_TYPE_LABELS[type];
+}
 
-/** Turns an internal activity id into a short title suitable for the UI. */
+export function formatPresentation(
+  presentation: ActivityPresentation,
+  dictionary?: Dictionary,
+): string {
+  return dictionary?.activityPresentations[presentation] ?? FALLBACK_PRESENTATION_LABELS[presentation];
+}
+
+/** Convierte el id interno de una actividad en un título corto para la interfaz. */
 export function formatActivityTitle(id: string, level: string): string {
   const withoutLevel = id.replace(new RegExp(`^${level.toLowerCase()}-`, "i"), "");
   const withoutFormatCode = withoutLevel.replace(/-([a-z]{2,4})-\d+$/i, "");
@@ -27,6 +26,30 @@ export function formatActivityTitle(id: string, level: string): string {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-export function formatActivityType(type: ActivityType): string {
-  return activityTypeLabels[type];
-}
+const FALLBACK_TYPE_LABELS: Record<ActivityType, string> = {
+  gap_fill: "Gap fill",
+  single_choice: "Single choice",
+  multiple_choice: "Multiple choice",
+  true_false: "True or false",
+  swipe_deck: "Swipe deck",
+  word_order: "Word order",
+  matching: "Matching",
+  error_correction: "Error correction",
+  guided_writing: "Guided writing",
+  word_formation: "Word formation",
+  key_word_transformation: "Key word transformation",
+  sentence_rewrite: "Sentence rewrite",
+  mini_game: "Mini game",
+};
+
+const FALLBACK_PRESENTATION_LABELS: Record<ActivityPresentation, string> = {
+  gap_fill: "Gaps in the sentence",
+  key_word_transformation: "Key word transformation",
+  choice: "Choose an option",
+  true_false: "True or false",
+  swipe_deck: "Swipe deck",
+  word_order: "Build the sentence",
+  matching: "Match the pairs",
+  free_text: "Write your answer",
+  mini_game: "Mini game",
+};

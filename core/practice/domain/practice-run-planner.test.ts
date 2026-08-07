@@ -8,7 +8,7 @@ const random = { int: (max: number) => Math.max(0, max - 1), float: () => 0, shu
 const activity = (id: string, subtopic: string, node = "grammar"): Activity => ({
   id,
   level: "B1",
-  type: "true_false",
+  type: "true_false", skillFocus: "fill_blank",
   category: "grammar",
   topic: "topic",
   subtopic,

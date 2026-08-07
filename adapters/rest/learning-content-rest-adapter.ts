@@ -18,15 +18,15 @@ function toQueryString<T extends object>(params?: T): string {
   return query ? `?${query}` : "";
 }
 
-function toApiFilters<T extends { query?: string; interactionMode?: string }>(
+function toApiFilters<T extends { query?: string; presentation?: string }>(
   filters?: T,
 ) {
   if (!filters) return undefined;
-  const { query, interactionMode, ...rest } = filters;
+  const { query, presentation, ...rest } = filters;
   return {
     ...rest,
     q: query,
-    interaction: interactionMode,
+    interaction: presentation,
   };
 }
 

@@ -8,12 +8,18 @@ export function activityStatements(database: D1DatabaseLike, releaseId: string, 
     statements.push(statement(database, "INSERT INTO Activity (id, isDemo) VALUES (?, ?) ON CONFLICT(id) DO UPDATE SET isDemo = excluded.isDemo", [activity.id, activity.isDemo ? 1 : 0]));
     const versionId = generatedId();
     statements.push(statement(database, `INSERT INTO ActivityVersion
-      (id, releaseId, activityId, checksum, activityTypeCode, evaluatorStrategyCode, levelCode, category,
-       topic, subtopic, difficulty, instructions, prompt, passage, explanation, tags, lessonIds,
-       estimatedSeconds, evaluatorData, statusCode)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`, [versionId, releaseId, activity.id,
-      activity.checksum, activity.type, activity.evaluatorStrategy, activity.level, activity.category, activity.topic,
-      activity.subtopic, activity.difficulty, activity.instructions, activity.prompt, activity.passage ?? null,
+      (id, releaseId, activityId, checksum, activityTypeCode, skillFocus, evaluatorStrategyCode, levelCode, category,
+       topic, subtopic, difficulty, instructions, prompt, gapText, gapLayout, passage,
+       cueWord, keyWord, firstSentence, optionsOrdered, game, cardsData, roundsData,
+       explanation, tags, lessonIds, estimatedSeconds, evaluatorData, statusCode)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`, [versionId, releaseId, activity.id,
+      activity.checksum, activity.type, activity.skillFocus, activity.evaluatorStrategy, activity.level, activity.category, activity.topic,
+      activity.subtopic, activity.difficulty, activity.instructions, activity.prompt,
+      activity.gapText ?? null, activity.gapLayout ?? null, activity.passage ?? null,
+      activity.cueWord ?? null, activity.keyWord ?? null, activity.firstSentence ?? null,
+      activity.optionsOrdered ? 1 : 0, activity.game ?? null,
+      activity.cards ? JSON.stringify(activity.cards) : null,
+      activity.rounds ? JSON.stringify(activity.rounds) : null,
       activity.explanation, JSON.stringify(activity.tags), JSON.stringify(activity.lessonIds), activity.estimatedSeconds,
       JSON.stringify(activity.evaluator), activity.status]));
     for (const [position, lessonId] of activity.lessonIds.entries()) statements.push(statement(database,

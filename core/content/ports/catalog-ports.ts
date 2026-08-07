@@ -23,7 +23,7 @@ export interface ActivityListFilters {
   lessonIds?: string[];
   query?: string;
   activityType?: string;
-  interactionMode?: string;
+  presentation?: string;
 }
 
 export interface LessonCatalogSearchPort {

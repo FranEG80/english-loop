@@ -20,8 +20,18 @@ export type ActivityAttemptModel = runtime.Types.Result.DefaultSelection<Prisma.
 
 export type AggregateActivityAttempt = {
   _count: ActivityAttemptCountAggregateOutputType | null
+  _avg: ActivityAttemptAvgAggregateOutputType | null
+  _sum: ActivityAttemptSumAggregateOutputType | null
   _min: ActivityAttemptMinAggregateOutputType | null
   _max: ActivityAttemptMaxAggregateOutputType | null
+}
+
+export type ActivityAttemptAvgAggregateOutputType = {
+  score: number | null
+}
+
+export type ActivityAttemptSumAggregateOutputType = {
+  score: number | null
 }
 
 export type ActivityAttemptMinAggregateOutputType = {
@@ -35,6 +45,8 @@ export type ActivityAttemptMinAggregateOutputType = {
   idempotencyKey: string | null
   response: string | null
   isCorrect: boolean | null
+  score: number | null
+  detail: string | null
   isRepetition: boolean | null
   evaluatorVersion: string | null
   submittedAt: Date | null
@@ -51,6 +63,8 @@ export type ActivityAttemptMaxAggregateOutputType = {
   idempotencyKey: string | null
   response: string | null
   isCorrect: boolean | null
+  score: number | null
+  detail: string | null
   isRepetition: boolean | null
   evaluatorVersion: string | null
   submittedAt: Date | null
@@ -67,12 +81,22 @@ export type ActivityAttemptCountAggregateOutputType = {
   idempotencyKey: number
   response: number
   isCorrect: number
+  score: number
+  detail: number
   isRepetition: number
   evaluatorVersion: number
   submittedAt: number
   _all: number
 }
 
+
+export type ActivityAttemptAvgAggregateInputType = {
+  score?: true
+}
+
+export type ActivityAttemptSumAggregateInputType = {
+  score?: true
+}
 
 export type ActivityAttemptMinAggregateInputType = {
   id?: true
@@ -85,6 +109,8 @@ export type ActivityAttemptMinAggregateInputType = {
   idempotencyKey?: true
   response?: true
   isCorrect?: true
+  score?: true
+  detail?: true
   isRepetition?: true
   evaluatorVersion?: true
   submittedAt?: true
@@ -101,6 +127,8 @@ export type ActivityAttemptMaxAggregateInputType = {
   idempotencyKey?: true
   response?: true
   isCorrect?: true
+  score?: true
+  detail?: true
   isRepetition?: true
   evaluatorVersion?: true
   submittedAt?: true
@@ -117,6 +145,8 @@ export type ActivityAttemptCountAggregateInputType = {
   idempotencyKey?: true
   response?: true
   isCorrect?: true
+  score?: true
+  detail?: true
   isRepetition?: true
   evaluatorVersion?: true
   submittedAt?: true
@@ -161,6 +191,18 @@ export type ActivityAttemptAggregateArgs<ExtArgs extends runtime.Types.Extension
   /**
    * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
    * 
+   * Select which fields to average
+  **/
+  _avg?: ActivityAttemptAvgAggregateInputType
+  /**
+   * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+   * 
+   * Select which fields to sum
+  **/
+  _sum?: ActivityAttemptSumAggregateInputType
+  /**
+   * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+   * 
    * Select which fields to find the minimum value
   **/
   _min?: ActivityAttemptMinAggregateInputType
@@ -191,6 +233,8 @@ export type ActivityAttemptGroupByArgs<ExtArgs extends runtime.Types.Extensions.
   take?: number
   skip?: number
   _count?: ActivityAttemptCountAggregateInputType | true
+  _avg?: ActivityAttemptAvgAggregateInputType
+  _sum?: ActivityAttemptSumAggregateInputType
   _min?: ActivityAttemptMinAggregateInputType
   _max?: ActivityAttemptMaxAggregateInputType
 }
@@ -206,10 +250,14 @@ export type ActivityAttemptGroupByOutputType = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score: number
+  detail: string
   isRepetition: boolean
   evaluatorVersion: string
   submittedAt: Date
   _count: ActivityAttemptCountAggregateOutputType | null
+  _avg: ActivityAttemptAvgAggregateOutputType | null
+  _sum: ActivityAttemptSumAggregateOutputType | null
   _min: ActivityAttemptMinAggregateOutputType | null
   _max: ActivityAttemptMaxAggregateOutputType | null
 }
@@ -243,6 +291,8 @@ export type ActivityAttemptWhereInput = {
   idempotencyKey?: Prisma.StringFilter<"ActivityAttempt"> | string
   response?: Prisma.StringFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
+  score?: Prisma.FloatFilter<"ActivityAttempt"> | number
+  detail?: Prisma.StringFilter<"ActivityAttempt"> | string
   isRepetition?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeFilter<"ActivityAttempt"> | Date | string
@@ -262,6 +312,8 @@ export type ActivityAttemptOrderByWithRelationInput = {
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  score?: Prisma.SortOrder
+  detail?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
@@ -285,6 +337,8 @@ export type ActivityAttemptWhereUniqueInput = Prisma.AtLeast<{
   idempotencyKey?: Prisma.StringFilter<"ActivityAttempt"> | string
   response?: Prisma.StringFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
+  score?: Prisma.FloatFilter<"ActivityAttempt"> | number
+  detail?: Prisma.StringFilter<"ActivityAttempt"> | string
   isRepetition?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeFilter<"ActivityAttempt"> | Date | string
@@ -304,12 +358,16 @@ export type ActivityAttemptOrderByWithAggregationInput = {
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  score?: Prisma.SortOrder
+  detail?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
   _count?: Prisma.ActivityAttemptCountOrderByAggregateInput
+  _avg?: Prisma.ActivityAttemptAvgOrderByAggregateInput
   _max?: Prisma.ActivityAttemptMaxOrderByAggregateInput
   _min?: Prisma.ActivityAttemptMinOrderByAggregateInput
+  _sum?: Prisma.ActivityAttemptSumOrderByAggregateInput
 }
 
 export type ActivityAttemptScalarWhereWithAggregatesInput = {
@@ -326,6 +384,8 @@ export type ActivityAttemptScalarWhereWithAggregatesInput = {
   idempotencyKey?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   response?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolWithAggregatesFilter<"ActivityAttempt"> | boolean
+  score?: Prisma.FloatWithAggregatesFilter<"ActivityAttempt"> | number
+  detail?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   isRepetition?: Prisma.BoolWithAggregatesFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringWithAggregatesFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeWithAggregatesFilter<"ActivityAttempt"> | Date | string
@@ -339,6 +399,8 @@ export type ActivityAttemptCreateInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -358,6 +420,8 @@ export type ActivityAttemptUncheckedCreateInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -371,6 +435,8 @@ export type ActivityAttemptUpdateInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -390,6 +456,8 @@ export type ActivityAttemptUncheckedUpdateInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -406,6 +474,8 @@ export type ActivityAttemptCreateManyInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -419,6 +489,8 @@ export type ActivityAttemptUpdateManyMutationInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -435,6 +507,8 @@ export type ActivityAttemptUncheckedUpdateManyInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -466,9 +540,15 @@ export type ActivityAttemptCountOrderByAggregateInput = {
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  score?: Prisma.SortOrder
+  detail?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
+}
+
+export type ActivityAttemptAvgOrderByAggregateInput = {
+  score?: Prisma.SortOrder
 }
 
 export type ActivityAttemptMaxOrderByAggregateInput = {
@@ -482,6 +562,8 @@ export type ActivityAttemptMaxOrderByAggregateInput = {
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  score?: Prisma.SortOrder
+  detail?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
@@ -498,9 +580,15 @@ export type ActivityAttemptMinOrderByAggregateInput = {
   idempotencyKey?: Prisma.SortOrder
   response?: Prisma.SortOrder
   isCorrect?: Prisma.SortOrder
+  score?: Prisma.SortOrder
+  detail?: Prisma.SortOrder
   isRepetition?: Prisma.SortOrder
   evaluatorVersion?: Prisma.SortOrder
   submittedAt?: Prisma.SortOrder
+}
+
+export type ActivityAttemptSumOrderByAggregateInput = {
+  score?: Prisma.SortOrder
 }
 
 export type ActivityAttemptCreateNestedManyWithoutPracticeRunInput = {
@@ -543,6 +631,14 @@ export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunNestedInput = {
   update?: Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunInput | Prisma.ActivityAttemptUpdateWithWhereUniqueWithoutPracticeRunInput[]
   updateMany?: Prisma.ActivityAttemptUpdateManyWithWhereWithoutPracticeRunInput | Prisma.ActivityAttemptUpdateManyWithWhereWithoutPracticeRunInput[]
   deleteMany?: Prisma.ActivityAttemptScalarWhereInput | Prisma.ActivityAttemptScalarWhereInput[]
+}
+
+export type FloatFieldUpdateOperationsInput = {
+  set?: number
+  increment?: number
+  decrement?: number
+  multiply?: number
+  divide?: number
 }
 
 export type ActivityAttemptCreateNestedManyWithoutActivityVersionInput = {
@@ -637,6 +733,8 @@ export type ActivityAttemptCreateWithoutPracticeRunInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -654,6 +752,8 @@ export type ActivityAttemptUncheckedCreateWithoutPracticeRunInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -698,6 +798,8 @@ export type ActivityAttemptScalarWhereInput = {
   idempotencyKey?: Prisma.StringFilter<"ActivityAttempt"> | string
   response?: Prisma.StringFilter<"ActivityAttempt"> | string
   isCorrect?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
+  score?: Prisma.FloatFilter<"ActivityAttempt"> | number
+  detail?: Prisma.StringFilter<"ActivityAttempt"> | string
   isRepetition?: Prisma.BoolFilter<"ActivityAttempt"> | boolean
   evaluatorVersion?: Prisma.StringFilter<"ActivityAttempt"> | string
   submittedAt?: Prisma.DateTimeFilter<"ActivityAttempt"> | Date | string
@@ -711,6 +813,8 @@ export type ActivityAttemptCreateWithoutActivityVersionInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -728,6 +832,8 @@ export type ActivityAttemptUncheckedCreateWithoutActivityVersionInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -766,6 +872,8 @@ export type ActivityAttemptCreateWithoutPracticeRunItemInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -783,6 +891,8 @@ export type ActivityAttemptUncheckedCreateWithoutPracticeRunItemInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -823,6 +933,8 @@ export type ActivityAttemptCreateManyPracticeRunInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -836,6 +948,8 @@ export type ActivityAttemptUpdateWithoutPracticeRunInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -853,6 +967,8 @@ export type ActivityAttemptUncheckedUpdateWithoutPracticeRunInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -868,6 +984,8 @@ export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -883,6 +1001,8 @@ export type ActivityAttemptCreateManyActivityVersionInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -896,6 +1016,8 @@ export type ActivityAttemptUpdateWithoutActivityVersionInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -913,6 +1035,8 @@ export type ActivityAttemptUncheckedUpdateWithoutActivityVersionInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -928,6 +1052,8 @@ export type ActivityAttemptUncheckedUpdateManyWithoutActivityVersionInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -943,6 +1069,8 @@ export type ActivityAttemptCreateManyPracticeRunItemInput = {
   idempotencyKey: string
   response: string
   isCorrect: boolean
+  score?: number
+  detail?: string
   isRepetition?: boolean
   evaluatorVersion: string
   submittedAt?: Date | string
@@ -956,6 +1084,8 @@ export type ActivityAttemptUpdateWithoutPracticeRunItemInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -973,6 +1103,8 @@ export type ActivityAttemptUncheckedUpdateWithoutPracticeRunItemInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -988,6 +1120,8 @@ export type ActivityAttemptUncheckedUpdateManyWithoutPracticeRunItemInput = {
   idempotencyKey?: Prisma.StringFieldUpdateOperationsInput | string
   response?: Prisma.StringFieldUpdateOperationsInput | string
   isCorrect?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  score?: Prisma.FloatFieldUpdateOperationsInput | number
+  detail?: Prisma.StringFieldUpdateOperationsInput | string
   isRepetition?: Prisma.BoolFieldUpdateOperationsInput | boolean
   evaluatorVersion?: Prisma.StringFieldUpdateOperationsInput | string
   submittedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -1006,6 +1140,8 @@ export type ActivityAttemptSelect<ExtArgs extends runtime.Types.Extensions.Inter
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  score?: boolean
+  detail?: boolean
   isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
@@ -1025,6 +1161,8 @@ export type ActivityAttemptSelectCreateManyAndReturn<ExtArgs extends runtime.Typ
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  score?: boolean
+  detail?: boolean
   isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
@@ -1044,6 +1182,8 @@ export type ActivityAttemptSelectUpdateManyAndReturn<ExtArgs extends runtime.Typ
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  score?: boolean
+  detail?: boolean
   isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
@@ -1063,12 +1203,14 @@ export type ActivityAttemptSelectScalar = {
   idempotencyKey?: boolean
   response?: boolean
   isCorrect?: boolean
+  score?: boolean
+  detail?: boolean
   isRepetition?: boolean
   evaluatorVersion?: boolean
   submittedAt?: boolean
 }
 
-export type ActivityAttemptOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "practiceRunId" | "activityId" | "activityVersionId" | "practiceRunItemId" | "origin" | "idempotencyKey" | "response" | "isCorrect" | "isRepetition" | "evaluatorVersion" | "submittedAt", ExtArgs["result"]["activityAttempt"]>
+export type ActivityAttemptOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "userId" | "practiceRunId" | "activityId" | "activityVersionId" | "practiceRunItemId" | "origin" | "idempotencyKey" | "response" | "isCorrect" | "score" | "detail" | "isRepetition" | "evaluatorVersion" | "submittedAt", ExtArgs["result"]["activityAttempt"]>
 export type ActivityAttemptInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   practiceRun?: boolean | Prisma.ActivityAttempt$practiceRunArgs<ExtArgs>
   activityVersion?: boolean | Prisma.ActivityAttempt$activityVersionArgs<ExtArgs>
@@ -1103,6 +1245,14 @@ export type $ActivityAttemptPayload<ExtArgs extends runtime.Types.Extensions.Int
     idempotencyKey: string
     response: string
     isCorrect: boolean
+    /**
+     * Media de aciertos entre 0 y 1. Vale 0 o 1 sin sub-ítems.
+     */
+    score: number
+    /**
+     * JSON con EvaluationItem[]: desglose por hueco, carta, ronda o par.
+     */
+    detail: string
     isRepetition: boolean
     evaluatorVersion: string
     submittedAt: Date
@@ -1542,6 +1692,8 @@ export interface ActivityAttemptFieldRefs {
   readonly idempotencyKey: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly response: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly isCorrect: Prisma.FieldRef<"ActivityAttempt", 'Boolean'>
+  readonly score: Prisma.FieldRef<"ActivityAttempt", 'Float'>
+  readonly detail: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly isRepetition: Prisma.FieldRef<"ActivityAttempt", 'Boolean'>
   readonly evaluatorVersion: Prisma.FieldRef<"ActivityAttempt", 'String'>
   readonly submittedAt: Prisma.FieldRef<"ActivityAttempt", 'DateTime'>

@@ -9,10 +9,16 @@ function activity(id: string) {
 }
 
 describe("mock grader", () => {
-  it("grades boolean lists, single and multiple choices", () => {
-    expect(gradeMockAttempt(activity("activity-true-false-present-simple"), {
-      kind: "boolean_list",
-      value: [false, true, false, true],
+  it("grades decks, single and multiple choices", () => {
+    expect(gradeMockAttempt(activity("activity-swipe-deck-present-simple"), {
+      kind: "deck",
+      value: [
+        { cardId: "tf-present-1", value: false },
+        { cardId: "tf-present-2", value: true },
+        { cardId: "tf-present-3", value: false },
+        { cardId: "tf-present-4", value: true },
+        { cardId: "tf-present-5", value: false },
+      ],
     }).isCorrect).toBe(true);
     expect(gradeMockAttempt(activity("activity-single-choice-future-forms"), {
       kind: "single",
@@ -25,48 +31,49 @@ describe("mock grader", () => {
   });
 
   it("grades text, ordered lists and pairs, and rejects a wrong response", () => {
-    expect(gradeMockAttempt(activity("activity-fill-blank-past-simple"), {
+    expect(gradeMockAttempt(activity("activity-gap-fill-past-simple"), {
       kind: "text",
       value: " WENT ",
     }).isCorrect).toBe(true);
-    expect(gradeMockAttempt(activity("activity-word-order-second-conditional"), {
+    expect(gradeMockAttempt(activity("activity-word-order-relative-clauses"), {
       kind: "ordered_list",
-      value: ["If I won the lottery, I would travel the world."],
+      value: ["tok-the-woman", "tok-who", "tok-lives", "tok-next-door", "tok-is-a-vet"],
     }).isCorrect).toBe(true);
     expect(gradeMockAttempt(activity("activity-matching-phrasal-verbs"), {
       kind: "pairs",
       value: [
-        { leftId: "left-run-out-of", rightId: "right-have-none-left" },
-        { leftId: "left-give-up", rightId: "right-stop-doing" },
-        { leftId: "left-look-for", rightId: "right-search" },
+        { leftId: "left-get-up", rightId: "right-leave-bed" },
+        { leftId: "left-give-up", rightId: "right-stop" },
+        { leftId: "left-look-after", rightId: "right-take-care" },
+        { leftId: "left-put-off", rightId: "right-postpone" },
       ],
     }).isCorrect).toBe(true);
-    expect(gradeMockAttempt(activity("activity-fill-blank-past-simple"), {
+    expect(gradeMockAttempt(activity("activity-gap-fill-past-simple"), {
       kind: "text",
       value: "go",
     }).isCorrect).toBe(false);
   });
 
   it("returns an auditable feedback envelope and rejects unknown activities", () => {
-    const feedback = gradeMockAttempt(activity("activity-fill-blank-past-simple"), {
+    const feedback = gradeMockAttempt(activity("activity-gap-fill-past-simple"), {
       kind: "text",
       value: "went",
     });
-    expect(feedback).toMatchObject({ activityId: "activity-fill-blank-past-simple", isCorrect: true });
+    expect(feedback).toMatchObject({ activityId: "activity-gap-fill-past-simple", isCorrect: true });
     expect(feedback.attemptId).toMatch(/^attempt-/u);
     expect(feedback.submittedAt).toBeTypeOf("string");
-    expect(() => gradeMockAttempt({ ...activity("activity-fill-blank-past-simple"), id: "missing" }, { kind: "text", value: "went" })).toThrow(/No hay clave/iu);
+    expect(() => gradeMockAttempt({ ...activity("activity-gap-fill-past-simple"), id: "missing" }, { kind: "text", value: "went" })).toThrow(/No hay clave/iu);
   });
 
   it("rejects scalar/array mismatches and unknown response kinds", () => {
     expect(gradeMockAttempt(activity("activity-single-choice-future-forms"), { kind: "multiple", value: ["opt-going-to"] }).isCorrect).toBe(false);
     expect(gradeMockAttempt(activity("activity-multiple-choice-travel-vocabulary"), { kind: "single", value: "opt-anchor" }).isCorrect).toBe(false);
-    expect(gradeMockAttempt(activity("activity-fill-blank-past-simple"), { kind: "ordered_list", value: ["wrong"] }).isCorrect).toBe(false);
-    expect(gradeMockAttempt(activity("activity-word-order-second-conditional"), { kind: "ordered_list", value: ["wrong"] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-gap-fill-past-simple"), { kind: "ordered_list", value: ["wrong"] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-word-order-relative-clauses"), { kind: "ordered_list", value: ["wrong"] }).isCorrect).toBe(false);
     expect(gradeMockAttempt(activity("activity-matching-phrasal-verbs"), { kind: "pairs", value: [{ leftId: "wrong", rightId: "wrong" }] }).isCorrect).toBe(false);
     expect(gradeMockAttempt(activity("activity-true-false-present-simple"), { kind: "boolean", value: true }).isCorrect).toBe(false);
-    expect(gradeMockAttempt(activity("activity-single-choice-future-forms"), { kind: "boolean_list", value: [true] }).isCorrect).toBe(false);
-    expect(gradeMockAttempt(activity("activity-complete-dialogue-work-vocabulary"), { kind: "text", value: "work" }).isCorrect).toBe(true);
-    expect(gradeMockAttempt(activity("activity-fill-blank-past-simple"), { kind: "text", value: "went" } as never).isCorrect).toBe(true);
+    expect(gradeMockAttempt(activity("activity-single-choice-future-forms"), { kind: "deck", value: [{ cardId: "x", value: true }] }).isCorrect).toBe(false);
+    expect(gradeMockAttempt(activity("activity-gap-fill-dialogue-requests"), { kind: "text", value: "I can" }).isCorrect).toBe(true);
+    expect(gradeMockAttempt(activity("activity-gap-fill-past-simple"), { kind: "text", value: "went" } as never).isCorrect).toBe(true);
   });
 });
