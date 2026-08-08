@@ -12,7 +12,7 @@ import { DailyPracticeClient } from "./DailyPracticeClient";
 describe("DailyPracticeClient", () => {
   it("submits an answer and displays the feedback panel", async () => {
     actions.submitDailyAttemptAction.mockResolvedValueOnce({ attemptId: "a", activityId: "activity-1", submittedAt: "now", isCorrect: true, explanation: "Good" });
-    render(<DailyPracticeClient sessionId="session-1" activities={[{ id: "activity-1", level: "B1", taxonomyNodeId: "grammar", type: "true_false", interactionMode: "swipe", statement: "True?" } as never]} dictionary={en} />);
+    render(<DailyPracticeClient sessionId="session-1" activities={[{ id: "activity-1", level: "B1", taxonomyNodeId: "grammar", type: "true_false", skillFocus: "true_false", presentation: "true_false", instructions: "Decide.", statement: "True?" } as never]} dictionary={en} />);
     fireEvent.click(screen.getByRole("button", { name: "Answer" }));
     await waitFor(() => expect(screen.getByRole("status")).toBeInTheDocument());
     expect(actions.submitDailyAttemptAction).toHaveBeenCalledWith("session-1", {

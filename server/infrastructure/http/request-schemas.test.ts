@@ -5,7 +5,7 @@ import { attemptBodySchema, createPracticeRunBodySchema, dailySessionBodySchema,
 
 describe("HTTP request schemas", () => {
   it("accepts all supported attempt response discriminants", () => {
-    const responses = [{ kind: "boolean", value: true }, { kind: "boolean_list", value: [true, false] }, { kind: "single", value: "a" }, { kind: "multiple", value: ["a"] }, { kind: "text", value: "answer" }, { kind: "ordered_list", value: ["a"] }, { kind: "pairs", value: [{ leftId: "l", rightId: "r" }] }] as const;
+    const responses = [{ kind: "boolean", value: true }, { kind: "gaps", value: [{ gapId: "gap1", text: "went" }] }, { kind: "deck", value: [{ cardId: "c1", value: true }] }, { kind: "rounds", value: [{ roundId: "r1", optionId: "a" }] }, { kind: "single", value: "a" }, { kind: "multiple", value: ["a"] }, { kind: "text", value: "answer" }, { kind: "ordered_list", value: ["a"] }, { kind: "pairs", value: [{ leftId: "l", rightId: "r" }] }] as const;
     for (const response of responses) expect(parseRequest(attemptBodySchema.safeParse({ activityId: "a", idempotencyKey: "key", response })).response.kind).toBe(response.kind);
   });
 

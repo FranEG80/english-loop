@@ -16,10 +16,17 @@ export function formatPresentation(
   return dictionary?.activityPresentations[presentation] ?? FALLBACK_PRESENTATION_LABELS[presentation];
 }
 
-/** Convierte el id interno de una actividad en un título corto para la interfaz. */
+/**
+ * Convierte el id interno de una actividad en un título corto para la interfaz.
+ *
+ * El sufijo de formato son dos a cuatro letras más el número de orden
+ * (`-cc-001`, `-wf-003`), salvo en los minijuegos, donde lleva además el nombre
+ * del juego (`-mg-frog-leap-001`). Sin contemplarlo, el título de una partida
+ * salía como «Collocations Daily Life Mg Frog».
+ */
 export function formatActivityTitle(id: string, level: string): string {
   const withoutLevel = id.replace(new RegExp(`^${level.toLowerCase()}-`, "i"), "");
-  const withoutFormatCode = withoutLevel.replace(/-([a-z]{2,4})-\d+$/i, "");
+  const withoutFormatCode = withoutLevel.replace(/-(?:mg-[a-z-]+|[a-z]{2,4})-\d+$/i, "");
 
   return withoutFormatCode
     .replaceAll("-", " ")
@@ -35,10 +42,8 @@ const FALLBACK_TYPE_LABELS: Record<ActivityType, string> = {
   word_order: "Word order",
   matching: "Matching",
   error_correction: "Error correction",
-  guided_writing: "Guided writing",
   word_formation: "Word formation",
   key_word_transformation: "Key word transformation",
-  sentence_rewrite: "Sentence rewrite",
   mini_game: "Mini game",
 };
 

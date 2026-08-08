@@ -53,8 +53,8 @@ features/activities/games/
     machine.ts               máquina de estados PURA
     draw.ts                  pintado, sin lógica
     machine.test.ts
-  lane-runner/               misma estructura
-  sentence-tower/            especificado aquí, sin implementar
+  lane-runner/               machine.ts, draw.ts, machine.test.ts
+  sentence-tower/            machine.ts, draw.ts, machine.test.ts
 
 public/games/<juego>/        sprites (ver §6)
 ```
@@ -188,24 +188,33 @@ lógica.
 
 ## 5. Juego 3 — Torre de frases (`sentence_tower`)
 
-**Especificado, sin implementar.** Se registra en `game-registry.ts` cuando
-exista; hasta entonces el validador del DATASET impide publicar contenido para
-él y el shell cae a la alternativa accesible.
-
-Rondas de ordenar en vez de elegir: los fragmentos caen desde una grúa y hay
-que soltarlos en orden para levantar la frase.
+Una grúa pasea los bloques de la ronda por encima de la torre; al elegir uno,
+cae y se apila. Cada ronda añade un piso, así que **la torre es el historial
+visible de la partida**: al terminar se lee entera de abajo arriba.
 
 | | |
 |---|---|
-| Rondas | 5–6 |
-| Fragmentos por ronda | 4–6 |
-| Puntuación | 10 puntos por fragmento colocado bien a la primera |
-| Tolerancia | La torre aguanta 2 errores por ronda antes de derrumbarse |
-| Fin | Todas las rondas resueltas o derrumbadas |
+| Rondas | 5–10 |
+| Bloques por ronda | 2–3 |
+| Puntuación | 10 por acierto, +5 de bonus por cadena de 3 |
+| Caída | 460 ms con aceleración y rebote corto al posarse |
+| Pausa de lectura | 780 ms antes de plantear la ronda siguiente |
+| Vaivén de la grúa | 2600 ms de un extremo al otro, plegándose en los bordes |
+| Fin | Todas las rondas colocadas |
 
-Reutiliza el contenido de `word_order`, así que su contrato de ronda usa
-`tokens` en vez de `options` y su evaluador sería `ordered_tokens` por ronda.
-Requiere ampliar `game_rounds` para admitir respuestas ordenadas.
+La cámara sigue a la cima: cuando un bloque se posa, la vista baja un piso, de
+modo que la torre crece sin salirse del lienzo por muchas rondas que tenga la
+partida.
+
+**Comparte contrato con los otros dos juegos** —una opción por ronda y
+corrección en el servidor con `game_rounds`—, así que un mismo item del DATASET
+vale para cualquiera de los tres. La versión inicial planteaba rondas de
+ordenar fragmentos con `ordered_tokens`, que habría obligado a un evaluador
+propio y a un contrato de ronda distinto: apilar la opción elegida da la misma
+sensación de construir la frase sin partir el modelo en dos.
+
+Estado: implementado en `features/activities/games/sentence-tower/`, registrado
+en `game-registry.ts` y compuesto para todas las lecciones.
 
 ---
 
@@ -343,8 +352,4 @@ entre 5 y 10.
 ## 10. Pendiente
 
 - Sprites de §6: hoy se dibujan formas primitivas.
-- Implementar `sentence_tower` y ampliar `game_rounds` para respuestas
-  ordenadas.
 - Efectos de sonido (`engine/audio.ts`), silenciados por defecto.
-- Cobertura de contenido: hay una partida por juego en la semilla; la
-  ampliación a las 26 unidades de vocabulario es fase 2.

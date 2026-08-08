@@ -69,13 +69,90 @@ describe("getAttemptFeedback", () => {
       [{ strategy: "multiple_options", correctOptionIds: ["a", "b"] }, ["a", "b"]],
       [{ strategy: "exact_text", answer: "exact" }, "exact"],
       [{ strategy: "one_of_texts", answers: ["one", "two"] }, ["one", "two"]],
-      [{ strategy: "ordered_tokens", correctTokenIds: ["1", "2"] }, ["1", "2"]],
-      [{ strategy: "unordered_set", correctValues: ["x", "y"] }, ["x", "y"]],
+      [{ strategy: "ordered_tokens", correctTokenIds: ["1", "2"] }, "1 2"],
+      [
+        { strategy: "per_gap", gaps: [{ gapId: "gap1", answers: ["one", "uno"] }] },
+        ["one"],
+      ],
+      [
+        { strategy: "matching_pairs", pairs: [{ leftId: "l1", rightId: "r1" }] },
+        ["l1 · r1"],
+      ],
+      // Mazo y minijuego no caben en una línea: se explican ronda a ronda.
+      [{ strategy: "deck_booleans", cards: [{ cardId: "c1", correct: true }] }, []],
+      [
+        { strategy: "game_rounds", rounds: [{ roundId: "r1", correctOptionId: "a" }] },
+        [],
+      ],
     ] as const;
     for (const [evaluator, correctAnswer] of values) {
       const attempt = ActivityAttempt.create({ id: `attempt-${evaluator.strategy}`, userId: actor.userId, practiceRunId: null, activityId: "activity-evaluator", origin: "FOCUSED", idempotencyKey: `key-${evaluator.strategy}`, response: { kind: "text", value: "answer" }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() });
       const catalog = { getActivityById: async () => ({ ...activity("activity-evaluator"), evaluator: evaluator as never }), listActivities: async () => [], countActivitiesByNode: async () => 0, countActivitiesByNodes: async () => 0 };
       await expect(getAttemptFeedback(catalog, attempt)).resolves.toMatchObject({ correctAnswer });
     }
+  });
+
+  // Regresión: la corrección mostraba «Respuesta correcta: a», el id interno de
+  // la opción, en vez del texto que el alumno acaba de leer en pantalla.
+  it("resuelve los ids de opción, token y par al texto que ve el alumno", async () => {
+    const cases = [
+      {
+        name: "single_option",
+        overrides: {
+          options: [
+            { id: "a", text: "can" },
+            { id: "b", text: "cans" },
+          ],
+          evaluator: { strategy: "single_option" as const, correctOptionId: "a" },
+        },
+        correctAnswer: "can",
+      },
+      {
+        name: "ordered_tokens",
+        overrides: {
+          tokens: [
+            { id: "t1", text: "She" },
+            { id: "t2", text: "never" },
+            { id: "t3", text: "lies" },
+          ],
+          evaluator: {
+            strategy: "ordered_tokens" as const,
+            correctTokenIds: ["t1", "t2", "t3"],
+          },
+        },
+        correctAnswer: "She never lies",
+      },
+      {
+        name: "matching_pairs",
+        overrides: {
+          pairs: [{ leftId: "l1", left: "give up", rightId: "r1", right: "dejar" }],
+          evaluator: {
+            strategy: "matching_pairs" as const,
+            pairs: [{ leftId: "l1", rightId: "r1" }],
+          },
+        },
+        correctAnswer: ["give up · dejar"],
+      },
+    ];
+
+    for (const { name, overrides, correctAnswer } of cases) {
+      const attempt = ActivityAttempt.create({ id: `attempt-label-${name}`, userId: actor.userId, practiceRunId: null, activityId: "activity-label", origin: "FOCUSED", idempotencyKey: `key-label-${name}`, response: { kind: "text", value: "answer" }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() });
+      const catalog = { getActivityById: async () => ({ ...activity("activity-label"), ...overrides } as never), listActivities: async () => [], countActivitiesByNode: async () => 0, countActivitiesByNodes: async () => 0 };
+
+      await expect(getAttemptFeedback(catalog, attempt)).resolves.toMatchObject({
+        correctAnswer,
+      });
+    }
+  });
+
+  it("no revienta con un intento de una estrategia retirada", async () => {
+    const attempt = ActivityAttempt.create({ id: "attempt-legacy", userId: actor.userId, practiceRunId: null, activityId: "activity-evaluator", origin: "FOCUSED", idempotencyKey: "key-legacy", response: { kind: "text", value: "answer" }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() });
+    const catalog = { getActivityById: async () => ({ ...activity("activity-evaluator"), evaluator: { strategy: "unordered_set", correctValues: ["x"] } as never }), listActivities: async () => [], countActivitiesByNode: async () => 0, countActivitiesByNodes: async () => 0 };
+
+    await expect(getAttemptFeedback(catalog, attempt)).resolves.toMatchObject({
+      isCorrect: false,
+      score: 0,
+      items: [],
+    });
   });
 });

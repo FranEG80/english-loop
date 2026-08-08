@@ -22,6 +22,12 @@ import {
 
 /** Duración del salto en milisegundos. */
 export const JUMP_MS = 520;
+/**
+ * Pausa tras aterrizar antes de plantear la ronda siguiente. Sin ella el
+ * enunciado cambia en el mismo fotograma en que la rana toca el nenúfar y no
+ * da tiempo a leer qué se preguntaba.
+ */
+export const SETTLE_MS = 900;
 
 export interface FrogLeapState extends GameCoreState {
   /** Nenúfar elegido en la ronda actual, o null si aún no ha saltado. */
@@ -30,16 +36,24 @@ export interface FrogLeapState extends GameCoreState {
   jumpProgress: number;
   /** Nenúfar sobre el que descansa la rana. */
   restingLane: number;
+  /** Milisegundos que quedan de pausa de lectura tras aterrizar. */
+  settleMs: number;
 }
 
 function createState(): FrogLeapState {
-  return { ...createCoreState(), targetLane: null, jumpProgress: 0, restingLane: 1 };
+  return { ...createCoreState(), targetLane: null, jumpProgress: 0, restingLane: 1, settleMs: 0 };
 }
 
 export const frogLeapMachine: GameMachine<FrogLeapState> = {
   create: () => createState(),
 
   tick(state, deltaMs, rounds) {
+    // Pausa de lectura: la rana ya ha aterrizado y se muestra el resultado.
+    if (state.settleMs > 0) {
+      const settleMs = Math.max(0, state.settleMs - deltaMs);
+      return { ...state, settleMs, elapsedMs: state.elapsedMs + deltaMs };
+    }
+
     if (state.phase !== "resolving" || state.targetLane === null) {
       return { ...state, elapsedMs: state.elapsedMs + deltaMs };
     }
@@ -67,12 +81,15 @@ export const frogLeapMachine: GameMachine<FrogLeapState> = {
       ...advanced,
       targetLane: null,
       jumpProgress: 0,
+      // La rana se queda en el nenúfar al que saltó; son los nenúfares los que
+      // bajan y entran nuevos por arriba en la ronda siguiente.
       restingLane: state.targetLane,
+      settleMs: advanced.phase === "finished" ? 0 : SETTLE_MS,
     };
   },
 
   handle(state, input, rounds) {
-    if (state.phase !== "playing") return state;
+    if (state.phase !== "playing" || state.settleMs > 0) return state;
 
     const round = rounds[state.roundIndex];
     if (!round) return state;
@@ -80,7 +97,14 @@ export const frogLeapMachine: GameMachine<FrogLeapState> = {
     const lane = laneFromInput(input, round.options.length);
     if (lane === null) return state;
 
-    return { ...state, phase: "resolving", targetLane: lane, jumpProgress: 0, elapsedMs: 0 };
+    return {
+      ...state,
+      phase: "resolving",
+      targetLane: lane,
+      jumpProgress: 0,
+      elapsedMs: 0,
+      settleMs: 0,
+    };
   },
 };
 

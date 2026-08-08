@@ -185,27 +185,6 @@ export const mockActivities: ActivityQuestionDto[] = [
     ],
   },
   {
-    id: "activity-guided-writing-formal-email",
-    type: "guided_writing",
-    skillFocus: "guided_writing",
-    presentation: "free_text",
-    level: "B2",
-    taxonomyNodeId: "guided-writing.formal-email",
-    instructions: "Write a formal opening for an enquiry about a course.",
-    prompt: "Write a formal opening for an enquiry about a course.",
-  },
-  {
-    id: "activity-sentence-rewrite-third-conditional",
-    type: "sentence_rewrite",
-    skillFocus: "sentence_transformation",
-    presentation: "free_text",
-    level: "B2",
-    taxonomyNodeId: "grammar.conditionals.third",
-    instructions: "Rewrite using the third conditional.",
-    prompt: "We did not reserve seats, so we could not sit together.",
-    constraintHint: "Rewrite using the third conditional.",
-  },
-  {
     id: "activity-mini-game-phrasal-verbs",
     type: "mini_game",
     skillFocus: "mini_game",
@@ -329,15 +308,6 @@ export const mockActivityAnswerKeys: Record<string, MockAnswerKeyEntry> = {
     correctAnswer: ["tok-the-woman", "tok-who", "tok-lives", "tok-next-door", "tok-is-a-vet"],
     explanation:
       "La oración de relativo va justo detrás del sustantivo al que se refiere.",
-  },
-  "activity-guided-writing-formal-email": {
-    correctAnswer: "I am writing to enquire about the course",
-    explanation: "Esta fórmula plantea el motivo del correo de forma directa y cortés.",
-  },
-  "activity-sentence-rewrite-third-conditional": {
-    correctAnswer: "If we had reserved seats, we would have sat together.",
-    explanation:
-      "La tercera condicional usa 'if + past perfect' y 'would have + participio'.",
   },
   "activity-mini-game-phrasal-verbs": {
     correctAnswer: ["r1-a", "r2-b", "r3-c", "r4-a", "r5-b"],

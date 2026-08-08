@@ -1,8 +1,15 @@
 import Link from "next/link";
-import type { DailySessionDto, Locale, ProgressOverviewDto, TaxonomyNodeDto } from "@/core/models";
+import type {
+  DailySessionDto,
+  Locale,
+  PracticeRunErrorDto,
+  ProgressOverviewDto,
+  TaxonomyNodeDto,
+} from "@/core/models";
 import type { Dictionary } from "@/shared/i18n";
 import { Badge, Card } from "@/shared/ui";
 import { Mascot } from "@/shared/layout/Mascot";
+import { SessionErrorList } from "@/features/activities/SessionErrorList";
 
 function findNodeLabel(nodes: TaxonomyNodeDto[], id: string, locale: Locale): string | null {
   for (const node of nodes) {
@@ -21,6 +28,7 @@ export function DailySummaryView({
   taxonomyTree,
   correctCount,
   incorrectCount,
+  errors = [],
 }: {
   dictionary: Dictionary;
   locale: Locale;
@@ -29,6 +37,8 @@ export function DailySummaryView({
   taxonomyTree: TaxonomyNodeDto[];
   correctCount: number;
   incorrectCount: number;
+  /** Todos los fallos de la sesión, con su explicación. */
+  errors?: readonly PracticeRunErrorDto[];
 }) {
   return (
     <div className="flex flex-col items-center gap-7 text-center">
@@ -79,6 +89,10 @@ export function DailySummaryView({
             ))}
           </div>
         </Card>
+      </div>
+
+      <div className="w-full">
+        <SessionErrorList errors={errors} dictionary={dictionary} />
       </div>
 
       <Link

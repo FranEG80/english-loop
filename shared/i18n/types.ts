@@ -98,6 +98,11 @@ export interface Dictionary {
     feedbackIncorrect: string;
     correctAnswerLabel: string;
     explanationLabel: string;
+    breakdownTitle: string;
+    breakdownScore: string;
+    breakdownGiven: string;
+    breakdownExpected: string;
+    breakdownEmpty: string;
     nextQuestion: string;
     finishSession: string;
     submitAnswer: string;
@@ -136,9 +141,12 @@ export interface Dictionary {
     gapHint: string;
     swipeDeckTitle: string;
     swipeHint: string;
+    deckFinishedTitle: string;
+    deckFinishedHint: string;
     swipeLeftHint: string;
     swipeRightHint: string;
     gapOfTotal: string;
+    pairedWith: string;
     cueWordLabel: string;
     keyWordLabel: string;
     maxWordsHint: string;
@@ -148,6 +156,8 @@ export interface Dictionary {
     gameScoreLabel: string;
     gameStartLabel: string;
     gameAccessibleModeLabel: string;
+    gameResultsTitle: string;
+    gameAllCorrect: string;
   };
   catalog: {
     activityLab: string;

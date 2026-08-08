@@ -6,8 +6,8 @@ import { getActivityDetail, getLessonDetail, getTaxonomy, listActivityCatalog, l
 const lessonSummary: LessonSummaryDto = { id: "lesson-1", level: "B1", category: "grammar", taxonomyNodeId: "future", title: "Future forms", summary: "will and going to", tags: ["future"], difficulty: 1, status: "new" };
 const advancedGrammarReframingLesson: LessonSummaryDto = { id: "b2-advanced-grammar-reframing", level: "B2", category: "use_of_english", taxonomyNodeId: "b2-advanced-grammar-reframing", title: "Pasiva, condicionales y estilo indirecto B2", summary: "Reformulación gramatical", tags: ["grammar-reframing"], difficulty: 3, status: "new" };
 const lesson: LessonDetailDto = { ...lessonSummary, explanation: "Explanation", examples: [], commonMistakes: [], relatedActivityIds: ["activity-1"] };
-const activity: ActivityQuestionDto = { id: "activity-1", level: "B1", taxonomyNodeId: "future", interactionMode: "standard", type: "true_false", statement: "True" };
-const wordOrderActivity: ActivityQuestionDto = { id: "activity-2", level: "B2", taxonomyNodeId: "word-order", interactionMode: "sentence_builder", type: "word_order", shuffledWords: ["I", "agree"] };
+const activity: ActivityQuestionDto = { id: "activity-1", level: "B1", taxonomyNodeId: "future", type: "true_false", skillFocus: "true_false", presentation: "true_false", instructions: "Decide.", statement: "True" };
+const wordOrderActivity: ActivityQuestionDto = { id: "activity-2", level: "B2", taxonomyNodeId: "word-order", type: "word_order", skillFocus: "word_order", presentation: "word_order", instructions: "Order.", tokens: [{ id: "t1", text: "I" }, { id: "t2", text: "agree" }] };
 const tree: TaxonomyNodeDto[] = [{ id: "grammar", type: "category", label: { en: "Grammar", es: "Gramática" }, levels: ["B1"], children: [{ id: "future", type: "topic", label: { en: "Future", es: "Futuro" }, levels: ["B1"], children: [] }] }];
 const content: LearningContentPort = { listLessons: async () => [lessonSummary], getLessonById: async (id) => id === lesson.id ? lesson : null, listActivities: async () => [activity], getActivityById: async (id) => id === activity.id ? activity : null, getTaxonomyTree: async () => tree };
 
@@ -37,7 +37,7 @@ describe("catalog use cases", () => {
     };
 
     await expect(listActivityCatalog(variedContent, { type: "word_order" })).resolves.toEqual([wordOrderActivity]);
-    await expect(listActivityCatalog(variedContent, { interactionMode: "standard" })).resolves.toEqual([activity]);
+    await expect(listActivityCatalog(variedContent, { presentation: "true_false" })).resolves.toEqual([activity]);
   });
 
   it("returns details, nulls and taxonomy through the port", async () => {

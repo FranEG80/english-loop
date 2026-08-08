@@ -1,17 +1,16 @@
 import type { MiniGameId } from "@/core/models";
-import type { GameCoreState, GameModule } from "./engine/types";
+import type { GameModule } from "./engine/types";
 import { frogLeapMachine } from "./frog-leap/machine";
 import { drawFrogLeap } from "./frog-leap/draw";
 import { laneRunnerMachine } from "./lane-runner/machine";
 import { drawLaneRunner } from "./lane-runner/draw";
+import { sentenceTowerMachine } from "./sentence-tower/machine";
+import { drawSentenceTower } from "./sentence-tower/draw";
 
 /**
  * Registro de minijuegos. Añadir uno es registrar su módulo aquí; el shell
- * (`MiniGameRenderer`) no conoce ningún juego en concreto.
- *
- * `sentence_tower` está especificado en `DOC/MINIGAMES-SPEC.md` y todavía no
- * implementado: el validador del DATASET impide publicar contenido para un
- * juego que no esté registrado.
+ * (`MiniGameRenderer`) no conoce ningún juego en concreto. El validador del
+ * DATASET impide publicar contenido para un juego que no esté registrado.
  */
 const MODULES = {
   frog_leap: {
@@ -38,12 +37,24 @@ const MODULES = {
     machine: laneRunnerMachine,
     draw: drawLaneRunner,
   },
-} as const satisfies Partial<Record<MiniGameId, GameModule<never>>>;
+  sentence_tower: {
+    id: "sentence_tower",
+    rounds: { min: 5, max: 10 },
+    optionsPerRound: { min: 2, max: 3 },
+    assets: [
+      "/games/sentence-tower/block.webp",
+      "/games/sentence-tower/crane.webp",
+      "/games/sentence-tower/ground.webp",
+    ],
+    machine: sentenceTowerMachine,
+    draw: drawSentenceTower,
+  },
+} satisfies Partial<Record<MiniGameId, GameModule>>;
 
 export type RegisteredGameId = keyof typeof MODULES;
 
-export function getGameModule(id: MiniGameId): GameModule<GameCoreState> | null {
-  return (MODULES as Record<string, GameModule<GameCoreState> | undefined>)[id] ?? null;
+export function getGameModule(id: MiniGameId): GameModule | null {
+  return (MODULES as Record<string, GameModule | undefined>)[id] ?? null;
 }
 
 export function isRegisteredGame(id: MiniGameId): id is RegisteredGameId {

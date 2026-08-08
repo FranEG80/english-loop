@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { JUMP_MS, frogLeapMachine, jumpArc } from "./machine";
+import { JUMP_MS, SETTLE_MS, frogLeapMachine, jumpArc } from "./machine";
 import type { GameRound } from "../engine/types";
 
 const rounds: GameRound[] = [
@@ -23,10 +23,11 @@ const rounds: GameRound[] = [
   },
 ];
 
-/** Salta al carril indicado y deja que el salto termine. */
+/** Salta al carril indicado, aterriza y agota la pausa de lectura. */
 function leap(state: ReturnType<typeof frogLeapMachine.create>, lane: number) {
   const jumping = frogLeapMachine.handle(state, { kind: "lane", lane }, rounds);
-  return frogLeapMachine.tick(jumping, JUMP_MS, rounds);
+  const landed = frogLeapMachine.tick(jumping, JUMP_MS, rounds);
+  return frogLeapMachine.tick(landed, SETTLE_MS, rounds);
 }
 
 describe("frogLeapMachine", () => {
@@ -56,6 +57,25 @@ describe("frogLeapMachine", () => {
     expect(midAir.phase).toBe("resolving");
     expect(midAir.answers).toEqual([]);
     expect(midAir.jumpProgress).toBeCloseTo(0.5, 1);
+  });
+
+  it("da tiempo a leer el resultado antes de la ronda siguiente", () => {
+    const jumping = frogLeapMachine.handle(
+      frogLeapMachine.create(rounds),
+      { kind: "lane", lane: 0 },
+      rounds,
+    );
+    const landed = frogLeapMachine.tick(jumping, JUMP_MS, rounds);
+
+    expect(landed.settleMs).toBe(SETTLE_MS);
+    // Durante la pausa no se admite otro salto.
+    expect(frogLeapMachine.handle(landed, { kind: "lane", lane: 2 }, rounds)).toBe(landed);
+    expect(frogLeapMachine.tick(landed, SETTLE_MS, rounds).settleMs).toBe(0);
+  });
+
+  it("la rana se queda en el nenúfar al que saltó", () => {
+    const state = leap(frogLeapMachine.create(rounds), 2);
+    expect(state.restingLane).toBe(2);
   });
 
   it("ignora las entradas durante el salto", () => {
@@ -90,7 +110,8 @@ describe("frogLeapMachine", () => {
     let state = frogLeapMachine.create(three);
     for (let index = 0; index < 3; index += 1) {
       const jumping = frogLeapMachine.handle(state, { kind: "lane", lane: 0 }, three);
-      state = frogLeapMachine.tick(jumping, JUMP_MS, three);
+      const landed = frogLeapMachine.tick(jumping, JUMP_MS, three);
+      state = frogLeapMachine.tick(landed, SETTLE_MS, three);
     }
 
     // 3 aciertos × 10 puntos + 5 de bonus por la cadena.

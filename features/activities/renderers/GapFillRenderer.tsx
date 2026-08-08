@@ -67,10 +67,16 @@ export function GapFillRenderer({
       {activity.presentation === "key_word_transformation" ? (
         <p className="font-serif text-xl leading-relaxed">{activity.firstSentence}</p>
       ) : activity.question ? (
-        <p className="font-serif text-xl leading-relaxed">{activity.question}</p>
+        // En UoE Part 3 el enunciado es el título del texto: va centrado y
+        // destacado, no como una frase más del párrafo.
+        isTextTitle(activity) ? (
+          <h3 className="text-center font-serif text-2xl font-bold">{activity.question}</h3>
+        ) : (
+          <p className="font-serif text-xl leading-relaxed">{activity.question}</p>
+        )
       ) : null}
 
-      {cue?.value ? (
+      {cue?.value && !hasPerGapCues(activity) ? (
         <p className="flex items-center gap-2 text-sm font-bold">
           <span className="text-foreground/60">{cue.label}</span>
           <span className="rounded-control border-2 border-foreground bg-accent px-3 py-1 tracking-[.14em]">
@@ -86,6 +92,7 @@ export function GapFillRenderer({
         dictionary={dictionary}
         disabled={disabled}
         layout={activity.presentation === "gap_fill" ? activity.layout : "sentence"}
+        wideGaps={activity.presentation === "key_word_transformation"}
         onChange={(gapId, value) =>
           setAnswers((current) => ({ ...current, [gapId]: value }))
         }
@@ -112,6 +119,7 @@ interface GapTextProps {
   dictionary: Dictionary;
   disabled?: boolean;
   layout: "sentence" | "paragraph" | "dialogue";
+  wideGaps: boolean;
   onChange: (gapId: string, value: string) => void;
   onEnter: () => void;
 }
@@ -123,6 +131,7 @@ function GapText({
   dictionary,
   disabled,
   layout,
+  wideGaps,
   onChange,
   onEnter,
 }: GapTextProps) {
@@ -152,6 +161,7 @@ function GapText({
               totalGaps,
               dictionary,
               disabled,
+              wideGaps,
               onChange,
               onEnter,
             }),
@@ -167,6 +177,8 @@ interface SegmentContext {
   totalGaps: number;
   dictionary: Dictionary;
   disabled?: boolean;
+  /** UoE Part 4 admite hasta cinco palabras: el hueco tiene que caberlas. */
+  wideGaps: boolean;
   onChange: (gapId: string, value: string) => void;
   onEnter: () => void;
 }
@@ -191,30 +203,58 @@ function renderSegment(
 
   if (segment.kind === "break") return null;
 
-  const label = context.dictionary.activities.gapOfTotal
-    .replace("{index}", String(segment.position))
-    .replace("{total}", String(context.totalGaps));
+  const label = segment.cueWord
+    ? `${context.dictionary.activities.gapOfTotal
+        .replace("{index}", String(segment.position))
+        .replace("{total}", String(context.totalGaps))} · ${segment.cueWord}`
+    : context.dictionary.activities.gapOfTotal
+        .replace("{index}", String(segment.position))
+        .replace("{total}", String(context.totalGaps));
 
   return (
-    <input
-      key={key}
-      type="text"
-      inputMode="text"
-      autoComplete="off"
-      aria-label={label}
-      value={context.answers[segment.gapId] ?? ""}
-      disabled={context.disabled}
-      onChange={(event) => context.onChange(segment.gapId, event.target.value)}
-      onKeyDown={(event) => {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          context.onEnter();
-        }
-      }}
-      // `field-sizing: content` hace que el hueco crezca con lo escrito y se
-      // lea como parte de la frase, no como un formulario aparte.
-      className="mx-1 inline-block min-w-[7ch] max-w-full rounded-none border-0 border-b-[3px] border-dashed border-primary bg-accent/25 px-2 py-0.5 text-center font-sans text-lg font-bold text-foreground transition-colors focus:border-solid focus:border-coral focus:outline-none disabled:opacity-60 [field-sizing:content]"
-    />
+    <span key={key} className="inline-flex items-baseline gap-1 whitespace-nowrap">
+      <input
+        type="text"
+        inputMode="text"
+        autoComplete="off"
+        aria-label={label}
+        value={context.answers[segment.gapId] ?? ""}
+        disabled={context.disabled}
+        onChange={(event) => context.onChange(segment.gapId, event.target.value)}
+        onKeyDown={(event) => {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            context.onEnter();
+          }
+        }}
+        // `field-sizing: content` hace que el hueco crezca con lo escrito y se
+        // lea como parte de la frase, no como un formulario aparte. El ancho
+        // mínimo deja sitio para las cinco palabras de UoE Part 4.
+        className={cn(
+          "mx-1 inline-block max-w-full rounded-none border-0 border-b-[3px] border-dashed border-primary bg-accent/25 px-3 py-1 text-center font-sans text-lg font-bold text-foreground transition-colors focus:border-solid focus:border-coral focus:outline-none disabled:opacity-60 [field-sizing:content]",
+          context.wideGaps ? "min-w-[22ch]" : "min-w-[12ch]",
+        )}
+      />
+      {segment.cueWord ? (
+        // La raíz va justo detrás del hueco, como en la hoja del examen.
+        <strong className="text-sm font-black uppercase tracking-[.12em] text-primary">
+          ({segment.cueWord})
+        </strong>
+      ) : null}
+    </span>
+  );
+}
+
+/** El enunciado es el título del texto y no una frase con hueco. */
+function isTextTitle(activity: GapFillActivityDto): boolean {
+  return activity.layout === "paragraph" || hasPerGapCues(activity);
+}
+
+function hasPerGapCues(
+  activity: GapFillActivityDto | KeyWordTransformationActivityDto,
+): boolean {
+  return activity.segments.some(
+    (segment) => segment.kind === "gap" && Boolean(segment.cueWord),
   );
 }
 

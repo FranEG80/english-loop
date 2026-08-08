@@ -3,6 +3,7 @@
 import { Check, X } from "lucide-react";
 import type { ActivityResponseValue, TrueFalseActivityDto } from "@/core/models";
 import type { Dictionary } from "@/shared/i18n";
+import { withVisibleGaps } from "../gap-display";
 
 export interface TrueFalseRendererProps {
   activity: TrueFalseActivityDto;
@@ -27,11 +28,13 @@ export function TrueFalseRenderer({
 
       {activity.context ? (
         <blockquote className="rounded-control border-l-4 border-primary/45 bg-surface-muted/60 px-4 py-3 text-base leading-relaxed">
-          {activity.context}
+          {withVisibleGaps(activity.context)}
         </blockquote>
       ) : null}
 
-      <p className="font-serif text-3xl leading-snug">{activity.statement}</p>
+      <p className="font-serif text-3xl leading-snug">
+        {withVisibleGaps(activity.statement)}
+      </p>
 
       <div className="grid gap-3 sm:grid-cols-2">
         <button

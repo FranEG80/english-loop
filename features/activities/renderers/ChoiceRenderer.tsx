@@ -1,40 +1,44 @@
 "use client";
 
-import { useState } from "react";
-import type {
-  ActivityResponseValue,
-  MultipleChoiceActivityDto,
-  SingleChoiceActivityDto,
-} from "@/core/models";
+import { useRef, useState } from "react";
+import type { ActivityResponseValue, ChoiceActivityDto } from "@/core/models";
 import type { Dictionary } from "@/shared/i18n";
 import { Button } from "@/shared/ui";
 import { cn } from "@/shared/lib/cn";
+import { withVisibleGaps } from "../gap-display";
 
-type ChoiceActivity = SingleChoiceActivityDto | MultipleChoiceActivityDto;
+export interface ChoiceRendererProps {
+  activity: ChoiceActivityDto;
+  dictionary: Dictionary;
+  onSubmit: (response: ActivityResponseValue) => void;
+  disabled?: boolean;
+}
 
+/**
+ * Opción única o múltiple. En selección única el grupo es un `radiogroup` con
+ * tabulación itinerante: se entra una vez con el tabulador y se recorre con
+ * las flechas, que es lo que espera un lector de pantalla.
+ */
 export function ChoiceRenderer({
   activity,
   dictionary,
   onSubmit,
   disabled,
-}: {
-  activity: ChoiceActivity;
-  dictionary: Dictionary;
-  onSubmit: (response: ActivityResponseValue) => void;
-  disabled?: boolean;
-}) {
-  const isMultiple = activity.type === "multiple_choice";
+}: ChoiceRendererProps) {
+  const isMultiple = activity.selection === "multiple";
   const [selected, setSelected] = useState<string[]>([]);
+  const [focusIndex, setFocusIndex] = useState(0);
+  const buttons = useRef<Array<HTMLButtonElement | null>>([]);
 
   function toggle(id: string) {
     if (disabled) return;
-    if (isMultiple) {
-      setSelected((prev) =>
-        prev.includes(id) ? prev.filter((value) => value !== id) : [...prev, id],
-      );
-    } else {
-      setSelected([id]);
-    }
+    setSelected((current) =>
+      isMultiple
+        ? current.includes(id)
+          ? current.filter((value) => value !== id)
+          : [...current, id]
+        : [id],
+    );
   }
 
   function submit() {
@@ -42,48 +46,99 @@ export function ChoiceRenderer({
     onSubmit(
       isMultiple
         ? { kind: "multiple", value: selected }
-        : { kind: "single", value: selected[0] },
+        : { kind: "single", value: selected[0]! },
     );
+  }
+
+  function moveFocus(delta: number) {
+    const next = (focusIndex + delta + activity.options.length) % activity.options.length;
+    setFocusIndex(next);
+    buttons.current[next]?.focus();
+    if (!isMultiple) toggle(activity.options[next]!.id);
   }
 
   return (
     <div className="flex flex-col gap-5">
-      <p className="font-serif text-2xl font-semibold leading-snug text-foreground sm:text-3xl">
-        {activity.question}
+      <p className="text-sm font-semibold text-foreground/70">{activity.instructions}</p>
+
+      {activity.context ? (
+        <blockquote className="rounded-control border-l-4 border-primary/45 bg-surface-muted/60 px-4 py-3 text-base leading-relaxed">
+          {withVisibleGaps(activity.context)}
+        </blockquote>
+      ) : null}
+
+      <p className="font-serif text-2xl leading-relaxed">
+        {withVisibleGaps(activity.question)}
       </p>
-      <p className="font-hand text-2xl font-bold text-coral">
+      <p className="text-sm text-foreground/60">
         {isMultiple ? dictionary.activities.selectMultiple : dictionary.activities.selectOne}
       </p>
-      <div role="group" aria-label={activity.question} className="grid gap-3 sm:grid-cols-2">
-        {activity.options.map((option) => {
+
+      <div
+        role={isMultiple ? "group" : "radiogroup"}
+        aria-label={activity.question}
+        className="grid gap-3 sm:grid-cols-2"
+        onKeyDown={(event) => {
+          if (isMultiple) return;
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            event.preventDefault();
+            moveFocus(1);
+          }
+          if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+            event.preventDefault();
+            moveFocus(-1);
+          }
+        }}
+      >
+        {activity.options.map((option, index) => {
           const isSelected = selected.includes(option.id);
-          const index = activity.options.indexOf(option);
           return (
             <button
               key={option.id}
+              ref={(node) => {
+                buttons.current[index] = node;
+              }}
               type="button"
               role={isMultiple ? "checkbox" : "radio"}
               aria-checked={isSelected}
+              tabIndex={isMultiple || index === focusIndex ? 0 : -1}
               disabled={disabled}
-              onClick={() => toggle(option.id)}
+              onClick={() => {
+                setFocusIndex(index);
+                toggle(option.id);
+              }}
               className={cn(
-                "flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left text-base font-bold transition-[transform,background-color,box-shadow]",
+                "flex items-center gap-3 rounded-control border-2 px-4 py-3 text-left text-lg font-bold transition-transform disabled:opacity-50",
                 isSelected
-                  ? "translate-x-1 -translate-y-1 border-foreground bg-accent text-foreground shadow-[3px_4px_0_var(--color-foreground)]"
-                  : "border-foreground/35 bg-white hover:-translate-y-0.5 hover:border-foreground",
+                  ? "-translate-y-1 translate-x-1 border-foreground bg-accent shadow-[3px_4px_0_var(--color-foreground)]"
+                  : "border-foreground/35 bg-surface hover:-translate-y-0.5",
               )}
             >
-              <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-current font-black">
-                {String.fromCharCode(65 + index)}
+              <span
+                aria-hidden="true"
+                className="flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-foreground bg-surface text-sm font-black"
+              >
+                {optionLetter(index)}
               </span>
               {option.label}
             </button>
           );
         })}
       </div>
-      <Button onClick={submit} disabled={disabled || selected.length === 0} size="lg">
+
+      <Button
+        type="button"
+        size="lg"
+        onClick={submit}
+        disabled={disabled || selected.length === 0}
+      >
         {dictionary.daily.submitAnswer}
       </Button>
     </div>
   );
+}
+
+/** A, B, C… y a partir de la 27.ª opción se numeran, para no salirse del alfabeto. */
+function optionLetter(index: number): string {
+  return index < 26 ? String.fromCharCode(65 + index) : String(index + 1);
 }

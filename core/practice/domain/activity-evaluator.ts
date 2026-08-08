@@ -92,6 +92,10 @@ export function evaluate(
   evaluator: Evaluator,
   response: ActivityResponseValue,
 ): EvaluationResult {
+  // El contenido antiguo puede no traer reglas de normalización; sin este
+  // respaldo la corrección revienta en lugar de degradar.
+  const rules = normalizationOf(evaluator);
+
   switch (evaluator.strategy) {
     case "boolean":
       return single(
@@ -111,17 +115,30 @@ export function evaluate(
       // Un ítem por opción correcta más uno por cada elección sobrante, para
       // poder señalar exactamente qué faltó y qué sobró.
       if (response.kind !== "multiple") return failed(evaluator.correctOptionIds);
-      const chosen = new Set(response.value);
+
       const expected = new Set(evaluator.correctOptionIds);
+      const chosen = new Set<string>();
+      const surplus: string[] = [];
+      for (const optionId of response.value) {
+        // Una opción repetida cuenta como elección sobrante: elegir la misma
+        // casilla dos veces no puede valer lo mismo que elegirla una.
+        if (chosen.has(optionId) || !expected.has(optionId)) surplus.push(optionId);
+        else chosen.add(optionId);
+      }
+
       const items: EvaluationItem[] = evaluator.correctOptionIds.map((optionId) => ({
         itemId: optionId,
         given: chosen.has(optionId) ? optionId : "",
         expected: [optionId],
         isCorrect: chosen.has(optionId),
       }));
-      for (const optionId of response.value) {
-        if (expected.has(optionId)) continue;
-        items.push({ itemId: optionId, given: optionId, expected: [], isCorrect: false });
+      for (const [index, optionId] of surplus.entries()) {
+        items.push({
+          itemId: `${optionId}#${index}`,
+          given: optionId,
+          expected: [],
+          isCorrect: false,
+        });
       }
       return fromItems(items);
     }
@@ -131,7 +148,7 @@ export function evaluate(
         response.kind === "text" ? response.value : "",
         [evaluator.answer],
         response.kind === "text" &&
-          equivalent(response.value, evaluator.answer, evaluator.normalization),
+          equivalent(response.value, evaluator.answer, rules),
       );
 
     case "one_of_texts":
@@ -139,9 +156,7 @@ export function evaluate(
         response.kind === "text" ? response.value : "",
         evaluator.answers,
         response.kind === "text" &&
-          evaluator.answers.some((answer) =>
-            equivalent(response.value, answer, evaluator.normalization),
-          ),
+          evaluator.answers.some((answer) => equivalent(response.value, answer, rules)),
       );
 
     case "per_gap": {
@@ -164,7 +179,7 @@ export function evaluate(
             expected: answers,
             isCorrect:
               value.trim().length > 0 &&
-              answers.some((answer) => equivalent(value, answer, evaluator.normalization)),
+              answers.some((answer) => equivalent(value, answer, rules)),
           };
         }),
       );

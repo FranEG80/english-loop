@@ -38,7 +38,7 @@ export const lesson: Lesson = {
 
 export function activity(id: string, taxonomyNodeIds = ["root", "topic"]): Activity {
   return {
-    id, level: "B1", type: "true_false", category: "grammar", topic: "topic", subtopic: "topic",
+    id, level: "B1", type: "true_false", skillFocus: "fill_blank", category: "grammar", topic: "topic", subtopic: "topic",
     taxonomyNodeIds, difficulty: 1, instructions: "Choose", prompt: "True?", lessonIds: [lesson.id],
     tags: [], estimatedSeconds: 10, evaluator: { strategy: "boolean", correct: true },
     explanation: "Because", status: "published",

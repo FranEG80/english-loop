@@ -1,5 +1,6 @@
 import type { CefrLevelFilter } from "../level";
 import type { SessionSize } from "../session-size";
+import type { AttemptItemResultDto } from "./attempt";
 
 export interface FocusedPracticeScopeDto {
   taxonomyNodeId: string;
@@ -24,10 +25,25 @@ export interface PracticeRunDto {
   status: PracticeRunStatus;
 }
 
+/**
+ * Un fallo de la sesión, con su desglose y su explicación. Es lo que convierte
+ * el resumen en algo útil: dos números no dicen en qué te equivocaste.
+ */
+export interface PracticeRunErrorDto {
+  activityId: string;
+  /** Enunciado de la actividad, para reconocerla sin abrirla. */
+  prompt: string;
+  explanation: string;
+  /** Desglose por hueco, carta o ronda cuando la actividad tiene sub-ítems. */
+  items: AttemptItemResultDto[];
+}
+
 export interface PracticeRunSummaryDto {
   runId: string;
   correctCount: number;
   incorrectCount: number;
+  /** Todos los fallos de la sesión, en orden de respuesta. */
+  errors: PracticeRunErrorDto[];
   /** Aciertos de la única repetición inmediata permitida. */
   recoveredCount: number;
   /** Porcentaje calculado sobre las actividades originales. */

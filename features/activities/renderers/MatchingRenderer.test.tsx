@@ -8,7 +8,7 @@ describe("MatchingRenderer", () => {
   it("pairs both columns and submits the ordered pairs", async () => {
     const user = userEvent.setup();
     const onSubmit = vi.fn();
-    render(<MatchingRenderer activity={{ id: "a", level: "B1", taxonomyNodeId: "topic", interactionMode: "matching_pairs", type: "matching", leftItems: [{ id: "l1", label: "Left" }, { id: "l2", label: "Another" }], rightItems: [{ id: "r1", label: "Right" }, { id: "r2", label: "Other" }] }} dictionary={en} onSubmit={onSubmit} />);
+    render(<MatchingRenderer activity={{ id: "a", level: "B1", taxonomyNodeId: "topic", type: "matching", skillFocus: "matching", presentation: "matching", instructions: "Match the pairs.", leftItems: [{ id: "l1", label: "Left" }, { id: "l2", label: "Another" }], rightItems: [{ id: "r1", label: "Right" }, { id: "r2", label: "Other" }] }} dictionary={en} onSubmit={onSubmit} />);
     await user.click(screen.getByRole("button", { name: "Left" }));
     await user.click(screen.getByRole("button", { name: "Right" }));
     await user.click(screen.getByRole("button", { name: "Another" }));
@@ -20,7 +20,7 @@ describe("MatchingRenderer", () => {
   it("guards incomplete selections, duplicate pairs, reset and disabled state", async () => {
     const user = userEvent.setup();
     const onSubmit = vi.fn();
-    render(<MatchingRenderer activity={{ id: "a", level: "B1", taxonomyNodeId: "topic", interactionMode: "matching_pairs", type: "matching", leftItems: [{ id: "l1", label: "Left" }, { id: "l2", label: "Another" }], rightItems: [{ id: "r1", label: "Right" }, { id: "r2", label: "Other" }] }} dictionary={en} onSubmit={onSubmit} />);
+    render(<MatchingRenderer activity={{ id: "a", level: "B1", taxonomyNodeId: "topic", type: "matching", skillFocus: "matching", presentation: "matching", instructions: "Match the pairs.", leftItems: [{ id: "l1", label: "Left" }, { id: "l2", label: "Another" }], rightItems: [{ id: "r1", label: "Right" }, { id: "r2", label: "Other" }] }} dictionary={en} onSubmit={onSubmit} />);
     await user.click(screen.getByRole("button", { name: "Right" }));
     await user.click(screen.getByRole("button", { name: "Left" }));
     await user.click(screen.getByRole("button", { name: "Right" }));
@@ -37,7 +37,7 @@ describe("MatchingRenderer", () => {
     expect(screen.getByRole("button", { name: "Left" })).toHaveAttribute("aria-pressed", "false");
 
     const disabledSubmit = vi.fn();
-    render(<MatchingRenderer activity={{ id: "disabled", level: "B1", taxonomyNodeId: "topic", interactionMode: "matching_pairs", type: "matching", leftItems: [{ id: "l1", label: "Disabled left" }], rightItems: [{ id: "r1", label: "Disabled right" }] }} dictionary={en} onSubmit={disabledSubmit} disabled />);
+    render(<MatchingRenderer activity={{ id: "disabled", level: "B1", taxonomyNodeId: "topic", type: "matching", skillFocus: "matching", presentation: "matching", instructions: "Match the pairs.", leftItems: [{ id: "l1", label: "Disabled left" }], rightItems: [{ id: "r1", label: "Disabled right" }] }} dictionary={en} onSubmit={disabledSubmit} disabled />);
     const disabledLeft = screen.getByRole("button", { name: "Disabled left" }) as HTMLButtonElement;
     disabledLeft.disabled = false;
     fireEvent.click(disabledLeft);

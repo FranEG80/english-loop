@@ -44,7 +44,7 @@ function seedInput(checksum: string, lessonIds = ["lesson-1"], status: CatalogSe
     activities: [{
       id: "activity-1",
       checksum: "activity-checksum",
-      type: "choice",
+      type: "choice", skillFocus: "fill_blank",
       evaluatorStrategy: "single_option",
       level: "B1",
       category: "grammar",

@@ -28,8 +28,6 @@ const BY_PRESENTATION: Record<ActivityPresentation, string> = {
  */
 const BY_TYPE: Partial<Record<ActivityQuestionDto["type"], string>> = {
   multiple_choice: "/illustrations/activities/multiple-choice.webp",
-  sentence_rewrite: "/illustrations/activities/rewrite-sentence.webp",
-  guided_writing: "/illustrations/activities/sentence-transformation.webp",
   // Pendiente de rehacer: el diagrama de nodos actual no se lee como
   // sufijación. Hasta entonces se usa la ilustración de Part 4, que al menos
   // comunica «transformar una palabra».

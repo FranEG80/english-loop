@@ -757,31 +757,48 @@ Una estrategia nueva no está terminada hasta que:
 
 ### 11.3. Capa 3: aplicación y experiencia de usuario
 
-El dataset y la aplicación mantienen actualmente listas de tipos diferentes.
-Añadir un tipo al dataset no garantiza que la interfaz pueda mostrarlo.
+**El vocabulario de tipos es único.** El dataset, el modelo de la aplicación y
+los renderers usan los mismos once nombres; la tabla canónica está en
+[`DOC/ACTIVITY-TYPES.md`](./ACTIVITY-TYPES.md). Ya no hay alias ni listas
+paralelas: el `multiple_select` del dataset y los catorce tipos sueltos del
+modelo desaparecieron en la migración v2.
 
-Para integrarlo en la aplicación hay que revisar como mínimo:
+El DTO que viaja al cliente es una **unión discriminada por `presentation`**,
+no por tipo. `PRESENTATION_BY_TYPE` (`core/models/types/activity.ts`) es la
+tabla que las une, y el `switch` del mapper es exhaustivo con `assertNever`:
+añadir un tipo sin darle presentación es un error de compilación, no un
+fallback silencioso a `gap_fill` como ocurría antes.
 
-1. [`core/models/activity.ts`](../core/models/activity.ts): tipo de dominio y
-   DTO necesarios.
-2. Adaptadores que transformen el dataset o la API al DTO de actividad.
-3. [`features/activities/activity-registry.ts`](../features/activities/activity-registry.ts):
-   renderer, modos de interacción y clases de respuesta.
-4. [`features/activities/ActivityRenderer.tsx`](../features/activities/ActivityRenderer.tsx):
-   selección del renderer.
-5. `features/activities/renderers/`: componente nuevo o reutilización de uno
-   existente.
-6. [`features/activities/illustrations.ts`](../features/activities/illustrations.ts):
-   recurso visual por tipo.
-7. Corrección utilizada por el adaptador o backend.
-8. Datos mock que sigan utilizando esa capa.
-9. Textos de interfaz y accesibilidad.
-10. Pruebas del registro, renderer, envío y corrección.
+Para integrar un tipo nuevo hay que tocar, en este orden:
 
-La diferencia actual más visible es que el dataset usa `multiple_select`,
-mientras que el modelo de aplicación usa `multiple_choice`. También existen
-tipos admitidos por el dataset que todavía no aparecen en el modelo de
-aplicación. Antes de ampliar la lista conviene unificar ambos vocabularios.
+1. `DATASET/schemas/activity.schema.json`: el nombre en `activityType` y el
+   contrato de sus campos propios.
+2. [`core/models/types/activity.ts`](../core/models/types/activity.ts):
+   `ACTIVITY_TYPES`, su entrada en `PRESENTATION_BY_TYPE` y, si estrena
+   familia de render, la variante del DTO.
+3. [`core/content/domain/types/activity.ts`](../core/content/domain/types/activity.ts):
+   campos nuevos de la actividad de catálogo.
+4. [`core/content/application/mappers/activity-question-mapper.ts`](../core/content/application/mappers/activity-question-mapper.ts):
+   el `case` correspondiente. **Nunca un `default:`.**
+5. [`core/practice/domain/activity-evaluator.ts`](../core/practice/domain/activity-evaluator.ts):
+   la estrategia de corrección, devolviendo un `EvaluationItem` por sub-ítem.
+6. `features/activities/renderers/`: componente nuevo o reutilización.
+7. [`features/activities/ActivityRenderer.tsx`](../features/activities/ActivityRenderer.tsx):
+   selección por presentación.
+8. [`features/activities/illustrations.ts`](../features/activities/illustrations.ts):
+   ilustración **por presentación**, no por tipo.
+9. `scripts/dataset/lib/validation.ts` y `lib/activity-rules.ts`: contrato y
+   reglas pedagógicas del tipo.
+10. `scripts/dataset/test-grading.ts`: síntesis de respuestas correctas,
+    incorrectas y mixtas para el tipo.
+11. Diccionarios `es`/`en` y accesibilidad.
+12. Pruebas: mapper, evaluador, renderer y regresión del bug que motivó el
+    cambio.
+
+Un minijuego nuevo, además, se registra en
+[`features/activities/games/game-registry.ts`](../features/activities/games/game-registry.ts)
+y se añade a `GAMES_PER_LESSON` en `scripts/dataset/compose-content.ts`. El
+validador impide publicar contenido para un juego que no esté registrado.
 
 ## 12. Flujo: corregir contenido existente
 

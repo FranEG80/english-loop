@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getLocalePort } from "@/adapters/adapter-factory";
 import { getFocusedSummaryAction } from "@/features/review/actions";
 import { getDictionary } from "@/shared/i18n";
+import { SessionErrorList } from "@/features/activities/SessionErrorList";
 import { Card } from "@/shared/ui/Card";
 
 export default async function FocusedSummaryPage({
@@ -30,6 +31,7 @@ export default async function FocusedSummaryPage({
             <p className="text-5xl font-black text-danger">{summary.incorrectCount}</p>
           </Card>
         </div>
+        <SessionErrorList errors={summary.errors} dictionary={dictionary} />
         <Link href="/review/focus" className="font-medium text-primary-dark">
           {dictionary.review.startFocus}
         </Link>

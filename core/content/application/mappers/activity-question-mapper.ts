@@ -1,6 +1,7 @@
 import { seededShuffleDistinct } from "@/core/shared/kernel/seeded-shuffle";
 import type {
   ActivityOptionDto,
+  ActivitySegment,
   ActivityQuestionDto,
   ActivityType,
   GapLayout,
@@ -37,7 +38,9 @@ export function toActivityQuestionDto(activity: Activity): ActivityQuestionDto {
   switch (base.type) {
     case "gap_fill":
     case "word_formation": {
-      const segments = parseGapSegments(activity.gapText ?? "");
+      // La raíz de UoE Part 3 se muestra junto a su hueco, como en el examen.
+      // No es la respuesta, así que puede viajar al cliente.
+      const segments = withGapCues(parseGapSegments(activity.gapText ?? ""), activity);
       return {
         ...base,
         presentation: "gap_fill",
@@ -112,8 +115,6 @@ export function toActivityQuestionDto(activity: Activity): ActivityQuestionDto {
       };
 
     case "error_correction":
-    case "guided_writing":
-    case "sentence_rewrite":
       return {
         ...base,
         presentation: "free_text",
@@ -129,6 +130,7 @@ export function toActivityQuestionDto(activity: Activity): ActivityQuestionDto {
         rounds: (activity.rounds ?? []).map((round) => ({
           id: round.id,
           prompt: round.prompt,
+          ...(round.context ? { context: round.context } : {}),
           options: toOptions(round.options),
         })),
       };
@@ -136,6 +138,26 @@ export function toActivityQuestionDto(activity: Activity): ActivityQuestionDto {
     default:
       return assertNever(base.type);
   }
+}
+
+/** Adjunta a cada hueco su raíz en mayúsculas, si el contenido la declara. */
+function withGapCues(
+  segments: ActivitySegment[],
+  activity: Activity,
+): ActivitySegment[] {
+  if (activity.evaluator.strategy !== "per_gap") return segments;
+  const cues = new Map(
+    activity.evaluator.gaps
+      .filter((gap) => gap.cueWord)
+      .map((gap) => [gap.gapId, gap.cueWord!] as const),
+  );
+  if (cues.size === 0) return segments;
+
+  return segments.map((segment) =>
+    segment.kind === "gap" && cues.has(segment.gapId)
+      ? { ...segment, cueWord: cues.get(segment.gapId)! }
+      : segment,
+  );
 }
 
 function toOptions(options: readonly ActivityOption[] | undefined): ActivityOptionDto[] {

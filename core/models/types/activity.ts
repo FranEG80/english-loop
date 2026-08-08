@@ -14,10 +14,8 @@ export const ACTIVITY_TYPES = [
   "word_order",
   "matching",
   "error_correction",
-  "guided_writing",
   "word_formation",
   "key_word_transformation",
-  "sentence_rewrite",
   "mini_game",
 ] as const;
 
@@ -60,7 +58,7 @@ export interface ActivityOptionDto {
 /** Trozo de texto o hueco dentro de un enunciado con huecos en línea. */
 export type ActivitySegment =
   | { kind: "text"; value: string }
-  | { kind: "gap"; gapId: string; position: number }
+  | { kind: "gap"; gapId: string; position: number; cueWord?: string }
   | { kind: "break" }
   | { kind: "speaker"; label: string };
 
@@ -138,6 +136,8 @@ export interface FreeTextActivityDto extends ActivityBaseDto {
 export interface MiniGameRoundDto {
   id: string;
   prompt: string;
+  /** Frase de apoyo de la ronda; sin ella algunos enunciados no se entienden. */
+  context?: string;
   options: ActivityOptionDto[];
 }
 
@@ -182,7 +182,5 @@ export const PRESENTATION_BY_TYPE: Readonly<Record<ActivityType, ActivityPresent
   word_order: "word_order",
   matching: "matching",
   error_correction: "free_text",
-  guided_writing: "free_text",
-  sentence_rewrite: "free_text",
   mini_game: "mini_game",
 };

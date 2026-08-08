@@ -154,7 +154,7 @@ describe("D1 operation SQL dispatch", () => {
       taxonomyNodeIds: ["use-of-english", "transformations"],
       queryTerms: ["unless"],
       activityType: "key_word_transformation",
-      interactionMode: "standard",
+      presentation: "choice",
       offset: 0,
       limit: 12,
     });

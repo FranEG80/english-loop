@@ -117,6 +117,9 @@ export const focusedPracticeMockAdapter: FocusedPracticePort = {
       runId: run.id,
       correctCount: stats.correct,
       incorrectCount: stats.incorrect,
+      // El adaptador de demo no guarda intentos, así que no hay fallos que
+      // desglosar: el resumen real llega del backend.
+      errors: [],
       recoveredCount: 0,
       scorePercent: run.activityIds.length === 0 ? 0 : Math.round((stats.correct / run.activityIds.length) * 100),
       coveredSubtopicIds,

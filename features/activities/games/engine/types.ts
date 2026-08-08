@@ -13,6 +13,8 @@ import type { MiniGameId, MiniGameRoundDto } from "@/core/models";
 export interface GameRound {
   id: string;
   prompt: string;
+  /** Frase de apoyo de la ronda; sin ella algunos enunciados no se entienden. */
+  context?: string;
   options: Array<{ id: string; label: string }>;
 }
 
@@ -41,7 +43,9 @@ export interface GameMachine<TState extends GameCoreState> {
   handle(state: TState, input: GameInput, rounds: readonly GameRound[]): TState;
 }
 
-export interface GameModule<TState extends GameCoreState = GameCoreState> {
+/* eslint-disable @typescript-eslint/no-explicit-any -- el registro guarda
+   módulos con estados distintos; cada uno es coherente consigo mismo. */
+export interface GameModule<TState extends GameCoreState = any> {
   id: MiniGameId;
   rounds: { min: number; max: number };
   optionsPerRound: { min: number; max: number };
@@ -63,6 +67,7 @@ export function toGameRounds(rounds: readonly MiniGameRoundDto[]): GameRound[] {
   return rounds.map((round) => ({
     id: round.id,
     prompt: round.prompt,
+    ...(round.context ? { context: round.context } : {}),
     options: round.options.map(({ id, label }) => ({ id, label })),
   }));
 }

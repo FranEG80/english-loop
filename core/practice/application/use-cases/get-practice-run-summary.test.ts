@@ -30,6 +30,60 @@ describe("getPracticeRunSummary", () => {
     expect(result.coveredSubtopicIds).toEqual(["legacy-topic", "root"]);
   });
 
+  // El resumen solo daba dos contadores: no se podía saber en qué te habías
+  // equivocado ni por qué.
+  it("lista todos los fallos con su desglose y su explicación", async () => {
+    const runs = new MemoryRuns();
+    const attempts = new MemoryAttempts();
+    const run = PracticeRun.create({ id: "errors", userId: actor.userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 2 }, activityIds: ["activity-1", "activity-2"], originalActivityCount: 2, currentIndex: 2, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: clock.nowIso() });
+    await runs.save(run);
+    await attempts.save(ActivityAttempt.create({ id: "wrong", userId: actor.userId, practiceRunId: run.id, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "wrong", response: { kind: "single", value: "b" }, isCorrect: false, evaluatorVersion: "1", submittedAt: clock.nowIso() }));
+    await attempts.save(ActivityAttempt.create({ id: "right", userId: actor.userId, practiceRunId: run.id, activityId: "activity-2", origin: "FOCUSED", idempotencyKey: "right", response: { kind: "single", value: "a" }, isCorrect: true, evaluatorVersion: "1", submittedAt: clock.nowIso() }));
+
+    const catalog = {
+      getActivityById: async (id: string) => ({
+        ...activity(id, ["root", "topic"]),
+        prompt: `Enunciado de ${id}`,
+        explanation: `Explicación de ${id}`,
+        options: [
+          { id: "a", text: "make a decision" },
+          { id: "b", text: "do housework" },
+        ],
+        evaluator: { strategy: "single_option" as const, correctOptionId: "a" },
+      }),
+      listActivities: async () => [],
+      countActivitiesByNode: async () => 1,
+      countActivitiesByNodes: async () => 1,
+    };
+
+    const result = await getPracticeRunSummary(identity, runs, attempts, catalog, run.id);
+
+    expect(result.errors).toHaveLength(1);
+    expect(result.errors[0]).toMatchObject({
+      activityId: "activity-1",
+      prompt: "Enunciado de activity-1",
+      explanation: "Explicación de activity-1",
+    });
+    expect(result.errors[0]!.items[0]).toMatchObject({
+      given: "do housework",
+      expected: ["make a decision"],
+      isCorrect: false,
+    });
+  });
+
+  it("deja fuera del listado las repeticiones y los aciertos", async () => {
+    const runs = new MemoryRuns();
+    const attempts = new MemoryAttempts();
+    const run = PracticeRun.create({ id: "errors-repeat", userId: actor.userId, mode: "FOCUSED", scope: { level: "B1", taxonomyNodeId: "topic", taxonomyPath: [], descendantIds: ["topic"], requestedCount: 1 }, activityIds: ["activity-1", "activity-1"], originalActivityCount: 1, repetitionActivityIds: ["activity-1"], currentIndex: 2, status: "in_progress", datasetVersion: "v1", dailySessionId: null, createdAt: clock.nowIso() });
+    await runs.save(run);
+    await attempts.save(ActivityAttempt.create({ id: "repeat-fail", userId: actor.userId, practiceRunId: run.id, activityId: "activity-1", origin: "FOCUSED", idempotencyKey: "repeat-fail", response: { kind: "boolean", value: false }, isCorrect: false, isRepetition: true, evaluatorVersion: "1", submittedAt: clock.nowIso() }));
+    const catalog = { getActivityById: async (id: string) => activity(id, ["root", "topic"]), listActivities: async () => [], countActivitiesByNode: async () => 1, countActivitiesByNodes: async () => 1 };
+
+    const result = await getPracticeRunSummary(identity, runs, attempts, catalog, run.id);
+
+    expect(result.errors).toEqual([]);
+  });
+
   it("does not inflate the original score with a recovered repetition", async () => {
     const runs = new MemoryRuns();
     const attempts = new MemoryAttempts();

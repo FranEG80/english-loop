@@ -45,7 +45,7 @@ function options() {
 
 const taxonomy = [{ id: "grammar", checksum: "checksum", parentId: null, kind: "category", labels: { en: "Grammar", es: "Gramática" }, levels: ["B1"], selectableForPractice: true, order: 0 }];
 const lesson = [{ id: "lesson-1", checksum: "checksum", level: "B1", category: "grammar", taxonomyNodeId: "grammar", prerequisiteLessonIds: [], title: "Lesson", summary: "Summary", explanation: "Explanation", examples: [], commonMistakes: [], tags: [], difficulty: 1, contentVersion: 1, status: "published" }];
-const activity = [{ id: "activity-1", checksum: "checksum", type: "choice", evaluatorStrategy: "single_option", level: "B1", category: "grammar", topic: "grammar", subtopic: "present", difficulty: 1, instructions: "Choose", prompt: "Prompt", explanation: "Explanation", tags: [], lessonIds: ["lesson-1"], taxonomyNodeIds: ["grammar"], estimatedSeconds: 30, evaluator: { strategy: "single_option", correctOptionId: "correct" }, options: [], tokens: [], pairs: [], expectedAnswers: [], status: "published" }];
+const activity = [{ id: "activity-1", checksum: "checksum", type: "single_choice", skillFocus: "single_choice", evaluatorStrategy: "single_option", level: "B1", category: "grammar", topic: "grammar", subtopic: "present", difficulty: 1, instructions: "Choose", prompt: "Prompt", explanation: "Explanation", tags: [], lessonIds: ["lesson-1"], taxonomyNodeIds: ["grammar"], estimatedSeconds: 30, evaluator: { strategy: "single_option", correctOptionId: "correct" }, options: [], tokens: [], pairs: [], expectedAnswers: [], status: "published" }];
 
 describe("D1 seed HTTP handler", () => {
   it("validates and handles start, references, normalized chunks, publish and fail", async () => {

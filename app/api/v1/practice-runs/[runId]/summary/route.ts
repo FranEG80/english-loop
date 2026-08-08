@@ -22,6 +22,7 @@ export const GET = withErrorHandling(
         runSummary.incorrectCount,
         runSummary.coveredSubtopicIds,
         runSummary.recoveredCount,
+        runSummary.errors,
         runSummary.scorePercent,
       ),
     );

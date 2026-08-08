@@ -20,7 +20,7 @@ describe("activity evaluator properties", () => {
         const answer = words.join(" ");
         const evaluator: Evaluator = { strategy: "exact_text", answer, normalization };
         const variant = `  ${answer.toUpperCase()}!!!  `;
-        expect(evaluate(evaluator, { kind: "text", value: variant })).toBe(true);
+        expect(evaluate(evaluator, { kind: "text", value: variant }).isCorrect).toBe(true);
       }),
       { numRuns: 100 },
     );
@@ -30,8 +30,8 @@ describe("activity evaluator properties", () => {
     fc.assert(
       fc.property(fc.uniqueArray(word, { minLength: 1, maxLength: 5 }), (values) => {
         const evaluator: Evaluator = { strategy: "multiple_options", correctOptionIds: values };
-        expect(evaluate(evaluator, { kind: "multiple", value: [...values].reverse() })).toBe(true);
-        expect(evaluate(evaluator, { kind: "multiple", value: [...values, values[0]!] })).toBe(false);
+        expect(evaluate(evaluator, { kind: "multiple", value: [...values].reverse() }).isCorrect).toBe(true);
+        expect(evaluate(evaluator, { kind: "multiple", value: [...values, values[0]!] }).isCorrect).toBe(false);
       }),
       { numRuns: 100 },
     );

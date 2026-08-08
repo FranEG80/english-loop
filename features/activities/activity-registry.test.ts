@@ -31,11 +31,7 @@ describe("registro de actividades", () => {
       "gap_fill",
       "word_formation",
     ]);
-    expect(activityTypesForPresentation("free_text").sort()).toEqual([
-      "error_correction",
-      "guided_writing",
-      "sentence_rewrite",
-    ]);
+    expect(activityTypesForPresentation("free_text").sort()).toEqual(["error_correction"]);
     expect(activityTypesForPresentation("choice").sort()).toEqual([
       "multiple_choice",
       "single_choice",

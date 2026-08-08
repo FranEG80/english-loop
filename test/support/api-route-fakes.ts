@@ -62,7 +62,7 @@ function createActivityCatalog() {
       const listed = (await this.listActivities(filters)).filter((item) =>
         (!filters?.taxonomyNodeIds || item.taxonomyNodeIds.some((id) => filters.taxonomyNodeIds?.includes(id))) &&
         (!filters?.activityType || item.type === filters.activityType) &&
-        (!filters?.interactionMode || filters.interactionMode === "standard") &&
+        (!filters?.presentation || filters.presentation === "choice") &&
         matchesCatalogSearch(
           [item.id, item.type, item.category, item.topic, item.subtopic, ...item.taxonomyNodeIds],
           filters?.query,

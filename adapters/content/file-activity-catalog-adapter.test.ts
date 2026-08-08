@@ -21,7 +21,7 @@ describe("FileActivityCatalogAdapter", () => {
             batchId: "batch-001",
             path: batchPath,
             level: "B1",
-            type: "fill_blank",
+            type: "gap_fill",
             category: "grammar",
             topic: "test",
             subtopic: "ability-permission",
@@ -36,7 +36,7 @@ describe("FileActivityCatalogAdapter", () => {
             batchId: "batch-001",
             path: batchPath,
             level: "B1",
-            type: "fill_blank",
+            type: "gap_fill",
             category: "grammar",
             topic: "test",
             subtopic: "ability-permission",
@@ -55,7 +55,7 @@ describe("FileActivityCatalogAdapter", () => {
           id: "activity-b1",
           versionId: "activity-b1-v1",
           level: "B1",
-          type: "fill_blank",
+          type: "gap_fill",
           category: "grammar",
           topic: "test",
           subtopic: "ability-permission",
@@ -94,11 +94,11 @@ describe("FileActivityCatalogAdapter", () => {
     try {
       await mkdir(path.join(datasetRoot, "catalog"), { recursive: true });
       await writeFile(path.join(datasetRoot, "catalog/activity-index.json"), JSON.stringify({ activities: [
-        { id: "a1", batchId: "b1", path: "a.json", level: "B1", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n1"], lessonIds: ["l1"], difficulty: 1, estimatedSeconds: 1, status: "published" },
-        { id: "a2", batchId: "b2", path: "b.json", level: "B2", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n2"], lessonIds: ["l2"], difficulty: 1, estimatedSeconds: 1, status: "published" },
-        { id: "a3", batchId: "b3", path: "c.json", level: "B1", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n3"], lessonIds: ["l3"], difficulty: 1, estimatedSeconds: 1, status: "published" },
+        { id: "a1", batchId: "b1", path: "a.json", level: "B1", type: "gap_fill", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n1"], lessonIds: ["l1"], difficulty: 1, estimatedSeconds: 1, status: "published" },
+        { id: "a2", batchId: "b2", path: "b.json", level: "B2", type: "gap_fill", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n2"], lessonIds: ["l2"], difficulty: 1, estimatedSeconds: 1, status: "published" },
+        { id: "a3", batchId: "b3", path: "c.json", level: "B1", type: "gap_fill", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: ["n3"], lessonIds: ["l3"], difficulty: 1, estimatedSeconds: 1, status: "published" },
       ] }));
-      const activity = (id: string, status = "published") => ({ id, level: id === "a1" ? "B1" : "B2", type: "fill_blank", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: [id === "a1" ? "n1" : "n2"], difficulty: 1, instructions: "", prompt: "", lessonIds: [id === "a1" ? "l1" : "l2"], tags: [], estimatedSeconds: 1, evaluator: { strategy: "exact_text", answer: "" }, explanation: "", status });
+      const activity = (id: string, status = "published") => ({ id, level: id === "a1" ? "B1" : "B2", type: "gap_fill", category: "grammar", topic: "t", subtopic: "s", taxonomyNodeIds: [id === "a1" ? "n1" : "n2"], difficulty: 1, instructions: "", prompt: "", lessonIds: [id === "a1" ? "l1" : "l2"], tags: [], estimatedSeconds: 1, evaluator: { strategy: "exact_text", answer: "" }, explanation: "", status });
       await writeFile(path.join(datasetRoot, "a.json"), JSON.stringify({ activities: [activity("a1"), activity("draft", "draft")] }));
       await writeFile(path.join(datasetRoot, "b.json"), JSON.stringify({ activities: [activity("a2")] }));
       await writeFile(path.join(datasetRoot, "c.json"), JSON.stringify({ activities: [] }));
@@ -115,7 +115,7 @@ describe("FileActivityCatalogAdapter", () => {
       await expect(adapter.listActivitiesPage({ taxonomyNodeId: "n2" }, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "a2" }] });
       await expect(adapter.listActivitiesPage({ lessonIds: ["l2"] }, { limit: 2 })).resolves.toMatchObject({ items: [{ id: "a2" }] });
       await expect(adapter.listActivitiesPage({ lessonIds: ["l3"] }, { limit: 2 })).resolves.toMatchObject({ items: [], hasMore: false });
-      await expect(adapter.searchActivitiesPage({ query: "a2", taxonomyNodeIds: ["n2"], activityType: "fill_blank", presentation: "gap_fill" }, { page: 1, pageSize: 1 })).resolves.toMatchObject({ items: [{ id: "a2" }], total: 1, totalPages: 1 });
+      await expect(adapter.searchActivitiesPage({ query: "a2", taxonomyNodeIds: ["n2"], activityType: "gap_fill", presentation: "gap_fill" }, { page: 1, pageSize: 1 })).resolves.toMatchObject({ items: [{ id: "a2" }], total: 1, totalPages: 1 });
       await expect(adapter.getActivityById("a3")).resolves.toBeNull();
     } finally {
       await rm(datasetRoot, { recursive: true, force: true });
@@ -128,7 +128,7 @@ describe("FileActivityCatalogAdapter", () => {
       const adapter = new FileActivityCatalogAdapter(datasetRoot);
       await expect(adapter.listActivities()).rejects.toBeInstanceOf(Error);
       await mkdir(path.join(datasetRoot, "catalog"), { recursive: true });
-      await writeFile(path.join(datasetRoot, "catalog/activity-index.json"), JSON.stringify({ activities: [{ id: "a", batchId: "b", path: "missing.json", level: "B1", type: "fill_blank", taxonomyNodeIds: [], lessonIds: [], status: "published" }] }));
+      await writeFile(path.join(datasetRoot, "catalog/activity-index.json"), JSON.stringify({ activities: [{ id: "a", batchId: "b", path: "missing.json", level: "B1", type: "gap_fill", taxonomyNodeIds: [], lessonIds: [], status: "published" }] }));
       const missingBatch = new FileActivityCatalogAdapter(datasetRoot);
       await expect(missingBatch.getActivityById("a")).rejects.toBeInstanceOf(Error);
     } finally {

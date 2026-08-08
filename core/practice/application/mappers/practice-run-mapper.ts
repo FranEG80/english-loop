@@ -1,5 +1,9 @@
 import type { PracticeRun } from "../../domain/practice-run";
-import type { PracticeRunDto, PracticeRunSummaryDto } from "@/core/models/types/practice";
+import type {
+  PracticeRunDto,
+  PracticeRunErrorDto,
+  PracticeRunSummaryDto,
+} from "@/core/models/types/practice";
 
 /** Convierte un run de dominio a DTO seguro. */
 export function toPracticeRunDto(run: PracticeRun): PracticeRunDto {
@@ -23,6 +27,7 @@ export function toPracticeRunSummaryDto(
   incorrectCount: number,
   coveredSubtopicIds: string[],
   recoveredCount = 0,
+  errors: PracticeRunErrorDto[] = [],
   scorePercent = run.originalActivityCount === 0
     ? 0
     : Math.round((correctCount / run.originalActivityCount) * 100),
@@ -31,6 +36,7 @@ export function toPracticeRunSummaryDto(
     runId: run.id,
     correctCount,
     incorrectCount,
+    errors,
     recoveredCount,
     scorePercent,
     coveredSubtopicIds,

@@ -2,7 +2,11 @@
 
 import Image from "next/image";
 import type { ReactNode } from "react";
-import type { ActivityQuestionDto, ActivityResponseValue } from "@/core/models";
+import type {
+  ActivityQuestionDto,
+  ActivityResponseValue,
+  AttemptFeedbackDto,
+} from "@/core/models";
 import type { Dictionary } from "@/shared/i18n";
 import { cn } from "@/shared/lib/cn";
 import { ChoiceRenderer } from "./renderers/ChoiceRenderer";
@@ -21,6 +25,11 @@ export interface ActivityRendererProps {
   dictionary: Dictionary;
   onSubmit: (response: ActivityResponseValue) => void;
   disabled?: boolean;
+  /**
+   * Corrección ya recibida del servidor. Los renderers que pueden señalar el
+   * acierto sobre el propio enunciado la usan para pintarlo.
+   */
+  feedback?: AttemptFeedbackDto | null;
 }
 
 /**
@@ -33,6 +42,7 @@ export function ActivityRenderer({
   dictionary,
   onSubmit,
   disabled,
+  feedback,
 }: ActivityRendererProps) {
   const shared = { dictionary, onSubmit, disabled };
   let renderer: ReactNode;
@@ -55,13 +65,13 @@ export function ActivityRenderer({
       renderer = <WordOrderRenderer activity={activity} {...shared} />;
       break;
     case "matching":
-      renderer = <MatchingRenderer activity={activity} {...shared} />;
+      renderer = <MatchingRenderer activity={activity} {...shared} feedback={feedback} />;
       break;
     case "free_text":
       renderer = <FreeTextRenderer activity={activity} {...shared} />;
       break;
     case "mini_game":
-      renderer = <MiniGameRenderer activity={activity} {...shared} />;
+      renderer = <MiniGameRenderer activity={activity} {...shared} feedback={feedback} />;
       break;
     default:
       return assertNever(activity);

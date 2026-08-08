@@ -13,7 +13,7 @@ import { FocusedPracticeClient } from "./FocusedPracticeClient";
 describe("FocusedPracticeClient", () => {
   it("shows feedback after submitting an activity", async () => {
     submit.mockResolvedValueOnce({ attemptId: "a", activityId: "activity-1", submittedAt: "now", isCorrect: false, correctAnswer: "yes", explanation: "Try" });
-    render(<FocusedPracticeClient runId="run-1" activities={[{ id: "activity-1", level: "B1", taxonomyNodeId: "grammar", type: "true_false", interactionMode: "swipe", statement: "True?" } as never]} dictionary={en} />);
+    render(<FocusedPracticeClient runId="run-1" activities={[{ id: "activity-1", level: "B1", taxonomyNodeId: "grammar", type: "true_false", skillFocus: "true_false", presentation: "true_false", instructions: "Decide.", statement: "True?" } as never]} dictionary={en} />);
     fireEvent.click(screen.getByRole("button", { name: "Answer" }));
     await waitFor(() => expect(screen.getByRole("status")).toBeInTheDocument());
     expect(submit).toHaveBeenCalledWith("run-1", {

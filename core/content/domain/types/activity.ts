@@ -20,7 +20,7 @@ export type Evaluator =
   | { strategy: "one_of_texts"; answers: string[]; normalization: NormalizationRules }
   | {
       strategy: "per_gap";
-      gaps: Array<{ gapId: string; answers: string[] }>;
+      gaps: Array<{ gapId: string; cueWord?: string; answers: string[] }>;
       normalization: NormalizationRules;
     }
   | { strategy: "ordered_tokens"; correctTokenIds: string[] }
@@ -58,6 +58,8 @@ export interface ActivityCard {
 export interface ActivityRound {
   id: string;
   prompt: string;
+  /** Texto de apoyo de la ronda: la frase con el hueco, si la actividad de origen la tenía. */
+  context?: string;
   options: ActivityOption[];
   explanation: string;
 }

@@ -40,6 +40,10 @@ export function startGameLoop({ update, draw }: GameLoopCallbacks): GameLoopHand
     frame = requestAnimationFrame(step);
   }
 
+  // Primer fotograma fuera del bucle: si la pestaña está oculta al montar,
+  // `requestAnimationFrame` no dispara y el lienzo se quedaría en blanco hasta
+  // que el usuario volviera a ella.
+  draw();
   frame = requestAnimationFrame(step);
 
   return {

@@ -28,7 +28,7 @@ describe("learningContentRestAdapter", () => {
       "/api/v1/lessons?level=B2&q=key+word&page=2&pageSize=12",
       "/api/v1/lessons/lesson",
       "/api/v1/activities?level=both&lessonIds=l1&lessonIds=l2",
-      "/api/v1/activities?type=key_word_transformation&q=unless&interaction=standard&page=1&pageSize=12",
+      "/api/v1/activities?type=key_word_transformation&q=unless&interaction=choice&page=1&pageSize=12",
       "/api/v1/activities/activity",
       "/api/v1/practice-taxonomy",
     ]);

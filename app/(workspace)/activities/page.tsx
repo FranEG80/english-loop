@@ -9,6 +9,10 @@ import {
   type CefrLevel,
 } from "@/core/models";
 import { getTaxonomy, searchActivityCatalogPage } from "@/core/use-cases";
+import {
+  formatActivityType,
+  formatPresentation,
+} from "@/features/activities/activity-display";
 import { ActivityCatalog } from "@/features/catalog/ActivityCatalog";
 import { CatalogFilters } from "@/features/catalog/CatalogFilters";
 import { CatalogPagination } from "@/features/catalog/CatalogPagination";
@@ -96,7 +100,7 @@ export default async function ActivitiesPage({
               value: activityType,
               options: ACTIVITY_TYPES.map((type) => ({
                 value: type,
-                label: type.replaceAll("_", " "),
+                label: formatActivityType(type, dictionary),
               })),
             },
             {
@@ -106,7 +110,7 @@ export default async function ActivitiesPage({
               value: presentation,
               options: ACTIVITY_PRESENTATIONS.map((mode) => ({
                 value: mode,
-                label: mode.replaceAll("_", " "),
+                label: formatPresentation(mode, dictionary),
               })),
             },
           ]}
