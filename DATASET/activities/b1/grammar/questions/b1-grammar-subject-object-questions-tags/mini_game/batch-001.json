@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-subject-object-questions-tags-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "questions",
+  "subtopic": "subject-object-question-tags",
+  "lessonId": "b1-grammar-subject-object-questions-tags",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-subject-object-questions-tags-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "There's a pharmacy nearby, ___?",
+          "options": [
+            {
+              "id": "a",
+              "text": "isn't there"
+            },
+            {
+              "id": "b",
+              "text": "isn't it"
+            },
+            {
+              "id": "c",
+              "text": "doesn't there"
+            }
+          ],
+          "explanation": "La tag de «there is» conserva «there»."
+        },
+        {
+          "id": "r2",
+          "prompt": "There weren't any delays, ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "weren't there"
+            },
+            {
+              "id": "d",
+              "text": "did there"
+            },
+            {
+              "id": "a",
+              "text": "were there"
+            }
+          ],
+          "explanation": "El enunciado negativo usa tag positiva y conserva «there»."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ outside?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Who is waiting"
+            },
+            {
+              "id": "c",
+              "text": "Who waiting is"
+            },
+            {
+              "id": "b",
+              "text": "Who does wait"
+            }
+          ],
+          "explanation": "«Who» es sujeto y conserva «is waiting»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Who ___ you call?",
+          "options": [
+            {
+              "id": "a",
+              "text": "did"
+            },
+            {
+              "id": "c",
+              "text": "has"
+            },
+            {
+              "id": "b",
+              "text": "was"
+            }
+          ],
+          "explanation": "«You» es sujeto; la pregunta pasada de objeto usa «did»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Let's take a break, ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "will we"
+            },
+            {
+              "id": "a",
+              "text": "shall we"
+            },
+            {
+              "id": "c",
+              "text": "don't we"
+            }
+          ],
+          "explanation": "Con «Let's» usamos «shall we?»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Who ___ the manager invited?",
+          "options": [
+            {
+              "id": "b",
+              "text": "did"
+            },
+            {
+              "id": "c",
+              "text": "does"
+            },
+            {
+              "id": "a",
+              "text": "has"
+            }
+          ],
+          "explanation": "El present perfect de objeto usa «Who has + sujeto + participio?»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The office is open, ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "doesn't it"
+            },
+            {
+              "id": "a",
+              "text": "isn't it"
+            },
+            {
+              "id": "d",
+              "text": "aren't they"
+            }
+          ],
+          "explanation": "Repetimos «is», cambiamos polaridad y usamos «it»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The facts are: Elena emailed Sam.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Who emailed Sam? / Who did Elena email?"
+            },
+            {
+              "id": "d",
+              "text": "Who was emailed Sam? / Who did Elena emailed?"
+            },
+            {
+              "id": "b",
+              "text": "Who did email Sam? / Who Elena emailed?"
+            }
+          ],
+          "explanation": "La primera pregunta busca al sujeto Elena; la segunda al objeto Sam."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-subject-object-questions-tags-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Maya and Leo left early, ___?",
+          "options": [
+            {
+              "id": "d",
+              "text": "did they"
+            },
+            {
+              "id": "a",
+              "text": "didn't they"
+            },
+            {
+              "id": "b",
+              "text": "didn't she"
+            }
+          ],
+          "explanation": "Dos personas se sustituyen por «they»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The documents are ready, ___?",
+          "options": [
+            {
+              "id": "a",
+              "text": "aren't they"
+            },
+            {
+              "id": "b",
+              "text": "isn't it"
+            },
+            {
+              "id": "d",
+              "text": "are they"
+            }
+          ],
+          "explanation": "El plural con «are» usa «aren't they»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Marta works here, ___?",
+          "options": [
+            {
+              "id": "d",
+              "text": "don't she"
+            },
+            {
+              "id": "c",
+              "text": "does she"
+            },
+            {
+              "id": "a",
+              "text": "doesn't she"
+            }
+          ],
+          "explanation": "El presente simple singular usa «doesn't she»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The parcel has arrived, ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "doesn't it"
+            },
+            {
+              "id": "a",
+              "text": "hasn't it"
+            },
+            {
+              "id": "d",
+              "text": "isn't it"
+            }
+          ],
+          "explanation": "Repetimos «has» y usamos «it»."
+        },
+        {
+          "id": "r5",
+          "prompt": "You didn't call, ___?",
+          "options": [
+            {
+              "id": "c",
+              "text": "were you"
+            },
+            {
+              "id": "d",
+              "text": "have you"
+            },
+            {
+              "id": "a",
+              "text": "did you"
+            }
+          ],
+          "explanation": "Enunciado negativo: tag positiva."
+        },
+        {
+          "id": "r6",
+          "prompt": "Close the window, ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "don't you"
+            },
+            {
+              "id": "a",
+              "text": "will you"
+            },
+            {
+              "id": "c",
+              "text": "shall we"
+            }
+          ],
+          "explanation": "Los imperativos usan frecuentemente «will you?»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Leo called Marta. Which question asks for “Leo”?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Who Marta called?"
+            },
+            {
+              "id": "a",
+              "text": "Who called Marta?"
+            },
+            {
+              "id": "b",
+              "text": "Who did Marta call?"
+            }
+          ],
+          "explanation": "Leo realizó la acción, por eso preguntamos «Who called Marta?»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The rooms aren't ready, ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "aren't they"
+            },
+            {
+              "id": "a",
+              "text": "are they"
+            },
+            {
+              "id": "d",
+              "text": "do they"
+            }
+          ],
+          "explanation": "Enunciado negativo plural: tag positiva «are they»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

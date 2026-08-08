@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-collocations-daily-life-mini-game-001",
+  "level": "B1",
+  "category": "collocations",
+  "topic": "b1-collocations-daily-life",
+  "subtopic": "b1-collocations-daily-life",
+  "lessonId": "b1-collocations-daily-life",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Ben tries to ___ at least twice a week at the local pool.",
+          "options": [
+            {
+              "id": "d",
+              "text": "give exercise"
+            },
+            {
+              "id": "b",
+              "text": "make exercise"
+            },
+            {
+              "id": "a",
+              "text": "do exercise"
+            }
+          ],
+          "explanation": "British English uses «do exercise» or «take exercise»; «make» is never used."
+        },
+        {
+          "id": "r2",
+          "prompt": "We are trying to ___ for a larger flat.",
+          "options": [
+            {
+              "id": "d",
+              "text": "have a shower"
+            },
+            {
+              "id": "a",
+              "text": "save money"
+            },
+            {
+              "id": "b",
+              "text": "have a chat"
+            }
+          ],
+          "explanation": "The natural collocation is “save money”."
+        },
+        {
+          "id": "r3",
+          "prompt": "I need to ___ with my neighbour about the garden.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have a chat"
+            },
+            {
+              "id": "d",
+              "text": "take notes"
+            },
+            {
+              "id": "c",
+              "text": "have breakfast"
+            }
+          ],
+          "explanation": "The natural collocation is “have a chat”."
+        },
+        {
+          "id": "r4",
+          "prompt": "Could you ___ so I can hear the radio properly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "make less noise"
+            },
+            {
+              "id": "c",
+              "text": "take less noise"
+            },
+            {
+              "id": "d",
+              "text": "give less noise"
+            }
+          ],
+          "explanation": "«Make a noise» is the standard collocation; «do» is impossible here."
+        },
+        {
+          "id": "r5",
+          "prompt": "I usually ___ on the bus because the journey is long.",
+          "options": [
+            {
+              "id": "d",
+              "text": "catch in reading"
+            },
+            {
+              "id": "a",
+              "text": "catch up on reading"
+            },
+            {
+              "id": "b",
+              "text": "catch on reading"
+            }
+          ],
+          "explanation": "«Catch up on» means to do something you had left pending."
+        },
+        {
+          "id": "r6",
+          "prompt": "Hurry up if you want to ___ to the town centre.",
+          "options": [
+            {
+              "id": "b",
+              "text": "take care of"
+            },
+            {
+              "id": "d",
+              "text": "take a break"
+            },
+            {
+              "id": "a",
+              "text": "catch a bus"
+            }
+          ],
+          "explanation": "The natural collocation is “catch a bus”."
+        },
+        {
+          "id": "r7",
+          "prompt": "After comparing the two courses, I finally decided to ___ today.",
+          "options": [
+            {
+              "id": "d",
+              "text": "keep a promise"
+            },
+            {
+              "id": "a",
+              "text": "make a decision"
+            },
+            {
+              "id": "c",
+              "text": "take a break"
+            }
+          ],
+          "explanation": "The natural collocation is “make a decision”."
+        },
+        {
+          "id": "r8",
+          "prompt": "Could you ___ of us by the fountain?",
+          "options": [
+            {
+              "id": "c",
+              "text": "spend time"
+            },
+            {
+              "id": "b",
+              "text": "keep a promise"
+            },
+            {
+              "id": "a",
+              "text": "take a photo"
+            }
+          ],
+          "explanation": "The natural collocation is “take a photo”."
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "daily-life",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We share the ___ at weekends.",
+          "options": [
+            {
+              "id": "d",
+              "text": "save money"
+            },
+            {
+              "id": "a",
+              "text": "do housework"
+            },
+            {
+              "id": "c",
+              "text": "get permission"
+            }
+          ],
+          "explanation": "The natural collocation is “do housework”."
+        },
+        {
+          "id": "r2",
+          "prompt": "My doctor says I should ___ more regularly.",
+          "options": [
+            {
+              "id": "a",
+              "text": "do exercise"
+            },
+            {
+              "id": "b",
+              "text": "take a break"
+            },
+            {
+              "id": "d",
+              "text": "spend time"
+            }
+          ],
+          "explanation": "The natural collocation is “do exercise”."
+        },
+        {
+          "id": "r3",
+          "prompt": "I always ___ before leaving for work.",
+          "options": [
+            {
+              "id": "d",
+              "text": "catch a bus"
+            },
+            {
+              "id": "a",
+              "text": "have breakfast"
+            },
+            {
+              "id": "c",
+              "text": "keep in touch"
+            }
+          ],
+          "explanation": "The natural collocation is “have breakfast”."
+        },
+        {
+          "id": "r4",
+          "prompt": "You must ___ before using the meeting room.",
+          "options": [
+            {
+              "id": "a",
+              "text": "get permission"
+            },
+            {
+              "id": "d",
+              "text": "make a plan"
+            },
+            {
+              "id": "c",
+              "text": "have a chat"
+            }
+          ],
+          "explanation": "The natural collocation is “get permission”."
+        },
+        {
+          "id": "r5",
+          "prompt": "We moved abroad, but we still ___ by video call.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take care of"
+            },
+            {
+              "id": "a",
+              "text": "keep in touch"
+            },
+            {
+              "id": "b",
+              "text": "spend time"
+            }
+          ],
+          "explanation": "The natural collocation is “keep in touch”."
+        },
+        {
+          "id": "r6",
+          "prompt": "Tom forgot to ___ and the plants died last August.",
+          "options": [
+            {
+              "id": "b",
+              "text": "make the plants"
+            },
+            {
+              "id": "c",
+              "text": "do the plants"
+            },
+            {
+              "id": "a",
+              "text": "water the plants"
+            }
+          ],
+          "explanation": "«Water the plants» uses the verb formed from the noun itself."
+        },
+        {
+          "id": "r7",
+          "prompt": "You look tired; sit down and ___ for a few minutes.",
+          "options": [
+            {
+              "id": "b",
+              "text": "get ready"
+            },
+            {
+              "id": "a",
+              "text": "have a rest"
+            },
+            {
+              "id": "c",
+              "text": "pay attention"
+            }
+          ],
+          "explanation": "The natural collocation is “have a rest”."
+        },
+        {
+          "id": "r8",
+          "prompt": "Marta needs to ___ before the shops close this evening.",
+          "options": [
+            {
+              "id": "a",
+              "text": "run an errand"
+            },
+            {
+              "id": "d",
+              "text": "keep a diary"
+            },
+            {
+              "id": "c",
+              "text": "take a seat"
+            }
+          ],
+          "explanation": "«Run an errand» is the natural way to talk about a quick task outside the home."
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "chores",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

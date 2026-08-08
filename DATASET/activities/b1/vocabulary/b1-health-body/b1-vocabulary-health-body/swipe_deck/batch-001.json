@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-health-body-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-health-body",
+  "subtopic": "b1-health-body",
+  "lessonId": "b1-vocabulary-health-body",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-health-body-sd-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-health-body",
+      "subtopic": "b1-health-body",
+      "taxonomyNodeIds": [
+        "b1-health-body"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A cough is a kind of furniture.",
+          "explanation": "A cough is a symptom involving a repeated sound or action."
+        },
+        {
+          "id": "c2",
+          "statement": "If you feel dizzy, you may feel that you are losing your balance.",
+          "explanation": "Dizzy describes a feeling of spinning or poor balance."
+        },
+        {
+          "id": "c3",
+          "statement": "Get some rest is a general piece of health advice.",
+          "explanation": "Get some rest is a common general recommendation for mild tiredness or illness."
+        },
+        {
+          "id": "c4",
+          "statement": "A headache is pain in the head.",
+          "explanation": "Headache is the standard word for pain in the head."
+        },
+        {
+          "id": "c5",
+          "statement": "A headache is the same thing as a sore throat.",
+          "explanation": "A headache affects the head; a sore throat affects the throat."
+        },
+        {
+          "id": "c6",
+          "statement": "A fever is an unusually low body temperature.",
+          "explanation": "A fever is an unusually high body temperature."
+        },
+        {
+          "id": "c7",
+          "statement": "A bruise can be a dark mark after an impact.",
+          "explanation": "A bruise is caused by bleeding under the skin after an impact or pressure."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-health-body"
+      ],
+      "tags": [
+        "b1",
+        "symptoms",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-health-body-sd-084",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-health-body",
+      "subtopic": "b1-health-body",
+      "taxonomyNodeIds": [
+        "b1-health-body"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Swollen describes a body part that has become larger.",
+          "explanation": "Swollen often results from inflammation or injury."
+        },
+        {
+          "id": "c2",
+          "statement": "Vocabulary about symptoms should always be used to diagnose yourself.",
+          "explanation": "The vocabulary helps describe symptoms and ask for help; diagnosis should be left to a qualified professional."
+        },
+        {
+          "id": "c3",
+          "statement": "A pharmacist and a doctor have exactly the same role.",
+          "explanation": "Both can help with health, but doctors examine and diagnose while pharmacists focus on medicines and pharmacy advice."
+        },
+        {
+          "id": "c4",
+          "statement": "A bandage is used to cover and protect a small wound.",
+          "explanation": "A bandage covers and protects a cut or wound."
+        },
+        {
+          "id": "c5",
+          "statement": "A bruise is usually an injury to a joint caused by twisting it.",
+          "explanation": "A sprain affects a joint after twisting; a bruise is a dark mark after an impact."
+        },
+        {
+          "id": "c6",
+          "statement": "Make an appointment means arrange a time to see a professional.",
+          "explanation": "An appointment is an arranged meeting, often with a doctor or dentist."
+        },
+        {
+          "id": "c7",
+          "statement": "The standard expression is allergic with pollen.",
+          "explanation": "The standard expression is allergic to pollen."
+        },
+        {
+          "id": "c8",
+          "statement": "If pain lasts several days, asking a doctor for advice may be sensible.",
+          "explanation": "Persistent symptoms may need professional assessment; the sentence does not attempt a diagnosis."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-health-body"
+      ],
+      "tags": [
+        "b1",
+        "injuries",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-health-body-sd-147",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-health-body",
+      "subtopic": "b1-health-body",
+      "taxonomyNodeIds": [
+        "b1-health-body"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A pharmacist is the person who rents out your flat.",
+          "explanation": "A pharmacist works with medicines; a landlord rents out a flat."
+        },
+        {
+          "id": "c2",
+          "statement": "A sore throat and a stomach ache refer to different parts of the body.",
+          "explanation": "The throat and stomach are different body areas."
+        },
+        {
+          "id": "c3",
+          "statement": "The phrase make an appointment is natural English.",
+          "explanation": "Make an appointment is the standard collocation."
+        },
+        {
+          "id": "c4",
+          "statement": "A person can feel dizzy without having a fever.",
+          "explanation": "Dizziness and fever are different symptoms and do not always occur together."
+        },
+        {
+          "id": "c5",
+          "statement": "You can say My knee hurts to describe pain in the knee.",
+          "explanation": "Hurt can follow the body part directly."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-health-body"
+      ],
+      "tags": [
+        "b1",
+        "care",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-media-communication-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-media-communication",
+  "subtopic": "b2-media-communication",
+  "lessonId": "b2-vocabulary-media-communication",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-media-communication-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-media-communication",
+      "subtopic": "b2-media-communication",
+      "taxonomyNodeIds": [
+        "b2-media-communication"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which action is most responsible before sharing a surprising image?",
+          "options": [
+            {
+              "id": "c",
+              "text": "rewrite its date"
+            },
+            {
+              "id": "d",
+              "text": "increase its bias"
+            },
+            {
+              "id": "a",
+              "text": "verify its source"
+            }
+          ],
+          "explanation": "Verifying the source can reveal whether an image is genuine and current."
+        },
+        {
+          "id": "r2",
+          "prompt": "A headline uses dramatic language to make readers panic. Its tone is ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "academic"
+            },
+            {
+              "id": "a",
+              "text": "alarmist"
+            },
+            {
+              "id": "b",
+              "text": "neutral"
+            }
+          ],
+          "explanation": "Alarmist language exaggerates danger and encourages fear."
+        },
+        {
+          "id": "r3",
+          "prompt": "False information shared without a clear intention to deceive is often called ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "misinformation"
+            },
+            {
+              "id": "b",
+              "text": "evidence"
+            },
+            {
+              "id": "c",
+              "text": "coverage"
+            }
+          ],
+          "explanation": "Misinformation is inaccurate information shared without a proven deceptive purpose."
+        },
+        {
+          "id": "r4",
+          "prompt": "A report that explains causes and implications offers ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "analysis"
+            },
+            {
+              "id": "b",
+              "text": "litter"
+            },
+            {
+              "id": "d",
+              "text": "headline"
+            }
+          ],
+          "explanation": "Analysis interprets information and its significance."
+        },
+        {
+          "id": "r5",
+          "prompt": "The short title above a news story is the ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "bias"
+            },
+            {
+              "id": "a",
+              "text": "headline"
+            },
+            {
+              "id": "c",
+              "text": "reach"
+            }
+          ],
+          "explanation": "A headline summarises or attracts attention to a story."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which verb collocates naturally with evidence?",
+          "options": [
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "a",
+              "text": "provide"
+            },
+            {
+              "id": "d",
+              "text": "construct"
+            }
+          ],
+          "explanation": "The standard collocation is provide evidence."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which verb collocates naturally with awareness?",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "raise"
+            }
+          ],
+          "explanation": "Campaigns and reports can raise awareness."
+        },
+        {
+          "id": "r8",
+          "prompt": "A presenter changes examples and vocabulary for university students. The presenter is adapting to the ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "evidence"
+            },
+            {
+              "id": "a",
+              "text": "audience"
+            },
+            {
+              "id": "d",
+              "text": "headline"
+            }
+          ],
+          "explanation": "The audience influences vocabulary, examples and level of detail."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-media-communication"
+      ],
+      "tags": [
+        "b2",
+        "verification",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-media-communication-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-media-communication",
+      "subtopic": "b2-media-communication",
+      "taxonomyNodeIds": [
+        "b2-media-communication"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A journalist who includes relevant background provides useful ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "reach"
+            },
+            {
+              "id": "a",
+              "text": "context"
+            },
+            {
+              "id": "b",
+              "text": "bias"
+            }
+          ],
+          "explanation": "Context helps readers understand an event or statement."
+        },
+        {
+          "id": "r2",
+          "prompt": "A campaign designed to persuade rather than inform may use a strongly ___ tone.",
+          "options": [
+            {
+              "id": "d",
+              "text": "private"
+            },
+            {
+              "id": "a",
+              "text": "persuasive"
+            },
+            {
+              "id": "c",
+              "text": "unrelated"
+            }
+          ],
+          "explanation": "Persuasive language aims to influence the audience."
+        },
+        {
+          "id": "r3",
+          "prompt": "Information deliberately created to mislead is ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "analysis"
+            },
+            {
+              "id": "b",
+              "text": "coverage"
+            },
+            {
+              "id": "a",
+              "text": "disinformation"
+            }
+          ],
+          "explanation": "Disinformation involves deliberate deception."
+        },
+        {
+          "id": "r4",
+          "prompt": "The people a programme is designed for form its ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "headline"
+            },
+            {
+              "id": "a",
+              "text": "audience"
+            },
+            {
+              "id": "b",
+              "text": "source"
+            }
+          ],
+          "explanation": "An audience is the group intended to receive a message."
+        },
+        {
+          "id": "r5",
+          "prompt": "The number of people reached by a message is its ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "source"
+            },
+            {
+              "id": "c",
+              "text": "claim"
+            },
+            {
+              "id": "a",
+              "text": "reach"
+            }
+          ],
+          "explanation": "Reach describes how many people receive content."
+        },
+        {
+          "id": "r6",
+          "prompt": "A person or organisation that provides information is a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "platform"
+            },
+            {
+              "id": "c",
+              "text": "audience"
+            },
+            {
+              "id": "a",
+              "text": "source"
+            }
+          ],
+          "explanation": "A source is where information comes from."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which phrase best introduces a limit to a report's conclusion?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The tone is a fact."
+            },
+            {
+              "id": "a",
+              "text": "However, the evidence is limited."
+            },
+            {
+              "id": "c",
+              "text": "The audience is a source."
+            }
+          ],
+          "explanation": "The sentence acknowledges evidence while limiting the conclusion."
+        },
+        {
+          "id": "r8",
+          "prompt": "A story gives one group's view repeatedly and omits relevant alternatives. This suggests ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "neutrality"
+            },
+            {
+              "id": "a",
+              "text": "bias"
+            },
+            {
+              "id": "d",
+              "text": "evidence"
+            }
+          ],
+          "explanation": "Selective presentation can reveal a systematic bias."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-media-communication"
+      ],
+      "tags": [
+        "b2",
+        "analysis",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

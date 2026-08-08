@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-media-communication-swipe-deck-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-media-communication",
+  "subtopic": "b2-media-communication",
+  "lessonId": "b2-vocabulary-media-communication",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-media-communication-sd-059",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-media-communication",
+      "subtopic": "b2-media-communication",
+      "taxonomyNodeIds": [
+        "b2-media-communication"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A neutral tone necessarily proves that a report contains no bias.",
+          "explanation": "Tone is one clue; selection and omission can still introduce bias."
+        },
+        {
+          "id": "c2",
+          "statement": "A message can have a large reach and still be misleading.",
+          "explanation": "Large distribution does not guarantee accuracy."
+        },
+        {
+          "id": "c3",
+          "statement": "Reach measures the number of people who receive a message.",
+          "explanation": "Reach is a measure of audience size."
+        },
+        {
+          "id": "c4",
+          "statement": "A headline is normally a long list of sources at the end of an article.",
+          "explanation": "A headline is the title above a news story."
+        },
+        {
+          "id": "c5",
+          "statement": "Misinformation is always created with a proven intention to deceive.",
+          "explanation": "Deliberate deception is associated with disinformation; misinformation may be shared unknowingly."
+        },
+        {
+          "id": "c6",
+          "statement": "A persuasive advert aims only to provide neutral data.",
+          "explanation": "Persuasive communication aims to influence its audience."
+        },
+        {
+          "id": "c7",
+          "statement": "A claim never needs evidence.",
+          "explanation": "Claims often need evidence to be assessed."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-media-communication"
+      ],
+      "tags": [
+        "b2",
+        "tone",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-media-communication-sd-122",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-media-communication",
+      "subtopic": "b2-media-communication",
+      "taxonomyNodeIds": [
+        "b2-media-communication"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Fact-checking is the same as sharing a claim immediately.",
+          "explanation": "Fact-checking requires checking before accepting or sharing information."
+        },
+        {
+          "id": "c2",
+          "statement": "Disinformation involves deliberately misleading information.",
+          "explanation": "Intentional deception distinguishes disinformation."
+        },
+        {
+          "id": "c3",
+          "statement": "A headline can attract attention without presenting the full context.",
+          "explanation": "Headlines are brief and may omit important background."
+        },
+        {
+          "id": "c4",
+          "statement": "The audience can influence vocabulary, examples and tone.",
+          "explanation": "Communicators adapt messages to their intended audience."
+        },
+        {
+          "id": "c5",
+          "statement": "A report can support a claim while still admitting that more evidence is needed.",
+          "explanation": "Careful reporting distinguishes support from complete proof."
+        },
+        {
+          "id": "c6",
+          "statement": "Fact-checking involves checking information against evidence.",
+          "explanation": "Fact-checking tests whether a claim is accurate."
+        },
+        {
+          "id": "c7",
+          "statement": "Evidence is an uncountable noun in phrases such as a piece of evidence.",
+          "explanation": "The natural count expression is a piece of evidence."
+        },
+        {
+          "id": "c8",
+          "statement": "Bias always means that every fact in a report is invented.",
+          "explanation": "Bias can affect selection or wording without making every fact false."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-media-communication"
+      ],
+      "tags": [
+        "b2",
+        "verification",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-media-communication-sd-185",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-media-communication",
+      "subtopic": "b2-media-communication",
+      "taxonomyNodeIds": [
+        "b2-media-communication"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A source is where information comes from.",
+          "explanation": "A source provides or originates information."
+        },
+        {
+          "id": "c2",
+          "statement": "A source can be checked for reliability before it is used.",
+          "explanation": "Checking origin and independence helps assess reliability."
+        },
+        {
+          "id": "c3",
+          "statement": "Tone describes the emotional or attitudinal quality of a message.",
+          "explanation": "Tone can be neutral, critical, sarcastic or alarmist."
+        },
+        {
+          "id": "c4",
+          "statement": "Context can help readers understand what a statistic means.",
+          "explanation": "Background information supports accurate interpretation."
+        },
+        {
+          "id": "c5",
+          "statement": "Evidence can include reliable figures or documents.",
+          "explanation": "Evidence is material used to support or test an idea."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-media-communication"
+      ],
+      "tags": [
+        "b2",
+        "sources",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

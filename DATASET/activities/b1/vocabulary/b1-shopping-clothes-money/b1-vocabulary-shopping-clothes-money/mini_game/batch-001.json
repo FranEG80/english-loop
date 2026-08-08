@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-shopping-clothes-money-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-shopping-clothes-money",
+  "subtopic": "b1-shopping-clothes-money",
+  "lessonId": "b1-vocabulary-shopping-clothes-money",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-shopping-clothes-money-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-shopping-clothes-money",
+      "subtopic": "b1-shopping-clothes-money",
+      "taxonomyNodeIds": [
+        "b1-shopping-clothes-money"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This colour ___ you very well.",
+          "options": [
+            {
+              "id": "b",
+              "text": "fits"
+            },
+            {
+              "id": "c",
+              "text": "costs"
+            },
+            {
+              "id": "a",
+              "text": "suits"
+            }
+          ],
+          "explanation": "Suit habla de estilo o aspecto; fit habla de talla y forma."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence correctly uses spend?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I spent £40 on a coat."
+            },
+            {
+              "id": "c",
+              "text": "I spent a coat £40."
+            },
+            {
+              "id": "d",
+              "text": "I spend to £40 a coat."
+            }
+          ],
+          "explanation": "Spend + cantidad + on + objeto es la estructura correcta."
+        },
+        {
+          "id": "r3",
+          "prompt": "These trousers are not loose; they are too ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "tight"
+            },
+            {
+              "id": "b",
+              "text": "worth"
+            },
+            {
+              "id": "c",
+              "text": "cheap"
+            }
+          ],
+          "explanation": "Tight significa demasiado ajustado."
+        },
+        {
+          "id": "r4",
+          "prompt": "The bag is good quality and is worth the ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "refund"
+            },
+            {
+              "id": "a",
+              "text": "price"
+            },
+            {
+              "id": "c",
+              "text": "size"
+            }
+          ],
+          "explanation": "Worth the price significa que merece lo que cuesta."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which verb means use money to buy something?",
+          "options": [
+            {
+              "id": "a",
+              "text": "spend"
+            },
+            {
+              "id": "c",
+              "text": "fit"
+            },
+            {
+              "id": "d",
+              "text": "suit"
+            }
+          ],
+          "explanation": "Spend se combina con dinero y compras."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which pair distinguishes size from style?",
+          "options": [
+            {
+              "id": "b",
+              "text": "suit / fit"
+            },
+            {
+              "id": "d",
+              "text": "lend / price"
+            },
+            {
+              "id": "a",
+              "text": "fit / suit"
+            }
+          ],
+          "explanation": "Fit describe talla y forma; suit describe estilo o aspecto."
+        },
+        {
+          "id": "r7",
+          "prompt": "The price of this jacket is £70. It ___ £70.",
+          "options": [
+            {
+              "id": "b",
+              "text": "suits"
+            },
+            {
+              "id": "d",
+              "text": "saves"
+            },
+            {
+              "id": "a",
+              "text": "costs"
+            }
+          ],
+          "explanation": "Cost se usa para indicar cuánto cuesta algo."
+        },
+        {
+          "id": "r8",
+          "prompt": "These jeans are the right size, so they ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "suit me"
+            },
+            {
+              "id": "c",
+              "text": "cost me"
+            },
+            {
+              "id": "a",
+              "text": "fit me"
+            }
+          ],
+          "explanation": "Fit habla de talla y forma."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-shopping-clothes-money"
+      ],
+      "tags": [
+        "b1",
+        "shopping-clothes-money",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-shopping-clothes-money-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-shopping-clothes-money",
+      "subtopic": "b1-shopping-clothes-money",
+      "taxonomyNodeIds": [
+        "b1-shopping-clothes-money"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I cannot ___ that expensive watch.",
+          "options": [
+            {
+              "id": "d",
+              "text": "refund"
+            },
+            {
+              "id": "c",
+              "text": "fit"
+            },
+            {
+              "id": "a",
+              "text": "afford"
+            }
+          ],
+          "explanation": "Afford significa poder permitirse pagar algo."
+        },
+        {
+          "id": "r2",
+          "prompt": "If you return a faulty item, you may ask for a ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "size"
+            },
+            {
+              "id": "a",
+              "text": "refund"
+            },
+            {
+              "id": "c",
+              "text": "price"
+            }
+          ],
+          "explanation": "Refund es el dinero que te devuelve la tienda."
+        },
+        {
+          "id": "r3",
+          "prompt": "Could you ___ me your umbrella until tomorrow?",
+          "options": [
+            {
+              "id": "c",
+              "text": "afford"
+            },
+            {
+              "id": "d",
+              "text": "spend"
+            },
+            {
+              "id": "a",
+              "text": "lend"
+            }
+          ],
+          "explanation": "Lend es prestar algo a otra persona."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase means receive something and return it later?",
+          "options": [
+            {
+              "id": "c",
+              "text": "spend an item"
+            },
+            {
+              "id": "a",
+              "text": "borrow an item"
+            },
+            {
+              "id": "d",
+              "text": "save an item"
+            }
+          ],
+          "explanation": "Borrow es recibir algo prestado; lend es dárselo a otra persona."
+        },
+        {
+          "id": "r5",
+          "prompt": "The jacket is expensive, but it is worth the ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "receipt"
+            },
+            {
+              "id": "d",
+              "text": "borrow"
+            },
+            {
+              "id": "a",
+              "text": "price"
+            }
+          ],
+          "explanation": "Worth the price indica que la calidad justifica el coste."
+        },
+        {
+          "id": "r6",
+          "prompt": "You ask for a ___ after paying in a shop.",
+          "options": [
+            {
+              "id": "a",
+              "text": "receipt"
+            },
+            {
+              "id": "b",
+              "text": "fit"
+            },
+            {
+              "id": "c",
+              "text": "price"
+            }
+          ],
+          "explanation": "A receipt es el recibo de la compra."
+        },
+        {
+          "id": "r7",
+          "prompt": "A product that is sold at a lower price is ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "on fit"
+            },
+            {
+              "id": "d",
+              "text": "at refund"
+            },
+            {
+              "id": "a",
+              "text": "on sale"
+            }
+          ],
+          "explanation": "On sale normalmente indica que está rebajado."
+        },
+        {
+          "id": "r8",
+          "prompt": "You need a friend's pen for a minute. Which sentence is natural?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Can I borrow a pen to you?"
+            },
+            {
+              "id": "a",
+              "text": "Can I borrow your pen?"
+            },
+            {
+              "id": "b",
+              "text": "Can I borrow you my pen?"
+            }
+          ],
+          "explanation": "Borrow significa recibir algo prestado."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-shopping-clothes-money"
+      ],
+      "tags": [
+        "b1",
+        "shopping-clothes-money",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

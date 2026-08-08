@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-work-jobs-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-work-jobs",
+  "subtopic": "b1-work-jobs",
+  "lessonId": "b1-vocabulary-work-jobs",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-work-jobs-sd-027",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-work-jobs",
+      "subtopic": "b1-work-jobs",
+      "taxonomyNodeIds": [
+        "b1-work-jobs"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A customer is necessarily an employee of the shop.",
+          "explanation": "Customer es quien compra o recibe el servicio, no quien trabaja allí."
+        },
+        {
+          "id": "c2",
+          "statement": "Overtime means a permanent contract.",
+          "explanation": "Overtime es trabajo adicional fuera del horario normal."
+        },
+        {
+          "id": "c3",
+          "statement": "She is responsible for organising the rota.",
+          "explanation": "Responsible for va seguido de un sustantivo o gerundio."
+        },
+        {
+          "id": "c4",
+          "statement": "Work can be uncountable when it means activity, while job is countable.",
+          "explanation": "Decimos some work pero one job o two jobs."
+        },
+        {
+          "id": "c5",
+          "statement": "A salary is usually paid regularly, for example each month.",
+          "explanation": "Salary es un sueldo periódico."
+        },
+        {
+          "id": "c6",
+          "statement": "An hourly wage is the name of a professional career.",
+          "explanation": "An hourly wage es un pago calculado por hora."
+        },
+        {
+          "id": "c7",
+          "statement": "Flexible hours must always be exactly the same every day.",
+          "explanation": "Flexible significa que el horario puede adaptarse."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-work-jobs"
+      ],
+      "tags": [
+        "b1",
+        "work-jobs",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-work-jobs-sd-090",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-work-jobs",
+      "subtopic": "b1-work-jobs",
+      "taxonomyNodeIds": [
+        "b1-work-jobs"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "I applied for a job online.",
+          "explanation": "Apply for a job es una colocación correcta."
+        },
+        {
+          "id": "c2",
+          "statement": "A temporary job is expected to last for a limited period.",
+          "explanation": "Temporary significa limitado en el tiempo."
+        },
+        {
+          "id": "c3",
+          "statement": "I applied a job at the hospital.",
+          "explanation": "Se necesita la preposición for: applied for a job."
+        },
+        {
+          "id": "c4",
+          "statement": "A colleague is the person who pays your salary.",
+          "explanation": "Colleague es compañero; normalmente el employer paga el salario."
+        },
+        {
+          "id": "c5",
+          "statement": "I earn a salary from my employer.",
+          "explanation": "Earn se usa para el dinero que recibes por tu trabajo."
+        },
+        {
+          "id": "c6",
+          "statement": "You can apply for a job, but you cannot apply a job.",
+          "explanation": "La preposición for es necesaria después de apply en este significado."
+        },
+        {
+          "id": "c7",
+          "statement": "A career describes a person's professional path over time.",
+          "explanation": "Career se refiere a la trayectoria profesional."
+        },
+        {
+          "id": "c8",
+          "statement": "The manager invited the candidate to an interview.",
+          "explanation": "An interview es una entrevista de selección."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-work-jobs"
+      ],
+      "tags": [
+        "b1",
+        "work-jobs",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-work-jobs-sd-153",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-work-jobs",
+      "subtopic": "b1-work-jobs",
+      "taxonomyNodeIds": [
+        "b1-work-jobs"
+      ],
+      "difficulty": 1,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She has a part-time job at a café.",
+          "explanation": "Job es un puesto concreto y part-time indica jornada parcial."
+        },
+        {
+          "id": "c2",
+          "statement": "I have two works at the moment.",
+          "explanation": "Para dos puestos concretos se dice two jobs; work como actividad es incontable."
+        },
+        {
+          "id": "c3",
+          "statement": "A CV usually includes education and work experience.",
+          "explanation": "El CV resume formación y experiencia."
+        },
+        {
+          "id": "c4",
+          "statement": "The employer offered me a contract.",
+          "explanation": "Employer es quien ofrece el contrato."
+        },
+        {
+          "id": "c5",
+          "statement": "A colleague is someone who works with you.",
+          "explanation": "Colleague significa compañero de trabajo."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-work-jobs"
+      ],
+      "tags": [
+        "b1",
+        "work-jobs",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

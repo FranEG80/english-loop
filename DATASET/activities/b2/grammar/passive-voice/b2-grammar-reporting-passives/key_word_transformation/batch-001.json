@@ -1,0 +1,1238 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-passives-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "reporting-passives",
+  "lessonId": "b2-grammar-reporting-passives",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "People say that the mayor will resign before the summer.",
+      "firstSentence": "People say that the mayor will resign before the summer.",
+      "keyWord": "SAID",
+      "gapText": "It [gap1] the mayor will resign before the summer.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is said that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La pasiva impersonal arranca con «it» y sigue con «is said that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Everyone believes that the painter lived in this cottage.",
+      "firstSentence": "Everyone believes that the painter lived in this cottage.",
+      "keyWord": "BELIEVED",
+      "gapText": "The painter [gap1] in this cottage.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is believed to have lived"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Si lo reportado es anterior, se usa «is believed to have» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Experts think that the volcano erupted twice in one year.",
+      "firstSentence": "Experts think that the volcano erupted twice in one year.",
+      "keyWord": "THOUGHT",
+      "gapText": "The volcano [gap1] twice in one year.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is thought to have erupted"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El infinitivo perfecto «to have erupted» sitúa el hecho antes del comentario."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Journalists report that the peace talks are going well.",
+      "firstSentence": "Journalists report that the peace talks are going well.",
+      "keyWord": "REPORTED",
+      "gapText": "The peace talks [gap1] going well.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are reported to be"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto plural lleva «are reported to be» ante la forma continua."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "People say that the castle beside the lake is haunted.",
+      "firstSentence": "People say that the castle beside the lake is haunted.",
+      "keyWord": "SAID",
+      "gapText": "The castle beside the lake [gap1] haunted.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is said to be"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La versión personal del reporte usa «is said to be» más adjetivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Everybody knows that this recipe comes from Sicily.",
+      "firstSentence": "Everybody knows that this recipe comes from Sicily.",
+      "keyWord": "KNOWN",
+      "gapText": "This recipe [gap1] from Sicily.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is known to come"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Is known to» introduce un infinitivo simple cuando el hecho sigue vigente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Analysts expect that fuel prices will fall next quarter.",
+      "firstSentence": "Analysts expect that fuel prices will fall next quarter.",
+      "keyWord": "EXPECTED",
+      "gapText": "Fuel prices [gap1] next quarter.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are expected to fall"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El futuro reportado se condensa en «are expected to» más infinitivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The police allege that the driver ignored a red light.",
+      "firstSentence": "The police allege that the driver ignored a red light.",
+      "keyWord": "ALLEGED",
+      "gapText": "The driver [gap1] a red light.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is alleged to have ignored"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Is alleged to have» presenta una acusación sobre un hecho pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Many people consider him the finest cellist of his generation.",
+      "firstSentence": "Many people consider him the finest cellist of his generation.",
+      "keyWord": "CONSIDERED",
+      "gapText": "He [gap1] the finest cellist of his generation.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is considered to be",
+              "is considered"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «is considered» el verbo «to be» puede omitirse sin cambiar el sentido."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "People used to think that tomatoes were poisonous.",
+      "firstSentence": "People used to think that tomatoes were poisonous.",
+      "keyWord": "THOUGHT",
+      "gapText": "Tomatoes [gap1] be poisonous.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "were once thought to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Were once thought to» recoge una creencia antigua ya abandonada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Sources claim that the singer has bought a villa in Nice.",
+      "firstSentence": "Sources claim that the singer has bought a villa in Nice.",
+      "keyWord": "CLAIMED",
+      "gapText": "The singer [gap1] a villa in Nice.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is claimed to have bought"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El present perfect reportado se convierte en «to have» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Officials understand that the museum reopens in May.",
+      "firstSentence": "Officials understand that the museum reopens in May.",
+      "keyWord": "UNDERSTOOD",
+      "gapText": "The museum [gap1] reopen in May.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is understood to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Is understood to» presenta el dato como información oficial no confirmada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Everyone says that this bread contains no sugar.",
+      "firstSentence": "Everyone says that this bread contains no sugar.",
+      "keyWord": "SAID",
+      "gapText": "This bread [gap1] no sugar.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is said to contain"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto del reporte pasa al frente y el verbo queda en infinitivo tras «is said to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "People believe that the thieves escaped through a skylight.",
+      "firstSentence": "People believe that the thieves escaped through a skylight.",
+      "keyWord": "BELIEVED",
+      "gapText": "It [gap1] the thieves escaped through a skylight.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is believed that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La estructura con «it» conserva la oración completa detrás de «is believed that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Astronomers think that the comet will return in 2061.",
+      "firstSentence": "Astronomers think that the comet will return in 2061.",
+      "keyWord": "THOUGHT",
+      "gapText": "The comet [gap1] return in 2061.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is thought to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Is thought to» basta cuando el infinitivo ya aparece en la frase."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Witnesses report that two lorries blocked the tunnel.",
+      "firstSentence": "Witnesses report that two lorries blocked the tunnel.",
+      "keyWord": "REPORTED",
+      "gapText": "Two lorries [gap1] the tunnel.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are reported to have blocked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Un pasado reportado en plural exige «are reported to have» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Historians say that the manuscript dates from 1420.",
+      "firstSentence": "Historians say that the manuscript dates from 1420.",
+      "keyWord": "SAID",
+      "gapText": "The manuscript [gap1] from 1420.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is said to date"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con un hecho permanente basta el infinitivo simple tras «is said to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Everyone assumes that the letter was written by his sister.",
+      "firstSentence": "Everyone assumes that the letter was written by his sister.",
+      "keyWord": "ASSUMED",
+      "gapText": "The letter [gap1] written by his sister.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is assumed to have been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Al reportar una pasiva pasada aparece la secuencia «to have been» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "There are rumours that she works for the government.",
+      "firstSentence": "There are rumours that she works for the government.",
+      "keyWord": "RUMOURED",
+      "gapText": "It [gap1] that she works for the government.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is rumoured"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sustantivo «rumours» se transforma en la pasiva impersonal «it is rumoured»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Doctors claim that laughter speeds up recovery.",
+      "firstSentence": "Doctors claim that laughter speeds up recovery.",
+      "keyWord": "CLAIMED",
+      "gapText": "It [gap1] laughter speeds up recovery.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is claimed that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«It is claimed that» presenta la afirmación sin atribuirla a nadie concreto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The authorities announced that the border would close at midnight.",
+      "firstSentence": "The authorities announced that the border would close at midnight.",
+      "keyWord": "ANNOUNCED",
+      "gapText": "It [gap1] the border would close at midnight.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was announced that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Un anuncio pasado se reporta con «it was announced that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "People said that the general had fled abroad.",
+      "firstSentence": "People said that the general had fled abroad.",
+      "keyWord": "SAID",
+      "gapText": "The general [gap1] fled abroad.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was said to have"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Cuando el verbo de reporte va en pasado, la pasiva empieza por «was said to have»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Everyone expected that the concert would sell out.",
+      "firstSentence": "Everyone expected that the concert would sell out.",
+      "keyWord": "EXPECTED",
+      "gapText": "It [gap1] the concert would sell out.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was expected that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La previsión pasada se reformula como «it was expected that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Villagers believed that the well had healing powers.",
+      "firstSentence": "Villagers believed that the well had healing powers.",
+      "keyWord": "BELIEVED",
+      "gapText": "The well [gap1] healing powers.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was believed to have"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Aquí «have» es el verbo principal detrás de «was believed to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Officials estimate that the repairs will cost two million euros.",
+      "firstSentence": "Officials estimate that the repairs will cost two million euros.",
+      "keyWord": "ESTIMATED",
+      "gapText": "The repairs [gap1] cost two million euros.",
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "are estimated to"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Are estimated to» presenta una cifra calculada de forma impersonal."
+    }
+  ]
+}

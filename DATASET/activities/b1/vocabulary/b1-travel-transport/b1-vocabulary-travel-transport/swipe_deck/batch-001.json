@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-travel-transport-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-travel-transport",
+  "subtopic": "b1-travel-transport",
+  "lessonId": "b1-vocabulary-travel-transport",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-travel-transport-sd-026",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 1,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Hand luggage is the suitcase that goes in the plane's hold.",
+          "explanation": "Hand luggage viaja contigo en la cabina; el equipaje de bodega no es hand luggage."
+        },
+        {
+          "id": "c2",
+          "statement": "A trip focuses only on the exact road between two stations.",
+          "explanation": "Journey pone el foco en el trayecto; trip incluye la visita o experiencia."
+        },
+        {
+          "id": "c3",
+          "statement": "A train leaves from a gate.",
+          "explanation": "Los trenes salen de un platform; los aviones salen de un gate."
+        },
+        {
+          "id": "c4",
+          "statement": "A connection is a second transport that continues your trip.",
+          "explanation": "Connection es el enlace con otro tren, vuelo o transporte."
+        },
+        {
+          "id": "c5",
+          "statement": "Passengers wait on a platform for a train.",
+          "explanation": "Platform es el andén del tren."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-travel-transport-sd-089",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "We travelled by train to York.",
+          "explanation": "By train indica el medio de transporte."
+        },
+        {
+          "id": "c2",
+          "statement": "A platform is normally used for a bus at the airport gate.",
+          "explanation": "Platform es principalmente el andén del tren; gate es la puerta del avión."
+        },
+        {
+          "id": "c3",
+          "statement": "After an international flight, passengers may go through customs.",
+          "explanation": "Customs es el control de aduanas."
+        },
+        {
+          "id": "c4",
+          "statement": "A connecting flight is always a flight with no stops.",
+          "explanation": "Connecting flight implica una conexión, no un vuelo sin escalas."
+        },
+        {
+          "id": "c5",
+          "statement": "A direct flight does not require changing planes.",
+          "explanation": "Direct flight no tiene una conexión entre dos aviones."
+        },
+        {
+          "id": "c6",
+          "statement": "Travel is normally uncountable when it means the activity in general.",
+          "explanation": "Decimos travel can be expensive, no normalmente a travel."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-travel-transport-sd-152",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Baggage allowance is the place where you wait for a train.",
+          "explanation": "Baggage allowance es la cantidad permitida; el lugar del tren es the platform."
+        },
+        {
+          "id": "c2",
+          "statement": "A single ticket includes both the outward and return journeys.",
+          "explanation": "A single ticket es solo de ida; a return ticket incluye la vuelta."
+        },
+        {
+          "id": "c3",
+          "statement": "You collect your luggage before you land.",
+          "explanation": "Normalmente recoges el equipaje after landing."
+        },
+        {
+          "id": "c4",
+          "statement": "A tour is usually an organised visit around places of interest.",
+          "explanation": "Tour es un recorrido organizado."
+        },
+        {
+          "id": "c5",
+          "statement": "We arrived in the station at eight.",
+          "explanation": "Se dice arrive at the station; arrive in se usa con ciudades o países."
+        },
+        {
+          "id": "c6",
+          "statement": "A journey can be one part of a larger trip.",
+          "explanation": "Trip es la experiencia; journey puede ser cada trayecto."
+        },
+        {
+          "id": "c7",
+          "statement": "I booked a return ticket to Bristol.",
+          "explanation": "Return ticket incluye la vuelta."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

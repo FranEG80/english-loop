@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-writing-semi-formal-email-mini-game-001",
+  "level": "B1",
+  "category": "guided-writing",
+  "topic": "b1-writing-semi-formal-email",
+  "subtopic": "b1-writing-semi-formal-email",
+  "lessonId": "b1-writing-semi-formal-email",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-semi-formal-email-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-semi-formal-email",
+      "subtopic": "b1-writing-semi-formal-email",
+      "taxonomyNodeIds": [
+        "b1-writing-semi-formal-email"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence suits an email to the Community Garden Team?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you move my volunteer shift to Saturday, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me move my volunteer shift, now."
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me move my volunteer shift."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence suits an email to the Volunteer Coordinator?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tell me confirm the start time, now."
+            },
+            {
+              "id": "a",
+              "text": "Could you confirm the start time, please"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me confirm the start time."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence suits an email to the Local Council?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tell me explain the parking restriction, now."
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me explain the parking restriction."
+            },
+            {
+              "id": "a",
+              "text": "Could you explain the parking restriction, please"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence suits an email to the Hotel Reception?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tell me confirm the late check-in, now."
+            },
+            {
+              "id": "a",
+              "text": "Could you confirm the late check-in arrangement, please"
+            },
+            {
+              "id": "d",
+              "text": "Yo, can you sort out confirm the late check-in?"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence suits an email to the Building Manager?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would be grateful if you could arrange a repair visit"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me arrange a repair visit."
+            },
+            {
+              "id": "b",
+              "text": "Tell me arrange a repair visit, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence suits an email to the Training Centre?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hi there! Give me send information about evening classes."
+            },
+            {
+              "id": "b",
+              "text": "Tell me send information about evening classes, now."
+            },
+            {
+              "id": "a",
+              "text": "I would appreciate it if you could send information about evening classes"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence suits an email to the Cinema Manager?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tell me explain the accessibility arrangements, now."
+            },
+            {
+              "id": "a",
+              "text": "Could you explain the accessibility arrangements, please"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me explain the accessibility arrangements."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence suits an email to the Museum Office?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hi there! Give me confirm the ticket price."
+            },
+            {
+              "id": "a",
+              "text": "Could you confirm the ticket price, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me confirm the ticket price, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-semi-formal-email"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "single-choice",
+        "register",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-semi-formal-email-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-semi-formal-email",
+      "subtopic": "b1-writing-semi-formal-email",
+      "taxonomyNodeIds": [
+        "b1-writing-semi-formal-email"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence suits an email to the Travel Desk?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hi there! Give me tell me if the pass is refundable."
+            },
+            {
+              "id": "a",
+              "text": "Could you tell me if the pass is refundable, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me tell me if the pass is refundable, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence suits an email to the Arts Centre?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you confirm the workshop location, please"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me the workshop location."
+            },
+            {
+              "id": "b",
+              "text": "Tell me the workshop location, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence suits an email to the Gallery Reception?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hi there! Give me reserve a wheelchair."
+            },
+            {
+              "id": "b",
+              "text": "Tell me reserve a wheelchair, now."
+            },
+            {
+              "id": "a",
+              "text": "Could you reserve a wheelchair, please"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence suits an email to the Mr Patel?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out move an appointment to friday?"
+            },
+            {
+              "id": "a",
+              "text": "Could you move my appointment to Friday, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me move an appointment to friday, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence suits an email to the Exam Office?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out confirm the application deadline?"
+            },
+            {
+              "id": "a",
+              "text": "Could you confirm the application deadline, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me confirm the application deadline, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence suits an email to the Customer Services?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tell me confirm that my parcel has arrived, now."
+            },
+            {
+              "id": "d",
+              "text": "Yo, can you sort out confirm that my parcel has arrived?"
+            },
+            {
+              "id": "a",
+              "text": "Could you confirm that my parcel has arrived, please"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence suits an email to the Ms Green?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hi there! Give me explain how to register."
+            },
+            {
+              "id": "a",
+              "text": "Could you explain how to register, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me explain how to register, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence suits an email to the Course Coordinator?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you confirm whether materials are included, please"
+            },
+            {
+              "id": "d",
+              "text": "Yo, can you sort out confirm whether materials are included?"
+            },
+            {
+              "id": "b",
+              "text": "Tell me confirm whether materials are included, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-semi-formal-email"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "single-choice",
+        "register",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-collocations-impact-attitudes-mini-game-001",
+  "level": "B2",
+  "category": "collocations",
+  "topic": "b2-collocations-impact-attitudes",
+  "subtopic": "b2-collocations-impact-attitudes",
+  "lessonId": "b2-collocations-impact-attitudes",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-impact-attitudes-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b2-collocations-impact-attitudes",
+      "subtopic": "b2-collocations-impact-attitudes",
+      "taxonomyNodeIds": [
+        "b2-collocations-impact-attitudes"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The spill damaged several habitats. It caused serious ___ the wetlands.",
+          "options": [
+            {
+              "id": "a",
+              "text": "damage to"
+            },
+            {
+              "id": "d",
+              "text": "damage for"
+            },
+            {
+              "id": "b",
+              "text": "damage on"
+            }
+          ],
+          "explanation": "«Cause damage to» takes «to» before the affected place."
+        },
+        {
+          "id": "r2",
+          "prompt": "The union ___ opposed the plan in cloze set 016.",
+          "options": [
+            {
+              "id": "c",
+              "text": "highly"
+            },
+            {
+              "id": "b",
+              "text": "deeply"
+            },
+            {
+              "id": "a",
+              "text": "firmly"
+            }
+          ],
+          "explanation": "«Firmly opposed» expresses strong disagreement."
+        },
+        {
+          "id": "r3",
+          "prompt": "The article calls ___ change in cloze set 011.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The collocation is «call for change»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The union rejects the proposal without compromise. It firmly ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "opposes it"
+            },
+            {
+              "id": "b",
+              "text": "concerns it"
+            },
+            {
+              "id": "d",
+              "text": "supports it"
+            }
+          ],
+          "explanation": "«Firmly opposes» expresses strong disagreement."
+        },
+        {
+          "id": "r5",
+          "prompt": "The campaign aims to ___ attention to access in cloze set 014.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "draw"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "The natural phrase is «draw attention to»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The editorial demands a change in the law. It calls ___ reform.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "to"
+            }
+          ],
+          "explanation": "«Call for reform» is a formal public demand."
+        },
+        {
+          "id": "r7",
+          "prompt": "The report urges firms to ___ measures.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "adopt"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            }
+          ],
+          "explanation": "«Adopt measures» means formally choose them for use."
+        },
+        {
+          "id": "r8",
+          "prompt": "The council adopted several ___ in cloze set 019.",
+          "options": [
+            {
+              "id": "b",
+              "text": "actions"
+            },
+            {
+              "id": "c",
+              "text": "impacts"
+            },
+            {
+              "id": "a",
+              "text": "measures"
+            }
+          ],
+          "explanation": "«Adopt measures» is a formal policy collocation."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-impact-attitudes"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "damage",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-impact-attitudes-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b2-collocations-impact-attitudes",
+      "subtopic": "b2-collocations-impact-attitudes",
+      "taxonomyNodeIds": [
+        "b2-collocations-impact-attitudes"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The chemical may ___ a threat to wildlife.",
+          "options": [
+            {
+              "id": "a",
+              "text": "pose"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            }
+          ],
+          "explanation": "We say «pose a threat to» something at risk."
+        },
+        {
+          "id": "r2",
+          "prompt": "The new timetable changed attendance at evening classes. It had an ___ attendance.",
+          "options": [
+            {
+              "id": "d",
+              "text": "impact to"
+            },
+            {
+              "id": "c",
+              "text": "impact for"
+            },
+            {
+              "id": "a",
+              "text": "impact on"
+            }
+          ],
+          "explanation": "The noun «impact» normally takes «on» before its object."
+        },
+        {
+          "id": "r3",
+          "prompt": "The evidence may ___ doubts about the result.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "play"
+            },
+            {
+              "id": "a",
+              "text": "raise"
+            }
+          ],
+          "explanation": "The natural phrase is «raise doubts about»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The findings may ___ policy change.",
+          "options": [
+            {
+              "id": "a",
+              "text": "bring about"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "«Bring about change» means cause it to happen."
+        },
+        {
+          "id": "r5",
+          "prompt": "The river is polluted, so the council needs an immediate response. It must ___ action.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do action"
+            },
+            {
+              "id": "d",
+              "text": "put action"
+            },
+            {
+              "id": "a",
+              "text": "take action"
+            }
+          ],
+          "explanation": "The standard response phrase is «take action»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The policy may ___ a threat to jobs in cloze set 013.",
+          "options": [
+            {
+              "id": "c",
+              "text": "raise"
+            },
+            {
+              "id": "a",
+              "text": "pose"
+            },
+            {
+              "id": "d",
+              "text": "play"
+            }
+          ],
+          "explanation": "We say «pose a threat to»."
+        },
+        {
+          "id": "r7",
+          "prompt": "A local campaign explains how to reduce food waste. It wants to ___ awareness of the issue.",
+          "options": [
+            {
+              "id": "b",
+              "text": "make awareness"
+            },
+            {
+              "id": "a",
+              "text": "raise awareness"
+            },
+            {
+              "id": "c",
+              "text": "do awareness"
+            }
+          ],
+          "explanation": "The natural phrase is «raise awareness»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Parents worry about the safety of the crossing. They are ___ concerned.",
+          "options": [
+            {
+              "id": "b",
+              "text": "deep concerned"
+            },
+            {
+              "id": "a",
+              "text": "deeply concerned"
+            },
+            {
+              "id": "c",
+              "text": "strong concerned"
+            }
+          ],
+          "explanation": "«Deeply concerned» uses the correct adverb-adjective combination."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-impact-attitudes"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "threat",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

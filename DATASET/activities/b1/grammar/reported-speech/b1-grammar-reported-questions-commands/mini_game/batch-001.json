@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-reported-questions-commands-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reported-questions-commands",
+  "lessonId": "b1-grammar-reported-questions-commands",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reported-questions-commands-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The manager wanted to know whether I was available to assist.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The manager asked me to help."
+            },
+            {
+              "id": "c",
+              "text": "The manager told me to help."
+            },
+            {
+              "id": "a",
+              "text": "The manager asked me if I could help."
+            }
+          ],
+          "explanation": "«Asked me if» solicita información sobre disponibilidad; «asked me to» pediría la acción."
+        },
+        {
+          "id": "r2",
+          "prompt": "“Can you swim?” she asked me.",
+          "options": [
+            {
+              "id": "d",
+              "text": "She asked could I swim."
+            },
+            {
+              "id": "b",
+              "text": "She asked me to swim."
+            },
+            {
+              "id": "a",
+              "text": "She asked me if I could swim."
+            }
+          ],
+          "explanation": "Pregunta por capacidad, por eso usa «asked if», no «asked to»."
+        },
+        {
+          "id": "r3",
+          "prompt": "“Don't touch the switch,” she told me. She told me ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "if I didn't touch the switch"
+            },
+            {
+              "id": "a",
+              "text": "not to touch the switch"
+            },
+            {
+              "id": "c",
+              "text": "don't touch the switch"
+            }
+          ],
+          "explanation": "La orden negativa usa «not to + infinitivo»."
+        },
+        {
+          "id": "r4",
+          "prompt": "“Could you open the window, please?” Sara said to Leo.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Sara asked Leo if he could open the window."
+            },
+            {
+              "id": "a",
+              "text": "Sara asked Leo to open the window."
+            },
+            {
+              "id": "d",
+              "text": "Sara asked to Leo opening the window."
+            }
+          ],
+          "explanation": "En contexto, «Could you ... please?» es una petición de acción."
+        },
+        {
+          "id": "r5",
+          "prompt": "“Who called you?” Eva asked me.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Eva asked who had I called."
+            },
+            {
+              "id": "d",
+              "text": "Eva told me who called you?"
+            },
+            {
+              "id": "a",
+              "text": "Eva asked who had called me."
+            }
+          ],
+          "explanation": "«Who» ya es sujeto; no añadimos «did» ni invertimos."
+        },
+        {
+          "id": "r6",
+          "prompt": "“Wait outside,” the guard said to us. The guard ___ outside.",
+          "options": [
+            {
+              "id": "b",
+              "text": "told to us wait"
+            },
+            {
+              "id": "a",
+              "text": "told us to wait"
+            },
+            {
+              "id": "c",
+              "text": "said us to wait"
+            }
+          ],
+          "explanation": "Una instrucción usa «told + persona + to + infinitivo»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The manager wanted me to perform the action.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The manager asked me if I could help."
+            },
+            {
+              "id": "a",
+              "text": "The manager asked me to help."
+            },
+            {
+              "id": "d",
+              "text": "The manager asked if to help."
+            }
+          ],
+          "explanation": "«Asked me to help» es una petición de acción."
+        },
+        {
+          "id": "r8",
+          "prompt": "“Keep the receipt,” the assistant said to me.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The assistant told to keep me the receipt."
+            },
+            {
+              "id": "a",
+              "text": "The assistant told me to keep the receipt."
+            },
+            {
+              "id": "d",
+              "text": "The assistant said me to keep the receipt."
+            }
+          ],
+          "explanation": "La instrucción usa «told me to keep»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "meaning-contrast",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reported-questions-commands-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "“Is the shop open?” He asked ___ the shop was open.",
+          "options": [
+            {
+              "id": "a",
+              "text": "if"
+            },
+            {
+              "id": "d",
+              "text": "what"
+            },
+            {
+              "id": "c",
+              "text": "to"
+            }
+          ],
+          "explanation": "Una pregunta sí/no se introduce con «if» o «whether»."
+        },
+        {
+          "id": "r2",
+          "prompt": "“Please help me,” Maya said to Leo. Maya ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "asked Leo to help her"
+            },
+            {
+              "id": "d",
+              "text": "said Leo to help me"
+            },
+            {
+              "id": "b",
+              "text": "told Leo if he helped her"
+            }
+          ],
+          "explanation": "Una petición usa «asked + persona + to» y adapta el pronombre."
+        },
+        {
+          "id": "r3",
+          "prompt": "“Do you need a receipt?” the cashier asked me.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The cashier asked me did I need a receipt."
+            },
+            {
+              "id": "a",
+              "text": "The cashier asked me if I needed a receipt."
+            },
+            {
+              "id": "d",
+              "text": "The cashier asked that I need a receipt."
+            }
+          ],
+          "explanation": "Se elimina «do» y se usa orden afirmativo tras «if»."
+        },
+        {
+          "id": "r4",
+          "prompt": "“Is the fee refundable?” the customer asked.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The customer asked whether was or not the fee refundable."
+            },
+            {
+              "id": "c",
+              "text": "The customer told if the fee had refundable or not."
+            },
+            {
+              "id": "a",
+              "text": "The customer asked whether or not the fee was refundable."
+            }
+          ],
+          "explanation": "«Whether or not» va seguido de orden afirmativo."
+        },
+        {
+          "id": "r5",
+          "prompt": "“When did the meeting start?” they asked.",
+          "options": [
+            {
+              "id": "b",
+              "text": "They asked when did the meeting start."
+            },
+            {
+              "id": "d",
+              "text": "They told when had the meeting started."
+            },
+            {
+              "id": "a",
+              "text": "They asked when the meeting had started."
+            }
+          ],
+          "explanation": "Se elimina «did», se usa orden afirmativo y past perfect."
+        },
+        {
+          "id": "r6",
+          "prompt": "“Don't block the entrance,” the marshal told the drivers.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The marshal asked if the drivers didn't block the entrance."
+            },
+            {
+              "id": "d",
+              "text": "The marshal said the drivers to not blocked the entrance."
+            },
+            {
+              "id": "a",
+              "text": "The marshal told the drivers not to block the entrance."
+            }
+          ],
+          "explanation": "La instrucción negativa usa «told + objeto + not to»."
+        },
+        {
+          "id": "r7",
+          "prompt": "On Monday Rina asked Leo, “Can you bring these folders here tomorrow?”",
+          "options": [
+            {
+              "id": "b",
+              "text": "Rina asked Leo if he could bring these folders here tomorrow."
+            },
+            {
+              "id": "c",
+              "text": "Rina told Leo whether he can brought those folders there."
+            },
+            {
+              "id": "a",
+              "text": "Rina asked Leo to bring those folders there the next day."
+            }
+          ],
+          "explanation": "La forma cortés solicita una acción y cambian demostrativo, lugar y tiempo."
+        },
+        {
+          "id": "r8",
+          "prompt": "“Has the parcel arrived?” Jo asked.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Jo told if the parcel has arrived."
+            },
+            {
+              "id": "a",
+              "text": "Jo asked whether the parcel had arrived."
+            },
+            {
+              "id": "b",
+              "text": "Jo asked whether had the parcel arrived."
+            }
+          ],
+          "explanation": "Present perfect retrocede a past perfect tras «whether»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "reported-question",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

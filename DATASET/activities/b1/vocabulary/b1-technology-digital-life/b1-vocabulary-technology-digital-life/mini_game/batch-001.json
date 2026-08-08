@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-technology-digital-life-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-technology-digital-life",
+  "subtopic": "b1-technology-digital-life",
+  "lessonId": "b1-vocabulary-technology-digital-life",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-technology-digital-life-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-technology-digital-life",
+      "subtopic": "b1-technology-digital-life",
+      "taxonomyNodeIds": [
+        "b1-technology-digital-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The router works, but the phone cannot connect. Which detail should you check first?",
+          "options": [
+            {
+              "id": "c",
+              "text": "the file name"
+            },
+            {
+              "id": "a",
+              "text": "the Wi-Fi signal"
+            },
+            {
+              "id": "d",
+              "text": "the keyboard layout"
+            }
+          ],
+          "explanation": "A weak Wi-Fi signal can prevent a device from connecting."
+        },
+        {
+          "id": "r2",
+          "prompt": "The letters you type on a computer are entered with the ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "keyboard"
+            },
+            {
+              "id": "c",
+              "text": "screen"
+            },
+            {
+              "id": "b",
+              "text": "battery"
+            }
+          ],
+          "explanation": "A keyboard is used to type letters and numbers."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sequence solves a common email problem?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Search the charger, share the account and attach the Wi-Fi."
+            },
+            {
+              "id": "b",
+              "text": "Charge the password, browse the battery and click the file."
+            },
+            {
+              "id": "a",
+              "text": "Check the attachment, save the draft and send it."
+            }
+          ],
+          "explanation": "An attachment can be checked, a draft saved and an email sent."
+        },
+        {
+          "id": "r4",
+          "prompt": "To enter your personal page, you need to ___ your account.",
+          "options": [
+            {
+              "id": "a",
+              "text": "log in to"
+            },
+            {
+              "id": "c",
+              "text": "save"
+            },
+            {
+              "id": "d",
+              "text": "charge"
+            }
+          ],
+          "explanation": "Log in to means enter a protected account."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase means connect a document to an email?",
+          "options": [
+            {
+              "id": "a",
+              "text": "attach a file"
+            },
+            {
+              "id": "b",
+              "text": "browse a file"
+            },
+            {
+              "id": "c",
+              "text": "delete a file"
+            }
+          ],
+          "explanation": "You attach a file when you add it to an email."
+        },
+        {
+          "id": "r6",
+          "prompt": "Before buying the book, you use a browser to ___ information about it.",
+          "options": [
+            {
+              "id": "b",
+              "text": "log in to"
+            },
+            {
+              "id": "a",
+              "text": "search for"
+            },
+            {
+              "id": "c",
+              "text": "turn off"
+            }
+          ],
+          "explanation": "We search for information when looking for it online."
+        },
+        {
+          "id": "r7",
+          "prompt": "You can carry this small computer in your bag.",
+          "options": [
+            {
+              "id": "c",
+              "text": "password"
+            },
+            {
+              "id": "a",
+              "text": "laptop"
+            },
+            {
+              "id": "d",
+              "text": "signal"
+            }
+          ],
+          "explanation": "A laptop is a portable computer."
+        },
+        {
+          "id": "r8",
+          "prompt": "The museum map is available without a connection because it works ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "offline"
+            },
+            {
+              "id": "d",
+              "text": "logged"
+            },
+            {
+              "id": "c",
+              "text": "crowded"
+            }
+          ],
+          "explanation": "Offline means without an active internet connection."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-technology-digital-life"
+      ],
+      "tags": [
+        "b1",
+        "connection",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-technology-digital-life-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-technology-digital-life",
+      "subtopic": "b1-technology-digital-life",
+      "taxonomyNodeIds": [
+        "b1-technology-digital-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The phone cannot find a network because the ___ is too weak.",
+          "options": [
+            {
+              "id": "d",
+              "text": "password"
+            },
+            {
+              "id": "a",
+              "text": "signal"
+            },
+            {
+              "id": "c",
+              "text": "folder"
+            }
+          ],
+          "explanation": "A signal carries the connection to a network."
+        },
+        {
+          "id": "r2",
+          "prompt": "You want the newest version of an app, so you should ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "update it"
+            },
+            {
+              "id": "b",
+              "text": "upload it"
+            },
+            {
+              "id": "d",
+              "text": "attach it"
+            }
+          ],
+          "explanation": "Update means install a newer version of software."
+        },
+        {
+          "id": "r3",
+          "prompt": "The secret word that protects an account is a ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "link"
+            },
+            {
+              "id": "d",
+              "text": "charger"
+            },
+            {
+              "id": "a",
+              "text": "password"
+            }
+          ],
+          "explanation": "A password is secret information used to enter an account."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which instruction is correct before leaving a public computer?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Attach the keyboard."
+            },
+            {
+              "id": "b",
+              "text": "Upload your password."
+            },
+            {
+              "id": "a",
+              "text": "Log out of your account."
+            }
+          ],
+          "explanation": "Log out removes your active session from the shared computer."
+        },
+        {
+          "id": "r5",
+          "prompt": "Put your holiday photo on the class website: ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "browse it"
+            },
+            {
+              "id": "a",
+              "text": "upload it"
+            },
+            {
+              "id": "c",
+              "text": "save it"
+            }
+          ],
+          "explanation": "Upload means send data from your device to a service."
+        },
+        {
+          "id": "r6",
+          "prompt": "The video stops every few seconds because the internet connection is ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "unstable"
+            },
+            {
+              "id": "d",
+              "text": "empty"
+            },
+            {
+              "id": "b",
+              "text": "attached"
+            }
+          ],
+          "explanation": "An unstable connection starts and stops unpredictably."
+        },
+        {
+          "id": "r7",
+          "prompt": "The document is safe because you clicked the icon to ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "share it"
+            },
+            {
+              "id": "a",
+              "text": "save it"
+            },
+            {
+              "id": "c",
+              "text": "browse it"
+            }
+          ],
+          "explanation": "Save means keep the current version of a file."
+        },
+        {
+          "id": "r8",
+          "prompt": "The safest advice is to use a different ___ for every important account.",
+          "options": [
+            {
+              "id": "b",
+              "text": "screen"
+            },
+            {
+              "id": "c",
+              "text": "signal"
+            },
+            {
+              "id": "a",
+              "text": "password"
+            }
+          ],
+          "explanation": "A unique password reduces the damage if one account is exposed."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-technology-digital-life"
+      ],
+      "tags": [
+        "b1",
+        "connection",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

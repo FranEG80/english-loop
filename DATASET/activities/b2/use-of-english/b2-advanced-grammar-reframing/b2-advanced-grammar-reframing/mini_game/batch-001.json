@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-advanced-grammar-reframing-mini-game-001",
+  "level": "B2",
+  "category": "use-of-english",
+  "topic": "b2-advanced-grammar-reframing",
+  "subtopic": "b2-advanced-grammar-reframing",
+  "lessonId": "b2-advanced-grammar-reframing",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-grammar-reframing-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-advanced-grammar-reframing",
+      "subtopic": "b2-advanced-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b2-advanced-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The blue route is ___ than the red route.",
+          "options": [
+            {
+              "id": "d",
+              "text": "shortest"
+            },
+            {
+              "id": "b",
+              "text": "short"
+            },
+            {
+              "id": "a",
+              "text": "shorter"
+            }
+          ],
+          "explanation": "Shorter is the comparative form."
+        },
+        {
+          "id": "r2",
+          "prompt": "The plan is likely ___ rejected.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to be"
+            },
+            {
+              "id": "c",
+              "text": "to have"
+            },
+            {
+              "id": "b",
+              "text": "being"
+            }
+          ],
+          "explanation": "Likely to be rejected is the passive structure."
+        },
+        {
+          "id": "r3",
+          "prompt": "The new plan is more ___ than the old plan.",
+          "options": [
+            {
+              "id": "a",
+              "text": "effective"
+            },
+            {
+              "id": "d",
+              "text": "effectiveness"
+            },
+            {
+              "id": "c",
+              "text": "effectively"
+            }
+          ],
+          "explanation": "Effective is the adjective after more."
+        },
+        {
+          "id": "r4",
+          "prompt": "The bridge is believed ___ unsafe.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to be"
+            },
+            {
+              "id": "b",
+              "text": "being"
+            },
+            {
+              "id": "d",
+              "text": "to have"
+            }
+          ],
+          "explanation": "The reporting passive takes to be for a current state."
+        },
+        {
+          "id": "r5",
+          "prompt": "The tunnel is expected to ___ reopened by Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "be"
+            },
+            {
+              "id": "c",
+              "text": "being"
+            }
+          ],
+          "explanation": "Have reopened places the event before Friday."
+        },
+        {
+          "id": "r6",
+          "prompt": "The red model is considerably more ___ than the blue one.",
+          "options": [
+            {
+              "id": "a",
+              "text": "expensive"
+            },
+            {
+              "id": "c",
+              "text": "expensively"
+            },
+            {
+              "id": "d",
+              "text": "expensing"
+            }
+          ],
+          "explanation": "Expensive is the adjective after more."
+        },
+        {
+          "id": "r7",
+          "prompt": "We were not ___ to travel.",
+          "options": [
+            {
+              "id": "b",
+              "text": "ability"
+            },
+            {
+              "id": "d",
+              "text": "could to"
+            },
+            {
+              "id": "a",
+              "text": "able"
+            }
+          ],
+          "explanation": "Were able to expresses past ability."
+        },
+        {
+          "id": "r8",
+          "prompt": "The scientist is thought to ___ discovered the pattern.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "d",
+              "text": "being"
+            },
+            {
+              "id": "c",
+              "text": "be"
+            }
+          ],
+          "explanation": "Have discovered refers to an earlier event."
+        }
+      ],
+      "lessonIds": [
+        "b2-advanced-grammar-reframing"
+      ],
+      "tags": [
+        "b2",
+        "transformations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-grammar-reframing-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-advanced-grammar-reframing",
+      "subtopic": "b2-advanced-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b2-advanced-grammar-reframing"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I wish I ___ checked the address.",
+          "options": [
+            {
+              "id": "b",
+              "text": "have"
+            },
+            {
+              "id": "c",
+              "text": "would"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            }
+          ],
+          "explanation": "Wish about a past event uses past perfect."
+        },
+        {
+          "id": "r2",
+          "prompt": "The museum is said ___ closed.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to be"
+            },
+            {
+              "id": "d",
+              "text": "have been"
+            },
+            {
+              "id": "a",
+              "text": "to have"
+            }
+          ],
+          "explanation": "To have closed marks the earlier closure."
+        },
+        {
+          "id": "r3",
+          "prompt": "The lift ___ repaired.",
+          "options": [
+            {
+              "id": "b",
+              "text": "has being"
+            },
+            {
+              "id": "d",
+              "text": "was been"
+            },
+            {
+              "id": "a",
+              "text": "has been"
+            }
+          ],
+          "explanation": "The present perfect passive is has been repaired."
+        },
+        {
+          "id": "r4",
+          "prompt": "Ana said that she ___ finished the report.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "has"
+            },
+            {
+              "id": "c",
+              "text": "would"
+            }
+          ],
+          "explanation": "Had finished is the backshifted form."
+        },
+        {
+          "id": "r5",
+          "prompt": "If we had reserved seats, we would have ___ together.",
+          "options": [
+            {
+              "id": "a",
+              "text": "sat"
+            },
+            {
+              "id": "c",
+              "text": "sitting"
+            },
+            {
+              "id": "d",
+              "text": "been sat"
+            }
+          ],
+          "explanation": "Would have sat is the third conditional result."
+        },
+        {
+          "id": "r6",
+          "prompt": "The statue is said to have ___ made overseas.",
+          "options": [
+            {
+              "id": "b",
+              "text": "being"
+            },
+            {
+              "id": "c",
+              "text": "be"
+            },
+            {
+              "id": "a",
+              "text": "been"
+            }
+          ],
+          "explanation": "Been made is the perfect passive infinitive."
+        },
+        {
+          "id": "r7",
+          "prompt": "By eight, they had ___ working for two hours.",
+          "options": [
+            {
+              "id": "a",
+              "text": "been"
+            },
+            {
+              "id": "c",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "being"
+            }
+          ],
+          "explanation": "Had been working expresses duration."
+        },
+        {
+          "id": "r8",
+          "prompt": "We should ___ checked the figures.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "c",
+              "text": "be"
+            },
+            {
+              "id": "b",
+              "text": "had"
+            }
+          ],
+          "explanation": "Should have checked is the modal perfect."
+        }
+      ],
+      "lessonIds": [
+        "b2-advanced-grammar-reframing"
+      ],
+      "tags": [
+        "b2",
+        "transformations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

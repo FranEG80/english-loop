@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-passive-present-past-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "present-past-passive",
+  "lessonId": "b1-grammar-passive-present-past",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-passive-present-past-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "present-past-passive",
+      "taxonomyNodeIds": [
+        "present-past-passive"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The reference number was written ___ a permanent marker.",
+          "options": [
+            {
+              "id": "b",
+              "text": "by"
+            },
+            {
+              "id": "d",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "with"
+            }
+          ],
+          "explanation": "«With» introduce el instrumento; «by» introduciría al agente."
+        },
+        {
+          "id": "r2",
+          "prompt": "Three bicycles ___ outside the station last night.",
+          "options": [
+            {
+              "id": "d",
+              "text": "stole"
+            },
+            {
+              "id": "c",
+              "text": "were stole"
+            },
+            {
+              "id": "a",
+              "text": "were stolen"
+            }
+          ],
+          "explanation": "El sujeto plural usa «were» y el participio de «steal» es «stolen»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The mural was painted ___ local teenagers.",
+          "options": [
+            {
+              "id": "a",
+              "text": "by"
+            },
+            {
+              "id": "c",
+              "text": "from"
+            },
+            {
+              "id": "b",
+              "text": "with"
+            }
+          ],
+          "explanation": "«By» introduce a quienes realizaron la acción."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ the stage being prepared for tonight's concert?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Is"
+            },
+            {
+              "id": "d",
+              "text": "Has"
+            },
+            {
+              "id": "c",
+              "text": "Was"
+            }
+          ],
+          "explanation": "La pregunta presente continua pasiva es «Is ... being prepared?»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The community centre ___ in 1986.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was opened"
+            },
+            {
+              "id": "d",
+              "text": "opened was"
+            },
+            {
+              "id": "c",
+              "text": "was open"
+            }
+          ],
+          "explanation": "La fecha pasada y el sujeto singular requieren «was opened»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The final section of the path ___ last Friday.",
+          "options": [
+            {
+              "id": "d",
+              "text": "reopened"
+            },
+            {
+              "id": "a",
+              "text": "was reopened"
+            },
+            {
+              "id": "c",
+              "text": "was being reopened"
+            }
+          ],
+          "explanation": "«Last Friday» y el resultado completado requieren «was reopened»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Fortunately, the original photographs ___ during the flood.",
+          "options": [
+            {
+              "id": "b",
+              "text": "didn't damaged"
+            },
+            {
+              "id": "a",
+              "text": "weren't damaged"
+            },
+            {
+              "id": "d",
+              "text": "weren't damage"
+            }
+          ],
+          "explanation": "La negativa pasiva plural es «weren't damaged»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which question asks about the creator of a past design?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Who the logo was design by?"
+            },
+            {
+              "id": "c",
+              "text": "Who was designed the logo by?"
+            },
+            {
+              "id": "a",
+              "text": "Who was the logo designed by?"
+            }
+          ],
+          "explanation": "La pregunta pasiva correcta es «Who was the logo designed by?»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-passive-present-past"
+      ],
+      "tags": [
+        "b1",
+        "agent-instrument",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-passive-present-past-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "present-past-passive",
+      "taxonomyNodeIds": [
+        "present-past-passive"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The patients ___ to another ward when the alarm sounded.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were moving"
+            },
+            {
+              "id": "a",
+              "text": "were being moved"
+            },
+            {
+              "id": "d",
+              "text": "being moved"
+            }
+          ],
+          "explanation": "La acción estaba en progreso en el pasado: «were being moved»."
+        },
+        {
+          "id": "r2",
+          "prompt": "___ the passengers informed about the delay yesterday?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Did"
+            },
+            {
+              "id": "a",
+              "text": "Were"
+            },
+            {
+              "id": "c",
+              "text": "Was"
+            }
+          ],
+          "explanation": "El sujeto plural y «yesterday» requieren «Were ... informed?»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The winning design was ___ by a group of students.",
+          "options": [
+            {
+              "id": "a",
+              "text": "chosen"
+            },
+            {
+              "id": "b",
+              "text": "chose"
+            },
+            {
+              "id": "c",
+              "text": "choose"
+            }
+          ],
+          "explanation": "El participio de «choose» es «chosen»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Breakfast ___ from 7:00 to 10:00 every day.",
+          "options": [
+            {
+              "id": "c",
+              "text": "is serve"
+            },
+            {
+              "id": "d",
+              "text": "served is"
+            },
+            {
+              "id": "a",
+              "text": "is served"
+            }
+          ],
+          "explanation": "El sujeto singular y la rutina presente requieren «is served»."
+        },
+        {
+          "id": "r5",
+          "prompt": "___ this cheese produced locally?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Is"
+            },
+            {
+              "id": "c",
+              "text": "Are"
+            },
+            {
+              "id": "b",
+              "text": "Does"
+            }
+          ],
+          "explanation": "La pregunta pasiva singular en presente comienza con «Is»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Active: “A local architect designed the new library.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "The new library was designed by a local architect."
+            },
+            {
+              "id": "d",
+              "text": "The new library was design by a local architect."
+            },
+            {
+              "id": "c",
+              "text": "A local architect was designed by the library."
+            }
+          ],
+          "explanation": "El pasado activo «designed» se convierte en «was designed»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The water tanks ___ every six months.",
+          "options": [
+            {
+              "id": "c",
+              "text": "inspect"
+            },
+            {
+              "id": "a",
+              "text": "are inspected"
+            },
+            {
+              "id": "d",
+              "text": "were inspecting"
+            }
+          ],
+          "explanation": "«Every six months» indica una rutina y usa presente simple pasivo."
+        },
+        {
+          "id": "r8",
+          "prompt": "Pets ___ inside the food hall.",
+          "options": [
+            {
+              "id": "a",
+              "text": "aren't allowed"
+            },
+            {
+              "id": "b",
+              "text": "don't allowed"
+            },
+            {
+              "id": "c",
+              "text": "isn't allowed"
+            }
+          ],
+          "explanation": "La negativa pasiva plural es «aren't allowed»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-passive-present-past"
+      ],
+      "tags": [
+        "b1",
+        "continuous-passive",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

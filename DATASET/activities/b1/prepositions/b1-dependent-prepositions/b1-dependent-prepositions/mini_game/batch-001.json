@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-dependent-prepositions-mini-game-001",
+  "level": "B1",
+  "category": "prepositions",
+  "topic": "b1-dependent-prepositions",
+  "subtopic": "b1-dependent-prepositions",
+  "lessonId": "b1-dependent-prepositions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-dependent-prepositions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-dependent-prepositions",
+      "subtopic": "b1-dependent-prepositions",
+      "taxonomyNodeIds": [
+        "b1-dependent-prepositions"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes dependent set 016? They succeeded ___ solving the puzzle.",
+          "options": [
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            }
+          ],
+          "explanation": "The verb «succeed» takes «in» before an activity."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes dependent set 003? This bicycle belongs ___ Ana.",
+          "options": [
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The verb «belong» takes «to»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes dependent set 010? We are proud ___ the team.",
+          "options": [
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "of"
+            },
+            {
+              "id": "b",
+              "text": "about"
+            }
+          ],
+          "explanation": "The adjective «proud» takes «of»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes dependent set 001? Please listen ___ the announcement.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            }
+          ],
+          "explanation": "The verb «listen» takes «to»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes dependent set 014? There is a difference ___ the plans.",
+          "options": [
+            {
+              "id": "a",
+              "text": "between"
+            },
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            }
+          ],
+          "explanation": "Use «difference between» for two or more clearly compared items."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes dependent set 006? Tom is afraid ___ dogs.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "of"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            }
+          ],
+          "explanation": "The adjective «afraid» takes «of»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes dependent set 022? She is familiar ___ the system.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "with"
+            },
+            {
+              "id": "b",
+              "text": "of"
+            }
+          ],
+          "explanation": "The adjective «familiar» takes «with» for knowledge of a system."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes dependent set 005? She apologised ___ the delay.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "about"
+            }
+          ],
+          "explanation": "The verb «apologise» takes «for» before the problem."
+        }
+      ],
+      "lessonIds": [
+        "b1-dependent-prepositions"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "gerunds",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-dependent-prepositions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-dependent-prepositions",
+      "subtopic": "b1-dependent-prepositions",
+      "taxonomyNodeIds": [
+        "b1-dependent-prepositions"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes dependent set 024? We need to concentrate ___ the task.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            }
+          ],
+          "explanation": "The verb «concentrate» takes «on»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes dependent set 019? I am tired ___ carrying this box.",
+          "options": [
+            {
+              "id": "b",
+              "text": "from"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "of"
+            }
+          ],
+          "explanation": "The adjective «tired» takes «of» before a repeated activity."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes dependent set 012? I know the answer ___ this question.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The noun «answer» takes «to»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes dependent set 018? They complained ___ waiting too long.",
+          "options": [
+            {
+              "id": "d",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "about"
+            },
+            {
+              "id": "c",
+              "text": "to"
+            }
+          ],
+          "explanation": "The verb «complain» takes «about»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes dependent set 017? He is keen ___ learning languages.",
+          "options": [
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "The adjective «keen» takes «on»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes dependent set 004? The result depends ___ the weather.",
+          "options": [
+            {
+              "id": "b",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "with"
+            }
+          ],
+          "explanation": "The verb «depend» takes «on»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes dependent set 015? She is worried ___ the result.",
+          "options": [
+            {
+              "id": "a",
+              "text": "about"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            }
+          ],
+          "explanation": "The adjective «worried» takes «about»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes dependent set 011? What is the reason ___ the change?",
+          "options": [
+            {
+              "id": "b",
+              "text": "of"
+            },
+            {
+              "id": "d",
+              "text": "about"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            }
+          ],
+          "explanation": "The noun «reason» takes «for» before its explanation."
+        }
+      ],
+      "lessonIds": [
+        "b1-dependent-prepositions"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "verbs",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

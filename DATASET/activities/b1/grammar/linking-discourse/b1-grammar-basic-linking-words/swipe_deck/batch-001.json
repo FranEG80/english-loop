@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-basic-linking-words-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "linking-discourse",
+  "subtopic": "basic-linking-words",
+  "lessonId": "b1-grammar-basic-linking-words",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-sd-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Although the museum was crowded, but we stayed for the guided tour.",
+          "explanation": "No combinamos «although» y «but»."
+        },
+        {
+          "id": "c2",
+          "statement": "We can walk or take the bus.",
+          "explanation": "«or» ofrece opciones."
+        },
+        {
+          "id": "c3",
+          "statement": "I like reading and cooking.",
+          "explanation": "«and» añade información."
+        },
+        {
+          "id": "c4",
+          "statement": "You can pay by card or in cash.",
+          "explanation": "«or» ofrece opciones."
+        },
+        {
+          "id": "c5",
+          "statement": "The flat is small but cosy.",
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "c6",
+          "statement": "Although it rained, we enjoyed the trip.",
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "c7",
+          "statement": "It was late, so we took a taxi.",
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "c8",
+          "statement": "He was late because he missed the bus.",
+          "explanation": "«because» introduce la causa."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-sd-071",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "We stayed home because it was raining.",
+          "explanation": "«because» introduce la causa."
+        },
+        {
+          "id": "c2",
+          "statement": "The hotel was nice, but the room was small.",
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "c3",
+          "statement": "Although the film was long, it was interesting.",
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "c4",
+          "statement": "I was tired because I went to bed.",
+          "explanation": "«so» introduce la consecuencia, no «because»."
+        },
+        {
+          "id": "c5",
+          "statement": "The route was longer, but the views were worth it.",
+          "explanation": "«but» contrasta dos ideas."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-sd-134",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She studied hard, so she passed the exam.",
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "c2",
+          "statement": "The room was clean and bright.",
+          "explanation": "«and» añade información."
+        },
+        {
+          "id": "c3",
+          "statement": "I was tired, so I went to bed early.",
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "c4",
+          "statement": "The food was good, but the service was slow.",
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "c5",
+          "statement": "We took a taxi because it was late.",
+          "explanation": "«because» introduce la causa."
+        },
+        {
+          "id": "c6",
+          "statement": "We took an umbrella because the forecast predicted rain.",
+          "explanation": "«because» introduce la causa."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-sd-194",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Although it was cold, we went for a walk.",
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "c2",
+          "statement": "I bought bread and milk.",
+          "explanation": "«and» añade información."
+        },
+        {
+          "id": "c3",
+          "statement": "Would you like tea or coffee?",
+          "explanation": "«or» ofrece opciones."
+        },
+        {
+          "id": "c4",
+          "statement": "Although the traffic was heavy, we arrived on time.",
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "c5",
+          "statement": "The ferry was cancelled, so we took the train instead.",
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "c6",
+          "statement": "Because the roads were flooded, therefore the match was cancelled.",
+          "explanation": "No combinamos «because» y «so»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

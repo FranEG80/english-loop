@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-present-simple-continuous-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "present-tenses",
+  "subtopic": "present-simple-vs-continuous",
+  "lessonId": "b1-grammar-present-simple-continuous",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-simple-continuous-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "present-simple-vs-continuous"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The doctor ___ another patient at the moment.",
+          "options": [
+            {
+              "id": "d",
+              "text": "is see"
+            },
+            {
+              "id": "b",
+              "text": "is seeing"
+            },
+            {
+              "id": "a",
+              "text": "sees generally"
+            }
+          ],
+          "explanation": "«See» significa aquí atender o reunirse con alguien, una acción en curso."
+        },
+        {
+          "id": "r2",
+          "prompt": "We ___ with my aunt while our kitchen is repaired.",
+          "options": [
+            {
+              "id": "d",
+              "text": "are staying"
+            },
+            {
+              "id": "a",
+              "text": "stay usually"
+            },
+            {
+              "id": "b",
+              "text": "stays"
+            }
+          ],
+          "explanation": "La estancia está limitada al periodo de reparación: «are staying»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The chef ___ the soup to check the seasoning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "tastes every fact"
+            },
+            {
+              "id": "c",
+              "text": "taste"
+            },
+            {
+              "id": "b",
+              "text": "is tasting"
+            }
+          ],
+          "explanation": "El chef realiza la acción de probarla ahora: «is tasting»."
+        },
+        {
+          "id": "r4",
+          "prompt": "We can't answer the phone because we ___ lunch.",
+          "options": [
+            {
+              "id": "b",
+              "text": "are having"
+            },
+            {
+              "id": "d",
+              "text": "are have"
+            },
+            {
+              "id": "a",
+              "text": "have every day"
+            }
+          ],
+          "explanation": "«Have lunch» es una actividad en progreso y admite el continuo."
+        },
+        {
+          "id": "r5",
+          "prompt": "Nina ___ two younger brothers.",
+          "options": [
+            {
+              "id": "b",
+              "text": "is having"
+            },
+            {
+              "id": "c",
+              "text": "have"
+            },
+            {
+              "id": "a",
+              "text": "has"
+            }
+          ],
+          "explanation": "«Have» expresa posesión y usa present simple: «has»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Please be quiet. I ___ a voice message.",
+          "options": [
+            {
+              "id": "b",
+              "text": "am recording"
+            },
+            {
+              "id": "d",
+              "text": "recorded"
+            },
+            {
+              "id": "a",
+              "text": "record"
+            }
+          ],
+          "explanation": "La grabación está en progreso en el momento de hablar: «am recording»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The soup ___ too salty to me.",
+          "options": [
+            {
+              "id": "c",
+              "text": "tastes"
+            },
+            {
+              "id": "d",
+              "text": "tasting"
+            },
+            {
+              "id": "a",
+              "text": "is tasting"
+            }
+          ],
+          "explanation": "«Taste» describe una propiedad del alimento y usa present simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "The number of online applications ___ steadily.",
+          "options": [
+            {
+              "id": "d",
+              "text": "are increasing"
+            },
+            {
+              "id": "a",
+              "text": "increases every fact"
+            },
+            {
+              "id": "c",
+              "text": "is increasing"
+            }
+          ],
+          "explanation": "Se describe una tendencia y el núcleo singular «number» exige «is increasing»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-simple-continuous"
+      ],
+      "tags": [
+        "b1",
+        "present-tenses",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-simple-continuous-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "present-simple-vs-continuous"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I ___ why the total is different now.",
+          "options": [
+            {
+              "id": "a",
+              "text": "am understanding"
+            },
+            {
+              "id": "d",
+              "text": "am understand"
+            },
+            {
+              "id": "c",
+              "text": "understand"
+            }
+          ],
+          "explanation": "«Understand» es un verbo de estado y usa present simple."
+        },
+        {
+          "id": "r2",
+          "prompt": "This key ___ to the storage room.",
+          "options": [
+            {
+              "id": "c",
+              "text": "belongs"
+            },
+            {
+              "id": "d",
+              "text": "belonged now"
+            },
+            {
+              "id": "a",
+              "text": "is belonging"
+            }
+          ],
+          "explanation": "«Belong» describe un estado y el sujeto singular requiere «belongs»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I ___ the proposal is practical, but I need more detail.",
+          "options": [
+            {
+              "id": "d",
+              "text": "am think"
+            },
+            {
+              "id": "b",
+              "text": "think"
+            },
+            {
+              "id": "c",
+              "text": "thinks"
+            }
+          ],
+          "explanation": "«Think» significa aquí «opinar», por lo que funciona como verbo de estado."
+        },
+        {
+          "id": "r4",
+          "prompt": "I ___ what you mean, but I don't agree with the solution.",
+          "options": [
+            {
+              "id": "a",
+              "text": "see"
+            },
+            {
+              "id": "c",
+              "text": "sees"
+            },
+            {
+              "id": "b",
+              "text": "am seeing"
+            }
+          ],
+          "explanation": "«See» significa aquí «comprender» y funciona como verbo de estado."
+        },
+        {
+          "id": "r5",
+          "prompt": "For this month's trial, the editor ___ an extra accessibility section in every report.",
+          "options": [
+            {
+              "id": "a",
+              "text": "is including"
+            },
+            {
+              "id": "c",
+              "text": "include"
+            },
+            {
+              "id": "d",
+              "text": "is include"
+            }
+          ],
+          "explanation": "La decisión editorial está limitada a la prueba de este mes; «is including» presenta una práctica temporal."
+        },
+        {
+          "id": "r6",
+          "prompt": "More residents ___ the new bus route each month.",
+          "options": [
+            {
+              "id": "c",
+              "text": "uses"
+            },
+            {
+              "id": "b",
+              "text": "are using"
+            },
+            {
+              "id": "d",
+              "text": "is using"
+            }
+          ],
+          "explanation": "«Each month» indica aquí una tendencia en desarrollo: «are using»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Lena normally ___ the 7.20 train to work.",
+          "options": [
+            {
+              "id": "d",
+              "text": "taking"
+            },
+            {
+              "id": "a",
+              "text": "takes"
+            },
+            {
+              "id": "c",
+              "text": "take"
+            }
+          ],
+          "explanation": "«Normally» presenta una rutina; con sujeto singular usamos «takes»."
+        },
+        {
+          "id": "r8",
+          "prompt": "This route usually ___ about forty minutes.",
+          "options": [
+            {
+              "id": "a",
+              "text": "takes"
+            },
+            {
+              "id": "d",
+              "text": "is take"
+            },
+            {
+              "id": "c",
+              "text": "take"
+            }
+          ],
+          "explanation": "La duración habitual se expresa con present simple: «takes»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-simple-continuous"
+      ],
+      "tags": [
+        "b1",
+        "present-tenses",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

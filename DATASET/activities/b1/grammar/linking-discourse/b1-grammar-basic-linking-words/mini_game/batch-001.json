@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-basic-linking-words-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "linking-discourse",
+  "subtopic": "basic-linking-words",
+  "lessonId": "b1-grammar-basic-linking-words",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I like reading ___ cooking.",
+          "options": [
+            {
+              "id": "a",
+              "text": "and"
+            },
+            {
+              "id": "b",
+              "text": "but"
+            },
+            {
+              "id": "d",
+              "text": "because"
+            }
+          ],
+          "explanation": "«and» añade información."
+        },
+        {
+          "id": "r2",
+          "prompt": "___ the film was long, it was interesting.",
+          "options": [
+            {
+              "id": "b",
+              "text": "So"
+            },
+            {
+              "id": "a",
+              "text": "Although"
+            },
+            {
+              "id": "c",
+              "text": "Because"
+            }
+          ],
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "r3",
+          "prompt": "We can walk ___ take the bus.",
+          "options": [
+            {
+              "id": "a",
+              "text": "or"
+            },
+            {
+              "id": "c",
+              "text": "so"
+            },
+            {
+              "id": "d",
+              "text": "because"
+            }
+          ],
+          "explanation": "«or» ofrece opciones."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ it was cold, we went for a walk.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Because"
+            },
+            {
+              "id": "a",
+              "text": "Although"
+            },
+            {
+              "id": "d",
+              "text": "Or"
+            }
+          ],
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "r5",
+          "prompt": "He was late ___ he missed the bus.",
+          "options": [
+            {
+              "id": "c",
+              "text": "but"
+            },
+            {
+              "id": "a",
+              "text": "because"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            }
+          ],
+          "explanation": "«because» introduce la causa."
+        },
+        {
+          "id": "r6",
+          "prompt": "It was late, ___ we took a taxi.",
+          "options": [
+            {
+              "id": "c",
+              "text": "but"
+            },
+            {
+              "id": "a",
+              "text": "so"
+            },
+            {
+              "id": "b",
+              "text": "because"
+            }
+          ],
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "r7",
+          "prompt": "The hotel was nice, ___ the room was small.",
+          "options": [
+            {
+              "id": "a",
+              "text": "but"
+            },
+            {
+              "id": "d",
+              "text": "or"
+            },
+            {
+              "id": "c",
+              "text": "because"
+            }
+          ],
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "r8",
+          "prompt": "The room was clean ___ bright.",
+          "options": [
+            {
+              "id": "d",
+              "text": "because"
+            },
+            {
+              "id": "b",
+              "text": "but"
+            },
+            {
+              "id": "a",
+              "text": "and"
+            }
+          ],
+          "explanation": "«and» añade información."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We booked a hotel near the station ___ the last train was cancelled.",
+          "options": [
+            {
+              "id": "d",
+              "text": "or"
+            },
+            {
+              "id": "a",
+              "text": "because"
+            },
+            {
+              "id": "c",
+              "text": "but"
+            }
+          ],
+          "explanation": "«because» introduce la causa."
+        },
+        {
+          "id": "r2",
+          "prompt": "Would you like tea ___ coffee?",
+          "options": [
+            {
+              "id": "a",
+              "text": "or"
+            },
+            {
+              "id": "b",
+              "text": "but"
+            },
+            {
+              "id": "c",
+              "text": "so"
+            }
+          ],
+          "explanation": "«or» ofrece opciones."
+        },
+        {
+          "id": "r3",
+          "prompt": "I bought bread ___ milk.",
+          "options": [
+            {
+              "id": "d",
+              "text": "because"
+            },
+            {
+              "id": "b",
+              "text": "but"
+            },
+            {
+              "id": "a",
+              "text": "and"
+            }
+          ],
+          "explanation": "«and» añade información."
+        },
+        {
+          "id": "r4",
+          "prompt": "She studied hard, ___ she passed the exam.",
+          "options": [
+            {
+              "id": "a",
+              "text": "so"
+            },
+            {
+              "id": "b",
+              "text": "because"
+            },
+            {
+              "id": "c",
+              "text": "but"
+            }
+          ],
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "r5",
+          "prompt": "I wanted to go, ___ I was too tired.",
+          "options": [
+            {
+              "id": "a",
+              "text": "but"
+            },
+            {
+              "id": "d",
+              "text": "or"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            }
+          ],
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "r6",
+          "prompt": "I was tired, ___ I went to bed early.",
+          "options": [
+            {
+              "id": "b",
+              "text": "because"
+            },
+            {
+              "id": "a",
+              "text": "so"
+            },
+            {
+              "id": "d",
+              "text": "although"
+            }
+          ],
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "r7",
+          "prompt": "She wore a coat ___ the wind was freezing.",
+          "options": [
+            {
+              "id": "b",
+              "text": "so"
+            },
+            {
+              "id": "d",
+              "text": "or"
+            },
+            {
+              "id": "a",
+              "text": "because"
+            }
+          ],
+          "explanation": "«because» introduce la causa."
+        },
+        {
+          "id": "r8",
+          "prompt": "The flat is small ___ cosy.",
+          "options": [
+            {
+              "id": "c",
+              "text": "because"
+            },
+            {
+              "id": "a",
+              "text": "but"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            }
+          ],
+          "explanation": "«but» contrasta dos ideas."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

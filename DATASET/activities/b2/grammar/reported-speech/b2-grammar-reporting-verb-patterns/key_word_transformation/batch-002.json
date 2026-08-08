@@ -1,0 +1,1141 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-verb-patterns-key-word-transformation-002",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reporting-verb-patterns",
+  "lessonId": "b2-grammar-reporting-verb-patterns",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-026",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The referee said that the striker had dived in the penalty area.",
+      "firstSentence": "The referee said that the striker had dived in the penalty area.",
+      "keyWord": "ACCUSED",
+      "gapText": "The referee [gap1] in the penalty area.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "accused the striker of diving"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Entre «accused» y «of» se coloca la persona acusada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-027",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My flatmate said that I had drunk his orange juice.",
+      "firstSentence": "My flatmate said that I had drunk his orange juice.",
+      "keyWord": "ACCUSED",
+      "gapText": "My flatmate [gap1] his orange juice.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "accused me of drinking"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «of» hace falta gerundio, aunque el original vaya en pasado perfecto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-028",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The inspector said that the firm had hidden its profits.",
+      "firstSentence": "The inspector said that the firm had hidden its profits.",
+      "keyWord": "ACCUSED",
+      "gapText": "The inspector [gap1] its profits.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "accused the firm of hiding"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Accuse» admite un sujeto colectivo como acusado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-029",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«You always interrupt me», Paula told her brother.",
+      "firstSentence": "«You always interrupt me», Paula told her brother.",
+      "keyWord": "ACCUSED",
+      "gapText": "Paula [gap1] her.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "accused her brother of interrupting"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El reproche del estilo directo se reformula con «accuse of» más gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-030",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The coach blamed the players for not training hard enough.",
+      "firstSentence": "The coach blamed the players for not training hard enough.",
+      "keyWord": "ACCUSED",
+      "gapText": "The coach [gap1] not training hard enough.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "accused the players of"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Blame somebody for» y «accuse somebody of» comparten estructura con gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-031",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«I am sorry I arrived so late», said Hugo.",
+      "firstSentence": "«I am sorry I arrived so late», said Hugo.",
+      "keyWord": "APOLOGISED",
+      "gapText": "Hugo [gap1] so late.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "apologised for arriving"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Apologise for» pide gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-032",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Nina said sorry because she had shouted at her sister.",
+      "firstSentence": "Nina said sorry because she had shouted at her sister.",
+      "keyWord": "APOLOGISED",
+      "gapText": "Nina [gap1] at her sister.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "apologised for shouting"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La causa introducida por «because» se convierte en gerundio tras «for»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-033",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The airline said it was sorry for the delay to our flight.",
+      "firstSentence": "The airline said it was sorry for the delay to our flight.",
+      "keyWord": "APOLOGISED",
+      "gapText": "The airline [gap1] our flight.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "apologised for delaying"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sustantivo «delay» se recupera como verbo en gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-034",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«I am sorry that I did not call you back», said Omar.",
+      "firstSentence": "«I am sorry that I did not call you back», said Omar.",
+      "keyWord": "APOLOGISED",
+      "gapText": "Omar [gap1] me back.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "apologised for not calling"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La negación del gerundio se marca con «not» delante."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-035",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Beatriz said she was sorry for having lost her temper.",
+      "firstSentence": "Beatriz said she was sorry for having lost her temper.",
+      "keyWord": "APOLOGISED",
+      "gapText": "Beatriz [gap1] her temper.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "apologised for losing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El gerundio simple basta cuando el contexto ya sitúa la acción en el pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-036",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The waiter said he was sorry because he had spilt soup on my jacket.",
+      "firstSentence": "The waiter said he was sorry because he had spilt soup on my jacket.",
+      "keyWord": "APOLOGISED",
+      "gapText": "The waiter [gap1] soup on my jacket.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "apologised for spilling"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «for» nunca aparece un infinitivo con «to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-037",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Felipe said that he would definitely pay for the tickets himself.",
+      "firstSentence": "Felipe said that he would definitely pay for the tickets himself.",
+      "keyWord": "INSISTED",
+      "gapText": "Felipe [gap1] for the tickets himself.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "insisted on paying"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Insist on» se construye con gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-038",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«You really must stay for dinner», said our hosts.",
+      "firstSentence": "«You really must stay for dinner», said our hosts.",
+      "keyWord": "INSISTED",
+      "gapText": "Our hosts [gap1] for dinner.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "insisted on us staying",
+              "insisted on our staying"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Cuando el gerundio tiene sujeto propio se usa «us» o el posesivo «our»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-039",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The guide said that everyone had to wear a helmet.",
+      "firstSentence": "The guide said that everyone had to wear a helmet.",
+      "keyWord": "INSISTED",
+      "gapText": "The guide [gap1] a helmet.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "insisted on everyone wearing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto del gerundio va entre «on» y la forma en «-ing»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-040",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Marcos said he definitely wanted to travel by night train.",
+      "firstSentence": "Marcos said he definitely wanted to travel by night train.",
+      "keyWord": "INSISTED",
+      "gapText": "Marcos [gap1] by night train.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "insisted on travelling"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Insist» no admite infinitivo con «to» detrás de «on»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-041",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The landlord said that the rent had to be paid in cash.",
+      "firstSentence": "The landlord said that the rent had to be paid in cash.",
+      "keyWord": "INSISTED",
+      "gapText": "The landlord [gap1] in cash.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "insisted on being paid"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El gerundio pasivo «being paid» conserva el sentido del original."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-042",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My grandmother said that I really had to try her cheesecake.",
+      "firstSentence": "My grandmother said that I really had to try her cheesecake.",
+      "keyWord": "INSISTED",
+      "gapText": "My grandmother [gap1] her cheesecake.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "insisted on me trying",
+              "insisted on my trying"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con sujeto explícito valen el pronombre objeto y el posesivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-043",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«Do not swim near the rocks», the lifeguard told the children.",
+      "firstSentence": "«Do not swim near the rocks», the lifeguard told the children.",
+      "keyWord": "WARNED",
+      "gapText": "The lifeguard [gap1] near the rocks.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "warned the children against swimming"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Warn somebody against» va seguido de gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-044",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The doctor told me not to lift heavy boxes.",
+      "firstSentence": "The doctor told me not to lift heavy boxes.",
+      "keyWord": "WARNED",
+      "gapText": "The doctor [gap1] heavy boxes.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "warned me against lifting"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Tell not to» equivale a «warn against» más gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-045",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Our teacher said that using a translator for the essay was a bad idea.",
+      "firstSentence": "Our teacher said that using a translator for the essay was a bad idea.",
+      "keyWord": "WARNED",
+      "gapText": "Our teacher [gap1] a translator for the essay.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "warned us against using"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El consejo negativo se reporta con «warn against»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-046",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The mechanic told my father not to buy a second-hand engine.",
+      "firstSentence": "The mechanic told my father not to buy a second-hand engine.",
+      "keyWord": "WARNED",
+      "gapText": "The mechanic [gap1] a second-hand engine.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "warned my father against buying"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La persona avisada se coloca justo detrás de «warned»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-047",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The guidebook says that you should not travel alone at night.",
+      "firstSentence": "The guidebook says that you should not travel alone at night.",
+      "keyWord": "WARNS",
+      "gapText": "The guidebook [gap1] alone at night.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "warns against travelling"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Warn against» funciona sin objeto cuando el aviso es general."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-048",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«Do not invest all your savings in one company», the adviser told Clara.",
+      "firstSentence": "«Do not invest all your savings in one company», the adviser told Clara.",
+      "keyWord": "WARNED",
+      "gapText": "The adviser [gap1] all her savings in one company.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "warned Clara against investing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El imperativo negativo se reporta con «warn against» y gerundio."
+    }
+  ]
+}

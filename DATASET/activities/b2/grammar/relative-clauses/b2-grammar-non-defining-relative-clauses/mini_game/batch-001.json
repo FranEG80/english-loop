@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-non-defining-relative-clauses-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "relative-clauses",
+  "subtopic": "non-defining-relative-clauses",
+  "lessonId": "b2-grammar-non-defining-relative-clauses",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-non-defining-relative-clauses-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "non-defining-relative-clauses",
+      "taxonomyNodeIds": [
+        "non-defining-relative-clauses"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The storm damaged the roof, ___ forced the theatre to close.",
+          "options": [
+            {
+              "id": "c",
+              "text": "whose"
+            },
+            {
+              "id": "d",
+              "text": "that"
+            },
+            {
+              "id": "b",
+              "text": "which"
+            }
+          ],
+          "explanation": "Which can refer to the whole preceding situation."
+        },
+        {
+          "id": "r2",
+          "prompt": "The library, ___ closes at eight, has quiet study rooms.",
+          "options": [
+            {
+              "id": "c",
+              "text": "whose"
+            },
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            }
+          ],
+          "explanation": "Which refers to the library, a thing."
+        },
+        {
+          "id": "r3",
+          "prompt": "The conference was cancelled, ___ disappointed the delegates.",
+          "options": [
+            {
+              "id": "c",
+              "text": "whose"
+            },
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            }
+          ],
+          "explanation": "Which refers to the whole preceding event."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence avoids an unnecessary repeated subject?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The museum, that opened in 1890, is popular."
+            },
+            {
+              "id": "b",
+              "text": "The museum, which opened in 1890, is popular."
+            },
+            {
+              "id": "a",
+              "text": "The museum, where it opened in 1890, is popular."
+            }
+          ],
+          "explanation": "Which itself is the subject of opened, so no extra pronoun is needed."
+        },
+        {
+          "id": "r5",
+          "prompt": "The proposal, ___ starts in April, needs funding.",
+          "options": [
+            {
+              "id": "b",
+              "text": "when"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            }
+          ],
+          "explanation": "Which refers to a proposal."
+        },
+        {
+          "id": "r6",
+          "prompt": "The engineer, ___ design won, received an award.",
+          "options": [
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "b",
+              "text": "whose"
+            },
+            {
+              "id": "d",
+              "text": "where"
+            }
+          ],
+          "explanation": "Whose is followed by the possessed noun design."
+        },
+        {
+          "id": "r7",
+          "prompt": "2019, ___ the centre opened, was a memorable year.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "when"
+            }
+          ],
+          "explanation": "When is used with a time expression."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence is grammatically and punctuationally correct?",
+          "options": [
+            {
+              "id": "b",
+              "text": "The permit, that was delayed, affected the opening date."
+            },
+            {
+              "id": "a",
+              "text": "The permit, which was delayed, affected the opening date."
+            },
+            {
+              "id": "d",
+              "text": "The permit, was delayed which affected the opening date."
+            }
+          ],
+          "explanation": "Which is correct between commas in this additional clause."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-non-defining-relative-clauses"
+      ],
+      "tags": [
+        "b2",
+        "which",
+        "whole-idea",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-non-defining-relative-clauses-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "non-defining-relative-clauses",
+      "taxonomyNodeIds": [
+        "non-defining-relative-clauses"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Friday, ___ the results were published, was unusually busy.",
+          "options": [
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "c",
+              "text": "when"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            }
+          ],
+          "explanation": "When refers to a time."
+        },
+        {
+          "id": "r2",
+          "prompt": "The date ___ the contract begins is printed on the first page.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on which"
+            },
+            {
+              "id": "d",
+              "text": "on where"
+            },
+            {
+              "id": "c",
+              "text": "on that"
+            }
+          ],
+          "explanation": "On which is the formal relative phrase for a date."
+        },
+        {
+          "id": "r3",
+          "prompt": "The committee, ___ members work across Europe, meets online.",
+          "options": [
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "a",
+              "text": "whose"
+            },
+            {
+              "id": "d",
+              "text": "when"
+            }
+          ],
+          "explanation": "Whose can express the committee members' relationship."
+        },
+        {
+          "id": "r4",
+          "prompt": "The train, ___ I missed, was the last one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "which"
+            }
+          ],
+          "explanation": "Which is retained as the object of missed."
+        },
+        {
+          "id": "r5",
+          "prompt": "The island, ___ no cars are allowed, is easy to explore on foot.",
+          "options": [
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "d",
+              "text": "when"
+            }
+          ],
+          "explanation": "Where links the additional clause to a place."
+        },
+        {
+          "id": "r6",
+          "prompt": "Kyoto, ___ the conference was held, was crowded.",
+          "options": [
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "c",
+              "text": "who"
+            }
+          ],
+          "explanation": "Where introduces information about a location."
+        },
+        {
+          "id": "r7",
+          "prompt": "The village, ___ my grandmother grew up, is now protected.",
+          "options": [
+            {
+              "id": "b",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "which it"
+            },
+            {
+              "id": "a",
+              "text": "when"
+            }
+          ],
+          "explanation": "Where replaces in which for a place."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which option keeps the meaning that all the students submitted the form?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The students submitted, who the form, received a badge."
+            },
+            {
+              "id": "b",
+              "text": "The students, who submitted the form, received a badge."
+            },
+            {
+              "id": "c",
+              "text": "The students, that submitted the form received a badge."
+            }
+          ],
+          "explanation": "Commas present the information as additional about all the students."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-non-defining-relative-clauses"
+      ],
+      "tags": [
+        "b2",
+        "when",
+        "time",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-passives-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "reporting-passives",
+  "lessonId": "b2-grammar-reporting-passives",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The survey results ___ reliable because the sample was small.",
+          "options": [
+            {
+              "id": "a",
+              "text": "are not thought to be"
+            },
+            {
+              "id": "c",
+              "text": "are not thought to have"
+            },
+            {
+              "id": "d",
+              "text": "it is not thought to be"
+            }
+          ],
+          "explanation": "El patrón personal negativo es subject + are not thought to be."
+        },
+        {
+          "id": "r2",
+          "prompt": "The emergency shelter is expected ___ before nightfall.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to be opened"
+            },
+            {
+              "id": "a",
+              "text": "to open"
+            },
+            {
+              "id": "d",
+              "text": "that open"
+            }
+          ],
+          "explanation": "El refugio recibe la acción de abrirse: is expected to be opened."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ that the island has no permanent residents.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The island reports"
+            },
+            {
+              "id": "a",
+              "text": "It is reported"
+            },
+            {
+              "id": "c",
+              "text": "It reports"
+            }
+          ],
+          "explanation": "La estructura impersonal es It is reported that + oración."
+        },
+        {
+          "id": "r4",
+          "prompt": "The figures are not thought ___ informal workers.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to be included"
+            },
+            {
+              "id": "a",
+              "text": "to include"
+            },
+            {
+              "id": "c",
+              "text": "that include"
+            }
+          ],
+          "explanation": "Las cifras son el sujeto de include; el infinitivo es activo: to include."
+        },
+        {
+          "id": "r5",
+          "prompt": "The manuscript is believed ___ in the monastery in 1420.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to write"
+            },
+            {
+              "id": "d",
+              "text": "that written"
+            },
+            {
+              "id": "c",
+              "text": "to have been written"
+            }
+          ],
+          "explanation": "El manuscrito recibe la acción y la escritura ocurrió antes: to have been written."
+        },
+        {
+          "id": "r6",
+          "prompt": "The witness is reported ___ the country before the trial.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to leave"
+            },
+            {
+              "id": "d",
+              "text": "to have been left"
+            },
+            {
+              "id": "c",
+              "text": "to have left"
+            }
+          ],
+          "explanation": "El testigo realizó la salida antes del juicio: to have left, no una pasiva."
+        },
+        {
+          "id": "r7",
+          "prompt": "___ that the library will reopen on Monday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is expected"
+            },
+            {
+              "id": "c",
+              "text": "It expects"
+            },
+            {
+              "id": "a",
+              "text": "The library is expected"
+            }
+          ],
+          "explanation": "Con una oración completa después de expected usamos It is expected that."
+        },
+        {
+          "id": "r8",
+          "prompt": "The new tram line is expected ___ by spring.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to be completed"
+            },
+            {
+              "id": "d",
+              "text": "that complete"
+            },
+            {
+              "id": "c",
+              "text": "being complete"
+            }
+          ],
+          "explanation": "La línea recibe la acción, así que usamos el infinitivo pasivo to be completed."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "negative-reporting",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "People report that the observatory is being upgraded.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The observatory is reported to be being upgraded."
+            },
+            {
+              "id": "d",
+              "text": "It reports the observatory to upgrade."
+            },
+            {
+              "id": "c",
+              "text": "The observatory reports being upgraded."
+            }
+          ],
+          "explanation": "Para conservar la pasiva continua usamos to be being upgraded."
+        },
+        {
+          "id": "r2",
+          "prompt": "The archaeologists are believed ___ the sealed chamber.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have discovered"
+            },
+            {
+              "id": "d",
+              "text": "that discovered"
+            },
+            {
+              "id": "c",
+              "text": "to have been discovered"
+            }
+          ],
+          "explanation": "Los arqueólogos son quienes realizaron el descubrimiento, por eso usamos to have discovered."
+        },
+        {
+          "id": "r3",
+          "prompt": "The bridge is said ___ during last winter's flood.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to have been damaged"
+            },
+            {
+              "id": "d",
+              "text": "that it damaged"
+            },
+            {
+              "id": "b",
+              "text": "to be damaging"
+            }
+          ],
+          "explanation": "La inundación ocurrió antes del informe y el puente recibió el daño."
+        },
+        {
+          "id": "r4",
+          "prompt": "The vaccine is believed ___ effective against the new strain.",
+          "options": [
+            {
+              "id": "d",
+              "text": "that remain"
+            },
+            {
+              "id": "b",
+              "text": "to be remained"
+            },
+            {
+              "id": "a",
+              "text": "to remain"
+            }
+          ],
+          "explanation": "La vacuna es el sujeto lógico de remain, por eso el infinitivo es activo."
+        },
+        {
+          "id": "r5",
+          "prompt": "The rare coins are thought ___ from a shipwreck.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to be recovered"
+            },
+            {
+              "id": "c",
+              "text": "to have been recovered"
+            },
+            {
+              "id": "d",
+              "text": "that have recovered"
+            }
+          ],
+          "explanation": "Las monedas fueron recuperadas antes de la creencia: to have been recovered."
+        },
+        {
+          "id": "r6",
+          "prompt": "___ that the river had risen by two metres overnight.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It was reported"
+            },
+            {
+              "id": "d",
+              "text": "The river was reporting"
+            },
+            {
+              "id": "c",
+              "text": "It reported"
+            }
+          ],
+          "explanation": "Como el informe se sitúa en el pasado, usamos It was reported that."
+        },
+        {
+          "id": "r7",
+          "prompt": "___ that several rural clinics lack specialist staff.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is reported"
+            },
+            {
+              "id": "a",
+              "text": "The clinics are reported"
+            },
+            {
+              "id": "d",
+              "text": "It reports"
+            }
+          ],
+          "explanation": "It is reported that permite presentar el dato sin nombrar la fuente."
+        },
+        {
+          "id": "r8",
+          "prompt": "People say that the theatre is haunted.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The theatre is said to be haunted."
+            },
+            {
+              "id": "c",
+              "text": "It says the theatre to be haunted."
+            },
+            {
+              "id": "d",
+              "text": "The theatre said to haunt."
+            }
+          ],
+          "explanation": "El sujeto de la subordinada pasa a ser sujeto principal y lleva to be haunted."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "continuous-passive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

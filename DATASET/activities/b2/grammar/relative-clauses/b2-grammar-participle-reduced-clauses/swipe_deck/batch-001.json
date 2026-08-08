@@ -1,0 +1,308 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-participle-reduced-clauses-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "relative-clauses",
+  "subtopic": "participle-reduced-clauses",
+  "lessonId": "b2-grammar-participle-reduced-clauses",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-participle-reduced-clauses-sd-047",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "participle-reduced-clauses",
+      "taxonomyNodeIds": [
+        "participle-reduced-clauses"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The sentence “Concerned about costs, the plan revised the team” has a logical subject relationship.",
+          "explanation": "The team, not the plan, should be concerned and revise."
+        },
+        {
+          "id": "c2",
+          "statement": "A participle clause can express a condition after if, as in if used sparingly.",
+          "explanation": "If used is a shortened passive conditional."
+        },
+        {
+          "id": "c3",
+          "statement": "“Walking to the station, the rain started” is a clear example of a shared subject.",
+          "explanation": "The rain cannot be the walker; the modifier dangles."
+        },
+        {
+          "id": "c4",
+          "statement": "Concerned about costs can give a reason for revising a plan.",
+          "explanation": "The state of being concerned explains the action."
+        },
+        {
+          "id": "c5",
+          "statement": "In “The engine failed, leaving the vehicle on the hard shoulder”, leaving describes a result.",
+          "explanation": "The vehicle was left there as a consequence."
+        },
+        {
+          "id": "c6",
+          "statement": "The form having check is correct after having.",
+          "explanation": "Use the past participle: having checked."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-participle-reduced-clauses"
+      ],
+      "tags": [
+        "b2",
+        "dangling-modifier",
+        "error-spotting",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-participle-reduced-clauses-sd-110",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "participle-reduced-clauses",
+      "taxonomyNodeIds": [
+        "participle-reduced-clauses"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The past participle always describes an active subject performing the verb.",
+          "explanation": "It often describes a passive relationship or state."
+        },
+        {
+          "id": "c2",
+          "statement": "In “Walking through the market, we noticed a stall”, we is the subject of both actions.",
+          "explanation": "We were walking and noticing."
+        },
+        {
+          "id": "c3",
+          "statement": "The past participle in “the documents submitted after noon” reduces a passive relative clause.",
+          "explanation": "It means documents that were submitted after noon."
+        },
+        {
+          "id": "c4",
+          "statement": "Keeping a full clause can be better than reducing it when the subjects are different.",
+          "explanation": "A full clause can make the subject relationship explicit."
+        },
+        {
+          "id": "c5",
+          "statement": "Having been warned means that the subject gave the warning.",
+          "explanation": "The subject received the warning."
+        },
+        {
+          "id": "c6",
+          "statement": "A past participle often expresses a passive relationship with the noun.",
+          "explanation": "Collected samples are samples that were collected."
+        },
+        {
+          "id": "c7",
+          "statement": "“The files storing on the server are encrypted” is the normal passive reduction.",
+          "explanation": "Use stored because the files are stored."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-participle-reduced-clauses"
+      ],
+      "tags": [
+        "b2",
+        "past-participle",
+        "error-spotting",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-participle-reduced-clauses-sd-173",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "participle-reduced-clauses",
+      "taxonomyNodeIds": [
+        "participle-reduced-clauses"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Having been informed of the change means the passengers received the information.",
+          "explanation": "Been informed is passive."
+        },
+        {
+          "id": "c2",
+          "statement": "Reduced clauses are especially useful for avoiding repeated subjects in formal prose.",
+          "explanation": "They condense repeated clause structure."
+        },
+        {
+          "id": "c3",
+          "statement": "Leaving the vehicle on the hard shoulder can express the result of an engine failure.",
+          "explanation": "An -ing clause can present a resulting consequence."
+        },
+        {
+          "id": "c4",
+          "statement": "Having reviewed the contract suggests that the review happened after the question.",
+          "explanation": "Having reviewed places the review before the main action."
+        },
+        {
+          "id": "c5",
+          "statement": "If stored below zero is active because the samples store the temperature.",
+          "explanation": "The samples are stored below zero, so the relation is passive."
+        },
+        {
+          "id": "c6",
+          "statement": "The subjects in “Having checked the map, we chose the road” are unrelated.",
+          "explanation": "We performed both actions."
+        },
+        {
+          "id": "c7",
+          "statement": "A present participle can reduce an active clause when the subjects are shared.",
+          "explanation": "The shared subject is essential for a clear reduction."
+        },
+        {
+          "id": "c8",
+          "statement": "Having + past participle is the same as using an infinitive after a modal.",
+          "explanation": "The two structures have different forms and meanings."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-participle-reduced-clauses"
+      ],
+      "tags": [
+        "b2",
+        "perfect-passive",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

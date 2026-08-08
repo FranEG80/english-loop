@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-dependent-prepositions-mini-game-001",
+  "level": "B2",
+  "category": "prepositions",
+  "topic": "b2-dependent-prepositions",
+  "subtopic": "b2-dependent-prepositions",
+  "lessonId": "b2-dependent-prepositions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-dependent-prepositions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-dependent-prepositions",
+      "subtopic": "b2-dependent-prepositions",
+      "taxonomyNodeIds": [
+        "b2-dependent-prepositions"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The closure could have an impact ___ local employment.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "The correct dependency is “an impact on”, so “on” completes the pattern."
+        },
+        {
+          "id": "r2",
+          "prompt": "The equipment is subject ___ annual inspection.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            }
+          ],
+          "explanation": "The phrase “be subject to” requires “to” before its complement."
+        },
+        {
+          "id": "r3",
+          "prompt": "One advantage ___ remote collaboration is wider recruitment.",
+          "options": [
+            {
+              "id": "a",
+              "text": "of"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The correct dependency is “an advantage of”, so “of” completes the pattern."
+        },
+        {
+          "id": "r4",
+          "prompt": "Researchers were given access ___ secure records.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The correct dependency is “access to”, so “to” completes the pattern."
+        },
+        {
+          "id": "r5",
+          "prompt": "The explanation is consistent ___ the published figures.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "with"
+            }
+          ],
+          "explanation": "The correct dependency is “be consistent with”, so “with” completes the pattern."
+        },
+        {
+          "id": "r6",
+          "prompt": "The manager expressed a preference ___ smaller meetings.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "with"
+            }
+          ],
+          "explanation": "The phrase “a preference for” requires “for” before its complement."
+        },
+        {
+          "id": "r7",
+          "prompt": "The team relies ___ the dashboard when checking live figures.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "The correct dependency is “rely on”, so “on” completes the pattern."
+        },
+        {
+          "id": "r8",
+          "prompt": "The analyst can distinguish ___ the two similar samples.",
+          "options": [
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "between"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            }
+          ],
+          "explanation": "The phrase “distinguish between” requires “between” before its complement."
+        }
+      ],
+      "lessonIds": [
+        "b2-dependent-prepositions"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "preposition-choice",
+        "verb-adjective-noun",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-dependent-prepositions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-dependent-prepositions",
+      "subtopic": "b2-dependent-prepositions",
+      "taxonomyNodeIds": [
+        "b2-dependent-prepositions"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The manager expressed a preference ___ smaller meetings.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The correct dependency is “a preference for”, so “for” completes the pattern."
+        },
+        {
+          "id": "r2",
+          "prompt": "Small errors may contribute ___ the final outcome.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The correct dependency is “contribute to”, so “to” completes the pattern."
+        },
+        {
+          "id": "r3",
+          "prompt": "There was an increase ___ online bookings.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            }
+          ],
+          "explanation": "The correct dependency is “an increase in”, so “in” completes the pattern."
+        },
+        {
+          "id": "r4",
+          "prompt": "The committee insisted ___ an independent review.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            }
+          ],
+          "explanation": "The phrase “insist on” requires “on” before its complement."
+        },
+        {
+          "id": "r5",
+          "prompt": "The equipment is subject ___ annual inspection.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "of"
+            }
+          ],
+          "explanation": "The correct dependency is “be subject to”, so “to” completes the pattern."
+        },
+        {
+          "id": "r6",
+          "prompt": "The survey revealed a demand ___ flexible contracts.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The correct dependency is “a demand for”, so “for” completes the pattern."
+        },
+        {
+          "id": "r7",
+          "prompt": "The material is resistant ___ short-term pressure.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The correct dependency is “be resistant to”, so “to” completes the pattern."
+        },
+        {
+          "id": "r8",
+          "prompt": "Small errors may contribute ___ the final outcome.",
+          "options": [
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The phrase “contribute to” requires “to” before its complement."
+        }
+      ],
+      "lessonIds": [
+        "b2-dependent-prepositions"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "preposition-choice",
+        "verb-adjective-noun",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

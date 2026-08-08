@@ -1,0 +1,455 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-comparatives-superlatives-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "comparisons",
+  "subtopic": "comparative-superlative",
+  "lessonId": "b1-grammar-comparatives-superlatives",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The train is faster ___ the bus.",
+          "options": [
+            {
+              "id": "c",
+              "text": "that"
+            },
+            {
+              "id": "d",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "than"
+            }
+          ],
+          "explanation": "La comparación usa «than»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Her new flat is ___ than the old one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "bigest"
+            },
+            {
+              "id": "d",
+              "text": "most big"
+            },
+            {
+              "id": "a",
+              "text": "bigger"
+            }
+          ],
+          "explanation": "«big» dobla la consonante: «bigger»."
+        },
+        {
+          "id": "r3",
+          "prompt": "That was the ___ film of the year.",
+          "options": [
+            {
+              "id": "d",
+              "text": "most bad"
+            },
+            {
+              "id": "b",
+              "text": "baddest"
+            },
+            {
+              "id": "a",
+              "text": "worst"
+            }
+          ],
+          "explanation": "«bad» es irregular: «worse/worst»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new building is ___ more impressive than the old one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "most"
+            },
+            {
+              "id": "a",
+              "text": "far"
+            },
+            {
+              "id": "b",
+              "text": "more"
+            }
+          ],
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "r5",
+          "prompt": "The mountain path is ___ than the coastal road.",
+          "options": [
+            {
+              "id": "b",
+              "text": "more steep"
+            },
+            {
+              "id": "d",
+              "text": "most steep"
+            },
+            {
+              "id": "a",
+              "text": "steeper"
+            }
+          ],
+          "explanation": "«steep» es corto; añadimos «-er»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The blue shirt is ___ than the red one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "cheapest"
+            },
+            {
+              "id": "a",
+              "text": "cheaper"
+            },
+            {
+              "id": "b",
+              "text": "more cheap"
+            }
+          ],
+          "explanation": "«cheap» es corto; añadimos «-er»."
+        },
+        {
+          "id": "r7",
+          "prompt": "That was the ___ film I saw this year.",
+          "options": [
+            {
+              "id": "d",
+              "text": "baddest"
+            },
+            {
+              "id": "a",
+              "text": "worst"
+            },
+            {
+              "id": "c",
+              "text": "most bad"
+            }
+          ],
+          "explanation": "«bad» es irregular: «worst»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Marta is the ___ in her class.",
+          "options": [
+            {
+              "id": "a",
+              "text": "tallest"
+            },
+            {
+              "id": "c",
+              "text": "most tall"
+            },
+            {
+              "id": "b",
+              "text": "more tall"
+            }
+          ],
+          "explanation": "«tall» es corto; usamos «-est»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "comparative",
+        "than",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This is the ___ chair in the office.",
+          "options": [
+            {
+              "id": "d",
+              "text": "comfortabler"
+            },
+            {
+              "id": "a",
+              "text": "most comfortable"
+            },
+            {
+              "id": "c",
+              "text": "more comfortable"
+            }
+          ],
+          "explanation": "«comfortable» es largo; usamos «the most»."
+        },
+        {
+          "id": "r2",
+          "prompt": "This is the ___ option available.",
+          "options": [
+            {
+              "id": "d",
+              "text": "cheaper"
+            },
+            {
+              "id": "b",
+              "text": "more cheap"
+            },
+            {
+              "id": "a",
+              "text": "cheapest"
+            }
+          ],
+          "explanation": "«cheap» es corto; usamos «-est»."
+        },
+        {
+          "id": "r3",
+          "prompt": "That was the ___ decision of my life.",
+          "options": [
+            {
+              "id": "a",
+              "text": "best"
+            },
+            {
+              "id": "d",
+              "text": "most good"
+            },
+            {
+              "id": "b",
+              "text": "goodest"
+            }
+          ],
+          "explanation": "«good» es irregular: «best»."
+        },
+        {
+          "id": "r4",
+          "prompt": "This is the ___ comfortable chair in the office.",
+          "options": [
+            {
+              "id": "c",
+              "text": "-est"
+            },
+            {
+              "id": "b",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "most"
+            }
+          ],
+          "explanation": "«comfortable» es largo; usamos «the most»."
+        },
+        {
+          "id": "r5",
+          "prompt": "This phone isn't ___ new as that one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "as"
+            },
+            {
+              "id": "b",
+              "text": "than"
+            }
+          ],
+          "explanation": "La desigualdad usa «not as ... as»."
+        },
+        {
+          "id": "r6",
+          "prompt": "This is the ___ hotel in town.",
+          "options": [
+            {
+              "id": "a",
+              "text": "most expensive"
+            },
+            {
+              "id": "c",
+              "text": "more expensive"
+            },
+            {
+              "id": "b",
+              "text": "expensivest"
+            }
+          ],
+          "explanation": "«expensive» es largo; usamos «the most»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The second chapter is ___ than the first.",
+          "options": [
+            {
+              "id": "d",
+              "text": "detailest"
+            },
+            {
+              "id": "b",
+              "text": "detaileder"
+            },
+            {
+              "id": "a",
+              "text": "more detailed"
+            }
+          ],
+          "explanation": "«detailed» es largo; usamos «more»."
+        },
+        {
+          "id": "r8",
+          "prompt": "This is the ___ café in the area.",
+          "options": [
+            {
+              "id": "d",
+              "text": "most good"
+            },
+            {
+              "id": "b",
+              "text": "goodest"
+            },
+            {
+              "id": "a",
+              "text": "best"
+            }
+          ],
+          "explanation": "«good» es irregular: «best»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "superlative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

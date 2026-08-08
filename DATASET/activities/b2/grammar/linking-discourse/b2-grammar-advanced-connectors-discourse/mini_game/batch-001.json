@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-connectors-discourse-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "linking-discourse",
+  "subtopic": "advanced-connectors-discourse-markers",
+  "lessonId": "b2-grammar-advanced-connectors-discourse",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-connectors-discourse-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence uses despite correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Despite we arrived late, we joined."
+            },
+            {
+              "id": "b",
+              "text": "Despite the delay was long, we arrived."
+            },
+            {
+              "id": "a",
+              "text": "Despite the delay, we arrived on time."
+            }
+          ],
+          "explanation": "Despite is followed directly by a noun phrase."
+        },
+        {
+          "id": "r2",
+          "prompt": "___ the road was flooded, buses continued.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Despite"
+            },
+            {
+              "id": "c",
+              "text": "Consequently"
+            },
+            {
+              "id": "a",
+              "text": "Although"
+            }
+          ],
+          "explanation": "The following words form a full clause."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ the first model is cheap, the second is more durable.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Whereas"
+            },
+            {
+              "id": "c",
+              "text": "Moreover"
+            },
+            {
+              "id": "b",
+              "text": "Therefore"
+            }
+          ],
+          "explanation": "Whereas contrasts two parallel clauses."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ the limited evidence, the pattern is worth discussing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Although"
+            },
+            {
+              "id": "c",
+              "text": "Therefore"
+            },
+            {
+              "id": "b",
+              "text": "Despite"
+            }
+          ],
+          "explanation": "Despite is followed by a noun phrase."
+        },
+        {
+          "id": "r5",
+          "prompt": "The permit expired; ___, work stopped.",
+          "options": [
+            {
+              "id": "d",
+              "text": "moreover"
+            },
+            {
+              "id": "b",
+              "text": "although"
+            },
+            {
+              "id": "a",
+              "text": "consequently"
+            }
+          ],
+          "explanation": "Consequently introduces the consequence."
+        },
+        {
+          "id": "r6",
+          "prompt": "We can publish it ___ the names are removed.",
+          "options": [
+            {
+              "id": "a",
+              "text": "provided that"
+            },
+            {
+              "id": "d",
+              "text": "as a result"
+            },
+            {
+              "id": "b",
+              "text": "nevertheless"
+            }
+          ],
+          "explanation": "Provided that introduces a sufficient condition."
+        },
+        {
+          "id": "r7",
+          "prompt": "The figures were incomplete; ___, the committee reached a decision.",
+          "options": [
+            {
+              "id": "d",
+              "text": "otherwise"
+            },
+            {
+              "id": "c",
+              "text": "in addition"
+            },
+            {
+              "id": "a",
+              "text": "nevertheless"
+            }
+          ],
+          "explanation": "The decision happened despite the incomplete figures."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which option presents a concession with a full clause?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Despite the forecast was uncertain, the team acted."
+            },
+            {
+              "id": "a",
+              "text": "Even though the forecast was uncertain, the team acted."
+            },
+            {
+              "id": "d",
+              "text": "In spite the forecast was uncertain, the team acted."
+            }
+          ],
+          "explanation": "Even though is followed by subject plus verb."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "despite",
+        "structure",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-connectors-discourse-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You may quote the findings ___ you cite the source.",
+          "options": [
+            {
+              "id": "a",
+              "text": "provided that"
+            },
+            {
+              "id": "c",
+              "text": "as a result"
+            },
+            {
+              "id": "d",
+              "text": "on the other hand"
+            }
+          ],
+          "explanation": "Provided that introduces the required condition."
+        },
+        {
+          "id": "r2",
+          "prompt": "The road flooded; ___, buses were diverted.",
+          "options": [
+            {
+              "id": "b",
+              "text": "although"
+            },
+            {
+              "id": "d",
+              "text": "whereas"
+            },
+            {
+              "id": "a",
+              "text": "consequently"
+            }
+          ],
+          "explanation": "The diversion follows as a consequence of the flooding."
+        },
+        {
+          "id": "r3",
+          "prompt": "Save a copy; ___, the changes may be lost.",
+          "options": [
+            {
+              "id": "d",
+              "text": "whereas"
+            },
+            {
+              "id": "a",
+              "text": "otherwise"
+            },
+            {
+              "id": "c",
+              "text": "although"
+            }
+          ],
+          "explanation": "Otherwise means if you do not save a copy."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ arriving late, we joined the meeting.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Therefore"
+            },
+            {
+              "id": "b",
+              "text": "Although"
+            },
+            {
+              "id": "a",
+              "text": "Despite"
+            }
+          ],
+          "explanation": "Despite can be followed by a gerund."
+        },
+        {
+          "id": "r5",
+          "prompt": "The sample was small. ___, the result was useful.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Therefore"
+            },
+            {
+              "id": "a",
+              "text": "Nevertheless"
+            },
+            {
+              "id": "c",
+              "text": "Moreover"
+            }
+          ],
+          "explanation": "Nevertheless contrasts with the first statement."
+        },
+        {
+          "id": "r6",
+          "prompt": "___ the flood, buses continued.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Whereas"
+            },
+            {
+              "id": "a",
+              "text": "Despite"
+            },
+            {
+              "id": "b",
+              "text": "Although"
+            }
+          ],
+          "explanation": "The flood is a noun phrase."
+        },
+        {
+          "id": "r7",
+          "prompt": "The sample was not representative; ___, the result needs caution.",
+          "options": [
+            {
+              "id": "c",
+              "text": "whereas"
+            },
+            {
+              "id": "d",
+              "text": "provided that"
+            },
+            {
+              "id": "a",
+              "text": "in other words"
+            }
+          ],
+          "explanation": "In other words restates an idea more explicitly."
+        },
+        {
+          "id": "r8",
+          "prompt": "___ the room was small, the event sold out.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Moreover"
+            },
+            {
+              "id": "c",
+              "text": "Consequently"
+            },
+            {
+              "id": "a",
+              "text": "Even though"
+            }
+          ],
+          "explanation": "Even though introduces a finite clause."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "provided-that",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

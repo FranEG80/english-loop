@@ -1,0 +1,1090 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-modal-perfect-regret-criticism-key-word-transformation-002",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "modal-perfects",
+  "subtopic": "modal-perfect-deduction",
+  "lessonId": "b2-grammar-modal-perfect-regret-criticism",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-026",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I queued for an hour, and it turned out to be unnecessary.",
+      "firstSentence": "I queued for an hour, and it turned out to be unnecessary.",
+      "keyWord": "NEED",
+      "gapText": "I [gap1] for an hour.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "need not have queued"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Need not have» expresa que la acción hecha resultó innecesaria."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-027",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The students printed the notes, but that was not necessary.",
+      "firstSentence": "The students printed the notes, but that was not necessary.",
+      "keyWord": "NEED",
+      "gapText": "The students [gap1] the notes.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "need not have printed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El participio sigue a «need not have» sin la partícula «to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-028",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It was not necessary for Pablo to work at the weekend, so he stayed at home.",
+      "firstSentence": "It was not necessary for Pablo to work at the weekend, so he stayed at home.",
+      "keyWord": "NEED",
+      "gapText": "Pablo [gap1] at the weekend.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did not need to work"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Did not need to» describe la ausencia de obligación real."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-029",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "There was no need to wake the baby, but you did.",
+      "firstSentence": "There was no need to wake the baby, but you did.",
+      "keyWord": "NEED",
+      "gapText": "You [gap1] the baby.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "need not have woken"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El contraste entre lo innecesario y lo hecho pide «need not have»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-030",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret not learning to swim as a child.",
+      "firstSentence": "I regret not learning to swim as a child.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] to swim as a child.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish I had learnt"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El arrepentimiento sobre el pasado se dice con «wish» más past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-031",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I am sorry that I sold my guitar last year.",
+      "firstSentence": "I am sorry that I sold my guitar last year.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] my guitar last year.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish I had not sold"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Wish» más past perfect negativo lamenta lo que sí se hizo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-032",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It is a pity we did not book a hotel near the beach.",
+      "firstSentence": "It is a pity we did not book a hotel near the beach.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] a hotel near the beach.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish we had booked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«It is a pity» se reformula con «wish» y past perfect afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-033",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret telling my boss what I thought.",
+      "firstSentence": "I regret telling my boss what I thought.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] my boss what I thought.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish I had not told"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Regret» más gerundio equivale a «wish» más past perfect negativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-034",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Unfortunately, I did not take any photographs of the trip.",
+      "firstSentence": "Unfortunately, I did not take any photographs of the trip.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] some photographs of the trip.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish I had taken"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "En la oración afirmativa «any» pasa a «some» tras «wish»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-035",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I am sorry I forgot your birthday.",
+      "firstSentence": "I am sorry I forgot your birthday.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] your birthday.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish I had not forgotten"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La disculpa por un olvido se convierte en «wish» más past perfect negativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-036",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It is a shame that Nora did not come to the party.",
+      "firstSentence": "It is a shame that Nora did not come to the party.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] to the party.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish Nora had come"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «wish» el sujeto puede cambiar y el verbo va en past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-037",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret not studying harder for the final exam.",
+      "firstSentence": "I regret not studying harder for the final exam.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] harder for the final exam.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish I had studied"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Regret not» más gerundio da «wish» más past perfect afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-038",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I am sorry that we spent so much money on the sofa.",
+      "firstSentence": "I am sorry that we spent so much money on the sofa.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] so much money on the sofa.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "wish we had not spent"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Wish» admite un sujeto distinto seguido de past perfect negativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-039",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret not listening to my grandmother.",
+      "firstSentence": "I regret not listening to my grandmother.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] to my grandmother.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only I had listened"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«If only» más past perfect intensifica el lamento sobre el pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-040",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret that we did not leave earlier.",
+      "firstSentence": "I regret that we did not leave earlier.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] earlier.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only we had left"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«If only» exige past perfect para hablar de un pasado irreversible."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-041",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It is a pity that I did not accept their offer.",
+      "firstSentence": "It is a pity that I did not accept their offer.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] their offer.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only I had accepted"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La lástima por una oportunidad perdida se dice con «if only»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-042",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Rosa is sorry that she missed the first act.",
+      "firstSentence": "Rosa is sorry that she missed the first act.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] the first act.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only Rosa had not missed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«If only» más past perfect negativo lamenta lo que ocurrió."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-043",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret buying such an expensive coat.",
+      "firstSentence": "I regret buying such an expensive coat.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] such an expensive coat.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only I had not bought"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El arrepentimiento por una compra se expresa con «if only» en negativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-044",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Unfortunately, nobody warned us about the delay.",
+      "firstSentence": "Unfortunately, nobody warned us about the delay.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] us about the delay.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only somebody had warned"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Nobody» pasa a «somebody» porque «if only» ya expresa el lamento."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-045",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not save enough money, which I now regret.",
+      "firstSentence": "I did not save enough money, which I now regret.",
+      "keyWord": "ONLY",
+      "gapText": "If [gap1] more money.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "only I had saved"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«If only» más past perfect sustituye a la oración de arrepentimiento."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-046",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I wish I had never signed that contract.",
+      "firstSentence": "I wish I had never signed that contract.",
+      "keyWord": "REGRET",
+      "gapText": "I [gap1] that contract.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "regret signing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Wish» más past perfect se condensa en «regret» más gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-kwt-047",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It is a pity that I did not thank her in person.",
+      "firstSentence": "It is a pity that I did not thank her in person.",
+      "keyWord": "REGRET",
+      "gapText": "I [gap1] her in person.",
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "modal-perfects"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "regret not thanking"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La omisión lamentada se marca con «not» delante del gerundio."
+    }
+  ]
+}

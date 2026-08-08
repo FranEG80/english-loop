@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-text-cohesion-mini-game-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-text-cohesion",
+  "subtopic": "b1-reading-text-cohesion",
+  "lessonId": "b1-reading-text-cohesion",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-text-cohesion-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-text-cohesion",
+      "subtopic": "b1-reading-text-cohesion",
+      "taxonomyNodeIds": [
+        "b1-reading-text-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Leo wanted to save money for a trip. ___ He now takes lunch from home every day.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The restaurant served soup."
+            },
+            {
+              "id": "a",
+              "text": "He started by reducing small daily expenses."
+            },
+            {
+              "id": "b",
+              "text": "The trip was cancelled last year."
+            }
+          ],
+          "explanation": "The sentence introduces the saving plan and the next sentence gives an example."
+        },
+        {
+          "id": "r2",
+          "prompt": "The office recycling bins were often confused. ___ This simple change made sorting easier.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The building has four floors."
+            },
+            {
+              "id": "a",
+              "text": "The manager added a different colour for each material."
+            },
+            {
+              "id": "b",
+              "text": "The cleaners arrived before seven."
+            }
+          ],
+          "explanation": "The colour system is the change that makes sorting easier."
+        },
+        {
+          "id": "r3",
+          "prompt": "The coach asked the team to review the first half. ___ After that, they returned to the pitch with a clearer plan.",
+          "options": [
+            {
+              "id": "a",
+              "text": "She pointed out two repeated mistakes in their passing."
+            },
+            {
+              "id": "d",
+              "text": "The supporters arrived by train."
+            },
+            {
+              "id": "b",
+              "text": "The referee wore a black jacket."
+            }
+          ],
+          "explanation": "The coach's feedback gives a reason for the clearer plan."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new timetable looks convenient at first. ___ People who finish late still have no direct train home.",
+          "options": [
+            {
+              "id": "a",
+              "text": "However, it leaves an important group without a service."
+            },
+            {
+              "id": "d",
+              "text": "Passengers can buy tickets with cash."
+            },
+            {
+              "id": "b",
+              "text": "For example, the station has clean waiting rooms."
+            }
+          ],
+          "explanation": "The next sentence explains the group left without a service, so a contrast is required."
+        },
+        {
+          "id": "r5",
+          "prompt": "Nina had never cooked for so many guests. ___ Fortunately, her brother arrived early to help.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Her kitchen has a blue door."
+            },
+            {
+              "id": "a",
+              "text": "She made a detailed list before shopping."
+            },
+            {
+              "id": "b",
+              "text": "The guests left before dinner."
+            }
+          ],
+          "explanation": "The list is a sensible preparation step before the brother helps."
+        },
+        {
+          "id": "r6",
+          "prompt": "The company tested the new delivery system in one neighbourhood. ___ Only then did it introduce the system across the city.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Drivers usually start work at six."
+            },
+            {
+              "id": "c",
+              "text": "The city has a large central station."
+            },
+            {
+              "id": "a",
+              "text": "This small trial revealed several practical problems."
+            }
+          ],
+          "explanation": "The trial's problems explain why the company tested before expanding."
+        },
+        {
+          "id": "r7",
+          "prompt": "The school introduced a quiet reading period after lunch. ___ Teachers say the pupils settle more quickly in afternoon lessons.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The library has three large windows."
+            },
+            {
+              "id": "a",
+              "text": "At first, some pupils found the silence unusual."
+            },
+            {
+              "id": "c",
+              "text": "Many pupils walk home together."
+            }
+          ],
+          "explanation": "The initial difficulty creates a natural contrast with the later positive result."
+        },
+        {
+          "id": "r8",
+          "prompt": "The residents wanted a safer crossing. ___ The council then agreed to study the road.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The road has a bakery on one corner."
+            },
+            {
+              "id": "c",
+              "text": "Several cars were painted white."
+            },
+            {
+              "id": "a",
+              "text": "They collected signatures from people who used the street."
+            }
+          ],
+          "explanation": "Collecting signatures is an action that supports the request and leads to the council's response."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-text-cohesion"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "cause",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-text-cohesion-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-text-cohesion",
+      "subtopic": "b1-reading-text-cohesion",
+      "taxonomyNodeIds": [
+        "b1-reading-text-cohesion"
+      ],
+      "difficulty": 5,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The proposal sounds attractive, but it would require a much larger budget. ___ For that reason, the committee postponed its decision.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The meeting room had recently been painted."
+            },
+            {
+              "id": "d",
+              "text": "Several members arrived by bicycle."
+            },
+            {
+              "id": "a",
+              "text": "No one had yet explained where the extra money would come from."
+            }
+          ],
+          "explanation": "The unresolved funding question justifies postponing the decision."
+        },
+        {
+          "id": "r2",
+          "prompt": "The report describes two possible routes. ___ The second is shorter but passes through a busy centre.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Many cyclists wear helmets."
+            },
+            {
+              "id": "a",
+              "text": "The former follows the river and is quieter."
+            },
+            {
+              "id": "b",
+              "text": "The report was delivered on Tuesday morning."
+            }
+          ],
+          "explanation": "The former must refer to the first route before the second route is described."
+        },
+        {
+          "id": "r3",
+          "prompt": "The town asked residents how they travelled to work. ___ The results will guide the new transport plan.",
+          "options": [
+            {
+              "id": "a",
+              "text": "More than half of the replies mentioned the bus service."
+            },
+            {
+              "id": "c",
+              "text": "Some residents grow tomatoes."
+            },
+            {
+              "id": "d",
+              "text": "The survey was printed on recycled paper."
+            }
+          ],
+          "explanation": "The result of the survey naturally leads to using it for the transport plan."
+        },
+        {
+          "id": "r4",
+          "prompt": "The neighbourhood trial did not solve every parking problem. ___ It did, however, give residents a clearer basis for the next proposal.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Even so, the collected data showed which streets needed attention first."
+            },
+            {
+              "id": "b",
+              "text": "The trial signs were made from recycled plastic."
+            },
+            {
+              "id": "d",
+              "text": "Some residents own more than one car."
+            }
+          ],
+          "explanation": "The data is a limited but useful result, matching the concession in the surrounding text."
+        },
+        {
+          "id": "r5",
+          "prompt": "The community garden opened in May. ___ By July, neighbours were sharing vegetables.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The library closes at six."
+            },
+            {
+              "id": "a",
+              "text": "The first seeds were planted by local volunteers."
+            },
+            {
+              "id": "c",
+              "text": "The road was repaired last winter."
+            }
+          ],
+          "explanation": "The first sentence explains how the garden began before describing its later result."
+        },
+        {
+          "id": "r6",
+          "prompt": "The archive moved its rare documents to a cooler room. ___ The change should protect the collection for many years.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The previous room became too warm during the summer."
+            },
+            {
+              "id": "d",
+              "text": "The documents are written in several languages."
+            },
+            {
+              "id": "c",
+              "text": "The archive sells postcards online."
+            }
+          ],
+          "explanation": "The high temperature explains the move and the protective purpose."
+        },
+        {
+          "id": "r7",
+          "prompt": "The course promises practical writing practice. Yet its lessons contain mostly lectures. ___ This mismatch disappointed many participants.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Some participants brought notebooks."
+            },
+            {
+              "id": "a",
+              "text": "They had expected to spend more time producing their own texts."
+            },
+            {
+              "id": "c",
+              "text": "The classroom was on the second floor."
+            }
+          ],
+          "explanation": "The expectation explains why the difference between promise and lessons caused disappointment."
+        },
+        {
+          "id": "r8",
+          "prompt": "The volunteers sorted the donated clothes. ___ They then loaded the boxes into a van.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Some donors preferred winter coats."
+            },
+            {
+              "id": "b",
+              "text": "The charity's office is near the river."
+            },
+            {
+              "id": "a",
+              "text": "After labelling each box, they checked the list again."
+            }
+          ],
+          "explanation": "Labelling and checking the boxes logically come before loading them."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-text-cohesion"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "argument",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

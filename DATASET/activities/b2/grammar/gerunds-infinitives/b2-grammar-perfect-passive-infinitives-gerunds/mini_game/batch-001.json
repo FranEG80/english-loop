@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-perfect-passive-infinitives-gerunds-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "gerunds-infinitives",
+  "subtopic": "perfect-passive-infinitives-gerunds",
+  "lessonId": "b2-grammar-perfect-passive-infinitives-gerunds",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-perfect-passive-infinitives-gerunds-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "perfect-passive-infinitives-gerunds",
+      "taxonomyNodeIds": [
+        "perfect-passive-infinitives-gerunds"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The model is thought ___ by a local designer.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been created"
+            },
+            {
+              "id": "d",
+              "text": "to be creating"
+            },
+            {
+              "id": "a",
+              "text": "to have created"
+            }
+          ],
+          "explanation": "The model received the creation: to have been created."
+        },
+        {
+          "id": "r2",
+          "prompt": "She was relieved ___ the correct address.",
+          "options": [
+            {
+              "id": "b",
+              "text": "having been found"
+            },
+            {
+              "id": "a",
+              "text": "to have found"
+            },
+            {
+              "id": "d",
+              "text": "to be found"
+            }
+          ],
+          "explanation": "She found the address earlier: to have found."
+        },
+        {
+          "id": "r3",
+          "prompt": "The bridge appears ___ during the night.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to be repairing"
+            },
+            {
+              "id": "b",
+              "text": "to have been repaired"
+            },
+            {
+              "id": "a",
+              "text": "to have repaired"
+            }
+          ],
+          "explanation": "The bridge received the earlier action: to have been repaired."
+        },
+        {
+          "id": "r4",
+          "prompt": "The suspects denied ___ the warning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "having received"
+            },
+            {
+              "id": "c",
+              "text": "to have receiving"
+            },
+            {
+              "id": "d",
+              "text": "being received"
+            }
+          ],
+          "explanation": "The suspects received the warning: having received."
+        },
+        {
+          "id": "r5",
+          "prompt": "The analyst was surprised ___ the figures so quickly.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to have verified"
+            },
+            {
+              "id": "b",
+              "text": "to have been verified"
+            },
+            {
+              "id": "c",
+              "text": "having verify"
+            }
+          ],
+          "explanation": "The analyst verified the figures: to have verified."
+        },
+        {
+          "id": "r6",
+          "prompt": "The applicants hope ___ for the exchange programme.",
+          "options": [
+            {
+              "id": "c",
+              "text": "having selected"
+            },
+            {
+              "id": "b",
+              "text": "to be selected"
+            },
+            {
+              "id": "d",
+              "text": "to have selecting"
+            }
+          ],
+          "explanation": "The applicants receive the selection: to be selected."
+        },
+        {
+          "id": "r7",
+          "prompt": "The manager was proud ___ the funding application.",
+          "options": [
+            {
+              "id": "c",
+              "text": "having submit"
+            },
+            {
+              "id": "a",
+              "text": "to have submitted"
+            },
+            {
+              "id": "d",
+              "text": "to be submitting"
+            }
+          ],
+          "explanation": "The manager submitted the application: to have submitted."
+        },
+        {
+          "id": "r8",
+          "prompt": "The director denied ___ the transfer.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to be approved"
+            },
+            {
+              "id": "a",
+              "text": "having approved"
+            },
+            {
+              "id": "b",
+              "text": "to have approving"
+            }
+          ],
+          "explanation": "Deny takes a gerund; having approved marks an earlier active action."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-perfect-passive-infinitives-gerunds"
+      ],
+      "tags": [
+        "b2",
+        "perfect-infinitive",
+        "passive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-perfect-passive-infinitives-gerunds-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "perfect-passive-infinitives-gerunds",
+      "taxonomyNodeIds": [
+        "perfect-passive-infinitives-gerunds"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The archive is believed ___ before the flood.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been moved"
+            },
+            {
+              "id": "d",
+              "text": "to be moving"
+            },
+            {
+              "id": "a",
+              "text": "to have moved"
+            }
+          ],
+          "explanation": "The archive received the earlier movement: to have been moved."
+        },
+        {
+          "id": "r2",
+          "prompt": "The documents seem ___ during the move.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been misplaced"
+            },
+            {
+              "id": "d",
+              "text": "to be misplacing"
+            },
+            {
+              "id": "c",
+              "text": "having misplace"
+            }
+          ],
+          "explanation": "The documents received the misplacing: to have been misplaced."
+        },
+        {
+          "id": "r3",
+          "prompt": "The suspects denied ___ by the investigator.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to be question"
+            },
+            {
+              "id": "b",
+              "text": "having been questioned"
+            },
+            {
+              "id": "c",
+              "text": "to have questioning"
+            }
+          ],
+          "explanation": "The suspects received the questioning: having been questioned."
+        },
+        {
+          "id": "r4",
+          "prompt": "The files are expected ___ by June.",
+          "options": [
+            {
+              "id": "d",
+              "text": "having digitised"
+            },
+            {
+              "id": "c",
+              "text": "to have digitising"
+            },
+            {
+              "id": "b",
+              "text": "to be digitised"
+            }
+          ],
+          "explanation": "The files receive the action: to be digitised."
+        },
+        {
+          "id": "r5",
+          "prompt": "The curator denied ___ the original label.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to have removing"
+            },
+            {
+              "id": "b",
+              "text": "having been removed"
+            },
+            {
+              "id": "a",
+              "text": "having removed"
+            }
+          ],
+          "explanation": "The curator is the actor: having removed."
+        },
+        {
+          "id": "r6",
+          "prompt": "The director denied ___ about the transfer.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to have informed"
+            },
+            {
+              "id": "a",
+              "text": "having informed"
+            },
+            {
+              "id": "b",
+              "text": "having been informed"
+            }
+          ],
+          "explanation": "The director received the information: having been informed."
+        },
+        {
+          "id": "r7",
+          "prompt": "The old theatre is expected ___ by the end of the year.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to be restoring"
+            },
+            {
+              "id": "d",
+              "text": "having restore"
+            },
+            {
+              "id": "b",
+              "text": "to have been restored"
+            }
+          ],
+          "explanation": "The perfect passive marks completion before the deadline."
+        },
+        {
+          "id": "r8",
+          "prompt": "The witness claimed ___ the signal before the lights failed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to be seen"
+            },
+            {
+              "id": "a",
+              "text": "to have seen"
+            },
+            {
+              "id": "b",
+              "text": "having been seen"
+            }
+          ],
+          "explanation": "Claim takes a perfect infinitive for an earlier active action."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-perfect-passive-infinitives-gerunds"
+      ],
+      "tags": [
+        "b2",
+        "perfect-infinitive",
+        "passive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

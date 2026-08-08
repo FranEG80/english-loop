@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-third-conditional-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "conditionals",
+  "subtopic": "third-conditional",
+  "lessonId": "b2-grammar-third-conditional",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 5,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Had the lock been replaced, the break-in ___ prevented.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would preventing"
+            },
+            {
+              "id": "a",
+              "text": "might have been"
+            },
+            {
+              "id": "c",
+              "text": "had been"
+            }
+          ],
+          "explanation": "El resultado pasivo y posible es «might have been prevented»."
+        },
+        {
+          "id": "r2",
+          "prompt": "We might have stayed longer if the hotel ___ a room available.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would had"
+            },
+            {
+              "id": "c",
+              "text": "has had"
+            },
+            {
+              "id": "b",
+              "text": "had had"
+            }
+          ],
+          "explanation": "El past perfect de «have» es «had had»."
+        },
+        {
+          "id": "r3",
+          "prompt": "If all participants had been treated equally, the outcome ___ different.",
+          "options": [
+            {
+              "id": "a",
+              "text": "may be"
+            },
+            {
+              "id": "c",
+              "text": "had been"
+            },
+            {
+              "id": "b",
+              "text": "might have been"
+            }
+          ],
+          "explanation": "El resultado alternativo incierto usa «might have been»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Had we documented the workaround, the next team ___ the same problem.",
+          "options": [
+            {
+              "id": "b",
+              "text": "wouldn't have repeated"
+            },
+            {
+              "id": "c",
+              "text": "hadn't repeated"
+            },
+            {
+              "id": "a",
+              "text": "wouldn't repeat"
+            }
+          ],
+          "explanation": "La repetición ocurrió en el pasado; la alternativa es «wouldn't have repeated»."
+        },
+        {
+          "id": "r5",
+          "prompt": "If the data ___ independently, the inconsistency might have emerged.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would verify"
+            },
+            {
+              "id": "b",
+              "text": "had verified"
+            },
+            {
+              "id": "c",
+              "text": "had been verified"
+            }
+          ],
+          "explanation": "Los datos reciben la acción; usamos «had been verified»."
+        },
+        {
+          "id": "r6",
+          "prompt": "If the sensor hadn't failed, the valve ___ automatically.",
+          "options": [
+            {
+              "id": "a",
+              "text": "would close"
+            },
+            {
+              "id": "b",
+              "text": "would have closed"
+            },
+            {
+              "id": "d",
+              "text": "closed"
+            }
+          ],
+          "explanation": "El cierre alternativo pertenece al pasado: «would have closed»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Had the witness arrived on time, the hearing ___ postponed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "hadn't been"
+            },
+            {
+              "id": "b",
+              "text": "wouldn't be"
+            },
+            {
+              "id": "a",
+              "text": "wouldn't have been"
+            }
+          ],
+          "explanation": "El aplazamiento pasado pasivo se niega con «wouldn't have been postponed»."
+        },
+        {
+          "id": "r8",
+          "prompt": "If the archive hadn't been indexed, locating the record ___ weeks.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would took"
+            },
+            {
+              "id": "b",
+              "text": "could have taken"
+            },
+            {
+              "id": "a",
+              "text": "could take"
+            }
+          ],
+          "explanation": "La duración posible en el pasado se expresa con «could have taken»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "conditionals",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "She would have noticed the typo if she ___ the final page.",
+          "options": [
+            {
+              "id": "b",
+              "text": "readed"
+            },
+            {
+              "id": "a",
+              "text": "had read"
+            },
+            {
+              "id": "c",
+              "text": "would read"
+            }
+          ],
+          "explanation": "La lectura no realizada se expresa con «had read»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The plant would have survived if it ___ regularly.",
+          "options": [
+            {
+              "id": "c",
+              "text": "would water"
+            },
+            {
+              "id": "b",
+              "text": "was watered"
+            },
+            {
+              "id": "a",
+              "text": "had been watered"
+            }
+          ],
+          "explanation": "La condición requiere past perfect pasivo: «had been watered»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Had the board ___ the risk, it might have delayed the launch.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would understand"
+            },
+            {
+              "id": "a",
+              "text": "understood"
+            },
+            {
+              "id": "c",
+              "text": "understooded"
+            }
+          ],
+          "explanation": "La inversión conserva el participio «understood»: «Had the board understood»."
+        },
+        {
+          "id": "r4",
+          "prompt": "If the alarm had worked, someone ___ the smoke sooner.",
+          "options": [
+            {
+              "id": "c",
+              "text": "might notice"
+            },
+            {
+              "id": "a",
+              "text": "noticed"
+            },
+            {
+              "id": "b",
+              "text": "might have noticed"
+            }
+          ],
+          "explanation": "La detección no es segura, por lo que «might have noticed» es preciso."
+        },
+        {
+          "id": "r5",
+          "prompt": "If the road hadn't been closed, the delivery ___ on time.",
+          "options": [
+            {
+              "id": "a",
+              "text": "arrived"
+            },
+            {
+              "id": "c",
+              "text": "would have arrived"
+            },
+            {
+              "id": "b",
+              "text": "would arrive"
+            }
+          ],
+          "explanation": "El resultado pasado alternativo usa «would have arrived»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The error would have propagated if the validation step ___ it.",
+          "options": [
+            {
+              "id": "d",
+              "text": "hasn't caught"
+            },
+            {
+              "id": "c",
+              "text": "didn't caught"
+            },
+            {
+              "id": "a",
+              "text": "hadn't caught"
+            }
+          ],
+          "explanation": "La validación sí lo detectó; la condición irreal usa «hadn't caught»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The negotiation could have succeeded if both parties ___ less defensive.",
+          "options": [
+            {
+              "id": "a",
+              "text": "were"
+            },
+            {
+              "id": "c",
+              "text": "would be"
+            },
+            {
+              "id": "b",
+              "text": "had been"
+            }
+          ],
+          "explanation": "La actitud pertenece a aquella negociación pasada: «had been»."
+        },
+        {
+          "id": "r8",
+          "prompt": "If you had told me about the fault, I ___ you fix it.",
+          "options": [
+            {
+              "id": "a",
+              "text": "would help"
+            },
+            {
+              "id": "c",
+              "text": "could have helped"
+            },
+            {
+              "id": "d",
+              "text": "helped"
+            }
+          ],
+          "explanation": "La ayuda posible pero no realizada se expresa con «could have helped»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "conditionals",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

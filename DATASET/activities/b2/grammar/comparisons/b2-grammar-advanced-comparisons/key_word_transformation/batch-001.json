@@ -1,0 +1,1239 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-comparisons-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "comparisons",
+  "subtopic": "advanced-comparisons",
+  "lessonId": "b2-grammar-advanced-comparisons",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My new laptop is slower than my old one.",
+      "firstSentence": "My new laptop is slower than my old one.",
+      "keyWord": "AS",
+      "gapText": "My new laptop is [gap1] my old one.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not as fast as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Al invertir el comparativo se usa «not as» más adjetivo más «as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The second exercise was easier than the first one.",
+      "firstSentence": "The second exercise was easier than the first one.",
+      "keyWord": "AS",
+      "gapText": "The first exercise was [gap1] the second one.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not as easy as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El adjetivo va en grado positivo dentro de la estructura «not as … as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "This restaurant is more expensive than the one by the harbour.",
+      "firstSentence": "This restaurant is more expensive than the one by the harbour.",
+      "keyWord": "AS",
+      "gapText": "The restaurant by the harbour is [gap1] this one.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not as expensive as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Al cambiar el sujeto hay que invertir también la comparación."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Barcelona is warmer in March than Berlin.",
+      "firstSentence": "Barcelona is warmer in March than Berlin.",
+      "keyWord": "AS",
+      "gapText": "Berlin is [gap1] Barcelona in March.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not as warm as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Warmer than» se reformula como «not as warm as» con los términos invertidos."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The book is much better than the series.",
+      "firstSentence": "The book is much better than the series.",
+      "keyWord": "SO",
+      "gapText": "The series is [gap1] the book.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not so good as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Not so … as» es la variante formal de «not as … as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Julia speaks Italian better than her brother does.",
+      "firstSentence": "Julia speaks Italian better than her brother does.",
+      "keyWord": "AS",
+      "gapText": "Julia's brother does not speak Italian [gap1] she does.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as well as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con verbos se usa el adverbio «well», no el adjetivo «good»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Yesterday's meeting lasted longer than today's.",
+      "firstSentence": "Yesterday's meeting lasted longer than today's.",
+      "keyWord": "AS",
+      "gapText": "Today's meeting did not last [gap1] yesterday's.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as long as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La negación ya está en el verbo, así que basta «as long as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The exam was easier than the students had feared.",
+      "firstSentence": "The exam was easier than the students had feared.",
+      "keyWord": "AS",
+      "gapText": "The exam was [gap1] the students had feared.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not as difficult as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Easier than» equivale a «not as difficult as» sobre el mismo sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "If you practise more, you improve faster.",
+      "firstSentence": "If you practise more, you improve faster.",
+      "keyWord": "FASTER",
+      "gapText": "The more you practise, [gap1] you improve.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the faster"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "En la doble comparación el segundo miembro también lleva «the»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "As the temperature rises, the ice melts more quickly.",
+      "firstSentence": "As the temperature rises, the ice melts more quickly.",
+      "keyWord": "MORE",
+      "gapText": "The higher the temperature, [gap1] the ice melts.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the more quickly"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Los adverbios largos forman la comparación con «more»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He became angrier as he waited longer.",
+      "firstSentence": "He became angrier as he waited longer.",
+      "keyWord": "ANGRIER",
+      "gapText": "The longer he waited, [gap1] he became.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the angrier"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«The + comparativo» encabeza los dos miembros de la estructura."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "When prices go up, fewer people buy tickets.",
+      "firstSentence": "When prices go up, fewer people buy tickets.",
+      "keyWord": "FEWER",
+      "gapText": "The higher the prices, [gap1] people buy tickets.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the fewer"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con sustantivos contables el comparativo decreciente es «fewer»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "If we leave earlier, we will arrive sooner.",
+      "firstSentence": "If we leave earlier, we will arrive sooner.",
+      "keyWord": "SOONER",
+      "gapText": "The earlier we leave, [gap1] we will arrive.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the sooner"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La condicional se reformula con la doble comparación sin cambiar el futuro."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "As cars get bigger, they are harder to park.",
+      "firstSentence": "As cars get bigger, they are harder to park.",
+      "keyWord": "HARDER",
+      "gapText": "The bigger cars get, [gap1] they are to park.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the harder"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Hard» forma el comparativo con «-er», no con «more»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The audience laughed a lot more once the comedian relaxed.",
+      "firstSentence": "The audience laughed a lot more once the comedian relaxed.",
+      "keyWord": "MORE",
+      "gapText": "The more the comedian relaxed, [gap1] the audience laughed.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the more"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Cuando «more» modifica al verbo se coloca justo tras «the»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You will feel more confident if you rehearse more often.",
+      "firstSentence": "You will feel more confident if you rehearse more often.",
+      "keyWord": "MORE",
+      "gapText": "The more often you rehearse, [gap1] you will feel.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "the more confident"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El adjetivo acompaña a «the more» antes del sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "This year's harvest was much smaller than last year's.",
+      "firstSentence": "This year's harvest was much smaller than last year's.",
+      "keyWord": "NOWHERE",
+      "gapText": "This year's harvest was [gap1] last year's.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nowhere near as big as",
+              "nowhere near as large as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Nowhere near as … as» intensifica una diferencia muy grande."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The concert was far less crowded than the organisers had hoped.",
+      "firstSentence": "The concert was far less crowded than the organisers had hoped.",
+      "keyWord": "NEAR",
+      "gapText": "The concert was nowhere [gap1] the organisers had hoped.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "near as crowded as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La clave «near» completa la locución «nowhere near»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Their offer was much lower than we had asked for.",
+      "firstSentence": "Their offer was much lower than we had asked for.",
+      "keyWord": "NOWHERE",
+      "gapText": "Their offer was [gap1] we had asked for.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nowhere near what",
+              "nowhere near as much as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Nowhere near what» introduce una oración de relativo sin antecedente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The road to the village is far worse than I remembered.",
+      "firstSentence": "The road to the village is far worse than I remembered.",
+      "keyWord": "NOWHERE",
+      "gapText": "The road to the village is [gap1] I remembered.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nowhere near as good as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Worse than» se invierte con «nowhere near as good as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My savings are not enough to buy a flat.",
+      "firstSentence": "My savings are not enough to buy a flat.",
+      "keyWord": "NOWHERE",
+      "gapText": "My savings are [gap1] to buy a flat.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nowhere near enough"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Nowhere near» también refuerza a «enough» sin necesidad de «as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The sequel is far less funny than the original.",
+      "firstSentence": "The sequel is far less funny than the original.",
+      "keyWord": "NEAR",
+      "gapText": "The sequel is nowhere [gap1] the original.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "near as funny as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Far less» se reformula con la locución «nowhere near as … as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The hotel was much dirtier than the photographs suggested.",
+      "firstSentence": "The hotel was much dirtier than the photographs suggested.",
+      "keyWord": "NOWHERE",
+      "gapText": "The hotel was [gap1] the photographs suggested.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nowhere near as clean as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El adjetivo contrario permite mantener el sujeto original."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The journey was much shorter than the map promised.",
+      "firstSentence": "The journey was much shorter than the map promised.",
+      "keyWord": "NOWHERE",
+      "gapText": "The journey was [gap1] the map promised.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nowhere near as long as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Much shorter than» equivale a «nowhere near as long as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "No other bridge in the city is as long as this one.",
+      "firstSentence": "No other bridge in the city is as long as this one.",
+      "keyWord": "FAR",
+      "gapText": "This is [gap1] bridge in the city.",
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "comparisons"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "by far the longest"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«By far» refuerza al superlativo y va delante de «the»."
+    }
+  ]
+}

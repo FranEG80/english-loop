@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-reported-statements-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reported-statements",
+  "lessonId": "b1-grammar-reported-statements",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reported-statements-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-statements",
+      "taxonomyNodeIds": [
+        "reported-statements"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "On Monday Sara said, “I will finish today.” On Wednesday we reported that Sara would finish ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "that day"
+            },
+            {
+              "id": "d",
+              "text": "now"
+            },
+            {
+              "id": "c",
+              "text": "tomorrow"
+            }
+          ],
+          "explanation": "El «today» del lunes pasa a «that day»."
+        },
+        {
+          "id": "r2",
+          "prompt": "“I will call the supplier,” Eva said. Eva said that she ___ call the supplier.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "will"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            }
+          ],
+          "explanation": "«Will» retrocede a «would»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Mina told Leo, “I can help you.” Mina told Leo that she could help ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "him"
+            },
+            {
+              "id": "c",
+              "text": "me"
+            },
+            {
+              "id": "d",
+              "text": "us"
+            }
+          ],
+          "explanation": "El «you» original se refiere a Leo y pasa a «him»."
+        },
+        {
+          "id": "r4",
+          "prompt": "“I am waiting outside,” Nora said. Nora said that she ___ outside.",
+          "options": [
+            {
+              "id": "b",
+              "text": "is waiting"
+            },
+            {
+              "id": "a",
+              "text": "was waiting"
+            },
+            {
+              "id": "d",
+              "text": "had wait"
+            }
+          ],
+          "explanation": "El presente continuo retrocede a pasado continuo."
+        },
+        {
+          "id": "r5",
+          "prompt": "“I work remotely,” Leo said. Leo said that he ___ remotely.",
+          "options": [
+            {
+              "id": "a",
+              "text": "worked"
+            },
+            {
+              "id": "d",
+              "text": "had work"
+            },
+            {
+              "id": "b",
+              "text": "works"
+            }
+          ],
+          "explanation": "Con «said», el presente simple retrocede a pasado simple."
+        },
+        {
+          "id": "r6",
+          "prompt": "The teacher said, “Water freezes at 0°C.”",
+          "options": [
+            {
+              "id": "b",
+              "text": "The teacher told that water froze at 0°C."
+            },
+            {
+              "id": "a",
+              "text": "The teacher said that water freezes at 0°C."
+            },
+            {
+              "id": "d",
+              "text": "The teacher told us water will freeze at 0°C yesterday."
+            }
+          ],
+          "explanation": "Un hecho general vigente puede mantener el presente."
+        },
+        {
+          "id": "r7",
+          "prompt": "“I must renew my permit,” Salma said. Salma said that she ___ renew her permit.",
+          "options": [
+            {
+              "id": "d",
+              "text": "had"
+            },
+            {
+              "id": "a",
+              "text": "had to"
+            },
+            {
+              "id": "b",
+              "text": "musted"
+            }
+          ],
+          "explanation": "El «must» de obligación cambia normalmente a «had to»."
+        },
+        {
+          "id": "r8",
+          "prompt": "“I met her yesterday,” Ben said. Ben said that he had met her ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the day before"
+            },
+            {
+              "id": "c",
+              "text": "today"
+            },
+            {
+              "id": "b",
+              "text": "tomorrow"
+            }
+          ],
+          "explanation": "«Yesterday» cambia a «the day before»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reported-statements"
+      ],
+      "tags": [
+        "b1",
+        "time-reference",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reported-statements-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-statements",
+      "taxonomyNodeIds": [
+        "reported-statements"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Nora told Amir, “I left your folder on my desk.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nora told Amir that she had left his folder on her desk."
+            },
+            {
+              "id": "d",
+              "text": "Nora told to Amir that he had left her folder."
+            },
+            {
+              "id": "c",
+              "text": "Nora said Amir that she left her folder on his desk."
+            }
+          ],
+          "explanation": "«I/my» se refieren a Nora y «your» a Amir."
+        },
+        {
+          "id": "r2",
+          "prompt": "Marta said, “I had already eaten, so I couldn't join the lunch.”",
+          "options": [
+            {
+              "id": "d",
+              "text": "Marta said me she had been eat, so she wouldn't joining."
+            },
+            {
+              "id": "a",
+              "text": "Marta said that she had already eaten, so she couldn't join the lunch."
+            },
+            {
+              "id": "b",
+              "text": "Marta said that she has already ate, so she can't joined the lunch."
+            }
+          ],
+          "explanation": "Past perfect y «couldn't» no necesitan retroceder más; solo cambian los pronombres."
+        },
+        {
+          "id": "r3",
+          "prompt": "On Friday Leo said, “I will bring this sample here tomorrow.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leo said that he would bring that sample there the next day."
+            },
+            {
+              "id": "c",
+              "text": "Leo told that he would brought those sample yesterday."
+            },
+            {
+              "id": "b",
+              "text": "Leo said that I will bring this sample here tomorrow."
+            }
+          ],
+          "explanation": "Cambian «I», «will», «this», «here» y «tomorrow»."
+        },
+        {
+          "id": "r4",
+          "prompt": "After leaving the site, Ana reported “I keep these tools here” as: Ana said that she kept ___ tools ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "these / here"
+            },
+            {
+              "id": "d",
+              "text": "those / tomorrow"
+            },
+            {
+              "id": "a",
+              "text": "those / there"
+            }
+          ],
+          "explanation": "Al cambiar lugar y perspectiva, «these» pasa a «those» y «here» a «there»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Lena said, “I am tired.” Lena said that ___ was tired.",
+          "options": [
+            {
+              "id": "d",
+              "text": "they"
+            },
+            {
+              "id": "c",
+              "text": "you"
+            },
+            {
+              "id": "a",
+              "text": "she"
+            }
+          ],
+          "explanation": "El «I» original se refiere a Lena y pasa a «she»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Maya ___ that the office was closed.",
+          "options": [
+            {
+              "id": "d",
+              "text": "told to"
+            },
+            {
+              "id": "c",
+              "text": "said me"
+            },
+            {
+              "id": "a",
+              "text": "said"
+            }
+          ],
+          "explanation": "Sin un objeto personal usamos «said that»."
+        },
+        {
+          "id": "r7",
+          "prompt": "“The parcel will arrive tomorrow,” Jo said. Later, we reported that it would arrive ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "today"
+            },
+            {
+              "id": "b",
+              "text": "yesterday"
+            },
+            {
+              "id": "a",
+              "text": "the next day"
+            }
+          ],
+          "explanation": "«Tomorrow» cambia a «the next day»."
+        },
+        {
+          "id": "r8",
+          "prompt": "“I can repair the lock,” Ravi said. Ravi said that he ___ repair the lock.",
+          "options": [
+            {
+              "id": "a",
+              "text": "could"
+            },
+            {
+              "id": "b",
+              "text": "can"
+            },
+            {
+              "id": "d",
+              "text": "was can"
+            }
+          ],
+          "explanation": "«Can» retrocede a «could»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reported-statements"
+      ],
+      "tags": [
+        "b1",
+        "pronouns",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

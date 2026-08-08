@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-narrative-tenses-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "past-tenses",
+  "subtopic": "advanced-narrative-tenses",
+  "lessonId": "b2-grammar-advanced-narrative-tenses",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-narrative-tenses-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "advanced-narrative-tenses",
+      "taxonomyNodeIds": [
+        "advanced-narrative-tenses"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "When I arrived, she stayed. (ella se quedó)",
+          "options": [
+            {
+              "id": "a",
+              "text": "stayed"
+            },
+            {
+              "id": "c",
+              "text": "was staying"
+            },
+            {
+              "id": "b",
+              "text": "had stayed"
+            }
+          ],
+          "explanation": "Si se quedó, usamos past simple."
+        },
+        {
+          "id": "r2",
+          "prompt": "She ___ him for years. (estado)",
+          "options": [
+            {
+              "id": "a",
+              "text": "had known"
+            },
+            {
+              "id": "c",
+              "text": "knew"
+            },
+            {
+              "id": "b",
+              "text": "had been knowing"
+            }
+          ],
+          "explanation": "«know» es un verbo de estado."
+        },
+        {
+          "id": "r3",
+          "prompt": "While she ___ cooking, he set the table. (fondo)",
+          "options": [
+            {
+              "id": "b",
+              "text": "is"
+            },
+            {
+              "id": "a",
+              "text": "was"
+            },
+            {
+              "id": "c",
+              "text": "had"
+            }
+          ],
+          "explanation": "El fondo con «while» usa past continuous."
+        },
+        {
+          "id": "r4",
+          "prompt": "While they ___, the lights went out. (fondo)",
+          "options": [
+            {
+              "id": "b",
+              "text": "ate"
+            },
+            {
+              "id": "a",
+              "text": "were eating"
+            },
+            {
+              "id": "d",
+              "text": "had been eating"
+            }
+          ],
+          "explanation": "El fondo con «while» usa past continuous."
+        },
+        {
+          "id": "r5",
+          "prompt": "He ___ the door and left. (evento principal)",
+          "options": [
+            {
+              "id": "c",
+              "text": "had locked"
+            },
+            {
+              "id": "d",
+              "text": "had been locking"
+            },
+            {
+              "id": "a",
+              "text": "locked"
+            }
+          ],
+          "explanation": "El evento principal usa past simple."
+        },
+        {
+          "id": "r6",
+          "prompt": "I ___ when the phone rang. (fondo)",
+          "options": [
+            {
+              "id": "b",
+              "text": "read"
+            },
+            {
+              "id": "a",
+              "text": "was reading"
+            },
+            {
+              "id": "d",
+              "text": "had been reading"
+            }
+          ],
+          "explanation": "El fondo usa past continuous."
+        },
+        {
+          "id": "r7",
+          "prompt": "They ___ for an hour. (duración anterior)",
+          "options": [
+            {
+              "id": "a",
+              "text": "had been waiting"
+            },
+            {
+              "id": "d",
+              "text": "were waiting"
+            },
+            {
+              "id": "b",
+              "text": "had waited"
+            }
+          ],
+          "explanation": "La duración anterior usa past perfect continuous."
+        },
+        {
+          "id": "r8",
+          "prompt": "The sun ___ as we arrived. (fondo)",
+          "options": [
+            {
+              "id": "a",
+              "text": "was setting"
+            },
+            {
+              "id": "b",
+              "text": "set"
+            },
+            {
+              "id": "c",
+              "text": "had set"
+            }
+          ],
+          "explanation": "El fondo usa past continuous."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-narrative-tenses"
+      ],
+      "tags": [
+        "b2",
+        "narrative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-narrative-tenses-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "advanced-narrative-tenses",
+      "taxonomyNodeIds": [
+        "advanced-narrative-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "After they ___ finished, they went home. (anterior)",
+          "options": [
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "c",
+              "text": "were"
+            },
+            {
+              "id": "d",
+              "text": "did"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r2",
+          "prompt": "The band ___ playing when we arrived. (fondo)",
+          "options": [
+            {
+              "id": "b",
+              "text": "is"
+            },
+            {
+              "id": "a",
+              "text": "was"
+            },
+            {
+              "id": "c",
+              "text": "had"
+            }
+          ],
+          "explanation": "El fondo usa past continuous."
+        },
+        {
+          "id": "r3",
+          "prompt": "While she was cooking, he ___ the table. (evento)",
+          "options": [
+            {
+              "id": "a",
+              "text": "set"
+            },
+            {
+              "id": "d",
+              "text": "had been setting"
+            },
+            {
+              "id": "c",
+              "text": "had set"
+            }
+          ],
+          "explanation": "El evento principal usa past simple."
+        },
+        {
+          "id": "r4",
+          "prompt": "By the time we got there, the show ___ ended. (anterior)",
+          "options": [
+            {
+              "id": "c",
+              "text": "was"
+            },
+            {
+              "id": "b",
+              "text": "has"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r5",
+          "prompt": "I was reading when the phone ___. (interrupción)",
+          "options": [
+            {
+              "id": "d",
+              "text": "had been ringing"
+            },
+            {
+              "id": "a",
+              "text": "rang"
+            },
+            {
+              "id": "c",
+              "text": "had rung"
+            }
+          ],
+          "explanation": "La interrupción usa past simple."
+        },
+        {
+          "id": "r6",
+          "prompt": "She ___ already eaten when I called. (anterior)",
+          "options": [
+            {
+              "id": "b",
+              "text": "has"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "d",
+              "text": "did"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r7",
+          "prompt": "He ___ the report by noon. (anterior)",
+          "options": [
+            {
+              "id": "b",
+              "text": "has finished"
+            },
+            {
+              "id": "a",
+              "text": "had finished"
+            },
+            {
+              "id": "c",
+              "text": "was finishing"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r8",
+          "prompt": "The rain ___ as she walked home. (fondo)",
+          "options": [
+            {
+              "id": "c",
+              "text": "had fallen"
+            },
+            {
+              "id": "d",
+              "text": "had been falling"
+            },
+            {
+              "id": "a",
+              "text": "was falling"
+            }
+          ],
+          "explanation": "El fondo usa past continuous."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-narrative-tenses"
+      ],
+      "tags": [
+        "b2",
+        "narrative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

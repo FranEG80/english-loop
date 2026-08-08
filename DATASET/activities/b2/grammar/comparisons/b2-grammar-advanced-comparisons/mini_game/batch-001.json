@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-comparisons-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "comparisons",
+  "subtopic": "advanced-comparisons",
+  "lessonId": "b2-grammar-advanced-comparisons",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The ___ we practise, the more confident we become.",
+          "options": [
+            {
+              "id": "b",
+              "text": "most"
+            },
+            {
+              "id": "a",
+              "text": "more"
+            },
+            {
+              "id": "c",
+              "text": "much"
+            }
+          ],
+          "explanation": "The more...the more links two proportional changes."
+        },
+        {
+          "id": "r2",
+          "prompt": "Choose the sentence comparing her appearance with her mother’s.",
+          "options": [
+            {
+              "id": "b",
+              "text": "She looks like her mother."
+            },
+            {
+              "id": "d",
+              "text": "She looks than her mother."
+            },
+            {
+              "id": "c",
+              "text": "She looks as if her mother."
+            }
+          ],
+          "explanation": "Like is followed by the noun phrase her mother."
+        },
+        {
+          "id": "r3",
+          "prompt": "The software is nowhere near ___ complex as the old system.",
+          "options": [
+            {
+              "id": "b",
+              "text": "as"
+            },
+            {
+              "id": "d",
+              "text": "so"
+            },
+            {
+              "id": "a",
+              "text": "than"
+            }
+          ],
+          "explanation": "Nowhere near as...as marks a large difference."
+        },
+        {
+          "id": "r4",
+          "prompt": "This tablet is as durable ___ the previous version.",
+          "options": [
+            {
+              "id": "a",
+              "text": "than"
+            },
+            {
+              "id": "c",
+              "text": "as"
+            },
+            {
+              "id": "b",
+              "text": "like"
+            }
+          ],
+          "explanation": "Equality uses as + adjective + as."
+        },
+        {
+          "id": "r5",
+          "prompt": "The ___ data we collect, the more reliable the forecast becomes.",
+          "options": [
+            {
+              "id": "d",
+              "text": "much"
+            },
+            {
+              "id": "c",
+              "text": "most"
+            },
+            {
+              "id": "b",
+              "text": "more"
+            }
+          ],
+          "explanation": "The more data...the more reliable is the proportional pattern."
+        },
+        {
+          "id": "r6",
+          "prompt": "The sculpture looks ___ a folded sail.",
+          "options": [
+            {
+              "id": "c",
+              "text": "than"
+            },
+            {
+              "id": "d",
+              "text": "so"
+            },
+            {
+              "id": "b",
+              "text": "like"
+            }
+          ],
+          "explanation": "Like is followed by a noun phrase."
+        },
+        {
+          "id": "r7",
+          "prompt": "He behaves ___ though he owned the whole building.",
+          "options": [
+            {
+              "id": "c",
+              "text": "so"
+            },
+            {
+              "id": "a",
+              "text": "like"
+            },
+            {
+              "id": "b",
+              "text": "as"
+            }
+          ],
+          "explanation": "The fixed connector is as though."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence uses as to introduce a clause rather than a role?",
+          "options": [
+            {
+              "id": "b",
+              "text": "As we discussed, the figures need checking."
+            },
+            {
+              "id": "a",
+              "text": "As the coordinator, she checks the rota."
+            },
+            {
+              "id": "d",
+              "text": "She is as calm as the coordinator."
+            }
+          ],
+          "explanation": "As we discussed introduces a full clause."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "correlative",
+        "comparative",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "He answered as ___ he had memorised the entire report.",
+          "options": [
+            {
+              "id": "b",
+              "text": "if"
+            },
+            {
+              "id": "a",
+              "text": "like"
+            },
+            {
+              "id": "d",
+              "text": "so"
+            }
+          ],
+          "explanation": "As if is the connector before the clause."
+        },
+        {
+          "id": "r2",
+          "prompt": "The survey was not ___ detailed as the interview study.",
+          "options": [
+            {
+              "id": "b",
+              "text": "as"
+            },
+            {
+              "id": "a",
+              "text": "like"
+            },
+            {
+              "id": "d",
+              "text": "so much"
+            }
+          ],
+          "explanation": "Not as...as compares degree."
+        },
+        {
+          "id": "r3",
+          "prompt": "The more the team communicates, the ___ misunderstandings arise.",
+          "options": [
+            {
+              "id": "a",
+              "text": "fewer"
+            },
+            {
+              "id": "b",
+              "text": "few"
+            },
+            {
+              "id": "d",
+              "text": "little"
+            }
+          ],
+          "explanation": "Misunderstandings is countable plural, so use fewer."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new battery is nowhere near ___ heavy as the old one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "so"
+            },
+            {
+              "id": "c",
+              "text": "as"
+            },
+            {
+              "id": "d",
+              "text": "like"
+            }
+          ],
+          "explanation": "Nowhere near is followed by as...as."
+        },
+        {
+          "id": "r5",
+          "prompt": "The coastal road is almost ___ scenic as the mountain route.",
+          "options": [
+            {
+              "id": "b",
+              "text": "as"
+            },
+            {
+              "id": "a",
+              "text": "so"
+            },
+            {
+              "id": "c",
+              "text": "than"
+            }
+          ],
+          "explanation": "Almost as...as expresses near equality."
+        },
+        {
+          "id": "r6",
+          "prompt": "There are ___ complaints this month than last month.",
+          "options": [
+            {
+              "id": "a",
+              "text": "less"
+            },
+            {
+              "id": "c",
+              "text": "little"
+            },
+            {
+              "id": "b",
+              "text": "fewer"
+            }
+          ],
+          "explanation": "Complaints is a countable plural noun, so use fewer."
+        },
+        {
+          "id": "r7",
+          "prompt": "The more carefully we plan, the ___ delays we have.",
+          "options": [
+            {
+              "id": "b",
+              "text": "fewer"
+            },
+            {
+              "id": "a",
+              "text": "few"
+            },
+            {
+              "id": "c",
+              "text": "less"
+            }
+          ],
+          "explanation": "Delays is a countable plural noun: fewer delays."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence is correct in formal written English?",
+          "options": [
+            {
+              "id": "c",
+              "text": "She works as a director advised."
+            },
+            {
+              "id": "b",
+              "text": "She works as the director advised."
+            },
+            {
+              "id": "d",
+              "text": "She works than the director advised."
+            }
+          ],
+          "explanation": "As introduces the clause the director advised."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "as-if",
+        "hypothesis",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

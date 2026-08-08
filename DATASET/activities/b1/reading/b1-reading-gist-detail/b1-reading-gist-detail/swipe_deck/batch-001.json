@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-gist-detail-swipe-deck-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-gist-detail",
+  "subtopic": "b1-reading-gist-detail",
+  "lessonId": "b1-reading-gist-detail",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-sd-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Text: The bus app helps residents plan journeys around delays. Statement: The app sells bus tickets.",
+          "explanation": "El texto dice que no vende tickets."
+        },
+        {
+          "id": "c2",
+          "statement": "Text: Mina cycles three days a week. Statement: Mina cycles every day.",
+          "explanation": "Three days a week no significa every day."
+        },
+        {
+          "id": "c3",
+          "statement": "Text: The repair café cannot accept large appliances. Statement: Large appliances are accepted.",
+          "explanation": "Cannot accept excluye esos aparatos."
+        },
+        {
+          "id": "c4",
+          "statement": "Text: The community cinema shows old films on Fridays. Statement: It shows them on Fridays.",
+          "explanation": "La afirmación repite el detalle temporal."
+        },
+        {
+          "id": "c5",
+          "statement": "Text: The school garden supports science lessons. Statement: The garden has no educational use.",
+          "explanation": "Science lessons son un uso educativo explícito."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "gist",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-sd-075",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Text: Book-group members bring one question to discuss next Tuesday. Statement: They should bring a question.",
+          "explanation": "Bring one question each es explícito."
+        },
+        {
+          "id": "c2",
+          "statement": "Text: Nadia moved her desk because the room was too dark. Statement: Darkness was the reason.",
+          "explanation": "Because the room was too dark expresa la causa."
+        },
+        {
+          "id": "c3",
+          "statement": "Text: Customers get their cup deposit back when they return it. Statement: The deposit is returned.",
+          "explanation": "Get it back significa recibir de nuevo el depósito."
+        },
+        {
+          "id": "c4",
+          "statement": "Text: Residents planted trees to improve the riverside path. Statement: The work aims to improve the path.",
+          "explanation": "Improve the path aparece como objetivo."
+        },
+        {
+          "id": "c5",
+          "statement": "Text: Leo's group meets on Wednesday evenings. Statement: The group meets on Sunday mornings.",
+          "explanation": "El día y momento contradicen la afirmación."
+        },
+        {
+          "id": "c6",
+          "statement": "Text: The festival expected 200 visitors but nearly 350 arrived. Statement: Fewer people arrived than expected.",
+          "explanation": "Nearly 350 es una cantidad superior a 200."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "detail",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-sd-138",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Text: The museum now closes at 7 p.m. instead of 5 p.m. Statement: The museum closes earlier now.",
+          "explanation": "7 p.m. es más tarde que 5 p.m., no earlier."
+        },
+        {
+          "id": "c2",
+          "statement": "Text: Study-room slots give more students a chance to use the desks. Statement: The slots are intended to share a popular space.",
+          "explanation": "La finalidad se expresa en give more students a chance."
+        },
+        {
+          "id": "c3",
+          "statement": "Text: The tool library helps members avoid buying equipment they rarely use. Statement: Members must buy every tool.",
+          "explanation": "El préstamo evita compras innecesarias."
+        },
+        {
+          "id": "c4",
+          "statement": "Text: The market opens every Saturday. Statement: The market is weekly.",
+          "explanation": "Every Saturday equivale a una frecuencia semanal."
+        },
+        {
+          "id": "c5",
+          "statement": "Text: Drainage work should reduce puddles but not stop all flooding. Statement: The work guarantees no flooding.",
+          "explanation": "Not stop all flooding limita la conclusión."
+        },
+        {
+          "id": "c6",
+          "statement": "Text: Evening language classes are affordable and near the station. Statement: The classes are described as expensive.",
+          "explanation": "Affordable contradice expensive."
+        },
+        {
+          "id": "c7",
+          "statement": "Text: A yoga class at 7 a.m. is for people who work late. Statement: It is designed only for professional athletes.",
+          "explanation": "El grupo destinatario es people who work late."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "detail",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-sd-197",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Text: The coastal path is closed until repairs finish. Statement: Walkers should use the coastal path now.",
+          "explanation": "El texto obliga a usar la ruta interior durante el cierre."
+        },
+        {
+          "id": "c2",
+          "statement": "Text: Day-old bread is half price in the afternoon to reduce waste. Statement: The discount supports the aim of wasting less food.",
+          "explanation": "To waste less food expresa la finalidad."
+        },
+        {
+          "id": "c3",
+          "statement": "Text: A volunteer bus helps older residents without cars reach the hospital. Statement: It is mainly a tourist service.",
+          "explanation": "El grupo beneficiario son mayores sin coche, no turistas."
+        },
+        {
+          "id": "c4",
+          "statement": "Text: Volunteers meet on Saturday mornings in the community garden. Statement: They meet on Saturday mornings.",
+          "explanation": "La afirmación coincide con el texto."
+        },
+        {
+          "id": "c5",
+          "statement": "Text: The cycling route is two kilometres longer but quieter. Statement: The new route is shorter and busier.",
+          "explanation": "Longer y quieter contradicen ambas partes."
+        },
+        {
+          "id": "c6",
+          "statement": "Text: Museum headphones are available at the entrance without extra charge. Statement: Visitors must pay extra for headphones.",
+          "explanation": "Without an extra charge excluye un pago adicional."
+        },
+        {
+          "id": "c7",
+          "statement": "Text: The book group discusses its novel next Tuesday. Statement: The discussion is next Tuesday.",
+          "explanation": "La afirmación repite el dato temporal."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "detail",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

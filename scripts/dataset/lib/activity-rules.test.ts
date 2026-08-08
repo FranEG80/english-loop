@@ -105,15 +105,18 @@ describe("respuesta visible en el enunciado", () => {
 });
 
 describe("UoE Part 3 · word_formation", () => {
+  /** Texto de Part 3: dos huecos, cada uno con su propia raíz. */
   function wordFormation(cueWord: string, answer: string): Activity {
     return makeActivity({
       type: "word_formation",
       skillFocus: "word_formation",
-      cueWord,
-      gapText: "The report contains [gap1] evidence.",
+      gapText: "The report contains [gap1] evidence.\nIt was written [gap2].",
       evaluator: {
         strategy: "per_gap",
-        gaps: [{ gapId: "gap1", answers: [answer] }],
+        gaps: [
+          { gapId: "gap1", cueWord, answers: [answer] },
+          { gapId: "gap2", cueWord: "CARE", answers: ["carefully"] },
+        ],
         normalization: NORMALIZATION,
       },
     });
@@ -141,10 +144,37 @@ describe("UoE Part 3 · word_formation", () => {
     );
   });
 
-  it("exige la raíz en mayúsculas", () => {
+  it("exige una raíz en mayúsculas por hueco", () => {
     const activity = wordFormation("CONVINCE", "convincing");
-    delete activity.cueWord;
+    if (activity.evaluator.strategy === "per_gap") {
+      delete activity.evaluator.gaps[0]!.cueWord;
+    }
     expect(codes(activity)).toContain("word-formation-cue");
+  });
+
+  it("rechaza un hueco que admite dos palabras distintas", () => {
+    const activity = wordFormation("USE", "usable");
+    if (activity.evaluator.strategy === "per_gap") {
+      activity.evaluator.gaps[0]!.answers = ["usable", "useful"];
+    }
+    expect(codes(activity)).toContain("word-formation-ambiguous-gap");
+  });
+
+  it("acepta singular y plural de la misma palabra", () => {
+    const activity = wordFormation("DISCUSS", "discussion");
+    if (activity.evaluator.strategy === "per_gap") {
+      activity.evaluator.gaps[0]!.answers = ["discussion", "discussions"];
+    }
+    expect(codes(activity)).not.toContain("word-formation-ambiguous-gap");
+  });
+
+  it("rechaza un Part 3 de un solo hueco: es un texto, no una frase suelta", () => {
+    const activity = wordFormation("CONVINCE", "convincing");
+    if (activity.evaluator.strategy === "per_gap") {
+      activity.evaluator.gaps = [activity.evaluator.gaps[0]!];
+      activity.gapText = "The report contains [gap1] evidence.";
+    }
+    expect(codes(activity)).toContain("word-formation-single-gap");
   });
 });
 

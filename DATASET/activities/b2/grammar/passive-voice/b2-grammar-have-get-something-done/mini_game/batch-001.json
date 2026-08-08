@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-have-get-something-done-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "have-get-something-done",
+  "lessonId": "b2-grammar-have-get-something-done",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-have-get-something-done-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "have-get-something-done",
+      "taxonomyNodeIds": [
+        "have-get-something-done"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The tenants got the faulty boiler ___ before the cold spell.",
+          "options": [
+            {
+              "id": "c",
+              "text": "replacing"
+            },
+            {
+              "id": "b",
+              "text": "replaced"
+            },
+            {
+              "id": "a",
+              "text": "replace"
+            }
+          ],
+          "explanation": "Got the faulty boiler replaced expresa que consiguieron el servicio."
+        },
+        {
+          "id": "r2",
+          "prompt": "The journalist had the interview ___ into Spanish.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to translated"
+            },
+            {
+              "id": "c",
+              "text": "translating"
+            },
+            {
+              "id": "b",
+              "text": "translated"
+            }
+          ],
+          "explanation": "The interview es el objeto que recibe la traducción: had it translated."
+        },
+        {
+          "id": "r3",
+          "prompt": "She has had her wedding dress ___ by a local designer.",
+          "options": [
+            {
+              "id": "b",
+              "text": "made"
+            },
+            {
+              "id": "d",
+              "text": "to make"
+            },
+            {
+              "id": "c",
+              "text": "making"
+            }
+          ],
+          "explanation": "Después de her wedding dress va el participio made."
+        },
+        {
+          "id": "r4",
+          "prompt": "The laboratory must ___ the samples analysed by an independent team.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "have been"
+            },
+            {
+              "id": "c",
+              "text": "having"
+            }
+          ],
+          "explanation": "Must have + objeto + participio expresa una obligación de encargar el análisis."
+        },
+        {
+          "id": "r5",
+          "prompt": "By next month, I will have my driving licence ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "renewed"
+            },
+            {
+              "id": "d",
+              "text": "to renew"
+            },
+            {
+              "id": "c",
+              "text": "renewing"
+            }
+          ],
+          "explanation": "Will have + objeto + participio forma la causativa futura."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence means that a jeweller repaired Noor's watch?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Noor had her watch repaired."
+            },
+            {
+              "id": "d",
+              "text": "Noor was had her watch repaired."
+            },
+            {
+              "id": "c",
+              "text": "Noor got to repair her watch."
+            }
+          ],
+          "explanation": "Had her watch repaired indica que otra persona hizo la reparación."
+        },
+        {
+          "id": "r7",
+          "prompt": "By Friday, the gallery will have ___ its lighting upgraded.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "c",
+              "text": "getting"
+            },
+            {
+              "id": "b",
+              "text": "had"
+            }
+          ],
+          "explanation": "El futuro perfecto causativo es will have had + objeto + participio."
+        },
+        {
+          "id": "r8",
+          "prompt": "The council will ___ the damaged sign replaced.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "have been"
+            },
+            {
+              "id": "c",
+              "text": "having"
+            }
+          ],
+          "explanation": "Después de will usamos have + objeto + participio."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-have-get-something-done"
+      ],
+      "tags": [
+        "b2",
+        "causative",
+        "get-causative",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-have-get-something-done-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "have-get-something-done",
+      "taxonomyNodeIds": [
+        "have-get-something-done"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I need to ___ my passport renewed before July.",
+          "options": [
+            {
+              "id": "a",
+              "text": "get"
+            },
+            {
+              "id": "d",
+              "text": "getting my"
+            },
+            {
+              "id": "c",
+              "text": "have been"
+            }
+          ],
+          "explanation": "Need to get + objeto + participio forma una causativa de resultado."
+        },
+        {
+          "id": "r2",
+          "prompt": "She is ___ her bicycle serviced this afternoon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "having"
+            },
+            {
+              "id": "b",
+              "text": "having been"
+            },
+            {
+              "id": "c",
+              "text": "getting been"
+            }
+          ],
+          "explanation": "El presente continuo causativo es is having + objeto + participio."
+        },
+        {
+          "id": "r3",
+          "prompt": "A specialist is restoring the chapel roof for the parish.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The parish is restoring had the chapel roof."
+            },
+            {
+              "id": "c",
+              "text": "The chapel roof has the parish restored."
+            },
+            {
+              "id": "a",
+              "text": "The parish is having the chapel roof restored."
+            }
+          ],
+          "explanation": "La parroquia encarga el servicio: is having + objeto + participio."
+        },
+        {
+          "id": "r4",
+          "prompt": "A contractor will install solar panels on our roof.",
+          "options": [
+            {
+              "id": "a",
+              "text": "We will have solar panels installed on our roof."
+            },
+            {
+              "id": "d",
+              "text": "Our roof will have us installed."
+            },
+            {
+              "id": "b",
+              "text": "We will have installed solar panels on our roof."
+            }
+          ],
+          "explanation": "El futuro causativo es will have + objeto + participio."
+        },
+        {
+          "id": "r5",
+          "prompt": "Please ___ the application signed by both partners.",
+          "options": [
+            {
+              "id": "b",
+              "text": "get it"
+            },
+            {
+              "id": "d",
+              "text": "getting"
+            },
+            {
+              "id": "a",
+              "text": "get"
+            }
+          ],
+          "explanation": "El imperativo es Get + objeto + participio."
+        },
+        {
+          "id": "r6",
+          "prompt": "They have ___ the roof repaired since the storm.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "d",
+              "text": "getting"
+            },
+            {
+              "id": "b",
+              "text": "have"
+            }
+          ],
+          "explanation": "El presente perfecto causativo combina have + had + objeto + participio."
+        },
+        {
+          "id": "r7",
+          "prompt": "The shop had its front window ___ during the protest.",
+          "options": [
+            {
+              "id": "c",
+              "text": "breaking"
+            },
+            {
+              "id": "b",
+              "text": "broken"
+            },
+            {
+              "id": "a",
+              "text": "break"
+            }
+          ],
+          "explanation": "Had its front window broken describe una experiencia sufrida por el comercio."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence means that a technician installed the software for Ana?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ana had the software installed."
+            },
+            {
+              "id": "c",
+              "text": "Ana was installed the software."
+            },
+            {
+              "id": "b",
+              "text": "Ana had installed the software."
+            }
+          ],
+          "explanation": "El objeto the software va entre had y el participio installed."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-have-get-something-done"
+      ],
+      "tags": [
+        "b2",
+        "causative",
+        "get-causative",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-comparatives-superlatives-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "comparisons",
+  "subtopic": "comparative-superlative",
+  "lessonId": "b1-grammar-comparatives-superlatives",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-sd-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "This is the most big room in the house.",
+          "explanation": "«big» es corto: «the biggest»."
+        },
+        {
+          "id": "c2",
+          "statement": "That was the most good decision of my life.",
+          "explanation": "«good» es irregular: «best»."
+        },
+        {
+          "id": "c3",
+          "statement": "That was the worst film of the year.",
+          "explanation": "«worst» es el superlativo irregular de «bad»."
+        },
+        {
+          "id": "c4",
+          "statement": "The second chapter is more detailed than the first.",
+          "explanation": "«more detailed» es correcto para un adjetivo largo."
+        },
+        {
+          "id": "c5",
+          "statement": "He is more good at maths than his brother.",
+          "explanation": "«good» es irregular: «better»."
+        },
+        {
+          "id": "c6",
+          "statement": "This is the most expensive hotel in town.",
+          "explanation": "«the most expensive» es el superlativo correcto."
+        },
+        {
+          "id": "c7",
+          "statement": "This is the most comfortable chair in the office.",
+          "explanation": "«the most comfortable» es correcto."
+        },
+        {
+          "id": "c8",
+          "statement": "That was the baddest film I saw this year.",
+          "explanation": "«bad» es irregular: «worst»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "superlative",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-sd-066",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "This laptop is lighter than my previous one.",
+          "explanation": "«lighter» es el comparativo correcto."
+        },
+        {
+          "id": "c2",
+          "statement": "This phone isn't as new as that one.",
+          "explanation": "«not as ... as» expresa desigualdad correctamente."
+        },
+        {
+          "id": "c3",
+          "statement": "This tablet is much cheaper than that one.",
+          "explanation": "«much» intensifica el comparativo."
+        },
+        {
+          "id": "c4",
+          "statement": "This route is a bit longer than the other one.",
+          "explanation": "«a bit longer» es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "The train is faster than the bus.",
+          "explanation": "«faster than» es correcto."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "comparative",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-sd-129",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Her new flat is more big than the old one.",
+          "explanation": "«big» es corto: «bigger»."
+        },
+        {
+          "id": "c2",
+          "statement": "There are more students this year than last year.",
+          "explanation": "«more ... than» compara cantidades correctamente."
+        },
+        {
+          "id": "c3",
+          "statement": "This bag is lighter than that one.",
+          "explanation": "«lighter» es el comparativo correcto de «light»."
+        },
+        {
+          "id": "c4",
+          "statement": "Marta is the tallest in her class.",
+          "explanation": "«the tallest» es el superlativo correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "The new building is far more impressive than the old one.",
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "c6",
+          "statement": "The early train is as fast as the express.",
+          "explanation": "«as ... as» expresa igualdad correctamente."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "comparative",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-sd-191",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "This is more cheaper than that one.",
+          "explanation": "No combinamos «more» con «-er»."
+        },
+        {
+          "id": "c2",
+          "statement": "The blue shirt is more cheap than the red one.",
+          "explanation": "«cheap» es corto: «cheaper»."
+        },
+        {
+          "id": "c3",
+          "statement": "The mountain path is steeper than the coastal road.",
+          "explanation": "«steeper» es el comparativo correcto."
+        },
+        {
+          "id": "c4",
+          "statement": "Of all the chairs in the office, this is the most comfortable.",
+          "explanation": "«the most comfortable» es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "My room is as big than yours.",
+          "explanation": "La igualdad usa «as ... as», no «than»."
+        },
+        {
+          "id": "c6",
+          "statement": "She is taller than me.",
+          "explanation": "«taller than» es correcto."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "comparative",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

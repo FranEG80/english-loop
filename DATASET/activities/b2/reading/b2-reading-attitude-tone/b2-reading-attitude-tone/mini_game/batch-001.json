@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-reading-attitude-tone-mini-game-001",
+  "level": "B2",
+  "category": "reading",
+  "topic": "b2-reading-attitude-tone",
+  "subtopic": "b2-reading-attitude-tone",
+  "lessonId": "b2-reading-attitude-tone",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-attitude-tone-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-attitude-tone",
+      "subtopic": "b2-reading-attitude-tone",
+      "taxonomyNodeIds": [
+        "b2-reading-attitude-tone"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which tone best describes the editorial?",
+          "context": "The policy is a welcome step, but celebrating it as a complete solution would be premature. Housing costs require a broader response.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Uncritically celebratory."
+            },
+            {
+              "id": "a",
+              "text": "Supportive but insistently realistic."
+            },
+            {
+              "id": "d",
+              "text": "Uncertain whether housing exists."
+            }
+          ],
+          "explanation": "Welcome step is positive, but premature and broader response insist on limits."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which word makes the evidence provisional?",
+          "context": "The figures are encouraging, but they should not be treated as proof of a permanent trend.",
+          "options": [
+            {
+              "id": "c",
+              "text": "permanent"
+            },
+            {
+              "id": "a",
+              "text": "encouraging"
+            },
+            {
+              "id": "d",
+              "text": "trend"
+            }
+          ],
+          "explanation": "Encouraging gives a positive but limited evaluation; the following clause prevents certainty."
+        },
+        {
+          "id": "r3",
+          "prompt": "What does the writer concede about the access plan?",
+          "context": "The report is clearly useful for planning, although it says little about how the policy affected informal workers.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The report covers every worker."
+            },
+            {
+              "id": "a",
+              "text": "The report has a useful planning function."
+            },
+            {
+              "id": "c",
+              "text": "The policy had no effect."
+            }
+          ],
+          "explanation": "The first clause gives the concession; although introduces its limitation."
+        },
+        {
+          "id": "r4",
+          "prompt": "What balance does 'hardly revolutionary' create?",
+          "context": "While the scheme is hardly revolutionary, it offers a practical way for small organisations to share equipment.",
+          "options": [
+            {
+              "id": "d",
+              "text": "No evaluation at all."
+            },
+            {
+              "id": "a",
+              "text": "Limited praise with a useful recommendation."
+            },
+            {
+              "id": "c",
+              "text": "Strong praise of its originality."
+            }
+          ],
+          "explanation": "The writer denies originality but recognises practical value."
+        },
+        {
+          "id": "r5",
+          "prompt": "What does 'apparently' add?",
+          "context": "Apparently, the delay resulted from a software fault, although the supplier has not released a full explanation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "A definite historical date."
+            },
+            {
+              "id": "a",
+              "text": "Distance and uncertainty."
+            },
+            {
+              "id": "c",
+              "text": "Strong personal anger."
+            }
+          ],
+          "explanation": "Apparently marks information that seems true but is not fully confirmed."
+        },
+        {
+          "id": "r6",
+          "prompt": "What does the writer concede about the transport cost?",
+          "context": "The report is clearly useful for planning, although it says little about informal workers.",
+          "options": [
+            {
+              "id": "c",
+              "text": "It is useless."
+            },
+            {
+              "id": "a",
+              "text": "It has value for planning."
+            },
+            {
+              "id": "d",
+              "text": "It is only about informal work."
+            }
+          ],
+          "explanation": "The first clause is the point conceded before the limitation."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which description fits the review?",
+          "context": "The device is impressively light, though its battery life is disappointing. Buyers who travel often may want a different model.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Certain that every buyer will return it."
+            },
+            {
+              "id": "c",
+              "text": "Uninterested in users."
+            },
+            {
+              "id": "a",
+              "text": "Appreciative but practical and cautious."
+            }
+          ],
+          "explanation": "Impressively is positive, while the battery criticism leads to cautious advice."
+        },
+        {
+          "id": "r8",
+          "prompt": "Why is the criticism constructive?",
+          "context": "The campaign attracted attention, but not all the publicity was helpful. The organisers should focus on clearer information next time.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It includes a practical improvement."
+            },
+            {
+              "id": "d",
+              "text": "It praises every part of the campaign."
+            },
+            {
+              "id": "b",
+              "text": "It attacks people without evidence."
+            }
+          ],
+          "explanation": "A suggested improvement makes the criticism useful rather than merely hostile."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-attitude-tone"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "editorial",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-attitude-tone-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-attitude-tone",
+      "subtopic": "b2-reading-attitude-tone",
+      "taxonomyNodeIds": [
+        "b2-reading-attitude-tone"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What does 'dismisses' communicate?",
+          "context": "The reviewer dismisses the claim that the shortcut is harmless and cites two accidents.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Reports it neutrally."
+            },
+            {
+              "id": "a",
+              "text": "Strongly rejects it."
+            },
+            {
+              "id": "b",
+              "text": "Supports it carefully."
+            }
+          ],
+          "explanation": "Dismisses indicates a strong rejection of the claim."
+        },
+        {
+          "id": "r2",
+          "prompt": "How certain is the claim?",
+          "context": "The changes will probably reduce queues, but the manager admits that demand is difficult to predict.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Absolutely certain."
+            },
+            {
+              "id": "a",
+              "text": "Moderately confident, with a reservation."
+            },
+            {
+              "id": "d",
+              "text": "The claim is a historical fact."
+            }
+          ],
+          "explanation": "Probably expresses likelihood and admits introduces a limitation."
+        },
+        {
+          "id": "r3",
+          "prompt": "What is the tone of the final sentence?",
+          "context": "The campaign attracted attention, but not all the publicity was helpful. The organisers should perhaps focus on clearer information next time.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Triumphantly certain."
+            },
+            {
+              "id": "c",
+              "text": "Hostile without a solution."
+            },
+            {
+              "id": "a",
+              "text": "Constructively critical."
+            }
+          ],
+          "explanation": "The criticism is paired with a practical suggestion, making it constructive."
+        },
+        {
+          "id": "r4",
+          "prompt": "How firm is the rejection?",
+          "context": "It would be misleading to describe the results as conclusive because several variables remain uncontrolled.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tentative and unsupported."
+            },
+            {
+              "id": "d",
+              "text": "Purely humorous."
+            },
+            {
+              "id": "a",
+              "text": "Firm but reasoned."
+            }
+          ],
+          "explanation": "Misleading is a firm judgement supported by a methodological reason."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which tone best describes the announcement?",
+          "context": "The organisers are delighted to confirm that the festival will return next spring with an expanded programme.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Enthusiastic."
+            },
+            {
+              "id": "b",
+              "text": "Reluctant."
+            },
+            {
+              "id": "c",
+              "text": "Suspicious."
+            }
+          ],
+          "explanation": "Delighted and expanded programme signal strong enthusiasm."
+        },
+        {
+          "id": "r6",
+          "prompt": "What is implied by the phrase 'hardly a miracle'?",
+          "context": "The repair saved the device, though it was hardly a miracle: the fault was minor and the solution was obvious.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The solution was impossible."
+            },
+            {
+              "id": "b",
+              "text": "The writer believes a miracle occurred."
+            },
+            {
+              "id": "a",
+              "text": "The writer downplays the achievement."
+            }
+          ],
+          "explanation": "Hardly a miracle is an understated, mildly dismissive evaluation of the repair."
+        },
+        {
+          "id": "r7",
+          "prompt": "What is the effect of the word 'merely'?",
+          "context": "The initiative was not merely symbolic: it changed how the council purchased supplies.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It rejects the idea that the initiative had no practical effect."
+            },
+            {
+              "id": "b",
+              "text": "It says the initiative was completely symbolic."
+            },
+            {
+              "id": "c",
+              "text": "It makes the purchases uncertain."
+            }
+          ],
+          "explanation": "Not merely contrasts symbolic appearance with a real purchasing change."
+        },
+        {
+          "id": "r8",
+          "prompt": "What does 'claims' suggest about the author's distance?",
+          "context": "The company claims that the material is fully recyclable, although independent testing has not yet confirmed this.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The author is certain the company is correct."
+            },
+            {
+              "id": "a",
+              "text": "The author reports the claim without endorsing it."
+            },
+            {
+              "id": "b",
+              "text": "The author proves it is recyclable."
+            }
+          ],
+          "explanation": "Claims can distance the writer from an unverified statement, reinforced by although."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-attitude-tone"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "verb",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

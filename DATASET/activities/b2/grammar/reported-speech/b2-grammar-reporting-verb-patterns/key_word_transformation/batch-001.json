@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-verb-patterns-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reporting-verb-patterns",
+  "lessonId": "b2-grammar-reporting-verb-patterns",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Tom said that he had broken the window.",
+      "firstSentence": "Tom said that he had broken the window.",
+      "keyWord": "ADMITTED",
+      "gapText": "Tom [gap1] the window.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "admitted breaking",
+              "admitted to breaking"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Admit» se construye con gerundio, nunca con infinitivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Laura confessed that she had copied her neighbour's homework.",
+      "firstSentence": "Laura confessed that she had copied her neighbour's homework.",
+      "keyWord": "ADMITTED",
+      "gapText": "Laura [gap1] her neighbour's homework.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "admitted copying",
+              "admitted to copying"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Confess that» equivale a «admit» más gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The manager said it was true that she had lost the file.",
+      "firstSentence": "The manager said it was true that she had lost the file.",
+      "keyWord": "ADMITTED",
+      "gapText": "The manager [gap1] the file.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "admitted losing",
+              "admitted having lost"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El gerundio perfecto «having lost» marca que la pérdida es anterior al reporte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«Yes, I ate the last slice of cake», said Nora.",
+      "firstSentence": "«Yes, I ate the last slice of cake», said Nora.",
+      "keyWord": "ADMITTED",
+      "gapText": "Nora [gap1] the last slice of cake.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "admitted eating",
+              "admitted to eating"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Al pasar el estilo directo a «admit», el pasado simple se convierte en gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The students accepted that they had cheated in the exam.",
+      "firstSentence": "The students accepted that they had cheated in the exam.",
+      "keyWord": "ADMITTED",
+      "gapText": "The students [gap1] in the exam.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "admitted cheating",
+              "admitted to cheating"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Accept that» reconoce un hecho igual que «admit» más gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Sam says that he takes the bus without paying.",
+      "firstSentence": "Sam says that he takes the bus without paying.",
+      "keyWord": "ADMITS",
+      "gapText": "Sam [gap1] the bus without paying.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "admits taking",
+              "admits to taking"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La clave «admits» conserva la tercera persona del presente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Carla said that she had not taken the money.",
+      "firstSentence": "Carla said that she had not taken the money.",
+      "keyWord": "DENIED",
+      "gapText": "Carla [gap1] the money.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "denied taking",
+              "denied having taken"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Deny» ya contiene la negación, así que el gerundio va en afirmativo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«I did not send that message», said Marco.",
+      "firstSentence": "«I did not send that message», said Marco.",
+      "keyWord": "DENIED",
+      "gapText": "Marco [gap1] that message.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "denied sending"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Deny» sustituye a la negación del estilo directo y pide gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The company says that it did not pollute the river.",
+      "firstSentence": "The company says that it did not pollute the river.",
+      "keyWord": "DENIES",
+      "gapText": "The company [gap1] the river.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "denies polluting",
+              "denies having polluted"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La clave «denies» exige mantener el presente del verbo de reporte."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Julia claims that she never promised us a refund.",
+      "firstSentence": "Julia claims that she never promised us a refund.",
+      "keyWord": "DENIES",
+      "gapText": "Julia [gap1] us a refund.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "denies promising"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Claim that never» se reformula con «deny» más gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The goalkeeper said that he had not touched the ball with his hand.",
+      "firstSentence": "The goalkeeper said that he had not touched the ball with his hand.",
+      "keyWord": "DENIED",
+      "gapText": "The goalkeeper [gap1] the ball with his hand.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "denied touching"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «deny» el gerundio no lleva «to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Our neighbours say that they did not park in our space.",
+      "firstSentence": "Our neighbours say that they did not park in our space.",
+      "keyWord": "DENY",
+      "gapText": "Our neighbours [gap1] in our space.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "deny parking",
+              "deny having parked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "En plural la clave «deny» va sin «s» final."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Ivan said that he would not lend me his bicycle.",
+      "firstSentence": "Ivan said that he would not lend me his bicycle.",
+      "keyWord": "REFUSED",
+      "gapText": "Ivan [gap1] me his bicycle.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "refused to lend"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Refuse» se construye con infinitivo con «to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The witness would not answer any questions.",
+      "firstSentence": "The witness would not answer any questions.",
+      "keyWord": "REFUSED",
+      "gapText": "The witness [gap1] any questions.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "refused to answer"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Would not» con voluntad equivale a «refused to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«I am not going to sign this contract», said the actress.",
+      "firstSentence": "«I am not going to sign this contract», said the actress.",
+      "keyWord": "REFUSED",
+      "gapText": "The actress [gap1] the contract.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "refused to sign"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La negativa rotunda del estilo directo se reporta con «refuse to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The shop assistant would not give us our money back.",
+      "firstSentence": "The shop assistant would not give us our money back.",
+      "keyWord": "REFUSED",
+      "gapText": "The shop assistant [gap1] our money back.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "refused to give"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El infinitivo que sigue a «refused» conserva el objeto indirecto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My brother says he will not share his room with anyone.",
+      "firstSentence": "My brother says he will not share his room with anyone.",
+      "keyWord": "REFUSES",
+      "gapText": "My brother [gap1] his room with anyone.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "refuses to share"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Will not» de presente pasa a «refuses to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The hotel would not allow guests to arrive before noon.",
+      "firstSentence": "The hotel would not allow guests to arrive before noon.",
+      "keyWord": "REFUSED",
+      "gapText": "The hotel [gap1] in before noon.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "refused to let us check"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Let» va con infinitivo sin «to» detrás del objeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«Shall I carry your suitcase?» said the porter.",
+      "firstSentence": "«Shall I carry your suitcase?» said the porter.",
+      "keyWord": "OFFERED",
+      "gapText": "The porter [gap1] my suitcase.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "offered to carry"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Shall I…?» como ofrecimiento se reporta con «offer to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Diana said that she would pay for the meal.",
+      "firstSentence": "Diana said that she would pay for the meal.",
+      "keyWord": "OFFERED",
+      "gapText": "Diana [gap1] for the meal.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "offered to pay"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Offer» rige infinitivo con «to», no gerundio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«Would you like me to drive you to the station?» asked Louis.",
+      "firstSentence": "«Would you like me to drive you to the station?» asked Louis.",
+      "keyWord": "OFFERED",
+      "gapText": "Louis [gap1] to the station.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "offered to drive me"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El objeto va después del infinitivo: «offered to drive me»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The neighbours said they would look after our plants.",
+      "firstSentence": "The neighbours said they would look after our plants.",
+      "keyWord": "OFFERED",
+      "gapText": "The neighbours [gap1] our plants.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "offered to look after"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El phrasal «look after» se mantiene entero tras «offered to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My tutor said she would read my essay before Friday.",
+      "firstSentence": "My tutor said she would read my essay before Friday.",
+      "keyWord": "OFFERED",
+      "gapText": "My tutor [gap1] my essay before Friday.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "offered to read"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Would» de voluntad futura se reporta como ofrecimiento."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«I can help you with the washing up», said Ruth.",
+      "firstSentence": "«I can help you with the washing up», said Ruth.",
+      "keyWord": "OFFERED",
+      "gapText": "Ruth [gap1] with the washing up.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "offered to help me"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«I can help you» pasa a «offered to help me» con el pronombre invertido."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "«You stole my umbrella, Daniel», said Emma.",
+      "firstSentence": "«You stole my umbrella, Daniel», said Emma.",
+      "keyWord": "ACCUSED",
+      "gapText": "Emma [gap1] her umbrella.",
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "reported-speech"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "accused Daniel of stealing"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Accuse somebody of» va seguido de gerundio."
+    }
+  ]
+}

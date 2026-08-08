@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-phrasal-verbs-work-problems-mini-game-001",
+  "level": "B2",
+  "category": "phrasal-verbs",
+  "topic": "b2-phrasal-work-problems",
+  "subtopic": "b2-phrasal-work-problems",
+  "lessonId": "b2-phrasal-verbs-work-problems",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-work-problems-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-work-problems",
+      "subtopic": "b2-phrasal-work-problems",
+      "taxonomyNodeIds": [
+        "b2-phrasal-work-problems"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Could you ___ the quarterly figures before lunch?",
+          "options": [
+            {
+              "id": "c",
+              "text": "hand in"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            },
+            {
+              "id": "d",
+              "text": "point out"
+            }
+          ],
+          "explanation": "The workplace context requires “go over”, meaning check carefully."
+        },
+        {
+          "id": "r2",
+          "prompt": "Production had to ___ when the power failed on Tuesday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "shut up"
+            },
+            {
+              "id": "a",
+              "text": "shut down"
+            },
+            {
+              "id": "d",
+              "text": "shut in"
+            }
+          ],
+          "explanation": "«Shut down» means to stop operating completely."
+        },
+        {
+          "id": "r3",
+          "prompt": "We should ___ a planning meeting.",
+          "options": [
+            {
+              "id": "b",
+              "text": "find out"
+            },
+            {
+              "id": "c",
+              "text": "run into"
+            },
+            {
+              "id": "a",
+              "text": "set up"
+            }
+          ],
+          "explanation": "The workplace context requires “set up”, meaning arrange or establish."
+        },
+        {
+          "id": "r4",
+          "prompt": "The auditors will ___ the missing invoices next week.",
+          "options": [
+            {
+              "id": "a",
+              "text": "look into"
+            },
+            {
+              "id": "d",
+              "text": "look on"
+            },
+            {
+              "id": "b",
+              "text": "look over at"
+            }
+          ],
+          "explanation": "«Look into» means to investigate."
+        },
+        {
+          "id": "r5",
+          "prompt": "Please ___ the figures once more before the meeting.",
+          "options": [
+            {
+              "id": "c",
+              "text": "go in for"
+            },
+            {
+              "id": "b",
+              "text": "go off"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            }
+          ],
+          "explanation": "«Go over» means to review carefully."
+        },
+        {
+          "id": "r6",
+          "prompt": "Marta was asked to ___ for her colleague during the holidays.",
+          "options": [
+            {
+              "id": "d",
+              "text": "stand over"
+            },
+            {
+              "id": "a",
+              "text": "stand in"
+            },
+            {
+              "id": "b",
+              "text": "stand out"
+            }
+          ],
+          "explanation": "«Stand in» means to replace someone temporarily."
+        },
+        {
+          "id": "r7",
+          "prompt": "Nobody could ___ why the server crashed on Friday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "work up"
+            },
+            {
+              "id": "d",
+              "text": "work in"
+            },
+            {
+              "id": "a",
+              "text": "work out"
+            }
+          ],
+          "explanation": "«Work out» means to figure something out."
+        },
+        {
+          "id": "r8",
+          "prompt": "Two colleagues ___ over the new shift rota last week.",
+          "options": [
+            {
+              "id": "a",
+              "text": "fell out"
+            },
+            {
+              "id": "b",
+              "text": "fell over"
+            },
+            {
+              "id": "d",
+              "text": "fell through"
+            }
+          ],
+          "explanation": "«Fall out» means to argue and stop being friendly."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-work-problems"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "multiple-choice-cloze",
+        "work",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-work-problems-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-work-problems",
+      "subtopic": "b2-phrasal-work-problems",
+      "taxonomyNodeIds": [
+        "b2-phrasal-work-problems"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The supervisor ___ the mistake to a faulty spreadsheet.",
+          "options": [
+            {
+              "id": "a",
+              "text": "put down"
+            },
+            {
+              "id": "d",
+              "text": "put through"
+            },
+            {
+              "id": "c",
+              "text": "put out"
+            }
+          ],
+          "explanation": "«Put something down to» means to attribute it to a cause."
+        },
+        {
+          "id": "r2",
+          "prompt": "The lawyers must ___ a new contract.",
+          "options": [
+            {
+              "id": "d",
+              "text": "run into"
+            },
+            {
+              "id": "a",
+              "text": "draw up"
+            },
+            {
+              "id": "c",
+              "text": "find out"
+            }
+          ],
+          "explanation": "The workplace context requires “draw up”, meaning prepare a document."
+        },
+        {
+          "id": "r3",
+          "prompt": "The director decided to ___ the meeting.",
+          "options": [
+            {
+              "id": "a",
+              "text": "call off"
+            },
+            {
+              "id": "b",
+              "text": "turn down"
+            },
+            {
+              "id": "d",
+              "text": "take on"
+            }
+          ],
+          "explanation": "The workplace context requires “call off”, meaning cancel."
+        },
+        {
+          "id": "r4",
+          "prompt": "The union will not ___ its demand for shorter shifts.",
+          "options": [
+            {
+              "id": "b",
+              "text": "back up"
+            },
+            {
+              "id": "d",
+              "text": "back in"
+            },
+            {
+              "id": "a",
+              "text": "back down on"
+            }
+          ],
+          "explanation": "«Back down» means to withdraw from a position."
+        },
+        {
+          "id": "r5",
+          "prompt": "The department began to ___ with the reports.",
+          "options": [
+            {
+              "id": "a",
+              "text": "fall behind"
+            },
+            {
+              "id": "c",
+              "text": "sign up for"
+            },
+            {
+              "id": "d",
+              "text": "log in to"
+            }
+          ],
+          "explanation": "The workplace context requires “fall behind”, meaning fail to keep pace."
+        },
+        {
+          "id": "r6",
+          "prompt": "They had to ___ the interview until Monday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "turn down"
+            },
+            {
+              "id": "d",
+              "text": "go over"
+            },
+            {
+              "id": "a",
+              "text": "put off"
+            }
+          ],
+          "explanation": "The workplace context requires “put off”, meaning delay."
+        },
+        {
+          "id": "r7",
+          "prompt": "The new policy will ___ at the start of next quarter.",
+          "options": [
+            {
+              "id": "d",
+              "text": "come round"
+            },
+            {
+              "id": "c",
+              "text": "come over"
+            },
+            {
+              "id": "b",
+              "text": "come into force"
+            }
+          ],
+          "explanation": "«Come into force» is the fixed phrase for a rule taking effect."
+        },
+        {
+          "id": "r8",
+          "prompt": "The department was ___ during the restructuring last spring.",
+          "options": [
+            {
+              "id": "b",
+              "text": "done up"
+            },
+            {
+              "id": "d",
+              "text": "done in"
+            },
+            {
+              "id": "a",
+              "text": "done away with"
+            }
+          ],
+          "explanation": "«Do away with» means to abolish."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-work-problems"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "phrasal-verb-choice",
+        "work-problems",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-lexical-precision-mini-game-001",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-lexical-precision",
+  "subtopic": "b1-lexical-precision",
+  "lessonId": "b1-lexical-precision",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-lexical-precision-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-lexical-precision",
+      "subtopic": "b1-lexical-precision",
+      "taxonomyNodeIds": [
+        "b1-lexical-precision"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Maya ___ her homework before dinner yesterday.",
+          "options": [
+            {
+              "id": "d",
+              "text": "has finish"
+            },
+            {
+              "id": "c",
+              "text": "finished"
+            },
+            {
+              "id": "a",
+              "text": "finish"
+            }
+          ],
+          "explanation": "«Yesterday» points to a finished past event, so the past simple «finished» is required."
+        },
+        {
+          "id": "r2",
+          "prompt": "Can you ___ the parcel from the post office on your way home?",
+          "options": [
+            {
+              "id": "d",
+              "text": "pick over"
+            },
+            {
+              "id": "c",
+              "text": "pick on"
+            },
+            {
+              "id": "a",
+              "text": "pick up"
+            }
+          ],
+          "explanation": "«Pick up» means collect a person or thing from a place."
+        },
+        {
+          "id": "r3",
+          "prompt": "The school has ___ a new recycling project this term.",
+          "options": [
+            {
+              "id": "a",
+              "text": "set up"
+            },
+            {
+              "id": "b",
+              "text": "set off"
+            },
+            {
+              "id": "c",
+              "text": "set aside"
+            }
+          ],
+          "explanation": "«Set up» means establish or organise a project."
+        },
+        {
+          "id": "r4",
+          "prompt": "By the time we reached the platform, the train ___ already left.",
+          "options": [
+            {
+              "id": "b",
+              "text": "would"
+            },
+            {
+              "id": "d",
+              "text": "was"
+            },
+            {
+              "id": "c",
+              "text": "had"
+            }
+          ],
+          "explanation": "El tren salió antes de que llegáramos, así que usamos past perfect: «had left»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The teacher asked for a ___ explanation rather than a list of unrelated facts.",
+          "options": [
+            {
+              "id": "d",
+              "text": "coherence"
+            },
+            {
+              "id": "c",
+              "text": "connectedly"
+            },
+            {
+              "id": "a",
+              "text": "coherent"
+            }
+          ],
+          "explanation": "A «coherent explanation» is clear, logical and easy to follow."
+        },
+        {
+          "id": "r6",
+          "prompt": "The manager was reluctant to approve the plan because its costs were still ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "unsettled"
+            },
+            {
+              "id": "a",
+              "text": "uncertain"
+            },
+            {
+              "id": "d",
+              "text": "unaware"
+            }
+          ],
+          "explanation": "Costs are «uncertain» when they are not known or fixed yet."
+        },
+        {
+          "id": "r7",
+          "prompt": "This jacket is ___ than the one I tried on earlier.",
+          "options": [
+            {
+              "id": "c",
+              "text": "more warm"
+            },
+            {
+              "id": "d",
+              "text": "warmest"
+            },
+            {
+              "id": "b",
+              "text": "warmer"
+            }
+          ],
+          "explanation": "La comparación con «than» requiere el comparativo «warmer»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The receptionist took ___ of the visitor's passport details.",
+          "options": [
+            {
+              "id": "d",
+              "text": "mark"
+            },
+            {
+              "id": "b",
+              "text": "notice"
+            },
+            {
+              "id": "a",
+              "text": "note"
+            }
+          ],
+          "explanation": "«Take note of» means record or pay careful attention to information."
+        }
+      ],
+      "lessonIds": [
+        "b1-lexical-precision"
+      ],
+      "tags": [
+        "b1",
+        "cloze",
+        "past-simple",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-lexical-precision-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-lexical-precision",
+      "subtopic": "b1-lexical-precision",
+      "taxonomyNodeIds": [
+        "b1-lexical-precision"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Please keep the ___ after you pay; you may need it to exchange the shirt.",
+          "options": [
+            {
+              "id": "a",
+              "text": "receipt"
+            },
+            {
+              "id": "c",
+              "text": "reception"
+            },
+            {
+              "id": "b",
+              "text": "recipe"
+            }
+          ],
+          "explanation": "A shop gives you a «receipt» as proof of purchase."
+        },
+        {
+          "id": "r2",
+          "prompt": "The receptionist gave me a ___ of paper with the appointment time on it.",
+          "options": [
+            {
+              "id": "d",
+              "text": "mark"
+            },
+            {
+              "id": "a",
+              "text": "note"
+            },
+            {
+              "id": "c",
+              "text": "news"
+            }
+          ],
+          "explanation": "A small written reminder is a «note»; «notice» usually means public information."
+        },
+        {
+          "id": "r3",
+          "prompt": "The hotel is within ___ distance of the old town.",
+          "options": [
+            {
+              "id": "b",
+              "text": "walkingly"
+            },
+            {
+              "id": "a",
+              "text": "walking"
+            },
+            {
+              "id": "c",
+              "text": "walk"
+            }
+          ],
+          "explanation": "The phrase «within walking distance» describes a place reachable on foot."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new timetable has had a ___ effect on morning traffic.",
+          "options": [
+            {
+              "id": "d",
+              "text": "noticed"
+            },
+            {
+              "id": "c",
+              "text": "noticing"
+            },
+            {
+              "id": "b",
+              "text": "noticeable"
+            }
+          ],
+          "explanation": "Antes del nombre «effect» necesitamos el adjetivo «noticeable»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I need to ___ early tomorrow because my train leaves at six.",
+          "options": [
+            {
+              "id": "a",
+              "text": "get up"
+            },
+            {
+              "id": "d",
+              "text": "get into"
+            },
+            {
+              "id": "b",
+              "text": "get over"
+            }
+          ],
+          "explanation": "«Get up» means leave your bed and start the day."
+        },
+        {
+          "id": "r6",
+          "prompt": "I have lived in this neighbourhood ___ 2021.",
+          "options": [
+            {
+              "id": "c",
+              "text": "since"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "from"
+            }
+          ],
+          "explanation": "«Since» introduces a starting point in time, here the year 2021."
+        },
+        {
+          "id": "r7",
+          "prompt": "The short report failed to ___ why the repairs cost so much.",
+          "options": [
+            {
+              "id": "c",
+              "text": "count on"
+            },
+            {
+              "id": "d",
+              "text": "allow for"
+            },
+            {
+              "id": "a",
+              "text": "account for"
+            }
+          ],
+          "explanation": "«Account for» significa explicar o justificar una cantidad o hecho."
+        },
+        {
+          "id": "r8",
+          "prompt": "The sales figures did not ___ the high expectations in the first quarter.",
+          "options": [
+            {
+              "id": "a",
+              "text": "live up to"
+            },
+            {
+              "id": "c",
+              "text": "live through"
+            },
+            {
+              "id": "b",
+              "text": "live on"
+            }
+          ],
+          "explanation": "«Live up to» means be as good as someone expected."
+        }
+      ],
+      "lessonIds": [
+        "b1-lexical-precision"
+      ],
+      "tags": [
+        "b1",
+        "vocabulary",
+        "shopping",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

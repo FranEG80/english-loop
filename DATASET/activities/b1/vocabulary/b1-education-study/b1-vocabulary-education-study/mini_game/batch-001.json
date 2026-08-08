@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-education-study-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-education-study",
+  "subtopic": "b1-education-study",
+  "lessonId": "b1-vocabulary-education-study",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-education-study-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-education-study",
+      "subtopic": "b1-education-study",
+      "taxonomyNodeIds": [
+        "b1-education-study"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I need to ___ for tomorrow's maths exam.",
+          "options": [
+            {
+              "id": "c",
+              "text": "fail"
+            },
+            {
+              "id": "a",
+              "text": "revise"
+            },
+            {
+              "id": "d",
+              "text": "hand"
+            }
+          ],
+          "explanation": "Revise for significa repasar para prepararse para un examen."
+        },
+        {
+          "id": "r2",
+          "prompt": "The teacher's comments helped me make steady ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "progress"
+            },
+            {
+              "id": "b",
+              "text": "deadline"
+            },
+            {
+              "id": "c",
+              "text": "subject"
+            }
+          ],
+          "explanation": "Progress es el avance general de un estudiante."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which verb completes the natural phrase: ___ an exam?",
+          "options": [
+            {
+              "id": "d",
+              "text": "learn"
+            },
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "do in"
+            }
+          ],
+          "explanation": "Take an exam es la colocación estándar para presentarse a un examen."
+        },
+        {
+          "id": "r4",
+          "prompt": "A whole programme of study is usually called a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "course"
+            },
+            {
+              "id": "d",
+              "text": "feedback"
+            },
+            {
+              "id": "b",
+              "text": "mark"
+            }
+          ],
+          "explanation": "Course es un programa de estudio amplio."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence uses learn correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "I learned for my exam."
+            },
+            {
+              "id": "b",
+              "text": "I learned three new phrases today."
+            },
+            {
+              "id": "a",
+              "text": "The teacher learned us French."
+            }
+          ],
+          "explanation": "Learn describe adquirir conocimiento; la frase b es la única natural."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which verb completes: She ___ the exam with 86 percent?",
+          "options": [
+            {
+              "id": "c",
+              "text": "revised"
+            },
+            {
+              "id": "b",
+              "text": "failed"
+            },
+            {
+              "id": "a",
+              "text": "passed"
+            }
+          ],
+          "explanation": "Una puntuación del 86 por ciento indica que aprobó: passed."
+        },
+        {
+          "id": "r7",
+          "prompt": "Choose the natural phrase for preparing for an exam.",
+          "options": [
+            {
+              "id": "b",
+              "text": "I am studying the exam."
+            },
+            {
+              "id": "c",
+              "text": "I am revising the exam."
+            },
+            {
+              "id": "a",
+              "text": "I am studying for the exam."
+            }
+          ],
+          "explanation": "Study for + examen indica preparación; revise for también sería posible, pero no aparece como opción."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase means to deliver a piece of work to a teacher?",
+          "options": [
+            {
+              "id": "b",
+              "text": "catch up an assignment"
+            },
+            {
+              "id": "c",
+              "text": "revise an assignment for"
+            },
+            {
+              "id": "a",
+              "text": "hand in an assignment"
+            }
+          ],
+          "explanation": "Hand in an assignment significa entregar una tarea."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-education-study"
+      ],
+      "tags": [
+        "b1",
+        "education-study",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-education-study-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-education-study",
+      "subtopic": "b1-education-study",
+      "taxonomyNodeIds": [
+        "b1-education-study"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "After missing a week, Tom needs to ___ with his classmates.",
+          "options": [
+            {
+              "id": "b",
+              "text": "pass"
+            },
+            {
+              "id": "a",
+              "text": "catch up"
+            },
+            {
+              "id": "c",
+              "text": "teach"
+            }
+          ],
+          "explanation": "Catch up expresa recuperar el contenido perdido."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence refers to the activity rather than the result of learning?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I received useful feedback."
+            },
+            {
+              "id": "c",
+              "text": "I passed the test."
+            },
+            {
+              "id": "a",
+              "text": "I study chemistry every evening."
+            }
+          ],
+          "explanation": "Study pone el foco en la actividad de dedicar tiempo a una materia."
+        },
+        {
+          "id": "r3",
+          "prompt": "The student did not submit the essay before the ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "deadline"
+            },
+            {
+              "id": "b",
+              "text": "feedback"
+            },
+            {
+              "id": "d",
+              "text": "progress"
+            }
+          ],
+          "explanation": "La fecha límite de entrega es the deadline."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which word means the result you receive for an assignment?",
+          "options": [
+            {
+              "id": "b",
+              "text": "course"
+            },
+            {
+              "id": "c",
+              "text": "class"
+            },
+            {
+              "id": "a",
+              "text": "mark"
+            }
+          ],
+          "explanation": "A mark es la nota obtenida en una tarea o prueba."
+        },
+        {
+          "id": "r5",
+          "prompt": "Our teacher ___ us how to organise the notes.",
+          "options": [
+            {
+              "id": "a",
+              "text": "learned"
+            },
+            {
+              "id": "b",
+              "text": "taught"
+            },
+            {
+              "id": "c",
+              "text": "revised"
+            }
+          ],
+          "explanation": "Teach significa enseñar algo a alguien."
+        },
+        {
+          "id": "r6",
+          "prompt": "Marta got a high ___ in her science project.",
+          "options": [
+            {
+              "id": "b",
+              "text": "progress"
+            },
+            {
+              "id": "a",
+              "text": "mark"
+            },
+            {
+              "id": "d",
+              "text": "pupil"
+            }
+          ],
+          "explanation": "Una high mark es una nota alta."
+        },
+        {
+          "id": "r7",
+          "prompt": "You can ___ an exam next month if you have prepared.",
+          "options": [
+            {
+              "id": "c",
+              "text": "learn"
+            },
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "d",
+              "text": "hand"
+            }
+          ],
+          "explanation": "Take an exam significa presentarse a un examen."
+        },
+        {
+          "id": "r8",
+          "prompt": "I missed two lessons, so I am trying to ___ with the class.",
+          "options": [
+            {
+              "id": "a",
+              "text": "catch up"
+            },
+            {
+              "id": "d",
+              "text": "mark"
+            },
+            {
+              "id": "b",
+              "text": "fail"
+            }
+          ],
+          "explanation": "Catch up significa alcanzar el nivel que se había perdido."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-education-study"
+      ],
+      "tags": [
+        "b1",
+        "education-study",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

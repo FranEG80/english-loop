@@ -1423,65 +1423,6 @@
         ]
       },
       "explanation": "The results were replicated by an independent laboratory."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-science-research-wo-025",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_order",
-      "skillFocus": "word_order",
-      "category": "vocabulary",
-      "topic": "b2-science-research",
-      "subtopic": "b2-science-research",
-      "taxonomyNodeIds": [
-        "b2-science-research"
-      ],
-      "difficulty": 5,
-      "instructions": "Arrange the claim sentence.",
-      "prompt": "Use make a claim about noise.",
-      "tokens": [
-        {
-          "id": "t1",
-          "text": "The article makes a"
-        },
-        {
-          "id": "t2",
-          "text": "claim"
-        },
-        {
-          "id": "t3",
-          "text": "about"
-        },
-        {
-          "id": "t4",
-          "text": "urban"
-        },
-        {
-          "id": "t5",
-          "text": "noise."
-        }
-      ],
-      "lessonIds": [
-        "b2-vocabulary-science-research"
-      ],
-      "tags": [
-        "b2",
-        "claim"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "ordered_tokens",
-        "correctTokenIds": [
-          "t1",
-          "t2",
-          "t3",
-          "t4",
-          "t5"
-        ]
-      },
-      "explanation": "The article makes a claim about urban noise."
     }
   ]
 }

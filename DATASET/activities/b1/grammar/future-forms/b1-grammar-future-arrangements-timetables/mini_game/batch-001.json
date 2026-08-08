@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-future-arrangements-timetables-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "present-continuous-arrangements",
+  "lessonId": "b1-grammar-future-arrangements-timetables",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-future-arrangements-timetables-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "present-continuous-arrangements",
+      "taxonomyNodeIds": [
+        "present-continuous-arrangements"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The designer ___ our office on Tuesday to discuss the new layout.",
+          "options": [
+            {
+              "id": "a",
+              "text": "visiting"
+            },
+            {
+              "id": "c",
+              "text": "is visiting"
+            },
+            {
+              "id": "d",
+              "text": "is visit"
+            }
+          ],
+          "explanation": "La visita profesional está concertada para un día concreto; corresponde «is visiting»."
+        },
+        {
+          "id": "r2",
+          "prompt": "I can't stay late because I ___ Sam at the station at nine.",
+          "options": [
+            {
+              "id": "a",
+              "text": "pick up"
+            },
+            {
+              "id": "b",
+              "text": "am picking up"
+            },
+            {
+              "id": "d",
+              "text": "picked up"
+            }
+          ],
+          "explanation": "Recoger a Sam a una hora concreta es un compromiso ya organizado: «am picking up»."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ you ___ the project manager this afternoon?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Are / meeting"
+            },
+            {
+              "id": "a",
+              "text": "Do / meet"
+            },
+            {
+              "id": "b",
+              "text": "Will / meeting"
+            }
+          ],
+          "explanation": "Para preguntar por una reunión acordada usamos «Are you meeting...?»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Our landlord ___ someone to check the boiler tomorrow morning.",
+          "options": [
+            {
+              "id": "c",
+              "text": "is send"
+            },
+            {
+              "id": "a",
+              "text": "is sending"
+            },
+            {
+              "id": "d",
+              "text": "will sent"
+            }
+          ],
+          "explanation": "La visita del técnico ya ha sido organizada por el casero; usamos «is sending»."
+        },
+        {
+          "id": "r5",
+          "prompt": "We ___ at home tonight; we've booked a table at the Thai restaurant.",
+          "options": [
+            {
+              "id": "a",
+              "text": "aren't eating"
+            },
+            {
+              "id": "b",
+              "text": "don't eating"
+            },
+            {
+              "id": "d",
+              "text": "not eat"
+            }
+          ],
+          "explanation": "La reserva demuestra un plan acordado; la negativa correcta del presente continuo es «aren't eating»."
+        },
+        {
+          "id": "r6",
+          "prompt": "___ anyone ___ you at the airport, or should I arrange a taxi?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Will / met"
+            },
+            {
+              "id": "a",
+              "text": "Does / meeting"
+            },
+            {
+              "id": "b",
+              "text": "Is / meeting"
+            }
+          ],
+          "explanation": "Se pregunta si existe un acuerdo de recogida; «Is anyone meeting you...?» es la construcción correcta."
+        },
+        {
+          "id": "r7",
+          "prompt": "Ravi ___ his driving instructor again on Saturday, as they agreed after today's lesson.",
+          "options": [
+            {
+              "id": "b",
+              "text": "is seeing"
+            },
+            {
+              "id": "c",
+              "text": "will seeing"
+            },
+            {
+              "id": "a",
+              "text": "sees always"
+            }
+          ],
+          "explanation": "El acuerdo se tomó con el instructor y tiene fecha; «is seeing» es la opción precisa."
+        },
+        {
+          "id": "r8",
+          "prompt": "We ___ the flat after all; the agent cancelled tomorrow's viewing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "aren't viewing"
+            },
+            {
+              "id": "d",
+              "text": "won't viewed"
+            },
+            {
+              "id": "c",
+              "text": "not view"
+            }
+          ],
+          "explanation": "Se cancela un acuerdo futuro concreto; la negativa adecuada es «aren't viewing»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-future-arrangements-timetables"
+      ],
+      "tags": [
+        "b1",
+        "future-forms",
+        "arrangements",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-future-arrangements-timetables-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "present-continuous-arrangements",
+      "taxonomyNodeIds": [
+        "present-continuous-arrangements"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I ___ the supplier tomorrow unless they ask to move the appointment again.",
+          "options": [
+            {
+              "id": "a",
+              "text": "am seeing"
+            },
+            {
+              "id": "d",
+              "text": "am see"
+            },
+            {
+              "id": "b",
+              "text": "see usually"
+            }
+          ],
+          "explanation": "La cita existe aunque pueda modificarse; el presente continuo «am seeing» expresa el acuerdo vigente."
+        },
+        {
+          "id": "r2",
+          "prompt": "Because the photographer is unavailable on Friday, we ___ the team photo on Monday instead.",
+          "options": [
+            {
+              "id": "d",
+              "text": "are take"
+            },
+            {
+              "id": "a",
+              "text": "are taking"
+            },
+            {
+              "id": "c",
+              "text": "will taking"
+            }
+          ],
+          "explanation": "El cambio de fecha ya ha quedado acordado con el fotógrafo; usamos «are taking»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The clients ___ in person; they have requested an online meeting instead.",
+          "options": [
+            {
+              "id": "d",
+              "text": "won't came"
+            },
+            {
+              "id": "c",
+              "text": "isn't come"
+            },
+            {
+              "id": "a",
+              "text": "aren't coming"
+            }
+          ],
+          "explanation": "El formato de la reunión ya está acordado; la forma negativa correcta es «aren't coming»."
+        },
+        {
+          "id": "r4",
+          "prompt": "We ___ dinner with our new neighbours on Friday evening.",
+          "options": [
+            {
+              "id": "d",
+              "text": "had"
+            },
+            {
+              "id": "c",
+              "text": "will having"
+            },
+            {
+              "id": "a",
+              "text": "are having"
+            }
+          ],
+          "explanation": "La cena con otras personas ya está acordada, por eso corresponde «are having»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Who ___ the children after school tomorrow?",
+          "options": [
+            {
+              "id": "b",
+              "text": "does collected"
+            },
+            {
+              "id": "a",
+              "text": "is collecting"
+            },
+            {
+              "id": "d",
+              "text": "will collects"
+            }
+          ],
+          "explanation": "La pregunta busca saber qué persona tiene asignado el acuerdo; «Who is collecting...?» es correcto."
+        },
+        {
+          "id": "r6",
+          "prompt": "My parents ___ for the weekend; their room is already prepared.",
+          "options": [
+            {
+              "id": "b",
+              "text": "comes"
+            },
+            {
+              "id": "c",
+              "text": "will coming"
+            },
+            {
+              "id": "a",
+              "text": "are coming"
+            }
+          ],
+          "explanation": "La visita está organizada y tiene preparativos concretos; usamos «are coming»."
+        },
+        {
+          "id": "r7",
+          "prompt": "I ___ the dentist at half past three tomorrow; the appointment is confirmed.",
+          "options": [
+            {
+              "id": "b",
+              "text": "am seeing"
+            },
+            {
+              "id": "a",
+              "text": "see"
+            },
+            {
+              "id": "d",
+              "text": "saw"
+            }
+          ],
+          "explanation": "Una cita confirmada es un acuerdo futuro concreto; usamos presente continuo: «am seeing»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which branch ___ the regional director ___ during her trip next week?",
+          "options": [
+            {
+              "id": "a",
+              "text": "does / visiting"
+            },
+            {
+              "id": "c",
+              "text": "is / visiting"
+            },
+            {
+              "id": "b",
+              "text": "is / visit"
+            }
+          ],
+          "explanation": "La visita forma parte de un itinerario acordado; la pregunta correcta es «is ... visiting»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-future-arrangements-timetables"
+      ],
+      "tags": [
+        "b1",
+        "future-forms",
+        "arrangements",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

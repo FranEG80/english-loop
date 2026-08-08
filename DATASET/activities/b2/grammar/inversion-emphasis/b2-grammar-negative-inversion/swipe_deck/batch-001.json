@@ -1,0 +1,290 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-negative-inversion-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "inversion-emphasis",
+  "subtopic": "negative-inversion",
+  "lessonId": "b2-grammar-negative-inversion",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-sd-036",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Never have I seen such a result is a question because it begins with never.",
+          "explanation": "It is an emphatic declarative sentence."
+        },
+        {
+          "id": "c2",
+          "statement": "Not until Friday they replied is the preferred formal order.",
+          "explanation": "Use Not until Friday did they reply."
+        },
+        {
+          "id": "c3",
+          "statement": "Only then did we understand the risk has the correct inverted order.",
+          "explanation": "Did comes before the subject we."
+        },
+        {
+          "id": "c4",
+          "statement": "No sooner had the report appeared when journalists called is the standard version.",
+          "explanation": "No sooner is normally followed by than."
+        },
+        {
+          "id": "c5",
+          "statement": "In “Not only did she answer, but she supplied evidence”, did is followed by the base verb answer.",
+          "explanation": "Did carries the past tense, so answer stays in the base form."
+        },
+        {
+          "id": "c6",
+          "statement": "Never I have seen such a result is the standard inverted order.",
+          "explanation": "Use Never have I seen such a result."
+        },
+        {
+          "id": "c7",
+          "statement": "If the negative expression stays later in the sentence, inversion is generally unnecessary.",
+          "explanation": "We rarely receive complaints has normal order."
+        },
+        {
+          "id": "c8",
+          "statement": "A negative expression at the beginning can trigger inversion in a formal statement.",
+          "explanation": "This is the central use of negative inversion."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "statement",
+        "error-spotting",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-sd-099",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Under no circumstances should you open the valve is a prohibition.",
+          "explanation": "Should precedes the subject after the fronted phrase."
+        },
+        {
+          "id": "c2",
+          "statement": "Not only did Lina solve the problem, but she documented it has correct parallel structure.",
+          "explanation": "The first clause inverts and the second retains normal order."
+        },
+        {
+          "id": "c3",
+          "statement": "Hardly had we arrived when the alarm sounded is a standard form.",
+          "explanation": "Hardly is followed by when."
+        },
+        {
+          "id": "c4",
+          "statement": "Barely had I sat down when the phone rang follows the correct pair.",
+          "explanation": "Barely combines with past-perfect inversion and when."
+        },
+        {
+          "id": "c5",
+          "statement": "Only then do we understand the risk is possible when the main verb is present tense.",
+          "explanation": "Do is used with a present-simple main verb."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "prohibition",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-sd-162",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "On no account you should share the code is the preferred formal structure.",
+          "explanation": "Use On no account should you share the code."
+        },
+        {
+          "id": "c2",
+          "statement": "The inversion pattern after not until applies to the main clause, not necessarily to the until-clause.",
+          "explanation": "Only the main clause takes the inverted auxiliary."
+        },
+        {
+          "id": "c3",
+          "statement": "Little we did realise how serious the delay was is correct.",
+          "explanation": "Use Little did we realise."
+        },
+        {
+          "id": "c4",
+          "statement": "Only after the audit did we change the policy is grammatical.",
+          "explanation": "The main clause uses did before we."
+        },
+        {
+          "id": "c5",
+          "statement": "At no time had the team been informed of the change is correct.",
+          "explanation": "Had precedes the subject in the past perfect."
+        },
+        {
+          "id": "c6",
+          "statement": "Rarely do researchers ignore the control group is grammatical.",
+          "explanation": "Do is followed by the plural subject and base verb."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "on-no-account",
+        "error-spotting",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

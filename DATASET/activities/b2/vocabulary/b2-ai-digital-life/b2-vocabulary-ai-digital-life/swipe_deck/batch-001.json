@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-ai-digital-life-swipe-deck-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-ai-digital-life",
+  "subtopic": "b2-ai-digital-life",
+  "lessonId": "b2-vocabulary-ai-digital-life",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-ai-digital-life-sd-052",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-ai-digital-life",
+      "subtopic": "b2-ai-digital-life",
+      "taxonomyNodeIds": [
+        "b2-ai-digital-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Automation can reduce the time staff spend on repetitive tasks.",
+          "explanation": "Automating routine work can free people to handle less repetitive tasks."
+        },
+        {
+          "id": "c2",
+          "statement": "The quality and coverage of a dataset can affect a model’s output.",
+          "explanation": "Unbalanced or incomplete data can influence learned patterns."
+        },
+        {
+          "id": "c3",
+          "statement": "A model can be trained on labelled examples.",
+          "explanation": "Labelled examples help a model learn the patterns it should recognise."
+        },
+        {
+          "id": "c4",
+          "statement": "A digital footprint is the trace left by someone’s online activity.",
+          "explanation": "Searches, accounts and posts can contribute to a digital footprint."
+        },
+        {
+          "id": "c5",
+          "statement": "Facial recognition attempts to identify people from facial features.",
+          "explanation": "The technology compares facial features with stored or learned patterns."
+        },
+        {
+          "id": "c6",
+          "statement": "A service can protect stored data well and still collect more personal information than necessary.",
+          "explanation": "Security and privacy address related but different questions."
+        },
+        {
+          "id": "c7",
+          "statement": "An algorithm is a set of instructions for processing a task.",
+          "explanation": "Algorithms describe the steps a system follows."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-ai-digital-life"
+      ],
+      "tags": [
+        "b2",
+        "automation",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-ai-digital-life-sd-115",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-ai-digital-life",
+      "subtopic": "b2-ai-digital-life",
+      "taxonomyNodeIds": [
+        "b2-ai-digital-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A chatbot is necessarily operated by a human who types every reply.",
+          "explanation": "A chatbot produces automated replies, although people may supervise it."
+        },
+        {
+          "id": "c2",
+          "statement": "Privacy and security always mean exactly the same thing.",
+          "explanation": "Privacy concerns the use of personal information; security concerns protection from threats."
+        },
+        {
+          "id": "c3",
+          "statement": "Encryption prevents authorised users from reading a file even when they have the correct key.",
+          "explanation": "A correct key allows an authorised user to decrypt the file."
+        },
+        {
+          "id": "c4",
+          "statement": "A security patch is an update that can fix a software vulnerability.",
+          "explanation": "Patches commonly repair bugs or security weaknesses."
+        },
+        {
+          "id": "c5",
+          "statement": "Bias can describe a systematic tendency that disadvantages a group.",
+          "explanation": "Bias is more than one accidental error; it is a recurring pattern."
+        },
+        {
+          "id": "c6",
+          "statement": "One correct output proves that an automated system contains no bias.",
+          "explanation": "Bias is assessed across patterns and groups, not one result."
+        },
+        {
+          "id": "c7",
+          "statement": "Data minimisation means collecting every possible detail in case it becomes useful.",
+          "explanation": "Data minimisation limits collection to information that is necessary."
+        },
+        {
+          "id": "c8",
+          "statement": "A dataset can contain examples used to train a model.",
+          "explanation": "Training data is organised into a dataset."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-ai-digital-life"
+      ],
+      "tags": [
+        "b2",
+        "chatbot",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-ai-digital-life-sd-178",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-ai-digital-life",
+      "subtopic": "b2-ai-digital-life",
+      "taxonomyNodeIds": [
+        "b2-ai-digital-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A transparent automated process can be examined by the people affected by it.",
+          "explanation": "Transparency makes a process or its reasoning easier to scrutinise."
+        },
+        {
+          "id": "c2",
+          "statement": "Troubleshooting involves finding the cause of a technical problem.",
+          "explanation": "Troubleshooting is systematic fault-finding and repair."
+        },
+        {
+          "id": "c3",
+          "statement": "To automate a task always means that no human oversight is possible.",
+          "explanation": "Automation can reduce routine input while people still supervise the process."
+        },
+        {
+          "id": "c4",
+          "statement": "Human review can still be useful when an AI tool produces an answer.",
+          "explanation": "Review helps detect mistakes, uncertainty and unfair patterns."
+        },
+        {
+          "id": "c5",
+          "statement": "A biased model must produce an incorrect result every single time.",
+          "explanation": "Bias can create systematic differences without making every individual output wrong."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-ai-digital-life"
+      ],
+      "tags": [
+        "b2",
+        "transparent",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

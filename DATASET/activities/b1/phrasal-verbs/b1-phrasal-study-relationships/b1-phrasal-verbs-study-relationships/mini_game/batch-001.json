@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-phrasal-verbs-study-relationships-mini-game-001",
+  "level": "B1",
+  "category": "phrasal-verbs",
+  "topic": "b1-phrasal-study-relationships",
+  "subtopic": "b1-phrasal-study-relationships",
+  "lessonId": "b1-phrasal-verbs-study-relationships",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-study-relationships-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-study-relationships",
+      "subtopic": "b1-phrasal-study-relationships",
+      "taxonomyNodeIds": [
+        "b1-phrasal-study-relationships"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "After the disagreement, the friends ___ for a week.",
+          "options": [
+            {
+              "id": "c",
+              "text": "looked up"
+            },
+            {
+              "id": "b",
+              "text": "carried on"
+            },
+            {
+              "id": "a",
+              "text": "fell out"
+            }
+          ],
+          "explanation": "Fall out describes the disagreement and loss of friendly contact."
+        },
+        {
+          "id": "r2",
+          "prompt": "The friends argued, apologised and then ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "made up"
+            },
+            {
+              "id": "d",
+              "text": "carried on"
+            },
+            {
+              "id": "c",
+              "text": "looked up"
+            }
+          ],
+          "explanation": "Made up means became friendly again."
+        },
+        {
+          "id": "r3",
+          "prompt": "We should ___ the main points before the presentation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "go through with"
+            },
+            {
+              "id": "c",
+              "text": "go out"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            }
+          ],
+          "explanation": "Go over means review carefully."
+        },
+        {
+          "id": "r4",
+          "prompt": "The friends argued but later ___ with each other.",
+          "options": [
+            {
+              "id": "b",
+              "text": "gave up"
+            },
+            {
+              "id": "a",
+              "text": "made up"
+            },
+            {
+              "id": "c",
+              "text": "looked up"
+            }
+          ],
+          "explanation": "Make up means reconcile."
+        },
+        {
+          "id": "r5",
+          "prompt": "The website helped us ___ what the abbreviation meant.",
+          "options": [
+            {
+              "id": "d",
+              "text": "carry on"
+            },
+            {
+              "id": "a",
+              "text": "find out"
+            },
+            {
+              "id": "c",
+              "text": "give up"
+            }
+          ],
+          "explanation": "Find out means discover information."
+        },
+        {
+          "id": "r6",
+          "prompt": "The new partners ___ well during the first project.",
+          "options": [
+            {
+              "id": "c",
+              "text": "got into"
+            },
+            {
+              "id": "a",
+              "text": "got on"
+            },
+            {
+              "id": "b",
+              "text": "got over"
+            }
+          ],
+          "explanation": "Got on means worked well together."
+        },
+        {
+          "id": "r7",
+          "prompt": "Before the exam, we need to ___ the vocabulary list.",
+          "options": [
+            {
+              "id": "c",
+              "text": "go under"
+            },
+            {
+              "id": "d",
+              "text": "go by"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            }
+          ],
+          "explanation": "Go over means review."
+        },
+        {
+          "id": "r8",
+          "prompt": "She wanted to stop, but her friend told her not to ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "find out"
+            },
+            {
+              "id": "a",
+              "text": "give up"
+            },
+            {
+              "id": "d",
+              "text": "take up"
+            }
+          ],
+          "explanation": "Give up means stop trying."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-study-relationships"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "conflict",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-study-relationships-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-study-relationships",
+      "subtopic": "b1-phrasal-study-relationships",
+      "taxonomyNodeIds": [
+        "b1-phrasal-study-relationships"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The group ___ a clear plan for the research task.",
+          "options": [
+            {
+              "id": "d",
+              "text": "came into"
+            },
+            {
+              "id": "b",
+              "text": "came down with"
+            },
+            {
+              "id": "a",
+              "text": "came up with"
+            }
+          ],
+          "explanation": "Came up with means created a plan."
+        },
+        {
+          "id": "r2",
+          "prompt": "I need to ___ what this expression means.",
+          "options": [
+            {
+              "id": "b",
+              "text": "find over"
+            },
+            {
+              "id": "d",
+              "text": "find into"
+            },
+            {
+              "id": "a",
+              "text": "find out"
+            }
+          ],
+          "explanation": "Find out means discover information."
+        },
+        {
+          "id": "r3",
+          "prompt": "She decided to ___ photography at university.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take after"
+            },
+            {
+              "id": "a",
+              "text": "take up"
+            },
+            {
+              "id": "b",
+              "text": "take off"
+            }
+          ],
+          "explanation": "Take up means start a hobby or activity."
+        },
+        {
+          "id": "r4",
+          "prompt": "To understand the term, look it ___ in the glossary.",
+          "options": [
+            {
+              "id": "c",
+              "text": "out"
+            },
+            {
+              "id": "d",
+              "text": "over"
+            },
+            {
+              "id": "a",
+              "text": "up"
+            }
+          ],
+          "explanation": "Look up is followed by the information source or object."
+        },
+        {
+          "id": "r5",
+          "prompt": "Do not ___ just because the first exercise is difficult.",
+          "options": [
+            {
+              "id": "b",
+              "text": "make up"
+            },
+            {
+              "id": "d",
+              "text": "get on"
+            },
+            {
+              "id": "a",
+              "text": "give up"
+            }
+          ],
+          "explanation": "Give up means stop trying."
+        },
+        {
+          "id": "r6",
+          "prompt": "She decided to ___ painting during the summer.",
+          "options": [
+            {
+              "id": "d",
+              "text": "give up"
+            },
+            {
+              "id": "a",
+              "text": "take up"
+            },
+            {
+              "id": "b",
+              "text": "take off"
+            }
+          ],
+          "explanation": "Take up means start a hobby."
+        },
+        {
+          "id": "r7",
+          "prompt": "Read the notes and ___ the key arguments.",
+          "options": [
+            {
+              "id": "b",
+              "text": "go out"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            },
+            {
+              "id": "d",
+              "text": "go under"
+            }
+          ],
+          "explanation": "Go over means review carefully."
+        },
+        {
+          "id": "r8",
+          "prompt": "The students worked together to ___ the difficult puzzle.",
+          "options": [
+            {
+              "id": "a",
+              "text": "work out"
+            },
+            {
+              "id": "b",
+              "text": "work off"
+            },
+            {
+              "id": "c",
+              "text": "work over"
+            }
+          ],
+          "explanation": "Work out means solve or understand."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-study-relationships"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "ideas",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-travel-transport-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-travel-transport",
+  "subtopic": "b1-travel-transport",
+  "lessonId": "b1-vocabulary-travel-transport",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-travel-transport-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "After the flight, we had to collect our ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "platform"
+            },
+            {
+              "id": "a",
+              "text": "luggage"
+            },
+            {
+              "id": "c",
+              "text": "route"
+            }
+          ],
+          "explanation": "Collect luggage es recoger el equipaje."
+        },
+        {
+          "id": "r2",
+          "prompt": "You show your passport at the airport ___ before boarding.",
+          "options": [
+            {
+              "id": "a",
+              "text": "gate"
+            },
+            {
+              "id": "d",
+              "text": "journey"
+            },
+            {
+              "id": "b",
+              "text": "stop"
+            }
+          ],
+          "explanation": "Gate es la puerta de embarque del aeropuerto."
+        },
+        {
+          "id": "r3",
+          "prompt": "A trip from one place to another is a ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "allowance"
+            },
+            {
+              "id": "a",
+              "text": "journey"
+            },
+            {
+              "id": "d",
+              "text": "stop"
+            }
+          ],
+          "explanation": "Journey pone el foco en el trayecto."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence correctly distinguishes a trip from a journey?",
+          "options": [
+            {
+              "id": "a",
+              "text": "We took a trip to York; the journey took two hours."
+            },
+            {
+              "id": "d",
+              "text": "A journey is only a guided tour."
+            },
+            {
+              "id": "b",
+              "text": "We journeyed a trip to York."
+            }
+          ],
+          "explanation": "Trip es la visita completa y journey el trayecto dentro de ella."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which place is associated with an aeroplane rather than a train?",
+          "options": [
+            {
+              "id": "a",
+              "text": "gate"
+            },
+            {
+              "id": "c",
+              "text": "railway station"
+            },
+            {
+              "id": "d",
+              "text": "track"
+            }
+          ],
+          "explanation": "Gate es la puerta de embarque de un aeropuerto."
+        },
+        {
+          "id": "r6",
+          "prompt": "The train arrives ___ the station at 8:15.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            }
+          ],
+          "explanation": "Arrive at se usa con lugares concretos como a station."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which verb means get onto a plane or train?",
+          "options": [
+            {
+              "id": "b",
+              "text": "delay"
+            },
+            {
+              "id": "d",
+              "text": "arrive"
+            },
+            {
+              "id": "a",
+              "text": "board"
+            }
+          ],
+          "explanation": "Board significa subir a un vehículo grande, como un avión o tren."
+        },
+        {
+          "id": "r8",
+          "prompt": "We missed our ___ because the first train was late.",
+          "options": [
+            {
+              "id": "a",
+              "text": "connection"
+            },
+            {
+              "id": "b",
+              "text": "suitcase"
+            },
+            {
+              "id": "d",
+              "text": "tour"
+            }
+          ],
+          "explanation": "A connection es el transporte enlazado con el anterior."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-travel-transport-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We travelled ___ train because it was comfortable.",
+          "options": [
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "by"
+            },
+            {
+              "id": "d",
+              "text": "from"
+            }
+          ],
+          "explanation": "By train es la forma de indicar el medio de transporte."
+        },
+        {
+          "id": "r2",
+          "prompt": "You go through customs after you ___ internationally.",
+          "options": [
+            {
+              "id": "c",
+              "text": "miss a gate"
+            },
+            {
+              "id": "d",
+              "text": "collect a route"
+            },
+            {
+              "id": "a",
+              "text": "travel"
+            }
+          ],
+          "explanation": "Travel internationally puede llevar a pasar por customs."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase asks about the permitted weight of bags?",
+          "options": [
+            {
+              "id": "a",
+              "text": "What is the baggage allowance?"
+            },
+            {
+              "id": "b",
+              "text": "What is the platform allowance?"
+            },
+            {
+              "id": "c",
+              "text": "Where is the journey gate?"
+            }
+          ],
+          "explanation": "Baggage allowance pregunta por el equipaje permitido."
+        },
+        {
+          "id": "r4",
+          "prompt": "A visit to several places with a guide is a ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "delay"
+            },
+            {
+              "id": "b",
+              "text": "journey"
+            },
+            {
+              "id": "a",
+              "text": "tour"
+            }
+          ],
+          "explanation": "A tour es un recorrido, normalmente organizado."
+        },
+        {
+          "id": "r5",
+          "prompt": "What should you say if a suitcase does not arrive?",
+          "options": [
+            {
+              "id": "d",
+              "text": "My journey is boarding."
+            },
+            {
+              "id": "b",
+              "text": "My platform is missing."
+            },
+            {
+              "id": "a",
+              "text": "My luggage is missing."
+            }
+          ],
+          "explanation": "Missing luggage es equipaje que no ha llegado."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which place is used for trains rather than buses?",
+          "options": [
+            {
+              "id": "d",
+              "text": "taxi rank"
+            },
+            {
+              "id": "b",
+              "text": "bus stop"
+            },
+            {
+              "id": "a",
+              "text": "platform"
+            }
+          ],
+          "explanation": "Platform es el andén de una estación de tren."
+        },
+        {
+          "id": "r7",
+          "prompt": "Passengers wait for a train on a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "route"
+            },
+            {
+              "id": "a",
+              "text": "platform"
+            },
+            {
+              "id": "c",
+              "text": "customs"
+            }
+          ],
+          "explanation": "Platform es el andén del tren."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase describes the weight allowed in your bags?",
+          "options": [
+            {
+              "id": "b",
+              "text": "return ticket"
+            },
+            {
+              "id": "a",
+              "text": "baggage allowance"
+            },
+            {
+              "id": "c",
+              "text": "direct flight"
+            }
+          ],
+          "explanation": "Baggage allowance es el peso o cantidad permitida de equipaje."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -57,14 +57,22 @@ export function grade(evaluator: Evaluator, response: ActivityResponse): boolean
         sameStringSequence(response, evaluator.correctTokenIds)
       );
 
-    case "unordered_set":
+    case "deck_booleans":
       return (
-        Array.isArray(response) &&
-        sameNormalisedSet(
-          response,
-          evaluator.correctValues,
-          evaluator.normalization,
-        )
+        isStringRecord(response) &&
+        evaluator.cards.every(
+          ({ cardId, correct }) => response[cardId] === String(correct),
+        ) &&
+        Object.keys(response).length === evaluator.cards.length
+      );
+
+    case "game_rounds":
+      return (
+        isStringRecord(response) &&
+        evaluator.rounds.every(
+          ({ roundId, correctOptionId }) => response[roundId] === correctOptionId,
+        ) &&
+        Object.keys(response).length === evaluator.rounds.length
       );
 
     case "matching_pairs":
@@ -102,16 +110,6 @@ function sameStringSet(left: string[], right: string[]): boolean {
   );
 }
 
-function sameNormalisedSet(
-  left: string[],
-  right: string[],
-  rules: NormalizationRules,
-): boolean {
-  return sameStringSet(
-    left.map((value) => normalizeText(value, rules)),
-    right.map((value) => normalizeText(value, rules)),
-  );
-}
 
 function isStringRecord(value: ActivityResponse): value is Record<string, string> {
   return (

@@ -1252,60 +1252,6 @@
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-vocabulary-travel-tourism-urban-life-wo-024",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_order",
-      "skillFocus": "word_order",
-      "category": "vocabulary",
-      "topic": "b2-travel-tourism-urban-life",
-      "subtopic": "b2-travel-tourism-urban-life",
-      "taxonomyNodeIds": [
-        "b2-travel-tourism-urban-life"
-      ],
-      "difficulty": 5,
-      "instructions": "Arrange the tokens to make a grammatical sentence.",
-      "prompt": "Describe the visitor-management measure.",
-      "tokens": [
-        {
-          "id": "t1",
-          "text": "The city"
-        },
-        {
-          "id": "t2",
-          "text": "introduced"
-        },
-        {
-          "id": "t3",
-          "text": "a visitor"
-        },
-        {
-          "id": "t4",
-          "text": "levy."
-        }
-      ],
-      "lessonIds": [
-        "b2-vocabulary-travel-tourism-urban-life"
-      ],
-      "tags": [
-        "b2",
-        "policy"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "ordered_tokens",
-        "correctTokenIds": [
-          "t1",
-          "t2",
-          "t3",
-          "t4"
-        ]
-      },
-      "explanation": "The city introduced a visitor levy."
-    },
-    {
-      "schemaVersion": "2.0.0",
       "id": "b2-vocabulary-travel-tourism-urban-life-wo-025",
       "status": "published",
       "autoGradable": true,

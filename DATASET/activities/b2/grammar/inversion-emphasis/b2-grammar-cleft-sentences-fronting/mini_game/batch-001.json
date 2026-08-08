@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-cleft-sentences-fronting-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "inversion-emphasis",
+  "subtopic": "cleft-sentences-fronting",
+  "lessonId": "b2-grammar-cleft-sentences-fronting",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which option means “The team needs more reliable data”?",
+          "options": [
+            {
+              "id": "a",
+              "text": "What the team needs is more reliable data."
+            },
+            {
+              "id": "d",
+              "text": "What is more reliable data the team needs."
+            },
+            {
+              "id": "c",
+              "text": "What the team need are more reliable data."
+            }
+          ],
+          "explanation": "The what-clause is not a direct question."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence places the location at the front without changing the main order?",
+          "options": [
+            {
+              "id": "d",
+              "text": "At the routes, the old station met."
+            },
+            {
+              "id": "c",
+              "text": "The routes at met the old station."
+            },
+            {
+              "id": "a",
+              "text": "At the old station, the routes met."
+            }
+          ],
+          "explanation": "A fronted place phrase is followed by normal subject-verb order."
+        },
+        {
+          "id": "r3",
+          "prompt": "What the committee needs ___ a clearer timetable.",
+          "options": [
+            {
+              "id": "a",
+              "text": "is"
+            },
+            {
+              "id": "d",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "are"
+            }
+          ],
+          "explanation": "The standard pattern uses singular is."
+        },
+        {
+          "id": "r4",
+          "prompt": "It was ___ Bristol that the study began.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            }
+          ],
+          "explanation": "In Bristol is the location phrase."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which option emphasises the time of the decision?",
+          "options": [
+            {
+              "id": "c",
+              "text": "What after lunch they decided was the decision."
+            },
+            {
+              "id": "a",
+              "text": "It was after lunch that they made the decision."
+            },
+            {
+              "id": "d",
+              "text": "After lunch was it that they made the decision."
+            }
+          ],
+          "explanation": "It-cleft focuses the time phrase and uses that."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which option correctly combines a what-cleft and a singular focus?",
+          "options": [
+            {
+              "id": "c",
+              "text": "What did surprise everyone was the final cost."
+            },
+            {
+              "id": "d",
+              "text": "What surprised everyone the final cost was."
+            },
+            {
+              "id": "a",
+              "text": "What surprised everyone was the final cost."
+            }
+          ],
+          "explanation": "Was completes the standard what-cleft with the singular focus."
+        },
+        {
+          "id": "r7",
+          "prompt": "What surprised everyone ___ the final cost.",
+          "options": [
+            {
+              "id": "c",
+              "text": "did"
+            },
+            {
+              "id": "b",
+              "text": "were"
+            },
+            {
+              "id": "a",
+              "text": "was"
+            }
+          ],
+          "explanation": "The past context calls for was."
+        },
+        {
+          "id": "r8",
+          "prompt": "It was the sudden change in funding ___ surprised the panel.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            }
+          ],
+          "explanation": "That refers to the focused thing and introduces the clause."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "what-cleft",
+        "meaning",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What surprised the auditors ___ the final cost.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was"
+            },
+            {
+              "id": "b",
+              "text": "were"
+            },
+            {
+              "id": "d",
+              "text": "have"
+            }
+          ],
+          "explanation": "Was agrees with the standard singular what-clause pattern."
+        },
+        {
+          "id": "r2",
+          "prompt": "It was after lunch ___ the meeting started.",
+          "options": [
+            {
+              "id": "d",
+              "text": "what"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            }
+          ],
+          "explanation": "That links a focused time phrase to the clause."
+        },
+        {
+          "id": "r3",
+          "prompt": "What we need ___ more reliable data.",
+          "options": [
+            {
+              "id": "c",
+              "text": "be"
+            },
+            {
+              "id": "a",
+              "text": "is"
+            },
+            {
+              "id": "b",
+              "text": "are"
+            }
+          ],
+          "explanation": "What we need is the standard singular what-cleft pattern."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ the closing paragraph, the writer addresses the risks.",
+          "options": [
+            {
+              "id": "b",
+              "text": "At"
+            },
+            {
+              "id": "c",
+              "text": "On"
+            },
+            {
+              "id": "a",
+              "text": "In"
+            }
+          ],
+          "explanation": "In the paragraph establishes the discourse frame."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which option emphasises who reset the system?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It was the technician who reset the system."
+            },
+            {
+              "id": "c",
+              "text": "It the technician was reset the system."
+            },
+            {
+              "id": "d",
+              "text": "The technician it was reset the system."
+            }
+          ],
+          "explanation": "The it-cleft places the technician in focus."
+        },
+        {
+          "id": "r6",
+          "prompt": "It was Maya, rather than Tom, ___ called the supplier.",
+          "options": [
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "d",
+              "text": "where"
+            },
+            {
+              "id": "b",
+              "text": "which"
+            }
+          ],
+          "explanation": "Who refers to a person in an it-cleft."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence focuses the result of the experiment?",
+          "options": [
+            {
+              "id": "c",
+              "text": "What revealed the experiment was a pattern."
+            },
+            {
+              "id": "b",
+              "text": "What did the experiment reveal was a pattern."
+            },
+            {
+              "id": "a",
+              "text": "What the experiment revealed was a pattern in the data."
+            }
+          ],
+          "explanation": "What-clause presents the experiment’s finding as the topic."
+        },
+        {
+          "id": "r8",
+          "prompt": "It was the sudden change ___ surprised the panel.",
+          "options": [
+            {
+              "id": "d",
+              "text": "what"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            }
+          ],
+          "explanation": "That introduces the focused clause after a thing."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "what-cleft",
+        "agreement",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

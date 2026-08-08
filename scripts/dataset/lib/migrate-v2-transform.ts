@@ -70,10 +70,8 @@ export const TYPE_MAP: Readonly<Record<string, ActivityType>> = {
   word_order: "word_order",
   matching: "matching",
   error_correction: "error_correction",
-  guided_writing: "guided_writing",
   word_formation: "word_formation",
   key_word_transformation: "key_word_transformation",
-  sentence_rewrite: "sentence_rewrite",
   mini_game: "mini_game",
   // Familia de huecos
   fill_blank: "gap_fill",
@@ -93,7 +91,6 @@ export const TYPE_MAP: Readonly<Record<string, ActivityType>> = {
   multiple_select: "multiple_choice",
   error_identification: "true_false",
   reading_matching: "matching",
-  sentence_transformation: "sentence_rewrite",
 };
 
 /**
@@ -307,7 +304,6 @@ function applyOptions(target: Activity, source: ActivityV1): void {
 
 const CLOSING_OPTION = /\b(all|none|both|neither|any)\s+of\s+(the\s+)?(above|these|them|others)\b/i;
 const NUMERIC_ONLY = /^[-+]?\d+(?:[.,]\d+)?$/;
-const CLOCK_TIME = /^\d{1,2}[:.]\d{2}(?:\s*(?:a\.?m\.?|p\.?m\.?))?$/i;
 const ISO_DATE = /^\d{4}(?:-\d{2}){0,2}$/;
 
 /**
@@ -699,7 +695,7 @@ function collectContentIssues(activity: Activity, issues: MigrationIssue[]): voi
     }
   }
 
-  if (activity.type === "error_correction" || activity.type === "sentence_rewrite") {
+  if (activity.type === "error_correction") {
     const answer = primaryAnswer(activity.evaluator as unknown as Record<string, unknown>);
     const sourceText = activity.passage ?? activity.prompt;
     if (answer && looseEquals(answer, activity.prompt)) {

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-register-politeness-mini-game-001",
+  "level": "B2",
+  "category": "use-of-english",
+  "topic": "b2-register-politeness",
+  "subtopic": "b2-register-politeness",
+  "lessonId": "b2-register-politeness",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-register-politeness-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-register-politeness",
+      "subtopic": "b2-register-politeness",
+      "taxonomyNodeIds": [
+        "b2-register-politeness"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Manager: You may wish to review the figures. Analyst: ___",
+          "options": [
+            {
+              "id": "b",
+              "text": "Why should I?"
+            },
+            {
+              "id": "d",
+              "text": "Figures review themselves."
+            },
+            {
+              "id": "a",
+              "text": "Thank you. I will check them carefully."
+            }
+          ],
+          "explanation": "La respuesta acepta la recomendación con cortesía."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence is a professional alternative to I can't come to the meeting?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I ain't coming."
+            },
+            {
+              "id": "a",
+              "text": "I will be unable to attend the meeting."
+            },
+            {
+              "id": "d",
+              "text": "I don't fancy it."
+            }
+          ],
+          "explanation": "I will be unable to attend expresa la misma información con tono profesional."
+        },
+        {
+          "id": "r3",
+          "prompt": "A letter begins Dear Sir or Madam. Which closing normally matches it?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Love"
+            },
+            {
+              "id": "c",
+              "text": "Cheers, mate"
+            },
+            {
+              "id": "a",
+              "text": "Yours faithfully"
+            }
+          ],
+          "explanation": "Yours faithfully se usa habitualmente después de un saludo sin nombre."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase politely replaces I want a refund in a complaint?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Give me my cash back."
+            },
+            {
+              "id": "c",
+              "text": "I am wanting money."
+            },
+            {
+              "id": "a",
+              "text": "I would like to request a refund."
+            }
+          ],
+          "explanation": "I would like to request... mantiene la petición y suaviza el tono."
+        },
+        {
+          "id": "r5",
+          "prompt": "How should a manager rewrite Stop making mistakes in client emails?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Please take greater care when writing to clients."
+            },
+            {
+              "id": "b",
+              "text": "Stop messing up emails."
+            },
+            {
+              "id": "c",
+              "text": "You keep ruining messages."
+            }
+          ],
+          "explanation": "Please take greater care es una corrección profesional y accionable."
+        },
+        {
+          "id": "r6",
+          "prompt": "Consultant: The timetable was revised. Client: ___",
+          "options": [
+            {
+              "id": "a",
+              "text": "Thank you for notifying me. I will update my records."
+            },
+            {
+              "id": "c",
+              "text": "Who changed it then?"
+            },
+            {
+              "id": "d",
+              "text": "Timetable, right."
+            }
+          ],
+          "explanation": "La respuesta reconoce el cambio y comunica la acción posterior."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which phrase politely challenges a decision without sounding aggressive?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would appreciate clarification regarding this decision."
+            },
+            {
+              "id": "c",
+              "text": "This decision makes no sense, mate."
+            },
+            {
+              "id": "d",
+              "text": "Explain yourself now."
+            }
+          ],
+          "explanation": "I would appreciate clarification... abre una consulta diplomática."
+        },
+        {
+          "id": "r8",
+          "prompt": "Student: Could you let me know the deadline? Office: ___",
+          "options": [
+            {
+              "id": "b",
+              "text": "You should know that."
+            },
+            {
+              "id": "d",
+              "text": "Do it whenever."
+            },
+            {
+              "id": "a",
+              "text": "The completed form is due on 30 June."
+            }
+          ],
+          "explanation": "La respuesta ofrece la información solicitada de manera clara y formal."
+        }
+      ],
+      "lessonIds": [
+        "b2-register-politeness"
+      ],
+      "tags": [
+        "b2",
+        "register",
+        "dialogue",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-register-politeness-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-register-politeness",
+      "subtopic": "b2-register-politeness",
+      "taxonomyNodeIds": [
+        "b2-register-politeness"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Editor: The financial implications require consideration. Writer: ___",
+          "options": [
+            {
+              "id": "a",
+              "text": "I agree. I will add a cost analysis to the report."
+            },
+            {
+              "id": "d",
+              "text": "Costs consider themselves."
+            },
+            {
+              "id": "b",
+              "text": "It is not that pricey."
+            }
+          ],
+          "explanation": "La respuesta acepta la observación y propone una acción concreta."
+        },
+        {
+          "id": "r2",
+          "prompt": "Director: The launch may be postponed. Assistant: ___",
+          "options": [
+            {
+              "id": "b",
+              "text": "So it is definitely cancelled."
+            },
+            {
+              "id": "a",
+              "text": "I understand. I will prepare both schedules."
+            },
+            {
+              "id": "c",
+              "text": "It must happen tomorrow."
+            }
+          ],
+          "explanation": "La respuesta reconoce la posibilidad sin convertirla en certeza."
+        },
+        {
+          "id": "r3",
+          "prompt": "Reviewer: This proposal appears impractical. Author: ___",
+          "options": [
+            {
+              "id": "b",
+              "text": "That is your opinion."
+            },
+            {
+              "id": "a",
+              "text": "I appreciate the feedback. Could you indicate which aspect requires revision?"
+            },
+            {
+              "id": "c",
+              "text": "It is fine, end of story."
+            }
+          ],
+          "explanation": "La respuesta agradece el comentario y solicita una aclaración constructiva."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which connector best replaces so in a formal explanation of a result?",
+          "options": [
+            {
+              "id": "b",
+              "text": "And then, like,"
+            },
+            {
+              "id": "d",
+              "text": "Because of that thing,"
+            },
+            {
+              "id": "a",
+              "text": "Consequently,"
+            }
+          ],
+          "explanation": "Consequently expresa resultado con registro formal."
+        },
+        {
+          "id": "r5",
+          "prompt": "Supplier: The delivery may be delayed. Buyer: ___",
+          "options": [
+            {
+              "id": "a",
+              "text": "Thank you for informing us. Please keep us updated."
+            },
+            {
+              "id": "d",
+              "text": "Tell updates now."
+            },
+            {
+              "id": "b",
+              "text": "Don't mess it up."
+            }
+          ],
+          "explanation": "La respuesta reconoce el aviso y solicita información posterior con cortesía."
+        },
+        {
+          "id": "r6",
+          "prompt": "The original says If you need help, call us. Which formal version keeps the same condition?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Should you require assistance, please contact us."
+            },
+            {
+              "id": "c",
+              "text": "Call us because help is needed."
+            },
+            {
+              "id": "b",
+              "text": "You must call us for every reason."
+            }
+          ],
+          "explanation": "Should you require... es una inversión formal equivalente a if you need."
+        },
+        {
+          "id": "r7",
+          "prompt": "Customer: I would like to request a refund. Agent: ___",
+          "options": [
+            {
+              "id": "a",
+              "text": "I will look into this matter straight away."
+            },
+            {
+              "id": "c",
+              "text": "You get no money."
+            },
+            {
+              "id": "d",
+              "text": "Refund, yeah."
+            }
+          ],
+          "explanation": "I will look into this matter es una respuesta profesional a una queja."
+        },
+        {
+          "id": "r8",
+          "prompt": "How can a report politely say The figures are wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The figures appear to contain an error."
+            },
+            {
+              "id": "d",
+              "text": "The figures wrong, obviously."
+            },
+            {
+              "id": "b",
+              "text": "Your numbers are rubbish."
+            }
+          ],
+          "explanation": "Appear to contain an error señala el problema sin atacar al lector."
+        }
+      ],
+      "lessonIds": [
+        "b2-register-politeness"
+      ],
+      "tags": [
+        "b2",
+        "register",
+        "dialogue",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

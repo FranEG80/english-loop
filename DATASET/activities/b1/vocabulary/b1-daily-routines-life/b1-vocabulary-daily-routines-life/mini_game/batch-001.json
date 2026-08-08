@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-daily-routines-life-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-daily-routines-life",
+  "subtopic": "b1-daily-routines-life",
+  "lessonId": "b1-vocabulary-daily-routines-life",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I cannot meet the deadline unless I ___ time for the final section.",
+          "options": [
+            {
+              "id": "b",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "go"
+            },
+            {
+              "id": "a",
+              "text": "make"
+            }
+          ],
+          "explanation": "Make time for the final section means deliberately reserve time to complete it."
+        },
+        {
+          "id": "r2",
+          "prompt": "Mum is doing the ___ because the basket is full.",
+          "options": [
+            {
+              "id": "a",
+              "text": "bed"
+            },
+            {
+              "id": "d",
+              "text": "break"
+            },
+            {
+              "id": "b",
+              "text": "laundry"
+            }
+          ],
+          "explanation": "Do the laundry means wash clothes and other fabric items."
+        },
+        {
+          "id": "r3",
+          "prompt": "Before guests arrive, we have to ___ the living room and clear the table.",
+          "options": [
+            {
+              "id": "a",
+              "text": "tidy"
+            },
+            {
+              "id": "b",
+              "text": "run"
+            },
+            {
+              "id": "d",
+              "text": "commute"
+            }
+          ],
+          "explanation": "Tidy the living room means organise it and put objects in their places."
+        },
+        {
+          "id": "r4",
+          "prompt": "After a long shift, I like to ___ a quick nap before dinner.",
+          "options": [
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "make"
+            },
+            {
+              "id": "d",
+              "text": "run"
+            }
+          ],
+          "explanation": "Take a nap means sleep for a short time during the day."
+        },
+        {
+          "id": "r5",
+          "prompt": "I usually ___ ready for work before the children wake up.",
+          "options": [
+            {
+              "id": "a",
+              "text": "get"
+            },
+            {
+              "id": "d",
+              "text": "make"
+            },
+            {
+              "id": "b",
+              "text": "do"
+            }
+          ],
+          "explanation": "Get ready means prepare yourself for an activity or event."
+        },
+        {
+          "id": "r6",
+          "prompt": "I ___ up at seven every weekday.",
+          "options": [
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "get"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "The fixed expression is get up, meaning leave your bed."
+        },
+        {
+          "id": "r7",
+          "prompt": "I try to ___ time for exercise after work.",
+          "options": [
+            {
+              "id": "d",
+              "text": "get"
+            },
+            {
+              "id": "a",
+              "text": "do"
+            },
+            {
+              "id": "c",
+              "text": "make"
+            }
+          ],
+          "explanation": "Make time for something means deliberately find time to do it."
+        },
+        {
+          "id": "r8",
+          "prompt": "After dinner, the children help to ___ the kitchen.",
+          "options": [
+            {
+              "id": "b",
+              "text": "set"
+            },
+            {
+              "id": "a",
+              "text": "tidy"
+            },
+            {
+              "id": "c",
+              "text": "run"
+            }
+          ],
+          "explanation": "Tidy the kitchen means put things away and make the room orderly."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "time-management",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I woke up at six, but I did not ___ up until seven.",
+          "options": [
+            {
+              "id": "b",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "get"
+            },
+            {
+              "id": "d",
+              "text": "have"
+            }
+          ],
+          "explanation": "Get up means physically leave the bed, unlike wake up, which means stop sleeping."
+        },
+        {
+          "id": "r2",
+          "prompt": "Could you ___ the washing-up while I finish cooking?",
+          "options": [
+            {
+              "id": "b",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "make"
+            }
+          ],
+          "explanation": "Do the washing-up means wash plates, glasses and cutlery."
+        },
+        {
+          "id": "r3",
+          "prompt": "When I finish work, I ___ back home by train rather than driving.",
+          "options": [
+            {
+              "id": "d",
+              "text": "set"
+            },
+            {
+              "id": "a",
+              "text": "get"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "Get back home means return home; the phrase describes the journey back."
+        },
+        {
+          "id": "r4",
+          "prompt": "I need to ___ out the rubbish tonight.",
+          "options": [
+            {
+              "id": "b",
+              "text": "take"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            },
+            {
+              "id": "a",
+              "text": "go"
+            }
+          ],
+          "explanation": "Take out the rubbish means carry the rubbish outside."
+        },
+        {
+          "id": "r5",
+          "prompt": "The cleaner comes on Tuesdays to ___ the ironing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "make"
+            },
+            {
+              "id": "d",
+              "text": "set"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "Do the ironing is the standard collocation for ironing clothes."
+        },
+        {
+          "id": "r6",
+          "prompt": "By the time I ___ home, everyone else had gone to bed.",
+          "options": [
+            {
+              "id": "d",
+              "text": "took"
+            },
+            {
+              "id": "b",
+              "text": "got"
+            },
+            {
+              "id": "c",
+              "text": "did"
+            }
+          ],
+          "explanation": "Get home means arrive at your home; made home is not used for this meaning."
+        },
+        {
+          "id": "r7",
+          "prompt": "Although she works full time, she always manages to ___ time for her children.",
+          "options": [
+            {
+              "id": "a",
+              "text": "do"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "c",
+              "text": "take"
+            }
+          ],
+          "explanation": "Make time for someone means deliberately reserve time to be with them."
+        },
+        {
+          "id": "r8",
+          "prompt": "The lesson finishes at noon, so we can ___ a break then.",
+          "options": [
+            {
+              "id": "c",
+              "text": "set"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "d",
+              "text": "have"
+            }
+          ],
+          "explanation": "Have a break is a natural expression for resting for a short time."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "morning",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "d"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

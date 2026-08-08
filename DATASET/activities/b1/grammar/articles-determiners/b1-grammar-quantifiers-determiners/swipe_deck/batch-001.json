@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-quantifiers-determiners-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "articles-determiners",
+  "subtopic": "quantifiers-determiners",
+  "lessonId": "b1-grammar-quantifiers-determiners",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-sd-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She has a lot of experience.",
+          "explanation": "«a lot of» se usa con ambos tipos."
+        },
+        {
+          "id": "c2",
+          "statement": "We don't have many time before the train.",
+          "explanation": "«time» es incontable; usa «much»."
+        },
+        {
+          "id": "c3",
+          "statement": "Some of the students passed.",
+          "explanation": "«some» en afirmativa significa «algunos»."
+        },
+        {
+          "id": "c4",
+          "statement": "Few students missed the class.",
+          "explanation": "«few» con contables es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "Could I have any water, please?",
+          "explanation": "Las peticiones usan «some»."
+        },
+        {
+          "id": "c6",
+          "statement": "Are there some tickets left?",
+          "explanation": "Las preguntas usan «any»."
+        },
+        {
+          "id": "c7",
+          "statement": "I don't have any money.",
+          "explanation": "Las negativas usan «any»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-sd-065",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "There is little hope of finding it.",
+          "explanation": "«little» con incontables es correcto."
+        },
+        {
+          "id": "c2",
+          "statement": "A few people understand the theory. (pocos, negativo)",
+          "explanation": "Para sentido negativo usamos «few» sin «a»."
+        },
+        {
+          "id": "c3",
+          "statement": "There isn't many information available.",
+          "explanation": "«information» es incontable; usa «much»."
+        },
+        {
+          "id": "c4",
+          "statement": "There is little time to decide.",
+          "explanation": "«little» con incontables es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "We have a lot of work.",
+          "explanation": "«a lot of» con incontables es correcto."
+        },
+        {
+          "id": "c6",
+          "statement": "There are much reasons to visit.",
+          "explanation": "«reasons» es contable; usa «many»."
+        },
+        {
+          "id": "c7",
+          "statement": "I have little time to spare. (un poco, positivo)",
+          "explanation": "Para sentido positivo usamos «a little»."
+        },
+        {
+          "id": "c8",
+          "statement": "There are a lot of people here.",
+          "explanation": "«a lot of» con contables es correcto."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-sd-128",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 1,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She has a little experience.",
+          "explanation": "«a little» con incontables es correcto."
+        },
+        {
+          "id": "c2",
+          "statement": "I have a few ideas.",
+          "explanation": "«a few» con contables es correcto."
+        },
+        {
+          "id": "c3",
+          "statement": "Would you like some tea?",
+          "explanation": "Los ofrecimientos usan «some»."
+        },
+        {
+          "id": "c4",
+          "statement": "There aren't any chairs left.",
+          "explanation": "Las negativas usan «any»."
+        },
+        {
+          "id": "c5",
+          "statement": "There isn't many milk left.",
+          "explanation": "«milk» es incontable; usa «much»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-sd-190",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "How many people are coming?",
+          "explanation": "«people» es contable; usa «many»."
+        },
+        {
+          "id": "c2",
+          "statement": "There is a little sugar in the cupboard. (poco, negativo)",
+          "explanation": "Para sentido negativo usamos «little» sin «a»."
+        },
+        {
+          "id": "c3",
+          "statement": "You can take some seat. (cualquiera)",
+          "explanation": "«any» significa «cualquiera» en afirmativa."
+        },
+        {
+          "id": "c4",
+          "statement": "I have a few suggestions.",
+          "explanation": "«a few» con contables es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "There is little chance of rain today.",
+          "explanation": "«little» con incontables es correcto."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-modal-perfect-deduction-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "modal-perfects",
+  "subtopic": "modal-perfect-deduction",
+  "lessonId": "b2-grammar-modal-perfect-deduction",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-deduction-sd-038",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The server log shows activity at 03.00. An automated process must have been running.",
+          "explanation": "El registro es evidencia fuerte de una actividad en curso; «must have been running» encaja."
+        },
+        {
+          "id": "c2",
+          "statement": "She must has forgotten the appointment.",
+          "explanation": "Después del modal usamos «have», no «has»: «must have forgotten»."
+        },
+        {
+          "id": "c3",
+          "statement": "The signature is completely different. Maya can't have signed this form.",
+          "explanation": "La firma distinta permite descartar que Maya firmara el documento."
+        },
+        {
+          "id": "c4",
+          "statement": "They only started ten minutes ago, so they can't have finished already.",
+          "explanation": "El poco tiempo transcurrido permite descartar que hayan terminado: «can't have finished»."
+        },
+        {
+          "id": "c5",
+          "statement": "Jon was abroad all week, so he must have attended Tuesday's local meeting.",
+          "explanation": "La evidencia descarta la asistencia; debe decir «can't have attended»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-modal-perfect-deduction"
+      ],
+      "tags": [
+        "b2",
+        "modal-perfects",
+        "deduction",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-deduction-sd-101",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Her coat is still here, so she must have left the building.",
+          "explanation": "El abrigo sugiere que sigue dentro; la conclusión natural es «can't have left»."
+        },
+        {
+          "id": "c2",
+          "statement": "He looks exhausted. He must have been working all night.",
+          "explanation": "El aspecto cansado apoya la deducción sobre una actividad prolongada: «must have been working»."
+        },
+        {
+          "id": "c3",
+          "statement": "The road was blocked. They may have taken a different route.",
+          "explanation": "La ruta alternativa es una posibilidad compatible con la carretera bloqueada."
+        },
+        {
+          "id": "c4",
+          "statement": "No one heard the alarm. It could have been switched off before the incident.",
+          "explanation": "La pasiva modal presenta una explicación posible para que nadie oyera la alarma."
+        },
+        {
+          "id": "c5",
+          "statement": "The sample was contaminated; the lid might not have been fitted properly.",
+          "explanation": "Una tapa mal colocada es una causa posible; la pasiva negativa está bien formada."
+        },
+        {
+          "id": "c6",
+          "statement": "The figures are inconsistent. Someone could have entered one of them incorrectly.",
+          "explanation": "Una entrada incorrecta es una explicación posible de la inconsistencia."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-modal-perfect-deduction"
+      ],
+      "tags": [
+        "b2",
+        "modal-perfects",
+        "deduction",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-deduction-sd-164",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-deduction",
+      "taxonomyNodeIds": [
+        "modal-perfect-deduction"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Nora isn't answering. She might have left her phone at home.",
+          "explanation": "El teléfono olvidado es una explicación posible, no segura; «might have» es adecuado."
+        },
+        {
+          "id": "c2",
+          "statement": "The lights are off and the door is locked. They must have gone home.",
+          "explanation": "Dos indicios apoyan una deducción fuerte: «must have gone»."
+        },
+        {
+          "id": "c3",
+          "statement": "The door shows no damage, so the intruder might have used a key.",
+          "explanation": "La falta de daños hace posible, pero no segura, la explicación de una llave."
+        },
+        {
+          "id": "c4",
+          "statement": "The archive was sealed until Friday, so the document can't have been removed on Thursday.",
+          "explanation": "El archivo sellado descarta la retirada; la pasiva «can't have been removed» es precisa."
+        },
+        {
+          "id": "c5",
+          "statement": "They only started ten minutes ago, so they mustn't have finished already.",
+          "explanation": "Para una deducción negativa fuerte usamos «can't have», no «mustn't have»."
+        },
+        {
+          "id": "c6",
+          "statement": "The email could have gone to your spam folder; check there first.",
+          "explanation": "«Could have gone» ofrece una explicación posible y usa el participio correcto «gone»."
+        },
+        {
+          "id": "c7",
+          "statement": "The ground is soaked. It must have rained overnight.",
+          "explanation": "El suelo mojado es evidencia fuerte; «must have rained» expresa una conclusión lógica."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-modal-perfect-deduction"
+      ],
+      "tags": [
+        "b2",
+        "modal-perfects",
+        "deduction",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-accuracy-swipe-deck-001",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-grammar-accuracy",
+  "subtopic": "b1-grammar-accuracy",
+  "lessonId": "b1-grammar-accuracy",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-accuracy-sd-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "use-of-english",
+      "topic": "b1-grammar-accuracy",
+      "subtopic": "b1-grammar-accuracy",
+      "taxonomyNodeIds": [
+        "b1-grammar-accuracy"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The room was so small that we could not fit the table.",
+          "explanation": "The pattern «so + adjective + that» is correct."
+        },
+        {
+          "id": "c2",
+          "statement": "She walks to work every morning.",
+          "explanation": "There is no error: «she walks» has the correct third-person singular ending."
+        },
+        {
+          "id": "c3",
+          "statement": "Although it was raining, we continued walking.",
+          "explanation": "The clause after «although» is complete and grammatical."
+        },
+        {
+          "id": "c4",
+          "statement": "She has worked here for three years.",
+          "explanation": "«For three years» correctly expresses a duration continuing to the present."
+        },
+        {
+          "id": "c5",
+          "statement": "We met outside the cinema at seven.",
+          "explanation": "The past simple «met» and the time expression are correct."
+        },
+        {
+          "id": "c6",
+          "statement": "Despite being tired, the researchers completed the survey.",
+          "explanation": "«Despite + gerund» is correctly formed here."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-accuracy"
+      ],
+      "tags": [
+        "b1",
+        "error-identification",
+        "so-such",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-accuracy-sd-078",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "use-of-english",
+      "topic": "b1-grammar-accuracy",
+      "subtopic": "b1-grammar-accuracy",
+      "taxonomyNodeIds": [
+        "b1-grammar-accuracy"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The message was sent by my colleague yesterday.",
+          "explanation": "The past passive «was sent» is correct with «yesterday»."
+        },
+        {
+          "id": "c2",
+          "statement": "Did you went to the new café?",
+          "explanation": "After «did», use the base form «go», not «went»."
+        },
+        {
+          "id": "c3",
+          "statement": "She is interested on local history.",
+          "explanation": "The adjective «interested» takes «in», not «on»."
+        },
+        {
+          "id": "c4",
+          "statement": "He explained me the new procedure.",
+          "explanation": "Use «explained the procedure to me» or «told me the procedure»; «explained me» is incorrect."
+        },
+        {
+          "id": "c5",
+          "statement": "If I were you, I would check the address again.",
+          "explanation": "The second conditional is correctly formed with «If I were you»."
+        },
+        {
+          "id": "c6",
+          "statement": "She said that she would arrive the following day.",
+          "explanation": "The reported future and time reference are correct."
+        },
+        {
+          "id": "c7",
+          "statement": "There are too many cars on this narrow street.",
+          "explanation": "«Many» correctly modifies the plural countable noun «cars»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-accuracy"
+      ],
+      "tags": [
+        "b1",
+        "error-identification",
+        "passive",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-accuracy-sd-141",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "use-of-english",
+      "topic": "b1-grammar-accuracy",
+      "subtopic": "b1-grammar-accuracy",
+      "taxonomyNodeIds": [
+        "b1-grammar-accuracy"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "They goes to the library on Fridays.",
+          "explanation": "The plural subject «they» needs «go», not «goes»."
+        },
+        {
+          "id": "c2",
+          "statement": "I have lived in this town since 2020.",
+          "explanation": "The sentence correctly uses «since» with a starting year."
+        },
+        {
+          "id": "c3",
+          "statement": "Could you tell me where the station is?",
+          "explanation": "The indirect question has the correct statement order «where the station is»."
+        },
+        {
+          "id": "c4",
+          "statement": "I bought a sandwich at the station.",
+          "explanation": "The sentence is correct: «a sandwich» introduces one nonspecific sandwich."
+        },
+        {
+          "id": "c5",
+          "statement": "The policy applies for all temporary workers.",
+          "explanation": "The verb «apply» takes «to»: «applies to all temporary workers»."
+        },
+        {
+          "id": "c6",
+          "statement": "He don't like crowded buses.",
+          "explanation": "With «he», the negative auxiliary is «doesn't», not «don't»."
+        },
+        {
+          "id": "c7",
+          "statement": "I wish I had saved the confirmation number.",
+          "explanation": "Past regret correctly uses «wish + past perfect»."
+        },
+        {
+          "id": "c8",
+          "statement": "I have finished the report yesterday.",
+          "explanation": "A finished time such as «yesterday» requires past simple: «I finished»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-accuracy"
+      ],
+      "tags": [
+        "b1",
+        "error-identification",
+        "agreement",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

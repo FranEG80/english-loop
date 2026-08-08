@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-negative-inversion-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "inversion-emphasis",
+  "subtopic": "negative-inversion",
+  "lessonId": "b2-grammar-negative-inversion",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Never ___ the laboratory recorded such a reading.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "did"
+            },
+            {
+              "id": "c",
+              "text": "has"
+            }
+          ],
+          "explanation": "The past perfect uses had before the subject."
+        },
+        {
+          "id": "r2",
+          "prompt": "Barely ___ down when the phone rang.",
+          "options": [
+            {
+              "id": "c",
+              "text": "did I sat"
+            },
+            {
+              "id": "a",
+              "text": "had I sat"
+            },
+            {
+              "id": "d",
+              "text": "sat I had"
+            }
+          ],
+          "explanation": "Barely at the front uses had before I."
+        },
+        {
+          "id": "r3",
+          "prompt": "At no time ___ staff reveal client data.",
+          "options": [
+            {
+              "id": "b",
+              "text": "do"
+            },
+            {
+              "id": "c",
+              "text": "did"
+            },
+            {
+              "id": "a",
+              "text": "should"
+            }
+          ],
+          "explanation": "Should expresses the formal prohibition."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ had I sat down ___ the phone rang.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Only / than"
+            },
+            {
+              "id": "b",
+              "text": "Hardly / than"
+            },
+            {
+              "id": "a",
+              "text": "Hardly / when"
+            }
+          ],
+          "explanation": "Hardly is paired with when."
+        },
+        {
+          "id": "r5",
+          "prompt": "Not only ___ the problem, but she documented it.",
+          "options": [
+            {
+              "id": "a",
+              "text": "did Lina solve"
+            },
+            {
+              "id": "c",
+              "text": "solved Lina"
+            },
+            {
+              "id": "d",
+              "text": "does Lina solve"
+            }
+          ],
+          "explanation": "Not only at the front triggers inversion with did."
+        },
+        {
+          "id": "r6",
+          "prompt": "Little ___ how serious the delay was.",
+          "options": [
+            {
+              "id": "d",
+              "text": "do we realised"
+            },
+            {
+              "id": "b",
+              "text": "we realised"
+            },
+            {
+              "id": "a",
+              "text": "did we realise"
+            }
+          ],
+          "explanation": "Little is negative in meaning and triggers did in the past."
+        },
+        {
+          "id": "r7",
+          "prompt": "Not until Friday ___ they reply.",
+          "options": [
+            {
+              "id": "b",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "did"
+            },
+            {
+              "id": "d",
+              "text": "were"
+            }
+          ],
+          "explanation": "The past simple uses did in the inverted main clause."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence uses negative inversion correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Never have I seen such a result."
+            },
+            {
+              "id": "d",
+              "text": "Never have seen I such a result."
+            },
+            {
+              "id": "c",
+              "text": "Never did I have seen such a result."
+            }
+          ],
+          "explanation": "Have precedes I and the participle follows."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "never",
+        "past-perfect",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Only then ___ we understand the risk.",
+          "options": [
+            {
+              "id": "a",
+              "text": "did"
+            },
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "d",
+              "text": "were"
+            }
+          ],
+          "explanation": "Only then at the front triggers past-simple inversion with did."
+        },
+        {
+          "id": "r2",
+          "prompt": "Only after the audit ___ we change the policy.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "d",
+              "text": "were"
+            },
+            {
+              "id": "a",
+              "text": "did"
+            }
+          ],
+          "explanation": "The main clause inverts with did."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ had the meeting begun ___ the fire alarm rang.",
+          "options": [
+            {
+              "id": "c",
+              "text": "No sooner / when"
+            },
+            {
+              "id": "a",
+              "text": "No sooner / than"
+            },
+            {
+              "id": "b",
+              "text": "Hardly / than"
+            }
+          ],
+          "explanation": "No sooner is paired with than."
+        },
+        {
+          "id": "r4",
+          "prompt": "On no account ___ the code with anyone.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do you should share"
+            },
+            {
+              "id": "a",
+              "text": "should you share"
+            },
+            {
+              "id": "b",
+              "text": "you should share"
+            }
+          ],
+          "explanation": "Should precedes the subject after the negative phrase."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence is an emphatic statement rather than a question?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Never have I seen such a result."
+            },
+            {
+              "id": "b",
+              "text": "Have I never seen such a result?"
+            },
+            {
+              "id": "d",
+              "text": "Did never I see such a result?"
+            }
+          ],
+          "explanation": "The fronted negative expression creates an emphatic declarative sentence."
+        },
+        {
+          "id": "r6",
+          "prompt": "No sooner had the train left ___ it began to snow.",
+          "options": [
+            {
+              "id": "a",
+              "text": "than"
+            },
+            {
+              "id": "d",
+              "text": "as"
+            },
+            {
+              "id": "c",
+              "text": "that"
+            }
+          ],
+          "explanation": "No sooner is paired with than."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which option uses no sooner correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "No sooner did the report appeared than journalists called."
+            },
+            {
+              "id": "b",
+              "text": "No sooner the report had appeared when journalists called."
+            },
+            {
+              "id": "a",
+              "text": "No sooner had the report appeared than journalists called."
+            }
+          ],
+          "explanation": "Past perfect inversion is followed by than."
+        },
+        {
+          "id": "r8",
+          "prompt": "Seldom ___ such detailed feedback.",
+          "options": [
+            {
+              "id": "d",
+              "text": "does we receive"
+            },
+            {
+              "id": "b",
+              "text": "we receive"
+            },
+            {
+              "id": "a",
+              "text": "do we receive"
+            }
+          ],
+          "explanation": "Seldom at the front requires do before the plural subject."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "only-then",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-reading-gist-detail-inference-mini-game-001",
+  "level": "B2",
+  "category": "reading",
+  "topic": "b2-reading-gist-detail-inference",
+  "subtopic": "b2-reading-gist-detail-inference",
+  "lessonId": "b2-reading-gist-detail-inference",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-gist-detail-inference-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-gist-detail-inference",
+      "subtopic": "b2-reading-gist-detail-inference",
+      "taxonomyNodeIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which detail explains the project's limited reach?",
+          "context": "The mentoring scheme received enthusiastic feedback, but it operated in only two neighbourhoods and relied on a small pool of mentors.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Participants gave no feedback."
+            },
+            {
+              "id": "c",
+              "text": "It operated in every neighbourhood."
+            },
+            {
+              "id": "a",
+              "text": "It had a restricted geographical and human capacity."
+            }
+          ],
+          "explanation": "Two neighbourhoods and few mentors explain why the positive results cannot be generalised widely."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which option identifies the trade-off?",
+          "context": "The shared office reduced rent, but workers reported more interruptions and fewer quiet periods for complex tasks.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lower cost came with less concentration."
+            },
+            {
+              "id": "b",
+              "text": "Rent increased because interruptions fell."
+            },
+            {
+              "id": "d",
+              "text": "Complex tasks became unnecessary."
+            }
+          ],
+          "explanation": "The two clauses present a financial gain and a working-condition cost."
+        },
+        {
+          "id": "r3",
+          "prompt": "What is the function of the example?",
+          "context": "The policy reduced waste in several departments. For instance, the catering team began ordering smaller quantities more frequently.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It proves every department acted identically."
+            },
+            {
+              "id": "b",
+              "text": "It contradicts the policy."
+            },
+            {
+              "id": "a",
+              "text": "It illustrates how the policy worked."
+            }
+          ],
+          "explanation": "For instance introduces a concrete example of reducing waste."
+        },
+        {
+          "id": "r4",
+          "prompt": "Why does the writer mention the failed pilot?",
+          "context": "The first pilot failed because residents were not told how the new system worked. The revised version began with demonstrations, after which participation improved.",
+          "options": [
+            {
+              "id": "c",
+              "text": "To explain why demonstrations were cancelled."
+            },
+            {
+              "id": "b",
+              "text": "To prove the system can never work."
+            },
+            {
+              "id": "a",
+              "text": "To show how communication affected participation."
+            }
+          ],
+          "explanation": "The contrast between the two pilots connects explanation with improved participation."
+        },
+        {
+          "id": "r5",
+          "prompt": "What is the main point of the passage?",
+          "context": "A small town replaced several car journeys with a shared electric shuttle. The service is not a complete solution, but it has connected older residents with shops and clinics.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The town has removed every private car."
+            },
+            {
+              "id": "d",
+              "text": "The shuttle service is cheaper than every alternative."
+            },
+            {
+              "id": "a",
+              "text": "A limited transport scheme has produced useful social benefits."
+            }
+          ],
+          "explanation": "The passage balances a limitation with the practical connections the shuttle provides."
+        },
+        {
+          "id": "r6",
+          "prompt": "What is not known from the passage?",
+          "context": "The library's new app increased reservations in its first month. The report does not compare users with people who never downloaded it.",
+          "options": [
+            {
+              "id": "c",
+              "text": "That a new app was introduced."
+            },
+            {
+              "id": "a",
+              "text": "Whether non-users would have made reservations."
+            },
+            {
+              "id": "d",
+              "text": "That the report considered reservations."
+            }
+          ],
+          "explanation": "The report explicitly omits comparison with non-users."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which detail is explicitly stated?",
+          "context": "The museum's digital catalogue was launched in April. Curators added photographs gradually because many older records had to be checked first.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The catalogue launched in April."
+            },
+            {
+              "id": "d",
+              "text": "The museum closed in April."
+            },
+            {
+              "id": "c",
+              "text": "The photographs were taken by visitors."
+            }
+          ],
+          "explanation": "The launch month is directly stated; the other options contradict or add unsupported information."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which summary is accurate?",
+          "context": "The library introduced self-service returns. Staff were not removed; instead, they spent more time helping visitors find specialist material.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Specialist material was removed."
+            },
+            {
+              "id": "a",
+              "text": "Automation changed staff duties rather than eliminating staff."
+            },
+            {
+              "id": "d",
+              "text": "The library stopped accepting returns."
+            }
+          ],
+          "explanation": "The passage explicitly contrasts changed duties with staff removal."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "capacity",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-gist-detail-inference-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-gist-detail-inference",
+      "subtopic": "b2-reading-gist-detail-inference",
+      "taxonomyNodeIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "difficulty": 5,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What is the most cautious summary?",
+          "context": "The pilot attracted volunteers quickly but required more staff coordination than expected. The organisers will continue it while revising registration.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It attracted no interest."
+            },
+            {
+              "id": "b",
+              "text": "It has failed and will end."
+            },
+            {
+              "id": "a",
+              "text": "It has potential but needs a more efficient process."
+            }
+          ],
+          "explanation": "The continuation decision shows potential, while the registration revision addresses the coordination problem."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which inference follows from the final sentence?",
+          "context": "The council published the raw survey responses alongside its summary. This allowed residents to check whether the conclusions reflected the original answers.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The survey had no conclusions."
+            },
+            {
+              "id": "a",
+              "text": "The council wanted the process to be transparent."
+            },
+            {
+              "id": "c",
+              "text": "The raw responses were destroyed."
+            }
+          ],
+          "explanation": "Publishing raw responses enables checking and therefore supports an inference of transparency."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which claim is directly supported?",
+          "context": "The archive digitised 15,000 pages during its first year. Staff then slowed the project to check names and dates more carefully.",
+          "options": [
+            {
+              "id": "a",
+              "text": "15,000 pages were digitised in year one."
+            },
+            {
+              "id": "b",
+              "text": "All pages were checked before digitisation."
+            },
+            {
+              "id": "c",
+              "text": "The project ended after year one."
+            }
+          ],
+          "explanation": "The number and period are stated explicitly."
+        },
+        {
+          "id": "r4",
+          "prompt": "What can be inferred from the room's use?",
+          "context": "Employees reserved the quiet room mainly before presentations and complex negotiations. They rarely used it for routine email.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Routine email required special equipment."
+            },
+            {
+              "id": "b",
+              "text": "They used it for every task."
+            },
+            {
+              "id": "a",
+              "text": "They valued it for demanding preparation."
+            }
+          ],
+          "explanation": "The pattern of reservations links the room with demanding preparation."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which statement best qualifies the result?",
+          "context": "A new timetable reduced delays on two routes during its first month. The team will monitor other routes before recommending the change more widely.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The result is encouraging but limited."
+            },
+            {
+              "id": "d",
+              "text": "No further monitoring is needed."
+            },
+            {
+              "id": "c",
+              "text": "The timetable failed on both routes."
+            }
+          ],
+          "explanation": "Two routes and one month provide an encouraging but limited result."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which claim is not supported?",
+          "context": "The course attracted more applicants after its evening option was introduced. Attendance was steady, although the organisers did not measure completion rates.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The organisers lacked one measure."
+            },
+            {
+              "id": "a",
+              "text": "The evening option attracted interest."
+            },
+            {
+              "id": "c",
+              "text": "The course had a higher completion rate."
+            }
+          ],
+          "explanation": "The passage mentions applicants and attendance but gives no completion-rate comparison."
+        },
+        {
+          "id": "r7",
+          "prompt": "What can be inferred about the policy?",
+          "context": "The policy increased recycling in offices with clear collection points. In buildings where bins were hidden, the effect was negligible.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hidden bins increased recycling."
+            },
+            {
+              "id": "d",
+              "text": "Offices had no collection points."
+            },
+            {
+              "id": "a",
+              "text": "Implementation conditions influenced its success."
+            }
+          ],
+          "explanation": "The contrast between visible and hidden collection points shows that implementation mattered."
+        },
+        {
+          "id": "r8",
+          "prompt": "What does the comparison imply?",
+          "context": "The first design was cheaper to build, while the second used more durable materials. The committee selected the second after considering maintenance over ten years.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The first design was more durable."
+            },
+            {
+              "id": "a",
+              "text": "Long-term maintenance outweighed the initial saving."
+            },
+            {
+              "id": "c",
+              "text": "The committee ignored future costs."
+            }
+          ],
+          "explanation": "The selection after a ten-year maintenance review implies that durability mattered more than the initial price."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "summary",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

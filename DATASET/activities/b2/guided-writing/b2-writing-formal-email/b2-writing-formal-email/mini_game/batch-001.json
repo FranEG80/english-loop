@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-writing-formal-email-mini-game-001",
+  "level": "B2",
+  "category": "guided-writing",
+  "topic": "b2-writing-formal-email",
+  "subtopic": "b2-writing-formal-email",
+  "lessonId": "b2-writing-formal-email",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-formal-email-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-formal-email",
+      "subtopic": "b2-writing-formal-email",
+      "taxonomyNodeIds": [
+        "b2-writing-formal-email"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence asks for accessibility information with a reason?",
+          "options": [
+            {
+              "id": "c",
+              "text": "We need stuff about ramps."
+            },
+            {
+              "id": "b",
+              "text": "Tell me about access."
+            },
+            {
+              "id": "a",
+              "text": "Could you please provide access information before our visit?"
+            }
+          ],
+          "explanation": "The request is precise and links the information to the visit."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase politely asks for a reply?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Write back now."
+            },
+            {
+              "id": "b",
+              "text": "Reply immediately."
+            },
+            {
+              "id": "a",
+              "text": "I look forward to hearing from you."
+            }
+          ],
+          "explanation": "The phrase is a conventional formal closing."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence offers a flexible solution to a booking problem?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would be willing to accept an alternative date if this is possible."
+            },
+            {
+              "id": "b",
+              "text": "Put me on another date."
+            },
+            {
+              "id": "d",
+              "text": "Change the booking."
+            }
+          ],
+          "explanation": "The sentence offers a practical alternative in a courteous register."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence requests two actions and a deadline?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Please look at it."
+            },
+            {
+              "id": "a",
+              "text": "Could you please correct the invoice and confirm the change by Monday?"
+            },
+            {
+              "id": "b",
+              "text": "Fix the invoice sometime."
+            }
+          ],
+          "explanation": "The first option is polite, complete and actionable."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which closing requests timely resolution without sounding rude?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Do not ignore me."
+            },
+            {
+              "id": "b",
+              "text": "Sort this out today."
+            },
+            {
+              "id": "a",
+              "text": "I hope this matter can be resolved promptly."
+            }
+          ],
+          "explanation": "The passive wording requests action without direct blame."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence reports an invoice error professionally?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Fix your work."
+            },
+            {
+              "id": "b",
+              "text": "You made a stupid mistake."
+            },
+            {
+              "id": "a",
+              "text": "I have noticed an error in the invoice."
+            }
+          ],
+          "explanation": "The first option focuses on the issue without blaming the recipient."
+        },
+        {
+          "id": "r7",
+          "prompt": "What is a reasonable request after receiving a damaged item?",
+          "options": [
+            {
+              "id": "c",
+              "text": "A timetable"
+            },
+            {
+              "id": "b",
+              "text": "A new appointment"
+            },
+            {
+              "id": "a",
+              "text": "A replacement item"
+            }
+          ],
+          "explanation": "A replacement directly addresses a damaged product."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence explains why access information is needed?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Access matters a lot."
+            },
+            {
+              "id": "b",
+              "text": "We need information, please."
+            },
+            {
+              "id": "a",
+              "text": "This information would help us make the necessary arrangements before our visit."
+            }
+          ],
+          "explanation": "The first option gives a specific practical reason."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-formal-email"
+      ],
+      "tags": [
+        "b2",
+        "formal-email",
+        "accessibility",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-formal-email-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-formal-email",
+      "subtopic": "b2-writing-formal-email",
+      "taxonomyNodeIds": [
+        "b2-writing-formal-email"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence explains the impact of a cancellation?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The cancellation used an email."
+            },
+            {
+              "id": "a",
+              "text": "As a result, I was unable to attend the appointment."
+            },
+            {
+              "id": "d",
+              "text": "I usually attend appointments."
+            }
+          ],
+          "explanation": "As a result clearly introduces the consequence."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence clearly explains why an appointment was missed?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I missed it because things happened."
+            },
+            {
+              "id": "a",
+              "text": "As a result of the delayed delivery, I was unable to attend the appointment."
+            },
+            {
+              "id": "c",
+              "text": "The appointment was not good."
+            }
+          ],
+          "explanation": "The first option names both the precise cause and consequence."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which detail helps identify a customer case?",
+          "options": [
+            {
+              "id": "c",
+              "text": "It was bad."
+            },
+            {
+              "id": "a",
+              "text": "My reference number is FJ4821."
+            },
+            {
+              "id": "d",
+              "text": "Please hurry."
+            }
+          ],
+          "explanation": "A reference number lets the recipient find the correct record."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase introduces a complaint about a delivery?",
+          "options": [
+            {
+              "id": "d",
+              "text": "You failed again."
+            },
+            {
+              "id": "a",
+              "text": "I am writing to complain about the delayed delivery."
+            },
+            {
+              "id": "c",
+              "text": "Why are you so late?"
+            }
+          ],
+          "explanation": "The first option states the purpose firmly but professionally."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase politely requests information?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I am writing to enquire about"
+            },
+            {
+              "id": "c",
+              "text": "I need this now"
+            },
+            {
+              "id": "d",
+              "text": "Give me details"
+            }
+          ],
+          "explanation": "I am writing to enquire about is a standard formal opening."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which closing suits a formal request for several answers?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Answer me soon, okay?"
+            },
+            {
+              "id": "d",
+              "text": "Thanks a lot, mate."
+            },
+            {
+              "id": "a",
+              "text": "I would appreciate your assistance with these questions."
+            }
+          ],
+          "explanation": "The first option is polite and refers to the information requested."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which request follows an unexplained cancellation and extra costs?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would therefore like to request a full refund."
+            },
+            {
+              "id": "c",
+              "text": "Could you change my password?"
+            },
+            {
+              "id": "b",
+              "text": "Please send a brochure."
+            }
+          ],
+          "explanation": "A full refund is a relevant remedy for the financial loss."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence offers an alternative date formally?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would be willing to accept an alternative date."
+            },
+            {
+              "id": "b",
+              "text": "Any date is fine, I guess."
+            },
+            {
+              "id": "c",
+              "text": "Change it whenever."
+            }
+          ],
+          "explanation": "Would be willing expresses flexibility in a professional way."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-formal-email"
+      ],
+      "tags": [
+        "b2",
+        "formal-email",
+        "impact",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

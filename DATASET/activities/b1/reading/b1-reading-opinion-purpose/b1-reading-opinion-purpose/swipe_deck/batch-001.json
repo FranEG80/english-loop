@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-opinion-purpose-swipe-deck-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-opinion-purpose",
+  "subtopic": "b1-reading-opinion-purpose",
+  "lessonId": "b1-reading-opinion-purpose",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-sd-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The exhibition contains paintings from twenty local artists.",
+          "explanation": "The text says forty photographs, not twenty paintings."
+        },
+        {
+          "id": "c2",
+          "statement": "The help page is presented as a response to a platform problem.",
+          "explanation": "The second sentence offers help for the difficulty mentioned first."
+        },
+        {
+          "id": "c3",
+          "statement": "The council is collecting views from groups with different opinions.",
+          "explanation": "The text explicitly presents different groups and a consultation."
+        },
+        {
+          "id": "c4",
+          "statement": "The proposal is cheaper at the start and lasts less time.",
+          "explanation": "Both parts reverse the information in the text."
+        },
+        {
+          "id": "c5",
+          "statement": "The cycle lane has made journeys safer for everyone.",
+          "explanation": "The text says many commuters, not everyone."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "detail",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-sd-077",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The coastal route advice depends on the weather.",
+          "explanation": "The recommended route changes when strong winds are forecast."
+        },
+        {
+          "id": "c2",
+          "statement": "The library closes early on Friday.",
+          "explanation": "The notice directly states that it will close at five on Friday."
+        },
+        {
+          "id": "c3",
+          "statement": "Visitors are asked to return sports equipment after using it.",
+          "explanation": "The imperative gives this exact instruction."
+        },
+        {
+          "id": "c4",
+          "statement": "The market opens every day.",
+          "explanation": "The text mentions Saturday only, not every day."
+        },
+        {
+          "id": "c5",
+          "statement": "The writer says the new park benches are uncomfortable.",
+          "explanation": "The writer gives a positive opinion about the benches."
+        },
+        {
+          "id": "c6",
+          "statement": "The safety claim is supported by a fall in reported accidents.",
+          "explanation": "The numerical fall is explicitly used as supporting evidence."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "condition",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-sd-140",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The writer wants readers to support planting trees.",
+          "explanation": "The benefits are presented to persuade readers to support the proposal."
+        },
+        {
+          "id": "c2",
+          "statement": "The tree proposal is supported by more than one benefit.",
+          "explanation": "The passage lists three separate benefits."
+        },
+        {
+          "id": "c3",
+          "statement": "The café review is entirely negative.",
+          "explanation": "Still introduces a positive overall judgement despite the drawback."
+        },
+        {
+          "id": "c4",
+          "statement": "The airport guide compares journey times.",
+          "explanation": "Journey times are one of the comparison criteria."
+        },
+        {
+          "id": "c5",
+          "statement": "The pool opened last year.",
+          "explanation": "The text gives 1985 as the opening year, not last year."
+        },
+        {
+          "id": "c6",
+          "statement": "The community centre is testing later opening hours.",
+          "explanation": "The first sentence explicitly describes a trial."
+        },
+        {
+          "id": "c7",
+          "statement": "The writer recommends visiting the riverside path early on a weekday.",
+          "explanation": "The final sentence gives exactly that recommendation."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "persuasion",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-sd-199",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The phrase 'a little difficult' makes the criticism stronger.",
+          "explanation": "A little softens or reduces the force of difficult."
+        },
+        {
+          "id": "c2",
+          "statement": "The survey proves that every visitor is satisfied.",
+          "explanation": "A small survey of regular visitors cannot prove satisfaction for everyone."
+        },
+        {
+          "id": "c3",
+          "statement": "The festival leaflet asks visitors to bring reusable bottles.",
+          "explanation": "The first sentence is a direct request."
+        },
+        {
+          "id": "c4",
+          "statement": "The phone repair argument links repair with less waste.",
+          "explanation": "The first clause supplies the environmental reason for the recommendation."
+        },
+        {
+          "id": "c5",
+          "statement": "The museum review recommends a full-day visit.",
+          "explanation": "The writer recommends a short visit, not a full day."
+        },
+        {
+          "id": "c6",
+          "statement": "All cyclists are satisfied with the repaired bridge.",
+          "explanation": "The remaining request shows that complete satisfaction cannot be concluded."
+        },
+        {
+          "id": "c7",
+          "statement": "The app can save an unfinished application.",
+          "explanation": "The passage explicitly says it cannot save unfinished work."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "softening",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

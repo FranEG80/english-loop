@@ -53,7 +53,6 @@ export function validateActivityRules(
       validateKeyWordTransformation(location, activity, issues);
       break;
     case "error_correction":
-    case "sentence_rewrite":
       validateRewrite(location, activity, issues);
       break;
     case "word_order":
@@ -157,14 +156,56 @@ function validateWordFormation(
   activity: Activity,
   issues: RuleIssue[],
 ): void {
-  const cue = activity.cueWord;
-  if (!cue || cue === "TODO") {
-    push(issues, "word-formation-cue", location, "error", "Falta la raíz en mayúsculas.");
-    return;
-  }
   if (activity.evaluator.strategy !== "per_gap") return;
 
-  for (const answer of activity.evaluator.gaps.flatMap((gap) => gap.answers)) {
+  // UoE Part 3 es un texto con varios huecos y **una raíz por hueco**: es el
+  // contexto el que decide la categoría gramatical de cada derivación.
+  if (activity.evaluator.gaps.length < 2) {
+    push(
+      issues,
+      "word-formation-single-gap",
+      location,
+      "error",
+      "Part 3 es un texto con varios huecos, no una frase suelta.",
+    );
+  }
+
+  for (const gap of activity.evaluator.gaps) {
+    const cue = gap.cueWord ?? activity.cueWord;
+    if (!cue || cue === "TODO") {
+      push(
+        issues,
+        "word-formation-cue",
+        location,
+        "error",
+        `El hueco ${gap.gapId} no declara su raíz en mayúsculas.`,
+      );
+      continue;
+    }
+    // Aceptar «discussion» y «discussions» es tolerancia: mismo lema, el
+    // contexto solo decide el número. Aceptar «usable» y «useful» es otra
+    // cosa: son palabras distintas, y significa que la frase no fija la
+    // derivación y se puede acertar sin entender la regla.
+    if (!shareLemma(gap.answers)) {
+      push(
+        issues,
+        "word-formation-ambiguous-gap",
+        location,
+        "error",
+        `El hueco ${gap.gapId} acepta formas de distinto significado (${gap.answers.join(", ")}); el contexto debe fijar una.`,
+      );
+    }
+    validateDerivation(location, gap.answers, cue, issues);
+  }
+}
+
+function validateDerivation(
+  location: string,
+  answers: readonly string[],
+  cue: string,
+  issues: RuleIssue[],
+): void {
+  for (const answer of answers) {
     const word = answer.trim();
     if (word.split(/\s+/).length > 1) {
       push(
@@ -439,11 +480,7 @@ function validateAnswerVariety(
   activity: Activity,
   issues: RuleIssue[],
 ): void {
-  const FREE_PRODUCTION: ReadonlySet<Activity["type"]> = new Set([
-    "error_correction",
-    "guided_writing",
-    "sentence_rewrite",
-  ]);
+  const FREE_PRODUCTION: ReadonlySet<Activity["type"]> = new Set(["error_correction"]);
   if (!FREE_PRODUCTION.has(activity.type)) return;
   if (acceptedAnswers(activity).length >= 2) return;
 
@@ -466,10 +503,11 @@ function validatePositionBias(
   let maxLength = 0;
 
   for (const activity of batch.activities) {
-    if (activity.evaluator.strategy !== "single_option") continue;
+    const { evaluator } = activity;
+    if (evaluator.strategy !== "single_option") continue;
     if (activity.optionsOrdered) continue;
     const options = activity.options ?? [];
-    const index = options.findIndex(({ id }) => id === activity.evaluator.correctOptionId);
+    const index = options.findIndex(({ id }) => id === evaluator.correctOptionId);
     if (index < 0) continue;
     positions.push(index);
     maxLength = Math.max(maxLength, options.length);
@@ -612,11 +650,69 @@ function stripGapMarkers(text: string): string {
  * carefully`, `convince -> convincing`, `decide -> decision` y los prefijos
  * negativos (`agree -> disagreement`).
  */
+/**
+ * Derivaciones con cambio de raíz que ningún recorte de sufijos reconoce.
+ * Son las que más pregunta el examen, así que se listan explícitamente.
+ */
+const IRREGULAR_DERIVATIONS: Readonly<Record<string, readonly string[]>> = {
+  long: ["length", "lengthy", "lengthen"],
+  strong: ["strength", "strengthen"],
+  wide: ["width", "widen"],
+  high: ["height", "heighten"],
+  deep: ["depth", "deepen"],
+  broad: ["breadth", "broaden"],
+  proud: ["pride"],
+  pride: ["proud"],
+  succeed: ["success", "successful", "successfully"],
+  lose: ["loss", "lost"],
+  choose: ["choice"],
+  believe: ["belief"],
+  describe: ["description"],
+  decide: ["decision", "decisive"],
+  maintain: ["maintenance"],
+  pronounce: ["pronunciation"],
+  explain: ["explanation"],
+  hot: ["heat"],
+  free: ["freedom"],
+  poor: ["poverty"],
+  young: ["youth"],
+  speak: ["speech"],
+  sit: ["seat"],
+  eat: ["edible", "inedible"],
+  rely: ["reliable", "unreliable", "reliance", "reliably"],
+  apply: ["appliance", "applicant", "application"],
+  vary: ["variety", "various", "variation"],
+  satisfy: ["satisfaction", "satisfactory"],
+  qualify: ["qualification"],
+  justify: ["justification"],
+};
+
+/**
+ * ¿Todas las respuestas son la misma palabra? Se admiten singular/plural y las
+ * variantes ortográficas británica y americana, que no cambian el significado.
+ */
+export function shareLemma(answers: readonly string[]): boolean {
+  if (answers.length <= 1) return true;
+  const lemmas = new Set(answers.map(lemma));
+  return lemmas.size === 1;
+}
+
+function lemma(word: string): string {
+  return word
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z]/g, "")
+    .replace(/(?:is|iz)(e|ed|es|ing|ation)$/, "ise$1")
+    .replace(/(ie)s$/, "y")
+    .replace(/e?s$/, "");
+}
+
 export function sharesRoot(answer: string, cue: string): boolean {
   const word = answer.toLowerCase().replace(/[^a-z]/g, "");
   const root = cue.toLowerCase().replace(/[^a-z]/g, "");
   if (!word || !root) return false;
   if (word.includes(root) || root.includes(word)) return true;
+  if (IRREGULAR_DERIVATIONS[root]?.includes(word)) return true;
 
   const prefixLength = Math.min(4, root.length, word.length);
   if (prefixLength >= 3) {
@@ -626,6 +722,8 @@ export function sharesRoot(answer: string, cue: string): boolean {
   }
 
   // Alternancias ortográficas frecuentes: -e final, y/i, doble consonante.
+  // `use -> usable` o `argue -> arguable`: al caer la -e la raíz se queda en
+  // dos letras, así que el umbral no puede ser mayor.
   const flexible = root.replace(/e$/, "").replace(/y$/, "i");
-  return flexible.length >= 3 && word.includes(flexible);
+  return flexible.length >= 2 && word.startsWith(flexible);
 }

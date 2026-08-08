@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-education-learning-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-education-learning",
+  "subtopic": "b2-education-learning",
+  "lessonId": "b2-vocabulary-education-learning",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-education-learning-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-education-learning",
+      "subtopic": "b2-education-learning",
+      "taxonomyNodeIds": [
+        "b2-education-learning"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Students must ___ an assignment by Friday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "attend"
+            },
+            {
+              "id": "d",
+              "text": "sit"
+            },
+            {
+              "id": "a",
+              "text": "submit"
+            }
+          ],
+          "explanation": "Submit an assignment means hand it in for assessment."
+        },
+        {
+          "id": "r2",
+          "prompt": "Students should ___ for the exam rather than memorise isolated words.",
+          "options": [
+            {
+              "id": "b",
+              "text": "enrol"
+            },
+            {
+              "id": "c",
+              "text": "cite"
+            },
+            {
+              "id": "a",
+              "text": "revise"
+            }
+          ],
+          "explanation": "Revise means prepare by reviewing work."
+        },
+        {
+          "id": "r3",
+          "prompt": "The researchers collected data and ___ their findings in a journal.",
+          "options": [
+            {
+              "id": "a",
+              "text": "published"
+            },
+            {
+              "id": "b",
+              "text": "attended"
+            },
+            {
+              "id": "d",
+              "text": "enrolled"
+            }
+          ],
+          "explanation": "Researchers publish findings in academic outlets."
+        },
+        {
+          "id": "r4",
+          "prompt": "The student received one-to-one support in a weekly ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "tutorial"
+            },
+            {
+              "id": "b",
+              "text": "lecture"
+            },
+            {
+              "id": "c",
+              "text": "curriculum"
+            }
+          ],
+          "explanation": "A tutorial gives individual or small-group guidance."
+        },
+        {
+          "id": "r5",
+          "prompt": "The panel praised the clarity of her research ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "lecture"
+            },
+            {
+              "id": "c",
+              "text": "fee"
+            },
+            {
+              "id": "a",
+              "text": "dissertation"
+            }
+          ],
+          "explanation": "A dissertation is an extended academic research paper."
+        },
+        {
+          "id": "r6",
+          "prompt": "An ___ is studying for a first university degree.",
+          "options": [
+            {
+              "id": "d",
+              "text": "alumnus"
+            },
+            {
+              "id": "b",
+              "text": "postgraduate"
+            },
+            {
+              "id": "a",
+              "text": "undergraduate"
+            }
+          ],
+          "explanation": "Undergraduate study comes before postgraduate study."
+        },
+        {
+          "id": "r7",
+          "prompt": "The final-year student is writing a 12,000-word ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "syllabus"
+            },
+            {
+              "id": "c",
+              "text": "lecture"
+            },
+            {
+              "id": "a",
+              "text": "dissertation"
+            }
+          ],
+          "explanation": "A dissertation is an extended research project."
+        },
+        {
+          "id": "r8",
+          "prompt": "The course is part of compulsory ___ for teenagers.",
+          "options": [
+            {
+              "id": "c",
+              "text": "research"
+            },
+            {
+              "id": "a",
+              "text": "education"
+            },
+            {
+              "id": "d",
+              "text": "revision"
+            }
+          ],
+          "explanation": "Compulsory education is legally required schooling."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-education-learning"
+      ],
+      "tags": [
+        "b2",
+        "submit",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-education-learning-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-education-learning",
+      "subtopic": "b2-education-learning",
+      "taxonomyNodeIds": [
+        "b2-education-learning"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The team ___ a small-scale study of reading habits.",
+          "options": [
+            {
+              "id": "a",
+              "text": "conducted"
+            },
+            {
+              "id": "c",
+              "text": "assisted"
+            },
+            {
+              "id": "b",
+              "text": "attended"
+            }
+          ],
+          "explanation": "Conduct research means carry out a study."
+        },
+        {
+          "id": "r2",
+          "prompt": "She ___ on a postgraduate course in public policy.",
+          "options": [
+            {
+              "id": "a",
+              "text": "enrolled"
+            },
+            {
+              "id": "b",
+              "text": "enclosed"
+            },
+            {
+              "id": "c",
+              "text": "enabled"
+            }
+          ],
+          "explanation": "Enrol on or in a course means register for it."
+        },
+        {
+          "id": "r3",
+          "prompt": "A ___ student is completing a master’s degree.",
+          "options": [
+            {
+              "id": "a",
+              "text": "postgraduate"
+            },
+            {
+              "id": "d",
+              "text": "primary"
+            },
+            {
+              "id": "c",
+              "text": "vocational"
+            }
+          ],
+          "explanation": "Postgraduate study follows an undergraduate degree."
+        },
+        {
+          "id": "r4",
+          "prompt": "The course is a ___ programme for healthcare assistants.",
+          "options": [
+            {
+              "id": "a",
+              "text": "vocational"
+            },
+            {
+              "id": "c",
+              "text": "literary"
+            },
+            {
+              "id": "d",
+              "text": "residential"
+            }
+          ],
+          "explanation": "Vocational education prepares for a profession or trade."
+        },
+        {
+          "id": "r5",
+          "prompt": "He forgot to ___ the source of the quotation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "attend"
+            },
+            {
+              "id": "a",
+              "text": "cite"
+            },
+            {
+              "id": "c",
+              "text": "revise"
+            }
+          ],
+          "explanation": "Cite a source means identify it in academic work."
+        },
+        {
+          "id": "r6",
+          "prompt": "The ___ encouraged students to debate the reading.",
+          "options": [
+            {
+              "id": "c",
+              "text": "dissertation"
+            },
+            {
+              "id": "a",
+              "text": "seminar"
+            },
+            {
+              "id": "d",
+              "text": "deadline"
+            }
+          ],
+          "explanation": "A seminar is discussion-based."
+        },
+        {
+          "id": "r7",
+          "prompt": "The lecturer asked students to ___ their essays before submission.",
+          "options": [
+            {
+              "id": "d",
+              "text": "award"
+            },
+            {
+              "id": "a",
+              "text": "revise"
+            },
+            {
+              "id": "b",
+              "text": "enrol"
+            }
+          ],
+          "explanation": "Revise can mean improve written work."
+        },
+        {
+          "id": "r8",
+          "prompt": "The tutor gave detailed ___ on the draft.",
+          "options": [
+            {
+              "id": "a",
+              "text": "feedback"
+            },
+            {
+              "id": "c",
+              "text": "faculty"
+            },
+            {
+              "id": "b",
+              "text": "fee"
+            }
+          ],
+          "explanation": "Feedback comments on performance or work."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-education-learning"
+      ],
+      "tags": [
+        "b2",
+        "research",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

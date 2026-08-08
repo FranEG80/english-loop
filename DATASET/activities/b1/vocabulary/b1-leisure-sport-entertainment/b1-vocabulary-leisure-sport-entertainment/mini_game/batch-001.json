@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-leisure-sport-entertainment-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-leisure-sport-entertainment",
+  "subtopic": "b1-leisure-sport-entertainment",
+  "lessonId": "b1-vocabulary-leisure-sport-entertainment",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-leisure-sport-entertainment-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-leisure-sport-entertainment",
+      "subtopic": "b1-leisure-sport-entertainment",
+      "taxonomyNodeIds": [
+        "b1-leisure-sport-entertainment"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which phrase introduces a reason for a preference?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I like it for the plot is original."
+            },
+            {
+              "id": "a",
+              "text": "I like it because the plot is original."
+            },
+            {
+              "id": "c",
+              "text": "I like because it the plot is original."
+            }
+          ],
+          "explanation": "Because introduce la razón de una opinión."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase recommends a book to someone?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would definitely recommend it."
+            },
+            {
+              "id": "d",
+              "text": "I am recommend it definitely."
+            },
+            {
+              "id": "c",
+              "text": "I recommend definitely to it."
+            }
+          ],
+          "explanation": "Recommend es el verbo que usamos para aconsejar una obra."
+        },
+        {
+          "id": "r3",
+          "prompt": "The events and actions in a story form its ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "festival"
+            },
+            {
+              "id": "c",
+              "text": "coach"
+            },
+            {
+              "id": "a",
+              "text": "plot"
+            }
+          ],
+          "explanation": "Plot es la trama de una historia."
+        },
+        {
+          "id": "r4",
+          "prompt": "The words of a song are its ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "plot"
+            },
+            {
+              "id": "b",
+              "text": "setting"
+            },
+            {
+              "id": "a",
+              "text": "lyrics"
+            }
+          ],
+          "explanation": "Lyrics son las palabras de una canción."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which activity normally follows the pattern go + -ing?",
+          "options": [
+            {
+              "id": "d",
+              "text": "the piano"
+            },
+            {
+              "id": "a",
+              "text": "cycling"
+            },
+            {
+              "id": "b",
+              "text": "tennis"
+            }
+          ],
+          "explanation": "Go cycling es el patrón habitual para esta actividad."
+        },
+        {
+          "id": "r6",
+          "prompt": "We ___ swimming at the weekend.",
+          "options": [
+            {
+              "id": "c",
+              "text": "make"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "go"
+            }
+          ],
+          "explanation": "Go + actividad en -ing se usa con swimming."
+        },
+        {
+          "id": "r7",
+          "prompt": "A person who trains a sports team is a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "coach"
+            },
+            {
+              "id": "d",
+              "text": "narrator"
+            },
+            {
+              "id": "c",
+              "text": "character"
+            }
+          ],
+          "explanation": "Coach es el entrenador del equipo."
+        },
+        {
+          "id": "r8",
+          "prompt": "The film made me laugh; it was a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "plot"
+            },
+            {
+              "id": "b",
+              "text": "thriller"
+            },
+            {
+              "id": "a",
+              "text": "comedy"
+            }
+          ],
+          "explanation": "A comedy es una película cuyo objetivo principal es hacer reír."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-leisure-sport-entertainment"
+      ],
+      "tags": [
+        "b1",
+        "leisure-entertainment",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-leisure-sport-entertainment-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-leisure-sport-entertainment",
+      "subtopic": "b1-leisure-sport-entertainment",
+      "taxonomyNodeIds": [
+        "b1-leisure-sport-entertainment"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I ___ tennis every Saturday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "b",
+              "text": "go"
+            },
+            {
+              "id": "a",
+              "text": "play"
+            }
+          ],
+          "explanation": "Play se combina con tennis y otros deportes con pelota."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence correctly describes an emotional viewer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I was moved by the documentary."
+            },
+            {
+              "id": "c",
+              "text": "The documentary was moved me."
+            },
+            {
+              "id": "d",
+              "text": "I moved the documentary."
+            }
+          ],
+          "explanation": "Moved describe la emoción que siente la persona."
+        },
+        {
+          "id": "r3",
+          "prompt": "A book's narrator is the person who ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "trains the team"
+            },
+            {
+              "id": "a",
+              "text": "tells the story"
+            },
+            {
+              "id": "d",
+              "text": "plays the match"
+            }
+          ],
+          "explanation": "The narrator es la voz que cuenta la historia."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which option correctly completes: I am keen ___ hiking?",
+          "options": [
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "Be keen on + sustantivo o gerundio expresa entusiasmo."
+        },
+        {
+          "id": "r5",
+          "prompt": "A film about real events and facts is a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "documentary"
+            },
+            {
+              "id": "b",
+              "text": "comedy"
+            },
+            {
+              "id": "d",
+              "text": "chapter"
+            }
+          ],
+          "explanation": "A documentary presenta hechos o información real."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which adjective describes how a person feels after a disappointing film?",
+          "options": [
+            {
+              "id": "d",
+              "text": "relaxing"
+            },
+            {
+              "id": "c",
+              "text": "fascinating"
+            },
+            {
+              "id": "a",
+              "text": "disappointed"
+            }
+          ],
+          "explanation": "Disappointed describe el sentimiento de la persona."
+        },
+        {
+          "id": "r7",
+          "prompt": "A live performance by several bands is often a ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "plot"
+            },
+            {
+              "id": "a",
+              "text": "festival"
+            },
+            {
+              "id": "b",
+              "text": "chapter"
+            }
+          ],
+          "explanation": "A festival puede reunir varios artistas y actividades."
+        },
+        {
+          "id": "r8",
+          "prompt": "The match was ___, so everyone wanted to know the result.",
+          "options": [
+            {
+              "id": "a",
+              "text": "exciting"
+            },
+            {
+              "id": "d",
+              "text": "bored"
+            },
+            {
+              "id": "b",
+              "text": "excited"
+            }
+          ],
+          "explanation": "Exciting describe algo que produce emoción."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-leisure-sport-entertainment"
+      ],
+      "tags": [
+        "b1",
+        "leisure-entertainment",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

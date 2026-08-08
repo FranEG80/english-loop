@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-defining-relative-clauses-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "relative-clauses",
+  "subtopic": "defining-relative-clauses",
+  "lessonId": "b1-grammar-defining-relative-clauses",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-defining-relative-clauses-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "defining-relative-clauses",
+      "taxonomyNodeIds": [
+        "defining-relative-clauses"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The hospital ___ opened last year is modern.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The people ___ live upstairs are very quiet.",
+          "options": [
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            }
+          ],
+          "explanation": "Para personas usamos «who»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The doctor ___ treated me was kind.",
+          "options": [
+            {
+              "id": "d",
+              "text": "when"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            }
+          ],
+          "explanation": "Para personas usamos «who»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The train ___ leaves at six is the fastest.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The teacher ___ taught me is retired.",
+          "options": [
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "b",
+              "text": "which"
+            }
+          ],
+          "explanation": "Para personas usamos «who»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The book ___ I borrowed is on the table.",
+          "options": [
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The man ___ that called is my uncle.",
+          "options": [
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            }
+          ],
+          "explanation": "«that» puede usarse para personas en registro informal."
+        },
+        {
+          "id": "r8",
+          "prompt": "The woman ___ car was stolen called the police.",
+          "options": [
+            {
+              "id": "d",
+              "text": "where"
+            },
+            {
+              "id": "a",
+              "text": "whose"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            }
+          ],
+          "explanation": "«whose» expresa posesión."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-defining-relative-clauses"
+      ],
+      "tags": [
+        "b1",
+        "relative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-defining-relative-clauses-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "defining-relative-clauses",
+      "taxonomyNodeIds": [
+        "defining-relative-clauses"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This is the café ___ we met.",
+          "options": [
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            }
+          ],
+          "explanation": "Para lugares usamos «where»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The restaurant ___ we visited was excellent.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The keys ___ are on the desk are mine.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r4",
+          "prompt": "That's the shop ___ I bought these shoes.",
+          "options": [
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            }
+          ],
+          "explanation": "Para lugares usamos «where»."
+        },
+        {
+          "id": "r5",
+          "prompt": "This is the town ___ I grew up.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            }
+          ],
+          "explanation": "Para lugares usamos «where»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The woman ___ lives next door is a doctor.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "b",
+              "text": "which"
+            }
+          ],
+          "explanation": "Para personas usamos «who»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The phone ___ I bought is cheap.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The laptop ___ I use is quite old.",
+          "options": [
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-defining-relative-clauses"
+      ],
+      "tags": [
+        "b1",
+        "relative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

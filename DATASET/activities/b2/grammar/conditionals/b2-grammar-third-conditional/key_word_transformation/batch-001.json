@@ -10,7 +10,56 @@
   "activities": [
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-001",
+      "id": "b2-grammar-third-conditional-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We did not book a table, so we waited for an hour.",
+      "firstSentence": "We did not book a table, so we waited for an hour.",
+      "keyWord": "HAD",
+      "gapText": "If we [gap1] a table, we would not have waited for an hour.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had booked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La tercera condicional abre con «if» más past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-002",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -23,27 +72,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "We left late, so we missed the train. HAD — If we ___, we wouldn't have missed the train.",
-      "firstSentence": "We left late, so we missed the train.",
-      "keyWord": "TODO",
-      "gapText": "HAD — If we [gap1], we wouldn't have missed the train.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The alarm did not ring, so I missed my flight.",
+      "firstSentence": "The alarm did not ring, so I missed my flight.",
+      "keyWord": "WOULD",
+      "gapText": "If the alarm had rung, I [gap1] my flight.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had left earlier"
+              "would not have missed"
             ]
           }
         ],
@@ -55,11 +104,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La causa pasada alternativa usa past perfect: «had left earlier»."
+      "explanation": "El resultado irreal del pasado se expresa con «would not have» más participio."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-002",
+      "id": "b2-grammar-third-conditional-kwt-003",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -72,27 +121,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "Maya didn't see the message, so she didn't reply. SEEN — Maya would have replied if she ___ the message.",
-      "firstSentence": "Maya didn't see the message, so she didn't reply.",
-      "keyWord": "TODO",
-      "gapText": "SEEN — Maya would have replied if she [gap1] the message.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She trained hard and won the medal.",
+      "firstSentence": "She trained hard and won the medal.",
+      "keyWord": "NOT",
+      "gapText": "If she had not trained hard, she would [gap1] the medal.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had seen"
+              "not have won"
             ]
           }
         ],
@@ -104,11 +153,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La condición no realizada se expresa con «had seen»."
+      "explanation": "Al invertir una causa real, la consecuencia pasa a negativa: «would not have won»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-003",
+      "id": "b2-grammar-third-conditional-kwt-004",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -121,27 +170,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The sign was unclear, and we took the wrong road. HAVE — We wouldn't ___ the wrong road if the sign had been clearer.",
-      "firstSentence": "The sign was unclear, and we took the wrong road.",
-      "keyWord": "TODO",
-      "gapText": "HAVE — We wouldn't [gap1] the wrong road if the sign had been clearer.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The picnic was cancelled because it rained.",
+      "firstSentence": "The picnic was cancelled because it rained.",
+      "keyWord": "BEEN",
+      "gapText": "If it had not rained, the picnic would not [gap1].",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "have taken"
+              "have been cancelled"
             ]
           }
         ],
@@ -153,11 +202,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Después de «wouldn't» completamos el modal perfecto con «have taken»."
+      "explanation": "La pasiva de la tercera condicional usa «have been» más participio."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-004",
+      "id": "b2-grammar-third-conditional-kwt-005",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -170,27 +219,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The hotel had no rooms, so we couldn't stay longer. HAD — We could have stayed longer if the hotel ___ a room available.",
-      "firstSentence": "The hotel had no rooms, so we couldn't stay longer.",
-      "keyWord": "TODO",
-      "gapText": "HAD — We could have stayed longer if the hotel [gap1] a room available.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Nobody warned him about the wet floor, so he slipped.",
+      "firstSentence": "Nobody warned him about the wet floor, so he slipped.",
+      "keyWord": "WARNED",
+      "gapText": "He would not have slipped if somebody [gap1] him about the wet floor.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had had"
+              "had warned"
             ]
           }
         ],
@@ -202,11 +251,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "El past perfect de «have» es «had had»."
+      "explanation": "La condición irreal va en past perfect aunque la oración empiece por el resultado."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-005",
+      "id": "b2-grammar-third-conditional-kwt-006",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -219,27 +268,28 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "You didn't tell me about the fault, so I couldn't help. COULD — If you had told me, I ___ you.",
-      "firstSentence": "You didn't tell me about the fault, so I couldn't help.",
-      "keyWord": "TODO",
-      "gapText": "COULD — If you had told me, I [gap1] you.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not have your number, so I was unable to call you.",
+      "firstSentence": "I did not have your number, so I was unable to call you.",
+      "keyWord": "COULD",
+      "gapText": "If I had had your number, I [gap1] you.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "could have helped"
+              "could have called",
+              "could have phoned"
             ]
           }
         ],
@@ -251,11 +301,60 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La ayuda posible no realizada se expresa con «could have helped»."
+      "explanation": "«Could have» más participio expresa una capacidad que nunca llegó a darse."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-006",
+      "id": "b2-grammar-third-conditional-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The bus was late, so we missed the opening scene.",
+      "firstSentence": "The bus was late, so we missed the opening scene.",
+      "keyWord": "ARRIVED",
+      "gapText": "If the bus [gap1] on time, we would not have missed the opening scene.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had arrived"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El past perfect «had arrived» recoge lo contrario de lo que pasó."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-008",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -268,28 +367,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The alarm worked, so we noticed the smoke. HADN'T — If the alarm ___, we might not have noticed the smoke.",
-      "firstSentence": "The alarm worked, so we noticed the smoke.",
-      "keyWord": "TODO",
-      "gapText": "HADN'T — If the alarm [gap1], we might not have noticed the smoke.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "They lost the map and wandered around the forest for hours.",
+      "firstSentence": "They lost the map and wandered around the forest for hours.",
+      "keyWord": "LOST",
+      "gapText": "They would not have wandered around the forest for hours if they [gap1] the map.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "hadn't worked",
-              "had not worked"
+              "had not lost"
             ]
           }
         ],
@@ -301,11 +399,256 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La condición contraria al hecho usa «hadn't worked»; se acepta también la forma sin contraer."
+      "explanation": "La negación del past perfect describe el pasado alternativo."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-007",
+      "id": "b2-grammar-third-conditional-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You drew me a map, so I found the house easily.",
+      "firstSentence": "You drew me a map, so I found the house easily.",
+      "keyWord": "UNLESS",
+      "gapText": "I would not have found the house easily [gap1] me a map.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "unless you had drawn"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Unless» equivale a «if... not» y arrastra el past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Marta helped me, so I handed in the essay on time.",
+      "firstSentence": "Marta helped me, so I handed in the essay on time.",
+      "keyWord": "UNLESS",
+      "gapText": "I would not have handed in the essay on time [gap1] me.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "unless Marta had helped"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «unless» el verbo va en past perfect sin negar de nuevo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The project survived thanks to your advice.",
+      "firstSentence": "The project survived thanks to your advice.",
+      "keyWord": "BUT",
+      "gapText": "The project would have failed [gap1] your advice.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "but for"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«But for» introduce el factor sin el cual el resultado habría sido otro."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We got to the airport on time thanks to the taxi.",
+      "firstSentence": "We got to the airport on time thanks to the taxi.",
+      "keyWord": "FOR",
+      "gapText": "But [gap1] taxi, we would not have got to the airport on time.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "for the"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«But for the» va seguido de un sustantivo, nunca de una oración con verbo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She left early, so she did not miss the last train.",
+      "firstSentence": "She left early, so she did not miss the last train.",
+      "keyWord": "OTHERWISE",
+      "gapText": "She left early; [gap1] missed the last train.",
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "otherwise she would have"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Otherwise» resume la condición negativa y exige «would have» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-kwt-014",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -318,28 +661,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The pitch froze, so the match didn't continue. FROZEN — The match would have continued if the pitch ___.",
-      "firstSentence": "The pitch froze, so the match didn't continue.",
-      "keyWord": "TODO",
-      "gapText": "FROZEN — The match would have continued if the pitch [gap1].",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The guide gave us clear directions, so we did not get lost.",
+      "firstSentence": "The guide gave us clear directions, so we did not get lost.",
+      "keyWord": "OTHERWISE",
+      "gapText": "The guide gave us clear directions; [gap1] have got lost.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "hadn't frozen",
-              "had not frozen"
+              "otherwise we would"
             ]
           }
         ],
@@ -351,11 +693,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La condición negativa usa el participio irregular «frozen»."
+      "explanation": "«Otherwise» sustituye a toda la cláusula «if he had not given us directions»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-008",
+      "id": "b2-grammar-third-conditional-kwt-015",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -368,27 +710,27 @@
         "third-conditional"
       ],
       "difficulty": 3,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "I ignored the warning and lost the data. LISTENED — If I ___ to the warning, I wouldn't have lost the data.",
-      "firstSentence": "I ignored the warning and lost the data.",
-      "keyWord": "TODO",
-      "gapText": "LISTENED — If I [gap1] to the warning, I wouldn't have lost the data.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not read the instructions and I broke the machine.",
+      "firstSentence": "I did not read the instructions and I broke the machine.",
+      "keyWord": "HAVE",
+      "gapText": "I would not [gap1] the machine if I had read the instructions.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 75,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had listened"
+              "have broken"
             ]
           }
         ],
@@ -400,11 +742,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La acción pasada alternativa se forma con «had listened»."
+      "explanation": "Tras «would not» el pasado irreal se marca con «have» más participio."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-009",
+      "id": "b2-grammar-third-conditional-kwt-016",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -416,28 +758,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "They didn't test every component, so they failed to find the fault. FOUND — They ___ the fault if they had tested every component.",
-      "firstSentence": "They didn't test every component, so they failed to find the fault.",
-      "keyWord": "TODO",
-      "gapText": "FOUND — They [gap1] the fault if they had tested every component.",
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We did not save a copy, so we lost the file.",
+      "firstSentence": "We did not save a copy, so we lost the file.",
+      "keyWord": "SAVED",
+      "gapText": "We would not have lost the file if we [gap1] a copy.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "would have found"
+              "had saved"
             ]
           }
         ],
@@ -449,11 +791,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "El resultado pasado alternativo es «would have found»."
+      "explanation": "La cláusula con «if» conserva el past perfect afirmativo."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-010",
+      "id": "b2-grammar-third-conditional-kwt-017",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -465,28 +807,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The courier didn't call, so I went out. STAYED — If the courier had called, I ___ at home.",
-      "firstSentence": "The courier didn't call, so I went out.",
-      "keyWord": "TODO",
-      "gapText": "STAYED — If the courier had called, I [gap1] at home.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Luckily I checked the timetable and caught the early train.",
+      "firstSentence": "Luckily I checked the timetable and caught the early train.",
+      "keyWord": "MISSED",
+      "gapText": "I [gap1] the early train if I had not checked the timetable.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "would have stayed"
+              "would have missed"
             ]
           }
         ],
@@ -498,11 +840,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La permanencia no ocurrida se expresa con «would have stayed»."
+      "explanation": "El hecho afortunado se reformula como resultado negativo hipotético."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-011",
+      "id": "b2-grammar-third-conditional-kwt-018",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -514,28 +856,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "They resolved the issue slowly, so we complained. BEEN — We wouldn't have complained if the issue ___ promptly.",
-      "firstSentence": "They resolved the issue slowly, so we complained.",
-      "keyWord": "TODO",
-      "gapText": "BEEN — We wouldn't have complained if the issue [gap1] promptly.",
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You did not tell me about the strike, so I drove to work.",
+      "firstSentence": "You did not tell me about the strike, so I drove to work.",
+      "keyWord": "TOLD",
+      "gapText": "If you [gap1] me about the strike, I would not have driven to work.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had been resolved"
+              "had told"
             ]
           }
         ],
@@ -547,11 +889,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La condición pasiva requiere «had been resolved»."
+      "explanation": "La condición pasa a afirmativa porque el hecho real era negativo."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-012",
+      "id": "b2-grammar-third-conditional-kwt-019",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -563,28 +905,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The weather didn't improve, so the ferry didn't sail. HAD — ___, the ferry would have sailed.",
-      "firstSentence": "The weather didn't improve, so the ferry didn't sail.",
-      "keyWord": "TODO",
-      "gapText": "HAD — [gap1], the ferry would have sailed.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not realise how late it was, so I stayed at the party.",
+      "firstSentence": "I did not realise how late it was, so I stayed at the party.",
+      "keyWord": "REALISED",
+      "gapText": "If I [gap1] how late it was, I would have gone home.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "Had the weather improved"
+              "had realised"
             ]
           }
         ],
@@ -596,11 +938,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La inversión formal omite «if» y comienza «Had the weather improved»."
+      "explanation": "El past perfect describe la percepción que no llegó a producirse."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-013",
+      "id": "b2-grammar-third-conditional-kwt-020",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -612,28 +954,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "Nobody reviewed the contract carefully, so the ambiguity remained. REVIEWED — If the contract ___ carefully, the ambiguity might have been noticed.",
-      "firstSentence": "Nobody reviewed the contract carefully, so the ambiguity remained.",
-      "keyWord": "TODO",
-      "gapText": "REVIEWED — If the contract [gap1] carefully, the ambiguity might have been noticed.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It rained all weekend, so we stayed indoors.",
+      "firstSentence": "It rained all weekend, so we stayed indoors.",
+      "keyWord": "RAINED",
+      "gapText": "If it [gap1] all weekend, we would not have stayed indoors.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had been reviewed"
+              "had not rained"
             ]
           }
         ],
@@ -645,11 +987,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "El contrato recibe la acción: «had been reviewed»."
+      "explanation": "La condición niega un hecho real: «had not rained»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-014",
+      "id": "b2-grammar-third-conditional-kwt-021",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -661,28 +1003,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "Both sides were defensive, so no agreement was reached. BEEN — They might have reached an agreement if both sides ___ more flexible.",
-      "firstSentence": "Both sides were defensive, so no agreement was reached.",
-      "keyWord": "TODO",
-      "gapText": "BEEN — They might have reached an agreement if both sides [gap1] more flexible.",
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not go to the party because I was ill.",
+      "firstSentence": "I did not go to the party because I was ill.",
+      "keyWord": "GONE",
+      "gapText": "If I had not been ill, I [gap1] to the party.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had been"
+              "would have gone"
             ]
           }
         ],
@@ -694,11 +1036,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La cualidad pasada alternativa se expresa con «had been»."
+      "explanation": "El participio de «go» es «gone», nunca «went», tras «would have»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-015",
+      "id": "b2-grammar-third-conditional-kwt-022",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -710,28 +1052,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The sensor failed, so the system stayed on. DOWN — If the sensor hadn't failed, the system ___ automatically.",
-      "firstSentence": "The sensor failed, so the system stayed on.",
-      "keyWord": "TODO",
-      "gapText": "DOWN — If the sensor hadn't failed, the system [gap1] automatically.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He did not speak to the manager, so nothing changed.",
+      "firstSentence": "He did not speak to the manager, so nothing changed.",
+      "keyWord": "SPOKEN",
+      "gapText": "Something would have changed if he [gap1] to the manager.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "would have shut down"
+              "had spoken"
             ]
           }
         ],
@@ -743,11 +1085,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La partícula forma parte del phrasal verb: «would have shut down»."
+      "explanation": "«Speak to» conserva la preposición al pasar al past perfect."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-016",
+      "id": "b2-grammar-third-conditional-kwt-023",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -759,28 +1101,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "We received the warning late, so the delay continued. RECEIVED — We could have reduced the delay if we ___ the warning sooner.",
-      "firstSentence": "We received the warning late, so the delay continued.",
-      "keyWord": "TODO",
-      "gapText": "RECEIVED — We could have reduced the delay if we [gap1] the warning sooner.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The mechanic did not notice the crack, so the engine failed.",
+      "firstSentence": "The mechanic did not notice the crack, so the engine failed.",
+      "keyWord": "NOTICED",
+      "gapText": "The engine would not have failed if the mechanic [gap1] the crack.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 80,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had received"
+              "had noticed"
             ]
           }
         ],
@@ -792,11 +1134,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La recepción anterior imaginada usa «had received»."
+      "explanation": "El resultado negativo hipotético exige una condición afirmativa."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-017",
+      "id": "b2-grammar-third-conditional-kwt-024",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -808,29 +1150,28 @@
       "taxonomyNodeIds": [
         "third-conditional"
       ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The samples lacked labels, so they got mixed up. HAVE — If the samples had been labelled, they ___ mixed up.",
-      "firstSentence": "The samples lacked labels, so they got mixed up.",
-      "keyWord": "TODO",
-      "gapText": "HAVE — If the samples had been labelled, they [gap1] mixed up.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I left the house late, so I did not catch the ferry.",
+      "firstSentence": "I left the house late, so I did not catch the ferry.",
+      "keyWord": "CAUGHT",
+      "gapText": "I [gap1] the ferry if I had left the house earlier.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 85,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "wouldn't have got",
-              "would not have got"
+              "would have caught"
             ]
           }
         ],
@@ -842,60 +1183,11 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "El resultado negativo admite «wouldn't have got» en inglés británico."
+      "explanation": "«Would have caught» expresa el desenlace que no ocurrió."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-018",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The board didn't know the full cost, so it approved the plan. KNOWN — Had the board ___, it wouldn't have approved the plan.",
-      "firstSentence": "The board didn't know the full cost, so it approved the plan.",
-      "keyWord": "TODO",
-      "gapText": "KNOWN — Had the board [gap1], it wouldn't have approved the plan.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "known the full cost"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Tras el «Had» ya dado, completamos con «known the full cost»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-019",
+      "id": "b2-grammar-third-conditional-kwt-025",
       "status": "published",
       "autoGradable": true,
       "level": "B2",
@@ -908,27 +1200,27 @@
         "third-conditional"
       ],
       "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "Nobody verified the data independently, so the error remained hidden. BEEN — If the data ___ independently, the error might have been caught.",
-      "firstSentence": "Nobody verified the data independently, so the error remained hidden.",
-      "keyWord": "TODO",
-      "gapText": "BEEN — If the data [gap1] independently, the error might have been caught.",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The doctor arrived quickly, so the patient recovered.",
+      "firstSentence": "The doctor arrived quickly, so the patient recovered.",
+      "keyWord": "UNLESS",
+      "gapText": "The patient would not have recovered [gap1] arrived quickly.",
       "lessonIds": [
         "b2-grammar-third-conditional"
       ],
       "tags": [
         "b2",
-        "conditionals",
-        "key-word-transformation"
+        "rewriting",
+        "conditionals"
       ],
-      "estimatedSeconds": 85,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had been verified"
+              "unless the doctor had"
             ]
           }
         ],
@@ -940,302 +1232,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "La verificación pasiva hipotética usa «had been verified»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-020",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The company restructured its debts too late and failed. EARLIER — The company might not have failed if it ___ its debts.",
-      "firstSentence": "The company restructured its debts too late and failed.",
-      "keyWord": "TODO",
-      "gapText": "EARLIER — The company might not have failed if it [gap1] its debts.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "had restructured earlier"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "«Had restructured earlier» sitúa la medida alternativa antes del fracaso."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-021",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The witness arrived late, so the hearing began late. BEGUN — Had the witness arrived earlier, the hearing ___ on time.",
-      "firstSentence": "The witness arrived late, so the hearing began late.",
-      "keyWord": "TODO",
-      "gapText": "BEGUN — Had the witness arrived earlier, the hearing [gap1] on time.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "would have begun"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "El participio correcto es «begun»: «would have begun»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-022",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "We documented the change, so the cause was traceable. TRACED — If we hadn't documented the change, nobody ___ the cause.",
-      "firstSentence": "We documented the change, so the cause was traceable.",
-      "keyWord": "TODO",
-      "gapText": "TRACED — If we hadn't documented the change, nobody [gap1] the cause.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "could have traced"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "La capacidad alternativa se expresa con «could have traced»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-023",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "Participants were treated differently, and the outcome was unfair. TREATED — The outcome might have been fairer if all participants ___ equally.",
-      "firstSentence": "Participants were treated differently, and the outcome was unfair.",
-      "keyWord": "TODO",
-      "gapText": "TREATED — The outcome might have been fairer if all participants [gap1] equally.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "had been treated"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "La condición pasiva usa «had been treated»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-024",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "The initial estimate was unrealistic, so we needed extra funding. NEEDED — Had the initial estimate been realistic, we ___ extra funding.",
-      "firstSentence": "The initial estimate was unrealistic, so we needed extra funding.",
-      "keyWord": "TODO",
-      "gapText": "NEEDED — Had the initial estimate been realistic, we [gap1] extra funding.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "wouldn't have needed",
-              "would not have needed"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "El resultado negativo alternativo es «wouldn't have needed»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-third-conditional-kwt-025",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "grammar",
-      "topic": "conditionals",
-      "subtopic": "third-conditional",
-      "taxonomyNodeIds": [
-        "third-conditional"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the gap with two to six words, including the given key word. Do not change the key word.",
-      "prompt": "We failed to save a snapshot, so rebuilding took all night. SAVED — If we ___, we wouldn't have spent all night rebuilding.",
-      "firstSentence": "We failed to save a snapshot, so rebuilding took all night.",
-      "keyWord": "TODO",
-      "gapText": "SAVED — If we [gap1], we wouldn't have spent all night rebuilding.",
-      "lessonIds": [
-        "b2-grammar-third-conditional"
-      ],
-      "tags": [
-        "b2",
-        "conditionals",
-        "key-word-transformation"
-      ],
-      "estimatedSeconds": 85,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "had saved a snapshot"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "La acción pasada que no se realizó se expresa con «had saved a snapshot»."
+      "explanation": "«Unless» funciona como «if... not» y evita repetir la negación."
     }
   ]
 }

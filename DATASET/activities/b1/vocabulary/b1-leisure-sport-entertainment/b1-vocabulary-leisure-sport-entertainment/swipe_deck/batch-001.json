@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-leisure-sport-entertainment-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-leisure-sport-entertainment",
+  "subtopic": "b1-leisure-sport-entertainment",
+  "lessonId": "b1-vocabulary-leisure-sport-entertainment",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-leisure-sport-entertainment-sd-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-leisure-sport-entertainment",
+      "subtopic": "b1-leisure-sport-entertainment",
+      "taxonomyNodeIds": [
+        "b1-leisure-sport-entertainment"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She does yoga before work.",
+          "explanation": "Do yoga es correcto."
+        },
+        {
+          "id": "c2",
+          "statement": "The phrase I am keen on hiking expresses enthusiasm for hiking.",
+          "explanation": "Be keen on expresa interés o entusiasmo."
+        },
+        {
+          "id": "c3",
+          "statement": "The match was excited, so the crowd felt nervous.",
+          "explanation": "El partido era exciting; la gente podía estar excited."
+        },
+        {
+          "id": "c4",
+          "statement": "The plot of a film is its list of actors.",
+          "explanation": "Plot es la trama; the cast es el conjunto de actores."
+        },
+        {
+          "id": "c5",
+          "statement": "Lyrics are the words of a song.",
+          "explanation": "Lyrics son las palabras cantadas."
+        },
+        {
+          "id": "c6",
+          "statement": "I play tennis every Saturday.",
+          "explanation": "Play se usa con tennis."
+        },
+        {
+          "id": "c7",
+          "statement": "A supporter plays every minute of a match.",
+          "explanation": "A supporter anima; a player participa en el partido."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-leisure-sport-entertainment"
+      ],
+      "tags": [
+        "b1",
+        "leisure-entertainment",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-leisure-sport-entertainment-sd-086",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-leisure-sport-entertainment",
+      "subtopic": "b1-leisure-sport-entertainment",
+      "taxonomyNodeIds": [
+        "b1-leisure-sport-entertainment"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The phrase I would recommend it is useful for giving an opinion about a book.",
+          "explanation": "Recommend sirve para aconsejar una obra o actividad."
+        },
+        {
+          "id": "c2",
+          "statement": "I am interested in photography.",
+          "explanation": "Interested in es la estructura correcta."
+        },
+        {
+          "id": "c3",
+          "statement": "We play football twice a week.",
+          "explanation": "Play football es la combinación correcta."
+        },
+        {
+          "id": "c4",
+          "statement": "We go swimming on Sundays.",
+          "explanation": "Go swimming es la combinación natural."
+        },
+        {
+          "id": "c5",
+          "statement": "The narrator is the person who tells a story.",
+          "explanation": "Narrator es quien cuenta la historia."
+        },
+        {
+          "id": "c6",
+          "statement": "We go cycling in the park.",
+          "explanation": "Go cycling es natural."
+        },
+        {
+          "id": "c7",
+          "statement": "A player supports a team from the seats but never competes.",
+          "explanation": "A player compite; un supporter anima desde fuera."
+        },
+        {
+          "id": "c8",
+          "statement": "A comedy is a film intended to make people laugh.",
+          "explanation": "Comedy es una película de humor."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-leisure-sport-entertainment"
+      ],
+      "tags": [
+        "b1",
+        "leisure-entertainment",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-leisure-sport-entertainment-sd-149",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-leisure-sport-entertainment",
+      "subtopic": "b1-leisure-sport-entertainment",
+      "taxonomyNodeIds": [
+        "b1-leisure-sport-entertainment"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A hobby is something you do regularly for pleasure.",
+          "explanation": "Hobby es una afición."
+        },
+        {
+          "id": "c2",
+          "statement": "The film was frightening, so I felt frightened.",
+          "explanation": "Frightening describe la causa; frightened el sentimiento."
+        },
+        {
+          "id": "c3",
+          "statement": "A song's beat is the same as the name of its singer.",
+          "explanation": "Beat es el ritmo; singer es la persona que canta."
+        },
+        {
+          "id": "c4",
+          "statement": "A coach is a person who trains a team.",
+          "explanation": "Coach es entrenador."
+        },
+        {
+          "id": "c5",
+          "statement": "A festival can include several musicians and performances.",
+          "explanation": "Festival suele reunir varios artistas o actividades."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-leisure-sport-entertainment"
+      ],
+      "tags": [
+        "b1",
+        "leisure-entertainment",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

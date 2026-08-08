@@ -22,11 +22,10 @@
       "taxonomyNodeIds": [
         "b2-word-families"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The results were highly ___.",
-      "cueWord": "SIGNIFY",
-      "gapText": "The results were highly [gap1].",
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "The transcontinental railway",
+      "gapText": "Before 1869 the journey from the east coast to the west coast of the United States took months, and travellers crossed [gap1] country by wagon.\nIn the 1850s a serious [gap2] began about building a line linking the west with the east.\nAlthough there was much [gap3] about the best route, a decision was finally taken.\nThe line ran more than three thousand kilometres in [gap4] from Sacramento to a point where it met [gap5] lines on the east coast.\nIn [gap6] with the six hours a modern flight takes, a week may not sound [gap7] today.\nEven so, the railway was a technological [gap8] that helped to unify the country.",
       "lessonIds": [
         "b2-word-families"
       ],
@@ -34,14 +33,64 @@
         "b2",
         "word-formation"
       ],
-      "estimatedSeconds": 40,
+      "estimatedSeconds": 240,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
+            "cueWord": "DANGER",
             "answers": [
-              "significant"
+              "dangerous"
+            ]
+          },
+          {
+            "gapId": "gap2",
+            "cueWord": "DISCUSS",
+            "answers": [
+              "discussion"
+            ]
+          },
+          {
+            "gapId": "gap3",
+            "cueWord": "AGREE",
+            "answers": [
+              "disagreement"
+            ]
+          },
+          {
+            "gapId": "gap4",
+            "cueWord": "LONG",
+            "answers": [
+              "length"
+            ]
+          },
+          {
+            "gapId": "gap5",
+            "cueWord": "EXIST",
+            "answers": [
+              "existing"
+            ]
+          },
+          {
+            "gapId": "gap6",
+            "cueWord": "COMPARE",
+            "answers": [
+              "comparison"
+            ]
+          },
+          {
+            "gapId": "gap7",
+            "cueWord": "IMPRESS",
+            "answers": [
+              "impressive"
+            ]
+          },
+          {
+            "gapId": "gap8",
+            "cueWord": "ACHIEVE",
+            "answers": [
+              "achievement"
             ]
           }
         ],
@@ -53,7 +102,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "An adjective is needed after highly."
+      "explanation": "1. DANGER: «Danger» es sustantivo; delante de «country» hace falta el adjetivo «dangerous». 2. DISCUSS: «A serious ___» fija el sustantivo en singular: «discussion». 3. AGREE: «Although» anuncia contraste: el prefijo negativo «dis-» da «disagreement». 4. LONG: Tras «in» va un sustantivo de medida: «length». 5. EXIST: Delante de «lines» toca un adjetivo participial: «existing». 6. COMPARE: «In comparison with» es una expresión fija con sustantivo. 7. IMPRESS: Tras «sound» va un adjetivo: «impressive». 8. ACHIEVE: Tras «a technological» va un sustantivo: «achievement»."
     },
     {
       "schemaVersion": "2.0.0",
@@ -69,11 +118,10 @@
       "taxonomyNodeIds": [
         "b2-word-families"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The report offers a comprehensive ___.",
-      "cueWord": "ANALYSE",
-      "gapText": "The report offers a comprehensive [gap1].",
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "Working from home",
+      "gapText": "Remote work has brought a clear [gap1] in the way teams organise their day.\nMany employees report higher [gap2] when they can choose their own hours.\nManagers, however, worry about the [gap3] of informal conversations.\nA poorly planned video call can be extremely [gap4] for everyone involved.\nCompanies that invest in training tend to see a [gap5] improvement within months.\nTeams also need clear rules so that decisions are made [gap6].\nWithout them, even a small task becomes [gap7] complicated.\nThe [gap8] of a hybrid week is that it keeps both focus and contact.",
       "lessonIds": [
         "b2-word-families"
       ],
@@ -81,14 +129,64 @@
         "b2",
         "word-formation"
       ],
-      "estimatedSeconds": 40,
+      "estimatedSeconds": 240,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
+            "cueWord": "DIFFER",
             "answers": [
-              "analysis"
+              "difference"
+            ]
+          },
+          {
+            "gapId": "gap2",
+            "cueWord": "PRODUCT",
+            "answers": [
+              "productivity"
+            ]
+          },
+          {
+            "gapId": "gap3",
+            "cueWord": "LOSE",
+            "answers": [
+              "loss"
+            ]
+          },
+          {
+            "gapId": "gap4",
+            "cueWord": "FRUSTRATE",
+            "answers": [
+              "frustrating"
+            ]
+          },
+          {
+            "gapId": "gap5",
+            "cueWord": "MEASURE",
+            "answers": [
+              "measurable"
+            ]
+          },
+          {
+            "gapId": "gap6",
+            "cueWord": "TRANSPARENT",
+            "answers": [
+              "transparently"
+            ]
+          },
+          {
+            "gapId": "gap7",
+            "cueWord": "NEED",
+            "answers": [
+              "needlessly"
+            ]
+          },
+          {
+            "gapId": "gap8",
+            "cueWord": "STRONG",
+            "answers": [
+              "strength"
             ]
           }
         ],
@@ -100,7 +198,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "A noun is needed after comprehensive."
+      "explanation": "1. DIFFER: Tras «a clear» va un sustantivo: «difference». 2. PRODUCT: «Higher» pide un sustantivo abstracto: «productivity». 3. LOSE: Tras «the» va el sustantivo «loss», no el verbo. 4. FRUSTRATE: Describe la llamada, no a quien la sufre: «frustrating». 5. MEASURE: Delante de «improvement» va un adjetivo: «measurable». 6. TRANSPARENT: Modifica al verbo «are made»: adverbio «transparently». 7. NEED: «-lessly» da el adverbio «needlessly»: complicado sin necesidad. 8. STRONG: Tras «The» va el sustantivo «strength», con cambio de raíz."
     },
     {
       "schemaVersion": "2.0.0",
@@ -116,387 +214,10 @@
       "taxonomyNodeIds": [
         "b2-word-families"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The device is remarkably ___.",
-      "cueWord": "RELY",
-      "gapText": "The device is remarkably [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 40,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "reliable"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Reliable is the adjective meaning dependable."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-004",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 2,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The policy aims to improve economic ___.",
-      "cueWord": "STABLE",
-      "gapText": "The policy aims to improve economic [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 40,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "stability"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Stability is the noun required after economic."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-005",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 2,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The instructions were deliberately ___.",
-      "cueWord": "AMBIGUITY",
-      "gapText": "The instructions were deliberately [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 40,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "unambiguous"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "The negative adjective unambiguous means clear in only one way."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-006",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 3,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The evidence was too ___.",
-      "cueWord": "FRAGMENT",
-      "gapText": "The evidence was too [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "fragmentary"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Fragmentary means incomplete and disconnected."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-007",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 3,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The panel questioned the ___.",
-      "cueWord": "ACCURATE",
-      "gapText": "The panel questioned the [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "accuracy"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Accuracy is the noun after the possessive the."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-008",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 3,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The study was conducted ___.",
-      "cueWord": "SYSTEM",
-      "gapText": "The study was conducted [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "systematically"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "The adverb systematically describes how it was conducted."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-009",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 3,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The proposal is financially ___.",
-      "cueWord": "VIABILITY",
-      "gapText": "The proposal is financially [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "viable"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Viable is the adjective describing the proposal."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-010",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 3,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "There is considerable __ about the interpretation.",
-      "cueWord": "AGREE",
-      "gapText": "There is considerable [gap1] about the interpretation.",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "disagreement"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Disagreement is the noun formed with the negative prefix dis-."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-011",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
       "difficulty": 4,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The conclusion is not entirely ___.",
-      "cueWord": "JUSTIFY",
-      "gapText": "The conclusion is not entirely [gap1].",
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "The city bike scheme",
+      "gapText": "The council launched the scheme after a long [gap1] with local residents.\nThe first stations were placed in the most [gap2] streets of the centre.\nEarly reports described the docking software as [gap3] and hard to use.\nAfter an update, riders found the app considerably more [gap4], with far fewer crashes.\nThe scheme has been especially [gap5] for short journeys across the river.\nCritics argue that the [gap6] of stations in outer areas is still too low.\nThe council has [gap7] promised to extend the network next spring.\nIts long-term [gap8] is to cut car traffic in the old town by half.",
       "lessonIds": [
         "b2-word-families"
       ],
@@ -504,14 +225,64 @@
         "b2",
         "word-formation"
       ],
-      "estimatedSeconds": 50,
+      "estimatedSeconds": 240,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
+            "cueWord": "CONSULT",
             "answers": [
-              "justified"
+              "consultation"
+            ]
+          },
+          {
+            "gapId": "gap2",
+            "cueWord": "CROWD",
+            "answers": [
+              "crowded"
+            ]
+          },
+          {
+            "gapId": "gap3",
+            "cueWord": "RELY",
+            "answers": [
+              "unreliable"
+            ]
+          },
+          {
+            "gapId": "gap4",
+            "cueWord": "PREDICT",
+            "answers": [
+              "predictable"
+            ]
+          },
+          {
+            "gapId": "gap5",
+            "cueWord": "SUCCESS",
+            "answers": [
+              "successful"
+            ]
+          },
+          {
+            "gapId": "gap6",
+            "cueWord": "DENSE",
+            "answers": [
+              "density"
+            ]
+          },
+          {
+            "gapId": "gap7",
+            "cueWord": "REPEAT",
+            "answers": [
+              "repeatedly"
+            ]
+          },
+          {
+            "gapId": "gap8",
+            "cueWord": "INTEND",
+            "answers": [
+              "intention"
             ]
           }
         ],
@@ -523,665 +294,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Justified is the past participle adjective after entirely."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-012",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 4,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The findings require further ___.",
-      "cueWord": "INVESTIGATE",
-      "gapText": "The findings require further [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 50,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "investigation"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Investigation is the noun required after further."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-013",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 4,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The scheme is intended to prevent ___.",
-      "cueWord": "DISCRIMINATE",
-      "gapText": "The scheme is intended to prevent [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 50,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "discrimination"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Discrimination is the noun for unfair treatment."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-014",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 4,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The policy had an unexpectedly ___ effect.",
-      "cueWord": "BENEFIT",
-      "gapText": "The policy had an unexpectedly [gap1] effect.",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 50,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "beneficial"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Beneficial is the adjective before effect."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-015",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 4,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The argument is theoretically ___.",
-      "cueWord": "SOUNDNESS",
-      "gapText": "The argument is theoretically [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 50,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "sound"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Sound is the adjective meaning logically strong."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-016",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The report's main ___ is its small sample.",
-      "cueWord": "LIMIT",
-      "gapText": "The report's main [gap1] is its small sample.",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "limitation"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Limitation is the noun for a weakness or boundary."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-017",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The decision was politically ___.",
-      "cueWord": "CONTROVERSY",
-      "gapText": "The decision was politically [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "controversial"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Controversial is the adjective describing a disputed decision."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-018",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The researchers worked with remarkable ___.",
-      "cueWord": "PRECISE",
-      "gapText": "The researchers worked with remarkable [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "precision"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Precision is the noun after with."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-019",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The findings are broadly ___.",
-      "cueWord": "REPRODUCE",
-      "gapText": "The findings are broadly [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "reproducible"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Reproducible means capable of being repeated with similar results."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-020",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The report avoids unnecessary ___.",
-      "cueWord": "GENERAL",
-      "gapText": "The report avoids unnecessary [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "generalisations"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Generalisations is the plural noun for broad claims."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-021",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The evidence is not entirely ___.",
-      "cueWord": "CONCLUDE",
-      "gapText": "The evidence is not entirely [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "conclusive"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Conclusive means sufficient to settle the matter."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-022",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The policy is unlikely to be socially ___.",
-      "cueWord": "ACCEPT",
-      "gapText": "The policy is unlikely to be socially [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "acceptable"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Acceptable is the adjective after socially."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-023",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The study has important ___.",
-      "cueWord": "IMPLY",
-      "gapText": "The study has important [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "implications"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Implications are consequences or meanings of a finding."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-024",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The article is written in an appropriately ___ style.",
-      "cueWord": "ACADEMY",
-      "gapText": "The article is written in an appropriately [gap1] style.",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "academic"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Academic is the adjective describing the style."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-word-families-wf-025",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_formation",
-      "skillFocus": "word_formation",
-      "category": "use-of-english",
-      "topic": "b2-word-families",
-      "subtopic": "b2-word-families",
-      "taxonomyNodeIds": [
-        "b2-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence with the correct form of the word in brackets.",
-      "prompt": "The recommendation is based on a careful ___.",
-      "cueWord": "ASSESS",
-      "gapText": "The recommendation is based on a careful [gap1].",
-      "lessonIds": [
-        "b2-word-families"
-      ],
-      "tags": [
-        "b2",
-        "word-formation"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "assessment"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Assessment is the noun after a careful."
+      "explanation": "1. CONSULT: Tras «a long» va un sustantivo: «consultation». 2. CROWD: «The most ___ streets» pide un adjetivo: «crowded». 3. RELY: «and hard to use» marca sentido negativo: «unreliable». 4. PREDICT: «Con menos caídas» apunta a comportamiento previsible: «predictable». 5. SUCCESS: Tras «been especially» va un adjetivo: «successful». 6. DENSE: Tras «the» va el sustantivo «density». 7. REPEAT: Modifica al verbo «promised»: adverbio «repeatedly». 8. INTEND: Tras «long-term» va el sustantivo «intention»."
     }
   ]
 }

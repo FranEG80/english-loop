@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-travel-tourism-urban-life-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-travel-tourism-urban-life",
+  "subtopic": "b2-travel-tourism-urban-life",
+  "lessonId": "b2-vocabulary-travel-tourism-urban-life",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-travel-tourism-urban-life-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-travel-tourism-urban-life",
+      "subtopic": "b2-travel-tourism-urban-life",
+      "taxonomyNodeIds": [
+        "b2-travel-tourism-urban-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The town must ___ with a sudden increase in demand for water.",
+          "options": [
+            {
+              "id": "a",
+              "text": "cope"
+            },
+            {
+              "id": "d",
+              "text": "preserve"
+            },
+            {
+              "id": "b",
+              "text": "attract"
+            }
+          ],
+          "explanation": "Cope with means manage a difficult situation successfully enough."
+        },
+        {
+          "id": "r2",
+          "prompt": "The hotel is convenient but not fully ___ for deaf guests.",
+          "options": [
+            {
+              "id": "b",
+              "text": "seasonal"
+            },
+            {
+              "id": "c",
+              "text": "profitable"
+            },
+            {
+              "id": "a",
+              "text": "accessible"
+            }
+          ],
+          "explanation": "Accessible focuses on design and usability for people with different needs."
+        },
+        {
+          "id": "r3",
+          "prompt": "The report warns that tourism is putting ___ on local housing.",
+          "options": [
+            {
+              "id": "c",
+              "text": "revenue"
+            },
+            {
+              "id": "a",
+              "text": "pressure"
+            },
+            {
+              "id": "b",
+              "text": "access"
+            }
+          ],
+          "explanation": "The collocation is put pressure on something."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new tram line has improved urban ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "mobility"
+            },
+            {
+              "id": "d",
+              "text": "seasonality"
+            },
+            {
+              "id": "b",
+              "text": "heritage"
+            }
+          ],
+          "explanation": "Mobility is the ease with which people can move around an area."
+        },
+        {
+          "id": "r5",
+          "prompt": "The policy aims to promote ___ tourism in protected areas.",
+          "options": [
+            {
+              "id": "c",
+              "text": "temporary"
+            },
+            {
+              "id": "a",
+              "text": "sustainable"
+            },
+            {
+              "id": "b",
+              "text": "congested"
+            }
+          ],
+          "explanation": "Sustainable tourism aims to protect resources and communities over time."
+        },
+        {
+          "id": "r6",
+          "prompt": "A route designed for easy use by people with different needs is ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "historic"
+            },
+            {
+              "id": "b",
+              "text": "seasonal"
+            },
+            {
+              "id": "a",
+              "text": "accessible"
+            }
+          ],
+          "explanation": "Accessible describes a place or service designed for people with varying abilities."
+        },
+        {
+          "id": "r7",
+          "prompt": "The coastal town is a popular holiday ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "congestion"
+            },
+            {
+              "id": "c",
+              "text": "infrastructure"
+            },
+            {
+              "id": "a",
+              "text": "destination"
+            }
+          ],
+          "explanation": "A destination is the place people travel to."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which result is most directly linked to short-term rentals becoming popular?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Mobility always improves."
+            },
+            {
+              "id": "c",
+              "text": "All attractions close."
+            },
+            {
+              "id": "a",
+              "text": "Rents may rise for long-term residents."
+            }
+          ],
+          "explanation": "Competition for housing can put pressure on rents and displace residents."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-travel-tourism-urban-life"
+      ],
+      "tags": [
+        "b2",
+        "resources",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-travel-tourism-urban-life-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-travel-tourism-urban-life",
+      "subtopic": "b2-travel-tourism-urban-life",
+      "taxonomyNodeIds": [
+        "b2-travel-tourism-urban-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Short-term rentals have driven up ___ in the city centre.",
+          "options": [
+            {
+              "id": "c",
+              "text": "attractions"
+            },
+            {
+              "id": "a",
+              "text": "rents"
+            },
+            {
+              "id": "d",
+              "text": "accessibility"
+            }
+          ],
+          "explanation": "Rent is the payment for using a property; rents can rise across an area."
+        },
+        {
+          "id": "r2",
+          "prompt": "The city introduced a visitor ___ to fund public transport.",
+          "options": [
+            {
+              "id": "c",
+              "text": "journey"
+            },
+            {
+              "id": "a",
+              "text": "levy"
+            },
+            {
+              "id": "b",
+              "text": "landmark"
+            }
+          ],
+          "explanation": "A levy is a charge collected for a particular purpose."
+        },
+        {
+          "id": "r3",
+          "prompt": "The city needs investment in transport ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "displacement"
+            },
+            {
+              "id": "b",
+              "text": "convenience"
+            },
+            {
+              "id": "a",
+              "text": "infrastructure"
+            }
+          ],
+          "explanation": "Infrastructure includes networks and systems such as transport, water and energy."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which noun describes the pressure caused by too many people in a place?",
+          "options": [
+            {
+              "id": "b",
+              "text": "mobility"
+            },
+            {
+              "id": "a",
+              "text": "overcrowding"
+            },
+            {
+              "id": "c",
+              "text": "accessibility"
+            }
+          ],
+          "explanation": "Overcrowding describes excessive numbers of people in a space."
+        },
+        {
+          "id": "r5",
+          "prompt": "The gallery is the city's most popular tourist ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "deficit"
+            },
+            {
+              "id": "c",
+              "text": "barrier"
+            },
+            {
+              "id": "a",
+              "text": "attraction"
+            }
+          ],
+          "explanation": "An attraction is a place or activity that draws visitors."
+        },
+        {
+          "id": "r6",
+          "prompt": "Tourism can boost local ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "revenue"
+            },
+            {
+              "id": "c",
+              "text": "rents"
+            },
+            {
+              "id": "b",
+              "text": "congestion"
+            }
+          ],
+          "explanation": "Revenue is income received by businesses or a local economy."
+        },
+        {
+          "id": "r7",
+          "prompt": "Too many visitors caused serious ___ in the historic centre.",
+          "options": [
+            {
+              "id": "a",
+              "text": "overcrowding"
+            },
+            {
+              "id": "b",
+              "text": "accessibility"
+            },
+            {
+              "id": "d",
+              "text": "heritage"
+            }
+          ],
+          "explanation": "Overcrowding means there are too many people for a space or service."
+        },
+        {
+          "id": "r8",
+          "prompt": "A sustainable tourism plan should primarily protect resources over the ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "short trip"
+            },
+            {
+              "id": "a",
+              "text": "long term"
+            },
+            {
+              "id": "d",
+              "text": "ticket office"
+            }
+          ],
+          "explanation": "Sustainability concerns effects over time, especially the long term."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-travel-tourism-urban-life"
+      ],
+      "tags": [
+        "b2",
+        "housing",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

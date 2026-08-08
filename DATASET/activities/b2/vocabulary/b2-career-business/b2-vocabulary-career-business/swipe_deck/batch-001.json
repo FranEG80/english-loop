@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-career-business-swipe-deck-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-career-business",
+  "subtopic": "b2-career-business",
+  "lessonId": "b2-vocabulary-career-business",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-career-business-sd-053",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-career-business",
+      "subtopic": "b2-career-business",
+      "taxonomyNodeIds": [
+        "b2-career-business"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Seeking promotion means hoping to move to a higher position.",
+          "explanation": "Promotion is advancement within a career."
+        },
+        {
+          "id": "c2",
+          "statement": "Income can include money from sources other than a fixed salary.",
+          "explanation": "Income is a broad term for money received."
+        },
+        {
+          "id": "c3",
+          "statement": "A merger is an agreement that joins two companies.",
+          "explanation": "A merger combines organisations."
+        },
+        {
+          "id": "c4",
+          "statement": "Stakeholders can include people outside the company.",
+          "explanation": "Customers, investors and local residents can be stakeholders."
+        },
+        {
+          "id": "c5",
+          "statement": "Revenue is normally calculated only after all costs have been deducted.",
+          "explanation": "Profit, not revenue, reflects money left after costs."
+        },
+        {
+          "id": "c6",
+          "statement": "A business can increase revenue while making less profit.",
+          "explanation": "Higher costs can reduce profit even when sales rise."
+        },
+        {
+          "id": "c7",
+          "statement": "The phrase responsible for introduces an area of duty.",
+          "explanation": "A manager can be responsible for a budget."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-career-business"
+      ],
+      "tags": [
+        "b2",
+        "promotion",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-career-business-sd-116",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-career-business",
+      "subtopic": "b2-career-business",
+      "taxonomyNodeIds": [
+        "b2-career-business"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Profit is calculated after business costs are taken into account.",
+          "explanation": "Profit is what remains after costs."
+        },
+        {
+          "id": "c2",
+          "statement": "Career and job are interchangeable in every context.",
+          "explanation": "A job is a particular position; a career is a broader professional path."
+        },
+        {
+          "id": "c3",
+          "statement": "Freelance work is always a permanent salaried position.",
+          "explanation": "Freelancers often work independently on projects."
+        },
+        {
+          "id": "c4",
+          "statement": "Stakeholders must be employees of the organisation.",
+          "explanation": "Stakeholders can be customers, investors or local residents."
+        },
+        {
+          "id": "c5",
+          "statement": "To launch a product means to remove it from the market.",
+          "explanation": "Launch means introduce it to the market."
+        },
+        {
+          "id": "c6",
+          "statement": "An applicant is a company that advertises a job.",
+          "explanation": "An applicant is a person who applies."
+        },
+        {
+          "id": "c7",
+          "statement": "The collocation apply for a vacancy is natural in recruitment contexts.",
+          "explanation": "Applicants apply for jobs and vacancies."
+        },
+        {
+          "id": "c8",
+          "statement": "Revenue and profit always mean exactly the same thing.",
+          "explanation": "Revenue is sales income; profit is revenue after costs."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-career-business"
+      ],
+      "tags": [
+        "b2",
+        "profit",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-career-business-sd-179",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-career-business",
+      "subtopic": "b2-career-business",
+      "taxonomyNodeIds": [
+        "b2-career-business"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A workload is the amount of work someone must handle.",
+          "explanation": "Workload refers to the quantity of work."
+        },
+        {
+          "id": "c2",
+          "statement": "A vacancy is an available job position.",
+          "explanation": "A vacancy is a job that needs to be filled."
+        },
+        {
+          "id": "c3",
+          "statement": "To outsource a service is to perform it entirely in-house.",
+          "explanation": "Outsource means use an external provider."
+        },
+        {
+          "id": "c4",
+          "statement": "An employer hires an employee, while an employee works for the employer.",
+          "explanation": "The terms describe opposite sides of the employment relationship."
+        },
+        {
+          "id": "c5",
+          "statement": "A career path describes one isolated shift rather than long-term progression.",
+          "explanation": "A career path describes professional progression over time."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-career-business"
+      ],
+      "tags": [
+        "b2",
+        "workload",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

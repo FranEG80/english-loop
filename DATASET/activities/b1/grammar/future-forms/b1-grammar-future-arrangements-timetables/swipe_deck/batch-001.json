@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-future-arrangements-timetables-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "future-time-clauses",
+  "lessonId": "b1-grammar-future-arrangements-timetables",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-future-arrangements-timetables-sd-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-time-clauses",
+      "taxonomyNodeIds": [
+        "future-time-clauses"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Before the guests will arrive, we'll put the drinks in the fridge.",
+          "explanation": "Después de «before» corresponde presente simple: «Before the guests arrive»."
+        },
+        {
+          "id": "c2",
+          "statement": "We'll stay inside until the storm passes.",
+          "explanation": "Es correcta: «until» va seguido del presente «passes» para marcar el límite futuro."
+        },
+        {
+          "id": "c3",
+          "statement": "After you have read the instructions, the system will ask you to confirm.",
+          "explanation": "Es correcta: el presente perfecto «have read» puede enfatizar que la lectura estará terminada antes del siguiente paso."
+        },
+        {
+          "id": "c4",
+          "statement": "I'll keep the receipt in case we need to return the headphones.",
+          "explanation": "No hay error: «in case» se combina con presente para una posible necesidad futura."
+        },
+        {
+          "id": "c5",
+          "statement": "I'll send the form back as soon as I complete it.",
+          "explanation": "La secuencia es correcta: «complete» está en presente tras «as soon as»."
+        },
+        {
+          "id": "c6",
+          "statement": "We'll eat as soon as Dad will get home.",
+          "explanation": "Hay un error: después de «as soon as» debe decir «Dad gets home», sin «will»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-future-arrangements-timetables"
+      ],
+      "tags": [
+        "b1",
+        "future-forms",
+        "time-clauses",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-future-arrangements-timetables-sd-069",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-time-clauses",
+      "taxonomyNodeIds": [
+        "future-time-clauses"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "I won't start cooking until you will be here.",
+          "explanation": "Tras «until» usamos presente: la forma adecuada es «until you are here»."
+        },
+        {
+          "id": "c2",
+          "statement": "We'll wait here until the technician has checked the lift.",
+          "explanation": "El presente perfecto tras «until» es válido porque destaca la finalización de la comprobación."
+        },
+        {
+          "id": "c3",
+          "statement": "We'll have coffee after the meeting finishes.",
+          "explanation": "La oración es correcta: «finishes» aparece en presente después de «after»."
+        },
+        {
+          "id": "c4",
+          "statement": "As soon as the payment will have arrived, we will dispatch your order.",
+          "explanation": "La subordinada debe usar presente perfecto: «As soon as the payment has arrived»."
+        },
+        {
+          "id": "c5",
+          "statement": "By the time the audience enters, the musicians will be ready.",
+          "explanation": "«By the time» lleva presente «enters» y la situación posterior se expresa con «will be»."
+        },
+        {
+          "id": "c6",
+          "statement": "Please lock the door before you leave.",
+          "explanation": "No hay error: «before you leave» usa presente simple para una acción futura."
+        },
+        {
+          "id": "c7",
+          "statement": "The museum guide will wait here until the group will return.",
+          "explanation": "Después de «until» usamos presente para un límite futuro: «until the group returns»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-future-arrangements-timetables"
+      ],
+      "tags": [
+        "b1",
+        "future-forms",
+        "time-clauses",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-future-arrangements-timetables-sd-132",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-time-clauses",
+      "taxonomyNodeIds": [
+        "future-time-clauses"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Once the rain stops, we'll continue the match.",
+          "explanation": "No hay error: «once» introduce «stops» en presente y la principal lleva «will»."
+        },
+        {
+          "id": "c2",
+          "statement": "By the time the audience will enter, the musicians will be ready.",
+          "explanation": "En la cláusula con «by the time» debe usarse presente: «the audience enters»."
+        },
+        {
+          "id": "c3",
+          "statement": "I'll call you when I arrive at the hotel.",
+          "explanation": "No hay error: tras «when» usamos presente simple («arrive») aunque la llegada sea futura."
+        },
+        {
+          "id": "c4",
+          "statement": "The moment the results are available, the university will publish them online.",
+          "explanation": "La expresión temporal «the moment» se combina correctamente con presente «are»."
+        },
+        {
+          "id": "c5",
+          "statement": "When the new term begins, I will join the evening class.",
+          "explanation": "La cláusula temporal usa correctamente «begins» y la consecuencia futura usa «will join»."
+        },
+        {
+          "id": "c6",
+          "statement": "Once the rain will stop, we'll continue the match.",
+          "explanation": "La cláusula con «once» no admite «will» en este uso: debe ser «Once the rain stops»."
+        },
+        {
+          "id": "c7",
+          "statement": "I don't know when the replacement part will arrive.",
+          "explanation": "Es correcta: «when» introduce una pregunta indirecta sobre el momento, no una condición temporal para otra acción."
+        },
+        {
+          "id": "c8",
+          "statement": "When will you see the traffic report?",
+          "explanation": "No hay error: aquí «when» introduce una pregunta directa, no una cláusula temporal subordinada, y admite «will»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-future-arrangements-timetables"
+      ],
+      "tags": [
+        "b1",
+        "future-forms",
+        "time-clauses",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

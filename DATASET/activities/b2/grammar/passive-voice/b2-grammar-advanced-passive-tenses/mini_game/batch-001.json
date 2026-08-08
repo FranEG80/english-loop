@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-passive-tenses-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "advanced-passive-tenses",
+  "lessonId": "b2-grammar-advanced-passive-tenses",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The files seem ___ during the overnight transfer.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been deleted"
+            },
+            {
+              "id": "c",
+              "text": "being deleted"
+            },
+            {
+              "id": "d",
+              "text": "to have deleted"
+            }
+          ],
+          "explanation": "To have been deleted presenta una acción pasiva anterior a seem."
+        },
+        {
+          "id": "r2",
+          "prompt": "The stadium ___ when the alarm stopped.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was being evacuate"
+            },
+            {
+              "id": "a",
+              "text": "was being evacuated"
+            },
+            {
+              "id": "c",
+              "text": "had evacuated"
+            }
+          ],
+          "explanation": "Was being evacuated presenta un proceso en curso que fue interrumpido."
+        },
+        {
+          "id": "r3",
+          "prompt": "The report is believed ___ by an external auditor.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to have been written"
+            },
+            {
+              "id": "a",
+              "text": "to write"
+            },
+            {
+              "id": "d",
+              "text": "being write"
+            }
+          ],
+          "explanation": "To have been written es un infinitivo pasivo perfecto."
+        },
+        {
+          "id": "r4",
+          "prompt": "The samples ___ when the power failed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had been test"
+            },
+            {
+              "id": "d",
+              "text": "were testing"
+            },
+            {
+              "id": "a",
+              "text": "were being tested"
+            }
+          ],
+          "explanation": "Were being tested presenta el proceso interrumpido."
+        },
+        {
+          "id": "r5",
+          "prompt": "The roof ___ before the winter storms arrived.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had been reinforced"
+            },
+            {
+              "id": "b",
+              "text": "was reinforcing"
+            },
+            {
+              "id": "d",
+              "text": "had been reinforce"
+            }
+          ],
+          "explanation": "Had been reinforced muestra la anterioridad pasiva."
+        },
+        {
+          "id": "r6",
+          "prompt": "The contract ___ before the board meeting began.",
+          "options": [
+            {
+              "id": "d",
+              "text": "had been review"
+            },
+            {
+              "id": "a",
+              "text": "had reviewed"
+            },
+            {
+              "id": "b",
+              "text": "had been reviewed"
+            }
+          ],
+          "explanation": "Had been reviewed expresa una acción pasiva anterior a otra pasada."
+        },
+        {
+          "id": "r7",
+          "prompt": "The equipment may ___ during the storm.",
+          "options": [
+            {
+              "id": "c",
+              "text": "have damaged"
+            },
+            {
+              "id": "b",
+              "text": "be damaging"
+            },
+            {
+              "id": "a",
+              "text": "have been damaged"
+            }
+          ],
+          "explanation": "May have been damaged expresa una posibilidad pasiva pasada."
+        },
+        {
+          "id": "r8",
+          "prompt": "The witness denied ___ by the reporter.",
+          "options": [
+            {
+              "id": "a",
+              "text": "being misquoted"
+            },
+            {
+              "id": "d",
+              "text": "being misquote"
+            },
+            {
+              "id": "b",
+              "text": "been misquote"
+            }
+          ],
+          "explanation": "Being misquoted funciona como gerundio pasivo después de denied."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "perfect-infinitive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The manuscript seems ___ into three languages.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been translated"
+            },
+            {
+              "id": "c",
+              "text": "being translate"
+            },
+            {
+              "id": "a",
+              "text": "to translate"
+            }
+          ],
+          "explanation": "To have been translated presenta una acción anterior ya completada."
+        },
+        {
+          "id": "r2",
+          "prompt": "All the tickets ___ by the time the website reopened.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had been sold"
+            },
+            {
+              "id": "a",
+              "text": "had sold"
+            },
+            {
+              "id": "d",
+              "text": "had been sell"
+            }
+          ],
+          "explanation": "Had been sold presenta un resultado anterior al momento pasado."
+        },
+        {
+          "id": "r3",
+          "prompt": "The old cables need ___ before winter.",
+          "options": [
+            {
+              "id": "b",
+              "text": "being replace"
+            },
+            {
+              "id": "a",
+              "text": "to be replaced"
+            },
+            {
+              "id": "c",
+              "text": "to have replace"
+            }
+          ],
+          "explanation": "Need to be replaced expresa una necesidad pasiva."
+        },
+        {
+          "id": "r4",
+          "prompt": "The bridge ___ at the moment, so traffic is diverted.",
+          "options": [
+            {
+              "id": "b",
+              "text": "has been repaired"
+            },
+            {
+              "id": "c",
+              "text": "is being repaired"
+            },
+            {
+              "id": "d",
+              "text": "is been repaired"
+            }
+          ],
+          "explanation": "Is being repaired describe el proceso actual."
+        },
+        {
+          "id": "r5",
+          "prompt": "The damaged panels are currently ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "being replace"
+            },
+            {
+              "id": "a",
+              "text": "being replaced"
+            },
+            {
+              "id": "c",
+              "text": "replacing"
+            }
+          ],
+          "explanation": "Being replaced presenta un proceso que está ocurriendo ahora."
+        },
+        {
+          "id": "r6",
+          "prompt": "The archive appears ___ during the renovation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to be move"
+            },
+            {
+              "id": "c",
+              "text": "being move"
+            },
+            {
+              "id": "a",
+              "text": "to have been moved"
+            }
+          ],
+          "explanation": "To have been moved presenta una acción pasiva anterior."
+        },
+        {
+          "id": "r7",
+          "prompt": "The missing data ___ from a secure backup.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have recovered"
+            },
+            {
+              "id": "c",
+              "text": "are recovering"
+            },
+            {
+              "id": "b",
+              "text": "have been recovered"
+            }
+          ],
+          "explanation": "Have been recovered enfoca un resultado pasivo ya conseguido."
+        },
+        {
+          "id": "r8",
+          "prompt": "The emergency plan had ___ before the drill began.",
+          "options": [
+            {
+              "id": "a",
+              "text": "been updated"
+            },
+            {
+              "id": "c",
+              "text": "updated"
+            },
+            {
+              "id": "d",
+              "text": "been update"
+            }
+          ],
+          "explanation": "Had been updated presenta el resultado anterior al simulacro."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "perfect-infinitive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

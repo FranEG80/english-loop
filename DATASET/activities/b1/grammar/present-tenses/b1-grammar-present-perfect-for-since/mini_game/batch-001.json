@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-present-perfect-for-since-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "present-tenses",
+  "subtopic": "present-perfect-for-since",
+  "lessonId": "b1-grammar-present-perfect-for-since",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-perfect-for-since-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-perfect-for-since",
+      "taxonomyNodeIds": [
+        "present-perfect-for-since"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The alarm system hasn't worked properly ___ the power cut.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "during"
+            },
+            {
+              "id": "b",
+              "text": "since"
+            }
+          ],
+          "explanation": "«The power cut» identifica el acontecimiento que inició el problema."
+        },
+        {
+          "id": "r2",
+          "prompt": "We haven't used the meeting room ___ several weeks.",
+          "options": [
+            {
+              "id": "d",
+              "text": "from"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "since"
+            }
+          ],
+          "explanation": "«Several weeks» mide una duración y se introduce con «for»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The café has been closed ___ Monday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "since"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "while"
+            }
+          ],
+          "explanation": "«Monday» es el momento en que comenzó el cierre."
+        },
+        {
+          "id": "r4",
+          "prompt": "Select the natural way to describe long-term ownership that continues now.",
+          "options": [
+            {
+              "id": "a",
+              "text": "We've had this sofa since we moved in."
+            },
+            {
+              "id": "c",
+              "text": "We have this sofa for we moved in."
+            },
+            {
+              "id": "b",
+              "text": "We've been having this sofa since we have moved in."
+            }
+          ],
+          "explanation": "La posesión usa present perfect simple y el acontecimiento tras «since» usa past simple."
+        },
+        {
+          "id": "r5",
+          "prompt": "It's been three months ___ I last drove.",
+          "options": [
+            {
+              "id": "b",
+              "text": "since"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "during"
+            }
+          ],
+          "explanation": "La estructura es «It has been + periodo + since + past simple»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Leila started teaching at this school ten years ago and still teaches there.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Leila taught at this school for ten years."
+            },
+            {
+              "id": "a",
+              "text": "Leila has taught at this school for ten years."
+            },
+            {
+              "id": "c",
+              "text": "Leila has teach at this school since ten years."
+            }
+          ],
+          "explanation": "Como el trabajo continúa, usamos present perfect con «for ten years»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The old office closed after five years. The current office opened in 2021 and remains open.",
+          "options": [
+            {
+              "id": "c",
+              "text": "We have used both offices during five years since 2021."
+            },
+            {
+              "id": "a",
+              "text": "We used the old office for five years, and we've used the current one since 2021."
+            },
+            {
+              "id": "d",
+              "text": "We used the old office since five years, and use the current one for 2021."
+            }
+          ],
+          "explanation": "El periodo terminado usa past simple con «for»; el vigente usa present perfect con «since»."
+        },
+        {
+          "id": "r8",
+          "prompt": "I've worked from home since I ___ to this town.",
+          "options": [
+            {
+              "id": "c",
+              "text": "move since"
+            },
+            {
+              "id": "b",
+              "text": "have moved"
+            },
+            {
+              "id": "a",
+              "text": "moved"
+            }
+          ],
+          "explanation": "El acontecimiento inicial terminado usa past simple: «since I moved»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-perfect-for-since"
+      ],
+      "tags": [
+        "b1",
+        "present-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-perfect-for-since-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-perfect-for-since",
+      "taxonomyNodeIds": [
+        "present-perfect-for-since"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I still trust my adviser. That trust began when she helped me resolve my first case.",
+          "options": [
+            {
+              "id": "d",
+              "text": "I trust my adviser during she helped me resolve my first case."
+            },
+            {
+              "id": "c",
+              "text": "I've been trusting my adviser for she helped my first case."
+            },
+            {
+              "id": "a",
+              "text": "I've trusted my adviser since she helped me resolve my first case."
+            }
+          ],
+          "explanation": "El estado vigente usa present perfect; el hecho inicial tras «since» usa past simple."
+        },
+        {
+          "id": "r2",
+          "prompt": "How long ___ Amir ___ in customer support?",
+          "options": [
+            {
+              "id": "d",
+              "text": "has / work"
+            },
+            {
+              "id": "c",
+              "text": "does / worked"
+            },
+            {
+              "id": "a",
+              "text": "has / worked"
+            }
+          ],
+          "explanation": "Con «Amir» usamos «has», seguido del participio «worked»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Neither lift has been available ___ more than forty-eight hours.",
+          "options": [
+            {
+              "id": "c",
+              "text": "during"
+            },
+            {
+              "id": "a",
+              "text": "since"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            }
+          ],
+          "explanation": "«More than forty-eight hours» es una duración y requiere «for»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Ask when someone's ownership of a bicycle began.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Since when you had that bicycle?"
+            },
+            {
+              "id": "d",
+              "text": "How many time have you that bicycle?"
+            },
+            {
+              "id": "a",
+              "text": "How long have you had that bicycle?"
+            }
+          ],
+          "explanation": "Una posesión que continúa se pregunta con «How long have you had ...?»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Ask about the length of time the road has been closed.",
+          "options": [
+            {
+              "id": "a",
+              "text": "How long has the road been closed?"
+            },
+            {
+              "id": "c",
+              "text": "How long is the road closed since?"
+            },
+            {
+              "id": "d",
+              "text": "For how long does the road been closed?"
+            }
+          ],
+          "explanation": "La pregunta coloca «has» antes del sujeto y conserva «been closed»."
+        },
+        {
+          "id": "r6",
+          "prompt": "We moved away from Bristol in 2020 after living there for eight years.",
+          "options": [
+            {
+              "id": "d",
+              "text": "We live in Bristol for eight years ago."
+            },
+            {
+              "id": "a",
+              "text": "We lived in Bristol for eight years."
+            },
+            {
+              "id": "c",
+              "text": "We have been living in Bristol since eight years."
+            }
+          ],
+          "explanation": "La residencia terminó en 2020, por eso usamos past simple aunque aparezca «for»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Tariq has owned this shop ___ he left college.",
+          "options": [
+            {
+              "id": "c",
+              "text": "during"
+            },
+            {
+              "id": "d",
+              "text": "ago"
+            },
+            {
+              "id": "b",
+              "text": "since"
+            }
+          ],
+          "explanation": "La oración «he left college» marca el acontecimiento inicial y va detrás de «since»."
+        },
+        {
+          "id": "r8",
+          "prompt": "I last spoke to Ana eighteen months ago.",
+          "options": [
+            {
+              "id": "a",
+              "text": "I haven't spoken to Ana for eighteen months."
+            },
+            {
+              "id": "b",
+              "text": "I haven't spoken to Ana since eighteen months."
+            },
+            {
+              "id": "d",
+              "text": "I haven't been knowing Ana during eighteen months."
+            }
+          ],
+          "explanation": "El periodo sin hablar continúa hasta ahora y «eighteen months» va con «for»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-perfect-for-since"
+      ],
+      "tags": [
+        "b1",
+        "present-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-second-conditional-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "conditionals",
+  "subtopic": "second-conditional",
+  "lessonId": "b1-grammar-second-conditional",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-second-conditional-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "second-conditional",
+      "taxonomyNodeIds": [
+        "second-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Would you complain if the service ___ this slow again?",
+          "options": [
+            {
+              "id": "b",
+              "text": "is"
+            },
+            {
+              "id": "a",
+              "text": "was"
+            },
+            {
+              "id": "c",
+              "text": "will be"
+            }
+          ],
+          "explanation": "En conversación, «was» es válido con sujeto singular en esta hipótesis; «would be» no corresponde tras «if»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Where would you live if you ___ from home permanently?",
+          "options": [
+            {
+              "id": "c",
+              "text": "will work"
+            },
+            {
+              "id": "d",
+              "text": "would work"
+            },
+            {
+              "id": "a",
+              "text": "worked"
+            }
+          ],
+          "explanation": "Después de «if» usamos pasado simple: «if you worked»."
+        },
+        {
+          "id": "r3",
+          "prompt": "What ___ you do if you found a wallet in the street?",
+          "options": [
+            {
+              "id": "a",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "will"
+            },
+            {
+              "id": "d",
+              "text": "are"
+            }
+          ],
+          "explanation": "La consecuencia imaginada se pregunta con «What would you do...?»."
+        },
+        {
+          "id": "r4",
+          "prompt": "If I ___ closer to the office, I would walk to work.",
+          "options": [
+            {
+              "id": "b",
+              "text": "lived"
+            },
+            {
+              "id": "d",
+              "text": "would live"
+            },
+            {
+              "id": "c",
+              "text": "will live"
+            }
+          ],
+          "explanation": "La condición hipotética presente usa pasado simple: «If I lived»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Would it help if we ___ the instructions into smaller steps?",
+          "options": [
+            {
+              "id": "c",
+              "text": "will break"
+            },
+            {
+              "id": "d",
+              "text": "would broke"
+            },
+            {
+              "id": "b",
+              "text": "broke"
+            }
+          ],
+          "explanation": "La sugerencia hipotética usa pasado simple después de «if»: «broke»."
+        },
+        {
+          "id": "r6",
+          "prompt": "If Dan had a car, he ___ drive us to the coast.",
+          "options": [
+            {
+              "id": "b",
+              "text": "could"
+            },
+            {
+              "id": "c",
+              "text": "will"
+            },
+            {
+              "id": "d",
+              "text": "did"
+            }
+          ],
+          "explanation": "«Could» expresa capacidad hipotética como resultado de tener coche."
+        },
+        {
+          "id": "r7",
+          "prompt": "If the office ___ quieter, it would be easier to concentrate.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would be"
+            },
+            {
+              "id": "c",
+              "text": "will be"
+            },
+            {
+              "id": "b",
+              "text": "were"
+            }
+          ],
+          "explanation": "La oficina no es silenciosa ahora; la hipótesis usa «were»."
+        },
+        {
+          "id": "r8",
+          "prompt": "If the software ___ less memory, it would run on older devices.",
+          "options": [
+            {
+              "id": "b",
+              "text": "used"
+            },
+            {
+              "id": "c",
+              "text": "will use"
+            },
+            {
+              "id": "a",
+              "text": "uses"
+            }
+          ],
+          "explanation": "La característica técnica contraria a la realidad se expresa con pasado «used»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-second-conditional"
+      ],
+      "tags": [
+        "b1",
+        "conditionals",
+        "second-conditional",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-second-conditional-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "second-conditional",
+      "taxonomyNodeIds": [
+        "second-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We would travel more if flights ___ cheaper.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would be"
+            },
+            {
+              "id": "b",
+              "text": "are"
+            },
+            {
+              "id": "a",
+              "text": "were"
+            }
+          ],
+          "explanation": "La condición hipotética usa pasado: «if flights were cheaper»."
+        },
+        {
+          "id": "r2",
+          "prompt": "If the council built more cycle lanes, fewer people ___ to drive.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would needed"
+            },
+            {
+              "id": "c",
+              "text": "would need"
+            },
+            {
+              "id": "a",
+              "text": "need"
+            }
+          ],
+          "explanation": "El resultado de la política imaginada usa «would need»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I ___ so much coffee if I slept better at night.",
+          "options": [
+            {
+              "id": "c",
+              "text": "don't needed"
+            },
+            {
+              "id": "b",
+              "text": "won't need"
+            },
+            {
+              "id": "a",
+              "text": "wouldn't need"
+            }
+          ],
+          "explanation": "La consecuencia hipotética negativa usa «wouldn't + infinitivo»: «wouldn't need»."
+        },
+        {
+          "id": "r4",
+          "prompt": "If the rent ___ lower, we could keep the studio.",
+          "options": [
+            {
+              "id": "a",
+              "text": "were"
+            },
+            {
+              "id": "d",
+              "text": "would be"
+            },
+            {
+              "id": "b",
+              "text": "is"
+            }
+          ],
+          "explanation": "El alquiler actual no es suficientemente bajo; la condición hipotética usa «were»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The proposal might succeed if it ___ a clearer budget.",
+          "options": [
+            {
+              "id": "a",
+              "text": "included"
+            },
+            {
+              "id": "d",
+              "text": "would included"
+            },
+            {
+              "id": "c",
+              "text": "will include"
+            }
+          ],
+          "explanation": "«Might succeed» admite una condición hipotética en pasado: «if it included»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I might accept the role if the working hours ___ more flexible.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will be"
+            },
+            {
+              "id": "c",
+              "text": "were"
+            },
+            {
+              "id": "a",
+              "text": "are"
+            }
+          ],
+          "explanation": "La flexibilidad se presenta como hipótesis contraria a la situación actual: «were»."
+        },
+        {
+          "id": "r7",
+          "prompt": "If we won the competition, we ___ the money on new equipment.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will spend"
+            },
+            {
+              "id": "a",
+              "text": "spend"
+            },
+            {
+              "id": "d",
+              "text": "would spend"
+            }
+          ],
+          "explanation": "El resultado de ganar hipotéticamente es «would spend»."
+        },
+        {
+          "id": "r8",
+          "prompt": "If she knew the answer, she ___ us.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will tell"
+            },
+            {
+              "id": "c",
+              "text": "would tell"
+            },
+            {
+              "id": "a",
+              "text": "tells"
+            }
+          ],
+          "explanation": "El resultado hipotético usa «would + infinitivo»: «would tell»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-second-conditional"
+      ],
+      "tags": [
+        "b1",
+        "conditionals",
+        "second-conditional",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

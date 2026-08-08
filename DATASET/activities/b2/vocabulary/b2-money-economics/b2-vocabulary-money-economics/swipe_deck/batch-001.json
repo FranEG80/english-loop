@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-money-economics-swipe-deck-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-money-economics",
+  "subtopic": "b2-money-economics",
+  "lessonId": "b2-vocabulary-money-economics",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-money-economics-sd-060",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-money-economics",
+      "subtopic": "b2-money-economics",
+      "taxonomyNodeIds": [
+        "b2-money-economics"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Inflation refers to a general rise in prices.",
+          "explanation": "Inflation is a sustained general increase in prices."
+        },
+        {
+          "id": "c2",
+          "statement": "To borrow money means to give it to someone temporarily.",
+          "explanation": "Borrow means receive money temporarily; lend means give it."
+        },
+        {
+          "id": "c3",
+          "statement": "A business can generate revenue without making a profit.",
+          "explanation": "Costs may be greater than revenue, leaving no profit even when sales exist."
+        },
+        {
+          "id": "c4",
+          "statement": "Revenue figures can rise while profit falls if costs rise faster.",
+          "explanation": "Profit depends on both revenue and costs, not on sales alone."
+        },
+        {
+          "id": "c5",
+          "statement": "To curb inflation means to make prices rise more quickly.",
+          "explanation": "Curb means limit or slow inflation, not accelerate it."
+        },
+        {
+          "id": "c6",
+          "statement": "A loan is money that must normally be repaid.",
+          "explanation": "A loan is borrowed money with an obligation to pay it back."
+        },
+        {
+          "id": "c7",
+          "statement": "A budget deficit means that an organisation has more income than spending.",
+          "explanation": "A deficit means spending is greater than income or available revenue."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-money-economics"
+      ],
+      "tags": [
+        "b2",
+        "inflation",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-money-economics-sd-123",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-money-economics",
+      "subtopic": "b2-money-economics",
+      "taxonomyNodeIds": [
+        "b2-money-economics"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Economic growth and productivity are unrelated concepts.",
+          "explanation": "Productivity can contribute to economic growth by increasing output and efficiency."
+        },
+        {
+          "id": "c2",
+          "statement": "Income is money received by a person or organisation.",
+          "explanation": "Income is money that comes in from work, sales or another source."
+        },
+        {
+          "id": "c3",
+          "statement": "To stimulate growth means to encourage economic activity.",
+          "explanation": "Stimulate means encourage a process or activity to develop."
+        },
+        {
+          "id": "c4",
+          "statement": "The phrase invest in renewable energy is grammatically natural.",
+          "explanation": "Invest is commonly followed by in and the asset or project."
+        },
+        {
+          "id": "c5",
+          "statement": "If a bank lends money, the bank receives it from the borrower.",
+          "explanation": "The bank lends money to the borrower; the borrower receives it."
+        },
+        {
+          "id": "c6",
+          "statement": "A person who receives money from a bank is borrowing it.",
+          "explanation": "The receiver borrows money; the bank lends it."
+        },
+        {
+          "id": "c7",
+          "statement": "The natural phrase is reduce the costs of living.",
+          "explanation": "The usual fixed phrase is reduce the cost of living."
+        },
+        {
+          "id": "c8",
+          "statement": "A deficit means that income is higher than spending.",
+          "explanation": "A deficit occurs when spending is higher than income or available revenue."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-money-economics"
+      ],
+      "tags": [
+        "b2",
+        "growth",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-money-economics-sd-186",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-money-economics",
+      "subtopic": "b2-money-economics",
+      "taxonomyNodeIds": [
+        "b2-money-economics"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Interest is often charged on a loan.",
+          "explanation": "Interest is the cost paid for using borrowed money."
+        },
+        {
+          "id": "c2",
+          "statement": "The phrase pay off a debt means create a new debt.",
+          "explanation": "Pay off means repay a debt completely."
+        },
+        {
+          "id": "c3",
+          "statement": "A company can increase productivity by producing more with the same resources.",
+          "explanation": "More output from the same inputs is an improvement in productivity."
+        },
+        {
+          "id": "c4",
+          "statement": "Revenue is the same as profit in every business context.",
+          "explanation": "Revenue is income from sales; profit is what remains after costs."
+        },
+        {
+          "id": "c5",
+          "statement": "Profit is calculated after relevant costs are taken away from revenue.",
+          "explanation": "Profit is the amount left after costs are subtracted from revenue."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-money-economics"
+      ],
+      "tags": [
+        "b2",
+        "interest",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

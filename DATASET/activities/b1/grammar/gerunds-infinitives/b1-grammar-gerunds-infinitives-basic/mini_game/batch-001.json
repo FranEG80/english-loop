@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-gerunds-infinitives-basic-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "gerunds-infinitives",
+  "subtopic": "basic-verb-patterns",
+  "lessonId": "b1-grammar-gerunds-infinitives-basic",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-gerunds-infinitives-basic-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You need ___ a table.",
+          "options": [
+            {
+              "id": "c",
+              "text": "book"
+            },
+            {
+              "id": "b",
+              "text": "to book"
+            },
+            {
+              "id": "a",
+              "text": "booking"
+            }
+          ],
+          "explanation": "«Need» va seguido de infinitivo con «to»: «to book»."
+        },
+        {
+          "id": "r2",
+          "prompt": "She would like ___ a coffee.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to order"
+            },
+            {
+              "id": "c",
+              "text": "order"
+            },
+            {
+              "id": "a",
+              "text": "ordering"
+            }
+          ],
+          "explanation": "«Would like» va seguido de infinitivo con «to»: «to order»."
+        },
+        {
+          "id": "r3",
+          "prompt": "This exercise is easy ___ .",
+          "options": [
+            {
+              "id": "d",
+              "text": "done"
+            },
+            {
+              "id": "a",
+              "text": "doing"
+            },
+            {
+              "id": "c",
+              "text": "to do"
+            }
+          ],
+          "explanation": "Después del adjetivo «easy» usamos infinitivo con «to»: «to do»."
+        },
+        {
+          "id": "r4",
+          "prompt": "He suggested ___ a taxi.",
+          "options": [
+            {
+              "id": "b",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "took"
+            },
+            {
+              "id": "d",
+              "text": "taking"
+            }
+          ],
+          "explanation": "«Suggest» va seguido de gerundio: «taking»."
+        },
+        {
+          "id": "r5",
+          "prompt": "We plan ___ early tomorrow.",
+          "options": [
+            {
+              "id": "d",
+              "text": "left"
+            },
+            {
+              "id": "b",
+              "text": "to leave"
+            },
+            {
+              "id": "a",
+              "text": "leaving"
+            }
+          ],
+          "explanation": "«Plan» rige infinitivo con «to»: «to leave»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I'm interested in ___ English.",
+          "options": [
+            {
+              "id": "c",
+              "text": "learning"
+            },
+            {
+              "id": "d",
+              "text": "learned"
+            },
+            {
+              "id": "a",
+              "text": "learn"
+            }
+          ],
+          "explanation": "Después de la preposición «in» usamos gerundio: «learning»."
+        },
+        {
+          "id": "r7",
+          "prompt": "I enjoy ___ tennis at the weekend.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to play"
+            },
+            {
+              "id": "a",
+              "text": "playing"
+            },
+            {
+              "id": "d",
+              "text": "played"
+            }
+          ],
+          "explanation": "«Enjoy» va seguido de gerundio: «playing»."
+        },
+        {
+          "id": "r8",
+          "prompt": "We're thinking about ___ house.",
+          "options": [
+            {
+              "id": "a",
+              "text": "move"
+            },
+            {
+              "id": "c",
+              "text": "moving"
+            },
+            {
+              "id": "b",
+              "text": "to move"
+            }
+          ],
+          "explanation": "Después de la preposición «about» usamos gerundio: «moving»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-gerunds-infinitives-basic-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The question is difficult ___ .",
+          "options": [
+            {
+              "id": "c",
+              "text": "to answer"
+            },
+            {
+              "id": "a",
+              "text": "answering"
+            },
+            {
+              "id": "d",
+              "text": "answered"
+            }
+          ],
+          "explanation": "Después del adjetivo «difficult» usamos infinitivo con «to»: «to answer»."
+        },
+        {
+          "id": "r2",
+          "prompt": "They decided ___ the car.",
+          "options": [
+            {
+              "id": "d",
+              "text": "sold"
+            },
+            {
+              "id": "b",
+              "text": "to sell"
+            },
+            {
+              "id": "c",
+              "text": "sell"
+            }
+          ],
+          "explanation": "«Decide» rige infinitivo con «to»: «to sell»."
+        },
+        {
+          "id": "r3",
+          "prompt": "She hopes ___ the exam.",
+          "options": [
+            {
+              "id": "c",
+              "text": "pass"
+            },
+            {
+              "id": "b",
+              "text": "to pass"
+            },
+            {
+              "id": "a",
+              "text": "passing"
+            }
+          ],
+          "explanation": "«Hope» va seguido de infinitivo con «to»: «to pass»."
+        },
+        {
+          "id": "r4",
+          "prompt": "We avoid ___ late at night.",
+          "options": [
+            {
+              "id": "c",
+              "text": "eating"
+            },
+            {
+              "id": "d",
+              "text": "ate"
+            },
+            {
+              "id": "b",
+              "text": "eat"
+            }
+          ],
+          "explanation": "«Avoid» rige gerundio: «eating»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Do you mind ___ a moment?",
+          "options": [
+            {
+              "id": "c",
+              "text": "waiting"
+            },
+            {
+              "id": "b",
+              "text": "wait"
+            },
+            {
+              "id": "d",
+              "text": "waited"
+            }
+          ],
+          "explanation": "«Mind» rige gerundio: «waiting»."
+        },
+        {
+          "id": "r6",
+          "prompt": "He's good at ___ pictures.",
+          "options": [
+            {
+              "id": "d",
+              "text": "drew"
+            },
+            {
+              "id": "c",
+              "text": "to draw"
+            },
+            {
+              "id": "b",
+              "text": "drawing"
+            }
+          ],
+          "explanation": "Después de la preposición «at» usamos gerundio: «drawing»."
+        },
+        {
+          "id": "r7",
+          "prompt": "She wants ___ a new car.",
+          "options": [
+            {
+              "id": "d",
+              "text": "bought"
+            },
+            {
+              "id": "b",
+              "text": "to buy"
+            },
+            {
+              "id": "c",
+              "text": "buy"
+            }
+          ],
+          "explanation": "«Want» va seguido de infinitivo con «to»: «to buy»."
+        },
+        {
+          "id": "r8",
+          "prompt": "They decided ___ home early.",
+          "options": [
+            {
+              "id": "a",
+              "text": "going"
+            },
+            {
+              "id": "d",
+              "text": "to go"
+            },
+            {
+              "id": "b",
+              "text": "go"
+            }
+          ],
+          "explanation": "«Decide» va seguido de infinitivo con «to»: «to go»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "d"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

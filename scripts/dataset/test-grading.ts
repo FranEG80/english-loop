@@ -57,8 +57,14 @@ export function correctResponse(evaluator: Evaluator): ActivityResponse {
       );
     case "ordered_tokens":
       return evaluator.correctTokenIds;
-    case "unordered_set":
-      return [...evaluator.correctValues].reverse();
+    case "deck_booleans":
+      return Object.fromEntries(
+        evaluator.cards.map(({ cardId, correct }) => [cardId, String(correct)]),
+      );
+    case "game_rounds":
+      return Object.fromEntries(
+        evaluator.rounds.map(({ roundId, correctOptionId }) => [roundId, correctOptionId]),
+      );
     case "matching_pairs":
       return Object.fromEntries(
         evaluator.pairs.map(({ leftId, rightId }) => [leftId, rightId]),
@@ -84,8 +90,16 @@ export function incorrectResponse(evaluator: Evaluator): ActivityResponse {
     }
     case "ordered_tokens":
       return evaluator.correctTokenIds.slice(1);
-    case "unordered_set":
-      return evaluator.correctValues.slice(1);
+    case "deck_booleans": {
+      const response = correctResponse(evaluator) as Record<string, string>;
+      const firstCard = evaluator.cards[0]!.cardId;
+      return { ...response, [firstCard]: String(!evaluator.cards[0]!.correct) };
+    }
+    case "game_rounds": {
+      const response = correctResponse(evaluator) as Record<string, string>;
+      const firstRound = evaluator.rounds[0]!.roundId;
+      return { ...response, [firstRound]: "__incorrect__" };
+    }
     case "matching_pairs": {
       const response = correctResponse(evaluator) as Record<string, string>;
       const firstLeft = evaluator.pairs[0].leftId;
@@ -111,13 +125,13 @@ export function acceptedVariants(evaluator: Evaluator): ActivityResponse[] {
       );
       return [base];
     }
-    case "unordered_set":
-      return [[...evaluator.correctValues].reverse()];
     case "boolean":
     case "single_option":
     case "multiple_options":
     case "ordered_tokens":
     case "matching_pairs":
+    case "deck_booleans":
+    case "game_rounds":
       return [];
   }
 }

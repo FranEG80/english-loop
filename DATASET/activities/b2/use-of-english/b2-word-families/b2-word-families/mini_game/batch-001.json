@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-word-families-mini-game-001",
+  "level": "B2",
+  "category": "use-of-english",
+  "topic": "b2-word-families",
+  "subtopic": "b2-word-families",
+  "lessonId": "b2-word-families",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-word-families-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-word-families",
+      "subtopic": "b2-word-families",
+      "taxonomyNodeIds": [
+        "b2-word-families"
+      ],
+      "difficulty": 5,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "There is growing ___ about the proposal.",
+          "options": [
+            {
+              "id": "b",
+              "text": "opposed"
+            },
+            {
+              "id": "a",
+              "text": "opposition"
+            },
+            {
+              "id": "d",
+              "text": "oppose"
+            }
+          ],
+          "explanation": "A noun is needed after growing."
+        },
+        {
+          "id": "r2",
+          "prompt": "The scheme may improve public ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "accepting"
+            },
+            {
+              "id": "c",
+              "text": "accept"
+            },
+            {
+              "id": "a",
+              "text": "acceptance"
+            }
+          ],
+          "explanation": "Acceptance is the noun after public."
+        },
+        {
+          "id": "r3",
+          "prompt": "The researchers reported the result ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "cautiously"
+            },
+            {
+              "id": "d",
+              "text": "cautionary"
+            },
+            {
+              "id": "c",
+              "text": "cautious"
+            }
+          ],
+          "explanation": "The adverb modifies reported."
+        },
+        {
+          "id": "r4",
+          "prompt": "The recommendation is highly ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "persuasive"
+            },
+            {
+              "id": "c",
+              "text": "persuade"
+            },
+            {
+              "id": "d",
+              "text": "persuasively"
+            }
+          ],
+          "explanation": "Persuasive is the adjective after highly."
+        },
+        {
+          "id": "r5",
+          "prompt": "The method's main advantage is its ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "simply"
+            },
+            {
+              "id": "c",
+              "text": "simplify"
+            },
+            {
+              "id": "a",
+              "text": "simplicity"
+            }
+          ],
+          "explanation": "Simplicity is the noun after its."
+        },
+        {
+          "id": "r6",
+          "prompt": "The process was completely ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "reversal"
+            },
+            {
+              "id": "a",
+              "text": "reversible"
+            },
+            {
+              "id": "b",
+              "text": "reverse"
+            }
+          ],
+          "explanation": "Reversible describes the process."
+        },
+        {
+          "id": "r7",
+          "prompt": "The analysis was impressively ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "rigourless"
+            },
+            {
+              "id": "c",
+              "text": "rigorously"
+            },
+            {
+              "id": "a",
+              "text": "rigorous"
+            }
+          ],
+          "explanation": "Rigorously is an adverb, but the sentence needs the adjective rigorous."
+        },
+        {
+          "id": "r8",
+          "prompt": "The decision has serious legal ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "implicitly"
+            },
+            {
+              "id": "b",
+              "text": "implicit"
+            },
+            {
+              "id": "a",
+              "text": "implications"
+            }
+          ],
+          "explanation": "Implications is the plural noun after legal."
+        }
+      ],
+      "lessonIds": [
+        "b2-word-families"
+      ],
+      "tags": [
+        "b2",
+        "word-formation",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-word-families-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-word-families",
+      "subtopic": "b2-word-families",
+      "taxonomyNodeIds": [
+        "b2-word-families"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The proposal is economically ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "viable"
+            },
+            {
+              "id": "b",
+              "text": "viability"
+            },
+            {
+              "id": "d",
+              "text": "viabilise"
+            }
+          ],
+          "explanation": "Viable is the adjective after economically."
+        },
+        {
+          "id": "r2",
+          "prompt": "The report's main ___ is its limited sample.",
+          "options": [
+            {
+              "id": "c",
+              "text": "limited"
+            },
+            {
+              "id": "a",
+              "text": "limitation"
+            },
+            {
+              "id": "d",
+              "text": "limiting"
+            }
+          ],
+          "explanation": "Limitation is the noun after main."
+        },
+        {
+          "id": "r3",
+          "prompt": "The evidence remains ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "conclusively"
+            },
+            {
+              "id": "a",
+              "text": "inconclusive"
+            },
+            {
+              "id": "c",
+              "text": "conclude"
+            }
+          ],
+          "explanation": "Inconclusive is the adjective describing evidence."
+        },
+        {
+          "id": "r4",
+          "prompt": "The report highlights the ___ of the decision.",
+          "options": [
+            {
+              "id": "d",
+              "text": "significantly"
+            },
+            {
+              "id": "b",
+              "text": "significant"
+            },
+            {
+              "id": "a",
+              "text": "significance"
+            }
+          ],
+          "explanation": "The noun follows the."
+        },
+        {
+          "id": "r5",
+          "prompt": "The study is useful but not fully ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "generally"
+            },
+            {
+              "id": "a",
+              "text": "generalisable"
+            },
+            {
+              "id": "c",
+              "text": "generalise"
+            }
+          ],
+          "explanation": "Generalisable means applicable beyond the study."
+        },
+        {
+          "id": "r6",
+          "prompt": "The report was criticised for its lack of ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "clearly"
+            },
+            {
+              "id": "a",
+              "text": "clarity"
+            },
+            {
+              "id": "b",
+              "text": "clear"
+            }
+          ],
+          "explanation": "The noun clarity follows lack of."
+        },
+        {
+          "id": "r7",
+          "prompt": "The findings are broadly ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "reproductively"
+            },
+            {
+              "id": "c",
+              "text": "reproduce"
+            },
+            {
+              "id": "a",
+              "text": "reproducible"
+            }
+          ],
+          "explanation": "Reproducible is the adjective after broadly."
+        },
+        {
+          "id": "r8",
+          "prompt": "The study provides a useful ___ of current practice.",
+          "options": [
+            {
+              "id": "d",
+              "text": "assessable"
+            },
+            {
+              "id": "b",
+              "text": "assess"
+            },
+            {
+              "id": "a",
+              "text": "assessment"
+            }
+          ],
+          "explanation": "A noun follows a useful."
+        }
+      ],
+      "lessonIds": [
+        "b2-word-families"
+      ],
+      "tags": [
+        "b2",
+        "word-formation",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

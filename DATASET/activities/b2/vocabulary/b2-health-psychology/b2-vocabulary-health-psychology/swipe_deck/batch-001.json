@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-health-psychology-swipe-deck-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-health-psychology",
+  "subtopic": "b2-health-psychology",
+  "lessonId": "b2-vocabulary-health-psychology",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-health-psychology-sd-058",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-health-psychology",
+      "subtopic": "b2-health-psychology",
+      "taxonomyNodeIds": [
+        "b2-health-psychology"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Burnout is a casual synonym for feeling slightly bored for one afternoon.",
+          "explanation": "Burnout refers to severe exhaustion linked to prolonged demands."
+        },
+        {
+          "id": "c2",
+          "statement": "A routine is a random event that happens once.",
+          "explanation": "A routine is a regular pattern of activities."
+        },
+        {
+          "id": "c3",
+          "statement": "Recovery always means that a professional has declared a permanent cure.",
+          "explanation": "Recovery describes improvement over time and is not identical to cure."
+        },
+        {
+          "id": "c4",
+          "statement": "One symptom can sometimes have several possible causes.",
+          "explanation": "Careful descriptions avoid assuming one cause without assessment."
+        },
+        {
+          "id": "c5",
+          "statement": "A balanced diet is one aspect of a healthy routine.",
+          "explanation": "A balanced diet can contribute to overall well-being."
+        },
+        {
+          "id": "c6",
+          "statement": "Treatment aims to improve or manage a health problem.",
+          "explanation": "Treatment is an intervention for a condition."
+        },
+        {
+          "id": "c7",
+          "statement": "Seek support means refuse all help from other people.",
+          "explanation": "Seek support means actively look for helpful assistance."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-health-psychology"
+      ],
+      "tags": [
+        "b2",
+        "psychology",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-health-psychology-sd-121",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-health-psychology",
+      "subtopic": "b2-health-psychology",
+      "taxonomyNodeIds": [
+        "b2-health-psychology"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Building resilience means denying that a difficult experience happened.",
+          "explanation": "Resilience involves coping with difficulty, not denying it."
+        },
+        {
+          "id": "c2",
+          "statement": "Self-esteem concerns how a person values themselves.",
+          "explanation": "Self-esteem is a person's view of their own value."
+        },
+        {
+          "id": "c3",
+          "statement": "A symptom is something a person experiences or reports.",
+          "explanation": "Symptoms are signs or feelings experienced by people."
+        },
+        {
+          "id": "c4",
+          "statement": "Well-being can include both physical and mental health.",
+          "explanation": "Well-being is a broad description of health and quality of life."
+        },
+        {
+          "id": "c5",
+          "statement": "A professional can assess symptoms without the speaker claiming a diagnosis themselves.",
+          "explanation": "The wording appropriately separates reporting from diagnosis."
+        },
+        {
+          "id": "c6",
+          "statement": "Careful health vocabulary can describe uncertainty without being vague or unhelpful.",
+          "explanation": "Phrases such as may be related to communicate uncertainty precisely."
+        },
+        {
+          "id": "c7",
+          "statement": "Manage stress is a natural collocation.",
+          "explanation": "Manage stress means deal with pressure effectively."
+        },
+        {
+          "id": "c8",
+          "statement": "Prevention happens only after a problem has become severe.",
+          "explanation": "Prevention aims to reduce risk before a problem develops."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-health-psychology"
+      ],
+      "tags": [
+        "b2",
+        "psychology",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-health-psychology-sd-184",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-health-psychology",
+      "subtopic": "b2-health-psychology",
+      "taxonomyNodeIds": [
+        "b2-health-psychology"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Mood and diagnosis are interchangeable words.",
+          "explanation": "Mood is an emotional state; diagnosis is a professional assessment."
+        },
+        {
+          "id": "c2",
+          "statement": "Resilience means never experiencing difficulty.",
+          "explanation": "Resilience is the ability to recover or adapt after difficulty."
+        },
+        {
+          "id": "c3",
+          "statement": "The natural collocation is do a diagnosis.",
+          "explanation": "The standard phrase is make a diagnosis."
+        },
+        {
+          "id": "c4",
+          "statement": "Prevention and treatment can both be part of a health service, but they happen at different stages.",
+          "explanation": "Prevention reduces risk; treatment responds to a problem."
+        },
+        {
+          "id": "c5",
+          "statement": "A diagnosis is simply a person's guess about a symptom.",
+          "explanation": "A diagnosis is a professional assessment."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-health-psychology"
+      ],
+      "tags": [
+        "b2",
+        "psychology",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

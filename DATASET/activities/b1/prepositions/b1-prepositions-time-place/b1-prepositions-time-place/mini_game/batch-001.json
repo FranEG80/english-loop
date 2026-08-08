@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-prepositions-time-place-mini-game-001",
+  "level": "B1",
+  "category": "prepositions",
+  "topic": "b1-prepositions-time-place",
+  "subtopic": "b1-prepositions-time-place",
+  "lessonId": "b1-prepositions-time-place",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-prepositions-time-place-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-prepositions-time-place",
+      "subtopic": "b1-prepositions-time-place",
+      "taxonomyNodeIds": [
+        "b1-prepositions-time-place"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes time sentence 023? We finished the work ___ the afternoon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «in the afternoon» for a part of the day."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes surface sentence 014? There is a mark ___ the door.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "A mark is located «on» the surface of the door."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes time sentence 022? The deadline is ___ the end of June.",
+          "options": [
+            {
+              "id": "c",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «at» with the fixed expression «at the end of»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes period sentence 018? The building was finished ___ the nineteenth century.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «in» with centuries and long periods."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes interior sentence 010? The children are ___ the garden.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            }
+          ],
+          "explanation": "Use «in» for an area or space containing people or things."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes transport sentence 013? We travelled ___ a bus.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            }
+          ],
+          "explanation": "We normally say «on a bus» for public transport."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes part-of-day sentence 008? We exercise ___ the morning.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "by"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            }
+          ],
+          "explanation": "Use «in» with «the morning», «the afternoon» and «the evening»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes period sentence 006? They moved here ___ 2019.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "by"
+            }
+          ],
+          "explanation": "Use «in» with years."
+        }
+      ],
+      "lessonIds": [
+        "b1-prepositions-time-place"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "parts-of-day",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-prepositions-time-place-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-prepositions-time-place",
+      "subtopic": "b1-prepositions-time-place",
+      "taxonomyNodeIds": [
+        "b1-prepositions-time-place"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes the location contrast in sentence 020? The students are ___ school, not inside the building.",
+          "options": [
+            {
+              "id": "a",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            }
+          ],
+          "explanation": "«At school» focuses on the institution or activity."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes surface sentence 024? There is a label ___ the bottle.",
+          "options": [
+            {
+              "id": "b",
+              "text": "in"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            }
+          ],
+          "explanation": "A label is attached to the outside surface, so use «on»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes weekend sentence 019? We usually work ___ the weekend.",
+          "options": [
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "by"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            }
+          ],
+          "explanation": "«At the weekend» is standard in British English; «on» is common in American English."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes season sentence 016? We visit the coast ___ summer.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «in» with seasons."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes date sentence 002? Our exam is ___ Monday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "by"
+            }
+          ],
+          "explanation": "Use «on» with days of the week."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes time sentence 001? The lesson starts ___ eight.",
+          "options": [
+            {
+              "id": "c",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "by"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «at» with a specific clock time."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes physical-location sentence 012? The notice is ___ the school building.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            }
+          ],
+          "explanation": "«In the school building» specifies physical location inside it."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes place sentence 004? We met ___ the station.",
+          "options": [
+            {
+              "id": "c",
+              "text": "in"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            }
+          ],
+          "explanation": "Use «at» for a point or meeting place."
+        }
+      ],
+      "lessonIds": [
+        "b1-prepositions-time-place"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "contrast",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

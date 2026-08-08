@@ -62,8 +62,19 @@ function expectedAnswers(activity: CatalogSeedActivity["evaluator"]): CatalogSee
   if (activity.strategy === "one_of_texts") {
     return activity.answers.map((answer, position) => ({ gapId: null, answer, position }));
   }
-  if (activity.strategy === "unordered_set") {
-    return activity.correctValues.map((answer, position) => ({ gapId: null, answer, position }));
+  if (activity.strategy === "deck_booleans") {
+    return activity.cards.map(({ cardId, correct }, position) => ({
+      gapId: cardId,
+      answer: String(correct),
+      position,
+    }));
+  }
+  if (activity.strategy === "game_rounds") {
+    return activity.rounds.map(({ roundId, correctOptionId }, position) => ({
+      gapId: roundId,
+      answer: correctOptionId,
+      position,
+    }));
   }
   if (activity.strategy === "single_option") return [{ gapId: null, answer: activity.correctOptionId, position: 0 }];
   if (activity.strategy === "multiple_options") {

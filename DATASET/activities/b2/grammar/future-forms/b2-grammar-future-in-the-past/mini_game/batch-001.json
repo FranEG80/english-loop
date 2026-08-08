@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-future-in-the-past-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "future-in-the-past",
+  "lessonId": "b2-grammar-future-in-the-past",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-in-the-past-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-in-the-past",
+      "taxonomyNodeIds": [
+        "future-in-the-past"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "In 2018, analysts predicted that prices ___ rise.",
+          "options": [
+            {
+              "id": "b",
+              "text": "were going"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            },
+            {
+              "id": "d",
+              "text": "were due"
+            }
+          ],
+          "explanation": "Would presenta una predicción desde un punto de referencia pasado."
+        },
+        {
+          "id": "r2",
+          "prompt": "I ___ to join the hiking club, but the fee was too high.",
+          "options": [
+            {
+              "id": "c",
+              "text": "was about"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "was going"
+            }
+          ],
+          "explanation": "Was going to expresa una intención pasada que no se realizó."
+        },
+        {
+          "id": "r3",
+          "prompt": "The bus was ___ leave at 05:30, but snow blocked the road.",
+          "options": [
+            {
+              "id": "b",
+              "text": "going to"
+            },
+            {
+              "id": "c",
+              "text": "about to"
+            },
+            {
+              "id": "d",
+              "text": "due to"
+            }
+          ],
+          "explanation": "Was due to leave señala un horario que finalmente no se cumplió."
+        },
+        {
+          "id": "r4",
+          "prompt": "The report stated that demand ___ increase over the decade.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was going"
+            },
+            {
+              "id": "a",
+              "text": "was due"
+            },
+            {
+              "id": "c",
+              "text": "would"
+            }
+          ],
+          "explanation": "Would se usa para una predicción contenida en un informe pasado."
+        },
+        {
+          "id": "r5",
+          "prompt": "At ten last night, the technicians ___ to restart the server.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were about"
+            },
+            {
+              "id": "d",
+              "text": "were due"
+            },
+            {
+              "id": "a",
+              "text": "were going"
+            }
+          ],
+          "explanation": "Were going to restart describe el plan de los técnicos."
+        },
+        {
+          "id": "r6",
+          "prompt": "They ___ to renovate the kitchen before winter.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were going"
+            },
+            {
+              "id": "d",
+              "text": "were about"
+            },
+            {
+              "id": "a",
+              "text": "were due"
+            }
+          ],
+          "explanation": "Were going to presenta un plan pasado."
+        },
+        {
+          "id": "r7",
+          "prompt": "The delegation was ___ arrive after the ceremony.",
+          "options": [
+            {
+              "id": "a",
+              "text": "due to"
+            },
+            {
+              "id": "b",
+              "text": "about to"
+            },
+            {
+              "id": "c",
+              "text": "going"
+            }
+          ],
+          "explanation": "Was due to arrive indica un evento programado."
+        },
+        {
+          "id": "r8",
+          "prompt": "The committee ___ to publish its report on Monday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was due"
+            },
+            {
+              "id": "a",
+              "text": "was going"
+            },
+            {
+              "id": "d",
+              "text": "was about"
+            }
+          ],
+          "explanation": "Was due to publish indica un calendario previsto."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-in-the-past"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "would",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-in-the-past-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-in-the-past",
+      "taxonomyNodeIds": [
+        "future-in-the-past"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The notice said the museum ___ reopen in October.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was going"
+            },
+            {
+              "id": "a",
+              "text": "was about"
+            },
+            {
+              "id": "c",
+              "text": "would"
+            }
+          ],
+          "explanation": "Would presenta el futuro anunciado desde el pasado."
+        },
+        {
+          "id": "r2",
+          "prompt": "I knew the decision ___ affect the whole department.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was going"
+            },
+            {
+              "id": "b",
+              "text": "was about"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            }
+          ],
+          "explanation": "Would presenta un efecto futuro visto desde knew."
+        },
+        {
+          "id": "r3",
+          "prompt": "He expected the interview ___ be difficult.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was about to"
+            },
+            {
+              "id": "d",
+              "text": "would"
+            },
+            {
+              "id": "c",
+              "text": "was going to"
+            }
+          ],
+          "explanation": "Expected introduce una expectativa expresada con would."
+        },
+        {
+          "id": "r4",
+          "prompt": "Maya knew the exam ___ be demanding.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was going"
+            },
+            {
+              "id": "c",
+              "text": "was due to"
+            },
+            {
+              "id": "b",
+              "text": "would"
+            }
+          ],
+          "explanation": "Would expresa una expectativa posterior a knew."
+        },
+        {
+          "id": "r5",
+          "prompt": "The old plan suggested that the road ___ open in spring.",
+          "options": [
+            {
+              "id": "c",
+              "text": "would"
+            },
+            {
+              "id": "a",
+              "text": "was going"
+            },
+            {
+              "id": "b",
+              "text": "was about"
+            }
+          ],
+          "explanation": "Would expresa el resultado esperado según el plan pasado."
+        },
+        {
+          "id": "r6",
+          "prompt": "The timetable showed that the plane ___ land at 16:20.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was going"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            },
+            {
+              "id": "d",
+              "text": "was due to"
+            }
+          ],
+          "explanation": "Was due to land se refiere a un horario previsto."
+        },
+        {
+          "id": "r7",
+          "prompt": "She was ___ call the client when her laptop crashed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "about to"
+            },
+            {
+              "id": "d",
+              "text": "going"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            }
+          ],
+          "explanation": "Was about to call enfoca el instante inmediatamente anterior."
+        },
+        {
+          "id": "r8",
+          "prompt": "The speaker was ___ answer the final question when time ran out.",
+          "options": [
+            {
+              "id": "a",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "about to"
+            },
+            {
+              "id": "c",
+              "text": "going"
+            }
+          ],
+          "explanation": "Was about to answer presenta una acción a punto de suceder."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-in-the-past"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "would",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

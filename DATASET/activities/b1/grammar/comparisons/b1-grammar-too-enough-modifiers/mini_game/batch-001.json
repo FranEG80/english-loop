@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-too-enough-modifiers-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "comparisons",
+  "subtopic": "too-enough-comparative-modifiers",
+  "lessonId": "b1-grammar-too-enough-modifiers",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We don't have ___ time to finish.",
+          "options": [
+            {
+              "id": "a",
+              "text": "enough"
+            },
+            {
+              "id": "c",
+              "text": "very"
+            },
+            {
+              "id": "d",
+              "text": "much"
+            }
+          ],
+          "explanation": "Con sustantivo, «enough» va delante."
+        },
+        {
+          "id": "r2",
+          "prompt": "The room is big ___ for two desks.",
+          "options": [
+            {
+              "id": "d",
+              "text": "much"
+            },
+            {
+              "id": "c",
+              "text": "very"
+            },
+            {
+              "id": "a",
+              "text": "enough"
+            }
+          ],
+          "explanation": "Con adjetivo, «enough» va después."
+        },
+        {
+          "id": "r3",
+          "prompt": "The bag is too small ___ all my books.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "of"
+            }
+          ],
+          "explanation": "«too ... for + sustantivo»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The coffee is ___ hot to drink.",
+          "options": [
+            {
+              "id": "c",
+              "text": "very"
+            },
+            {
+              "id": "a",
+              "text": "too"
+            },
+            {
+              "id": "b",
+              "text": "enough"
+            }
+          ],
+          "explanation": "«too» indica un exceso que impide."
+        },
+        {
+          "id": "r5",
+          "prompt": "This model is ___ faster than the old one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "much"
+            },
+            {
+              "id": "c",
+              "text": "most"
+            }
+          ],
+          "explanation": "«much» indica una gran diferencia."
+        },
+        {
+          "id": "r6",
+          "prompt": "The new office is ___ more spacious than the old one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "far"
+            },
+            {
+              "id": "d",
+              "text": "as"
+            }
+          ],
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "r7",
+          "prompt": "The new plan is a ___ better than the old one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "bit"
+            },
+            {
+              "id": "c",
+              "text": "more"
+            }
+          ],
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "r8",
+          "prompt": "The room is warm ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "enough"
+            },
+            {
+              "id": "b",
+              "text": "too"
+            },
+            {
+              "id": "d",
+              "text": "much"
+            }
+          ],
+          "explanation": "Con adjetivo, «enough» va después."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "enough",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The coffee is too strong ___ me.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            }
+          ],
+          "explanation": "«too ... for + persona»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The test was too difficult ___ me.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "with"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            }
+          ],
+          "explanation": "«too ... for + persona»."
+        },
+        {
+          "id": "r3",
+          "prompt": "She is old enough ___ travel alone.",
+          "options": [
+            {
+              "id": "d",
+              "text": "with"
+            },
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "«enough ... to + infinitivo»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The box is ___ heavy to carry.",
+          "options": [
+            {
+              "id": "d",
+              "text": "much"
+            },
+            {
+              "id": "c",
+              "text": "very"
+            },
+            {
+              "id": "a",
+              "text": "too"
+            }
+          ],
+          "explanation": "«too» indica un exceso que impide."
+        },
+        {
+          "id": "r5",
+          "prompt": "The soup is ___ salty to eat.",
+          "options": [
+            {
+              "id": "c",
+              "text": "very"
+            },
+            {
+              "id": "b",
+              "text": "enough"
+            },
+            {
+              "id": "a",
+              "text": "too"
+            }
+          ],
+          "explanation": "«too» indica un exceso negativo."
+        },
+        {
+          "id": "r6",
+          "prompt": "The new route is a ___ longer.",
+          "options": [
+            {
+              "id": "c",
+              "text": "more"
+            },
+            {
+              "id": "b",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "bit"
+            }
+          ],
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "r7",
+          "prompt": "This route is slightly ___ than the other one.",
+          "options": [
+            {
+              "id": "a",
+              "text": "longer"
+            },
+            {
+              "id": "c",
+              "text": "longest"
+            },
+            {
+              "id": "b",
+              "text": "more long"
+            }
+          ],
+          "explanation": "«slightly» modifica el comparativo «longer»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The room is warm enough ___ sit comfortably.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "with"
+            }
+          ],
+          "explanation": "«enough ... to + infinitivo»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "too",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

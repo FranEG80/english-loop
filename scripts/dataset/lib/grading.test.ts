@@ -46,9 +46,27 @@ describe("dataset grading", () => {
     expect(grade(evaluator, { first: "went", second: "home", extra: "x" })).toBe(false);
   });
 
-  it("checks unordered normalized sets and matching cardinality", () => {
-    expect(grade({ strategy: "unordered_set", correctValues: ["red", "blue"], normalization }, [" BLUE ", "red"])).toBe(true);
-    expect(grade({ strategy: "unordered_set", correctValues: ["red", "blue"], normalization }, ["red", "red"])).toBe(false);
+  it("checks decks, game rounds and matching cardinality", () => {
+    const deck = {
+      strategy: "deck_booleans" as const,
+      cards: [
+        { cardId: "c1", correct: true },
+        { cardId: "c2", correct: false },
+      ],
+    };
+    expect(grade(deck, { c1: "true", c2: "false" })).toBe(true);
+    expect(grade(deck, { c1: "true", c2: "true" })).toBe(false);
+    expect(grade(deck, { c1: "true" })).toBe(false);
+
+    const game = {
+      strategy: "game_rounds" as const,
+      rounds: [
+        { roundId: "r1", correctOptionId: "a" },
+        { roundId: "r2", correctOptionId: "b" },
+      ],
+    };
+    expect(grade(game, { r1: "a", r2: "b" })).toBe(true);
+    expect(grade(game, { r1: "a", r2: "c" })).toBe(false);
     expect(grade({ strategy: "matching_pairs", pairs: [{ leftId: "l1", rightId: "r1" }] }, { l1: "r1" })).toBe(true);
     expect(grade({ strategy: "matching_pairs", pairs: [{ leftId: "l1", rightId: "r1" }] }, { l1: "r1", extra: "r2" })).toBe(false);
   });

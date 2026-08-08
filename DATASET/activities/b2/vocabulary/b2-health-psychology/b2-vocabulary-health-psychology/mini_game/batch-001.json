@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-health-psychology-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-health-psychology",
+  "subtopic": "b2-health-psychology",
+  "lessonId": "b2-vocabulary-health-psychology",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-health-psychology-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-health-psychology",
+      "subtopic": "b2-health-psychology",
+      "taxonomyNodeIds": [
+        "b2-health-psychology"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which phrase best describes a healthy daily habit?",
+          "options": [
+            {
+              "id": "c",
+              "text": "do a balanced diet"
+            },
+            {
+              "id": "a",
+              "text": "maintain a balanced diet"
+            },
+            {
+              "id": "b",
+              "text": "make a balanced diet"
+            }
+          ],
+          "explanation": "Maintain a balanced diet is the natural collocation."
+        },
+        {
+          "id": "r2",
+          "prompt": "A person's general emotional state over a period is their ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "routine"
+            },
+            {
+              "id": "a",
+              "text": "mood"
+            },
+            {
+              "id": "c",
+              "text": "treatment"
+            }
+          ],
+          "explanation": "Mood describes a person's emotional state."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase means ask for help from a person or service?",
+          "options": [
+            {
+              "id": "c",
+              "text": "do a diagnosis"
+            },
+            {
+              "id": "a",
+              "text": "seek support"
+            },
+            {
+              "id": "d",
+              "text": "build a treatment"
+            }
+          ],
+          "explanation": "Seek support means actively look for helpful assistance."
+        },
+        {
+          "id": "r4",
+          "prompt": "A regular pattern of activities is a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "diagnosis"
+            },
+            {
+              "id": "b",
+              "text": "condition"
+            },
+            {
+              "id": "a",
+              "text": "routine"
+            }
+          ],
+          "explanation": "A routine is a regular way of organising activities."
+        },
+        {
+          "id": "r5",
+          "prompt": "Extreme exhaustion linked to prolonged work pressure can be ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "burnout"
+            },
+            {
+              "id": "d",
+              "text": "well-being"
+            },
+            {
+              "id": "b",
+              "text": "motivation"
+            }
+          ],
+          "explanation": "Burnout describes severe exhaustion after prolonged demands."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which activity may help someone build resilience?",
+          "options": [
+            {
+              "id": "c",
+              "text": "avoiding all routines"
+            },
+            {
+              "id": "d",
+              "text": "hiding symptoms"
+            },
+            {
+              "id": "a",
+              "text": "developing support networks"
+            }
+          ],
+          "explanation": "Support networks can help people cope and recover."
+        },
+        {
+          "id": "r7",
+          "prompt": "Long-term exhaustion, cynicism and reduced effectiveness may indicate ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "burnout"
+            },
+            {
+              "id": "b",
+              "text": "motivation"
+            },
+            {
+              "id": "c",
+              "text": "prevention"
+            }
+          ],
+          "explanation": "Burnout is associated with prolonged demands and severe exhaustion."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase naturally combines with a diagnosis?",
+          "options": [
+            {
+              "id": "a",
+              "text": "make a diagnosis"
+            },
+            {
+              "id": "b",
+              "text": "do a diagnosis"
+            },
+            {
+              "id": "c",
+              "text": "take a diagnosis"
+            }
+          ],
+          "explanation": "Make a diagnosis is the natural verb-noun combination."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-health-psychology"
+      ],
+      "tags": [
+        "b2",
+        "habits",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-health-psychology-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-health-psychology",
+      "subtopic": "b2-health-psychology",
+      "taxonomyNodeIds": [
+        "b2-health-psychology"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The general state of physical and mental health is ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "well-being"
+            },
+            {
+              "id": "b",
+              "text": "treatment"
+            },
+            {
+              "id": "c",
+              "text": "stress"
+            }
+          ],
+          "explanation": "Well-being describes overall health and quality of life."
+        },
+        {
+          "id": "r2",
+          "prompt": "Action taken before a problem develops is called ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "diagnosis"
+            },
+            {
+              "id": "d",
+              "text": "burnout"
+            },
+            {
+              "id": "a",
+              "text": "prevention"
+            }
+          ],
+          "explanation": "Prevention aims to reduce the chance of a problem occurring."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which statement uses careful health language?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Stress always means one condition."
+            },
+            {
+              "id": "b",
+              "text": "That symptom proves the diagnosis."
+            },
+            {
+              "id": "a",
+              "text": "The change may have several causes."
+            }
+          ],
+          "explanation": "Careful language recognises uncertainty and avoids diagnosis."
+        },
+        {
+          "id": "r4",
+          "prompt": "The process of becoming well again is ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "recovery"
+            },
+            {
+              "id": "b",
+              "text": "motivation"
+            },
+            {
+              "id": "c",
+              "text": "symptom"
+            }
+          ],
+          "explanation": "Recovery is the process of returning to better health."
+        },
+        {
+          "id": "r5",
+          "prompt": "The desire or energy to begin an activity is ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "motivation"
+            },
+            {
+              "id": "d",
+              "text": "recovery"
+            },
+            {
+              "id": "c",
+              "text": "prevention"
+            }
+          ],
+          "explanation": "Motivation encourages a person to act or continue."
+        },
+        {
+          "id": "r6",
+          "prompt": "A person feels better after treatment but is still rebuilding strength. This describes ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "recovery"
+            },
+            {
+              "id": "b",
+              "text": "prevention"
+            },
+            {
+              "id": "d",
+              "text": "symptom"
+            }
+          ],
+          "explanation": "Recovery is a process, not necessarily an immediate cure."
+        },
+        {
+          "id": "r7",
+          "prompt": "A person's opinion of their own value is their ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "condition"
+            },
+            {
+              "id": "b",
+              "text": "burnout"
+            },
+            {
+              "id": "a",
+              "text": "self-esteem"
+            }
+          ],
+          "explanation": "Self-esteem is how a person values themselves."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which wording avoids making an unsupported diagnosis?",
+          "options": [
+            {
+              "id": "c",
+              "text": "That proves the disorder."
+            },
+            {
+              "id": "b",
+              "text": "You definitely have a condition."
+            },
+            {
+              "id": "a",
+              "text": "A professional can assess these symptoms."
+            }
+          ],
+          "explanation": "The sentence describes appropriate professional assessment without claiming a diagnosis."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-health-psychology"
+      ],
+      "tags": [
+        "b2",
+        "health",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-ai-digital-life-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-ai-digital-life",
+  "subtopic": "b2-ai-digital-life",
+  "lessonId": "b2-vocabulary-ai-digital-life",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-ai-digital-life-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-ai-digital-life",
+      "subtopic": "b2-ai-digital-life",
+      "taxonomyNodeIds": [
+        "b2-ai-digital-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A programme that answers customers' questions automatically is a ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "dataset"
+            },
+            {
+              "id": "a",
+              "text": "chatbot"
+            },
+            {
+              "id": "d",
+              "text": "consent"
+            }
+          ],
+          "explanation": "A chatbot communicates with users through automated conversation."
+        },
+        {
+          "id": "r2",
+          "prompt": "A systematic preference against a group in an automated system is ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "bias"
+            },
+            {
+              "id": "c",
+              "text": "compatibility"
+            },
+            {
+              "id": "d",
+              "text": "automation"
+            }
+          ],
+          "explanation": "Bias is a systematic tendency that can produce unfair outcomes."
+        },
+        {
+          "id": "r3",
+          "prompt": "A company stores only the information it genuinely needs. This approach prioritises data ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "recognition"
+            },
+            {
+              "id": "b",
+              "text": "generation"
+            },
+            {
+              "id": "a",
+              "text": "minimisation"
+            }
+          ],
+          "explanation": "Data minimisation means limiting collection to what is necessary."
+        },
+        {
+          "id": "r4",
+          "prompt": "The hospital must ___ access to sensitive patient records.",
+          "options": [
+            {
+              "id": "d",
+              "text": "recognise"
+            },
+            {
+              "id": "c",
+              "text": "train"
+            },
+            {
+              "id": "a",
+              "text": "restrict"
+            }
+          ],
+          "explanation": "Restrict access means allow only authorised people to use the information."
+        },
+        {
+          "id": "r5",
+          "prompt": "The explanation of how an automated decision was reached should be ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "transparent"
+            },
+            {
+              "id": "b",
+              "text": "compatible"
+            },
+            {
+              "id": "d",
+              "text": "viral"
+            }
+          ],
+          "explanation": "A transparent process can be understood and scrutinised."
+        },
+        {
+          "id": "r6",
+          "prompt": "The software company released a security ___ overnight.",
+          "options": [
+            {
+              "id": "a",
+              "text": "patch"
+            },
+            {
+              "id": "c",
+              "text": "bias"
+            },
+            {
+              "id": "b",
+              "text": "footprint"
+            }
+          ],
+          "explanation": "A patch is a small software update that fixes a problem, often a security flaw."
+        },
+        {
+          "id": "r7",
+          "prompt": "The app is not ___ with the tablet's older operating system.",
+          "options": [
+            {
+              "id": "b",
+              "text": "private"
+            },
+            {
+              "id": "a",
+              "text": "compatible"
+            },
+            {
+              "id": "c",
+              "text": "biased"
+            }
+          ],
+          "explanation": "Compatible with means able to work correctly with something else."
+        },
+        {
+          "id": "r8",
+          "prompt": "The service asks for users' ___ before storing their location.",
+          "options": [
+            {
+              "id": "b",
+              "text": "bias"
+            },
+            {
+              "id": "a",
+              "text": "consent"
+            },
+            {
+              "id": "d",
+              "text": "shortcut"
+            }
+          ],
+          "explanation": "Consent is permission given before information is collected or used."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-ai-digital-life"
+      ],
+      "tags": [
+        "b2",
+        "chatbot",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-ai-digital-life-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-ai-digital-life",
+      "subtopic": "b2-ai-digital-life",
+      "taxonomyNodeIds": [
+        "b2-ai-digital-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The part of an app that people interact with is its user ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "breach"
+            },
+            {
+              "id": "a",
+              "text": "interface"
+            },
+            {
+              "id": "b",
+              "text": "footprint"
+            }
+          ],
+          "explanation": "A user interface is the visible and interactive part of a system."
+        },
+        {
+          "id": "r2",
+          "prompt": "The new system can ___ routine paperwork without human input.",
+          "options": [
+            {
+              "id": "b",
+              "text": "encrypt"
+            },
+            {
+              "id": "a",
+              "text": "automate"
+            },
+            {
+              "id": "c",
+              "text": "consent"
+            }
+          ],
+          "explanation": "Automate means make a task operate with little or no human control."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which expression means the practice of finding and fixing faults in a system?",
+          "options": [
+            {
+              "id": "c",
+              "text": "facial recognition"
+            },
+            {
+              "id": "b",
+              "text": "data mining"
+            },
+            {
+              "id": "a",
+              "text": "troubleshooting"
+            }
+          ],
+          "explanation": "Troubleshooting is the process of diagnosing and fixing faults."
+        },
+        {
+          "id": "r4",
+          "prompt": "The camera uses facial ___ to unlock the device.",
+          "options": [
+            {
+              "id": "a",
+              "text": "recognition"
+            },
+            {
+              "id": "c",
+              "text": "compatibility"
+            },
+            {
+              "id": "d",
+              "text": "encryption"
+            }
+          ],
+          "explanation": "Facial recognition identifies a person from facial features."
+        },
+        {
+          "id": "r5",
+          "prompt": "The model was ___ on thousands of labelled images.",
+          "options": [
+            {
+              "id": "a",
+              "text": "trained"
+            },
+            {
+              "id": "d",
+              "text": "consented"
+            },
+            {
+              "id": "b",
+              "text": "patched"
+            }
+          ],
+          "explanation": "A model is trained on examples so that it can detect patterns."
+        },
+        {
+          "id": "r6",
+          "prompt": "The assistant can ___ speech into written notes.",
+          "options": [
+            {
+              "id": "b",
+              "text": "consent"
+            },
+            {
+              "id": "d",
+              "text": "bias"
+            },
+            {
+              "id": "a",
+              "text": "convert"
+            }
+          ],
+          "explanation": "Convert means change something from one form into another."
+        },
+        {
+          "id": "r7",
+          "prompt": "The engineers need to ___ the faulty connection before the live stream.",
+          "options": [
+            {
+              "id": "a",
+              "text": "troubleshoot"
+            },
+            {
+              "id": "d",
+              "text": "train"
+            },
+            {
+              "id": "b",
+              "text": "generate"
+            }
+          ],
+          "explanation": "Troubleshoot means investigate and solve a technical problem."
+        },
+        {
+          "id": "r8",
+          "prompt": "The examples used to train a model form a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "dataset"
+            },
+            {
+              "id": "c",
+              "text": "shortcut"
+            },
+            {
+              "id": "d",
+              "text": "screen"
+            }
+          ],
+          "explanation": "A dataset is an organised collection of data."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-ai-digital-life"
+      ],
+      "tags": [
+        "b2",
+        "interface",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

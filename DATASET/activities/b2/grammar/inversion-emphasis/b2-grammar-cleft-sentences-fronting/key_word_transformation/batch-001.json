@@ -1,0 +1,1240 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-cleft-sentences-fronting-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "inversion-emphasis",
+  "subtopic": "cleft-sentences-fronting",
+  "lessonId": "b2-grammar-cleft-sentences-fronting",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Marta paid the bill, not Luis.",
+      "firstSentence": "Marta paid the bill, not Luis.",
+      "keyWord": "IT",
+      "gapText": "[gap1] paid the bill, not Luis.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "It was Marta who",
+              "It was Marta that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La escisión con «it was» destaca a la persona y la retoma con «who»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We met in Seville, not in Granada.",
+      "firstSentence": "We met in Seville, not in Granada.",
+      "keyWord": "WAS",
+      "gapText": "It [gap1] we met, not in Granada.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was in Seville that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Cuando se destaca un lugar, la escisión se cierra con «that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The manager was the person who called the police.",
+      "firstSentence": "The manager was the person who called the police.",
+      "keyWord": "WHO",
+      "gapText": "It was the manager [gap1] police.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "who called the",
+              "that called the"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "En una escindida de persona, «who» y «that» son intercambiables."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The noise woke me, not the light.",
+      "firstSentence": "The noise woke me, not the light.",
+      "keyWord": "THAT",
+      "gapText": "It was the noise [gap1], not the light.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "that woke me"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con sujetos no humanos la escisión se retoma con «that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I need a long holiday more than anything.",
+      "firstSentence": "I need a long holiday more than anything.",
+      "keyWord": "WHAT",
+      "gapText": "[gap1] is a long holiday.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "What I need"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La escindida con «what» convierte la necesidad en el foco de la frase."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "This kitchen mainly requires better lighting.",
+      "firstSentence": "This kitchen mainly requires better lighting.",
+      "keyWord": "NEEDS",
+      "gapText": "What this kitchen [gap1] better lighting.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "needs is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«What» funciona como sujeto y el verbo principal queda en singular."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We left early because the baby was tired.",
+      "firstSentence": "We left early because the baby was tired.",
+      "keyWord": "REASON",
+      "gapText": "The [gap1] left early was that the baby was tired.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "reason why we"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«The reason why» exige cerrar la explicación con «was that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He resigned because his boss ignored his ideas.",
+      "firstSentence": "He resigned because his boss ignored his ideas.",
+      "keyWord": "WHY",
+      "gapText": "The reason [gap1] was that his boss ignored his ideas.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "why he resigned"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La causa se convierte en atributo introducido por «was that»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I only asked a simple question.",
+      "firstSentence": "I only asked a simple question.",
+      "keyWord": "ALL",
+      "gapText": "[gap1] was ask a simple question.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "All I did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«All I did was» equivale a «only» y va seguido de infinitivo sin «to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She merely smiled and said nothing.",
+      "firstSentence": "She merely smiled and said nothing.",
+      "keyWord": "DID",
+      "gapText": "All [gap1] was smile and say nothing.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "she did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «all she did was» el verbo aparece en forma base."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I like the garden most of all about this house.",
+      "firstSentence": "I like the garden most of all about this house.",
+      "keyWord": "THING",
+      "gapText": "The [gap1] like most about this house is the garden.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "thing I"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«The thing» actúa como sustantivo pivote de la escindida."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "His constant complaining really annoys me.",
+      "firstSentence": "His constant complaining really annoys me.",
+      "keyWord": "THING",
+      "gapText": "The [gap1] is his constant complaining.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "thing that annoys me",
+              "thing that irritates me"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La relativa «that annoys me» concentra el foco al final de la frase."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "A burst pipe made the ceiling collapse.",
+      "firstSentence": "A burst pipe made the ceiling collapse.",
+      "keyWord": "MADE",
+      "gapText": "[gap1] the ceiling collapse was a burst pipe.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "What made"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La escindida con «what made» desplaza la causa al final por énfasis."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I only understood the rules after the second game.",
+      "firstSentence": "I only understood the rules after the second game.",
+      "keyWord": "IT",
+      "gapText": "[gap1] the second game that I understood the rules.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "It was not until"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«It was not until» combina escisión y negación para retrasar el foco."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I was born in this village.",
+      "firstSentence": "I was born in this village.",
+      "keyWord": "WHERE",
+      "gapText": "This village is [gap1] born.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "where I was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Where» encabeza la relativa escindida de lugar."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We first met at that little café.",
+      "firstSentence": "We first met at that little café.",
+      "keyWord": "PLACE",
+      "gapText": "That little café is the [gap1] met.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "place where we first"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«The place where» es la versión explícita de la escindida de lugar."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Ana taught me to swim.",
+      "firstSentence": "Ana taught me to swim.",
+      "keyWord": "PERSON",
+      "gapText": "Ana is the [gap1] to swim.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "person who taught me"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«The person who» identifica al agente y lo convierte en foco."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The noise was so loud that the windows shook.",
+      "firstSentence": "The noise was so loud that the windows shook.",
+      "keyWord": "SUCH",
+      "gapText": "[gap1] that the windows shook.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Such was the noise"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Such was» antepone el atributo y coloca el verbo antes del sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The queue was so long that we gave up.",
+      "firstSentence": "The queue was so long that we gave up.",
+      "keyWord": "SO",
+      "gapText": "[gap1] the queue that we gave up.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "So long was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Al anteponer «so» más adjetivo, el verbo «be» precede al sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I especially like the honesty of her writing.",
+      "firstSentence": "I especially like the honesty of her writing.",
+      "keyWord": "WHAT",
+      "gapText": "[gap1] her writing is its honesty.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "What I like about"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«What I like about» abre la escindida y el atributo cierra la frase."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "My brother would really like a job abroad.",
+      "firstSentence": "My brother would really like a job abroad.",
+      "keyWord": "WANTS",
+      "gapText": "What my [gap1] a job abroad.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "brother wants is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El deseo pasa a foco final gracias a la estructura «what … is»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The traffic noise is what really irritates me.",
+      "firstSentence": "The traffic noise is what really irritates me.",
+      "keyWord": "BOTHERS",
+      "gapText": "What [gap1] the traffic noise.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "bothers me is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Bothers» recoge la molestia y «is» enlaza con el foco."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You just have to sign here.",
+      "firstSentence": "You just have to sign here.",
+      "keyWord": "HAVE",
+      "gapText": "All you [gap1] sign here.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have to do is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«All you have to do is» se completa con infinitivo sin «to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You only need to bring a pen.",
+      "firstSentence": "You only need to bring a pen.",
+      "keyWord": "NEED",
+      "gapText": "All you [gap1] a pen.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "need to bring is"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El foco final es el objeto y «all» limita la exigencia."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The rain, not the wind, damaged the crops.",
+      "firstSentence": "The rain, not the wind, damaged the crops.",
+      "keyWord": "RAIN",
+      "gapText": "It [gap1] damaged the crops, not the wind.",
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was the rain that"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La escisión contrasta el agente verdadero con el descartado."
+    }
+  ]
+}

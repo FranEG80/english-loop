@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-crime-justice-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-crime-justice",
+  "subtopic": "b2-crime-justice",
+  "lessonId": "b2-vocabulary-crime-justice",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-crime-justice-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-crime-justice",
+      "subtopic": "b2-crime-justice",
+      "taxonomyNodeIds": [
+        "b2-crime-justice"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The lawyer asked the witness to give ___ about what she had seen.",
+          "options": [
+            {
+              "id": "c",
+              "text": "a sentence"
+            },
+            {
+              "id": "a",
+              "text": "bail"
+            },
+            {
+              "id": "b",
+              "text": "testimony"
+            }
+          ],
+          "explanation": "Testimony is a formal statement given by a witness."
+        },
+        {
+          "id": "r2",
+          "prompt": "The report says the new lighting may ___ crime in the park.",
+          "options": [
+            {
+              "id": "a",
+              "text": "deter"
+            },
+            {
+              "id": "c",
+              "text": "acquit"
+            },
+            {
+              "id": "b",
+              "text": "convict"
+            }
+          ],
+          "explanation": "To deter crime is to discourage people from committing it."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase means that the court decided the defendant was guilty?",
+          "options": [
+            {
+              "id": "d",
+              "text": "was granted an appeal"
+            },
+            {
+              "id": "c",
+              "text": "was called as a witness"
+            },
+            {
+              "id": "b",
+              "text": "was found guilty"
+            }
+          ],
+          "explanation": "A person is found guilty when the court decides that they committed the offence."
+        },
+        {
+          "id": "r4",
+          "prompt": "The defendant was ___ because the evidence was not reliable.",
+          "options": [
+            {
+              "id": "d",
+              "text": "sentenced"
+            },
+            {
+              "id": "b",
+              "text": "acquitted"
+            },
+            {
+              "id": "a",
+              "text": "convicted"
+            }
+          ],
+          "explanation": "A defendant is acquitted when the court finds them not guilty."
+        },
+        {
+          "id": "r5",
+          "prompt": "The judge imposed a large ___ for the parking offence.",
+          "options": [
+            {
+              "id": "b",
+              "text": "verdict"
+            },
+            {
+              "id": "d",
+              "text": "allegation"
+            },
+            {
+              "id": "a",
+              "text": "fine"
+            }
+          ],
+          "explanation": "A fine is money that a court orders someone to pay as a punishment."
+        },
+        {
+          "id": "r6",
+          "prompt": "After the guilty verdict, the judge ___ the offender to two years in prison.",
+          "options": [
+            {
+              "id": "c",
+              "text": "investigated"
+            },
+            {
+              "id": "b",
+              "text": "sentenced"
+            },
+            {
+              "id": "a",
+              "text": "appealed"
+            }
+          ],
+          "explanation": "A judge sentences someone after a guilty verdict."
+        },
+        {
+          "id": "r7",
+          "prompt": "The jury reached a ___ after hearing the evidence.",
+          "options": [
+            {
+              "id": "d",
+              "text": "investigation"
+            },
+            {
+              "id": "a",
+              "text": "bail"
+            },
+            {
+              "id": "b",
+              "text": "verdict"
+            }
+          ],
+          "explanation": "A verdict is the decision about whether a defendant is guilty."
+        },
+        {
+          "id": "r8",
+          "prompt": "The court decided that the statement was inadmissible as ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "a sentence"
+            },
+            {
+              "id": "a",
+              "text": "evidence"
+            },
+            {
+              "id": "d",
+              "text": "a suspect"
+            }
+          ],
+          "explanation": "Evidence is material that can be considered when deciding a case."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-crime-justice"
+      ],
+      "tags": [
+        "b2",
+        "evidence",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-crime-justice-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-crime-justice",
+      "subtopic": "b2-crime-justice",
+      "taxonomyNodeIds": [
+        "b2-crime-justice"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A court may grant ___ when a defendant promises to attend future hearings.",
+          "options": [
+            {
+              "id": "c",
+              "text": "a charge"
+            },
+            {
+              "id": "a",
+              "text": "bail"
+            },
+            {
+              "id": "b",
+              "text": "a verdict"
+            }
+          ],
+          "explanation": "Grant bail means allow temporary release while the case proceeds."
+        },
+        {
+          "id": "r2",
+          "prompt": "The police are ___ a series of thefts from parked cars.",
+          "options": [
+            {
+              "id": "a",
+              "text": "investigating"
+            },
+            {
+              "id": "b",
+              "text": "sentencing"
+            },
+            {
+              "id": "c",
+              "text": "acquitting"
+            }
+          ],
+          "explanation": "Police investigate a crime; a court does not investigate a defendant's sentence."
+        },
+        {
+          "id": "r3",
+          "prompt": "The article carefully called the claim an ___ because nobody had proved it.",
+          "options": [
+            {
+              "id": "b",
+              "text": "conviction"
+            },
+            {
+              "id": "c",
+              "text": "sentence"
+            },
+            {
+              "id": "a",
+              "text": "allegation"
+            }
+          ],
+          "explanation": "An allegation is a claim that has not yet been proved."
+        },
+        {
+          "id": "r4",
+          "prompt": "The charity works with former offenders to reduce ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "conviction"
+            },
+            {
+              "id": "b",
+              "text": "testimony"
+            },
+            {
+              "id": "a",
+              "text": "reoffending"
+            }
+          ],
+          "explanation": "Reoffending means committing another offence after an earlier one."
+        },
+        {
+          "id": "r5",
+          "prompt": "The company was charged ___ breaking environmental regulations.",
+          "options": [
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "by"
+            },
+            {
+              "id": "c",
+              "text": "with"
+            }
+          ],
+          "explanation": "The legal collocation is be charged with an offence."
+        },
+        {
+          "id": "r6",
+          "prompt": "The defence plans to ___ against the conviction.",
+          "options": [
+            {
+              "id": "d",
+              "text": "acquit"
+            },
+            {
+              "id": "c",
+              "text": "charge"
+            },
+            {
+              "id": "a",
+              "text": "appeal"
+            }
+          ],
+          "explanation": "A defendant can appeal against a conviction or decision."
+        },
+        {
+          "id": "r7",
+          "prompt": "The journalist avoided stating that the minister was guilty and referred only to an ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "execution"
+            },
+            {
+              "id": "a",
+              "text": "allegation"
+            },
+            {
+              "id": "b",
+              "text": "acquittal"
+            }
+          ],
+          "explanation": "Calling something an allegation signals that it has not been proved."
+        },
+        {
+          "id": "r8",
+          "prompt": "The victim made an ___ that the contractor had falsified documents.",
+          "options": [
+            {
+              "id": "a",
+              "text": "allegation"
+            },
+            {
+              "id": "c",
+              "text": "appeal"
+            },
+            {
+              "id": "b",
+              "text": "acquittal"
+            }
+          ],
+          "explanation": "An allegation is an unproved accusation or claim."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-crime-justice"
+      ],
+      "tags": [
+        "b2",
+        "court",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

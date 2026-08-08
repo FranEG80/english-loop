@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-health-body-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-health-body",
+  "subtopic": "b1-health-body",
+  "lessonId": "b1-vocabulary-health-body",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-health-body-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-health-body",
+      "subtopic": "b1-health-body",
+      "taxonomyNodeIds": [
+        "b1-health-body"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A small injury that breaks the skin is a ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "rash"
+            },
+            {
+              "id": "b",
+              "text": "fever"
+            },
+            {
+              "id": "a",
+              "text": "cut"
+            }
+          ],
+          "explanation": "A cut is an injury that opens or damages the skin."
+        },
+        {
+          "id": "r2",
+          "prompt": "A light covering placed over a cut is a ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "rash"
+            },
+            {
+              "id": "b",
+              "text": "bruise"
+            },
+            {
+              "id": "a",
+              "text": "bandage"
+            }
+          ],
+          "explanation": "A bandage covers and protects a small wound."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which advice is a general, cautious response to a mild illness?",
+          "options": [
+            {
+              "id": "b",
+              "text": "You should ignore every symptom."
+            },
+            {
+              "id": "a",
+              "text": "You should rest and ask a pharmacist for advice."
+            },
+            {
+              "id": "c",
+              "text": "You should diagnose yourself immediately."
+            }
+          ],
+          "explanation": "Rest and professional advice are safer general suggestions than self-diagnosis or random medication."
+        },
+        {
+          "id": "r4",
+          "prompt": "A high temperature is a ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "sprain"
+            },
+            {
+              "id": "b",
+              "text": "bruise"
+            },
+            {
+              "id": "a",
+              "text": "fever"
+            }
+          ],
+          "explanation": "A fever is an unusually high body temperature."
+        },
+        {
+          "id": "r5",
+          "prompt": "You breathe with your ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "elbows"
+            },
+            {
+              "id": "a",
+              "text": "lungs"
+            },
+            {
+              "id": "c",
+              "text": "fingers"
+            }
+          ],
+          "explanation": "The lungs are the organs used for breathing."
+        },
+        {
+          "id": "r6",
+          "prompt": "To arrange a time with a doctor is to make an ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "allergy"
+            },
+            {
+              "id": "a",
+              "text": "appointment"
+            },
+            {
+              "id": "b",
+              "text": "injury"
+            }
+          ],
+          "explanation": "Make an appointment means arrange a time to see a professional."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence describes a swollen ankle naturally?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I twisted my ankle and now it has swollen."
+            },
+            {
+              "id": "a",
+              "text": "I twisted my ankle and now it is swollen."
+            },
+            {
+              "id": "d",
+              "text": "I twisted my ankle and now it has a swollen."
+            }
+          ],
+          "explanation": "Be swollen is the natural pattern for describing an enlarged body part."
+        },
+        {
+          "id": "r8",
+          "prompt": "A person who advises about medicines in a shop is a ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "mechanic"
+            },
+            {
+              "id": "c",
+              "text": "coach"
+            },
+            {
+              "id": "a",
+              "text": "pharmacist"
+            }
+          ],
+          "explanation": "A pharmacist works with medicines and can give advice about pharmacy products."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-health-body"
+      ],
+      "tags": [
+        "b1",
+        "injuries",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-health-body-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-health-body",
+      "subtopic": "b1-health-body",
+      "taxonomyNodeIds": [
+        "b1-health-body"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A repeated sound from your chest or throat is a ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "cut"
+            },
+            {
+              "id": "b",
+              "text": "rash"
+            },
+            {
+              "id": "a",
+              "text": "cough"
+            }
+          ],
+          "explanation": "A cough is a repeated action or sound caused by irritation in the throat or lungs."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence describes a symptom naturally?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I am dizzying when I stand up."
+            },
+            {
+              "id": "a",
+              "text": "I feel dizzy when I stand up."
+            },
+            {
+              "id": "b",
+              "text": "I feel a headache when I stand up."
+            }
+          ],
+          "explanation": "Feel dizzy is the natural pattern for this state."
+        },
+        {
+          "id": "r3",
+          "prompt": "A red area on the skin that may itch is a ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "fever"
+            },
+            {
+              "id": "b",
+              "text": "headache"
+            },
+            {
+              "id": "a",
+              "text": "rash"
+            }
+          ],
+          "explanation": "A rash is an area of irritated or changed skin."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase means rest for a while?",
+          "options": [
+            {
+              "id": "b",
+              "text": "make a fever"
+            },
+            {
+              "id": "a",
+              "text": "get some rest"
+            },
+            {
+              "id": "c",
+              "text": "take a cough"
+            }
+          ],
+          "explanation": "Get some rest is a natural recommendation to take time to recover."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which request is appropriate when you need to see a doctor?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I would like to take a doctor."
+            },
+            {
+              "id": "a",
+              "text": "I would like to make an appointment."
+            },
+            {
+              "id": "b",
+              "text": "I would like to make an injury."
+            }
+          ],
+          "explanation": "Make an appointment means arrange a visit with a professional."
+        },
+        {
+          "id": "r6",
+          "prompt": "A dark mark after a knock is a ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "cough"
+            },
+            {
+              "id": "a",
+              "text": "bruise"
+            },
+            {
+              "id": "c",
+              "text": "rash"
+            }
+          ],
+          "explanation": "A bruise is a dark mark caused by an impact or pressure under the skin."
+        },
+        {
+          "id": "r7",
+          "prompt": "Twisting your ankle may cause a ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "cough"
+            },
+            {
+              "id": "a",
+              "text": "sprain"
+            },
+            {
+              "id": "d",
+              "text": "headache"
+            }
+          ],
+          "explanation": "A sprain is an injury to a joint caused by twisting or stretching it."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence clearly distinguishes a symptom from an injury?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I have an ankle cough, but my symptom is sprained."
+            },
+            {
+              "id": "a",
+              "text": "I have a cough, but my ankle sprain is healing."
+            },
+            {
+              "id": "d",
+              "text": "My rash is a pharmacist, and my doctor is swollen."
+            }
+          ],
+          "explanation": "A cough is a symptom; an ankle sprain is an injury."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-health-body"
+      ],
+      "tags": [
+        "b1",
+        "symptoms",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

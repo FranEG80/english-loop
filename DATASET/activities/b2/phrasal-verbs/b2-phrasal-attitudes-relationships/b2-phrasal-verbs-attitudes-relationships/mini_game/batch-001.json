@@ -1,0 +1,458 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-phrasal-verbs-attitudes-relationships-mini-game-001",
+  "level": "B2",
+  "category": "phrasal-verbs",
+  "topic": "b2-phrasal-attitudes-relationships",
+  "subtopic": "b2-phrasal-attitudes-relationships",
+  "lessonId": "b2-phrasal-verbs-attitudes-relationships",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-attitudes-relationships-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-attitudes-relationships",
+      "subtopic": "b2-phrasal-attitudes-relationships",
+      "taxonomyNodeIds": [
+        "b2-phrasal-attitudes-relationships"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The spokesperson refused to ___ when reporters challenged the decision.",
+          "options": [
+            {
+              "id": "c",
+              "text": "grow apart"
+            },
+            {
+              "id": "d",
+              "text": "take after"
+            },
+            {
+              "id": "a",
+              "text": "back down"
+            }
+          ],
+          "explanation": "The context requires “back down”, meaning stop defending a position because of pressure."
+        },
+        {
+          "id": "r2",
+          "prompt": "The tenants have had to ___ the noise from the building work for weeks.",
+          "options": [
+            {
+              "id": "a",
+              "text": "put up with"
+            },
+            {
+              "id": "b",
+              "text": "make up with"
+            },
+            {
+              "id": "c",
+              "text": "bottle up"
+            }
+          ],
+          "explanation": "The context requires “put up with”, meaning tolerate something unpleasant."
+        },
+        {
+          "id": "r3",
+          "prompt": "In this sentence, what does “reach out to” mean? If you need specialist advice, please reach out to our safeguarding officer.",
+          "options": [
+            {
+              "id": "c",
+              "text": "admire and respect someone"
+            },
+            {
+              "id": "a",
+              "text": "contact someone for help or advice"
+            },
+            {
+              "id": "b",
+              "text": "disappoint someone by failing to help or keep a promise"
+            }
+          ],
+          "explanation": "In this context, “reach out to” means contact someone for help or advice."
+        },
+        {
+          "id": "r4",
+          "prompt": "It took Sam several months to ___ the disappointment of missing the final.",
+          "options": [
+            {
+              "id": "a",
+              "text": "get over"
+            },
+            {
+              "id": "c",
+              "text": "lash out at"
+            },
+            {
+              "id": "b",
+              "text": "fall out with"
+            }
+          ],
+          "explanation": "“get over” means recover from an upsetting experience."
+        },
+        {
+          "id": "r5",
+          "prompt": "In this sentence, what does “let down” mean? The supplier let down the small business by cancelling the order at short notice.",
+          "options": [
+            {
+              "id": "a",
+              "text": "disappoint someone by failing to help or keep a promise"
+            },
+            {
+              "id": "b",
+              "text": "make someone feel happier"
+            },
+            {
+              "id": "c",
+              "text": "consider someone inferior"
+            }
+          ],
+          "explanation": "In this context, “let down” means disappoint someone by failing to help or keep a promise."
+        },
+        {
+          "id": "r6",
+          "prompt": "Once the children ___, the teacher could explain the new routine.",
+          "options": [
+            {
+              "id": "a",
+              "text": "settle down"
+            },
+            {
+              "id": "b",
+              "text": "get over"
+            },
+            {
+              "id": "c",
+              "text": "warm to"
+            }
+          ],
+          "explanation": "The context requires “settle down”, meaning become calmer and quieter."
+        },
+        {
+          "id": "r7",
+          "prompt": "In this sentence, what does “drift apart” mean? The university friends slowly drift apart when they moved to different countries.",
+          "options": [
+            {
+              "id": "d",
+              "text": "have a serious disagreement with someone"
+            },
+            {
+              "id": "c",
+              "text": "tolerate something unpleasant"
+            },
+            {
+              "id": "a",
+              "text": "become less close over time"
+            }
+          ],
+          "explanation": "In this context, “drift apart” means become less close over time."
+        },
+        {
+          "id": "r8",
+          "prompt": "The supplier ___ the small business by cancelling the order at short notice.",
+          "options": [
+            {
+              "id": "b",
+              "text": "settle down"
+            },
+            {
+              "id": "a",
+              "text": "let down"
+            },
+            {
+              "id": "c",
+              "text": "make up for"
+            }
+          ],
+          "explanation": "“let down” means disappoint someone by failing to help or keep a promise."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-attitudes-relationships"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "multiple-choice-cloze",
+        "assertiveness",
+        "cloze",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-attitudes-relationships-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-attitudes-relationships",
+      "subtopic": "b2-phrasal-attitudes-relationships",
+      "taxonomyNodeIds": [
+        "b2-phrasal-attitudes-relationships"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Owen ___ his flatmate over the unpaid bills.",
+          "options": [
+            {
+              "id": "d",
+              "text": "put up with"
+            },
+            {
+              "id": "a",
+              "text": "fall out with"
+            },
+            {
+              "id": "b",
+              "text": "bottle up"
+            }
+          ],
+          "explanation": "The context requires “fall out with”, meaning have a serious disagreement with someone."
+        },
+        {
+          "id": "r2",
+          "prompt": "We sent Priya a card to ___ after the difficult interview.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take after"
+            },
+            {
+              "id": "d",
+              "text": "side with"
+            },
+            {
+              "id": "a",
+              "text": "cheer up"
+            }
+          ],
+          "explanation": "The context requires “cheer up”, meaning make someone feel happier."
+        },
+        {
+          "id": "r3",
+          "prompt": "The organisation refuses to ___ people who have made career changes.",
+          "options": [
+            {
+              "id": "d",
+              "text": "get along with"
+            },
+            {
+              "id": "a",
+              "text": "look down on"
+            },
+            {
+              "id": "b",
+              "text": "make up with"
+            }
+          ],
+          "explanation": "“look down on” means consider someone inferior."
+        },
+        {
+          "id": "r4",
+          "prompt": "In this sentence, what does “settle down” mean? Once the children settle down, the teacher could explain the new routine.",
+          "options": [
+            {
+              "id": "d",
+              "text": "hide feelings instead of expressing them"
+            },
+            {
+              "id": "b",
+              "text": "become gradually less close"
+            },
+            {
+              "id": "a",
+              "text": "become calmer and quieter"
+            }
+          ],
+          "explanation": "In this context, “settle down” means become calmer and quieter."
+        },
+        {
+          "id": "r5",
+          "prompt": "The mediator listened carefully before deciding whether to ___ either party.",
+          "options": [
+            {
+              "id": "b",
+              "text": "drift apart"
+            },
+            {
+              "id": "d",
+              "text": "make up with"
+            },
+            {
+              "id": "a",
+              "text": "side with"
+            }
+          ],
+          "explanation": "“side with” means support one person in a disagreement."
+        },
+        {
+          "id": "r6",
+          "prompt": "In this sentence, what does “grow apart” mean? The cousins grow apart as their interests and priorities changed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "have a serious disagreement with someone"
+            },
+            {
+              "id": "a",
+              "text": "become gradually less close"
+            },
+            {
+              "id": "b",
+              "text": "tolerate something unpleasant"
+            }
+          ],
+          "explanation": "In this context, “grow apart” means become gradually less close."
+        },
+        {
+          "id": "r7",
+          "prompt": "The committee gradually ___ the proposal after seeing the evidence.",
+          "options": [
+            {
+              "id": "a",
+              "text": "warm to"
+            },
+            {
+              "id": "b",
+              "text": "lash out at"
+            },
+            {
+              "id": "d",
+              "text": "grow apart"
+            }
+          ],
+          "explanation": "“warm to” means begin to like or accept an idea."
+        },
+        {
+          "id": "r8",
+          "prompt": "In this sentence, what does “back down” mean? The spokesperson refused to back down when reporters challenged the decision.",
+          "options": [
+            {
+              "id": "a",
+              "text": "stop defending a position because of pressure"
+            },
+            {
+              "id": "c",
+              "text": "disappoint someone by failing to help or keep a promise"
+            },
+            {
+              "id": "d",
+              "text": "admire and respect someone"
+            }
+          ],
+          "explanation": "In this context, “back down” means stop defending a position because of pressure."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-attitudes-relationships"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "multiple-choice-cloze",
+        "conflict",
+        "cloze",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

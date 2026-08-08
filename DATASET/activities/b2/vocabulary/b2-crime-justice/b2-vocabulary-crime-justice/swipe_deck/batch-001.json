@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-crime-justice-swipe-deck-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-crime-justice",
+  "subtopic": "b2-crime-justice",
+  "lessonId": "b2-vocabulary-crime-justice",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-crime-justice-sd-056",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-crime-justice",
+      "subtopic": "b2-crime-justice",
+      "taxonomyNodeIds": [
+        "b2-crime-justice"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The phrase serve a sentence refers to completing a punishment.",
+          "explanation": "Someone serves a sentence by undergoing the punishment ordered by the court."
+        },
+        {
+          "id": "c2",
+          "statement": "The expression gather evidence is natural in a description of an investigation.",
+          "explanation": "Investigators can gather or collect evidence during a case."
+        },
+        {
+          "id": "c3",
+          "statement": "A verdict is the punishment imposed after a guilty decision.",
+          "explanation": "A verdict is the decision about guilt; the punishment is the sentence."
+        },
+        {
+          "id": "c4",
+          "statement": "Evidence is always a countable noun in legal English.",
+          "explanation": "Evidence is normally uncountable: we say some evidence or a piece of evidence."
+        },
+        {
+          "id": "c5",
+          "statement": "To appeal against a conviction is to ask a higher court to review it.",
+          "explanation": "An appeal challenges a decision through a higher court or authority."
+        },
+        {
+          "id": "c6",
+          "statement": "A suspect is a person who may have committed a crime.",
+          "explanation": "A suspect is under suspicion, but has not necessarily been charged or convicted."
+        },
+        {
+          "id": "c7",
+          "statement": "The phrase convict someone of an offence describes a formal finding of guilt.",
+          "explanation": "Convict someone of an offence means officially find them guilty of it."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-crime-justice"
+      ],
+      "tags": [
+        "b2",
+        "sentence",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-crime-justice-sd-119",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-crime-justice",
+      "subtopic": "b2-crime-justice",
+      "taxonomyNodeIds": [
+        "b2-crime-justice"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A person can be acquitted even if they were previously a suspect.",
+          "explanation": "Suspect describes an earlier possibility; acquittal is a later not-guilty decision."
+        },
+        {
+          "id": "c2",
+          "statement": "To acquit a defendant means to declare that the person is guilty.",
+          "explanation": "To acquit means to find a defendant not guilty."
+        },
+        {
+          "id": "c3",
+          "statement": "If a suspect is charged, the court has already found the person guilty.",
+          "explanation": "Being charged is an accusation; guilt is decided later at trial or by another legal process."
+        },
+        {
+          "id": "c4",
+          "statement": "A defendant may appeal against a conviction.",
+          "explanation": "An appeal asks a higher court to review a decision."
+        },
+        {
+          "id": "c5",
+          "statement": "A fine is a sum of money ordered as a punishment.",
+          "explanation": "A court can impose a fine instead of or alongside another punishment."
+        },
+        {
+          "id": "c6",
+          "statement": "The expression impose a verdict is more accurate than reach a verdict.",
+          "explanation": "A jury or court reaches a verdict; a judge can impose a sentence or fine."
+        },
+        {
+          "id": "c7",
+          "statement": "Someone released on bail is usually waiting for the legal case to continue.",
+          "explanation": "Bail is temporary release before a later hearing or trial."
+        },
+        {
+          "id": "c8",
+          "statement": "A witness can provide testimony in court.",
+          "explanation": "Testimony is a witness's formal statement or evidence."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-crime-justice"
+      ],
+      "tags": [
+        "b2",
+        "verdict",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-crime-justice-sd-182",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b2-crime-justice",
+      "subtopic": "b2-crime-justice",
+      "taxonomyNodeIds": [
+        "b2-crime-justice"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The phrase accuse someone with fraud is the standard legal collocation.",
+          "explanation": "Use accuse someone of fraud; charge someone with fraud."
+        },
+        {
+          "id": "c2",
+          "statement": "An allegation is a claim that has already been proved in court.",
+          "explanation": "An allegation is unproved; it may later be supported or rejected."
+        },
+        {
+          "id": "c3",
+          "statement": "Reducing reoffending means reducing the number of people who commit a further offence.",
+          "explanation": "Reoffending is committing another offence, so reducing it is a prevention goal."
+        },
+        {
+          "id": "c4",
+          "statement": "The phrase evidence was weak is grammatically natural.",
+          "explanation": "Evidence is generally uncountable and takes a singular verb here."
+        },
+        {
+          "id": "c5",
+          "statement": "The police are usually followed by a plural verb in standard English.",
+          "explanation": "Police is treated as a plural collective noun: The police are investigating."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-crime-justice"
+      ],
+      "tags": [
+        "b2",
+        "legal-language",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

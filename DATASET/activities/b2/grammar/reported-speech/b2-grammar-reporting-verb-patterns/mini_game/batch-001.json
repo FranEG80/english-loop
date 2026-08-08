@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-verb-patterns-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reporting-verb-patterns",
+  "lessonId": "b2-grammar-reporting-verb-patterns",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The chairperson advised delegates ___ personal data in the minutes.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to not including"
+            },
+            {
+              "id": "a",
+              "text": "not to include"
+            },
+            {
+              "id": "d",
+              "text": "against include"
+            }
+          ],
+          "explanation": "Advise someone not to do something uses object plus not to-infinitive."
+        },
+        {
+          "id": "r2",
+          "prompt": "The union urged the council ___ before winter.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to act"
+            },
+            {
+              "id": "c",
+              "text": "act to"
+            },
+            {
+              "id": "a",
+              "text": "acting"
+            }
+          ],
+          "explanation": "Urge someone to do something is the standard pattern."
+        },
+        {
+          "id": "r3",
+          "prompt": "The architect suggested ___ a covered walkway.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to build"
+            },
+            {
+              "id": "b",
+              "text": "building"
+            },
+            {
+              "id": "d",
+              "text": "build to"
+            }
+          ],
+          "explanation": "Suggest is followed by a gerund or a that-clause, not a direct to-infinitive."
+        },
+        {
+          "id": "r4",
+          "prompt": "The ranger warned visitors ___ feed the wild birds.",
+          "options": [
+            {
+              "id": "a",
+              "text": "not to"
+            },
+            {
+              "id": "c",
+              "text": "to not feeding"
+            },
+            {
+              "id": "b",
+              "text": "not feeding"
+            }
+          ],
+          "explanation": "Warn someone not to do something uses an object and a not to-infinitive."
+        },
+        {
+          "id": "r5",
+          "prompt": "The travel editor recommended ___ the night train.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to take"
+            },
+            {
+              "id": "c",
+              "text": "the travellers take"
+            },
+            {
+              "id": "b",
+              "text": "taking"
+            }
+          ],
+          "explanation": "Recommend can be followed directly by a gerund."
+        },
+        {
+          "id": "r6",
+          "prompt": "The nurse reminded the patient ___ the tablets with food.",
+          "options": [
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "taking"
+            },
+            {
+              "id": "b",
+              "text": "to take"
+            }
+          ],
+          "explanation": "Remind someone to do something takes an object and a to-infinitive."
+        },
+        {
+          "id": "r7",
+          "prompt": "At the review meeting, the engineer ___ altering the safety figures.",
+          "options": [
+            {
+              "id": "d",
+              "text": "encouraged"
+            },
+            {
+              "id": "a",
+              "text": "admitted"
+            },
+            {
+              "id": "b",
+              "text": "suggested"
+            }
+          ],
+          "explanation": "Admit takes a gerund: admitted altering."
+        },
+        {
+          "id": "r8",
+          "prompt": "The project lead blamed the delay ___ the planning department.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            }
+          ],
+          "explanation": "Blame something on someone or something."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "advise",
+        "object-infinitive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The contractor agreed ___ the damaged tiles.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to replace"
+            },
+            {
+              "id": "a",
+              "text": "replacing"
+            },
+            {
+              "id": "c",
+              "text": "replace to"
+            }
+          ],
+          "explanation": "Agree is followed by a to-infinitive."
+        },
+        {
+          "id": "r2",
+          "prompt": "The volunteer offered ___ the archive visitors around.",
+          "options": [
+            {
+              "id": "d",
+              "text": "of showing"
+            },
+            {
+              "id": "c",
+              "text": "show to"
+            },
+            {
+              "id": "b",
+              "text": "to show"
+            }
+          ],
+          "explanation": "Offer is followed by a to-infinitive when making a proposal."
+        },
+        {
+          "id": "r3",
+          "prompt": "The committee proposed ___ a shuttle for residents.",
+          "options": [
+            {
+              "id": "a",
+              "text": "running"
+            },
+            {
+              "id": "c",
+              "text": "the organisers to running"
+            },
+            {
+              "id": "b",
+              "text": "to run"
+            }
+          ],
+          "explanation": "Propose commonly takes a gerund when introducing an idea."
+        },
+        {
+          "id": "r4",
+          "prompt": "Ravi ___ copying the design during the hearing.",
+          "options": [
+            {
+              "id": "b",
+              "text": "refused"
+            },
+            {
+              "id": "c",
+              "text": "offered"
+            },
+            {
+              "id": "a",
+              "text": "denied"
+            }
+          ],
+          "explanation": "Deny is followed by a gerund, not an infinitive."
+        },
+        {
+          "id": "r5",
+          "prompt": "The mentor encouraged the interns ___ questions about the method.",
+          "options": [
+            {
+              "id": "d",
+              "text": "of asking"
+            },
+            {
+              "id": "a",
+              "text": "asking"
+            },
+            {
+              "id": "b",
+              "text": "to ask"
+            }
+          ],
+          "explanation": "Encourage someone to do something uses object plus to-infinitive."
+        },
+        {
+          "id": "r6",
+          "prompt": "The witness claimed ___ the warning clearly.",
+          "options": [
+            {
+              "id": "d",
+              "text": "of understanding"
+            },
+            {
+              "id": "b",
+              "text": "to understand"
+            },
+            {
+              "id": "a",
+              "text": "understanding"
+            }
+          ],
+          "explanation": "Claim is followed by a to-infinitive in this reporting pattern."
+        },
+        {
+          "id": "r7",
+          "prompt": "The scientist promised ___ the full dataset.",
+          "options": [
+            {
+              "id": "d",
+              "text": "of releasing"
+            },
+            {
+              "id": "b",
+              "text": "to release"
+            },
+            {
+              "id": "c",
+              "text": "release to"
+            }
+          ],
+          "explanation": "Promise is followed by a to-infinitive."
+        },
+        {
+          "id": "r8",
+          "prompt": "The publisher refused ___ the unverified claim.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to repeat"
+            },
+            {
+              "id": "a",
+              "text": "repeating"
+            },
+            {
+              "id": "c",
+              "text": "repeat to"
+            }
+          ],
+          "explanation": "Refuse takes a to-infinitive."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "agree",
+        "to-infinitive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

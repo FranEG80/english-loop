@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-family-relationships-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-family-relationships",
+  "subtopic": "b1-family-relationships",
+  "lessonId": "b1-vocabulary-family-relationships",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-family-relationships-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-family-relationships",
+      "subtopic": "b1-family-relationships",
+      "taxonomyNodeIds": [
+        "b1-family-relationships"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "They had a disagreement but eventually ___ up after talking calmly.",
+          "options": [
+            {
+              "id": "d",
+              "text": "kept"
+            },
+            {
+              "id": "a",
+              "text": "made"
+            },
+            {
+              "id": "b",
+              "text": "fell"
+            }
+          ],
+          "explanation": "Made up means reconciled after a disagreement."
+        },
+        {
+          "id": "r2",
+          "prompt": "A supportive friend is someone who usually ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "starts arguments"
+            },
+            {
+              "id": "a",
+              "text": "offers encouragement"
+            },
+            {
+              "id": "d",
+              "text": "forgets your name"
+            }
+          ],
+          "explanation": "Supportive people give encouragement or practical help."
+        },
+        {
+          "id": "r3",
+          "prompt": "They ___ out over a disagreement about the house.",
+          "options": [
+            {
+              "id": "c",
+              "text": "kept"
+            },
+            {
+              "id": "a",
+              "text": "fell"
+            },
+            {
+              "id": "b",
+              "text": "made"
+            }
+          ],
+          "explanation": "Fall out with someone means have a serious disagreement or stop being friendly."
+        },
+        {
+          "id": "r4",
+          "prompt": "We live far apart, but we try to keep in ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "contacted"
+            },
+            {
+              "id": "a",
+              "text": "touch"
+            },
+            {
+              "id": "d",
+              "text": "relation"
+            }
+          ],
+          "explanation": "Keep in touch means continue communicating with someone."
+        },
+        {
+          "id": "r5",
+          "prompt": "A person's brothers and sisters are their ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "siblings"
+            },
+            {
+              "id": "d",
+              "text": "neighbours"
+            },
+            {
+              "id": "c",
+              "text": "in-laws"
+            }
+          ],
+          "explanation": "Siblings are brothers and sisters."
+        },
+        {
+          "id": "r6",
+          "prompt": "A family with parents and children from previous relationships is a ___ family.",
+          "options": [
+            {
+              "id": "a",
+              "text": "blended"
+            },
+            {
+              "id": "b",
+              "text": "single"
+            },
+            {
+              "id": "d",
+              "text": "minor"
+            }
+          ],
+          "explanation": "A blended family combines members of previous families."
+        },
+        {
+          "id": "r7",
+          "prompt": "After her parents separated, she became part of a ___ family.",
+          "options": [
+            {
+              "id": "a",
+              "text": "blended"
+            },
+            {
+              "id": "d",
+              "text": "distant"
+            },
+            {
+              "id": "b",
+              "text": "sibling"
+            }
+          ],
+          "explanation": "A blended family includes children or adults from earlier family relationships."
+        },
+        {
+          "id": "r8",
+          "prompt": "I ___ on well with my flatmate's sister.",
+          "options": [
+            {
+              "id": "c",
+              "text": "make"
+            },
+            {
+              "id": "a",
+              "text": "get"
+            },
+            {
+              "id": "b",
+              "text": "keep"
+            }
+          ],
+          "explanation": "Get on with someone means have a good relationship with them."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-family-relationships"
+      ],
+      "tags": [
+        "b1",
+        "conflict",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-family-relationships-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-family-relationships",
+      "subtopic": "b1-family-relationships",
+      "taxonomyNodeIds": [
+        "b1-family-relationships"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "He ___ up to his aunt because she started her own business.",
+          "options": [
+            {
+              "id": "d",
+              "text": "makes"
+            },
+            {
+              "id": "c",
+              "text": "falls"
+            },
+            {
+              "id": "a",
+              "text": "looks"
+            }
+          ],
+          "explanation": "Look up to means admire and respect someone."
+        },
+        {
+          "id": "r2",
+          "prompt": "Your aunt's son is your ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "nephew"
+            },
+            {
+              "id": "b",
+              "text": "stepfather"
+            },
+            {
+              "id": "c",
+              "text": "cousin"
+            }
+          ],
+          "explanation": "A cousin is the child of your aunt or uncle."
+        },
+        {
+          "id": "r3",
+          "prompt": "Her parents ___ her up to be independent.",
+          "options": [
+            {
+              "id": "c",
+              "text": "relied"
+            },
+            {
+              "id": "b",
+              "text": "looked"
+            },
+            {
+              "id": "a",
+              "text": "brought"
+            }
+          ],
+          "explanation": "Bring someone up means raise them from childhood."
+        },
+        {
+          "id": "r4",
+          "prompt": "My husband's mother is my ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "mother-in-law"
+            },
+            {
+              "id": "c",
+              "text": "sister-in-law"
+            },
+            {
+              "id": "a",
+              "text": "stepmother"
+            }
+          ],
+          "explanation": "Your partner's mother is your mother-in-law."
+        },
+        {
+          "id": "r5",
+          "prompt": "A child with no brothers or sisters is an ___ child.",
+          "options": [
+            {
+              "id": "d",
+              "text": "elder"
+            },
+            {
+              "id": "b",
+              "text": "only"
+            },
+            {
+              "id": "c",
+              "text": "close-knit"
+            }
+          ],
+          "explanation": "An only child has no brothers or sisters."
+        },
+        {
+          "id": "r6",
+          "prompt": "I look ___ my niece on Saturdays while her parents work.",
+          "options": [
+            {
+              "id": "a",
+              "text": "after"
+            },
+            {
+              "id": "d",
+              "text": "into"
+            },
+            {
+              "id": "c",
+              "text": "with"
+            }
+          ],
+          "explanation": "Look after means take care of someone; it is different from look up to."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence uses rely on correctly?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I rely my sister after school."
+            },
+            {
+              "id": "c",
+              "text": "I rely to my sister every day."
+            },
+            {
+              "id": "a",
+              "text": "I rely on my sister for honest advice."
+            }
+          ],
+          "explanation": "Rely on is followed directly by the person or thing you trust."
+        },
+        {
+          "id": "r8",
+          "prompt": "She really ___ up to her grandmother.",
+          "options": [
+            {
+              "id": "a",
+              "text": "looks"
+            },
+            {
+              "id": "d",
+              "text": "keeps"
+            },
+            {
+              "id": "c",
+              "text": "brings"
+            }
+          ],
+          "explanation": "Look up to someone means admire them."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-family-relationships"
+      ],
+      "tags": [
+        "b1",
+        "admiration",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

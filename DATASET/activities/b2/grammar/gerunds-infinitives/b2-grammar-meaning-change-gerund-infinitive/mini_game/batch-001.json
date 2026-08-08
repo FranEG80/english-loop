@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-meaning-change-gerund-infinitive-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "gerunds-infinitives",
+  "subtopic": "meaning-change-gerund-infinitive",
+  "lessonId": "b2-grammar-meaning-change-gerund-infinitive",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-meaning-change-gerund-infinitive-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which option recommends a possible solution for a frozen screen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Try restarting the tablet."
+            },
+            {
+              "id": "c",
+              "text": "Stop restarting the tablet."
+            },
+            {
+              "id": "d",
+              "text": "Regret restarting the tablet."
+            }
+          ],
+          "explanation": "Try plus gerund suggests experimenting with a method."
+        },
+        {
+          "id": "r2",
+          "prompt": "The revised timetable means ___ before seven on weekdays.",
+          "options": [
+            {
+              "id": "c",
+              "text": "leave"
+            },
+            {
+              "id": "b",
+              "text": "leaving"
+            },
+            {
+              "id": "a",
+              "text": "to leave"
+            }
+          ],
+          "explanation": "Mean plus gerund expresses a consequence or implication."
+        },
+        {
+          "id": "r3",
+          "prompt": "The notice says that the new procedure will involve ___ an extra form.",
+          "options": [
+            {
+              "id": "d",
+              "text": "completed"
+            },
+            {
+              "id": "b",
+              "text": "completing"
+            },
+            {
+              "id": "a",
+              "text": "to complete"
+            }
+          ],
+          "explanation": "Mean in the sense of involve takes a gerund."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence says that the speaker remembers a completed inspection?",
+          "options": [
+            {
+              "id": "c",
+              "text": "I stopped to inspect the boiler."
+            },
+            {
+              "id": "a",
+              "text": "I remembered to inspect the boiler."
+            },
+            {
+              "id": "b",
+              "text": "I remember inspecting the boiler."
+            }
+          ],
+          "explanation": "Remember inspecting refers to the past experience itself."
+        },
+        {
+          "id": "r5",
+          "prompt": "Lena will never forget ___ the northern lights from the ferry.",
+          "options": [
+            {
+              "id": "a",
+              "text": "seeing"
+            },
+            {
+              "id": "d",
+              "text": "seen"
+            },
+            {
+              "id": "b",
+              "text": "to see"
+            }
+          ],
+          "explanation": "Forget plus gerund refers to a memorable past experience."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence says that the revised route involves an earlier departure?",
+          "options": [
+            {
+              "id": "b",
+              "text": "The route means leaving earlier."
+            },
+            {
+              "id": "a",
+              "text": "The route means to leave earlier."
+            },
+            {
+              "id": "c",
+              "text": "The route remembers leaving earlier."
+            }
+          ],
+          "explanation": "Mean plus gerund expresses what a change involves."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which option reports an unsuccessful effort to lift the crate?",
+          "options": [
+            {
+              "id": "b",
+              "text": "They tried to lift the crate."
+            },
+            {
+              "id": "d",
+              "text": "They meant lifting the crate."
+            },
+            {
+              "id": "a",
+              "text": "They tried lifting the crate."
+            }
+          ],
+          "explanation": "Try to lift presents an effort that may fail."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence gives a formal announcement of bad news?",
+          "options": [
+            {
+              "id": "b",
+              "text": "We regret to announce that the lecture is cancelled."
+            },
+            {
+              "id": "d",
+              "text": "We try announcing the lecture."
+            },
+            {
+              "id": "c",
+              "text": "We stop announcing the lecture."
+            }
+          ],
+          "explanation": "Regret to announce introduces a formal notice."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "try",
+        "method",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-meaning-change-gerund-infinitive-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I meant ___ you the updated route, but the file was corrupted.",
+          "options": [
+            {
+              "id": "a",
+              "text": "sending"
+            },
+            {
+              "id": "b",
+              "text": "to send"
+            },
+            {
+              "id": "d",
+              "text": "sent"
+            }
+          ],
+          "explanation": "Mean to do expresses an intention."
+        },
+        {
+          "id": "r2",
+          "prompt": "Try ___ the antenna beside the window before buying a booster.",
+          "options": [
+            {
+              "id": "b",
+              "text": "moving"
+            },
+            {
+              "id": "a",
+              "text": "to move"
+            },
+            {
+              "id": "d",
+              "text": "moved"
+            }
+          ],
+          "explanation": "Try plus gerund suggests testing a method."
+        },
+        {
+          "id": "r3",
+          "prompt": "After the warning, the factory stopped ___ solvent near the river.",
+          "options": [
+            {
+              "id": "b",
+              "text": "discharging"
+            },
+            {
+              "id": "c",
+              "text": "discharge"
+            },
+            {
+              "id": "d",
+              "text": "discharged"
+            }
+          ],
+          "explanation": "Stop discharging means end the activity."
+        },
+        {
+          "id": "r4",
+          "prompt": "The company regrets ___ that the evening service is unavailable.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to inform"
+            },
+            {
+              "id": "c",
+              "text": "inform"
+            },
+            {
+              "id": "a",
+              "text": "informing"
+            }
+          ],
+          "explanation": "Regret to inform is the conventional formal announcement."
+        },
+        {
+          "id": "r5",
+          "prompt": "The lecturer went on ___ questions after the scheduled finish.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to answer"
+            },
+            {
+              "id": "b",
+              "text": "answering"
+            },
+            {
+              "id": "c",
+              "text": "answer"
+            }
+          ],
+          "explanation": "Go on plus gerund continues the same activity."
+        },
+        {
+          "id": "r6",
+          "prompt": "The team tried ___ the damaged sensor, but it would not start.",
+          "options": [
+            {
+              "id": "a",
+              "text": "replacing"
+            },
+            {
+              "id": "b",
+              "text": "to replace"
+            },
+            {
+              "id": "d",
+              "text": "replaced"
+            }
+          ],
+          "explanation": "Try to replace presents an effort to achieve a result."
+        },
+        {
+          "id": "r7",
+          "prompt": "The cyclist stopped ___ coffee during the training ride.",
+          "options": [
+            {
+              "id": "a",
+              "text": "drinking"
+            },
+            {
+              "id": "d",
+              "text": "drank"
+            },
+            {
+              "id": "b",
+              "text": "to drink"
+            }
+          ],
+          "explanation": "Stop to drink means pause another activity for that purpose."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence means that Noor did not lock the cabinet?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Noor stopped locking the cabinet."
+            },
+            {
+              "id": "a",
+              "text": "Noor forgot locking the cabinet."
+            },
+            {
+              "id": "b",
+              "text": "Noor forgot to lock the cabinet."
+            }
+          ],
+          "explanation": "Forget to do means the required action was not completed."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "mean",
+        "intention",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

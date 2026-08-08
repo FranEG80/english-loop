@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-science-research-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-science-research",
+  "subtopic": "b2-science-research",
+  "lessonId": "b2-vocabulary-science-research",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-science-research-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-science-research",
+      "subtopic": "b2-science-research",
+      "taxonomyNodeIds": [
+        "b2-science-research"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The variable was carefully ___ before the trial began.",
+          "options": [
+            {
+              "id": "b",
+              "text": "concluded"
+            },
+            {
+              "id": "a",
+              "text": "controlled"
+            },
+            {
+              "id": "d",
+              "text": "claimed"
+            }
+          ],
+          "explanation": "A variable can be controlled to isolate an effect."
+        },
+        {
+          "id": "r2",
+          "prompt": "The article ___ a claim about urban noise.",
+          "options": [
+            {
+              "id": "a",
+              "text": "makes"
+            },
+            {
+              "id": "d",
+              "text": "draws"
+            },
+            {
+              "id": "b",
+              "text": "does"
+            }
+          ],
+          "explanation": "Make a claim is a standard academic collocation."
+        },
+        {
+          "id": "r3",
+          "prompt": "The study found a correlation but no proof of ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "causation"
+            },
+            {
+              "id": "c",
+              "text": "replication"
+            },
+            {
+              "id": "d",
+              "text": "sampling"
+            }
+          ],
+          "explanation": "Causation means one factor causes another."
+        },
+        {
+          "id": "r4",
+          "prompt": "A statement that a paper argues for is a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "claim"
+            },
+            {
+              "id": "b",
+              "text": "sample"
+            },
+            {
+              "id": "c",
+              "text": "variable"
+            }
+          ],
+          "explanation": "A claim is an assertion presented in an argument."
+        },
+        {
+          "id": "r5",
+          "prompt": "The results need to be ___ by an independent laboratory.",
+          "options": [
+            {
+              "id": "c",
+              "text": "sampled"
+            },
+            {
+              "id": "d",
+              "text": "claimed"
+            },
+            {
+              "id": "a",
+              "text": "replicated"
+            }
+          ],
+          "explanation": "Replication checks whether results can be reproduced."
+        },
+        {
+          "id": "r6",
+          "prompt": "The researchers ___ a testable hypothesis.",
+          "options": [
+            {
+              "id": "d",
+              "text": "filtered"
+            },
+            {
+              "id": "c",
+              "text": "folded"
+            },
+            {
+              "id": "a",
+              "text": "formulated"
+            }
+          ],
+          "explanation": "Formulate a hypothesis means express it clearly for testing."
+        },
+        {
+          "id": "r7",
+          "prompt": "The study used a ___ method based on interviews.",
+          "options": [
+            {
+              "id": "c",
+              "text": "random"
+            },
+            {
+              "id": "a",
+              "text": "qualitative"
+            },
+            {
+              "id": "d",
+              "text": "significant"
+            }
+          ],
+          "explanation": "Qualitative research explores experiences and meanings, often through interviews."
+        },
+        {
+          "id": "r8",
+          "prompt": "The difference between the groups was statistically ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "representative"
+            },
+            {
+              "id": "d",
+              "text": "random"
+            },
+            {
+              "id": "a",
+              "text": "significant"
+            }
+          ],
+          "explanation": "Statistically significant is a specific research term."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-science-research"
+      ],
+      "tags": [
+        "b2",
+        "variable",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-science-research-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-science-research",
+      "subtopic": "b2-science-research",
+      "taxonomyNodeIds": [
+        "b2-science-research"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The study’s limitations should be ___ in the discussion.",
+          "options": [
+            {
+              "id": "a",
+              "text": "acknowledged"
+            },
+            {
+              "id": "b",
+              "text": "replicated"
+            },
+            {
+              "id": "d",
+              "text": "formulated"
+            }
+          ],
+          "explanation": "Acknowledge limitations means state them openly."
+        },
+        {
+          "id": "r2",
+          "prompt": "The paper underwent peer ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "review"
+            },
+            {
+              "id": "d",
+              "text": "replication"
+            },
+            {
+              "id": "c",
+              "text": "research"
+            }
+          ],
+          "explanation": "Peer review is assessment by other specialists."
+        },
+        {
+          "id": "r3",
+          "prompt": "The findings ___ the original hypothesis.",
+          "options": [
+            {
+              "id": "a",
+              "text": "support"
+            },
+            {
+              "id": "b",
+              "text": "submit"
+            },
+            {
+              "id": "c",
+              "text": "sample"
+            }
+          ],
+          "explanation": "Findings can support or challenge a hypothesis."
+        },
+        {
+          "id": "r4",
+          "prompt": "The report ___ the short duration of the trial.",
+          "options": [
+            {
+              "id": "a",
+              "text": "acknowledges"
+            },
+            {
+              "id": "b",
+              "text": "replicates"
+            },
+            {
+              "id": "c",
+              "text": "formulates"
+            }
+          ],
+          "explanation": "A report acknowledges or recognises a limitation."
+        },
+        {
+          "id": "r5",
+          "prompt": "The survey used a ___ sample of households.",
+          "options": [
+            {
+              "id": "a",
+              "text": "random"
+            },
+            {
+              "id": "c",
+              "text": "theoretical"
+            },
+            {
+              "id": "b",
+              "text": "preliminary"
+            }
+          ],
+          "explanation": "A random sample is selected without a systematic preference."
+        },
+        {
+          "id": "r6",
+          "prompt": "The questionnaire was valid because it measured the intended concept.",
+          "options": [
+            {
+              "id": "b",
+              "text": "random"
+            },
+            {
+              "id": "d",
+              "text": "qualitative"
+            },
+            {
+              "id": "a",
+              "text": "valid"
+            }
+          ],
+          "explanation": "Valid means measuring what it is intended to measure."
+        },
+        {
+          "id": "r7",
+          "prompt": "The sample was too small to be ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "causal"
+            },
+            {
+              "id": "a",
+              "text": "representative"
+            },
+            {
+              "id": "d",
+              "text": "qualitative"
+            }
+          ],
+          "explanation": "Representative means reflecting the wider population."
+        },
+        {
+          "id": "r8",
+          "prompt": "The paper ___ the assumption that the treatment is harmless.",
+          "options": [
+            {
+              "id": "a",
+              "text": "challenges"
+            },
+            {
+              "id": "d",
+              "text": "samples"
+            },
+            {
+              "id": "b",
+              "text": "collects"
+            }
+          ],
+          "explanation": "Challenge an assumption means question its validity."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-science-research"
+      ],
+      "tags": [
+        "b2",
+        "limitations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

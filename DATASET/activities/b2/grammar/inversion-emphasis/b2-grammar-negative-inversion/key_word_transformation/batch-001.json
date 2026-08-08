@@ -1,0 +1,1242 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-negative-inversion-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "inversion-emphasis",
+  "subtopic": "negative-inversion",
+  "lessonId": "b2-grammar-negative-inversion",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I had never eaten such a spicy curry before.",
+      "firstSentence": "I had never eaten such a spicy curry before.",
+      "keyWord": "NEVER",
+      "gapText": "[gap1] I eaten such a spicy curry.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Never before had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Never before» en posición inicial arrastra el auxiliar «had» delante del sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "This is the most nervous I have ever felt.",
+      "firstSentence": "This is the most nervous I have ever felt.",
+      "keyWord": "NEVER",
+      "gapText": "[gap1] so nervous.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Never have I felt",
+              "Never have I been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con «never» al frente, el present perfect invierte «have» y el sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She only relaxed after she had checked every door.",
+      "firstSentence": "She only relaxed after she had checked every door.",
+      "keyWord": "NOT",
+      "gapText": "[gap1] checked every door did she relax.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Not until she had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Not until» abre la frase y la inversión se aplica al verbo principal, no al de la subordinada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The pain stopped only when the medicine took effect.",
+      "firstSentence": "The pain stopped only when the medicine took effect.",
+      "keyWord": "UNTIL",
+      "gapText": "Not [gap1] took effect did the pain stop.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "until the medicine"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «not until» la subordinada mantiene el orden normal y la inversión llega después."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The film had only just started when the power went off.",
+      "firstSentence": "The film had only just started when the power went off.",
+      "keyWord": "HARDLY",
+      "gapText": "[gap1] started when the power went off.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Hardly had the film"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Hardly» exige past perfect invertido y la segunda acción con «when»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "As soon as we sat down, the waiter brought the menu.",
+      "firstSentence": "As soon as we sat down, the waiter brought the menu.",
+      "keyWord": "SOONER",
+      "gapText": "No [gap1] down than the waiter brought the menu.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "sooner had we sat"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«No sooner» se empareja siempre con «than», nunca con «when»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She had no idea that the interview would last three hours.",
+      "firstSentence": "She had no idea that the interview would last three hours.",
+      "keyWord": "LITTLE",
+      "gapText": "[gap1] that the interview would last three hours.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Little did she know"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Little» con valor negativo obliga al auxiliar «did» antes del sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You must not open this door while the machine is running.",
+      "firstSentence": "You must not open this door while the machine is running.",
+      "keyWord": "CIRCUMSTANCES",
+      "gapText": "Under [gap1] open this door while the machine is running.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "no circumstances must you",
+              "no circumstances should you"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Under no circumstances» adelanta el modal por delante del sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I understood the joke only when Marta explained it.",
+      "firstSentence": "I understood the joke only when Marta explained it.",
+      "keyWord": "ONLY",
+      "gapText": "[gap1] it did I understand the joke.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Only when Marta explained"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El grupo «only when» invierte la oración principal, no la temporal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The council acted after the residents had complained twice.",
+      "firstSentence": "The council acted after the residents had complained twice.",
+      "keyWord": "ONLY",
+      "gapText": "[gap1] complained twice did the council act.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Only after the residents had"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Only after» retrasa la acción principal, que aparece ya invertida."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We seldom get complaints about the food here.",
+      "firstSentence": "We seldom get complaints about the food here.",
+      "keyWord": "RARELY",
+      "gapText": "[gap1] complaints about the food here.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Rarely do we get",
+              "Rarely do we receive"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Los adverbios de frecuencia negativa como «rarely» piden auxiliar «do» al frente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The director hardly ever attends the weekly meetings.",
+      "firstSentence": "The director hardly ever attends the weekly meetings.",
+      "keyWord": "SELDOM",
+      "gapText": "[gap1] the weekly meetings.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Seldom does the director attend"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con «seldom» inicial el verbo pierde la «s» de tercera persona y la toma «does»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I refuse to lend him my car again.",
+      "firstSentence": "I refuse to lend him my car again.",
+      "keyWord": "WAY",
+      "gapText": "No [gap1] him my car again.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "way will I lend",
+              "way am I lending"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«No way» inicial expresa rechazo rotundo e invierte el auxiliar de futuro."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Visitors must never feed the animals.",
+      "firstSentence": "Visitors must never feed the animals.",
+      "keyWord": "ACCOUNT",
+      "gapText": "On [gap1] feed the animals.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "no account must visitors",
+              "no account should visitors"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«On no account» es la fórmula formal de prohibición y arrastra el modal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We were hardly inside the house when the storm broke.",
+      "firstSentence": "We were hardly inside the house when the storm broke.",
+      "keyWord": "SCARCELY",
+      "gapText": "[gap1] inside the house when the storm broke.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Scarcely had we got"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Scarcely» funciona como «hardly» y también combina con «when»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He did not complain a single time during the trip.",
+      "firstSentence": "He did not complain a single time during the trip.",
+      "keyWord": "ONCE",
+      "gapText": "Not [gap1] during the trip.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "once did he complain"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Not once» enfatiza la ausencia total y exige el auxiliar «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You cannot find better bread anywhere else in the city.",
+      "firstSentence": "You cannot find better bread anywhere else in the city.",
+      "keyWord": "NOWHERE",
+      "gapText": "[gap1] in the city can you find better bread.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Nowhere else"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Un adverbio de lugar negativo como «nowhere» adelanta el modal «can»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I realised my mistake only at that moment.",
+      "firstSentence": "I realised my mistake only at that moment.",
+      "keyWord": "DID",
+      "gapText": "Only then [gap1] mistake.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "did I realise my"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Only then» cierra la referencia temporal y exige la inversión con «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The company stopped accepting cash payments last year.",
+      "firstSentence": "The company stopped accepting cash payments last year.",
+      "keyWord": "LONGER",
+      "gapText": "No [gap1] cash payments.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "longer does the company accept"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«No longer» al principio expresa el cese de una costumbre e invierte el auxiliar."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The truth came out only after the trial had ended.",
+      "firstSentence": "The truth came out only after the trial had ended.",
+      "keyWord": "HAD",
+      "gapText": "Not until the trial [gap1] the truth come out.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had ended did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La subordinada lleva past perfect y la principal la inversión con «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Tom did not sign the contract and his partner did not sign it either.",
+      "firstSentence": "Tom did not sign the contract and his partner did not sign it either.",
+      "keyWord": "NEITHER",
+      "gapText": "Tom did not sign the contract and [gap1] his partner.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "neither did"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Neither» recoge una negación previa e invierte el auxiliar."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The manager did not apologise and he did not offer a refund.",
+      "firstSentence": "The manager did not apologise and he did not offer a refund.",
+      "keyWord": "NOR",
+      "gapText": "The manager did not apologise, [gap1] a refund.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "nor did he offer"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Nor» encadena una segunda negación con el orden auxiliar más sujeto."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The moment I closed my eyes, the alarm rang.",
+      "firstSentence": "The moment I closed my eyes, the alarm rang.",
+      "keyWord": "BARELY",
+      "gapText": "[gap1] my eyes when the alarm rang.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Barely had I closed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Barely» marca inmediatez y pide past perfect invertido."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I never believed his story for a single moment.",
+      "firstSentence": "I never believed his story for a single moment.",
+      "keyWord": "MOMENT",
+      "gapText": "Not [gap1] believe his story.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "for a moment did I"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Not for a moment» refuerza la negación y adelanta el auxiliar «did»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You can pass the test just by practising every day.",
+      "firstSentence": "You can pass the test just by practising every day.",
+      "keyWord": "BY",
+      "gapText": "Only [gap1] every day can you pass the test.",
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "inversion"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "by practising"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Only by» más gerundio deja el modal «can» delante del sujeto."
+    }
+  ]
+}

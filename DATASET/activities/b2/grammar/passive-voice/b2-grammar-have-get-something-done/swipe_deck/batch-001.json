@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-have-get-something-done-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "have-get-something-done",
+  "lessonId": "b2-grammar-have-get-something-done",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-have-get-something-done-sd-041",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "have-get-something-done",
+      "taxonomyNodeIds": [
+        "have-get-something-done"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She is having repaired her bicycle at the moment.",
+          "explanation": "El objeto debe ir entre el verbo y el participio: is having her bicycle repaired."
+        },
+        {
+          "id": "c2",
+          "statement": "The theatre will have replacing the seats before opening night.",
+          "explanation": "Después de will have necesitamos un objeto y un participio: will have the seats replaced."
+        },
+        {
+          "id": "c3",
+          "statement": "The family had their roof repaired after the winter storm.",
+          "explanation": "Had their roof repaired indica que encargaron la reparación."
+        },
+        {
+          "id": "c4",
+          "statement": "Can we have the report translate by Friday?",
+          "explanation": "Después del objeto report necesitamos el participio translated."
+        },
+        {
+          "id": "c5",
+          "statement": "You must have the permit signed before construction begins.",
+          "explanation": "Must have + objeto + signed expresa una obligación administrativa."
+        },
+        {
+          "id": "c6",
+          "statement": "He had his wallet steal on the bus.",
+          "explanation": "El participio correcto es stolen: had his wallet stolen."
+        },
+        {
+          "id": "c7",
+          "statement": "I will have the lock changing before the tenants arrive.",
+          "explanation": "La causativa requiere el participio changed, no el gerundio changing."
+        },
+        {
+          "id": "c8",
+          "statement": "The hotel gets its carpets clean every Friday.",
+          "explanation": "La causativa requiere el participio cleaned, no el adjetivo o forma base clean."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-have-get-something-done"
+      ],
+      "tags": [
+        "b2",
+        "causative",
+        "common-error",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-have-get-something-done-sd-104",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "have-get-something-done",
+      "taxonomyNodeIds": [
+        "have-get-something-done"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The company got the software testing before release.",
+          "explanation": "En la causativa necesitamos el participio tested, no el gerundio testing."
+        },
+        {
+          "id": "c2",
+          "statement": "The residents have their water meters checked every spring.",
+          "explanation": "Have + object + checked describe un mantenimiento periódico."
+        },
+        {
+          "id": "c3",
+          "statement": "Mina got her visa approve at the border.",
+          "explanation": "El participio de approve es approved: got her visa approved."
+        },
+        {
+          "id": "c4",
+          "statement": "Mina has just got her visa approved.",
+          "explanation": "Has just got + objeto + approved indica un resultado recién conseguido."
+        },
+        {
+          "id": "c5",
+          "statement": "The shop had its window broken during the demonstration.",
+          "explanation": "La forma causativa también expresa una experiencia negativa sufrida por el comercio."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-have-get-something-done"
+      ],
+      "tags": [
+        "b2",
+        "causative",
+        "common-error",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-have-get-something-done-sd-167",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "have-get-something-done",
+      "taxonomyNodeIds": [
+        "have-get-something-done"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "I will have the lock changed before the tenants arrive.",
+          "explanation": "Will have + object + changed expresa un servicio futuro."
+        },
+        {
+          "id": "c2",
+          "statement": "The engineers are having inspected their helmets at the depot.",
+          "explanation": "El objeto debe ir entre having y el participio: are having their helmets inspected."
+        },
+        {
+          "id": "c3",
+          "statement": "The shop had its window broke during the demonstration.",
+          "explanation": "El participio irregular de break es broken."
+        },
+        {
+          "id": "c4",
+          "statement": "I got my passport renewed at the consulate last week.",
+          "explanation": "Got + objeto + renewed describe un trámite conseguido."
+        },
+        {
+          "id": "c5",
+          "statement": "The engineer is having the sensor calibrated in the clean room.",
+          "explanation": "Is having + objeto + calibrated presenta un servicio en curso."
+        },
+        {
+          "id": "c6",
+          "statement": "The theatre will get its seats replaced before opening night.",
+          "explanation": "Will get + objeto + replaced expresa un resultado futuro conseguido."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-have-get-something-done"
+      ],
+      "tags": [
+        "b2",
+        "causative",
+        "future",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

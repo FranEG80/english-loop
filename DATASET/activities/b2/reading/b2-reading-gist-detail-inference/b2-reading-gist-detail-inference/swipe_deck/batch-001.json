@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-reading-gist-detail-inference-swipe-deck-001",
+  "level": "B2",
+  "category": "reading",
+  "topic": "b2-reading-gist-detail-inference",
+  "subtopic": "b2-reading-gist-detail-inference",
+  "lessonId": "b2-reading-gist-detail-inference",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-gist-detail-inference-sd-051",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b2-reading-gist-detail-inference",
+      "subtopic": "b2-reading-gist-detail-inference",
+      "taxonomyNodeIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The rooftop garden removed the need for cooling.",
+          "explanation": "A slight reduction does not mean cooling is no longer needed."
+        },
+        {
+          "id": "c2",
+          "statement": "Sharing agendas was associated with less repeated discussion.",
+          "explanation": "The passage links the organisational changes with less repetition."
+        },
+        {
+          "id": "c3",
+          "statement": "The audio-guide ratings definitely represent every visitor.",
+          "explanation": "Self-selection means the ratings cannot definitely represent every visitor."
+        },
+        {
+          "id": "c4",
+          "statement": "The timetable result covers the whole network.",
+          "explanation": "Only two routes were observed and other routes still need monitoring."
+        },
+        {
+          "id": "c5",
+          "statement": "The two neighbourhoods had identical age profiles.",
+          "explanation": "The passage says their age profiles were different."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "scope",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-gist-detail-inference-sd-114",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b2-reading-gist-detail-inference",
+      "subtopic": "b2-reading-gist-detail-inference",
+      "taxonomyNodeIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The evening option attracted more applicants.",
+          "explanation": "The first clause directly states the increase."
+        },
+        {
+          "id": "c2",
+          "statement": "The audio-guide evaluation included visitors who refused to borrow it.",
+          "explanation": "Only users who chose to borrow it were evaluated."
+        },
+        {
+          "id": "c3",
+          "statement": "The researchers repeated the test with a larger sample.",
+          "explanation": "More participants means the second test used a larger sample."
+        },
+        {
+          "id": "c4",
+          "statement": "The library's self-service returns eliminated staff roles.",
+          "explanation": "The passage explicitly says staff were not removed."
+        },
+        {
+          "id": "c5",
+          "statement": "Sharing an office reduced rent but increased interruptions.",
+          "explanation": "Both sides of the trade-off are stated directly."
+        },
+        {
+          "id": "c6",
+          "statement": "The mentoring result can automatically be applied to every absent student.",
+          "explanation": "The unknown participation of the most absent students prevents that generalisation."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "detail",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-gist-detail-inference-sd-177",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b2-reading-gist-detail-inference",
+      "subtopic": "b2-reading-gist-detail-inference",
+      "taxonomyNodeIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The pilot attracted no volunteers.",
+          "explanation": "The passage says volunteers arrived quickly."
+        },
+        {
+          "id": "c2",
+          "statement": "The shuttle connected older residents with clinics.",
+          "explanation": "Clinics are one of the destinations named in the passage."
+        },
+        {
+          "id": "c3",
+          "statement": "The library report compared users and non-users.",
+          "explanation": "The passage explicitly says that comparison was not made."
+        },
+        {
+          "id": "c4",
+          "statement": "The committee considered ten-year maintenance costs.",
+          "explanation": "The ten-year comparison is explicit."
+        },
+        {
+          "id": "c5",
+          "statement": "Publishing the raw responses supports transparency.",
+          "explanation": "Readers can inspect the evidence and method for themselves."
+        },
+        {
+          "id": "c6",
+          "statement": "Employees used the quiet room mainly before demanding activities.",
+          "explanation": "The usage pattern supports that inference."
+        },
+        {
+          "id": "c7",
+          "statement": "The evening course's completion rate was measured.",
+          "explanation": "The passage explicitly says completion rates were not measured."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "pilot",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

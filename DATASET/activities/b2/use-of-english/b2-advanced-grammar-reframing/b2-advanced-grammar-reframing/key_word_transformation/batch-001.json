@@ -22,27 +22,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "People believe the bridge is unsafe. The bridge is ___ unsafe.",
-      "firstSentence": "People believe the bridge is unsafe.",
-      "keyWord": "BELIEVED",
-      "gapText": "The bridge is [gap1] unsafe.",
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I decided to stop smoking only three days ago.",
+      "firstSentence": "I decided to stop smoking only three days ago.",
+      "keyWord": "GIVE",
+      "gapText": "It was only three days ago that I made [gap1] smoking.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 45,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "believed to be"
+              "the decision to give up"
             ]
           }
         ],
@@ -54,7 +54,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "The reporting passive is believed to be."
+      "explanation": "«Make the decision to» más el phrasal «give up» mantiene la clave intacta."
     },
     {
       "schemaVersion": "2.0.0",
@@ -70,27 +70,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "They say the museum has closed. The museum is ___ closed.",
-      "firstSentence": "They say the museum has closed.",
-      "keyWord": "SAID",
-      "gapText": "The museum is [gap1] closed.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We did not reserve seats, so we could not sit together.",
+      "firstSentence": "We did not reserve seats, so we could not sit together.",
+      "keyWord": "HAD",
+      "gapText": "If we [gap1] seats, we could have sat together.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 45,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "said to have"
+              "had reserved"
             ]
           }
         ],
@@ -102,7 +102,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "The perfect reporting infinitive shows the earlier closure."
+      "explanation": "Tercera condicional: «if» más past perfect."
     },
     {
       "schemaVersion": "2.0.0",
@@ -118,27 +118,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "Perhaps the train is delayed. The train ___ delayed.",
-      "firstSentence": "Perhaps the train is delayed.",
-      "keyWord": "MIGHT",
-      "gapText": "The train [gap1] delayed.",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The meeting was cancelled because of the storm.",
+      "firstSentence": "The meeting was cancelled because of the storm.",
+      "keyWord": "OWING",
+      "gapText": "The meeting was cancelled [gap1] storm.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 45,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "might be"
+              "owing to the"
             ]
           }
         ],
@@ -150,7 +150,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Might be expresses present possibility."
+      "explanation": "«Owing to» introduce la causa igual que «because of»."
     },
     {
       "schemaVersion": "2.0.0",
@@ -166,27 +166,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "I regret not taking notes. I wish I ___.",
-      "firstSentence": "I regret not taking notes.",
-      "keyWord": "TAKEN",
-      "gapText": "I wish I [gap1].",
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I regret not applying for that job.",
+      "firstSentence": "I regret not applying for that job.",
+      "keyWord": "WISH",
+      "gapText": "I [gap1] for that job.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 45,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had taken notes"
+              "wish I had applied"
             ]
           }
         ],
@@ -198,7 +198,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Wish about a past regret takes past perfect."
+      "explanation": "Arrepentimiento sobre el pasado: «wish» más past perfect."
     },
     {
       "schemaVersion": "2.0.0",
@@ -214,27 +214,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 2,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The red route is longer than the blue route. The blue route is ___ the red route.",
-      "firstSentence": "The red route is longer than the blue route.",
-      "keyWord": "SHORTER",
-      "gapText": "The blue route is [gap1] the red route.",
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "They will finish the report by Friday.",
+      "firstSentence": "They will finish the report by Friday.",
+      "keyWord": "HAVE",
+      "gapText": "The report [gap1] by Friday.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 45,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "shorter than"
+              "will have been finished"
             ]
           }
         ],
@@ -246,7 +246,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "The comparative relation is preserved with shorter than."
+      "explanation": "Pasiva de future perfect: «will have been» más participio."
     },
     {
       "schemaVersion": "2.0.0",
@@ -263,26 +263,26 @@
         "b2-advanced-grammar-reframing"
       ],
       "difficulty": 3,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "Someone has stolen the painting. The painting ___.",
-      "firstSentence": "Someone has stolen the painting.",
-      "keyWord": "BEEN",
-      "gapText": "The painting [gap1].",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It is possible that she missed the train.",
+      "firstSentence": "It is possible that she missed the train.",
+      "keyWord": "MIGHT",
+      "gapText": "She [gap1] the train.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 50,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "has been stolen"
+              "might have missed"
             ]
           }
         ],
@@ -294,7 +294,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "The present perfect passive is has been stolen."
+      "explanation": "Posibilidad en el pasado: «might have» más participio."
     },
     {
       "schemaVersion": "2.0.0",
@@ -311,26 +311,26 @@
         "b2-advanced-grammar-reframing"
       ],
       "difficulty": 3,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "‘I finished the report,’ Ana said. Ana said that she ___.",
-      "firstSentence": "‘I finished the report,’ Ana said.",
-      "keyWord": "FINISHED",
-      "gapText": "Ana said that she [gap1].",
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Someone is repairing the roof at the moment.",
+      "firstSentence": "Someone is repairing the roof at the moment.",
+      "keyWord": "BEING",
+      "gapText": "The roof [gap1] at the moment.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 50,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had finished the report"
+              "is being repaired"
             ]
           }
         ],
@@ -342,7 +342,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Backshift changes finished to had finished."
+      "explanation": "Pasiva de presente continuo: «is being» más participio."
     },
     {
       "schemaVersion": "2.0.0",
@@ -358,27 +358,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 3,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "It was a mistake not to check the figures. We should ___.",
-      "firstSentence": "It was a mistake not to check the figures.",
-      "keyWord": "CHECKED",
-      "gapText": "We should [gap1].",
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I have never eaten such a good curry.",
+      "firstSentence": "I have never eaten such a good curry.",
+      "keyWord": "BEST",
+      "gapText": "This is [gap1] I have ever eaten.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 50,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "have checked the figures"
+              "the best curry"
             ]
           }
         ],
@@ -390,7 +390,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Should have checked expresses past criticism or regret."
+      "explanation": "El superlativo reformula «never such a good»."
     },
     {
       "schemaVersion": "2.0.0",
@@ -406,27 +406,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 3,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The team started working at dawn. By eight, they ___.",
-      "firstSentence": "The team started working at dawn.",
-      "keyWord": "WORKED",
-      "gapText": "By eight, they [gap1].",
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She only understood the problem after reading the report.",
+      "firstSentence": "She only understood the problem after reading the report.",
+      "keyWord": "UNTIL",
+      "gapText": "Not [gap1] the report did she understand the problem.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 50,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "had been working for two hours"
+              "until she had read"
             ]
           }
         ],
@@ -438,7 +438,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Past perfect continuous highlights duration before eight."
+      "explanation": "Inversión con «not until» y past perfect."
     },
     {
       "schemaVersion": "2.0.0",
@@ -454,27 +454,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 3,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The committee will probably reject the plan. The plan ___.",
-      "firstSentence": "The committee will probably reject the plan.",
-      "keyWord": "LIKELY",
-      "gapText": "The plan [gap1].",
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The hotel was so noisy that we could not sleep.",
+      "firstSentence": "The hotel was so noisy that we could not sleep.",
+      "keyWord": "SUCH",
+      "gapText": "It was [gap1] that we could not sleep.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 50,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "is likely to be rejected"
+              "such a noisy hotel"
             ]
           }
         ],
@@ -486,7 +486,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Is likely to be rejected combines likelihood and passive voice."
+      "explanation": "«So + adjetivo» pasa a «such a + adjetivo + sustantivo»."
     },
     {
       "schemaVersion": "2.0.0",
@@ -502,27 +502,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "People think the scientist discovered the pattern. The scientist ___.",
-      "firstSentence": "People think the scientist discovered the pattern.",
-      "keyWord": "THOUGHT",
-      "gapText": "The scientist [gap1].",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You should have told me earlier.",
+      "firstSentence": "You should have told me earlier.",
+      "keyWord": "OUGHT",
+      "gapText": "You [gap1] me earlier.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 55,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "is thought to have discovered the pattern"
+              "ought to have told"
             ]
           }
         ],
@@ -534,7 +534,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "To have discovered marks the earlier discovery."
+      "explanation": "«Ought to have» equivale a «should have» más participio."
     },
     {
       "schemaVersion": "2.0.0",
@@ -550,27 +550,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "‘We may need more staff,’ the manager said. The manager said that they ___.",
-      "firstSentence": "‘We may need more staff,’ the manager said.",
-      "keyWord": "MIGHT",
-      "gapText": "The manager said that they [gap1].",
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Despite the rain, the match continued.",
+      "firstSentence": "Despite the rain, the match continued.",
+      "keyWord": "SPITE",
+      "gapText": "The match continued [gap1] rain.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 55,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "might need more staff"
+              "in spite of the"
             ]
           }
         ],
@@ -582,7 +582,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "May backshifts to might in reported speech."
+      "explanation": "«In spite of» es la forma larga de «despite»."
     },
     {
       "schemaVersion": "2.0.0",
@@ -598,27 +598,27 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "I did not expect the test to be so demanding. The test was more demanding ___.",
-      "firstSentence": "I did not expect the test to be so demanding.",
-      "keyWord": "THOUGHT",
-      "gapText": "The test was more demanding [gap1].",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He did not tell me, so I did not know.",
+      "firstSentence": "He did not tell me, so I did not know.",
+      "keyWord": "HAD",
+      "gapText": "If he [gap1] me, I would have known.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 55,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "than I thought"
+              "had told"
             ]
           }
         ],
@@ -630,7 +630,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "Than I thought completes the comparative clause."
+      "explanation": "Tercera condicional en positivo a partir de la negativa."
     },
     {
       "schemaVersion": "2.0.0",
@@ -646,27 +646,28 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "We missed the deadline because we started late. If we had started earlier, we ___.",
-      "firstSentence": "We missed the deadline because we started late.",
-      "keyWord": "MISSED",
-      "gapText": "If we had started earlier, we [gap1].",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The last time I saw Ana was in 2019.",
+      "firstSentence": "The last time I saw Ana was in 2019.",
+      "keyWord": "FOR",
+      "gapText": "I have not seen Ana [gap1].",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
+        "rewriting"
       ],
-      "estimatedSeconds": 55,
+      "estimatedSeconds": 60,
       "evaluator": {
         "strategy": "per_gap",
         "gaps": [
           {
             "gapId": "gap1",
             "answers": [
-              "would not have missed the deadline"
+              "for several years",
+              "for many years"
             ]
           }
         ],
@@ -678,7 +679,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "The third conditional describes the unreal past result."
+      "explanation": "«For» introduce la duración, «since» el punto de partida."
     },
     {
       "schemaVersion": "2.0.0",
@@ -694,66 +695,18 @@
       "taxonomyNodeIds": [
         "b2-advanced-grammar-reframing"
       ],
-      "difficulty": 4,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The storm prevented us from travelling. We could not travel because of the storm.",
-      "firstSentence": "The storm prevented us from travelling. We could not travel because of the storm.",
-      "keyWord": "ABLE",
-      "gapText": "[gap1]",
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It was a mistake to leave so early.",
+      "firstSentence": "It was a mistake to leave so early.",
+      "keyWord": "SHOULD",
+      "gapText": "We [gap1] so early.",
       "lessonIds": [
         "b2-advanced-grammar-reframing"
       ],
       "tags": [
         "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "were not able to travel"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Were not able to expresses the same inability."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-016",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "They expect the tunnel to reopen by Friday. The tunnel ___.",
-      "firstSentence": "They expect the tunnel to reopen by Friday.",
-      "keyWord": "EXPECTED",
-      "gapText": "The tunnel [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
+        "rewriting"
       ],
       "estimatedSeconds": 60,
       "evaluator": {
@@ -762,7 +715,7 @@
           {
             "gapId": "gap1",
             "answers": [
-              "is expected to have reopened by Friday"
+              "should not have left"
             ]
           }
         ],
@@ -774,439 +727,7 @@
           "normaliseApostrophes": true
         }
       },
-      "explanation": "The perfect infinitive places reopening before Friday."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-017",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The report says the policy has reduced waste. The policy is reported ___.",
-      "firstSentence": "The report says the policy has reduced waste.",
-      "keyWord": "REDUCED",
-      "gapText": "The policy is reported [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "to have reduced waste"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Reported to have reduced uses a perfect infinitive."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-018",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "I regret ignoring the warning. I wish I ___.",
-      "firstSentence": "I regret ignoring the warning.",
-      "keyWord": "IGNORED",
-      "gapText": "I wish I [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "had not ignored the warning"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Wish about a past regret takes had not ignored."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-019",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The blue model is considerably cheaper than the red model. The red model is ___ the blue model.",
-      "firstSentence": "The blue model is considerably cheaper than the red model.",
-      "keyWord": "EXPENSIVE",
-      "gapText": "The red model is [gap1] the blue model.",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "considerably more expensive than"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "The comparative and intensifier preserve the meaning."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-020",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "People believe the files were deleted accidentally. The files are believed ___.",
-      "firstSentence": "People believe the files were deleted accidentally.",
-      "keyWord": "DELETED",
-      "gapText": "The files are believed [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "to have been deleted accidentally"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "The perfect passive infinitive expresses an earlier event suffered by the files."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-021",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "We did not reserve seats, so we could not sit together. If we had reserved seats, we ___.",
-      "firstSentence": "We did not reserve seats, so we could not sit together.",
-      "keyWord": "SAT",
-      "gapText": "If we had reserved seats, we [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "would have sat together"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Would have sat gives the unreal past result."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-022",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "‘You must submit the form today,’ she told me. She told me I ___.",
-      "firstSentence": "‘You must submit the form today,’ she told me.",
-      "keyWord": "SUBMIT",
-      "gapText": "She told me I [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "had to submit the form that day"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Must backshifts to had to and today to that day."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-023",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The evidence suggests the treatment is safe. The treatment appears ___.",
-      "firstSentence": "The evidence suggests the treatment is safe.",
-      "keyWord": "SAFE",
-      "gapText": "The treatment appears [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "to be safe"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "Appears to be expresses a cautious inference."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-024",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "The old plan was less effective than the new plan. The new plan was ___ the old plan.",
-      "firstSentence": "The old plan was less effective than the new plan.",
-      "keyWord": "EFFECTIVE",
-      "gapText": "The new plan was [gap1] the old plan.",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "more effective than"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "The comparative reverses the original relation."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b2-advanced-grammar-reframing-kwt-025",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "key_word_transformation",
-      "skillFocus": "key_word_transformation",
-      "category": "use-of-english",
-      "topic": "b2-advanced-grammar-reframing",
-      "subtopic": "b2-advanced-grammar-reframing",
-      "taxonomyNodeIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the second sentence using the key word.",
-      "prompt": "They say the statue was made overseas. The statue is said ___.",
-      "firstSentence": "They say the statue was made overseas.",
-      "keyWord": "MADE",
-      "gapText": "The statue is said [gap1].",
-      "lessonIds": [
-        "b2-advanced-grammar-reframing"
-      ],
-      "tags": [
-        "b2",
-        "transformations"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "to have been made overseas"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "The perfect passive reporting form is to have been made."
+      "explanation": "Crítica de una acción pasada: «should not have» más participio."
     }
   ]
 }

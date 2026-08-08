@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-prepositional-fixed-phrases-mini-game-001",
+  "level": "B2",
+  "category": "prepositions",
+  "topic": "b2-prepositional-fixed-phrases",
+  "subtopic": "b2-prepositional-fixed-phrases",
+  "lessonId": "b2-prepositional-fixed-phrases",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-prepositional-fixed-phrases-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-prepositional-fixed-phrases",
+      "subtopic": "b2-prepositional-fixed-phrases",
+      "taxonomyNodeIds": [
+        "b2-prepositional-fixed-phrases"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The wetland is ___ threat from development.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at risk"
+            },
+            {
+              "id": "a",
+              "text": "under threat"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            }
+          ],
+          "explanation": "Only “under threat” expresses in danger in this context."
+        },
+        {
+          "id": "r2",
+          "prompt": "They organised the urgent meeting ___ short notice.",
+          "options": [
+            {
+              "id": "a",
+              "text": "at short notice"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "e",
+              "text": "under pressure"
+            }
+          ],
+          "explanation": "Only “at short notice” expresses with little warning in this context."
+        },
+        {
+          "id": "r3",
+          "prompt": "This is ___ far the strongest option.",
+          "options": [
+            {
+              "id": "a",
+              "text": "by"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            }
+          ],
+          "explanation": "The phrase “by far” means clearly or greatly, so it requires “by”."
+        },
+        {
+          "id": "r4",
+          "prompt": "The manager acted ___ response to a formal complaint.",
+          "options": [
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "a",
+              "text": "in response to"
+            },
+            {
+              "id": "c",
+              "text": "on behalf of"
+            }
+          ],
+          "explanation": "Only “in response to” expresses as a reaction in this context."
+        },
+        {
+          "id": "r5",
+          "prompt": "Priya is ___ charge of the evening shift.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on behalf of"
+            },
+            {
+              "id": "d",
+              "text": "under pressure"
+            },
+            {
+              "id": "a",
+              "text": "in charge of"
+            }
+          ],
+          "explanation": "Only “in charge of” expresses responsibility in this context."
+        },
+        {
+          "id": "r6",
+          "prompt": "The board supports the proposal ___ principle.",
+          "options": [
+            {
+              "id": "e",
+              "text": "under pressure"
+            },
+            {
+              "id": "a",
+              "text": "in principle"
+            },
+            {
+              "id": "c",
+              "text": "on behalf of"
+            }
+          ],
+          "explanation": "Only “in principle” expresses generally, before details in this context."
+        },
+        {
+          "id": "r7",
+          "prompt": "Those safety instructions are ___ of date.",
+          "options": [
+            {
+              "id": "a",
+              "text": "out of date"
+            },
+            {
+              "id": "d",
+              "text": "at risk"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            }
+          ],
+          "explanation": "Only “out of date” expresses no longer current in this context."
+        },
+        {
+          "id": "r8",
+          "prompt": "Under ___ circumstances should you share the data.",
+          "options": [
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "no"
+            }
+          ],
+          "explanation": "The phrase “under no circumstances” means not ever, so it requires “no”."
+        }
+      ],
+      "lessonIds": [
+        "b2-prepositional-fixed-phrases"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "multiple-choice-cloze",
+        "meaning",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-prepositional-fixed-phrases-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-prepositional-fixed-phrases",
+      "subtopic": "b2-prepositional-fixed-phrases",
+      "taxonomyNodeIds": [
+        "b2-prepositional-fixed-phrases"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The old bridge is ___ risk after the storm.",
+          "options": [
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "a",
+              "text": "at risk"
+            },
+            {
+              "id": "d",
+              "text": "under pressure"
+            }
+          ],
+          "explanation": "Only “at risk” expresses danger in this context."
+        },
+        {
+          "id": "r2",
+          "prompt": "Public trust is ___ stake in this decision.",
+          "options": [
+            {
+              "id": "e",
+              "text": "under pressure"
+            },
+            {
+              "id": "a",
+              "text": "at stake"
+            },
+            {
+              "id": "c",
+              "text": "on behalf of"
+            }
+          ],
+          "explanation": "Only “at stake” expresses in danger of being lost in this context."
+        },
+        {
+          "id": "r3",
+          "prompt": "The trainer explained the new procedure ___ detail.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in detail"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "d",
+              "text": "at risk"
+            }
+          ],
+          "explanation": "Only “in detail” expresses thoroughly in this context."
+        },
+        {
+          "id": "r4",
+          "prompt": "Please book your place ___ advance.",
+          "options": [
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "a",
+              "text": "in advance"
+            },
+            {
+              "id": "c",
+              "text": "on behalf of"
+            }
+          ],
+          "explanation": "Only “in advance” expresses beforehand in this context."
+        },
+        {
+          "id": "r5",
+          "prompt": "The support team is working ___ pressure this week.",
+          "options": [
+            {
+              "id": "a",
+              "text": "under pressure"
+            },
+            {
+              "id": "d",
+              "text": "at risk"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            }
+          ],
+          "explanation": "Only “under pressure” expresses difficult conditions in this context."
+        },
+        {
+          "id": "r6",
+          "prompt": "___ the event of an evacuation, use the side exit.",
+          "options": [
+            {
+              "id": "d",
+              "text": "under"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            }
+          ],
+          "explanation": "The phrase “in the event of” means if this happens, so it requires “in”."
+        },
+        {
+          "id": "r7",
+          "prompt": "The town has several problems ___ common with neighbouring towns.",
+          "options": [
+            {
+              "id": "e",
+              "text": "under pressure"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "a",
+              "text": "in common with"
+            }
+          ],
+          "explanation": "Only “in common with” expresses shared in this context."
+        },
+        {
+          "id": "r8",
+          "prompt": "The town has several problems ___ common with neighbouring towns.",
+          "options": [
+            {
+              "id": "d",
+              "text": "under"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            }
+          ],
+          "explanation": "The phrase “in common with” means shared, so it requires “in”."
+        }
+      ],
+      "lessonIds": [
+        "b2-prepositional-fixed-phrases"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "multiple-choice-cloze",
+        "meaning",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

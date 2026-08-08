@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-collocations-fixed-expressions-mini-game-001",
+  "level": "B2",
+  "category": "use-of-english",
+  "topic": "b2-collocations-fixed-expressions",
+  "subtopic": "b2-collocations-fixed-expressions",
+  "lessonId": "b2-collocations-fixed-expressions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-fixed-expressions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-collocations-fixed-expressions",
+      "subtopic": "b2-collocations-fixed-expressions",
+      "taxonomyNodeIds": [
+        "b2-collocations-fixed-expressions"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "___, the committee approved the proposal.",
+          "options": [
+            {
+              "id": "a",
+              "text": "In the end"
+            },
+            {
+              "id": "b",
+              "text": "In the long run"
+            },
+            {
+              "id": "c",
+              "text": "At short notice"
+            }
+          ],
+          "explanation": "In the end presenta el resultado final de una secuencia."
+        },
+        {
+          "id": "r2",
+          "prompt": "Under no ___ may confidential data be copied.",
+          "options": [
+            {
+              "id": "a",
+              "text": "circumstances"
+            },
+            {
+              "id": "d",
+              "text": "occasion"
+            },
+            {
+              "id": "c",
+              "text": "condition"
+            }
+          ],
+          "explanation": "La expresión fija usa circunstancias en plural."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which expression introduces a prohibition without exceptions?",
+          "options": [
+            {
+              "id": "a",
+              "text": "under no circumstances"
+            },
+            {
+              "id": "c",
+              "text": "at short notice"
+            },
+            {
+              "id": "b",
+              "text": "in the long run"
+            }
+          ],
+          "explanation": "Under no circumstances significa en ninguna circunstancia."
+        },
+        {
+          "id": "r4",
+          "prompt": "By no ___ should the password be shared.",
+          "options": [
+            {
+              "id": "d",
+              "text": "chance"
+            },
+            {
+              "id": "c",
+              "text": "method"
+            },
+            {
+              "id": "a",
+              "text": "means"
+            }
+          ],
+          "explanation": "By no means intensifica una negación."
+        },
+        {
+          "id": "r5",
+          "prompt": "The delivery was arranged at short ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "warning"
+            },
+            {
+              "id": "c",
+              "text": "attention"
+            },
+            {
+              "id": "a",
+              "text": "notice"
+            }
+          ],
+          "explanation": "At short notice indica que hubo poco tiempo para prepararlo."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence is correct after object?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Residents objected to the plan."
+            },
+            {
+              "id": "d",
+              "text": "Residents objected on the plan."
+            },
+            {
+              "id": "c",
+              "text": "Residents objected for the plan."
+            }
+          ],
+          "explanation": "Object to requiere siempre la preposición to."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which expression means handle a difficulty?",
+          "options": [
+            {
+              "id": "a",
+              "text": "cope with"
+            },
+            {
+              "id": "c",
+              "text": "rely at"
+            },
+            {
+              "id": "d",
+              "text": "object for"
+            }
+          ],
+          "explanation": "Cope with significa hacer frente a una dificultad."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase means definitely not?",
+          "options": [
+            {
+              "id": "a",
+              "text": "by no means"
+            },
+            {
+              "id": "d",
+              "text": "in terms"
+            },
+            {
+              "id": "b",
+              "text": "in the long run"
+            }
+          ],
+          "explanation": "By no means es una negación enfática."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-fixed-expressions"
+      ],
+      "tags": [
+        "b2",
+        "fixed-expressions",
+        "linkers",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-fixed-expressions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-collocations-fixed-expressions",
+      "subtopic": "b2-collocations-fixed-expressions",
+      "taxonomyNodeIds": [
+        "b2-collocations-fixed-expressions"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition follows object in object ___ the proposal?",
+          "options": [
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            }
+          ],
+          "explanation": "Object to es el patrón dependiente de preposición."
+        },
+        {
+          "id": "r2",
+          "prompt": "There is no point ___ the same complaint again.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at repeat"
+            },
+            {
+              "id": "d",
+              "text": "for repeat"
+            },
+            {
+              "id": "a",
+              "text": "in repeating"
+            }
+          ],
+          "explanation": "There is no point in repeating mantiene preposición y gerundio."
+        },
+        {
+          "id": "r3",
+          "prompt": "She finally came to ___ with the loss of the old shop.",
+          "options": [
+            {
+              "id": "a",
+              "text": "terms"
+            },
+            {
+              "id": "b",
+              "text": "conditions"
+            },
+            {
+              "id": "c",
+              "text": "agreements"
+            }
+          ],
+          "explanation": "Come to terms with expresa aceptación gradual de una realidad."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence correctly uses under no circumstances?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Under no circumstances the seal should broken."
+            },
+            {
+              "id": "b",
+              "text": "Under no circumstance should the seal be broken."
+            },
+            {
+              "id": "a",
+              "text": "Under no circumstances should the seal be broken."
+            }
+          ],
+          "explanation": "La expresión plural activa inversión modal: Under no circumstances should..."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase completes The article draws ___ to a hidden cost?",
+          "options": [
+            {
+              "id": "a",
+              "text": "attention"
+            },
+            {
+              "id": "c",
+              "text": "focuses"
+            },
+            {
+              "id": "d",
+              "text": "eyes"
+            }
+          ],
+          "explanation": "Draw attention to es la colocación fija."
+        },
+        {
+          "id": "r6",
+          "prompt": "The team must cope ___ a sudden loss of funding.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "with"
+            },
+            {
+              "id": "d",
+              "text": "about"
+            }
+          ],
+          "explanation": "Cope with significa hacer frente a una dificultad."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which expression means finally, after a process?",
+          "options": [
+            {
+              "id": "d",
+              "text": "in the long run"
+            },
+            {
+              "id": "a",
+              "text": "in the end"
+            },
+            {
+              "id": "b",
+              "text": "at short notice"
+            }
+          ],
+          "explanation": "In the end introduce el resultado final."
+        },
+        {
+          "id": "r8",
+          "prompt": "The residents must cope ___ the disruption during repairs.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "with"
+            }
+          ],
+          "explanation": "Cope with es el patrón verbal correcto."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-fixed-expressions"
+      ],
+      "tags": [
+        "b2",
+        "fixed-expressions",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

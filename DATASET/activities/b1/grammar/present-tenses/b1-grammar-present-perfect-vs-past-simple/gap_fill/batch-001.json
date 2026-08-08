@@ -826,54 +826,6 @@
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-present-perfect-vs-past-simple-fb-018",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "gap_fill",
-      "skillFocus": "fill_blank",
-      "category": "grammar",
-      "topic": "present-tenses",
-      "subtopic": "present-perfect-vs-past-simple",
-      "taxonomyNodeIds": [
-        "present-perfect-vs-past-simple"
-      ],
-      "difficulty": 4,
-      "instructions": "Complete both sentences using all the cues in brackets.",
-      "prompt": "___. (the council approve the plan / it vote for it on Tuesday)",
-      "gapText": "[gap1]. (the council approve the plan / it vote for it on Tuesday)",
-      "gapLayout": "sentence",
-      "lessonIds": [
-        "b1-grammar-present-perfect-vs-past-simple"
-      ],
-      "tags": [
-        "b1",
-        "present-perfect",
-        "fill-blank"
-      ],
-      "estimatedSeconds": 50,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "The council has approved the plan. It voted for it on Tuesday"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "La noticia usa present perfect; el detalle fechado usa past simple."
-    },
-    {
-      "schemaVersion": "2.0.0",
       "id": "b1-present-perfect-vs-past-simple-fb-019",
       "status": "published",
       "autoGradable": true,
@@ -967,54 +919,6 @@
         }
       },
       "explanation": "«In recent years» mantiene la conexión con el presente."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-present-perfect-vs-past-simple-fb-021",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "gap_fill",
-      "skillFocus": "fill_blank",
-      "category": "grammar",
-      "topic": "present-tenses",
-      "subtopic": "present-perfect-vs-past-simple",
-      "taxonomyNodeIds": [
-        "present-perfect-vs-past-simple"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete the sentence using all the cues in brackets.",
-      "prompt": "___. (neither supplier make a firm offer so far / one of them send an estimate yesterday)",
-      "gapText": "[gap1]. (neither supplier make a firm offer so far / one of them send an estimate yesterday)",
-      "gapLayout": "sentence",
-      "lessonIds": [
-        "b1-grammar-present-perfect-vs-past-simple"
-      ],
-      "tags": [
-        "b1",
-        "present-perfect",
-        "fill-blank"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "Neither supplier has made a firm offer so far, but one of them sent an estimate yesterday"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "«So far» exige present perfect y «yesterday» past simple."
     },
     {
       "schemaVersion": "2.0.0",
@@ -1159,54 +1063,6 @@
         }
       },
       "explanation": "El resultado reciente se presenta con «has just uploaded»."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-present-perfect-vs-past-simple-fb-025",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "gap_fill",
-      "skillFocus": "fill_blank",
-      "category": "grammar",
-      "topic": "present-tenses",
-      "subtopic": "present-perfect-vs-past-simple",
-      "taxonomyNodeIds": [
-        "present-perfect-vs-past-simple"
-      ],
-      "difficulty": 5,
-      "instructions": "Complete both sentences using all the cues in brackets.",
-      "prompt": "___. (a pipe burst in the library / staff discover the leak at 7.15 this morning)",
-      "gapText": "[gap1]. (a pipe burst in the library / staff discover the leak at 7.15 this morning)",
-      "gapLayout": "sentence",
-      "lessonIds": [
-        "b1-grammar-present-perfect-vs-past-simple"
-      ],
-      "tags": [
-        "b1",
-        "present-perfect",
-        "fill-blank"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "per_gap",
-        "gaps": [
-          {
-            "gapId": "gap1",
-            "answers": [
-              "A pipe has burst in the library. Staff discovered the leak at 7.15 this morning"
-            ]
-          }
-        ],
-        "normalization": {
-          "trim": true,
-          "collapseWhitespace": true,
-          "caseSensitive": false,
-          "ignoreTerminalPunctuation": true,
-          "normaliseApostrophes": true
-        }
-      },
-      "explanation": "La primera oración presenta el problema actual; la hora concreta fecha el descubrimiento."
     }
   ]
 }

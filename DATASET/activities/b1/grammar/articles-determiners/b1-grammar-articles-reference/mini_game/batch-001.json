@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-articles-reference-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "articles-determiners",
+  "subtopic": "articles-reference",
+  "lessonId": "b1-grammar-articles-reference",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-articles-reference-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "___ dogs need exercise.",
+          "options": [
+            {
+              "id": "b",
+              "text": "A"
+            },
+            {
+              "id": "c",
+              "text": "An"
+            },
+            {
+              "id": "a",
+              "text": "no article"
+            }
+          ],
+          "explanation": "Plural en general: zero article."
+        },
+        {
+          "id": "r2",
+          "prompt": "We visited ___ Alps last summer.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "c",
+              "text": "an"
+            }
+          ],
+          "explanation": "Cadenas montañosas: «the Alps»."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ rich should help the poor.",
+          "options": [
+            {
+              "id": "d",
+              "text": "no article"
+            },
+            {
+              "id": "a",
+              "text": "The"
+            },
+            {
+              "id": "b",
+              "text": "A"
+            }
+          ],
+          "explanation": "Adjetivos como grupo: «the rich»."
+        },
+        {
+          "id": "r4",
+          "prompt": "She plays ___ piano.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "c",
+              "text": "an"
+            }
+          ],
+          "explanation": "Instrumentos musicales: «the piano»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I need ___ hour to finish.",
+          "options": [
+            {
+              "id": "c",
+              "text": "the"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            },
+            {
+              "id": "a",
+              "text": "an"
+            }
+          ],
+          "explanation": "«hour» tiene «h» muda: «an hour»."
+        },
+        {
+          "id": "r6",
+          "prompt": "He is ___ honest man.",
+          "options": [
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "a",
+              "text": "an"
+            },
+            {
+              "id": "c",
+              "text": "the"
+            }
+          ],
+          "explanation": "«honest» tiene «h» muda: «an honest»."
+        },
+        {
+          "id": "r7",
+          "prompt": "She is ___ only person who knows.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            }
+          ],
+          "explanation": "«only» es único: «the only»."
+        },
+        {
+          "id": "r8",
+          "prompt": "I had ___ breakfast at eight.",
+          "options": [
+            {
+              "id": "d",
+              "text": "the"
+            },
+            {
+              "id": "a",
+              "text": "no article"
+            },
+            {
+              "id": "c",
+              "text": "an"
+            }
+          ],
+          "explanation": "Comidas en general: zero article."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-articles-reference-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I bought ___ umbrella yesterday.",
+          "options": [
+            {
+              "id": "d",
+              "text": "no article"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "a",
+              "text": "an"
+            }
+          ],
+          "explanation": "«umbrella» empieza con sonido vocálico: «an»."
+        },
+        {
+          "id": "r2",
+          "prompt": "___ water is essential for life.",
+          "options": [
+            {
+              "id": "c",
+              "text": "An"
+            },
+            {
+              "id": "a",
+              "text": "no article"
+            },
+            {
+              "id": "b",
+              "text": "A"
+            }
+          ],
+          "explanation": "Incontable en general: zero article."
+        },
+        {
+          "id": "r3",
+          "prompt": "I listen to ___ radio in the morning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            }
+          ],
+          "explanation": "Medios: «the radio»."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ sun rises in the east.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The"
+            },
+            {
+              "id": "c",
+              "text": "An"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            }
+          ],
+          "explanation": "Lugar único: «the sun»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I saw ___ dog in the park.",
+          "options": [
+            {
+              "id": "b",
+              "text": "an"
+            },
+            {
+              "id": "c",
+              "text": "the"
+            },
+            {
+              "id": "a",
+              "text": "a"
+            }
+          ],
+          "explanation": "Primera mención indefinida: «a»."
+        },
+        {
+          "id": "r6",
+          "prompt": "She is ___ engineer.",
+          "options": [
+            {
+              "id": "c",
+              "text": "the"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "a",
+              "text": "an"
+            }
+          ],
+          "explanation": "«engineer» empieza con sonido vocálico: «an»."
+        },
+        {
+          "id": "r7",
+          "prompt": "___ Nile flows through Egypt.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The"
+            },
+            {
+              "id": "c",
+              "text": "An"
+            },
+            {
+              "id": "b",
+              "text": "A"
+            }
+          ],
+          "explanation": "Ríos: «the Nile»."
+        },
+        {
+          "id": "r8",
+          "prompt": "I go to ___ school by bus.",
+          "options": [
+            {
+              "id": "a",
+              "text": "no article"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "d",
+              "text": "the"
+            }
+          ],
+          "explanation": "Institución con función: zero article."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

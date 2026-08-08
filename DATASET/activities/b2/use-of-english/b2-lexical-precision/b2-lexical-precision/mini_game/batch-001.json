@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-lexical-precision-mini-game-001",
+  "level": "B2",
+  "category": "use-of-english",
+  "topic": "b2-lexical-precision",
+  "subtopic": "b2-lexical-precision",
+  "lessonId": "b2-lexical-precision",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-lexical-precision-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-lexical-precision",
+      "subtopic": "b2-lexical-precision",
+      "taxonomyNodeIds": [
+        "b2-lexical-precision"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The decision was reached after ___ consultation.",
+          "options": [
+            {
+              "id": "a",
+              "text": "extensive"
+            },
+            {
+              "id": "c",
+              "text": "extension"
+            },
+            {
+              "id": "d",
+              "text": "extending"
+            }
+          ],
+          "explanation": "Extensive consultation means consultation with many people or over a broad area."
+        },
+        {
+          "id": "r2",
+          "prompt": "The speaker went on to ___ the main objection.",
+          "options": [
+            {
+              "id": "a",
+              "text": "deal with"
+            },
+            {
+              "id": "d",
+              "text": "deal over"
+            },
+            {
+              "id": "b",
+              "text": "deal out"
+            }
+          ],
+          "explanation": "Deal with means address a problem or objection."
+        },
+        {
+          "id": "r3",
+          "prompt": "The author draws a sharp ___ between fact and opinion.",
+          "options": [
+            {
+              "id": "a",
+              "text": "distinction"
+            },
+            {
+              "id": "b",
+              "text": "distancing"
+            },
+            {
+              "id": "d",
+              "text": "distinct"
+            }
+          ],
+          "explanation": "Draw a distinction is the required collocation."
+        },
+        {
+          "id": "r4",
+          "prompt": "The company is expected to ___ the cost of the delay.",
+          "options": [
+            {
+              "id": "d",
+              "text": "hold up"
+            },
+            {
+              "id": "b",
+              "text": "carry out"
+            },
+            {
+              "id": "a",
+              "text": "bear"
+            }
+          ],
+          "explanation": "Bear the cost means accept responsibility for paying it."
+        },
+        {
+          "id": "r5",
+          "prompt": "The outcome depends ___ how quickly we respond.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "from"
+            },
+            {
+              "id": "b",
+              "text": "of"
+            }
+          ],
+          "explanation": "Depend on is the required preposition."
+        },
+        {
+          "id": "r6",
+          "prompt": "The researchers reached a ___ consensus.",
+          "options": [
+            {
+              "id": "c",
+              "text": "large"
+            },
+            {
+              "id": "d",
+              "text": "openly"
+            },
+            {
+              "id": "a",
+              "text": "broad"
+            }
+          ],
+          "explanation": "Broad consensus means general agreement."
+        },
+        {
+          "id": "r7",
+          "prompt": "The account is internally ___, despite the unusual conclusion.",
+          "options": [
+            {
+              "id": "d",
+              "text": "coherence"
+            },
+            {
+              "id": "a",
+              "text": "coherent"
+            },
+            {
+              "id": "c",
+              "text": "cohering"
+            }
+          ],
+          "explanation": "Coherent means logically consistent and understandable."
+        },
+        {
+          "id": "r8",
+          "prompt": "The new timetable is ___ with the previous announcement.",
+          "options": [
+            {
+              "id": "c",
+              "text": "inconvenient"
+            },
+            {
+              "id": "b",
+              "text": "incomplete"
+            },
+            {
+              "id": "a",
+              "text": "incompatible"
+            }
+          ],
+          "explanation": "Incompatible means unable to exist consistently with something else."
+        }
+      ],
+      "lessonIds": [
+        "b2-lexical-precision"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-lexical-precision-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-lexical-precision",
+      "subtopic": "b2-lexical-precision",
+      "taxonomyNodeIds": [
+        "b2-lexical-precision"
+      ],
+      "difficulty": 5,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The review points ___ a weakness in the method.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "up with"
+            },
+            {
+              "id": "b",
+              "text": "out to"
+            }
+          ],
+          "explanation": "Point to means indicate or suggest."
+        },
+        {
+          "id": "r2",
+          "prompt": "The conclusion is supported by ___ evidence.",
+          "options": [
+            {
+              "id": "a",
+              "text": "independent"
+            },
+            {
+              "id": "c",
+              "text": "independence"
+            },
+            {
+              "id": "d",
+              "text": "dependency"
+            }
+          ],
+          "explanation": "Independent evidence comes from a separate source."
+        },
+        {
+          "id": "r3",
+          "prompt": "The measure is likely to have a ___ effect.",
+          "options": [
+            {
+              "id": "c",
+              "text": "negligently"
+            },
+            {
+              "id": "a",
+              "text": "negligible"
+            },
+            {
+              "id": "b",
+              "text": "neglecting"
+            }
+          ],
+          "explanation": "Negligible effect means an effect too small to matter."
+        },
+        {
+          "id": "r4",
+          "prompt": "The evidence is ___ with the claim that the device failed early.",
+          "options": [
+            {
+              "id": "c",
+              "text": "competing"
+            },
+            {
+              "id": "a",
+              "text": "compatible"
+            },
+            {
+              "id": "b",
+              "text": "comparative"
+            }
+          ],
+          "explanation": "Compatible evidence can exist consistently with a claim."
+        },
+        {
+          "id": "r5",
+          "prompt": "The plan is financially ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "viable"
+            },
+            {
+              "id": "b",
+              "text": "living"
+            },
+            {
+              "id": "d",
+              "text": "possiblely"
+            }
+          ],
+          "explanation": "Financially viable means capable of succeeding financially."
+        },
+        {
+          "id": "r6",
+          "prompt": "The author draws attention to a ___ gap in the evidence.",
+          "options": [
+            {
+              "id": "b",
+              "text": "signifying"
+            },
+            {
+              "id": "d",
+              "text": "significantly"
+            },
+            {
+              "id": "a",
+              "text": "significant"
+            }
+          ],
+          "explanation": "Significant gap is the natural adjective-noun combination."
+        },
+        {
+          "id": "r7",
+          "prompt": "The experiment produced ___ results.",
+          "options": [
+            {
+              "id": "b",
+              "text": "inconclusion"
+            },
+            {
+              "id": "c",
+              "text": "unconcluded"
+            },
+            {
+              "id": "a",
+              "text": "inconclusive"
+            }
+          ],
+          "explanation": "Inconclusive results do not settle the question."
+        },
+        {
+          "id": "r8",
+          "prompt": "The evidence was too ___ to support a definite claim.",
+          "options": [
+            {
+              "id": "a",
+              "text": "fragmentary"
+            },
+            {
+              "id": "c",
+              "text": "fragmentedness"
+            },
+            {
+              "id": "d",
+              "text": "framing"
+            }
+          ],
+          "explanation": "Fragmentary evidence is incomplete and disconnected."
+        }
+      ],
+      "lessonIds": [
+        "b2-lexical-precision"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

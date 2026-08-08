@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-modals-ability-permission-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "ability-permission",
+  "lessonId": "b1-grammar-modals-ability-permission",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-ability-permission-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "For safety reasons, contractors ___ enter the server room alone.",
+          "options": [
+            {
+              "id": "d",
+              "text": "can't to"
+            },
+            {
+              "id": "c",
+              "text": "don't allowed to"
+            },
+            {
+              "id": "a",
+              "text": "aren't allowed to"
+            }
+          ],
+          "explanation": "«Aren't allowed to» identifica claramente una restricción normativa."
+        },
+        {
+          "id": "r2",
+          "prompt": "We tried every password, but we ___ access the account.",
+          "options": [
+            {
+              "id": "a",
+              "text": "couldn't"
+            },
+            {
+              "id": "b",
+              "text": "weren't can"
+            },
+            {
+              "id": "d",
+              "text": "didn't could"
+            }
+          ],
+          "explanation": "Un fracaso puntual puede expresarse con «couldn't access»."
+        },
+        {
+          "id": "r3",
+          "prompt": "After the update, users ___ export data. “___ I test the feature now?”",
+          "options": [
+            {
+              "id": "d",
+              "text": "can will / Am"
+            },
+            {
+              "id": "b",
+              "text": "will can / Do"
+            },
+            {
+              "id": "a",
+              "text": "will be able to / May"
+            }
+          ],
+          "explanation": "La capacidad futura usa «will be able to» y el permiso formal «May I ...?»."
+        },
+        {
+          "id": "r4",
+          "prompt": "After the second explanation, I ___ the problem.",
+          "options": [
+            {
+              "id": "a",
+              "text": "could understand"
+            },
+            {
+              "id": "d",
+              "text": "did could understand"
+            },
+            {
+              "id": "c",
+              "text": "was able understand"
+            }
+          ],
+          "explanation": "Con «understand» es natural «could understand» en una situación concreta."
+        },
+        {
+          "id": "r5",
+          "prompt": "Despite restarting the router twice, we ___ restore the connection.",
+          "options": [
+            {
+              "id": "c",
+              "text": "couldn't to"
+            },
+            {
+              "id": "b",
+              "text": "weren't able"
+            },
+            {
+              "id": "a",
+              "text": "couldn't"
+            }
+          ],
+          "explanation": "«Couldn't restore» expresa correctamente el fracaso puntual."
+        },
+        {
+          "id": "r6",
+          "prompt": "Ask whether Lena knew how to swim at age five.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could Lena swim when she was five?"
+            },
+            {
+              "id": "b",
+              "text": "Did Lena could swim when she was five?"
+            },
+            {
+              "id": "d",
+              "text": "Was Lena could swim when she was five?"
+            }
+          ],
+          "explanation": "Los modales forman preguntas sin `did`: «Could Lena swim?»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Sam ___ speak Arabic and French.",
+          "options": [
+            {
+              "id": "d",
+              "text": "does can"
+            },
+            {
+              "id": "a",
+              "text": "can"
+            },
+            {
+              "id": "b",
+              "text": "cans"
+            }
+          ],
+          "explanation": "Los modales no añaden `-s` y el verbo siguiente queda en infinitivo."
+        },
+        {
+          "id": "r8",
+          "prompt": "I ___ hear you clearly; the connection is poor.",
+          "options": [
+            {
+              "id": "c",
+              "text": "can't to"
+            },
+            {
+              "id": "a",
+              "text": "can't"
+            },
+            {
+              "id": "b",
+              "text": "don't can"
+            }
+          ],
+          "explanation": "La incapacidad presente se expresa con «can't hear»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-ability-permission-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "After three attempts, the rescue team ___ lift the fallen beam.",
+          "options": [
+            {
+              "id": "d",
+              "text": "did managed to"
+            },
+            {
+              "id": "a",
+              "text": "managed to"
+            },
+            {
+              "id": "c",
+              "text": "managed lifting"
+            }
+          ],
+          "explanation": "«Managed to» destaca el esfuerzo y el éxito en una ocasión concreta."
+        },
+        {
+          "id": "r2",
+          "prompt": "The door was jammed, but we ___ open it.",
+          "options": [
+            {
+              "id": "a",
+              "text": "were able to"
+            },
+            {
+              "id": "c",
+              "text": "were able"
+            },
+            {
+              "id": "d",
+              "text": "did can"
+            }
+          ],
+          "explanation": "Un logro puntual completado usa «were able to open»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Ravi ___ repair most bicycle brakes.",
+          "options": [
+            {
+              "id": "c",
+              "text": "can to"
+            },
+            {
+              "id": "d",
+              "text": "does can"
+            },
+            {
+              "id": "a",
+              "text": "can"
+            }
+          ],
+          "explanation": "Para capacidad presente ordinaria, «can repair» es la forma natural."
+        },
+        {
+          "id": "r4",
+          "prompt": "I ___ contact the supplier this week.",
+          "options": [
+            {
+              "id": "a",
+              "text": "haven't been able to"
+            },
+            {
+              "id": "c",
+              "text": "didn't been able to"
+            },
+            {
+              "id": "b",
+              "text": "haven't can"
+            }
+          ],
+          "explanation": "El present perfect usa «have been able to»."
+        },
+        {
+          "id": "r5",
+          "prompt": "A security officer politely asks to inspect a visitor's identification.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Do I may see your identification?"
+            },
+            {
+              "id": "a",
+              "text": "May I see your identification, please?"
+            },
+            {
+              "id": "d",
+              "text": "Am I may seeing your identification?"
+            }
+          ],
+          "explanation": "«May I ...?» es una petición formal de permiso."
+        },
+        {
+          "id": "r6",
+          "prompt": "From the balcony, we ___ the whole harbour despite the mist.",
+          "options": [
+            {
+              "id": "d",
+              "text": "did could see"
+            },
+            {
+              "id": "a",
+              "text": "could see"
+            },
+            {
+              "id": "c",
+              "text": "were able seeing"
+            }
+          ],
+          "explanation": "Con percepción es natural usar «could see» incluso en una situación concreta."
+        },
+        {
+          "id": "r7",
+          "prompt": "You want to leave work a little early and are asking your manager.",
+          "options": [
+            {
+              "id": "d",
+              "text": "I could leave early?"
+            },
+            {
+              "id": "a",
+              "text": "Could I leave a little early today?"
+            },
+            {
+              "id": "b",
+              "text": "Could I to leave a little early today?"
+            }
+          ],
+          "explanation": "«Could I ...?» formula una petición cortés de permiso."
+        },
+        {
+          "id": "r8",
+          "prompt": "When Leo was six, he ___ count to a hundred.",
+          "options": [
+            {
+              "id": "a",
+              "text": "could"
+            },
+            {
+              "id": "b",
+              "text": "can"
+            },
+            {
+              "id": "c",
+              "text": "could to"
+            }
+          ],
+          "explanation": "Una capacidad general en una etapa pasada usa «could»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "ability",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

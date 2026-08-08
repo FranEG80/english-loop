@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-direct-indirect-questions-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "questions",
+  "subtopic": "direct-indirect-questions",
+  "lessonId": "b1-grammar-direct-indirect-questions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-direct-indirect-questions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "___ cards at this desk?",
+          "options": [
+            {
+              "id": "b",
+              "text": "You accept"
+            },
+            {
+              "id": "d",
+              "text": "Are you accept"
+            },
+            {
+              "id": "a",
+              "text": "Do you accept"
+            }
+          ],
+          "explanation": "Con verbo ordinario y «you» usamos «Do you accept?»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Where ___ wait for the shuttle?",
+          "options": [
+            {
+              "id": "b",
+              "text": "we should"
+            },
+            {
+              "id": "a",
+              "text": "should we"
+            },
+            {
+              "id": "d",
+              "text": "should we to"
+            }
+          ],
+          "explanation": "La pregunta directa coloca el modal antes del sujeto."
+        },
+        {
+          "id": "r3",
+          "prompt": "Do you know ___ the café is open?",
+          "options": [
+            {
+              "id": "c",
+              "text": "what"
+            },
+            {
+              "id": "a",
+              "text": "if"
+            },
+            {
+              "id": "b",
+              "text": "that"
+            }
+          ],
+          "explanation": "Una pregunta cerrada indirecta usa «if» o «whether»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Could you tell me where ___?",
+          "options": [
+            {
+              "id": "a",
+              "text": "the station is"
+            },
+            {
+              "id": "b",
+              "text": "is the station"
+            },
+            {
+              "id": "d",
+              "text": "the station does"
+            }
+          ],
+          "explanation": "La parte indirecta usa orden afirmativo."
+        },
+        {
+          "id": "r5",
+          "prompt": "I'd like to know why the payment ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "did failed"
+            },
+            {
+              "id": "d",
+              "text": "was fail"
+            },
+            {
+              "id": "a",
+              "text": "failed"
+            }
+          ],
+          "explanation": "La parte indirecta elimina «did» y usa pasado simple."
+        },
+        {
+          "id": "r6",
+          "prompt": "Direct: “How much does delivery cost?”",
+          "options": [
+            {
+              "id": "c",
+              "text": "Could you tell me how much delivery cost does?"
+            },
+            {
+              "id": "a",
+              "text": "Could you tell me how much delivery costs?"
+            },
+            {
+              "id": "d",
+              "text": "Could you tell me if how much delivery costs?"
+            }
+          ],
+          "explanation": "Eliminamos «does» y usamos «delivery costs»."
+        },
+        {
+          "id": "r7",
+          "prompt": "What time ___ the library close?",
+          "options": [
+            {
+              "id": "a",
+              "text": "does"
+            },
+            {
+              "id": "c",
+              "text": "is"
+            },
+            {
+              "id": "d",
+              "text": "did"
+            }
+          ],
+          "explanation": "El sujeto singular usa «does + forma base»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Direct: “Who manages the community garden?”",
+          "options": [
+            {
+              "id": "c",
+              "text": "Do you know who the community garden manages?"
+            },
+            {
+              "id": "a",
+              "text": "Do you know who manages the community garden?"
+            },
+            {
+              "id": "b",
+              "text": "Do you know who does manage the community garden?"
+            }
+          ],
+          "explanation": "«Who» ya es sujeto y la forma permanece «who manages»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-direct-indirect-questions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "___ after the inspection?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Who did the manager call"
+            },
+            {
+              "id": "c",
+              "text": "Who did call the manager"
+            },
+            {
+              "id": "d",
+              "text": "Who was the manager call"
+            }
+          ],
+          "explanation": "En la pregunta directa de objeto usamos «did + sujeto + forma base»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Direct: “When did the branch open?”",
+          "options": [
+            {
+              "id": "c",
+              "text": "Do you know when the branch did opened?"
+            },
+            {
+              "id": "d",
+              "text": "Do you know if when the branch opened?"
+            },
+            {
+              "id": "a",
+              "text": "Do you know when the branch opened?"
+            }
+          ],
+          "explanation": "Se elimina «did» y se usa «opened»."
+        },
+        {
+          "id": "r3",
+          "prompt": "When ___ the exhibition open?",
+          "options": [
+            {
+              "id": "d",
+              "text": "has"
+            },
+            {
+              "id": "b",
+              "text": "does"
+            },
+            {
+              "id": "a",
+              "text": "did"
+            }
+          ],
+          "explanation": "El pasado simple directo usa «did + forma base»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Do you know why the printer ___ working?",
+          "options": [
+            {
+              "id": "c",
+              "text": "doesn't be"
+            },
+            {
+              "id": "a",
+              "text": "isn't"
+            },
+            {
+              "id": "b",
+              "text": "is not it"
+            }
+          ],
+          "explanation": "La negación permanece en orden afirmativo: «the printer isn't working»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Direct: “Who did the committee select?”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you tell me who the committee selected?"
+            },
+            {
+              "id": "c",
+              "text": "Could you tell me who selected the committee?"
+            },
+            {
+              "id": "d",
+              "text": "Could you tell me if who the committee selected?"
+            }
+          ],
+          "explanation": "El contenido indirecto mantiene el sujeto «the committee» antes del verbo."
+        },
+        {
+          "id": "r6",
+          "prompt": "Direct: “Why is the screen flashing?”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Can you explain why the screen is flashing?"
+            },
+            {
+              "id": "d",
+              "text": "Can you explain if why the screen is flashing?"
+            },
+            {
+              "id": "b",
+              "text": "Can you explain why is the screen flashing?"
+            }
+          ],
+          "explanation": "Tras «why» usamos «the screen is flashing»."
+        },
+        {
+          "id": "r7",
+          "prompt": "You need to identify the caller and the person contacted.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Do you know who called and who they contacted?"
+            },
+            {
+              "id": "d",
+              "text": "Do you know if who called and who they did contacted?"
+            },
+            {
+              "id": "c",
+              "text": "Do you know who called and who contacted they?"
+            }
+          ],
+          "explanation": "«Who called» es pregunta de sujeto; «who they contacted» contiene sujeto explícito."
+        },
+        {
+          "id": "r8",
+          "prompt": "What does this button ___?",
+          "options": [
+            {
+              "id": "b",
+              "text": "does"
+            },
+            {
+              "id": "a",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "did"
+            }
+          ],
+          "explanation": "Después de «does» usamos la forma base «do»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-past-perfect-simple-continuous-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "past-tenses",
+  "subtopic": "past-perfect-simple-vs-continuous",
+  "lessonId": "b2-grammar-past-perfect-simple-continuous",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-past-perfect-simple-continuous-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-perfect-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "past-perfect-simple-vs-continuous"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I ___ for ages.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had searched"
+            },
+            {
+              "id": "a",
+              "text": "had been searching"
+            },
+            {
+              "id": "c",
+              "text": "searched"
+            }
+          ],
+          "explanation": "La duración usa el continuo."
+        },
+        {
+          "id": "r2",
+          "prompt": "The bus ___ before we reached the stop.",
+          "options": [
+            {
+              "id": "c",
+              "text": "went"
+            },
+            {
+              "id": "d",
+              "text": "was going"
+            },
+            {
+              "id": "a",
+              "text": "had gone"
+            }
+          ],
+          "explanation": "El evento completado usa el simple."
+        },
+        {
+          "id": "r3",
+          "prompt": "I ___ the fence.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was mending"
+            },
+            {
+              "id": "a",
+              "text": "had mended"
+            },
+            {
+              "id": "b",
+              "text": "had been mending"
+            }
+          ],
+          "explanation": "El resultado terminado usa el simple."
+        },
+        {
+          "id": "r4",
+          "prompt": "I ___ that song before.",
+          "options": [
+            {
+              "id": "c",
+              "text": "heard"
+            },
+            {
+              "id": "a",
+              "text": "had heard"
+            },
+            {
+              "id": "b",
+              "text": "had been hearing"
+            }
+          ],
+          "explanation": "«hear» como experiencia usa el simple."
+        },
+        {
+          "id": "r5",
+          "prompt": "I ___ to accept.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had resolved"
+            },
+            {
+              "id": "b",
+              "text": "had been resolving"
+            },
+            {
+              "id": "d",
+              "text": "was resolving"
+            }
+          ],
+          "explanation": "La decisión tomada usa el simple."
+        },
+        {
+          "id": "r6",
+          "prompt": "I ___ abroad for a decade.",
+          "options": [
+            {
+              "id": "c",
+              "text": "resided"
+            },
+            {
+              "id": "b",
+              "text": "had resided"
+            },
+            {
+              "id": "a",
+              "text": "had been residing"
+            }
+          ],
+          "explanation": "La duración con «for» usa el continuo."
+        },
+        {
+          "id": "r7",
+          "prompt": "I ___ three chapters.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was finishing"
+            },
+            {
+              "id": "b",
+              "text": "had been finishing"
+            },
+            {
+              "id": "a",
+              "text": "had finished"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "I ___ the proposal.",
+          "options": [
+            {
+              "id": "c",
+              "text": "weighed"
+            },
+            {
+              "id": "a",
+              "text": "had been weighing"
+            },
+            {
+              "id": "b",
+              "text": "had weighed"
+            }
+          ],
+          "explanation": "El proceso usa el continuo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-past-perfect-simple-continuous"
+      ],
+      "tags": [
+        "b2",
+        "past-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-past-perfect-simple-continuous-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-perfect-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "past-perfect-simple-vs-continuous"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "She ___ for hours before the exam.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had been revising"
+            },
+            {
+              "id": "b",
+              "text": "had revised"
+            },
+            {
+              "id": "d",
+              "text": "was revising"
+            }
+          ],
+          "explanation": "La actividad en curso usa el continuo."
+        },
+        {
+          "id": "r2",
+          "prompt": "We ___ the gallery.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had toured"
+            },
+            {
+              "id": "d",
+              "text": "were touring"
+            },
+            {
+              "id": "b",
+              "text": "had been touring"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
+        },
+        {
+          "id": "r3",
+          "prompt": "They ___ at the gate for ages.",
+          "options": [
+            {
+              "id": "c",
+              "text": "stood"
+            },
+            {
+              "id": "d",
+              "text": "were standing"
+            },
+            {
+              "id": "a",
+              "text": "had been standing"
+            }
+          ],
+          "explanation": "La duración usa el continuo."
+        },
+        {
+          "id": "r4",
+          "prompt": "She ___ the assignment.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had submitted"
+            },
+            {
+              "id": "d",
+              "text": "was submitting"
+            },
+            {
+              "id": "b",
+              "text": "had been submitting"
+            }
+          ],
+          "explanation": "El resultado terminado usa el simple."
+        },
+        {
+          "id": "r5",
+          "prompt": "I ___ the gate all morning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had been locking"
+            },
+            {
+              "id": "b",
+              "text": "had locked"
+            },
+            {
+              "id": "d",
+              "text": "was locking"
+            }
+          ],
+          "explanation": "La actividad en curso usa el continuo."
+        },
+        {
+          "id": "r6",
+          "prompt": "I ___ the gate.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was locking"
+            },
+            {
+              "id": "b",
+              "text": "had been locking"
+            },
+            {
+              "id": "a",
+              "text": "had locked"
+            }
+          ],
+          "explanation": "El resultado terminado usa el simple."
+        },
+        {
+          "id": "r7",
+          "prompt": "She ___ the windows.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had been polishing"
+            },
+            {
+              "id": "c",
+              "text": "polished"
+            },
+            {
+              "id": "a",
+              "text": "had polished"
+            }
+          ],
+          "explanation": "El resultado terminado usa el simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "His hands were dirty; he ___ the engine.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was repairing"
+            },
+            {
+              "id": "a",
+              "text": "had been repairing"
+            },
+            {
+              "id": "b",
+              "text": "had repaired"
+            }
+          ],
+          "explanation": "El efecto visible usa el continuo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-past-perfect-simple-continuous"
+      ],
+      "tags": [
+        "b2",
+        "past-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

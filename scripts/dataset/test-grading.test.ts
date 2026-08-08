@@ -13,7 +13,7 @@ describe("dataset grading command helpers", () => {
       { strategy: "one_of_texts" as const, answers: ["done"], normalization },
       { strategy: "per_gap" as const, gaps: [{ gapId: "one", answers: ["done"] }], normalization },
       { strategy: "ordered_tokens" as const, correctTokenIds: ["a", "b"] },
-      { strategy: "unordered_set" as const, correctValues: ["a", "b"], normalization },
+      { strategy: "deck_booleans" as const, cards: [{ cardId: "c1", correct: true }], normalization },
       { strategy: "matching_pairs" as const, pairs: [{ leftId: "l", rightId: "r" }] },
     ];
     for (const evaluator of evaluators) {

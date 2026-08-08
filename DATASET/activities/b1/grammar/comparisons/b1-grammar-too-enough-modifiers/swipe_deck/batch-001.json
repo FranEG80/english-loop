@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-too-enough-modifiers-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "comparisons",
+  "subtopic": "too-enough-comparative-modifiers",
+  "lessonId": "b1-grammar-too-enough-modifiers",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-sd-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 1,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The soup is too salty to eat.",
+          "explanation": "«too ... to» es correcto."
+        },
+        {
+          "id": "c2",
+          "statement": "The room is enough warm.",
+          "explanation": "Con adjetivo, «enough» va después: «warm enough»."
+        },
+        {
+          "id": "c3",
+          "statement": "The new route is a bit longer.",
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "c4",
+          "statement": "We don't have enough time to finish.",
+          "explanation": "«enough + sustantivo» es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "The room is warm enough to sit comfortably.",
+          "explanation": "«enough ... to» es correcto."
+        },
+        {
+          "id": "c6",
+          "statement": "The coffee is too hot to drink.",
+          "explanation": "«too ... to» es correcto."
+        },
+        {
+          "id": "c7",
+          "statement": "This phone is much cheaper than that one.",
+          "explanation": "«much» intensifica el comparativo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "too",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-sd-067",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The flat is far more expensive than we expected.",
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "c2",
+          "statement": "We have enough chairs for everyone.",
+          "explanation": "Con sustantivo, «enough» va delante."
+        },
+        {
+          "id": "c3",
+          "statement": "This model is much faster than the old one.",
+          "explanation": "«much» indica una gran diferencia."
+        },
+        {
+          "id": "c4",
+          "statement": "The room is big enough for two desks.",
+          "explanation": "«adjetivo + enough» es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "The box is too heavy to carry it.",
+          "explanation": "No repetimos el objeto con «to»."
+        },
+        {
+          "id": "c6",
+          "statement": "This route is slightly shorter than the usual one.",
+          "explanation": "«slightly» modifica el comparativo."
+        },
+        {
+          "id": "c7",
+          "statement": "There are enough seats for everyone.",
+          "explanation": "«enough + sustantivo» es correcto."
+        },
+        {
+          "id": "c8",
+          "statement": "She is enough old to travel alone.",
+          "explanation": "Con adjetivo, «enough» va después: «old enough»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "modifier",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-sd-130",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "This laptop is a bit faster than my old one.",
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "c2",
+          "statement": "The bag is too small for all my books.",
+          "explanation": "«too ... for + sustantivo» es correcto."
+        },
+        {
+          "id": "c3",
+          "statement": "This model is far more efficient than the old one.",
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "c4",
+          "statement": "The new plan is a bit better than the old one.",
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "c5",
+          "statement": "The suitcase is too large to fit in the locker.",
+          "explanation": "La estructura «too ... to» es correcta y expresa que la maleta no cabe."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "modifier",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-sd-192",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She is old enough to drive.",
+          "explanation": "«enough ... to» es correcto."
+        },
+        {
+          "id": "c2",
+          "statement": "The test was too difficult for me.",
+          "explanation": "«too ... for + persona» es correcto."
+        },
+        {
+          "id": "c3",
+          "statement": "This route is slightly more long than the other one.",
+          "explanation": "«long» es corto: «longer»."
+        },
+        {
+          "id": "c4",
+          "statement": "The coffee is too strong for me.",
+          "explanation": "«too ... for + persona» es correcto."
+        },
+        {
+          "id": "c5",
+          "statement": "The new office is far more spacious than the old one.",
+          "explanation": "«far» intensifica el comparativo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "enough",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

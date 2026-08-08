@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-gist-detail-mini-game-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-gist-detail",
+  "subtopic": "b1-reading-gist-detail",
+  "lessonId": "b1-reading-gist-detail",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What is the app for?",
+          "context": "A local app tells residents about bus delays so they can plan their journeys.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Replacing buses"
+            },
+            {
+              "id": "d",
+              "text": "Printing tickets only"
+            },
+            {
+              "id": "a",
+              "text": "Planning journeys around delays"
+            }
+          ],
+          "explanation": "El propósito es informar de retrasos para planificar."
+        },
+        {
+          "id": "r2",
+          "prompt": "When does the class start?",
+          "context": "The quiet yoga class starts at 7 a.m. and is designed for people who work late.",
+          "options": [
+            {
+              "id": "a",
+              "text": "At 7 a.m."
+            },
+            {
+              "id": "b",
+              "text": "At 7 p.m."
+            },
+            {
+              "id": "d",
+              "text": "At 10 a.m."
+            }
+          ],
+          "explanation": "At 7 a.m. es el detalle temporal."
+        },
+        {
+          "id": "r3",
+          "prompt": "What does Mina do on rainy days?",
+          "context": "Mina cycles to work three days a week and takes the bus when it rains.",
+          "options": [
+            {
+              "id": "b",
+              "text": "She cycles faster"
+            },
+            {
+              "id": "a",
+              "text": "She takes the bus"
+            },
+            {
+              "id": "d",
+              "text": "She takes a taxi every day"
+            }
+          ],
+          "explanation": "When it rains introduce la alternativa al ciclismo."
+        },
+        {
+          "id": "r4",
+          "prompt": "How often does Mina cycle to work?",
+          "context": "Mina cycles to work three days a week. On rainy days, she takes the bus instead.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Only on rainy days"
+            },
+            {
+              "id": "b",
+              "text": "Every day"
+            },
+            {
+              "id": "a",
+              "text": "Three days a week"
+            }
+          ],
+          "explanation": "Three days a week es el detalle explícito."
+        },
+        {
+          "id": "r5",
+          "prompt": "What does the work aim to do?",
+          "context": "The town improved drainage after heavy rain. The work should reduce puddles but cannot stop all flooding.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Stop all rain"
+            },
+            {
+              "id": "b",
+              "text": "Create more flooding"
+            },
+            {
+              "id": "a",
+              "text": "Reduce puddles without ending every flood"
+            }
+          ],
+          "explanation": "Should reduce but cannot stop all conserva los dos límites del texto."
+        },
+        {
+          "id": "r6",
+          "prompt": "On which mornings do the garden volunteers meet?",
+          "context": "Volunteers meet in the community garden on Saturday mornings; tools are stored in a locked shed.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Only in July"
+            },
+            {
+              "id": "a",
+              "text": "Saturday mornings"
+            },
+            {
+              "id": "b",
+              "text": "Sunday nights"
+            }
+          ],
+          "explanation": "Saturday mornings es el momento explícito."
+        },
+        {
+          "id": "r7",
+          "prompt": "Why did Nadia move the desk?",
+          "context": "Nadia moved her desk nearer the window because the room was too dark. She can now read without a lamp during the day.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The room was too dark"
+            },
+            {
+              "id": "d",
+              "text": "She was leaving the room"
+            },
+            {
+              "id": "c",
+              "text": "The window was broken"
+            }
+          ],
+          "explanation": "Because the room was too dark expresa la causa."
+        },
+        {
+          "id": "r8",
+          "prompt": "What system has the café introduced?",
+          "context": "The café has introduced reusable cups. Customers pay a small deposit and receive it back when they return the cup.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The café sells furniture"
+            },
+            {
+              "id": "a",
+              "text": "A café is encouraging reusable cups"
+            },
+            {
+              "id": "c",
+              "text": "Customers cannot drink there"
+            }
+          ],
+          "explanation": "El depósito y su devolución explican el sistema reutilizable."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "gist",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What community project does the repair-cafe paragraph describe?",
+          "context": "The town opened a repair café. Volunteers help residents fix small electrical items, reducing waste and sharing practical skills.",
+          "options": [
+            {
+              "id": "d",
+              "text": "A ban on electrical items"
+            },
+            {
+              "id": "a",
+              "text": "A community repair project"
+            },
+            {
+              "id": "b",
+              "text": "A shop selling new phones"
+            }
+          ],
+          "explanation": "Las dos frases describen un proyecto para reparar y compartir conocimientos."
+        },
+        {
+          "id": "r2",
+          "prompt": "When do volunteers meet?",
+          "context": "The community garden is open to everyone, but volunteers meet on Saturday mornings. Tools are kept in a locked shed.",
+          "options": [
+            {
+              "id": "a",
+              "text": "On Saturday mornings"
+            },
+            {
+              "id": "c",
+              "text": "Only in winter"
+            },
+            {
+              "id": "b",
+              "text": "Every evening"
+            }
+          ],
+          "explanation": "Saturday mornings es la información solicitada."
+        },
+        {
+          "id": "r3",
+          "prompt": "Why was a second desk opened?",
+          "context": "The festival organisers expected 200 visitors, but nearly 350 arrived. They opened a second information desk to reduce queues.",
+          "options": [
+            {
+              "id": "c",
+              "text": "To close the festival"
+            },
+            {
+              "id": "a",
+              "text": "To reduce queues caused by extra visitors"
+            },
+            {
+              "id": "d",
+              "text": "To move the event online"
+            }
+          ],
+          "explanation": "La llegada de más visitantes produjo colas y motivó la solución."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which summary best describes the repair-café paragraph?",
+          "context": "The town opened a repair café where volunteers fix small appliances.",
+          "options": [
+            {
+              "id": "c",
+              "text": "A café sells only coffee"
+            },
+            {
+              "id": "d",
+              "text": "Volunteers stopped helping"
+            },
+            {
+              "id": "a",
+              "text": "A community repair service has opened"
+            }
+          ],
+          "explanation": "La frase describe la apertura de un servicio comunitario de reparación."
+        },
+        {
+          "id": "r5",
+          "prompt": "What are residents doing?",
+          "context": "Residents planted trees beside the river to provide shade and improve the path.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Closing the river"
+            },
+            {
+              "id": "c",
+              "text": "Building a station"
+            },
+            {
+              "id": "a",
+              "text": "Improving the riverside area"
+            }
+          ],
+          "explanation": "Planting trees tiene el objetivo de mejorar el espacio."
+        },
+        {
+          "id": "r6",
+          "prompt": "When will the discussion take place?",
+          "context": "The book group discusses a Scottish novel next Tuesday and asks members to bring one question.",
+          "options": [
+            {
+              "id": "b",
+              "text": "This Friday"
+            },
+            {
+              "id": "c",
+              "text": "Every Saturday"
+            },
+            {
+              "id": "a",
+              "text": "Next Tuesday"
+            }
+          ],
+          "explanation": "Next Tuesday es el momento indicado."
+        },
+        {
+          "id": "r7",
+          "prompt": "On which evenings does Leo's photography group meet?",
+          "context": "Leo's photography group meets on Wednesday evenings.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Every lunchtime"
+            },
+            {
+              "id": "a",
+              "text": "Wednesday evenings"
+            },
+            {
+              "id": "b",
+              "text": "Tuesday mornings"
+            }
+          ],
+          "explanation": "The text gives the day and part of the day directly."
+        },
+        {
+          "id": "r8",
+          "prompt": "Why was another group added?",
+          "context": "Evening language classes are affordable and near the station, so organisers added a second beginner group.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The classes were popular"
+            },
+            {
+              "id": "c",
+              "text": "Beginners were excluded"
+            },
+            {
+              "id": "b",
+              "text": "The classes moved far away"
+            }
+          ],
+          "explanation": "La segunda clase responde a la popularidad del curso."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "gist",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

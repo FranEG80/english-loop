@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-use-of-english-fixed-expressions-mini-game-001",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-fixed-expressions",
+  "subtopic": "b1-fixed-expressions",
+  "lessonId": "b1-use-of-english-fixed-expressions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-use-of-english-fixed-expressions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-fixed-expressions",
+      "subtopic": "b1-fixed-expressions",
+      "taxonomyNodeIds": [
+        "b1-fixed-expressions"
+      ],
+      "difficulty": 5,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I look forward to ___ from you soon.",
+          "options": [
+            {
+              "id": "d",
+              "text": "have heard"
+            },
+            {
+              "id": "a",
+              "text": "hearing"
+            },
+            {
+              "id": "b",
+              "text": "hear"
+            }
+          ],
+          "explanation": "In look forward to, to is a preposition, so it takes an -ing form."
+        },
+        {
+          "id": "r2",
+          "prompt": "___ opening the window for a few minutes?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Would you mind"
+            },
+            {
+              "id": "b",
+              "text": "Would you care"
+            },
+            {
+              "id": "c",
+              "text": "Would you purpose"
+            }
+          ],
+          "explanation": "Would you mind is followed by an -ing form in a polite request."
+        },
+        {
+          "id": "r3",
+          "prompt": "Please ___ of your bag while you are on the train.",
+          "options": [
+            {
+              "id": "d",
+              "text": "have care"
+            },
+            {
+              "id": "b",
+              "text": "make care"
+            },
+            {
+              "id": "a",
+              "text": "take care"
+            }
+          ],
+          "explanation": "Take care of means look after or protect."
+        },
+        {
+          "id": "r4",
+          "prompt": "___, I found the new timetable confusing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "At first"
+            },
+            {
+              "id": "c",
+              "text": "On purpose"
+            },
+            {
+              "id": "b",
+              "text": "In addition"
+            }
+          ],
+          "explanation": "At first refers to the initial stage of a situation."
+        },
+        {
+          "id": "r5",
+          "prompt": "We meet for coffee ___, perhaps once a month.",
+          "options": [
+            {
+              "id": "a",
+              "text": "from time to time"
+            },
+            {
+              "id": "c",
+              "text": "from purpose"
+            },
+            {
+              "id": "b",
+              "text": "from the way"
+            }
+          ],
+          "explanation": "From time to time means occasionally."
+        },
+        {
+          "id": "r6",
+          "prompt": "The north is rainy; ___, the south is very dry.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on the way"
+            },
+            {
+              "id": "c",
+              "text": "on the heart"
+            },
+            {
+              "id": "a",
+              "text": "on the other hand"
+            }
+          ],
+          "explanation": "On the other hand introduces a contrasting point."
+        },
+        {
+          "id": "r7",
+          "prompt": "Everyone can ___, so check your work calmly.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take a mistake"
+            },
+            {
+              "id": "d",
+              "text": "give a mistake"
+            },
+            {
+              "id": "a",
+              "text": "make a mistake"
+            }
+          ],
+          "explanation": "The fixed collocation is make a mistake."
+        },
+        {
+          "id": "r8",
+          "prompt": "The course is practical; ___, it is affordable.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in addition"
+            },
+            {
+              "id": "b",
+              "text": "in a hurry"
+            },
+            {
+              "id": "c",
+              "text": "in the end"
+            }
+          ],
+          "explanation": "In addition adds another supporting point."
+        }
+      ],
+      "lessonIds": [
+        "b1-use-of-english-fixed-expressions"
+      ],
+      "tags": [
+        "b1",
+        "fixed-expressions",
+        "verb-patterns",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-use-of-english-fixed-expressions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-fixed-expressions",
+      "subtopic": "b1-fixed-expressions",
+      "taxonomyNodeIds": [
+        "b1-fixed-expressions"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Nora knows the poem ___ and can recite every line.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at least"
+            },
+            {
+              "id": "a",
+              "text": "by heart"
+            },
+            {
+              "id": "c",
+              "text": "in time"
+            }
+          ],
+          "explanation": "Know something by heart means remember it completely."
+        },
+        {
+          "id": "r2",
+          "prompt": "The bus arrived ___, exactly at 8:00.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at first"
+            },
+            {
+              "id": "a",
+              "text": "on time"
+            },
+            {
+              "id": "d",
+              "text": "from time to time"
+            }
+          ],
+          "explanation": "On time means at the scheduled time."
+        },
+        {
+          "id": "r3",
+          "prompt": "We moved abroad, but we still ___ with our neighbours.",
+          "options": [
+            {
+              "id": "d",
+              "text": "keep at first"
+            },
+            {
+              "id": "a",
+              "text": "keep in touch"
+            },
+            {
+              "id": "c",
+              "text": "keep on purpose"
+            }
+          ],
+          "explanation": "Keep in touch means continue communicating."
+        },
+        {
+          "id": "r4",
+          "prompt": "I thought the shop was closed; ___, it is open until nine.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in fact"
+            },
+            {
+              "id": "c",
+              "text": "on time"
+            },
+            {
+              "id": "b",
+              "text": "in a hurry"
+            }
+          ],
+          "explanation": "In fact introduces a fact that corrects or strengthens the previous idea."
+        },
+        {
+          "id": "r5",
+          "prompt": "The walk takes ___ twenty minutes.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at purpose"
+            },
+            {
+              "id": "a",
+              "text": "at least"
+            },
+            {
+              "id": "b",
+              "text": "at first"
+            }
+          ],
+          "explanation": "At least gives the minimum amount."
+        },
+        {
+          "id": "r6",
+          "prompt": "Did you spill the juice ___, or was it an accident?",
+          "options": [
+            {
+              "id": "d",
+              "text": "in addition"
+            },
+            {
+              "id": "c",
+              "text": "at first"
+            },
+            {
+              "id": "a",
+              "text": "on purpose"
+            }
+          ],
+          "explanation": "On purpose means intentionally."
+        },
+        {
+          "id": "r7",
+          "prompt": "This ticket is ___ valid; you need a new one.",
+          "options": [
+            {
+              "id": "a",
+              "text": "no longer"
+            },
+            {
+              "id": "c",
+              "text": "no purpose"
+            },
+            {
+              "id": "d",
+              "text": "no time"
+            }
+          ],
+          "explanation": "No longer means not now, although it was true before."
+        },
+        {
+          "id": "r8",
+          "prompt": "I cannot chat now because I am ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in a hurry"
+            },
+            {
+              "id": "d",
+              "text": "in fact"
+            },
+            {
+              "id": "b",
+              "text": "on time"
+            }
+          ],
+          "explanation": "In a hurry means that someone has very little time."
+        }
+      ],
+      "lessonIds": [
+        "b1-use-of-english-fixed-expressions"
+      ],
+      "tags": [
+        "b1",
+        "fixed-expressions",
+        "collocations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

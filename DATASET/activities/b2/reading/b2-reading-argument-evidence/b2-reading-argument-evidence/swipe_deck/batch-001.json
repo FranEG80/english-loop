@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-reading-argument-evidence-swipe-deck-001",
+  "level": "B2",
+  "category": "reading",
+  "topic": "b2-reading-argument-evidence",
+  "subtopic": "b2-reading-argument-evidence",
+  "lessonId": "b2-reading-argument-evidence",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-argument-evidence-sd-050",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b2-reading-argument-evidence",
+      "subtopic": "b2-reading-argument-evidence",
+      "taxonomyNodeIds": [
+        "b2-reading-argument-evidence"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The passage claims that market should accept contactless payments has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c2",
+          "statement": "The passage claims that housing project should include shared gardens has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c3",
+          "statement": "The passage presents watering young trees would require extra staff as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c4",
+          "statement": "The passage claims that café should donate unsold food has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c5",
+          "statement": "The passage presents maintenance would add a small annual cost as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-argument-evidence"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "true-false",
+        "scope",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-argument-evidence-sd-113",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b2-reading-argument-evidence",
+      "subtopic": "b2-reading-argument-evidence",
+      "taxonomyNodeIds": [
+        "b2-reading-argument-evidence"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The passage claims that neighbourhood should support a tool library has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c2",
+          "statement": "The passage presents traders worry about deliveries as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c3",
+          "statement": "The passage presents after-school activities would finish later as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c4",
+          "statement": "The passage presents some residents want more walking paths as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c5",
+          "statement": "The passage claims that hospital should offer text reminders has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c6",
+          "statement": "The passage claims that sports centre should reserve women-only sessions has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-argument-evidence"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "true-false",
+        "scope",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-argument-evidence-sd-176",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b2-reading-argument-evidence",
+      "subtopic": "b2-reading-argument-evidence",
+      "taxonomyNodeIds": [
+        "b2-reading-argument-evidence"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The passage presents room hire would increase the budget as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c2",
+          "statement": "The passage claims that bus company should publish delay data has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c3",
+          "statement": "The passage presents space would be unavailable for clubs as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c4",
+          "statement": "The passage claims that council should repair the footbridge has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c5",
+          "statement": "The passage presents the course would replace one optional lecture as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        },
+        {
+          "id": "c6",
+          "statement": "The passage claims that college should record lectures has no disadvantages.",
+          "explanation": "The passage includes a qualification, so it does not claim a perfect solution."
+        },
+        {
+          "id": "c7",
+          "statement": "The passage presents some tablets were returned late as a limitation of the proposal.",
+          "explanation": "The final sentence explicitly adds this qualification."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-argument-evidence"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "true-false",
+        "scope",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

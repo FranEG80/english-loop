@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-past-simple-continuous-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "past-tenses",
+  "subtopic": "past-simple-vs-continuous",
+  "lessonId": "b1-grammar-past-simple-continuous",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-past-simple-continuous-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "past-simple-vs-continuous"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I ___ the figures were wrong while the analyst ___ them again.",
+          "options": [
+            {
+              "id": "d",
+              "text": "did believed / were checking"
+            },
+            {
+              "id": "a",
+              "text": "believed / was checking"
+            },
+            {
+              "id": "b",
+              "text": "was believing / checked as background"
+            }
+          ],
+          "explanation": "«Believe» expresa un estado; la comprobación era una actividad en curso."
+        },
+        {
+          "id": "r2",
+          "prompt": "The wind ___ harder as we ___ the ridge, but it suddenly ___ when we reached the shelter.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was blowing / were crossing / stopped"
+            },
+            {
+              "id": "c",
+              "text": "were blowing / was crossing / stop"
+            },
+            {
+              "id": "d",
+              "text": "was blow / were cross / stopped"
+            }
+          ],
+          "explanation": "El viento y el cruce forman el fondo; la parada es un cambio completo."
+        },
+        {
+          "id": "r3",
+          "prompt": "The chef was in the middle of checking the seasoning: she ___ the sauce when the alarm sounded.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was tasting"
+            },
+            {
+              "id": "c",
+              "text": "was taste"
+            },
+            {
+              "id": "b",
+              "text": "tasted"
+            }
+          ],
+          "explanation": "El chef realizaba deliberadamente la acción de probar la salsa."
+        },
+        {
+          "id": "r4",
+          "prompt": "I was halfway home: I ___ along King Street when it suddenly ___ to rain.",
+          "options": [
+            {
+              "id": "c",
+              "text": "was walk / started"
+            },
+            {
+              "id": "d",
+              "text": "were walking / start"
+            },
+            {
+              "id": "a",
+              "text": "was walking / started"
+            }
+          ],
+          "explanation": "La caminata estaba en progreso cuando comenzó el nuevo evento."
+        },
+        {
+          "id": "r5",
+          "prompt": "While I was cooking, Leo ___ the table.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was setting"
+            },
+            {
+              "id": "d",
+              "text": "was set"
+            },
+            {
+              "id": "c",
+              "text": "were setting"
+            }
+          ],
+          "explanation": "Las dos actividades avanzaban al mismo tiempo: «was setting»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I ___ near the coast from 2018 to 2020, then I moved inland.",
+          "options": [
+            {
+              "id": "a",
+              "text": "lived"
+            },
+            {
+              "id": "b",
+              "text": "was living"
+            },
+            {
+              "id": "d",
+              "text": "were living"
+            }
+          ],
+          "explanation": "La residencia se presenta como un periodo completo asociado a un hábito."
+        },
+        {
+          "id": "r7",
+          "prompt": "I ___ the file, ___ the laptop and left.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was saving / was closing"
+            },
+            {
+              "id": "c",
+              "text": "did saved / closed"
+            },
+            {
+              "id": "a",
+              "text": "saved / closed"
+            }
+          ],
+          "explanation": "Los eventos sucesivos completos usan past simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "We ___ the route when the GPS ___ working, so we ___ a paper map.",
+          "options": [
+            {
+              "id": "a",
+              "text": "were following / stopped / used"
+            },
+            {
+              "id": "b",
+              "text": "followed / was stopping / were using forever"
+            },
+            {
+              "id": "d",
+              "text": "was following / stop / used"
+            }
+          ],
+          "explanation": "La ruta era el fondo; el fallo y la decisión posterior son eventos completos."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-past-simple-continuous"
+      ],
+      "tags": [
+        "b1",
+        "past-tenses",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-past-simple-continuous-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "past-simple-vs-continuous"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The lights suddenly ___ once while we were having dinner.",
+          "options": [
+            {
+              "id": "a",
+              "text": "went out"
+            },
+            {
+              "id": "b",
+              "text": "were going out"
+            },
+            {
+              "id": "d",
+              "text": "was going out"
+            }
+          ],
+          "explanation": "El apagón es el evento completo que interrumpe la cena."
+        },
+        {
+          "id": "r2",
+          "prompt": "Rain ___ and people ___ home as the shop closed.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was fall / were hurry"
+            },
+            {
+              "id": "b",
+              "text": "fell / hurried"
+            },
+            {
+              "id": "a",
+              "text": "was falling / were hurrying"
+            }
+          ],
+          "explanation": "Las dos actividades crean el escenario y estaban en progreso."
+        },
+        {
+          "id": "r3",
+          "prompt": "The meeting ___ at 4.15.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was ending"
+            },
+            {
+              "id": "b",
+              "text": "ended"
+            },
+            {
+              "id": "c",
+              "text": "were ending"
+            }
+          ],
+          "explanation": "La hora indica el momento completo en que terminó la reunión."
+        },
+        {
+          "id": "r4",
+          "prompt": "At eight o'clock, we ___ outside the theatre.",
+          "options": [
+            {
+              "id": "d",
+              "text": "were wait"
+            },
+            {
+              "id": "b",
+              "text": "waited and finished"
+            },
+            {
+              "id": "a",
+              "text": "were waiting"
+            }
+          ],
+          "explanation": "La espera estaba en progreso a las ocho: «were waiting»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I ___ the plan was too risky.",
+          "options": [
+            {
+              "id": "c",
+              "text": "did thought"
+            },
+            {
+              "id": "b",
+              "text": "was thinking"
+            },
+            {
+              "id": "a",
+              "text": "thought"
+            }
+          ],
+          "explanation": "«Think» como opinión se expresa aquí con past simple «thought»."
+        },
+        {
+          "id": "r6",
+          "prompt": "She ___ in Nairobi for five years before moving to Accra.",
+          "options": [
+            {
+              "id": "d",
+              "text": "were working"
+            },
+            {
+              "id": "c",
+              "text": "did worked"
+            },
+            {
+              "id": "a",
+              "text": "worked"
+            }
+          ],
+          "explanation": "Aunque duró cinco años, el periodo se presenta como completo."
+        },
+        {
+          "id": "r7",
+          "prompt": "He ___ my charger without asking, which really annoyed me.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were always borrowing"
+            },
+            {
+              "id": "a",
+              "text": "was always borrowing"
+            },
+            {
+              "id": "d",
+              "text": "was always borrowed"
+            }
+          ],
+          "explanation": "El continuo con «always» puede enfatizar una conducta repetida molesta."
+        },
+        {
+          "id": "r8",
+          "prompt": "Ask whether Maya was sleeping when the alarm sounded.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Were Maya sleeping when the alarm sounded?"
+            },
+            {
+              "id": "a",
+              "text": "Was Maya sleeping when the alarm sounded?"
+            },
+            {
+              "id": "b",
+              "text": "Did Maya was sleeping when the alarm sounded?"
+            }
+          ],
+          "explanation": "La pregunta continua comienza con «Was Maya» y usa «sleeping»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-past-simple-continuous"
+      ],
+      "tags": [
+        "b1",
+        "past-tenses",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

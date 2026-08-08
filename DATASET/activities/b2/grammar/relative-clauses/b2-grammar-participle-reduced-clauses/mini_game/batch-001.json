@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-participle-reduced-clauses-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "relative-clauses",
+  "subtopic": "participle-reduced-clauses",
+  "lessonId": "b2-grammar-participle-reduced-clauses",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-participle-reduced-clauses-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "participle-reduced-clauses",
+      "taxonomyNodeIds": [
+        "participle-reduced-clauses"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "If ___ correctly, the tool saves time.",
+          "options": [
+            {
+              "id": "b",
+              "text": "used"
+            },
+            {
+              "id": "c",
+              "text": "use"
+            },
+            {
+              "id": "d",
+              "text": "having use"
+            }
+          ],
+          "explanation": "The tool is used, so the passive participle is needed."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence is correct and clear?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Informed having the closure, the visitors changed plans."
+            },
+            {
+              "id": "a",
+              "text": "Having been informed of the closure, the visitors changed their plans."
+            },
+            {
+              "id": "c",
+              "text": "Being informed the closure, the visitors changed plans."
+            }
+          ],
+          "explanation": "The visitors received the information before changing plans."
+        },
+        {
+          "id": "r3",
+          "prompt": "If ___ in a sealed container, the chemical remains stable.",
+          "options": [
+            {
+              "id": "b",
+              "text": "stored"
+            },
+            {
+              "id": "d",
+              "text": "store"
+            },
+            {
+              "id": "c",
+              "text": "having store"
+            }
+          ],
+          "explanation": "The chemical is stored in the container."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ carefully, the solvent is safe to handle.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Using"
+            },
+            {
+              "id": "d",
+              "text": "Having use"
+            },
+            {
+              "id": "a",
+              "text": "Used"
+            }
+          ],
+          "explanation": "The solvent is used carefully."
+        },
+        {
+          "id": "r5",
+          "prompt": "___ the route, Elena guided the visitors.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Knowing"
+            },
+            {
+              "id": "c",
+              "text": "Having know"
+            },
+            {
+              "id": "b",
+              "text": "Known"
+            }
+          ],
+          "explanation": "Knowing is active and shares Elena as its subject."
+        },
+        {
+          "id": "r6",
+          "prompt": "The documents ___ after noon will be processed tomorrow.",
+          "options": [
+            {
+              "id": "c",
+              "text": "submit"
+            },
+            {
+              "id": "b",
+              "text": "submitted"
+            },
+            {
+              "id": "a",
+              "text": "submitting"
+            }
+          ],
+          "explanation": "The documents are submitted, so use submitted."
+        },
+        {
+          "id": "r7",
+          "prompt": "___ the risks, the team added a backup plan.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Knowing"
+            },
+            {
+              "id": "b",
+              "text": "Known"
+            },
+            {
+              "id": "c",
+              "text": "Having been know"
+            }
+          ],
+          "explanation": "The team knows the risks, so the active -ing form fits."
+        },
+        {
+          "id": "r8",
+          "prompt": "___ the inspection, the engineer left.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Finishing been"
+            },
+            {
+              "id": "a",
+              "text": "Having finished"
+            },
+            {
+              "id": "c",
+              "text": "Finished having"
+            }
+          ],
+          "explanation": "Having finished clearly places the inspection first."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-participle-reduced-clauses"
+      ],
+      "tags": [
+        "b2",
+        "passive",
+        "condition",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-participle-reduced-clauses-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "participle-reduced-clauses",
+      "taxonomyNodeIds": [
+        "participle-reduced-clauses"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The files that were encrypted overnight are secure.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The files having encrypt overnight are secure."
+            },
+            {
+              "id": "b",
+              "text": "The files encrypted overnight are secure."
+            },
+            {
+              "id": "a",
+              "text": "The files encrypting overnight are secure."
+            }
+          ],
+          "explanation": "Encrypted reduces were encrypted."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence has a grammatical reduced adverbial clause?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Concerned about costs, the team revised the plan."
+            },
+            {
+              "id": "d",
+              "text": "Having concern costs, the team revised the plan."
+            },
+            {
+              "id": "c",
+              "text": "Concerned about costs, the plan revised the team."
+            }
+          ],
+          "explanation": "The team is concerned and also revises the plan."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ the contract, Maya asked one question.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Having reviewed"
+            },
+            {
+              "id": "c",
+              "text": "Reviewed having"
+            },
+            {
+              "id": "d",
+              "text": "Having review"
+            }
+          ],
+          "explanation": "Having reviewed marks a completed earlier action."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ about the ice, the hikers changed route.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Having been warned"
+            },
+            {
+              "id": "a",
+              "text": "Having warned"
+            },
+            {
+              "id": "c",
+              "text": "Being warning"
+            }
+          ],
+          "explanation": "The hikers received the warning: having been warned."
+        },
+        {
+          "id": "r5",
+          "prompt": "The samples ___ in May were contaminated.",
+          "options": [
+            {
+              "id": "b",
+              "text": "collected"
+            },
+            {
+              "id": "d",
+              "text": "having collect"
+            },
+            {
+              "id": "a",
+              "text": "collecting"
+            }
+          ],
+          "explanation": "The samples receive the action, so use the past participle."
+        },
+        {
+          "id": "r6",
+          "prompt": "___ the figures, the analyst signed the report.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Having been checked"
+            },
+            {
+              "id": "c",
+              "text": "Checked having"
+            },
+            {
+              "id": "a",
+              "text": "Having checked"
+            }
+          ],
+          "explanation": "The analyst checked the figures before signing."
+        },
+        {
+          "id": "r7",
+          "prompt": "___ through the market, we noticed a new stall.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Walk"
+            },
+            {
+              "id": "b",
+              "text": "Walking"
+            },
+            {
+              "id": "a",
+              "text": "Walked"
+            }
+          ],
+          "explanation": "Walking expresses an action happening as we noticed the stall."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence has a correct shared subject?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Walking to the station, the rain got heavy."
+            },
+            {
+              "id": "a",
+              "text": "Walking to the station, I got wet."
+            },
+            {
+              "id": "c",
+              "text": "Walked to the station, I got wet."
+            }
+          ],
+          "explanation": "I is both the walker and the subject of got."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-participle-reduced-clauses"
+      ],
+      "tags": [
+        "b2",
+        "passive",
+        "relative",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

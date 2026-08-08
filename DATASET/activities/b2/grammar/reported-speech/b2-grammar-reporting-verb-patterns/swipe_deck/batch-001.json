@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-verb-patterns-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "reporting-verb-patterns",
+  "lessonId": "b2-grammar-reporting-verb-patterns",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-sd-049",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The pattern ‘The pilot admitted to changing the route’ is grammatical.",
+          "explanation": "Admit can be followed by to plus a gerund."
+        },
+        {
+          "id": "c2",
+          "statement": "The pattern ‘The chair apologised to interrupting’ is grammatical.",
+          "explanation": "Use apologised for interrupting, not to interrupting."
+        },
+        {
+          "id": "c3",
+          "statement": "The pattern ‘The adviser encouraged us to apply’ is grammatical.",
+          "explanation": "Encourage takes object plus to-infinitive."
+        },
+        {
+          "id": "c4",
+          "statement": "The pattern ‘The article accused the company of hiding evidence’ is grammatical.",
+          "explanation": "Accuse someone of plus a gerund is the correct pattern."
+        },
+        {
+          "id": "c5",
+          "statement": "The pattern ‘The guide warned us not to swim’ is grammatical.",
+          "explanation": "Warn someone not to do something is correct."
+        },
+        {
+          "id": "c6",
+          "statement": "The pattern ‘The chair apologised for interrupting’ is grammatical.",
+          "explanation": "Apologise for is followed by a gerund."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "admit",
+        "gerund",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-sd-112",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The pattern ‘The panel recommended to take the earlier train’ is grammatical.",
+          "explanation": "In this pattern recommend is followed by a gerund."
+        },
+        {
+          "id": "c2",
+          "statement": "The pattern ‘The panel recommended taking the earlier train’ is grammatical.",
+          "explanation": "Recommend can take a gerund directly."
+        },
+        {
+          "id": "c3",
+          "statement": "The pattern ‘The union urged the council acting’ is grammatical.",
+          "explanation": "Use urge someone to act, not urge someone acting."
+        },
+        {
+          "id": "c4",
+          "statement": "The pattern ‘The witness denied leaking the file’ is grammatical.",
+          "explanation": "Deny is followed by a gerund."
+        },
+        {
+          "id": "c5",
+          "statement": "The pattern ‘The curator claimed finding the missing label’ is grammatical.",
+          "explanation": "Claim normally takes a to-infinitive in this reporting pattern."
+        },
+        {
+          "id": "c6",
+          "statement": "The pattern ‘The witness denied to leak the file’ is grammatical.",
+          "explanation": "Deny does not normally take a to-infinitive."
+        },
+        {
+          "id": "c7",
+          "statement": "The pattern ‘The adviser encouraged us applying’ is grammatical.",
+          "explanation": "Use encouraged us to apply, not object plus gerund."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "recommend",
+        "error-spotting",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-sd-175",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 5,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The pattern ‘The editor offered to revise the headline’ is grammatical.",
+          "explanation": "Offer is followed by a to-infinitive."
+        },
+        {
+          "id": "c2",
+          "statement": "In a formal complaint, ‘The residents objected to paying the revised fee’ is grammatical.",
+          "explanation": "Here to is a preposition, so it is followed by a gerund."
+        },
+        {
+          "id": "c3",
+          "statement": "The pattern ‘The guide warned not swimming’ is grammatical.",
+          "explanation": "A person object is needed before not to swim in this meaning."
+        },
+        {
+          "id": "c4",
+          "statement": "The pattern ‘The union urged the council to act’ is grammatical.",
+          "explanation": "Urge takes an object followed by a to-infinitive."
+        },
+        {
+          "id": "c5",
+          "statement": "The pattern ‘The curator claimed to have found the missing label’ is grammatical.",
+          "explanation": "A perfect infinitive places the finding before the claim."
+        },
+        {
+          "id": "c6",
+          "statement": "The pattern ‘The residents suggested installing better lights’ is grammatical.",
+          "explanation": "Suggest is followed by a gerund in this structure."
+        },
+        {
+          "id": "c7",
+          "statement": "A reminder to an individual can follow this pattern: ‘The nurse reminded me to call.’",
+          "explanation": "Remind someone to do something uses object plus to-infinitive."
+        },
+        {
+          "id": "c8",
+          "statement": "The pattern ‘The pilot admitted to change the route’ is grammatical.",
+          "explanation": "After admit to, use a gerund: admitted to changing."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "offer",
+        "to-infinitive",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

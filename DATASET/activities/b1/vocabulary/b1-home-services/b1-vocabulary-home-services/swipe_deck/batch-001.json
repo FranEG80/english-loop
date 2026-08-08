@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-home-services-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-home-services",
+  "subtopic": "b1-home-services",
+  "lessonId": "b1-vocabulary-home-services",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-home-services-sd-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "You can report a fault to the person responsible for the building.",
+          "explanation": "Report a fault means inform the responsible person about a problem."
+        },
+        {
+          "id": "c2",
+          "statement": "A power cut is a temporary loss of electricity.",
+          "explanation": "A power cut means the electricity supply stops temporarily."
+        },
+        {
+          "id": "c3",
+          "statement": "A tenant owns every property they live in.",
+          "explanation": "A tenant rents and occupies a property; the landlord usually owns it."
+        },
+        {
+          "id": "c4",
+          "statement": "A plumber repairs pipes and taps.",
+          "explanation": "Plumbers work with water pipes, taps and similar systems."
+        },
+        {
+          "id": "c5",
+          "statement": "A wardrobe is normally used for washing dishes.",
+          "explanation": "A wardrobe stores clothes; a sink or dishwasher is used for dishes."
+        },
+        {
+          "id": "c6",
+          "statement": "Repair and replace always mean exactly the same thing.",
+          "explanation": "Repair means fix an item; replace means remove it and put in another one."
+        },
+        {
+          "id": "c7",
+          "statement": "Give notice can mean formally tell a landlord you will leave.",
+          "explanation": "Give notice is a formal expression used before leaving a rented property."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-home-services-sd-085",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A plumber is the most suitable professional for a dangerous fuse-box fault.",
+          "explanation": "An electrician should handle electrical faults; a plumber handles water systems."
+        },
+        {
+          "id": "c2",
+          "statement": "A deposit is always the same thing as monthly rent.",
+          "explanation": "A deposit is security money, while rent is the regular payment for the property."
+        },
+        {
+          "id": "c3",
+          "statement": "A sofa is a piece of furniture.",
+          "explanation": "A sofa is furniture used for sitting."
+        },
+        {
+          "id": "c4",
+          "statement": "A bathroom is normally where people sleep.",
+          "explanation": "People normally sleep in a bedroom, not a bathroom."
+        },
+        {
+          "id": "c5",
+          "statement": "Furniture is normally used as an uncountable noun.",
+          "explanation": "Say some furniture or a piece of furniture, not usually a furniture."
+        },
+        {
+          "id": "c6",
+          "statement": "The sentence There is a furniture in the hall is standard English.",
+          "explanation": "Furniture is uncountable; say there is some furniture or a piece of furniture."
+        },
+        {
+          "id": "c7",
+          "statement": "A leak is an unwanted flow of liquid.",
+          "explanation": "A leak is liquid escaping from a pipe, roof or container."
+        },
+        {
+          "id": "c8",
+          "statement": "A kitchen is used for preparing food.",
+          "explanation": "A kitchen is the room where food is prepared and cooked."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-home-services-sd-148",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "An electrician normally repairs blocked sinks.",
+          "explanation": "An electrician handles electricity; a plumber repairs sinks and pipes."
+        },
+        {
+          "id": "c2",
+          "statement": "A balcony is usually outside a flat or house.",
+          "explanation": "A balcony is an outdoor platform attached to a building."
+        },
+        {
+          "id": "c3",
+          "statement": "Rent is a regular payment for a rented home.",
+          "explanation": "Rent is paid in exchange for using a property."
+        },
+        {
+          "id": "c4",
+          "statement": "A tenant is usually the person who owns and rents out the property.",
+          "explanation": "The owner who rents out the property is the landlord; the tenant rents it."
+        },
+        {
+          "id": "c5",
+          "statement": "A boiler can provide hot water and heating.",
+          "explanation": "A boiler commonly heats water and supplies central heating."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

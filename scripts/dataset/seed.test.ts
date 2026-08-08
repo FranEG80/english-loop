@@ -40,12 +40,12 @@ describe("dataset seed mapping", () => {
       batches: [],
       activities: [
         {
-          schemaVersion: "1.0.0",
+          schemaVersion: "2.0.0",
           id: "activity-1",
           status: "published",
           autoGradable: true,
           level: "B1",
-          type: "fill_blank",
+          type: "gap_fill", skillFocus: "fill_blank",
           category: "grammar",
           topic: "b1-grammar",
           subtopic: "b1-grammar-topic",

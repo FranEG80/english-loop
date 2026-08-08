@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-mixed-conditionals-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "conditionals",
+  "subtopic": "mixed-conditionals",
+  "lessonId": "b2-grammar-mixed-conditionals",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-sd-029",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "mixed-conditionals",
+      "taxonomyNodeIds": [
+        "mixed-conditionals"
+      ],
+      "difficulty": 5,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "If the system would be more reliable, we could have avoided yesterday's delay.",
+          "explanation": "Tras «if» usamos pasado hipotético «were», no «would be»."
+        },
+        {
+          "id": "c2",
+          "statement": "We wouldn't be lost now if we'd checked the route before leaving.",
+          "explanation": "La comprobación pasada habría evitado el estado presente de estar perdidos."
+        },
+        {
+          "id": "c3",
+          "statement": "If I had gone to bed earlier, I wouldn't be so tired now.",
+          "explanation": "Es correcta: una acción pasada irreal explica un estado presente."
+        },
+        {
+          "id": "c4",
+          "statement": "If the system were more reliable, we could have avoided yesterday's delay.",
+          "explanation": "Una cualidad presente general del sistema explica una consecuencia pasada."
+        },
+        {
+          "id": "c5",
+          "statement": "She would be in Canada now if she had accepted the scholarship.",
+          "explanation": "La aceptación pasada no ocurrida se relaciona correctamente con una ubicación presente."
+        },
+        {
+          "id": "c6",
+          "statement": "If the parts had arrived on time, we might be ready to launch now.",
+          "explanation": "La llegada pasada habría producido una posible preparación presente."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "conditionals",
+        "mixed-conditionals",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-sd-092",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "mixed-conditionals",
+      "taxonomyNodeIds": [
+        "mixed-conditionals"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "If we'd charged the battery, the phone wouldn't be dead now.",
+          "explanation": "La carga pasada habría evitado el estado presente de batería agotada."
+        },
+        {
+          "id": "c2",
+          "statement": "If Leo would be more patient, he wouldn't have sent that angry reply yesterday.",
+          "explanation": "El estado presente hipotético usa «were», no «would be», tras «if»."
+        },
+        {
+          "id": "c3",
+          "statement": "If the roof had been maintained, this room wouldn't be damp today.",
+          "explanation": "El mantenimiento pasado no realizado explica la humedad presente."
+        },
+        {
+          "id": "c4",
+          "statement": "If I would have gone to bed earlier, I wouldn't be so tired now.",
+          "explanation": "La condición pasada debe ser «if I had gone», no «would have gone»."
+        },
+        {
+          "id": "c5",
+          "statement": "If we'd charged the battery, the phone wouldn't have dead now.",
+          "explanation": "El estado presente necesita «wouldn't be dead», no «wouldn't have dead»."
+        },
+        {
+          "id": "c6",
+          "statement": "If she had spoken German, she could apply for the post last year.",
+          "explanation": "El marcador «last year» exige un resultado pasado: «could have applied»."
+        },
+        {
+          "id": "c7",
+          "statement": "If Leo were more patient, he wouldn't have sent that angry reply yesterday.",
+          "explanation": "Es correcta: un rasgo presente hipotético explica una acción pasada."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "conditionals",
+        "mixed-conditionals",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-sd-155",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "mixed-conditionals",
+      "taxonomyNodeIds": [
+        "mixed-conditionals"
+      ],
+      "difficulty": 5,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "If they had invested earlier, the company might be profitable now.",
+          "explanation": "La inversión pasada se conecta con una posible rentabilidad presente."
+        },
+        {
+          "id": "c2",
+          "statement": "If they invested earlier, the company might have been profitable now.",
+          "explanation": "Para causa pasada y efecto presente debe ser «had invested» y «might be profitable now»."
+        },
+        {
+          "id": "c3",
+          "statement": "If the analyst were more cautious, she wouldn't have published the claim last week.",
+          "explanation": "Un rasgo presente explica una publicación pasada; la combinación es válida."
+        },
+        {
+          "id": "c4",
+          "statement": "She would have still worked here now if she didn't move abroad in 2022.",
+          "explanation": "La forma precisa es «would still work here now if she hadn't moved abroad»."
+        },
+        {
+          "id": "c5",
+          "statement": "If they had maintained the database, the service would be stable today.",
+          "explanation": "El mantenimiento pasado se conecta correctamente con la estabilidad presente."
+        },
+        {
+          "id": "c6",
+          "statement": "If I hadn't been so impatient, I wouldn't interrupt her earlier.",
+          "explanation": "«Earlier» sitúa el resultado en el pasado; debe ser «wouldn't have interrupted»."
+        },
+        {
+          "id": "c7",
+          "statement": "I would have lived abroad now if I had accepted that scholarship.",
+          "explanation": "Para un resultado presente usamos «would live» o «would be living», no «would have lived»."
+        },
+        {
+          "id": "c8",
+          "statement": "I would have a different career now if I had studied engineering.",
+          "explanation": "Estudiar pertenece al pasado y la carrera imaginada pertenece al presente."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "conditionals",
+        "mixed-conditionals",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

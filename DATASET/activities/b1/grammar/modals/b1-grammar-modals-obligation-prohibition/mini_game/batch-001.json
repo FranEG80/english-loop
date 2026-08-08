@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-modals-obligation-prohibition-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "obligation-necessity-prohibition",
+  "lessonId": "b1-grammar-modals-obligation-prohibition",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You ___ lean out of the train window.",
+          "options": [
+            {
+              "id": "a",
+              "text": "mustn't"
+            },
+            {
+              "id": "d",
+              "text": "must"
+            },
+            {
+              "id": "b",
+              "text": "don't have to"
+            }
+          ],
+          "explanation": "«Mustn't» expresa que una acción está prohibida."
+        },
+        {
+          "id": "r2",
+          "prompt": "“Did you have to attend the whole workshop?” “No, ___; the final session was optional.”",
+          "options": [
+            {
+              "id": "b",
+              "text": "I mustn't"
+            },
+            {
+              "id": "a",
+              "text": "I didn't have to"
+            },
+            {
+              "id": "c",
+              "text": "I hadn't to"
+            }
+          ],
+          "explanation": "La sesión opcional elimina la necesidad pasada: «I didn't have to»."
+        },
+        {
+          "id": "r3",
+          "prompt": "You ___ reserve a desk, although you may do so if you want a window seat.",
+          "options": [
+            {
+              "id": "a",
+              "text": "don't have to"
+            },
+            {
+              "id": "b",
+              "text": "mustn't"
+            },
+            {
+              "id": "c",
+              "text": "have to"
+            }
+          ],
+          "explanation": "La posibilidad de reservar voluntariamente demuestra que no es obligatorio."
+        },
+        {
+          "id": "r4",
+          "prompt": "Last winter, the mountain road closed and local people ___ travel through the valley.",
+          "options": [
+            {
+              "id": "c",
+              "text": "will have to"
+            },
+            {
+              "id": "a",
+              "text": "had to"
+            },
+            {
+              "id": "d",
+              "text": "have to"
+            }
+          ],
+          "explanation": "«Last winter» sitúa la obligación en el pasado, por lo que usamos «had to»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The path is closed because of falling rocks. Walkers ___ use it.",
+          "options": [
+            {
+              "id": "b",
+              "text": "don't have to"
+            },
+            {
+              "id": "a",
+              "text": "mustn't"
+            },
+            {
+              "id": "d",
+              "text": "needn't to"
+            }
+          ],
+          "explanation": "Un sendero cerrado no puede utilizarse: es una prohibición."
+        },
+        {
+          "id": "r6",
+          "prompt": "Admission was free, so we ___ buy tickets.",
+          "options": [
+            {
+              "id": "c",
+              "text": "hadn't to"
+            },
+            {
+              "id": "a",
+              "text": "didn't have to"
+            },
+            {
+              "id": "b",
+              "text": "mustn't"
+            }
+          ],
+          "explanation": "«Didn't have to» indica que pagar entradas no era necesario."
+        },
+        {
+          "id": "r7",
+          "prompt": "I'd like to know whether technicians ___ complete the safety course every year.",
+          "options": [
+            {
+              "id": "d",
+              "text": "must to"
+            },
+            {
+              "id": "a",
+              "text": "have to"
+            },
+            {
+              "id": "b",
+              "text": "do have to"
+            }
+          ],
+          "explanation": "Una pregunta indirecta mantiene el orden afirmativo: «whether technicians have to»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Does Omar ___ wear protective boots at the warehouse?",
+          "options": [
+            {
+              "id": "d",
+              "text": "musts"
+            },
+            {
+              "id": "c",
+              "text": "having to"
+            },
+            {
+              "id": "a",
+              "text": "have to"
+            }
+          ],
+          "explanation": "Después de «does» usamos la forma base «have to»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "prohibition",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Nadia ___ take two buses to reach the hospital.",
+          "options": [
+            {
+              "id": "a",
+              "text": "has to"
+            },
+            {
+              "id": "d",
+              "text": "musts"
+            },
+            {
+              "id": "c",
+              "text": "has"
+            }
+          ],
+          "explanation": "La tercera persona singular de «have to» es «has to»."
+        },
+        {
+          "id": "r2",
+          "prompt": "From January, residents ___ separate food waste from other rubbish.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will have to"
+            },
+            {
+              "id": "d",
+              "text": "have will to"
+            },
+            {
+              "id": "c",
+              "text": "will had to"
+            }
+          ],
+          "explanation": "La obligación futura se forma con «will have to»."
+        },
+        {
+          "id": "r3",
+          "prompt": "___ you have to replace the whole screen after the accident?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Did"
+            },
+            {
+              "id": "c",
+              "text": "Were"
+            },
+            {
+              "id": "d",
+              "text": "Musted"
+            }
+          ],
+          "explanation": "La pregunta pasada se forma con «Did + sujeto + have to»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Once the bridge opens, commuters ___ take the long coastal road.",
+          "options": [
+            {
+              "id": "a",
+              "text": "won't have to"
+            },
+            {
+              "id": "c",
+              "text": "won't must"
+            },
+            {
+              "id": "b",
+              "text": "mustn't"
+            }
+          ],
+          "explanation": "«Won't have to» expresa que la ruta larga dejará de ser necesaria."
+        },
+        {
+          "id": "r5",
+          "prompt": "We ___ obtain a permit last year, and we ___ renew it next April.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had to / musted"
+            },
+            {
+              "id": "b",
+              "text": "must / will must"
+            },
+            {
+              "id": "a",
+              "text": "had to / will have to"
+            }
+          ],
+          "explanation": "La obligación pasada usa «had to» y la futura «will have to»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I ___ remember to send the invoice today.",
+          "options": [
+            {
+              "id": "c",
+              "text": "musts"
+            },
+            {
+              "id": "d",
+              "text": "do must"
+            },
+            {
+              "id": "a",
+              "text": "must"
+            }
+          ],
+          "explanation": "Después de «must» usamos el infinitivo sin «to»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Online check-in is available, but it is optional. Passengers ___ use it.",
+          "options": [
+            {
+              "id": "b",
+              "text": "mustn't"
+            },
+            {
+              "id": "c",
+              "text": "have to"
+            },
+            {
+              "id": "a",
+              "text": "don't have to"
+            }
+          ],
+          "explanation": "«Optional» indica ausencia de obligación."
+        },
+        {
+          "id": "r8",
+          "prompt": "The lift was broken, so we ___ carry the boxes upstairs.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had to"
+            },
+            {
+              "id": "b",
+              "text": "musted"
+            },
+            {
+              "id": "c",
+              "text": "have to"
+            }
+          ],
+          "explanation": "Una obligación causada por una situación pasada usa «had to»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

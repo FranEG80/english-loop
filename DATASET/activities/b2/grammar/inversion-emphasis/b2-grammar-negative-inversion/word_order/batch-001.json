@@ -1367,65 +1367,6 @@
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b2-negative-inversion-wo-024",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B2",
-      "type": "word_order",
-      "skillFocus": "word_order",
-      "category": "grammar",
-      "topic": "inversion-emphasis",
-      "subtopic": "negative-inversion",
-      "taxonomyNodeIds": [
-        "negative-inversion"
-      ],
-      "difficulty": 5,
-      "instructions": "Arrange the no sooner sentence.",
-      "prompt": "Use the formal sequence correctly.",
-      "tokens": [
-        {
-          "id": "t1",
-          "text": "No sooner had the report"
-        },
-        {
-          "id": "t2",
-          "text": "appeared"
-        },
-        {
-          "id": "t3",
-          "text": "than"
-        },
-        {
-          "id": "t4",
-          "text": "journalists"
-        },
-        {
-          "id": "t5",
-          "text": "called."
-        }
-      ],
-      "lessonIds": [
-        "b2-grammar-negative-inversion"
-      ],
-      "tags": [
-        "b2",
-        "no-sooner"
-      ],
-      "estimatedSeconds": 55,
-      "evaluator": {
-        "strategy": "ordered_tokens",
-        "correctTokenIds": [
-          "t1",
-          "t2",
-          "t3",
-          "t4",
-          "t5"
-        ]
-      },
-      "explanation": "No sooner had the report appeared than journalists called."
-    },
-    {
-      "schemaVersion": "2.0.0",
       "id": "b2-negative-inversion-wo-025",
       "status": "published",
       "autoGradable": true,

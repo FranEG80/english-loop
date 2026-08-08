@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-career-business-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-career-business",
+  "subtopic": "b2-career-business",
+  "lessonId": "b2-vocabulary-career-business",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-career-business-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-career-business",
+      "subtopic": "b2-career-business",
+      "taxonomyNodeIds": [
+        "b2-career-business"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The director consulted local ___ before expanding.",
+          "options": [
+            {
+              "id": "b",
+              "text": "shortlists"
+            },
+            {
+              "id": "d",
+              "text": "employees"
+            },
+            {
+              "id": "a",
+              "text": "stakeholders"
+            }
+          ],
+          "explanation": "Stakeholders are groups affected by a decision."
+        },
+        {
+          "id": "r2",
+          "prompt": "The candidate described a clear five-year ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "career revenue"
+            },
+            {
+              "id": "c",
+              "text": "career wage"
+            },
+            {
+              "id": "a",
+              "text": "career path"
+            }
+          ],
+          "explanation": "Career path describes planned professional progression."
+        },
+        {
+          "id": "r3",
+          "prompt": "The firm ___ six applicants for a second interview.",
+          "options": [
+            {
+              "id": "c",
+              "text": "shelved"
+            },
+            {
+              "id": "b",
+              "text": "shortened"
+            },
+            {
+              "id": "a",
+              "text": "shortlisted"
+            }
+          ],
+          "explanation": "Shortlist means select candidates for a later stage."
+        },
+        {
+          "id": "r4",
+          "prompt": "Staff ___ has fallen since the firm introduced mentoring.",
+          "options": [
+            {
+              "id": "c",
+              "text": "revenue"
+            },
+            {
+              "id": "a",
+              "text": "turnover"
+            },
+            {
+              "id": "b",
+              "text": "profit"
+            }
+          ],
+          "explanation": "Turnover here means employees leaving the organisation."
+        },
+        {
+          "id": "r5",
+          "prompt": "The start-up hopes to ___ a new product in September.",
+          "options": [
+            {
+              "id": "c",
+              "text": "lounge"
+            },
+            {
+              "id": "d",
+              "text": "lend"
+            },
+            {
+              "id": "a",
+              "text": "launch"
+            }
+          ],
+          "explanation": "Launch means introduce a product or service to the market."
+        },
+        {
+          "id": "r6",
+          "prompt": "She moved into ___ after gaining experience abroad.",
+          "options": [
+            {
+              "id": "b",
+              "text": "manage"
+            },
+            {
+              "id": "a",
+              "text": "management"
+            },
+            {
+              "id": "d",
+              "text": "managingly"
+            }
+          ],
+          "explanation": "Move into management is a standard career expression."
+        },
+        {
+          "id": "r7",
+          "prompt": "The board consulted key ___ before approving the expansion.",
+          "options": [
+            {
+              "id": "b",
+              "text": "shortlists"
+            },
+            {
+              "id": "a",
+              "text": "stakeholders"
+            },
+            {
+              "id": "d",
+              "text": "applicants"
+            }
+          ],
+          "explanation": "Stakeholders can include investors, staff, customers or local groups."
+        },
+        {
+          "id": "r8",
+          "prompt": "The final ___ will be advertised next week.",
+          "options": [
+            {
+              "id": "b",
+              "text": "career"
+            },
+            {
+              "id": "a",
+              "text": "vacancy"
+            },
+            {
+              "id": "d",
+              "text": "stakeholder"
+            }
+          ],
+          "explanation": "A vacancy is an available job."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-career-business"
+      ],
+      "tags": [
+        "b2",
+        "stakeholders",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-career-business-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-career-business",
+      "subtopic": "b2-career-business",
+      "taxonomyNodeIds": [
+        "b2-career-business"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The shop’s annual ___ increased after the online launch.",
+          "options": [
+            {
+              "id": "c",
+              "text": "career"
+            },
+            {
+              "id": "a",
+              "text": "revenue"
+            },
+            {
+              "id": "d",
+              "text": "vacancy"
+            }
+          ],
+          "explanation": "Revenue is money generated by sales."
+        },
+        {
+          "id": "r2",
+          "prompt": "The role involves managing a heavy ___ during the summer.",
+          "options": [
+            {
+              "id": "d",
+              "text": "workplace"
+            },
+            {
+              "id": "a",
+              "text": "workload"
+            },
+            {
+              "id": "b",
+              "text": "workforce"
+            }
+          ],
+          "explanation": "Workload is the amount of work someone must handle."
+        },
+        {
+          "id": "r3",
+          "prompt": "The business had high ___ but little profit because costs were high.",
+          "options": [
+            {
+              "id": "b",
+              "text": "salary"
+            },
+            {
+              "id": "a",
+              "text": "revenue"
+            },
+            {
+              "id": "c",
+              "text": "wage"
+            }
+          ],
+          "explanation": "Revenue is sales income before costs are deducted."
+        },
+        {
+          "id": "r4",
+          "prompt": "Revenue rose, but ___ fell because costs increased.",
+          "options": [
+            {
+              "id": "a",
+              "text": "profit"
+            },
+            {
+              "id": "c",
+              "text": "wage"
+            },
+            {
+              "id": "b",
+              "text": "salary"
+            }
+          ],
+          "explanation": "Profit is what remains after costs."
+        },
+        {
+          "id": "r5",
+          "prompt": "She works ___ and invoices clients by project.",
+          "options": [
+            {
+              "id": "c",
+              "text": "freedom"
+            },
+            {
+              "id": "a",
+              "text": "freelance"
+            },
+            {
+              "id": "b",
+              "text": "freelancerly"
+            }
+          ],
+          "explanation": "Freelance describes independent project-based work."
+        },
+        {
+          "id": "r6",
+          "prompt": "The manager is responsible ___ the budget.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "of"
+            },
+            {
+              "id": "c",
+              "text": "with"
+            }
+          ],
+          "explanation": "The fixed combination is responsible for."
+        },
+        {
+          "id": "r7",
+          "prompt": "The employer increased the training budget to retain ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "profits"
+            },
+            {
+              "id": "c",
+              "text": "revenues"
+            },
+            {
+              "id": "a",
+              "text": "staff"
+            }
+          ],
+          "explanation": "Staff refers collectively to the organisation’s employees."
+        },
+        {
+          "id": "r8",
+          "prompt": "She applied ___ a vacancy in the research team.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            }
+          ],
+          "explanation": "The collocation is apply for a job or vacancy."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-career-business"
+      ],
+      "tags": [
+        "b2",
+        "revenue",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

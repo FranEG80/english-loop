@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-climate-global-issues-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-climate-global-issues",
+  "subtopic": "b2-climate-global-issues",
+  "lessonId": "b2-vocabulary-climate-global-issues",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-climate-global-issues-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-climate-global-issues",
+      "subtopic": "b2-climate-global-issues",
+      "taxonomyNodeIds": [
+        "b2-climate-global-issues"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A target is ambitious, but the first annual result is the measured ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "resource"
+            },
+            {
+              "id": "a",
+              "text": "outcome"
+            },
+            {
+              "id": "c",
+              "text": "adaptation"
+            }
+          ],
+          "explanation": "An outcome is the result of an action or policy."
+        },
+        {
+          "id": "r2",
+          "prompt": "Reducing the causes of climate change is called ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "exposure"
+            },
+            {
+              "id": "a",
+              "text": "mitigation"
+            },
+            {
+              "id": "b",
+              "text": "adaptation"
+            }
+          ],
+          "explanation": "Mitigation targets causes such as greenhouse-gas emissions."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which verb naturally combines with emissions?",
+          "options": [
+            {
+              "id": "a",
+              "text": "cut"
+            },
+            {
+              "id": "b",
+              "text": "do"
+            },
+            {
+              "id": "c",
+              "text": "make"
+            }
+          ],
+          "explanation": "Cut emissions is a common environmental collocation."
+        },
+        {
+          "id": "r4",
+          "prompt": "Raising sea walls to protect homes is an example of ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "adaptation"
+            },
+            {
+              "id": "b",
+              "text": "mitigation"
+            },
+            {
+              "id": "c",
+              "text": "consumption"
+            }
+          ],
+          "explanation": "Sea walls prepare communities for flooding impacts."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which statement separates risk from impact correctly?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Risk is a result; impact is a plan."
+            },
+            {
+              "id": "a",
+              "text": "Risk is possible harm; impact is an effect that occurs."
+            },
+            {
+              "id": "b",
+              "text": "Risk is a target; impact is a resource."
+            }
+          ],
+          "explanation": "Risk concerns possibility, whereas impact concerns an actual effect."
+        },
+        {
+          "id": "r6",
+          "prompt": "Restoring wetlands would most directly protect local ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "inequality"
+            },
+            {
+              "id": "a",
+              "text": "biodiversity"
+            },
+            {
+              "id": "d",
+              "text": "targets"
+            }
+          ],
+          "explanation": "Wetlands provide habitats for many species."
+        },
+        {
+          "id": "r7",
+          "prompt": "A change from fossil fuels to cleaner energy is an energy ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "risk"
+            },
+            {
+              "id": "d",
+              "text": "impact"
+            },
+            {
+              "id": "a",
+              "text": "transition"
+            }
+          ],
+          "explanation": "Transition describes a significant change from one system to another."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase means achieve a planned environmental objective?",
+          "options": [
+            {
+              "id": "d",
+              "text": "hold a target"
+            },
+            {
+              "id": "a",
+              "text": "meet a target"
+            },
+            {
+              "id": "b",
+              "text": "make a target"
+            }
+          ],
+          "explanation": "Meet a target means achieve the planned level."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-climate-global-issues"
+      ],
+      "tags": [
+        "b2",
+        "policy",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-climate-global-issues-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-climate-global-issues",
+      "subtopic": "b2-climate-global-issues",
+      "taxonomyNodeIds": [
+        "b2-climate-global-issues"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A possibility of harm in the future is a ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "resource"
+            },
+            {
+              "id": "d",
+              "text": "biodiversity"
+            },
+            {
+              "id": "a",
+              "text": "risk"
+            }
+          ],
+          "explanation": "Risk describes a possible harmful event or result."
+        },
+        {
+          "id": "r2",
+          "prompt": "The damage or effect caused by an event is its ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "adaptation"
+            },
+            {
+              "id": "d",
+              "text": "footprint"
+            },
+            {
+              "id": "a",
+              "text": "impact"
+            }
+          ],
+          "explanation": "Impact describes an effect or consequence."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which measure is mainly mitigation?",
+          "options": [
+            {
+              "id": "d",
+              "text": "warning residents about heat"
+            },
+            {
+              "id": "a",
+              "text": "replacing coal with wind power"
+            },
+            {
+              "id": "b",
+              "text": "raising a flood barrier"
+            }
+          ],
+          "explanation": "Replacing coal reduces greenhouse-gas emissions at source."
+        },
+        {
+          "id": "r4",
+          "prompt": "A community's reliable access to enough food is its food ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "target"
+            },
+            {
+              "id": "d",
+              "text": "risk"
+            },
+            {
+              "id": "a",
+              "text": "security"
+            }
+          ],
+          "explanation": "Food security concerns reliable access to sufficient food."
+        },
+        {
+          "id": "r5",
+          "prompt": "A drought threatens food ___ when crops fail and prices rise.",
+          "options": [
+            {
+              "id": "a",
+              "text": "security"
+            },
+            {
+              "id": "c",
+              "text": "transition"
+            },
+            {
+              "id": "b",
+              "text": "footprint"
+            }
+          ],
+          "explanation": "Food security concerns reliable access to sufficient food."
+        },
+        {
+          "id": "r6",
+          "prompt": "A society where income and protection are unevenly distributed has greater ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "inequality"
+            },
+            {
+              "id": "b",
+              "text": "biodiversity"
+            },
+            {
+              "id": "d",
+              "text": "security"
+            }
+          ],
+          "explanation": "Inequality describes unequal distribution of resources or opportunities."
+        },
+        {
+          "id": "r7",
+          "prompt": "Land, water and energy are examples of natural ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "outcomes"
+            },
+            {
+              "id": "c",
+              "text": "emissions"
+            },
+            {
+              "id": "a",
+              "text": "resources"
+            }
+          ],
+          "explanation": "Resources are useful supplies available for use."
+        },
+        {
+          "id": "r8",
+          "prompt": "A planned level an organisation wants to reach is a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "resource"
+            },
+            {
+              "id": "a",
+              "text": "target"
+            },
+            {
+              "id": "c",
+              "text": "risk"
+            }
+          ],
+          "explanation": "A target is a planned objective."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-climate-global-issues"
+      ],
+      "tags": [
+        "b2",
+        "climate",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

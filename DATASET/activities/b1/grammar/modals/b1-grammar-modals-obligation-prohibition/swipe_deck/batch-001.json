@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-modals-obligation-prohibition-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "obligation-necessity-prohibition",
+  "lessonId": "b1-grammar-modals-obligation-prohibition",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-sd-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Visitors mustn't use the cloakroom.",
+          "explanation": "Una opción se expresa con «don't have to use»; «mustn't» la prohibiría."
+        },
+        {
+          "id": "c2",
+          "statement": "Visitors mustn't go beyond this point.",
+          "explanation": "«Mustn't go» comunica una prohibición directa."
+        },
+        {
+          "id": "c3",
+          "statement": "You mustn't upload the file, but uploading it is entirely optional.",
+          "explanation": "«Mustn't» prohíbe la acción; una acción opcional está permitida pero no es obligatoria."
+        },
+        {
+          "id": "c4",
+          "statement": "Do you know whether does Mina have to attend the briefing?",
+          "explanation": "No hay inversión dentro de la pregunta indirecta: «whether Mina has to attend»."
+        },
+        {
+          "id": "c5",
+          "statement": "You don't have to borrow a helmet from reception; you can use your own.",
+          "explanation": "«Don't have to» permite elegir, y la segunda cláusula ofrece una alternativa."
+        },
+        {
+          "id": "c6",
+          "statement": "Yesterday, the technicians musted restart the system.",
+          "explanation": "«Musted» no existe; una obligación pasada usa «had to restart»."
+        },
+        {
+          "id": "c7",
+          "statement": "Do cyclists have to use this lane?",
+          "explanation": "La pregunta plural usa correctamente «Do cyclists have to»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "no-necessity",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-sd-072",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Passengers mustn't open the doors while the bus is moving.",
+          "explanation": "«Mustn't open» indica que abrir las puertas está prohibido."
+        },
+        {
+          "id": "c2",
+          "statement": "From July, every imported device will have to be tested locally.",
+          "explanation": "«Will have to be tested» combina obligación futura con una pasiva correcta."
+        },
+        {
+          "id": "c3",
+          "statement": "Employees must to lock the office at night.",
+          "explanation": "Después de «must» no se usa «to»: «must lock»."
+        },
+        {
+          "id": "c4",
+          "statement": "Could you tell me if contractors have to sign in every morning?",
+          "explanation": "La pregunta indirecta mantiene el orden «contractors have to»."
+        },
+        {
+          "id": "c5",
+          "statement": "You don't have to take photographs in the conservation room.",
+          "explanation": "«Don't have to» significa que no es necesario; para una prohibición se necesita «mustn't»."
+        },
+        {
+          "id": "c6",
+          "statement": "Did the players have to arrive two hours early?",
+          "explanation": "La pregunta pasada usa «Did + sujeto + have to + infinitivo»."
+        },
+        {
+          "id": "c7",
+          "statement": "Participants mustn't bring lunch because the organiser provides it.",
+          "explanation": "La comida proporcionada elimina la necesidad, pero no implica prohibición: «don't have to bring»."
+        },
+        {
+          "id": "c8",
+          "statement": "We had to submit monthly reports last year, but next year we won't have to submit them.",
+          "explanation": "«Had to» marca obligación pasada y «won't have to» ausencia de necesidad futura."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "prohibition",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-sd-135",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Does Aisha has to collect the keys before six?",
+          "explanation": "Después de «Does» debe aparecer la forma base: «have to collect»."
+        },
+        {
+          "id": "c2",
+          "statement": "My sister have to renew her library card.",
+          "explanation": "El sujeto singular requiere «has to renew»."
+        },
+        {
+          "id": "c3",
+          "statement": "We had to carry paper maps on earlier trips, but we don't have to carry them now.",
+          "explanation": "El contraste usa correctamente «had to» en el pasado y «don't have to» en el presente."
+        },
+        {
+          "id": "c4",
+          "statement": "You don't have to join the guided tour, so you may explore the public rooms independently.",
+          "explanation": "La segunda opción confirma que la visita guiada no es obligatoria."
+        },
+        {
+          "id": "c5",
+          "statement": "You won't have to queue once the new ticket gates open.",
+          "explanation": "«Won't have to queue» expresa correctamente ausencia de necesidad futura."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-sd-195",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "All swimmers have to wear a cap in this pool.",
+          "explanation": "«Swimmers have to wear» forma correctamente una obligación con sujeto plural."
+        },
+        {
+          "id": "c2",
+          "statement": "The storm damaged the roof, so we had to cancel the class.",
+          "explanation": "«Had to cancel» expresa una obligación causada por una situación pasada."
+        },
+        {
+          "id": "c3",
+          "statement": "The hotel offered free transfers, so guests didn't had to arrange a taxi.",
+          "explanation": "Después de «didn't» se usa la forma base: «didn't have to arrange»."
+        },
+        {
+          "id": "c4",
+          "statement": "You must keep your receipt.",
+          "explanation": "«Must» va seguido correctamente de la forma base «keep»."
+        },
+        {
+          "id": "c5",
+          "statement": "Next season, the club will have to replace the floodlights.",
+          "explanation": "«Will have to replace» es la forma normal de obligación futura."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

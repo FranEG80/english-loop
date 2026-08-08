@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-writing-argument-cohesion-mini-game-001",
+  "level": "B2",
+  "category": "guided-writing",
+  "topic": "b2-writing-argument-cohesion",
+  "subtopic": "b2-writing-argument-cohesion",
+  "lessonId": "b2-writing-argument-cohesion",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-argument-cohesion-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Online appointments are quick for many users. ___ A phone option should therefore remain available.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The receptionist takes lunch at noon."
+            },
+            {
+              "id": "a",
+              "text": "However, some residents do not have reliable internet access."
+            },
+            {
+              "id": "d",
+              "text": "The website uses a blue logo."
+            }
+          ],
+          "explanation": "However introduces the limitation that justifies the second sentence."
+        },
+        {
+          "id": "r2",
+          "prompt": "More cycle lanes would make short journeys safer. ___ This would encourage people to leave their cars at home.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The park closes at sunset."
+            },
+            {
+              "id": "d",
+              "text": "The timetable was printed yesterday."
+            },
+            {
+              "id": "a",
+              "text": "They would separate cyclists from heavy traffic."
+            }
+          ],
+          "explanation": "The sentence gives a reason for the safety claim."
+        },
+        {
+          "id": "r3",
+          "prompt": "Solar panels require an initial investment. ___ The long-term reduction in energy costs makes the plan worth examining.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The roof is made of tiles."
+            },
+            {
+              "id": "c",
+              "text": "The family moved in May."
+            },
+            {
+              "id": "a",
+              "text": "Although the cost is significant, the panels could lower household bills."
+            }
+          ],
+          "explanation": "The missing sentence contains both the concession and the benefit."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new booking scheme has reduced missed appointments. ___ This improvement should be monitored over the next quarter.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Appointments are usually twenty minutes long."
+            },
+            {
+              "id": "a",
+              "text": "The reduction in missed appointments suggests that reminders are working."
+            },
+            {
+              "id": "b",
+              "text": "The reception desk is near the window."
+            }
+          ],
+          "explanation": "The noun phrase identifies the precise improvement."
+        },
+        {
+          "id": "r5",
+          "prompt": "Schools can reduce food waste without changing the whole menu. ___ This would prevent unopened food from being thrown away.",
+          "options": [
+            {
+              "id": "a",
+              "text": "For example, they could offer surplus portions at the end of lunch."
+            },
+            {
+              "id": "b",
+              "text": "The kitchen has four large windows."
+            },
+            {
+              "id": "c",
+              "text": "The pupils study geography on Fridays."
+            }
+          ],
+          "explanation": "The example is a practical way to reduce the stated waste."
+        },
+        {
+          "id": "r6",
+          "prompt": "Residents repeatedly mentioned the unsafe crossing. ___ The council should install a raised crossing.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Residents meet in the nearby hall."
+            },
+            {
+              "id": "a",
+              "text": "This evidence indicates that the current arrangement needs to change."
+            },
+            {
+              "id": "d",
+              "text": "The council uses electric cars."
+            }
+          ],
+          "explanation": "The sentence interprets the repeated evidence before the proposal."
+        },
+        {
+          "id": "r7",
+          "prompt": "Libraries should open later once a week. ___ This would allow more workers to borrow books after work.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Many residents finish work after the current closing time."
+            },
+            {
+              "id": "c",
+              "text": "The librarian enjoys historical novels."
+            },
+            {
+              "id": "d",
+              "text": "The building was opened in 1982."
+            }
+          ],
+          "explanation": "The sentence explains why later opening would help."
+        },
+        {
+          "id": "r8",
+          "prompt": "Several passengers reported late buses. ___ As a result, some people arrived after their shifts had begun.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The café sells soup at lunchtime."
+            },
+            {
+              "id": "a",
+              "text": "The delays were especially common on the evening route."
+            },
+            {
+              "id": "d",
+              "text": "The room has three windows."
+            }
+          ],
+          "explanation": "The missing sentence narrows the evidence before its consequence."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "contrast",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-argument-cohesion-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Some residents are concerned about the cost of the proposal. ___ It would nevertheless improve access for people without cars.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The car park is often full."
+            },
+            {
+              "id": "b",
+              "text": "The proposal is printed on recycled paper."
+            },
+            {
+              "id": "a",
+              "text": "Even so, the long-term social benefit should be considered."
+            }
+          ],
+          "explanation": "Even so acknowledges the concern and restores the argument."
+        },
+        {
+          "id": "r2",
+          "prompt": "Public parks give residents space to exercise and meet. They also support local wildlife. ___",
+          "options": [
+            {
+              "id": "b",
+              "text": "The council office has a new lift."
+            },
+            {
+              "id": "d",
+              "text": "The park gate is made of metal."
+            },
+            {
+              "id": "a",
+              "text": "For these reasons, their maintenance should remain a council priority."
+            }
+          ],
+          "explanation": "For these reasons links the conclusion to both benefits."
+        },
+        {
+          "id": "r3",
+          "prompt": "The new online form gives users the information they need. ___ Staff can spend more time on complex enquiries.",
+          "options": [
+            {
+              "id": "a",
+              "text": "As a result, routine phone calls have become less frequent."
+            },
+            {
+              "id": "c",
+              "text": "The form is available in two colours."
+            },
+            {
+              "id": "b",
+              "text": "The office opens at nine."
+            }
+          ],
+          "explanation": "As a result connects the information to the benefit for staff."
+        },
+        {
+          "id": "r4",
+          "prompt": "The evidence shows that evening access is limited, while daytime sessions are well used. ___ This would test demand without changing the whole service.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The council building has two entrances."
+            },
+            {
+              "id": "a",
+              "text": "For these reasons, the council should fund a one-year evening trial."
+            },
+            {
+              "id": "d",
+              "text": "The service uses a monthly calendar."
+            }
+          ],
+          "explanation": "The recommendation follows both findings and the final sentence explains its scale."
+        },
+        {
+          "id": "r5",
+          "prompt": "Fewer cars would improve air quality near the school. ___ Parents could also feel more confident about walking there.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The bus has blue seats."
+            },
+            {
+              "id": "a",
+              "text": "This change would reduce the amount of traffic at the gate."
+            },
+            {
+              "id": "b",
+              "text": "The school kitchen serves breakfast at eight."
+            }
+          ],
+          "explanation": "The sentence explains how the proposed change would work."
+        },
+        {
+          "id": "r6",
+          "prompt": "Digital forms can speed up applications. ___ An alternative should still be available.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Applicants often use blue pens."
+            },
+            {
+              "id": "b",
+              "text": "The application has four pages."
+            },
+            {
+              "id": "a",
+              "text": "Nevertheless, they may exclude people without reliable internet access."
+            }
+          ],
+          "explanation": "Nevertheless marks the contrast that supports an alternative."
+        },
+        {
+          "id": "r7",
+          "prompt": "The same problem appeared in several interviews. ___ The service should test a clearer process before expanding it.",
+          "options": [
+            {
+              "id": "a",
+              "text": "This repeated evidence suggests that the current process needs attention."
+            },
+            {
+              "id": "b",
+              "text": "The interviews lasted ten minutes."
+            },
+            {
+              "id": "c",
+              "text": "The service uses a digital calendar."
+            }
+          ],
+          "explanation": "The sentence interprets repeated evidence before the recommendation."
+        },
+        {
+          "id": "r8",
+          "prompt": "The pilot reduced average waiting time by ten minutes. ___ It therefore appears to have improved access for participants.",
+          "options": [
+            {
+              "id": "a",
+              "text": "This reduction in waiting time was recorded during the four-week trial."
+            },
+            {
+              "id": "b",
+              "text": "The office has white walls."
+            },
+            {
+              "id": "d",
+              "text": "Some users prefer morning appointments."
+            }
+          ],
+          "explanation": "The reference names the reduction and limits its time frame."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "conclusion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

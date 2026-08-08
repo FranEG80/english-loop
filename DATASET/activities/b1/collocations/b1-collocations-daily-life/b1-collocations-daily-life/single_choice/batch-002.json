@@ -10,277 +10,12 @@
   "activities": [
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-001",
+      "id": "b1-collocations-daily-life-cc-026",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 1,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 001.",
-      "passage": "After comparing the two courses, I finally decided to ___ today.",
-      "options": [
-        {
-          "id": "c",
-          "text": "take a break"
-        },
-        {
-          "id": "d",
-          "text": "keep a promise"
-        },
-        {
-          "id": "a",
-          "text": "make a decision"
-        },
-        {
-          "id": "b",
-          "text": "do housework"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "decisions",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “make a decision”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-002",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 1,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 002.",
-      "passage": "Everyone can ___, so check the form before you send it.",
-      "options": [
-        {
-          "id": "c",
-          "text": "take a photo"
-        },
-        {
-          "id": "a",
-          "text": "make a mistake"
-        },
-        {
-          "id": "b",
-          "text": "do exercise"
-        },
-        {
-          "id": "d",
-          "text": "keep in touch"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "mistakes",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “make a mistake”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-003",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 1,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 003.",
-      "passage": "We should ___ for the weekend before booking anything.",
-      "options": [
-        {
-          "id": "d",
-          "text": "pay a bill"
-        },
-        {
-          "id": "a",
-          "text": "make a plan"
-        },
-        {
-          "id": "c",
-          "text": "take notes"
-        },
-        {
-          "id": "b",
-          "text": "have breakfast"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "planning",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “make a plan”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-004",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 1,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 004.",
-      "passage": "Leo usually ___ as soon as he gets home.",
-      "options": [
-        {
-          "id": "d",
-          "text": "pay attention"
-        },
-        {
-          "id": "a",
-          "text": "do homework"
-        },
-        {
-          "id": "c",
-          "text": "get ready"
-        },
-        {
-          "id": "b",
-          "text": "have a shower"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "study",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “do homework”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-005",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 1,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 005.",
-      "passage": "We share the ___ at weekends.",
-      "options": [
-        {
-          "id": "a",
-          "text": "do housework"
-        },
-        {
-          "id": "b",
-          "text": "have a rest"
-        },
-        {
-          "id": "c",
-          "text": "get permission"
-        },
-        {
-          "id": "d",
-          "text": "save money"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "chores",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “do housework”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-006",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
@@ -288,25 +23,24 @@
         "b1-collocations-daily-life"
       ],
       "difficulty": 2,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 006.",
-      "passage": "My doctor says I should ___ more regularly.",
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Marta needs to ___ before the shops close this evening.",
       "options": [
         {
-          "id": "b",
-          "text": "take a break"
-        },
-        {
-          "id": "d",
-          "text": "spend time"
-        },
-        {
           "id": "a",
-          "text": "do exercise"
+          "text": "run an errand"
+        },
+        {
+          "id": "b",
+          "text": "make a noise"
         },
         {
           "id": "c",
-          "text": "keep a promise"
+          "text": "take a seat"
+        },
+        {
+          "id": "d",
+          "text": "keep a diary"
         }
       ],
       "lessonIds": [
@@ -315,25 +49,24 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "health",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “do exercise”."
+      "explanation": "«Run an errand» is the natural way to talk about a quick task outside the home."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-007",
+      "id": "b1-collocations-daily-life-cc-027",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
@@ -341,25 +74,24 @@
         "b1-collocations-daily-life"
       ],
       "difficulty": 2,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 007.",
-      "passage": "I always ___ before leaving for work.",
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "The twins always ___ when their grandmother visits at the weekend.",
       "options": [
         {
-          "id": "d",
-          "text": "catch a bus"
-        },
-        {
           "id": "a",
-          "text": "have breakfast"
+          "text": "do a mess"
         },
         {
           "id": "b",
-          "text": "take a photo"
+          "text": "behave themselves"
         },
         {
           "id": "c",
-          "text": "keep in touch"
+          "text": "make a behaviour"
+        },
+        {
+          "id": "d",
+          "text": "take a manner"
         }
       ],
       "lessonIds": [
@@ -368,25 +100,24 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "meals",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "b"
       },
-      "explanation": "The context calls for the collocation “have breakfast”."
+      "explanation": "«Behave themselves» is the fixed reflexive collocation for good conduct."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-008",
+      "id": "b1-collocations-daily-life-cc-028",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
@@ -394,25 +125,24 @@
         "b1-collocations-daily-life"
       ],
       "difficulty": 2,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 008.",
-      "passage": "She likes to ___ after her morning run.",
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "I try to ___ every night so that I wake up rested.",
       "options": [
         {
-          "id": "b",
-          "text": "take notes"
+          "id": "a",
+          "text": "make a sleep"
         },
         {
-          "id": "d",
-          "text": "get lost"
+          "id": "b",
+          "text": "do a rest"
         },
         {
           "id": "c",
-          "text": "pay a bill"
+          "text": "get an early night"
         },
         {
-          "id": "a",
-          "text": "have a shower"
+          "id": "d",
+          "text": "take a sleeping"
         }
       ],
       "lessonIds": [
@@ -421,25 +151,24 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "routines",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "c"
       },
-      "explanation": "The context calls for the collocation “have a shower”."
+      "explanation": "«Get an early night» is the idiomatic way to say you go to bed early."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-009",
+      "id": "b1-collocations-daily-life-cc-029",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
@@ -447,25 +176,24 @@
         "b1-collocations-daily-life"
       ],
       "difficulty": 2,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 009.",
-      "passage": "You look tired; sit down and ___ for a few minutes.",
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Could you ___ while I answer the door?",
       "options": [
         {
-          "id": "a",
-          "text": "have a rest"
+          "id": "b",
+          "text": "hold a look"
         },
         {
           "id": "c",
-          "text": "pay attention"
+          "text": "make a watch"
         },
         {
           "id": "d",
-          "text": "have a chat"
+          "text": "do a care"
         },
         {
-          "id": "b",
-          "text": "get ready"
+          "id": "a",
+          "text": "keep an eye on the soup"
         }
       ],
       "lessonIds": [
@@ -474,25 +202,24 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "rest",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “have a rest”."
+      "explanation": "«Keep an eye on» means to watch something briefly."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-010",
+      "id": "b1-collocations-daily-life-cc-030",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
@@ -500,25 +227,24 @@
         "b1-collocations-daily-life"
       ],
       "difficulty": 2,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 010.",
-      "passage": "Let us ___ after we finish this section.",
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "We usually ___ on Sunday mornings before breakfast.",
       "options": [
         {
-          "id": "b",
-          "text": "get permission"
+          "id": "c",
+          "text": "take a walk"
         },
         {
           "id": "a",
-          "text": "take a break"
+          "text": "make a walk"
         },
         {
-          "id": "c",
-          "text": "save money"
+          "id": "b",
+          "text": "do a stroll"
         },
         {
           "id": "d",
-          "text": "make noise"
+          "text": "give a walk"
         }
       ],
       "lessonIds": [
@@ -527,51 +253,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "work",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "c"
       },
-      "explanation": "The context calls for the collocation “take a break”."
+      "explanation": "«Take a walk» is the standard collocation with «walk»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-011",
+      "id": "b1-collocations-daily-life-cc-031",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 3,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 011.",
-      "passage": "Could you ___ of us by the fountain?",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Tom forgot to ___ and the plants died last August.",
       "options": [
         {
-          "id": "d",
-          "text": "take care of"
+          "id": "b",
+          "text": "make the plants"
         },
         {
           "id": "a",
-          "text": "take a photo"
-        },
-        {
-          "id": "b",
-          "text": "keep a promise"
+          "text": "water the plants"
         },
         {
           "id": "c",
-          "text": "spend time"
+          "text": "do the plants"
+        },
+        {
+          "id": "d",
+          "text": "give the plants"
         }
       ],
       "lessonIds": [
@@ -580,51 +304,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "photography",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “take a photo”."
+      "explanation": "«Water the plants» uses the verb formed from the noun itself."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-012",
+      "id": "b1-collocations-daily-life-cc-032",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 3,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 012.",
-      "passage": "Please ___ while the tutor explains the process.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Please ___ before you leave the flat this morning.",
       "options": [
         {
-          "id": "c",
-          "text": "catch a bus"
+          "id": "a",
+          "text": "do the bin"
         },
         {
-          "id": "a",
-          "text": "take notes"
+          "id": "c",
+          "text": "make the rubbish"
         },
         {
           "id": "b",
-          "text": "keep in touch"
+          "text": "take out the rubbish"
         },
         {
           "id": "d",
-          "text": "make a decision"
+          "text": "give the rubbish"
         }
       ],
       "lessonIds": [
@@ -633,104 +355,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "study",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "b"
       },
-      "explanation": "The context calls for the collocation “take notes”."
+      "explanation": "«Take out the rubbish» is the fixed phrasal collocation for this chore."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-013",
+      "id": "b1-collocations-daily-life-cc-033",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 3,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 013.",
-      "passage": "The guests arrive at seven, so we need to ___.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Sara likes to ___ with her neighbours over the fence.",
       "options": [
+        {
+          "id": "a",
+          "text": "do a chat"
+        },
+        {
+          "id": "b",
+          "text": "make a chat"
+        },
         {
           "id": "d",
-          "text": "make a mistake"
-        },
-        {
-          "id": "a",
-          "text": "get ready"
-        },
-        {
-          "id": "b",
-          "text": "pay a bill"
-        },
-        {
-          "id": "c",
-          "text": "get lost"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "preparation",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “get ready”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-014",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 3,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 014.",
-      "passage": "You must ___ before using the meeting room.",
-      "options": [
-        {
-          "id": "a",
-          "text": "get permission"
-        },
-        {
-          "id": "b",
-          "text": "pay attention"
+          "text": "take a chat"
         },
         {
           "id": "c",
           "text": "have a chat"
-        },
-        {
-          "id": "d",
-          "text": "make a plan"
         }
       ],
       "lessonIds": [
@@ -739,51 +406,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "rules",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "c"
       },
-      "explanation": "The context calls for the collocation “get permission”."
+      "explanation": "«Have a chat» follows the pattern «have + informal conversation»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-015",
+      "id": "b1-collocations-daily-life-cc-034",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 3,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 015.",
-      "passage": "A trustworthy friend will ___ even when it is difficult.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "The children ___ every evening before dinner is served.",
       "options": [
         {
           "id": "a",
-          "text": "keep a promise"
+          "text": "lay the table"
         },
         {
           "id": "b",
-          "text": "save money"
+          "text": "put the table"
         },
         {
           "id": "c",
-          "text": "make noise"
+          "text": "do the table"
         },
         {
           "id": "d",
-          "text": "do homework"
+          "text": "make the table"
         }
       ],
       "lessonIds": [
@@ -792,104 +457,151 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "trust",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “keep a promise”."
+      "explanation": "«Lay the table» is British English for setting places for a meal."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-016",
+      "id": "b1-collocations-daily-life-cc-035",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 4,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 016.",
-      "passage": "We moved abroad, but we still ___ by video call.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "My flatmate never remembers to ___ after cooking.",
       "options": [
         {
-          "id": "c",
-          "text": "take care of"
-        },
-        {
-          "id": "d",
-          "text": "do housework"
+          "id": "a",
+          "text": "make the washing-up"
         },
         {
           "id": "b",
-          "text": "spend time"
+          "text": "do the washing-up"
+        },
+        {
+          "id": "c",
+          "text": "take the washing-up"
+        },
+        {
+          "id": "d",
+          "text": "give the washing-up"
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "daily-life"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "b"
+      },
+      "explanation": "Household chores take «do»: «do the washing-up»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-cc-036",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "collocation_choice",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "I always ___ before I go shopping so I forget nothing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "do a list"
+        },
+        {
+          "id": "b",
+          "text": "take a list"
+        },
+        {
+          "id": "d",
+          "text": "make a list"
+        },
+        {
+          "id": "c",
+          "text": "give a list"
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "daily-life"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "d"
+      },
+      "explanation": "«Make a list» is the fixed collocation for creating something written."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-cc-037",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "collocation_choice",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Ben tries to ___ at least twice a week at the local pool.",
+      "options": [
+        {
+          "id": "b",
+          "text": "make exercise"
+        },
+        {
+          "id": "c",
+          "text": "take exercise"
+        },
+        {
+          "id": "d",
+          "text": "give exercise"
         },
         {
           "id": "a",
-          "text": "keep in touch"
-        }
-      ],
-      "lessonIds": [
-        "b1-collocations-daily-life"
-      ],
-      "tags": [
-        "b1",
-        "collocations",
-        "multiple-choice-cloze",
-        "communication",
-        "cloze"
-      ],
-      "estimatedSeconds": 45,
-      "evaluator": {
-        "strategy": "single_option",
-        "correctOptionId": "a"
-      },
-      "explanation": "The context calls for the collocation “keep in touch”."
-    },
-    {
-      "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-017",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
-      "category": "collocations",
-      "topic": "b1-collocations-daily-life",
-      "subtopic": "b1-collocations-daily-life",
-      "taxonomyNodeIds": [
-        "b1-collocations-daily-life"
-      ],
-      "difficulty": 4,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 017.",
-      "passage": "I need to ___ before the electricity service is suspended.",
-      "options": [
-        {
-          "id": "d",
           "text": "do exercise"
-        },
-        {
-          "id": "c",
-          "text": "make a decision"
-        },
-        {
-          "id": "b",
-          "text": "catch a bus"
-        },
-        {
-          "id": "a",
-          "text": "pay a bill"
         }
       ],
       "lessonIds": [
@@ -898,51 +610,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "money",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “pay a bill”."
+      "explanation": "British English uses «do exercise» or «take exercise»; «make» is never used."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-018",
+      "id": "b1-collocations-daily-life-cc-038",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 4,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 018.",
-      "passage": "Please ___ to the safety instructions.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "We should ___ before the guests arrive this afternoon.",
       "options": [
         {
           "id": "a",
-          "text": "pay attention"
-        },
-        {
-          "id": "d",
-          "text": "have breakfast"
-        },
-        {
-          "id": "c",
-          "text": "make a mistake"
+          "text": "make the beds"
         },
         {
           "id": "b",
-          "text": "get lost"
+          "text": "do the beds"
+        },
+        {
+          "id": "c",
+          "text": "take the beds"
+        },
+        {
+          "id": "d",
+          "text": "put the beds"
         }
       ],
       "lessonIds": [
@@ -951,51 +661,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "focus",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “pay attention”."
+      "explanation": "«Make the bed» is the fixed expression for tidying the sheets."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-019",
+      "id": "b1-collocations-daily-life-cc-039",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 4,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 019.",
-      "passage": "We are trying to ___ for a larger flat.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Grandpa likes to ___ in his armchair after lunch.",
       "options": [
         {
-          "id": "d",
-          "text": "have a shower"
+          "id": "a",
+          "text": "make a nap"
         },
         {
-          "id": "c",
-          "text": "make a plan"
+          "id": "d",
+          "text": "have a nap"
         },
         {
           "id": "b",
-          "text": "have a chat"
+          "text": "do a nap"
         },
         {
-          "id": "a",
-          "text": "save money"
+          "id": "c",
+          "text": "give a nap"
         }
       ],
       "lessonIds": [
@@ -1004,51 +712,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "finance",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "d"
       },
-      "explanation": "The context calls for the collocation “save money”."
+      "explanation": "«Have a nap» follows the pattern «have + short rest»."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-020",
+      "id": "b1-collocations-daily-life-cc-040",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 4,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 020.",
-      "passage": "I like to ___ with my grandparents at weekends.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Could you ___ so I can hear the radio properly?",
       "options": [
         {
-          "id": "d",
-          "text": "have a rest"
+          "id": "b",
+          "text": "do less noise"
         },
         {
           "id": "c",
-          "text": "do homework"
+          "text": "take less noise"
         },
         {
           "id": "a",
-          "text": "spend time"
+          "text": "make less noise"
         },
         {
-          "id": "b",
-          "text": "make noise"
+          "id": "d",
+          "text": "give less noise"
         }
       ],
       "lessonIds": [
@@ -1057,51 +763,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "family",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “spend time”."
+      "explanation": "«Make a noise» is the standard collocation; «do» is impossible here."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-021",
+      "id": "b1-collocations-daily-life-cc-041",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 5,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 021.",
-      "passage": "Hurry up if you want to ___ to the town centre.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Nina had to ___ because the bus was extremely full.",
       "options": [
         {
-          "id": "b",
-          "text": "take care of"
-        },
-        {
-          "id": "d",
-          "text": "take a break"
+          "id": "a",
+          "text": "make standing"
         },
         {
           "id": "c",
-          "text": "do housework"
+          "text": "do standing"
         },
         {
-          "id": "a",
-          "text": "catch a bus"
+          "id": "d",
+          "text": "give standing"
+        },
+        {
+          "id": "b",
+          "text": "stand up"
         }
       ],
       "lessonIds": [
@@ -1110,51 +814,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "transport",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "b"
       },
-      "explanation": "The context calls for the collocation “catch a bus”."
+      "explanation": "The phrasal verb «stand up» describes leaving your seat or staying on your feet."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-022",
+      "id": "b1-collocations-daily-life-cc-042",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 5,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 022.",
-      "passage": "Take a map so you do not ___ in the old streets.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "I need to ___ this month if I want to save for the trip.",
       "options": [
         {
           "id": "a",
-          "text": "get lost"
-        },
-        {
-          "id": "c",
-          "text": "do exercise"
-        },
-        {
-          "id": "d",
-          "text": "take a photo"
+          "text": "cut down on takeaways"
         },
         {
           "id": "b",
-          "text": "make a decision"
+          "text": "cut off takeaways"
+        },
+        {
+          "id": "c",
+          "text": "cut in takeaways"
+        },
+        {
+          "id": "d",
+          "text": "cut up takeaways"
         }
       ],
       "lessonIds": [
@@ -1163,51 +865,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "directions",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “get lost”."
+      "explanation": "«Cut down on» means to reduce the amount of something."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-023",
+      "id": "b1-collocations-daily-life-cc-043",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 5,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 023.",
-      "passage": "I need to ___ with my neighbour about the garden.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Please ___ when you finish in the bathroom.",
       "options": [
         {
-          "id": "a",
-          "text": "have a chat"
-        },
-        {
           "id": "b",
-          "text": "make a mistake"
+          "text": "turn down the light"
         },
         {
-          "id": "d",
-          "text": "take notes"
+          "id": "a",
+          "text": "turn off the light"
         },
         {
           "id": "c",
-          "text": "have breakfast"
+          "text": "turn up the light"
+        },
+        {
+          "id": "d",
+          "text": "turn in the light"
         }
       ],
       "lessonIds": [
@@ -1216,51 +916,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "conversation",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “have a chat”."
+      "explanation": "«Turn off» is the phrasal verb for switching something off completely."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-024",
+      "id": "b1-collocations-daily-life-cc-044",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 5,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 024.",
-      "passage": "Please do not ___ while the baby is sleeping.",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Every Friday my parents ___ at the same little restaurant.",
       "options": [
         {
+          "id": "a",
+          "text": "do dinner out"
+        },
+        {
           "id": "b",
-          "text": "make a plan"
+          "text": "make dinner out"
         },
         {
           "id": "c",
-          "text": "have a shower"
+          "text": "eat out"
         },
         {
           "id": "d",
-          "text": "get ready"
-        },
-        {
-          "id": "a",
-          "text": "make noise"
+          "text": "take out dinner"
         }
       ],
       "lessonIds": [
@@ -1269,51 +967,49 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "consideration",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
-        "correctOptionId": "a"
+        "correctOptionId": "c"
       },
-      "explanation": "The context calls for the collocation “make noise”."
+      "explanation": "«Eat out» means to have a meal in a restaurant."
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-collocations-daily-life-mcc-025",
+      "id": "b1-collocations-daily-life-cc-045",
       "status": "published",
       "autoGradable": true,
       "level": "B1",
       "type": "single_choice",
-      "skillFocus": "multiple_choice_cloze",
+      "skillFocus": "collocation_choice",
       "category": "collocations",
       "topic": "b1-collocations-daily-life",
       "subtopic": "b1-collocations-daily-life",
       "taxonomyNodeIds": [
         "b1-collocations-daily-life"
       ],
-      "difficulty": 5,
-      "instructions": "Choose the complete collocation that best completes the sentence.",
-      "prompt": "Everyday English cloze 025.",
-      "passage": "Can you ___ the plants while I am away?",
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "I usually ___ on the bus because the journey is long.",
       "options": [
         {
           "id": "b",
-          "text": "do homework"
-        },
-        {
-          "id": "d",
-          "text": "get permission"
+          "text": "catch on reading"
         },
         {
           "id": "c",
-          "text": "have a rest"
+          "text": "catch out reading"
+        },
+        {
+          "id": "d",
+          "text": "catch in reading"
         },
         {
           "id": "a",
-          "text": "take care of"
+          "text": "catch up on reading"
         }
       ],
       "lessonIds": [
@@ -1322,16 +1018,168 @@
       "tags": [
         "b1",
         "collocations",
-        "multiple-choice-cloze",
-        "responsibility",
-        "cloze"
+        "collocation-choice",
+        "daily-life"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "single_option",
         "correctOptionId": "a"
       },
-      "explanation": "The context calls for the collocation “take care of”."
+      "explanation": "«Catch up on» means to do something you had left pending."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-cc-046",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "collocation_choice",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "We had to ___ because the washing machine broke again.",
+      "options": [
+        {
+          "id": "b",
+          "text": "call out a plumber"
+        },
+        {
+          "id": "a",
+          "text": "do a repair"
+        },
+        {
+          "id": "c",
+          "text": "make a plumber"
+        },
+        {
+          "id": "d",
+          "text": "take a plumber"
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "daily-life"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "b"
+      },
+      "explanation": "«Call out» means to ask a professional to come to your home."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-cc-047",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "collocation_choice",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "Luis always ___ before he goes to bed on a school night.",
+      "options": [
+        {
+          "id": "b",
+          "text": "makes the alarm"
+        },
+        {
+          "id": "a",
+          "text": "sets the alarm"
+        },
+        {
+          "id": "c",
+          "text": "does the alarm"
+        },
+        {
+          "id": "d",
+          "text": "gives the alarm"
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "daily-life"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "a"
+      },
+      "explanation": "«Set the alarm» is the fixed collocation for programming a wake-up time."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-daily-life-cc-048",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "single_choice",
+      "skillFocus": "collocation_choice",
+      "category": "collocations",
+      "topic": "b1-collocations-daily-life",
+      "subtopic": "b1-collocations-daily-life",
+      "taxonomyNodeIds": [
+        "b1-collocations-daily-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Choose the collocation that completes the sentence.",
+      "prompt": "My sister likes to ___ at weekends instead of going out.",
+      "options": [
+        {
+          "id": "a",
+          "text": "make it easy"
+        },
+        {
+          "id": "b",
+          "text": "do it easy"
+        },
+        {
+          "id": "c",
+          "text": "take it easy"
+        },
+        {
+          "id": "d",
+          "text": "give it easy"
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-daily-life"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "daily-life"
+      ],
+      "estimatedSeconds": 45,
+      "evaluator": {
+        "strategy": "single_option",
+        "correctOptionId": "c"
+      },
+      "explanation": "«Take it easy» means to relax and not make an effort."
     }
   ]
 }

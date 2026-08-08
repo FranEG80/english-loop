@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-technology-digital-life-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-technology-digital-life",
+  "subtopic": "b1-technology-digital-life",
+  "lessonId": "b1-vocabulary-technology-digital-life",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-technology-digital-life-sd-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-technology-digital-life",
+      "subtopic": "b1-technology-digital-life",
+      "taxonomyNodeIds": [
+        "b1-technology-digital-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "You can search for information without necessarily downloading it.",
+          "explanation": "Searching and downloading are separate online actions."
+        },
+        {
+          "id": "c2",
+          "statement": "To search for a page means to remove it from the internet.",
+          "explanation": "Search for means look for information, not remove it."
+        },
+        {
+          "id": "c3",
+          "statement": "Saving a document removes it permanently.",
+          "explanation": "Saving keeps a document; deleting may remove it."
+        },
+        {
+          "id": "c4",
+          "statement": "You can click on a link to open another page.",
+          "explanation": "A link takes you to another page or location."
+        },
+        {
+          "id": "c5",
+          "statement": "A tablet is usually a portable touchscreen device.",
+          "explanation": "Tablets are portable devices with touchscreens."
+        },
+        {
+          "id": "c6",
+          "statement": "A weak signal and a forgotten password describe the same digital problem.",
+          "explanation": "A weak signal concerns connection; a forgotten password concerns account access."
+        },
+        {
+          "id": "c7",
+          "statement": "A weak signal can make a mobile call difficult.",
+          "explanation": "A weak signal can interrupt or prevent a call."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-technology-digital-life"
+      ],
+      "tags": [
+        "b1",
+        "browsing",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-technology-digital-life-sd-088",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-technology-digital-life",
+      "subtopic": "b1-technology-digital-life",
+      "taxonomyNodeIds": [
+        "b1-technology-digital-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Updating software means installing an older version.",
+          "explanation": "An update is a newer version of software."
+        },
+        {
+          "id": "c2",
+          "statement": "If a device is offline, it must have a strong internet connection.",
+          "explanation": "Offline means that the internet connection is unavailable or not being used."
+        },
+        {
+          "id": "c3",
+          "statement": "An attachment is the main secret word for an email account.",
+          "explanation": "An attachment is a file added to a message."
+        },
+        {
+          "id": "c4",
+          "statement": "Uploading and downloading describe opposite directions of file transfer.",
+          "explanation": "Uploading sends data to a service; downloading brings it to a device."
+        },
+        {
+          "id": "c5",
+          "statement": "Sharing a photo means making it available to another person or group.",
+          "explanation": "Share means give others access to something."
+        },
+        {
+          "id": "c6",
+          "statement": "A username identifies an account, while a password protects it.",
+          "explanation": "These two details have different functions during login."
+        },
+        {
+          "id": "c7",
+          "statement": "A notification always contains a complete document as an attachment.",
+          "explanation": "A notification is an alert and may contain no attachment."
+        },
+        {
+          "id": "c8",
+          "statement": "Downloading means sending a file from your device to a website.",
+          "explanation": "Sending a file to a website is uploading; downloading brings it to your device."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-technology-digital-life"
+      ],
+      "tags": [
+        "b1",
+        "apps",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-technology-digital-life-sd-151",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-technology-digital-life",
+      "subtopic": "b1-technology-digital-life",
+      "taxonomyNodeIds": [
+        "b1-technology-digital-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Turning notifications off can reduce interruptions without deleting the app.",
+          "explanation": "Notification settings control alerts but do not remove the app."
+        },
+        {
+          "id": "c2",
+          "statement": "A notification is always a private password.",
+          "explanation": "A notification is an alert; it is not a password."
+        },
+        {
+          "id": "c3",
+          "statement": "A password should normally be shared publicly.",
+          "explanation": "A password should be kept secret."
+        },
+        {
+          "id": "c4",
+          "statement": "If a connection is unstable, a video may keep stopping.",
+          "explanation": "An unstable connection can interrupt streaming."
+        },
+        {
+          "id": "c5",
+          "statement": "A laptop is a portable computer.",
+          "explanation": "A laptop is a computer designed to be carried."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-technology-digital-life"
+      ],
+      "tags": [
+        "b1",
+        "apps",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

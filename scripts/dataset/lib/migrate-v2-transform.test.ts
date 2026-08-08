@@ -470,25 +470,6 @@ describe("transformActivity", () => {
     expect(issues.map((issue) => issue.rule)).toContain("answer-equals-prompt");
   });
 
-  it("mapea sentence_transformation a sentence_rewrite sin inventar huecos", () => {
-    const { activity } = transformActivity(
-      makeV1({
-        type: "sentence_transformation",
-        prompt: "We did not reserve seats, so we could not sit together.",
-        instructions: "Rewrite using the third conditional.",
-        evaluator: {
-          strategy: "exact_text",
-          answer: "If we had reserved seats, we would have sat together",
-          normalization: NORMALIZATION,
-        },
-      }),
-    );
-
-    expect(activity.type).toBe("sentence_rewrite");
-    expect(activity.gapText).toBeUndefined();
-    expect(activity.evaluator.strategy).toBe("exact_text");
-  });
-
   it("marca los diálogos con el layout correspondiente", () => {
     const { activity } = transformActivity(
       makeV1({

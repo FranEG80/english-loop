@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-creativity-innovation-decisions-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-creativity-innovation-decisions",
+  "subtopic": "b2-creativity-innovation-decisions",
+  "lessonId": "b2-vocabulary-creativity-innovation-decisions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-creativity-innovation-decisions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-creativity-innovation-decisions",
+      "subtopic": "b2-creativity-innovation-decisions",
+      "taxonomyNodeIds": [
+        "b2-creativity-innovation-decisions"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The team must manage the ___ that the new material may fail.",
+          "options": [
+            {
+              "id": "b",
+              "text": "launch"
+            },
+            {
+              "id": "a",
+              "text": "risk"
+            },
+            {
+              "id": "c",
+              "text": "prototype"
+            }
+          ],
+          "explanation": "A risk is the possibility of an undesirable outcome."
+        },
+        {
+          "id": "r2",
+          "prompt": "Before deciding, the committee needs to ___ the alternatives.",
+          "options": [
+            {
+              "id": "d",
+              "text": "fail"
+            },
+            {
+              "id": "c",
+              "text": "invent"
+            },
+            {
+              "id": "a",
+              "text": "weigh up"
+            }
+          ],
+          "explanation": "Weigh up means compare and consider alternatives carefully."
+        },
+        {
+          "id": "r3",
+          "prompt": "The project will be tested on a small scale in a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "pilot"
+            },
+            {
+              "id": "d",
+              "text": "assumption"
+            },
+            {
+              "id": "c",
+              "text": "invention"
+            }
+          ],
+          "explanation": "A pilot is a small-scale trial before a wider implementation."
+        },
+        {
+          "id": "r4",
+          "prompt": "A failed pilot can still be useful if the team learns from its ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "launch"
+            },
+            {
+              "id": "a",
+              "text": "outcome"
+            },
+            {
+              "id": "b",
+              "text": "heritage"
+            }
+          ],
+          "explanation": "An outcome is the result of a trial, whether successful or not."
+        },
+        {
+          "id": "r5",
+          "prompt": "A first version of a product used for testing is a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "constraint"
+            },
+            {
+              "id": "b",
+              "text": "drawback"
+            },
+            {
+              "id": "a",
+              "text": "prototype"
+            }
+          ],
+          "explanation": "A prototype is an early version used to test a design or idea."
+        },
+        {
+          "id": "r6",
+          "prompt": "The board decided to ___ the risky option.",
+          "options": [
+            {
+              "id": "b",
+              "text": "brainstorm"
+            },
+            {
+              "id": "a",
+              "text": "rule out"
+            },
+            {
+              "id": "d",
+              "text": "scale up"
+            }
+          ],
+          "explanation": "Rule out means decide that an option will not be considered."
+        },
+        {
+          "id": "r7",
+          "prompt": "The team needs to ___ the evidence before choosing a supplier.",
+          "options": [
+            {
+              "id": "d",
+              "text": "scale"
+            },
+            {
+              "id": "b",
+              "text": "launch"
+            },
+            {
+              "id": "a",
+              "text": "assess"
+            }
+          ],
+          "explanation": "Assess means evaluate something systematically."
+        },
+        {
+          "id": "r8",
+          "prompt": "A plan that can grow without losing effectiveness is ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "scalable"
+            },
+            {
+              "id": "c",
+              "text": "accidental"
+            },
+            {
+              "id": "b",
+              "text": "uncertain"
+            }
+          ],
+          "explanation": "Scalable describes something that can expand successfully."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-creativity-innovation-decisions"
+      ],
+      "tags": [
+        "b2",
+        "risk",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-creativity-innovation-decisions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-creativity-innovation-decisions",
+      "subtopic": "b2-creativity-innovation-decisions",
+      "taxonomyNodeIds": [
+        "b2-creativity-innovation-decisions"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The team held a ___ to generate ideas for the campaign.",
+          "options": [
+            {
+              "id": "c",
+              "text": "trade-off"
+            },
+            {
+              "id": "a",
+              "text": "brainstorming session"
+            },
+            {
+              "id": "b",
+              "text": "constraint"
+            }
+          ],
+          "explanation": "A brainstorming session is a meeting for generating ideas."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase means question whether an idea is true before relying on it?",
+          "options": [
+            {
+              "id": "c",
+              "text": "scale an assumption"
+            },
+            {
+              "id": "a",
+              "text": "test an assumption"
+            },
+            {
+              "id": "b",
+              "text": "launch an assumption"
+            }
+          ],
+          "explanation": "An assumption is something accepted as true; testing it checks whether it is justified."
+        },
+        {
+          "id": "r3",
+          "prompt": "The organisation will ___ the successful programme to more towns.",
+          "options": [
+            {
+              "id": "a",
+              "text": "scale up"
+            },
+            {
+              "id": "b",
+              "text": "rule out"
+            },
+            {
+              "id": "c",
+              "text": "assume"
+            }
+          ],
+          "explanation": "Scale up means extend a successful programme to a larger level."
+        },
+        {
+          "id": "r4",
+          "prompt": "The proposal is possible in practice and within the budget, so it is ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "uncertain"
+            },
+            {
+              "id": "c",
+              "text": "obsolete"
+            },
+            {
+              "id": "a",
+              "text": "feasible"
+            }
+          ],
+          "explanation": "Feasible means possible and realistic given available resources."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase means put a plan into practice?",
+          "options": [
+            {
+              "id": "d",
+              "text": "brainstorm a plan"
+            },
+            {
+              "id": "a",
+              "text": "implement a plan"
+            },
+            {
+              "id": "b",
+              "text": "weigh up a plan"
+            }
+          ],
+          "explanation": "Implement means carry out or put a plan into operation."
+        },
+        {
+          "id": "r6",
+          "prompt": "The company plans to ___ the service after the successful trial.",
+          "options": [
+            {
+              "id": "c",
+              "text": "weigh up"
+            },
+            {
+              "id": "a",
+              "text": "scale up"
+            },
+            {
+              "id": "b",
+              "text": "rule out"
+            }
+          ],
+          "explanation": "Scale up means expand the size or reach of a project."
+        },
+        {
+          "id": "r7",
+          "prompt": "The drawback of this design is its high maintenance ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "outcome"
+            },
+            {
+              "id": "c",
+              "text": "pilot"
+            },
+            {
+              "id": "a",
+              "text": "cost"
+            }
+          ],
+          "explanation": "A drawback is a disadvantage; here the disadvantage is cost."
+        },
+        {
+          "id": "r8",
+          "prompt": "The committee chose the plan after ___ the evidence.",
+          "options": [
+            {
+              "id": "a",
+              "text": "weighing up"
+            },
+            {
+              "id": "b",
+              "text": "launching"
+            },
+            {
+              "id": "d",
+              "text": "inventing"
+            }
+          ],
+          "explanation": "Weigh up means consider evidence and alternatives before deciding."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-creativity-innovation-decisions"
+      ],
+      "tags": [
+        "b2",
+        "ideas",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

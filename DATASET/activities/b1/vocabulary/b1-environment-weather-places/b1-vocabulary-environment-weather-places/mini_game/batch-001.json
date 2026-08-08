@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-environment-weather-places-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-environment-weather-places",
+  "subtopic": "b1-environment-weather-places",
+  "lessonId": "b1-vocabulary-environment-weather-places",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-environment-weather-places-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-environment-weather-places",
+      "subtopic": "b1-environment-weather-places",
+      "taxonomyNodeIds": [
+        "b1-environment-weather-places"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which transport choice usually produces less pollution for one short trip?",
+          "options": [
+            {
+              "id": "a",
+              "text": "walking"
+            },
+            {
+              "id": "b",
+              "text": "driving alone"
+            },
+            {
+              "id": "c",
+              "text": "flying"
+            }
+          ],
+          "explanation": "Walking produces no direct vehicle emissions."
+        },
+        {
+          "id": "r2",
+          "prompt": "A town wants to lower emissions from private cars. Which measure fits best?",
+          "options": [
+            {
+              "id": "b",
+              "text": "remove recycling bins"
+            },
+            {
+              "id": "c",
+              "text": "burn more plastic"
+            },
+            {
+              "id": "a",
+              "text": "create more cycle lanes"
+            }
+          ],
+          "explanation": "Cycle lanes can encourage a low-emission form of transport."
+        },
+        {
+          "id": "r3",
+          "prompt": "A public area with trees and grass in a city is a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "green space"
+            },
+            {
+              "id": "b",
+              "text": "traffic jam"
+            },
+            {
+              "id": "c",
+              "text": "landfill"
+            }
+          ],
+          "explanation": "A green space is an urban area with plants and open land."
+        },
+        {
+          "id": "r4",
+          "prompt": "The river rose rapidly after the storm, putting homes at risk of ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "flooding"
+            },
+            {
+              "id": "b",
+              "text": "drought"
+            },
+            {
+              "id": "c",
+              "text": "recycling"
+            }
+          ],
+          "explanation": "Rising water can cause flooding near a river."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which action means process rubbish so it can be used again?",
+          "options": [
+            {
+              "id": "d",
+              "text": "forecast"
+            },
+            {
+              "id": "c",
+              "text": "flood"
+            },
+            {
+              "id": "a",
+              "text": "recycle"
+            }
+          ],
+          "explanation": "Recycle means process materials for further use."
+        },
+        {
+          "id": "r6",
+          "prompt": "Heavy rain and overflowing rivers can cause ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "flooding"
+            },
+            {
+              "id": "c",
+              "text": "recycling"
+            },
+            {
+              "id": "d",
+              "text": "fog"
+            }
+          ],
+          "explanation": "Flooding covers land with excess water."
+        },
+        {
+          "id": "r7",
+          "prompt": "Smoke from vehicles contributes to air ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "forecast"
+            },
+            {
+              "id": "a",
+              "text": "pollution"
+            },
+            {
+              "id": "d",
+              "text": "valley"
+            }
+          ],
+          "explanation": "Air pollution is harmful material in the atmosphere."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which source of energy is naturally replaced by wind or sunlight?",
+          "options": [
+            {
+              "id": "c",
+              "text": "traffic"
+            },
+            {
+              "id": "b",
+              "text": "plastic waste"
+            },
+            {
+              "id": "a",
+              "text": "renewable energy"
+            }
+          ],
+          "explanation": "Renewable energy comes from sources that are naturally replenished."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-environment-weather-places"
+      ],
+      "tags": [
+        "b1",
+        "transport",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-environment-weather-places-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-environment-weather-places",
+      "subtopic": "b1-environment-weather-places",
+      "taxonomyNodeIds": [
+        "b1-environment-weather-places"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A park beside a busy road would most directly improve a city's access to ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "traffic"
+            },
+            {
+              "id": "a",
+              "text": "green space"
+            },
+            {
+              "id": "b",
+              "text": "air pollution"
+            }
+          ],
+          "explanation": "A green space provides planted open land for city residents."
+        },
+        {
+          "id": "r2",
+          "prompt": "Cars, buses and lorries together create heavy ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "countryside"
+            },
+            {
+              "id": "c",
+              "text": "biodiversity"
+            },
+            {
+              "id": "a",
+              "text": "traffic"
+            }
+          ],
+          "explanation": "Traffic refers to vehicles using roads."
+        },
+        {
+          "id": "r3",
+          "prompt": "A village and farms are usually part of the ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "traffic"
+            },
+            {
+              "id": "d",
+              "text": "forecast"
+            },
+            {
+              "id": "a",
+              "text": "countryside"
+            }
+          ],
+          "explanation": "The countryside is rural land outside towns and cities."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which plan deals directly with plastic waste?",
+          "options": [
+            {
+              "id": "a",
+              "text": "separate bottles for recycling"
+            },
+            {
+              "id": "c",
+              "text": "increase traffic"
+            },
+            {
+              "id": "b",
+              "text": "build a taller office"
+            }
+          ],
+          "explanation": "Separating bottles makes recycling plastic easier."
+        },
+        {
+          "id": "r5",
+          "prompt": "A low area between hills or mountains is a ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "pavement"
+            },
+            {
+              "id": "c",
+              "text": "village"
+            },
+            {
+              "id": "a",
+              "text": "valley"
+            }
+          ],
+          "explanation": "A valley is low land between higher areas."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which action keeps a bottle in use instead of throwing it away?",
+          "options": [
+            {
+              "id": "c",
+              "text": "flood it"
+            },
+            {
+              "id": "d",
+              "text": "forecast it"
+            },
+            {
+              "id": "a",
+              "text": "reuse it"
+            }
+          ],
+          "explanation": "Reuse means use the same object again."
+        },
+        {
+          "id": "r7",
+          "prompt": "A thick cloud near the ground that makes driving difficult is ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "sunshine"
+            },
+            {
+              "id": "a",
+              "text": "fog"
+            },
+            {
+              "id": "d",
+              "text": "litter"
+            }
+          ],
+          "explanation": "Fog is a thick cloud close to the ground."
+        },
+        {
+          "id": "r8",
+          "prompt": "Rubbish left on a beach is called ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "litter"
+            },
+            {
+              "id": "d",
+              "text": "valley"
+            },
+            {
+              "id": "b",
+              "text": "climate"
+            }
+          ],
+          "explanation": "Litter is rubbish left in a public place."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-environment-weather-places"
+      ],
+      "tags": [
+        "b1",
+        "city",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-reading-text-cohesion-mini-game-001",
+  "level": "B2",
+  "category": "reading",
+  "topic": "b2-reading-text-cohesion",
+  "subtopic": "b2-reading-text-cohesion",
+  "lessonId": "b2-reading-text-cohesion",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-text-cohesion-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-text-cohesion",
+      "subtopic": "b2-reading-text-cohesion",
+      "taxonomyNodeIds": [
+        "b2-reading-text-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The timetable reduced delays on two routes during its first month. ___ The team plans to monitor other routes before recommending a wider change.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The timetable was cancelled before testing."
+            },
+            {
+              "id": "a",
+              "text": "This encouraging result is too narrow to establish a network-wide effect."
+            },
+            {
+              "id": "c",
+              "text": "The network was never measured."
+            }
+          ],
+          "explanation": "The first-month, two-route evidence explains the cautious next step."
+        },
+        {
+          "id": "r2",
+          "prompt": "The council published responses and its analytical method alongside the summary. ___ This made it possible to distinguish evidence from interpretation.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Readers could examine both the original material and the process used."
+            },
+            {
+              "id": "d",
+              "text": "The responses were destroyed after publication."
+            },
+            {
+              "id": "c",
+              "text": "The summary contained no conclusions."
+            }
+          ],
+          "explanation": "Access to the data and method explains how readers can separate evidence from interpretation."
+        },
+        {
+          "id": "r3",
+          "prompt": "The pilot attracted many volunteers but demanded more coordination than expected. ___ The organisers therefore revised the registration process.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Several people had registered through different channels."
+            },
+            {
+              "id": "c",
+              "text": "The volunteers preferred blue badges."
+            },
+            {
+              "id": "b",
+              "text": "The pilot took place beside a river."
+            }
+          ],
+          "explanation": "Different registration channels explain the coordination problem and revision."
+        },
+        {
+          "id": "r4",
+          "prompt": "The policy increased recycling where collection points were clearly visible. ___ In buildings where bins were hidden, the effect was negligible.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The policy was announced in winter."
+            },
+            {
+              "id": "d",
+              "text": "Some bins were made of metal."
+            },
+            {
+              "id": "a",
+              "text": "The results consequently depended on how the policy was implemented."
+            }
+          ],
+          "explanation": "The second sentence gives a contrasting implementation condition, so the gap should draw that conclusion."
+        },
+        {
+          "id": "r5",
+          "prompt": "The report presents two possible designs. ___ The other is cheaper initially but may need more repairs.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The building has a wide entrance."
+            },
+            {
+              "id": "b",
+              "text": "The report was printed in two colours."
+            },
+            {
+              "id": "a",
+              "text": "The first uses stronger materials and costs more to build."
+            }
+          ],
+          "explanation": "The first design must be introduced before the second is contrasted with it."
+        },
+        {
+          "id": "r6",
+          "prompt": "The app's users reported saving time. ___ The authors recommend an independent trial before estimating the size of the benefit.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The trial was already independent."
+            },
+            {
+              "id": "a",
+              "text": "Those reports were based on personal estimates rather than timed tasks."
+            },
+            {
+              "id": "b",
+              "text": "The app has a bright icon."
+            }
+          ],
+          "explanation": "The measurement limitation motivates the recommendation for an independent trial."
+        },
+        {
+          "id": "r7",
+          "prompt": "The course attracted more applicants after an evening option was added. ___ Attendance, however, remained steady.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The course had no application form."
+            },
+            {
+              "id": "a",
+              "text": "The increase therefore shows interest rather than a proven completion benefit."
+            },
+            {
+              "id": "b",
+              "text": "The classrooms were painted white."
+            }
+          ],
+          "explanation": "The missing sentence interprets increased applications while the next sentence limits the conclusion."
+        },
+        {
+          "id": "r8",
+          "prompt": "The scheme reduced waste in the catering department. ___ Other departments are now considering whether the same approach would work for them.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The bins were painted last year."
+            },
+            {
+              "id": "a",
+              "text": "The team ordered smaller quantities more frequently."
+            },
+            {
+              "id": "d",
+              "text": "Several visitors asked for directions."
+            }
+          ],
+          "explanation": "The sentence gives a concrete example of the waste-reduction approach."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-text-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "scope",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-text-cohesion-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-text-cohesion",
+      "subtopic": "b2-reading-text-cohesion",
+      "taxonomyNodeIds": [
+        "b2-reading-text-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The shared office reduced rent and encouraged informal contact. ___ Workers nevertheless reported fewer quiet periods for demanding tasks.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The office had no shared equipment."
+            },
+            {
+              "id": "a",
+              "text": "The financial saving was therefore accompanied by a working-condition cost."
+            },
+            {
+              "id": "c",
+              "text": "The rent increased after one month."
+            }
+          ],
+          "explanation": "The missing sentence summarises the benefit and prepares the later limitation."
+        },
+        {
+          "id": "r2",
+          "prompt": "The room was used before presentations and complex negotiations. ___ Routine email, by contrast, was usually handled at shared desks.",
+          "options": [
+            {
+              "id": "a",
+              "text": "These demanding tasks required a quiet space for preparation."
+            },
+            {
+              "id": "c",
+              "text": "The building opened in April."
+            },
+            {
+              "id": "b",
+              "text": "The desks were made of light wood."
+            }
+          ],
+          "explanation": "These demanding tasks refers to presentations and negotiations and explains the room's use."
+        },
+        {
+          "id": "r3",
+          "prompt": "The new timetable reduced delays on two routes. ___ The team has not yet examined the rest of the network.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The station opened many years ago."
+            },
+            {
+              "id": "a",
+              "text": "Nevertheless, the result cannot yet support a network-wide claim."
+            },
+            {
+              "id": "b",
+              "text": "For example, one route has a blue sign."
+            }
+          ],
+          "explanation": "Nevertheless introduces the limitation that the positive result is narrow."
+        },
+        {
+          "id": "r4",
+          "prompt": "The first design has a lower purchase price. ___ The committee later selected the second after reviewing ten-year maintenance costs.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The alternative uses more durable materials."
+            },
+            {
+              "id": "c",
+              "text": "The room was quiet during the meeting."
+            },
+            {
+              "id": "b",
+              "text": "The committee printed the plans twice."
+            }
+          ],
+          "explanation": "The durable alternative must be introduced before the later decision is explained."
+        },
+        {
+          "id": "r5",
+          "prompt": "The first design was cheaper to purchase. ___ The committee selected the second after considering costs over ten years.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Both designs were discarded immediately."
+            },
+            {
+              "id": "c",
+              "text": "The committee did not discuss maintenance."
+            },
+            {
+              "id": "a",
+              "text": "The second was more durable and expected to require fewer repairs."
+            }
+          ],
+          "explanation": "Durability and fewer repairs explain why long-term costs changed the decision."
+        },
+        {
+          "id": "r6",
+          "prompt": "The mentoring trial improved attendance among participants who completed the first month. ___ The report avoids extending the result to all students.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It was unclear whether the most absent students had joined."
+            },
+            {
+              "id": "c",
+              "text": "Attendance fell across the school."
+            },
+            {
+              "id": "d",
+              "text": "The trial included no participants."
+            }
+          ],
+          "explanation": "Unknown participation explains why the result cannot be generalised."
+        },
+        {
+          "id": "r7",
+          "prompt": "The new office layout reduced private rooms. ___ Staff reported that informal questions were easier to resolve.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It also placed project teams closer together."
+            },
+            {
+              "id": "d",
+              "text": "The project ended in January."
+            },
+            {
+              "id": "b",
+              "text": "The old building was made of stone."
+            }
+          ],
+          "explanation": "Closer teams explain why informal questions became easier despite fewer private rooms."
+        },
+        {
+          "id": "r8",
+          "prompt": "The policy worked in offices with visible collection points but had little effect where bins were hidden. ___ The recommendation therefore focuses on design as well as rules.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The contrast suggests that implementation shaped behaviour."
+            },
+            {
+              "id": "c",
+              "text": "The offices all used identical furniture."
+            },
+            {
+              "id": "b",
+              "text": "The policy was printed in large letters."
+            }
+          ],
+          "explanation": "The difference between visible and hidden bins supports the implementation inference."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-text-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "tradeoff",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

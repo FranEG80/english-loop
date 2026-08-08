@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-modal-perfect-regret-criticism-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "modal-perfects",
+  "subtopic": "modal-perfect-criticism",
+  "lessonId": "b2-grammar-modal-perfect-regret-criticism",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-criticism",
+      "taxonomyNodeIds": [
+        "modal-perfect-criticism"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We had the option to extend the deadline, but we didn't. We ___ given the team another day.",
+          "options": [
+            {
+              "id": "d",
+              "text": "can't have"
+            },
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "b",
+              "text": "could have"
+            }
+          ],
+          "explanation": "La extensión era una opción disponible no usada: «could have given»."
+        },
+        {
+          "id": "r2",
+          "prompt": "There was enough food for everyone. You ___ ordered another pizza.",
+          "options": [
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "must have"
+            },
+            {
+              "id": "d",
+              "text": "should have"
+            }
+          ],
+          "explanation": "La pizza adicional se pidió, pero no era necesaria: «needn't have ordered»."
+        },
+        {
+          "id": "r3",
+          "prompt": "We took all the chairs downstairs, but the event was cancelled. We ___ moved them.",
+          "options": [
+            {
+              "id": "a",
+              "text": "should have"
+            },
+            {
+              "id": "b",
+              "text": "can't have"
+            },
+            {
+              "id": "c",
+              "text": "needn't have"
+            }
+          ],
+          "explanation": "Moverlas fue una acción realizada que resultó innecesaria."
+        },
+        {
+          "id": "r4",
+          "prompt": "The tickets were refundable until Friday, but I forgot to cancel them. I ___ acted sooner.",
+          "options": [
+            {
+              "id": "d",
+              "text": "must have"
+            },
+            {
+              "id": "a",
+              "text": "needn't have"
+            },
+            {
+              "id": "b",
+              "text": "should have"
+            }
+          ],
+          "explanation": "Actuar antes era recomendable y no se hizo: «should have acted»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The terms allowed negotiation, but we accepted the first price. We ___ asked for a reduction.",
+          "options": [
+            {
+              "id": "a",
+              "text": "could have"
+            },
+            {
+              "id": "d",
+              "text": "needn't have"
+            },
+            {
+              "id": "b",
+              "text": "must have"
+            }
+          ],
+          "explanation": "Negociar era una posibilidad real no utilizada: «could have asked»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The side entrance was open. We ___ waited in the main queue.",
+          "options": [
+            {
+              "id": "a",
+              "text": "should have"
+            },
+            {
+              "id": "b",
+              "text": "could have"
+            },
+            {
+              "id": "c",
+              "text": "couldn't have"
+            }
+          ],
+          "explanation": "Usar la entrada lateral era una alternativa disponible: implícitamente, «could have used it»."
+        },
+        {
+          "id": "r7",
+          "prompt": "There was a direct train, but we didn't know. We ___ avoided the long bus journey.",
+          "options": [
+            {
+              "id": "d",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "could have"
+            },
+            {
+              "id": "b",
+              "text": "must have"
+            }
+          ],
+          "explanation": "Existía una alternativa no aprovechada: «could have avoided»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The update caused several failures. The team ___ tested it more thoroughly.",
+          "options": [
+            {
+              "id": "c",
+              "text": "should have"
+            },
+            {
+              "id": "b",
+              "text": "can't have"
+            },
+            {
+              "id": "d",
+              "text": "might have"
+            }
+          ],
+          "explanation": "Las pruebas más completas eran recomendables antes de publicar: «should have tested»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "modal-perfects",
+        "missed-opportunity",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-criticism",
+      "taxonomyNodeIds": [
+        "modal-perfect-criticism"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You shared the private link publicly. You ___ done that.",
+          "options": [
+            {
+              "id": "b",
+              "text": "could have"
+            },
+            {
+              "id": "a",
+              "text": "should have"
+            },
+            {
+              "id": "c",
+              "text": "shouldn't have"
+            }
+          ],
+          "explanation": "La acción ocurrió y fue un error: «shouldn't have done»."
+        },
+        {
+          "id": "r2",
+          "prompt": "You interrupted before she finished explaining. You ___ waited.",
+          "options": [
+            {
+              "id": "d",
+              "text": "mustn't have"
+            },
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "should have"
+            }
+          ],
+          "explanation": "Esperar era la conducta recomendable no realizada: «should have waited»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I complained before reading the explanation. I ___ read it first.",
+          "options": [
+            {
+              "id": "c",
+              "text": "should have"
+            },
+            {
+              "id": "b",
+              "text": "must have"
+            },
+            {
+              "id": "a",
+              "text": "can't have"
+            }
+          ],
+          "explanation": "Leer antes habría sido lo recomendable: «should have read»."
+        },
+        {
+          "id": "r4",
+          "prompt": "You changed the production database without a backup. You ___ taken that risk.",
+          "options": [
+            {
+              "id": "a",
+              "text": "shouldn't have"
+            },
+            {
+              "id": "b",
+              "text": "needn't have"
+            },
+            {
+              "id": "c",
+              "text": "may have"
+            }
+          ],
+          "explanation": "El riesgo se asumió y fue imprudente: «shouldn't have taken»."
+        },
+        {
+          "id": "r5",
+          "prompt": "You posted the address in a public channel. You ___ shared personal information there.",
+          "options": [
+            {
+              "id": "a",
+              "text": "shouldn't have"
+            },
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "d",
+              "text": "must have"
+            }
+          ],
+          "explanation": "La publicación ocurrió y fue inadecuada: «shouldn't have shared»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The hotel supplied towels, so you ___ brought your own.",
+          "options": [
+            {
+              "id": "d",
+              "text": "should have"
+            },
+            {
+              "id": "b",
+              "text": "couldn't have"
+            },
+            {
+              "id": "a",
+              "text": "needn't have"
+            }
+          ],
+          "explanation": "Trajiste una toalla, pero no hacía falta: «needn't have brought»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The venue supplied all the equipment we carried there. We ___ transported ours.",
+          "options": [
+            {
+              "id": "c",
+              "text": "couldn't have"
+            },
+            {
+              "id": "a",
+              "text": "mustn't have"
+            },
+            {
+              "id": "b",
+              "text": "needn't have"
+            }
+          ],
+          "explanation": "El transporte ocurrió, pero el equipo del recinto lo hacía innecesario."
+        },
+        {
+          "id": "r8",
+          "prompt": "The policy permitted remote approval, but we travelled six hours for one signature. We ___ handled it online.",
+          "options": [
+            {
+              "id": "c",
+              "text": "must have"
+            },
+            {
+              "id": "d",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "could have"
+            }
+          ],
+          "explanation": "La aprobación remota era una alternativa disponible: «could have handled it online»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "modal-perfects",
+        "criticism",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

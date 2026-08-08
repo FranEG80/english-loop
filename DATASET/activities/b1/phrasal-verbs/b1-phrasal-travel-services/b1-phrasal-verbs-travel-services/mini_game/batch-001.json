@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-phrasal-verbs-travel-services-mini-game-001",
+  "level": "B1",
+  "category": "phrasal-verbs",
+  "topic": "b1-phrasal-travel-services",
+  "subtopic": "b1-phrasal-travel-services",
+  "lessonId": "b1-phrasal-verbs-travel-services",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-travel-services-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We had to ___ the road because of the flood.",
+          "options": [
+            {
+              "id": "d",
+              "text": "turn down"
+            },
+            {
+              "id": "c",
+              "text": "turn over"
+            },
+            {
+              "id": "a",
+              "text": "turn back"
+            }
+          ],
+          "explanation": "Turn back means return in the direction you came from."
+        },
+        {
+          "id": "r2",
+          "prompt": "Can you ___ the travel details before we book?",
+          "options": [
+            {
+              "id": "d",
+              "text": "find into"
+            },
+            {
+              "id": "a",
+              "text": "find out"
+            },
+            {
+              "id": "b",
+              "text": "find over"
+            }
+          ],
+          "explanation": "Find out means discover information."
+        },
+        {
+          "id": "r3",
+          "prompt": "Could you ___ the departure time online?",
+          "options": [
+            {
+              "id": "d",
+              "text": "look out"
+            },
+            {
+              "id": "a",
+              "text": "look up"
+            },
+            {
+              "id": "c",
+              "text": "look down"
+            }
+          ],
+          "explanation": "Look up means search for information."
+        },
+        {
+          "id": "r4",
+          "prompt": "After collecting our bags, we ___ of the terminal.",
+          "options": [
+            {
+              "id": "b",
+              "text": "made up"
+            },
+            {
+              "id": "d",
+              "text": "made over"
+            },
+            {
+              "id": "a",
+              "text": "made our way out"
+            }
+          ],
+          "explanation": "Make one's way out means leave a place."
+        },
+        {
+          "id": "r5",
+          "prompt": "The coach will ___ at six in the morning.",
+          "options": [
+            {
+              "id": "c",
+              "text": "set aside"
+            },
+            {
+              "id": "a",
+              "text": "set off"
+            },
+            {
+              "id": "b",
+              "text": "set up"
+            }
+          ],
+          "explanation": "Set off means begin a journey."
+        },
+        {
+          "id": "r6",
+          "prompt": "The receptionist asked us to ___ our passports.",
+          "options": [
+            {
+              "id": "d",
+              "text": "hand back from"
+            },
+            {
+              "id": "a",
+              "text": "hand in"
+            },
+            {
+              "id": "c",
+              "text": "hand over to"
+            }
+          ],
+          "explanation": "Hand in means give something to an official."
+        },
+        {
+          "id": "r7",
+          "prompt": "The airline will ___ the flight until tomorrow.",
+          "options": [
+            {
+              "id": "c",
+              "text": "put away"
+            },
+            {
+              "id": "d",
+              "text": "put through"
+            },
+            {
+              "id": "a",
+              "text": "put off"
+            }
+          ],
+          "explanation": "Put off means delay."
+        },
+        {
+          "id": "r8",
+          "prompt": "The driver will ___ the passengers at the museum.",
+          "options": [
+            {
+              "id": "a",
+              "text": "drop off"
+            },
+            {
+              "id": "d",
+              "text": "drop over"
+            },
+            {
+              "id": "c",
+              "text": "drop by"
+            }
+          ],
+          "explanation": "Drop off means leave passengers at a destination."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "route",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-travel-services-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-travel-services",
+      "subtopic": "b1-phrasal-travel-services",
+      "taxonomyNodeIds": [
+        "b1-phrasal-travel-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The passengers were asked to ___ their bags at security.",
+          "options": [
+            {
+              "id": "a",
+              "text": "take out"
+            },
+            {
+              "id": "d",
+              "text": "take up"
+            },
+            {
+              "id": "c",
+              "text": "take over"
+            }
+          ],
+          "explanation": "Take out means remove something from a container or place."
+        },
+        {
+          "id": "r2",
+          "prompt": "The train was held ___ by a signal problem.",
+          "options": [
+            {
+              "id": "d",
+              "text": "in"
+            },
+            {
+              "id": "a",
+              "text": "up"
+            },
+            {
+              "id": "b",
+              "text": "out"
+            }
+          ],
+          "explanation": "Hold up means delay."
+        },
+        {
+          "id": "r3",
+          "prompt": "The hire car has ___ petrol.",
+          "options": [
+            {
+              "id": "b",
+              "text": "run into"
+            },
+            {
+              "id": "a",
+              "text": "run out of"
+            },
+            {
+              "id": "d",
+              "text": "run by"
+            }
+          ],
+          "explanation": "Run out of means have no fuel left."
+        },
+        {
+          "id": "r4",
+          "prompt": "The hotel manager promised to ___ the complaint immediately.",
+          "options": [
+            {
+              "id": "d",
+              "text": "look over to"
+            },
+            {
+              "id": "b",
+              "text": "look after"
+            },
+            {
+              "id": "a",
+              "text": "look into"
+            }
+          ],
+          "explanation": "Look into means investigate a complaint."
+        },
+        {
+          "id": "r5",
+          "prompt": "The ferry may ___ because of the storm.",
+          "options": [
+            {
+              "id": "a",
+              "text": "be called off"
+            },
+            {
+              "id": "b",
+              "text": "be called up"
+            },
+            {
+              "id": "c",
+              "text": "be called in"
+            }
+          ],
+          "explanation": "Call off means cancel an event or service."
+        },
+        {
+          "id": "r6",
+          "prompt": "We need to ___ the lost suitcase with the airline.",
+          "options": [
+            {
+              "id": "a",
+              "text": "follow up"
+            },
+            {
+              "id": "c",
+              "text": "follow out"
+            },
+            {
+              "id": "b",
+              "text": "follow through"
+            }
+          ],
+          "explanation": "Follow up means take further action about a matter."
+        },
+        {
+          "id": "r7",
+          "prompt": "We set ___ before sunrise to reach the coast.",
+          "options": [
+            {
+              "id": "b",
+              "text": "up"
+            },
+            {
+              "id": "d",
+              "text": "over"
+            },
+            {
+              "id": "a",
+              "text": "off"
+            }
+          ],
+          "explanation": "Set off means start a journey."
+        },
+        {
+          "id": "r8",
+          "prompt": "The guide will ___ the museum's history during the tour.",
+          "options": [
+            {
+              "id": "c",
+              "text": "go by"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            },
+            {
+              "id": "d",
+              "text": "go under"
+            }
+          ],
+          "explanation": "Go over means explain or review."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-travel-services"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "security",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

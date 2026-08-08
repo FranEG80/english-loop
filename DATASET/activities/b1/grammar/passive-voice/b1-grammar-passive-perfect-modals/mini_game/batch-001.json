@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-passive-perfect-modals-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "perfect-modal-passive",
+  "lessonId": "b1-grammar-passive-perfect-modals",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-passive-perfect-modals-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "perfect-modal-passive",
+      "taxonomyNodeIds": [
+        "perfect-modal-passive"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The emergency exit mustn't ___ by boxes.",
+          "options": [
+            {
+              "id": "c",
+              "text": "be block"
+            },
+            {
+              "id": "b",
+              "text": "been blocked"
+            },
+            {
+              "id": "a",
+              "text": "be blocked"
+            }
+          ],
+          "explanation": "La prohibición pasiva usa «mustn't be blocked»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The timetable ___ updated.",
+          "options": [
+            {
+              "id": "a",
+              "text": "has been"
+            },
+            {
+              "id": "d",
+              "text": "have been"
+            },
+            {
+              "id": "b",
+              "text": "has be"
+            }
+          ],
+          "explanation": "El sujeto singular usa «has been updated»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The final paragraph should ___ shorter.",
+          "options": [
+            {
+              "id": "b",
+              "text": "been made"
+            },
+            {
+              "id": "a",
+              "text": "be made"
+            },
+            {
+              "id": "d",
+              "text": "made"
+            }
+          ],
+          "explanation": "Después de «should» usamos «be made»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The winning entry has been ___ by the judges.",
+          "options": [
+            {
+              "id": "a",
+              "text": "chosen"
+            },
+            {
+              "id": "d",
+              "text": "choosed"
+            },
+            {
+              "id": "b",
+              "text": "chose"
+            }
+          ],
+          "explanation": "El participio de «choose» es «chosen»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Can the booking ___ to another date?",
+          "options": [
+            {
+              "id": "a",
+              "text": "be moved"
+            },
+            {
+              "id": "c",
+              "text": "be move"
+            },
+            {
+              "id": "b",
+              "text": "been moved"
+            }
+          ],
+          "explanation": "La pregunta sigue «Can + sujeto + be + participio?»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Active: “Visitors can download the audio guide free of charge.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "The audio guide can be downloaded free of charge."
+            },
+            {
+              "id": "c",
+              "text": "Visitors can be downloaded by the audio guide."
+            },
+            {
+              "id": "d",
+              "text": "The audio guide can be download free of charge."
+            }
+          ],
+          "explanation": "El modal se conserva y se añade «be downloaded»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The result ___ yesterday afternoon.",
+          "options": [
+            {
+              "id": "d",
+              "text": "has be announced"
+            },
+            {
+              "id": "c",
+              "text": "has announced"
+            },
+            {
+              "id": "a",
+              "text": "was announced"
+            }
+          ],
+          "explanation": "«Yesterday afternoon» es un tiempo pasado terminado y usa pasado simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "The form ___; a digital copy is sufficient.",
+          "options": [
+            {
+              "id": "c",
+              "text": "doesn't have be printed"
+            },
+            {
+              "id": "b",
+              "text": "mustn't be printed"
+            },
+            {
+              "id": "a",
+              "text": "doesn't have to be printed"
+            }
+          ],
+          "explanation": "La copia digital elimina la necesidad, pero no prohíbe imprimir."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-passive-perfect-modals"
+      ],
+      "tags": [
+        "b1",
+        "modal-passive",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-passive-perfect-modals-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "perfect-modal-passive",
+      "taxonomyNodeIds": [
+        "perfect-modal-passive"
+      ],
+      "difficulty": 5,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Depending on demand, an extra workshop ___ next month.",
+          "options": [
+            {
+              "id": "b",
+              "text": "might have been offered"
+            },
+            {
+              "id": "a",
+              "text": "might be offered"
+            },
+            {
+              "id": "d",
+              "text": "might be offer"
+            }
+          ],
+          "explanation": "La posibilidad futura B1 usa «might be offered»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence is fully correct?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The draft has revised, but the references should checked again."
+            },
+            {
+              "id": "a",
+              "text": "The draft has been revised, but the references should be checked again."
+            },
+            {
+              "id": "b",
+              "text": "The draft has be revised, but the references should been checked again."
+            }
+          ],
+          "explanation": "La frase combina «has been revised» con «should be checked»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Original photographs ___, but reference copies ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "don't have to be removed / mustn't be returned"
+            },
+            {
+              "id": "c",
+              "text": "mustn't been removed / don't have to returned"
+            },
+            {
+              "id": "a",
+              "text": "mustn't be removed / don't have to be returned"
+            }
+          ],
+          "explanation": "La primera acción está prohibida; devolver las copias no es necesario."
+        },
+        {
+          "id": "r4",
+          "prompt": "The faulty units ___, and all affected customers ___ automatically.",
+          "options": [
+            {
+              "id": "c",
+              "text": "have recalled / have contacted"
+            },
+            {
+              "id": "d",
+              "text": "have been recall / have be contacted"
+            },
+            {
+              "id": "a",
+              "text": "have been recalled / have been contacted"
+            }
+          ],
+          "explanation": "Ambos sujetos son plurales y requieren «have been + participio»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Several accessibility improvements ___ to the revised design.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have recently been added"
+            },
+            {
+              "id": "b",
+              "text": "have been recently add"
+            },
+            {
+              "id": "d",
+              "text": "recently have be added"
+            }
+          ],
+          "explanation": "El plural usa «have», seguido naturalmente por «recently been added»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The map can ___ from the visitor centre.",
+          "options": [
+            {
+              "id": "c",
+              "text": "be collect"
+            },
+            {
+              "id": "a",
+              "text": "be collected"
+            },
+            {
+              "id": "b",
+              "text": "been collected"
+            }
+          ],
+          "explanation": "Después de «can» usamos «be + participio»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The invoices ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "have already been paid"
+            },
+            {
+              "id": "c",
+              "text": "have been already pay"
+            },
+            {
+              "id": "d",
+              "text": "has already been paid"
+            }
+          ],
+          "explanation": "El plural usa «have» y «already» aparece naturalmente antes de «been»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Protective gloves must ___ in the workshop.",
+          "options": [
+            {
+              "id": "b",
+              "text": "been worn"
+            },
+            {
+              "id": "c",
+              "text": "be wore"
+            },
+            {
+              "id": "a",
+              "text": "be worn"
+            }
+          ],
+          "explanation": "La obligación pasiva usa «must be worn»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-passive-perfect-modals"
+      ],
+      "tags": [
+        "b1",
+        "modal-passive",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

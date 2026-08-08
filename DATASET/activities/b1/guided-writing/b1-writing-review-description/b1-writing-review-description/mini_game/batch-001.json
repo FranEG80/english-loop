@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-writing-review-description-mini-game-001",
+  "level": "B1",
+  "category": "guided-writing",
+  "topic": "b1-writing-review-description",
+  "subtopic": "b1-writing-review-description",
+  "lessonId": "b1-writing-review-description",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-review-description-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-review-description",
+      "subtopic": "b1-writing-review-description",
+      "taxonomyNodeIds": [
+        "b1-writing-review-description"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence reviews a film with a slow opening fairly?",
+          "options": [
+            {
+              "id": "b",
+              "text": "The film starts at seven."
+            },
+            {
+              "id": "a",
+              "text": "The film starts slowly, but its thoughtful ending makes it worthwhile."
+            },
+            {
+              "id": "c",
+              "text": "The film has a title."
+            }
+          ],
+          "explanation": "But contrasts a limitation with a compensating strength."
+        },
+        {
+          "id": "r2",
+          "prompt": "The course gives short tasks that learners can use outside class. It is ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "practical"
+            },
+            {
+              "id": "b",
+              "text": "decorative"
+            },
+            {
+              "id": "d",
+              "text": "distant"
+            }
+          ],
+          "explanation": "Practical describes knowledge that can be used in real situations."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence gives an observable fact about a gallery?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The gallery has twelve photographs."
+            },
+            {
+              "id": "c",
+              "text": "Everyone should love it."
+            },
+            {
+              "id": "d",
+              "text": "It is the best place ever."
+            }
+          ],
+          "explanation": "The number of photographs is descriptive information."
+        },
+        {
+          "id": "r4",
+          "prompt": "The restaurant is attractive, but the bill is much higher than the quality justifies. It is ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "thought-provoking"
+            },
+            {
+              "id": "a",
+              "text": "overpriced"
+            },
+            {
+              "id": "b",
+              "text": "welcoming"
+            }
+          ],
+          "explanation": "Overpriced precisely criticises a cost that is too high."
+        },
+        {
+          "id": "r5",
+          "prompt": "The instructions show every stage with a simple picture. The reviewer calls them ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "formal"
+            },
+            {
+              "id": "b",
+              "text": "unrelated"
+            },
+            {
+              "id": "a",
+              "text": "well designed"
+            }
+          ],
+          "explanation": "Well designed describes instructions that are clear and useful."
+        },
+        {
+          "id": "r6",
+          "prompt": "The café is calm and comfortable, so the reviewer describes its atmosphere as ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "broken"
+            },
+            {
+              "id": "d",
+              "text": "narrow"
+            },
+            {
+              "id": "a",
+              "text": "peaceful"
+            }
+          ],
+          "explanation": "Peaceful describes a calm atmosphere."
+        },
+        {
+          "id": "r7",
+          "prompt": "The reviewer says the museum is easy to reach, easy to understand and welcoming to different visitors. It is ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "accessible to a wide audience"
+            },
+            {
+              "id": "c",
+              "text": "limited to experts"
+            },
+            {
+              "id": "b",
+              "text": "closed to the public"
+            }
+          ],
+          "explanation": "Accessible to a wide audience combines the relevant positive details."
+        },
+        {
+          "id": "r8",
+          "prompt": "The small theatre uses clever lighting to create a strong mood. Its atmosphere is ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "ordinary"
+            },
+            {
+              "id": "a",
+              "text": "atmospheric"
+            },
+            {
+              "id": "d",
+              "text": "expensive"
+            }
+          ],
+          "explanation": "Atmospheric means the place creates a strong emotional mood."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-review-description"
+      ],
+      "tags": [
+        "b1",
+        "review",
+        "nuance",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-review-description-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-review-description",
+      "subtopic": "b1-writing-review-description",
+      "taxonomyNodeIds": [
+        "b1-writing-review-description"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The theatre has only a few seats, which makes the experience feel personal. The space is ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "temporary"
+            },
+            {
+              "id": "b",
+              "text": "crowded"
+            },
+            {
+              "id": "a",
+              "text": "intimate"
+            }
+          ],
+          "explanation": "Intimate describes a small, personal atmosphere."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence gives a final judgement about a concert?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Overall, it is well worth hearing live."
+            },
+            {
+              "id": "c",
+              "text": "The singer wore a jacket."
+            },
+            {
+              "id": "b",
+              "text": "The concert started at eight."
+            }
+          ],
+          "explanation": "Overall and well worth give a clear final evaluation."
+        },
+        {
+          "id": "r3",
+          "prompt": "The exhibition combines local history, photographs and hands-on activities. The content is ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "narrow"
+            },
+            {
+              "id": "a",
+              "text": "varied"
+            },
+            {
+              "id": "c",
+              "text": "empty"
+            }
+          ],
+          "explanation": "Varied describes a collection with different kinds of content."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which recommendation suits a beginner class?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I would recommend it to professional judges only."
+            },
+            {
+              "id": "a",
+              "text": "I would recommend it to anyone who is just starting."
+            },
+            {
+              "id": "d",
+              "text": "It uses three books."
+            }
+          ],
+          "explanation": "The recommendation names the class's suitable audience."
+        },
+        {
+          "id": "r5",
+          "prompt": "The festival has food, music, workshops and performances for different ages. Its programme is ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "narrow"
+            },
+            {
+              "id": "a",
+              "text": "varied"
+            },
+            {
+              "id": "b",
+              "text": "silent"
+            }
+          ],
+          "explanation": "Varied is supported by the range of activities and audiences."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which review sentence includes a limitation?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The festival began at six."
+            },
+            {
+              "id": "a",
+              "text": "The festival was exciting, although the entrance was crowded."
+            },
+            {
+              "id": "b",
+              "text": "The festival was perfect for everyone."
+            }
+          ],
+          "explanation": "Although introduces the negative detail in a balanced sentence."
+        },
+        {
+          "id": "r7",
+          "prompt": "The review explains how the play makes the audience reflect on friendship and responsibility. It is ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "thought-provoking"
+            },
+            {
+              "id": "d",
+              "text": "temporary"
+            },
+            {
+              "id": "b",
+              "text": "crowded"
+            }
+          ],
+          "explanation": "Thought-provoking describes work that encourages serious thought."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase introduces the strongest feature of a place?",
+          "options": [
+            {
+              "id": "d",
+              "text": "For two weeks"
+            },
+            {
+              "id": "c",
+              "text": "Behind the building"
+            },
+            {
+              "id": "a",
+              "text": "The best part was"
+            }
+          ],
+          "explanation": "The best part was introduces a positive feature for evaluation."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-review-description"
+      ],
+      "tags": [
+        "b1",
+        "review",
+        "atmosphere",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-money-economics-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-money-economics",
+  "subtopic": "b2-money-economics",
+  "lessonId": "b2-vocabulary-money-economics",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-money-economics-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-money-economics",
+      "subtopic": "b2-money-economics",
+      "taxonomyNodeIds": [
+        "b2-money-economics"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The report predicts modest economic ___ next year.",
+          "options": [
+            {
+              "id": "b",
+              "text": "debt"
+            },
+            {
+              "id": "c",
+              "text": "expenditure"
+            },
+            {
+              "id": "a",
+              "text": "growth"
+            }
+          ],
+          "explanation": "Economic growth is an increase in economic activity or output."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which word describes money left after a business pays its costs?",
+          "options": [
+            {
+              "id": "a",
+              "text": "profit"
+            },
+            {
+              "id": "c",
+              "text": "income tax"
+            },
+            {
+              "id": "b",
+              "text": "revenue"
+            }
+          ],
+          "explanation": "Profit is revenue minus the relevant costs."
+        },
+        {
+          "id": "r3",
+          "prompt": "Higher fuel prices are likely to ___ inflation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "save"
+            },
+            {
+              "id": "a",
+              "text": "fuel"
+            },
+            {
+              "id": "c",
+              "text": "repay"
+            }
+          ],
+          "explanation": "Fuel inflation means contribute to or increase inflationary pressure."
+        },
+        {
+          "id": "r4",
+          "prompt": "The supermarket reduced its monthly ___ by changing suppliers.",
+          "options": [
+            {
+              "id": "c",
+              "text": "inflation"
+            },
+            {
+              "id": "d",
+              "text": "income"
+            },
+            {
+              "id": "a",
+              "text": "expenditure"
+            }
+          ],
+          "explanation": "Expenditure is a formal word for spending or money spent."
+        },
+        {
+          "id": "r5",
+          "prompt": "A household's regular rent is an example of a monthly ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "expense"
+            },
+            {
+              "id": "d",
+              "text": "revenue"
+            },
+            {
+              "id": "b",
+              "text": "profit"
+            }
+          ],
+          "explanation": "An expense is a cost paid by a person or organisation."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which phrase means to put money into a project expecting a return?",
+          "options": [
+            {
+              "id": "c",
+              "text": "charge a project"
+            },
+            {
+              "id": "a",
+              "text": "invest in a project"
+            },
+            {
+              "id": "b",
+              "text": "repay a project"
+            }
+          ],
+          "explanation": "Invest in means put money or resources into something for a possible future return."
+        },
+        {
+          "id": "r7",
+          "prompt": "The bank charges ___ on the outstanding loan balance.",
+          "options": [
+            {
+              "id": "a",
+              "text": "interest"
+            },
+            {
+              "id": "b",
+              "text": "growth"
+            },
+            {
+              "id": "d",
+              "text": "income"
+            }
+          ],
+          "explanation": "Interest is the cost of borrowing money."
+        },
+        {
+          "id": "r8",
+          "prompt": "A company receives ___ from selling goods and services.",
+          "options": [
+            {
+              "id": "a",
+              "text": "revenue"
+            },
+            {
+              "id": "b",
+              "text": "debt"
+            },
+            {
+              "id": "c",
+              "text": "deficit"
+            }
+          ],
+          "explanation": "Revenue is the money a business receives from sales."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-money-economics"
+      ],
+      "tags": [
+        "b2",
+        "growth",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-money-economics-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-money-economics",
+      "subtopic": "b2-money-economics",
+      "taxonomyNodeIds": [
+        "b2-money-economics"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The company made a healthy ___ after paying all its costs.",
+          "options": [
+            {
+              "id": "a",
+              "text": "profit"
+            },
+            {
+              "id": "d",
+              "text": "deficit"
+            },
+            {
+              "id": "b",
+              "text": "income"
+            }
+          ],
+          "explanation": "Profit is what remains after costs are subtracted from revenue."
+        },
+        {
+          "id": "r2",
+          "prompt": "Why can revenue be high while profit is low?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Because profit is money borrowed."
+            },
+            {
+              "id": "a",
+              "text": "Because costs may also be high."
+            },
+            {
+              "id": "b",
+              "text": "Because revenue always means debt."
+            }
+          ],
+          "explanation": "Profit is calculated after costs are subtracted from revenue."
+        },
+        {
+          "id": "r3",
+          "prompt": "The bank ___ the start-up money for the equipment.",
+          "options": [
+            {
+              "id": "c",
+              "text": "saved"
+            },
+            {
+              "id": "d",
+              "text": "spent"
+            },
+            {
+              "id": "a",
+              "text": "lent"
+            }
+          ],
+          "explanation": "The bank lent the money; the start-up borrowed it."
+        },
+        {
+          "id": "r4",
+          "prompt": "The household changed its budget to ___ the loan before retirement.",
+          "options": [
+            {
+              "id": "a",
+              "text": "repay"
+            },
+            {
+              "id": "c",
+              "text": "fuel"
+            },
+            {
+              "id": "b",
+              "text": "generate"
+            }
+          ],
+          "explanation": "Repay means pay back money that was borrowed."
+        },
+        {
+          "id": "r5",
+          "prompt": "The retailer wants to ___ spending without reducing essential stock.",
+          "options": [
+            {
+              "id": "b",
+              "text": "borrow"
+            },
+            {
+              "id": "a",
+              "text": "cut"
+            },
+            {
+              "id": "c",
+              "text": "lend"
+            }
+          ],
+          "explanation": "Cut spending means reduce the amount spent."
+        },
+        {
+          "id": "r6",
+          "prompt": "The government is trying to ___ growth through investment.",
+          "options": [
+            {
+              "id": "b",
+              "text": "borrow"
+            },
+            {
+              "id": "a",
+              "text": "stimulate"
+            },
+            {
+              "id": "d",
+              "text": "cut"
+            }
+          ],
+          "explanation": "Stimulate growth means encourage economic activity to increase."
+        },
+        {
+          "id": "r7",
+          "prompt": "The factory improved ___ by producing more with the same staff.",
+          "options": [
+            {
+              "id": "b",
+              "text": "inflation"
+            },
+            {
+              "id": "c",
+              "text": "debt"
+            },
+            {
+              "id": "a",
+              "text": "productivity"
+            }
+          ],
+          "explanation": "Productivity measures how efficiently inputs produce output."
+        },
+        {
+          "id": "r8",
+          "prompt": "The family is building up ___ for emergencies.",
+          "options": [
+            {
+              "id": "b",
+              "text": "revenue"
+            },
+            {
+              "id": "c",
+              "text": "growth"
+            },
+            {
+              "id": "a",
+              "text": "savings"
+            }
+          ],
+          "explanation": "Savings are money that has been kept rather than spent."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-money-economics"
+      ],
+      "tags": [
+        "b2",
+        "business",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

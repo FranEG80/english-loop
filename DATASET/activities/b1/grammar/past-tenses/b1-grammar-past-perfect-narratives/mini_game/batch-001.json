@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-past-perfect-narratives-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "past-tenses",
+  "subtopic": "past-perfect-narrative",
+  "lessonId": "b1-grammar-past-perfect-narratives",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-past-perfect-narratives-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-perfect-narrative",
+      "taxonomyNodeIds": [
+        "past-perfect-narrative"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We ___ the wrong path, so we ___ the village from the opposite direction.",
+          "options": [
+            {
+              "id": "b",
+              "text": "took / had reached"
+            },
+            {
+              "id": "a",
+              "text": "had taken / reached"
+            },
+            {
+              "id": "c",
+              "text": "have taken / reached"
+            }
+          ],
+          "explanation": "Tomar el camino equivocado explica cómo llegamos después."
+        },
+        {
+          "id": "r2",
+          "prompt": "The server ___ overnight, so the technician ___ it before the office opened.",
+          "options": [
+            {
+              "id": "c",
+              "text": "has failed / replaced"
+            },
+            {
+              "id": "a",
+              "text": "had failed / replaced"
+            },
+            {
+              "id": "d",
+              "text": "had fail / did replace"
+            }
+          ],
+          "explanation": "El fallo es anterior al marco narrativo; la reparación hace avanzar la historia."
+        },
+        {
+          "id": "r3",
+          "prompt": "When I called Omar, he ___ the news.",
+          "options": [
+            {
+              "id": "b",
+              "text": "already had hear"
+            },
+            {
+              "id": "d",
+              "text": "had already hear"
+            },
+            {
+              "id": "a",
+              "text": "had already heard"
+            }
+          ],
+          "explanation": "La noticia llegó antes de la llamada; «already» va después de «had»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The guests ___ when our taxi arrived.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had just leave"
+            },
+            {
+              "id": "d",
+              "text": "just did left"
+            },
+            {
+              "id": "a",
+              "text": "had just left"
+            }
+          ],
+          "explanation": "La salida ocurrió inmediatamente antes de la llegada del taxi."
+        },
+        {
+          "id": "r5",
+          "prompt": "After I locked the door, I ___ towards the station.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had walk"
+            },
+            {
+              "id": "b",
+              "text": "had walked"
+            },
+            {
+              "id": "a",
+              "text": "walked"
+            }
+          ],
+          "explanation": "«After» ya aclara el orden y la acción siguiente usa past simple."
+        },
+        {
+          "id": "r6",
+          "prompt": "The actions happened in their stated order: scan the ticket, enter the hall, find a seat.",
+          "options": [
+            {
+              "id": "d",
+              "text": "I have scanned my ticket and entered the hall yesterday."
+            },
+            {
+              "id": "b",
+              "text": "I had scanned my ticket, had entered the hall and had found my seat."
+            },
+            {
+              "id": "a",
+              "text": "I scanned my ticket, entered the hall and found my seat."
+            }
+          ],
+          "explanation": "La secuencia cronológica se cuenta de forma natural con past simple."
+        },
+        {
+          "id": "r7",
+          "prompt": "I was hungry because I ___ breakfast.",
+          "options": [
+            {
+              "id": "b",
+              "text": "haven't eaten"
+            },
+            {
+              "id": "c",
+              "text": "hadn't ate"
+            },
+            {
+              "id": "a",
+              "text": "hadn't eaten"
+            }
+          ],
+          "explanation": "No desayunar ocurrió antes y explica el hambre posterior."
+        },
+        {
+          "id": "r8",
+          "prompt": "Ask whether Ravi had used the software before the training began.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Had Ravi use the software before the training began?"
+            },
+            {
+              "id": "b",
+              "text": "Did Ravi had used the software before the training began?"
+            },
+            {
+              "id": "a",
+              "text": "Had Ravi used the software before the training began?"
+            }
+          ],
+          "explanation": "La pregunta sobre el pasado anterior usa «Had Ravi used ...?»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-past-perfect-narratives"
+      ],
+      "tags": [
+        "b1",
+        "past-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-past-perfect-narratives-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-perfect-narrative",
+      "taxonomyNodeIds": [
+        "past-perfect-narrative"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The actions happened in this order: open the door, enter, switch on the light.",
+          "options": [
+            {
+              "id": "c",
+              "text": "I had open the door, entered and switch on the light."
+            },
+            {
+              "id": "a",
+              "text": "I opened the door, entered and switched on the light."
+            },
+            {
+              "id": "d",
+              "text": "I have opened the door, entered and switched on the light yesterday."
+            }
+          ],
+          "explanation": "Una secuencia cronológica completa no necesita past perfect."
+        },
+        {
+          "id": "r2",
+          "prompt": "She had ___ home before the meeting ended.",
+          "options": [
+            {
+              "id": "d",
+              "text": "going"
+            },
+            {
+              "id": "a",
+              "text": "gone"
+            },
+            {
+              "id": "b",
+              "text": "went"
+            }
+          ],
+          "explanation": "Después de «had» usamos el participio «gone»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I thought I ___ the document, but the folder was empty.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had saved"
+            },
+            {
+              "id": "c",
+              "text": "had save"
+            },
+            {
+              "id": "d",
+              "text": "was saved it"
+            }
+          ],
+          "explanation": "El supuesto guardado era anterior al pensamiento y al descubrimiento."
+        },
+        {
+          "id": "r4",
+          "prompt": "The path was slippery because it ___ overnight.",
+          "options": [
+            {
+              "id": "b",
+              "text": "has rained"
+            },
+            {
+              "id": "d",
+              "text": "did rained"
+            },
+            {
+              "id": "a",
+              "text": "had rained"
+            }
+          ],
+          "explanation": "La lluvia nocturna fue anterior al estado resbaladizo del camino."
+        },
+        {
+          "id": "r5",
+          "prompt": "At noon, the replacement parcel ___ yet.",
+          "options": [
+            {
+              "id": "a",
+              "text": "hadn't arrived"
+            },
+            {
+              "id": "b",
+              "text": "hasn't arrived"
+            },
+            {
+              "id": "d",
+              "text": "didn't arrived"
+            }
+          ],
+          "explanation": "La llegada seguía pendiente al alcanzar el punto pasado de mediodía."
+        },
+        {
+          "id": "r6",
+          "prompt": "I returned to check the door after I ___ the building.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was leave"
+            },
+            {
+              "id": "c",
+              "text": "had leave"
+            },
+            {
+              "id": "a",
+              "text": "had left"
+            }
+          ],
+          "explanation": "La salida fue anterior al regreso y se marca con «had left»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Before that trip, Nora ___ in a plane.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had never flew"
+            },
+            {
+              "id": "b",
+              "text": "has never flown"
+            },
+            {
+              "id": "a",
+              "text": "had never flown"
+            }
+          ],
+          "explanation": "La ausencia de experiencia se mide hasta un viaje pasado."
+        },
+        {
+          "id": "r8",
+          "prompt": "The lift ___ a second before we entered it.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had stopped"
+            },
+            {
+              "id": "d",
+              "text": "did stopped"
+            },
+            {
+              "id": "c",
+              "text": "had stop"
+            }
+          ],
+          "explanation": "Aunque la diferencia es mínima, la parada ocurrió antes de la entrada."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-past-perfect-narratives"
+      ],
+      "tags": [
+        "b1",
+        "past-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

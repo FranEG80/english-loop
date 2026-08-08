@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-phrasal-verbs-everyday-actions-mini-game-001",
+  "level": "B1",
+  "category": "phrasal-verbs",
+  "topic": "b1-phrasal-everyday-actions",
+  "subtopic": "b1-phrasal-everyday-actions",
+  "lessonId": "b1-phrasal-verbs-everyday-actions",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-everyday-actions-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-everyday-actions",
+      "subtopic": "b1-phrasal-everyday-actions",
+      "taxonomyNodeIds": [
+        "b1-phrasal-everyday-actions"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I usually ___ at seven on weekdays.",
+          "options": [
+            {
+              "id": "a",
+              "text": "get up"
+            },
+            {
+              "id": "c",
+              "text": "get into"
+            },
+            {
+              "id": "b",
+              "text": "get over"
+            }
+          ],
+          "explanation": "Get up means leave your bed."
+        },
+        {
+          "id": "r2",
+          "prompt": "Could you ___ the recipe before you start cooking?",
+          "options": [
+            {
+              "id": "c",
+              "text": "look out"
+            },
+            {
+              "id": "a",
+              "text": "look through"
+            },
+            {
+              "id": "b",
+              "text": "look after"
+            }
+          ],
+          "explanation": "Look through means examine a text."
+        },
+        {
+          "id": "r3",
+          "prompt": "The washing machine has ___, so I called a technician.",
+          "options": [
+            {
+              "id": "a",
+              "text": "broken down"
+            },
+            {
+              "id": "c",
+              "text": "broken up"
+            },
+            {
+              "id": "d",
+              "text": "broken out"
+            }
+          ],
+          "explanation": "Break down means stop working."
+        },
+        {
+          "id": "r4",
+          "prompt": "Please ___ your coat before you go outside.",
+          "options": [
+            {
+              "id": "b",
+              "text": "put off"
+            },
+            {
+              "id": "a",
+              "text": "put on"
+            },
+            {
+              "id": "d",
+              "text": "put out"
+            }
+          ],
+          "explanation": "Put on means dress in an item."
+        },
+        {
+          "id": "r5",
+          "prompt": "Please ___ the rubbish before the guests arrive.",
+          "options": [
+            {
+              "id": "a",
+              "text": "throw away"
+            },
+            {
+              "id": "c",
+              "text": "throw in"
+            },
+            {
+              "id": "b",
+              "text": "throw up"
+            }
+          ],
+          "explanation": "Throw away means discard."
+        },
+        {
+          "id": "r6",
+          "prompt": "Please ___ the heater when you leave the room.",
+          "options": [
+            {
+              "id": "b",
+              "text": "switch over"
+            },
+            {
+              "id": "a",
+              "text": "switch off"
+            },
+            {
+              "id": "d",
+              "text": "switch around"
+            }
+          ],
+          "explanation": "Switch off means turn a device off."
+        },
+        {
+          "id": "r7",
+          "prompt": "The pharmacist told me to ___ the instructions carefully.",
+          "options": [
+            {
+              "id": "b",
+              "text": "read out"
+            },
+            {
+              "id": "a",
+              "text": "read through"
+            },
+            {
+              "id": "c",
+              "text": "read into"
+            }
+          ],
+          "explanation": "Read through means read from beginning to end."
+        },
+        {
+          "id": "r8",
+          "prompt": "He promised to ___ the problem with the noisy tap.",
+          "options": [
+            {
+              "id": "c",
+              "text": "look down"
+            },
+            {
+              "id": "d",
+              "text": "look out"
+            },
+            {
+              "id": "a",
+              "text": "look into"
+            }
+          ],
+          "explanation": "Look into means investigate."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-everyday-actions"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "routine",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-everyday-actions-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-everyday-actions",
+      "subtopic": "b1-phrasal-everyday-actions",
+      "taxonomyNodeIds": [
+        "b1-phrasal-everyday-actions"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Our neighbour will ___ the cat while we are away.",
+          "options": [
+            {
+              "id": "c",
+              "text": "look into"
+            },
+            {
+              "id": "a",
+              "text": "look after"
+            },
+            {
+              "id": "d",
+              "text": "look up"
+            }
+          ],
+          "explanation": "Look after means take care of."
+        },
+        {
+          "id": "r2",
+          "prompt": "Could you ___ the television before bed?",
+          "options": [
+            {
+              "id": "c",
+              "text": "turn up"
+            },
+            {
+              "id": "a",
+              "text": "turn off"
+            },
+            {
+              "id": "d",
+              "text": "turn over"
+            }
+          ],
+          "explanation": "Turn off means stop a device."
+        },
+        {
+          "id": "r3",
+          "prompt": "Mum asked me to ___ my toys before dinner.",
+          "options": [
+            {
+              "id": "a",
+              "text": "put away"
+            },
+            {
+              "id": "b",
+              "text": "put down"
+            },
+            {
+              "id": "d",
+              "text": "put up"
+            }
+          ],
+          "explanation": "Put away means return things to their storage place."
+        },
+        {
+          "id": "r4",
+          "prompt": "Can you ___ the instructions once more?",
+          "options": [
+            {
+              "id": "c",
+              "text": "go by"
+            },
+            {
+              "id": "a",
+              "text": "go over"
+            },
+            {
+              "id": "b",
+              "text": "go off"
+            }
+          ],
+          "explanation": "Go over means review carefully."
+        },
+        {
+          "id": "r5",
+          "prompt": "She ___ a useful shortcut while reading the manual.",
+          "options": [
+            {
+              "id": "a",
+              "text": "came across"
+            },
+            {
+              "id": "c",
+              "text": "came into"
+            },
+            {
+              "id": "d",
+              "text": "came off"
+            }
+          ],
+          "explanation": "Come across means find by chance."
+        },
+        {
+          "id": "r6",
+          "prompt": "The children were asked to ___ their voices in the library.",
+          "options": [
+            {
+              "id": "a",
+              "text": "keep down"
+            },
+            {
+              "id": "b",
+              "text": "keep up"
+            },
+            {
+              "id": "c",
+              "text": "keep off"
+            }
+          ],
+          "explanation": "Keep down means keep at a low level."
+        },
+        {
+          "id": "r7",
+          "prompt": "She ___ her shoes as soon as she got home.",
+          "options": [
+            {
+              "id": "c",
+              "text": "took in"
+            },
+            {
+              "id": "b",
+              "text": "took after"
+            },
+            {
+              "id": "a",
+              "text": "took off"
+            }
+          ],
+          "explanation": "Take off means remove clothing."
+        },
+        {
+          "id": "r8",
+          "prompt": "Please ___ the light; it is too bright.",
+          "options": [
+            {
+              "id": "c",
+              "text": "turn up"
+            },
+            {
+              "id": "b",
+              "text": "turn into"
+            },
+            {
+              "id": "a",
+              "text": "turn down"
+            }
+          ],
+          "explanation": "Turn down means reduce a setting or volume."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-everyday-actions"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "care",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

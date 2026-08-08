@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-subject-object-questions-tags-swipe-deck-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "questions",
+  "subtopic": "subject-object-question-tags",
+  "lessonId": "b1-grammar-subject-object-questions-tags",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-subject-object-questions-tags-sd-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "They arrived yesterday, didn't they?",
+          "explanation": "Pasado simple afirmativo: «didn't they»."
+        },
+        {
+          "id": "c2",
+          "statement": "I'm next, aren't I?",
+          "explanation": "La forma convencional es «aren't I?»."
+        },
+        {
+          "id": "c3",
+          "statement": "Who is waiting outside?",
+          "explanation": "«who» es sujeto en presente continuo."
+        },
+        {
+          "id": "c4",
+          "statement": "Who repaired the printer?",
+          "explanation": "«who» es sujeto; no necesita «did»."
+        },
+        {
+          "id": "c5",
+          "statement": "Who has the manager invited?",
+          "explanation": "Present perfect de objeto: «has»."
+        },
+        {
+          "id": "c6",
+          "statement": "Maya and Leo left early, didn't they?",
+          "explanation": "Dos personas se sustituyen por «they»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-subject-object-questions-tags-sd-073",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 1,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Nobody complained, did they?",
+          "explanation": "«nobody» es negativo: «did they»."
+        },
+        {
+          "id": "c2",
+          "statement": "The office is open, isn't it?",
+          "explanation": "Repetimos «is» y usamos «it»."
+        },
+        {
+          "id": "c3",
+          "statement": "The rooms aren't ready, are they?",
+          "explanation": "Enunciado negativo plural: «are they»."
+        },
+        {
+          "id": "c4",
+          "statement": "Which route did the driver take?",
+          "explanation": "Pasado con sujeto «the driver»: «did»."
+        },
+        {
+          "id": "c5",
+          "statement": "Who wrote the report?",
+          "explanation": "«who» es sujeto."
+        },
+        {
+          "id": "c6",
+          "statement": "Who did you call?",
+          "explanation": "«you» es sujeto; usa «did»."
+        },
+        {
+          "id": "c7",
+          "statement": "Marta works here, isn't she?",
+          "explanation": "Presente simple usa «doesn't she»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-subject-object-questions-tags-sd-136",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "There weren't any delays, weren't there?",
+          "explanation": "Enunciado negativo: tag positiva «were there»."
+        },
+        {
+          "id": "c2",
+          "statement": "There's a pharmacy nearby, isn't there?",
+          "explanation": "La tag de «there is» conserva «there»."
+        },
+        {
+          "id": "c3",
+          "statement": "The parcel has arrived, doesn't it?",
+          "explanation": "Repetimos «has»: «hasn't it»."
+        },
+        {
+          "id": "c4",
+          "statement": "Let's take a break, shall we?",
+          "explanation": "Con «let's» usamos «shall we?»."
+        },
+        {
+          "id": "c5",
+          "statement": "You didn't call, did you?",
+          "explanation": "Enunciado negativo: tag positiva."
+        },
+        {
+          "id": "c6",
+          "statement": "Nothing was damaged, wasn't it?",
+          "explanation": "«nothing» es negativo: «was it»."
+        },
+        {
+          "id": "c7",
+          "statement": "The documents are ready, isn't it?",
+          "explanation": "Plural: «aren't they»."
+        },
+        {
+          "id": "c8",
+          "statement": "You can access the folder, can't you?",
+          "explanation": "Repetimos «can» en negativo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "question-tag",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

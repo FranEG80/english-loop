@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-prepositions-movement-travel-mini-game-001",
+  "level": "B1",
+  "category": "prepositions",
+  "topic": "b1-prepositions-movement-travel",
+  "subtopic": "b1-prepositions-movement-travel",
+  "lessonId": "b1-prepositions-movement-travel",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-prepositions-movement-travel-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-prepositions-movement-travel",
+      "subtopic": "b1-prepositions-movement-travel",
+      "taxonomyNodeIds": [
+        "b1-prepositions-movement-travel"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes route sentence 013? We followed the path ___ the hill.",
+          "options": [
+            {
+              "id": "a",
+              "text": "along"
+            },
+            {
+              "id": "d",
+              "text": "past"
+            },
+            {
+              "id": "c",
+              "text": "onto"
+            }
+          ],
+          "explanation": "Use «along» for movement following a path."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes route sentence 006? We cycled ___ the river.",
+          "options": [
+            {
+              "id": "a",
+              "text": "along"
+            },
+            {
+              "id": "d",
+              "text": "through"
+            },
+            {
+              "id": "b",
+              "text": "into"
+            }
+          ],
+          "explanation": "Use «along» for movement following a line or route."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes route sentence 019? We drove ___ the coast road.",
+          "options": [
+            {
+              "id": "b",
+              "text": "into"
+            },
+            {
+              "id": "d",
+              "text": "through"
+            },
+            {
+              "id": "a",
+              "text": "along"
+            }
+          ],
+          "explanation": "Use «along» for following a road."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes route sentence 001? We walked ___ the station.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "through"
+            },
+            {
+              "id": "b",
+              "text": "into"
+            }
+          ],
+          "explanation": "Use «to» for a destination."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes route sentence 016? The path leads ___ a narrow valley.",
+          "options": [
+            {
+              "id": "a",
+              "text": "through"
+            },
+            {
+              "id": "d",
+              "text": "across"
+            },
+            {
+              "id": "c",
+              "text": "past"
+            }
+          ],
+          "explanation": "Use «through» for movement within a valley."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes route sentence 018? The horse jumped ___ the fence.",
+          "options": [
+            {
+              "id": "d",
+              "text": "towards"
+            },
+            {
+              "id": "a",
+              "text": "over"
+            },
+            {
+              "id": "b",
+              "text": "into"
+            }
+          ],
+          "explanation": "«Over» describes movement above and across an obstacle."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes route sentence 022? The travellers moved ___ the border.",
+          "options": [
+            {
+              "id": "b",
+              "text": "onto"
+            },
+            {
+              "id": "a",
+              "text": "towards"
+            },
+            {
+              "id": "c",
+              "text": "through"
+            }
+          ],
+          "explanation": "Use «towards» for movement in the direction of a point."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes route sentence 011? The dog jumped ___ the car.",
+          "options": [
+            {
+              "id": "c",
+              "text": "across"
+            },
+            {
+              "id": "b",
+              "text": "onto"
+            },
+            {
+              "id": "a",
+              "text": "into"
+            }
+          ],
+          "explanation": "Use «into» for movement ending inside a vehicle."
+        }
+      ],
+      "lessonIds": [
+        "b1-prepositions-movement-travel"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "route",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-prepositions-movement-travel-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-prepositions-movement-travel",
+      "subtopic": "b1-prepositions-movement-travel",
+      "taxonomyNodeIds": [
+        "b1-prepositions-movement-travel"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes route sentence 014? We walked ___ the old hotel.",
+          "options": [
+            {
+              "id": "b",
+              "text": "into"
+            },
+            {
+              "id": "c",
+              "text": "onto"
+            },
+            {
+              "id": "a",
+              "text": "past"
+            }
+          ],
+          "explanation": "Use «past» for movement beside a landmark."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes route sentence 023? The child climbed ___ the boat.",
+          "options": [
+            {
+              "id": "a",
+              "text": "onto"
+            },
+            {
+              "id": "d",
+              "text": "past"
+            },
+            {
+              "id": "c",
+              "text": "across"
+            }
+          ],
+          "explanation": "Use «onto» for movement to the surface of the boat."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes route sentence 007? Walk ___ the museum, then turn left.",
+          "options": [
+            {
+              "id": "d",
+              "text": "through"
+            },
+            {
+              "id": "c",
+              "text": "onto"
+            },
+            {
+              "id": "a",
+              "text": "past"
+            }
+          ],
+          "explanation": "Use «past» when moving beside or beyond a place."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes route sentence 012? She stepped ___ the platform.",
+          "options": [
+            {
+              "id": "b",
+              "text": "into"
+            },
+            {
+              "id": "a",
+              "text": "onto"
+            },
+            {
+              "id": "d",
+              "text": "towards"
+            }
+          ],
+          "explanation": "Use «onto» for movement to a surface."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes route sentence 025? We went ___ the airport and checked in.",
+          "options": [
+            {
+              "id": "c",
+              "text": "past"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "b",
+              "text": "towards"
+            }
+          ],
+          "explanation": "The completed action confirms the airport as the destination, so use «to»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes route sentence 009? The train went ___ the bridge.",
+          "options": [
+            {
+              "id": "a",
+              "text": "across"
+            },
+            {
+              "id": "c",
+              "text": "along"
+            },
+            {
+              "id": "b",
+              "text": "into"
+            }
+          ],
+          "explanation": "Use «across» for crossing a bridge from one side to the other."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes route sentence 020? They walked ___ the station without entering.",
+          "options": [
+            {
+              "id": "c",
+              "text": "onto"
+            },
+            {
+              "id": "b",
+              "text": "into"
+            },
+            {
+              "id": "a",
+              "text": "past"
+            }
+          ],
+          "explanation": "«Past» shows movement beside or beyond the station."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes route sentence 004? We drove ___ the tunnel.",
+          "options": [
+            {
+              "id": "d",
+              "text": "onto"
+            },
+            {
+              "id": "c",
+              "text": "past"
+            },
+            {
+              "id": "a",
+              "text": "through"
+            }
+          ],
+          "explanation": "Use «through» for movement inside and out of a passage."
+        }
+      ],
+      "lessonIds": [
+        "b1-prepositions-movement-travel"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "past",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

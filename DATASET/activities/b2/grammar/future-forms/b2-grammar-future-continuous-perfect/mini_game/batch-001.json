@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-future-continuous-perfect-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "future-continuous-perfect",
+  "lessonId": "b2-grammar-future-continuous-perfect",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-continuous-perfect-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-continuous-perfect",
+      "taxonomyNodeIds": [
+        "future-continuous-perfect"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "At 8 p.m. tomorrow, I ___ the night shift.",
+          "options": [
+            {
+              "id": "d",
+              "text": "am working"
+            },
+            {
+              "id": "c",
+              "text": "work"
+            },
+            {
+              "id": "a",
+              "text": "will be working"
+            }
+          ],
+          "explanation": "La hora concreta enfoca una actividad que estará en curso."
+        },
+        {
+          "id": "r2",
+          "prompt": "At three o'clock, I ___ a client in Manchester.",
+          "options": [
+            {
+              "id": "d",
+              "text": "met"
+            },
+            {
+              "id": "a",
+              "text": "will be meeting"
+            },
+            {
+              "id": "c",
+              "text": "meet"
+            }
+          ],
+          "explanation": "At three o'clock marca la actividad en curso en ese momento."
+        },
+        {
+          "id": "r3",
+          "prompt": "By the time the guests arrive, we ___ the tables.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will have set"
+            },
+            {
+              "id": "b",
+              "text": "will be setting"
+            },
+            {
+              "id": "c",
+              "text": "set"
+            }
+          ],
+          "explanation": "La preparación ocurrirá antes de la llegada y estará completada."
+        },
+        {
+          "id": "r4",
+          "prompt": "By the end of the month, I ___ all four modules.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will have completed"
+            },
+            {
+              "id": "d",
+              "text": "completed"
+            },
+            {
+              "id": "c",
+              "text": "complete"
+            }
+          ],
+          "explanation": "El plazo del mes presenta los módulos como terminados."
+        },
+        {
+          "id": "r5",
+          "prompt": "At this point next year, our daughter ___ at university.",
+          "options": [
+            {
+              "id": "c",
+              "text": "studies"
+            },
+            {
+              "id": "a",
+              "text": "will be studying"
+            },
+            {
+              "id": "d",
+              "text": "studied"
+            }
+          ],
+          "explanation": "At this point next year enfoca una situación futura en progreso."
+        },
+        {
+          "id": "r6",
+          "prompt": "When the conference opens, we ___ in the registration queue.",
+          "options": [
+            {
+              "id": "c",
+              "text": "stand"
+            },
+            {
+              "id": "a",
+              "text": "will be standing"
+            },
+            {
+              "id": "b",
+              "text": "will have stood"
+            }
+          ],
+          "explanation": "La cola será la situación en curso cuando abra la conferencia."
+        },
+        {
+          "id": "r7",
+          "prompt": "When you arrive at 6, we ___ dinner.",
+          "options": [
+            {
+              "id": "d",
+              "text": "eat"
+            },
+            {
+              "id": "c",
+              "text": "ate"
+            },
+            {
+              "id": "a",
+              "text": "will be eating"
+            }
+          ],
+          "explanation": "La cena estará ocurriendo en el momento de tu llegada."
+        },
+        {
+          "id": "r8",
+          "prompt": "This time tomorrow, she ___ her presentation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "gave"
+            },
+            {
+              "id": "a",
+              "text": "will be giving"
+            },
+            {
+              "id": "b",
+              "text": "will have given"
+            }
+          ],
+          "explanation": "This time tomorrow enfoca la presentación mientras esté sucediendo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-continuous-perfect"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "future-continuous",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-continuous-perfect-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-continuous-perfect",
+      "taxonomyNodeIds": [
+        "future-continuous-perfect"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "By the end of the expedition, the team ___ 200 kilometres.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will be walking"
+            },
+            {
+              "id": "a",
+              "text": "will have walked"
+            },
+            {
+              "id": "d",
+              "text": "walked"
+            }
+          ],
+          "explanation": "La distancia será una cantidad acumulada al final de la expedición."
+        },
+        {
+          "id": "r2",
+          "prompt": "By 9, the chef ___ all the ingredients.",
+          "options": [
+            {
+              "id": "c",
+              "text": "prepares"
+            },
+            {
+              "id": "a",
+              "text": "will have prepared"
+            },
+            {
+              "id": "d",
+              "text": "prepared"
+            }
+          ],
+          "explanation": "By 9 presenta la preparación como ya terminada."
+        },
+        {
+          "id": "r3",
+          "prompt": "At 5 p.m., the repair team ___ the lift.",
+          "options": [
+            {
+              "id": "d",
+              "text": "tested"
+            },
+            {
+              "id": "a",
+              "text": "will be testing"
+            },
+            {
+              "id": "b",
+              "text": "will have tested"
+            }
+          ],
+          "explanation": "At 5 p.m. sitúa la comprobación en curso en ese instante."
+        },
+        {
+          "id": "r4",
+          "prompt": "By the end of the course, you ___ a full portfolio.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will have built"
+            },
+            {
+              "id": "b",
+              "text": "will be building"
+            },
+            {
+              "id": "c",
+              "text": "build"
+            }
+          ],
+          "explanation": "El portfolio será un resultado completo al acabar el curso."
+        },
+        {
+          "id": "r5",
+          "prompt": "At 7 p.m., the volunteers ___ meals at the shelter.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will have served"
+            },
+            {
+              "id": "a",
+              "text": "will be serving"
+            },
+            {
+              "id": "d",
+              "text": "served"
+            }
+          ],
+          "explanation": "La hora presenta el servicio como una actividad en progreso."
+        },
+        {
+          "id": "r6",
+          "prompt": "At noon on Friday, Marta ___ in the lab.",
+          "options": [
+            {
+              "id": "c",
+              "text": "worked"
+            },
+            {
+              "id": "a",
+              "text": "will be working"
+            },
+            {
+              "id": "b",
+              "text": "will have worked"
+            }
+          ],
+          "explanation": "At noon presenta lo que estará ocurriendo en ese momento."
+        },
+        {
+          "id": "r7",
+          "prompt": "By the time the shop closes, the staff ___ the stock.",
+          "options": [
+            {
+              "id": "c",
+              "text": "count"
+            },
+            {
+              "id": "d",
+              "text": "counted"
+            },
+            {
+              "id": "a",
+              "text": "will have counted"
+            }
+          ],
+          "explanation": "El inventario estará contado antes del cierre."
+        },
+        {
+          "id": "r8",
+          "prompt": "By next June, our team ___ the new bridge.",
+          "options": [
+            {
+              "id": "c",
+              "text": "completed"
+            },
+            {
+              "id": "d",
+              "text": "has completed"
+            },
+            {
+              "id": "a",
+              "text": "will have completed"
+            }
+          ],
+          "explanation": "By next June marca un límite antes del cual el resultado estará terminado."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-continuous-perfect"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "future-perfect",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

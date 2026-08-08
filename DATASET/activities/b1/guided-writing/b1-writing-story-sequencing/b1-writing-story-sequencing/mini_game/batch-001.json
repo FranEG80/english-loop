@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-writing-story-sequencing-mini-game-001",
+  "level": "B1",
+  "category": "guided-writing",
+  "topic": "b1-writing-story-sequencing",
+  "subtopic": "b1-writing-story-sequencing",
+  "lessonId": "b1-writing-story-sequencing",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-story-sequencing-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-story-sequencing",
+      "subtopic": "b1-writing-story-sequencing",
+      "taxonomyNodeIds": [
+        "b1-writing-story-sequencing"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Lucy was at a country hotel when the room key failed. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "a",
+              "text": "the owner brought a spare."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r2",
+          "prompt": "Maya was at the village station when the lights went out. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "a",
+              "text": "a guard showed her another platform."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r3",
+          "prompt": "Finn was at a riverside walk when the bridge was closed. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the group took a longer route."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r4",
+          "prompt": "Grace was at a community garden when the hose broke. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "volunteers filled cans from the tap."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r5",
+          "prompt": "Lara was at the school kitchen when the oven stopped. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "a",
+              "text": "the caretaker found a spare part."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r6",
+          "prompt": "Sam was at the football pitch when the rain made the ground slippery. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "a",
+              "text": "the referee delayed the match."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r7",
+          "prompt": "Noah was at a theatre queue when he realised he had the wrong date. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "the box office exchanged the ticket."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r8",
+          "prompt": "Ravi was at a train platform when the departure changed. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "a sign pointed to the new track."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-story-sequencing"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "gapped-text",
+        "cohesion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-story-sequencing-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-story-sequencing",
+      "subtopic": "b1-writing-story-sequencing",
+      "taxonomyNodeIds": [
+        "b1-writing-story-sequencing"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Iris was at a library desk when her laptop battery died. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the librarian lent her a charger."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r2",
+          "prompt": "Clara was at a woodland path when she heard a strange noise. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "it was only a loose branch."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r3",
+          "prompt": "Alex was at the museum entrance when the ticket machine failed. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "a member of staff printed a ticket."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r4",
+          "prompt": "Eva was at the village hall when the microphone stopped. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "the speaker continued without it."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r5",
+          "prompt": "Theo was at a school trip when the coach arrived late. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "the pupils played a quiz."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r6",
+          "prompt": "Owen was at a rainy campsite when the tent leaked. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "a",
+              "text": "the group moved into the shelter."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r7",
+          "prompt": "Ella was at a concert hall when she dropped her programme. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "an usher picked it up."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r8",
+          "prompt": "Nadia was at a city bus when she left her bag behind. ___ By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "a",
+              "text": "the driver kept it safe."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-story-sequencing"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "gapped-text",
+        "cohesion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

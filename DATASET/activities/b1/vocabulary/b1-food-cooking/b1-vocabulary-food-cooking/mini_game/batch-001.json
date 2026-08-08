@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-food-cooking-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-food-cooking",
+  "subtopic": "b1-food-cooking",
+  "lessonId": "b1-vocabulary-food-cooking",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-food-cooking-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-food-cooking",
+      "subtopic": "b1-food-cooking",
+      "taxonomyNodeIds": [
+        "b1-food-cooking"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A cake is usually cooked in an ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "oven"
+            },
+            {
+              "id": "c",
+              "text": "sink"
+            },
+            {
+              "id": "b",
+              "text": "fridge"
+            }
+          ],
+          "explanation": "A cake is baked in an oven."
+        },
+        {
+          "id": "r2",
+          "prompt": "Move a spoon through a sauce to combine it: ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "stir"
+            },
+            {
+              "id": "d",
+              "text": "peel"
+            },
+            {
+              "id": "b",
+              "text": "slice"
+            }
+          ],
+          "explanation": "Stir means move a spoon around a liquid or mixture."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence uses an uncountable food noun naturally?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could I have a bowl of rice?"
+            },
+            {
+              "id": "d",
+              "text": "Could I have a bread?"
+            },
+            {
+              "id": "c",
+              "text": "Could I have two rices?"
+            }
+          ],
+          "explanation": "A bowl of rice gives a countable container for the uncountable noun rice."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sequence sounds like a natural recipe instruction?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Stir the garlic, boil the oil and chop the sauce."
+            },
+            {
+              "id": "a",
+              "text": "Chop the garlic, add the oil and stir the sauce."
+            },
+            {
+              "id": "d",
+              "text": "Peel the oil, roast the flour and grill the water."
+            }
+          ],
+          "explanation": "Chop garlic, add oil and stir a sauce are natural combinations in a recipe."
+        },
+        {
+          "id": "r5",
+          "prompt": "The opposite of sweet is often ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "sour"
+            },
+            {
+              "id": "c",
+              "text": "tender"
+            },
+            {
+              "id": "d",
+              "text": "fresh"
+            }
+          ],
+          "explanation": "Sour describes a sharp acidic taste, unlike sweet."
+        },
+        {
+          "id": "r6",
+          "prompt": "Add a liquid slowly from one container to another: ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "pour"
+            },
+            {
+              "id": "b",
+              "text": "chop"
+            },
+            {
+              "id": "c",
+              "text": "grill"
+            }
+          ],
+          "explanation": "Pour means make a liquid flow from one container to another."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which method usually uses direct heat from above or below?",
+          "options": [
+            {
+              "id": "d",
+              "text": "mix"
+            },
+            {
+              "id": "c",
+              "text": "peel"
+            },
+            {
+              "id": "a",
+              "text": "grill"
+            }
+          ],
+          "explanation": "Grilling cooks food with direct heat, often from above or below."
+        },
+        {
+          "id": "r8",
+          "prompt": "A sauce with too little flavour may be described as ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "bland"
+            },
+            {
+              "id": "c",
+              "text": "crispy"
+            },
+            {
+              "id": "b",
+              "text": "spicy"
+            }
+          ],
+          "explanation": "Bland means having very little interesting taste."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-food-cooking"
+      ],
+      "tags": [
+        "b1",
+        "cooking",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-food-cooking-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-food-cooking",
+      "subtopic": "b1-food-cooking",
+      "taxonomyNodeIds": [
+        "b1-food-cooking"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence describes a food allergy correctly?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I am allergic with peanuts."
+            },
+            {
+              "id": "c",
+              "text": "I am allergic on peanuts."
+            },
+            {
+              "id": "a",
+              "text": "I am allergic to peanuts."
+            }
+          ],
+          "explanation": "The fixed preposition after allergic is to."
+        },
+        {
+          "id": "r2",
+          "prompt": "Honey usually tastes ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "sweet"
+            },
+            {
+              "id": "b",
+              "text": "sour"
+            },
+            {
+              "id": "d",
+              "text": "salty"
+            }
+          ],
+          "explanation": "Sweet describes the taste of sugar or honey."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which description focuses on texture rather than taste?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The bread is sour."
+            },
+            {
+              "id": "d",
+              "text": "The bread is salty."
+            },
+            {
+              "id": "a",
+              "text": "The bread is crispy."
+            }
+          ],
+          "explanation": "Crispy describes how food feels when eaten; the other adjectives describe taste."
+        },
+        {
+          "id": "r4",
+          "prompt": "A carrot that has not been cooked is ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "raw"
+            },
+            {
+              "id": "c",
+              "text": "stale"
+            },
+            {
+              "id": "d",
+              "text": "frozen"
+            }
+          ],
+          "explanation": "Raw means not cooked."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase describes meat that is easy to cut?",
+          "options": [
+            {
+              "id": "a",
+              "text": "tender meat"
+            },
+            {
+              "id": "c",
+              "text": "stale meat"
+            },
+            {
+              "id": "d",
+              "text": "bitter meat"
+            }
+          ],
+          "explanation": "Tender describes meat that is soft and easy to cut or chew."
+        },
+        {
+          "id": "r6",
+          "prompt": "A dish with chilli is likely to be ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "raw"
+            },
+            {
+              "id": "a",
+              "text": "spicy"
+            },
+            {
+              "id": "d",
+              "text": "bitter"
+            }
+          ],
+          "explanation": "Spicy means having a hot flavour, often from chilli."
+        },
+        {
+          "id": "r7",
+          "prompt": "You use a knife to ___ an onion into small pieces.",
+          "options": [
+            {
+              "id": "a",
+              "text": "chop"
+            },
+            {
+              "id": "d",
+              "text": "bake"
+            },
+            {
+              "id": "c",
+              "text": "pour"
+            }
+          ],
+          "explanation": "Chop means cut food into small pieces."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which item is normally counted as a portion?",
+          "options": [
+            {
+              "id": "d",
+              "text": "a flour"
+            },
+            {
+              "id": "b",
+              "text": "a rice"
+            },
+            {
+              "id": "a",
+              "text": "a serving of rice"
+            }
+          ],
+          "explanation": "A serving or portion of rice is a natural countable quantity."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-food-cooking"
+      ],
+      "tags": [
+        "b1",
+        "allergies",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

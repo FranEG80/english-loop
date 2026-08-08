@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-opinion-purpose-mini-game-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-opinion-purpose",
+  "subtopic": "b1-reading-opinion-purpose",
+  "lessonId": "b1-reading-opinion-purpose",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What does the poster encourage people to do?",
+          "context": "Leave your car at home on Friday. The free shuttle will run every fifteen minutes from the station.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Use the free shuttle."
+            },
+            {
+              "id": "d",
+              "text": "Travel on Thursday."
+            },
+            {
+              "id": "b",
+              "text": "Drive to the station."
+            }
+          ],
+          "explanation": "The poster promotes using the shuttle instead of driving."
+        },
+        {
+          "id": "r2",
+          "prompt": "What is the strongest evidence for the claim?",
+          "context": "The author argues that the new lights improved safety because reported accidents fell from twelve to five during the following year.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The road is busy."
+            },
+            {
+              "id": "a",
+              "text": "The fall from twelve accidents to five."
+            },
+            {
+              "id": "b",
+              "text": "The lights are modern."
+            }
+          ],
+          "explanation": "The numerical change is direct evidence; the other details do not demonstrate improved safety."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which detail is objective?",
+          "context": "The science centre welcomed 4,200 visitors in April. Its new display is clearly the most exciting part, according to one guide.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The centre is fascinating."
+            },
+            {
+              "id": "a",
+              "text": "It welcomed 4,200 visitors."
+            },
+            {
+              "id": "b",
+              "text": "The display is most exciting."
+            }
+          ],
+          "explanation": "The visitor number is a concrete statistic; the other options evaluate or interpret."
+        },
+        {
+          "id": "r4",
+          "prompt": "What does the final sentence do?",
+          "context": "The course has short lessons and practical tasks. Some learners find the online platform difficult at first. The help page explains the main tools clearly.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It criticises practical tasks."
+            },
+            {
+              "id": "a",
+              "text": "It offers a response to a problem."
+            },
+            {
+              "id": "b",
+              "text": "It introduces an unrelated topic."
+            }
+          ],
+          "explanation": "The help page is presented as a solution to the platform difficulty."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which statement is not supported by the text?",
+          "context": "The council repaired the bridge in March and added brighter lights. Residents say the crossing feels safer, although cyclists still want a wider path.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The bridge was repaired in March."
+            },
+            {
+              "id": "d",
+              "text": "Some residents feel safer."
+            },
+            {
+              "id": "c",
+              "text": "Cyclists are completely satisfied."
+            }
+          ],
+          "explanation": "The text says cyclists still want a wider path, so complete satisfaction is not supported."
+        },
+        {
+          "id": "r6",
+          "prompt": "What does the final recommendation depend on?",
+          "context": "The forest path is suitable for families in dry weather. After rain, however, some sections become slippery and should be avoided.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The age of the forest."
+            },
+            {
+              "id": "b",
+              "text": "The number of trees."
+            },
+            {
+              "id": "a",
+              "text": "The weather conditions."
+            }
+          ],
+          "explanation": "The advice changes according to whether it has rained."
+        },
+        {
+          "id": "r7",
+          "prompt": "What is the main point of the review?",
+          "context": "The app makes it easy to reserve a study room, and its reminders are useful. However, the search function is slow when many rooms are available.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The app cannot reserve rooms."
+            },
+            {
+              "id": "c",
+              "text": "Reminders are the only problem."
+            },
+            {
+              "id": "a",
+              "text": "The app is helpful but has a specific weakness."
+            }
+          ],
+          "explanation": "The review balances two strengths with one limitation."
+        },
+        {
+          "id": "r8",
+          "prompt": "Why is the writer likely to support the plan?",
+          "context": "The proposed trees would provide shade, absorb traffic noise and make the square more pleasant for pedestrians.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It offers several local benefits."
+            },
+            {
+              "id": "d",
+              "text": "It would make the square smaller."
+            },
+            {
+              "id": "b",
+              "text": "It would remove every car."
+            }
+          ],
+          "explanation": "The three benefits provide reasons to support the proposal."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "poster",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which conclusion is supported by the text?",
+          "context": "The survey found that most residents liked the new square, although many wanted more shade. The council is considering trees for the next stage.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The project is popular but still needs improvement."
+            },
+            {
+              "id": "d",
+              "text": "Nobody answered the survey."
+            },
+            {
+              "id": "c",
+              "text": "The council has planted all the trees."
+            }
+          ],
+          "explanation": "The majority likes the square, while the request for shade identifies a remaining improvement."
+        },
+        {
+          "id": "r2",
+          "prompt": "What is the author's main view?",
+          "context": "The cycle lane is not perfect: it ends near the station. Even so, it has made the journey safer for many commuters.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The lane is useful despite a limitation."
+            },
+            {
+              "id": "c",
+              "text": "The station needs more trains."
+            },
+            {
+              "id": "b",
+              "text": "The lane should be removed."
+            }
+          ],
+          "explanation": "The writer acknowledges a problem but gives an overall positive assessment."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence best states the writer's opinion?",
+          "context": "The playground has new equipment and a softer surface. For me, the biggest improvement is the extra space for younger children.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Younger children use the playground."
+            },
+            {
+              "id": "a",
+              "text": "The extra space is the biggest improvement."
+            },
+            {
+              "id": "b",
+              "text": "The playground has new equipment."
+            }
+          ],
+          "explanation": "For me marks a personal judgement about the most important change."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which claim would the author agree with?",
+          "context": "Online booking is convenient, but it excludes people who do not use the internet. The centre should keep a small number of telephone appointments available.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Telephone appointments should disappear."
+            },
+            {
+              "id": "a",
+              "text": "The centre should offer both methods."
+            },
+            {
+              "id": "c",
+              "text": "Online booking is always unfair."
+            }
+          ],
+          "explanation": "The writer values convenience but recommends keeping access for people excluded by online booking."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase signals personal opinion?",
+          "context": "The exhibition opened on Monday and contains paintings from twelve local artists. I found the final room especially impressive.",
+          "options": [
+            {
+              "id": "c",
+              "text": "contains paintings"
+            },
+            {
+              "id": "a",
+              "text": "I found"
+            },
+            {
+              "id": "d",
+              "text": "twelve local artists"
+            }
+          ],
+          "explanation": "I found explicitly presents the writer's personal response."
+        },
+        {
+          "id": "r6",
+          "prompt": "What does the notice mainly do?",
+          "context": "The library will close at five o'clock on Friday because staff are attending a training session. It will open normally on Saturday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It recommends a new library."
+            },
+            {
+              "id": "c",
+              "text": "It criticises the staff."
+            },
+            {
+              "id": "a",
+              "text": "It announces a temporary change."
+            }
+          ],
+          "explanation": "The notice gives practical information about one unusual closing time."
+        },
+        {
+          "id": "r7",
+          "prompt": "What does the writer recommend?",
+          "context": "The riverside path is beautiful but becomes busy at weekends. If you want a quieter walk, visit early on a weekday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Walking there on a weekday morning."
+            },
+            {
+              "id": "b",
+              "text": "Avoiding the riverside completely."
+            },
+            {
+              "id": "c",
+              "text": "Taking a bus at weekends."
+            }
+          ],
+          "explanation": "The final sentence directly advises readers to visit early on a weekday."
+        },
+        {
+          "id": "r8",
+          "prompt": "How would you describe the reviewer's tone?",
+          "context": "The restaurant is not cheap, but the portions are generous and the staff are genuinely helpful.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Completely neutral."
+            },
+            {
+              "id": "b",
+              "text": "Angry and unfair."
+            },
+            {
+              "id": "a",
+              "text": "Balanced and generally favourable."
+            }
+          ],
+          "explanation": "The reviewer notes a cost but praises value and service."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "conclusion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-education-study-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-education-study",
+  "subtopic": "b1-education-study",
+  "lessonId": "b1-vocabulary-education-study",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-education-study-sd-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-education-study",
+      "subtopic": "b1-education-study",
+      "taxonomyNodeIds": [
+        "b1-education-study"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "She passed the exam, so she has to retake it.",
+          "explanation": "Si debe repetirlo, lo normal es decir failed, no passed."
+        },
+        {
+          "id": "c2",
+          "statement": "I learned three useful expressions in today's lesson.",
+          "explanation": "Learn describe adquirir conocimientos o destrezas."
+        },
+        {
+          "id": "c3",
+          "statement": "The teacher gave us feedback on our presentations.",
+          "explanation": "Feedback son comentarios sobre el trabajo."
+        },
+        {
+          "id": "c4",
+          "statement": "A learner who has failed an exam has passed it successfully.",
+          "explanation": "Failed y passed son resultados opuestos."
+        },
+        {
+          "id": "c5",
+          "statement": "A deadline is normally a person who marks an essay.",
+          "explanation": "Deadline es una fecha; la persona que corrige puede ser un teacher o examiner."
+        },
+        {
+          "id": "c6",
+          "statement": "I missed a week, so I need to catch up with the class.",
+          "explanation": "Catch up significa recuperar el contenido perdido."
+        },
+        {
+          "id": "c7",
+          "statement": "I study biology at college.",
+          "explanation": "Study se usa para dedicar tiempo a una materia."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-education-study"
+      ],
+      "tags": [
+        "b1",
+        "education-study",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-education-study-sd-080",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-education-study",
+      "subtopic": "b1-education-study",
+      "taxonomyNodeIds": [
+        "b1-education-study"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "You can take an exam next month.",
+          "explanation": "Take an exam significa presentarse a un examen."
+        },
+        {
+          "id": "c2",
+          "statement": "Please hand in your homework by Friday.",
+          "explanation": "Hand in significa entregar."
+        },
+        {
+          "id": "c3",
+          "statement": "My university teacher learned me how to write a report.",
+          "explanation": "La estructura correcta es taught me how to write a report."
+        },
+        {
+          "id": "c4",
+          "statement": "I revised the exam because I wanted to prepare for it.",
+          "explanation": "Se dice revised for the exam: se repasa para el examen, no el examen en sí."
+        },
+        {
+          "id": "c5",
+          "statement": "You can study a subject, but you teach a subject to someone.",
+          "explanation": "Study es aprender o trabajar una materia; teach es enseñársela a otra persona."
+        },
+        {
+          "id": "c6",
+          "statement": "A mark is a comment that tells you how to improve.",
+          "explanation": "Una mark es una nota; los comentarios orientativos son feedback."
+        },
+        {
+          "id": "c7",
+          "statement": "She handed in her assignment before the deadline.",
+          "explanation": "Handed in significa entregó; before the deadline indica a tiempo."
+        },
+        {
+          "id": "c8",
+          "statement": "A student can revise for an exam but cannot revise an exam.",
+          "explanation": "Revise for es la combinación adecuada en este significado."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-education-study"
+      ],
+      "tags": [
+        "b1",
+        "education-study",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-education-study-sd-143",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-education-study",
+      "subtopic": "b1-education-study",
+      "taxonomyNodeIds": [
+        "b1-education-study"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The deadline is the date when a task must be completed.",
+          "explanation": "Deadline es la fecha límite."
+        },
+        {
+          "id": "c2",
+          "statement": "I am revising for tomorrow's test.",
+          "explanation": "Revise for expresa preparación para una prueba."
+        },
+        {
+          "id": "c3",
+          "statement": "The deadline means the helpful comments from a teacher.",
+          "explanation": "Deadline es la fecha límite; helpful comments son feedback."
+        },
+        {
+          "id": "c4",
+          "statement": "A course is always one short lesson lasting one hour.",
+          "explanation": "Course suele ser un programa más amplio, no una sola sesión."
+        },
+        {
+          "id": "c5",
+          "statement": "If a teacher gives feedback, they are giving comments that may help you improve.",
+          "explanation": "Feedback orienta sobre aciertos y mejoras posibles."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-education-study"
+      ],
+      "tags": [
+        "b1",
+        "education-study",
+        "true-false",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

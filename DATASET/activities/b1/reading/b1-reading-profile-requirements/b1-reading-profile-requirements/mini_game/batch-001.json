@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-profile-requirements-mini-game-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-profile-requirements",
+  "subtopic": "b1-reading-profile-requirements",
+  "lessonId": "b1-reading-profile-requirements",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-profile-requirements-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-profile-requirements",
+      "subtopic": "b1-reading-profile-requirements",
+      "taxonomyNodeIds": [
+        "b1-reading-profile-requirements"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Chloe wants a free local-history talk on Thursday evening. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Free history talk on Tuesday afternoon"
+            },
+            {
+              "id": "a",
+              "text": "Free local-history talk on Thursday at 7 p.m."
+            },
+            {
+              "id": "b",
+              "text": "Paid art workshop on Saturday morning"
+            }
+          ],
+          "explanation": "Tema, precio y momento coinciden con a."
+        },
+        {
+          "id": "r2",
+          "prompt": "Henry wants a vegetarian cooking lesson on a weekday evening. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Vegetarian cooking on Sunday morning"
+            },
+            {
+              "id": "d",
+              "text": "Weekday cooking for advanced chefs only"
+            },
+            {
+              "id": "a",
+              "text": "Vegetarian cooking on Wednesday from 6 to 8 p.m."
+            }
+          ],
+          "explanation": "Actividad, alimentación y horario coinciden con a."
+        },
+        {
+          "id": "r3",
+          "prompt": "Isla wants a short direct train trip with a sea view. Which advert fits?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Direct train with no view and four hours' travel"
+            },
+            {
+              "id": "a",
+              "text": "Direct 90-minute train to the coast with sea views"
+            },
+            {
+              "id": "c",
+              "text": "Short bus trip to a mountain"
+            }
+          ],
+          "explanation": "Duración, cambios y paisaje coinciden con a."
+        },
+        {
+          "id": "r4",
+          "prompt": "Tom wants an inexpensive vegetarian lunch near the museum. Which advert fits?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vegetarian lunch under £10 opposite the museum"
+            },
+            {
+              "id": "d",
+              "text": "Expensive vegetarian dinner beside the station"
+            },
+            {
+              "id": "b",
+              "text": "Steak dinner under £10 near the museum"
+            }
+          ],
+          "explanation": "El primer menú satisface comida, precio, momento y ubicación."
+        },
+        {
+          "id": "r5",
+          "prompt": "Yusuf needs a quiet ground-floor room with breakfast. Which advert fits?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Quiet ground-floor room, breakfast included"
+            },
+            {
+              "id": "d",
+              "text": "Ground-floor room beside a nightclub"
+            },
+            {
+              "id": "b",
+              "text": "Busy third-floor room, breakfast unavailable"
+            }
+          ],
+          "explanation": "Las tres condiciones aparecen en el primer anuncio."
+        },
+        {
+          "id": "r6",
+          "prompt": "Grace wants a low-cost hotel with a lift near the centre. Which advert fits?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Budget hotel with a lift five minutes from the centre"
+            },
+            {
+              "id": "d",
+              "text": "Central hotel with breakfast but no lift"
+            },
+            {
+              "id": "c",
+              "text": "Budget hostel on the tenth floor with no lift"
+            }
+          ],
+          "explanation": "Precio, acceso y distancia coinciden en a."
+        },
+        {
+          "id": "r7",
+          "prompt": "Jack needs a bike repair shop open before 9 a.m. near transport. Which advert fits?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bike repairs from 7:30 a.m. next to the station"
+            },
+            {
+              "id": "c",
+              "text": "Repairs after 9 p.m. outside town"
+            },
+            {
+              "id": "b",
+              "text": "Bike sales from 10 a.m. near the river"
+            }
+          ],
+          "explanation": "Hora y conexión de transporte aparecen en el primer texto."
+        },
+        {
+          "id": "r8",
+          "prompt": "Nina wants a Saturday job outdoors. Which advert fits?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Monday office receptionist, indoors"
+            },
+            {
+              "id": "a",
+              "text": "Saturday garden-centre assistant, mostly outside"
+            },
+            {
+              "id": "d",
+              "text": "Outdoor job on weekday nights"
+            }
+          ],
+          "explanation": "Día y trabajo exterior aparecen en el primer anuncio."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-profile-requirements"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "matching",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-profile-requirements-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-profile-requirements",
+      "subtopic": "b1-reading-profile-requirements",
+      "taxonomyNodeIds": [
+        "b1-reading-profile-requirements"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Farah wants a low-cost hotel with breakfast and late check-in. Which advert fits?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Budget hotel with breakfast, check-in ends at 4 p.m."
+            },
+            {
+              "id": "c",
+              "text": "Luxury hotel with breakfast and late check-in"
+            },
+            {
+              "id": "a",
+              "text": "Budget hotel, breakfast included, reception open until midnight"
+            }
+          ],
+          "explanation": "El primer hotel cumple las tres condiciones."
+        },
+        {
+          "id": "r2",
+          "prompt": "Will needs evening study space with computers. Which advert fits?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Reading garden without computers, closes at 4 p.m."
+            },
+            {
+              "id": "a",
+              "text": "Study room with computers, open until 8 p.m."
+            },
+            {
+              "id": "d",
+              "text": "Study room with no evening access"
+            }
+          ],
+          "explanation": "El primer espacio ofrece equipos y horario de tarde."
+        },
+        {
+          "id": "r3",
+          "prompt": "Ella wants an easy Saturday walk reachable by bus. Which advert fits?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Difficult hike with car access only"
+            },
+            {
+              "id": "a",
+              "text": "Easy Saturday walk with bus 24 to the start"
+            },
+            {
+              "id": "d",
+              "text": "Saturday cycling tour by train"
+            }
+          ],
+          "explanation": "Dificultad, día y transporte encajan con el perfil."
+        },
+        {
+          "id": "r4",
+          "prompt": "Sara wants a dog-friendly flat near a park. Which advert fits?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One-bedroom flat, pets welcome, beside Riverside Park"
+            },
+            {
+              "id": "b",
+              "text": "Flat with no pets, ten minutes from green space"
+            },
+            {
+              "id": "c",
+              "text": "Dog-friendly house outside the town"
+            }
+          ],
+          "explanation": "Pets welcome y beside Riverside Park cumplen las dos condiciones."
+        },
+        {
+          "id": "r5",
+          "prompt": "Priya wants a free Friday concert in the town centre. Which advert fits?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Friday concert with a high ticket price"
+            },
+            {
+              "id": "a",
+              "text": "Free Friday concert in the central square"
+            },
+            {
+              "id": "b",
+              "text": "Paid Sunday concert outside town"
+            }
+          ],
+          "explanation": "Coste, día y lugar coinciden solo en a."
+        },
+        {
+          "id": "r6",
+          "prompt": "Sofia wants a child-friendly museum open on Monday. Which advert fits?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Adults-only gallery closed Mondays"
+            },
+            {
+              "id": "d",
+              "text": "Children's shop open Monday evenings"
+            },
+            {
+              "id": "a",
+              "text": "Family museum open Mondays with an interactive children's room"
+            }
+          ],
+          "explanation": "Público infantil y día de apertura coinciden."
+        },
+        {
+          "id": "r7",
+          "prompt": "Marta wants a free Saturday-morning art class near the station. Which advert fits?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Free watercolour workshop, Saturday 10–12, beside Central Station"
+            },
+            {
+              "id": "d",
+              "text": "Saturday sports club far from transport"
+            },
+            {
+              "id": "b",
+              "text": "Paid pottery course on Tuesday evening"
+            }
+          ],
+          "explanation": "Solo a combina coste, día, actividad y ubicación."
+        },
+        {
+          "id": "r8",
+          "prompt": "Erin wants a part-time job on weekday mornings, not weekends. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Full-time office job, weekday afternoons"
+            },
+            {
+              "id": "a",
+              "text": "Part-time library assistant, Monday to Friday mornings"
+            },
+            {
+              "id": "d",
+              "text": "Part-time weekend job, mornings only"
+            }
+          ],
+          "explanation": "Jornada, días y horario coinciden con a."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-profile-requirements"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "matching",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

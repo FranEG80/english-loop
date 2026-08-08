@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-modals-advice-possibility-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "advice-possibility",
+  "lessonId": "b1-grammar-modals-advice-possibility",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-advice-possibility-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "advice-possibility",
+      "taxonomyNodeIds": [
+        "advice-possibility"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Because of the strike, the final bus ___ run tonight; check before travelling.",
+          "options": [
+            {
+              "id": "d",
+              "text": "shouldn't to"
+            },
+            {
+              "id": "a",
+              "text": "might not"
+            },
+            {
+              "id": "b",
+              "text": "couldn't"
+            }
+          ],
+          "explanation": "«Might not run» indica que quizá el servicio no opere."
+        },
+        {
+          "id": "r2",
+          "prompt": "The journey ___ take about forty minutes outside rush hour.",
+          "options": [
+            {
+              "id": "a",
+              "text": "should"
+            },
+            {
+              "id": "b",
+              "text": "should to"
+            },
+            {
+              "id": "c",
+              "text": "mustn't"
+            }
+          ],
+          "explanation": "«Should take» expresa una duración esperada, no da consejo al viaje."
+        },
+        {
+          "id": "r3",
+          "prompt": "I have not checked the guest list, so Marta ___ be attending the reception.",
+          "options": [
+            {
+              "id": "a",
+              "text": "may"
+            },
+            {
+              "id": "c",
+              "text": "must"
+            },
+            {
+              "id": "d",
+              "text": "has to"
+            }
+          ],
+          "explanation": "La falta de información requiere una forma de posibilidad, no certeza u obligación."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ I tell the landlord about the leak now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Should"
+            },
+            {
+              "id": "c",
+              "text": "Am should"
+            },
+            {
+              "id": "b",
+              "text": "Do should"
+            }
+          ],
+          "explanation": "Para pedir consejo usamos «Should I + infinitivo?»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Leaving the window open ___ damage the papers if it rains.",
+          "options": [
+            {
+              "id": "b",
+              "text": "could to"
+            },
+            {
+              "id": "d",
+              "text": "is could"
+            },
+            {
+              "id": "a",
+              "text": "could"
+            }
+          ],
+          "explanation": "«Could damage» presenta una consecuencia posible."
+        },
+        {
+          "id": "r6",
+          "prompt": "“The battery loses power very quickly.” “You ___ close unused background apps.”",
+          "options": [
+            {
+              "id": "b",
+              "text": "may to"
+            },
+            {
+              "id": "a",
+              "text": "should try to"
+            },
+            {
+              "id": "c",
+              "text": "should trying"
+            }
+          ],
+          "explanation": "«Should try to close» formula una recomendación gramatical y pertinente."
+        },
+        {
+          "id": "r7",
+          "prompt": "The replacement screen ___ arrive before the repair appointment.",
+          "options": [
+            {
+              "id": "d",
+              "text": "may not to"
+            },
+            {
+              "id": "a",
+              "text": "may not"
+            },
+            {
+              "id": "c",
+              "text": "doesn't may"
+            }
+          ],
+          "explanation": "«May not arrive» expresa una posibilidad negativa; no es una prohibición."
+        },
+        {
+          "id": "r8",
+          "prompt": "You are unsure whether to insure a valuable parcel.",
+          "options": [
+            {
+              "id": "c",
+              "text": "May the parcel insure?"
+            },
+            {
+              "id": "a",
+              "text": "Should I insure the parcel?"
+            },
+            {
+              "id": "b",
+              "text": "Do I should insure the parcel?"
+            }
+          ],
+          "explanation": "«Should I + infinitivo?» es la forma natural de pedir consejo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-advice-possibility"
+      ],
+      "tags": [
+        "b1",
+        "possibility",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-advice-possibility-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "advice-possibility",
+      "taxonomyNodeIds": [
+        "advice-possibility"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What ___ we include in the welcome pack?",
+          "options": [
+            {
+              "id": "a",
+              "text": "should"
+            },
+            {
+              "id": "d",
+              "text": "are should"
+            },
+            {
+              "id": "b",
+              "text": "do should"
+            }
+          ],
+          "explanation": "La pregunta usa «What should we include?»."
+        },
+        {
+          "id": "r2",
+          "prompt": "You ___ leave your bicycle unlocked outside the station.",
+          "options": [
+            {
+              "id": "a",
+              "text": "shouldn't"
+            },
+            {
+              "id": "d",
+              "text": "not should"
+            },
+            {
+              "id": "c",
+              "text": "shouldn't to"
+            }
+          ],
+          "explanation": "Un consejo negativo usa «shouldn't + infinitivo»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The café ___ be open on Monday because it is a public holiday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "mightn't to"
+            },
+            {
+              "id": "a",
+              "text": "might not"
+            },
+            {
+              "id": "b",
+              "text": "doesn't might"
+            }
+          ],
+          "explanation": "«Might not be» indica que quizá el café no abra."
+        },
+        {
+          "id": "r4",
+          "prompt": "The association ___ provide clearer instructions on its website.",
+          "options": [
+            {
+              "id": "a",
+              "text": "ought to"
+            },
+            {
+              "id": "d",
+              "text": "does ought to"
+            },
+            {
+              "id": "c",
+              "text": "oughts to"
+            }
+          ],
+          "explanation": "Una recomendación con «ought» requiere «ought to provide»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The label is difficult to read. You ___ use the photograph on your phone to enlarge it.",
+          "options": [
+            {
+              "id": "c",
+              "text": "might to"
+            },
+            {
+              "id": "d",
+              "text": "ought use"
+            },
+            {
+              "id": "a",
+              "text": "could"
+            }
+          ],
+          "explanation": "«Could use» propone una solución posible; los otros patrones son incorrectos."
+        },
+        {
+          "id": "r6",
+          "prompt": "The parcel ___ arrive this afternoon, but the courier has not confirmed it.",
+          "options": [
+            {
+              "id": "c",
+              "text": "should to"
+            },
+            {
+              "id": "a",
+              "text": "may"
+            },
+            {
+              "id": "b",
+              "text": "has to"
+            }
+          ],
+          "explanation": "«May arrive» presenta una llegada posible, no confirmada."
+        },
+        {
+          "id": "r7",
+          "prompt": "Drivers ___ check their tyre pressure before a long journey.",
+          "options": [
+            {
+              "id": "d",
+              "text": "ought to to"
+            },
+            {
+              "id": "b",
+              "text": "ought"
+            },
+            {
+              "id": "a",
+              "text": "ought to"
+            }
+          ],
+          "explanation": "A diferencia de otros modales, «ought» va seguido de «to»."
+        },
+        {
+          "id": "r8",
+          "prompt": "A weak password ___ allow someone else to access your account.",
+          "options": [
+            {
+              "id": "a",
+              "text": "could"
+            },
+            {
+              "id": "b",
+              "text": "couldn't"
+            },
+            {
+              "id": "d",
+              "text": "ought"
+            }
+          ],
+          "explanation": "Aquí «could allow» presenta un resultado posible, no capacidad pasada."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-advice-possibility"
+      ],
+      "tags": [
+        "b1",
+        "advice",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

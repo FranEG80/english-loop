@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-prepositions-abstract-relations-mini-game-001",
+  "level": "B2",
+  "category": "prepositions",
+  "topic": "b2-prepositions-abstract-relations",
+  "subtopic": "b2-prepositions-abstract-relations",
+  "lessonId": "b2-prepositions-abstract-relations",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-prepositions-abstract-relations-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-prepositions-abstract-relations",
+      "subtopic": "b2-prepositions-abstract-relations",
+      "taxonomyNodeIds": [
+        "b2-prepositions-abstract-relations"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The ferry was cancelled ___ the overnight storm.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "due to"
+            }
+          ],
+          "explanation": "“due to” expresses the required relation: the overnight storm."
+        },
+        {
+          "id": "r2",
+          "prompt": "The editor removed the repetition ___ clarity.",
+          "options": [
+            {
+              "id": "b",
+              "text": "due to"
+            },
+            {
+              "id": "e",
+              "text": "in spite of"
+            },
+            {
+              "id": "a",
+              "text": "for the sake of"
+            }
+          ],
+          "explanation": "The sentence requires “for the sake of” because it expresses clarity."
+        },
+        {
+          "id": "r3",
+          "prompt": "The procedure was updated ___ current guidance.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in line with"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            }
+          ],
+          "explanation": "“in line with” expresses the required relation: current guidance."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ new users, the instructions are too technical.",
+          "options": [
+            {
+              "id": "b",
+              "text": "due to"
+            },
+            {
+              "id": "a",
+              "text": "from the perspective of"
+            },
+            {
+              "id": "c",
+              "text": "by means of"
+            }
+          ],
+          "explanation": "The sentence requires “from the perspective of” because it expresses new users."
+        },
+        {
+          "id": "r5",
+          "prompt": "The committee voted ___ a shorter route.",
+          "options": [
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "in favour of"
+            },
+            {
+              "id": "b",
+              "text": "by"
+            }
+          ],
+          "explanation": "“in favour of” expresses the required relation: a shorter route."
+        },
+        {
+          "id": "r6",
+          "prompt": "___ new users, the instructions are too technical.",
+          "options": [
+            {
+              "id": "b",
+              "text": "by"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "from the perspective of"
+            }
+          ],
+          "explanation": "“from the perspective of” expresses the required relation: new users."
+        },
+        {
+          "id": "r7",
+          "prompt": "___ staff shortages, the clinic reduced its opening hours.",
+          "options": [
+            {
+              "id": "b",
+              "text": "by"
+            },
+            {
+              "id": "a",
+              "text": "owing to"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            }
+          ],
+          "explanation": "“owing to” expresses the required relation: staff shortages."
+        },
+        {
+          "id": "r8",
+          "prompt": "The procedure was updated ___ current guidance.",
+          "options": [
+            {
+              "id": "b",
+              "text": "due to"
+            },
+            {
+              "id": "d",
+              "text": "in contrast to"
+            },
+            {
+              "id": "a",
+              "text": "in line with"
+            }
+          ],
+          "explanation": "The sentence requires “in line with” because it expresses current guidance."
+        }
+      ],
+      "lessonIds": [
+        "b2-prepositions-abstract-relations"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "preposition-choice",
+        "logic",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-prepositions-abstract-relations-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-prepositions-abstract-relations",
+      "subtopic": "b2-prepositions-abstract-relations",
+      "taxonomyNodeIds": [
+        "b2-prepositions-abstract-relations"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The figures were updated ___ the revised policy.",
+          "options": [
+            {
+              "id": "d",
+              "text": "in contrast to"
+            },
+            {
+              "id": "c",
+              "text": "by means of"
+            },
+            {
+              "id": "a",
+              "text": "in relation to"
+            }
+          ],
+          "explanation": "The sentence requires “in relation to” because it expresses the revised policy."
+        },
+        {
+          "id": "r2",
+          "prompt": "The speaker began ___ a brief history of the project.",
+          "options": [
+            {
+              "id": "b",
+              "text": "by"
+            },
+            {
+              "id": "a",
+              "text": "by way of"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            }
+          ],
+          "explanation": "“by way of” expresses the required relation: an introduction."
+        },
+        {
+          "id": "r3",
+          "prompt": "The service will continue ___ the final price.",
+          "options": [
+            {
+              "id": "a",
+              "text": "regardless of"
+            },
+            {
+              "id": "d",
+              "text": "in contrast to"
+            },
+            {
+              "id": "b",
+              "text": "due to"
+            }
+          ],
+          "explanation": "The sentence requires “regardless of” because it expresses the final price."
+        },
+        {
+          "id": "r4",
+          "prompt": "I am writing ___ the timetable for next month.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "with regard to"
+            },
+            {
+              "id": "b",
+              "text": "by"
+            }
+          ],
+          "explanation": "“with regard to” expresses the required relation: the timetable."
+        },
+        {
+          "id": "r5",
+          "prompt": "The ferry was cancelled ___ the overnight storm.",
+          "options": [
+            {
+              "id": "b",
+              "text": "by means of"
+            },
+            {
+              "id": "a",
+              "text": "due to"
+            },
+            {
+              "id": "d",
+              "text": "in spite of"
+            }
+          ],
+          "explanation": "The sentence requires “due to” because it expresses the overnight storm."
+        },
+        {
+          "id": "r6",
+          "prompt": "The editor removed the repetition ___ clarity.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "for the sake of"
+            },
+            {
+              "id": "b",
+              "text": "by"
+            }
+          ],
+          "explanation": "“for the sake of” expresses the required relation: clarity."
+        },
+        {
+          "id": "r7",
+          "prompt": "The committee voted ___ a shorter route.",
+          "options": [
+            {
+              "id": "c",
+              "text": "by means of"
+            },
+            {
+              "id": "a",
+              "text": "in favour of"
+            },
+            {
+              "id": "e",
+              "text": "in spite of"
+            }
+          ],
+          "explanation": "The sentence requires “in favour of” because it expresses a shorter route."
+        },
+        {
+          "id": "r8",
+          "prompt": "I am writing ___ the timetable for next month.",
+          "options": [
+            {
+              "id": "a",
+              "text": "with regard to"
+            },
+            {
+              "id": "d",
+              "text": "in contrast to"
+            },
+            {
+              "id": "c",
+              "text": "by means of"
+            }
+          ],
+          "explanation": "The sentence requires “with regard to” because it expresses the timetable."
+        }
+      ],
+      "lessonIds": [
+        "b2-prepositions-abstract-relations"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "multiple-choice-cloze",
+        "logic",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

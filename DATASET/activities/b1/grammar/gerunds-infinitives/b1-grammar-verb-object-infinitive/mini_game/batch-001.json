@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-verb-object-infinitive-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "gerunds-infinitives",
+  "subtopic": "verb-object-infinitive",
+  "lessonId": "b1-grammar-verb-object-infinitive",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-verb-object-infinitive-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "verb-object-infinitive",
+      "taxonomyNodeIds": [
+        "verb-object-infinitive"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "She suggested ___ a break.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take"
+            },
+            {
+              "id": "b",
+              "text": "to take"
+            },
+            {
+              "id": "a",
+              "text": "taking"
+            }
+          ],
+          "explanation": "«Suggest» no admite objeto + infinitivo; usa gerundio."
+        },
+        {
+          "id": "r2",
+          "prompt": "The rules ___ you to park here.",
+          "options": [
+            {
+              "id": "b",
+              "text": "suggest"
+            },
+            {
+              "id": "a",
+              "text": "allow"
+            },
+            {
+              "id": "d",
+              "text": "enjoy"
+            }
+          ],
+          "explanation": "«Allow + objeto + to-infinitive» expresa permiso."
+        },
+        {
+          "id": "r3",
+          "prompt": "The parent gave permission to leave early. Which sentence is correct?",
+          "options": [
+            {
+              "id": "b",
+              "text": "She let me go."
+            },
+            {
+              "id": "c",
+              "text": "She let me going."
+            },
+            {
+              "id": "d",
+              "text": "She let to me go."
+            }
+          ],
+          "explanation": "«Let» usa infinitivo sin «to»."
+        },
+        {
+          "id": "r4",
+          "prompt": "I want the dog ___ jump on the sofa.",
+          "options": [
+            {
+              "id": "a",
+              "text": "not to"
+            },
+            {
+              "id": "b",
+              "text": "to not"
+            },
+            {
+              "id": "c",
+              "text": "don't"
+            }
+          ],
+          "explanation": "La negativa con «want + objeto» usa «not to + infinitivo»."
+        },
+        {
+          "id": "r5",
+          "prompt": "A neighbour helped with my heavy luggage. Which sentence is correct?",
+          "options": [
+            {
+              "id": "a",
+              "text": "She helped me carry the bags."
+            },
+            {
+              "id": "d",
+              "text": "She helped me for carry the bags."
+            },
+            {
+              "id": "b",
+              "text": "She helped me to carrying the bags."
+            }
+          ],
+          "explanation": "«Help» puede ir con o sin «to»: «helped me (to) carry»."
+        },
+        {
+          "id": "r6",
+          "prompt": "At the meeting, the team proposed a break. Which sentence is correct?",
+          "options": [
+            {
+              "id": "c",
+              "text": "She suggested to us take a break."
+            },
+            {
+              "id": "a",
+              "text": "She suggested that we take a break."
+            },
+            {
+              "id": "b",
+              "text": "She suggested us to take a break."
+            }
+          ],
+          "explanation": "«Suggest» puede ir con cláusula «that», no con objeto + infinitivo."
+        },
+        {
+          "id": "r7",
+          "prompt": "He told us ___ worry.",
+          "options": [
+            {
+              "id": "a",
+              "text": "not to"
+            },
+            {
+              "id": "b",
+              "text": "to not"
+            },
+            {
+              "id": "c",
+              "text": "don't"
+            }
+          ],
+          "explanation": "La negativa coloca «not» antes de «to + infinitivo»."
+        },
+        {
+          "id": "r8",
+          "prompt": "A travel agent gave advice about the morning train. Which sentence is correct?",
+          "options": [
+            {
+              "id": "a",
+              "text": "They recommended taking the early train."
+            },
+            {
+              "id": "c",
+              "text": "They recommended to us take the early train."
+            },
+            {
+              "id": "d",
+              "text": "They recommended us taking the early train."
+            }
+          ],
+          "explanation": "«Recommend» usa gerundio, no objeto + infinitivo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-verb-object-infinitive"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-verb-object-infinitive-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "verb-object-infinitive",
+      "taxonomyNodeIds": [
+        "verb-object-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "They recommended ___ the early train.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to take"
+            },
+            {
+              "id": "d",
+              "text": "took"
+            },
+            {
+              "id": "a",
+              "text": "taking"
+            }
+          ],
+          "explanation": "«Recommend» no admite objeto + infinitivo; usa gerundio."
+        },
+        {
+          "id": "r2",
+          "prompt": "Please remind me ___ call the hotel when we land.",
+          "options": [
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "«Remind + objeto» va seguido de «to + infinitivo»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The coach ___ me to try again.",
+          "options": [
+            {
+              "id": "b",
+              "text": "suggested"
+            },
+            {
+              "id": "d",
+              "text": "enjoyed"
+            },
+            {
+              "id": "a",
+              "text": "encouraged"
+            }
+          ],
+          "explanation": "«Encourage + objeto + to-infinitive» es correcto; «suggest» no admite esta estructura."
+        },
+        {
+          "id": "r4",
+          "prompt": "Your colleague is proposing a weekend hike. Which sentence is correct?",
+          "options": [
+            {
+              "id": "b",
+              "text": "She suggested going."
+            },
+            {
+              "id": "a",
+              "text": "She suggested me to go."
+            },
+            {
+              "id": "d",
+              "text": "She suggested to go me."
+            }
+          ],
+          "explanation": "«Suggest» usa gerundio, no objeto + infinitivo."
+        },
+        {
+          "id": "r5",
+          "prompt": "My coach encouraged me ___ training.",
+          "options": [
+            {
+              "id": "d",
+              "text": "kept"
+            },
+            {
+              "id": "c",
+              "text": "keep"
+            },
+            {
+              "id": "a",
+              "text": "to keep"
+            }
+          ],
+          "explanation": "«Encourage + objeto» va seguido de «to + infinitivo»."
+        },
+        {
+          "id": "r6",
+          "prompt": "He ___ us to be quiet.",
+          "options": [
+            {
+              "id": "a",
+              "text": "told"
+            },
+            {
+              "id": "d",
+              "text": "enjoyed"
+            },
+            {
+              "id": "c",
+              "text": "recommended"
+            }
+          ],
+          "explanation": "«Tell + objeto + to-infinitive» da una orden o instrucción."
+        },
+        {
+          "id": "r7",
+          "prompt": "The supervisor forced me to stay late. Which sentence is correct?",
+          "options": [
+            {
+              "id": "d",
+              "text": "They made to me wait."
+            },
+            {
+              "id": "c",
+              "text": "They made me waiting."
+            },
+            {
+              "id": "b",
+              "text": "They made me wait."
+            }
+          ],
+          "explanation": "«Make» usa infinitivo sin «to»."
+        },
+        {
+          "id": "r8",
+          "prompt": "You are inviting a colleague to the concert. Which sentence is correct?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I would like you to come."
+            },
+            {
+              "id": "b",
+              "text": "I would like you come."
+            },
+            {
+              "id": "d",
+              "text": "I would like you coming."
+            }
+          ],
+          "explanation": "«Would like» se comporta como «want»: objeto + to-infinitive."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-verb-object-infinitive"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-reframing-mini-game-001",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-grammar-reframing",
+  "subtopic": "b1-grammar-reframing",
+  "lessonId": "b1-grammar-reframing",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Someone has left a message on my desk.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Someone has been left by a message."
+            },
+            {
+              "id": "a",
+              "text": "A message has been left on my desk."
+            },
+            {
+              "id": "b",
+              "text": "I left a message on someone else's desk."
+            }
+          ],
+          "explanation": "The present perfect passive is «has been left»."
+        },
+        {
+          "id": "r2",
+          "prompt": "People believe that the bridge is unsafe.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The bridge is believed to be unsafe."
+            },
+            {
+              "id": "d",
+              "text": "The bridge is believing to be unsafe."
+            },
+            {
+              "id": "c",
+              "text": "People are believed the bridge unsafe."
+            }
+          ],
+          "explanation": "The subject of the belief becomes the subject of «is believed to be»."
+        },
+        {
+          "id": "r3",
+          "prompt": "“I will send the details tonight,” Carla said.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Carla said that she would send the details that night."
+            },
+            {
+              "id": "b",
+              "text": "Carla told that she will send the details tonight."
+            },
+            {
+              "id": "d",
+              "text": "Carla said she sent the details yesterday."
+            }
+          ],
+          "explanation": "«Will» becomes «would» and «tonight» becomes «that night»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The school built a new sports hall last year.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The sports hall has built the school."
+            },
+            {
+              "id": "c",
+              "text": "A new hall built the school last year."
+            },
+            {
+              "id": "a",
+              "text": "A new sports hall was built by the school last year."
+            }
+          ],
+          "explanation": "The object becomes the subject of the past passive «was built»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I started working from home six months ago.",
+          "options": [
+            {
+              "id": "b",
+              "text": "I work from home since six months."
+            },
+            {
+              "id": "c",
+              "text": "I have worked from home since six months."
+            },
+            {
+              "id": "a",
+              "text": "I have worked from home for six months."
+            }
+          ],
+          "explanation": "A duration from the past to now uses «have worked ... for six months»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Someone should check the figures before publication.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Someone should be checked by the figures."
+            },
+            {
+              "id": "a",
+              "text": "The figures should be checked before publication."
+            },
+            {
+              "id": "d",
+              "text": "The figures were checking before publication."
+            }
+          ],
+          "explanation": "The modal passive is «should be checked»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The last time I used a paper map was in 2018.",
+          "options": [
+            {
+              "id": "c",
+              "text": "I did not use a paper map in 2018."
+            },
+            {
+              "id": "a",
+              "text": "I have not used a paper map since 2018."
+            },
+            {
+              "id": "d",
+              "text": "I use a paper map since 2018."
+            }
+          ],
+          "explanation": "The last occurrence sets the starting point of a negative present-perfect period."
+        },
+        {
+          "id": "r8",
+          "prompt": "The instructions were so complicated that nobody finished quickly.",
+          "options": [
+            {
+              "id": "a",
+              "text": "They were such complicated instructions that nobody finished quickly."
+            },
+            {
+              "id": "b",
+              "text": "They were such a complicated instructions that nobody finished."
+            },
+            {
+              "id": "c",
+              "text": "The instructions were so a complicated that nobody finished."
+            }
+          ],
+          "explanation": "The adjective moves before the plural noun after «such»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reframing-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-grammar-reframing",
+      "subtopic": "b1-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b1-grammar-reframing"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Someone delivers the letters every morning.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Someone is delivering one letter now."
+            },
+            {
+              "id": "d",
+              "text": "The letters deliver the postman."
+            },
+            {
+              "id": "a",
+              "text": "The letters are delivered every morning."
+            }
+          ],
+          "explanation": "The present simple passive focuses on «the letters»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The silver route is not as long as the gold route.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The routes are the same length."
+            },
+            {
+              "id": "a",
+              "text": "The gold route is longer than the silver route."
+            },
+            {
+              "id": "d",
+              "text": "The gold route is not long."
+            }
+          ],
+          "explanation": "«Not as long as» becomes the reverse comparative «longer than»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I am sorry that I did not save the confirmation email.",
+          "options": [
+            {
+              "id": "b",
+              "text": "I wish I would save the confirmation email."
+            },
+            {
+              "id": "d",
+              "text": "I wish I have not saved the email."
+            },
+            {
+              "id": "a",
+              "text": "I wish I had saved the confirmation email."
+            }
+          ],
+          "explanation": "A past regret is expressed with «wish I had saved»."
+        },
+        {
+          "id": "r4",
+          "prompt": "“I cannot attend because I am ill,” Omar said.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Omar told that I cannot attend because I am ill."
+            },
+            {
+              "id": "d",
+              "text": "Omar said that he could attend because he was ill."
+            },
+            {
+              "id": "a",
+              "text": "Omar said that he could not attend because he was ill."
+            }
+          ],
+          "explanation": "«Cannot» backshifts to «could not», and «am» to «was»."
+        },
+        {
+          "id": "r5",
+          "prompt": "“We have lost the map,” the hikers said.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The hikers told that we lose the map."
+            },
+            {
+              "id": "d",
+              "text": "The hikers said me they lost maps."
+            },
+            {
+              "id": "a",
+              "text": "The hikers said that they had lost the map."
+            }
+          ],
+          "explanation": "The present perfect becomes «had lost» in reported speech."
+        },
+        {
+          "id": "r6",
+          "prompt": "The wind was so strong that the ferry could not leave.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The wind was not strong enough for the ferry."
+            },
+            {
+              "id": "c",
+              "text": "The ferry was too strong to leave."
+            },
+            {
+              "id": "a",
+              "text": "The wind was too strong for the ferry to leave."
+            }
+          ],
+          "explanation": "The result clause becomes an infinitive pattern after «too strong»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The green notebook is cheaper than the red notebook.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The green notebook is more expensive than the red notebook."
+            },
+            {
+              "id": "a",
+              "text": "The red notebook is more expensive than the green notebook."
+            },
+            {
+              "id": "c",
+              "text": "The notebooks cost the same."
+            }
+          ],
+          "explanation": "Reversing the comparison changes «cheaper» to «more expensive»."
+        },
+        {
+          "id": "r8",
+          "prompt": "“I must leave now,” Dana told us.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Dana said us that she must left now."
+            },
+            {
+              "id": "a",
+              "text": "Dana told us that she had to leave then."
+            },
+            {
+              "id": "d",
+              "text": "Dana said she has to leave yesterday."
+            }
+          ],
+          "explanation": "Obligation changes to «had to» and «now» changes to «then»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reframing"
+      ],
+      "tags": [
+        "b1",
+        "rewriting",
+        "passive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-modal-meaning-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "modals",
+  "subtopic": "advanced-modal-meaning",
+  "lessonId": "b2-grammar-advanced-modal-meaning",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-modal-meaning-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "advanced-modal-meaning",
+      "taxonomyNodeIds": [
+        "advanced-modal-meaning"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Are researchers ___ to use the archive on Sundays?",
+          "options": [
+            {
+              "id": "b",
+              "text": "supposed"
+            },
+            {
+              "id": "a",
+              "text": "allowed"
+            },
+            {
+              "id": "d",
+              "text": "unlikely"
+            }
+          ],
+          "explanation": "La pregunta consulta si existe permiso: are allowed to use."
+        },
+        {
+          "id": "r2",
+          "prompt": "You are ___ to switch off the equipment before leaving.",
+          "options": [
+            {
+              "id": "d",
+              "text": "allowed"
+            },
+            {
+              "id": "b",
+              "text": "supposed"
+            },
+            {
+              "id": "c",
+              "text": "bound"
+            }
+          ],
+          "explanation": "Supposed to señala una instrucción o procedimiento esperado."
+        },
+        {
+          "id": "r3",
+          "prompt": "The conference is ___ to attract more delegates this year.",
+          "options": [
+            {
+              "id": "a",
+              "text": "supposed"
+            },
+            {
+              "id": "c",
+              "text": "allowed"
+            },
+            {
+              "id": "b",
+              "text": "likely"
+            }
+          ],
+          "explanation": "Likely to attract expresa una probabilidad, no una certeza."
+        },
+        {
+          "id": "r4",
+          "prompt": "Employees are not ___ to share their passwords.",
+          "options": [
+            {
+              "id": "c",
+              "text": "supposed"
+            },
+            {
+              "id": "b",
+              "text": "likely"
+            },
+            {
+              "id": "d",
+              "text": "allowed"
+            }
+          ],
+          "explanation": "Not allowed to expresa una prohibición de seguridad."
+        },
+        {
+          "id": "r5",
+          "prompt": "You are ___ to report any damaged equipment immediately.",
+          "options": [
+            {
+              "id": "b",
+              "text": "likely"
+            },
+            {
+              "id": "c",
+              "text": "supposed"
+            },
+            {
+              "id": "a",
+              "text": "allowed"
+            }
+          ],
+          "explanation": "Supposed to report presenta una norma o procedimiento."
+        },
+        {
+          "id": "r6",
+          "prompt": "The train is ___ to arrive at platform four at 18:05.",
+          "options": [
+            {
+              "id": "d",
+              "text": "bound"
+            },
+            {
+              "id": "a",
+              "text": "supposed"
+            },
+            {
+              "id": "b",
+              "text": "due"
+            }
+          ],
+          "explanation": "Supposed to arrive presenta la expectativa del horario."
+        },
+        {
+          "id": "r7",
+          "prompt": "Staff were not ___ to enter the storage room alone.",
+          "options": [
+            {
+              "id": "d",
+              "text": "supposed"
+            },
+            {
+              "id": "c",
+              "text": "allowed"
+            },
+            {
+              "id": "b",
+              "text": "likely"
+            }
+          ],
+          "explanation": "Were not allowed to expresa una prohibición pasada."
+        },
+        {
+          "id": "r8",
+          "prompt": "The agreement is ___ to affect every supplier in the region.",
+          "options": [
+            {
+              "id": "c",
+              "text": "certain"
+            },
+            {
+              "id": "d",
+              "text": "unlikely"
+            },
+            {
+              "id": "a",
+              "text": "supposed"
+            }
+          ],
+          "explanation": "Certain to affect expresa una consecuencia segura."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-modal-meaning"
+      ],
+      "tags": [
+        "b2",
+        "modals",
+        "allowed-to",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-modal-meaning-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "advanced-modal-meaning",
+      "taxonomyNodeIds": [
+        "advanced-modal-meaning"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The replacement part is unlikely ___ before Friday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "arriving"
+            },
+            {
+              "id": "d",
+              "text": "to arriving"
+            },
+            {
+              "id": "c",
+              "text": "to arrive"
+            }
+          ],
+          "explanation": "Unlikely to arrive es la forma correcta."
+        },
+        {
+          "id": "r2",
+          "prompt": "The old bridge is unlikely ___ another winter.",
+          "options": [
+            {
+              "id": "a",
+              "text": "survive"
+            },
+            {
+              "id": "b",
+              "text": "to survive"
+            },
+            {
+              "id": "d",
+              "text": "to surviving"
+            }
+          ],
+          "explanation": "Unlikely se construye con to + infinitive."
+        },
+        {
+          "id": "r3",
+          "prompt": "The software update is certain ___ battery life.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to improve"
+            },
+            {
+              "id": "d",
+              "text": "to improving"
+            },
+            {
+              "id": "c",
+              "text": "improve"
+            }
+          ],
+          "explanation": "Certain to lleva infinitivo: certain to improve."
+        },
+        {
+          "id": "r4",
+          "prompt": "The proposal is ___ to divide opinion among residents.",
+          "options": [
+            {
+              "id": "c",
+              "text": "allowed"
+            },
+            {
+              "id": "d",
+              "text": "bound"
+            },
+            {
+              "id": "b",
+              "text": "likely"
+            }
+          ],
+          "explanation": "Likely to divide expresa una predicción probable."
+        },
+        {
+          "id": "r5",
+          "prompt": "With that loose bolt, the shelf is ___ to collapse.",
+          "options": [
+            {
+              "id": "a",
+              "text": "supposed"
+            },
+            {
+              "id": "d",
+              "text": "bound"
+            },
+            {
+              "id": "b",
+              "text": "allowed"
+            }
+          ],
+          "explanation": "Bound to presenta el colapso como prácticamente inevitable."
+        },
+        {
+          "id": "r6",
+          "prompt": "The cracked window is ___ to break in the next storm.",
+          "options": [
+            {
+              "id": "b",
+              "text": "bound"
+            },
+            {
+              "id": "d",
+              "text": "unlikely"
+            },
+            {
+              "id": "a",
+              "text": "allowed"
+            }
+          ],
+          "explanation": "Bound to break presenta una consecuencia casi inevitable."
+        },
+        {
+          "id": "r7",
+          "prompt": "Were visitors ___ to take photographs in the old chapel?",
+          "options": [
+            {
+              "id": "d",
+              "text": "supposed"
+            },
+            {
+              "id": "b",
+              "text": "likely"
+            },
+            {
+              "id": "a",
+              "text": "allowed"
+            }
+          ],
+          "explanation": "Were visitors allowed to pregunta por un permiso pasado."
+        },
+        {
+          "id": "r8",
+          "prompt": "What are we ___ to do with the damaged equipment?",
+          "options": [
+            {
+              "id": "b",
+              "text": "supposed"
+            },
+            {
+              "id": "c",
+              "text": "certain"
+            },
+            {
+              "id": "d",
+              "text": "likely"
+            }
+          ],
+          "explanation": "What are we supposed to do? pregunta por la instrucción esperada."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-modal-meaning"
+      ],
+      "tags": [
+        "b2",
+        "modals",
+        "unlikely-to",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

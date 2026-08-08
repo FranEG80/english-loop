@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-vocabulary-society-culture-public-life-mini-game-001",
+  "level": "B2",
+  "category": "vocabulary",
+  "topic": "b2-society-culture-public-life",
+  "subtopic": "b2-society-culture-public-life",
+  "lessonId": "b2-vocabulary-society-culture-public-life",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-society-culture-public-life-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-society-culture-public-life",
+      "subtopic": "b2-society-culture-public-life",
+      "taxonomyNodeIds": [
+        "b2-society-culture-public-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The policy targets social ___ rather than treating everyone identically.",
+          "options": [
+            {
+              "id": "b",
+              "text": "heritage"
+            },
+            {
+              "id": "a",
+              "text": "equity"
+            },
+            {
+              "id": "d",
+              "text": "custom"
+            }
+          ],
+          "explanation": "Equity recognises different needs in order to achieve fair access or outcomes."
+        },
+        {
+          "id": "r2",
+          "prompt": "The museum works to preserve the town's cultural ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "heritage"
+            },
+            {
+              "id": "c",
+              "text": "access"
+            },
+            {
+              "id": "d",
+              "text": "stereotype"
+            }
+          ],
+          "explanation": "Heritage is the cultural or historical legacy that people value."
+        },
+        {
+          "id": "r3",
+          "prompt": "The theatre adapted its entrance to improve ___ for visitors with limited mobility.",
+          "options": [
+            {
+              "id": "c",
+              "text": "representation"
+            },
+            {
+              "id": "d",
+              "text": "tradition"
+            },
+            {
+              "id": "a",
+              "text": "accessibility"
+            }
+          ],
+          "explanation": "Accessibility is the quality of being usable by people with different needs."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase means to prevent a group from taking part?",
+          "options": [
+            {
+              "id": "a",
+              "text": "exclude a group"
+            },
+            {
+              "id": "c",
+              "text": "preserve a group"
+            },
+            {
+              "id": "d",
+              "text": "represent a group"
+            }
+          ],
+          "explanation": "Exclude means prevent someone from entering, joining or participating."
+        },
+        {
+          "id": "r5",
+          "prompt": "The new lift has improved ___ to the library for wheelchair users.",
+          "options": [
+            {
+              "id": "d",
+              "text": "representation"
+            },
+            {
+              "id": "a",
+              "text": "access"
+            },
+            {
+              "id": "c",
+              "text": "citizenship"
+            }
+          ],
+          "explanation": "Access is the possibility of reaching or using a service."
+        },
+        {
+          "id": "r6",
+          "prompt": "The committee wants to preserve the building as part of the town's ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "equality"
+            },
+            {
+              "id": "c",
+              "text": "access"
+            },
+            {
+              "id": "a",
+              "text": "heritage"
+            }
+          ],
+          "explanation": "A historic building can form part of a town's heritage."
+        },
+        {
+          "id": "r7",
+          "prompt": "The council held a public ___ before redesigning the square.",
+          "options": [
+            {
+              "id": "a",
+              "text": "consultation"
+            },
+            {
+              "id": "d",
+              "text": "barrier"
+            },
+            {
+              "id": "b",
+              "text": "stereotype"
+            }
+          ],
+          "explanation": "A consultation invites people to give views before a decision."
+        },
+        {
+          "id": "r8",
+          "prompt": "The archive preserves letters that form part of the city's cultural ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "access"
+            },
+            {
+              "id": "a",
+              "text": "heritage"
+            },
+            {
+              "id": "d",
+              "text": "equality"
+            }
+          ],
+          "explanation": "Historical letters can be part of a community's cultural heritage."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-society-culture-public-life"
+      ],
+      "tags": [
+        "b2",
+        "equality",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-society-culture-public-life-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-society-culture-public-life",
+      "subtopic": "b2-society-culture-public-life",
+      "taxonomyNodeIds": [
+        "b2-society-culture-public-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The festival is a long-standing cultural ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "policy"
+            },
+            {
+              "id": "a",
+              "text": "tradition"
+            },
+            {
+              "id": "d",
+              "text": "representation"
+            }
+          ],
+          "explanation": "A tradition is a practice or belief passed between generations."
+        },
+        {
+          "id": "r2",
+          "prompt": "The law gives residents the ___ to request information.",
+          "options": [
+            {
+              "id": "b",
+              "text": "duty"
+            },
+            {
+              "id": "a",
+              "text": "right"
+            },
+            {
+              "id": "c",
+              "text": "barrier"
+            }
+          ],
+          "explanation": "A right is something a person is entitled to claim or exercise."
+        },
+        {
+          "id": "r3",
+          "prompt": "Residents want a stronger ___ in decisions about the neighbourhood.",
+          "options": [
+            {
+              "id": "b",
+              "text": "heritage"
+            },
+            {
+              "id": "d",
+              "text": "barrier"
+            },
+            {
+              "id": "a",
+              "text": "voice"
+            }
+          ],
+          "explanation": "Give someone a voice means allow their views to be heard."
+        },
+        {
+          "id": "r4",
+          "prompt": "The proposal is meant to make local government more ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "stereotypical"
+            },
+            {
+              "id": "a",
+              "text": "inclusive"
+            },
+            {
+              "id": "b",
+              "text": "historical"
+            }
+          ],
+          "explanation": "Inclusive means designed to involve people rather than exclude them."
+        },
+        {
+          "id": "r5",
+          "prompt": "The charity campaigns for greater ___ in public services.",
+          "options": [
+            {
+              "id": "c",
+              "text": "custom"
+            },
+            {
+              "id": "b",
+              "text": "exclusion"
+            },
+            {
+              "id": "a",
+              "text": "equality"
+            }
+          ],
+          "explanation": "Equality concerns equal rights and opportunities."
+        },
+        {
+          "id": "r6",
+          "prompt": "The programme is designed to promote ___ by removing practical barriers.",
+          "options": [
+            {
+              "id": "a",
+              "text": "inclusion"
+            },
+            {
+              "id": "b",
+              "text": "heritage"
+            },
+            {
+              "id": "c",
+              "text": "citizenship"
+            }
+          ],
+          "explanation": "Inclusion means that people can take part meaningfully rather than merely be present."
+        },
+        {
+          "id": "r7",
+          "prompt": "The centre is open to all ___ of the public.",
+          "options": [
+            {
+              "id": "d",
+              "text": "duties"
+            },
+            {
+              "id": "a",
+              "text": "members"
+            },
+            {
+              "id": "c",
+              "text": "stereotypes"
+            }
+          ],
+          "explanation": "The fixed phrase is members of the public."
+        },
+        {
+          "id": "r8",
+          "prompt": "The campaign asks institutions to ___ barriers faced by minority groups.",
+          "options": [
+            {
+              "id": "a",
+              "text": "address"
+            },
+            {
+              "id": "c",
+              "text": "exclude"
+            },
+            {
+              "id": "b",
+              "text": "inherit"
+            }
+          ],
+          "explanation": "Address barriers means recognise and take action to deal with them."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-society-culture-public-life"
+      ],
+      "tags": [
+        "b2",
+        "culture",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-collocations-travel-work-mini-game-001",
+  "level": "B1",
+  "category": "collocations",
+  "topic": "b1-collocations-travel-work",
+  "subtopic": "b1-collocations-travel-work",
+  "lessonId": "b1-collocations-travel-work",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-travel-work-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b1-collocations-travel-work",
+      "subtopic": "b1-collocations-travel-work",
+      "taxonomyNodeIds": [
+        "b1-collocations-travel-work"
+      ],
+      "difficulty": 2,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Passengers must ___ before boarding the ferry.",
+          "options": [
+            {
+              "id": "a",
+              "text": "show their tickets"
+            },
+            {
+              "id": "c",
+              "text": "do their tickets"
+            },
+            {
+              "id": "d",
+              "text": "give up their tickets"
+            }
+          ],
+          "explanation": "«Show a ticket» is the natural verb for presenting it."
+        },
+        {
+          "id": "r2",
+          "prompt": "The airline lost the case, so Rita had to ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "give a complaint"
+            },
+            {
+              "id": "a",
+              "text": "make a complaint"
+            },
+            {
+              "id": "c",
+              "text": "take a complaint"
+            }
+          ],
+          "explanation": "«Make a complaint» is the fixed collocation for a formal protest."
+        },
+        {
+          "id": "r3",
+          "prompt": "They arrived late and managed to ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "spend time"
+            },
+            {
+              "id": "a",
+              "text": "miss a flight"
+            },
+            {
+              "id": "b",
+              "text": "reach a destination"
+            }
+          ],
+          "explanation": "The natural collocation is “miss a flight”."
+        },
+        {
+          "id": "r4",
+          "prompt": "Sofia had to ___ because the first candidate withdrew.",
+          "options": [
+            {
+              "id": "b",
+              "text": "hold another interview"
+            },
+            {
+              "id": "a",
+              "text": "do an interview again"
+            },
+            {
+              "id": "d",
+              "text": "take another interviewing"
+            }
+          ],
+          "explanation": "«Hold an interview» is the formal collocation for organising one."
+        },
+        {
+          "id": "r5",
+          "prompt": "The trainees are beginning to ___ with their new software.",
+          "options": [
+            {
+              "id": "c",
+              "text": "write a report"
+            },
+            {
+              "id": "d",
+              "text": "catch a train"
+            },
+            {
+              "id": "a",
+              "text": "make progress"
+            }
+          ],
+          "explanation": "The natural collocation is “make progress”."
+        },
+        {
+          "id": "r6",
+          "prompt": "She decided to ___ at the travel agency.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take a taxi"
+            },
+            {
+              "id": "d",
+              "text": "make progress"
+            },
+            {
+              "id": "a",
+              "text": "apply for a job"
+            }
+          ],
+          "explanation": "The natural collocation is “apply for a job”."
+        },
+        {
+          "id": "r7",
+          "prompt": "I will ___ online before prices rise.",
+          "options": [
+            {
+              "id": "c",
+              "text": "make progress"
+            },
+            {
+              "id": "d",
+              "text": "make a decision"
+            },
+            {
+              "id": "a",
+              "text": "book a ticket"
+            }
+          ],
+          "explanation": "The natural collocation is “book a ticket”."
+        },
+        {
+          "id": "r8",
+          "prompt": "Please ___ before you start the next one.",
+          "options": [
+            {
+              "id": "d",
+              "text": "take a taxi"
+            },
+            {
+              "id": "c",
+              "text": "miss a flight"
+            },
+            {
+              "id": "a",
+              "text": "do a task"
+            }
+          ],
+          "explanation": "The natural collocation is “do a task”."
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-travel-work"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "travel-work",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-travel-work-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b1-collocations-travel-work",
+      "subtopic": "b1-collocations-travel-work",
+      "taxonomyNodeIds": [
+        "b1-collocations-travel-work"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The consultant will ___ on Monday morning.",
+          "options": [
+            {
+              "id": "b",
+              "text": "do a presentation"
+            },
+            {
+              "id": "d",
+              "text": "have a presentation"
+            },
+            {
+              "id": "c",
+              "text": "take a presentation"
+            }
+          ],
+          "explanation": "British English prefers «do a presentation» when you deliver it yourself."
+        },
+        {
+          "id": "r2",
+          "prompt": "Our team will ___ with the supplier on Thursday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "make a meeting"
+            },
+            {
+              "id": "a",
+              "text": "do a meeting"
+            },
+            {
+              "id": "c",
+              "text": "have a meeting"
+            }
+          ],
+          "explanation": "«Have a meeting» follows the pattern «have + event»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Our department must ___ before the budget is approved.",
+          "options": [
+            {
+              "id": "a",
+              "text": "do costs"
+            },
+            {
+              "id": "b",
+              "text": "cut costs"
+            },
+            {
+              "id": "c",
+              "text": "make costs"
+            }
+          ],
+          "explanation": "«Cut costs» is the standard business collocation for reducing spending."
+        },
+        {
+          "id": "r4",
+          "prompt": "Alba had to ___ because the meeting overran badly.",
+          "options": [
+            {
+              "id": "a",
+              "text": "catch a later train"
+            },
+            {
+              "id": "c",
+              "text": "do a later train"
+            },
+            {
+              "id": "b",
+              "text": "make a later train"
+            }
+          ],
+          "explanation": "«Catch a train» is the standard verb for boarding one on time."
+        },
+        {
+          "id": "r5",
+          "prompt": "Julia decided to ___ after fifteen years at the same firm.",
+          "options": [
+            {
+              "id": "d",
+              "text": "take her notice"
+            },
+            {
+              "id": "c",
+              "text": "do her notice"
+            },
+            {
+              "id": "b",
+              "text": "hand in her notice"
+            }
+          ],
+          "explanation": "«Hand in your notice» means to formally resign."
+        },
+        {
+          "id": "r6",
+          "prompt": "The train was late, so Pablo ___ for the meeting.",
+          "options": [
+            {
+              "id": "b",
+              "text": "made late"
+            },
+            {
+              "id": "a",
+              "text": "arrived late"
+            },
+            {
+              "id": "c",
+              "text": "did late"
+            }
+          ],
+          "explanation": "«Arrive late» is the plain collocation; «make late» does not exist."
+        },
+        {
+          "id": "r7",
+          "prompt": "You should ___ online at least a day before the flight.",
+          "options": [
+            {
+              "id": "a",
+              "text": "check in"
+            },
+            {
+              "id": "c",
+              "text": "check up"
+            },
+            {
+              "id": "b",
+              "text": "check out"
+            }
+          ],
+          "explanation": "«Check in» is the phrasal verb for registering before a flight."
+        },
+        {
+          "id": "r8",
+          "prompt": "Elena had to ___ because the roadworks blocked the street.",
+          "options": [
+            {
+              "id": "d",
+              "text": "give a detour"
+            },
+            {
+              "id": "b",
+              "text": "make a detour"
+            },
+            {
+              "id": "a",
+              "text": "take a detour"
+            }
+          ],
+          "explanation": "«Take a detour» is the fixed collocation for an alternative route."
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-travel-work"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "travel-work",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

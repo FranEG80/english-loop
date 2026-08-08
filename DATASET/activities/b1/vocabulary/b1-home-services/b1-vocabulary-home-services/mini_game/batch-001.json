@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-home-services-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-home-services",
+  "subtopic": "b1-home-services",
+  "lessonId": "b1-vocabulary-home-services",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-home-services-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The washing machine is an example of an ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "notice"
+            },
+            {
+              "id": "b",
+              "text": "in-law"
+            },
+            {
+              "id": "a",
+              "text": "appliance"
+            }
+          ],
+          "explanation": "An appliance is a machine used at home, such as a washing machine."
+        },
+        {
+          "id": "r2",
+          "prompt": "The fuse box is sparking. What is the safest service to request?",
+          "options": [
+            {
+              "id": "a",
+              "text": "an electrician"
+            },
+            {
+              "id": "b",
+              "text": "a plumber"
+            },
+            {
+              "id": "d",
+              "text": "a tenant's cousin"
+            }
+          ],
+          "explanation": "An electrician should handle dangerous electrical faults."
+        },
+        {
+          "id": "r3",
+          "prompt": "What does a tenant normally pay every month?",
+          "options": [
+            {
+              "id": "b",
+              "text": "the hallway"
+            },
+            {
+              "id": "c",
+              "text": "the plumber"
+            },
+            {
+              "id": "a",
+              "text": "the rent"
+            }
+          ],
+          "explanation": "Rent is the regular payment for occupying a rented home."
+        },
+        {
+          "id": "r4",
+          "prompt": "Furniture means items such as chairs, tables and ___. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "leaks"
+            },
+            {
+              "id": "a",
+              "text": "sofas"
+            },
+            {
+              "id": "b",
+              "text": "rents"
+            }
+          ],
+          "explanation": "Sofas are furniture; rent, deposits and leaks are different concepts."
+        },
+        {
+          "id": "r5",
+          "prompt": "Call an ___ if the lights and sockets are unsafe.",
+          "options": [
+            {
+              "id": "a",
+              "text": "electrician"
+            },
+            {
+              "id": "d",
+              "text": "landlord"
+            },
+            {
+              "id": "c",
+              "text": "tenant"
+            }
+          ],
+          "explanation": "An electrician works with wiring, lights and electrical systems."
+        },
+        {
+          "id": "r6",
+          "prompt": "You cook meals in the ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "kitchen"
+            },
+            {
+              "id": "c",
+              "text": "balcony"
+            },
+            {
+              "id": "b",
+              "text": "hallway"
+            }
+          ],
+          "explanation": "A kitchen is the room used for preparing food."
+        },
+        {
+          "id": "r7",
+          "prompt": "A person who repairs water pipes is a ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "plumber"
+            },
+            {
+              "id": "d",
+              "text": "carpenter"
+            },
+            {
+              "id": "b",
+              "text": "tenant"
+            }
+          ],
+          "explanation": "A plumber repairs pipes, taps and other water systems."
+        },
+        {
+          "id": "r8",
+          "prompt": "The person who owns and rents out a flat is the ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "landlord"
+            },
+            {
+              "id": "d",
+              "text": "plumber"
+            },
+            {
+              "id": "b",
+              "text": "tenant"
+            }
+          ],
+          "explanation": "A landlord owns a property and rents it to a tenant."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "appliances",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-home-services-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which request is most suitable for a landlord?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Could you make the leak?"
+            },
+            {
+              "id": "a",
+              "text": "Could you arrange for someone to repair the boiler?"
+            },
+            {
+              "id": "c",
+              "text": "Could you rent the electricity?"
+            }
+          ],
+          "explanation": "Arrange for someone to repair something is a natural service request."
+        },
+        {
+          "id": "r2",
+          "prompt": "A place outside a flat where you can stand is a ___. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "boiler"
+            },
+            {
+              "id": "c",
+              "text": "basement"
+            },
+            {
+              "id": "a",
+              "text": "balcony"
+            }
+          ],
+          "explanation": "A balcony is an outdoor platform attached to a building."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence uses furniture correctly?",
+          "options": [
+            {
+              "id": "b",
+              "text": "The flat has three furnitures."
+            },
+            {
+              "id": "a",
+              "text": "The flat has some lovely furniture."
+            },
+            {
+              "id": "c",
+              "text": "The flat has a furniture."
+            }
+          ],
+          "explanation": "Furniture is normally uncountable; use some furniture or a piece of furniture."
+        },
+        {
+          "id": "r4",
+          "prompt": "Money paid regularly to live in a rented home is the ___. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "furniture"
+            },
+            {
+              "id": "a",
+              "text": "rent"
+            },
+            {
+              "id": "d",
+              "text": "notice"
+            }
+          ],
+          "explanation": "Rent is the regular payment for using a rented property."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which person should check a leaking radiator pipe?",
+          "options": [
+            {
+              "id": "d",
+              "text": "a landlord's neighbour"
+            },
+            {
+              "id": "a",
+              "text": "a plumber"
+            },
+            {
+              "id": "b",
+              "text": "a tenant only"
+            }
+          ],
+          "explanation": "A plumber works with pipes and water systems."
+        },
+        {
+          "id": "r6",
+          "prompt": "The sink is full of water because it is ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "blocked"
+            },
+            {
+              "id": "c",
+              "text": "rented"
+            },
+            {
+              "id": "b",
+              "text": "furnished"
+            }
+          ],
+          "explanation": "A blocked sink cannot drain water properly."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence clearly reports a plumbing problem?",
+          "options": [
+            {
+              "id": "d",
+              "text": "There is a notice under the sink."
+            },
+            {
+              "id": "c",
+              "text": "There is a tenant under the sink."
+            },
+            {
+              "id": "a",
+              "text": "There is a leak under the sink."
+            }
+          ],
+          "explanation": "A leak under the sink is a clear plumbing problem."
+        },
+        {
+          "id": "r8",
+          "prompt": "You normally wash your hands in a ___. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "sink"
+            },
+            {
+              "id": "b",
+              "text": "shelf"
+            },
+            {
+              "id": "d",
+              "text": "carpet"
+            }
+          ],
+          "explanation": "A sink is used for washing hands and dishes."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

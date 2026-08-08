@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-quantifiers-determiners-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "articles-determiners",
+  "subtopic": "quantifiers-determiners",
+  "lessonId": "b1-grammar-quantifiers-determiners",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You can take ___ seat. (cualquiera)",
+          "options": [
+            {
+              "id": "d",
+              "text": "little"
+            },
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "any"
+            }
+          ],
+          "explanation": "«any» en afirmativa significa «cualquiera»."
+        },
+        {
+          "id": "r2",
+          "prompt": "There are ___ reasons to visit.",
+          "options": [
+            {
+              "id": "c",
+              "text": "little"
+            },
+            {
+              "id": "a",
+              "text": "many"
+            },
+            {
+              "id": "b",
+              "text": "much"
+            }
+          ],
+          "explanation": "«reasons» es contable; usa «many»."
+        },
+        {
+          "id": "r3",
+          "prompt": "There is ___ chance of rain today.",
+          "options": [
+            {
+              "id": "b",
+              "text": "few"
+            },
+            {
+              "id": "a",
+              "text": "little"
+            },
+            {
+              "id": "c",
+              "text": "many"
+            }
+          ],
+          "explanation": "«chance» es incontable; usa «little»."
+        },
+        {
+          "id": "r4",
+          "prompt": "___ people understand the theory. (pocos, negativo)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Few"
+            },
+            {
+              "id": "b",
+              "text": "A few"
+            },
+            {
+              "id": "c",
+              "text": "Little"
+            }
+          ],
+          "explanation": "«few» (sin a) tiene sentido negativo."
+        },
+        {
+          "id": "r5",
+          "prompt": "Are there ___ tickets left?",
+          "options": [
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "any"
+            },
+            {
+              "id": "d",
+              "text": "little"
+            }
+          ],
+          "explanation": "Las preguntas usan «any»."
+        },
+        {
+          "id": "r6",
+          "prompt": "There aren't ___ chairs left.",
+          "options": [
+            {
+              "id": "a",
+              "text": "any"
+            },
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "b",
+              "text": "some"
+            }
+          ],
+          "explanation": "Las negativas usan «any»."
+        },
+        {
+          "id": "r7",
+          "prompt": "There isn't ___ information available.",
+          "options": [
+            {
+              "id": "a",
+              "text": "much"
+            },
+            {
+              "id": "d",
+              "text": "few"
+            },
+            {
+              "id": "b",
+              "text": "many"
+            }
+          ],
+          "explanation": "«information» es incontable; usa «much»."
+        },
+        {
+          "id": "r8",
+          "prompt": "She has a ___ of experience.",
+          "options": [
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "lot"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            }
+          ],
+          "explanation": "«a lot of» se usa con ambos tipos."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I have a ___ ideas.",
+          "options": [
+            {
+              "id": "a",
+              "text": "few"
+            },
+            {
+              "id": "d",
+              "text": "any"
+            },
+            {
+              "id": "b",
+              "text": "little"
+            }
+          ],
+          "explanation": "«ideas» es contable; usa «a few»."
+        },
+        {
+          "id": "r2",
+          "prompt": "There is ___ sugar in the cupboard. (poco, negativo)",
+          "options": [
+            {
+              "id": "d",
+              "text": "many"
+            },
+            {
+              "id": "a",
+              "text": "little"
+            },
+            {
+              "id": "c",
+              "text": "few"
+            }
+          ],
+          "explanation": "«little» (sin a) tiene sentido negativo."
+        },
+        {
+          "id": "r3",
+          "prompt": "There is ___ hope of finding it.",
+          "options": [
+            {
+              "id": "b",
+              "text": "few"
+            },
+            {
+              "id": "a",
+              "text": "little"
+            },
+            {
+              "id": "c",
+              "text": "many"
+            }
+          ],
+          "explanation": "«hope» es incontable; usa «little»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Could I have ___ water, please?",
+          "options": [
+            {
+              "id": "a",
+              "text": "some"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            },
+            {
+              "id": "b",
+              "text": "any"
+            }
+          ],
+          "explanation": "Las peticiones usan «some»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I have a ___ suggestions.",
+          "options": [
+            {
+              "id": "b",
+              "text": "little"
+            },
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "few"
+            }
+          ],
+          "explanation": "«suggestions» es contable; usa «a few»."
+        },
+        {
+          "id": "r6",
+          "prompt": "How ___ people are coming?",
+          "options": [
+            {
+              "id": "b",
+              "text": "much"
+            },
+            {
+              "id": "d",
+              "text": "any"
+            },
+            {
+              "id": "a",
+              "text": "many"
+            }
+          ],
+          "explanation": "«people» es contable; usa «many»."
+        },
+        {
+          "id": "r7",
+          "prompt": "She has a ___ experience.",
+          "options": [
+            {
+              "id": "a",
+              "text": "little"
+            },
+            {
+              "id": "c",
+              "text": "many"
+            },
+            {
+              "id": "d",
+              "text": "a few"
+            }
+          ],
+          "explanation": "«experience» es incontable; usa «a little»."
+        },
+        {
+          "id": "r8",
+          "prompt": "There is ___ time to decide.",
+          "options": [
+            {
+              "id": "d",
+              "text": "a few"
+            },
+            {
+              "id": "b",
+              "text": "few"
+            },
+            {
+              "id": "a",
+              "text": "little"
+            }
+          ],
+          "explanation": "«time» es incontable; usa «little»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

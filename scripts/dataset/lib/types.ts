@@ -15,10 +15,8 @@ export const ACTIVITY_TYPES = [
   "word_order",
   "matching",
   "error_correction",
-  "guided_writing",
   "word_formation",
   "key_word_transformation",
-  "sentence_rewrite",
   "mini_game",
 ] as const;
 
@@ -61,7 +59,7 @@ export type Evaluator =
     }
   | {
       strategy: "per_gap";
-      gaps: Array<{ gapId: string; answers: string[] }>;
+      gaps: Array<{ gapId: string; cueWord?: string; answers: string[] }>;
       normalization: NormalizationRules;
     }
   | { strategy: "ordered_tokens"; correctTokenIds: string[] }
@@ -105,6 +103,8 @@ export interface ActivityCard {
 export interface ActivityRound {
   id: string;
   prompt: string;
+  /** Texto de apoyo de la ronda: la frase con el hueco, si la actividad de origen la tenía. */
+  context?: string;
   options: ActivityOption[];
   explanation: string;
 }

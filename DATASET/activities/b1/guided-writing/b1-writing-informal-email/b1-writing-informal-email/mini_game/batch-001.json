@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-writing-informal-email-mini-game-001",
+  "level": "B1",
+  "category": "guided-writing",
+  "topic": "b1-writing-informal-email",
+  "subtopic": "b1-writing-informal-email",
+  "lessonId": "b1-writing-informal-email",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-informal-email-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-informal-email",
+      "subtopic": "b1-writing-informal-email",
+      "taxonomyNodeIds": [
+        "b1-writing-informal-email"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which phrase would fit an informal email to Aisha?",
+          "options": [
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase would fit an informal email to Zoe?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase would fit an informal email to Sam?",
+          "options": [
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase would fit an informal email to Ella?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase would fit an informal email to Omar?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which phrase would fit an informal email to Hugo?",
+          "options": [
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which phrase would fit an informal email to Daniel?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase would fit an informal email to Grace?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-informal-email"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "single-choice",
+        "register",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-informal-email-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-informal-email",
+      "subtopic": "b1-writing-informal-email",
+      "taxonomyNodeIds": [
+        "b1-writing-informal-email"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which phrase would fit an informal email to Iris?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase would fit an informal email to Priya?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase would fit an informal email to Emily?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase would fit an informal email to Sara?",
+          "options": [
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase would fit an informal email to Ben?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which phrase would fit an informal email to Noah?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which phrase would fit an informal email to Nora?",
+          "options": [
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase would fit an informal email to Leo?",
+          "options": [
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-informal-email"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "single-choice",
+        "register",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

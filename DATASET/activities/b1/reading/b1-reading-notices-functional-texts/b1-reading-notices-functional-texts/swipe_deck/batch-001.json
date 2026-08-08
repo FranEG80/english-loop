@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-notices-functional-texts-swipe-deck-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-notices-functional-texts",
+  "subtopic": "b1-reading-notices-functional-texts",
+  "lessonId": "b1-reading-notices-functional-texts",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-sd-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Notice: Keep the door closed because air-conditioning is in use. Statement: The door should remain open.",
+          "explanation": "Keep closed pide mantenerla cerrada."
+        },
+        {
+          "id": "c2",
+          "statement": "Notice: Return laptops by 5 p.m. Statement: Users may keep laptops overnight.",
+          "explanation": "El aviso exige devolverlos ese día."
+        },
+        {
+          "id": "c3",
+          "statement": "Notice: Late applications are considered for the next course. Statement: A late application is automatically destroyed.",
+          "explanation": "El aviso dice que se considera más tarde, no que se destruya."
+        },
+        {
+          "id": "c4",
+          "statement": "Notice: No food or drink in the computer room. Statement: Eating is allowed there.",
+          "explanation": "No food prohíbe comer."
+        },
+        {
+          "id": "c5",
+          "statement": "Notice: The meeting moved to Room 4. Statement: Room 4 is the new meeting place.",
+          "explanation": "Moved to comunica el nuevo lugar."
+        },
+        {
+          "id": "c6",
+          "statement": "Notice: Bring photo ID to collect your parcel after 4 p.m. Statement: Any document is acceptable.",
+          "explanation": "Photo ID especifica el tipo de documento requerido."
+        },
+        {
+          "id": "c7",
+          "statement": "Notice: The train leaves from Platform 6 instead of Platform 2. Statement: The departure platform has changed.",
+          "explanation": "Instead of marca un cambio respecto a la plataforma original."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-sd-076",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 5,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Notice: The workshop is free but places must be booked in advance. Statement: No booking is needed because it is free.",
+          "explanation": "But contrasta gratuidad con reserva obligatoria."
+        },
+        {
+          "id": "c2",
+          "statement": "Notice: Members may borrow three books for up to four weeks. Statement: Members may borrow unlimited books.",
+          "explanation": "Three books limita la cantidad."
+        },
+        {
+          "id": "c3",
+          "statement": "Notice: Reception is closed at lunch; leave a message in the box. Statement: Visitors can speak to reception during lunch.",
+          "explanation": "Closed at lunch significa que no se puede hablar allí en ese periodo."
+        },
+        {
+          "id": "c4",
+          "statement": "Notice: The pool is closed until 10 June for cleaning. Statement: Cleaning is the reason for closure.",
+          "explanation": "For cleaning expresa la causa."
+        },
+        {
+          "id": "c5",
+          "statement": "Notice: Paper copies will not be accepted; applications must be emailed. Statement: Email is the required channel.",
+          "explanation": "Must be emailed expresa la forma obligatoria de envío."
+        },
+        {
+          "id": "c6",
+          "statement": "Notice: Lost property should be handed in at reception within 24 hours. Statement: Found items should be given to reception promptly.",
+          "explanation": "Handed in within 24 hours se parafrasea como entregar pronto."
+        },
+        {
+          "id": "c7",
+          "statement": "Notice: Residents should report water leaks to the building manager immediately. Statement: The notice is addressed to residents.",
+          "explanation": "Residents aparece como destinatario explícito."
+        },
+        {
+          "id": "c8",
+          "statement": "Notice: Renewals after 31 August include a £5 administration fee. Statement: Late renewals cost exactly the same.",
+          "explanation": "Include a fee significa que se añade un coste."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-sd-139",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Notice: A booking may be changed once if space is available. Statement: It may be changed as many times as needed.",
+          "explanation": "Once limita el número de cambios."
+        },
+        {
+          "id": "c2",
+          "statement": "Notice: Last orders at 9:30; café closes at 10. Statement: Final orders are before closing.",
+          "explanation": "Last orders fija una hora anterior al cierre."
+        },
+        {
+          "id": "c3",
+          "statement": "Notice: Staff only beyond this point. Statement: All visitors may continue.",
+          "explanation": "Staff only excluye a visitantes."
+        },
+        {
+          "id": "c4",
+          "statement": "Notice: Use the side entrance while flooring work is being completed. Statement: The instruction is temporary.",
+          "explanation": "While work is being completed indica una situación temporal."
+        },
+        {
+          "id": "c5",
+          "statement": "Notice: Use the stairs because the lift is out of order. Statement: The lift is working normally.",
+          "explanation": "Out of order significa que no funciona."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-sd-198",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Notice: Bikes must be left in the racks provided. Statement: The notice gives a designated place for bikes.",
+          "explanation": "Racks provided designa el lugar permitido."
+        },
+        {
+          "id": "c2",
+          "statement": "Notice: Queue on the right; appointment holders may go to the desk. Statement: People with appointments must always queue.",
+          "explanation": "May go to the desk introduce una excepción."
+        },
+        {
+          "id": "c3",
+          "statement": "Notice: The shop opens late due to staff training. Statement: Staff training is mentioned as the cause.",
+          "explanation": "Due to introduce la causa indicada."
+        },
+        {
+          "id": "c4",
+          "statement": "Notice: The bus will not stop here between 8 and 9 a.m.; use Oak Road. Statement: Oak Road is an alternative during that hour.",
+          "explanation": "El aviso ofrece Oak Road para el intervalo indicado."
+        },
+        {
+          "id": "c5",
+          "statement": "Notice: Tickets online from Monday. Statement: Online sales start on Monday.",
+          "explanation": "From Monday indica el comienzo de las ventas."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

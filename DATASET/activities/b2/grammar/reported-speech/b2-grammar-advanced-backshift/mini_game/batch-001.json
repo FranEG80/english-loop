@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-backshift-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "reported-speech",
+  "subtopic": "advanced-backshift",
+  "lessonId": "b2-grammar-advanced-backshift",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-backshift-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Nadia said she ___ email the receipt the next day.",
+          "options": [
+            {
+              "id": "d",
+              "text": "can"
+            },
+            {
+              "id": "b",
+              "text": "would"
+            },
+            {
+              "id": "a",
+              "text": "will"
+            }
+          ],
+          "explanation": "Will retrocede a would cuando informamos de una promesa pasada."
+        },
+        {
+          "id": "r2",
+          "prompt": "Marta told us that the train ___ already left.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "was"
+            },
+            {
+              "id": "d",
+              "text": "would have"
+            }
+          ],
+          "explanation": "El presente perfecto implícito has left pasa a had left en el relato pasado."
+        },
+        {
+          "id": "r3",
+          "prompt": "Owen said he ___ not attend the evening meeting.",
+          "options": [
+            {
+              "id": "c",
+              "text": "will"
+            },
+            {
+              "id": "b",
+              "text": "could"
+            },
+            {
+              "id": "a",
+              "text": "can"
+            }
+          ],
+          "explanation": "Can suele retroceder a could en una declaración indirecta pasada."
+        },
+        {
+          "id": "r4",
+          "prompt": "The professor said that the equation ___ correct.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was"
+            },
+            {
+              "id": "d",
+              "text": "would be"
+            },
+            {
+              "id": "a",
+              "text": "is"
+            }
+          ],
+          "explanation": "Si informamos de la valoración desde aquel momento, is pasa a was."
+        },
+        {
+          "id": "r5",
+          "prompt": "The scientist said that the sample ___ not contain lead.",
+          "options": [
+            {
+              "id": "b",
+              "text": "did"
+            },
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "d",
+              "text": "would"
+            }
+          ],
+          "explanation": "Does not contain retrocede a did not contain en el informe pasado."
+        },
+        {
+          "id": "r6",
+          "prompt": "The manager said that the office ___ closed the following day.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will remain"
+            },
+            {
+              "id": "c",
+              "text": "had remained"
+            },
+            {
+              "id": "b",
+              "text": "would remain"
+            }
+          ],
+          "explanation": "Will pasa a would cuando el futuro se ve desde una referencia pasada."
+        },
+        {
+          "id": "r7",
+          "prompt": "The doctor said I ___ avoid strenuous exercise for a week.",
+          "options": [
+            {
+              "id": "c",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "had to"
+            },
+            {
+              "id": "d",
+              "text": "could have"
+            }
+          ],
+          "explanation": "Had to presenta como pasada una obligación que terminó con aquella semana."
+        },
+        {
+          "id": "r8",
+          "prompt": "The guide told us that the museum ___ at nine every day.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would open"
+            },
+            {
+              "id": "c",
+              "text": "had opened"
+            },
+            {
+              "id": "b",
+              "text": "opened"
+            }
+          ],
+          "explanation": "En un relato pasado, el presente simple de la rutina pasa naturalmente a opened."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "future-in-the-past",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-backshift-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The curator said that the gallery ___ at six.",
+          "options": [
+            {
+              "id": "b",
+              "text": "closed"
+            },
+            {
+              "id": "d",
+              "text": "would close"
+            },
+            {
+              "id": "c",
+              "text": "had closed"
+            }
+          ],
+          "explanation": "El presente simple closes retrocede normalmente a closed después de said."
+        },
+        {
+          "id": "r2",
+          "prompt": "The pilot explained that the plane ___ safely.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had landed"
+            },
+            {
+              "id": "d",
+              "text": "would land"
+            },
+            {
+              "id": "a",
+              "text": "has landed"
+            }
+          ],
+          "explanation": "El aterrizaje precede a la explicación, por eso usamos had landed."
+        },
+        {
+          "id": "r3",
+          "prompt": "The historian said that the bridge ___ in 1890.",
+          "options": [
+            {
+              "id": "a",
+              "text": "built"
+            },
+            {
+              "id": "c",
+              "text": "had been built"
+            },
+            {
+              "id": "b",
+              "text": "was built"
+            }
+          ],
+          "explanation": "La construcción ocurrió antes del momento de decirlo: had been built."
+        },
+        {
+          "id": "r4",
+          "prompt": "The witness told police she ___ the lights before midnight.",
+          "options": [
+            {
+              "id": "b",
+              "text": "has seen"
+            },
+            {
+              "id": "c",
+              "text": "had seen"
+            },
+            {
+              "id": "a",
+              "text": "saw"
+            }
+          ],
+          "explanation": "La observación ocurrió antes del momento del testimonio: had seen."
+        },
+        {
+          "id": "r5",
+          "prompt": "The curator ___ that the exhibition had moved to the west wing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "said"
+            },
+            {
+              "id": "c",
+              "text": "said me"
+            },
+            {
+              "id": "d",
+              "text": "told to"
+            }
+          ],
+          "explanation": "Say puede introducir directamente that-clause sin objeto personal."
+        },
+        {
+          "id": "r6",
+          "prompt": "The lecturer said that water ___ at 100°C.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had boiled"
+            },
+            {
+              "id": "a",
+              "text": "boiled"
+            },
+            {
+              "id": "c",
+              "text": "boils"
+            }
+          ],
+          "explanation": "El presente puede mantenerse porque se trata de una verdad científica vigente."
+        },
+        {
+          "id": "r7",
+          "prompt": "He said he ___ finish the repairs that day.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "would"
+            },
+            {
+              "id": "d",
+              "text": "could have"
+            }
+          ],
+          "explanation": "Would expresa un futuro visto desde el pasado y that day adapta today."
+        },
+        {
+          "id": "r8",
+          "prompt": "The reporter said that prices ___ rapidly.",
+          "options": [
+            {
+              "id": "b",
+              "text": "were rising"
+            },
+            {
+              "id": "c",
+              "text": "had risen"
+            },
+            {
+              "id": "d",
+              "text": "would rise"
+            }
+          ],
+          "explanation": "Are rising retrocede a were rising para mantener el proceso en aquel momento."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "backshift",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-daily-routines-life-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-daily-routines-life",
+  "subtopic": "b1-daily-routines-life",
+  "lessonId": "b1-vocabulary-daily-routines-life",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-sd-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The sentence I go in bed at ten uses the standard preposition.",
+          "explanation": "The standard phrase is go to bed, not go in bed."
+        },
+        {
+          "id": "c2",
+          "statement": "Someone who is running late is delayed.",
+          "explanation": "Run late means be behind the expected schedule."
+        },
+        {
+          "id": "c3",
+          "statement": "Do the laundry refers to washing clothes.",
+          "explanation": "Laundry means clothes and other items that need washing."
+        },
+        {
+          "id": "c4",
+          "statement": "In everyday English, people normally say make the laundry.",
+          "explanation": "The standard collocation is do the laundry."
+        },
+        {
+          "id": "c5",
+          "statement": "In I have a shower, have describes an activity rather than ownership.",
+          "explanation": "Have is part of the activity expression have a shower."
+        },
+        {
+          "id": "c6",
+          "statement": "Go shopping and go to the shops have exactly the same grammatical pattern.",
+          "explanation": "Go shopping has no to before the activity, while go to the shops includes to before a place."
+        },
+        {
+          "id": "c7",
+          "statement": "Work from home describes doing your job at home.",
+          "explanation": "Work from home identifies the place where the work is done."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "evening",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-sd-079",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Have a break means continue working without resting.",
+          "explanation": "Have a break means stop for a short rest."
+        },
+        {
+          "id": "c2",
+          "statement": "Set an alarm means choose the time when it will ring.",
+          "explanation": "You set an alarm for the time you want it to sound."
+        },
+        {
+          "id": "c3",
+          "statement": "Take a nap means sleep for a short time during the day.",
+          "explanation": "A nap is a short period of sleep, usually during the day."
+        },
+        {
+          "id": "c4",
+          "statement": "Get up means leave your bed.",
+          "explanation": "Get up describes the physical action of leaving your bed."
+        },
+        {
+          "id": "c5",
+          "statement": "Go shopping normally requires the preposition to before shopping.",
+          "explanation": "The normal expression is go shopping, without to before shopping."
+        },
+        {
+          "id": "c6",
+          "statement": "Take out the rubbish means carry it outside.",
+          "explanation": "Take out the rubbish is used when rubbish is removed from a home."
+        },
+        {
+          "id": "c7",
+          "statement": "Do the cleaning and make the cleaning are equally standard collocations.",
+          "explanation": "Do the cleaning is the standard collocation; make the cleaning is not natural here."
+        },
+        {
+          "id": "c8",
+          "statement": "Have a shower describes an activity, not possession of a shower.",
+          "explanation": "Have can describe activities such as having a shower or breakfast."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "rest",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-sd-142",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A person can wake up at six and get up at half past six.",
+          "explanation": "The two expressions refer to stopping sleep and leaving the bed, which may happen at different times."
+        },
+        {
+          "id": "c2",
+          "statement": "Make up lost time means compensate for a delay.",
+          "explanation": "Make up lost time means work to recover time lost through a delay."
+        },
+        {
+          "id": "c3",
+          "statement": "Tidy the room means make the room neat and organised.",
+          "explanation": "Tidy means organise a place and remove disorder."
+        },
+        {
+          "id": "c4",
+          "statement": "Make time for exercise means deliberately find time for it.",
+          "explanation": "Make time for something means reserve time for that activity."
+        },
+        {
+          "id": "c5",
+          "statement": "Wake up and get up always mean exactly the same thing.",
+          "explanation": "Wake up means stop sleeping; get up means leave the bed, so they can refer to different moments."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "morning",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-sd-200",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The natural phrase for eating the morning meal is do breakfast.",
+          "explanation": "We say have breakfast, not do breakfast."
+        },
+        {
+          "id": "c2",
+          "statement": "Meet a deadline means finish something by the required time.",
+          "explanation": "A deadline is the final permitted time for a task."
+        },
+        {
+          "id": "c3",
+          "statement": "Take a break and have a break are both acceptable expressions.",
+          "explanation": "Both collocations are natural; have a break is especially common in British English."
+        },
+        {
+          "id": "c4",
+          "statement": "Someone can be running late even if they have not arrived yet.",
+          "explanation": "Running late describes being behind schedule, whether or not the person has arrived."
+        },
+        {
+          "id": "c5",
+          "statement": "Make the bed is a normal expression for arranging the sheets.",
+          "explanation": "Make the bed is the established collocation."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "meals",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

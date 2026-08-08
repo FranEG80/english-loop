@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-future-likelihood-imminence-mini-game-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "future-likelihood-imminence",
+  "lessonId": "b2-grammar-future-likelihood-imminence",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-likelihood-imminence-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The charity is certain ___ enough money for the surgery.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to raise"
+            },
+            {
+              "id": "c",
+              "text": "raise"
+            },
+            {
+              "id": "a",
+              "text": "raising"
+            }
+          ],
+          "explanation": "Certain se construye con to + infinitive: certain to raise."
+        },
+        {
+          "id": "r2",
+          "prompt": "With such strong evidence, the judge is ___ reach the same conclusion.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on the point of to"
+            },
+            {
+              "id": "a",
+              "text": "due to"
+            },
+            {
+              "id": "c",
+              "text": "bound to"
+            }
+          ],
+          "explanation": "Bound to expresa una conclusión considerada prácticamente segura."
+        },
+        {
+          "id": "r3",
+          "prompt": "The child is on the point of ___ the candle.",
+          "options": [
+            {
+              "id": "d",
+              "text": "blown"
+            },
+            {
+              "id": "c",
+              "text": "blowing"
+            },
+            {
+              "id": "a",
+              "text": "blow"
+            }
+          ],
+          "explanation": "On the point of lleva un gerundio: on the point of blowing."
+        },
+        {
+          "id": "r4",
+          "prompt": "Once the new evidence is released, the debate is ___ intensify.",
+          "options": [
+            {
+              "id": "c",
+              "text": "bound to"
+            },
+            {
+              "id": "b",
+              "text": "on the point of"
+            },
+            {
+              "id": "a",
+              "text": "about"
+            }
+          ],
+          "explanation": "La evidencia hace que la intensificación parezca inevitable: bound to intensify."
+        },
+        {
+          "id": "r5",
+          "prompt": "The speaker is ___ begin her final sentence.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on the point of to"
+            },
+            {
+              "id": "c",
+              "text": "likely to"
+            },
+            {
+              "id": "d",
+              "text": "about to"
+            }
+          ],
+          "explanation": "About to va seguido de un infinitivo y expresa inminencia."
+        },
+        {
+          "id": "r6",
+          "prompt": "Given her experience, the new director is ___ solve the problem quickly.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on the point of"
+            },
+            {
+              "id": "b",
+              "text": "sure to"
+            },
+            {
+              "id": "c",
+              "text": "due to"
+            }
+          ],
+          "explanation": "Sure to expresa una predicción muy segura: sure to solve."
+        },
+        {
+          "id": "r7",
+          "prompt": "The visiting team ___ to arrive at 18:40, according to the schedule.",
+          "options": [
+            {
+              "id": "b",
+              "text": "is due"
+            },
+            {
+              "id": "d",
+              "text": "is bound"
+            },
+            {
+              "id": "c",
+              "text": "is about"
+            }
+          ],
+          "explanation": "Un horario establecido se expresa con is due to arrive."
+        },
+        {
+          "id": "r8",
+          "prompt": "The new safety rules ___ reduce accidents, according to the report.",
+          "options": [
+            {
+              "id": "d",
+              "text": "are due"
+            },
+            {
+              "id": "b",
+              "text": "are on the point of"
+            },
+            {
+              "id": "a",
+              "text": "are likely to"
+            }
+          ],
+          "explanation": "Una predicción probable usa are likely to reduce."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-likelihood-imminence-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The laboratory is ___ publish its findings next month.",
+          "options": [
+            {
+              "id": "a",
+              "text": "bound"
+            },
+            {
+              "id": "d",
+              "text": "unlikely"
+            },
+            {
+              "id": "b",
+              "text": "due to"
+            }
+          ],
+          "explanation": "Un anuncio previsto en una fecha se expresa con is due to publish."
+        },
+        {
+          "id": "r2",
+          "prompt": "The old warehouse is ___ to reopen after the inspection.",
+          "options": [
+            {
+              "id": "d",
+              "text": "point"
+            },
+            {
+              "id": "a",
+              "text": "certain"
+            },
+            {
+              "id": "b",
+              "text": "unlikely"
+            }
+          ],
+          "explanation": "Un resultado poco probable se expresa con is unlikely to reopen."
+        },
+        {
+          "id": "r3",
+          "prompt": "The local team is ___ win if they maintain this lead.",
+          "options": [
+            {
+              "id": "a",
+              "text": "bound to"
+            },
+            {
+              "id": "d",
+              "text": "unlikely"
+            },
+            {
+              "id": "c",
+              "text": "on the point of"
+            }
+          ],
+          "explanation": "Bound to presenta la victoria como una consecuencia casi segura."
+        },
+        {
+          "id": "r4",
+          "prompt": "Because of the repair work, the road ___ be busy tomorrow.",
+          "options": [
+            {
+              "id": "c",
+              "text": "is likely to"
+            },
+            {
+              "id": "d",
+              "text": "is due to"
+            },
+            {
+              "id": "a",
+              "text": "is on the point to"
+            }
+          ],
+          "explanation": "La evidencia permite hacer una predicción probable: is likely to be busy."
+        },
+        {
+          "id": "r5",
+          "prompt": "The research vessel is ___ leave the harbour at dawn.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on the point of"
+            },
+            {
+              "id": "d",
+              "text": "certain"
+            },
+            {
+              "id": "c",
+              "text": "due to"
+            }
+          ],
+          "explanation": "La hora programada del barco se expresa con is due to leave."
+        },
+        {
+          "id": "r6",
+          "prompt": "The negotiations are on the point of ___ after six months of talks.",
+          "options": [
+            {
+              "id": "a",
+              "text": "collapse"
+            },
+            {
+              "id": "c",
+              "text": "collapsed"
+            },
+            {
+              "id": "d",
+              "text": "collapsing"
+            }
+          ],
+          "explanation": "On the point of exige la forma -ing: on the point of collapsing."
+        },
+        {
+          "id": "r7",
+          "prompt": "The satellite is about ___ enter the atmosphere.",
+          "options": [
+            {
+              "id": "c",
+              "text": "enter"
+            },
+            {
+              "id": "b",
+              "text": "to entering"
+            },
+            {
+              "id": "d",
+              "text": "to enter"
+            }
+          ],
+          "explanation": "About to se completa con un infinitivo: about to enter."
+        },
+        {
+          "id": "r8",
+          "prompt": "The winter crossing is unlikely ___ safe without extra equipment.",
+          "options": [
+            {
+              "id": "b",
+              "text": "be"
+            },
+            {
+              "id": "d",
+              "text": "to being"
+            },
+            {
+              "id": "c",
+              "text": "to be"
+            }
+          ],
+          "explanation": "Unlikely to be es la construcción correcta para una predicción negativa."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "due",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

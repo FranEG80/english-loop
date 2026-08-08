@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-writing-opinion-article-mini-game-001",
+  "level": "B1",
+  "category": "guided-writing",
+  "topic": "b1-writing-opinion-article",
+  "subtopic": "b1-writing-opinion-article",
+  "lessonId": "b1-writing-opinion-article",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-article-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which final sentence encourages support for a reading campaign?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Books can be heavy."
+            },
+            {
+              "id": "b",
+              "text": "The campaign uses a green logo."
+            },
+            {
+              "id": "a",
+              "text": "I hope readers will support the campaign and help more people discover books."
+            }
+          ],
+          "explanation": "The first option gives readers a clear action and purpose."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence recommends an action?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The council should repair the playground."
+            },
+            {
+              "id": "d",
+              "text": "The playground has two gates."
+            },
+            {
+              "id": "c",
+              "text": "The playground is beside the library."
+            }
+          ],
+          "explanation": "Should recommends a future action by the council."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence closes an article about school gardens?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The first garden opened in April."
+            },
+            {
+              "id": "a",
+              "text": "In short, gardens teach useful skills and improve the playground."
+            },
+            {
+              "id": "d",
+              "text": "The next article is about music."
+            }
+          ],
+          "explanation": "In short summarises the two arguments without changing topic."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence gives a concession and a response about uniforms?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Uniforms are worn at school."
+            },
+            {
+              "id": "a",
+              "text": "Some students dislike uniforms; nevertheless, they can reduce clothing pressure."
+            },
+            {
+              "id": "d",
+              "text": "Students arrived before eight."
+            }
+          ],
+          "explanation": "The first sentence acknowledges an objection and answers it."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence gives both a position and a reason about school traffic?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Traffic near schools should be restricted because journeys would be safer."
+            },
+            {
+              "id": "d",
+              "text": "The road was busy last year."
+            },
+            {
+              "id": "c",
+              "text": "Traffic is a common noun."
+            }
+          ],
+          "explanation": "The first option combines an arguable proposal with its reason."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which example shows flexibility in adult education?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Learners can choose two evening sessions instead of one long class."
+            },
+            {
+              "id": "d",
+              "text": "Some adults drink coffee."
+            },
+            {
+              "id": "c",
+              "text": "The course brochure is blue."
+            }
+          ],
+          "explanation": "The first option illustrates flexibility with a specific arrangement."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which opening suits an article about volunteering?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Volunteering can make a real difference in a community."
+            },
+            {
+              "id": "b",
+              "text": "I bought a ticket for the concert."
+            },
+            {
+              "id": "d",
+              "text": "My cousin lives abroad."
+            }
+          ],
+          "explanation": "The first option introduces the topic and a positive view."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence gives a benefit and a limitation of home working?",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is always perfect for everyone."
+            },
+            {
+              "id": "a",
+              "text": "It is convenient, although it can feel lonely."
+            },
+            {
+              "id": "d",
+              "text": "It has a name and a date."
+            }
+          ],
+          "explanation": "Although creates a balanced evaluation."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "call-to-action",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-article-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 2,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which recommendation follows an argument about playground safety?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The council should repair the playgrounds first."
+            },
+            {
+              "id": "c",
+              "text": "Playgrounds are outside."
+            },
+            {
+              "id": "d",
+              "text": "The repair took two days."
+            }
+          ],
+          "explanation": "Should repair gives the reader a practical next step."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which detail supports an article praising libraries?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The street is named Oak Road."
+            },
+            {
+              "id": "a",
+              "text": "Students can study there after school."
+            },
+            {
+              "id": "b",
+              "text": "The building has a blue door."
+            }
+          ],
+          "explanation": "The detail gives a useful benefit that supports the praise."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence concedes a weakness in online learning?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The class starts at nine."
+            },
+            {
+              "id": "b",
+              "text": "Online learning has a website."
+            },
+            {
+              "id": "a",
+              "text": "Although it requires discipline, it offers flexibility."
+            }
+          ],
+          "explanation": "Although marks the weakness before the positive point."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which connector introduces an example in an article?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Although"
+            },
+            {
+              "id": "c",
+              "text": "Finally"
+            },
+            {
+              "id": "a",
+              "text": "For example"
+            }
+          ],
+          "explanation": "For example signals a specific illustration of the previous idea."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase can introduce the final opinion?",
+          "options": [
+            {
+              "id": "a",
+              "text": "For these reasons"
+            },
+            {
+              "id": "d",
+              "text": "Under the table"
+            },
+            {
+              "id": "b",
+              "text": "At the entrance"
+            }
+          ],
+          "explanation": "For these reasons links the conclusion with arguments already given."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which phrase clearly introduces an opinion?",
+          "options": [
+            {
+              "id": "d",
+              "text": "At the station"
+            },
+            {
+              "id": "b",
+              "text": "On Monday"
+            },
+            {
+              "id": "a",
+              "text": "In my view"
+            }
+          ],
+          "explanation": "In my view tells the reader that the sentence expresses a personal position."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which title best supports more public parks?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Three Recipes for Soup"
+            },
+            {
+              "id": "a",
+              "text": "Why Our Town Needs More Parks"
+            },
+            {
+              "id": "b",
+              "text": "A Visit to the Dentist"
+            }
+          ],
+          "explanation": "The first title states a clear argument connected to public parks."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which result follows from more public transport?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The air could become cleaner."
+            },
+            {
+              "id": "d",
+              "text": "The timetable would lose its words."
+            },
+            {
+              "id": "b",
+              "text": "The buses would become invisible."
+            }
+          ],
+          "explanation": "Cleaner air is a plausible consequence that can support the claim."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "recommendations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

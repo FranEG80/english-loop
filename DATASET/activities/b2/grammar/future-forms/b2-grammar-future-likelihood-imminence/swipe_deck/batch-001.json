@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-future-likelihood-imminence-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "future-forms",
+  "subtopic": "future-likelihood-imminence",
+  "lessonId": "b2-grammar-future-likelihood-imminence",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-likelihood-imminence-sd-032",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The committee is bound that approve the proposal.",
+          "explanation": "Bound se construye con to + infinitive: bound to approve."
+        },
+        {
+          "id": "c2",
+          "statement": "The guests are about to have dinner in the courtyard.",
+          "explanation": "About to have es una combinación válida para una acción inminente."
+        },
+        {
+          "id": "c3",
+          "statement": "The ferry is due for leaving at six o'clock.",
+          "explanation": "Para un horario usamos is due to leave, no due for leaving."
+        },
+        {
+          "id": "c4",
+          "statement": "The software is about to installing the security patch.",
+          "explanation": "About to necesita el infinitivo install, no la forma en -ing."
+        },
+        {
+          "id": "c5",
+          "statement": "The ambassador is due to depart after the signing ceremony.",
+          "explanation": "Due to depart presenta una salida prevista después de un evento."
+        },
+        {
+          "id": "c6",
+          "statement": "The train is due arriving at platform two.",
+          "explanation": "En esta estructura usamos due to arrive, no due arriving."
+        },
+        {
+          "id": "c7",
+          "statement": "The revised figures are bound to changes investors' expectations.",
+          "explanation": "Después de bound to usamos la forma base change, no changes."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "certainty",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-likelihood-imminence-sd-095",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "It is unlikely that the storm will weaken before midnight.",
+          "explanation": "Unlikely that introduce correctamente una predicción negativa."
+        },
+        {
+          "id": "c2",
+          "statement": "The guest is on the point of leaving the reception.",
+          "explanation": "On the point of se construye con un verbo en -ing."
+        },
+        {
+          "id": "c3",
+          "statement": "The repairs are likely to take longer than expected.",
+          "explanation": "Likely to lleva la forma base take."
+        },
+        {
+          "id": "c4",
+          "statement": "The new route is likely to be faster during the evening.",
+          "explanation": "Likely to be usa infinitivo después de likely to."
+        },
+        {
+          "id": "c5",
+          "statement": "The lift is about to stop at the next floor.",
+          "explanation": "About to va seguido de un infinitivo y expresa inminencia."
+        },
+        {
+          "id": "c6",
+          "statement": "The new treatment is certain to improve the patient's mobility.",
+          "explanation": "Certain to improve es una predicción muy segura."
+        },
+        {
+          "id": "c7",
+          "statement": "The temperature is unlikely to drops below zero tonight.",
+          "explanation": "Después de unlikely to usamos la forma base drop, no drops."
+        },
+        {
+          "id": "c8",
+          "statement": "The director is on the point to announce the changes.",
+          "explanation": "La construcción correcta es on the point of announcing."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-likelihood-imminence-sd-158",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "It is likely that the new route will reduce congestion.",
+          "explanation": "La estructura likely that + oración es correcta."
+        },
+        {
+          "id": "c2",
+          "statement": "The chairperson is on the point of to close the meeting.",
+          "explanation": "On the point of debe ir seguido de closing, no de to close."
+        },
+        {
+          "id": "c3",
+          "statement": "The experienced climber is sure to notice the change in weather.",
+          "explanation": "Sure to notice expresa una predicción muy segura."
+        },
+        {
+          "id": "c4",
+          "statement": "The doors are about to close, so please step inside.",
+          "explanation": "About to close indica que el cierre es inminente."
+        },
+        {
+          "id": "c5",
+          "statement": "The company is on the point of signing the agreement.",
+          "explanation": "On the point of signing es la forma correcta para una acción inminente."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "likelihood",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-reading-notices-functional-texts-mini-game-001",
+  "level": "B1",
+  "category": "reading",
+  "topic": "b1-reading-notices-functional-texts",
+  "subtopic": "b1-reading-notices-functional-texts",
+  "lessonId": "b1-reading-notices-functional-texts",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What has changed?",
+          "context": "THE 18:20 TRAIN WILL DEPART FROM PLATFORM 6 INSTEAD OF PLATFORM 2.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The train destination"
+            },
+            {
+              "id": "a",
+              "text": "The departure platform"
+            },
+            {
+              "id": "c",
+              "text": "The ticket price"
+            }
+          ],
+          "explanation": "Instead of señala el cambio de plataforma."
+        },
+        {
+          "id": "r2",
+          "prompt": "Notice: Lost property will be kept for one month. How long is it kept?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One month"
+            },
+            {
+              "id": "d",
+              "text": "Until lunchtime"
+            },
+            {
+              "id": "b",
+              "text": "One day"
+            }
+          ],
+          "explanation": "For one month indica la duración."
+        },
+        {
+          "id": "r3",
+          "prompt": "Notice: The footbridge is closed while safety checks are carried out. Why is it closed?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Because the river is dry"
+            },
+            {
+              "id": "a",
+              "text": "For safety checks"
+            },
+            {
+              "id": "b",
+              "text": "For a sports event"
+            }
+          ],
+          "explanation": "While safety checks are carried out explica una acción temporal."
+        },
+        {
+          "id": "r4",
+          "prompt": "Notice: Lost property must be handed in at reception within 24 hours. What is the deadline?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Within 24 hours"
+            },
+            {
+              "id": "b",
+              "text": "After one month"
+            },
+            {
+              "id": "c",
+              "text": "Before finding it"
+            }
+          ],
+          "explanation": "Within 24 hours establece el plazo máximo."
+        },
+        {
+          "id": "r5",
+          "prompt": "Notice: The museum closes early on Sundays. When does this change apply?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Only in August"
+            },
+            {
+              "id": "b",
+              "text": "Every weekday"
+            },
+            {
+              "id": "a",
+              "text": "On Sundays"
+            }
+          ],
+          "explanation": "On Sundays identifica el día afectado."
+        },
+        {
+          "id": "r6",
+          "prompt": "Who should receive reports of leaks?",
+          "context": "RESIDENTS: PLEASE REPORT ANY WATER LEAKS TO THE BUILDING MANAGER IMMEDIATELY.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The building manager"
+            },
+            {
+              "id": "d",
+              "text": "The local shop"
+            },
+            {
+              "id": "c",
+              "text": "The water company only"
+            }
+          ],
+          "explanation": "El destinatario de los informes aparece explícitamente."
+        },
+        {
+          "id": "r7",
+          "prompt": "Notice: Please leave umbrellas by the door. Where should umbrellas go?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Outside the town"
+            },
+            {
+              "id": "c",
+              "text": "In the lift"
+            },
+            {
+              "id": "a",
+              "text": "By the door"
+            }
+          ],
+          "explanation": "By the door indica ubicación junto a la puerta."
+        },
+        {
+          "id": "r8",
+          "prompt": "What can members do online?",
+          "context": "MEMBERS MAY BORROW THREE BOOKS FOR UP TO FOUR WEEKS. RENEWALS ARE POSSIBLE ONLINE.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Join the library"
+            },
+            {
+              "id": "d",
+              "text": "Change the opening hours"
+            },
+            {
+              "id": "a",
+              "text": "Renew loans"
+            }
+          ],
+          "explanation": "Renewals are possible online significa que se pueden prolongar los préstamos."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "How should visitors reach the next floor?",
+          "context": "LIFT OUT OF ORDER. Please use the stairs.",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the stairs"
+            },
+            {
+              "id": "c",
+              "text": "By bus"
+            },
+            {
+              "id": "b",
+              "text": "By the lift"
+            }
+          ],
+          "explanation": "El ascensor no funciona y el aviso recomienda usar las escaleras."
+        },
+        {
+          "id": "r2",
+          "prompt": "When may an advance-paying customer change a booking?",
+          "context": "CUSTOMERS WHO HAVE PAID IN ADVANCE MAY CHANGE THEIR BOOKING ONCE, PROVIDED THAT SPACE IS AVAILABLE.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Once, if space is available"
+            },
+            {
+              "id": "c",
+              "text": "Only without paying in advance"
+            },
+            {
+              "id": "b",
+              "text": "As often as they like"
+            }
+          ],
+          "explanation": "Once limita la frecuencia y provided that añade una condición."
+        },
+        {
+          "id": "r3",
+          "prompt": "Notice: Members may reserve a study room provided that they cancel unused bookings. What condition applies?",
+          "options": [
+            {
+              "id": "b",
+              "text": "They must reserve every room"
+            },
+            {
+              "id": "a",
+              "text": "They should cancel bookings they do not use"
+            },
+            {
+              "id": "c",
+              "text": "They may never cancel"
+            }
+          ],
+          "explanation": "Provided that introduce la condición para reservar."
+        },
+        {
+          "id": "r4",
+          "prompt": "Notice: Staff entrance only. Who may use this entrance?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Delivery customers only"
+            },
+            {
+              "id": "b",
+              "text": "All visitors"
+            },
+            {
+              "id": "a",
+              "text": "Staff"
+            }
+          ],
+          "explanation": "Staff entrance only limita el uso al personal."
+        },
+        {
+          "id": "r5",
+          "prompt": "Who may go directly to the desk?",
+          "context": "PLEASE QUEUE ON THE RIGHT. CUSTOMERS WITH APPOINTMENTS MAY GO TO THE DESK.",
+          "options": [
+            {
+              "id": "c",
+              "text": "People on the left"
+            },
+            {
+              "id": "a",
+              "text": "Customers with appointments"
+            },
+            {
+              "id": "d",
+              "text": "Only staff"
+            }
+          ],
+          "explanation": "El aviso hace una excepción para clientes con cita."
+        },
+        {
+          "id": "r6",
+          "prompt": "Notice: Please report damaged books before borrowing them. What should a reader do?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Return all books immediately"
+            },
+            {
+              "id": "a",
+              "text": "Tell staff about damage first"
+            },
+            {
+              "id": "b",
+              "text": "Repair every book at home"
+            }
+          ],
+          "explanation": "Before borrowing them fija la acción previa."
+        },
+        {
+          "id": "r7",
+          "prompt": "When can people buy the tickets online?",
+          "context": "TICKETS AVAILABLE ONLINE FROM MONDAY.",
+          "options": [
+            {
+              "id": "a",
+              "text": "From Monday"
+            },
+            {
+              "id": "d",
+              "text": "Every Sunday only"
+            },
+            {
+              "id": "c",
+              "text": "After the event"
+            }
+          ],
+          "explanation": "From Monday significa a partir del lunes."
+        },
+        {
+          "id": "r8",
+          "prompt": "Notice: Paper applications will not be accepted; please submit the form by email. How should applicants apply?",
+          "options": [
+            {
+              "id": "d",
+              "text": "By visiting without a form"
+            },
+            {
+              "id": "a",
+              "text": "By email"
+            },
+            {
+              "id": "c",
+              "text": "By post only"
+            }
+          ],
+          "explanation": "El aviso excluye las solicitudes en papel y pide email."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

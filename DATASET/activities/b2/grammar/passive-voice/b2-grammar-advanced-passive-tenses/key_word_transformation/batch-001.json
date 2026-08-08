@@ -1,0 +1,1241 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-passive-tenses-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "advanced-passive-tenses",
+  "lessonId": "b2-grammar-advanced-passive-tenses",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Engineers are inspecting the bridge this week.",
+      "firstSentence": "Engineers are inspecting the bridge this week.",
+      "keyWord": "BEING",
+      "gapText": "The bridge [gap1] by engineers this week.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is being inspected"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El presente continuo pasivo se forma con «is being» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Someone has stolen my bicycle from the garage.",
+      "firstSentence": "Someone has stolen my bicycle from the garage.",
+      "keyWord": "BEEN",
+      "gapText": "My bicycle [gap1] from the garage.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "has been stolen"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Un sujeto indefinido como «someone» desaparece y queda «has been» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The courier will have delivered every parcel before noon.",
+      "firstSentence": "The courier will have delivered every parcel before noon.",
+      "keyWord": "HAVE",
+      "gapText": "Every parcel [gap1] before noon.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will have been delivered"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El future perfect pasivo encadena «will have been» y el participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Somebody must water these plants every morning.",
+      "firstSentence": "Somebody must water these plants every morning.",
+      "keyWord": "WATERED",
+      "gapText": "These plants [gap1] every morning.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "must be watered",
+              "have to be watered"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras un modal, la pasiva se construye con «be» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Workers were painting the classroom when we arrived.",
+      "firstSentence": "Workers were painting the classroom when we arrived.",
+      "keyWord": "BEING",
+      "gapText": "The classroom [gap1] when we arrived.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was being painted"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El pasado continuo pasivo usa «was being» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Nobody had told the passengers about the delay.",
+      "firstSentence": "Nobody had told the passengers about the delay.",
+      "keyWord": "BEEN",
+      "gapText": "The passengers [gap1] about the delay.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had not been told"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto negativo «nobody» obliga a una pasiva negativa con «had not been»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "They signed the treaty and then sent it to the archive.",
+      "firstSentence": "They signed the treaty and then sent it to the archive.",
+      "keyWord": "HAVING",
+      "gapText": "[gap1] signed, the treaty was sent to the archive.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Having been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La cláusula reducida «having been» expresa una acción pasiva anterior a la principal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "A local firm is designing the new stadium.",
+      "firstSentence": "A local firm is designing the new stadium.",
+      "keyWord": "DESIGNED",
+      "gapText": "The new stadium [gap1] by a local firm.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is being designed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La acción en curso se traslada al pasivo con «is being» delante del participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The council has approved our building plans at last.",
+      "firstSentence": "The council has approved our building plans at last.",
+      "keyWord": "BEEN",
+      "gapText": "Our building plans [gap1] at last.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have been approved"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El sujeto plural exige «have been» en el present perfect pasivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The mechanics will have serviced the ambulance by Tuesday.",
+      "firstSentence": "The mechanics will have serviced the ambulance by Tuesday.",
+      "keyWord": "SERVICED",
+      "gapText": "The ambulance [gap1] by Tuesday.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will have been serviced"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El plazo «by Tuesday» pide future perfect, y la pasiva añade «been» antes del participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You ought to store medicine in a cool place.",
+      "firstSentence": "You ought to store medicine in a cool place.",
+      "keyWord": "SHOULD",
+      "gapText": "Medicine [gap1] in a cool place.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "should be stored"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Ought to» equivale a «should» y el consejo impersonal se expresa en pasiva."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Volunteers were cleaning the beach all last weekend.",
+      "firstSentence": "Volunteers were cleaning the beach all last weekend.",
+      "keyWord": "BEING",
+      "gapText": "The beach [gap1] all last weekend.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "was being cleaned"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Una acción en desarrollo en el pasado se pasiviza con «was being»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Someone had already booked the meeting room before I phoned.",
+      "firstSentence": "Someone had already booked the meeting room before I phoned.",
+      "keyWord": "BEEN",
+      "gapText": "The meeting room [gap1] before I phoned.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had already been booked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Already» se coloca entre el auxiliar y «been» en el past perfect pasivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Critics have praised her novel in every newspaper.",
+      "firstSentence": "Critics have praised her novel in every newspaper.",
+      "keyWord": "BEEN",
+      "gapText": "Her novel [gap1] in every newspaper.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "has been praised"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El agente se omite cuando no aporta información y el verbo pasa a «has been praised»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The company is going to close the northern factory.",
+      "firstSentence": "The company is going to close the northern factory.",
+      "keyWord": "CLOSED",
+      "gapText": "The northern factory [gap1] by the company.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is going to be closed",
+              "will be closed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Be going to» forma su pasiva con «to be» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Nobody is using the old projector this term.",
+      "firstSentence": "Nobody is using the old projector this term.",
+      "keyWord": "BEING",
+      "gapText": "The old projector [gap1] this term.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is not being used"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Nobody» da lugar a una pasiva continua negativa escrita sin contracción."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 2,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "They will announce the winners at the ceremony.",
+      "firstSentence": "They will announce the winners at the ceremony.",
+      "keyWord": "ANNOUNCED",
+      "gapText": "The winners [gap1] at the ceremony.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will be announced"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El futuro pasivo simple es «will be» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Someone has fed the horses in the top field.",
+      "firstSentence": "Someone has fed the horses in the top field.",
+      "keyWord": "BEEN",
+      "gapText": "The horses [gap1] in the top field.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have been fed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El auxiliar concuerda con el nuevo sujeto, «the horses», y no con el agente perdido."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The technicians had not installed the software before the audit.",
+      "firstSentence": "The technicians had not installed the software before the audit.",
+      "keyWord": "BEEN",
+      "gapText": "The software [gap1] before the audit.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had not been installed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "En el past perfect pasivo negativo se escribe «had not been» sin contraer."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "It is possible to solve this puzzle in three moves.",
+      "firstSentence": "It is possible to solve this puzzle in three moves.",
+      "keyWord": "CAN",
+      "gapText": "This puzzle [gap1] in three moves.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "can be solved"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La posibilidad impersonal se reformula con «can be» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "By June the builders will have finished the swimming pool.",
+      "firstSentence": "By June the builders will have finished the swimming pool.",
+      "keyWord": "BEEN",
+      "gapText": "By June the swimming pool [gap1].",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "will have been finished",
+              "will have been completed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«By June» sitúa el final antes de un momento futuro, de ahí el future perfect pasivo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "A specialist is tuning the church organ at present.",
+      "firstSentence": "A specialist is tuning the church organ at present.",
+      "keyWord": "TUNED",
+      "gapText": "The church organ [gap1] at present.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "is being tuned"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El complemento «at present» confirma que hace falta la pasiva continua."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "They had shut the gates before the crowd arrived.",
+      "firstSentence": "They had shut the gates before the crowd arrived.",
+      "keyWord": "BEEN",
+      "gapText": "The gates [gap1] before the crowd arrived.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had been shut",
+              "had been closed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La acción anterior a otra pasada se expresa con «had been» más participio."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "After it had been washed, the jumper looked completely new.",
+      "firstSentence": "After it had been washed, the jumper looked completely new.",
+      "keyWord": "HAVING",
+      "gapText": "[gap1] washed, the jumper looked completely new.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Having been"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Having been» condensa en participio una pasiva previa a la oración principal."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The examiners have not marked the essays yet.",
+      "firstSentence": "The examiners have not marked the essays yet.",
+      "keyWord": "BEEN",
+      "gapText": "The essays [gap1] yet.",
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "passive"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "have not been marked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Con «yet» la pasiva de present perfect va en negativo y sin contracción."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-work-jobs-mini-game-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-work-jobs",
+  "subtopic": "b1-work-jobs",
+  "lessonId": "b1-vocabulary-work-jobs",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-work-jobs-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-work-jobs",
+      "subtopic": "b1-work-jobs",
+      "taxonomyNodeIds": [
+        "b1-work-jobs"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The person who hires you is your ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "employee"
+            },
+            {
+              "id": "d",
+              "text": "customer"
+            },
+            {
+              "id": "a",
+              "text": "employer"
+            }
+          ],
+          "explanation": "Employer es quien contrata."
+        },
+        {
+          "id": "r2",
+          "prompt": "A person who works beside you is a ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "customer"
+            },
+            {
+              "id": "c",
+              "text": "employer"
+            },
+            {
+              "id": "a",
+              "text": "colleague"
+            }
+          ],
+          "explanation": "Colleague es compañero de trabajo."
+        },
+        {
+          "id": "r3",
+          "prompt": "A person who works for a company is an ___.",
+          "options": [
+            {
+              "id": "d",
+              "text": "interview"
+            },
+            {
+              "id": "b",
+              "text": "employer"
+            },
+            {
+              "id": "a",
+              "text": "employee"
+            }
+          ],
+          "explanation": "Employee es la persona contratada."
+        },
+        {
+          "id": "r4",
+          "prompt": "You send a CV when you want to apply for a ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "job"
+            },
+            {
+              "id": "b",
+              "text": "salary"
+            },
+            {
+              "id": "d",
+              "text": "colleague"
+            }
+          ],
+          "explanation": "Apply for a job es solicitar un puesto."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which word describes a professional path over many years?",
+          "options": [
+            {
+              "id": "d",
+              "text": "fee"
+            },
+            {
+              "id": "c",
+              "text": "shift"
+            },
+            {
+              "id": "a",
+              "text": "career"
+            }
+          ],
+          "explanation": "Career es la trayectoria profesional."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which person receives a service from a shop or company?",
+          "options": [
+            {
+              "id": "d",
+              "text": "manager"
+            },
+            {
+              "id": "a",
+              "text": "customer"
+            },
+            {
+              "id": "b",
+              "text": "employee"
+            }
+          ],
+          "explanation": "Customer es el cliente que compra o recibe un servicio."
+        },
+        {
+          "id": "r7",
+          "prompt": "A job lasting only three months is usually ___.",
+          "options": [
+            {
+              "id": "a",
+              "text": "temporary"
+            },
+            {
+              "id": "b",
+              "text": "permanent"
+            },
+            {
+              "id": "c",
+              "text": "flexible"
+            }
+          ],
+          "explanation": "Temporary significa que dura un periodo limitado."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which pair shows the opposite roles in a contract?",
+          "options": [
+            {
+              "id": "a",
+              "text": "employer / employee"
+            },
+            {
+              "id": "b",
+              "text": "colleague / customer"
+            },
+            {
+              "id": "c",
+              "text": "salary / wage"
+            }
+          ],
+          "explanation": "Employer contrata y employee trabaja para quien contrata."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-work-jobs"
+      ],
+      "tags": [
+        "b1",
+        "work-jobs",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-work-jobs-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-work-jobs",
+      "subtopic": "b1-work-jobs",
+      "taxonomyNodeIds": [
+        "b1-work-jobs"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "She found a ___ at a local bookshop.",
+          "options": [
+            {
+              "id": "c",
+              "text": "career"
+            },
+            {
+              "id": "a",
+              "text": "job"
+            },
+            {
+              "id": "d",
+              "text": "wage"
+            }
+          ],
+          "explanation": "A job es un puesto concreto."
+        },
+        {
+          "id": "r2",
+          "prompt": "The company asked applicants to attend an ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "employee"
+            },
+            {
+              "id": "a",
+              "text": "interview"
+            },
+            {
+              "id": "b",
+              "text": "overtime"
+            }
+          ],
+          "explanation": "An interview es una entrevista de trabajo."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence correctly describes responsibility?",
+          "options": [
+            {
+              "id": "c",
+              "text": "She is responsible at training new staff."
+            },
+            {
+              "id": "b",
+              "text": "She is responsible to training new staff."
+            },
+            {
+              "id": "a",
+              "text": "She is responsible for training new staff."
+            }
+          ],
+          "explanation": "Responsible for va seguido de sustantivo o gerundio."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence uses apply correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "I applied to a salary online."
+            },
+            {
+              "id": "d",
+              "text": "I applied a CV for a job."
+            },
+            {
+              "id": "a",
+              "text": "I applied for a job online."
+            }
+          ],
+          "explanation": "La colocación es apply for a job."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which option means payment calculated by the hour?",
+          "options": [
+            {
+              "id": "c",
+              "text": "temporary fee"
+            },
+            {
+              "id": "a",
+              "text": "hourly wage"
+            },
+            {
+              "id": "d",
+              "text": "flexible salary"
+            }
+          ],
+          "explanation": "An hourly wage es un pago calculado por cada hora."
+        },
+        {
+          "id": "r6",
+          "prompt": "If you work extra hours, you do ___.",
+          "options": [
+            {
+              "id": "b",
+              "text": "feedback"
+            },
+            {
+              "id": "a",
+              "text": "overtime"
+            },
+            {
+              "id": "c",
+              "text": "training"
+            }
+          ],
+          "explanation": "Overtime es trabajo realizado fuera del horario normal."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence uses work as an uncountable activity?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I have too much work today."
+            },
+            {
+              "id": "c",
+              "text": "I have a work today."
+            },
+            {
+              "id": "b",
+              "text": "I have two works today."
+            }
+          ],
+          "explanation": "Work como actividad no suele llevar artículo ni plural."
+        },
+        {
+          "id": "r8",
+          "prompt": "The amount paid for each hour of work is an hourly ___.",
+          "options": [
+            {
+              "id": "c",
+              "text": "application"
+            },
+            {
+              "id": "a",
+              "text": "wage"
+            },
+            {
+              "id": "b",
+              "text": "career"
+            }
+          ],
+          "explanation": "Wage puede referirse al pago por hora."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-work-jobs"
+      ],
+      "tags": [
+        "b1",
+        "work-jobs",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-reporting-passives-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "passive-voice",
+  "subtopic": "reporting-passives",
+  "lessonId": "b2-grammar-reporting-passives",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-sd-042",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The castle is said that it is haunted by local residents.",
+          "explanation": "Después de un sujeto usamos is said to be, no is said that."
+        },
+        {
+          "id": "c2",
+          "statement": "The figures are not thought to include temporary workers.",
+          "explanation": "El sujeto figures realiza lógicamente include, por eso el infinitivo es activo."
+        },
+        {
+          "id": "c3",
+          "statement": "The actor is believed to be living in New Zealand now.",
+          "explanation": "To be living presenta una situación actual o en curso."
+        },
+        {
+          "id": "c4",
+          "statement": "It is reported the ferry is delayed by fog.",
+          "explanation": "En este registro la estructura impersonal debe incluir that: It is reported that the ferry is delayed."
+        },
+        {
+          "id": "c5",
+          "statement": "The committee is reported to be considering a revised timetable.",
+          "explanation": "To be considering presenta deliberación en curso."
+        },
+        {
+          "id": "c6",
+          "statement": "It was reported that the road had been closed after the landslide.",
+          "explanation": "Was reported that y had been closed expresan informe pasado y acción pasiva anterior."
+        },
+        {
+          "id": "c7",
+          "statement": "The museum is expected opening a new wing in June.",
+          "explanation": "Después de expected necesitamos to: is expected to be opening o is expected to open."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "common-error",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-sd-105",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The stadium is reported to be being renovated during the summer.",
+          "explanation": "To be being renovated conserva la pasiva continua; es una forma avanzada pero válida."
+        },
+        {
+          "id": "c2",
+          "statement": "The research team is believed to have identified a new reef species.",
+          "explanation": "To have identified marca una identificación anterior al informe."
+        },
+        {
+          "id": "c3",
+          "statement": "The village is expected to be reopen after the repairs.",
+          "explanation": "El participio de reopen es reopened: to be reopened."
+        },
+        {
+          "id": "c4",
+          "statement": "The old coins are thought to have discovered near the harbour.",
+          "explanation": "Las monedas reciben el descubrimiento: to have been discovered."
+        },
+        {
+          "id": "c5",
+          "statement": "It is believed that the comet to be visible tonight.",
+          "explanation": "Después de that hace falta una oración conjugada: the comet will be visible o is visible."
+        },
+        {
+          "id": "c6",
+          "statement": "The castle is said to be haunted by local residents.",
+          "explanation": "El patrón personal es subject + is said + to-infinitive."
+        },
+        {
+          "id": "c7",
+          "statement": "The archive is believed to have been hide behind the bookcase.",
+          "explanation": "El participio correcto es hidden: to have been hidden."
+        },
+        {
+          "id": "c8",
+          "statement": "The portrait is thought to be painted by an unknown artist in 1890.",
+          "explanation": "Una acción terminada en 1890 necesita to have been painted."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "continuous-passive",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          },
+          {
+            "cardId": "c8",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-sd-168",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "The clinic is expected to open before the end of the year.",
+          "explanation": "Open funciona como verbo intransitivo y expresa la apertura prevista."
+        },
+        {
+          "id": "c2",
+          "statement": "The manuscript is believed to have been copied by two scribes.",
+          "explanation": "To have been copied marca una copia anterior y sufrida por el manuscrito."
+        },
+        {
+          "id": "c3",
+          "statement": "The station is reported to have reopened after the safety inspection.",
+          "explanation": "Reopen es intransitivo y to have reopened marca la apertura anterior."
+        },
+        {
+          "id": "c4",
+          "statement": "It is believed that the spring has healing properties.",
+          "explanation": "It is believed that introduce correctamente una afirmación completa."
+        },
+        {
+          "id": "c5",
+          "statement": "The island is believed that it has no airport.",
+          "explanation": "La forma personal correcta es The island is believed to have no airport."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "expectation",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

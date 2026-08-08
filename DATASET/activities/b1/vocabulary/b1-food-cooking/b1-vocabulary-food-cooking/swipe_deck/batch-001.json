@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-vocabulary-food-cooking-swipe-deck-001",
+  "level": "B1",
+  "category": "vocabulary",
+  "topic": "b1-food-cooking",
+  "subtopic": "b1-food-cooking",
+  "lessonId": "b1-vocabulary-food-cooking",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-food-cooking-sd-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-food-cooking",
+      "subtopic": "b1-food-cooking",
+      "taxonomyNodeIds": [
+        "b1-food-cooking"
+      ],
+      "difficulty": 2,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 5 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Pour means move a solid food into a bowl with a knife.",
+          "explanation": "Pour is used when a liquid flows from one container to another."
+        },
+        {
+          "id": "c2",
+          "statement": "Raw vegetables have been cooked until soft.",
+          "explanation": "Raw means not cooked."
+        },
+        {
+          "id": "c3",
+          "statement": "Slice means cut food into thin pieces.",
+          "explanation": "Slice is used for thin, flat pieces."
+        },
+        {
+          "id": "c4",
+          "statement": "Taste and texture are two different ways to describe food.",
+          "explanation": "Taste concerns flavour; texture concerns how food feels when eaten."
+        },
+        {
+          "id": "c5",
+          "statement": "On the side asks for sauce or dressing separately.",
+          "explanation": "On the side means separate from the main dish."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-food-cooking"
+      ],
+      "tags": [
+        "b1",
+        "preparation",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-food-cooking-sd-083",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-food-cooking",
+      "subtopic": "b1-food-cooking",
+      "taxonomyNodeIds": [
+        "b1-food-cooking"
+      ],
+      "difficulty": 5,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Roast and boil always describe exactly the same cooking method.",
+          "explanation": "Roast uses oven heat, while boil uses bubbling water."
+        },
+        {
+          "id": "c2",
+          "statement": "The instruction Pour the flour into the bowl is possible because flour can flow from a container.",
+          "explanation": "Pour can describe transferring a dry ingredient that flows, as well as liquids."
+        },
+        {
+          "id": "c3",
+          "statement": "A serving of rice is a natural way to give a quantity of rice.",
+          "explanation": "Serving or portion provides a countable quantity for rice."
+        },
+        {
+          "id": "c4",
+          "statement": "Sour and sweet describe exactly the same taste.",
+          "explanation": "Sour is sharp or acidic, while sweet is sugary."
+        },
+        {
+          "id": "c5",
+          "statement": "Chop means cut food into small pieces.",
+          "explanation": "Chop is used for cutting food into smaller pieces."
+        },
+        {
+          "id": "c6",
+          "statement": "Without cheese asks for cheese to be excluded.",
+          "explanation": "Without introduces something that should not be included."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-food-cooking"
+      ],
+      "tags": [
+        "b1",
+        "cooking",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-food-cooking-sd-146",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "vocabulary",
+      "topic": "b1-food-cooking",
+      "subtopic": "b1-food-cooking",
+      "taxonomyNodeIds": [
+        "b1-food-cooking"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "A bland dish has a very strong, exciting flavour.",
+          "explanation": "Bland means lacking strong or interesting flavour."
+        },
+        {
+          "id": "c2",
+          "statement": "Tender describes meat that is easy to cut or chew.",
+          "explanation": "Tender meat is soft and easy to eat."
+        },
+        {
+          "id": "c3",
+          "statement": "The sentence I am allergic to nuts is grammatically correct.",
+          "explanation": "Allergic is followed by the preposition to."
+        },
+        {
+          "id": "c4",
+          "statement": "A stale biscuit is usually very fresh.",
+          "explanation": "Stale means no longer fresh."
+        },
+        {
+          "id": "c5",
+          "statement": "Sweet describes the taste of honey.",
+          "explanation": "Honey has a sweet taste."
+        },
+        {
+          "id": "c6",
+          "statement": "Creamy describes a smooth, rich texture.",
+          "explanation": "Creamy refers to a smooth and rich texture."
+        },
+        {
+          "id": "c7",
+          "statement": "The phrase allergic with nuts is the standard English expression.",
+          "explanation": "Say allergic to nuts, not allergic with nuts."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-food-cooking"
+      ],
+      "tags": [
+        "b1",
+        "taste",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": false
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": true
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

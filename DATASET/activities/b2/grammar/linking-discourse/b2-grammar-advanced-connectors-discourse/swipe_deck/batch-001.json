@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-advanced-connectors-discourse-swipe-deck-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "linking-discourse",
+  "subtopic": "advanced-connectors-discourse-markers",
+  "lessonId": "b2-grammar-advanced-connectors-discourse",
+  "activityType": "swipe_deck",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-connectors-discourse-sd-037",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 6 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Moreover adds information that supports or extends the previous point.",
+          "explanation": "Moreover is an additive discourse marker."
+        },
+        {
+          "id": "c2",
+          "statement": "In “Although the forecast was uncertain, the team acted”, although introduces a concession.",
+          "explanation": "The action happened despite uncertainty."
+        },
+        {
+          "id": "c3",
+          "statement": "In a formal report, a chain of several connectors in every sentence always improves clarity.",
+          "explanation": "Too many markers can make a text heavy and obscure the logic."
+        },
+        {
+          "id": "c4",
+          "statement": "The comma in “The plan is costly, however it is realistic” is the clearest formal punctuation.",
+          "explanation": "Use a full stop or semicolon before however."
+        },
+        {
+          "id": "c5",
+          "statement": "Nevertheless presents a contrast with a previous idea.",
+          "explanation": "It signals an unexpected continuation."
+        },
+        {
+          "id": "c6",
+          "statement": "In other words introduces a new unrelated topic.",
+          "explanation": "It reformulates or clarifies the previous idea."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "moreover",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 72,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": false
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-connectors-discourse-sd-100",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 3,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 7 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Although introduces a full clause.",
+          "explanation": "Although is followed by a subject and verb."
+        },
+        {
+          "id": "c2",
+          "statement": "Despite arriving late is grammatical because arriving late functions as a gerund phrase.",
+          "explanation": "Despite can introduce a gerund phrase."
+        },
+        {
+          "id": "c3",
+          "statement": "Nevertheless and nonetheless normally introduce a consequence rather than a contrast.",
+          "explanation": "They introduce a contrast or concession."
+        },
+        {
+          "id": "c4",
+          "statement": "Otherwise introduces an additional advantage of the previous action.",
+          "explanation": "Otherwise introduces the result if the action is not taken."
+        },
+        {
+          "id": "c5",
+          "statement": "In addition is used to present a contrast.",
+          "explanation": "In addition adds another point."
+        },
+        {
+          "id": "c6",
+          "statement": "Provided that expresses a sufficient condition.",
+          "explanation": "It sets the condition under which something is allowed."
+        },
+        {
+          "id": "c7",
+          "statement": "Whereas can contrast two parallel clauses.",
+          "explanation": "Whereas compares two situations."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "although",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 84,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": true
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": false
+          },
+          {
+            "cardId": "c5",
+            "correct": false
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-connectors-discourse-sd-163",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "swipe_deck",
+      "skillFocus": "swipe_deck",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Desliza a la derecha si la frase es correcta y a la izquierda si no lo es.",
+      "prompt": "Mazo de 8 afirmaciones para repasar el tema.",
+      "cards": [
+        {
+          "id": "c1",
+          "statement": "Provided that can be followed by a clause with a subject and verb.",
+          "explanation": "Provided that the names are removed is a full clause."
+        },
+        {
+          "id": "c2",
+          "statement": "Consequently introduces a cause rather than a result.",
+          "explanation": "Consequently introduces a result."
+        },
+        {
+          "id": "c3",
+          "statement": "Despite is normally followed directly by a finite clause.",
+          "explanation": "Despite normally takes a noun phrase or gerund."
+        },
+        {
+          "id": "c4",
+          "statement": "Otherwise can mean “if the preceding action is not taken”.",
+          "explanation": "Save a copy; otherwise means if you do not save one."
+        },
+        {
+          "id": "c5",
+          "statement": "On the other hand can contrast two options without necessarily expressing cause and effect.",
+          "explanation": "It presents an alternative perspective."
+        },
+        {
+          "id": "c6",
+          "statement": "A connector should be selected from the intended logical relation, not only from its level of formality.",
+          "explanation": "A formal connector with the wrong relation makes the argument unclear."
+        },
+        {
+          "id": "c7",
+          "statement": "In spite of the delay is followed by a noun phrase.",
+          "explanation": "The delay is a noun phrase."
+        },
+        {
+          "id": "c8",
+          "statement": "Although the delay is structurally equivalent to despite the delay.",
+          "explanation": "Both express concession, but their following structures differ."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "condition",
+        "swipe-deck"
+      ],
+      "estimatedSeconds": 96,
+      "evaluator": {
+        "strategy": "deck_booleans",
+        "cards": [
+          {
+            "cardId": "c1",
+            "correct": true
+          },
+          {
+            "cardId": "c2",
+            "correct": false
+          },
+          {
+            "cardId": "c3",
+            "correct": false
+          },
+          {
+            "cardId": "c4",
+            "correct": true
+          },
+          {
+            "cardId": "c5",
+            "correct": true
+          },
+          {
+            "cardId": "c6",
+            "correct": true
+          },
+          {
+            "cardId": "c7",
+            "correct": true
+          },
+          {
+            "cardId": "c8",
+            "correct": true
+          }
+        ]
+      },
+      "explanation": "Cada carta repasa una regla del tema; revisa las falladas al terminar el mazo."
+    }
+  ]
+}

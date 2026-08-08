@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-phrasal-verbs-change-progress-mini-game-001",
+  "level": "B2",
+  "category": "phrasal-verbs",
+  "topic": "b2-phrasal-change-progress",
+  "subtopic": "b2-phrasal-change-progress",
+  "lessonId": "b2-phrasal-verbs-change-progress",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-change-progress-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-change-progress",
+      "subtopic": "b2-phrasal-change-progress",
+      "taxonomyNodeIds": [
+        "b2-phrasal-change-progress"
+      ],
+      "difficulty": 3,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The factory must ___ quality checks.",
+          "options": [
+            {
+              "id": "a",
+              "text": "step up"
+            },
+            {
+              "id": "c",
+              "text": "slow down"
+            },
+            {
+              "id": "b",
+              "text": "scale up"
+            }
+          ],
+          "explanation": "“step up” means to increase effort or frequency."
+        },
+        {
+          "id": "r2",
+          "prompt": "The council is ready to ___ the successful pilot.",
+          "options": [
+            {
+              "id": "b",
+              "text": "slow down"
+            },
+            {
+              "id": "d",
+              "text": "wind down"
+            },
+            {
+              "id": "a",
+              "text": "scale up"
+            }
+          ],
+          "explanation": "“scale up” means to expand in size."
+        },
+        {
+          "id": "r3",
+          "prompt": "Extra checks may ___ the approval process.",
+          "options": [
+            {
+              "id": "b",
+              "text": "follow through on"
+            },
+            {
+              "id": "a",
+              "text": "slow down"
+            },
+            {
+              "id": "c",
+              "text": "keep up with"
+            }
+          ],
+          "explanation": "The sentence needs “slow down”, which expresses make slower."
+        },
+        {
+          "id": "r4",
+          "prompt": "The museum decided to ___ the renovation.",
+          "options": [
+            {
+              "id": "a",
+              "text": "go ahead with"
+            },
+            {
+              "id": "d",
+              "text": "catch up on"
+            },
+            {
+              "id": "c",
+              "text": "keep up with"
+            }
+          ],
+          "explanation": "“go ahead with” means to continue with a planned action."
+        },
+        {
+          "id": "r5",
+          "prompt": "The qualification may ___ new opportunities.",
+          "options": [
+            {
+              "id": "a",
+              "text": "open up"
+            },
+            {
+              "id": "c",
+              "text": "come along"
+            },
+            {
+              "id": "b",
+              "text": "close down"
+            }
+          ],
+          "explanation": "“open up” means to make possibilities available."
+        },
+        {
+          "id": "r6",
+          "prompt": "The new manager hopes to ___ the struggling service.",
+          "options": [
+            {
+              "id": "a",
+              "text": "turn around"
+            },
+            {
+              "id": "d",
+              "text": "come along"
+            },
+            {
+              "id": "c",
+              "text": "close down"
+            }
+          ],
+          "explanation": "“turn around” means to improve a failing situation."
+        },
+        {
+          "id": "r7",
+          "prompt": "Extra checks may ___ the approval process.",
+          "options": [
+            {
+              "id": "d",
+              "text": "go ahead with"
+            },
+            {
+              "id": "c",
+              "text": "wind down"
+            },
+            {
+              "id": "a",
+              "text": "slow down"
+            }
+          ],
+          "explanation": "“slow down” means to make slower."
+        },
+        {
+          "id": "r8",
+          "prompt": "The consultant will ___ the final report on Friday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "close down"
+            },
+            {
+              "id": "b",
+              "text": "open up"
+            },
+            {
+              "id": "a",
+              "text": "hand over"
+            }
+          ],
+          "explanation": "The sentence needs “hand over”, which expresses give responsibility or an item."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-change-progress"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "phrasal-verb-choice",
+        "change",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-change-progress-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-change-progress",
+      "subtopic": "b2-phrasal-change-progress",
+      "taxonomyNodeIds": [
+        "b2-phrasal-change-progress"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The museum decided to ___ the renovation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "break down"
+            },
+            {
+              "id": "a",
+              "text": "go ahead with"
+            },
+            {
+              "id": "b",
+              "text": "take over"
+            }
+          ],
+          "explanation": "The sentence needs “go ahead with”, which expresses continue with a planned action."
+        },
+        {
+          "id": "r2",
+          "prompt": "The centre will ___ the evening programme in July.",
+          "options": [
+            {
+              "id": "a",
+              "text": "wind down"
+            },
+            {
+              "id": "b",
+              "text": "catch up on"
+            },
+            {
+              "id": "d",
+              "text": "hand over"
+            }
+          ],
+          "explanation": "The sentence needs “wind down”, which expresses end gradually."
+        },
+        {
+          "id": "r3",
+          "prompt": "The office wants to ___ single-use plastic.",
+          "options": [
+            {
+              "id": "c",
+              "text": "build up"
+            },
+            {
+              "id": "a",
+              "text": "cut down on"
+            },
+            {
+              "id": "d",
+              "text": "phase out"
+            }
+          ],
+          "explanation": "“cut down on” means to reduce consumption."
+        },
+        {
+          "id": "r4",
+          "prompt": "The company must ___ its promise to staff.",
+          "options": [
+            {
+              "id": "b",
+              "text": "keep up with"
+            },
+            {
+              "id": "a",
+              "text": "follow through on"
+            },
+            {
+              "id": "c",
+              "text": "catch up on"
+            }
+          ],
+          "explanation": "“follow through on” means to complete what was promised."
+        },
+        {
+          "id": "r5",
+          "prompt": "The centre will ___ the evening programme in July.",
+          "options": [
+            {
+              "id": "b",
+              "text": "go ahead with"
+            },
+            {
+              "id": "d",
+              "text": "keep up with"
+            },
+            {
+              "id": "a",
+              "text": "wind down"
+            }
+          ],
+          "explanation": "“wind down” means to end gradually."
+        },
+        {
+          "id": "r6",
+          "prompt": "A new route should ___ the delivery service.",
+          "options": [
+            {
+              "id": "b",
+              "text": "wind down"
+            },
+            {
+              "id": "c",
+              "text": "go ahead with"
+            },
+            {
+              "id": "a",
+              "text": "speed up"
+            }
+          ],
+          "explanation": "“speed up” means to make faster."
+        },
+        {
+          "id": "r7",
+          "prompt": "The council is ready to ___ the successful pilot.",
+          "options": [
+            {
+              "id": "a",
+              "text": "scale up"
+            },
+            {
+              "id": "c",
+              "text": "follow through on"
+            },
+            {
+              "id": "b",
+              "text": "go ahead with"
+            }
+          ],
+          "explanation": "The sentence needs “scale up”, which expresses expand in size."
+        },
+        {
+          "id": "r8",
+          "prompt": "The office wants to ___ single-use plastic.",
+          "options": [
+            {
+              "id": "d",
+              "text": "scale up"
+            },
+            {
+              "id": "b",
+              "text": "phase in"
+            },
+            {
+              "id": "a",
+              "text": "cut down on"
+            }
+          ],
+          "explanation": "The sentence needs “cut down on”, which expresses reduce consumption."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-change-progress"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "multiple-choice-cloze",
+        "cloze",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

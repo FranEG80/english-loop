@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-grammar-used-to-would-past-habits-mini-game-001",
+  "level": "B1",
+  "category": "grammar",
+  "topic": "past-tenses",
+  "subtopic": "used-to-would-past-habits",
+  "lessonId": "b1-grammar-used-to-would-past-habits",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-used-to-would-past-habits-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "used-to-would-past-habits",
+      "taxonomyNodeIds": [
+        "used-to-would-past-habits"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I ___ to school, but now I take the bus.",
+          "options": [
+            {
+              "id": "d",
+              "text": "did used to cycle"
+            },
+            {
+              "id": "b",
+              "text": "use to cycled"
+            },
+            {
+              "id": "a",
+              "text": "used to cycle"
+            }
+          ],
+          "explanation": "«Used to cycle» contrasta el hábito anterior con el presente."
+        },
+        {
+          "id": "r2",
+          "prompt": "Describe a food you did not enjoy in the past.",
+          "options": [
+            {
+              "id": "d",
+              "text": "I wasn't use to like olives."
+            },
+            {
+              "id": "a",
+              "text": "I didn't use to like olives."
+            },
+            {
+              "id": "b",
+              "text": "I didn't used to like olives."
+            }
+          ],
+          "explanation": "La negativa editorial es «didn't use to + infinitivo»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The old printer wouldn't start, however many times we pressed the button.",
+          "options": [
+            {
+              "id": "c",
+              "text": "It was not accustomed to starting."
+            },
+            {
+              "id": "a",
+              "text": "It failed or refused to start."
+            },
+            {
+              "id": "b",
+              "text": "It had no regular hobby of starting."
+            }
+          ],
+          "explanation": "Aquí «wouldn't» expresa fallo persistente o rechazo, no un hábito neutral."
+        },
+        {
+          "id": "r4",
+          "prompt": "When Lena lived in the village, she ___ everyone and she ___ at each neighbour's door before the festival.",
+          "options": [
+            {
+              "id": "a",
+              "text": "used to know / would call"
+            },
+            {
+              "id": "b",
+              "text": "would know / used to calling"
+            },
+            {
+              "id": "c",
+              "text": "used to knowing / would called"
+            }
+          ],
+          "explanation": "El conocimiento es un estado; llamar era una acción repetida en el marco indicado."
+        },
+        {
+          "id": "r5",
+          "prompt": "On cold mornings, the old engine ___ rough for the first minute.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was used to sound"
+            },
+            {
+              "id": "a",
+              "text": "would sound"
+            },
+            {
+              "id": "c",
+              "text": "would to sound"
+            }
+          ],
+          "explanation": "Aquí «sound» describe un evento repetido en cada mañana fría."
+        },
+        {
+          "id": "r6",
+          "prompt": "This describes the present, not the past: I ___ to work.",
+          "options": [
+            {
+              "id": "c",
+              "text": "used to cycle now"
+            },
+            {
+              "id": "b",
+              "text": "use to cycle"
+            },
+            {
+              "id": "a",
+              "text": "usually cycle"
+            }
+          ],
+          "explanation": "`Used to` no tiene presente; el hábito actual usa present simple."
+        },
+        {
+          "id": "r7",
+          "prompt": "There ___ a bookshop on this corner, but it was demolished.",
+          "options": [
+            {
+              "id": "a",
+              "text": "used to be"
+            },
+            {
+              "id": "c",
+              "text": "used to being"
+            },
+            {
+              "id": "d",
+              "text": "did used to be"
+            }
+          ],
+          "explanation": "La existencia anterior es un estado: «There used to be»."
+        },
+        {
+          "id": "r8",
+          "prompt": "No previous sentence establishes a past period; state a former habit clearly.",
+          "options": [
+            {
+              "id": "a",
+              "text": "We used to walk along the harbour after dinner."
+            },
+            {
+              "id": "c",
+              "text": "We would walked along the harbour after dinner."
+            },
+            {
+              "id": "b",
+              "text": "We would walk along the harbour after dinner."
+            }
+          ],
+          "explanation": "Sin marco previo, «used to» comunica inequívocamente el hábito anterior."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-used-to-would-past-habits"
+      ],
+      "tags": [
+        "b1",
+        "used-to",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-used-to-would-past-habits-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "used-to-would-past-habits",
+      "taxonomyNodeIds": [
+        "used-to-would-past-habits"
+      ],
+      "difficulty": 3,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Whenever we stayed with our grandparents, we ___ in the garden after breakfast.",
+          "options": [
+            {
+              "id": "b",
+              "text": "would helped"
+            },
+            {
+              "id": "c",
+              "text": "would to help"
+            },
+            {
+              "id": "a",
+              "text": "would help"
+            }
+          ],
+          "explanation": "El marco está establecido y «would help» describe la acción repetida."
+        },
+        {
+          "id": "r2",
+          "prompt": "Before changing jobs, I ___ at five every morning.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was use to get up"
+            },
+            {
+              "id": "a",
+              "text": "used to get up"
+            },
+            {
+              "id": "c",
+              "text": "used to getting up"
+            }
+          ],
+          "explanation": "«Used to get up» describe el hábito anterior; no significa estar acostumbrado."
+        },
+        {
+          "id": "r3",
+          "prompt": "Ask whether a neighbourhood was quieter in the past.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Did this area used to be quieter?"
+            },
+            {
+              "id": "a",
+              "text": "Did this area use to be quieter?"
+            },
+            {
+              "id": "c",
+              "text": "Would this area be quieter as a past state?"
+            }
+          ],
+          "explanation": "La pregunta editorial usa «Did ... use to be ...?»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Ask about walking to school in the past.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Did you use to walk to school?"
+            },
+            {
+              "id": "c",
+              "text": "Were you use to walk to school?"
+            },
+            {
+              "id": "b",
+              "text": "Did you used to walk to school?"
+            }
+          ],
+          "explanation": "Después de «did» usamos «use to + infinitivo»."
+        },
+        {
+          "id": "r5",
+          "prompt": "When we stayed with her, my grandmother ___ us a story before bed.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was tell"
+            },
+            {
+              "id": "c",
+              "text": "would to tell"
+            },
+            {
+              "id": "a",
+              "text": "would tell"
+            }
+          ],
+          "explanation": "El marco pasado está claro y la acción repetida usa «would tell»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The speaker was not afraid of dogs in the past.",
+          "options": [
+            {
+              "id": "a",
+              "text": "I didn't use to be afraid of dogs."
+            },
+            {
+              "id": "c",
+              "text": "I wouldn't be afraid of dogs."
+            },
+            {
+              "id": "d",
+              "text": "I wasn't use to be afraid of dogs."
+            }
+          ],
+          "explanation": "La negativa de un estado anterior usa «didn't use to be»."
+        },
+        {
+          "id": "r7",
+          "prompt": "When we were children, we would ___ outside until dark.",
+          "options": [
+            {
+              "id": "a",
+              "text": "play"
+            },
+            {
+              "id": "c",
+              "text": "to play"
+            },
+            {
+              "id": "b",
+              "text": "played"
+            }
+          ],
+          "explanation": "Después de «would» usamos el infinitivo sin «to»: «play»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Early starts are normal for me now; I ___ before six.",
+          "options": [
+            {
+              "id": "c",
+              "text": "am used to get up"
+            },
+            {
+              "id": "a",
+              "text": "am used to getting up"
+            },
+            {
+              "id": "d",
+              "text": "use to getting up"
+            }
+          ],
+          "explanation": "«Be used to» significa estar acostumbrado y va seguido de `-ing`."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-used-to-would-past-habits"
+      ],
+      "tags": [
+        "b1",
+        "would",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

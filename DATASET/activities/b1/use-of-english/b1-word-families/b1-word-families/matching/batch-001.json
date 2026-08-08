@@ -1165,61 +1165,6 @@
     },
     {
       "schemaVersion": "2.0.0",
-      "id": "b1-word-families-m-022",
-      "status": "published",
-      "autoGradable": true,
-      "level": "B1",
-      "type": "matching",
-      "skillFocus": "matching",
-      "category": "use-of-english",
-      "topic": "b1-word-families",
-      "subtopic": "b1-word-families",
-      "taxonomyNodeIds": [
-        "b1-word-families"
-      ],
-      "difficulty": 5,
-      "instructions": "Match each base with its correct noun.",
-      "prompt": "Match the bases with nouns used in a report.",
-      "pairs": [
-        {
-          "leftId": "a",
-          "left": "discuss",
-          "rightId": "x",
-          "right": "discussion"
-        },
-        {
-          "leftId": "b",
-          "left": "observe",
-          "rightId": "y",
-          "right": "observation"
-        }
-      ],
-      "lessonIds": [
-        "b1-word-families"
-      ],
-      "tags": [
-        "b1",
-        "word-formation",
-        "matching"
-      ],
-      "estimatedSeconds": 60,
-      "evaluator": {
-        "strategy": "matching_pairs",
-        "pairs": [
-          {
-            "leftId": "a",
-            "rightId": "x"
-          },
-          {
-            "leftId": "b",
-            "rightId": "y"
-          }
-        ]
-      },
-      "explanation": "The report nouns are «discussion» and «observation»."
-    },
-    {
-      "schemaVersion": "2.0.0",
       "id": "b1-word-families-m-023",
       "status": "published",
       "autoGradable": true,

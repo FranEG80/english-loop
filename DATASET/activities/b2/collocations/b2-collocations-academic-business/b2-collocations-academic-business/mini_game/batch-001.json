@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-collocations-academic-business-mini-game-001",
+  "level": "B2",
+  "category": "collocations",
+  "topic": "b2-collocations-academic-business",
+  "subtopic": "b2-collocations-academic-business",
+  "lessonId": "b2-collocations-academic-business",
+  "activityType": "mini_game",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-academic-business-mg-frog-leap-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b2-collocations-academic-business",
+      "subtopic": "b2-collocations-academic-business",
+      "taxonomyNodeIds": [
+        "b2-collocations-academic-business"
+      ],
+      "difficulty": 4,
+      "instructions": "Ayuda a la rana a cruzar el río eligiendo el nenúfar correcto en cada salto.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "frog_leap",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The forecast suggests that costs will ___ in cloze study 018.",
+          "options": [
+            {
+              "id": "a",
+              "text": "rise"
+            },
+            {
+              "id": "d",
+              "text": "grow up"
+            },
+            {
+              "id": "c",
+              "text": "lift"
+            }
+          ],
+          "explanation": "Costs «rise» without a direct object."
+        },
+        {
+          "id": "r2",
+          "prompt": "The evidence ___ the proposal in cloze study 002.",
+          "options": [
+            {
+              "id": "b",
+              "text": "does"
+            },
+            {
+              "id": "c",
+              "text": "makes"
+            },
+            {
+              "id": "a",
+              "text": "supports"
+            }
+          ],
+          "explanation": "We say «evidence supports a proposal»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which adjective completes the feedback form 017? The tutor gave ___ feedback on the draft.",
+          "options": [
+            {
+              "id": "a",
+              "text": "constructive"
+            },
+            {
+              "id": "b",
+              "text": "constructed"
+            },
+            {
+              "id": "c",
+              "text": "constructing"
+            }
+          ],
+          "explanation": "«Constructive feedback» helps someone improve their work."
+        },
+        {
+          "id": "r4",
+          "prompt": "The figures help us ___ a conclusion in cloze study 023.",
+          "options": [
+            {
+              "id": "d",
+              "text": "put"
+            },
+            {
+              "id": "a",
+              "text": "draw"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "The formal collocation is «draw a conclusion»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which verb fits the negotiation record 006? Both companies finally ___ an agreement.",
+          "options": [
+            {
+              "id": "b",
+              "text": "did"
+            },
+            {
+              "id": "a",
+              "text": "reached"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            }
+          ],
+          "explanation": "We say «reach an agreement» after negotiation."
+        },
+        {
+          "id": "r6",
+          "prompt": "The company needs to ___ funds for the trial in cloze study 013.",
+          "options": [
+            {
+              "id": "a",
+              "text": "allocate"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "«Allocate funds» means assign money to a purpose."
+        },
+        {
+          "id": "r7",
+          "prompt": "The report presents a ___ advantage in cloze study 021.",
+          "options": [
+            {
+              "id": "d",
+              "text": "competitively"
+            },
+            {
+              "id": "a",
+              "text": "competitive"
+            },
+            {
+              "id": "c",
+              "text": "competing"
+            }
+          ],
+          "explanation": "«Competitive advantage» is a fixed business collocation."
+        },
+        {
+          "id": "r8",
+          "prompt": "The audit found a serious ___ in cloze study 024.",
+          "options": [
+            {
+              "id": "a",
+              "text": "shortcoming"
+            },
+            {
+              "id": "c",
+              "text": "shortly"
+            },
+            {
+              "id": "d",
+              "text": "shortened"
+            }
+          ],
+          "explanation": "«A serious shortcoming» names an important weakness."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-academic-business"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "forecasts",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-academic-business-mg-lane-runner-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b2-collocations-academic-business",
+      "subtopic": "b2-collocations-academic-business",
+      "taxonomyNodeIds": [
+        "b2-collocations-academic-business"
+      ],
+      "difficulty": 4,
+      "instructions": "Colócate en el carril de la respuesta correcta antes de cruzar cada puerta.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "lane_runner",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which verb fits the contract discussion 024? The partners agreed to ___ a compromise.",
+          "options": [
+            {
+              "id": "a",
+              "text": "reach"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "b",
+              "text": "do"
+            }
+          ],
+          "explanation": "The natural phrase is «reach a compromise»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The committee will ___ the implications in cloze study 014.",
+          "options": [
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "assess"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "«Assess implications» is formal and precise."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which verb fits the management summary 015? The plan aims to ___ efficiency across departments.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "improve"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "«Improve efficiency» is the natural verb-noun combination."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which verb completes the ethics statement 012? The researcher agreed to ___ responsibility for the error.",
+          "options": [
+            {
+              "id": "d",
+              "text": "pay"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "a",
+              "text": "take"
+            }
+          ],
+          "explanation": "We say «take responsibility for» a problem or action."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which verb completes the deadline reminder 010? The team must ___ the deadline on Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "meet"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "d",
+              "text": "arrive"
+            }
+          ],
+          "explanation": "We say «meet a deadline» when completing work on time."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which verb fits the policy review 021? The committee will ___ the implications of the change.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "assess"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "«Assess the implications» is a formal way to evaluate consequences."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which verb completes the finance report 020? The company needs to ___ funds for the pilot.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "allocate"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "«Allocate funds» means assign money to a purpose."
+        },
+        {
+          "id": "r8",
+          "prompt": "The figures allow the team to ___ a comparison in cloze study 011.",
+          "options": [
+            {
+              "id": "a",
+              "text": "draw"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "put"
+            }
+          ],
+          "explanation": "The formal phrase is «draw a comparison»."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-academic-business"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "negotiation",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    }
+  ]
+}

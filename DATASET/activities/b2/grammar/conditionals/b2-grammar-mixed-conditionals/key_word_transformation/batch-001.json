@@ -1,0 +1,1241 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b2-grammar-mixed-conditionals-key-word-transformation-001",
+  "level": "B2",
+  "category": "grammar",
+  "topic": "conditionals",
+  "subtopic": "third-conditional",
+  "lessonId": "b2-grammar-mixed-conditionals",
+  "activityType": "key_word_transformation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not study medicine, so I am not a doctor now.",
+      "firstSentence": "I did not study medicine, so I am not a doctor now.",
+      "keyWord": "HAD",
+      "gapText": "If I [gap1] medicine, I would be a doctor now.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had studied"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La condicional mixta combina past perfect con un resultado presente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-002",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She did not save any money, so she cannot buy a car.",
+      "firstSentence": "She did not save any money, so she cannot buy a car.",
+      "keyWord": "WOULD",
+      "gapText": "If she had saved some money, she [gap1] to buy a car.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "would be able"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El resultado presente usa «would be able to», no «would have been able to»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-003",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I missed the bus, so I am late now.",
+      "firstSentence": "I missed the bus, so I am late now.",
+      "keyWord": "NOT",
+      "gapText": "If I had [gap1] the bus, I would not be late now.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "not missed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La causa pasada se niega en past perfect y la consecuencia queda en presente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He never took up a sport, so he is not very fit now.",
+      "firstSentence": "He never took up a sport, so he is not very fit now.",
+      "keyWord": "UP",
+      "gapText": "He would be fitter now if he [gap1] a sport when he was young.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had taken up"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El phrasal «take up» conserva la partícula dentro del past perfect."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I did not know you were in hospital, so I did not visit you.",
+      "firstSentence": "I did not know you were in hospital, so I did not visit you.",
+      "keyWord": "KNOWN",
+      "gapText": "[gap1] you were in hospital, I would have visited you.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Had I known"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La inversión «had I known» sustituye a «if I had known» y suprime «if»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We did not leave earlier, so we are still on the road.",
+      "firstSentence": "We did not leave earlier, so we are still on the road.",
+      "keyWord": "LEFT",
+      "gapText": "[gap1] earlier, we would already be there.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Had we left"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La inversión también admite un resultado presente en la condicional mixta."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You can borrow the car if you fill up the tank.",
+      "firstSentence": "You can borrow the car if you fill up the tank.",
+      "keyWord": "PROVIDED",
+      "gapText": "You can borrow the car [gap1] fill up the tank.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "provided that you",
+              "provided you"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Provided (that)» impone una condición y el «that» es opcional."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The tour goes ahead if at least ten people sign up.",
+      "firstSentence": "The tour goes ahead if at least ten people sign up.",
+      "keyWord": "PROVIDED",
+      "gapText": "The tour goes ahead [gap1] ten people sign up.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "provided that at least",
+              "provided at least"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Provided» precede a toda la cláusula, incluido el cuantificador."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You may stay here if you keep quiet.",
+      "firstSentence": "You may stay here if you keep quiet.",
+      "keyWord": "LONG",
+      "gapText": "You may stay here [gap1] you keep quiet.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as long as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«As long as» expresa la única condición bajo la que se permite algo."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I will lend you my laptop on condition that you return it tonight.",
+      "firstSentence": "I will lend you my laptop on condition that you return it tonight.",
+      "keyWord": "SO",
+      "gapText": "I will lend you my laptop [gap1] you return it tonight.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "so long as"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«So long as» es la variante coloquial de «as long as»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "If you lost your keys, you would have to call a locksmith.",
+      "firstSentence": "If you lost your keys, you would have to call a locksmith.",
+      "keyWord": "SUPPOSING",
+      "gapText": "You would have to call a locksmith [gap1] your keys.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "supposing you lost"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Supposing» plantea una hipótesis y mantiene el pasado simple detrás."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "If the train were cancelled, we would take a taxi.",
+      "firstSentence": "If the train were cancelled, we would take a taxi.",
+      "keyWord": "SUPPOSING",
+      "gapText": "We would take a taxi [gap1] cancelled.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "supposing the train were",
+              "supposing the train was"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "Tras «supposing» conviven «were» y «was» en la hipótesis."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "She spent all her savings last year, so she cannot travel this summer.",
+      "firstSentence": "She spent all her savings last year, so she cannot travel this summer.",
+      "keyWord": "SPENT",
+      "gapText": "She could travel this summer if she [gap1] all her savings last year.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had not spent"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La condición pertenece al pasado y la consecuencia, al presente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I am not a very organised person, so I forgot the appointment.",
+      "firstSentence": "I am not a very organised person, so I forgot the appointment.",
+      "keyWord": "MORE",
+      "gapText": "If I [gap1] organised person, I would not have forgotten the appointment.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "were a more"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La mixta inversa parte de un estado presente y llega a un resultado pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Ana does not speak German, so she did not apply for the Berlin job.",
+      "firstSentence": "Ana does not speak German, so she did not apply for the Berlin job.",
+      "keyWord": "SPEAK",
+      "gapText": "Ana would have applied for the Berlin job if she [gap1] German.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "could speak"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La condición describe una capacidad presente y el resultado es pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-016",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "He is afraid of flying, so he took the train to Rome.",
+      "firstSentence": "He is afraid of flying, so he took the train to Rome.",
+      "keyWord": "AFRAID",
+      "gapText": "If he [gap1] of flying, he would have flown to Rome.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "were not afraid"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Were» acompaña a cualquier sujeto en una condición irreal presente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-017",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You did not set an alarm, so you are still in bed.",
+      "firstSentence": "You did not set an alarm, so you are still in bed.",
+      "keyWord": "SET",
+      "gapText": "You would not still be in bed if you [gap1] an alarm.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had set"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Set» es invariable, así que el past perfect solo añade «had»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-018",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You can use the pool if you shower first.",
+      "firstSentence": "You can use the pool if you shower first.",
+      "keyWord": "CONDITION",
+      "gapText": "You can use the pool [gap1] that you shower first.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "on condition"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«On condition that» es el equivalente formal de «if»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-019",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "The museum lets you take photos if you do not use a flash.",
+      "firstSentence": "The museum lets you take photos if you do not use a flash.",
+      "keyWord": "AS",
+      "gapText": "The museum lets you take photos [gap1] not use a flash.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "as long as you do"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«As long as» admite una condición negativa sin cambiar de estructura."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-020",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "You will get a refund if you keep the receipt.",
+      "firstSentence": "You will get a refund if you keep the receipt.",
+      "keyWord": "PROVIDING",
+      "gapText": "You will get a refund [gap1] keep the receipt.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "providing that you",
+              "providing you"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Providing (that)» alterna con «provided (that)» sin cambio de sentido."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-021",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "Your support was the only reason we finished the job.",
+      "firstSentence": "Your support was the only reason we finished the job.",
+      "keyWord": "BEEN",
+      "gapText": "[gap1] your support, we would not have finished the job.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Had it not been for"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Had it not been for» es la inversión formal de «if it had not been for»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-022",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 5,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We did not check the weather, so we are stuck here now.",
+      "firstSentence": "We did not check the weather, so we are stuck here now.",
+      "keyWord": "CHECKED",
+      "gapText": "[gap1] the weather, we would not be stuck here now.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "Had we checked"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "La inversión evita «if» y el resultado permanece en presente."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-023",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "I ate too much at lunch, so I do not feel well now.",
+      "firstSentence": "I ate too much at lunch, so I do not feel well now.",
+      "keyWord": "EATEN",
+      "gapText": "I would feel better now if I [gap1] so much at lunch.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had not eaten"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El malestar presente procede de una acción pasada que se niega."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-024",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "They moved to the coast ten years ago, so they know the area well.",
+      "firstSentence": "They moved to the coast ten years ago, so they know the area well.",
+      "keyWord": "MOVED",
+      "gapText": "They would not know the area well if they [gap1] to the coast ten years ago.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had not moved"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "El conocimiento actual depende de una decisión tomada en el pasado."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-mixed-conditionals-kwt-025",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "key_word_transformation",
+      "skillFocus": "key_word_transformation",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 3,
+      "instructions": "Completa la segunda frase con entre dos y cinco palabras para que signifique lo mismo que la primera. Usa la palabra clave sin cambiarla y no emplees contracciones.",
+      "prompt": "We are lost because you refused to buy a map.",
+      "firstSentence": "We are lost because you refused to buy a map.",
+      "keyWord": "AGREED",
+      "gapText": "We would not be lost if you [gap1] to buy a map.",
+      "lessonIds": [
+        "b2-grammar-mixed-conditionals"
+      ],
+      "tags": [
+        "b2",
+        "rewriting",
+        "conditionals"
+      ],
+      "estimatedSeconds": 60,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          {
+            "gapId": "gap1",
+            "answers": [
+              "had agreed"
+            ]
+          }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "«Agree to» sustituye a «refuse» sin necesidad de negación."
+    }
+  ]
+}
