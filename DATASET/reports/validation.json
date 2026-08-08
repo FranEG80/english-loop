@@ -3,17 +3,17 @@
   "valid": true,
   "summary": {
     "lessons": 124,
-    "activities": 12396,
-    "batches": 661,
+    "activities": 12446,
+    "batches": 663,
     "taxonomyNodes": 164,
     "errors": 0,
-    "warnings": 4697
+    "warnings": 4699
   },
   "warningsByCode": {
     "missing-distractor-feedback": 3894,
     "single-accepted-answer": 550,
     "deck-unbalanced": 127,
-    "answer-visible-in-prompt": 48,
+    "answer-visible-in-prompt": 49,
     "true-false-balance": 34,
     "selection-count-uniform": 13,
     "word-order-token-mismatch": 13,
@@ -21,7 +21,8 @@
     "answer-position-bias": 4,
     "answer-equals-prompt": 3,
     "word-formation-answer-equals-cue": 2,
-    "kwt-key-word-absent": 1
+    "kwt-key-word-absent": 1,
+    "word-formation-unrelated-answer": 1
   },
   "issues": [
     {
@@ -26236,6 +26237,18 @@
       "code": "missing-distractor-feedback",
       "location": "activities/b2/use-of-english/b2-word-families/b2-word-families/single_choice/batch-001.json#b2-word-families-mcc-025",
       "message": "Ningún distractor explica por qué es incorrecto.",
+      "severity": "warning"
+    },
+    {
+      "code": "word-formation-unrelated-answer",
+      "location": "activities/b2/use-of-english/b2-word-families/b2-word-families/word_formation/batch-002.json#b2-word-families-wf-010",
+      "message": "«unusable» no parece derivar de «USE».",
+      "severity": "warning"
+    },
+    {
+      "code": "answer-visible-in-prompt",
+      "location": "activities/b2/use-of-english/b2-word-families/b2-word-families/word_formation/batch-002.json#b2-word-families-wf-026",
+      "message": "La respuesta «judgement» del hueco gap8 ya aparece en el enunciado.",
       "severity": "warning"
     },
     {
