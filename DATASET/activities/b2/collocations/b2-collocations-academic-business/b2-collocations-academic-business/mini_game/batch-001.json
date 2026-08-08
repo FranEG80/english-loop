@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The forecast suggests that costs will ___ in cloze study 018.",
+          "prompt": "The forecast suggests that costs will [gap1] in cloze study 018.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The evidence ___ the proposal in cloze study 002.",
+          "prompt": "The evidence [gap1] the proposal in cloze study 002.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which adjective completes the feedback form 017? The tutor gave ___ feedback on the draft.",
+          "prompt": "Which adjective completes the feedback form 017? The tutor gave [gap1] feedback on the draft.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The figures help us ___ a conclusion in cloze study 023.",
+          "prompt": "The figures help us [gap1] a conclusion in cloze study 023.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which verb fits the negotiation record 006? Both companies finally ___ an agreement.",
+          "prompt": "Which verb fits the negotiation record 006? Both companies finally [gap1] an agreement.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The company needs to ___ funds for the trial in cloze study 013.",
+          "prompt": "The company needs to [gap1] funds for the trial in cloze study 013.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The report presents a ___ advantage in cloze study 021.",
+          "prompt": "The report presents a [gap1] advantage in cloze study 021.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The audit found a serious ___ in cloze study 024.",
+          "prompt": "The audit found a serious [gap1] in cloze study 024.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which verb fits the contract discussion 024? The partners agreed to ___ a compromise.",
+          "prompt": "Which verb fits the contract discussion 024? The partners agreed to [gap1] a compromise.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The committee will ___ the implications in cloze study 014.",
+          "prompt": "The committee will [gap1] the implications in cloze study 014.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which verb fits the management summary 015? The plan aims to ___ efficiency across departments.",
+          "prompt": "Which verb fits the management summary 015? The plan aims to [gap1] efficiency across departments.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which verb completes the ethics statement 012? The researcher agreed to ___ responsibility for the error.",
+          "prompt": "Which verb completes the ethics statement 012? The researcher agreed to [gap1] responsibility for the error.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which verb completes the deadline reminder 010? The team must ___ the deadline on Friday.",
+          "prompt": "Which verb completes the deadline reminder 010? The team must [gap1] the deadline on Friday.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which verb fits the policy review 021? The committee will ___ the implications of the change.",
+          "prompt": "Which verb fits the policy review 021? The committee will [gap1] the implications of the change.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which verb completes the finance report 020? The company needs to ___ funds for the pilot.",
+          "prompt": "Which verb completes the finance report 020? The company needs to [gap1] funds for the pilot.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The figures allow the team to ___ a comparison in cloze study 011.",
+          "prompt": "The figures allow the team to [gap1] a comparison in cloze study 011.",
           "options": [
             {
               "id": "a",
@@ -408,6 +408,227 @@
         "b2",
         "collocation",
         "negotiation",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-academic-business-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b2-collocations-academic-business",
+      "subtopic": "b2-collocations-academic-business",
+      "taxonomyNodeIds": [
+        "b2-collocations-academic-business"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The manager agreed to [gap1] responsibility in cloze study 009.",
+          "options": [
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "«Take responsibility» is the standard combination."
+        },
+        {
+          "id": "r2",
+          "prompt": "The research team [gap1] data from local schools in cloze study 001.",
+          "options": [
+            {
+              "id": "b",
+              "text": "made"
+            },
+            {
+              "id": "d",
+              "text": "built"
+            },
+            {
+              "id": "a",
+              "text": "collected"
+            }
+          ],
+          "explanation": "The natural combination is «collect data»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which verb completes the seminar note 016? The lecturer provided a brief [gap1] of the theory.",
+          "options": [
+            {
+              "id": "a",
+              "text": "overview"
+            },
+            {
+              "id": "c",
+              "text": "look"
+            },
+            {
+              "id": "d",
+              "text": "sight"
+            }
+          ],
+          "explanation": "The noun «overview» forms the phrase «provide an overview»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which verb completes the planning document 019? The figures allow us to [gap1] a comparison.",
+          "options": [
+            {
+              "id": "a",
+              "text": "draw"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            },
+            {
+              "id": "c",
+              "text": "make"
+            }
+          ],
+          "explanation": "The formal phrase is «draw a comparison»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which verb fits the research note about data 002? The analysts [gap1] data from three surveys.",
+          "options": [
+            {
+              "id": "d",
+              "text": "made"
+            },
+            {
+              "id": "a",
+              "text": "collected"
+            },
+            {
+              "id": "c",
+              "text": "held"
+            }
+          ],
+          "explanation": "We say «collect data» when obtaining information systematically."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which verb belongs in the research report 004? The university [gap1] research into sleep patterns.",
+          "options": [
+            {
+              "id": "b",
+              "text": "made"
+            },
+            {
+              "id": "c",
+              "text": "put"
+            },
+            {
+              "id": "a",
+              "text": "conducted"
+            }
+          ],
+          "explanation": "«Conduct research» is a formal academic collocation."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which verb belongs in the study plan 008? Please [gap1] close attention to the final instructions.",
+          "options": [
+            {
+              "id": "b",
+              "text": "make"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "pay"
+            }
+          ],
+          "explanation": "The fixed phrase is «pay close attention»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The partners [gap1] an agreement after two meetings in cloze study 005.",
+          "options": [
+            {
+              "id": "a",
+              "text": "reached"
+            },
+            {
+              "id": "c",
+              "text": "put"
+            },
+            {
+              "id": "b",
+              "text": "did"
+            }
+          ],
+          "explanation": "The natural phrase is «reach an agreement»."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-academic-business"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "responsibility",
         "mini-game"
       ],
       "estimatedSeconds": 120,

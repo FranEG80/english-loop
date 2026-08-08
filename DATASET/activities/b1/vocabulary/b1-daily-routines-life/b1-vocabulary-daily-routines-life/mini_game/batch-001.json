@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I cannot meet the deadline unless I ___ time for the final section.",
+          "prompt": "I cannot meet the deadline unless I [gap1] time for the final section.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Mum is doing the ___ because the basket is full.",
+          "prompt": "Mum is doing the [gap1] because the basket is full.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Before guests arrive, we have to ___ the living room and clear the table.",
+          "prompt": "Before guests arrive, we have to [gap1] the living room and clear the table.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "After a long shift, I like to ___ a quick nap before dinner.",
+          "prompt": "After a long shift, I like to [gap1] a quick nap before dinner.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I usually ___ ready for work before the children wake up.",
+          "prompt": "I usually [gap1] ready for work before the children wake up.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ up at seven every weekday.",
+          "prompt": "I [gap1] up at seven every weekday.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I try to ___ time for exercise after work.",
+          "prompt": "I try to [gap1] time for exercise after work.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "After dinner, the children help to ___ the kitchen.",
+          "prompt": "After dinner, the children help to [gap1] the kitchen.",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I woke up at six, but I did not ___ up until seven.",
+          "prompt": "I woke up at six, but I did not [gap1] up until seven.",
           "options": [
             {
               "id": "b",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Could you ___ the washing-up while I finish cooking?",
+          "prompt": "Could you [gap1] the washing-up while I finish cooking?",
           "options": [
             {
               "id": "b",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "When I finish work, I ___ back home by train rather than driving.",
+          "prompt": "When I finish work, I [gap1] back home by train rather than driving.",
           "options": [
             {
               "id": "d",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I need to ___ out the rubbish tonight.",
+          "prompt": "I need to [gap1] out the rubbish tonight.",
           "options": [
             {
               "id": "b",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The cleaner comes on Tuesdays to ___ the ironing.",
+          "prompt": "The cleaner comes on Tuesdays to [gap1] the ironing.",
           "options": [
             {
               "id": "a",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "By the time I ___ home, everyone else had gone to bed.",
+          "prompt": "By the time I [gap1] home, everyone else had gone to bed.",
           "options": [
             {
               "id": "d",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Although she works full time, she always manages to ___ time for her children.",
+          "prompt": "Although she works full time, she always manages to [gap1] time for her children.",
           "options": [
             {
               "id": "a",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The lesson finishes at noon, so we can ___ a break then.",
+          "prompt": "The lesson finishes at noon, so we can [gap1] a break then.",
           "options": [
             {
               "id": "c",
@@ -443,6 +443,226 @@
           {
             "roundId": "r8",
             "correctOptionId": "d"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-daily-routines-life-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-daily-routines-life",
+      "subtopic": "b1-daily-routines-life",
+      "taxonomyNodeIds": [
+        "b1-daily-routines-life"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The project is behind schedule, so we need to [gap1] the lost time this afternoon.",
+          "options": [
+            {
+              "id": "c",
+              "text": "do up"
+            },
+            {
+              "id": "d",
+              "text": "get up"
+            },
+            {
+              "id": "a",
+              "text": "make up"
+            }
+          ],
+          "explanation": "Make up lost time means work faster or longer to compensate for a delay."
+        },
+        {
+          "id": "r2",
+          "prompt": "After breakfast, I [gap1] my teeth before leaving home.",
+          "options": [
+            {
+              "id": "c",
+              "text": "set"
+            },
+            {
+              "id": "b",
+              "text": "brush"
+            },
+            {
+              "id": "d",
+              "text": "run"
+            }
+          ],
+          "explanation": "We brush our teeth; brush is the natural verb for this routine."
+        },
+        {
+          "id": "r3",
+          "prompt": "Please [gap1] the bed before your guests arrive.",
+          "options": [
+            {
+              "id": "d",
+              "text": "set"
+            },
+            {
+              "id": "a",
+              "text": "make"
+            },
+            {
+              "id": "c",
+              "text": "have"
+            }
+          ],
+          "explanation": "Make the bed is the fixed expression for arranging the sheets and covers."
+        },
+        {
+          "id": "r4",
+          "prompt": "I have to [gap1] an alarm for 5:45 because my shift starts early.",
+          "options": [
+            {
+              "id": "b",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "set"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "Set an alarm means programme the time when it will ring."
+        },
+        {
+          "id": "r5",
+          "prompt": "We usually [gap1] breakfast at eight.",
+          "options": [
+            {
+              "id": "c",
+              "text": "have"
+            },
+            {
+              "id": "a",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            }
+          ],
+          "explanation": "Have breakfast is the standard collocation for eating the morning meal."
+        },
+        {
+          "id": "r6",
+          "prompt": "We usually [gap1] shopping on Saturday mornings.",
+          "options": [
+            {
+              "id": "b",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "go"
+            },
+            {
+              "id": "d",
+              "text": "get"
+            }
+          ],
+          "explanation": "Go shopping is the natural expression for shopping as an activity."
+        },
+        {
+          "id": "r7",
+          "prompt": "I am [gap1] late because the train was cancelled.",
+          "options": [
+            {
+              "id": "d",
+              "text": "setting"
+            },
+            {
+              "id": "b",
+              "text": "making"
+            },
+            {
+              "id": "a",
+              "text": "running"
+            }
+          ],
+          "explanation": "Run late means be delayed or arrive later than planned."
+        },
+        {
+          "id": "r8",
+          "prompt": "I normally [gap1] to bed before eleven on work nights.",
+          "options": [
+            {
+              "id": "c",
+              "text": "make"
+            },
+            {
+              "id": "d",
+              "text": "take"
+            },
+            {
+              "id": "a",
+              "text": "go"
+            }
+          ],
+          "explanation": "Go to bed means go to your bed in order to sleep."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-daily-routines-life"
+      ],
+      "tags": [
+        "b1",
+        "time-management",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
           }
         ]
       },

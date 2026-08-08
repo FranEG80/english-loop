@@ -264,7 +264,7 @@
       ],
       "difficulty": 2,
       "instructions": "Complete the travel sentence with a phrasal verb.",
-      "prompt": "Which verb means leave passengers at the station?",
+      "prompt": "The driver will [gap1] us [gap2] at the station.",
       "gapText": "The driver will [gap1] us [gap2] at the station.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -282,7 +282,13 @@
           {
             "gapId": "gap1",
             "answers": [
-              "drop off"
+              "drop"
+            ]
+          },
+          {
+            "gapId": "gap2",
+            "answers": [
+              "off"
             ]
           }
         ],

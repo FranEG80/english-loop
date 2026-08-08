@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The ferry was cancelled ___ the overnight storm.",
+          "prompt": "The ferry was cancelled [gap1] the overnight storm.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The editor removed the repetition ___ clarity.",
+          "prompt": "The editor removed the repetition [gap1] clarity.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The procedure was updated ___ current guidance.",
+          "prompt": "The procedure was updated [gap1] current guidance.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ new users, the instructions are too technical.",
+          "prompt": "[gap1] new users, the instructions are too technical.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The committee voted ___ a shorter route.",
+          "prompt": "The committee voted [gap1] a shorter route.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "___ new users, the instructions are too technical.",
+          "prompt": "[gap1] new users, the instructions are too technical.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "___ staff shortages, the clinic reduced its opening hours.",
+          "prompt": "[gap1] staff shortages, the clinic reduced its opening hours.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The procedure was updated ___ current guidance.",
+          "prompt": "The procedure was updated [gap1] current guidance.",
           "options": [
             {
               "id": "b",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The figures were updated ___ the revised policy.",
+          "prompt": "The figures were updated [gap1] the revised policy.",
           "options": [
             {
               "id": "d",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The speaker began ___ a brief history of the project.",
+          "prompt": "The speaker began [gap1] a brief history of the project.",
           "options": [
             {
               "id": "b",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The service will continue ___ the final price.",
+          "prompt": "The service will continue [gap1] the final price.",
           "options": [
             {
               "id": "a",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I am writing ___ the timetable for next month.",
+          "prompt": "I am writing [gap1] the timetable for next month.",
           "options": [
             {
               "id": "d",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The ferry was cancelled ___ the overnight storm.",
+          "prompt": "The ferry was cancelled [gap1] the overnight storm.",
           "options": [
             {
               "id": "b",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The editor removed the repetition ___ clarity.",
+          "prompt": "The editor removed the repetition [gap1] clarity.",
           "options": [
             {
               "id": "d",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The committee voted ___ a shorter route.",
+          "prompt": "The committee voted [gap1] a shorter route.",
           "options": [
             {
               "id": "c",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I am writing ___ the timetable for next month.",
+          "prompt": "I am writing [gap1] the timetable for next month.",
           "options": [
             {
               "id": "a",
@@ -400,6 +400,228 @@
             }
           ],
           "explanation": "The sentence requires “with regard to” because it expresses the timetable."
+        }
+      ],
+      "lessonIds": [
+        "b2-prepositions-abstract-relations"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "multiple-choice-cloze",
+        "logic",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-prepositions-abstract-relations-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-prepositions-abstract-relations",
+      "subtopic": "b2-prepositions-abstract-relations",
+      "taxonomyNodeIds": [
+        "b2-prepositions-abstract-relations"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "[gap1] the previous version, the new form has fewer sections.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in contrast to"
+            },
+            {
+              "id": "d",
+              "text": "in spite of"
+            },
+            {
+              "id": "b",
+              "text": "due to"
+            }
+          ],
+          "explanation": "The sentence requires “in contrast to” because it expresses the previous version."
+        },
+        {
+          "id": "r2",
+          "prompt": "The payment was made [gap1] the contract.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in accordance with"
+            },
+            {
+              "id": "e",
+              "text": "in spite of"
+            },
+            {
+              "id": "b",
+              "text": "due to"
+            }
+          ],
+          "explanation": "The sentence requires “in accordance with” because it expresses the contract."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1], a remote meeting was the most practical option.",
+          "options": [
+            {
+              "id": "a",
+              "text": "under the circumstances"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "by"
+            }
+          ],
+          "explanation": "“under the circumstances” expresses the required relation: a remote meeting."
+        },
+        {
+          "id": "r4",
+          "prompt": "The proposal is attractive [gap1] long-term cost.",
+          "options": [
+            {
+              "id": "c",
+              "text": "by means of"
+            },
+            {
+              "id": "a",
+              "text": "in terms of"
+            },
+            {
+              "id": "b",
+              "text": "due to"
+            }
+          ],
+          "explanation": "The sentence requires “in terms of” because it expresses long-term cost."
+        },
+        {
+          "id": "r5",
+          "prompt": "The archive closed early [gap1] a power cut.",
+          "options": [
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "because of"
+            }
+          ],
+          "explanation": "“because of” expresses the required relation: a power cut."
+        },
+        {
+          "id": "r6",
+          "prompt": "The redesign improved speed [gap1] local access.",
+          "options": [
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "at the expense of"
+            }
+          ],
+          "explanation": "“at the expense of” expresses the required relation: local access."
+        },
+        {
+          "id": "r7",
+          "prompt": "The library received the software [gap1] technical support.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in exchange for"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "b",
+              "text": "by"
+            }
+          ],
+          "explanation": "“in exchange for” expresses the required relation: technical support."
+        },
+        {
+          "id": "r8",
+          "prompt": "The speaker began [gap1] a brief history of the project.",
+          "options": [
+            {
+              "id": "e",
+              "text": "in spite of"
+            },
+            {
+              "id": "a",
+              "text": "by way of"
+            },
+            {
+              "id": "c",
+              "text": "by means of"
+            }
+          ],
+          "explanation": "The sentence requires “by way of” because it expresses an introduction."
         }
       ],
       "lessonIds": [

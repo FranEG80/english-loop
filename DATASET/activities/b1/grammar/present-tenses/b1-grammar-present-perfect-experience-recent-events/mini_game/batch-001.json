@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Leo isn't hungry because he ___ lunch.",
+          "prompt": "Leo isn't hungry because he [gap1] lunch.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Maya ___ her keys, so she cannot open the door.",
+          "prompt": "Maya [gap1] her keys, so she cannot open the door.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "We ___ every proposed venue so far, but we ___ a final decision yet.",
+          "prompt": "We [gap1] every proposed venue so far, but we [gap2] a final decision yet.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The shop is still open today, and it ___ more than 200 orders so far.",
+          "prompt": "The shop is still open today, and it [gap1] more than 200 orders so far.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We've ___ tried that restaurant, so we do not know what it is like.",
+          "prompt": "We've [gap1] tried that restaurant, so we do not know what it is like.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The parcel ___ arrived.",
+          "prompt": "The parcel [gap1] arrived.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Our neighbours have ___ a solar battery.",
+          "prompt": "Our neighbours have [gap1] a solar battery.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Neither of the two replacement parts ___ yet, so the repair cannot begin.",
+          "prompt": "Neither of the two replacement parts [gap1] yet, so the repair cannot begin.",
           "options": [
             {
               "id": "c",
@@ -441,6 +441,227 @@
           {
             "roundId": "r7",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-perfect-experience-recent-events-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-perfect-experience",
+      "taxonomyNodeIds": [
+        "present-perfect-experience"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This is the first time I [gap1] a presentation in English.",
+          "options": [
+            {
+              "id": "c",
+              "text": "am giving ever"
+            },
+            {
+              "id": "a",
+              "text": "have given"
+            },
+            {
+              "id": "d",
+              "text": "give already"
+            }
+          ],
+          "explanation": "Después de «This is the first time» usamos present perfect: «have given»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The printer is working again because Sam [gap1] the paper blockage.",
+          "options": [
+            {
+              "id": "a",
+              "text": "has removed"
+            },
+            {
+              "id": "d",
+              "text": "is remove"
+            },
+            {
+              "id": "b",
+              "text": "have remove"
+            }
+          ],
+          "explanation": "«Has removed» presenta una acción terminada con un resultado visible ahora."
+        },
+        {
+          "id": "r3",
+          "prompt": "It is still Wednesday morning. I [gap1] four customer calls this week.",
+          "options": [
+            {
+              "id": "b",
+              "text": "has handled"
+            },
+            {
+              "id": "c",
+              "text": "have handle"
+            },
+            {
+              "id": "a",
+              "text": "have handled"
+            }
+          ],
+          "explanation": "«This week» es un periodo todavía abierto y el sujeto «I» usa «have handled»."
+        },
+        {
+          "id": "r4",
+          "prompt": "I [gap1] this film three times.",
+          "options": [
+            {
+              "id": "c",
+              "text": "have saw"
+            },
+            {
+              "id": "a",
+              "text": "have seen"
+            },
+            {
+              "id": "b",
+              "text": "has seen"
+            }
+          ],
+          "explanation": "Con «I» usamos «have» y el participio irregular de «see» es «seen»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Have you [gap1] travelled by ferry?",
+          "options": [
+            {
+              "id": "c",
+              "text": "yet not"
+            },
+            {
+              "id": "a",
+              "text": "ever"
+            },
+            {
+              "id": "b",
+              "text": "never"
+            }
+          ],
+          "explanation": "«Ever» pregunta si la experiencia ha ocurrido alguna vez hasta ahora."
+        },
+        {
+          "id": "r6",
+          "prompt": "A colleague asks whether this is your first experience of remote teamwork.",
+          "options": [
+            {
+              "id": "c",
+              "text": "I've never work in a remote team before."
+            },
+            {
+              "id": "a",
+              "text": "I've never worked in a remote team before."
+            },
+            {
+              "id": "b",
+              "text": "I haven't never worked in a remote team."
+            }
+          ],
+          "explanation": "«Never» ya expresa negación y va con «have worked» para una experiencia vital."
+        },
+        {
+          "id": "r7",
+          "prompt": "We haven't received the invoice [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "yet"
+            },
+            {
+              "id": "b",
+              "text": "ever"
+            },
+            {
+              "id": "a",
+              "text": "already"
+            }
+          ],
+          "explanation": "«Yet» aparece normalmente al final de una negativa para indicar «todavía»."
+        },
+        {
+          "id": "r8",
+          "prompt": "“Has the technician called yet?”",
+          "options": [
+            {
+              "id": "c",
+              "text": "No, she doesn't have."
+            },
+            {
+              "id": "a",
+              "text": "No, she hasn't."
+            },
+            {
+              "id": "d",
+              "text": "No, she not has."
+            }
+          ],
+          "explanation": "La respuesta breve repite el auxiliar: «No, she hasn't»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-perfect-experience-recent-events"
+      ],
+      "tags": [
+        "b1",
+        "present-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
           },
           {
             "roundId": "r8",

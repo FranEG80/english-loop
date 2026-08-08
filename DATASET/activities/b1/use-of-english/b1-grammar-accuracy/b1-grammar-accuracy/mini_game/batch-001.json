@@ -449,6 +449,227 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-accuracy-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-grammar-accuracy",
+      "subtopic": "b1-grammar-accuracy",
+      "taxonomyNodeIds": [
+        "b1-grammar-accuracy"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which negative sentence is correct?",
+          "options": [
+            {
+              "id": "c",
+              "text": "He doesn't drives."
+            },
+            {
+              "id": "d",
+              "text": "He not drive."
+            },
+            {
+              "id": "b",
+              "text": "He doesn't drive."
+            }
+          ],
+          "explanation": "«Doesn't» is followed by the base form «drive». "
+        },
+        {
+          "id": "r2",
+          "prompt": "Which modal passive is correct?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The form must be sign today."
+            },
+            {
+              "id": "b",
+              "text": "The form must signed today."
+            },
+            {
+              "id": "a",
+              "text": "The form must be signed today."
+            }
+          ],
+          "explanation": "A modal passive is «must + be + past participle»: «must be signed». "
+        },
+        {
+          "id": "r3",
+          "prompt": "Which indirect question reports a past action correctly?",
+          "options": [
+            {
+              "id": "b",
+              "text": "She asked where I had left it."
+            },
+            {
+              "id": "d",
+              "text": "She asked where I leave had it."
+            },
+            {
+              "id": "c",
+              "text": "She asked where had I left it."
+            }
+          ],
+          "explanation": "Indirect questions use statement order and past perfect for the earlier action."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence uses «consistent» correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The figures are consistent with the report."
+            },
+            {
+              "id": "b",
+              "text": "The figures are consistent to the report."
+            },
+            {
+              "id": "c",
+              "text": "The figures consistent with the report."
+            }
+          ],
+          "explanation": "The collocation is «consistent with». "
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence uses an article correctly?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I saw a dogs."
+            },
+            {
+              "id": "c",
+              "text": "I saw dog."
+            },
+            {
+              "id": "b",
+              "text": "I saw a dog."
+            }
+          ],
+          "explanation": "The singular countable noun «dog» takes «a» before its consonant sound."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence uses «although» correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Although of raining, we walked."
+            },
+            {
+              "id": "a",
+              "text": "Although the rain, we walked."
+            },
+            {
+              "id": "b",
+              "text": "Although it was raining, we walked."
+            }
+          ],
+          "explanation": "«Although» introduces a complete clause with a subject and verb."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence uses present perfect correctly?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I lived here since 2020."
+            },
+            {
+              "id": "c",
+              "text": "I live here since 2020."
+            },
+            {
+              "id": "a",
+              "text": "I have lived here since 2020."
+            }
+          ],
+          "explanation": "A starting year takes «since» with present perfect."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence uses «such» correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It was such a useful book that I kept it."
+            },
+            {
+              "id": "c",
+              "text": "It was such useful that I kept it."
+            },
+            {
+              "id": "d",
+              "text": "It such was a useful book that I kept it."
+            }
+          ],
+          "explanation": "The pattern is «such + a/an + adjective + singular noun». "
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-accuracy"
+      ],
+      "tags": [
+        "b1",
+        "error-correction",
+        "negatives",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

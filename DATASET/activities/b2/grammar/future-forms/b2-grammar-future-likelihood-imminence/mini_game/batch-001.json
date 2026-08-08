@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The charity is certain ___ enough money for the surgery.",
+          "prompt": "The charity is certain [gap1] enough money for the surgery.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "With such strong evidence, the judge is ___ reach the same conclusion.",
+          "prompt": "With such strong evidence, the judge is [gap1] reach the same conclusion.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The child is on the point of ___ the candle.",
+          "prompt": "The child is on the point of [gap1] the candle.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Once the new evidence is released, the debate is ___ intensify.",
+          "prompt": "Once the new evidence is released, the debate is [gap1] intensify.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The speaker is ___ begin her final sentence.",
+          "prompt": "The speaker is [gap1] begin her final sentence.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Given her experience, the new director is ___ solve the problem quickly.",
+          "prompt": "Given her experience, the new director is [gap1] solve the problem quickly.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The visiting team ___ to arrive at 18:40, according to the schedule.",
+          "prompt": "The visiting team [gap1] to arrive at 18:40, according to the schedule.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The new safety rules ___ reduce accidents, according to the report.",
+          "prompt": "The new safety rules [gap1] reduce accidents, according to the report.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The laboratory is ___ publish its findings next month.",
+          "prompt": "The laboratory is [gap1] publish its findings next month.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The old warehouse is ___ to reopen after the inspection.",
+          "prompt": "The old warehouse is [gap1] to reopen after the inspection.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The local team is ___ win if they maintain this lead.",
+          "prompt": "The local team is [gap1] win if they maintain this lead.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Because of the repair work, the road ___ be busy tomorrow.",
+          "prompt": "Because of the repair work, the road [gap1] be busy tomorrow.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The research vessel is ___ leave the harbour at dawn.",
+          "prompt": "The research vessel is [gap1] leave the harbour at dawn.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The negotiations are on the point of ___ after six months of talks.",
+          "prompt": "The negotiations are on the point of [gap1] after six months of talks.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The satellite is about ___ enter the atmosphere.",
+          "prompt": "The satellite is about [gap1] enter the atmosphere.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The winter crossing is unlikely ___ safe without extra equipment.",
+          "prompt": "The winter crossing is unlikely [gap1] safe without extra equipment.",
           "options": [
             {
               "id": "b",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-likelihood-imminence-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-likelihood-imminence",
+      "taxonomyNodeIds": [
+        "future-likelihood-imminence"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The mayor is [gap1] to open the community centre next Thursday.",
+          "options": [
+            {
+              "id": "d",
+              "text": "due"
+            },
+            {
+              "id": "a",
+              "text": "likely"
+            },
+            {
+              "id": "c",
+              "text": "about"
+            }
+          ],
+          "explanation": "Un acto programado se expresa con is due to open."
+        },
+        {
+          "id": "r2",
+          "prompt": "The warning light is flashing; the machine [gap1] shut down.",
+          "options": [
+            {
+              "id": "c",
+              "text": "is due"
+            },
+            {
+              "id": "b",
+              "text": "is likely"
+            },
+            {
+              "id": "a",
+              "text": "is about to"
+            }
+          ],
+          "explanation": "La señal indica que el apagado ocurrirá inmediatamente: is about to shut down."
+        },
+        {
+          "id": "r3",
+          "prompt": "The chief scientist is [gap1] announce the result at the briefing.",
+          "options": [
+            {
+              "id": "b",
+              "text": "due"
+            },
+            {
+              "id": "c",
+              "text": "about to"
+            },
+            {
+              "id": "a",
+              "text": "likely"
+            }
+          ],
+          "explanation": "El briefing es inminente, así que usamos is about to announce."
+        },
+        {
+          "id": "r4",
+          "prompt": "It is [gap1] that the museum will extend the exhibition.",
+          "options": [
+            {
+              "id": "b",
+              "text": "about to"
+            },
+            {
+              "id": "a",
+              "text": "likely"
+            },
+            {
+              "id": "c",
+              "text": "due"
+            }
+          ],
+          "explanation": "Likely puede introducir una oración con that: It is likely that..."
+        },
+        {
+          "id": "r5",
+          "prompt": "It is [gap1] that the gallery will sell the portrait tonight.",
+          "options": [
+            {
+              "id": "c",
+              "text": "unlikely"
+            },
+            {
+              "id": "b",
+              "text": "due"
+            },
+            {
+              "id": "d",
+              "text": "bound to"
+            }
+          ],
+          "explanation": "Unlikely that expresa que la venta tiene pocas probabilidades."
+        },
+        {
+          "id": "r6",
+          "prompt": "The replacement parts are unlikely [gap1] arrive before Monday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "arriving"
+            },
+            {
+              "id": "b",
+              "text": "to arrive"
+            },
+            {
+              "id": "d",
+              "text": "to arriving"
+            }
+          ],
+          "explanation": "Unlikely va seguido de to y de la forma base: unlikely to arrive."
+        },
+        {
+          "id": "r7",
+          "prompt": "The negotiator was on the point of [gap1] the offer when the phone rang.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to accept"
+            },
+            {
+              "id": "a",
+              "text": "accept"
+            },
+            {
+              "id": "c",
+              "text": "accepting"
+            }
+          ],
+          "explanation": "On the point of requiere el gerundio accepting."
+        },
+        {
+          "id": "r8",
+          "prompt": "The conference is due [gap1] at 9:30, so please take your seat.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to beginning"
+            },
+            {
+              "id": "a",
+              "text": "to begin"
+            },
+            {
+              "id": "b",
+              "text": "beginning"
+            }
+          ],
+          "explanation": "Due to lleva infinitivo para indicar un horario previsto."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-likelihood-imminence"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "due",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
           }
         ]
       },

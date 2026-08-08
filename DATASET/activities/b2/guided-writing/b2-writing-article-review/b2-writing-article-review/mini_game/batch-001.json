@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The festival offers an impressive range of workshops. ___ Even so, booking early is advisable.",
+          "prompt": "The festival offers an impressive range of workshops. [gap1] Even so, booking early is advisable.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The novel uses short chapters and a straightforward narrative. ___ Readers can easily return to it during a busy week.",
+          "prompt": "The novel uses short chapters and a straightforward narrative. [gap1] Readers can easily return to it during a busy week.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "This review considers whether the new software is useful for small businesses. ___ The examples focus on budgets, invoices and customer records.",
+          "prompt": "This review considers whether the new software is useful for small businesses. [gap1] The examples focus on budgets, invoices and customer records.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The restaurant offers excellent ingredients and attentive service, but prices are high. ___ Taking everything into account, it is better for special occasions.",
+          "prompt": "The restaurant offers excellent ingredients and attentive service, but prices are high. [gap1] Taking everything into account, it is better for special occasions.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The museum provides step-free entrances and clear audio descriptions. ___ It should therefore suit visitors with different access needs.",
+          "prompt": "The museum provides step-free entrances and clear audio descriptions. [gap1] It should therefore suit visitors with different access needs.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The book has a slow opening but develops a thoughtful argument about responsibility. ___ For this reason, it rewards readers who are willing to continue.",
+          "prompt": "The book has a slow opening but develops a thoughtful argument about responsibility. [gap1] For this reason, it rewards readers who are willing to continue.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The theatre is small, but every seat is close to the stage. ___ This creates an unusually intimate atmosphere.",
+          "prompt": "The theatre is small, but every seat is close to the stage. [gap1] This creates an unusually intimate atmosphere.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The centre offers interactive displays and a short guided tour. ___ For this reason, it is particularly suitable for families with children.",
+          "prompt": "The centre offers interactive displays and a short guided tour. [gap1] For this reason, it is particularly suitable for families with children.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The exhibition is specialist, but the introductory tour explains its main ideas. ___ Nevertheless, beginners can still enjoy the visit.",
+          "prompt": "The exhibition is specialist, but the introductory tour explains its main ideas. [gap1] Nevertheless, beginners can still enjoy the visit.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The special effects are technically impressive. ___ However, the characters receive less attention than the visuals.",
+          "prompt": "The special effects are technically impressive. [gap1] However, the characters receive less attention than the visuals.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The exhibition opens next Saturday and brings together five local photographers. ___ Visitors can also hear short interviews with the artists.",
+          "prompt": "The exhibition opens next Saturday and brings together five local photographers. [gap1] Visitors can also hear short interviews with the artists.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The book combines a clear style with thoughtful questions about responsibility. ___ It is an engaging choice for readers who enjoy reflective fiction.",
+          "prompt": "The book combines a clear style with thoughtful questions about responsibility. [gap1] It is an engaging choice for readers who enjoy reflective fiction.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The production combines live music with a modern interpretation of the play. ___ It is likely to appeal to audiences who enjoy experimental theatre.",
+          "prompt": "The production combines live music with a modern interpretation of the play. [gap1] It is likely to appeal to audiences who enjoy experimental theatre.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The novel explores responsibility through quiet dialogue and implied emotion. ___ As a result, it rewards readers who prefer subtle stories.",
+          "prompt": "The novel explores responsibility through quiet dialogue and implied emotion. [gap1] As a result, it rewards readers who prefer subtle stories.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The experience offers genuine value despite minor limitations. ___ Taking everything into account, it is worth recommending to visitors with realistic expectations.",
+          "prompt": "The experience offers genuine value despite minor limitations. [gap1] Taking everything into account, it is worth recommending to visitors with realistic expectations.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The venue has step-free access, clear signs and staff who answer questions patiently. ___ For these reasons, it is a strong choice for first-time visitors.",
+          "prompt": "The venue has step-free access, clear signs and staff who answer questions patiently. [gap1] For these reasons, it is a strong choice for first-time visitors.",
           "options": [
             {
               "id": "a",
@@ -408,6 +408,227 @@
         "b2",
         "article-review",
         "accessibility",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-article-review-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-article-review",
+      "subtopic": "b2-writing-article-review",
+      "taxonomyNodeIds": [
+        "b2-writing-article-review"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The gallery is compact, but every room has a distinct focus and clear labels. [gap1] On the other hand, its small size makes it easy to explore in one afternoon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It cannot display the same range as a much larger museum."
+            },
+            {
+              "id": "b",
+              "text": "The entrance has a glass door."
+            },
+            {
+              "id": "c",
+              "text": "A guide works near the shop."
+            }
+          ],
+          "explanation": "The first option states a realistic limitation before the compensating benefit."
+        },
+        {
+          "id": "r2",
+          "prompt": "The event includes music, workshops and food for several age groups. [gap1] In other words, it has something for most visitors.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Its programme is varied enough to interest different audiences."
+            },
+            {
+              "id": "c",
+              "text": "A singer arrived by train."
+            },
+            {
+              "id": "d",
+              "text": "The event has a printed map."
+            }
+          ],
+          "explanation": "The varied programme explains the broad audience appeal."
+        },
+        {
+          "id": "r3",
+          "prompt": "The article describes a new centre and evaluates its facilities for families. [gap1] It therefore helps parents decide whether to visit.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It combines useful information with a judgement about the experience."
+            },
+            {
+              "id": "b",
+              "text": "The centre was painted last year."
+            },
+            {
+              "id": "c",
+              "text": "The reviewer's children were at school."
+            }
+          ],
+          "explanation": "The first option explains how information and evaluation serve the reader."
+        },
+        {
+          "id": "r4",
+          "prompt": "The final scene gives the central conflict an emotional resolution. [gap1] This suggests that the ending is more powerful than the opening indicates.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The film has a short title."
+            },
+            {
+              "id": "a",
+              "text": "The main character finally accepts responsibility for the earlier decision."
+            },
+            {
+              "id": "b",
+              "text": "The cinema offers a discount on Tuesdays."
+            }
+          ],
+          "explanation": "The character's decision explains the emotional resolution."
+        },
+        {
+          "id": "r5",
+          "prompt": "The exhibition is specialist, but the introductory tour explains its main ideas. [gap1] Nevertheless, beginners can still enjoy the visit.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The building has a modern roof."
+            },
+            {
+              "id": "a",
+              "text": "The guide pauses after each room to answer basic questions."
+            },
+            {
+              "id": "c",
+              "text": "The ticket has a printed number."
+            }
+          ],
+          "explanation": "The guide's pauses and answers make specialist content approachable."
+        },
+        {
+          "id": "r6",
+          "prompt": "The restaurant serves excellent food and the staff are attentive. [gap1] Overall, it is better suited to special occasions than everyday meals.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The tables have four legs."
+            },
+            {
+              "id": "d",
+              "text": "The restaurant has a front window."
+            },
+            {
+              "id": "a",
+              "text": "The prices are considerably higher than those of nearby cafés."
+            }
+          ],
+          "explanation": "The high price explains the qualified final recommendation."
+        },
+        {
+          "id": "r7",
+          "prompt": "The festival becomes very crowded before the evening performances. [gap1] Nevertheless, the varied programme makes the visit worthwhile.",
+          "options": [
+            {
+              "id": "d",
+              "text": "A volunteer wore a yellow badge."
+            },
+            {
+              "id": "a",
+              "text": "Visitors who dislike queues should arrive before six."
+            },
+            {
+              "id": "b",
+              "text": "The programme uses a large font."
+            }
+          ],
+          "explanation": "The advice responds directly to the crowding problem."
+        },
+        {
+          "id": "r8",
+          "prompt": "This review is aimed at readers who already understand basic coding. [gap1] It does not explain common programming terms.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The software has a short name."
+            },
+            {
+              "id": "b",
+              "text": "The office has a computer on every desk."
+            },
+            {
+              "id": "a",
+              "text": "The discussion focuses instead on the software's underlying design choices."
+            }
+          ],
+          "explanation": "The design focus explains the specialist audience and the following limitation."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-article-review"
+      ],
+      "tags": [
+        "b2",
+        "article-review",
+        "balance",
         "mini-game"
       ],
       "estimatedSeconds": 120,

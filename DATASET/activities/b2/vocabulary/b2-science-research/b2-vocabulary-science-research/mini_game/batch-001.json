@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The variable was carefully ___ before the trial began.",
+          "prompt": "The variable was carefully [gap1] before the trial began.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The article ___ a claim about urban noise.",
+          "prompt": "The article [gap1] a claim about urban noise.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The study found a correlation but no proof of ___.",
+          "prompt": "The study found a correlation but no proof of [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A statement that a paper argues for is a ___.",
+          "prompt": "A statement that a paper argues for is a [gap1].",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The results need to be ___ by an independent laboratory.",
+          "prompt": "The results need to be [gap1] by an independent laboratory.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The researchers ___ a testable hypothesis.",
+          "prompt": "The researchers [gap1] a testable hypothesis.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The study used a ___ method based on interviews.",
+          "prompt": "The study used a [gap1] method based on interviews.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The difference between the groups was statistically ___.",
+          "prompt": "The difference between the groups was statistically [gap1].",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The study’s limitations should be ___ in the discussion.",
+          "prompt": "The study’s limitations should be [gap1] in the discussion.",
           "options": [
             {
               "id": "a",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The paper underwent peer ___.",
+          "prompt": "The paper underwent peer [gap1].",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The findings ___ the original hypothesis.",
+          "prompt": "The findings [gap1] the original hypothesis.",
           "options": [
             {
               "id": "a",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The report ___ the short duration of the trial.",
+          "prompt": "The report [gap1] the short duration of the trial.",
           "options": [
             {
               "id": "a",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The survey used a ___ sample of households.",
+          "prompt": "The survey used a [gap1] sample of households.",
           "options": [
             {
               "id": "a",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The sample was too small to be ___.",
+          "prompt": "The sample was too small to be [gap1].",
           "options": [
             {
               "id": "c",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The paper ___ the assumption that the treatment is harmless.",
+          "prompt": "The paper [gap1] the assumption that the treatment is harmless.",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "limitations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-science-research-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-science-research",
+      "subtopic": "b2-science-research",
+      "taxonomyNodeIds": [
+        "b2-science-research"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The authors [gap1] their findings in an open-access journal.",
+          "options": [
+            {
+              "id": "a",
+              "text": "published"
+            },
+            {
+              "id": "b",
+              "text": "sampled"
+            },
+            {
+              "id": "d",
+              "text": "measured"
+            }
+          ],
+          "explanation": "Publish findings means make them available in a journal."
+        },
+        {
+          "id": "r2",
+          "prompt": "The instrument produced [gap1] readings each time.",
+          "options": [
+            {
+              "id": "a",
+              "text": "reliable"
+            },
+            {
+              "id": "d",
+              "text": "theoretical"
+            },
+            {
+              "id": "c",
+              "text": "preliminary"
+            }
+          ],
+          "explanation": "Reliable readings are consistent or repeatable."
+        },
+        {
+          "id": "r3",
+          "prompt": "The team [gap1] data from three sites.",
+          "options": [
+            {
+              "id": "d",
+              "text": "challenged"
+            },
+            {
+              "id": "a",
+              "text": "collected"
+            },
+            {
+              "id": "b",
+              "text": "concluded"
+            }
+          ],
+          "explanation": "Researchers collect data before analysing it."
+        },
+        {
+          "id": "r4",
+          "prompt": "The researchers [gap1] a conclusion from the results.",
+          "options": [
+            {
+              "id": "a",
+              "text": "drew"
+            },
+            {
+              "id": "c",
+              "text": "caught"
+            },
+            {
+              "id": "d",
+              "text": "took"
+            }
+          ],
+          "explanation": "Draw a conclusion is the standard collocation."
+        },
+        {
+          "id": "r5",
+          "prompt": "The results are [gap1] and require further testing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "preliminary"
+            },
+            {
+              "id": "b",
+              "text": "permanent"
+            },
+            {
+              "id": "d",
+              "text": "randomised"
+            }
+          ],
+          "explanation": "Preliminary means not yet final or confirmed."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which word means a broad explanatory account supported by evidence?",
+          "options": [
+            {
+              "id": "c",
+              "text": "claim"
+            },
+            {
+              "id": "a",
+              "text": "theory"
+            },
+            {
+              "id": "b",
+              "text": "sample"
+            }
+          ],
+          "explanation": "A theory is broader and more established than a single hypothesis."
+        },
+        {
+          "id": "r7",
+          "prompt": "The team [gap1] the data using a statistical model.",
+          "options": [
+            {
+              "id": "b",
+              "text": "advertised"
+            },
+            {
+              "id": "a",
+              "text": "analysed"
+            },
+            {
+              "id": "c",
+              "text": "attended"
+            }
+          ],
+          "explanation": "Analyse data means examine it systematically."
+        },
+        {
+          "id": "r8",
+          "prompt": "Other laboratories tried to [gap1] the experiment.",
+          "options": [
+            {
+              "id": "d",
+              "text": "revise"
+            },
+            {
+              "id": "a",
+              "text": "replicate"
+            },
+            {
+              "id": "c",
+              "text": "review"
+            }
+          ],
+          "explanation": "Replicate means repeat a study or experiment."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-science-research"
+      ],
+      "tags": [
+        "b2",
+        "publication",
         "mini-game"
       ],
       "estimatedSeconds": 120,

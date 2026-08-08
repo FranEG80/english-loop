@@ -451,6 +451,228 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-informal-email-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-informal-email",
+      "subtopic": "b1-writing-informal-email",
+      "taxonomyNodeIds": [
+        "b1-writing-informal-email"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which phrase would fit an informal email to Max?",
+          "options": [
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase would fit an informal email to Yusuf?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase would fit an informal email to Ravi?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase would fit an informal email to Tom?",
+          "options": [
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase would fit an informal email to Lina?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which phrase would fit an informal email to Mia?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which phrase would fit an informal email to Chloe?",
+          "options": [
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "d",
+              "text": "To whom it may concern, tell me."
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase would fit an informal email to Freya?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Yours faithfully, could you tell me?"
+            },
+            {
+              "id": "a",
+              "text": "By the way, could you tell me that?"
+            },
+            {
+              "id": "b",
+              "text": "By the way, could you tell me this?"
+            }
+          ],
+          "explanation": "The first option combines a friendly linker with a polite but informal question."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-informal-email"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "single-choice",
+        "register",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

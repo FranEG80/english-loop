@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The ___ we practise, the more confident we become.",
+          "prompt": "The [gap1] we practise, the more confident we become.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The software is nowhere near ___ complex as the old system.",
+          "prompt": "The software is nowhere near [gap1] complex as the old system.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "This tablet is as durable ___ the previous version.",
+          "prompt": "This tablet is as durable [gap1] the previous version.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The ___ data we collect, the more reliable the forecast becomes.",
+          "prompt": "The [gap1] data we collect, the more reliable the forecast becomes.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The sculpture looks ___ a folded sail.",
+          "prompt": "The sculpture looks [gap1] a folded sail.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "He behaves ___ though he owned the whole building.",
+          "prompt": "He behaves [gap1] though he owned the whole building.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "He answered as ___ he had memorised the entire report.",
+          "prompt": "He answered as [gap1] he had memorised the entire report.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The survey was not ___ detailed as the interview study.",
+          "prompt": "The survey was not [gap1] detailed as the interview study.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The more the team communicates, the ___ misunderstandings arise.",
+          "prompt": "The more the team communicates, the [gap1] misunderstandings arise.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The new battery is nowhere near ___ heavy as the old one.",
+          "prompt": "The new battery is nowhere near [gap1] heavy as the old one.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The coastal road is almost ___ scenic as the mountain route.",
+          "prompt": "The coastal road is almost [gap1] scenic as the mountain route.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "There are ___ complaints this month than last month.",
+          "prompt": "There are [gap1] complaints this month than last month.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The more carefully we plan, the ___ delays we have.",
+          "prompt": "The more carefully we plan, the [gap1] delays we have.",
           "options": [
             {
               "id": "b",
@@ -437,6 +437,227 @@
           {
             "roundId": "r6",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-comparisons-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "advanced-comparisons",
+      "taxonomyNodeIds": [
+        "advanced-comparisons"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "He talks as though he [gap1] the final decision-maker.",
+          "options": [
+            {
+              "id": "b",
+              "text": "were"
+            },
+            {
+              "id": "c",
+              "text": "be"
+            },
+            {
+              "id": "a",
+              "text": "is"
+            }
+          ],
+          "explanation": "Were can mark hypothetical distance after as though."
+        },
+        {
+          "id": "r2",
+          "prompt": "Choose the formal sentence meaning that she works in the role of an editor.",
+          "options": [
+            {
+              "id": "c",
+              "text": "She works as if an editor."
+            },
+            {
+              "id": "b",
+              "text": "She works as an editor."
+            },
+            {
+              "id": "a",
+              "text": "She works like an editor."
+            }
+          ],
+          "explanation": "As plus a noun identifies a role or function."
+        },
+        {
+          "id": "r3",
+          "prompt": "There is [gap1] traffic after the new tram line opened.",
+          "options": [
+            {
+              "id": "b",
+              "text": "less"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            },
+            {
+              "id": "a",
+              "text": "fewer"
+            }
+          ],
+          "explanation": "Traffic is uncountable, so use less."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which option correctly describes a proportional fall in cost?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Less we waste, the lower cost."
+            },
+            {
+              "id": "a",
+              "text": "The less we waste, the lower the cost."
+            },
+            {
+              "id": "b",
+              "text": "The less we waste, lower the cost."
+            }
+          ],
+          "explanation": "Both clauses require the and a comparative form."
+        },
+        {
+          "id": "r5",
+          "prompt": "The replacement is not [gap1] noisy as the old motor.",
+          "options": [
+            {
+              "id": "a",
+              "text": "than"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            },
+            {
+              "id": "d",
+              "text": "more"
+            }
+          ],
+          "explanation": "Not so...as is a standard negative equality pattern."
+        },
+        {
+          "id": "r6",
+          "prompt": "She speaks [gap1] she had attended the meeting.",
+          "options": [
+            {
+              "id": "c",
+              "text": "as if"
+            },
+            {
+              "id": "d",
+              "text": "than"
+            },
+            {
+              "id": "b",
+              "text": "as"
+            }
+          ],
+          "explanation": "As if introduces an appearance or hypothetical comparison."
+        },
+        {
+          "id": "r7",
+          "prompt": "The less equipment we carry, the [gap1] mobile the team is.",
+          "options": [
+            {
+              "id": "b",
+              "text": "more"
+            },
+            {
+              "id": "c",
+              "text": "many"
+            },
+            {
+              "id": "a",
+              "text": "most"
+            }
+          ],
+          "explanation": "The less...the more links two related changes."
+        },
+        {
+          "id": "r8",
+          "prompt": "The less waste we produce, the [gap1] the disposal bill becomes.",
+          "options": [
+            {
+              "id": "a",
+              "text": "low"
+            },
+            {
+              "id": "b",
+              "text": "lower"
+            },
+            {
+              "id": "c",
+              "text": "lowest"
+            }
+          ],
+          "explanation": "The second part needs a comparative adjective: the lower."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-comparisons"
+      ],
+      "tags": [
+        "b2",
+        "as-though",
+        "distance",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
           },
           {
             "roundId": "r7",

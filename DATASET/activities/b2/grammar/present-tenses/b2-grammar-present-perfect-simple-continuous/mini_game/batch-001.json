@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "She ___ the project all week. (en curso)",
+          "prompt": "She [gap1] the project all week. (en curso)",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "I ___ the car. (resultado)",
+          "prompt": "I [gap1] the car. (resultado)",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I ___ ten pages. (cantidad)",
+          "prompt": "I [gap1] ten pages. (cantidad)",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "They ___ for two hours. (duración)",
+          "prompt": "They [gap1] for two hours. (duración)",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "You ___ a lot. (efecto visible)",
+          "prompt": "You [gap1] a lot. (efecto visible)",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ about it. (decisión)",
+          "prompt": "I [gap1] about it. (decisión)",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I ___ her since childhood. (estado)",
+          "prompt": "I [gap1] her since childhood. (estado)",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I ___ the car all day. (en curso)",
+          "prompt": "I [gap1] the car all day. (en curso)",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "She ___ all morning. (actividad en curso)",
+          "prompt": "She [gap1] all morning. (actividad en curso)",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "I ___ about it. (proceso)",
+          "prompt": "I [gap1] about it. (proceso)",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "She ___ the dishes. (resultado)",
+          "prompt": "She [gap1] the dishes. (resultado)",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "They ___ for a month. (duración)",
+          "prompt": "They [gap1] for a month. (duración)",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I ___ the room all day. (en curso)",
+          "prompt": "I [gap1] the room all day. (en curso)",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ two chapters. (cantidad)",
+          "prompt": "I [gap1] two chapters. (cantidad)",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She ___ three emails. (cantidad)",
+          "prompt": "She [gap1] three emails. (cantidad)",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "They ___ for an hour. (duración)",
+          "prompt": "They [gap1] for an hour. (duración)",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "La duración usa el continuo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-present-perfect-simple-continuous"
+      ],
+      "tags": [
+        "b2",
+        "present-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-present-perfect-simple-continuous-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-perfect-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "present-perfect-simple-vs-continuous"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I [gap1] the room. (terminado)",
+          "options": [
+            {
+              "id": "c",
+              "text": "painted"
+            },
+            {
+              "id": "b",
+              "text": "have been painting"
+            },
+            {
+              "id": "a",
+              "text": "have painted"
+            }
+          ],
+          "explanation": "El resultado terminado usa el simple."
+        },
+        {
+          "id": "r2",
+          "prompt": "I [gap1] her for years. (estado)",
+          "options": [
+            {
+              "id": "b",
+              "text": "have been knowing"
+            },
+            {
+              "id": "c",
+              "text": "am knowing"
+            },
+            {
+              "id": "a",
+              "text": "have known"
+            }
+          ],
+          "explanation": "«know» es un verbo de estado."
+        },
+        {
+          "id": "r3",
+          "prompt": "We [gap1] three museums. (cantidad)",
+          "options": [
+            {
+              "id": "d",
+              "text": "are visiting"
+            },
+            {
+              "id": "a",
+              "text": "have visited"
+            },
+            {
+              "id": "c",
+              "text": "visited"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
+        },
+        {
+          "id": "r4",
+          "prompt": "I [gap1] for an hour. (duración)",
+          "options": [
+            {
+              "id": "d",
+              "text": "am reading"
+            },
+            {
+              "id": "b",
+              "text": "have read"
+            },
+            {
+              "id": "a",
+              "text": "have been reading"
+            }
+          ],
+          "explanation": "La duración usa el continuo."
+        },
+        {
+          "id": "r5",
+          "prompt": "I [gap1] here for ten years. (duración)",
+          "options": [
+            {
+              "id": "b",
+              "text": "have lived"
+            },
+            {
+              "id": "c",
+              "text": "lived"
+            },
+            {
+              "id": "a",
+              "text": "have been living"
+            }
+          ],
+          "explanation": "La duración con «for» usa el continuo."
+        },
+        {
+          "id": "r6",
+          "prompt": "I [gap1] the report. (resultado)",
+          "options": [
+            {
+              "id": "b",
+              "text": "have been finishing"
+            },
+            {
+              "id": "a",
+              "text": "have finished"
+            },
+            {
+              "id": "c",
+              "text": "am finishing"
+            }
+          ],
+          "explanation": "El resultado terminado usa el simple."
+        },
+        {
+          "id": "r7",
+          "prompt": "She [gap1] two articles. (cantidad)",
+          "options": [
+            {
+              "id": "b",
+              "text": "has been writing"
+            },
+            {
+              "id": "a",
+              "text": "has written"
+            },
+            {
+              "id": "d",
+              "text": "is writing"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "He [gap1] here since March. (duración)",
+          "options": [
+            {
+              "id": "c",
+              "text": "worked"
+            },
+            {
+              "id": "a",
+              "text": "has been working"
+            },
+            {
+              "id": "d",
+              "text": "is working"
+            }
+          ],
+          "explanation": "La duración con «since» usa el continuo."
         }
       ],
       "lessonIds": [

@@ -27,16 +27,28 @@
       "prompt": "Match morning verbs to their everyday meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "get up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "leave bed"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "wake up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "stop sleeping"
+        },
+        {
+          "leftId": "l3",
+          "left": "turn down",
+          "rightId": "r3",
+          "right": "reduce volume"
+        },
+        {
+          "leftId": "l4",
+          "left": "turn up",
+          "rightId": "r4",
+          "right": "increase volume"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match clothing verbs with the action they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "put on",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "dress in"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "take off",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "remove"
+        },
+        {
+          "leftId": "l3",
+          "left": "turn off",
+          "rightId": "r3",
+          "right": "stop a device"
+        },
+        {
+          "leftId": "l4",
+          "left": "pick up",
+          "rightId": "r4",
+          "right": "collect something"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match device verbs to their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "turn on",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "start a device"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "turn off",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "stop a device"
+        },
+        {
+          "leftId": "l3",
+          "left": "keep up with",
+          "rightId": "r3",
+          "right": "continue at the same pace"
+        },
+        {
+          "leftId": "l4",
+          "left": "work out",
+          "rightId": "r4",
+          "right": "find a solution"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match collection verbs with what is collected.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "pick up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "collect something"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "pick out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "choose something"
+        },
+        {
+          "leftId": "l3",
+          "left": "try on",
+          "rightId": "r3",
+          "right": "wear briefly to check fit"
+        },
+        {
+          "leftId": "l4",
+          "left": "calm down",
+          "rightId": "r4",
+          "right": "become less upset"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match tidying verbs with their results.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "put away",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "store an object"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "throw away",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "discard an object"
+        },
+        {
+          "leftId": "l3",
+          "left": "look after",
+          "rightId": "r3",
+          "right": "care for"
+        },
+        {
+          "leftId": "l4",
+          "left": "look for",
+          "rightId": "r4",
+          "right": "try to find"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match care verbs to the situation they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "look after",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "care for"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "look for",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "try to find"
+        },
+        {
+          "leftId": "l3",
+          "left": "get up",
+          "rightId": "r3",
+          "right": "leave bed"
+        },
+        {
+          "leftId": "l4",
+          "left": "wake up",
+          "rightId": "r4",
+          "right": "stop sleeping"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match form verbs with the task they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "fill in",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "complete a form"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "write down",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "record words"
+        },
+        {
+          "leftId": "l3",
+          "left": "cut down on",
+          "rightId": "r3",
+          "right": "use less of something"
+        },
+        {
+          "leftId": "l4",
+          "left": "come across",
+          "rightId": "r4",
+          "right": "find by chance"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match sound verbs with their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "turn down",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reduce volume"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "turn up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "increase volume"
+        },
+        {
+          "leftId": "l3",
+          "left": "write down",
+          "rightId": "r3",
+          "right": "record words"
+        },
+        {
+          "leftId": "l4",
+          "left": "run out of",
+          "rightId": "r4",
+          "right": "have no more"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match supply verbs with the situation they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "run out of",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "have no more"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "stock up on",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "buy a supply"
+        },
+        {
+          "leftId": "l3",
+          "left": "turn on",
+          "rightId": "r3",
+          "right": "start a device"
+        },
+        {
+          "leftId": "l4",
+          "left": "turn off",
+          "rightId": "r4",
+          "right": "stop a device"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match clothing actions to their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "take off",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "remove clothing"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "try on",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "wear briefly to check fit"
+        },
+        {
+          "leftId": "l3",
+          "left": "look up",
+          "rightId": "r3",
+          "right": "search for information"
+        },
+        {
+          "leftId": "l4",
+          "left": "find out",
+          "rightId": "r4",
+          "right": "discover a fact"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match emotional changes with their verbs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "calm down",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "become less upset"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "cheer up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "become happier"
+        },
+        {
+          "leftId": "l3",
+          "left": "cut down on",
+          "rightId": "r3",
+          "right": "use less of something"
+        },
+        {
+          "leftId": "l4",
+          "left": "come across",
+          "rightId": "r4",
+          "right": "find by chance"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match repair verbs with their uses.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "break down",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "stop working"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "fix up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "repair or improve"
+        },
+        {
+          "leftId": "l3",
+          "left": "get up",
+          "rightId": "r3",
+          "right": "leave bed"
+        },
+        {
+          "leftId": "l4",
+          "left": "wake up",
+          "rightId": "r4",
+          "right": "stop sleeping"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match information verbs with their actions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "look up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "search for information"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "find out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "discover a fact"
+        },
+        {
+          "leftId": "l3",
+          "left": "throw away",
+          "rightId": "r3",
+          "right": "discard an object"
+        },
+        {
+          "leftId": "l4",
+          "left": "look after",
+          "rightId": "r4",
+          "right": "care for"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match household actions with their result.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "tidy up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "make a place neat"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "clean up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "remove dirt or a mess"
+        },
+        {
+          "leftId": "l3",
+          "left": "try on",
+          "rightId": "r3",
+          "right": "wear briefly to check fit"
+        },
+        {
+          "leftId": "l4",
+          "left": "calm down",
+          "rightId": "r4",
+          "right": "become less upset"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match speaking verbs with their purposes.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "call back",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "return a phone call"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "speak up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "speak more loudly"
+        },
+        {
+          "leftId": "l3",
+          "left": "go over",
+          "rightId": "r3",
+          "right": "review carefully"
+        },
+        {
+          "leftId": "l4",
+          "left": "read through",
+          "rightId": "r4",
+          "right": "read from start to finish"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match review verbs with their actions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "go over",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "review carefully"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "read through",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "read from start to finish"
+        },
+        {
+          "leftId": "l3",
+          "left": "carry on",
+          "rightId": "r3",
+          "right": "continue an activity"
+        },
+        {
+          "leftId": "l4",
+          "left": "keep up with",
+          "rightId": "r4",
+          "right": "continue at the same pace"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match energy verbs with their effect.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "switch off",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "stop a device"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "cut down on",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "use less of something"
+        },
+        {
+          "leftId": "l3",
+          "left": "turn on",
+          "rightId": "r3",
+          "right": "start a device"
+        },
+        {
+          "leftId": "l4",
+          "left": "pick up",
+          "rightId": "r4",
+          "right": "collect something"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match discovery verbs to how the information is found.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "come across",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "find by chance"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "look into",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "investigate deliberately"
+        },
+        {
+          "leftId": "l3",
+          "left": "write down",
+          "rightId": "r3",
+          "right": "record words"
+        },
+        {
+          "leftId": "l4",
+          "left": "turn down",
+          "rightId": "r4",
+          "right": "reduce volume"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match noise verbs to the action they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "keep down",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reduce noise"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "turn up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "increase volume"
+        },
+        {
+          "leftId": "l3",
+          "left": "fix up",
+          "rightId": "r3",
+          "right": "repair or improve"
+        },
+        {
+          "leftId": "l4",
+          "left": "look up",
+          "rightId": "r4",
+          "right": "search for information"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match continuation verbs to their use.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "carry on",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "continue an activity"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "keep up with",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "continue at the same pace"
+        },
+        {
+          "leftId": "l3",
+          "left": "switch off",
+          "rightId": "r3",
+          "right": "stop a device"
+        },
+        {
+          "leftId": "l4",
+          "left": "cut down on",
+          "rightId": "r4",
+          "right": "use less of something"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match problem-solving verbs with their actions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "work out",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "find a solution"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "sort out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "organise or resolve"
+        },
+        {
+          "leftId": "l3",
+          "left": "fix up",
+          "rightId": "r3",
+          "right": "repair or improve"
+        },
+        {
+          "leftId": "l4",
+          "left": "look up",
+          "rightId": "r4",
+          "right": "search for information"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match return verbs with their everyday meaning.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "give back",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "return an object"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "call back",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "return a call"
+        },
+        {
+          "leftId": "l3",
+          "left": "put away",
+          "rightId": "r3",
+          "right": "store an object"
+        },
+        {
+          "leftId": "l4",
+          "left": "throw away",
+          "rightId": "r4",
+          "right": "discard an object"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,16 +1677,28 @@
       "prompt": "Match household verbs with the task they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "clean up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "remove a mess"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "fix up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "repair or improve a place"
+        },
+        {
+          "leftId": "l3",
+          "left": "give back",
+          "rightId": "r3",
+          "right": "return an object"
+        },
+        {
+          "leftId": "l4",
+          "left": "get up",
+          "rightId": "r4",
+          "right": "leave bed"
         }
       ],
       "lessonIds": [
@@ -1262,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1292,16 +1752,28 @@
       "prompt": "Match information actions to their purpose.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "read through",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "examine a text fully"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "write down",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "record a detail"
+        },
+        {
+          "leftId": "l3",
+          "left": "clean up",
+          "rightId": "r3",
+          "right": "remove dirt or a mess"
+        },
+        {
+          "leftId": "l4",
+          "left": "call back",
+          "rightId": "r4",
+          "right": "return a phone call"
         }
       ],
       "lessonIds": [
@@ -1317,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1347,16 +1827,28 @@
       "prompt": "Match final everyday verbs to their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "look into",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "investigate a problem"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "run out of",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "have none left"
+        },
+        {
+          "leftId": "l3",
+          "left": "stock up on",
+          "rightId": "r3",
+          "right": "buy a supply"
+        },
+        {
+          "leftId": "l4",
+          "left": "try on",
+          "rightId": "r4",
+          "right": "wear briefly to check fit"
         }
       ],
       "lessonIds": [
@@ -1372,12 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

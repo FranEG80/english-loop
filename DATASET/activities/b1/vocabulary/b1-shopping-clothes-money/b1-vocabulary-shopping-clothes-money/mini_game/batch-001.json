@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "This colour ___ you very well.",
+          "prompt": "This colour [gap1] you very well.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "These trousers are not loose; they are too ___.",
+          "prompt": "These trousers are not loose; they are too [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The bag is good quality and is worth the ___.",
+          "prompt": "The bag is good quality and is worth the [gap1].",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The price of this jacket is £70. It ___ £70.",
+          "prompt": "The price of this jacket is £70. It [gap1] £70.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "These jeans are the right size, so they ___.",
+          "prompt": "These jeans are the right size, so they [gap1].",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I cannot ___ that expensive watch.",
+          "prompt": "I cannot [gap1] that expensive watch.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "If you return a faulty item, you may ask for a ___.",
+          "prompt": "If you return a faulty item, you may ask for a [gap1].",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Could you ___ me your umbrella until tomorrow?",
+          "prompt": "Could you [gap1] me your umbrella until tomorrow?",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The jacket is expensive, but it is worth the ___.",
+          "prompt": "The jacket is expensive, but it is worth the [gap1].",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "You ask for a ___ after paying in a shop.",
+          "prompt": "You ask for a [gap1] after paying in a shop.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A product that is sold at a lower price is ___.",
+          "prompt": "A product that is sold at a lower price is [gap1].",
           "options": [
             {
               "id": "c",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Borrow significa recibir algo prestado."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-shopping-clothes-money"
+      ],
+      "tags": [
+        "b1",
+        "shopping-clothes-money",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-shopping-clothes-money-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-shopping-clothes-money",
+      "subtopic": "b1-shopping-clothes-money",
+      "taxonomyNodeIds": [
+        "b1-shopping-clothes-money"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which question asks if you can pay with a bank card?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Can I pay by card?"
+            },
+            {
+              "id": "c",
+              "text": "Can I afford by card?"
+            },
+            {
+              "id": "d",
+              "text": "Can I cost by card?"
+            }
+          ],
+          "explanation": "Pay by card es la pregunta natural sobre el método de pago."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which material is often used for soft summer shirts?",
+          "options": [
+            {
+              "id": "b",
+              "text": "receipt"
+            },
+            {
+              "id": "c",
+              "text": "refund"
+            },
+            {
+              "id": "a",
+              "text": "cotton"
+            }
+          ],
+          "explanation": "Cotton es algodón, un material habitual en camisas."
+        },
+        {
+          "id": "r3",
+          "prompt": "The shirt looks good on you; it [gap1] you.",
+          "options": [
+            {
+              "id": "d",
+              "text": "affords"
+            },
+            {
+              "id": "a",
+              "text": "suits"
+            },
+            {
+              "id": "c",
+              "text": "costs"
+            }
+          ],
+          "explanation": "Suit se refiere a que una prenda favorece por estilo o color."
+        },
+        {
+          "id": "r4",
+          "prompt": "What do you ask for if you want to pay less?",
+          "options": [
+            {
+              "id": "b",
+              "text": "a receipt"
+            },
+            {
+              "id": "a",
+              "text": "a discount"
+            },
+            {
+              "id": "c",
+              "text": "a fit"
+            }
+          ],
+          "explanation": "A discount reduce el precio."
+        },
+        {
+          "id": "r5",
+          "prompt": "I spent £30 [gap1] a pair of shoes.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            }
+          ],
+          "explanation": "Spend money on + objeto es la estructura correcta."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence correctly asks about the total price?",
+          "options": [
+            {
+              "id": "c",
+              "text": "How much does cost this jacket?"
+            },
+            {
+              "id": "a",
+              "text": "How much does this jacket cost?"
+            },
+            {
+              "id": "d",
+              "text": "How many does this jacket cost?"
+            }
+          ],
+          "explanation": "How much does + sujeto + cost es la pregunta correcta."
+        },
+        {
+          "id": "r7",
+          "prompt": "A shop gives your money back as a [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "receipt"
+            },
+            {
+              "id": "c",
+              "text": "discount"
+            },
+            {
+              "id": "a",
+              "text": "refund"
+            }
+          ],
+          "explanation": "Refund es el dinero devuelto por la tienda."
+        },
+        {
+          "id": "r8",
+          "prompt": "What do you ask for when your clothes are too small?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a larger size"
+            },
+            {
+              "id": "d",
+              "text": "a discount"
+            },
+            {
+              "id": "b",
+              "text": "a refund"
+            }
+          ],
+          "explanation": "A larger size es una talla mayor."
         }
       ],
       "lessonIds": [

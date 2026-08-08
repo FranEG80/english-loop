@@ -27,16 +27,28 @@
       "prompt": "Match the opening sections to their functions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Introduction",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "states purpose and scope"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Findings",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "presents evidence"
+        },
+        {
+          "leftId": "l3",
+          "left": "Lighting is unreliable",
+          "rightId": "r3",
+          "right": "repair existing fittings"
+        },
+        {
+          "leftId": "l4",
+          "left": "Users want more events",
+          "rightId": "r4",
+          "right": "trial one monthly event"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match these expressions with what they do in a report.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "This report examines",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "introduces the purpose"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "It is recommended that",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "introduces an action"
+        },
+        {
+          "leftId": "l3",
+          "left": "Add a digital timetable",
+          "rightId": "r3",
+          "right": "users cannot find schedules"
+        },
+        {
+          "leftId": "l4",
+          "left": "Provide more quiet desks",
+          "rightId": "r4",
+          "right": "study areas are often full"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match report verbs with the evidence they introduce.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The survey shows",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "a measured result"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Interviews revealed",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "information from interviews"
+        },
+        {
+          "leftId": "l3",
+          "left": "As a result",
+          "rightId": "r3",
+          "right": "consequence"
+        },
+        {
+          "leftId": "l4",
+          "left": "A further issue is",
+          "rightId": "r4",
+          "right": "adds a problem"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match each heading to the information it should contain.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Method",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "how information was collected"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Recommendations",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "proposed improvements"
+        },
+        {
+          "leftId": "l3",
+          "left": "The scheme is popular",
+          "rightId": "r3",
+          "right": "among surveyed users"
+        },
+        {
+          "leftId": "l4",
+          "left": "The change reduced calls",
+          "rightId": "r4",
+          "right": "during the trial period"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match report sentences to their communicative purpose.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Most users were satisfied",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "states a finding"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The centre should add signs",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "states a recommendation"
+        },
+        {
+          "leftId": "l3",
+          "left": "Answer enquiries",
+          "rightId": "r3",
+          "right": "within two working days"
+        },
+        {
+          "leftId": "l4",
+          "left": "Review the scheme",
+          "rightId": "r4",
+          "right": "after three months"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match report connectors to the relationship they express.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "However",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "contrast"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "As a result",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "consequence"
+        },
+        {
+          "leftId": "l3",
+          "left": "The survey",
+          "rightId": "r3",
+          "right": "shows that"
+        },
+        {
+          "leftId": "l4",
+          "left": "The interviews",
+          "rightId": "r4",
+          "right": "revealed that"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match neutral expressions with their report functions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "A further issue is",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "adds a problem"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Overall",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "summarises"
+        },
+        {
+          "leftId": "l3",
+          "left": "Recommendations",
+          "rightId": "r3",
+          "right": "proposed improvements"
+        },
+        {
+          "leftId": "l4",
+          "left": "Most users were satisfied",
+          "rightId": "r4",
+          "right": "states a finding"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match findings with the caution they require.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "One comment",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "cannot prove a general trend"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "A large survey",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "may support a broader claim"
+        },
+        {
+          "leftId": "l3",
+          "left": "Method",
+          "rightId": "r3",
+          "right": "how information was collected"
+        },
+        {
+          "leftId": "l4",
+          "left": "Recommendations",
+          "rightId": "r4",
+          "right": "proposed improvements"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match report recommendations to their likely priority.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Replace a broken sign",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "immediate practical fix"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Review the policy in six months",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "longer-term check"
+        },
+        {
+          "leftId": "l3",
+          "left": "Reduce waiting",
+          "rightId": "r3",
+          "right": "publish live queue information"
+        },
+        {
+          "leftId": "l4",
+          "left": "The scheme is popular",
+          "rightId": "r4",
+          "right": "among surveyed users"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match cautious phrases with what they prevent.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "may be linked to",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "overstating a cause"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "should be treated cautiously",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "overstating a conclusion"
+        },
+        {
+          "leftId": "l3",
+          "left": "Single anecdote",
+          "rightId": "r3",
+          "right": "One comment suggests"
+        },
+        {
+          "leftId": "l4",
+          "left": "Improve access",
+          "rightId": "r4",
+          "right": "install a ramp at the side entrance"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match information sources with natural reporting phrases.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The survey",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "shows that"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The interviews",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "revealed that"
+        },
+        {
+          "leftId": "l3",
+          "left": "The survey shows",
+          "rightId": "r3",
+          "right": "a measured result"
+        },
+        {
+          "leftId": "l4",
+          "left": "Interviews revealed",
+          "rightId": "r4",
+          "right": "information from interviews"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match each result to the heading where it belongs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Users requested later sessions",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Opening hours"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The entrance was difficult to find",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "Access and signage"
+        },
+        {
+          "leftId": "l3",
+          "left": "Overall",
+          "rightId": "r3",
+          "right": "summarises"
+        },
+        {
+          "leftId": "l4",
+          "left": "One comment",
+          "rightId": "r4",
+          "right": "cannot prove a general trend"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match recommendations to the findings behind them.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Add a digital timetable",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "users cannot find schedules"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Provide more quiet desks",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "study areas are often full"
+        },
+        {
+          "leftId": "l3",
+          "left": "Purpose",
+          "rightId": "r3",
+          "right": "at the beginning"
+        },
+        {
+          "leftId": "l4",
+          "left": "The data confirms",
+          "rightId": "r4",
+          "right": "strong evidence"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match each stage with its usual position.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Purpose",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "at the beginning"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Recommendations",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "after findings"
+        },
+        {
+          "leftId": "l3",
+          "left": "The change reduced calls",
+          "rightId": "r3",
+          "right": "during the trial period"
+        },
+        {
+          "leftId": "l4",
+          "left": "Other",
+          "rightId": "r4",
+          "right": "Access and signage"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match evidence phrases to their certainty.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The data confirms",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "strong evidence"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The pattern may reflect",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "qualified possibility"
+        },
+        {
+          "leftId": "l3",
+          "left": "Most users were satisfied",
+          "rightId": "r3",
+          "right": "states a finding"
+        },
+        {
+          "leftId": "l4",
+          "left": "The centre should add signs",
+          "rightId": "r4",
+          "right": "states a recommendation"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match proposed actions to useful targets.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Answer enquiries",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "within two working days"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Review the scheme",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "after three months"
+        },
+        {
+          "leftId": "l3",
+          "left": "Review the policy in six months",
+          "rightId": "r3",
+          "right": "longer-term check"
+        },
+        {
+          "leftId": "l4",
+          "left": "may be linked to",
+          "rightId": "r4",
+          "right": "overstating a cause"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match methodological limits with the claims they weaken.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Small sample",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "generalisability"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Short time frame",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "long-term conclusions"
+        },
+        {
+          "leftId": "l3",
+          "left": "Review the scheme",
+          "rightId": "r3",
+          "right": "after three months"
+        },
+        {
+          "leftId": "l4",
+          "left": "Lighting is unreliable",
+          "rightId": "r4",
+          "right": "repair existing fittings"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match evidence to the response it supports.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Lighting is unreliable",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "repair existing fittings"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Users want more events",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "trial one monthly event"
+        },
+        {
+          "leftId": "l3",
+          "left": "Signs are confusing",
+          "rightId": "r3",
+          "right": "replace them with clearer versions"
+        },
+        {
+          "leftId": "l4",
+          "left": "Introduction",
+          "rightId": "r4",
+          "right": "states purpose and scope"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match direct wording with an objective report alternative.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "I think the service is poor",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Several users reported delays"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Fix this now",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "It is recommended that this be reviewed"
+        },
+        {
+          "leftId": "l3",
+          "left": "A further issue is",
+          "rightId": "r3",
+          "right": "adds a problem"
+        },
+        {
+          "leftId": "l4",
+          "left": "Overall",
+          "rightId": "r4",
+          "right": "summarises"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match closing phrases to what they achieve.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Overall",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "summarises findings"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For this reason",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "links evidence to action"
+        },
+        {
+          "leftId": "l3",
+          "left": "A further issue is",
+          "rightId": "r3",
+          "right": "adds a problem"
+        },
+        {
+          "leftId": "l4",
+          "left": "One comment",
+          "rightId": "r4",
+          "right": "cannot prove a general trend"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match the evidence to a responsible claim.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Repeated survey result",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "The results indicate"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Single anecdote",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "One comment suggests"
+        },
+        {
+          "leftId": "l3",
+          "left": "Signs are confusing",
+          "rightId": "r3",
+          "right": "replace them with clearer versions"
+        },
+        {
+          "leftId": "l4",
+          "left": "Introduction",
+          "rightId": "r4",
+          "right": "states purpose and scope"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match an action with a practical way to implement it.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Improve access",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "install a ramp at the side entrance"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Reduce waiting",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "publish live queue information"
+        },
+        {
+          "leftId": "l3",
+          "left": "Users want more events",
+          "rightId": "r3",
+          "right": "trial one monthly event"
+        },
+        {
+          "leftId": "l4",
+          "left": "I think the service is poor",
+          "rightId": "r4",
+          "right": "Several users reported delays"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,16 +1677,28 @@
       "prompt": "Match broad claims with the wording that makes them responsible.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The scheme is popular",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "among surveyed users"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The change reduced calls",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "during the trial period"
+        },
+        {
+          "leftId": "l3",
+          "left": "The interviews",
+          "rightId": "r3",
+          "right": "revealed that"
+        },
+        {
+          "leftId": "l4",
+          "left": "Users requested later sessions",
+          "rightId": "r4",
+          "right": "Opening hours"
         }
       ],
       "lessonIds": [
@@ -1262,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1292,16 +1752,28 @@
       "prompt": "Match vague headings to precise alternatives.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Other",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Access and signage"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Things to do",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "Recommendations"
+        },
+        {
+          "leftId": "l3",
+          "left": "Replace a broken sign",
+          "rightId": "r3",
+          "right": "immediate practical fix"
+        },
+        {
+          "leftId": "l4",
+          "left": "Review the policy in six months",
+          "rightId": "r4",
+          "right": "longer-term check"
         }
       ],
       "lessonIds": [
@@ -1317,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1347,16 +1827,28 @@
       "prompt": "Match final findings with proportionate conclusions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Evening demand is high",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "extend one evening session"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Signs are confusing",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "replace them with clearer versions"
+        },
+        {
+          "leftId": "l3",
+          "left": "It is recommended that",
+          "rightId": "r3",
+          "right": "introduces an action"
+        },
+        {
+          "leftId": "l4",
+          "left": "The survey shows",
+          "rightId": "r4",
+          "right": "a measured result"
         }
       ],
       "lessonIds": [
@@ -1372,12 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

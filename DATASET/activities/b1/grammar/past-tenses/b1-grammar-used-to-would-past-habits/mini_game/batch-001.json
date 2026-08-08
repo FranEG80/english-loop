@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ to school, but now I take the bus.",
+          "prompt": "I [gap1] to school, but now I take the bus.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "When Lena lived in the village, she ___ everyone and she ___ at each neighbour's door before the festival.",
+          "prompt": "When Lena lived in the village, she [gap1] everyone and she [gap2] at each neighbour's door before the festival.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "On cold mornings, the old engine ___ rough for the first minute.",
+          "prompt": "On cold mornings, the old engine [gap1] rough for the first minute.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "This describes the present, not the past: I ___ to work.",
+          "prompt": "This describes the present, not the past: I [gap1] to work.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "There ___ a bookshop on this corner, but it was demolished.",
+          "prompt": "There [gap1] a bookshop on this corner, but it was demolished.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Whenever we stayed with our grandparents, we ___ in the garden after breakfast.",
+          "prompt": "Whenever we stayed with our grandparents, we [gap1] in the garden after breakfast.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Before changing jobs, I ___ at five every morning.",
+          "prompt": "Before changing jobs, I [gap1] at five every morning.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "When we stayed with her, my grandmother ___ us a story before bed.",
+          "prompt": "When we stayed with her, my grandmother [gap1] us a story before bed.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "When we were children, we would ___ outside until dark.",
+          "prompt": "When we were children, we would [gap1] outside until dark.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Early starts are normal for me now; I ___ before six.",
+          "prompt": "Early starts are normal for me now; I [gap1] before six.",
           "options": [
             {
               "id": "c",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "«Be used to» significa estar acostumbrado y va seguido de `-ing`."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-used-to-would-past-habits"
+      ],
+      "tags": [
+        "b1",
+        "would",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-used-to-would-past-habits-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "used-to-would-past-habits",
+      "taxonomyNodeIds": [
+        "used-to-would-past-habits"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "On Sundays at our grandparents' house, Dad [gap1] and we [gap2] afterwards.",
+          "options": [
+            {
+              "id": "b",
+              "text": "would cooked / would washed up"
+            },
+            {
+              "id": "d",
+              "text": "was used to cook / used wash up"
+            },
+            {
+              "id": "a",
+              "text": "would cook / would wash up"
+            }
+          ],
+          "explanation": "Las dos acciones repetidas usan «would + infinitivo» dentro del marco dominical."
+        },
+        {
+          "id": "r2",
+          "prompt": "No past time frame has been given yet.",
+          "options": [
+            {
+              "id": "d",
+              "text": "I would to visit the market every Saturday."
+            },
+            {
+              "id": "a",
+              "text": "I used to visit the market every Saturday."
+            },
+            {
+              "id": "c",
+              "text": "I use to visited the market every Saturday."
+            }
+          ],
+          "explanation": "Sin marco previo, «used to» expresa de forma inequívoca el hábito pasado."
+        },
+        {
+          "id": "r3",
+          "prompt": "My grandmother [gap1] dozens of traditional songs.",
+          "options": [
+            {
+              "id": "b",
+              "text": "would know"
+            },
+            {
+              "id": "c",
+              "text": "used to knowing"
+            },
+            {
+              "id": "a",
+              "text": "used to know"
+            }
+          ],
+          "explanation": "«Know» expresa un estado y se combina con «used to»."
+        },
+        {
+          "id": "r4",
+          "prompt": "This building [gap1] a post office, but now it is a café.",
+          "options": [
+            {
+              "id": "a",
+              "text": "used to be"
+            },
+            {
+              "id": "d",
+              "text": "did used to be"
+            },
+            {
+              "id": "b",
+              "text": "would be"
+            }
+          ],
+          "explanation": "Un estado anterior que ya no continúa se expresa con «used to be»."
+        },
+        {
+          "id": "r5",
+          "prompt": "While I was abroad in 2019, I [gap1] my parents every Sunday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "called"
+            },
+            {
+              "id": "b",
+              "text": "have called"
+            },
+            {
+              "id": "c",
+              "text": "did called"
+            }
+          ],
+          "explanation": "El past simple expresa naturalmente un hábito dentro de un periodo cerrado."
+        },
+        {
+          "id": "r6",
+          "prompt": "The traffic bothered me at first, but eventually I [gap1] it.",
+          "options": [
+            {
+              "id": "a",
+              "text": "got used to"
+            },
+            {
+              "id": "b",
+              "text": "used to"
+            },
+            {
+              "id": "d",
+              "text": "got use to"
+            }
+          ],
+          "explanation": "«Got used to» indica que la persona se acostumbró."
+        },
+        {
+          "id": "r7",
+          "prompt": "I [gap1] paper maps, but after a month I [gap2] the navigation app.",
+          "options": [
+            {
+              "id": "c",
+              "text": "used to relying on / got used to use"
+            },
+            {
+              "id": "a",
+              "text": "used to rely on / got used to using"
+            },
+            {
+              "id": "d",
+              "text": "would relied on / got use to using"
+            }
+          ],
+          "explanation": "El hábito anterior usa «used to rely»; la adaptación usa «got used to using»."
+        },
+        {
+          "id": "r8",
+          "prompt": "When I was a child, I [gap1] my aunt every Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "can use either “used to visit” or “would visit”"
+            },
+            {
+              "id": "b",
+              "text": "must use “would visited”"
+            },
+            {
+              "id": "c",
+              "text": "must use “used to visiting”"
+            }
+          ],
+          "explanation": "Con una acción repetida y marco claro, ambas formas son posibles."
         }
       ],
       "lessonIds": [

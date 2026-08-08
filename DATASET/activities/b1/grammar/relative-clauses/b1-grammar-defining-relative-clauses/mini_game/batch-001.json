@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The hospital ___ opened last year is modern.",
+          "prompt": "The hospital [gap1] opened last year is modern.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The people ___ live upstairs are very quiet.",
+          "prompt": "The people [gap1] live upstairs are very quiet.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The doctor ___ treated me was kind.",
+          "prompt": "The doctor [gap1] treated me was kind.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The train ___ leaves at six is the fastest.",
+          "prompt": "The train [gap1] leaves at six is the fastest.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The teacher ___ taught me is retired.",
+          "prompt": "The teacher [gap1] taught me is retired.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The book ___ I borrowed is on the table.",
+          "prompt": "The book [gap1] I borrowed is on the table.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The man ___ that called is my uncle.",
+          "prompt": "The man [gap1] that called is my uncle.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The woman ___ car was stolen called the police.",
+          "prompt": "The woman [gap1] car was stolen called the police.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "This is the café ___ we met.",
+          "prompt": "This is the café [gap1] we met.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The restaurant ___ we visited was excellent.",
+          "prompt": "The restaurant [gap1] we visited was excellent.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The keys ___ are on the desk are mine.",
+          "prompt": "The keys [gap1] are on the desk are mine.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "That's the shop ___ I bought these shoes.",
+          "prompt": "That's the shop [gap1] I bought these shoes.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "This is the town ___ I grew up.",
+          "prompt": "This is the town [gap1] I grew up.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The woman ___ lives next door is a doctor.",
+          "prompt": "The woman [gap1] lives next door is a doctor.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The phone ___ I bought is cheap.",
+          "prompt": "The phone [gap1] I bought is cheap.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The laptop ___ I use is quite old.",
+          "prompt": "The laptop [gap1] I use is quite old.",
           "options": [
             {
               "id": "a",
@@ -396,6 +396,227 @@
             {
               "id": "d",
               "text": "whose"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-defining-relative-clauses"
+      ],
+      "tags": [
+        "b1",
+        "relative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-defining-relative-clauses-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "defining-relative-clauses",
+      "taxonomyNodeIds": [
+        "defining-relative-clauses"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This is the park [gap1] the children play.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "where"
+            }
+          ],
+          "explanation": "Para lugares usamos «where»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The village [gap1] I was born is very small.",
+          "options": [
+            {
+              "id": "a",
+              "text": "where"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            }
+          ],
+          "explanation": "Para lugares usamos «where»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The book [gap1] you recommended is on sale.",
+          "options": [
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "c",
+              "text": "where"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The film [gap1] we saw was great.",
+          "options": [
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "b",
+              "text": "who"
+            }
+          ],
+          "explanation": "Para cosas usamos «that»/«which»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The student [gap1] essay won the prize is my friend.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "a",
+              "text": "whose"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            }
+          ],
+          "explanation": "«whose» expresa posesión."
+        },
+        {
+          "id": "r6",
+          "prompt": "The man [gap1] called is my uncle.",
+          "options": [
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "d",
+              "text": "when"
+            }
+          ],
+          "explanation": "Para personas usamos «who»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The house [gap1] roof was damaged is being repaired.",
+          "options": [
+            {
+              "id": "a",
+              "text": "whose"
+            },
+            {
+              "id": "c",
+              "text": "which"
+            },
+            {
+              "id": "d",
+              "text": "where"
+            }
+          ],
+          "explanation": "«whose» expresa posesión."
+        },
+        {
+          "id": "r8",
+          "prompt": "The company [gap1] I work for is expanding.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "d",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "that"
             }
           ],
           "explanation": "Para cosas usamos «that»/«which»."

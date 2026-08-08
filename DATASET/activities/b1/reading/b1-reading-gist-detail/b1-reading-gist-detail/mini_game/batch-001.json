@@ -465,6 +465,235 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-gist-detail-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-gist-detail",
+      "subtopic": "b1-reading-gist-detail",
+      "taxonomyNodeIds": [
+        "b1-reading-gist-detail"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What is the new closing time?",
+          "context": "The museum closes at 7 p.m. during the school holiday instead of 5 p.m.",
+          "options": [
+            {
+              "id": "c",
+              "text": "7 a.m."
+            },
+            {
+              "id": "b",
+              "text": "5 p.m."
+            },
+            {
+              "id": "a",
+              "text": "7 p.m."
+            }
+          ],
+          "explanation": "Instead of 5 p.m. contrasta con el nuevo horario de 7 p.m."
+        },
+        {
+          "id": "r2",
+          "prompt": "What caused the route change?",
+          "context": "The cycling group changed its route because a bridge was closed. The new route is longer but quieter.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The new route was shorter"
+            },
+            {
+              "id": "a",
+              "text": "A bridge was closed"
+            },
+            {
+              "id": "b",
+              "text": "The group wanted more traffic"
+            }
+          ],
+          "explanation": "Because a bridge was closed ofrece la causa explícita."
+        },
+        {
+          "id": "r3",
+          "prompt": "What is the purpose of the youth-club tool library?",
+          "context": "A youth club introduced a tool library. Members can borrow drills and sewing machines for home projects, so they do not need to buy equipment they use rarely.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Borrowing occasional-use tools through a youth club"
+            },
+            {
+              "id": "d",
+              "text": "A shop closing its tool section"
+            },
+            {
+              "id": "c",
+              "text": "A club that teaches only sewing"
+            }
+          ],
+          "explanation": "La biblioteca de herramientas permite compartir equipos poco usados."
+        },
+        {
+          "id": "r4",
+          "prompt": "Why was another desk opened?",
+          "context": "The festival expected 200 visitors but welcomed nearly 350, so organisers opened another information desk to reduce queues.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The organisers wanted fewer questions"
+            },
+            {
+              "id": "a",
+              "text": "More visitors created queues"
+            },
+            {
+              "id": "c",
+              "text": "Tickets became free"
+            }
+          ],
+          "explanation": "La causa se expresa con so: más visitantes y colas."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which item is accepted?",
+          "context": "The repair café accepts toasters, lamps and small radios, but not large appliances.",
+          "options": [
+            {
+              "id": "b",
+              "text": "A large cooker"
+            },
+            {
+              "id": "d",
+              "text": "A full-size fridge"
+            },
+            {
+              "id": "a",
+              "text": "A lamp"
+            }
+          ],
+          "explanation": "A lamp está en la lista de objetos aceptados."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which summary best describes the temporary coastal-path closure?",
+          "context": "The coastal path was closed after a rockfall. Engineers have inspected it, but walkers must still use the inland route until repairs are finished.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Engineers removed every rock"
+            },
+            {
+              "id": "a",
+              "text": "Walkers must take an inland route while the coast path is repaired"
+            },
+            {
+              "id": "b",
+              "text": "The path is open after an inspection"
+            }
+          ],
+          "explanation": "Still y until repairs are finished mantienen el cierre temporal."
+        },
+        {
+          "id": "r7",
+          "prompt": "When is the bread half price?",
+          "context": "The bakery sells day-old bread at half price in the afternoon to waste less food.",
+          "options": [
+            {
+              "id": "d",
+              "text": "All morning"
+            },
+            {
+              "id": "c",
+              "text": "At midnight"
+            },
+            {
+              "id": "a",
+              "text": "In the afternoon"
+            }
+          ],
+          "explanation": "In the afternoon aporta la información temporal."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which item can the café accept?",
+          "context": "The repair café accepts toasters, lamps and small radios. It cannot repair large appliances because the room is too small.",
+          "options": [
+            {
+              "id": "d",
+              "text": "A full-size fridge"
+            },
+            {
+              "id": "b",
+              "text": "A large cooker"
+            },
+            {
+              "id": "a",
+              "text": "A small radio"
+            }
+          ],
+          "explanation": "Small radio está entre los objetos aceptados."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-gist-detail"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "detail",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

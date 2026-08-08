@@ -27,16 +27,28 @@
       "prompt": "Match basic opinion-writing phrases with their functions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "In my view",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "introduces an opinion"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For example",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "introduces evidence"
+        },
+        {
+          "leftId": "l3",
+          "left": "Title",
+          "rightId": "r3",
+          "right": "names the main idea"
+        },
+        {
+          "leftId": "l4",
+          "left": "Conclusion",
+          "rightId": "r4",
+          "right": "restates the position"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match the opening parts of an opinion article.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Title",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "names the main idea"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Conclusion",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "restates the position"
+        },
+        {
+          "leftId": "l3",
+          "left": "Overall",
+          "rightId": "r3",
+          "right": "summarises the view"
+        },
+        {
+          "leftId": "l4",
+          "left": "Parks are useful",
+          "rightId": "r4",
+          "right": "because children can exercise there"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match connectors used in a short opinion paragraph.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "because",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "gives a reason"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Overall",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "summarises the view"
+        },
+        {
+          "leftId": "l3",
+          "left": "Schools should open clubs",
+          "rightId": "r3",
+          "right": "give students more activities"
+        },
+        {
+          "leftId": "l4",
+          "left": "To begin with",
+          "rightId": "r4",
+          "right": "starts a point"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match simple claims with suitable support.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Parks are useful",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "because children can exercise there"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Local food matters",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "because it travels a shorter distance"
+        },
+        {
+          "leftId": "l3",
+          "left": "Flexible courses help busy adults",
+          "rightId": "r3",
+          "right": "evening groups fit working schedules"
+        },
+        {
+          "leftId": "l4",
+          "left": "Online notes support revision",
+          "rightId": "r4",
+          "right": "learners can replay difficult explanations"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match short conclusions with their recommendations.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The town should add cycle lanes",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "support safer cycling"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Schools should open clubs",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "give students more activities"
+        },
+        {
+          "leftId": "l3",
+          "left": "Overall, trees deserve space in every street",
+          "rightId": "r3",
+          "right": "green spaces improve shade and comfort"
+        },
+        {
+          "leftId": "l4",
+          "left": "For these reasons, clubs are worthwhile",
+          "rightId": "r4",
+          "right": "clubs build skills and friendships"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match phrases that organise an opinion article.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "To begin with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "starts a point"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For these reasons",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "introduces a conclusion"
+        },
+        {
+          "leftId": "l3",
+          "left": "Schools should teach finance",
+          "rightId": "r3",
+          "right": "budgeting and safe spending"
+        },
+        {
+          "leftId": "l4",
+          "left": "Towns need safer crossings",
+          "rightId": "r4",
+          "right": "visibility and pedestrian priority"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match contrast and result connectors.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "However",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "introduces a contrast"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Therefore",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "introduces a result"
+        },
+        {
+          "leftId": "l3",
+          "left": "Personal experience",
+          "rightId": "r3",
+          "right": "I found the new route easier"
+        },
+        {
+          "leftId": "l4",
+          "left": "General observation",
+          "rightId": "r4",
+          "right": "Many commuters avoid the crowded road"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match community claims with examples.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Libraries support learners",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "students can study there after school"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Parks improve health",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "residents can walk and play outside"
+        },
+        {
+          "leftId": "l3",
+          "left": "School magazine readers",
+          "rightId": "r3",
+          "right": "better school clubs"
+        },
+        {
+          "leftId": "l4",
+          "left": "Town newsletter readers",
+          "rightId": "r4",
+          "right": "safer local streets"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match likely readers with an article topic.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "School magazine readers",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "better school clubs"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Town newsletter readers",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "safer local streets"
+        },
+        {
+          "leftId": "l3",
+          "left": "Schools should teach cooking",
+          "rightId": "r3",
+          "right": "it builds everyday independence"
+        },
+        {
+          "leftId": "l4",
+          "left": "Towns should plant trees",
+          "rightId": "r4",
+          "right": "they provide shade in summer"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match useful phrases with their paragraph purpose.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "For instance",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "adds an example"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "In conclusion",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "closes the argument"
+        },
+        {
+          "leftId": "l3",
+          "left": "To begin with",
+          "rightId": "r3",
+          "right": "starts a point"
+        },
+        {
+          "leftId": "l4",
+          "left": "For these reasons",
+          "rightId": "r4",
+          "right": "introduces a conclusion"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match practical proposals with reasons.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Schools should teach cooking",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "it builds everyday independence"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Towns should plant trees",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "they provide shade in summer"
+        },
+        {
+          "leftId": "l3",
+          "left": "Parks are useful",
+          "rightId": "r3",
+          "right": "because children can exercise there"
+        },
+        {
+          "leftId": "l4",
+          "left": "Local food matters",
+          "rightId": "r4",
+          "right": "because it travels a shorter distance"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match changes with their likely results.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "More people cycle",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "traffic may decrease"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The library stays open later",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "more workers can visit"
+        },
+        {
+          "leftId": "l3",
+          "left": "Title",
+          "rightId": "r3",
+          "right": "names the main idea"
+        },
+        {
+          "leftId": "l4",
+          "left": "Conclusion",
+          "rightId": "r4",
+          "right": "restates the position"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match concerns about proposals with reasonable replies.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "New cycle lanes cost money",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "safer travel may justify the cost"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Clubs need staff",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "short sessions could share resources"
+        },
+        {
+          "leftId": "l3",
+          "left": "Develop the reason",
+          "rightId": "r3",
+          "right": "explain it with an example"
+        },
+        {
+          "leftId": "l4",
+          "left": "Close the article",
+          "rightId": "r4",
+          "right": "return to the recommendation"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match a paragraph structure about public transport.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Topic sentence",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Buses deserve more investment"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Example",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "A reliable route helps late-shift workers"
+        },
+        {
+          "leftId": "l3",
+          "left": "General observation",
+          "rightId": "r3",
+          "right": "Many commuters avoid the crowded road"
+        },
+        {
+          "leftId": "l4",
+          "left": "It is good",
+          "rightId": "r4",
+          "right": "add a precise reason"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match article openings with their effects on readers.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Have you noticed the empty park?",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "engages readers with a question"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Our town has three public parks",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "begins with a factual detail"
+        },
+        {
+          "leftId": "l3",
+          "left": "Towns need safer crossings",
+          "rightId": "r3",
+          "right": "visibility and pedestrian priority"
+        },
+        {
+          "leftId": "l4",
+          "left": "Although cars are convenient",
+          "rightId": "r4",
+          "right": "public transport is cleaner"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match advanced connectors with their relationships.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "As a result",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "shows a consequence"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "On the other hand",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "presents another side"
+        },
+        {
+          "leftId": "l3",
+          "left": "For these reasons, clubs are worthwhile",
+          "rightId": "r3",
+          "right": "clubs build skills and friendships"
+        },
+        {
+          "leftId": "l4",
+          "left": "School magazine",
+          "rightId": "r4",
+          "right": "friendly and clear"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match claims about flexible learning with evidence.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Flexible courses help busy adults",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "evening groups fit working schedules"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Online notes support revision",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "learners can replay difficult explanations"
+        },
+        {
+          "leftId": "l3",
+          "left": "A garden needs volunteers",
+          "rightId": "r3",
+          "right": "local groups could share the work"
+        },
+        {
+          "leftId": "l4",
+          "left": "A bus route is expensive",
+          "rightId": "r4",
+          "right": "reliable transport can support employment"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match objections to community proposals with replies.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "A garden needs volunteers",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "local groups could share the work"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "A bus route is expensive",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "reliable transport can support employment"
+        },
+        {
+          "leftId": "l3",
+          "left": "Our town has three public parks",
+          "rightId": "r3",
+          "right": "begins with a factual detail"
+        },
+        {
+          "leftId": "l4",
+          "left": "As a result",
+          "rightId": "r4",
+          "right": "shows a consequence"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match conclusions with the arguments they close.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Overall, trees deserve space in every street",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "green spaces improve shade and comfort"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For these reasons, clubs are worthwhile",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "clubs build skills and friendships"
+        },
+        {
+          "leftId": "l3",
+          "left": "Clubs need staff",
+          "rightId": "r3",
+          "right": "short sessions could share resources"
+        },
+        {
+          "leftId": "l4",
+          "left": "Topic sentence",
+          "rightId": "r4",
+          "right": "Buses deserve more investment"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match audiences with a suitable tone for an opinion article.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "School magazine",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "friendly and clear"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Community report",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "measured and practical"
+        },
+        {
+          "leftId": "l3",
+          "left": "In conclusion",
+          "rightId": "r3",
+          "right": "closes the argument"
+        },
+        {
+          "leftId": "l4",
+          "left": "Schools should teach cooking",
+          "rightId": "r4",
+          "right": "it builds everyday independence"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match detailed theses with focused supporting paragraphs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Schools should teach finance",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "budgeting and safe spending"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Towns need safer crossings",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "visibility and pedestrian priority"
+        },
+        {
+          "leftId": "l3",
+          "left": "The library stays open later",
+          "rightId": "r3",
+          "right": "more workers can visit"
+        },
+        {
+          "leftId": "l4",
+          "left": "New cycle lanes cost money",
+          "rightId": "r4",
+          "right": "safer travel may justify the cost"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match nuanced concessions with their claims.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Although cars are convenient",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "public transport is cleaner"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "While exams measure some skills",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "projects show practical ability"
+        },
+        {
+          "leftId": "l3",
+          "left": "For these reasons",
+          "rightId": "r3",
+          "right": "introduces a conclusion"
+        },
+        {
+          "leftId": "l4",
+          "left": "However",
+          "rightId": "r4",
+          "right": "introduces a contrast"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,16 +1677,28 @@
       "prompt": "Match evidence labels with examples for an article.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Personal experience",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "I found the new route easier"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "General observation",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "Many commuters avoid the crowded road"
+        },
+        {
+          "leftId": "l3",
+          "left": "Parks improve health",
+          "rightId": "r3",
+          "right": "residents can walk and play outside"
+        },
+        {
+          "leftId": "l4",
+          "left": "School magazine readers",
+          "rightId": "r4",
+          "right": "better school clubs"
         }
       ],
       "lessonIds": [
@@ -1262,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1292,16 +1752,28 @@
       "prompt": "Match weak article sentences with the improvement they need.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "It is good",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "add a precise reason"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "People like it",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "identify who and why"
+        },
+        {
+          "leftId": "l3",
+          "left": "Conclusion",
+          "rightId": "r3",
+          "right": "restates the position"
+        },
+        {
+          "leftId": "l4",
+          "left": "because",
+          "rightId": "r4",
+          "right": "gives a reason"
         }
       ],
       "lessonIds": [
@@ -1317,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1347,22 +1827,28 @@
       "prompt": "Match final planning notes with their paragraph jobs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Introduce the issue",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "state why the topic matters"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Develop the reason",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "explain it with an example"
         },
         {
-          "leftId": "c",
+          "leftId": "l3",
           "left": "Close the article",
-          "rightId": "z",
+          "rightId": "r3",
           "right": "return to the recommendation"
+        },
+        {
+          "leftId": "l4",
+          "left": "Local food matters",
+          "rightId": "r4",
+          "right": "because it travels a shorter distance"
         }
       ],
       "lessonIds": [
@@ -1378,16 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
           },
           {
-            "leftId": "c",
-            "rightId": "z"
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

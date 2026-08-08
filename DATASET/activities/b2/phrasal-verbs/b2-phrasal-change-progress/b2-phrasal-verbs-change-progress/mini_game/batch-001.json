@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The factory must ___ quality checks.",
+          "prompt": "The factory must [gap1] quality checks.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The council is ready to ___ the successful pilot.",
+          "prompt": "The council is ready to [gap1] the successful pilot.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Extra checks may ___ the approval process.",
+          "prompt": "Extra checks may [gap1] the approval process.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The museum decided to ___ the renovation.",
+          "prompt": "The museum decided to [gap1] the renovation.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The qualification may ___ new opportunities.",
+          "prompt": "The qualification may [gap1] new opportunities.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The new manager hopes to ___ the struggling service.",
+          "prompt": "The new manager hopes to [gap1] the struggling service.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Extra checks may ___ the approval process.",
+          "prompt": "Extra checks may [gap1] the approval process.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The consultant will ___ the final report on Friday.",
+          "prompt": "The consultant will [gap1] the final report on Friday.",
           "options": [
             {
               "id": "c",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The museum decided to ___ the renovation.",
+          "prompt": "The museum decided to [gap1] the renovation.",
           "options": [
             {
               "id": "d",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The centre will ___ the evening programme in July.",
+          "prompt": "The centre will [gap1] the evening programme in July.",
           "options": [
             {
               "id": "a",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The office wants to ___ single-use plastic.",
+          "prompt": "The office wants to [gap1] single-use plastic.",
           "options": [
             {
               "id": "c",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The company must ___ its promise to staff.",
+          "prompt": "The company must [gap1] its promise to staff.",
           "options": [
             {
               "id": "b",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The centre will ___ the evening programme in July.",
+          "prompt": "The centre will [gap1] the evening programme in July.",
           "options": [
             {
               "id": "b",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A new route should ___ the delivery service.",
+          "prompt": "A new route should [gap1] the delivery service.",
           "options": [
             {
               "id": "b",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The council is ready to ___ the successful pilot.",
+          "prompt": "The council is ready to [gap1] the successful pilot.",
           "options": [
             {
               "id": "a",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The office wants to ___ single-use plastic.",
+          "prompt": "The office wants to [gap1] single-use plastic.",
           "options": [
             {
               "id": "d",
@@ -410,6 +410,228 @@
         "phrasal-verbs",
         "multiple-choice-cloze",
         "cloze",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-phrasal-verbs-change-progress-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b2-phrasal-change-progress",
+      "subtopic": "b2-phrasal-change-progress",
+      "taxonomyNodeIds": [
+        "b2-phrasal-change-progress"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Managers need to [gap1] new regulations.",
+          "options": [
+            {
+              "id": "c",
+              "text": "take over"
+            },
+            {
+              "id": "a",
+              "text": "keep up with"
+            },
+            {
+              "id": "b",
+              "text": "catch up on"
+            }
+          ],
+          "explanation": "“keep up with” means to remain informed or equal."
+        },
+        {
+          "id": "r2",
+          "prompt": "The campaign can [gap1] a change in recycling habits.",
+          "options": [
+            {
+              "id": "c",
+              "text": "cut down on"
+            },
+            {
+              "id": "d",
+              "text": "move on to"
+            },
+            {
+              "id": "a",
+              "text": "bring about"
+            }
+          ],
+          "explanation": "“bring about” means to cause gradually."
+        },
+        {
+          "id": "r3",
+          "prompt": "The clinic will [gap1] a digital booking system.",
+          "options": [
+            {
+              "id": "a",
+              "text": "phase in"
+            },
+            {
+              "id": "c",
+              "text": "scale up"
+            },
+            {
+              "id": "d",
+              "text": "slow down"
+            }
+          ],
+          "explanation": "“phase in” means to introduce gradually."
+        },
+        {
+          "id": "r4",
+          "prompt": "The factory must [gap1] quality checks.",
+          "options": [
+            {
+              "id": "c",
+              "text": "go ahead with"
+            },
+            {
+              "id": "a",
+              "text": "step up"
+            },
+            {
+              "id": "b",
+              "text": "wind down"
+            }
+          ],
+          "explanation": "The sentence needs “step up”, which expresses increase effort or frequency."
+        },
+        {
+          "id": "r5",
+          "prompt": "The storm could [gap1] the construction schedule.",
+          "options": [
+            {
+              "id": "a",
+              "text": "set back"
+            },
+            {
+              "id": "d",
+              "text": "bring about"
+            },
+            {
+              "id": "c",
+              "text": "get through"
+            }
+          ],
+          "explanation": "The sentence needs “set back”, which expresses delay progress."
+        },
+        {
+          "id": "r6",
+          "prompt": "The company plans to [gap1] paper invoices.",
+          "options": [
+            {
+              "id": "a",
+              "text": "phase out"
+            },
+            {
+              "id": "d",
+              "text": "wind down"
+            },
+            {
+              "id": "b",
+              "text": "slow down"
+            }
+          ],
+          "explanation": "The sentence needs “phase out”, which expresses remove gradually."
+        },
+        {
+          "id": "r7",
+          "prompt": "The engineer will [gap1] a safety inspection tomorrow.",
+          "options": [
+            {
+              "id": "b",
+              "text": "cut down on"
+            },
+            {
+              "id": "c",
+              "text": "move on to"
+            },
+            {
+              "id": "a",
+              "text": "carry out"
+            }
+          ],
+          "explanation": "“carry out” means to complete or perform."
+        },
+        {
+          "id": "r8",
+          "prompt": "The company plans to [gap1] paper invoices.",
+          "options": [
+            {
+              "id": "a",
+              "text": "phase out"
+            },
+            {
+              "id": "b",
+              "text": "phase in"
+            },
+            {
+              "id": "c",
+              "text": "step up"
+            }
+          ],
+          "explanation": "“phase out” means to remove gradually."
+        }
+      ],
+      "lessonIds": [
+        "b2-phrasal-verbs-change-progress"
+      ],
+      "tags": [
+        "b2",
+        "phrasal-verbs",
+        "phrasal-verb-choice",
+        "change",
         "mini-game"
       ],
       "estimatedSeconds": 120,

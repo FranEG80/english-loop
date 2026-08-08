@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "You ___ lean out of the train window.",
+          "prompt": "You [gap1] lean out of the train window.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "“Did you have to attend the whole workshop?” “No, ___; the final session was optional.”",
+          "prompt": "“Did you have to attend the whole workshop?” “No, [gap1]; the final session was optional.”",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "You ___ reserve a desk, although you may do so if you want a window seat.",
+          "prompt": "You [gap1] reserve a desk, although you may do so if you want a window seat.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Last winter, the mountain road closed and local people ___ travel through the valley.",
+          "prompt": "Last winter, the mountain road closed and local people [gap1] travel through the valley.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The path is closed because of falling rocks. Walkers ___ use it.",
+          "prompt": "The path is closed because of falling rocks. Walkers [gap1] use it.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Admission was free, so we ___ buy tickets.",
+          "prompt": "Admission was free, so we [gap1] buy tickets.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I'd like to know whether technicians ___ complete the safety course every year.",
+          "prompt": "I'd like to know whether technicians [gap1] complete the safety course every year.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Does Omar ___ wear protective boots at the warehouse?",
+          "prompt": "Does Omar [gap1] wear protective boots at the warehouse?",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Nadia ___ take two buses to reach the hospital.",
+          "prompt": "Nadia [gap1] take two buses to reach the hospital.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "From January, residents ___ separate food waste from other rubbish.",
+          "prompt": "From January, residents [gap1] separate food waste from other rubbish.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ you have to replace the whole screen after the accident?",
+          "prompt": "[gap1] you have to replace the whole screen after the accident?",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Once the bridge opens, commuters ___ take the long coastal road.",
+          "prompt": "Once the bridge opens, commuters [gap1] take the long coastal road.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "We ___ obtain a permit last year, and we ___ renew it next April.",
+          "prompt": "We [gap1] obtain a permit last year, and we [gap2] renew it next April.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ remember to send the invoice today.",
+          "prompt": "I [gap1] remember to send the invoice today.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Online check-in is available, but it is optional. Passengers ___ use it.",
+          "prompt": "Online check-in is available, but it is optional. Passengers [gap1] use it.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The lift was broken, so we ___ carry the boxes upstairs.",
+          "prompt": "The lift was broken, so we [gap1] carry the boxes upstairs.",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Una obligación causada por una situación pasada usa «had to»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-obligation-prohibition"
+      ],
+      "tags": [
+        "b1",
+        "obligation",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-obligation-prohibition-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "obligation-necessity-prohibition",
+      "taxonomyNodeIds": [
+        "obligation-necessity-prohibition"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "All kitchen staff [gap1] wash their hands before handling food.",
+          "options": [
+            {
+              "id": "d",
+              "text": "have wash"
+            },
+            {
+              "id": "a",
+              "text": "have to"
+            },
+            {
+              "id": "b",
+              "text": "has to"
+            }
+          ],
+          "explanation": "El sujeto plural «staff» combina con «have to wash»."
+        },
+        {
+          "id": "r2",
+          "prompt": "I've ignored this warning twice; I really [gap1] deal with it today.",
+          "options": [
+            {
+              "id": "d",
+              "text": "mustn't"
+            },
+            {
+              "id": "c",
+              "text": "don't have to"
+            },
+            {
+              "id": "a",
+              "text": "must"
+            }
+          ],
+          "explanation": "El hablante se impone una obligación urgente con «must»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which notice communicates a prohibition?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Visitors didn't have to bring climbing equipment."
+            },
+            {
+              "id": "a",
+              "text": "Visitors mustn't bring climbing equipment into the gallery."
+            },
+            {
+              "id": "c",
+              "text": "Visitors won't have to bring climbing equipment."
+            }
+          ],
+          "explanation": "Solo «mustn't bring» prohíbe llevar el equipo."
+        },
+        {
+          "id": "r4",
+          "prompt": "[gap1] visitors have to leave their bags at reception?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Are"
+            },
+            {
+              "id": "a",
+              "text": "Do"
+            },
+            {
+              "id": "c",
+              "text": "Have"
+            }
+          ],
+          "explanation": "Las preguntas con «have to» usan «Do + sujeto + have to»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The battery is almost empty; you [gap1] charge it before the journey.",
+          "options": [
+            {
+              "id": "a",
+              "text": "need to"
+            },
+            {
+              "id": "c",
+              "text": "are need to"
+            },
+            {
+              "id": "d",
+              "text": "needs to"
+            }
+          ],
+          "explanation": "«Need to charge» expresa una necesidad práctica."
+        },
+        {
+          "id": "r6",
+          "prompt": "You [gap1] submit a printed copy; in fact, the office no longer accepts paper forms.",
+          "options": [
+            {
+              "id": "d",
+              "text": "will have to"
+            },
+            {
+              "id": "b",
+              "text": "don't have to"
+            },
+            {
+              "id": "a",
+              "text": "mustn't"
+            }
+          ],
+          "explanation": "Si no se aceptan formularios en papel, entregarlos está prohibido, no solo es innecesario."
+        },
+        {
+          "id": "r7",
+          "prompt": "According to the grant rules, each team [gap1] publish a final report.",
+          "options": [
+            {
+              "id": "d",
+              "text": "musts"
+            },
+            {
+              "id": "b",
+              "text": "have to"
+            },
+            {
+              "id": "a",
+              "text": "has to"
+            }
+          ],
+          "explanation": "La norma externa y el sujeto singular favorecen «has to»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The organiser supplies name badges, so making your own is unnecessary.",
+          "options": [
+            {
+              "id": "b",
+              "text": "You mustn't make a name badge."
+            },
+            {
+              "id": "a",
+              "text": "You don't need to make a name badge."
+            },
+            {
+              "id": "c",
+              "text": "You haven't to make a name badge."
+            }
+          ],
+          "explanation": "«Don't need to» expresa correctamente que no es necesario."
         }
       ],
       "lessonIds": [

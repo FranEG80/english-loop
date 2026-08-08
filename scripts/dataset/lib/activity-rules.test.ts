@@ -432,3 +432,42 @@ describe("reglas de lote", () => {
     expect(issue?.severity).toBe("warning");
   });
 });
+
+describe("underscore-gap-marker", () => {
+  // El catálogo llegó a tener `___` y `[gapN]` a la vez. Un solo marcador, y
+  // que la presentación decida cómo se pinta.
+  it("rechaza el hueco escrito con guiones bajos", () => {
+    const issues = validateActivityRules("lote", makeActivity({
+      prompt: "I finally decided to ___ today.",
+    }));
+
+    expect(issues.map(({ code }) => code)).toContain("underscore-gap-marker");
+  });
+
+  it("lo detecta también dentro de una carta o de una ronda", () => {
+    const inCard = validateActivityRules("lote", makeActivity({
+      cards: [{ id: "c1", statement: "She ___ the guitar.", explanation: "x" }],
+    }));
+    const inRound = validateActivityRules("lote", makeActivity({
+      rounds: [
+        {
+          id: "r1",
+          prompt: "We ___ early.",
+          options: [{ id: "a", text: "left" }],
+          explanation: "x",
+        },
+      ],
+    }));
+
+    expect(inCard.map(({ code }) => code)).toContain("underscore-gap-marker");
+    expect(inRound.map(({ code }) => code)).toContain("underscore-gap-marker");
+  });
+
+  it("acepta el marcador canónico", () => {
+    const issues = validateActivityRules("lote", makeActivity({
+      prompt: "I finally decided to [gap1] today.",
+    }));
+
+    expect(issues.map(({ code }) => code)).not.toContain("underscore-gap-marker");
+  });
+});

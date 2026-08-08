@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The town must ___ with a sudden increase in demand for water.",
+          "prompt": "The town must [gap1] with a sudden increase in demand for water.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The hotel is convenient but not fully ___ for deaf guests.",
+          "prompt": "The hotel is convenient but not fully [gap1] for deaf guests.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The report warns that tourism is putting ___ on local housing.",
+          "prompt": "The report warns that tourism is putting [gap1] on local housing.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The new tram line has improved urban ___.",
+          "prompt": "The new tram line has improved urban [gap1].",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The policy aims to promote ___ tourism in protected areas.",
+          "prompt": "The policy aims to promote [gap1] tourism in protected areas.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A route designed for easy use by people with different needs is ___.",
+          "prompt": "A route designed for easy use by people with different needs is [gap1].",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The coastal town is a popular holiday ___.",
+          "prompt": "The coastal town is a popular holiday [gap1].",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Short-term rentals have driven up ___ in the city centre.",
+          "prompt": "Short-term rentals have driven up [gap1] in the city centre.",
           "options": [
             {
               "id": "c",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The city introduced a visitor ___ to fund public transport.",
+          "prompt": "The city introduced a visitor [gap1] to fund public transport.",
           "options": [
             {
               "id": "c",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The city needs investment in transport ___.",
+          "prompt": "The city needs investment in transport [gap1].",
           "options": [
             {
               "id": "d",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The gallery is the city's most popular tourist ___.",
+          "prompt": "The gallery is the city's most popular tourist [gap1].",
           "options": [
             {
               "id": "b",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Tourism can boost local ___.",
+          "prompt": "Tourism can boost local [gap1].",
           "options": [
             {
               "id": "a",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Too many visitors caused serious ___ in the historic centre.",
+          "prompt": "Too many visitors caused serious [gap1] in the historic centre.",
           "options": [
             {
               "id": "a",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A sustainable tourism plan should primarily protect resources over the ___.",
+          "prompt": "A sustainable tourism plan should primarily protect resources over the [gap1].",
           "options": [
             {
               "id": "c",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "housing",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-travel-tourism-urban-life-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-travel-tourism-urban-life",
+      "subtopic": "b2-travel-tourism-urban-life",
+      "taxonomyNodeIds": [
+        "b2-travel-tourism-urban-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The road network suffers from traffic [gap1] every morning.",
+          "options": [
+            {
+              "id": "b",
+              "text": "destination"
+            },
+            {
+              "id": "a",
+              "text": "congestion"
+            },
+            {
+              "id": "d",
+              "text": "revenue"
+            }
+          ],
+          "explanation": "Traffic congestion is a situation in which roads are too busy and movement slows."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which phrase means expand a successful transport service?",
+          "options": [
+            {
+              "id": "a",
+              "text": "scale up the service"
+            },
+            {
+              "id": "c",
+              "text": "displace the service"
+            },
+            {
+              "id": "b",
+              "text": "rule out the service"
+            }
+          ],
+          "explanation": "Scale up means increase the size or capacity of something."
+        },
+        {
+          "id": "r3",
+          "prompt": "The city introduced timed tickets primarily to [gap1] overcrowding at the landmark.",
+          "options": [
+            {
+              "id": "b",
+              "text": "boost"
+            },
+            {
+              "id": "a",
+              "text": "reduce"
+            },
+            {
+              "id": "d",
+              "text": "inherit"
+            }
+          ],
+          "explanation": "Timed entry can reduce the number of people inside at one moment."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which phrase means cause residents to leave an area?",
+          "options": [
+            {
+              "id": "d",
+              "text": "attract visitors"
+            },
+            {
+              "id": "c",
+              "text": "preserve access"
+            },
+            {
+              "id": "a",
+              "text": "displace residents"
+            }
+          ],
+          "explanation": "Displace residents means force or pressure them to move away."
+        },
+        {
+          "id": "r5",
+          "prompt": "The museum introduced timed entry to manage visitor [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "numbers"
+            },
+            {
+              "id": "d",
+              "text": "journeys"
+            },
+            {
+              "id": "c",
+              "text": "housing"
+            }
+          ],
+          "explanation": "Visitor numbers are the number of people visiting a place."
+        },
+        {
+          "id": "r6",
+          "prompt": "The council wants to make the main square more [gap1] by banning cars.",
+          "options": [
+            {
+              "id": "a",
+              "text": "pedestrian-friendly"
+            },
+            {
+              "id": "c",
+              "text": "remote"
+            },
+            {
+              "id": "b",
+              "text": "seasonal"
+            }
+          ],
+          "explanation": "Pedestrian-friendly means safe and pleasant for people walking."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which phrase best describes a policy that makes a district easier to explore on foot?",
+          "options": [
+            {
+              "id": "a",
+              "text": "make it pedestrian-friendly"
+            },
+            {
+              "id": "d",
+              "text": "make it congested"
+            },
+            {
+              "id": "b",
+              "text": "make it revenue"
+            }
+          ],
+          "explanation": "Pedestrian-friendly describes an area designed for safe and pleasant walking."
+        },
+        {
+          "id": "r8",
+          "prompt": "A city wants to reduce traffic, so it invests in its public transport [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "attraction"
+            },
+            {
+              "id": "a",
+              "text": "network"
+            },
+            {
+              "id": "d",
+              "text": "rent"
+            }
+          ],
+          "explanation": "A transport network is the connected system of routes and services."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-travel-tourism-urban-life"
+      ],
+      "tags": [
+        "b2",
+        "transport",
         "mini-game"
       ],
       "estimatedSeconds": 120,

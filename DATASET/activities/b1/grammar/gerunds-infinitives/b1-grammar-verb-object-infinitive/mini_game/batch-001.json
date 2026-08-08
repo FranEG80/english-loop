@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "She suggested ___ a break.",
+          "prompt": "She suggested [gap1] a break.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The rules ___ you to park here.",
+          "prompt": "The rules [gap1] you to park here.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I want the dog ___ jump on the sofa.",
+          "prompt": "I want the dog [gap1] jump on the sofa.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "He told us ___ worry.",
+          "prompt": "He told us [gap1] worry.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "They recommended ___ the early train.",
+          "prompt": "They recommended [gap1] the early train.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Please remind me ___ call the hotel when we land.",
+          "prompt": "Please remind me [gap1] call the hotel when we land.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The coach ___ me to try again.",
+          "prompt": "The coach [gap1] me to try again.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "My coach encouraged me ___ training.",
+          "prompt": "My coach encouraged me [gap1] training.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "He ___ us to be quiet.",
+          "prompt": "He [gap1] us to be quiet.",
           "options": [
             {
               "id": "a",
@@ -441,6 +441,227 @@
           {
             "roundId": "r7",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-verb-object-infinitive-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "verb-object-infinitive",
+      "taxonomyNodeIds": [
+        "verb-object-infinitive"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The receptionist wanted the late arrivals [gap1] wait outside.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "«Want + objeto» va seguido de «to + infinitivo»."
+        },
+        {
+          "id": "r2",
+          "prompt": "You are reporting what the manager said. Which sentence is correct?",
+          "options": [
+            {
+              "id": "c",
+              "text": "He told to me wait."
+            },
+            {
+              "id": "d",
+              "text": "He said to me wait."
+            },
+            {
+              "id": "b",
+              "text": "He told me to wait."
+            }
+          ],
+          "explanation": "«Tell + objeto + to-infinitive»; «say» no admite objeto + infinitivo."
+        },
+        {
+          "id": "r3",
+          "prompt": "The lifeguard told the swimmers [gap1] leave the water immediately.",
+          "options": [
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "«Tell + objeto» va seguido de «to + infinitivo»."
+        },
+        {
+          "id": "r4",
+          "prompt": "[gap1] she ask you to help?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Does"
+            },
+            {
+              "id": "a",
+              "text": "Did"
+            },
+            {
+              "id": "d",
+              "text": "Has"
+            }
+          ],
+          "explanation": "La pregunta pasada usa el auxiliar «did»."
+        },
+        {
+          "id": "r5",
+          "prompt": "A friend reassures me before the exam. Which sentence is correct?",
+          "options": [
+            {
+              "id": "a",
+              "text": "He told me not to worry."
+            },
+            {
+              "id": "c",
+              "text": "He told me to not worry."
+            },
+            {
+              "id": "d",
+              "text": "He told me don't worry."
+            }
+          ],
+          "explanation": "La negativa coloca «not» antes de «to + infinitivo»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Our neighbours invited us [gap1] stay for dinner after the concert.",
+          "options": [
+            {
+              "id": "d",
+              "text": "in"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "«Invite + objeto» va seguido de «to + infinitivo»."
+        },
+        {
+          "id": "r7",
+          "prompt": "My supervisor asked me [gap1] send the revised report before noon.",
+          "options": [
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            }
+          ],
+          "explanation": "«Ask + objeto» va seguido de «to + infinitivo»."
+        },
+        {
+          "id": "r8",
+          "prompt": "We [gap1] them to arrive soon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "expect"
+            },
+            {
+              "id": "c",
+              "text": "recommend"
+            },
+            {
+              "id": "d",
+              "text": "enjoy"
+            }
+          ],
+          "explanation": "«Expect + objeto + to-infinitive» expresa una expectativa."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-verb-object-infinitive"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r8",

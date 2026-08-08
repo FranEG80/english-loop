@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "We had the option to extend the deadline, but we didn't. We ___ given the team another day.",
+          "prompt": "We had the option to extend the deadline, but we didn't. We [gap1] given the team another day.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "There was enough food for everyone. You ___ ordered another pizza.",
+          "prompt": "There was enough food for everyone. You [gap1] ordered another pizza.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "We took all the chairs downstairs, but the event was cancelled. We ___ moved them.",
+          "prompt": "We took all the chairs downstairs, but the event was cancelled. We [gap1] moved them.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The tickets were refundable until Friday, but I forgot to cancel them. I ___ acted sooner.",
+          "prompt": "The tickets were refundable until Friday, but I forgot to cancel them. I [gap1] acted sooner.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The terms allowed negotiation, but we accepted the first price. We ___ asked for a reduction.",
+          "prompt": "The terms allowed negotiation, but we accepted the first price. We [gap1] asked for a reduction.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The side entrance was open. We ___ waited in the main queue.",
+          "prompt": "The side entrance was open. We [gap1] waited in the main queue.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "There was a direct train, but we didn't know. We ___ avoided the long bus journey.",
+          "prompt": "There was a direct train, but we didn't know. We [gap1] avoided the long bus journey.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The update caused several failures. The team ___ tested it more thoroughly.",
+          "prompt": "The update caused several failures. The team [gap1] tested it more thoroughly.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "You shared the private link publicly. You ___ done that.",
+          "prompt": "You shared the private link publicly. You [gap1] done that.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "You interrupted before she finished explaining. You ___ waited.",
+          "prompt": "You interrupted before she finished explaining. You [gap1] waited.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I complained before reading the explanation. I ___ read it first.",
+          "prompt": "I complained before reading the explanation. I [gap1] read it first.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "You changed the production database without a backup. You ___ taken that risk.",
+          "prompt": "You changed the production database without a backup. You [gap1] taken that risk.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "You posted the address in a public channel. You ___ shared personal information there.",
+          "prompt": "You posted the address in a public channel. You [gap1] shared personal information there.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The hotel supplied towels, so you ___ brought your own.",
+          "prompt": "The hotel supplied towels, so you [gap1] brought your own.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The venue supplied all the equipment we carried there. We ___ transported ours.",
+          "prompt": "The venue supplied all the equipment we carried there. We [gap1] transported ours.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The policy permitted remote approval, but we travelled six hours for one signature. We ___ handled it online.",
+          "prompt": "The policy permitted remote approval, but we travelled six hours for one signature. We [gap1] handled it online.",
           "options": [
             {
               "id": "c",
@@ -429,6 +429,227 @@
           {
             "roundId": "r4",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-modal-perfect-regret-criticism-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modal-perfects",
+      "subtopic": "modal-perfect-criticism",
+      "taxonomyNodeIds": [
+        "modal-perfect-criticism"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I rejected the offer too quickly, and now I regret it. I [gap1] accepted it.",
+          "options": [
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "d",
+              "text": "must have"
+            },
+            {
+              "id": "b",
+              "text": "should have"
+            }
+          ],
+          "explanation": "El arrepentimiento por no aceptar se expresa con «should have accepted»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The technician fixed it remotely in two minutes. We [gap1] sent the device across the country.",
+          "options": [
+            {
+              "id": "d",
+              "text": "should have"
+            },
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "mustn't have"
+            }
+          ],
+          "explanation": "El envío se realizó, pero la solución remota demuestra que no era necesario."
+        },
+        {
+          "id": "r3",
+          "prompt": "We printed every page, but the organiser only wanted the summary. We [gap1] printed the full report.",
+          "options": [
+            {
+              "id": "d",
+              "text": "wouldn't have"
+            },
+            {
+              "id": "b",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "mustn't have"
+            }
+          ],
+          "explanation": "La impresión ocurrió y fue innecesaria: «needn't have printed»."
+        },
+        {
+          "id": "r4",
+          "prompt": "I ignored the warning signs and lost the data. I [gap1] stopped the process sooner.",
+          "options": [
+            {
+              "id": "b",
+              "text": "needn't have"
+            },
+            {
+              "id": "a",
+              "text": "can't have"
+            },
+            {
+              "id": "c",
+              "text": "should have"
+            }
+          ],
+          "explanation": "Detenerlo antes era la acción recomendable no realizada."
+        },
+        {
+          "id": "r5",
+          "prompt": "A backup existed, but nobody checked it. We [gap1] restored the deleted folder immediately.",
+          "options": [
+            {
+              "id": "a",
+              "text": "could have"
+            },
+            {
+              "id": "c",
+              "text": "needn't have"
+            },
+            {
+              "id": "d",
+              "text": "can't have"
+            }
+          ],
+          "explanation": "La copia ofrecía una posibilidad real no aprovechada: «could have restored»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I booked an expensive taxi, but the conference provided a free shuttle. I [gap1] booked the taxi.",
+          "options": [
+            {
+              "id": "d",
+              "text": "may have"
+            },
+            {
+              "id": "a",
+              "text": "shouldn't have"
+            },
+            {
+              "id": "b",
+              "text": "can't have"
+            }
+          ],
+          "explanation": "Reservar el taxi fue una acción realizada y equivocada: «shouldn't have booked»."
+        },
+        {
+          "id": "r7",
+          "prompt": "I bought bread, but there were already three loaves at home. I [gap1] bought any.",
+          "options": [
+            {
+              "id": "b",
+              "text": "needn't have"
+            },
+            {
+              "id": "c",
+              "text": "can't have"
+            },
+            {
+              "id": "d",
+              "text": "might not have"
+            }
+          ],
+          "explanation": "La compra se realizó, pero era innecesaria: «needn't have bought»."
+        },
+        {
+          "id": "r8",
+          "prompt": "You sent the form without signing it. You [gap1] checked it first.",
+          "options": [
+            {
+              "id": "b",
+              "text": "can't have"
+            },
+            {
+              "id": "a",
+              "text": "should have"
+            },
+            {
+              "id": "d",
+              "text": "must have"
+            }
+          ],
+          "explanation": "Comprobarlo era recomendable, pero no se hizo: «should have checked»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-modal-perfect-regret-criticism"
+      ],
+      "tags": [
+        "b2",
+        "modal-perfects",
+        "regret",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
           },
           {
             "roundId": "r5",

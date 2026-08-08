@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "After the disagreement, the friends ___ for a week.",
+          "prompt": "After the disagreement, the friends [gap1] for a week.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The friends argued, apologised and then ___.",
+          "prompt": "The friends argued, apologised and then [gap1].",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "We should ___ the main points before the presentation.",
+          "prompt": "We should [gap1] the main points before the presentation.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The friends argued but later ___ with each other.",
+          "prompt": "The friends argued but later [gap1] with each other.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The website helped us ___ what the abbreviation meant.",
+          "prompt": "The website helped us [gap1] what the abbreviation meant.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The new partners ___ well during the first project.",
+          "prompt": "The new partners [gap1] well during the first project.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Before the exam, we need to ___ the vocabulary list.",
+          "prompt": "Before the exam, we need to [gap1] the vocabulary list.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "She wanted to stop, but her friend told her not to ___.",
+          "prompt": "She wanted to stop, but her friend told her not to [gap1].",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The group ___ a clear plan for the research task.",
+          "prompt": "The group [gap1] a clear plan for the research task.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "I need to ___ what this expression means.",
+          "prompt": "I need to [gap1] what this expression means.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "She decided to ___ photography at university.",
+          "prompt": "She decided to [gap1] photography at university.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "To understand the term, look it ___ in the glossary.",
+          "prompt": "To understand the term, look it [gap1] in the glossary.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Do not ___ just because the first exercise is difficult.",
+          "prompt": "Do not [gap1] just because the first exercise is difficult.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "She decided to ___ painting during the summer.",
+          "prompt": "She decided to [gap1] painting during the summer.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Read the notes and ___ the key arguments.",
+          "prompt": "Read the notes and [gap1] the key arguments.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The students worked together to ___ the difficult puzzle.",
+          "prompt": "The students worked together to [gap1] the difficult puzzle.",
           "options": [
             {
               "id": "a",
@@ -421,6 +421,227 @@
           {
             "roundId": "r2",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-study-relationships-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-study-relationships",
+      "subtopic": "b1-phrasal-study-relationships",
+      "taxonomyNodeIds": [
+        "b1-phrasal-study-relationships"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "He [gap1] a new solution during the discussion.",
+          "options": [
+            {
+              "id": "a",
+              "text": "came up with"
+            },
+            {
+              "id": "c",
+              "text": "came across"
+            },
+            {
+              "id": "d",
+              "text": "came into"
+            }
+          ],
+          "explanation": "Come up with means think of an idea or solution."
+        },
+        {
+          "id": "r2",
+          "prompt": "I missed two lessons, so I must [gap1] with the class.",
+          "options": [
+            {
+              "id": "d",
+              "text": "catch up with"
+            },
+            {
+              "id": "a",
+              "text": "catch up"
+            },
+            {
+              "id": "b",
+              "text": "catch on"
+            }
+          ],
+          "explanation": "Catch up with means reach the same level as someone or something."
+        },
+        {
+          "id": "r3",
+          "prompt": "I will [gap1] the new word in a dictionary.",
+          "options": [
+            {
+              "id": "d",
+              "text": "look out"
+            },
+            {
+              "id": "a",
+              "text": "look up"
+            },
+            {
+              "id": "c",
+              "text": "look down"
+            }
+          ],
+          "explanation": "Look up means search for information."
+        },
+        {
+          "id": "r4",
+          "prompt": "She [gap1] the scientific term in a reliable reference.",
+          "options": [
+            {
+              "id": "b",
+              "text": "looked after it"
+            },
+            {
+              "id": "d",
+              "text": "looked down it"
+            },
+            {
+              "id": "a",
+              "text": "looked it up"
+            }
+          ],
+          "explanation": "Looked it up means searched for the term."
+        },
+        {
+          "id": "r5",
+          "prompt": "They [gap1] after an argument about the group project.",
+          "options": [
+            {
+              "id": "c",
+              "text": "looked up"
+            },
+            {
+              "id": "a",
+              "text": "fell out"
+            },
+            {
+              "id": "d",
+              "text": "found out"
+            }
+          ],
+          "explanation": "Fall out means have a disagreement and stop being friendly."
+        },
+        {
+          "id": "r6",
+          "prompt": "The two friends [gap1] after a disagreement but are speaking again now.",
+          "options": [
+            {
+              "id": "d",
+              "text": "took up"
+            },
+            {
+              "id": "a",
+              "text": "fell out"
+            },
+            {
+              "id": "c",
+              "text": "looked up"
+            }
+          ],
+          "explanation": "Fell out means had a disagreement."
+        },
+        {
+          "id": "r7",
+          "prompt": "After missing lessons, he is working hard to [gap1] with his group.",
+          "options": [
+            {
+              "id": "c",
+              "text": "catch on"
+            },
+            {
+              "id": "d",
+              "text": "catch off"
+            },
+            {
+              "id": "a",
+              "text": "catch up"
+            }
+          ],
+          "explanation": "Catch up means recover lost progress."
+        },
+        {
+          "id": "r8",
+          "prompt": "She [gap1] the meaning of the word in a reference book.",
+          "options": [
+            {
+              "id": "c",
+              "text": "looked out"
+            },
+            {
+              "id": "a",
+              "text": "looked up"
+            },
+            {
+              "id": "d",
+              "text": "looked down on"
+            }
+          ],
+          "explanation": "Looked up means searched for information."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-study-relationships"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "ideas",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "d"
           },
           {
             "roundId": "r3",

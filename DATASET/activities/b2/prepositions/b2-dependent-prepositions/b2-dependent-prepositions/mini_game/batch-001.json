@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The closure could have an impact ___ local employment.",
+          "prompt": "The closure could have an impact [gap1] local employment.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The equipment is subject ___ annual inspection.",
+          "prompt": "The equipment is subject [gap1] annual inspection.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "One advantage ___ remote collaboration is wider recruitment.",
+          "prompt": "One advantage [gap1] remote collaboration is wider recruitment.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Researchers were given access ___ secure records.",
+          "prompt": "Researchers were given access [gap1] secure records.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The explanation is consistent ___ the published figures.",
+          "prompt": "The explanation is consistent [gap1] the published figures.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The manager expressed a preference ___ smaller meetings.",
+          "prompt": "The manager expressed a preference [gap1] smaller meetings.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The team relies ___ the dashboard when checking live figures.",
+          "prompt": "The team relies [gap1] the dashboard when checking live figures.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The analyst can distinguish ___ the two similar samples.",
+          "prompt": "The analyst can distinguish [gap1] the two similar samples.",
           "options": [
             {
               "id": "b",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The manager expressed a preference ___ smaller meetings.",
+          "prompt": "The manager expressed a preference [gap1] smaller meetings.",
           "options": [
             {
               "id": "a",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Small errors may contribute ___ the final outcome.",
+          "prompt": "Small errors may contribute [gap1] the final outcome.",
           "options": [
             {
               "id": "a",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "There was an increase ___ online bookings.",
+          "prompt": "There was an increase [gap1] online bookings.",
           "options": [
             {
               "id": "c",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The committee insisted ___ an independent review.",
+          "prompt": "The committee insisted [gap1] an independent review.",
           "options": [
             {
               "id": "a",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The equipment is subject ___ annual inspection.",
+          "prompt": "The equipment is subject [gap1] annual inspection.",
           "options": [
             {
               "id": "a",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The survey revealed a demand ___ flexible contracts.",
+          "prompt": "The survey revealed a demand [gap1] flexible contracts.",
           "options": [
             {
               "id": "c",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The material is resistant ___ short-term pressure.",
+          "prompt": "The material is resistant [gap1] short-term pressure.",
           "options": [
             {
               "id": "c",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Small errors may contribute ___ the final outcome.",
+          "prompt": "Small errors may contribute [gap1] the final outcome.",
           "options": [
             {
               "id": "d",
@@ -400,6 +400,228 @@
             }
           ],
           "explanation": "The phrase “contribute to” requires “to” before its complement."
+        }
+      ],
+      "lessonIds": [
+        "b2-dependent-prepositions"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "preposition-choice",
+        "verb-adjective-noun",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-dependent-prepositions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-dependent-prepositions",
+      "subtopic": "b2-dependent-prepositions",
+      "taxonomyNodeIds": [
+        "b2-dependent-prepositions"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The report refers [gap1] the previous agreement.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            }
+          ],
+          "explanation": "The correct dependency is “refer to”, so “to” completes the pattern."
+        },
+        {
+          "id": "r2",
+          "prompt": "Researchers were given access [gap1] secure records.",
+          "options": [
+            {
+              "id": "c",
+              "text": "with"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The phrase “access to” requires “to” before its complement."
+        },
+        {
+          "id": "r3",
+          "prompt": "Several residents objected [gap1] the revised timetable.",
+          "options": [
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            }
+          ],
+          "explanation": "The phrase “object to” requires “to” before its complement."
+        },
+        {
+          "id": "r4",
+          "prompt": "The project benefited [gap1] specialist advice.",
+          "options": [
+            {
+              "id": "a",
+              "text": "from"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The correct dependency is “benefit from”, so “from” completes the pattern."
+        },
+        {
+          "id": "r5",
+          "prompt": "These findings are relevant [gap1] the current debate.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The correct dependency is “be relevant to”, so “to” completes the pattern."
+        },
+        {
+          "id": "r6",
+          "prompt": "The audit must account [gap1] the missing invoices.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            }
+          ],
+          "explanation": "The correct dependency is “account for”, so “for” completes the pattern."
+        },
+        {
+          "id": "r7",
+          "prompt": "The audit must account [gap1] the missing invoices.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            }
+          ],
+          "explanation": "The phrase “account for” requires “for” before its complement."
+        },
+        {
+          "id": "r8",
+          "prompt": "Nadia is responsible [gap1] regional training.",
+          "options": [
+            {
+              "id": "c",
+              "text": "of"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            }
+          ],
+          "explanation": "The correct dependency is “be responsible for”, so “for” completes the pattern."
         }
       ],
       "lessonIds": [

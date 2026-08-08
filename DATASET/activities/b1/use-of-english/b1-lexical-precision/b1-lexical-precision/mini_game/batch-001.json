@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Maya ___ her homework before dinner yesterday.",
+          "prompt": "Maya [gap1] her homework before dinner yesterday.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Can you ___ the parcel from the post office on your way home?",
+          "prompt": "Can you [gap1] the parcel from the post office on your way home?",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The school has ___ a new recycling project this term.",
+          "prompt": "The school has [gap1] a new recycling project this term.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "By the time we reached the platform, the train ___ already left.",
+          "prompt": "By the time we reached the platform, the train [gap1] already left.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The teacher asked for a ___ explanation rather than a list of unrelated facts.",
+          "prompt": "The teacher asked for a [gap1] explanation rather than a list of unrelated facts.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The manager was reluctant to approve the plan because its costs were still ___.",
+          "prompt": "The manager was reluctant to approve the plan because its costs were still [gap1].",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "This jacket is ___ than the one I tried on earlier.",
+          "prompt": "This jacket is [gap1] than the one I tried on earlier.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The receptionist took ___ of the visitor's passport details.",
+          "prompt": "The receptionist took [gap1] of the visitor's passport details.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Please keep the ___ after you pay; you may need it to exchange the shirt.",
+          "prompt": "Please keep the [gap1] after you pay; you may need it to exchange the shirt.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The receptionist gave me a ___ of paper with the appointment time on it.",
+          "prompt": "The receptionist gave me a [gap1] of paper with the appointment time on it.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The hotel is within ___ distance of the old town.",
+          "prompt": "The hotel is within [gap1] distance of the old town.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The new timetable has had a ___ effect on morning traffic.",
+          "prompt": "The new timetable has had a [gap1] effect on morning traffic.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I need to ___ early tomorrow because my train leaves at six.",
+          "prompt": "I need to [gap1] early tomorrow because my train leaves at six.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I have lived in this neighbourhood ___ 2021.",
+          "prompt": "I have lived in this neighbourhood [gap1] 2021.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The short report failed to ___ why the repairs cost so much.",
+          "prompt": "The short report failed to [gap1] why the repairs cost so much.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The sales figures did not ___ the high expectations in the first quarter.",
+          "prompt": "The sales figures did not [gap1] the high expectations in the first quarter.",
           "options": [
             {
               "id": "a",
@@ -437,6 +437,227 @@
           {
             "roundId": "r6",
             "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-lexical-precision-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-lexical-precision",
+      "subtopic": "b1-lexical-precision",
+      "taxonomyNodeIds": [
+        "b1-lexical-precision"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "During the briefing, the supervisor [gap1] attention to the missing safety signs.",
+          "options": [
+            {
+              "id": "a",
+              "text": "drew"
+            },
+            {
+              "id": "c",
+              "text": "made"
+            },
+            {
+              "id": "d",
+              "text": "held"
+            }
+          ],
+          "explanation": "La colocación es «draw attention to something», cuyo pasado es «drew»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The two witnesses gave [gap1] accounts, so the officer checked the camera footage.",
+          "options": [
+            {
+              "id": "d",
+              "text": "contrastive"
+            },
+            {
+              "id": "a",
+              "text": "contradictory"
+            },
+            {
+              "id": "c",
+              "text": "contrary"
+            }
+          ],
+          "explanation": "«Contradictory accounts» disagree with each other."
+        },
+        {
+          "id": "r3",
+          "prompt": "The new timetable is more [gap1] because buses leave every ten minutes.",
+          "options": [
+            {
+              "id": "a",
+              "text": "convenient"
+            },
+            {
+              "id": "b",
+              "text": "comfortable"
+            },
+            {
+              "id": "d",
+              "text": "sensible"
+            }
+          ],
+          "explanation": "A timetable that saves waiting time is more «convenient»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The library will [gap1] the membership fee in January.",
+          "options": [
+            {
+              "id": "d",
+              "text": "go into"
+            },
+            {
+              "id": "b",
+              "text": "go over"
+            },
+            {
+              "id": "a",
+              "text": "go up"
+            }
+          ],
+          "explanation": "«Go up» means increase, here referring to the fee."
+        },
+        {
+          "id": "r5",
+          "prompt": "The speaker gave a [gap1] description of the route through the forest.",
+          "options": [
+            {
+              "id": "a",
+              "text": "detailed"
+            },
+            {
+              "id": "d",
+              "text": "detailly"
+            },
+            {
+              "id": "b",
+              "text": "detail"
+            }
+          ],
+          "explanation": "A «detailed description» contains many specific facts."
+        },
+        {
+          "id": "r6",
+          "prompt": "Before you leave the classroom, please [gap1] the lights.",
+          "options": [
+            {
+              "id": "a",
+              "text": "turn off"
+            },
+            {
+              "id": "b",
+              "text": "take off"
+            },
+            {
+              "id": "c",
+              "text": "put out"
+            }
+          ],
+          "explanation": "La combinación natural para apagar las luces es «turn off»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Could you [gap1] me a hand with these boxes before the van arrives?",
+          "options": [
+            {
+              "id": "a",
+              "text": "give"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "La expresión «give someone a hand» significa ayudar a alguien."
+        },
+        {
+          "id": "r8",
+          "prompt": "Our neighbours [gap1] a party for their daughter's birthday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "made"
+            },
+            {
+              "id": "a",
+              "text": "held"
+            },
+            {
+              "id": "c",
+              "text": "did"
+            }
+          ],
+          "explanation": "We say «hold a party» when we organise it."
+        }
+      ],
+      "lessonIds": [
+        "b1-lexical-precision"
+      ],
+      "tags": [
+        "b1",
+        "cloze",
+        "collocation",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r7",

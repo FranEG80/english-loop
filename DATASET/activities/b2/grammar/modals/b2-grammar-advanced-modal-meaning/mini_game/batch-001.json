@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Are researchers ___ to use the archive on Sundays?",
+          "prompt": "Are researchers [gap1] to use the archive on Sundays?",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "You are ___ to switch off the equipment before leaving.",
+          "prompt": "You are [gap1] to switch off the equipment before leaving.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The conference is ___ to attract more delegates this year.",
+          "prompt": "The conference is [gap1] to attract more delegates this year.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Employees are not ___ to share their passwords.",
+          "prompt": "Employees are not [gap1] to share their passwords.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "You are ___ to report any damaged equipment immediately.",
+          "prompt": "You are [gap1] to report any damaged equipment immediately.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The train is ___ to arrive at platform four at 18:05.",
+          "prompt": "The train is [gap1] to arrive at platform four at 18:05.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Staff were not ___ to enter the storage room alone.",
+          "prompt": "Staff were not [gap1] to enter the storage room alone.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The agreement is ___ to affect every supplier in the region.",
+          "prompt": "The agreement is [gap1] to affect every supplier in the region.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The replacement part is unlikely ___ before Friday.",
+          "prompt": "The replacement part is unlikely [gap1] before Friday.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The old bridge is unlikely ___ another winter.",
+          "prompt": "The old bridge is unlikely [gap1] another winter.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The software update is certain ___ battery life.",
+          "prompt": "The software update is certain [gap1] battery life.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The proposal is ___ to divide opinion among residents.",
+          "prompt": "The proposal is [gap1] to divide opinion among residents.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "With that loose bolt, the shelf is ___ to collapse.",
+          "prompt": "With that loose bolt, the shelf is [gap1] to collapse.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The cracked window is ___ to break in the next storm.",
+          "prompt": "The cracked window is [gap1] to break in the next storm.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Were visitors ___ to take photographs in the old chapel?",
+          "prompt": "Were visitors [gap1] to take photographs in the old chapel?",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "What are we ___ to do with the damaged equipment?",
+          "prompt": "What are we [gap1] to do with the damaged equipment?",
           "options": [
             {
               "id": "b",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-modal-meaning-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "advanced-modal-meaning",
+      "taxonomyNodeIds": [
+        "advanced-modal-meaning"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The new treatment is [gap1] to require careful monitoring.",
+          "options": [
+            {
+              "id": "c",
+              "text": "certain"
+            },
+            {
+              "id": "a",
+              "text": "allowed"
+            },
+            {
+              "id": "d",
+              "text": "unlikely"
+            }
+          ],
+          "explanation": "Certain to presenta la necesidad como segura."
+        },
+        {
+          "id": "r2",
+          "prompt": "The committee is [gap1] to reject the proposal without evidence.",
+          "options": [
+            {
+              "id": "a",
+              "text": "likely"
+            },
+            {
+              "id": "b",
+              "text": "allowed"
+            },
+            {
+              "id": "d",
+              "text": "bound"
+            }
+          ],
+          "explanation": "Likely to reject expresa una predicción probable."
+        },
+        {
+          "id": "r3",
+          "prompt": "The witness was [gap1] to appear in court yesterday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "supposed"
+            },
+            {
+              "id": "b",
+              "text": "allowed"
+            },
+            {
+              "id": "d",
+              "text": "likely"
+            }
+          ],
+          "explanation": "Was supposed to appear presenta una expectativa pasada que quizá no se cumplió."
+        },
+        {
+          "id": "r4",
+          "prompt": "Visitors are not [gap1] to touch the ancient maps.",
+          "options": [
+            {
+              "id": "a",
+              "text": "supposed"
+            },
+            {
+              "id": "c",
+              "text": "likely"
+            },
+            {
+              "id": "b",
+              "text": "allowed"
+            }
+          ],
+          "explanation": "Not allowed to expresa una prohibición basada en una regla."
+        },
+        {
+          "id": "r5",
+          "prompt": "The shortcut is [gap1] to save us ten minutes.",
+          "options": [
+            {
+              "id": "d",
+              "text": "unlikely"
+            },
+            {
+              "id": "a",
+              "text": "allowed"
+            },
+            {
+              "id": "c",
+              "text": "bound"
+            }
+          ],
+          "explanation": "Bound to expresa una consecuencia presentada como segura."
+        },
+        {
+          "id": "r6",
+          "prompt": "The revised timetable is [gap1] to reduce delays.",
+          "options": [
+            {
+              "id": "b",
+              "text": "allowed"
+            },
+            {
+              "id": "c",
+              "text": "likely"
+            },
+            {
+              "id": "a",
+              "text": "supposed"
+            }
+          ],
+          "explanation": "Likely to expresa una probabilidad alta, pero no absoluta."
+        },
+        {
+          "id": "r7",
+          "prompt": "The courier is [gap1] to deliver the parcel before noon.",
+          "options": [
+            {
+              "id": "b",
+              "text": "allowed"
+            },
+            {
+              "id": "d",
+              "text": "likely"
+            },
+            {
+              "id": "a",
+              "text": "supposed"
+            }
+          ],
+          "explanation": "Supposed to presenta una entrega esperada o planificada."
+        },
+        {
+          "id": "r8",
+          "prompt": "The interns will be [gap1] to access the database after training.",
+          "options": [
+            {
+              "id": "c",
+              "text": "allowed"
+            },
+            {
+              "id": "b",
+              "text": "unlikely"
+            },
+            {
+              "id": "a",
+              "text": "bound"
+            }
+          ],
+          "explanation": "Will be allowed to expresa permiso futuro."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-modal-meaning"
+      ],
+      "tags": [
+        "b2",
+        "modals",
+        "certain-to",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
           }
         ]
       },

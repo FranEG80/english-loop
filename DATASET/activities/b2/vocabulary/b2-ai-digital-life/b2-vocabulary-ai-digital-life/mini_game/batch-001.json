@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A programme that answers customers' questions automatically is a ___.",
+          "prompt": "A programme that answers customers' questions automatically is a [gap1].",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "A systematic preference against a group in an automated system is ___.",
+          "prompt": "A systematic preference against a group in an automated system is [gap1].",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A company stores only the information it genuinely needs. This approach prioritises data ___.",
+          "prompt": "A company stores only the information it genuinely needs. This approach prioritises data [gap1].",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The hospital must ___ access to sensitive patient records.",
+          "prompt": "The hospital must [gap1] access to sensitive patient records.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The explanation of how an automated decision was reached should be ___.",
+          "prompt": "The explanation of how an automated decision was reached should be [gap1].",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The software company released a security ___ overnight.",
+          "prompt": "The software company released a security [gap1] overnight.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The app is not ___ with the tablet's older operating system.",
+          "prompt": "The app is not [gap1] with the tablet's older operating system.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The service asks for users' ___ before storing their location.",
+          "prompt": "The service asks for users' [gap1] before storing their location.",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The part of an app that people interact with is its user ___.",
+          "prompt": "The part of an app that people interact with is its user [gap1].",
           "options": [
             {
               "id": "d",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The new system can ___ routine paperwork without human input.",
+          "prompt": "The new system can [gap1] routine paperwork without human input.",
           "options": [
             {
               "id": "b",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The camera uses facial ___ to unlock the device.",
+          "prompt": "The camera uses facial [gap1] to unlock the device.",
           "options": [
             {
               "id": "a",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The model was ___ on thousands of labelled images.",
+          "prompt": "The model was [gap1] on thousands of labelled images.",
           "options": [
             {
               "id": "a",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The assistant can ___ speech into written notes.",
+          "prompt": "The assistant can [gap1] speech into written notes.",
           "options": [
             {
               "id": "b",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The engineers need to ___ the faulty connection before the live stream.",
+          "prompt": "The engineers need to [gap1] the faulty connection before the live stream.",
           "options": [
             {
               "id": "a",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The examples used to train a model form a ___.",
+          "prompt": "The examples used to train a model form a [gap1].",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "interface",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-ai-digital-life-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-ai-digital-life",
+      "subtopic": "b2-ai-digital-life",
+      "taxonomyNodeIds": [
+        "b2-ai-digital-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Before collecting voice recordings, the researcher explained how they would be used and requested [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "machine learning"
+            },
+            {
+              "id": "b",
+              "text": "digital footprint"
+            },
+            {
+              "id": "a",
+              "text": "informed consent"
+            }
+          ],
+          "explanation": "Informed consent is permission given after receiving relevant information."
+        },
+        {
+          "id": "r2",
+          "prompt": "A security incident in which personal records are exposed is a data [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "update"
+            },
+            {
+              "id": "a",
+              "text": "breach"
+            },
+            {
+              "id": "c",
+              "text": "interface"
+            }
+          ],
+          "explanation": "A data breach exposes information to people who should not access it."
+        },
+        {
+          "id": "r3",
+          "prompt": "A set of instructions followed by a computer is an [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "audience"
+            },
+            {
+              "id": "d",
+              "text": "outcome"
+            },
+            {
+              "id": "a",
+              "text": "algorithm"
+            }
+          ],
+          "explanation": "An algorithm is a set of instructions for processing a task."
+        },
+        {
+          "id": "r4",
+          "prompt": "A system that gives different results because its training data under-represents a group may be [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "compatible"
+            },
+            {
+              "id": "a",
+              "text": "biased"
+            },
+            {
+              "id": "d",
+              "text": "automated"
+            }
+          ],
+          "explanation": "Biased describes a system affected by a systematic unfair preference."
+        },
+        {
+          "id": "r5",
+          "prompt": "The record of websites and services a person has used is a digital [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "patch"
+            },
+            {
+              "id": "d",
+              "text": "breach"
+            },
+            {
+              "id": "a",
+              "text": "footprint"
+            }
+          ],
+          "explanation": "A digital footprint is the trace left by online activity."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence describes a limitation rather than a benefit?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The assistant translates short messages."
+            },
+            {
+              "id": "a",
+              "text": "The model may reproduce bias in its training data."
+            },
+            {
+              "id": "b",
+              "text": "The tool processes invoices quickly."
+            }
+          ],
+          "explanation": "Reproducing bias is a potential limitation of an automated system."
+        },
+        {
+          "id": "r7",
+          "prompt": "The company uses [gap1] to protect messages from unauthorised readers.",
+          "options": [
+            {
+              "id": "a",
+              "text": "encryption"
+            },
+            {
+              "id": "b",
+              "text": "footprint"
+            },
+            {
+              "id": "c",
+              "text": "bias"
+            }
+          ],
+          "explanation": "Encryption protects information by transforming it into coded form."
+        },
+        {
+          "id": "r8",
+          "prompt": "The text generator can [gap1] a summary from a long report.",
+          "options": [
+            {
+              "id": "b",
+              "text": "encrypt"
+            },
+            {
+              "id": "a",
+              "text": "generate"
+            },
+            {
+              "id": "c",
+              "text": "breach"
+            }
+          ],
+          "explanation": "Generate means produce something, often automatically."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-ai-digital-life"
+      ],
+      "tags": [
+        "b2",
+        "consent",
         "mini-game"
       ],
       "estimatedSeconds": 120,

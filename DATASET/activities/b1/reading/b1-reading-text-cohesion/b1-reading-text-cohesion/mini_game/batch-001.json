@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Leo wanted to save money for a trip. ___ He now takes lunch from home every day.",
+          "prompt": "Leo wanted to save money for a trip. [gap1] He now takes lunch from home every day.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The office recycling bins were often confused. ___ This simple change made sorting easier.",
+          "prompt": "The office recycling bins were often confused. [gap1] This simple change made sorting easier.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The coach asked the team to review the first half. ___ After that, they returned to the pitch with a clearer plan.",
+          "prompt": "The coach asked the team to review the first half. [gap1] After that, they returned to the pitch with a clearer plan.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The new timetable looks convenient at first. ___ People who finish late still have no direct train home.",
+          "prompt": "The new timetable looks convenient at first. [gap1] People who finish late still have no direct train home.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Nina had never cooked for so many guests. ___ Fortunately, her brother arrived early to help.",
+          "prompt": "Nina had never cooked for so many guests. [gap1] Fortunately, her brother arrived early to help.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The company tested the new delivery system in one neighbourhood. ___ Only then did it introduce the system across the city.",
+          "prompt": "The company tested the new delivery system in one neighbourhood. [gap1] Only then did it introduce the system across the city.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The school introduced a quiet reading period after lunch. ___ Teachers say the pupils settle more quickly in afternoon lessons.",
+          "prompt": "The school introduced a quiet reading period after lunch. [gap1] Teachers say the pupils settle more quickly in afternoon lessons.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The residents wanted a safer crossing. ___ The council then agreed to study the road.",
+          "prompt": "The residents wanted a safer crossing. [gap1] The council then agreed to study the road.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The proposal sounds attractive, but it would require a much larger budget. ___ For that reason, the committee postponed its decision.",
+          "prompt": "The proposal sounds attractive, but it would require a much larger budget. [gap1] For that reason, the committee postponed its decision.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The report describes two possible routes. ___ The second is shorter but passes through a busy centre.",
+          "prompt": "The report describes two possible routes. [gap1] The second is shorter but passes through a busy centre.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The town asked residents how they travelled to work. ___ The results will guide the new transport plan.",
+          "prompt": "The town asked residents how they travelled to work. [gap1] The results will guide the new transport plan.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The neighbourhood trial did not solve every parking problem. ___ It did, however, give residents a clearer basis for the next proposal.",
+          "prompt": "The neighbourhood trial did not solve every parking problem. [gap1] It did, however, give residents a clearer basis for the next proposal.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The community garden opened in May. ___ By July, neighbours were sharing vegetables.",
+          "prompt": "The community garden opened in May. [gap1] By July, neighbours were sharing vegetables.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The archive moved its rare documents to a cooler room. ___ The change should protect the collection for many years.",
+          "prompt": "The archive moved its rare documents to a cooler room. [gap1] The change should protect the collection for many years.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The course promises practical writing practice. Yet its lessons contain mostly lectures. ___ This mismatch disappointed many participants.",
+          "prompt": "The course promises practical writing practice. Yet its lessons contain mostly lectures. [gap1] This mismatch disappointed many participants.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The volunteers sorted the donated clothes. ___ They then loaded the boxes into a van.",
+          "prompt": "The volunteers sorted the donated clothes. [gap1] They then loaded the boxes into a van.",
           "options": [
             {
               "id": "c",
@@ -421,6 +421,227 @@
           {
             "roundId": "r2",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-text-cohesion-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-text-cohesion",
+      "subtopic": "b1-reading-text-cohesion",
+      "taxonomyNodeIds": [
+        "b1-reading-text-cohesion"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The walking group changed its route after heavy rain. [gap1] Even so, everyone enjoyed the shorter path.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The leader usually carries a red bag."
+            },
+            {
+              "id": "d",
+              "text": "Several members bought new boots."
+            },
+            {
+              "id": "a",
+              "text": "The original track had become too slippery to use."
+            }
+          ],
+          "explanation": "The slippery track explains the route change before the concession about enjoyment."
+        },
+        {
+          "id": "r2",
+          "prompt": "Mara missed the early bus. [gap1] She arrived at work twenty minutes late.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The next bus did not come for half an hour."
+            },
+            {
+              "id": "c",
+              "text": "Her meeting finished before lunch."
+            },
+            {
+              "id": "d",
+              "text": "She bought a new bicycle yesterday."
+            }
+          ],
+          "explanation": "The missing sentence gives the reason for the late arrival."
+        },
+        {
+          "id": "r3",
+          "prompt": "The café added a quiet corner for people who work online. [gap1] Customers can now use the tables for longer.",
+          "options": [
+            {
+              "id": "d",
+              "text": "A bakery opened across the road."
+            },
+            {
+              "id": "c",
+              "text": "The building is painted yellow."
+            },
+            {
+              "id": "a",
+              "text": "It also installed extra sockets near the tables."
+            }
+          ],
+          "explanation": "Extra sockets support the purpose of a longer working stay."
+        },
+        {
+          "id": "r4",
+          "prompt": "The theatre offered discounted tickets to students. [gap1] The campaign also encouraged first-time visitors to return.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The director studied drama abroad."
+            },
+            {
+              "id": "a",
+              "text": "As a result, several evening shows sold out."
+            },
+            {
+              "id": "b",
+              "text": "The theatre's seats are upholstered in red."
+            }
+          ],
+          "explanation": "The sales result follows naturally from the discounted tickets."
+        },
+        {
+          "id": "r5",
+          "prompt": "The repair shop promised to finish the bicycle by Friday. [gap1] The customer therefore arranged to collect it on Saturday morning.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The bicycle had a bright yellow frame."
+            },
+            {
+              "id": "a",
+              "text": "A shortage of spare parts delayed the work by one day."
+            },
+            {
+              "id": "d",
+              "text": "The customer often cycles to work."
+            }
+          ],
+          "explanation": "The shortage explains both the delay and the Saturday collection."
+        },
+        {
+          "id": "r6",
+          "prompt": "The museum expected a quiet morning. [gap1] By noon, the queue reached the next street.",
+          "options": [
+            {
+              "id": "a",
+              "text": "A popular artist announced a free talk there."
+            },
+            {
+              "id": "c",
+              "text": "The exhibits were cleaned on Monday."
+            },
+            {
+              "id": "d",
+              "text": "The museum shop sells postcards."
+            }
+          ],
+          "explanation": "The free talk explains the unexpected increase in visitors."
+        },
+        {
+          "id": "r7",
+          "prompt": "The class planted herbs in small pots. [gap1] Everyone remembered to water them on Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Each group labelled its pot with a name."
+            },
+            {
+              "id": "c",
+              "text": "The pupils read a history book."
+            },
+            {
+              "id": "b",
+              "text": "The school bell was repaired."
+            }
+          ],
+          "explanation": "The labelled pots provide the natural step between planting and caring for them."
+        },
+        {
+          "id": "r8",
+          "prompt": "The festival organisers reduced the number of stalls. [gap1] Visitors could move around the square more easily.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The festival takes place each spring."
+            },
+            {
+              "id": "a",
+              "text": "They wanted to leave wider paths between them."
+            },
+            {
+              "id": "c",
+              "text": "Several musicians arrived from abroad."
+            }
+          ],
+          "explanation": "Wider paths explain the reduction and the improved movement."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-text-cohesion"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "contrast",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
           },
           {
             "roundId": "r3",

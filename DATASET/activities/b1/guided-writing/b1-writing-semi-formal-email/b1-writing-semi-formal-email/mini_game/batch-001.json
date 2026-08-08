@@ -451,6 +451,228 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-semi-formal-email-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-semi-formal-email",
+      "subtopic": "b1-writing-semi-formal-email",
+      "taxonomyNodeIds": [
+        "b1-writing-semi-formal-email"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence suits an email to the Neighbourhood Association?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out send details of the meeting?"
+            },
+            {
+              "id": "a",
+              "text": "I would be grateful if you could send details of the meeting"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me send details of the meeting."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence suits an email to the Workshop Organiser?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out tell me what tools i should bring?"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me tell me what tools i should bring."
+            },
+            {
+              "id": "a",
+              "text": "Could you tell me what tools I should bring, please"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence suits an email to the Music School?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you tell me whether instruments are provided, please"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me tell me whether instruments are provided."
+            },
+            {
+              "id": "d",
+              "text": "Yo, can you sort out tell me whether instruments are provided?"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence suits an email to the School Administrator?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Tell me explain the absence procedure, now."
+            },
+            {
+              "id": "a",
+              "text": "Could you explain the absence procedure, please"
+            },
+            {
+              "id": "c",
+              "text": "Hi there! Give me explain the absence procedure."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence suits an email to the Conference Team?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out send the location map?"
+            },
+            {
+              "id": "b",
+              "text": "Tell me send the location map, now."
+            },
+            {
+              "id": "a",
+              "text": "Could you send the location map, please"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence suits an email to the Events Office?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out send the revised programme?"
+            },
+            {
+              "id": "b",
+              "text": "Tell me send the revised programme, now."
+            },
+            {
+              "id": "a",
+              "text": "I would be grateful if you could send the revised programme"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence suits an email to the Sports Centre?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Hi there! Give me change my booking to tuesday."
+            },
+            {
+              "id": "a",
+              "text": "Could you change my booking to Tuesday, please"
+            },
+            {
+              "id": "d",
+              "text": "Yo, can you sort out change my booking to tuesday?"
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence suits an email to the Library Manager?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yo, can you sort out tell me when the study room closes?"
+            },
+            {
+              "id": "a",
+              "text": "Could you tell me when the study room closes, please"
+            },
+            {
+              "id": "b",
+              "text": "Tell me tell me when the study room closes, now."
+            }
+          ],
+          "explanation": "The first option is polite and specific; the alternatives are too direct or too casual."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-semi-formal-email"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "single-choice",
+        "register",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition completes dependent set 016? They succeeded ___ solving the puzzle.",
+          "prompt": "Which preposition completes dependent set 016? They succeeded [gap1] solving the puzzle.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Which preposition completes dependent set 003? This bicycle belongs ___ Ana.",
+          "prompt": "Which preposition completes dependent set 003? This bicycle belongs [gap1] Ana.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which preposition completes dependent set 010? We are proud ___ the team.",
+          "prompt": "Which preposition completes dependent set 010? We are proud [gap1] the team.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which preposition completes dependent set 001? Please listen ___ the announcement.",
+          "prompt": "Which preposition completes dependent set 001? Please listen [gap1] the announcement.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which preposition completes dependent set 014? There is a difference ___ the plans.",
+          "prompt": "Which preposition completes dependent set 014? There is a difference [gap1] the plans.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which preposition completes dependent set 006? Tom is afraid ___ dogs.",
+          "prompt": "Which preposition completes dependent set 006? Tom is afraid [gap1] dogs.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which preposition completes dependent set 022? She is familiar ___ the system.",
+          "prompt": "Which preposition completes dependent set 022? She is familiar [gap1] the system.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which preposition completes dependent set 005? She apologised ___ the delay.",
+          "prompt": "Which preposition completes dependent set 005? She apologised [gap1] the delay.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition completes dependent set 024? We need to concentrate ___ the task.",
+          "prompt": "Which preposition completes dependent set 024? We need to concentrate [gap1] the task.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Which preposition completes dependent set 019? I am tired ___ carrying this box.",
+          "prompt": "Which preposition completes dependent set 019? I am tired [gap1] carrying this box.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which preposition completes dependent set 012? I know the answer ___ this question.",
+          "prompt": "Which preposition completes dependent set 012? I know the answer [gap1] this question.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which preposition completes dependent set 018? They complained ___ waiting too long.",
+          "prompt": "Which preposition completes dependent set 018? They complained [gap1] waiting too long.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which preposition completes dependent set 017? He is keen ___ learning languages.",
+          "prompt": "Which preposition completes dependent set 017? He is keen [gap1] learning languages.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which preposition completes dependent set 004? The result depends ___ the weather.",
+          "prompt": "Which preposition completes dependent set 004? The result depends [gap1] the weather.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which preposition completes dependent set 015? She is worried ___ the result.",
+          "prompt": "Which preposition completes dependent set 015? She is worried [gap1] the result.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which preposition completes dependent set 011? What is the reason ___ the change?",
+          "prompt": "Which preposition completes dependent set 011? What is the reason [gap1] the change?",
           "options": [
             {
               "id": "b",
@@ -408,6 +408,227 @@
         "b1",
         "preposition",
         "verbs",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-dependent-prepositions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-dependent-prepositions",
+      "subtopic": "b1-dependent-prepositions",
+      "taxonomyNodeIds": [
+        "b1-dependent-prepositions"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes dependent set 008? He is good [gap1] maths.",
+          "options": [
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «good at» for ability."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes dependent set 007? Maya is interested [gap1] art.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            }
+          ],
+          "explanation": "The adjective «interested» takes «in»."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes dependent set 013? We received an invitation [gap1] the ceremony.",
+          "options": [
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "The noun «invitation» takes «to» before an event."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes dependent set 023? The team is committed [gap1] improving access.",
+          "options": [
+            {
+              "id": "c",
+              "text": "with"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "«Committed to» is followed by a noun or gerund, here «improving»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes dependent set 020? The solution is suitable [gap1] children.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "with"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            }
+          ],
+          "explanation": "The adjective «suitable» takes «for»."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes dependent set 025? The result is dependent [gap1] careful planning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "b",
+              "text": "of"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            }
+          ],
+          "explanation": "«Depend on» introduces the condition or factor."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes dependent set 009? The manager is responsible [gap1] training.",
+          "options": [
+            {
+              "id": "b",
+              "text": "of"
+            },
+            {
+              "id": "c",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            }
+          ],
+          "explanation": "The adjective «responsible» takes «for»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes dependent set 002? We are waiting [gap1] the bus.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The verb «wait» takes «for» before the expected thing."
+        }
+      ],
+      "lessonIds": [
+        "b1-dependent-prepositions"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "adjectives",
         "mini-game"
       ],
       "estimatedSeconds": 120,

@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "She ___ him for years. (estado)",
+          "prompt": "She [gap1] him for years. (estado)",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "While she ___ cooking, he set the table. (fondo)",
+          "prompt": "While she [gap1] cooking, he set the table. (fondo)",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "While they ___, the lights went out. (fondo)",
+          "prompt": "While they [gap1], the lights went out. (fondo)",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "He ___ the door and left. (evento principal)",
+          "prompt": "He [gap1] the door and left. (evento principal)",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ when the phone rang. (fondo)",
+          "prompt": "I [gap1] when the phone rang. (fondo)",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "They ___ for an hour. (duración anterior)",
+          "prompt": "They [gap1] for an hour. (duración anterior)",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The sun ___ as we arrived. (fondo)",
+          "prompt": "The sun [gap1] as we arrived. (fondo)",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "After they ___ finished, they went home. (anterior)",
+          "prompt": "After they [gap1] finished, they went home. (anterior)",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The band ___ playing when we arrived. (fondo)",
+          "prompt": "The band [gap1] playing when we arrived. (fondo)",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "While she was cooking, he ___ the table. (evento)",
+          "prompt": "While she was cooking, he [gap1] the table. (evento)",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "By the time we got there, the show ___ ended. (anterior)",
+          "prompt": "By the time we got there, the show [gap1] ended. (anterior)",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I was reading when the phone ___. (interrupción)",
+          "prompt": "I was reading when the phone [gap1]. (interrupción)",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "She ___ already eaten when I called. (anterior)",
+          "prompt": "She [gap1] already eaten when I called. (anterior)",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "He ___ the report by noon. (anterior)",
+          "prompt": "He [gap1] the report by noon. (anterior)",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The rain ___ as she walked home. (fondo)",
+          "prompt": "The rain [gap1] as she walked home. (fondo)",
           "options": [
             {
               "id": "c",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "El fondo usa past continuous."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-narrative-tenses"
+      ],
+      "tags": [
+        "b2",
+        "narrative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-narrative-tenses-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "advanced-narrative-tenses",
+      "taxonomyNodeIds": [
+        "advanced-narrative-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "By the time we arrived, they [gap1] left. (anterior)",
+          "options": [
+            {
+              "id": "d",
+              "text": "did"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "have"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r2",
+          "prompt": "She [gap1] dinner when I called. (fondo)",
+          "options": [
+            {
+              "id": "a",
+              "text": "was cooking"
+            },
+            {
+              "id": "d",
+              "text": "had been cooking"
+            },
+            {
+              "id": "c",
+              "text": "had cooked"
+            }
+          ],
+          "explanation": "El fondo usa past continuous."
+        },
+        {
+          "id": "r3",
+          "prompt": "She [gap1] the whole book before the film came out. (anterior)",
+          "options": [
+            {
+              "id": "d",
+              "text": "read"
+            },
+            {
+              "id": "b",
+              "text": "has read"
+            },
+            {
+              "id": "a",
+              "text": "had read"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r4",
+          "prompt": "As soon as she [gap1] the news, she called me. (anterior)",
+          "options": [
+            {
+              "id": "c",
+              "text": "was hearing"
+            },
+            {
+              "id": "a",
+              "text": "had heard"
+            },
+            {
+              "id": "d",
+              "text": "heard"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r5",
+          "prompt": "They [gap1] driving for hours when they stopped. (duración anterior)",
+          "options": [
+            {
+              "id": "a",
+              "text": "had been"
+            },
+            {
+              "id": "b",
+              "text": "had"
+            },
+            {
+              "id": "c",
+              "text": "were"
+            }
+          ],
+          "explanation": "La duración anterior usa past perfect continuous."
+        },
+        {
+          "id": "r6",
+          "prompt": "When I arrived, she [gap1] left. (anterior)",
+          "options": [
+            {
+              "id": "b",
+              "text": "has"
+            },
+            {
+              "id": "d",
+              "text": "did"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            }
+          ],
+          "explanation": "El evento anterior usa past perfect."
+        },
+        {
+          "id": "r7",
+          "prompt": "I [gap1] reading when the phone rang. (fondo)",
+          "options": [
+            {
+              "id": "d",
+              "text": "did"
+            },
+            {
+              "id": "b",
+              "text": "am"
+            },
+            {
+              "id": "a",
+              "text": "was"
+            }
+          ],
+          "explanation": "El fondo usa past continuous."
+        },
+        {
+          "id": "r8",
+          "prompt": "They [gap1] for hours before the storm hit. (duración anterior)",
+          "options": [
+            {
+              "id": "d",
+              "text": "were sailing"
+            },
+            {
+              "id": "a",
+              "text": "had been sailing"
+            },
+            {
+              "id": "b",
+              "text": "had sailed"
+            }
+          ],
+          "explanation": "La duración anterior usa past perfect continuous."
         }
       ],
       "lessonIds": [

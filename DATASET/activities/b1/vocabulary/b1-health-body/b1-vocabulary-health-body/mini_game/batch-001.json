@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A small injury that breaks the skin is a ___. ",
+          "prompt": "A small injury that breaks the skin is a [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "A light covering placed over a cut is a ___. ",
+          "prompt": "A light covering placed over a cut is a [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A high temperature is a ___. ",
+          "prompt": "A high temperature is a [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "You breathe with your ___. ",
+          "prompt": "You breathe with your [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "To arrange a time with a doctor is to make an ___. ",
+          "prompt": "To arrange a time with a doctor is to make an [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A person who advises about medicines in a shop is a ___. ",
+          "prompt": "A person who advises about medicines in a shop is a [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A repeated sound from your chest or throat is a ___. ",
+          "prompt": "A repeated sound from your chest or throat is a [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A red area on the skin that may itch is a ___. ",
+          "prompt": "A red area on the skin that may itch is a [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A dark mark after a knock is a ___. ",
+          "prompt": "A dark mark after a knock is a [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Twisting your ankle may cause a ___. ",
+          "prompt": "Twisting your ankle may cause a [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -406,6 +406,226 @@
       "tags": [
         "b1",
         "symptoms",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-health-body-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-health-body",
+      "subtopic": "b1-health-body",
+      "taxonomyNodeIds": [
+        "b1-health-body"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You use your eyes to [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "taste"
+            },
+            {
+              "id": "b",
+              "text": "walk"
+            },
+            {
+              "id": "a",
+              "text": "see"
+            }
+          ],
+          "explanation": "We use our eyes to see."
+        },
+        {
+          "id": "r2",
+          "prompt": "If your throat hurts, you have a [gap1] throat.",
+          "options": [
+            {
+              "id": "d",
+              "text": "dizzy"
+            },
+            {
+              "id": "a",
+              "text": "sore"
+            },
+            {
+              "id": "b",
+              "text": "swollen"
+            }
+          ],
+          "explanation": "A sore throat is painful or irritated."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence uses allergic correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "She is allergic to pollen."
+            },
+            {
+              "id": "c",
+              "text": "She has allergic pollen."
+            },
+            {
+              "id": "d",
+              "text": "She feels allergic from pollen."
+            }
+          ],
+          "explanation": "The fixed expression is be allergic to something."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence uses medicine as an uncountable noun?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Take medicine ones with water."
+            },
+            {
+              "id": "b",
+              "text": "Take a medicine with water."
+            },
+            {
+              "id": "a",
+              "text": "Take some medicine with water."
+            }
+          ],
+          "explanation": "Medicine is often uncountable when referring to treatment in general."
+        },
+        {
+          "id": "r5",
+          "prompt": "A painful joint that is larger than usual is [gap1]. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "raw"
+            },
+            {
+              "id": "a",
+              "text": "swollen"
+            },
+            {
+              "id": "b",
+              "text": "stale"
+            }
+          ],
+          "explanation": "Swollen describes a body part that has increased in size, often after an injury."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which professional is the best first contact for a common medicine question?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a pharmacist"
+            },
+            {
+              "id": "c",
+              "text": "a landlord"
+            },
+            {
+              "id": "b",
+              "text": "a plumber"
+            }
+          ],
+          "explanation": "A pharmacist can give advice about many common pharmacy medicines."
+        },
+        {
+          "id": "r7",
+          "prompt": "A headache is pain in your [gap1]. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "wrist"
+            },
+            {
+              "id": "a",
+              "text": "head"
+            },
+            {
+              "id": "d",
+              "text": "knee"
+            }
+          ],
+          "explanation": "A headache is pain in the head."
+        },
+        {
+          "id": "r8",
+          "prompt": "If the room seems to spin, you may feel [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "stale"
+            },
+            {
+              "id": "c",
+              "text": "salty"
+            },
+            {
+              "id": "a",
+              "text": "dizzy"
+            }
+          ],
+          "explanation": "Feel dizzy means feel that you may lose your balance or that things are spinning."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-health-body"
+      ],
+      "tags": [
+        "b1",
+        "body",
         "mini-game"
       ],
       "estimatedSeconds": 120,

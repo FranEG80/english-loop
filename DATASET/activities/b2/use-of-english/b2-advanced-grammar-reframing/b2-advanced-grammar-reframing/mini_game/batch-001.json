@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The blue route is ___ than the red route.",
+          "prompt": "The blue route is [gap1] than the red route.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The plan is likely ___ rejected.",
+          "prompt": "The plan is likely [gap1] rejected.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The new plan is more ___ than the old plan.",
+          "prompt": "The new plan is more [gap1] than the old plan.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The bridge is believed ___ unsafe.",
+          "prompt": "The bridge is believed [gap1] unsafe.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The tunnel is expected to ___ reopened by Friday.",
+          "prompt": "The tunnel is expected to [gap1] reopened by Friday.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The red model is considerably more ___ than the blue one.",
+          "prompt": "The red model is considerably more [gap1] than the blue one.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "We were not ___ to travel.",
+          "prompt": "We were not [gap1] to travel.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The scientist is thought to ___ discovered the pattern.",
+          "prompt": "The scientist is thought to [gap1] discovered the pattern.",
           "options": [
             {
               "id": "a",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I wish I ___ checked the address.",
+          "prompt": "I wish I [gap1] checked the address.",
           "options": [
             {
               "id": "b",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The museum is said ___ closed.",
+          "prompt": "The museum is said [gap1] closed.",
           "options": [
             {
               "id": "b",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The lift ___ repaired.",
+          "prompt": "The lift [gap1] repaired.",
           "options": [
             {
               "id": "b",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Ana said that she ___ finished the report.",
+          "prompt": "Ana said that she [gap1] finished the report.",
           "options": [
             {
               "id": "a",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "If we had reserved seats, we would have ___ together.",
+          "prompt": "If we had reserved seats, we would have [gap1] together.",
           "options": [
             {
               "id": "a",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The statue is said to have ___ made overseas.",
+          "prompt": "The statue is said to have [gap1] made overseas.",
           "options": [
             {
               "id": "b",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "By eight, they had ___ working for two hours.",
+          "prompt": "By eight, they had [gap1] working for two hours.",
           "options": [
             {
               "id": "a",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "We should ___ checked the figures.",
+          "prompt": "We should [gap1] checked the figures.",
           "options": [
             {
               "id": "a",
@@ -398,6 +398,226 @@
             }
           ],
           "explanation": "Should have checked is the modal perfect."
+        }
+      ],
+      "lessonIds": [
+        "b2-advanced-grammar-reframing"
+      ],
+      "tags": [
+        "b2",
+        "transformations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-advanced-grammar-reframing-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-advanced-grammar-reframing",
+      "subtopic": "b2-advanced-grammar-reframing",
+      "taxonomyNodeIds": [
+        "b2-advanced-grammar-reframing"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I wish I had [gap1] ignored the warning.",
+          "options": [
+            {
+              "id": "b",
+              "text": "no"
+            },
+            {
+              "id": "d",
+              "text": "would not"
+            },
+            {
+              "id": "a",
+              "text": "not"
+            }
+          ],
+          "explanation": "Had not ignored expresses past regret."
+        },
+        {
+          "id": "r2",
+          "prompt": "They said they [gap1] need more staff.",
+          "options": [
+            {
+              "id": "a",
+              "text": "might"
+            },
+            {
+              "id": "d",
+              "text": "can to"
+            },
+            {
+              "id": "c",
+              "text": "must to"
+            }
+          ],
+          "explanation": "Might reports an earlier possibility."
+        },
+        {
+          "id": "r3",
+          "prompt": "If we had started earlier, we [gap1] not have missed it.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "will"
+            }
+          ],
+          "explanation": "Would have forms the third conditional result."
+        },
+        {
+          "id": "r4",
+          "prompt": "The policy is reported to [gap1] reduced waste.",
+          "options": [
+            {
+              "id": "d",
+              "text": "being"
+            },
+            {
+              "id": "b",
+              "text": "has"
+            },
+            {
+              "id": "a",
+              "text": "have"
+            }
+          ],
+          "explanation": "Have reduced marks the earlier reported action."
+        },
+        {
+          "id": "r5",
+          "prompt": "The treatment appears [gap1] be safe.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "c",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "being"
+            }
+          ],
+          "explanation": "Appears to be is the inference structure."
+        },
+        {
+          "id": "r6",
+          "prompt": "The test was more demanding [gap1] I thought.",
+          "options": [
+            {
+              "id": "a",
+              "text": "than"
+            },
+            {
+              "id": "d",
+              "text": "what"
+            },
+            {
+              "id": "c",
+              "text": "that"
+            }
+          ],
+          "explanation": "Than introduces a comparative clause."
+        },
+        {
+          "id": "r7",
+          "prompt": "She told me I had [gap1] submit the form.",
+          "options": [
+            {
+              "id": "b",
+              "text": "must"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            },
+            {
+              "id": "d",
+              "text": "been"
+            }
+          ],
+          "explanation": "Had to submit is the reported obligation."
+        },
+        {
+          "id": "r8",
+          "prompt": "The results [gap1] be inaccurate.",
+          "options": [
+            {
+              "id": "a",
+              "text": "might"
+            },
+            {
+              "id": "c",
+              "text": "are"
+            },
+            {
+              "id": "b",
+              "text": "must to"
+            }
+          ],
+          "explanation": "Might expresses possibility."
         }
       ],
       "lessonIds": [

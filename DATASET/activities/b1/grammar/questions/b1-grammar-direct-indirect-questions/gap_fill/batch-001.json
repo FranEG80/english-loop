@@ -24,7 +24,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete A's direct question with “Where is the nearest pharmacy”.",
-      "prompt": "A: Excuse me, ___? B: It's beside the post office.",
+      "prompt": "A: Excuse me, [gap1]?\nB: It's beside the post office.",
       "gapText": "A: Excuse me, [gap1]?\nB: It's beside the post office.",
       "gapLayout": "dialogue",
       "lessonIds": [
@@ -72,7 +72,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete A's direct question with “When did the exhibition open”.",
-      "prompt": "A: ___? B: It opened last Saturday.",
+      "prompt": "A: [gap1]?\nB: It opened last Saturday.",
       "gapText": "A: [gap1]?\nB: It opened last Saturday.",
       "gapLayout": "dialogue",
       "lessonIds": [
@@ -120,7 +120,7 @@
       ],
       "difficulty": 3,
       "instructions": "Complete A's subject question with “What caused the delay”.",
-      "prompt": "A: ___? B: A signal failure.",
+      "prompt": "A: [gap1]?\nB: A signal failure.",
       "gapText": "A: [gap1]?\nB: A signal failure.",
       "gapLayout": "dialogue",
       "lessonIds": [

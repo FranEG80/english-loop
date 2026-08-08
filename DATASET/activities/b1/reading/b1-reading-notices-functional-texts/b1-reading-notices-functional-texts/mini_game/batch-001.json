@@ -456,6 +456,230 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-notices-functional-texts-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-notices-functional-texts",
+      "subtopic": "b1-reading-notices-functional-texts",
+      "taxonomyNodeIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Notice: Applications received after Friday will be considered next month. What happens to them?",
+          "options": [
+            {
+              "id": "c",
+              "text": "They are always rejected"
+            },
+            {
+              "id": "b",
+              "text": "They are considered immediately"
+            },
+            {
+              "id": "a",
+              "text": "They are considered the following month"
+            }
+          ],
+          "explanation": "Next month retrasa la consideración, no la elimina."
+        },
+        {
+          "id": "r2",
+          "prompt": "Notice: The café is closed for staff training this afternoon. Why is it closed?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The building is for sale"
+            },
+            {
+              "id": "a",
+              "text": "Staff are receiving training"
+            },
+            {
+              "id": "b",
+              "text": "The café has no food"
+            }
+          ],
+          "explanation": "For staff training ofrece la razón."
+        },
+        {
+          "id": "r3",
+          "prompt": "What happens after 31 August?",
+          "context": "PLEASE NOTE THAT MEMBERSHIP RENEWALS MADE AFTER 31 AUGUST WILL INCLUDE A £5 ADMINISTRATION FEE.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Membership becomes free"
+            },
+            {
+              "id": "a",
+              "text": "A £5 fee is added to renewals"
+            },
+            {
+              "id": "c",
+              "text": "Renewals are impossible"
+            }
+          ],
+          "explanation": "Include a fee significa que se añade un coste."
+        },
+        {
+          "id": "r4",
+          "prompt": "Notice: Renewals made after August include a £5 administration fee. What changes after August?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A £5 fee is added"
+            },
+            {
+              "id": "b",
+              "text": "Renewals are free"
+            },
+            {
+              "id": "c",
+              "text": "The membership ends"
+            }
+          ],
+          "explanation": "Include a fee significa que se cobra una cantidad adicional."
+        },
+        {
+          "id": "r5",
+          "prompt": "What can visitors do at lunchtime?",
+          "context": "THE RECEPTION DESK IS CLOSED DURING LUNCH. PLEASE LEAVE A MESSAGE IN THE BOX.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Speak to reception"
+            },
+            {
+              "id": "a",
+              "text": "Leave a message in the box"
+            },
+            {
+              "id": "c",
+              "text": "Open the desk"
+            }
+          ],
+          "explanation": "El aviso propone dejar un mensaje como alternativa."
+        },
+        {
+          "id": "r6",
+          "prompt": "What must a customer bring?",
+          "context": "BRING PHOTO ID TO COLLECT YOUR PARCEL. COLLECTIONS AFTER 4 P.M. ONLY.",
+          "options": [
+            {
+              "id": "b",
+              "text": "A second parcel"
+            },
+            {
+              "id": "d",
+              "text": "Cash for delivery"
+            },
+            {
+              "id": "a",
+              "text": "Photo identification"
+            }
+          ],
+          "explanation": "Bring photo ID es una instrucción explícita."
+        },
+        {
+          "id": "r7",
+          "prompt": "Message: Your appointment has been moved to Thursday. What information does it give?",
+          "options": [
+            {
+              "id": "c",
+              "text": "A cancelled service"
+            },
+            {
+              "id": "a",
+              "text": "A new appointment day"
+            },
+            {
+              "id": "d",
+              "text": "A different customer"
+            }
+          ],
+          "explanation": "Moved to Thursday comunica un cambio de día."
+        },
+        {
+          "id": "r8",
+          "prompt": "Notice: Visitors must sign in at reception on arrival. What should visitors do first?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Go upstairs"
+            },
+            {
+              "id": "a",
+              "text": "Sign in at reception"
+            },
+            {
+              "id": "c",
+              "text": "Leave a parcel"
+            }
+          ],
+          "explanation": "Must sign in expresa una obligación al llegar."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-notices-functional-texts"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "notices",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

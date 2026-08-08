@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "What the committee needs ___ a clearer timetable.",
+          "prompt": "What the committee needs [gap1] a clearer timetable.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "It was ___ Bristol that the study began.",
+          "prompt": "It was [gap1] Bristol that the study began.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "What surprised everyone ___ the final cost.",
+          "prompt": "What surprised everyone [gap1] the final cost.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "It was the sudden change in funding ___ surprised the panel.",
+          "prompt": "It was the sudden change in funding [gap1] surprised the panel.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "What surprised the auditors ___ the final cost.",
+          "prompt": "What surprised the auditors [gap1] the final cost.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "It was after lunch ___ the meeting started.",
+          "prompt": "It was after lunch [gap1] the meeting started.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "What we need ___ more reliable data.",
+          "prompt": "What we need [gap1] more reliable data.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ the closing paragraph, the writer addresses the risks.",
+          "prompt": "[gap1] the closing paragraph, the writer addresses the risks.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "It was Maya, rather than Tom, ___ called the supplier.",
+          "prompt": "It was Maya, rather than Tom, [gap1] called the supplier.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "It was the sudden change ___ surprised the panel.",
+          "prompt": "It was the sudden change [gap1] surprised the panel.",
           "options": [
             {
               "id": "d",
@@ -408,6 +408,227 @@
         "b2",
         "what-cleft",
         "agreement",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-cleft-sentences-fronting-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "cleft-sentences-fronting",
+      "taxonomyNodeIds": [
+        "cleft-sentences-fronting"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which option correctly focuses the finance team?",
+          "options": [
+            {
+              "id": "c",
+              "text": "It the finance team was that approved the request."
+            },
+            {
+              "id": "a",
+              "text": "It was the finance team that approved the request."
+            },
+            {
+              "id": "d",
+              "text": "What was the finance team approved the request."
+            }
+          ],
+          "explanation": "The cleft requires that before the finite clause."
+        },
+        {
+          "id": "r2",
+          "prompt": "It was at the old station [gap1] the two routes met.",
+          "options": [
+            {
+              "id": "c",
+              "text": "what"
+            },
+            {
+              "id": "d",
+              "text": "when"
+            },
+            {
+              "id": "a",
+              "text": "where"
+            }
+          ],
+          "explanation": "Where is natural after a focused location in this pattern."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which option focuses the person who raised the objection?",
+          "options": [
+            {
+              "id": "c",
+              "text": "What raised the objection was Dr Singh who."
+            },
+            {
+              "id": "a",
+              "text": "It was Dr Singh who raised the objection."
+            },
+            {
+              "id": "d",
+              "text": "Dr Singh was it raised the objection."
+            }
+          ],
+          "explanation": "Who is suitable for the focused person."
+        },
+        {
+          "id": "r4",
+          "prompt": "Choose the sentence meaning “We need clearer guidance”.",
+          "options": [
+            {
+              "id": "d",
+              "text": "What is we need clearer guidance."
+            },
+            {
+              "id": "c",
+              "text": "What we need are clearer guidance."
+            },
+            {
+              "id": "a",
+              "text": "What we need is clearer guidance."
+            }
+          ],
+          "explanation": "What-clause acts as the subject; it is not a question."
+        },
+        {
+          "id": "r5",
+          "prompt": "It was the finance team [gap1] approved the request.",
+          "options": [
+            {
+              "id": "a",
+              "text": "that"
+            },
+            {
+              "id": "d",
+              "text": "when"
+            },
+            {
+              "id": "b",
+              "text": "where"
+            }
+          ],
+          "explanation": "That introduces the focused clause in this it-cleft."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which option focuses the archive as the discovery location?",
+          "options": [
+            {
+              "id": "b",
+              "text": "It was the archive who found the letter."
+            },
+            {
+              "id": "a",
+              "text": "It was in the archive that we found the letter."
+            },
+            {
+              "id": "c",
+              "text": "What we found the letter was archive."
+            }
+          ],
+          "explanation": "The place phrase is followed by that and the clause."
+        },
+        {
+          "id": "r7",
+          "prompt": "It was Maya [gap1] called the supplier.",
+          "options": [
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "d",
+              "text": "what"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            }
+          ],
+          "explanation": "Who is natural when the focused element is a person."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which option sets the time frame naturally?",
+          "options": [
+            {
+              "id": "d",
+              "text": "On the committee, Friday published the report."
+            },
+            {
+              "id": "a",
+              "text": "On Friday, the committee published the report."
+            },
+            {
+              "id": "c",
+              "text": "The committee on Friday published? the report."
+            }
+          ],
+          "explanation": "The fronted time phrase is followed by normal clause order."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-cleft-sentences-fronting"
+      ],
+      "tags": [
+        "b2",
+        "it-cleft",
+        "formal",
         "mini-game"
       ],
       "estimatedSeconds": 120,

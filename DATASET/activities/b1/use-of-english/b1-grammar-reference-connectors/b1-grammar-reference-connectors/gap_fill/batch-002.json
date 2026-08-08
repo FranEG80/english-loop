@@ -24,7 +24,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete the gap with one word.",
-      "prompt": "My sister is waiting ___ her friend outside the cinema.",
+      "prompt": "My sister is waiting [gap1] her friend outside the cinema.",
       "gapText": "My sister is waiting [gap1] her friend outside the cinema.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -72,7 +72,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete the gap with one word.",
-      "prompt": "There is ___ book on the desk for you.",
+      "prompt": "There is [gap1] book on the desk for you.",
       "gapText": "There is [gap1] book on the desk for you.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -120,7 +120,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete the gap with one word.",
-      "prompt": "Tom gave the tickets to ___ before the concert.",
+      "prompt": "Tom gave the tickets to [gap1] before the concert.",
       "gapText": "Tom gave the tickets to [gap1] before the concert.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -168,7 +168,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete the gap with one word.",
-      "prompt": "We cancelled the picnic ___ it started to rain.",
+      "prompt": "We cancelled the picnic [gap1] it started to rain.",
       "gapText": "We cancelled the picnic [gap1] it started to rain.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -216,7 +216,7 @@
       ],
       "difficulty": 1,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The bus leaves ___ the morning at quarter past eight.",
+      "prompt": "The bus leaves [gap1] the morning at quarter past eight.",
       "gapText": "The bus leaves [gap1] the morning at quarter past eight.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -264,7 +264,7 @@
       ],
       "difficulty": 2,
       "instructions": "Complete the gap with one word.",
-      "prompt": "I have lived in this flat ___ 2019.",
+      "prompt": "I have lived in this flat [gap1] 2019.",
       "gapText": "I have lived in this flat [gap1] 2019.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -312,7 +312,7 @@
       ],
       "difficulty": 2,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The road was blocked, ___ we took a different route.",
+      "prompt": "The road was blocked, [gap1] we took a different route.",
       "gapText": "The road was blocked, [gap1] we took a different route.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -360,7 +360,7 @@
       ],
       "difficulty": 2,
       "instructions": "Complete the paragraph with one word in each gap.",
-      "prompt": "Complete the paragraph with one word in each gap.",
+      "prompt": "Last weekend, I visited [gap1] old house where my grandparents lived. The town was quiet, [gap2] I stayed for the afternoon. I met a neighbour [gap3] still remembers my family, and she showed me the garden [gap4] we used to play.",
       "gapText": "Last weekend, I visited [gap1] old house where my grandparents lived. The town was quiet, [gap2] I stayed for the afternoon. I met a neighbour [gap3] still remembers my family, and she showed me the garden [gap4] we used to play.",
       "gapLayout": "paragraph",
       "lessonIds": [
@@ -377,25 +377,25 @@
         "strategy": "per_gap",
         "gaps": [
           {
-            "gapId": "gap-1",
+            "gapId": "gap1",
             "answers": [
               "the"
             ]
           },
           {
-            "gapId": "gap-2",
+            "gapId": "gap2",
             "answers": [
               "so"
             ]
           },
           {
-            "gapId": "gap-3",
+            "gapId": "gap3",
             "answers": [
               "who"
             ]
           },
           {
-            "gapId": "gap-4",
+            "gapId": "gap4",
             "answers": [
               "where"
             ]
@@ -427,7 +427,7 @@
       ],
       "difficulty": 2,
       "instructions": "Complete the gap with one word.",
-      "prompt": "She has worked at the clinic ___ six months.",
+      "prompt": "She has worked at the clinic [gap1] six months.",
       "gapText": "She has worked at the clinic [gap1] six months.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -475,7 +475,7 @@
       ],
       "difficulty": 2,
       "instructions": "Complete the gap with one word.",
-      "prompt": "Do you know ___ the next train leaves?",
+      "prompt": "Do you know [gap1] the next train leaves?",
       "gapText": "Do you know [gap1] the next train leaves?",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -523,7 +523,7 @@
       ],
       "difficulty": 3,
       "instructions": "Complete the gap with one word.",
-      "prompt": "Although ___ was cold, we ate outside.",
+      "prompt": "Although [gap1] was cold, we ate outside.",
       "gapText": "Although [gap1] was cold, we ate outside.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -571,7 +571,7 @@
       ],
       "difficulty": 3,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The guide told us ___ the museum opened at ten.",
+      "prompt": "The guide told us [gap1] the museum opened at ten.",
       "gapText": "The guide told us [gap1] the museum opened at ten.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -619,7 +619,7 @@
       ],
       "difficulty": 3,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The man ___ repaired our boiler was very helpful.",
+      "prompt": "The man [gap1] repaired our boiler was very helpful.",
       "gapText": "The man [gap1] repaired our boiler was very helpful.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -667,7 +667,7 @@
       ],
       "difficulty": 3,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The children went inside because ___ was getting dark.",
+      "prompt": "The children went inside because [gap1] was getting dark.",
       "gapText": "The children went inside because [gap1] was getting dark.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -715,7 +715,7 @@
       ],
       "difficulty": 3,
       "instructions": "Complete the gap with one word.",
-      "prompt": "I left early in order ___ catch the first bus.",
+      "prompt": "I left early in order [gap1] catch the first bus.",
       "gapText": "I left early in order [gap1] catch the first bus.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -763,7 +763,7 @@
       ],
       "difficulty": 4,
       "instructions": "Complete the gap with one word.",
-      "prompt": "It was ___ a useful workshop that I signed up for the next one.",
+      "prompt": "It was [gap1] a useful workshop that I signed up for the next one.",
       "gapText": "It was [gap1] a useful workshop that I signed up for the next one.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -811,7 +811,7 @@
       ],
       "difficulty": 4,
       "instructions": "Complete the gap with one word.",
-      "prompt": "I wish I ___ brought a warmer jacket to the coast.",
+      "prompt": "I wish I [gap1] brought a warmer jacket to the coast.",
       "gapText": "I wish I [gap1] brought a warmer jacket to the coast.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -859,7 +859,7 @@
       ],
       "difficulty": 4,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The office, ___ windows face the park, is available next month.",
+      "prompt": "The office, [gap1] windows face the park, is available next month.",
       "gapText": "The office, [gap1] windows face the park, is available next month.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -907,7 +907,7 @@
       ],
       "difficulty": 4,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The two rooms are connected ___ a narrow corridor.",
+      "prompt": "The two rooms are connected [gap1] a narrow corridor.",
       "gapText": "The two rooms are connected [gap1] a narrow corridor.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -955,7 +955,7 @@
       ],
       "difficulty": 4,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The form must be returned no later ___ Friday.",
+      "prompt": "The form must be returned no later [gap1] Friday.",
       "gapText": "The form must be returned no later [gap1] Friday.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -1003,7 +1003,7 @@
       ],
       "difficulty": 5,
       "instructions": "Complete the gap with one word.",
-      "prompt": "By the time I arrived, the meeting ___ already started.",
+      "prompt": "By the time I arrived, the meeting [gap1] already started.",
       "gapText": "By the time I arrived, the meeting [gap1] already started.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -1051,7 +1051,7 @@
       ],
       "difficulty": 5,
       "instructions": "Complete the gap with one word.",
-      "prompt": "No sooner had the film ended ___ the audience began to leave.",
+      "prompt": "No sooner had the film ended [gap1] the audience began to leave.",
       "gapText": "No sooner had the film ended [gap1] the audience began to leave.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -1099,7 +1099,7 @@
       ],
       "difficulty": 5,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The instructions apply ___ all users of the equipment.",
+      "prompt": "The instructions apply [gap1] all users of the equipment.",
       "gapText": "The instructions apply [gap1] all users of the equipment.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -1147,7 +1147,7 @@
       ],
       "difficulty": 5,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The manager asked me what I ___ doing when the alarm sounded.",
+      "prompt": "The manager asked me what I [gap1] doing when the alarm sounded.",
       "gapText": "The manager asked me what I [gap1] doing when the alarm sounded.",
       "gapLayout": "sentence",
       "lessonIds": [
@@ -1195,7 +1195,7 @@
       ],
       "difficulty": 5,
       "instructions": "Complete the gap with one word.",
-      "prompt": "The policy is valid regardless ___ the applicant's age.",
+      "prompt": "The policy is valid regardless [gap1] the applicant's age.",
       "gapText": "The policy is valid regardless [gap1] the applicant's age.",
       "gapLayout": "sentence",
       "lessonIds": [

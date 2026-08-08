@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ the file ten minutes ago.",
+          "prompt": "I [gap1] the file ten minutes ago.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The analyst ___ the revised figures, so you can review them now.",
+          "prompt": "The analyst [gap1] the revised figures, so you can review them now.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The novelist died in 1998. She ___ six novels.",
+          "prompt": "The novelist died in 1998. She [gap1] six novels.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Mina ___ Edinburgh last year.",
+          "prompt": "Mina [gap1] Edinburgh last year.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "We ___ the contract yesterday.",
+          "prompt": "We [gap1] the contract yesterday.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "We ___ a final decision yet.",
+          "prompt": "We [gap1] a final decision yet.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "This is the first time either of us ___ a public meeting.",
+          "prompt": "This is the first time either of us [gap1] a public meeting.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The neighbourhood ___ considerably in recent years.",
+          "prompt": "The neighbourhood [gap1] considerably in recent years.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Our team ___ four workshops last week.",
+          "prompt": "Our team [gap1] four workshops last week.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "“___ you ever ___ abroad?” “Yes. I ___ in Oslo in 2021.”",
+          "prompt": "“[gap1] you ever [gap2] abroad?” “Yes. I [gap3] in Oslo in 2021.”",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "It is 6 p.m. I ___ two meetings this morning.",
+          "prompt": "It is 6 p.m. I [gap1] two meetings this morning.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A pipe ___ in the library. Staff ___ the leak at 7.15 this morning.",
+          "prompt": "A pipe [gap1] in the library. Staff [gap2] the leak at 7.15 this morning.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The council ___ the plan. It ___ for it on Tuesday.",
+          "prompt": "The council [gap1] the plan. It [gap2] for it on Tuesday.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Neither supplier ___ a firm offer so far, but one of them ___ an estimate yesterday.",
+          "prompt": "Neither supplier [gap1] a firm offer so far, but one of them [gap2] an estimate yesterday.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "We ___ twelve applications so far.",
+          "prompt": "We [gap1] twelve applications so far.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I ___ my keys yesterday, but I ___ them under the sofa later.",
+          "prompt": "I [gap1] my keys yesterday, but I [gap2] them under the sofa later.",
           "options": [
             {
               "id": "a",
@@ -441,6 +441,227 @@
           {
             "roundId": "r7",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-perfect-vs-past-simple-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-perfect-vs-past-simple",
+      "taxonomyNodeIds": [
+        "present-perfect-vs-past-simple"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "It is 10.30 a.m. I [gap1] two meetings this morning.",
+          "options": [
+            {
+              "id": "d",
+              "text": "have have"
+            },
+            {
+              "id": "a",
+              "text": "have had"
+            },
+            {
+              "id": "c",
+              "text": "has had"
+            }
+          ],
+          "explanation": "La mañana aún continúa desde la perspectiva del hablante."
+        },
+        {
+          "id": "r2",
+          "prompt": "I cannot get into the flat because I [gap1] my keys.",
+          "options": [
+            {
+              "id": "c",
+              "text": "have lose"
+            },
+            {
+              "id": "a",
+              "text": "have lost"
+            },
+            {
+              "id": "d",
+              "text": "did lost"
+            }
+          ],
+          "explanation": "La pérdida tiene un resultado actual: el hablante sigue sin poder entrar."
+        },
+        {
+          "id": "r3",
+          "prompt": "It is Wednesday. The college [gap1] four workshops this week.",
+          "options": [
+            {
+              "id": "c",
+              "text": "has hold"
+            },
+            {
+              "id": "a",
+              "text": "has held"
+            },
+            {
+              "id": "b",
+              "text": "held last week"
+            }
+          ],
+          "explanation": "La semana continúa y el sujeto singular «college» usa «has held»."
+        },
+        {
+          "id": "r4",
+          "prompt": "You know that Jo owns a camera and want to ask when the purchase happened.",
+          "options": [
+            {
+              "id": "c",
+              "text": "When did you bought this camera?"
+            },
+            {
+              "id": "d",
+              "text": "When have you buy this camera?"
+            },
+            {
+              "id": "a",
+              "text": "When did you buy this camera?"
+            }
+          ],
+          "explanation": "«When» solicita un momento pasado concreto y usa «did + infinitivo»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The novelist is still writing. She [gap1] six novels so far.",
+          "options": [
+            {
+              "id": "d",
+              "text": "did written"
+            },
+            {
+              "id": "c",
+              "text": "has wrote"
+            },
+            {
+              "id": "b",
+              "text": "has written"
+            }
+          ],
+          "explanation": "La producción puede continuar y «so far» exige present perfect."
+        },
+        {
+          "id": "r6",
+          "prompt": "Ask whether someone has seen the Northern Lights at any time in their life.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Did you seen the Northern Lights ever?"
+            },
+            {
+              "id": "a",
+              "text": "Have you ever seen the Northern Lights?"
+            },
+            {
+              "id": "b",
+              "text": "Did you ever saw the Northern Lights?"
+            }
+          ],
+          "explanation": "Una experiencia vital sin fecha usa «Have you ever seen ...?»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Marta is not in the office because she left for the bank and has not returned.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Marta has been to the bank."
+            },
+            {
+              "id": "a",
+              "text": "Marta has gone to the bank."
+            },
+            {
+              "id": "c",
+              "text": "Marta went to the bank last year."
+            }
+          ],
+          "explanation": "«Has gone to» indica que Marta sigue fuera o está de camino."
+        },
+        {
+          "id": "r8",
+          "prompt": "The bus [gap1], so we can get on now.",
+          "options": [
+            {
+              "id": "d",
+              "text": "did just arrived"
+            },
+            {
+              "id": "c",
+              "text": "has just arrive"
+            },
+            {
+              "id": "a",
+              "text": "has just arrived"
+            }
+          ],
+          "explanation": "«Has just arrived» presenta una llegada reciente con resultado actual."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-perfect-vs-past-simple"
+      ],
+      "tags": [
+        "b1",
+        "present-perfect",
+        "past-simple",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r8",

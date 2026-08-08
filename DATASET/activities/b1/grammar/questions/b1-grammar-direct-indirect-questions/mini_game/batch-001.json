@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "___ cards at this desk?",
+          "prompt": "[gap1] cards at this desk?",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Where ___ wait for the shuttle?",
+          "prompt": "Where [gap1] wait for the shuttle?",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Do you know ___ the café is open?",
+          "prompt": "Do you know [gap1] the café is open?",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Could you tell me where ___?",
+          "prompt": "Could you tell me where [gap1]?",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I'd like to know why the payment ___.",
+          "prompt": "I'd like to know why the payment [gap1].",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "What time ___ the library close?",
+          "prompt": "What time [gap1] the library close?",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "___ after the inspection?",
+          "prompt": "[gap1] after the inspection?",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "When ___ the exhibition open?",
+          "prompt": "When [gap1] the exhibition open?",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Do you know why the printer ___ working?",
+          "prompt": "Do you know why the printer [gap1] working?",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "What does this button ___?",
+          "prompt": "What does this button [gap1]?",
           "options": [
             {
               "id": "b",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "object-question",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-direct-indirect-questions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "direct-indirect-questions",
+      "taxonomyNodeIds": [
+        "direct-indirect-questions"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "[gap1] the nearest pharmacy?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Where be"
+            },
+            {
+              "id": "a",
+              "text": "Where is"
+            },
+            {
+              "id": "c",
+              "text": "Where the"
+            }
+          ],
+          "explanation": "Con «be» invertimos: «Where is ...?»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence is punctuated correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Could you tell me where does the bus stop."
+            },
+            {
+              "id": "d",
+              "text": "I wonder, where the bus stops?"
+            },
+            {
+              "id": "a",
+              "text": "Could you tell me where the bus stops?"
+            }
+          ],
+          "explanation": "La expresión principal es una pregunta y lleva signo; «I wonder» terminaría con punto."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1] the delay?",
+          "options": [
+            {
+              "id": "b",
+              "text": "What did cause"
+            },
+            {
+              "id": "c",
+              "text": "What did caused"
+            },
+            {
+              "id": "a",
+              "text": "What caused"
+            }
+          ],
+          "explanation": "«What» es sujeto y no necesita «did»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Do you know what time the museum [gap1]?",
+          "options": [
+            {
+              "id": "b",
+              "text": "does close"
+            },
+            {
+              "id": "d",
+              "text": "is close"
+            },
+            {
+              "id": "a",
+              "text": "closes"
+            }
+          ],
+          "explanation": "Desaparece «does» y el verbo concuerda: «the museum closes»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which version asks indirectly about the deposit without inversion?",
+          "options": [
+            {
+              "id": "d",
+              "text": "I'd like to know that the deposit is refundable or not?"
+            },
+            {
+              "id": "a",
+              "text": "I'd like to know whether or not the deposit is refundable."
+            },
+            {
+              "id": "c",
+              "text": "I'd like to know if or not is the deposit refundable."
+            }
+          ],
+          "explanation": "«Whether or not» va seguido de orden afirmativo."
+        },
+        {
+          "id": "r6",
+          "prompt": "You want to ask politely about the duration of a closure.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Could you tell me how long the road has been close?"
+            },
+            {
+              "id": "b",
+              "text": "Could you tell me how long has the road been closed?"
+            },
+            {
+              "id": "a",
+              "text": "Could you tell me how long the road has been closed?"
+            }
+          ],
+          "explanation": "El contenido indirecto conserva «the road has been closed»."
+        },
+        {
+          "id": "r7",
+          "prompt": "You need to know whether an appointment is necessary and how long it takes.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you tell me if I need an appointment and how long the process takes?"
+            },
+            {
+              "id": "c",
+              "text": "Could you tell me that I need an appointment and how long the process take?"
+            },
+            {
+              "id": "b",
+              "text": "Could you tell me do I need an appointment and how long does the process take?"
+            }
+          ],
+          "explanation": "Ambas partes indirectas usan orden afirmativo; la cerrada lleva «if»."
+        },
+        {
+          "id": "r8",
+          "prompt": "Direct: “Have the replacement parts arrived?”",
+          "options": [
+            {
+              "id": "b",
+              "text": "I'd like to know whether have the replacement parts arrived."
+            },
+            {
+              "id": "d",
+              "text": "I'd like to know that the parts have arrived?"
+            },
+            {
+              "id": "a",
+              "text": "I'd like to know whether the replacement parts have arrived."
+            }
+          ],
+          "explanation": "Se añade «whether» y se mantiene orden afirmativo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-direct-indirect-questions"
+      ],
+      "tags": [
+        "b1",
+        "direct-question",
         "single-choice",
         "mini-game"
       ],

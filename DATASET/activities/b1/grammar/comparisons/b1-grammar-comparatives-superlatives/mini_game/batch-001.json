@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The train is faster ___ the bus.",
+          "prompt": "The train is faster [gap1] the bus.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Her new flat is ___ than the old one.",
+          "prompt": "Her new flat is [gap1] than the old one.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "That was the ___ film of the year.",
+          "prompt": "That was the [gap1] film of the year.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The new building is ___ more impressive than the old one.",
+          "prompt": "The new building is [gap1] more impressive than the old one.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The mountain path is ___ than the coastal road.",
+          "prompt": "The mountain path is [gap1] than the coastal road.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The blue shirt is ___ than the red one.",
+          "prompt": "The blue shirt is [gap1] than the red one.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "That was the ___ film I saw this year.",
+          "prompt": "That was the [gap1] film I saw this year.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Marta is the ___ in her class.",
+          "prompt": "Marta is the [gap1] in her class.",
           "options": [
             {
               "id": "a",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "This is the ___ chair in the office.",
+          "prompt": "This is the [gap1] chair in the office.",
           "options": [
             {
               "id": "d",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "This is the ___ option available.",
+          "prompt": "This is the [gap1] option available.",
           "options": [
             {
               "id": "d",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "That was the ___ decision of my life.",
+          "prompt": "That was the [gap1] decision of my life.",
           "options": [
             {
               "id": "a",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "This is the ___ comfortable chair in the office.",
+          "prompt": "This is the [gap1] comfortable chair in the office.",
           "options": [
             {
               "id": "c",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "This phone isn't ___ new as that one.",
+          "prompt": "This phone isn't [gap1] new as that one.",
           "options": [
             {
               "id": "c",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "This is the ___ hotel in town.",
+          "prompt": "This is the [gap1] hotel in town.",
           "options": [
             {
               "id": "a",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The second chapter is ___ than the first.",
+          "prompt": "The second chapter is [gap1] than the first.",
           "options": [
             {
               "id": "d",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "This is the ___ café in the area.",
+          "prompt": "This is the [gap1] café in the area.",
           "options": [
             {
               "id": "d",
@@ -408,6 +408,227 @@
       "tags": [
         "b1",
         "superlative",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-comparatives-superlatives-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "comparative-superlative",
+      "taxonomyNodeIds": [
+        "comparative-superlative"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This laptop is [gap1] than my previous one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "more light"
+            },
+            {
+              "id": "a",
+              "text": "lighter"
+            },
+            {
+              "id": "d",
+              "text": "most light"
+            }
+          ],
+          "explanation": "«light» es corto; añadimos «-er»."
+        },
+        {
+          "id": "r2",
+          "prompt": "This route is [gap1] longer than the other one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "most"
+            },
+            {
+              "id": "b",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "a bit"
+            }
+          ],
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "r3",
+          "prompt": "The new model is [gap1] reliable than the old one.",
+          "options": [
+            {
+              "id": "b",
+              "text": "most"
+            },
+            {
+              "id": "a",
+              "text": "more"
+            },
+            {
+              "id": "d",
+              "text": "as"
+            }
+          ],
+          "explanation": "«reliable» es largo; usamos «more»."
+        },
+        {
+          "id": "r4",
+          "prompt": "There are [gap1] students this year than last year.",
+          "options": [
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "more"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            }
+          ],
+          "explanation": "Comparamos cantidad con «more ... than»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The early train is [gap1] fast as the express.",
+          "options": [
+            {
+              "id": "d",
+              "text": "most"
+            },
+            {
+              "id": "b",
+              "text": "than"
+            },
+            {
+              "id": "a",
+              "text": "as"
+            }
+          ],
+          "explanation": "La igualdad usa «as ... as»."
+        },
+        {
+          "id": "r6",
+          "prompt": "He is [gap1] at maths than his brother.",
+          "options": [
+            {
+              "id": "a",
+              "text": "better"
+            },
+            {
+              "id": "c",
+              "text": "more good"
+            },
+            {
+              "id": "b",
+              "text": "gooder"
+            }
+          ],
+          "explanation": "«good» es irregular: «better»."
+        },
+        {
+          "id": "r7",
+          "prompt": "This tablet is [gap1] cheaper than that one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "most"
+            },
+            {
+              "id": "b",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "much"
+            }
+          ],
+          "explanation": "«much» intensifica el comparativo."
+        },
+        {
+          "id": "r8",
+          "prompt": "This bag is [gap1] than that one.",
+          "options": [
+            {
+              "id": "d",
+              "text": "most light"
+            },
+            {
+              "id": "c",
+              "text": "lightest"
+            },
+            {
+              "id": "a",
+              "text": "lighter"
+            }
+          ],
+          "explanation": "«light» es corto; añadimos «-er»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-comparatives-superlatives"
+      ],
+      "tags": [
+        "b1",
+        "comparative",
         "single-choice",
         "mini-game"
       ],

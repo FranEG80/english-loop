@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The letters you type on a computer are entered with the ___.",
+          "prompt": "The letters you type on a computer are entered with the [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "To enter your personal page, you need to ___ your account.",
+          "prompt": "To enter your personal page, you need to [gap1] your account.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Before buying the book, you use a browser to ___ information about it.",
+          "prompt": "Before buying the book, you use a browser to [gap1] information about it.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The museum map is available without a connection because it works ___.",
+          "prompt": "The museum map is available without a connection because it works [gap1].",
           "options": [
             {
               "id": "a",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The phone cannot find a network because the ___ is too weak.",
+          "prompt": "The phone cannot find a network because the [gap1] is too weak.",
           "options": [
             {
               "id": "d",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "You want the newest version of an app, so you should ___.",
+          "prompt": "You want the newest version of an app, so you should [gap1].",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The secret word that protects an account is a ___.",
+          "prompt": "The secret word that protects an account is a [gap1].",
           "options": [
             {
               "id": "c",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Put your holiday photo on the class website: ___.",
+          "prompt": "Put your holiday photo on the class website: [gap1].",
           "options": [
             {
               "id": "d",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The video stops every few seconds because the internet connection is ___.",
+          "prompt": "The video stops every few seconds because the internet connection is [gap1].",
           "options": [
             {
               "id": "a",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The document is safe because you clicked the icon to ___.",
+          "prompt": "The document is safe because you clicked the icon to [gap1].",
           "options": [
             {
               "id": "d",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The safest advice is to use a different ___ for every important account.",
+          "prompt": "The safest advice is to use a different [gap1] for every important account.",
           "options": [
             {
               "id": "b",
@@ -406,6 +406,226 @@
       "tags": [
         "b1",
         "connection",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-technology-digital-life-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-technology-digital-life",
+      "subtopic": "b1-technology-digital-life",
+      "taxonomyNodeIds": [
+        "b1-technology-digital-life"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "You look at pictures and text on a phone's [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "screen"
+            },
+            {
+              "id": "b",
+              "text": "account"
+            },
+            {
+              "id": "c",
+              "text": "link"
+            }
+          ],
+          "explanation": "The screen shows the phone's visual information."
+        },
+        {
+          "id": "r2",
+          "prompt": "A website address that takes you to another page is a [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "battery"
+            },
+            {
+              "id": "c",
+              "text": "username"
+            },
+            {
+              "id": "a",
+              "text": "link"
+            }
+          ],
+          "explanation": "A link connects a page or document to another location."
+        },
+        {
+          "id": "r3",
+          "prompt": "You want a friend to see a photo, so you decide to [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "turn it off"
+            },
+            {
+              "id": "a",
+              "text": "share it"
+            },
+            {
+              "id": "b",
+              "text": "charge it"
+            }
+          ],
+          "explanation": "Share means let another person access or see something."
+        },
+        {
+          "id": "r4",
+          "prompt": "A colleague asks how to enter the service. What should you say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Log in with your username and password."
+            },
+            {
+              "id": "b",
+              "text": "Download with your screen and battery."
+            },
+            {
+              "id": "d",
+              "text": "Browse with your folder and notification."
+            }
+          ],
+          "explanation": "A user logs in with account identification and a secret password."
+        },
+        {
+          "id": "r5",
+          "prompt": "A message says the account was used from a new country. It is a security [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "keyboard"
+            },
+            {
+              "id": "c",
+              "text": "folder"
+            },
+            {
+              "id": "a",
+              "text": "notification"
+            }
+          ],
+          "explanation": "A notification can alert you to unusual account activity."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which object supplies power to a phone when its battery is low?",
+          "options": [
+            {
+              "id": "d",
+              "text": "notification"
+            },
+            {
+              "id": "a",
+              "text": "charger"
+            },
+            {
+              "id": "c",
+              "text": "browser"
+            }
+          ],
+          "explanation": "A charger supplies electrical power to the device."
+        },
+        {
+          "id": "r7",
+          "prompt": "A small message telling you that an app has new information is a [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "keyboard"
+            },
+            {
+              "id": "b",
+              "text": "password"
+            },
+            {
+              "id": "a",
+              "text": "notification"
+            }
+          ],
+          "explanation": "A notification alerts you about an event or update."
+        },
+        {
+          "id": "r8",
+          "prompt": "Copy a document from a website to your tablet: [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "delete it"
+            },
+            {
+              "id": "a",
+              "text": "download it"
+            },
+            {
+              "id": "b",
+              "text": "upload it"
+            }
+          ],
+          "explanation": "Download means copy data from a service to your device."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-technology-digital-life"
+      ],
+      "tags": [
+        "b1",
+        "devices",
         "mini-game"
       ],
       "estimatedSeconds": 120,

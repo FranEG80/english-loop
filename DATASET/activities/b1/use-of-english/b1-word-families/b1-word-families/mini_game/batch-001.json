@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The mechanic checked the engine ___. (CARE)",
+          "prompt": "The mechanic checked the engine [gap1]. (CARE)",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The team celebrated its latest ___. (ACHIEVE)",
+          "prompt": "The team celebrated its latest [gap1]. (ACHIEVE)",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The receptionist was very ___ when I asked for directions. (HELP)",
+          "prompt": "The receptionist was very [gap1] when I asked for directions. (HELP)",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The project needs further ___ before it can start. (PLAN)",
+          "prompt": "The project needs further [gap1] before it can start. (PLAN)",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The hotel room needs some ___ before the guests arrive. (DECORATE)",
+          "prompt": "The hotel room needs some [gap1] before the guests arrive. (DECORATE)",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The new timetable is not entirely ___. (PRACTICE)",
+          "prompt": "The new timetable is not entirely [gap1]. (PRACTICE)",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The report gives a ___ account of the accident. (COMPREHEND)",
+          "prompt": "The report gives a [gap1] account of the accident. (COMPREHEND)",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The report contains an important ___ about road safety. (OBSERVE)",
+          "prompt": "The report contains an important [gap1] about road safety. (OBSERVE)",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The students waited for the results ___. (PATIENT)",
+          "prompt": "The students waited for the results [gap1]. (PATIENT)",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The children behaved very ___. (GOOD)",
+          "prompt": "The children behaved very [gap1]. (GOOD)",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The instructions are ___ presented on the first page. (CLEAR)",
+          "prompt": "The instructions are [gap1] presented on the first page. (CLEAR)",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The journey was surprisingly ___. (COMFORT)",
+          "prompt": "The journey was surprisingly [gap1]. (COMFORT)",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The team responded to the emergency ___. (EFFICIENT)",
+          "prompt": "The team responded to the emergency [gap1]. (EFFICIENT)",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Her ___ made the task much easier for everyone. (ORGANISE)",
+          "prompt": "Her [gap1] made the task much easier for everyone. (ORGANISE)",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The library provides free ___ to computers. (ACCESS)",
+          "prompt": "The library provides free [gap1] to computers. (ACCESS)",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The committee discussed the issue with great ___. (SERIOUS)",
+          "prompt": "The committee discussed the issue with great [gap1]. (SERIOUS)",
           "options": [
             {
               "id": "c",
@@ -437,6 +437,227 @@
           {
             "roundId": "r6",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": [
+        "b1-word-families"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The proposal is financially [gap1]. (ATTRACT)",
+          "options": [
+            {
+              "id": "b",
+              "text": "attractively"
+            },
+            {
+              "id": "a",
+              "text": "attraction"
+            },
+            {
+              "id": "c",
+              "text": "attractive"
+            }
+          ],
+          "explanation": "The adjective «attractive» describes the proposal."
+        },
+        {
+          "id": "r2",
+          "prompt": "The service is completely [gap1] at weekends. (ACCESS)",
+          "options": [
+            {
+              "id": "a",
+              "text": "access"
+            },
+            {
+              "id": "b",
+              "text": "accessible"
+            },
+            {
+              "id": "c",
+              "text": "accessibly"
+            }
+          ],
+          "explanation": "The adjective «accessible» follows «completely» and means available to use."
+        },
+        {
+          "id": "r3",
+          "prompt": "The audience listened [gap1] to the scientist's explanation. (ATTENTION)",
+          "options": [
+            {
+              "id": "d",
+              "text": "inattention"
+            },
+            {
+              "id": "c",
+              "text": "attentively"
+            },
+            {
+              "id": "a",
+              "text": "attention"
+            }
+          ],
+          "explanation": "The adverb «attentively» describes how the audience listened."
+        },
+        {
+          "id": "r4",
+          "prompt": "The speaker answered with great [gap1]. (CONFIDENT)",
+          "options": [
+            {
+              "id": "c",
+              "text": "confidence"
+            },
+            {
+              "id": "a",
+              "text": "confident"
+            },
+            {
+              "id": "d",
+              "text": "confidential"
+            }
+          ],
+          "explanation": "The phrase «with great confidence» requires the noun «confidence»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The new system is more [gap1] than the old one. (EFFICIENCY)",
+          "options": [
+            {
+              "id": "c",
+              "text": "efficiently"
+            },
+            {
+              "id": "b",
+              "text": "efficiency"
+            },
+            {
+              "id": "a",
+              "text": "efficient"
+            }
+          ],
+          "explanation": "After «more» we need the adjective «efficient»."
+        },
+        {
+          "id": "r6",
+          "prompt": "She explained the change [gap1]. (PATIENT)",
+          "options": [
+            {
+              "id": "c",
+              "text": "patiently"
+            },
+            {
+              "id": "a",
+              "text": "patience"
+            },
+            {
+              "id": "d",
+              "text": "impatiently"
+            }
+          ],
+          "explanation": "The adverb «patiently» describes the explanation."
+        },
+        {
+          "id": "r7",
+          "prompt": "The manager praised the staff for their [gap1]. (DEDICATE)",
+          "options": [
+            {
+              "id": "b",
+              "text": "dedication"
+            },
+            {
+              "id": "d",
+              "text": "dedicate"
+            },
+            {
+              "id": "c",
+              "text": "dedicately"
+            }
+          ],
+          "explanation": "After «their» we need the noun «dedication»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The manager explained the change [gap1]. (PRECISE)",
+          "options": [
+            {
+              "id": "b",
+              "text": "precise"
+            },
+            {
+              "id": "c",
+              "text": "precisely"
+            },
+            {
+              "id": "d",
+              "text": "imprecise"
+            }
+          ],
+          "explanation": "The adverb «precisely» describes how the manager explained the change."
+        }
+      ],
+      "lessonIds": [
+        "b1-word-families"
+      ],
+      "tags": [
+        "b1",
+        "word-formation",
+        "adjectives",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
           },
           {
             "roundId": "r7",

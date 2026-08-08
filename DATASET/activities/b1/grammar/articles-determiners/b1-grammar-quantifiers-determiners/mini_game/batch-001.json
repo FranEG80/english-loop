@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "You can take ___ seat. (cualquiera)",
+          "prompt": "You can take [gap1] seat. (cualquiera)",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "There are ___ reasons to visit.",
+          "prompt": "There are [gap1] reasons to visit.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "There is ___ chance of rain today.",
+          "prompt": "There is [gap1] chance of rain today.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ people understand the theory. (pocos, negativo)",
+          "prompt": "[gap1] people understand the theory. (pocos, negativo)",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Are there ___ tickets left?",
+          "prompt": "Are there [gap1] tickets left?",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "There aren't ___ chairs left.",
+          "prompt": "There aren't [gap1] chairs left.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "There isn't ___ information available.",
+          "prompt": "There isn't [gap1] information available.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "She has a ___ of experience.",
+          "prompt": "She has a [gap1] of experience.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I have a ___ ideas.",
+          "prompt": "I have a [gap1] ideas.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "There is ___ sugar in the cupboard. (poco, negativo)",
+          "prompt": "There is [gap1] sugar in the cupboard. (poco, negativo)",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "There is ___ hope of finding it.",
+          "prompt": "There is [gap1] hope of finding it.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Could I have ___ water, please?",
+          "prompt": "Could I have [gap1] water, please?",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I have a ___ suggestions.",
+          "prompt": "I have a [gap1] suggestions.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "How ___ people are coming?",
+          "prompt": "How [gap1] people are coming?",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She has a ___ experience.",
+          "prompt": "She has a [gap1] experience.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "There is ___ time to decide.",
+          "prompt": "There is [gap1] time to decide.",
           "options": [
             {
               "id": "d",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "«time» es incontable; usa «little»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-quantifiers-determiners"
+      ],
+      "tags": [
+        "b1",
+        "quantifier",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-quantifiers-determiners-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "quantifiers-determiners",
+      "taxonomyNodeIds": [
+        "quantifiers-determiners"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I don't have [gap1] money.",
+          "options": [
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "any"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            }
+          ],
+          "explanation": "Las negativas usan «any»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Would you like [gap1] tea?",
+          "options": [
+            {
+              "id": "b",
+              "text": "any"
+            },
+            {
+              "id": "a",
+              "text": "some"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            }
+          ],
+          "explanation": "Los ofrecimientos usan «some»."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1] students missed the class.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Any"
+            },
+            {
+              "id": "b",
+              "text": "Little"
+            },
+            {
+              "id": "a",
+              "text": "Few"
+            }
+          ],
+          "explanation": "«students» es contable; usa «few»."
+        },
+        {
+          "id": "r4",
+          "prompt": "I have [gap1] time to spare. (un poco, positivo)",
+          "options": [
+            {
+              "id": "b",
+              "text": "little"
+            },
+            {
+              "id": "a",
+              "text": "a little"
+            },
+            {
+              "id": "d",
+              "text": "many"
+            }
+          ],
+          "explanation": "«a little» tiene sentido positivo."
+        },
+        {
+          "id": "r5",
+          "prompt": "We don't have [gap1] time before the train.",
+          "options": [
+            {
+              "id": "a",
+              "text": "much"
+            },
+            {
+              "id": "d",
+              "text": "few"
+            },
+            {
+              "id": "c",
+              "text": "a few"
+            }
+          ],
+          "explanation": "«time» es incontable; usa «much»."
+        },
+        {
+          "id": "r6",
+          "prompt": "[gap1] of the students passed. (algunos)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Some"
+            },
+            {
+              "id": "d",
+              "text": "Little"
+            },
+            {
+              "id": "b",
+              "text": "Any"
+            }
+          ],
+          "explanation": "«some» en afirmativa significa «algunos»."
+        },
+        {
+          "id": "r7",
+          "prompt": "There are a [gap1] of people here.",
+          "options": [
+            {
+              "id": "c",
+              "text": "much"
+            },
+            {
+              "id": "d",
+              "text": "few"
+            },
+            {
+              "id": "a",
+              "text": "lot"
+            }
+          ],
+          "explanation": "«a lot of» se usa con contables."
+        },
+        {
+          "id": "r8",
+          "prompt": "There isn't [gap1] milk left.",
+          "options": [
+            {
+              "id": "c",
+              "text": "some"
+            },
+            {
+              "id": "d",
+              "text": "a few"
+            },
+            {
+              "id": "a",
+              "text": "much"
+            }
+          ],
+          "explanation": "«milk» es incontable; usa «much»."
         }
       ],
       "lessonIds": [

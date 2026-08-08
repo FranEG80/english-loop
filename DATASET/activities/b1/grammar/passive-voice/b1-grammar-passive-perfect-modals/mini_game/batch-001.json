@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The emergency exit mustn't ___ by boxes.",
+          "prompt": "The emergency exit mustn't [gap1] by boxes.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The timetable ___ updated.",
+          "prompt": "The timetable [gap1] updated.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The final paragraph should ___ shorter.",
+          "prompt": "The final paragraph should [gap1] shorter.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The winning entry has been ___ by the judges.",
+          "prompt": "The winning entry has been [gap1] by the judges.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Can the booking ___ to another date?",
+          "prompt": "Can the booking [gap1] to another date?",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The result ___ yesterday afternoon.",
+          "prompt": "The result [gap1] yesterday afternoon.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The form ___; a digital copy is sufficient.",
+          "prompt": "The form [gap1]; a digital copy is sufficient.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Depending on demand, an extra workshop ___ next month.",
+          "prompt": "Depending on demand, an extra workshop [gap1] next month.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Original photographs ___, but reference copies ___.",
+          "prompt": "Original photographs [gap1], but reference copies [gap2].",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The faulty units ___, and all affected customers ___ automatically.",
+          "prompt": "The faulty units [gap1], and all affected customers [gap2] automatically.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Several accessibility improvements ___ to the revised design.",
+          "prompt": "Several accessibility improvements [gap1] to the revised design.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The map can ___ from the visitor centre.",
+          "prompt": "The map can [gap1] from the visitor centre.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The invoices ___.",
+          "prompt": "The invoices [gap1].",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Protective gloves must ___ in the workshop.",
+          "prompt": "Protective gloves must [gap1] in the workshop.",
           "options": [
             {
               "id": "b",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "La obligación pasiva usa «must be worn»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-passive-perfect-modals"
+      ],
+      "tags": [
+        "b1",
+        "modal-passive",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-passive-perfect-modals-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "perfect-modal-passive",
+      "taxonomyNodeIds": [
+        "perfect-modal-passive"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The outdoor concert [gap1] if the wind becomes stronger.",
+          "options": [
+            {
+              "id": "b",
+              "text": "may been cancelled"
+            },
+            {
+              "id": "c",
+              "text": "may cancelled"
+            },
+            {
+              "id": "a",
+              "text": "may be cancelled"
+            }
+          ],
+          "explanation": "La posibilidad pasiva usa «may be cancelled»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The footbridge [gap1] because of ice, so use the road crossing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "has been closed"
+            },
+            {
+              "id": "d",
+              "text": "has be closed"
+            },
+            {
+              "id": "c",
+              "text": "has closed"
+            }
+          ],
+          "explanation": "La consecuencia actual favorece «has been closed»."
+        },
+        {
+          "id": "r3",
+          "prompt": "How many new trees [gap1] in the park this year?",
+          "options": [
+            {
+              "id": "a",
+              "text": "have been planted"
+            },
+            {
+              "id": "c",
+              "text": "have planted"
+            },
+            {
+              "id": "d",
+              "text": "have been plant"
+            }
+          ],
+          "explanation": "El plural pregunta por resultados hasta ahora: «have been planted»."
+        },
+        {
+          "id": "r4",
+          "prompt": "The source of the leak [gap1] identified yet.",
+          "options": [
+            {
+              "id": "c",
+              "text": "isn't been"
+            },
+            {
+              "id": "d",
+              "text": "haven't been"
+            },
+            {
+              "id": "a",
+              "text": "hasn't been"
+            }
+          ],
+          "explanation": "El sujeto singular usa «hasn't been identified»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Active: “The review panel has approved both proposals.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Both proposals have been approved by the review panel."
+            },
+            {
+              "id": "c",
+              "text": "Both proposals have be approved by the review panel."
+            },
+            {
+              "id": "d",
+              "text": "The review panel has been approved by both proposals."
+            }
+          ],
+          "explanation": "El nuevo sujeto plural usa «have been approved»."
+        },
+        {
+          "id": "r6",
+          "prompt": "[gap1] before publication?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Should be the figures checked"
+            },
+            {
+              "id": "c",
+              "text": "Do the figures should be checked"
+            },
+            {
+              "id": "a",
+              "text": "Should the figures be checked"
+            }
+          ],
+          "explanation": "La pregunta coloca el sujeto entre «should» y «be»."
+        },
+        {
+          "id": "r7",
+          "prompt": "[gap1] the replacement keys been sent?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Did"
+            },
+            {
+              "id": "b",
+              "text": "Has"
+            },
+            {
+              "id": "a",
+              "text": "Have"
+            }
+          ],
+          "explanation": "El sujeto plural requiere «Have ... been sent?»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The old permit [gap1] in 2024, but a new one [gap2] now.",
+          "options": [
+            {
+              "id": "b",
+              "text": "has been cancelled / was issued now"
+            },
+            {
+              "id": "a",
+              "text": "was cancelled / has been issued"
+            },
+            {
+              "id": "d",
+              "text": "has cancelled / has been issue"
+            }
+          ],
+          "explanation": "La fecha terminada usa pasado simple; el resultado actual usa present perfect passive."
         }
       ],
       "lessonIds": [

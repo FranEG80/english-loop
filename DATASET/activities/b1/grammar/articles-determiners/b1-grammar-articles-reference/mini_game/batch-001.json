@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "___ dogs need exercise.",
+          "prompt": "[gap1] dogs need exercise.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We visited ___ Alps last summer.",
+          "prompt": "We visited [gap1] Alps last summer.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ rich should help the poor.",
+          "prompt": "[gap1] rich should help the poor.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "She plays ___ piano.",
+          "prompt": "She plays [gap1] piano.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I need ___ hour to finish.",
+          "prompt": "I need [gap1] hour to finish.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "He is ___ honest man.",
+          "prompt": "He is [gap1] honest man.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She is ___ only person who knows.",
+          "prompt": "She is [gap1] only person who knows.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I had ___ breakfast at eight.",
+          "prompt": "I had [gap1] breakfast at eight.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I bought ___ umbrella yesterday.",
+          "prompt": "I bought [gap1] umbrella yesterday.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "___ water is essential for life.",
+          "prompt": "[gap1] water is essential for life.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I listen to ___ radio in the morning.",
+          "prompt": "I listen to [gap1] radio in the morning.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ sun rises in the east.",
+          "prompt": "[gap1] sun rises in the east.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I saw ___ dog in the park.",
+          "prompt": "I saw [gap1] dog in the park.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "She is ___ engineer.",
+          "prompt": "She is [gap1] engineer.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "___ Nile flows through Egypt.",
+          "prompt": "[gap1] Nile flows through Egypt.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I go to ___ school by bus.",
+          "prompt": "I go to [gap1] school by bus.",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Institución con función: zero article."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-articles-reference"
+      ],
+      "tags": [
+        "b1",
+        "articles",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-articles-reference-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "articles-determiners",
+      "subtopic": "articles-reference",
+      "taxonomyNodeIds": [
+        "articles-reference"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "She is [gap1] university student.",
+          "options": [
+            {
+              "id": "c",
+              "text": "the"
+            },
+            {
+              "id": "a",
+              "text": "a"
+            },
+            {
+              "id": "b",
+              "text": "an"
+            }
+          ],
+          "explanation": "«university» suena «yu»: «a university»."
+        },
+        {
+          "id": "r2",
+          "prompt": "He works as [gap1] teacher.",
+          "options": [
+            {
+              "id": "a",
+              "text": "a"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            },
+            {
+              "id": "b",
+              "text": "an"
+            }
+          ],
+          "explanation": "«teacher» empieza con sonido consonántico: «a»."
+        },
+        {
+          "id": "r3",
+          "prompt": "She speaks [gap1] English very well.",
+          "options": [
+            {
+              "id": "a",
+              "text": "no article"
+            },
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "c",
+              "text": "an"
+            }
+          ],
+          "explanation": "Idiomas en general: zero article."
+        },
+        {
+          "id": "r4",
+          "prompt": "[gap1] dog was chasing a ball.",
+          "options": [
+            {
+              "id": "c",
+              "text": "An"
+            },
+            {
+              "id": "a",
+              "text": "The"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            }
+          ],
+          "explanation": "Referencia ya conocida: «the»."
+        },
+        {
+          "id": "r5",
+          "prompt": "[gap1] moon looks bright tonight.",
+          "options": [
+            {
+              "id": "b",
+              "text": "A"
+            },
+            {
+              "id": "c",
+              "text": "An"
+            },
+            {
+              "id": "a",
+              "text": "The"
+            }
+          ],
+          "explanation": "Lugar único: «the moon»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I play [gap1] guitar in a band.",
+          "options": [
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "a",
+              "text": "the"
+            },
+            {
+              "id": "c",
+              "text": "an"
+            }
+          ],
+          "explanation": "Instrumentos musicales: «the guitar»."
+        },
+        {
+          "id": "r7",
+          "prompt": "[gap1] Amazon is a very long river.",
+          "options": [
+            {
+              "id": "b",
+              "text": "A"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            },
+            {
+              "id": "a",
+              "text": "The"
+            }
+          ],
+          "explanation": "Ríos: «the Amazon»."
+        },
+        {
+          "id": "r8",
+          "prompt": "This is [gap1] best restaurant in town.",
+          "options": [
+            {
+              "id": "b",
+              "text": "a"
+            },
+            {
+              "id": "a",
+              "text": "the"
+            },
+            {
+              "id": "d",
+              "text": "no article"
+            }
+          ],
+          "explanation": "Superlativo: «the best»."
         }
       ],
       "lessonIds": [

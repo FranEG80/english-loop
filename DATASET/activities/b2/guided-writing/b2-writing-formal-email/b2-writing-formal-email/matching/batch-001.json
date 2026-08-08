@@ -27,16 +27,28 @@
       "prompt": "Match formal openings with their purposes.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "I am writing to enquire about",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "request information"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "I am writing to complain about",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "report a problem"
+        },
+        {
+          "leftId": "l3",
+          "left": "I hope this matter can be resolved promptly",
+          "rightId": "r3",
+          "right": "requests timely action"
+        },
+        {
+          "leftId": "l4",
+          "left": "Extra cost",
+          "rightId": "r4",
+          "right": "justifies compensation"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match direct requests with formal alternatives.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Send me the form",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Could you please send me the form"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Tell me the date",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "I would be grateful if you could confirm the date"
+        },
+        {
+          "leftId": "l3",
+          "left": "I am writing regarding",
+          "rightId": "r3",
+          "right": "a known reference or matter"
+        },
+        {
+          "leftId": "l4",
+          "left": "Change the booking",
+          "rightId": "r4",
+          "right": "I would like to request a change to the booking"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match formal greetings with compatible closings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Dear Sir or Madam",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Yours faithfully"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Dear Ms Brown",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "Yours sincerely"
+        },
+        {
+          "leftId": "l3",
+          "left": "Repeated invoice errors",
+          "rightId": "r3",
+          "right": "correct the account and explain the cause"
+        },
+        {
+          "leftId": "l4",
+          "left": "Fix this problem",
+          "rightId": "r4",
+          "right": "I hope this matter can be resolved promptly"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match common email problems with reasonable solutions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Incorrect invoice",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "corrected bill"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Damaged item",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "replacement"
+        },
+        {
+          "leftId": "l3",
+          "left": "Extend the deadline",
+          "rightId": "r3",
+          "right": "documents arrived late"
+        },
+        {
+          "leftId": "l4",
+          "left": "Provide access details",
+          "rightId": "r4",
+          "right": "visitors need to make arrangements"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match basic formal email phrases with their functions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "I look forward to hearing from you",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "expects a reply"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "My reference number is",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "identifies a case"
+        },
+        {
+          "leftId": "l3",
+          "left": "Send me the form",
+          "rightId": "r3",
+          "right": "Could you please send me the form"
+        },
+        {
+          "leftId": "l4",
+          "left": "Tell me the date",
+          "rightId": "r4",
+          "right": "I would be grateful if you could confirm the date"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match formal email paragraphs with suitable content.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Opening",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "state the reason for writing"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Closing",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "request a response"
+        },
+        {
+          "leftId": "l3",
+          "left": "Yours faithfully",
+          "rightId": "r3",
+          "right": "recipient is unknown"
+        },
+        {
+          "leftId": "l4",
+          "left": "Yours sincerely",
+          "rightId": "r4",
+          "right": "recipient is named"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match case details with the reason they help.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Reference number",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "helps locate the record"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Delivery date",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "shows when the problem occurred"
+        },
+        {
+          "leftId": "l3",
+          "left": "I would appreciate",
+          "rightId": "r3",
+          "right": "a courteous request"
+        },
+        {
+          "leftId": "l4",
+          "left": "If possible",
+          "rightId": "r4",
+          "right": "softens a condition"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -407,21 +547,33 @@
       "taxonomyNodeIds": [
         "b2-writing-formal-email"
       ],
-      "difficulty": 2,
-      "instructions": "Match each formal phrase with its meaning.",
-      "prompt": "Match polite phrases with their meanings.",
+      "difficulty": 3,
+      "instructions": "Match each formal phrase with what it does in the email.",
+      "prompt": "Match the formal phrases with their function.",
       "pairs": [
         {
-          "leftId": "a",
-          "left": "I would appreciate",
-          "rightId": "x",
-          "right": "a courteous request"
+          "leftId": "l1",
+          "left": "Please find attached",
+          "rightId": "r1",
+          "right": "points to a document sent with the message"
         },
         {
-          "leftId": "b",
-          "left": "If possible",
-          "rightId": "y",
-          "right": "softens a condition"
+          "leftId": "l2",
+          "left": "I would be grateful if you could",
+          "rightId": "r2",
+          "right": "makes a polite request"
+        },
+        {
+          "leftId": "l3",
+          "left": "I look forward to hearing from you",
+          "rightId": "r3",
+          "right": "closes by inviting a reply"
+        },
+        {
+          "leftId": "l4",
+          "left": "Should you require further details",
+          "rightId": "r4",
+          "right": "offers extra information if needed"
         }
       ],
       "lessonIds": [
@@ -430,23 +582,31 @@
       "tags": [
         "b2",
         "formal-email",
-        "politeness"
+        "functions"
       ],
       "estimatedSeconds": 45,
       "evaluator": {
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
-      "explanation": "These phrases keep requests courteous without hiding their purpose."
+      "explanation": "«Please find attached» anuncia un adjunto, «I would be grateful if you could» pide algo con cortesía, «I look forward to hearing from you» cierra invitando a responder y «Should you require further details» ofrece más información."
     },
     {
       "schemaVersion": "2.0.0",
@@ -467,16 +627,28 @@
       "prompt": "Match service problems with their consequences.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Late delivery",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "missed appointment"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Incorrect booking",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "wrong room available"
+        },
+        {
+          "leftId": "l3",
+          "left": "Fix this now",
+          "rightId": "r3",
+          "right": "I would appreciate your prompt attention"
+        },
+        {
+          "leftId": "l4",
+          "left": "Extend the deadline",
+          "rightId": "r4",
+          "right": "documents arrived late"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match enquiries with the information they ask for.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Course enquiry",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "fees and dates"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Accessibility enquiry",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "wheelchair access"
+        },
+        {
+          "leftId": "l3",
+          "left": "Named manager",
+          "rightId": "r3",
+          "right": "Dear Ms Brown"
+        },
+        {
+          "leftId": "l4",
+          "left": "Enquiry",
+          "rightId": "r4",
+          "right": "purpose, questions, reply request"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match formal openings to email situations.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "I am writing regarding",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "a known reference or matter"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "I am writing to enquire about",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "a request for information"
+        },
+        {
+          "leftId": "l3",
+          "left": "Late delivery",
+          "rightId": "r3",
+          "right": "missed appointment"
+        },
+        {
+          "leftId": "l4",
+          "left": "Incorrect booking",
+          "rightId": "r4",
+          "right": "wrong room available"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match direct requests with polished outcomes.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Change the booking",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "I would like to request a change to the booking"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Reply by Friday",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "I would appreciate a reply by Friday"
+        },
+        {
+          "leftId": "l3",
+          "left": "Repeated billing error",
+          "rightId": "r3",
+          "right": "corrected invoice"
+        },
+        {
+          "leftId": "l4",
+          "left": "Cancelled event",
+          "rightId": "r4",
+          "right": "full fee refund"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match service complaints with reasonable remedies.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Repeated billing error",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "corrected invoice"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Cancelled event",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "full fee refund"
+        },
+        {
+          "leftId": "l3",
+          "left": "Dear Ms Brown",
+          "rightId": "r3",
+          "right": "Yours sincerely"
+        },
+        {
+          "leftId": "l4",
+          "left": "Incorrect invoice",
+          "rightId": "r4",
+          "right": "corrected bill"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match formal complaint paragraphs with their content.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Problem paragraph",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "date, event and impact"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Remedy paragraph",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "requested refund or replacement"
+        },
+        {
+          "leftId": "l3",
+          "left": "Reference number",
+          "rightId": "r3",
+          "right": "helps locate the record"
+        },
+        {
+          "leftId": "l4",
+          "left": "Delivery date",
+          "rightId": "r4",
+          "right": "shows when the problem occurred"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match formal closings with what they communicate.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "I look forward to hearing from you",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "expects a reply"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "I hope this matter can be resolved promptly",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "requests timely action"
+        },
+        {
+          "leftId": "l3",
+          "left": "I would therefore like",
+          "rightId": "r3",
+          "right": "states remedy"
+        },
+        {
+          "leftId": "l4",
+          "left": "Yours faithfully",
+          "rightId": "r4",
+          "right": "recipient is unknown"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match complaint details with the reason they matter.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Reference number",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "enables case tracking"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Extra cost",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "justifies compensation"
+        },
+        {
+          "leftId": "l3",
+          "left": "I am writing to complain about",
+          "rightId": "r3",
+          "right": "report a problem"
+        },
+        {
+          "leftId": "l4",
+          "left": "Send me the form",
+          "rightId": "r4",
+          "right": "Could you please send me the form"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match blunt complaints with professional wording.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "You made a mistake",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "I have noticed an error"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Fix this now",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "I would appreciate your prompt attention"
+        },
+        {
+          "leftId": "l3",
+          "left": "Extend the deadline",
+          "rightId": "r3",
+          "right": "documents arrived late"
+        },
+        {
+          "leftId": "l4",
+          "left": "Provide access details",
+          "rightId": "r4",
+          "right": "visitors need to make arrangements"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match formal requests with reasons that support them.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Extend the deadline",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "documents arrived late"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Provide access details",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "visitors need to make arrangements"
+        },
+        {
+          "leftId": "l3",
+          "left": "Unknown department",
+          "rightId": "r3",
+          "right": "Dear Sir or Madam"
+        },
+        {
+          "leftId": "l4",
+          "left": "Named manager",
+          "rightId": "r4",
+          "right": "Dear Ms Brown"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match recipients with an appropriate formal greeting.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Unknown department",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Dear Sir or Madam"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Named manager",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "Dear Ms Brown"
+        },
+        {
+          "leftId": "l3",
+          "left": "Delivery date",
+          "rightId": "r3",
+          "right": "shows when the problem occurred"
+        },
+        {
+          "leftId": "l4",
+          "left": "I would appreciate",
+          "rightId": "r4",
+          "right": "a courteous request"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match formal email purposes with the information order.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Enquiry",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "purpose, questions, reply request"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Complaint",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "problem, impact, remedy"
+        },
+        {
+          "leftId": "l3",
+          "left": "Late delivery",
+          "rightId": "r3",
+          "right": "missed appointment"
+        },
+        {
+          "leftId": "l4",
+          "left": "Incorrect booking",
+          "rightId": "r4",
+          "right": "wrong room available"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match formal cases with the most complete remedies.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Cancelled booking caused extra costs",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "refund the fee and confirm compensation"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Repeated invoice errors",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "correct the account and explain the cause"
+        },
+        {
+          "leftId": "l3",
+          "left": "Named manager",
+          "rightId": "r3",
+          "right": "Dear Ms Brown"
+        },
+        {
+          "leftId": "l4",
+          "left": "Enquiry",
+          "rightId": "r4",
+          "right": "purpose, questions, reply request"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match direct wording with the most formal alternative.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Tell me the date",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "I would be grateful if you could confirm the date"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Fix this problem",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "I hope this matter can be resolved promptly"
+        },
+        {
+          "leftId": "l3",
+          "left": "Dear Ms Brown",
+          "rightId": "r3",
+          "right": "Yours sincerely"
+        },
+        {
+          "leftId": "l4",
+          "left": "Incorrect invoice",
+          "rightId": "r4",
+          "right": "corrected bill"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,22 +1677,28 @@
       "prompt": "Match sentences with their role in a formal complaint.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "I am writing to complain about",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "states purpose"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "As a result, I was unable to",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "states impact"
         },
         {
-          "leftId": "c",
+          "leftId": "l3",
           "left": "I would therefore like",
-          "rightId": "z",
+          "rightId": "r3",
           "right": "states remedy"
+        },
+        {
+          "leftId": "l4",
+          "left": "Repeated billing error",
+          "rightId": "r4",
+          "right": "corrected invoice"
         }
       ],
       "lessonIds": [
@@ -1268,16 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
           },
           {
-            "leftId": "c",
-            "rightId": "z"
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1302,16 +1752,28 @@
       "prompt": "Match formal closings with the email situation.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Yours faithfully",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "recipient is unknown"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Yours sincerely",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "recipient is named"
+        },
+        {
+          "leftId": "l3",
+          "left": "Repeated invoice errors",
+          "rightId": "r3",
+          "right": "correct the account and explain the cause"
+        },
+        {
+          "leftId": "l4",
+          "left": "Fix this problem",
+          "rightId": "r4",
+          "right": "I hope this matter can be resolved promptly"
         }
       ],
       "lessonIds": [
@@ -1327,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1357,22 +1827,28 @@
       "prompt": "Match advanced formal-email planning choices with their effects.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "State the purpose first",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "helps the reader route the message"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Give dates and references",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "makes the case verifiable"
         },
         {
-          "leftId": "c",
+          "leftId": "l3",
           "left": "Request a specific remedy",
-          "rightId": "z",
+          "rightId": "r3",
           "right": "makes the next step actionable"
+        },
+        {
+          "leftId": "l4",
+          "left": "My reference number is",
+          "rightId": "r4",
+          "right": "identifies a case"
         }
       ],
       "lessonIds": [
@@ -1388,16 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
           },
           {
-            "leftId": "c",
-            "rightId": "z"
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

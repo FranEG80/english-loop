@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Lucy was at a country hotel when the room key failed. ___ By the end, the situation was under control.",
+          "prompt": "Lucy was at a country hotel when the room key failed. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Maya was at the village station when the lights went out. ___ By the end, the situation was under control.",
+          "prompt": "Maya was at the village station when the lights went out. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Finn was at a riverside walk when the bridge was closed. ___ By the end, the situation was under control.",
+          "prompt": "Finn was at a riverside walk when the bridge was closed. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Grace was at a community garden when the hose broke. ___ By the end, the situation was under control.",
+          "prompt": "Grace was at a community garden when the hose broke. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Lara was at the school kitchen when the oven stopped. ___ By the end, the situation was under control.",
+          "prompt": "Lara was at the school kitchen when the oven stopped. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Sam was at the football pitch when the rain made the ground slippery. ___ By the end, the situation was under control.",
+          "prompt": "Sam was at the football pitch when the rain made the ground slippery. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Noah was at a theatre queue when he realised he had the wrong date. ___ By the end, the situation was under control.",
+          "prompt": "Noah was at a theatre queue when he realised he had the wrong date. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Ravi was at a train platform when the departure changed. ___ By the end, the situation was under control.",
+          "prompt": "Ravi was at a train platform when the departure changed. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "a",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Iris was at a library desk when her laptop battery died. ___ By the end, the situation was under control.",
+          "prompt": "Iris was at a library desk when her laptop battery died. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "a",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Clara was at a woodland path when she heard a strange noise. ___ By the end, the situation was under control.",
+          "prompt": "Clara was at a woodland path when she heard a strange noise. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "c",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Alex was at the museum entrance when the ticket machine failed. ___ By the end, the situation was under control.",
+          "prompt": "Alex was at the museum entrance when the ticket machine failed. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "a",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Eva was at the village hall when the microphone stopped. ___ By the end, the situation was under control.",
+          "prompt": "Eva was at the village hall when the microphone stopped. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "c",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Theo was at a school trip when the coach arrived late. ___ By the end, the situation was under control.",
+          "prompt": "Theo was at a school trip when the coach arrived late. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "a",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Owen was at a rainy campsite when the tent leaked. ___ By the end, the situation was under control.",
+          "prompt": "Owen was at a rainy campsite when the tent leaked. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "d",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Ella was at a concert hall when she dropped her programme. ___ By the end, the situation was under control.",
+          "prompt": "Ella was at a concert hall when she dropped her programme. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "a",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Nadia was at a city bus when she left her bag behind. ___ By the end, the situation was under control.",
+          "prompt": "Nadia was at a city bus when she left her bag behind. [gap1] By the end, the situation was under control.",
           "options": [
             {
               "id": "c",
@@ -397,6 +397,228 @@
             {
               "id": "b",
               "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-story-sequencing"
+      ],
+      "tags": [
+        "b1",
+        "guided-writing",
+        "gapped-text",
+        "cohesion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-story-sequencing-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-story-sequencing",
+      "subtopic": "b1-writing-story-sequencing",
+      "taxonomyNodeIds": [
+        "b1-writing-story-sequencing"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Ava was at a weekend fair when her purse was missing. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "a",
+              "text": "she found it under a chair."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r2",
+          "prompt": "Sofia was at a crowded market when she lost her friend. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "a",
+              "text": "they met beside the fountain."
+            },
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r3",
+          "prompt": "Zoe was at a country road when the bicycle chain came off. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "a",
+              "text": "a passer-by helped repair it."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r4",
+          "prompt": "Hassan was at a sports centre when the booking was not on the list. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "the receptionist checked the email."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r5",
+          "prompt": "Leo was at a busy airport when his gate moved. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "a",
+              "text": "he followed the announcement."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r6",
+          "prompt": "Jon was at a mountain path when his map blew away. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "a cyclist returned it."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r7",
+          "prompt": "Ben was at a quiet beach when a sudden wave reached the bags. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The place was painted blue."
+            },
+            {
+              "id": "a",
+              "text": "everyone carried them uphill."
+            },
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            }
+          ],
+          "explanation": "The first option resolves the incident and leads naturally to the final sentence."
+        },
+        {
+          "id": "r8",
+          "prompt": "Mila was at a cooking class when she forgot the flour. [gap1] By the end, the situation was under control.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Everyone forgot the story."
+            },
+            {
+              "id": "d",
+              "text": "The weather was mentioned in the news."
+            },
+            {
+              "id": "a",
+              "text": "the tutor shared some."
             }
           ],
           "explanation": "The first option resolves the incident and leads naturally to the final sentence."

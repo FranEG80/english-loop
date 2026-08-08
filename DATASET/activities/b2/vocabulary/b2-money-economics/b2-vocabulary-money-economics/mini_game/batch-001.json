@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The report predicts modest economic ___ next year.",
+          "prompt": "The report predicts modest economic [gap1] next year.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Higher fuel prices are likely to ___ inflation.",
+          "prompt": "Higher fuel prices are likely to [gap1] inflation.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The supermarket reduced its monthly ___ by changing suppliers.",
+          "prompt": "The supermarket reduced its monthly [gap1] by changing suppliers.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A household's regular rent is an example of a monthly ___.",
+          "prompt": "A household's regular rent is an example of a monthly [gap1].",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The bank charges ___ on the outstanding loan balance.",
+          "prompt": "The bank charges [gap1] on the outstanding loan balance.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A company receives ___ from selling goods and services.",
+          "prompt": "A company receives [gap1] from selling goods and services.",
           "options": [
             {
               "id": "a",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The company made a healthy ___ after paying all its costs.",
+          "prompt": "The company made a healthy [gap1] after paying all its costs.",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The bank ___ the start-up money for the equipment.",
+          "prompt": "The bank [gap1] the start-up money for the equipment.",
           "options": [
             {
               "id": "c",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The household changed its budget to ___ the loan before retirement.",
+          "prompt": "The household changed its budget to [gap1] the loan before retirement.",
           "options": [
             {
               "id": "a",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The retailer wants to ___ spending without reducing essential stock.",
+          "prompt": "The retailer wants to [gap1] spending without reducing essential stock.",
           "options": [
             {
               "id": "b",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The government is trying to ___ growth through investment.",
+          "prompt": "The government is trying to [gap1] growth through investment.",
           "options": [
             {
               "id": "b",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The factory improved ___ by producing more with the same staff.",
+          "prompt": "The factory improved [gap1] by producing more with the same staff.",
           "options": [
             {
               "id": "b",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The family is building up ___ for emergencies.",
+          "prompt": "The family is building up [gap1] for emergencies.",
           "options": [
             {
               "id": "b",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "business",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-money-economics-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-money-economics",
+      "subtopic": "b2-money-economics",
+      "taxonomyNodeIds": [
+        "b2-money-economics"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The central bank raised [gap1] rates to slow spending.",
+          "options": [
+            {
+              "id": "c",
+              "text": "revenue"
+            },
+            {
+              "id": "d",
+              "text": "saving"
+            },
+            {
+              "id": "a",
+              "text": "interest"
+            }
+          ],
+          "explanation": "Interest rates affect the cost of borrowing and the return on savings."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence uses borrow correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I borrowed money from my sister."
+            },
+            {
+              "id": "d",
+              "text": "The bank borrowed the company a loan."
+            },
+            {
+              "id": "b",
+              "text": "My sister borrowed me money."
+            }
+          ],
+          "explanation": "Borrow means receive something temporarily, usually followed by from for the lender."
+        },
+        {
+          "id": "r3",
+          "prompt": "The council faces a budget [gap1] and must prioritise spending.",
+          "options": [
+            {
+              "id": "a",
+              "text": "deficit"
+            },
+            {
+              "id": "c",
+              "text": "interest"
+            },
+            {
+              "id": "b",
+              "text": "saving"
+            }
+          ],
+          "explanation": "A deficit occurs when spending is greater than income or revenue."
+        },
+        {
+          "id": "r4",
+          "prompt": "A general rise in prices is called [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "revenue"
+            },
+            {
+              "id": "a",
+              "text": "inflation"
+            },
+            {
+              "id": "d",
+              "text": "growth"
+            }
+          ],
+          "explanation": "Inflation is a general increase in prices over time."
+        },
+        {
+          "id": "r5",
+          "prompt": "The firm wants to increase output without hiring more workers. Which target is most relevant?",
+          "options": [
+            {
+              "id": "a",
+              "text": "productivity"
+            },
+            {
+              "id": "b",
+              "text": "inflation"
+            },
+            {
+              "id": "c",
+              "text": "deficit"
+            }
+          ],
+          "explanation": "Productivity concerns output in relation to the resources used."
+        },
+        {
+          "id": "r6",
+          "prompt": "The policy is intended to [gap1] inflation by reducing excess demand.",
+          "options": [
+            {
+              "id": "c",
+              "text": "save"
+            },
+            {
+              "id": "a",
+              "text": "curb"
+            },
+            {
+              "id": "b",
+              "text": "lend"
+            }
+          ],
+          "explanation": "Curb inflation means limit or slow the rate at which prices rise."
+        },
+        {
+          "id": "r7",
+          "prompt": "Her monthly [gap1] comes from teaching and freelance writing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "income"
+            },
+            {
+              "id": "c",
+              "text": "deficit"
+            },
+            {
+              "id": "d",
+              "text": "interest"
+            }
+          ],
+          "explanation": "Income is money received from work or another source."
+        },
+        {
+          "id": "r8",
+          "prompt": "The family plans to [gap1] the credit-card debt within a year.",
+          "options": [
+            {
+              "id": "d",
+              "text": "raise"
+            },
+            {
+              "id": "b",
+              "text": "lend"
+            },
+            {
+              "id": "a",
+              "text": "pay off"
+            }
+          ],
+          "explanation": "Pay off means repay all of a debt."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-money-economics"
+      ],
+      "tags": [
+        "b2",
+        "interest",
         "mini-game"
       ],
       "estimatedSeconds": 120,

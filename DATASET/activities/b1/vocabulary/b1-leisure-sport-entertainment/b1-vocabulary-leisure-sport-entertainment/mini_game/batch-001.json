@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The events and actions in a story form its ___.",
+          "prompt": "The events and actions in a story form its [gap1].",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The words of a song are its ___.",
+          "prompt": "The words of a song are its [gap1].",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "We ___ swimming at the weekend.",
+          "prompt": "We [gap1] swimming at the weekend.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A person who trains a sports team is a ___.",
+          "prompt": "A person who trains a sports team is a [gap1].",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The film made me laugh; it was a ___.",
+          "prompt": "The film made me laugh; it was a [gap1].",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ tennis every Saturday.",
+          "prompt": "I [gap1] tennis every Saturday.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A book's narrator is the person who ___.",
+          "prompt": "A book's narrator is the person who [gap1].",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which option correctly completes: I am keen ___ hiking?",
+          "prompt": "Which option correctly completes: I am keen [gap1] hiking?",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A film about real events and facts is a ___.",
+          "prompt": "A film about real events and facts is a [gap1].",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A live performance by several bands is often a ___.",
+          "prompt": "A live performance by several bands is often a [gap1].",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The match was ___, so everyone wanted to know the result.",
+          "prompt": "The match was [gap1], so everyone wanted to know the result.",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Exciting describe algo que produce emoción."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-leisure-sport-entertainment"
+      ],
+      "tags": [
+        "b1",
+        "leisure-entertainment",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-leisure-sport-entertainment-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-leisure-sport-entertainment",
+      "subtopic": "b1-leisure-sport-entertainment",
+      "taxonomyNodeIds": [
+        "b1-leisure-sport-entertainment"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which word means an activity you do regularly for pleasure?",
+          "options": [
+            {
+              "id": "a",
+              "text": "hobby"
+            },
+            {
+              "id": "d",
+              "text": "lyrics"
+            },
+            {
+              "id": "c",
+              "text": "setting"
+            }
+          ],
+          "explanation": "A hobby es una afición habitual."
+        },
+        {
+          "id": "r2",
+          "prompt": "The person who supports a team is a [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "supporter"
+            },
+            {
+              "id": "c",
+              "text": "narrator"
+            },
+            {
+              "id": "b",
+              "text": "player"
+            }
+          ],
+          "explanation": "Supporter es el aficionado que anima a un equipo."
+        },
+        {
+          "id": "r3",
+          "prompt": "My brother [gap1] yoga in the morning.",
+          "options": [
+            {
+              "id": "c",
+              "text": "goes"
+            },
+            {
+              "id": "a",
+              "text": "does"
+            },
+            {
+              "id": "b",
+              "text": "plays"
+            }
+          ],
+          "explanation": "Do yoga es la combinación habitual."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which adjective describes a film that makes the audience feel frightened?",
+          "options": [
+            {
+              "id": "d",
+              "text": "relaxing"
+            },
+            {
+              "id": "a",
+              "text": "frightening"
+            },
+            {
+              "id": "b",
+              "text": "frightened"
+            }
+          ],
+          "explanation": "Frightening describe la película que produce miedo."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase gives a positive recommendation?",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is well worth watch."
+            },
+            {
+              "id": "c",
+              "text": "It worth to watch."
+            },
+            {
+              "id": "a",
+              "text": "It is well worth watching."
+            }
+          ],
+          "explanation": "Worth va seguido de gerundio: worth watching."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence uses interested correctly?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I am interested on photography."
+            },
+            {
+              "id": "c",
+              "text": "I interest in photography."
+            },
+            {
+              "id": "a",
+              "text": "I am interested in photography."
+            }
+          ],
+          "explanation": "Interested in es la estructura correcta para expresar interés."
+        },
+        {
+          "id": "r7",
+          "prompt": "The place and time where a story happens are its [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "coach"
+            },
+            {
+              "id": "a",
+              "text": "setting"
+            },
+            {
+              "id": "b",
+              "text": "lyrics"
+            }
+          ],
+          "explanation": "Setting es el lugar y la época de una historia."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which word describes a person taking part in a match?",
+          "options": [
+            {
+              "id": "b",
+              "text": "supporter"
+            },
+            {
+              "id": "c",
+              "text": "coach"
+            },
+            {
+              "id": "a",
+              "text": "player"
+            }
+          ],
+          "explanation": "Player es quien participa en el partido."
         }
       ],
       "lessonIds": [

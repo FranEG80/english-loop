@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The course gives short tasks that learners can use outside class. It is ___. ",
+          "prompt": "The course gives short tasks that learners can use outside class. It is [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The restaurant is attractive, but the bill is much higher than the quality justifies. It is ___. ",
+          "prompt": "The restaurant is attractive, but the bill is much higher than the quality justifies. It is [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The instructions show every stage with a simple picture. The reviewer calls them ___. ",
+          "prompt": "The instructions show every stage with a simple picture. The reviewer calls them [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The café is calm and comfortable, so the reviewer describes its atmosphere as ___. ",
+          "prompt": "The café is calm and comfortable, so the reviewer describes its atmosphere as [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The reviewer says the museum is easy to reach, easy to understand and welcoming to different visitors. It is ___. ",
+          "prompt": "The reviewer says the museum is easy to reach, easy to understand and welcoming to different visitors. It is [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The small theatre uses clever lighting to create a strong mood. Its atmosphere is ___. ",
+          "prompt": "The small theatre uses clever lighting to create a strong mood. Its atmosphere is [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The theatre has only a few seats, which makes the experience feel personal. The space is ___. ",
+          "prompt": "The theatre has only a few seats, which makes the experience feel personal. The space is [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The exhibition combines local history, photographs and hands-on activities. The content is ___. ",
+          "prompt": "The exhibition combines local history, photographs and hands-on activities. The content is [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The festival has food, music, workshops and performances for different ages. Its programme is ___. ",
+          "prompt": "The festival has food, music, workshops and performances for different ages. Its programme is [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The review explains how the play makes the audience reflect on friendship and responsibility. It is ___. ",
+          "prompt": "The review explains how the play makes the audience reflect on friendship and responsibility. It is [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -408,6 +408,227 @@
         "b1",
         "review",
         "atmosphere",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-review-description-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-review-description",
+      "subtopic": "b1-writing-review-description",
+      "taxonomyNodeIds": [
+        "b1-writing-review-description"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The hotel room has beautiful furniture but costs far more than similar rooms. The reviewer calls it [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "overpriced"
+            },
+            {
+              "id": "d",
+              "text": "memorable"
+            },
+            {
+              "id": "c",
+              "text": "accessible"
+            }
+          ],
+          "explanation": "Overpriced says the cost is too high for the value offered."
+        },
+        {
+          "id": "r2",
+          "prompt": "The path has clear signs and no steep sections. The reviewer says it is [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "nervous"
+            },
+            {
+              "id": "b",
+              "text": "secret"
+            },
+            {
+              "id": "a",
+              "text": "accessible"
+            }
+          ],
+          "explanation": "Accessible describes a route that is easy for many visitors to use."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence evaluates a book and gives a reason?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The book is 200 pages long."
+            },
+            {
+              "id": "b",
+              "text": "The book has a red cover."
+            },
+            {
+              "id": "a",
+              "text": "The characters are memorable because the dialogue feels natural."
+            }
+          ],
+          "explanation": "Because supports the evaluation with a reason."
+        },
+        {
+          "id": "r4",
+          "prompt": "The activity is easy to reach, clearly explained and suitable for different ages. It is [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "accessible"
+            },
+            {
+              "id": "b",
+              "text": "overpriced"
+            },
+            {
+              "id": "c",
+              "text": "hidden"
+            }
+          ],
+          "explanation": "Accessible describes something easy for many people to use or enjoy."
+        },
+        {
+          "id": "r5",
+          "prompt": "The concert hall has excellent sound and comfortable seating. The venue is [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "temporary"
+            },
+            {
+              "id": "c",
+              "text": "broken"
+            },
+            {
+              "id": "a",
+              "text": "impressive"
+            }
+          ],
+          "explanation": "Impressive is a positive overall evaluation supported by the details."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence closes a positive review of a café?",
+          "options": [
+            {
+              "id": "b",
+              "text": "The menu has ten pages."
+            },
+            {
+              "id": "a",
+              "text": "Overall, it is a relaxing place for lunch."
+            },
+            {
+              "id": "d",
+              "text": "The chairs are near the window."
+            }
+          ],
+          "explanation": "Overall introduces a final evaluation and recommendation."
+        },
+        {
+          "id": "r7",
+          "prompt": "The museum has activities where visitors touch and test objects, so the exhibits are [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "interactive"
+            },
+            {
+              "id": "d",
+              "text": "private"
+            },
+            {
+              "id": "b",
+              "text": "empty"
+            }
+          ],
+          "explanation": "Interactive means visitors take part rather than only look."
+        },
+        {
+          "id": "r8",
+          "prompt": "The staff answer questions politely and help visitors quickly. The review describes them as [gap1]. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "ancient"
+            },
+            {
+              "id": "a",
+              "text": "welcoming"
+            },
+            {
+              "id": "b",
+              "text": "hidden"
+            }
+          ],
+          "explanation": "Welcoming describes friendly, helpful staff."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-review-description"
+      ],
+      "tags": [
+        "b1",
+        "review",
+        "criticism",
         "mini-game"
       ],
       "estimatedSeconds": 120,

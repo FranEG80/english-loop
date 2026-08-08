@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The wetland is ___ threat from development.",
+          "prompt": "The wetland is [gap1] threat from development.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "They organised the urgent meeting ___ short notice.",
+          "prompt": "They organised the urgent meeting [gap1] short notice.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "This is ___ far the strongest option.",
+          "prompt": "This is [gap1] far the strongest option.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The manager acted ___ response to a formal complaint.",
+          "prompt": "The manager acted [gap1] response to a formal complaint.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Priya is ___ charge of the evening shift.",
+          "prompt": "Priya is [gap1] charge of the evening shift.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The board supports the proposal ___ principle.",
+          "prompt": "The board supports the proposal [gap1] principle.",
           "options": [
             {
               "id": "e",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Those safety instructions are ___ of date.",
+          "prompt": "Those safety instructions are [gap1] of date.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Under ___ circumstances should you share the data.",
+          "prompt": "Under [gap1] circumstances should you share the data.",
           "options": [
             {
               "id": "c",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The old bridge is ___ risk after the storm.",
+          "prompt": "The old bridge is [gap1] risk after the storm.",
           "options": [
             {
               "id": "b",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Public trust is ___ stake in this decision.",
+          "prompt": "Public trust is [gap1] stake in this decision.",
           "options": [
             {
               "id": "e",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The trainer explained the new procedure ___ detail.",
+          "prompt": "The trainer explained the new procedure [gap1] detail.",
           "options": [
             {
               "id": "a",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Please book your place ___ advance.",
+          "prompt": "Please book your place [gap1] advance.",
           "options": [
             {
               "id": "b",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The support team is working ___ pressure this week.",
+          "prompt": "The support team is working [gap1] pressure this week.",
           "options": [
             {
               "id": "a",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "___ the event of an evacuation, use the side exit.",
+          "prompt": "[gap1] the event of an evacuation, use the side exit.",
           "options": [
             {
               "id": "d",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The town has several problems ___ common with neighbouring towns.",
+          "prompt": "The town has several problems [gap1] common with neighbouring towns.",
           "options": [
             {
               "id": "e",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The town has several problems ___ common with neighbouring towns.",
+          "prompt": "The town has several problems [gap1] common with neighbouring towns.",
           "options": [
             {
               "id": "d",
@@ -410,6 +410,228 @@
         "prepositions",
         "multiple-choice-cloze",
         "meaning",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-prepositional-fixed-phrases-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b2-prepositional-fixed-phrases",
+      "subtopic": "b2-prepositional-fixed-phrases",
+      "taxonomyNodeIds": [
+        "b2-prepositional-fixed-phrases"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Public trust is [gap1] stake in this decision.",
+          "options": [
+            {
+              "id": "a",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "d",
+              "text": "under"
+            }
+          ],
+          "explanation": "The phrase “at stake” means in danger of being lost, so it requires “at”."
+        },
+        {
+          "id": "r2",
+          "prompt": "Priya is [gap1] charge of the evening shift.",
+          "options": [
+            {
+              "id": "d",
+              "text": "under"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            }
+          ],
+          "explanation": "The phrase “in charge of” means responsibility, so it requires “in”."
+        },
+        {
+          "id": "r3",
+          "prompt": "I am writing [gap1] behalf of the residents' committee.",
+          "options": [
+            {
+              "id": "b",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "under"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "The phrase “on behalf of” means representation, so it requires “on”."
+        },
+        {
+          "id": "r4",
+          "prompt": "The draft policy is currently [gap1] review.",
+          "options": [
+            {
+              "id": "a",
+              "text": "under review"
+            },
+            {
+              "id": "c",
+              "text": "on behalf of"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            }
+          ],
+          "explanation": "Only “under review” expresses being assessed in this context."
+        },
+        {
+          "id": "r5",
+          "prompt": "The wrong attachment was sent [gap1] mistake.",
+          "options": [
+            {
+              "id": "a",
+              "text": "by mistake"
+            },
+            {
+              "id": "e",
+              "text": "under pressure"
+            },
+            {
+              "id": "c",
+              "text": "on behalf of"
+            }
+          ],
+          "explanation": "Only “by mistake” expresses accident in this context."
+        },
+        {
+          "id": "r6",
+          "prompt": "Those safety instructions are [gap1] of date.",
+          "options": [
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "out"
+            },
+            {
+              "id": "d",
+              "text": "at"
+            }
+          ],
+          "explanation": "The phrase “out of date” means no longer current, so it requires “out”."
+        },
+        {
+          "id": "r7",
+          "prompt": "The label was removed [gap1] purpose.",
+          "options": [
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            }
+          ],
+          "explanation": "The phrase “on purpose” means intentionally, so it requires “on”."
+        },
+        {
+          "id": "r8",
+          "prompt": "The organisation is [gap1] the verge of a major change.",
+          "options": [
+            {
+              "id": "d",
+              "text": "at risk"
+            },
+            {
+              "id": "b",
+              "text": "in charge of"
+            },
+            {
+              "id": "a",
+              "text": "on the verge of"
+            }
+          ],
+          "explanation": "Only “on the verge of” expresses very close to in this context."
+        }
+      ],
+      "lessonIds": [
+        "b2-prepositional-fixed-phrases"
+      ],
+      "tags": [
+        "b2",
+        "prepositions",
+        "preposition-choice",
+        "fixed-expression",
         "mini-game"
       ],
       "estimatedSeconds": 120,

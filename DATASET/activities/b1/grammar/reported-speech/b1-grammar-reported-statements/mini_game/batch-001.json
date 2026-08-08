@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "On Monday Sara said, “I will finish today.” On Wednesday we reported that Sara would finish ___.",
+          "prompt": "On Monday Sara said, “I will finish today.” On Wednesday we reported that Sara would finish [gap1].",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "“I will call the supplier,” Eva said. Eva said that she ___ call the supplier.",
+          "prompt": "“I will call the supplier,” Eva said. Eva said that she [gap1] call the supplier.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Mina told Leo, “I can help you.” Mina told Leo that she could help ___.",
+          "prompt": "Mina told Leo, “I can help you.” Mina told Leo that she could help [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "“I am waiting outside,” Nora said. Nora said that she ___ outside.",
+          "prompt": "“I am waiting outside,” Nora said. Nora said that she [gap1] outside.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "“I work remotely,” Leo said. Leo said that he ___ remotely.",
+          "prompt": "“I work remotely,” Leo said. Leo said that he [gap1] remotely.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "“I must renew my permit,” Salma said. Salma said that she ___ renew her permit.",
+          "prompt": "“I must renew my permit,” Salma said. Salma said that she [gap1] renew her permit.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "“I met her yesterday,” Ben said. Ben said that he had met her ___.",
+          "prompt": "“I met her yesterday,” Ben said. Ben said that he had met her [gap1].",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "After leaving the site, Ana reported “I keep these tools here” as: Ana said that she kept ___ tools ___.",
+          "prompt": "After leaving the site, Ana reported “I keep these tools here” as: Ana said that she kept [gap1] tools [gap2].",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Lena said, “I am tired.” Lena said that ___ was tired.",
+          "prompt": "Lena said, “I am tired.” Lena said that [gap1] was tired.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Maya ___ that the office was closed.",
+          "prompt": "Maya [gap1] that the office was closed.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "“The parcel will arrive tomorrow,” Jo said. Later, we reported that it would arrive ___.",
+          "prompt": "“The parcel will arrive tomorrow,” Jo said. Later, we reported that it would arrive [gap1].",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "“I can repair the lock,” Ravi said. Ravi said that he ___ repair the lock.",
+          "prompt": "“I can repair the lock,” Ravi said. Ravi said that he [gap1] repair the lock.",
           "options": [
             {
               "id": "a",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "pronouns",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reported-statements-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-statements",
+      "taxonomyNodeIds": [
+        "reported-statements"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "On 3 May, Amina said, “I must submit this form next week.”",
+          "options": [
+            {
+              "id": "d",
+              "text": "Amina said me that I had to submit that form tomorrow."
+            },
+            {
+              "id": "b",
+              "text": "Amina said she musted submit this form last week."
+            },
+            {
+              "id": "a",
+              "text": "Amina said that she had to submit that form the following week."
+            }
+          ],
+          "explanation": "Obligación «must» pasa a «had to» y cambian demostrativo y referencia semanal."
+        },
+        {
+          "id": "r2",
+          "prompt": "Every morning Mina says, “I need the sales figures by noon.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mina says that she needs the sales figures by noon."
+            },
+            {
+              "id": "b",
+              "text": "Mina says that she needed the sales figures the day before."
+            },
+            {
+              "id": "c",
+              "text": "Mina told that she need the figures."
+            }
+          ],
+          "explanation": "Con «says» en presente no hacemos backshift."
+        },
+        {
+          "id": "r3",
+          "prompt": "“We haven't received the replacement parts,” the engineers said.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The engineers told that they haven't receive the parts."
+            },
+            {
+              "id": "c",
+              "text": "The engineers said they didn't received the parts."
+            },
+            {
+              "id": "a",
+              "text": "The engineers said that they hadn't received the replacement parts."
+            }
+          ],
+          "explanation": "Present perfect negativo pasa a past perfect negativo."
+        },
+        {
+          "id": "r4",
+          "prompt": "“I lost the receipt,” Amir said. Amir said that he [gap1] the receipt.",
+          "options": [
+            {
+              "id": "c",
+              "text": "losts"
+            },
+            {
+              "id": "d",
+              "text": "had lose"
+            },
+            {
+              "id": "a",
+              "text": "had lost"
+            }
+          ],
+          "explanation": "El pasado simple retrocede a past perfect: «had lost»."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which pair uses “say” and “tell” with their listeners correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Elena told to me she left, and I said Sam that she unavailable."
+            },
+            {
+              "id": "b",
+              "text": "Elena said me that she had left, and I told that Sam she was unavailable."
+            },
+            {
+              "id": "a",
+              "text": "Elena said to me that she had already left, and I told Sam that she was unavailable."
+            }
+          ],
+          "explanation": "«Said to me» y «told Sam» usan correctamente sus objetos."
+        },
+        {
+          "id": "r6",
+          "prompt": "Rosa said, “I was checking these figures when my computer stopped.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rosa said that she had been checking those figures when her computer stopped."
+            },
+            {
+              "id": "c",
+              "text": "Rosa said she is checking those figures when her computer had stop."
+            },
+            {
+              "id": "b",
+              "text": "Rosa told that I was checking these figures when my computer stops."
+            }
+          ],
+          "explanation": "El pasado continuo retrocede a past perfect continuous; el evento puntual con «when» permanece claro en pasado simple."
+        },
+        {
+          "id": "r7",
+          "prompt": "“We have completed the survey,” they said. They said that they [gap1] the survey.",
+          "options": [
+            {
+              "id": "d",
+              "text": "had complete"
+            },
+            {
+              "id": "a",
+              "text": "had completed"
+            },
+            {
+              "id": "c",
+              "text": "completed have"
+            }
+          ],
+          "explanation": "Present perfect pasa a past perfect."
+        },
+        {
+          "id": "r8",
+          "prompt": "Maya [gap1] me that the office was closed.",
+          "options": [
+            {
+              "id": "d",
+              "text": "said me"
+            },
+            {
+              "id": "a",
+              "text": "told"
+            },
+            {
+              "id": "c",
+              "text": "told to"
+            }
+          ],
+          "explanation": "«Tell» necesita la persona directamente: «told me»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reported-statements"
+      ],
+      "tags": [
+        "b1",
+        "full-transformation",
         "single-choice",
         "mini-game"
       ],

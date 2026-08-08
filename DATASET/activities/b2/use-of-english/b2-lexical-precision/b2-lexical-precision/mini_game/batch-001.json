@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The decision was reached after ___ consultation.",
+          "prompt": "The decision was reached after [gap1] consultation.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The speaker went on to ___ the main objection.",
+          "prompt": "The speaker went on to [gap1] the main objection.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The author draws a sharp ___ between fact and opinion.",
+          "prompt": "The author draws a sharp [gap1] between fact and opinion.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The company is expected to ___ the cost of the delay.",
+          "prompt": "The company is expected to [gap1] the cost of the delay.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The outcome depends ___ how quickly we respond.",
+          "prompt": "The outcome depends [gap1] how quickly we respond.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The researchers reached a ___ consensus.",
+          "prompt": "The researchers reached a [gap1] consensus.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The account is internally ___, despite the unusual conclusion.",
+          "prompt": "The account is internally [gap1], despite the unusual conclusion.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The new timetable is ___ with the previous announcement.",
+          "prompt": "The new timetable is [gap1] with the previous announcement.",
           "options": [
             {
               "id": "c",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The review points ___ a weakness in the method.",
+          "prompt": "The review points [gap1] a weakness in the method.",
           "options": [
             {
               "id": "a",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The conclusion is supported by ___ evidence.",
+          "prompt": "The conclusion is supported by [gap1] evidence.",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The measure is likely to have a ___ effect.",
+          "prompt": "The measure is likely to have a [gap1] effect.",
           "options": [
             {
               "id": "c",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The evidence is ___ with the claim that the device failed early.",
+          "prompt": "The evidence is [gap1] with the claim that the device failed early.",
           "options": [
             {
               "id": "c",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The plan is financially ___.",
+          "prompt": "The plan is financially [gap1].",
           "options": [
             {
               "id": "a",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The author draws attention to a ___ gap in the evidence.",
+          "prompt": "The author draws attention to a [gap1] gap in the evidence.",
           "options": [
             {
               "id": "b",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The experiment produced ___ results.",
+          "prompt": "The experiment produced [gap1] results.",
           "options": [
             {
               "id": "b",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The evidence was too ___ to support a definite claim.",
+          "prompt": "The evidence was too [gap1] to support a definite claim.",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "phrasal-verbs",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-lexical-precision-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-lexical-precision",
+      "subtopic": "b2-lexical-precision",
+      "taxonomyNodeIds": [
+        "b2-lexical-precision"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The article presents a [gap1] challenge to the usual view.",
+          "options": [
+            {
+              "id": "d",
+              "text": "formed"
+            },
+            {
+              "id": "a",
+              "text": "formidable"
+            },
+            {
+              "id": "b",
+              "text": "forming"
+            }
+          ],
+          "explanation": "A formidable challenge is difficult and serious."
+        },
+        {
+          "id": "r2",
+          "prompt": "The distinction is [gap1] in the final paragraph.",
+          "options": [
+            {
+              "id": "b",
+              "text": "impatient"
+            },
+            {
+              "id": "a",
+              "text": "implicit"
+            },
+            {
+              "id": "c",
+              "text": "imposing"
+            }
+          ],
+          "explanation": "Implicit means suggested rather than directly stated."
+        },
+        {
+          "id": "r3",
+          "prompt": "The old assumptions have gradually fallen [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "out of"
+            },
+            {
+              "id": "a",
+              "text": "away"
+            },
+            {
+              "id": "c",
+              "text": "over to"
+            }
+          ],
+          "explanation": "Fall away means become weaker or disappear."
+        },
+        {
+          "id": "r4",
+          "prompt": "The speaker gave a [gap1] account of the incident.",
+          "options": [
+            {
+              "id": "a",
+              "text": "detailed"
+            },
+            {
+              "id": "d",
+              "text": "detail"
+            },
+            {
+              "id": "c",
+              "text": "detailing"
+            }
+          ],
+          "explanation": "A detailed account contains many relevant facts."
+        },
+        {
+          "id": "r5",
+          "prompt": "The journalist tried to [gap1] the source of the rumour.",
+          "options": [
+            {
+              "id": "a",
+              "text": "track down"
+            },
+            {
+              "id": "b",
+              "text": "track up"
+            },
+            {
+              "id": "d",
+              "text": "track into"
+            }
+          ],
+          "explanation": "Track down means locate after searching."
+        },
+        {
+          "id": "r6",
+          "prompt": "The scheme is intended to tackle the [gap1] cause.",
+          "options": [
+            {
+              "id": "b",
+              "text": "underneath"
+            },
+            {
+              "id": "d",
+              "text": "underlyingly"
+            },
+            {
+              "id": "a",
+              "text": "underlying"
+            }
+          ],
+          "explanation": "Underlying cause means the less visible basic cause."
+        },
+        {
+          "id": "r7",
+          "prompt": "The authors reached a cautiously [gap1] conclusion.",
+          "options": [
+            {
+              "id": "a",
+              "text": "optimistic"
+            },
+            {
+              "id": "d",
+              "text": "optimise"
+            },
+            {
+              "id": "c",
+              "text": "optimistically"
+            }
+          ],
+          "explanation": "Optimistic is the adjective after cautiously."
+        },
+        {
+          "id": "r8",
+          "prompt": "The results were [gap1], so the team repeated the trial.",
+          "options": [
+            {
+              "id": "d",
+              "text": "incredible"
+            },
+            {
+              "id": "a",
+              "text": "inconclusive"
+            },
+            {
+              "id": "b",
+              "text": "inconvenient"
+            }
+          ],
+          "explanation": "Inconclusive results do not provide a clear answer."
+        }
+      ],
+      "lessonIds": [
+        "b2-lexical-precision"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
         "mini-game"
       ],
       "estimatedSeconds": 120,

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The director consulted local ___ before expanding.",
+          "prompt": "The director consulted local [gap1] before expanding.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The candidate described a clear five-year ___.",
+          "prompt": "The candidate described a clear five-year [gap1].",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The firm ___ six applicants for a second interview.",
+          "prompt": "The firm [gap1] six applicants for a second interview.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Staff ___ has fallen since the firm introduced mentoring.",
+          "prompt": "Staff [gap1] has fallen since the firm introduced mentoring.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The start-up hopes to ___ a new product in September.",
+          "prompt": "The start-up hopes to [gap1] a new product in September.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "She moved into ___ after gaining experience abroad.",
+          "prompt": "She moved into [gap1] after gaining experience abroad.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The board consulted key ___ before approving the expansion.",
+          "prompt": "The board consulted key [gap1] before approving the expansion.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The final ___ will be advertised next week.",
+          "prompt": "The final [gap1] will be advertised next week.",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The shop’s annual ___ increased after the online launch.",
+          "prompt": "The shop’s annual [gap1] increased after the online launch.",
           "options": [
             {
               "id": "c",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The role involves managing a heavy ___ during the summer.",
+          "prompt": "The role involves managing a heavy [gap1] during the summer.",
           "options": [
             {
               "id": "d",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The business had high ___ but little profit because costs were high.",
+          "prompt": "The business had high [gap1] but little profit because costs were high.",
           "options": [
             {
               "id": "b",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Revenue rose, but ___ fell because costs increased.",
+          "prompt": "Revenue rose, but [gap1] fell because costs increased.",
           "options": [
             {
               "id": "a",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "She works ___ and invoices clients by project.",
+          "prompt": "She works [gap1] and invoices clients by project.",
           "options": [
             {
               "id": "c",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The manager is responsible ___ the budget.",
+          "prompt": "The manager is responsible [gap1] the budget.",
           "options": [
             {
               "id": "a",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The employer increased the training budget to retain ___.",
+          "prompt": "The employer increased the training budget to retain [gap1].",
           "options": [
             {
               "id": "d",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "She applied ___ a vacancy in the research team.",
+          "prompt": "She applied [gap1] a vacancy in the research team.",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "revenue",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-career-business-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-career-business",
+      "subtopic": "b2-career-business",
+      "taxonomyNodeIds": [
+        "b2-career-business"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The firm has high staff [gap1], so it is constantly recruiting.",
+          "options": [
+            {
+              "id": "a",
+              "text": "turnover"
+            },
+            {
+              "id": "d",
+              "text": "profit"
+            },
+            {
+              "id": "c",
+              "text": "salary"
+            }
+          ],
+          "explanation": "Staff turnover is the rate at which employees leave."
+        },
+        {
+          "id": "r2",
+          "prompt": "He is seeking [gap1] after leading two projects.",
+          "options": [
+            {
+              "id": "d",
+              "text": "proportion"
+            },
+            {
+              "id": "a",
+              "text": "promotion"
+            },
+            {
+              "id": "b",
+              "text": "permission"
+            }
+          ],
+          "explanation": "Seeking promotion means hoping to move to a higher position."
+        },
+        {
+          "id": "r3",
+          "prompt": "The board approved the [gap1] with a competitor.",
+          "options": [
+            {
+              "id": "a",
+              "text": "merger"
+            },
+            {
+              "id": "d",
+              "text": "mandate"
+            },
+            {
+              "id": "b",
+              "text": "mentor"
+            }
+          ],
+          "explanation": "A merger joins two companies."
+        },
+        {
+          "id": "r4",
+          "prompt": "The company kept recruitment [gap1] but outsourced payroll.",
+          "options": [
+            {
+              "id": "c",
+              "text": "insideful"
+            },
+            {
+              "id": "a",
+              "text": "in-house"
+            },
+            {
+              "id": "b",
+              "text": "inward"
+            }
+          ],
+          "explanation": "In-house means done by the organisation itself."
+        },
+        {
+          "id": "r5",
+          "prompt": "The company decided to [gap1] its IT support.",
+          "options": [
+            {
+              "id": "b",
+              "text": "outcome"
+            },
+            {
+              "id": "d",
+              "text": "outgrow"
+            },
+            {
+              "id": "a",
+              "text": "outsource"
+            }
+          ],
+          "explanation": "Outsource means contract work to an external provider."
+        },
+        {
+          "id": "r6",
+          "prompt": "The vacancy requires strong [gap1] skills.",
+          "options": [
+            {
+              "id": "d",
+              "text": "presentingly"
+            },
+            {
+              "id": "a",
+              "text": "presentation"
+            },
+            {
+              "id": "c",
+              "text": "presenter"
+            }
+          ],
+          "explanation": "Presentation skills are the ability to present clearly."
+        },
+        {
+          "id": "r7",
+          "prompt": "She has several [gap1] skills from her previous role.",
+          "options": [
+            {
+              "id": "b",
+              "text": "transferred"
+            },
+            {
+              "id": "d",
+              "text": "transit"
+            },
+            {
+              "id": "a",
+              "text": "transferable"
+            }
+          ],
+          "explanation": "Transferable skills are useful in a different role or sector."
+        },
+        {
+          "id": "r8",
+          "prompt": "The director asked the team to [gap1] responsibility for the delay.",
+          "options": [
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "Take responsibility is the natural collocation."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-career-business"
+      ],
+      "tags": [
+        "b2",
+        "human-resources",
         "mini-game"
       ],
       "estimatedSeconds": 120,

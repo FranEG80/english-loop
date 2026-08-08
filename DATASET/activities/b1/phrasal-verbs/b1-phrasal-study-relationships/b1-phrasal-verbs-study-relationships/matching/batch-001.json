@@ -27,16 +27,28 @@
       "prompt": "Match continuation verbs with their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "carry on",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "continue"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "give up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "stop trying"
+        },
+        {
+          "leftId": "l3",
+          "left": "work well together",
+          "rightId": "r3",
+          "right": "get on with each other"
+        },
+        {
+          "leftId": "l4",
+          "left": "argue and stop speaking",
+          "rightId": "r4",
+          "right": "fall out with each other"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match information verbs to their stages.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "look up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "search a source"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "find out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "discover the answer"
+        },
+        {
+          "leftId": "l3",
+          "left": "argue and stop speaking",
+          "rightId": "r3",
+          "right": "fall out with each other"
+        },
+        {
+          "leftId": "l4",
+          "left": "make up with",
+          "rightId": "r4",
+          "right": "reconcile"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match relationship verbs to the situation they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "get on with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "have a good relationship"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "fall out with",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "have a serious disagreement"
+        },
+        {
+          "leftId": "l3",
+          "left": "make up with",
+          "rightId": "r3",
+          "right": "reconcile"
+        },
+        {
+          "leftId": "l4",
+          "left": "fall behind",
+          "rightId": "r4",
+          "right": "become late with work"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match reconciliation and activity verbs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "make up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "become friendly again"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "take up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "start a hobby"
+        },
+        {
+          "leftId": "l3",
+          "left": "pick up",
+          "rightId": "r3",
+          "right": "learn informally"
+        },
+        {
+          "leftId": "l4",
+          "left": "come up with",
+          "rightId": "r4",
+          "right": "create an idea"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match progress verbs to their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "catch up with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reach the same level"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "keep up with",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "continue at the same pace"
+        },
+        {
+          "leftId": "l3",
+          "left": "come up with",
+          "rightId": "r3",
+          "right": "create an idea"
+        },
+        {
+          "leftId": "l4",
+          "left": "missed two lessons",
+          "rightId": "r4",
+          "right": "catch up with the class"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match revision verbs to the action they describe.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "go over",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "review material"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "read through",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "read a text fully"
+        },
+        {
+          "leftId": "l3",
+          "left": "missed two lessons",
+          "rightId": "r3",
+          "right": "catch up with the class"
+        },
+        {
+          "leftId": "l4",
+          "left": "has a full weekly schedule",
+          "rightId": "r4",
+          "right": "keep up with the work"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match solution verbs with their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "work out",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "find an answer"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "sort out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "resolve a difficulty"
+        },
+        {
+          "leftId": "l3",
+          "left": "has a full weekly schedule",
+          "rightId": "r3",
+          "right": "keep up with the work"
+        },
+        {
+          "leftId": "l4",
+          "left": "write down",
+          "rightId": "r4",
+          "right": "record a note"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match assignment verbs with their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "hand in",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "submit work"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "give back",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "return work or an object"
+        },
+        {
+          "leftId": "l3",
+          "left": "sort out",
+          "rightId": "r3",
+          "right": "resolve a difficulty"
+        },
+        {
+          "leftId": "l4",
+          "left": "fall out",
+          "rightId": "r4",
+          "right": "stop being friendly after an argument"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match relationship stages to their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "fall out",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "stop being friendly after an argument"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "make up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "be friendly again"
+        },
+        {
+          "leftId": "l3",
+          "left": "hand in",
+          "rightId": "r3",
+          "right": "submit work"
+        },
+        {
+          "leftId": "l4",
+          "left": "give back",
+          "rightId": "r4",
+          "right": "return work or an object"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match learning verbs with their use.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "pick up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "learn informally"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "take up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "begin an activity"
+        },
+        {
+          "leftId": "l3",
+          "left": "work well together",
+          "rightId": "r3",
+          "right": "get on with each other"
+        },
+        {
+          "leftId": "l4",
+          "left": "argue and stop speaking",
+          "rightId": "r4",
+          "right": "fall out with each other"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match ideas and information verbs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "come up with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "create an idea"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "find out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "discover a fact"
+        },
+        {
+          "leftId": "l3",
+          "left": "write down",
+          "rightId": "r3",
+          "right": "record a note"
+        },
+        {
+          "leftId": "l4",
+          "left": "work well together",
+          "rightId": "r4",
+          "right": "get on with each other"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match study references to their actions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "look up",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "search a dictionary"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "go over",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "review a chapter"
+        },
+        {
+          "leftId": "l3",
+          "left": "has a full weekly schedule",
+          "rightId": "r3",
+          "right": "keep up with the work"
+        },
+        {
+          "leftId": "l4",
+          "left": "write down",
+          "rightId": "r4",
+          "right": "record a note"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match progress situations to the right verb.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "missed two lessons",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "catch up with the class"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "has a full weekly schedule",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "keep up with the work"
+        },
+        {
+          "leftId": "l3",
+          "left": "write down",
+          "rightId": "r3",
+          "right": "record a note"
+        },
+        {
+          "leftId": "l4",
+          "left": "work well together",
+          "rightId": "r4",
+          "right": "get on with each other"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match classroom actions to their meanings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "hand in",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "submit an assignment"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "write down",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "record a note"
+        },
+        {
+          "leftId": "l3",
+          "left": "come up with",
+          "rightId": "r3",
+          "right": "create an idea"
+        },
+        {
+          "leftId": "l4",
+          "left": "missed two lessons",
+          "rightId": "r4",
+          "right": "catch up with the class"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match relationship descriptions to the right phrase.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "work well together",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "get on with each other"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "argue and stop speaking",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "fall out with each other"
+        },
+        {
+          "leftId": "l3",
+          "left": "pick up",
+          "rightId": "r3",
+          "right": "learn informally"
+        },
+        {
+          "leftId": "l4",
+          "left": "come up with",
+          "rightId": "r4",
+          "right": "create an idea"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match revision actions to their object.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "go over",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "review the main points"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "look up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "check an unfamiliar word"
+        },
+        {
+          "leftId": "l3",
+          "left": "fall out",
+          "rightId": "r3",
+          "right": "stop being friendly after an argument"
+        },
+        {
+          "leftId": "l4",
+          "left": "pick up",
+          "rightId": "r4",
+          "right": "learn informally"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match problem-solving expressions to their use.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "work out",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "solve an equation"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "sort out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "resolve a disagreement"
+        },
+        {
+          "leftId": "l3",
+          "left": "give back",
+          "rightId": "r3",
+          "right": "return work or an object"
+        },
+        {
+          "leftId": "l4",
+          "left": "fall out",
+          "rightId": "r4",
+          "right": "stop being friendly after an argument"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match conflict and reconciliation stages.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "fall out with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "have an argument"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "make up with",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "reconcile"
+        },
+        {
+          "leftId": "l3",
+          "left": "hand in",
+          "rightId": "r3",
+          "right": "submit work"
+        },
+        {
+          "leftId": "l4",
+          "left": "give back",
+          "rightId": "r4",
+          "right": "return work or an object"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match study progress to the relevant verb.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "fall behind",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "become late with work"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "catch up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "reach the expected point"
+        },
+        {
+          "leftId": "l3",
+          "left": "sort out",
+          "rightId": "r3",
+          "right": "resolve a difficulty"
+        },
+        {
+          "leftId": "l4",
+          "left": "hand in",
+          "rightId": "r4",
+          "right": "submit work"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match idea verbs to their result.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "come up with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "produce a plan"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "work out",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "reach a solution"
+        },
+        {
+          "leftId": "l3",
+          "left": "fall behind",
+          "rightId": "r3",
+          "right": "become late with work"
+        },
+        {
+          "leftId": "l4",
+          "left": "catch up",
+          "rightId": "r4",
+          "right": "reach the expected point"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match advanced study situations with the right verb.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "carry on with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "continue a task"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "give up on",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "stop believing in a person or plan"
+        },
+        {
+          "leftId": "l3",
+          "left": "catch up",
+          "rightId": "r3",
+          "right": "reach the expected point"
+        },
+        {
+          "leftId": "l4",
+          "left": "look into",
+          "rightId": "r4",
+          "right": "investigate a question"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match evidence verbs to what they reveal.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "find out",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "discover a fact"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "look into",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "investigate a question"
+        },
+        {
+          "leftId": "l3",
+          "left": "argue and stop speaking",
+          "rightId": "r3",
+          "right": "fall out with each other"
+        },
+        {
+          "leftId": "l4",
+          "left": "make up with",
+          "rightId": "r4",
+          "right": "reconcile"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,16 +1677,28 @@
       "prompt": "Match relationship repair actions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "make up with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reconcile after a dispute"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "get on with",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "maintain a good relationship"
+        },
+        {
+          "leftId": "l3",
+          "left": "fall behind",
+          "rightId": "r3",
+          "right": "become late with work"
+        },
+        {
+          "leftId": "l4",
+          "left": "catch up",
+          "rightId": "r4",
+          "right": "reach the expected point"
         }
       ],
       "lessonIds": [
@@ -1262,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1292,16 +1752,28 @@
       "prompt": "Match final study verbs to their use.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "hand in",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "submit final work"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "go over",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "review before a test"
+        },
+        {
+          "leftId": "l3",
+          "left": "write down",
+          "rightId": "r3",
+          "right": "record a note"
+        },
+        {
+          "leftId": "l4",
+          "left": "work well together",
+          "rightId": "r4",
+          "right": "get on with each other"
         }
       ],
       "lessonIds": [
@@ -1317,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1347,16 +1827,28 @@
       "prompt": "Match relationship outcomes to the right phrase.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "fall out",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "become unfriendly after an argument"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "make up",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "become friendly again"
+        },
+        {
+          "leftId": "l3",
+          "left": "work well together",
+          "rightId": "r3",
+          "right": "get on with each other"
+        },
+        {
+          "leftId": "l4",
+          "left": "argue and stop speaking",
+          "rightId": "r4",
+          "right": "fall out with each other"
         }
       ],
       "lessonIds": [
@@ -1372,12 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

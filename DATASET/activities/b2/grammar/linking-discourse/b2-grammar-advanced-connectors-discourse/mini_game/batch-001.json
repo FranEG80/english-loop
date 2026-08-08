@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "___ the road was flooded, buses continued.",
+          "prompt": "[gap1] the road was flooded, buses continued.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ the first model is cheap, the second is more durable.",
+          "prompt": "[gap1] the first model is cheap, the second is more durable.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ the limited evidence, the pattern is worth discussing.",
+          "prompt": "[gap1] the limited evidence, the pattern is worth discussing.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The permit expired; ___, work stopped.",
+          "prompt": "The permit expired; [gap1], work stopped.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "We can publish it ___ the names are removed.",
+          "prompt": "We can publish it [gap1] the names are removed.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The figures were incomplete; ___, the committee reached a decision.",
+          "prompt": "The figures were incomplete; [gap1], the committee reached a decision.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "You may quote the findings ___ you cite the source.",
+          "prompt": "You may quote the findings [gap1] you cite the source.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The road flooded; ___, buses were diverted.",
+          "prompt": "The road flooded; [gap1], buses were diverted.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Save a copy; ___, the changes may be lost.",
+          "prompt": "Save a copy; [gap1], the changes may be lost.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ arriving late, we joined the meeting.",
+          "prompt": "[gap1] arriving late, we joined the meeting.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The sample was small. ___, the result was useful.",
+          "prompt": "The sample was small. [gap1], the result was useful.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "___ the flood, buses continued.",
+          "prompt": "[gap1] the flood, buses continued.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The sample was not representative; ___, the result needs caution.",
+          "prompt": "The sample was not representative; [gap1], the result needs caution.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "___ the room was small, the event sold out.",
+          "prompt": "[gap1] the room was small, the event sold out.",
           "options": [
             {
               "id": "d",
@@ -407,6 +407,227 @@
       "tags": [
         "b2",
         "provided-that",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-connectors-discourse-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "advanced-connectors-discourse-markers",
+      "taxonomyNodeIds": [
+        "advanced-connectors-discourse-markers"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The course is practical. [gap1], it includes mentoring.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Otherwise"
+            },
+            {
+              "id": "a",
+              "text": "Moreover"
+            },
+            {
+              "id": "c",
+              "text": "Although"
+            }
+          ],
+          "explanation": "Moreover adds a further positive point."
+        },
+        {
+          "id": "r2",
+          "prompt": "The server failed; [gap1], the appointment system stopped.",
+          "options": [
+            {
+              "id": "b",
+              "text": "although"
+            },
+            {
+              "id": "d",
+              "text": "whereas"
+            },
+            {
+              "id": "a",
+              "text": "as a result"
+            }
+          ],
+          "explanation": "As a result presents the effect of the failure."
+        },
+        {
+          "id": "r3",
+          "prompt": "The method is inexpensive. [gap1], it is easy to repeat.",
+          "options": [
+            {
+              "id": "a",
+              "text": "In addition"
+            },
+            {
+              "id": "b",
+              "text": "Otherwise"
+            },
+            {
+              "id": "c",
+              "text": "Although"
+            }
+          ],
+          "explanation": "In addition adds a second advantage."
+        },
+        {
+          "id": "r4",
+          "prompt": "We will extend the trial [gap1] volunteers agree.",
+          "options": [
+            {
+              "id": "a",
+              "text": "as long as"
+            },
+            {
+              "id": "c",
+              "text": "consequently"
+            },
+            {
+              "id": "b",
+              "text": "nevertheless"
+            }
+          ],
+          "explanation": "As long as introduces a condition."
+        },
+        {
+          "id": "r5",
+          "prompt": "[gap1] the evidence is limited, the pattern is consistent.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Therefore"
+            },
+            {
+              "id": "a",
+              "text": "Although"
+            },
+            {
+              "id": "d",
+              "text": "Otherwise"
+            }
+          ],
+          "explanation": "Although introduces a full clause."
+        },
+        {
+          "id": "r6",
+          "prompt": "The first route is scenic; [gap1], the second is faster.",
+          "options": [
+            {
+              "id": "d",
+              "text": "otherwise"
+            },
+            {
+              "id": "b",
+              "text": "therefore"
+            },
+            {
+              "id": "a",
+              "text": "on the other hand"
+            }
+          ],
+          "explanation": "On the other hand contrasts the second option with the first."
+        },
+        {
+          "id": "r7",
+          "prompt": "The flight was delayed; [gap1], we missed the connection.",
+          "options": [
+            {
+              "id": "b",
+              "text": "although"
+            },
+            {
+              "id": "a",
+              "text": "therefore"
+            },
+            {
+              "id": "c",
+              "text": "moreover"
+            }
+          ],
+          "explanation": "Therefore introduces the consequence of the delay."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence uses despite correctly?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Despite we arrived late, we joined."
+            },
+            {
+              "id": "a",
+              "text": "Despite the delay, we arrived on time."
+            },
+            {
+              "id": "b",
+              "text": "Despite the delay was long, we arrived."
+            }
+          ],
+          "explanation": "Despite is followed directly by a noun phrase."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-connectors-discourse"
+      ],
+      "tags": [
+        "b2",
+        "moreover",
+        "addition",
         "mini-game"
       ],
       "estimatedSeconds": 120,

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "In 2018, analysts predicted that prices ___ rise.",
+          "prompt": "In 2018, analysts predicted that prices [gap1] rise.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "I ___ to join the hiking club, but the fee was too high.",
+          "prompt": "I [gap1] to join the hiking club, but the fee was too high.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The bus was ___ leave at 05:30, but snow blocked the road.",
+          "prompt": "The bus was [gap1] leave at 05:30, but snow blocked the road.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The report stated that demand ___ increase over the decade.",
+          "prompt": "The report stated that demand [gap1] increase over the decade.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "At ten last night, the technicians ___ to restart the server.",
+          "prompt": "At ten last night, the technicians [gap1] to restart the server.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "They ___ to renovate the kitchen before winter.",
+          "prompt": "They [gap1] to renovate the kitchen before winter.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The delegation was ___ arrive after the ceremony.",
+          "prompt": "The delegation was [gap1] arrive after the ceremony.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The committee ___ to publish its report on Monday.",
+          "prompt": "The committee [gap1] to publish its report on Monday.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The notice said the museum ___ reopen in October.",
+          "prompt": "The notice said the museum [gap1] reopen in October.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "I knew the decision ___ affect the whole department.",
+          "prompt": "I knew the decision [gap1] affect the whole department.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "He expected the interview ___ be difficult.",
+          "prompt": "He expected the interview [gap1] be difficult.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Maya knew the exam ___ be demanding.",
+          "prompt": "Maya knew the exam [gap1] be demanding.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The old plan suggested that the road ___ open in spring.",
+          "prompt": "The old plan suggested that the road [gap1] open in spring.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The timetable showed that the plane ___ land at 16:20.",
+          "prompt": "The timetable showed that the plane [gap1] land at 16:20.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She was ___ call the client when her laptop crashed.",
+          "prompt": "She was [gap1] call the client when her laptop crashed.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The speaker was ___ answer the final question when time ran out.",
+          "prompt": "The speaker was [gap1] answer the final question when time ran out.",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-in-the-past-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-in-the-past",
+      "taxonomyNodeIds": [
+        "future-in-the-past"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We [gap1] to cycle home, but the storm became worse.",
+          "options": [
+            {
+              "id": "d",
+              "text": "were going"
+            },
+            {
+              "id": "c",
+              "text": "were due"
+            },
+            {
+              "id": "a",
+              "text": "were about"
+            }
+          ],
+          "explanation": "Were going to expresa un plan que se abandonó."
+        },
+        {
+          "id": "r2",
+          "prompt": "The audience was silent because the performance [gap1] begin.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was going"
+            },
+            {
+              "id": "a",
+              "text": "was about to"
+            },
+            {
+              "id": "c",
+              "text": "was due"
+            }
+          ],
+          "explanation": "Was about to begin presenta una acción inminente."
+        },
+        {
+          "id": "r3",
+          "prompt": "The doors were [gap1] close when a late guest arrived.",
+          "options": [
+            {
+              "id": "a",
+              "text": "going to"
+            },
+            {
+              "id": "d",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "about to"
+            }
+          ],
+          "explanation": "Were about to close indica una acción inminente interrumpida."
+        },
+        {
+          "id": "r4",
+          "prompt": "The captain announced that the ferry [gap1] depart at dawn.",
+          "options": [
+            {
+              "id": "c",
+              "text": "would"
+            },
+            {
+              "id": "b",
+              "text": "was going"
+            },
+            {
+              "id": "d",
+              "text": "was due to"
+            }
+          ],
+          "explanation": "El anuncio se refiere a una salida programada: was due to depart."
+        },
+        {
+          "id": "r5",
+          "prompt": "They were [gap1] move to Bristol before the contract changed.",
+          "options": [
+            {
+              "id": "b",
+              "text": "due to"
+            },
+            {
+              "id": "d",
+              "text": "would"
+            },
+            {
+              "id": "c",
+              "text": "going to"
+            }
+          ],
+          "explanation": "Were going to move expresa una intención pasada."
+        },
+        {
+          "id": "r6",
+          "prompt": "She said the parcel [gap1] arrive before lunch.",
+          "options": [
+            {
+              "id": "b",
+              "text": "would"
+            },
+            {
+              "id": "a",
+              "text": "was going"
+            },
+            {
+              "id": "c",
+              "text": "was about"
+            }
+          ],
+          "explanation": "En estilo indirecto, will suele retroceder a would."
+        },
+        {
+          "id": "r7",
+          "prompt": "The engineer promised that the system [gap1] be ready by Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "was about to"
+            },
+            {
+              "id": "b",
+              "text": "would"
+            },
+            {
+              "id": "d",
+              "text": "was due"
+            }
+          ],
+          "explanation": "Would presenta lo prometido desde un momento pasado."
+        },
+        {
+          "id": "r8",
+          "prompt": "The alarm sounded while the train [gap1] leave the station.",
+          "options": [
+            {
+              "id": "c",
+              "text": "was about to"
+            },
+            {
+              "id": "d",
+              "text": "was due"
+            },
+            {
+              "id": "a",
+              "text": "would"
+            }
+          ],
+          "explanation": "Was about to indica que la salida era inminente."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-in-the-past"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "going-to",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "d"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
           }
         ]
       },

@@ -42,6 +42,7 @@ export function validateActivityRules(
   const issues: RuleIssue[] = [];
   const location = `${relativePath}#${activity.id}`;
 
+  validateUnderscoreGaps(location, activity, issues);
   validateGapMarkers(location, activity, issues);
   validateVisibleAnswer(location, activity, issues);
 
@@ -87,6 +88,38 @@ export function validateBatchRules(
 }
 
 // ---------------------------------------------------------------- por item
+
+/**
+ * Un único marcador de hueco en todo el catálogo: `[gapN]`.
+ *
+ * Convivió con `___` durante la migración y eso obliga a que cada consumidor
+ * —renderers, evaluador, composición de mazos y partidas— conozca los dos y a
+ * que cualquier regla nueva se escriba por duplicado. Cómo se pinta el hueco lo
+ * decide la presentación, no el contenido.
+ */
+function validateUnderscoreGaps(
+  location: string,
+  activity: Activity,
+  issues: RuleIssue[],
+): void {
+  const texts: string[] = [activity.prompt, activity.gapText, activity.passage]
+    .filter((value): value is string => typeof value === "string");
+  for (const card of activity.cards ?? []) texts.push(card.statement);
+  for (const round of activity.rounds ?? []) {
+    texts.push(round.prompt);
+    if (round.context) texts.push(round.context);
+  }
+
+  if (texts.some((text) => /_{3,}/.test(text))) {
+    push(
+      issues,
+      "underscore-gap-marker",
+      location,
+      "error",
+      "El hueco se escribe [gapN]; quedan guiones bajos en el texto.",
+    );
+  }
+}
 
 function validateGapMarkers(
   location: string,

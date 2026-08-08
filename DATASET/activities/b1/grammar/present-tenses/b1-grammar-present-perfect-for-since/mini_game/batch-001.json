@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The alarm system hasn't worked properly ___ the power cut.",
+          "prompt": "The alarm system hasn't worked properly [gap1] the power cut.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We haven't used the meeting room ___ several weeks.",
+          "prompt": "We haven't used the meeting room [gap1] several weeks.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The café has been closed ___ Monday.",
+          "prompt": "The café has been closed [gap1] Monday.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "It's been three months ___ I last drove.",
+          "prompt": "It's been three months [gap1] I last drove.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I've worked from home since I ___ to this town.",
+          "prompt": "I've worked from home since I [gap1] to this town.",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "How long ___ Amir ___ in customer support?",
+          "prompt": "How long [gap1] Amir [gap2] in customer support?",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Neither lift has been available ___ more than forty-eight hours.",
+          "prompt": "Neither lift has been available [gap1] more than forty-eight hours.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Tariq has owned this shop ___ he left college.",
+          "prompt": "Tariq has owned this shop [gap1] he left college.",
           "options": [
             {
               "id": "c",
@@ -441,6 +441,227 @@
           {
             "roundId": "r7",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-perfect-for-since-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-perfect-for-since",
+      "taxonomyNodeIds": [
+        "present-perfect-for-since"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Select the sentence that describes continuing ownership by an organisation.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The charity has owned the building for most of its history."
+            },
+            {
+              "id": "d",
+              "text": "The charity has owned the building during twenty years since."
+            },
+            {
+              "id": "b",
+              "text": "The charity has been owning the building since most of its history."
+            }
+          ],
+          "explanation": "«Own» es de estado y usa present perfect simple; «most of its history» es un periodo."
+        },
+        {
+          "id": "r2",
+          "prompt": "I [gap1] Sam for a long time.",
+          "options": [
+            {
+              "id": "d",
+              "text": "am knowing"
+            },
+            {
+              "id": "a",
+              "text": "have known"
+            },
+            {
+              "id": "b",
+              "text": "has known"
+            }
+          ],
+          "explanation": "La relación continúa y «known» es el participio de «know»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The river has been cleaner since the factory [gap1] its new filters.",
+          "options": [
+            {
+              "id": "d",
+              "text": "has been install"
+            },
+            {
+              "id": "a",
+              "text": "installed"
+            },
+            {
+              "id": "c",
+              "text": "installing"
+            }
+          ],
+          "explanation": "La instalación es el acontecimiento inicial terminado, por eso usa past simple."
+        },
+        {
+          "id": "r4",
+          "prompt": "A subscription began in March and remains active.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The subscription is active since March ago."
+            },
+            {
+              "id": "b",
+              "text": "The subscription was active for March."
+            },
+            {
+              "id": "a",
+              "text": "The subscription has been active since March."
+            }
+          ],
+          "explanation": "El estado continúa y «March» marca su inicio: «has been active since March»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The course ended last month. You met your project partner while it was taking place.",
+          "options": [
+            {
+              "id": "b",
+              "text": "I've known my partner during three years."
+            },
+            {
+              "id": "c",
+              "text": "I've worked here during 2021."
+            },
+            {
+              "id": "a",
+              "text": "I met my project partner during the course."
+            }
+          ],
+          "explanation": "«During» sitúa el encuentro dentro del curso; no mide la duración de un estado."
+        },
+        {
+          "id": "r6",
+          "prompt": "Mina has worked here [gap1] 2022.",
+          "options": [
+            {
+              "id": "b",
+              "text": "since"
+            },
+            {
+              "id": "c",
+              "text": "during"
+            },
+            {
+              "id": "d",
+              "text": "ago"
+            }
+          ],
+          "explanation": "«2022» identifica el punto de inicio y requiere «since»."
+        },
+        {
+          "id": "r7",
+          "prompt": "It [gap1] nearly a decade since the bridge last required major repairs.",
+          "options": [
+            {
+              "id": "a",
+              "text": "has been"
+            },
+            {
+              "id": "c",
+              "text": "is being"
+            },
+            {
+              "id": "b",
+              "text": "has"
+            }
+          ],
+          "explanation": "La estructura de tiempo transcurrido es «It has been + periodo + since...»."
+        },
+        {
+          "id": "r8",
+          "prompt": "We've lived in this flat [gap1] six years.",
+          "options": [
+            {
+              "id": "b",
+              "text": "since"
+            },
+            {
+              "id": "c",
+              "text": "during"
+            },
+            {
+              "id": "a",
+              "text": "for"
+            }
+          ],
+          "explanation": "«Six years» es un periodo de duración, por lo que usamos «for»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-perfect-for-since"
+      ],
+      "tags": [
+        "b1",
+        "present-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r8",

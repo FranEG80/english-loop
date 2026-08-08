@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I need to ___ for tomorrow's maths exam.",
+          "prompt": "I need to [gap1] for tomorrow's maths exam.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The teacher's comments helped me make steady ___.",
+          "prompt": "The teacher's comments helped me make steady [gap1].",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which verb completes the natural phrase: ___ an exam?",
+          "prompt": "Which verb completes the natural phrase: [gap1] an exam?",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A whole programme of study is usually called a ___.",
+          "prompt": "A whole programme of study is usually called a [gap1].",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which verb completes: She ___ the exam with 86 percent?",
+          "prompt": "Which verb completes: She [gap1] the exam with 86 percent?",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "After missing a week, Tom needs to ___ with his classmates.",
+          "prompt": "After missing a week, Tom needs to [gap1] with his classmates.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The student did not submit the essay before the ___.",
+          "prompt": "The student did not submit the essay before the [gap1].",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Our teacher ___ us how to organise the notes.",
+          "prompt": "Our teacher [gap1] us how to organise the notes.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Marta got a high ___ in her science project.",
+          "prompt": "Marta got a high [gap1] in her science project.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "You can ___ an exam next month if you have prepared.",
+          "prompt": "You can [gap1] an exam next month if you have prepared.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I missed two lessons, so I am trying to ___ with the class.",
+          "prompt": "I missed two lessons, so I am trying to [gap1] with the class.",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Catch up significa alcanzar el nivel que se había perdido."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-education-study"
+      ],
+      "tags": [
+        "b1",
+        "education-study",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-education-study-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-education-study",
+      "subtopic": "b1-education-study",
+      "taxonomyNodeIds": [
+        "b1-education-study"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which pair correctly distinguishes the teacher from the learner?",
+          "options": [
+            {
+              "id": "b",
+              "text": "learn / teach"
+            },
+            {
+              "id": "d",
+              "text": "pass / fail"
+            },
+            {
+              "id": "a",
+              "text": "teach / learn"
+            }
+          ],
+          "explanation": "El profesor teaches y el alumno learns."
+        },
+        {
+          "id": "r2",
+          "prompt": "The final date for sending an essay is the [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "deadline"
+            },
+            {
+              "id": "c",
+              "text": "subject"
+            },
+            {
+              "id": "b",
+              "text": "progress"
+            }
+          ],
+          "explanation": "Deadline es la fecha límite."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase means to study again before an exam?",
+          "options": [
+            {
+              "id": "a",
+              "text": "revise for an exam"
+            },
+            {
+              "id": "b",
+              "text": "hand in an exam"
+            },
+            {
+              "id": "c",
+              "text": "teach an exam"
+            }
+          ],
+          "explanation": "Revise for an exam es repasar para prepararlo."
+        },
+        {
+          "id": "r4",
+          "prompt": "I [gap1] biology at college.",
+          "options": [
+            {
+              "id": "a",
+              "text": "study"
+            },
+            {
+              "id": "c",
+              "text": "learn"
+            },
+            {
+              "id": "b",
+              "text": "teach"
+            }
+          ],
+          "explanation": "Study es dedicar tiempo a una asignatura."
+        },
+        {
+          "id": "r5",
+          "prompt": "Please [gap1] in your assignment by Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "take"
+            },
+            {
+              "id": "b",
+              "text": "hand"
+            },
+            {
+              "id": "d",
+              "text": "mark"
+            }
+          ],
+          "explanation": "Hand in significa entregar una tarea."
+        },
+        {
+          "id": "r6",
+          "prompt": "The comments from my teacher were useful [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "feedback"
+            },
+            {
+              "id": "d",
+              "text": "progress"
+            },
+            {
+              "id": "c",
+              "text": "subject"
+            }
+          ],
+          "explanation": "Feedback son comentarios que ayudan a mejorar."
+        },
+        {
+          "id": "r7",
+          "prompt": "A student who gets 38 percent has probably [gap1] the exam.",
+          "options": [
+            {
+              "id": "d",
+              "text": "revised"
+            },
+            {
+              "id": "a",
+              "text": "failed"
+            },
+            {
+              "id": "b",
+              "text": "passed"
+            }
+          ],
+          "explanation": "Una puntuación de 38 por ciento normalmente indica que el estudiante failed."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which option describes comments that explain how to improve?",
+          "options": [
+            {
+              "id": "c",
+              "text": "a subject"
+            },
+            {
+              "id": "a",
+              "text": "feedback"
+            },
+            {
+              "id": "d",
+              "text": "a class"
+            }
+          ],
+          "explanation": "Feedback no es una nota, sino comentarios orientados a mejorar."
         }
       ],
       "lessonIds": [

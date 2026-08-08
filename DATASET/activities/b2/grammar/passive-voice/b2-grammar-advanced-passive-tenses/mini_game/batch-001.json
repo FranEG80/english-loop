@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The files seem ___ during the overnight transfer.",
+          "prompt": "The files seem [gap1] during the overnight transfer.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The stadium ___ when the alarm stopped.",
+          "prompt": "The stadium [gap1] when the alarm stopped.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The report is believed ___ by an external auditor.",
+          "prompt": "The report is believed [gap1] by an external auditor.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The samples ___ when the power failed.",
+          "prompt": "The samples [gap1] when the power failed.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The roof ___ before the winter storms arrived.",
+          "prompt": "The roof [gap1] before the winter storms arrived.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The contract ___ before the board meeting began.",
+          "prompt": "The contract [gap1] before the board meeting began.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The equipment may ___ during the storm.",
+          "prompt": "The equipment may [gap1] during the storm.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The witness denied ___ by the reporter.",
+          "prompt": "The witness denied [gap1] by the reporter.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The manuscript seems ___ into three languages.",
+          "prompt": "The manuscript seems [gap1] into three languages.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "All the tickets ___ by the time the website reopened.",
+          "prompt": "All the tickets [gap1] by the time the website reopened.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The old cables need ___ before winter.",
+          "prompt": "The old cables need [gap1] before winter.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The bridge ___ at the moment, so traffic is diverted.",
+          "prompt": "The bridge [gap1] at the moment, so traffic is diverted.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The damaged panels are currently ___.",
+          "prompt": "The damaged panels are currently [gap1].",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The archive appears ___ during the renovation.",
+          "prompt": "The archive appears [gap1] during the renovation.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The missing data ___ from a secure backup.",
+          "prompt": "The missing data [gap1] from a secure backup.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The emergency plan had ___ before the drill began.",
+          "prompt": "The emergency plan had [gap1] before the drill began.",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-passive-tenses-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "advanced-passive-tenses",
+      "taxonomyNodeIds": [
+        "advanced-passive-tenses"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The final results are expected [gap1] next week.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to announce"
+            },
+            {
+              "id": "b",
+              "text": "to be announced"
+            },
+            {
+              "id": "c",
+              "text": "being announce"
+            }
+          ],
+          "explanation": "Expected to be announced usa un infinitivo pasivo."
+        },
+        {
+          "id": "r2",
+          "prompt": "The laboratory [gap1] after the experiment.",
+          "options": [
+            {
+              "id": "d",
+              "text": "has been clean"
+            },
+            {
+              "id": "c",
+              "text": "is cleaning"
+            },
+            {
+              "id": "a",
+              "text": "is being cleaned"
+            }
+          ],
+          "explanation": "Is being cleaned presenta un proceso pasivo en curso."
+        },
+        {
+          "id": "r3",
+          "prompt": "The museum enjoys [gap1] by local schools.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to be visit"
+            },
+            {
+              "id": "b",
+              "text": "been visited"
+            },
+            {
+              "id": "a",
+              "text": "being visited"
+            }
+          ],
+          "explanation": "Being visited funciona como gerundio pasivo después de enjoys."
+        },
+        {
+          "id": "r4",
+          "prompt": "When we arrived, the building [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "was inspected"
+            },
+            {
+              "id": "d",
+              "text": "was being inspect"
+            },
+            {
+              "id": "a",
+              "text": "was being inspected"
+            }
+          ],
+          "explanation": "Was being inspected describe un proceso en curso cuando llegamos."
+        },
+        {
+          "id": "r5",
+          "prompt": "He dislikes [gap1] during interviews.",
+          "options": [
+            {
+              "id": "a",
+              "text": "being interrupted"
+            },
+            {
+              "id": "d",
+              "text": "being interrupt"
+            },
+            {
+              "id": "c",
+              "text": "to be interrupt"
+            }
+          ],
+          "explanation": "Being interrupted funciona como gerundio pasivo después de dislikes."
+        },
+        {
+          "id": "r6",
+          "prompt": "The online records have [gap1] since the upgrade.",
+          "options": [
+            {
+              "id": "b",
+              "text": "being encrypt"
+            },
+            {
+              "id": "d",
+              "text": "encrypted"
+            },
+            {
+              "id": "a",
+              "text": "been encrypted"
+            }
+          ],
+          "explanation": "Have been encrypted presenta un resultado pasivo completado."
+        },
+        {
+          "id": "r7",
+          "prompt": "The new controls need [gap1] before the launch.",
+          "options": [
+            {
+              "id": "c",
+              "text": "being test"
+            },
+            {
+              "id": "b",
+              "text": "to be tested"
+            },
+            {
+              "id": "d",
+              "text": "to have test"
+            }
+          ],
+          "explanation": "Need to be tested expresa una necesidad pasiva."
+        },
+        {
+          "id": "r8",
+          "prompt": "The paintings are expected [gap1] in June.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to be displayed"
+            },
+            {
+              "id": "c",
+              "text": "being displayed"
+            },
+            {
+              "id": "d",
+              "text": "to have display"
+            }
+          ],
+          "explanation": "Expected to be displayed usa un infinitivo pasivo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-passive-tenses"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "passive-infinitive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
           }
         ]
       },

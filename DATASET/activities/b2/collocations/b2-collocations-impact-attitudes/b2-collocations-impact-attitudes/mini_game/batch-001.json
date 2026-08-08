@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The spill damaged several habitats. It caused serious ___ the wetlands.",
+          "prompt": "The spill damaged several habitats. It caused serious [gap1] the wetlands.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The union ___ opposed the plan in cloze set 016.",
+          "prompt": "The union [gap1] opposed the plan in cloze set 016.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The article calls ___ change in cloze set 011.",
+          "prompt": "The article calls [gap1] change in cloze set 011.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The union rejects the proposal without compromise. It firmly ___.",
+          "prompt": "The union rejects the proposal without compromise. It firmly [gap1].",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The campaign aims to ___ attention to access in cloze set 014.",
+          "prompt": "The campaign aims to [gap1] attention to access in cloze set 014.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The editorial demands a change in the law. It calls ___ reform.",
+          "prompt": "The editorial demands a change in the law. It calls [gap1] reform.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The report urges firms to ___ measures.",
+          "prompt": "The report urges firms to [gap1] measures.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The council adopted several ___ in cloze set 019.",
+          "prompt": "The council adopted several [gap1] in cloze set 019.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The chemical may ___ a threat to wildlife.",
+          "prompt": "The chemical may [gap1] a threat to wildlife.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The new timetable changed attendance at evening classes. It had an ___ attendance.",
+          "prompt": "The new timetable changed attendance at evening classes. It had an [gap1] attendance.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The evidence may ___ doubts about the result.",
+          "prompt": "The evidence may [gap1] doubts about the result.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The findings may ___ policy change.",
+          "prompt": "The findings may [gap1] policy change.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The river is polluted, so the council needs an immediate response. It must ___ action.",
+          "prompt": "The river is polluted, so the council needs an immediate response. It must [gap1] action.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The policy may ___ a threat to jobs in cloze set 013.",
+          "prompt": "The policy may [gap1] a threat to jobs in cloze set 013.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A local campaign explains how to reduce food waste. It wants to ___ awareness of the issue.",
+          "prompt": "A local campaign explains how to reduce food waste. It wants to [gap1] awareness of the issue.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Parents worry about the safety of the crossing. They are ___ concerned.",
+          "prompt": "Parents worry about the safety of the crossing. They are [gap1] concerned.",
           "options": [
             {
               "id": "b",
@@ -408,6 +408,227 @@
         "b2",
         "collocation",
         "threat",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-impact-attitudes-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b2-collocations-impact-attitudes",
+      "subtopic": "b2-collocations-impact-attitudes",
+      "taxonomyNodeIds": [
+        "b2-collocations-impact-attitudes"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The council must [gap1] action quickly.",
+          "options": [
+            {
+              "id": "d",
+              "text": "put"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "a",
+              "text": "take"
+            }
+          ],
+          "explanation": "The fixed phrase is «take action»."
+        },
+        {
+          "id": "r2",
+          "prompt": "The campaign seeks to [gap1] attention to access.",
+          "options": [
+            {
+              "id": "a",
+              "text": "draw"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            }
+          ],
+          "explanation": "We say «draw attention to» a subject."
+        },
+        {
+          "id": "r3",
+          "prompt": "Several volunteers helped design the project. They [gap1] a role in its success.",
+          "options": [
+            {
+              "id": "c",
+              "text": "made a role"
+            },
+            {
+              "id": "d",
+              "text": "put a role"
+            },
+            {
+              "id": "a",
+              "text": "played a role"
+            }
+          ],
+          "explanation": "The phrase «play a role in» connects a contribution with a result."
+        },
+        {
+          "id": "r4",
+          "prompt": "The new rules will [gap1] a role in reducing waste.",
+          "options": [
+            {
+              "id": "a",
+              "text": "play"
+            },
+            {
+              "id": "d",
+              "text": "do"
+            },
+            {
+              "id": "b",
+              "text": "take"
+            }
+          ],
+          "explanation": "We say «play a role in» a result."
+        },
+        {
+          "id": "r5",
+          "prompt": "The findings may [gap1] policy change in cloze set 015.",
+          "options": [
+            {
+              "id": "a",
+              "text": "bring about"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            },
+            {
+              "id": "d",
+              "text": "put"
+            }
+          ],
+          "explanation": "«Bring about change» means cause it."
+        },
+        {
+          "id": "r6",
+          "prompt": "The report asks readers to take [gap1] of cost in cloze set 012.",
+          "options": [
+            {
+              "id": "d",
+              "text": "role"
+            },
+            {
+              "id": "a",
+              "text": "account"
+            },
+            {
+              "id": "c",
+              "text": "action"
+            }
+          ],
+          "explanation": "The phrase is «take account of»."
+        },
+        {
+          "id": "r7",
+          "prompt": "Volunteers [gap1] a role in the improvement in cloze set 004.",
+          "options": [
+            {
+              "id": "b",
+              "text": "did"
+            },
+            {
+              "id": "d",
+              "text": "took"
+            },
+            {
+              "id": "a",
+              "text": "played"
+            }
+          ],
+          "explanation": "We say «play a role in» an outcome."
+        },
+        {
+          "id": "r8",
+          "prompt": "A leaking tank could harm birds and fish. The tank may [gap1] a threat to wildlife.",
+          "options": [
+            {
+              "id": "b",
+              "text": "make a threat"
+            },
+            {
+              "id": "a",
+              "text": "pose a threat"
+            },
+            {
+              "id": "c",
+              "text": "do a threat"
+            }
+          ],
+          "explanation": "We say «pose a threat to» a person, place or group."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-impact-attitudes"
+      ],
+      "tags": [
+        "b2",
+        "collocation",
+        "action",
         "mini-game"
       ],
       "estimatedSeconds": 120,

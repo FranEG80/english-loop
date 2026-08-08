@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The doctor ___ another patient at the moment.",
+          "prompt": "The doctor [gap1] another patient at the moment.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We ___ with my aunt while our kitchen is repaired.",
+          "prompt": "We [gap1] with my aunt while our kitchen is repaired.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The chef ___ the soup to check the seasoning.",
+          "prompt": "The chef [gap1] the soup to check the seasoning.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "We can't answer the phone because we ___ lunch.",
+          "prompt": "We can't answer the phone because we [gap1] lunch.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Nina ___ two younger brothers.",
+          "prompt": "Nina [gap1] two younger brothers.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Please be quiet. I ___ a voice message.",
+          "prompt": "Please be quiet. I [gap1] a voice message.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The soup ___ too salty to me.",
+          "prompt": "The soup [gap1] too salty to me.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The number of online applications ___ steadily.",
+          "prompt": "The number of online applications [gap1] steadily.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ why the total is different now.",
+          "prompt": "I [gap1] why the total is different now.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "This key ___ to the storage room.",
+          "prompt": "This key [gap1] to the storage room.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I ___ the proposal is practical, but I need more detail.",
+          "prompt": "I [gap1] the proposal is practical, but I need more detail.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I ___ what you mean, but I don't agree with the solution.",
+          "prompt": "I [gap1] what you mean, but I don't agree with the solution.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "For this month's trial, the editor ___ an extra accessibility section in every report.",
+          "prompt": "For this month's trial, the editor [gap1] an extra accessibility section in every report.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "More residents ___ the new bus route each month.",
+          "prompt": "More residents [gap1] the new bus route each month.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Lena normally ___ the 7.20 train to work.",
+          "prompt": "Lena normally [gap1] the 7.20 train to work.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "This route usually ___ about forty minutes.",
+          "prompt": "This route usually [gap1] about forty minutes.",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-present-simple-continuous-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "present-tenses",
+      "subtopic": "present-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "present-simple-vs-continuous"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The report [gap1] several recommendations that remain relevant.",
+          "options": [
+            {
+              "id": "b",
+              "text": "contain"
+            },
+            {
+              "id": "c",
+              "text": "contains"
+            },
+            {
+              "id": "a",
+              "text": "is containing"
+            }
+          ],
+          "explanation": "«Contain» describe una característica estable del informe y usa present simple."
+        },
+        {
+          "id": "r2",
+          "prompt": "The library [gap1] at nine every weekday.",
+          "options": [
+            {
+              "id": "c",
+              "text": "open"
+            },
+            {
+              "id": "a",
+              "text": "opens"
+            },
+            {
+              "id": "d",
+              "text": "opening"
+            }
+          ],
+          "explanation": "Un horario habitual usa present simple: «opens»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The company [gap1] a four-day week every August.",
+          "options": [
+            {
+              "id": "d",
+              "text": "is try"
+            },
+            {
+              "id": "c",
+              "text": "tries"
+            },
+            {
+              "id": "a",
+              "text": "is trying right now every year"
+            }
+          ],
+          "explanation": "«Every August» presenta una práctica repetida; el sujeto singular lleva «tries»."
+        },
+        {
+          "id": "r4",
+          "prompt": "I [gap1] about the proposal, so I'll reply tomorrow.",
+          "options": [
+            {
+              "id": "c",
+              "text": "am thinking"
+            },
+            {
+              "id": "a",
+              "text": "think usually"
+            },
+            {
+              "id": "b",
+              "text": "thinks"
+            }
+          ],
+          "explanation": "«Think about» describe el proceso mental temporal de considerar algo."
+        },
+        {
+          "id": "r5",
+          "prompt": "Ravi usually works from home, but today he [gap1] the main office.",
+          "options": [
+            {
+              "id": "b",
+              "text": "is using"
+            },
+            {
+              "id": "d",
+              "text": "using"
+            },
+            {
+              "id": "c",
+              "text": "use"
+            }
+          ],
+          "explanation": "«Today» contrasta una situación temporal con la rutina anterior: «is using»."
+        },
+        {
+          "id": "r6",
+          "prompt": "I [gap1] meeting the supplier tomorrow is the best option.",
+          "options": [
+            {
+              "id": "c",
+              "text": "thinks"
+            },
+            {
+              "id": "a",
+              "text": "am thinking"
+            },
+            {
+              "id": "b",
+              "text": "think"
+            }
+          ],
+          "explanation": "Aunque la proposición incluye un acuerdo futuro, «think» expresa la opinión actual del hablante."
+        },
+        {
+          "id": "r7",
+          "prompt": "This month, the team [gap1] a four-day week to measure productivity.",
+          "options": [
+            {
+              "id": "a",
+              "text": "tries every month"
+            },
+            {
+              "id": "d",
+              "text": "is try"
+            },
+            {
+              "id": "b",
+              "text": "is trying"
+            }
+          ],
+          "explanation": "Es un experimento limitado a este mes: «is trying»."
+        },
+        {
+          "id": "r8",
+          "prompt": "You [gap1] your access card at home. It's the third time this week.",
+          "options": [
+            {
+              "id": "b",
+              "text": "are always leaving"
+            },
+            {
+              "id": "d",
+              "text": "are leave always"
+            },
+            {
+              "id": "a",
+              "text": "always leave"
+            }
+          ],
+          "explanation": "«Are always leaving» expresa una conducta repetida que causa molestia."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-present-simple-continuous"
+      ],
+      "tags": [
+        "b1",
+        "present-tenses",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
           }
         ]
       },

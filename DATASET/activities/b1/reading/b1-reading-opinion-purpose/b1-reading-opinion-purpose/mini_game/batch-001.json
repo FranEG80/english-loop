@@ -465,6 +465,235 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-opinion-purpose-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-opinion-purpose",
+      "subtopic": "b1-reading-opinion-purpose",
+      "taxonomyNodeIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What kind of text is this?",
+          "context": "The train to Greenford leaves from platform three at 09:20. Passengers should arrive ten minutes early.",
+          "options": [
+            {
+              "id": "b",
+              "text": "A restaurant review."
+            },
+            {
+              "id": "d",
+              "text": "A museum description."
+            },
+            {
+              "id": "a",
+              "text": "A travel announcement."
+            }
+          ],
+          "explanation": "The platform, time and passenger instruction identify a travel announcement."
+        },
+        {
+          "id": "r2",
+          "prompt": "Why was the message written?",
+          "context": "The community centre is testing a later opening time this month. Visitors are asked to complete a short survey when they leave.",
+          "options": [
+            {
+              "id": "a",
+              "text": "To collect feedback about a trial."
+            },
+            {
+              "id": "b",
+              "text": "To announce a permanent closure."
+            },
+            {
+              "id": "d",
+              "text": "To describe the centre's history."
+            }
+          ],
+          "explanation": "The trial and the request for a survey show that the centre wants feedback."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence is a recommendation?",
+          "context": "The walk takes about an hour and passes the old bridge. Wear comfortable shoes because part of the path is uneven.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Part of the path is uneven."
+            },
+            {
+              "id": "a",
+              "text": "Wear comfortable shoes."
+            },
+            {
+              "id": "b",
+              "text": "The walk takes an hour."
+            }
+          ],
+          "explanation": "The imperative advises the reader what to wear."
+        },
+        {
+          "id": "r4",
+          "prompt": "What is the writer's attitude to the café?",
+          "context": "The café is small and the tables are close together. Still, the friendly staff and excellent bread make it worth visiting.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Uninterested in the food."
+            },
+            {
+              "id": "b",
+              "text": "Completely negative."
+            },
+            {
+              "id": "a",
+              "text": "Generally positive but aware of a drawback."
+            }
+          ],
+          "explanation": "Still introduces a positive judgement despite the limited space."
+        },
+        {
+          "id": "r5",
+          "prompt": "Why does the writer mention the queue?",
+          "context": "The exhibition is free on the first Sunday of each month. It is popular, so visitors should book a time before arriving.",
+          "options": [
+            {
+              "id": "a",
+              "text": "To justify the booking advice."
+            },
+            {
+              "id": "b",
+              "text": "To describe the exhibition's paintings."
+            },
+            {
+              "id": "c",
+              "text": "To explain why Sundays are cancelled."
+            }
+          ],
+          "explanation": "Popularity explains why booking is necessary."
+        },
+        {
+          "id": "r6",
+          "prompt": "What action does the leaflet suggest?",
+          "context": "Bring a reusable bottle to the festival. Water stations will be available beside the entrance and near the main stage.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Carry a reusable bottle."
+            },
+            {
+              "id": "c",
+              "text": "Avoid the main stage."
+            },
+            {
+              "id": "d",
+              "text": "Leave the festival early."
+            }
+          ],
+          "explanation": "The imperative directly tells visitors what to bring."
+        },
+        {
+          "id": "r7",
+          "prompt": "What can be concluded about the proposal?",
+          "context": "The proposal would cost more initially, but the equipment would last twice as long and need fewer repairs.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is immediately cheaper."
+            },
+            {
+              "id": "c",
+              "text": "It will never need maintenance."
+            },
+            {
+              "id": "a",
+              "text": "It may offer better value over time."
+            }
+          ],
+          "explanation": "The higher initial cost is balanced by durability and fewer repairs, suggesting longer-term value."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which phrase shows an opinion?",
+          "context": "The gallery opened a new room on Tuesday. The curator describes it as a wonderful space for young artists.",
+          "options": [
+            {
+              "id": "d",
+              "text": "young artists"
+            },
+            {
+              "id": "a",
+              "text": "a wonderful space"
+            },
+            {
+              "id": "c",
+              "text": "on Tuesday"
+            }
+          ],
+          "explanation": "Wonderful is an evaluative adjective and expresses the curator's view."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-opinion-purpose"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "genre",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

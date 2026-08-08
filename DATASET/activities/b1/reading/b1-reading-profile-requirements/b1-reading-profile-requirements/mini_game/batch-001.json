@@ -449,6 +449,227 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-reading-profile-requirements-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b1-reading-profile-requirements",
+      "subtopic": "b1-reading-profile-requirements",
+      "taxonomyNodeIds": [
+        "b1-reading-profile-requirements"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Omar needs an intermediate English course in the evening. Which advert fits?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Advanced English on Tuesday evenings"
+            },
+            {
+              "id": "c",
+              "text": "Intermediate English at 8 a.m."
+            },
+            {
+              "id": "a",
+              "text": "Intermediate English on Tuesdays at 7 p.m."
+            }
+          ],
+          "explanation": "El nivel y horario del primer curso coinciden."
+        },
+        {
+          "id": "r2",
+          "prompt": "Bruno wants an accessible cinema near a bus stop with a screening after 8 p.m. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Accessible cinema far from buses; 7 p.m. screening"
+            },
+            {
+              "id": "d",
+              "text": "Bus-stop cinema with stairs only; 9 p.m. screening"
+            },
+            {
+              "id": "a",
+              "text": "Accessible cinema by the bus stop; 8:45 p.m. screening"
+            }
+          ],
+          "explanation": "Accesibilidad, transporte y hora coinciden en a."
+        },
+        {
+          "id": "r3",
+          "prompt": "George wants a free outdoor concert on Sunday reachable by train. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Free outdoor concert on Monday reachable by car"
+            },
+            {
+              "id": "a",
+              "text": "Free open-air concert on Sunday beside the railway station"
+            },
+            {
+              "id": "b",
+              "text": "Paid indoor concert on Friday two buses from the station"
+            }
+          ],
+          "explanation": "Coste, formato, día y transporte coinciden con a."
+        },
+        {
+          "id": "r4",
+          "prompt": "Leo needs a cheap room with breakfast near the university. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "£40 per night, breakfast included, by the airport"
+            },
+            {
+              "id": "a",
+              "text": "£20 per night, breakfast included, five minutes from the university"
+            },
+            {
+              "id": "d",
+              "text": "Free room, no breakfast, two hours away"
+            }
+          ],
+          "explanation": "El primer anuncio cumple simultáneamente precio, comida y ubicación."
+        },
+        {
+          "id": "r5",
+          "prompt": "Amira needs a free beginners' workshop on Saturday with materials supplied. Which advert fits?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Advanced paid course on Wednesday; materials extra"
+            },
+            {
+              "id": "a",
+              "text": "Free beginners' craft workshop on Saturday; materials included"
+            },
+            {
+              "id": "c",
+              "text": "Free advanced workshop on Sunday; bring materials"
+            }
+          ],
+          "explanation": "El primer texto cumple nivel, precio, día y materiales."
+        },
+        {
+          "id": "r6",
+          "prompt": "Noah wants a soundproof rehearsal room on Tuesday evening. Which advert fits?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Dance studio on Sunday afternoon"
+            },
+            {
+              "id": "c",
+              "text": "Music room on Tuesday morning without soundproofing"
+            },
+            {
+              "id": "a",
+              "text": "Soundproof rehearsal room, Tuesday 7–9 p.m."
+            }
+          ],
+          "explanation": "Sala, aislamiento y horario coinciden solo en a."
+        },
+        {
+          "id": "r7",
+          "prompt": "Ben needs a quiet café with Wi-Fi on Sunday afternoon. Which advert fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Quiet café closed on Sundays"
+            },
+            {
+              "id": "a",
+              "text": "Quiet café with free Wi-Fi, open Sunday until 5 p.m."
+            },
+            {
+              "id": "d",
+              "text": "Library with Wi-Fi but no café"
+            }
+          ],
+          "explanation": "El primer texto reúne ambiente, conexión y horario."
+        },
+        {
+          "id": "r8",
+          "prompt": "Aisha wants a beginner swimming class after work on weekdays. Which advert fits?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Intermediate yoga after work"
+            },
+            {
+              "id": "a",
+              "text": "Beginner swimming on Monday and Wednesday at 6 p.m."
+            },
+            {
+              "id": "b",
+              "text": "Advanced swimming on Sunday morning"
+            }
+          ],
+          "explanation": "Nivel, actividad, día y hora encajan con el perfil."
+        }
+      ],
+      "lessonIds": [
+        "b1-reading-profile-requirements"
+      ],
+      "tags": [
+        "b1",
+        "reading",
+        "matching",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

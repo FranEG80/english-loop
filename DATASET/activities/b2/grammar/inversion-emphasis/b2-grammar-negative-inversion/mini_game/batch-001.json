@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Never ___ the laboratory recorded such a reading.",
+          "prompt": "Never [gap1] the laboratory recorded such a reading.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Barely ___ down when the phone rang.",
+          "prompt": "Barely [gap1] down when the phone rang.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "At no time ___ staff reveal client data.",
+          "prompt": "At no time [gap1] staff reveal client data.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ had I sat down ___ the phone rang.",
+          "prompt": "[gap1] had I sat down [gap2] the phone rang.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Not only ___ the problem, but she documented it.",
+          "prompt": "Not only [gap1] the problem, but she documented it.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Little ___ how serious the delay was.",
+          "prompt": "Little [gap1] how serious the delay was.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Not until Friday ___ they reply.",
+          "prompt": "Not until Friday [gap1] they reply.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Only then ___ we understand the risk.",
+          "prompt": "Only then [gap1] we understand the risk.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Only after the audit ___ we change the policy.",
+          "prompt": "Only after the audit [gap1] we change the policy.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ had the meeting begun ___ the fire alarm rang.",
+          "prompt": "[gap1] had the meeting begun [gap2] the fire alarm rang.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "On no account ___ the code with anyone.",
+          "prompt": "On no account [gap1] the code with anyone.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "No sooner had the train left ___ it began to snow.",
+          "prompt": "No sooner had the train left [gap1] it began to snow.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Seldom ___ such detailed feedback.",
+          "prompt": "Seldom [gap1] such detailed feedback.",
           "options": [
             {
               "id": "d",
@@ -407,6 +407,226 @@
       "tags": [
         "b2",
         "only-then",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-negative-inversion-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "inversion-emphasis",
+      "subtopic": "negative-inversion",
+      "taxonomyNodeIds": [
+        "negative-inversion"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Only later [gap1] the cause of the error.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had we discovered"
+            },
+            {
+              "id": "d",
+              "text": "discover we"
+            },
+            {
+              "id": "a",
+              "text": "did we discover"
+            }
+          ],
+          "explanation": "Only later triggers inversion in the main clause."
+        },
+        {
+          "id": "r2",
+          "prompt": "Rarely [gap1] complaints this detailed.",
+          "options": [
+            {
+              "id": "a",
+              "text": "do we receive"
+            },
+            {
+              "id": "d",
+              "text": "does we receive"
+            },
+            {
+              "id": "b",
+              "text": "we receive"
+            }
+          ],
+          "explanation": "Do precedes the plural subject and the base verb follows."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence correctly combines not only with but also?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Not only did she answered, but she supplied evidence."
+            },
+            {
+              "id": "a",
+              "text": "Not only did she answer, but she also supplied evidence."
+            },
+            {
+              "id": "d",
+              "text": "Not only answered she, but she supplied evidence."
+            }
+          ],
+          "explanation": "Did takes the base verb answer and the second clause has its subject."
+        },
+        {
+          "id": "r4",
+          "prompt": "Not until midnight [gap1] the repairs finish.",
+          "options": [
+            {
+              "id": "a",
+              "text": "did"
+            },
+            {
+              "id": "d",
+              "text": "were"
+            },
+            {
+              "id": "c",
+              "text": "do"
+            }
+          ],
+          "explanation": "Did is needed for past simple finish."
+        },
+        {
+          "id": "r5",
+          "prompt": "Hardly had we arrived [gap1] the alarm sounded.",
+          "options": [
+            {
+              "id": "d",
+              "text": "so"
+            },
+            {
+              "id": "b",
+              "text": "than"
+            },
+            {
+              "id": "a",
+              "text": "when"
+            }
+          ],
+          "explanation": "Hardly is normally paired with when."
+        },
+        {
+          "id": "r6",
+          "prompt": "At no time [gap1] the team been informed of the change.",
+          "options": [
+            {
+              "id": "b",
+              "text": "did"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "d",
+              "text": "has"
+            }
+          ],
+          "explanation": "Had been informed is the past perfect passive."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which option is correct?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Seldom do we encounter such a complex case."
+            },
+            {
+              "id": "b",
+              "text": "Seldom we do encounter such a complex case."
+            },
+            {
+              "id": "d",
+              "text": "Seldom does we encounter such a complex case."
+            }
+          ],
+          "explanation": "Do comes before the plural subject we."
+        },
+        {
+          "id": "r8",
+          "prompt": "Rarely [gap1] researchers ignore the control group.",
+          "options": [
+            {
+              "id": "a",
+              "text": "do"
+            },
+            {
+              "id": "b",
+              "text": "does"
+            },
+            {
+              "id": "d",
+              "text": "are"
+            }
+          ],
+          "explanation": "Researchers is plural and the present simple needs do."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-negative-inversion"
+      ],
+      "tags": [
+        "b2",
+        "only-later",
         "mini-game"
       ],
       "estimatedSeconds": 120,

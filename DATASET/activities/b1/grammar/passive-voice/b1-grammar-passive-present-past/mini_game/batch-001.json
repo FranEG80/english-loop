@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The reference number was written ___ a permanent marker.",
+          "prompt": "The reference number was written [gap1] a permanent marker.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Three bicycles ___ outside the station last night.",
+          "prompt": "Three bicycles [gap1] outside the station last night.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The mural was painted ___ local teenagers.",
+          "prompt": "The mural was painted [gap1] local teenagers.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ the stage being prepared for tonight's concert?",
+          "prompt": "[gap1] the stage being prepared for tonight's concert?",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The community centre ___ in 1986.",
+          "prompt": "The community centre [gap1] in 1986.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The final section of the path ___ last Friday.",
+          "prompt": "The final section of the path [gap1] last Friday.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Fortunately, the original photographs ___ during the flood.",
+          "prompt": "Fortunately, the original photographs [gap1] during the flood.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The patients ___ to another ward when the alarm sounded.",
+          "prompt": "The patients [gap1] to another ward when the alarm sounded.",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "___ the passengers informed about the delay yesterday?",
+          "prompt": "[gap1] the passengers informed about the delay yesterday?",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The winning design was ___ by a group of students.",
+          "prompt": "The winning design was [gap1] by a group of students.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Breakfast ___ from 7:00 to 10:00 every day.",
+          "prompt": "Breakfast [gap1] from 7:00 to 10:00 every day.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "___ this cheese produced locally?",
+          "prompt": "[gap1] this cheese produced locally?",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The water tanks ___ every six months.",
+          "prompt": "The water tanks [gap1] every six months.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Pets ___ inside the food hall.",
+          "prompt": "Pets [gap1] inside the food hall.",
           "options": [
             {
               "id": "a",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "continuous-passive",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-passive-present-past-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "present-past-passive",
+      "taxonomyNodeIds": [
+        "present-past-passive"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "These bags [gap1] from recycled fabric.",
+          "options": [
+            {
+              "id": "c",
+              "text": "are make"
+            },
+            {
+              "id": "d",
+              "text": "make"
+            },
+            {
+              "id": "a",
+              "text": "are made"
+            }
+          ],
+          "explanation": "El sujeto plural usa «are» y el participio «made»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence uses a transitive verb in a correct passive?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The missing file was found under the desk."
+            },
+            {
+              "id": "c",
+              "text": "The guests were arrived early."
+            },
+            {
+              "id": "d",
+              "text": "The baby was slept quietly."
+            }
+          ],
+          "explanation": "«Find» admite objeto; «happen», «arrive» y «sleep» no forman esas pasivas."
+        },
+        {
+          "id": "r3",
+          "prompt": "Active: “The archive stores the originals in a temperature-controlled room.”",
+          "options": [
+            {
+              "id": "a",
+              "text": "The originals are stored in a temperature-controlled room."
+            },
+            {
+              "id": "c",
+              "text": "The archive is stored by the originals."
+            },
+            {
+              "id": "d",
+              "text": "The originals are storing the archive."
+            }
+          ],
+          "explanation": "Se mantiene el presente y el objeto «the originals» pasa a sujeto."
+        },
+        {
+          "id": "r4",
+          "prompt": "The side galleries usually [gap1] on Mondays, but this week they [gap2] for a private event.",
+          "options": [
+            {
+              "id": "a",
+              "text": "are closed / are being used"
+            },
+            {
+              "id": "d",
+              "text": "close / are use"
+            },
+            {
+              "id": "c",
+              "text": "are being closed / were used"
+            }
+          ],
+          "explanation": "«Usually» pide presente simple pasivo y «this week», una acción temporal en progreso."
+        },
+        {
+          "id": "r5",
+          "prompt": "All the tickets were [gap1] within twenty minutes.",
+          "options": [
+            {
+              "id": "b",
+              "text": "sell"
+            },
+            {
+              "id": "a",
+              "text": "sold"
+            },
+            {
+              "id": "c",
+              "text": "selled"
+            }
+          ],
+          "explanation": "El participio irregular de «sell» es «sold»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The main entrance [gap1] this week, so use the side door.",
+          "options": [
+            {
+              "id": "b",
+              "text": "is repaired"
+            },
+            {
+              "id": "c",
+              "text": "is repairing"
+            },
+            {
+              "id": "a",
+              "text": "is being repaired"
+            }
+          ],
+          "explanation": "Una acción temporal en progreso usa «is being repaired»."
+        },
+        {
+          "id": "r7",
+          "prompt": "The applications [gap1] online and the successful candidates [gap2] by email yesterday.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was written / was told"
+            },
+            {
+              "id": "c",
+              "text": "were wrote / were telled"
+            },
+            {
+              "id": "a",
+              "text": "were written / were told"
+            }
+          ],
+          "explanation": "Los sujetos plurales requieren «were»; los participios son «written» y «told»."
+        },
+        {
+          "id": "r8",
+          "prompt": "The final votes [gap1] when the fire alarm interrupted the count.",
+          "options": [
+            {
+              "id": "c",
+              "text": "are being checked"
+            },
+            {
+              "id": "a",
+              "text": "were being checked"
+            },
+            {
+              "id": "d",
+              "text": "were checking"
+            }
+          ],
+          "explanation": "La comprobación estaba en progreso cuando ocurrió otra acción pasada."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-passive-present-past"
+      ],
+      "tags": [
+        "b1",
+        "present-passive",
         "single-choice",
         "mini-game"
       ],

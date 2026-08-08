@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A public area with trees and grass in a city is a ___.",
+          "prompt": "A public area with trees and grass in a city is a [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The river rose rapidly after the storm, putting homes at risk of ___.",
+          "prompt": "The river rose rapidly after the storm, putting homes at risk of [gap1].",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Heavy rain and overflowing rivers can cause ___.",
+          "prompt": "Heavy rain and overflowing rivers can cause [gap1].",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Smoke from vehicles contributes to air ___.",
+          "prompt": "Smoke from vehicles contributes to air [gap1].",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A park beside a busy road would most directly improve a city's access to ___.",
+          "prompt": "A park beside a busy road would most directly improve a city's access to [gap1].",
           "options": [
             {
               "id": "c",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Cars, buses and lorries together create heavy ___.",
+          "prompt": "Cars, buses and lorries together create heavy [gap1].",
           "options": [
             {
               "id": "d",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A village and farms are usually part of the ___.",
+          "prompt": "A village and farms are usually part of the [gap1].",
           "options": [
             {
               "id": "b",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A low area between hills or mountains is a ___.",
+          "prompt": "A low area between hills or mountains is a [gap1].",
           "options": [
             {
               "id": "d",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A thick cloud near the ground that makes driving difficult is ___.",
+          "prompt": "A thick cloud near the ground that makes driving difficult is [gap1].",
           "options": [
             {
               "id": "b",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Rubbish left on a beach is called ___.",
+          "prompt": "Rubbish left on a beach is called [gap1].",
           "options": [
             {
               "id": "a",
@@ -398,6 +398,226 @@
             }
           ],
           "explanation": "Litter is rubbish left in a public place."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-environment-weather-places"
+      ],
+      "tags": [
+        "b1",
+        "city",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-environment-weather-places-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-environment-weather-places",
+      "subtopic": "b1-environment-weather-places",
+      "taxonomyNodeIds": [
+        "b1-environment-weather-places"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "A narrow hard surface beside a road is a [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "valley"
+            },
+            {
+              "id": "c",
+              "text": "coast"
+            },
+            {
+              "id": "a",
+              "text": "pavement"
+            }
+          ],
+          "explanation": "A pavement is a path for people beside a road."
+        },
+        {
+          "id": "r2",
+          "prompt": "When there is a lot of water on streets after rain, there may be [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "flooding"
+            },
+            {
+              "id": "d",
+              "text": "sunshine"
+            },
+            {
+              "id": "b",
+              "text": "drought"
+            }
+          ],
+          "explanation": "Flooding happens when water covers normally dry land."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase means use less water, electricity or material?",
+          "options": [
+            {
+              "id": "b",
+              "text": "increase litter"
+            },
+            {
+              "id": "d",
+              "text": "cross the coast"
+            },
+            {
+              "id": "a",
+              "text": "reduce consumption"
+            }
+          ],
+          "explanation": "Reduce consumption means use a smaller amount."
+        },
+        {
+          "id": "r4",
+          "prompt": "The land beside the sea is the [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "coast"
+            },
+            {
+              "id": "b",
+              "text": "countryside"
+            },
+            {
+              "id": "c",
+              "text": "traffic"
+            }
+          ],
+          "explanation": "The coast is the land next to the sea."
+        },
+        {
+          "id": "r5",
+          "prompt": "The air feels wet and sticky because it is [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "cloudless"
+            },
+            {
+              "id": "a",
+              "text": "humid"
+            },
+            {
+              "id": "d",
+              "text": "recycled"
+            }
+          ],
+          "explanation": "Humid means that the air contains a lot of moisture."
+        },
+        {
+          "id": "r6",
+          "prompt": "A place with many trees and wild plants is a [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "traffic"
+            },
+            {
+              "id": "a",
+              "text": "forest"
+            },
+            {
+              "id": "b",
+              "text": "pavement"
+            }
+          ],
+          "explanation": "A forest is an area dominated by trees."
+        },
+        {
+          "id": "r7",
+          "prompt": "A prediction about tomorrow's weather is a [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "landscape"
+            },
+            {
+              "id": "a",
+              "text": "forecast"
+            },
+            {
+              "id": "c",
+              "text": "pavement"
+            }
+          ],
+          "explanation": "A forecast predicts future weather conditions."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence describes climate rather than today's weather?",
+          "options": [
+            {
+              "id": "d",
+              "text": "The wind is strong today."
+            },
+            {
+              "id": "a",
+              "text": "The region usually has dry summers."
+            },
+            {
+              "id": "c",
+              "text": "A shower started at noon."
+            }
+          ],
+          "explanation": "Climate describes usual patterns over a long period."
         }
       ],
       "lessonIds": [

@@ -449,6 +449,227 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-formal-email-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-formal-email",
+      "subtopic": "b2-writing-formal-email",
+      "taxonomyNodeIds": [
+        "b2-writing-formal-email"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence asks for a form politely?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you please send me the form?"
+            },
+            {
+              "id": "b",
+              "text": "Send me the form."
+            },
+            {
+              "id": "c",
+              "text": "You must send the form."
+            }
+          ],
+          "explanation": "Could you please is polite and direct enough for formal correspondence."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which greeting suits an email to Ms Brown?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Hey Brown"
+            },
+            {
+              "id": "a",
+              "text": "Dear Ms Brown"
+            },
+            {
+              "id": "d",
+              "text": "Dear whoever"
+            }
+          ],
+          "explanation": "A named recipient takes Dear plus title and surname."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which opening suits an email about an existing reference?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Remember my problem?"
+            },
+            {
+              "id": "b",
+              "text": "I want to talk about this thing."
+            },
+            {
+              "id": "a",
+              "text": "I am writing regarding reference number FJ4821."
+            }
+          ],
+          "explanation": "I am writing regarding introduces an existing matter precisely."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which closing follows Dear Sir or Madam?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Yours faithfully"
+            },
+            {
+              "id": "d",
+              "text": "Love"
+            },
+            {
+              "id": "c",
+              "text": "Cheers"
+            }
+          ],
+          "explanation": "Yours faithfully matches an unnamed recipient."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which question asks formally about wheelchair access?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Do you have a ramp or not?"
+            },
+            {
+              "id": "a",
+              "text": "Could you please provide information about wheelchair access?"
+            },
+            {
+              "id": "c",
+              "text": "Tell me if it works."
+            }
+          ],
+          "explanation": "The first option is specific, polite and suitable for an organisation."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence links extra costs to a refund?",
+          "options": [
+            {
+              "id": "a",
+              "text": "As the cancellation caused extra costs, I would like the full fee to be refunded."
+            },
+            {
+              "id": "c",
+              "text": "The cancellation was yesterday."
+            },
+            {
+              "id": "b",
+              "text": "Refund me because I say so."
+            }
+          ],
+          "explanation": "The sentence gives a clear justification for the requested remedy."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence asks for booking confirmation?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Confirm it now."
+            },
+            {
+              "id": "a",
+              "text": "I would be grateful if you could confirm my booking."
+            },
+            {
+              "id": "c",
+              "text": "I need you to confirm it."
+            }
+          ],
+          "explanation": "The conditional request is courteous and precise."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence raises a repeated billing issue diplomatically?",
+          "options": [
+            {
+              "id": "d",
+              "text": "This is unacceptable, fix it."
+            },
+            {
+              "id": "c",
+              "text": "Your accounts are a disaster."
+            },
+            {
+              "id": "a",
+              "text": "I am concerned that the same billing error has occurred repeatedly."
+            }
+          ],
+          "explanation": "The first option is firm, specific and professional."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-formal-email"
+      ],
+      "tags": [
+        "b2",
+        "formal-email",
+        "requests",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

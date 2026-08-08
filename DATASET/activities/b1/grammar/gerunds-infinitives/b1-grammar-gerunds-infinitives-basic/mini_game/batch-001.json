@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "You need ___ a table.",
+          "prompt": "You need [gap1] a table.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "She would like ___ a coffee.",
+          "prompt": "She would like [gap1] a coffee.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "This exercise is easy ___ .",
+          "prompt": "This exercise is easy [gap1] .",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "He suggested ___ a taxi.",
+          "prompt": "He suggested [gap1] a taxi.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "We plan ___ early tomorrow.",
+          "prompt": "We plan [gap1] early tomorrow.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I'm interested in ___ English.",
+          "prompt": "I'm interested in [gap1] English.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I enjoy ___ tennis at the weekend.",
+          "prompt": "I enjoy [gap1] tennis at the weekend.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "We're thinking about ___ house.",
+          "prompt": "We're thinking about [gap1] house.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The question is difficult ___ .",
+          "prompt": "The question is difficult [gap1] .",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "They decided ___ the car.",
+          "prompt": "They decided [gap1] the car.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "She hopes ___ the exam.",
+          "prompt": "She hopes [gap1] the exam.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "We avoid ___ late at night.",
+          "prompt": "We avoid [gap1] late at night.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Do you mind ___ a moment?",
+          "prompt": "Do you mind [gap1] a moment?",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "He's good at ___ pictures.",
+          "prompt": "He's good at [gap1] pictures.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She wants ___ a new car.",
+          "prompt": "She wants [gap1] a new car.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "They decided ___ home early.",
+          "prompt": "They decided [gap1] home early.",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "d"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-gerunds-infinitives-basic-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "basic-verb-patterns",
+      "taxonomyNodeIds": [
+        "basic-verb-patterns"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We plan [gap1] the museum tomorrow.",
+          "options": [
+            {
+              "id": "c",
+              "text": "visit"
+            },
+            {
+              "id": "a",
+              "text": "visiting"
+            },
+            {
+              "id": "b",
+              "text": "to visit"
+            }
+          ],
+          "explanation": "«Plan» va seguido de infinitivo con «to»: «to visit»."
+        },
+        {
+          "id": "r2",
+          "prompt": "I want [gap1] French next year.",
+          "options": [
+            {
+              "id": "c",
+              "text": "learn"
+            },
+            {
+              "id": "b",
+              "text": "to learn"
+            },
+            {
+              "id": "d",
+              "text": "learned"
+            }
+          ],
+          "explanation": "«Want» rige infinitivo con «to»: «to learn»."
+        },
+        {
+          "id": "r3",
+          "prompt": "He suggested [gap1] a break.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to take"
+            },
+            {
+              "id": "d",
+              "text": "took"
+            },
+            {
+              "id": "c",
+              "text": "taking"
+            }
+          ],
+          "explanation": "«Suggest» rige gerundio, no infinitivo: «taking»."
+        },
+        {
+          "id": "r4",
+          "prompt": "She finished [gap1] the kitchen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to clean"
+            },
+            {
+              "id": "c",
+              "text": "cleaning"
+            },
+            {
+              "id": "b",
+              "text": "clean"
+            }
+          ],
+          "explanation": "«Finish» rige gerundio: «cleaning»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I'm tired of [gap1] for the bus.",
+          "options": [
+            {
+              "id": "d",
+              "text": "waited"
+            },
+            {
+              "id": "c",
+              "text": "waiting"
+            },
+            {
+              "id": "b",
+              "text": "to wait"
+            }
+          ],
+          "explanation": "Después de la preposición «of» usamos gerundio: «waiting»."
+        },
+        {
+          "id": "r6",
+          "prompt": "She finished [gap1] the report.",
+          "options": [
+            {
+              "id": "d",
+              "text": "wrote"
+            },
+            {
+              "id": "c",
+              "text": "writing"
+            },
+            {
+              "id": "a",
+              "text": "to write"
+            }
+          ],
+          "explanation": "«Finish» va seguido de gerundio: «writing»."
+        },
+        {
+          "id": "r7",
+          "prompt": "She hopes [gap1] a job soon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "finding"
+            },
+            {
+              "id": "c",
+              "text": "find"
+            },
+            {
+              "id": "b",
+              "text": "to find"
+            }
+          ],
+          "explanation": "«Hope» rige infinitivo con «to»: «to find»."
+        },
+        {
+          "id": "r8",
+          "prompt": "We avoid [gap1] in the rush hour.",
+          "options": [
+            {
+              "id": "d",
+              "text": "drove"
+            },
+            {
+              "id": "c",
+              "text": "driving"
+            },
+            {
+              "id": "a",
+              "text": "to drive"
+            }
+          ],
+          "explanation": "«Avoid» va seguido de gerundio: «driving»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-gerunds-infinitives-basic"
+      ],
+      "tags": [
+        "b1",
+        "gerunds-infinitives",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
           }
         ]
       },

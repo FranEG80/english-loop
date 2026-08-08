@@ -19,7 +19,12 @@ import type { ActivityBatch, MiniGameId } from "./lib/types";
  */
 
 const TARGET_DECKS = 200;
-const GAMES_PER_LESSON: readonly MiniGameId[] = ["frog_leap", "lane_runner"];
+/** Los tres juegos implementados: cada lección tiene una partida de cada uno. */
+const GAMES_PER_LESSON: readonly MiniGameId[] = [
+  "frog_leap",
+  "lane_runner",
+  "sentence_tower",
+];
 
 export async function composeContent(datasetRoot = DATASET_ROOT): Promise<{
   decks: number;

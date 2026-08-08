@@ -27,16 +27,28 @@
       "prompt": "Match basic linkers to the relationship they express.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "because",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reason"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "therefore",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "result"
+        },
+        {
+          "leftId": "l3",
+          "left": "More late arrivals",
+          "rightId": "r3",
+          "right": "the timetable needs review"
+        },
+        {
+          "leftId": "l4",
+          "left": "Example",
+          "rightId": "r4",
+          "right": "after explanation"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match argument stages to their jobs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Claim",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "states the position"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Evidence",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "supports the position"
+        },
+        {
+          "leftId": "l3",
+          "left": "Cost is high",
+          "rightId": "r3",
+          "right": "insulation is worthwhile"
+        },
+        {
+          "leftId": "l4",
+          "left": "Internet access varies",
+          "rightId": "r4",
+          "right": "keep a phone option"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match common cohesive phrases with their purpose.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "For instance",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "introduces an example"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Overall",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "summarises"
+        },
+        {
+          "leftId": "l3",
+          "left": "this change",
+          "rightId": "r3",
+          "right": "the revised timetable"
+        },
+        {
+          "leftId": "l4",
+          "left": "Nevertheless",
+          "rightId": "r4",
+          "right": "return to the main benefit"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match precise references to the idea they name.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "This reduction",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "a fall in waiting time"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "This evidence",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "a survey result"
+        },
+        {
+          "leftId": "l3",
+          "left": "Single anecdote",
+          "rightId": "r3",
+          "right": "investigate further"
+        },
+        {
+          "leftId": "l4",
+          "left": "Add a raised crossing",
+          "rightId": "r4",
+          "right": "slow cars near school"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match sentences to their likely position in an argument.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "More cycle lanes would improve safety",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "opening claim"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For these reasons, funding is justified",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "closing conclusion"
+        },
+        {
+          "leftId": "l3",
+          "left": "Even with this limitation",
+          "rightId": "r3",
+          "right": "return to the main claim"
+        },
+        {
+          "leftId": "l4",
+          "left": "because",
+          "rightId": "r4",
+          "right": "reason"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match contrast signals to how they connect ideas.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Although",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "introduces a concession"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "However",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "contrasts with the previous point"
+        },
+        {
+          "leftId": "l3",
+          "left": "For instance",
+          "rightId": "r3",
+          "right": "introduces an example"
+        },
+        {
+          "leftId": "l4",
+          "left": "Overall",
+          "rightId": "r4",
+          "right": "summarises"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match consequence markers to their meaning.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "As a result",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "shows a consequence"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Consequently",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "shows a consequence"
+        },
+        {
+          "leftId": "l3",
+          "left": "For these reasons, funding is justified",
+          "rightId": "r3",
+          "right": "closing conclusion"
+        },
+        {
+          "leftId": "l4",
+          "left": "Although",
+          "rightId": "r4",
+          "right": "introduces a concession"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match vague wording to the precise replacement it needs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "This is important",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "This reduction in waiting time matters"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "This helps",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "This phone option protects access"
+        },
+        {
+          "leftId": "l3",
+          "left": "Vague this",
+          "rightId": "r3",
+          "right": "unclear reference"
+        },
+        {
+          "leftId": "l4",
+          "left": "Repeated also",
+          "rightId": "r4",
+          "right": "flat progression"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match connectors to the position they commonly occupy.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Although",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "inside a complex sentence"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "However",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "at the start of a new sentence"
+        },
+        {
+          "leftId": "l3",
+          "left": "This alternative",
+          "rightId": "r3",
+          "right": "a phone access route"
+        },
+        {
+          "leftId": "l4",
+          "left": "Open later",
+          "rightId": "r4",
+          "right": "workers finish after closing"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match cohesion problems to what the reader experiences.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Vague this",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "unclear reference"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Repeated also",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "flat progression"
+        },
+        {
+          "leftId": "l3",
+          "left": "Keep a phone option",
+          "rightId": "r3",
+          "right": "some users lack internet"
+        },
+        {
+          "leftId": "l4",
+          "left": "Cost is high",
+          "rightId": "r4",
+          "right": "insulation is worthwhile"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match each evidence item to the argument it supports.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Fewer missed appointments",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reminders are useful"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "More late arrivals",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "the timetable needs review"
+        },
+        {
+          "leftId": "l3",
+          "left": "Example",
+          "rightId": "r3",
+          "right": "after explanation"
+        },
+        {
+          "leftId": "l4",
+          "left": "This alternative",
+          "rightId": "r4",
+          "right": "a phone access route"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match argument elements to their normal sequence.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Claim",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "first"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Example",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "after explanation"
+        },
+        {
+          "leftId": "l3",
+          "left": "Consequently",
+          "rightId": "r3",
+          "right": "shows a consequence"
+        },
+        {
+          "leftId": "l4",
+          "left": "This is important",
+          "rightId": "r4",
+          "right": "This reduction in waiting time matters"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match references to the exact idea they point back to.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "This reduction",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "a shorter waiting time"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "This alternative",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "a phone access route"
+        },
+        {
+          "leftId": "l3",
+          "left": "More cycle lanes would improve safety",
+          "rightId": "r3",
+          "right": "opening claim"
+        },
+        {
+          "leftId": "l4",
+          "left": "For these reasons, funding is justified",
+          "rightId": "r4",
+          "right": "closing conclusion"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match conclusions with the evidence that justifies them.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Open later",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "workers finish after closing"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Keep a phone option",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "some users lack internet"
+        },
+        {
+          "leftId": "l3",
+          "left": "Evidence",
+          "rightId": "r3",
+          "right": "supports the position"
+        },
+        {
+          "leftId": "l4",
+          "left": "For instance",
+          "rightId": "r4",
+          "right": "introduces an example"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match each concession to the claim it still supports.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Cost is high",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "insulation is worthwhile"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Internet access varies",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "keep a phone option"
+        },
+        {
+          "leftId": "l3",
+          "left": "This alternative route",
+          "rightId": "r3",
+          "right": "the route avoiding the bridge"
+        },
+        {
+          "leftId": "l4",
+          "left": "Even with this limitation",
+          "rightId": "r4",
+          "right": "return to the main claim"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match broad claims with a responsible limitation.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The trial improved access",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "for participants during four weeks"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The scheme is popular",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "among surveyed users"
+        },
+        {
+          "leftId": "l3",
+          "left": "Repeated access complaint",
+          "rightId": "r3",
+          "right": "trial a clearer process"
+        },
+        {
+          "leftId": "l4",
+          "left": "Single anecdote",
+          "rightId": "r4",
+          "right": "investigate further"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match repeated terms to precise alternatives.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "the problem",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "the lack of evening access"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "this change",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "the revised timetable"
+        },
+        {
+          "leftId": "l3",
+          "left": "Nevertheless",
+          "rightId": "r3",
+          "right": "return to the main benefit"
+        },
+        {
+          "leftId": "l4",
+          "left": "For these reasons",
+          "rightId": "r4",
+          "right": "state a conclusion"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match transitions to the move they signal.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Nevertheless",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "return to the main benefit"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For these reasons",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "state a conclusion"
+        },
+        {
+          "leftId": "l3",
+          "left": "Internet access varies",
+          "rightId": "r3",
+          "right": "keep a phone option"
+        },
+        {
+          "leftId": "l4",
+          "left": "The trial improved access",
+          "rightId": "r4",
+          "right": "for participants during four weeks"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match data strength with appropriate reporting language.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Repeated result",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "indicates"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "One comment",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "suggests"
+        },
+        {
+          "leftId": "l3",
+          "left": "Example",
+          "rightId": "r3",
+          "right": "after explanation"
+        },
+        {
+          "leftId": "l4",
+          "left": "This alternative",
+          "rightId": "r4",
+          "right": "a phone access route"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match cohesion problems to the best editing action.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Vague this",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "name the specific noun"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Unlinked example",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "add a reason for its relevance"
+        },
+        {
+          "leftId": "l3",
+          "left": "Nevertheless",
+          "rightId": "r3",
+          "right": "return to the main benefit"
+        },
+        {
+          "leftId": "l4",
+          "left": "For these reasons",
+          "rightId": "r4",
+          "right": "state a conclusion"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match strong evidence to the action it can support.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Repeated access complaint",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "trial a clearer process"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Single anecdote",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "investigate further"
+        },
+        {
+          "leftId": "l3",
+          "left": "Add a raised crossing",
+          "rightId": "r3",
+          "right": "slow cars near school"
+        },
+        {
+          "leftId": "l4",
+          "left": "Fund an evening trial",
+          "rightId": "r4",
+          "right": "limited evening access and strong daytime demand"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match each proposal to the consequence it is intended to produce.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Open later",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "serve workers after six"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Add a raised crossing",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "slow cars near school"
+        },
+        {
+          "leftId": "l3",
+          "left": "Example",
+          "rightId": "r3",
+          "right": "after explanation"
+        },
+        {
+          "leftId": "l4",
+          "left": "This alternative",
+          "rightId": "r4",
+          "right": "a phone access route"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,16 +1677,28 @@
       "prompt": "Match conclusions to their supporting argument chain.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Fund an evening trial",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "limited evening access and strong daytime demand"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Keep a phone option",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "quick online system but uneven internet access"
+        },
+        {
+          "leftId": "l3",
+          "left": "Internet access varies",
+          "rightId": "r3",
+          "right": "keep a phone option"
+        },
+        {
+          "leftId": "l4",
+          "left": "The trial improved access",
+          "rightId": "r4",
+          "right": "for participants during four weeks"
         }
       ],
       "lessonIds": [
@@ -1262,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1292,16 +1752,28 @@
       "prompt": "Match the references that prevent ambiguity.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "This four-week result",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "the pilot improvement"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "This alternative route",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "the route avoiding the bridge"
+        },
+        {
+          "leftId": "l3",
+          "left": "More cycle lanes would improve safety",
+          "rightId": "r3",
+          "right": "opening claim"
+        },
+        {
+          "leftId": "l4",
+          "left": "For these reasons, funding is justified",
+          "rightId": "r4",
+          "right": "closing conclusion"
         }
       ],
       "lessonIds": [
@@ -1317,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1347,16 +1827,28 @@
       "prompt": "Match closing transitions to the final move they introduce.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Even with this limitation",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "return to the main claim"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "For these reasons",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "present the recommendation"
+        },
+        {
+          "leftId": "l3",
+          "left": "Consequently",
+          "rightId": "r3",
+          "right": "shows a consequence"
+        },
+        {
+          "leftId": "l4",
+          "left": "This is important",
+          "rightId": "r4",
+          "right": "This reduction in waiting time matters"
         }
       ],
       "lessonIds": [
@@ -1372,12 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

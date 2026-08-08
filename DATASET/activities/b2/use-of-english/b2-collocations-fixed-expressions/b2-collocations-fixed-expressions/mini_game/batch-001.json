@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "___, the committee approved the proposal.",
+          "prompt": "[gap1], the committee approved the proposal.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Under no ___ may confidential data be copied.",
+          "prompt": "Under no [gap1] may confidential data be copied.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "By no ___ should the password be shared.",
+          "prompt": "By no [gap1] should the password be shared.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The delivery was arranged at short ___.",
+          "prompt": "The delivery was arranged at short [gap1].",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition follows object in object ___ the proposal?",
+          "prompt": "Which preposition follows object in object [gap1] the proposal?",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "There is no point ___ the same complaint again.",
+          "prompt": "There is no point [gap1] the same complaint again.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "She finally came to ___ with the loss of the old shop.",
+          "prompt": "She finally came to [gap1] with the loss of the old shop.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which phrase completes The article draws ___ to a hidden cost?",
+          "prompt": "Which phrase completes The article draws [gap1] to a hidden cost?",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The team must cope ___ a sudden loss of funding.",
+          "prompt": "The team must cope [gap1] a sudden loss of funding.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The residents must cope ___ the disruption during repairs.",
+          "prompt": "The residents must cope [gap1] the disruption during repairs.",
           "options": [
             {
               "id": "d",
@@ -407,6 +407,227 @@
       "tags": [
         "b2",
         "fixed-expressions",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-collocations-fixed-expressions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b2-collocations-fixed-expressions",
+      "subtopic": "b2-collocations-fixed-expressions",
+      "taxonomyNodeIds": [
+        "b2-collocations-fixed-expressions"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The committee reached a conclusion after considering all the evidence. Which phrase fits?",
+          "options": [
+            {
+              "id": "c",
+              "text": "did a conclusion"
+            },
+            {
+              "id": "d",
+              "text": "put a conclusion"
+            },
+            {
+              "id": "a",
+              "text": "drew a conclusion"
+            }
+          ],
+          "explanation": "Draw a conclusion es la colocación formal para llegar a una conclusión."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which expression means after considering the future effects?",
+          "options": [
+            {
+              "id": "a",
+              "text": "in the long run"
+            },
+            {
+              "id": "b",
+              "text": "at short notice"
+            },
+            {
+              "id": "c",
+              "text": "by no means"
+            }
+          ],
+          "explanation": "In the long run se centra en consecuencias futuras."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which phrase means reach a conclusion from evidence?",
+          "options": [
+            {
+              "id": "d",
+              "text": "make up a conclusion"
+            },
+            {
+              "id": "a",
+              "text": "draw a conclusion"
+            },
+            {
+              "id": "b",
+              "text": "take a conclusion"
+            }
+          ],
+          "explanation": "Draw a conclusion es la colocación natural en este sentido."
+        },
+        {
+          "id": "r4",
+          "prompt": "We cannot change the booking at such short [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "time"
+            },
+            {
+              "id": "a",
+              "text": "notice"
+            },
+            {
+              "id": "c",
+              "text": "warning"
+            }
+          ],
+          "explanation": "At short notice es la expresión establecida."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence uses cope correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The town must cope with flooding."
+            },
+            {
+              "id": "c",
+              "text": "The town must cope to flooding."
+            },
+            {
+              "id": "d",
+              "text": "The town must cope for flooding."
+            }
+          ],
+          "explanation": "Cope with introduce la dificultad que se afronta."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which sentence uses there is no point correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "There is no point in waiting."
+            },
+            {
+              "id": "c",
+              "text": "There is no point at waiting."
+            },
+            {
+              "id": "b",
+              "text": "There is no point to wait."
+            }
+          ],
+          "explanation": "La expresión se construye con in + gerundio."
+        },
+        {
+          "id": "r7",
+          "prompt": "There is no point [gap1] the old contract now.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to renew"
+            },
+            {
+              "id": "c",
+              "text": "at renew"
+            },
+            {
+              "id": "a",
+              "text": "in renewing"
+            }
+          ],
+          "explanation": "There is no point in + gerundio es el patrón correcto."
+        },
+        {
+          "id": "r8",
+          "prompt": "It took Ali months to come to [gap1] with the decision.",
+          "options": [
+            {
+              "id": "a",
+              "text": "terms"
+            },
+            {
+              "id": "d",
+              "text": "agreements"
+            },
+            {
+              "id": "b",
+              "text": "conditions"
+            }
+          ],
+          "explanation": "Come to terms with significa aceptar y adaptarse a una situación."
+        }
+      ],
+      "lessonIds": [
+        "b2-collocations-fixed-expressions"
+      ],
+      "tags": [
+        "b2",
+        "fixed-expressions",
+        "collocations",
         "mini-game"
       ],
       "estimatedSeconds": 120,

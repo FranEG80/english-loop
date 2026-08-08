@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "They had a disagreement but eventually ___ up after talking calmly.",
+          "prompt": "They had a disagreement but eventually [gap1] up after talking calmly.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "A supportive friend is someone who usually ___. ",
+          "prompt": "A supportive friend is someone who usually [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "They ___ out over a disagreement about the house.",
+          "prompt": "They [gap1] out over a disagreement about the house.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "We live far apart, but we try to keep in ___. ",
+          "prompt": "We live far apart, but we try to keep in [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A person's brothers and sisters are their ___. ",
+          "prompt": "A person's brothers and sisters are their [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A family with parents and children from previous relationships is a ___ family.",
+          "prompt": "A family with parents and children from previous relationships is a [gap1] family.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "After her parents separated, she became part of a ___ family.",
+          "prompt": "After her parents separated, she became part of a [gap1] family.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I ___ on well with my flatmate's sister.",
+          "prompt": "I [gap1] on well with my flatmate's sister.",
           "options": [
             {
               "id": "c",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "He ___ up to his aunt because she started her own business.",
+          "prompt": "He [gap1] up to his aunt because she started her own business.",
           "options": [
             {
               "id": "d",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Your aunt's son is your ___. ",
+          "prompt": "Your aunt's son is your [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Her parents ___ her up to be independent.",
+          "prompt": "Her parents [gap1] her up to be independent.",
           "options": [
             {
               "id": "c",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "My husband's mother is my ___. ",
+          "prompt": "My husband's mother is my [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A child with no brothers or sisters is an ___ child.",
+          "prompt": "A child with no brothers or sisters is an [gap1] child.",
           "options": [
             {
               "id": "d",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I look ___ my niece on Saturdays while her parents work.",
+          "prompt": "I look [gap1] my niece on Saturdays while her parents work.",
           "options": [
             {
               "id": "a",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "She really ___ up to her grandmother.",
+          "prompt": "She really [gap1] up to her grandmother.",
           "options": [
             {
               "id": "a",
@@ -439,6 +439,226 @@
           {
             "roundId": "r7",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-family-relationships-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-family-relationships",
+      "subtopic": "b1-family-relationships",
+      "taxonomyNodeIds": [
+        "b1-family-relationships"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "My parents were very [gap1] when I changed careers.",
+          "options": [
+            {
+              "id": "a",
+              "text": "supportive"
+            },
+            {
+              "id": "c",
+              "text": "distant"
+            },
+            {
+              "id": "d",
+              "text": "related"
+            }
+          ],
+          "explanation": "Supportive describes people who offer encouragement or practical help."
+        },
+        {
+          "id": "r2",
+          "prompt": "The phrase in-laws refers to relatives connected through your [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "workplace"
+            },
+            {
+              "id": "b",
+              "text": "partner or marriage"
+            },
+            {
+              "id": "a",
+              "text": "school"
+            }
+          ],
+          "explanation": "In-laws are relatives of your partner or relatives connected through marriage."
+        },
+        {
+          "id": "r3",
+          "prompt": "I am very [gap1] to my cousins, so we tell each other everything.",
+          "options": [
+            {
+              "id": "d",
+              "text": "blended"
+            },
+            {
+              "id": "a",
+              "text": "close"
+            },
+            {
+              "id": "b",
+              "text": "related"
+            }
+          ],
+          "explanation": "Be close to someone means have a strong, friendly relationship with them."
+        },
+        {
+          "id": "r4",
+          "prompt": "The opposite of a close-knit family is a family with [gap1] ties.",
+          "options": [
+            {
+              "id": "c",
+              "text": "blended"
+            },
+            {
+              "id": "b",
+              "text": "distant"
+            },
+            {
+              "id": "d",
+              "text": "married"
+            }
+          ],
+          "explanation": "Distant ties are not close or frequent."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence correctly describes admiration rather than care?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I look up to my coach."
+            },
+            {
+              "id": "a",
+              "text": "I look after my coach."
+            },
+            {
+              "id": "c",
+              "text": "I look in touch with my coach."
+            }
+          ],
+          "explanation": "Look up to means admire; look after means care for."
+        },
+        {
+          "id": "r6",
+          "prompt": "After the argument, they decided to [gap1] up.",
+          "options": [
+            {
+              "id": "c",
+              "text": "get"
+            },
+            {
+              "id": "a",
+              "text": "bring"
+            },
+            {
+              "id": "b",
+              "text": "make"
+            }
+          ],
+          "explanation": "Make up means become friendly again after an argument."
+        },
+        {
+          "id": "r7",
+          "prompt": "I really [gap1] on my brother when I need practical help.",
+          "options": [
+            {
+              "id": "b",
+              "text": "rely"
+            },
+            {
+              "id": "a",
+              "text": "look"
+            },
+            {
+              "id": "d",
+              "text": "bring"
+            }
+          ],
+          "explanation": "Rely on someone means trust them to provide help or support."
+        },
+        {
+          "id": "r8",
+          "prompt": "Your mother's brother is your [gap1]. ",
+          "options": [
+            {
+              "id": "b",
+              "text": "cousin"
+            },
+            {
+              "id": "a",
+              "text": "uncle"
+            },
+            {
+              "id": "c",
+              "text": "sibling"
+            }
+          ],
+          "explanation": "Your mother's brother is your uncle."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-family-relationships"
+      ],
+      "tags": [
+        "b1",
+        "support",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
           },
           {
             "roundId": "r8",

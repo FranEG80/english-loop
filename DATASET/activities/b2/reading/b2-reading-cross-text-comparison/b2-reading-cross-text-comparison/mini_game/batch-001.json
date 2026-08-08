@@ -467,6 +467,236 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-cross-text-comparison-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-cross-text-comparison",
+      "subtopic": "b2-reading-cross-text-comparison",
+      "taxonomyNodeIds": [
+        "b2-reading-cross-text-comparison"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What is the fairest summary of the student mentoring project?",
+          "context": "The student mentoring project has been described positively because of practical advice. However, readers also mention matching process; one review calls the overall experience useful guidance but slow allocation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It is recommended only for experts."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            },
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r2",
+          "prompt": "What is the fairest summary of the shared office trial?",
+          "context": "The shared office trial has been described positively because of friendly atmosphere. However, readers also mention phone calls; one review calls the overall experience good teamwork but noisy booths.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            },
+            {
+              "id": "d",
+              "text": "It is recommended only for experts."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r3",
+          "prompt": "What is the fairest summary of the museum audio guide?",
+          "context": "The museum audio guide has been described positively because of clear explanations. However, readers also mention battery life; one review calls the overall experience useful history but short battery.",
+          "options": [
+            {
+              "id": "c",
+              "text": "It failed because nobody used it."
+            },
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r4",
+          "prompt": "What is the fairest summary of the remote-work survey?",
+          "context": "The remote-work survey has been described positively because of flexible schedules. However, readers also mention isolation; one review calls the overall experience convenient routines but less social contact.",
+          "options": [
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            },
+            {
+              "id": "d",
+              "text": "It is recommended only for experts."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r5",
+          "prompt": "What is the fairest summary of the reusable-cup scheme?",
+          "context": "The reusable-cup scheme has been described positively because of less waste. However, readers also mention washing arrangements; one review calls the overall experience promising reduction but extra cleaning.",
+          "options": [
+            {
+              "id": "c",
+              "text": "It failed because nobody used it."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            },
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r6",
+          "prompt": "What is the fairest summary of the park lighting plan?",
+          "context": "The park lighting plan has been described positively because of safer paths. However, readers also mention energy use; one review calls the overall experience brighter routes but higher power demand.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            },
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            },
+            {
+              "id": "d",
+              "text": "It is recommended only for experts."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r7",
+          "prompt": "What is the fairest summary of the river clean-up?",
+          "context": "The river clean-up has been described positively because of visible results. However, readers also mention equipment; one review calls the overall experience less litter but borrowed tools.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It is recommended only for experts."
+            },
+            {
+              "id": "b",
+              "text": "It is a complete success with no concerns."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        },
+        {
+          "id": "r8",
+          "prompt": "What is the fairest summary of the affordable art class?",
+          "context": "The affordable art class has been described positively because of patient tutor. However, readers also mention material costs; one review calls the overall experience supportive teaching but extra supplies.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It is recommended only for experts."
+            },
+            {
+              "id": "a",
+              "text": "It has a clear benefit but also a specific limitation."
+            },
+            {
+              "id": "c",
+              "text": "It failed because nobody used it."
+            }
+          ],
+          "explanation": "The first option keeps both the benefit and the limitation expressed in the passage."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-cross-text-comparison"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "reading-comprehension",
+        "gist",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

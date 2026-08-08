@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I usually ___ at seven on weekdays.",
+          "prompt": "I usually [gap1] at seven on weekdays.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Could you ___ the recipe before you start cooking?",
+          "prompt": "Could you [gap1] the recipe before you start cooking?",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The washing machine has ___, so I called a technician.",
+          "prompt": "The washing machine has [gap1], so I called a technician.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Please ___ your coat before you go outside.",
+          "prompt": "Please [gap1] your coat before you go outside.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Please ___ the rubbish before the guests arrive.",
+          "prompt": "Please [gap1] the rubbish before the guests arrive.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Please ___ the heater when you leave the room.",
+          "prompt": "Please [gap1] the heater when you leave the room.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The pharmacist told me to ___ the instructions carefully.",
+          "prompt": "The pharmacist told me to [gap1] the instructions carefully.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "He promised to ___ the problem with the noisy tap.",
+          "prompt": "He promised to [gap1] the problem with the noisy tap.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Our neighbour will ___ the cat while we are away.",
+          "prompt": "Our neighbour will [gap1] the cat while we are away.",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Could you ___ the television before bed?",
+          "prompt": "Could you [gap1] the television before bed?",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Mum asked me to ___ my toys before dinner.",
+          "prompt": "Mum asked me to [gap1] my toys before dinner.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Can you ___ the instructions once more?",
+          "prompt": "Can you [gap1] the instructions once more?",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "She ___ a useful shortcut while reading the manual.",
+          "prompt": "She [gap1] a useful shortcut while reading the manual.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The children were asked to ___ their voices in the library.",
+          "prompt": "The children were asked to [gap1] their voices in the library.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She ___ her shoes as soon as she got home.",
+          "prompt": "She [gap1] her shoes as soon as she got home.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Please ___ the light; it is too bright.",
+          "prompt": "Please [gap1] the light; it is too bright.",
           "options": [
             {
               "id": "c",
@@ -408,6 +408,227 @@
         "b1",
         "phrasal-verbs",
         "care",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-phrasal-verbs-everyday-actions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "phrasal-verbs",
+      "topic": "b1-phrasal-everyday-actions",
+      "subtopic": "b1-phrasal-everyday-actions",
+      "taxonomyNodeIds": [
+        "b1-phrasal-everyday-actions"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The baby finally [gap1] after the noise stopped.",
+          "options": [
+            {
+              "id": "a",
+              "text": "calmed down"
+            },
+            {
+              "id": "c",
+              "text": "came across"
+            },
+            {
+              "id": "d",
+              "text": "cut down"
+            }
+          ],
+          "explanation": "Calm down means become less upset."
+        },
+        {
+          "id": "r2",
+          "prompt": "I need to [gap1] this form before Friday.",
+          "options": [
+            {
+              "id": "a",
+              "text": "fill in"
+            },
+            {
+              "id": "c",
+              "text": "fill through"
+            },
+            {
+              "id": "b",
+              "text": "fill over"
+            }
+          ],
+          "explanation": "Fill in means complete a form."
+        },
+        {
+          "id": "r3",
+          "prompt": "We have [gap1] coffee, so I will buy some.",
+          "options": [
+            {
+              "id": "a",
+              "text": "run out of"
+            },
+            {
+              "id": "d",
+              "text": "run by"
+            },
+            {
+              "id": "b",
+              "text": "run into"
+            }
+          ],
+          "explanation": "Run out of means have no more of something."
+        },
+        {
+          "id": "r4",
+          "prompt": "After the interruption, we decided to [gap1] with the meeting.",
+          "options": [
+            {
+              "id": "a",
+              "text": "carry on"
+            },
+            {
+              "id": "d",
+              "text": "carry over"
+            },
+            {
+              "id": "b",
+              "text": "carry out"
+            }
+          ],
+          "explanation": "Carry on means continue."
+        },
+        {
+          "id": "r5",
+          "prompt": "I wrote the appointment time down so I would not [gap1] it with another date.",
+          "options": [
+            {
+              "id": "b",
+              "text": "give up"
+            },
+            {
+              "id": "d",
+              "text": "break down"
+            },
+            {
+              "id": "a",
+              "text": "mix up"
+            }
+          ],
+          "explanation": "Mix up means confuse two things; write down helps prevent that."
+        },
+        {
+          "id": "r6",
+          "prompt": "The nurse asked me to [gap1] with the medicine schedule.",
+          "options": [
+            {
+              "id": "b",
+              "text": "take after"
+            },
+            {
+              "id": "a",
+              "text": "keep up"
+            },
+            {
+              "id": "d",
+              "text": "take over"
+            }
+          ],
+          "explanation": "Keep up with means continue at the required pace."
+        },
+        {
+          "id": "r7",
+          "prompt": "Can you [gap1] my parcel from the shop after work?",
+          "options": [
+            {
+              "id": "c",
+              "text": "pick over"
+            },
+            {
+              "id": "b",
+              "text": "pick on"
+            },
+            {
+              "id": "a",
+              "text": "pick up"
+            }
+          ],
+          "explanation": "Pick up means collect something."
+        },
+        {
+          "id": "r8",
+          "prompt": "Could you [gap1] the message while I find a pen?",
+          "options": [
+            {
+              "id": "d",
+              "text": "write into"
+            },
+            {
+              "id": "a",
+              "text": "write down"
+            },
+            {
+              "id": "c",
+              "text": "write over"
+            }
+          ],
+          "explanation": "Write down means record in writing."
+        }
+      ],
+      "lessonIds": [
+        "b1-phrasal-verbs-everyday-actions"
+      ],
+      "tags": [
+        "b1",
+        "phrasal-verbs",
+        "feelings",
         "mini-game"
       ],
       "estimatedSeconds": 120,

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ for ages.",
+          "prompt": "I [gap1] for ages.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The bus ___ before we reached the stop.",
+          "prompt": "The bus [gap1] before we reached the stop.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I ___ the fence.",
+          "prompt": "I [gap1] the fence.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I ___ that song before.",
+          "prompt": "I [gap1] that song before.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I ___ to accept.",
+          "prompt": "I [gap1] to accept.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ abroad for a decade.",
+          "prompt": "I [gap1] abroad for a decade.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I ___ three chapters.",
+          "prompt": "I [gap1] three chapters.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I ___ the proposal.",
+          "prompt": "I [gap1] the proposal.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "She ___ for hours before the exam.",
+          "prompt": "She [gap1] for hours before the exam.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We ___ the gallery.",
+          "prompt": "We [gap1] the gallery.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "They ___ at the gate for ages.",
+          "prompt": "They [gap1] at the gate for ages.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "She ___ the assignment.",
+          "prompt": "She [gap1] the assignment.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I ___ the gate all morning.",
+          "prompt": "I [gap1] the gate all morning.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ the gate.",
+          "prompt": "I [gap1] the gate.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She ___ the windows.",
+          "prompt": "She [gap1] the windows.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "His hands were dirty; he ___ the engine.",
+          "prompt": "His hands were dirty; he [gap1] the engine.",
           "options": [
             {
               "id": "d",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "El efecto visible usa el continuo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-past-perfect-simple-continuous"
+      ],
+      "tags": [
+        "b2",
+        "past-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-past-perfect-simple-continuous-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-perfect-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "past-perfect-simple-vs-continuous"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "She [gap1] at the firm since 2019.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had employed"
+            },
+            {
+              "id": "c",
+              "text": "employed"
+            },
+            {
+              "id": "a",
+              "text": "had been employed"
+            }
+          ],
+          "explanation": "La duración con «since» usa el continuo."
+        },
+        {
+          "id": "r2",
+          "prompt": "I [gap1] the fence all afternoon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had been mending"
+            },
+            {
+              "id": "d",
+              "text": "was mending"
+            },
+            {
+              "id": "b",
+              "text": "had mended"
+            }
+          ],
+          "explanation": "La actividad en curso usa el continuo."
+        },
+        {
+          "id": "r3",
+          "prompt": "You [gap1] a lot lately.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had trained"
+            },
+            {
+              "id": "c",
+              "text": "trained"
+            },
+            {
+              "id": "a",
+              "text": "had been training"
+            }
+          ],
+          "explanation": "El efecto visible usa el continuo."
+        },
+        {
+          "id": "r4",
+          "prompt": "I [gap1] the entire novel.",
+          "options": [
+            {
+              "id": "c",
+              "text": "devoured"
+            },
+            {
+              "id": "d",
+              "text": "was devouring"
+            },
+            {
+              "id": "a",
+              "text": "had devoured"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
+        },
+        {
+          "id": "r5",
+          "prompt": "I [gap1] that house for years.",
+          "options": [
+            {
+              "id": "d",
+              "text": "was possessing"
+            },
+            {
+              "id": "a",
+              "text": "had possessed"
+            },
+            {
+              "id": "b",
+              "text": "had been possessing"
+            }
+          ],
+          "explanation": "«possess» es un verbo de estado."
+        },
+        {
+          "id": "r6",
+          "prompt": "He [gap1] the letter by noon.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had been posting"
+            },
+            {
+              "id": "a",
+              "text": "had posted"
+            },
+            {
+              "id": "d",
+              "text": "was posting"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
+        },
+        {
+          "id": "r7",
+          "prompt": "They [gap1] since dawn.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had queued"
+            },
+            {
+              "id": "c",
+              "text": "queued"
+            },
+            {
+              "id": "a",
+              "text": "had been queuing"
+            }
+          ],
+          "explanation": "La duración usa el continuo."
+        },
+        {
+          "id": "r8",
+          "prompt": "He [gap1] two essays.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had drafted"
+            },
+            {
+              "id": "d",
+              "text": "was drafting"
+            },
+            {
+              "id": "c",
+              "text": "drafted"
+            }
+          ],
+          "explanation": "La cantidad completada usa el simple."
         }
       ],
       "lessonIds": [

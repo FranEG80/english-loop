@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Passengers must ___ before boarding the ferry.",
+          "prompt": "Passengers must [gap1] before boarding the ferry.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The airline lost the case, so Rita had to ___.",
+          "prompt": "The airline lost the case, so Rita had to [gap1].",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "They arrived late and managed to ___.",
+          "prompt": "They arrived late and managed to [gap1].",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Sofia had to ___ because the first candidate withdrew.",
+          "prompt": "Sofia had to [gap1] because the first candidate withdrew.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The trainees are beginning to ___ with their new software.",
+          "prompt": "The trainees are beginning to [gap1] with their new software.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "She decided to ___ at the travel agency.",
+          "prompt": "She decided to [gap1] at the travel agency.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I will ___ online before prices rise.",
+          "prompt": "I will [gap1] online before prices rise.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Please ___ before you start the next one.",
+          "prompt": "Please [gap1] before you start the next one.",
           "options": [
             {
               "id": "d",
@@ -251,7 +251,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The consultant will ___ on Monday morning.",
+          "prompt": "The consultant will [gap1] on Monday morning.",
           "options": [
             {
               "id": "b",
@@ -270,7 +270,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Our team will ___ with the supplier on Thursday.",
+          "prompt": "Our team will [gap1] with the supplier on Thursday.",
           "options": [
             {
               "id": "b",
@@ -289,7 +289,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Our department must ___ before the budget is approved.",
+          "prompt": "Our department must [gap1] before the budget is approved.",
           "options": [
             {
               "id": "a",
@@ -308,7 +308,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Alba had to ___ because the meeting overran badly.",
+          "prompt": "Alba had to [gap1] because the meeting overran badly.",
           "options": [
             {
               "id": "a",
@@ -327,7 +327,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Julia decided to ___ after fifteen years at the same firm.",
+          "prompt": "Julia decided to [gap1] after fifteen years at the same firm.",
           "options": [
             {
               "id": "d",
@@ -346,7 +346,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The train was late, so Pablo ___ for the meeting.",
+          "prompt": "The train was late, so Pablo [gap1] for the meeting.",
           "options": [
             {
               "id": "b",
@@ -365,7 +365,7 @@
         },
         {
           "id": "r7",
-          "prompt": "You should ___ online at least a day before the flight.",
+          "prompt": "You should [gap1] online at least a day before the flight.",
           "options": [
             {
               "id": "a",
@@ -384,7 +384,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Elena had to ___ because the roadworks blocked the street.",
+          "prompt": "Elena had to [gap1] because the roadworks blocked the street.",
           "options": [
             {
               "id": "d",
@@ -435,6 +435,228 @@
           {
             "roundId": "r5",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-collocations-travel-work-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "collocations",
+      "topic": "b1-collocations-travel-work",
+      "subtopic": "b1-collocations-travel-work",
+      "taxonomyNodeIds": [
+        "b1-collocations-travel-work"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The receptionist asked us to [gap1] in the register.",
+          "options": [
+            {
+              "id": "c",
+              "text": "sign our names"
+            },
+            {
+              "id": "b",
+              "text": "do our names"
+            },
+            {
+              "id": "a",
+              "text": "make our names"
+            }
+          ],
+          "explanation": "«Sign your name» is the natural verb for writing a signature."
+        },
+        {
+          "id": "r2",
+          "prompt": "The staff had to [gap1] during the busy season.",
+          "options": [
+            {
+              "id": "c",
+              "text": "check in"
+            },
+            {
+              "id": "b",
+              "text": "change trains"
+            },
+            {
+              "id": "a",
+              "text": "work overtime"
+            }
+          ],
+          "explanation": "The natural collocation is “work overtime”."
+        },
+        {
+          "id": "r3",
+          "prompt": "The hotel will [gap1] if you cancel less than a day before.",
+          "options": [
+            {
+              "id": "a",
+              "text": "charge a fee"
+            },
+            {
+              "id": "d",
+              "text": "take a fee"
+            },
+            {
+              "id": "b",
+              "text": "make a fee"
+            }
+          ],
+          "explanation": "«Charge a fee» is the standard collocation for billing extra."
+        },
+        {
+          "id": "r4",
+          "prompt": "I plan to [gap1] after the conference.",
+          "options": [
+            {
+              "id": "b",
+              "text": "catch a train"
+            },
+            {
+              "id": "a",
+              "text": "take a day off"
+            },
+            {
+              "id": "d",
+              "text": "meet a deadline"
+            }
+          ],
+          "explanation": "The natural collocation is “take a day off”."
+        },
+        {
+          "id": "r5",
+          "prompt": "We have to [gap1] of the hotel by eleven.",
+          "options": [
+            {
+              "id": "b",
+              "text": "solve a problem"
+            },
+            {
+              "id": "a",
+              "text": "check out"
+            },
+            {
+              "id": "d",
+              "text": "gain experience"
+            }
+          ],
+          "explanation": "The natural collocation is “check out”."
+        },
+        {
+          "id": "r6",
+          "prompt": "If you [gap1] carefully, you will find the office.",
+          "options": [
+            {
+              "id": "d",
+              "text": "take a day off"
+            },
+            {
+              "id": "a",
+              "text": "follow directions"
+            },
+            {
+              "id": "c",
+              "text": "make a decision"
+            }
+          ],
+          "explanation": "The natural collocation is “follow directions”."
+        },
+        {
+          "id": "r7",
+          "prompt": "Nadia will [gap1] about the new project.",
+          "options": [
+            {
+              "id": "a",
+              "text": "give a presentation"
+            },
+            {
+              "id": "d",
+              "text": "check in"
+            },
+            {
+              "id": "c",
+              "text": "change trains"
+            }
+          ],
+          "explanation": "The natural collocation is “give a presentation”."
+        },
+        {
+          "id": "r8",
+          "prompt": "Passengers should [gap1] two hours before the flight.",
+          "options": [
+            {
+              "id": "a",
+              "text": "check in"
+            },
+            {
+              "id": "d",
+              "text": "apply for a job"
+            },
+            {
+              "id": "b",
+              "text": "take responsibility"
+            }
+          ],
+          "explanation": "The natural collocation is “check in”."
+        }
+      ],
+      "lessonIds": [
+        "b1-collocations-travel-work"
+      ],
+      "tags": [
+        "b1",
+        "collocations",
+        "collocation-choice",
+        "travel-work",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r6",

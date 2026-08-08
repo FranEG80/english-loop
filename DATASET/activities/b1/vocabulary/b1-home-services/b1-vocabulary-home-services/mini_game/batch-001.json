@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The washing machine is an example of an ___. ",
+          "prompt": "The washing machine is an example of an [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Furniture means items such as chairs, tables and ___. ",
+          "prompt": "Furniture means items such as chairs, tables and [gap1]. ",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Call an ___ if the lights and sockets are unsafe.",
+          "prompt": "Call an [gap1] if the lights and sockets are unsafe.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "You cook meals in the ___. ",
+          "prompt": "You cook meals in the [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A person who repairs water pipes is a ___. ",
+          "prompt": "A person who repairs water pipes is a [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The person who owns and rents out a flat is the ___. ",
+          "prompt": "The person who owns and rents out a flat is the [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "A place outside a flat where you can stand is a ___. ",
+          "prompt": "A place outside a flat where you can stand is a [gap1]. ",
           "options": [
             {
               "id": "b",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Money paid regularly to live in a rented home is the ___. ",
+          "prompt": "Money paid regularly to live in a rented home is the [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The sink is full of water because it is ___. ",
+          "prompt": "The sink is full of water because it is [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "You normally wash your hands in a ___. ",
+          "prompt": "You normally wash your hands in a [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -427,6 +427,226 @@
           {
             "roundId": "r4",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-home-services-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-home-services",
+      "subtopic": "b1-home-services",
+      "taxonomyNodeIds": [
+        "b1-home-services"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "To tell a landlord about a fault is to [gap1] a problem.",
+          "options": [
+            {
+              "id": "a",
+              "text": "report"
+            },
+            {
+              "id": "c",
+              "text": "rent"
+            },
+            {
+              "id": "d",
+              "text": "overflow"
+            }
+          ],
+          "explanation": "Report a problem means inform the responsible person about it."
+        },
+        {
+          "id": "r2",
+          "prompt": "Water is coming through the ceiling. There is a [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "leak"
+            },
+            {
+              "id": "c",
+              "text": "notice"
+            },
+            {
+              "id": "d",
+              "text": "tenant"
+            }
+          ],
+          "explanation": "A leak is an unwanted flow of liquid from a pipe, roof or container."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence describes an appliance that no longer works?",
+          "options": [
+            {
+              "id": "c",
+              "text": "The dishwasher pays rent."
+            },
+            {
+              "id": "d",
+              "text": "The dishwasher is close-knit."
+            },
+            {
+              "id": "a",
+              "text": "The dishwasher has broken down."
+            }
+          ],
+          "explanation": "Break down is used when a machine stops working."
+        },
+        {
+          "id": "r4",
+          "prompt": "A sofa is usually found in the [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "attic"
+            },
+            {
+              "id": "b",
+              "text": "living room"
+            },
+            {
+              "id": "c",
+              "text": "garage"
+            }
+          ],
+          "explanation": "A sofa is common furniture in a living room."
+        },
+        {
+          "id": "r5",
+          "prompt": "The toilet is overflowing, so water is [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "furnishing the room"
+            },
+            {
+              "id": "a",
+              "text": "running over the edge"
+            },
+            {
+              "id": "b",
+              "text": "paying the rent"
+            }
+          ],
+          "explanation": "Overflowing means a liquid is spilling over the top or edge of a container."
+        },
+        {
+          "id": "r6",
+          "prompt": "If you plan to leave a rented home, you may need to give [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "notice"
+            },
+            {
+              "id": "d",
+              "text": "stairs"
+            },
+            {
+              "id": "c",
+              "text": "water"
+            }
+          ],
+          "explanation": "Give notice means formally tell a landlord that you will leave."
+        },
+        {
+          "id": "r7",
+          "prompt": "You keep coats in a [gap1]. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "fuse"
+            },
+            {
+              "id": "b",
+              "text": "tap"
+            },
+            {
+              "id": "a",
+              "text": "wardrobe"
+            }
+          ],
+          "explanation": "A wardrobe is a piece of furniture for storing clothes."
+        },
+        {
+          "id": "r8",
+          "prompt": "A tenant normally pays a [gap1] before moving into a rented flat.",
+          "options": [
+            {
+              "id": "d",
+              "text": "balcony"
+            },
+            {
+              "id": "c",
+              "text": "repair"
+            },
+            {
+              "id": "a",
+              "text": "deposit"
+            }
+          ],
+          "explanation": "A deposit is money held as security at the start of a tenancy."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-home-services"
+      ],
+      "tags": [
+        "b1",
+        "services",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
           },
           {
             "roundId": "r5",

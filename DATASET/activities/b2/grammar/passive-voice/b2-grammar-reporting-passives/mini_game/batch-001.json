@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The survey results ___ reliable because the sample was small.",
+          "prompt": "The survey results [gap1] reliable because the sample was small.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The emergency shelter is expected ___ before nightfall.",
+          "prompt": "The emergency shelter is expected [gap1] before nightfall.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ that the island has no permanent residents.",
+          "prompt": "[gap1] that the island has no permanent residents.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The figures are not thought ___ informal workers.",
+          "prompt": "The figures are not thought [gap1] informal workers.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The manuscript is believed ___ in the monastery in 1420.",
+          "prompt": "The manuscript is believed [gap1] in the monastery in 1420.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The witness is reported ___ the country before the trial.",
+          "prompt": "The witness is reported [gap1] the country before the trial.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "___ that the library will reopen on Monday.",
+          "prompt": "[gap1] that the library will reopen on Monday.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The new tram line is expected ___ by spring.",
+          "prompt": "The new tram line is expected [gap1] by spring.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The archaeologists are believed ___ the sealed chamber.",
+          "prompt": "The archaeologists are believed [gap1] the sealed chamber.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The bridge is said ___ during last winter's flood.",
+          "prompt": "The bridge is said [gap1] during last winter's flood.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The vaccine is believed ___ effective against the new strain.",
+          "prompt": "The vaccine is believed [gap1] effective against the new strain.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The rare coins are thought ___ from a shipwreck.",
+          "prompt": "The rare coins are thought [gap1] from a shipwreck.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "___ that the river had risen by two metres overnight.",
+          "prompt": "[gap1] that the river had risen by two metres overnight.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "___ that several rural clinics lack specialist staff.",
+          "prompt": "[gap1] that several rural clinics lack specialist staff.",
           "options": [
             {
               "id": "b",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-passives-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "reporting-passives",
+      "taxonomyNodeIds": [
+        "reporting-passives"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The author is believed [gap1] in Lisbon for several years.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to have lived"
+            },
+            {
+              "id": "a",
+              "text": "to live"
+            },
+            {
+              "id": "d",
+              "text": "that lived"
+            }
+          ],
+          "explanation": "To have lived presenta una residencia anterior al momento de la creencia."
+        },
+        {
+          "id": "r2",
+          "prompt": "People believe that the files were destroyed in the fire.",
+          "options": [
+            {
+              "id": "d",
+              "text": "It believes the files to be destroyed."
+            },
+            {
+              "id": "a",
+              "text": "The files are believed to destroy the fire."
+            },
+            {
+              "id": "c",
+              "text": "The files are believed to have been destroyed in the fire."
+            }
+          ],
+          "explanation": "La destrucción es anterior y pasiva: are believed to have been destroyed."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1] that the missing sculpture was found in a private collection.",
+          "options": [
+            {
+              "id": "c",
+              "text": "It believed"
+            },
+            {
+              "id": "d",
+              "text": "The curator believes"
+            },
+            {
+              "id": "b",
+              "text": "It is believed"
+            }
+          ],
+          "explanation": "It is believed that introduce una creencia sin destacar al informante."
+        },
+        {
+          "id": "r4",
+          "prompt": "The painting is thought [gap1] a genuine Turner.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to be"
+            },
+            {
+              "id": "d",
+              "text": "to have been"
+            },
+            {
+              "id": "b",
+              "text": "that be"
+            }
+          ],
+          "explanation": "To be presenta una creencia sobre el estado o la identidad actual."
+        },
+        {
+          "id": "r5",
+          "prompt": "The research vessel is said [gap1] towards Iceland.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to sail"
+            },
+            {
+              "id": "b",
+              "text": "to be sailing"
+            },
+            {
+              "id": "c",
+              "text": "that it sails"
+            }
+          ],
+          "explanation": "To be sailing presenta una acción en curso en el momento del informe."
+        },
+        {
+          "id": "r6",
+          "prompt": "The coastal path is reported [gap1] after the storm.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been closed"
+            },
+            {
+              "id": "a",
+              "text": "to have closed"
+            },
+            {
+              "id": "d",
+              "text": "being close"
+            }
+          ],
+          "explanation": "To have been closed expresa una acción pasiva anterior al informe."
+        },
+        {
+          "id": "r7",
+          "prompt": "People expected the committee to approve the plan.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The committee was expected to be approved the plan."
+            },
+            {
+              "id": "a",
+              "text": "The plan was expected to be approved by the committee."
+            },
+            {
+              "id": "b",
+              "text": "The plan expected to approve the committee."
+            }
+          ],
+          "explanation": "El plan pasa a sujeto y conserva la pasiva del infinitivo: to be approved."
+        },
+        {
+          "id": "r8",
+          "prompt": "The old bridge is believed [gap1] safe for pedestrians.",
+          "options": [
+            {
+              "id": "a",
+              "text": "that be"
+            },
+            {
+              "id": "c",
+              "text": "being"
+            },
+            {
+              "id": "b",
+              "text": "to be"
+            }
+          ],
+          "explanation": "La estructura personal lleva is believed to be + adjetivo."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-passives"
+      ],
+      "tags": [
+        "b2",
+        "passive-voice",
+        "past-state",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
           }
         ]
       },

@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "“Don't touch the switch,” she told me. She told me ___.",
+          "prompt": "“Don't touch the switch,” she told me. She told me [gap1].",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "“Wait outside,” the guard said to us. The guard ___ outside.",
+          "prompt": "“Wait outside,” the guard said to us. The guard [gap1] outside.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "“Is the shop open?” He asked ___ the shop was open.",
+          "prompt": "“Is the shop open?” He asked [gap1] the shop was open.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "“Please help me,” Maya said to Leo. Maya ___.",
+          "prompt": "“Please help me,” Maya said to Leo. Maya [gap1].",
           "options": [
             {
               "id": "a",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "reported-question",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-reported-questions-commands-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reported-questions-commands",
+      "taxonomyNodeIds": [
+        "reported-questions-commands"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "First Ana said, “Can you drive?” Then she said, “Could you drive me home, please?”",
+          "options": [
+            {
+              "id": "c",
+              "text": "Ana told me whether I drove, then asked me if to drive her home."
+            },
+            {
+              "id": "a",
+              "text": "Ana asked me if I could drive, then asked me to drive her home."
+            },
+            {
+              "id": "b",
+              "text": "Ana asked me to drive, then asked if I could drive her home."
+            }
+          ],
+          "explanation": "La primera frase pregunta capacidad; la segunda solicita una acción."
+        },
+        {
+          "id": "r2",
+          "prompt": "“Why is the gate locked?” Nina asked.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Nina asked why was the gate locked."
+            },
+            {
+              "id": "a",
+              "text": "Nina asked why the gate was locked."
+            },
+            {
+              "id": "d",
+              "text": "Nina told why the gate is locked."
+            }
+          ],
+          "explanation": "Se conserva «why», se usa orden afirmativo y se aplica backshift."
+        },
+        {
+          "id": "r3",
+          "prompt": "“Where did you put these keys?” Amir asked Lena.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Amir asked Lena where did she put these keys."
+            },
+            {
+              "id": "d",
+              "text": "Amir asked if where Lena had put this keys."
+            },
+            {
+              "id": "a",
+              "text": "Amir asked Lena where she had put those keys."
+            }
+          ],
+          "explanation": "Se eliminan «did» e inversión y cambian pronombre, tiempo y demostrativo."
+        },
+        {
+          "id": "r4",
+          "prompt": "“Will you be here tomorrow?” Nina asked Omar.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nina asked Omar whether he would be there the next day."
+            },
+            {
+              "id": "b",
+              "text": "Nina asked Omar will he be here tomorrow."
+            },
+            {
+              "id": "d",
+              "text": "Nina asked whether would Omar be here the day before."
+            }
+          ],
+          "explanation": "Cambian orden, «will», pronombre, lugar y tiempo."
+        },
+        {
+          "id": "r5",
+          "prompt": "The guide said, “Stay together, and don't cross the rope.”",
+          "options": [
+            {
+              "id": "d",
+              "text": "The guide said us to stay and not cross the rope."
+            },
+            {
+              "id": "c",
+              "text": "The guide told to us stay together and don't crossing the rope."
+            },
+            {
+              "id": "a",
+              "text": "The guide told us to stay together and not to cross the rope."
+            }
+          ],
+          "explanation": "Las instrucciones afirmativa y negativa comparten «told us»."
+        },
+        {
+          "id": "r6",
+          "prompt": "“Please don't mention my address,” Maya said to me.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Maya said me not mention her address."
+            },
+            {
+              "id": "a",
+              "text": "Maya asked me not to mention her address."
+            },
+            {
+              "id": "b",
+              "text": "Maya told me if I didn't mention my address."
+            }
+          ],
+          "explanation": "La petición negativa usa «asked me not to» y cambia el posesivo."
+        },
+        {
+          "id": "r7",
+          "prompt": "“Where is the station?” She asked [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "where was the station"
+            },
+            {
+              "id": "a",
+              "text": "where the station was"
+            },
+            {
+              "id": "c",
+              "text": "where the station is?"
+            }
+          ],
+          "explanation": "La pregunta reportada usa orden afirmativo."
+        },
+        {
+          "id": "r8",
+          "prompt": "“Why haven't you sent me the revised figures?” Nora asked Sam.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Nora asked Sam why hadn't he sent me the revised figures."
+            },
+            {
+              "id": "a",
+              "text": "Nora asked Sam why he hadn't sent her the revised figures."
+            },
+            {
+              "id": "d",
+              "text": "Nora asked if why Sam didn't sent her the figures."
+            }
+          ],
+          "explanation": "Se usa orden afirmativo, past perfect y pronombres adaptados."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-reported-questions-commands"
+      ],
+      "tags": [
+        "b1",
+        "meaning-contrast",
         "single-choice",
         "mini-game"
       ],

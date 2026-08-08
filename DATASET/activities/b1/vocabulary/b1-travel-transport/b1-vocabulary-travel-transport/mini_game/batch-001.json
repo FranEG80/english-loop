@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "After the flight, we had to collect our ___.",
+          "prompt": "After the flight, we had to collect our [gap1].",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "You show your passport at the airport ___ before boarding.",
+          "prompt": "You show your passport at the airport [gap1] before boarding.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A trip from one place to another is a ___.",
+          "prompt": "A trip from one place to another is a [gap1].",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The train arrives ___ the station at 8:15.",
+          "prompt": "The train arrives [gap1] the station at 8:15.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "We missed our ___ because the first train was late.",
+          "prompt": "We missed our [gap1] because the first train was late.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "We travelled ___ train because it was comfortable.",
+          "prompt": "We travelled [gap1] train because it was comfortable.",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "You go through customs after you ___ internationally.",
+          "prompt": "You go through customs after you [gap1] internationally.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A visit to several places with a guide is a ___.",
+          "prompt": "A visit to several places with a guide is a [gap1].",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Passengers wait for a train on a ___.",
+          "prompt": "Passengers wait for a train on a [gap1].",
           "options": [
             {
               "id": "d",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Baggage allowance es el peso o cantidad permitida de equipaje."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-travel-transport"
+      ],
+      "tags": [
+        "b1",
+        "travel-transport",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-travel-transport-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-travel-transport",
+      "subtopic": "b1-travel-transport",
+      "taxonomyNodeIds": [
+        "b1-travel-transport"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which phrase means a ticket for only one direction?",
+          "options": [
+            {
+              "id": "c",
+              "text": "connecting ticket"
+            },
+            {
+              "id": "a",
+              "text": "single ticket"
+            },
+            {
+              "id": "b",
+              "text": "return ticket"
+            }
+          ],
+          "explanation": "A single ticket no incluye el viaje de vuelta."
+        },
+        {
+          "id": "r2",
+          "prompt": "Where would you normally go through customs?",
+          "options": [
+            {
+              "id": "a",
+              "text": "at an international airport"
+            },
+            {
+              "id": "b",
+              "text": "on a train platform"
+            },
+            {
+              "id": "c",
+              "text": "at a bus stop"
+            }
+          ],
+          "explanation": "Customs controla la entrada y salida internacional de bienes y personas."
+        },
+        {
+          "id": "r3",
+          "prompt": "A small bag you take into a plane is [gap1] luggage.",
+          "options": [
+            {
+              "id": "a",
+              "text": "hand"
+            },
+            {
+              "id": "b",
+              "text": "return"
+            },
+            {
+              "id": "d",
+              "text": "customs"
+            }
+          ],
+          "explanation": "Hand luggage es el equipaje que llevas contigo en cabina."
+        },
+        {
+          "id": "r4",
+          "prompt": "I booked a return [gap1] to Manchester.",
+          "options": [
+            {
+              "id": "a",
+              "text": "ticket"
+            },
+            {
+              "id": "c",
+              "text": "gate"
+            },
+            {
+              "id": "b",
+              "text": "platform"
+            }
+          ],
+          "explanation": "A return ticket incluye la ida y la vuelta."
+        },
+        {
+          "id": "r5",
+          "prompt": "Choose the correct preposition for travelling by coach.",
+          "options": [
+            {
+              "id": "a",
+              "text": "We travelled by coach."
+            },
+            {
+              "id": "d",
+              "text": "We travelled from coach."
+            },
+            {
+              "id": "b",
+              "text": "We travelled with coach."
+            }
+          ],
+          "explanation": "By + medio de transporte indica cómo viajamos."
+        },
+        {
+          "id": "r6",
+          "prompt": "The plane was [gap1] by two hours.",
+          "options": [
+            {
+              "id": "a",
+              "text": "delayed"
+            },
+            {
+              "id": "d",
+              "text": "guided"
+            },
+            {
+              "id": "c",
+              "text": "direct"
+            }
+          ],
+          "explanation": "Delayed significa retrasado."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which sentence uses travel correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Travel can be expensive."
+            },
+            {
+              "id": "b",
+              "text": "I made a travel to Rome."
+            },
+            {
+              "id": "d",
+              "text": "The travel lasted three hours."
+            }
+          ],
+          "explanation": "Travel como actividad general es incontable; la frase a es natural."
+        },
+        {
+          "id": "r8",
+          "prompt": "You must [gap1] online before going through security.",
+          "options": [
+            {
+              "id": "a",
+              "text": "check in"
+            },
+            {
+              "id": "b",
+              "text": "collect"
+            },
+            {
+              "id": "d",
+              "text": "miss"
+            }
+          ],
+          "explanation": "Check in es registrarse antes de un vuelo."
         }
       ],
       "lessonIds": [

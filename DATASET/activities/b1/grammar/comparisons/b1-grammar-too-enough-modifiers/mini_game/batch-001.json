@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "We don't have ___ time to finish.",
+          "prompt": "We don't have [gap1] time to finish.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The room is big ___ for two desks.",
+          "prompt": "The room is big [gap1] for two desks.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The bag is too small ___ all my books.",
+          "prompt": "The bag is too small [gap1] all my books.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The coffee is ___ hot to drink.",
+          "prompt": "The coffee is [gap1] hot to drink.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "This model is ___ faster than the old one.",
+          "prompt": "This model is [gap1] faster than the old one.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The new office is ___ more spacious than the old one.",
+          "prompt": "The new office is [gap1] more spacious than the old one.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The new plan is a ___ better than the old one.",
+          "prompt": "The new plan is a [gap1] better than the old one.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The room is warm ___.",
+          "prompt": "The room is warm [gap1].",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The coffee is too strong ___ me.",
+          "prompt": "The coffee is too strong [gap1] me.",
           "options": [
             {
               "id": "c",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The test was too difficult ___ me.",
+          "prompt": "The test was too difficult [gap1] me.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "She is old enough ___ travel alone.",
+          "prompt": "She is old enough [gap1] travel alone.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The box is ___ heavy to carry.",
+          "prompt": "The box is [gap1] heavy to carry.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The soup is ___ salty to eat.",
+          "prompt": "The soup is [gap1] salty to eat.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The new route is a ___ longer.",
+          "prompt": "The new route is a [gap1] longer.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "This route is slightly ___ than the other one.",
+          "prompt": "This route is slightly [gap1] than the other one.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The room is warm enough ___ sit comfortably.",
+          "prompt": "The room is warm enough [gap1] sit comfortably.",
           "options": [
             {
               "id": "c",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "too",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-too-enough-modifiers-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "comparisons",
+      "subtopic": "too-enough-comparative-modifiers",
+      "taxonomyNodeIds": [
+        "too-enough-comparative-modifiers"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "This laptop is a [gap1] faster than my old one.",
+          "options": [
+            {
+              "id": "d",
+              "text": "most"
+            },
+            {
+              "id": "c",
+              "text": "more"
+            },
+            {
+              "id": "a",
+              "text": "bit"
+            }
+          ],
+          "explanation": "«a bit» indica una pequeña diferencia."
+        },
+        {
+          "id": "r2",
+          "prompt": "This model is [gap1] more efficient than the old one.",
+          "options": [
+            {
+              "id": "c",
+              "text": "most"
+            },
+            {
+              "id": "d",
+              "text": "as"
+            },
+            {
+              "id": "a",
+              "text": "far"
+            }
+          ],
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "r3",
+          "prompt": "We have [gap1] chairs for everyone.",
+          "options": [
+            {
+              "id": "c",
+              "text": "very"
+            },
+            {
+              "id": "d",
+              "text": "much"
+            },
+            {
+              "id": "a",
+              "text": "enough"
+            }
+          ],
+          "explanation": "Con sustantivo, «enough» va delante."
+        },
+        {
+          "id": "r4",
+          "prompt": "This route is slightly [gap1] than the usual one.",
+          "options": [
+            {
+              "id": "a",
+              "text": "shorter"
+            },
+            {
+              "id": "c",
+              "text": "shortest"
+            },
+            {
+              "id": "d",
+              "text": "most short"
+            }
+          ],
+          "explanation": "«slightly» modifica el comparativo «shorter»."
+        },
+        {
+          "id": "r5",
+          "prompt": "The flat is [gap1] more expensive than we expected.",
+          "options": [
+            {
+              "id": "d",
+              "text": "as"
+            },
+            {
+              "id": "a",
+              "text": "far"
+            },
+            {
+              "id": "b",
+              "text": "more"
+            }
+          ],
+          "explanation": "«far» intensifica el comparativo."
+        },
+        {
+          "id": "r6",
+          "prompt": "She is old [gap1] to drive.",
+          "options": [
+            {
+              "id": "d",
+              "text": "much"
+            },
+            {
+              "id": "b",
+              "text": "too"
+            },
+            {
+              "id": "a",
+              "text": "enough"
+            }
+          ],
+          "explanation": "Con adjetivo, «enough» va después."
+        },
+        {
+          "id": "r7",
+          "prompt": "There are enough seats [gap1] everyone.",
+          "options": [
+            {
+              "id": "a",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "with"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            }
+          ],
+          "explanation": "«enough ... for + persona»."
+        },
+        {
+          "id": "r8",
+          "prompt": "This phone is [gap1] cheaper than that one.",
+          "options": [
+            {
+              "id": "d",
+              "text": "as"
+            },
+            {
+              "id": "c",
+              "text": "most"
+            },
+            {
+              "id": "a",
+              "text": "much"
+            }
+          ],
+          "explanation": "«much» intensifica el comparativo."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-too-enough-modifiers"
+      ],
+      "tags": [
+        "b1",
+        "modifier",
         "single-choice",
         "mini-game"
       ],

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Had the lock been replaced, the break-in ___ prevented.",
+          "prompt": "Had the lock been replaced, the break-in [gap1] prevented.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We might have stayed longer if the hotel ___ a room available.",
+          "prompt": "We might have stayed longer if the hotel [gap1] a room available.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "If all participants had been treated equally, the outcome ___ different.",
+          "prompt": "If all participants had been treated equally, the outcome [gap1] different.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Had we documented the workaround, the next team ___ the same problem.",
+          "prompt": "Had we documented the workaround, the next team [gap1] the same problem.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "If the data ___ independently, the inconsistency might have emerged.",
+          "prompt": "If the data [gap1] independently, the inconsistency might have emerged.",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "If the sensor hadn't failed, the valve ___ automatically.",
+          "prompt": "If the sensor hadn't failed, the valve [gap1] automatically.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Had the witness arrived on time, the hearing ___ postponed.",
+          "prompt": "Had the witness arrived on time, the hearing [gap1] postponed.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "If the archive hadn't been indexed, locating the record ___ weeks.",
+          "prompt": "If the archive hadn't been indexed, locating the record [gap1] weeks.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "She would have noticed the typo if she ___ the final page.",
+          "prompt": "She would have noticed the typo if she [gap1] the final page.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The plant would have survived if it ___ regularly.",
+          "prompt": "The plant would have survived if it [gap1] regularly.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Had the board ___ the risk, it might have delayed the launch.",
+          "prompt": "Had the board [gap1] the risk, it might have delayed the launch.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "If the alarm had worked, someone ___ the smoke sooner.",
+          "prompt": "If the alarm had worked, someone [gap1] the smoke sooner.",
           "options": [
             {
               "id": "c",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "If the road hadn't been closed, the delivery ___ on time.",
+          "prompt": "If the road hadn't been closed, the delivery [gap1] on time.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The error would have propagated if the validation step ___ it.",
+          "prompt": "The error would have propagated if the validation step [gap1] it.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The negotiation could have succeeded if both parties ___ less defensive.",
+          "prompt": "The negotiation could have succeeded if both parties [gap1] less defensive.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "If you had told me about the fault, I ___ you fix it.",
+          "prompt": "If you had told me about the fault, I [gap1] you fix it.",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-third-conditional-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "conditionals",
+      "subtopic": "third-conditional",
+      "taxonomyNodeIds": [
+        "third-conditional"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "If the instructions had been clearer, fewer users [gap1] mistakes.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had made"
+            },
+            {
+              "id": "d",
+              "text": "made"
+            },
+            {
+              "id": "b",
+              "text": "would have made"
+            }
+          ],
+          "explanation": "Los errores pertenecen al pasado alternativo: «would have made»."
+        },
+        {
+          "id": "r2",
+          "prompt": "[gap1] we known about the strike, we would have travelled a day earlier.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Would"
+            },
+            {
+              "id": "b",
+              "text": "Have"
+            },
+            {
+              "id": "c",
+              "text": "Had"
+            }
+          ],
+          "explanation": "La inversión formal comienza con «Had we known»."
+        },
+        {
+          "id": "r3",
+          "prompt": "We might not have discovered the leak if the neighbour [gap1] us.",
+          "options": [
+            {
+              "id": "b",
+              "text": "wouldn't alert"
+            },
+            {
+              "id": "a",
+              "text": "hadn't alerted"
+            },
+            {
+              "id": "c",
+              "text": "didn't alert"
+            }
+          ],
+          "explanation": "La alerta pasada que sí ocurrió se niega hipotéticamente con «hadn't alerted»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Had the sample been sealed properly, it [gap1] contaminated.",
+          "options": [
+            {
+              "id": "d",
+              "text": "didn't become"
+            },
+            {
+              "id": "c",
+              "text": "wouldn't have become"
+            },
+            {
+              "id": "a",
+              "text": "wouldn't become"
+            }
+          ],
+          "explanation": "La contaminación pasada alternativa usa «wouldn't have become»."
+        },
+        {
+          "id": "r5",
+          "prompt": "If the estimate had included taxes, the final cost [gap1] such a surprise.",
+          "options": [
+            {
+              "id": "c",
+              "text": "hadn't been"
+            },
+            {
+              "id": "b",
+              "text": "wouldn't have been"
+            },
+            {
+              "id": "d",
+              "text": "wasn't"
+            }
+          ],
+          "explanation": "La sorpresa ocurrió en el pasado; la alternativa es «wouldn't have been»."
+        },
+        {
+          "id": "r6",
+          "prompt": "If the initial forecast [gap1] realistic, we wouldn't have requested emergency funding.",
+          "options": [
+            {
+              "id": "d",
+              "text": "has been"
+            },
+            {
+              "id": "c",
+              "text": "had been"
+            },
+            {
+              "id": "b",
+              "text": "would be"
+            }
+          ],
+          "explanation": "La previsión inicial pertenece al pasado y usa «had been»."
+        },
+        {
+          "id": "r7",
+          "prompt": "They wouldn't have lost the contract if they [gap1] the deadline.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would have met"
+            },
+            {
+              "id": "c",
+              "text": "had met"
+            },
+            {
+              "id": "a",
+              "text": "met"
+            }
+          ],
+          "explanation": "Cumplir el plazo era la condición pasada no realizada: «had met»."
+        },
+        {
+          "id": "r8",
+          "prompt": "If we [gap1] the earlier flight, we would have arrived before the storm.",
+          "options": [
+            {
+              "id": "b",
+              "text": "had taken"
+            },
+            {
+              "id": "d",
+              "text": "would have taken"
+            },
+            {
+              "id": "a",
+              "text": "took"
+            }
+          ],
+          "explanation": "La condición pasada irreal usa past perfect: «had taken»."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-third-conditional"
+      ],
+      "tags": [
+        "b2",
+        "conditionals",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
           }
         ]
       },

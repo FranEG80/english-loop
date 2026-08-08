@@ -449,6 +449,227 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-writing-opinion-article-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b1-writing-opinion-article",
+      "subtopic": "b1-writing-opinion-article",
+      "taxonomyNodeIds": [
+        "b1-writing-opinion-article"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which title argues for longer library hours?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Why Libraries Should Stay Open Later"
+            },
+            {
+              "id": "c",
+              "text": "Books in Different Colours"
+            },
+            {
+              "id": "d",
+              "text": "The Building Next Door"
+            }
+          ],
+          "explanation": "The title makes the proposed change and its argument clear."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence could start a paragraph about sports access?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Free facilities would make exercise more accessible."
+            },
+            {
+              "id": "b",
+              "text": "Sport is a short word."
+            },
+            {
+              "id": "c",
+              "text": "The weather changed yesterday."
+            }
+          ],
+          "explanation": "The first option states the main claim for a focused paragraph."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which sentence contrasts convenience with environmental cost?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Although driving is convenient, its environmental cost should not be ignored."
+            },
+            {
+              "id": "d",
+              "text": "The journey took ten minutes."
+            },
+            {
+              "id": "b",
+              "text": "Driving is a form of transport."
+            }
+          ],
+          "explanation": "Although links the benefit to a limitation that deserves attention."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence is a clear thesis about school phones?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Phones are objects."
+            },
+            {
+              "id": "c",
+              "text": "Lessons happen in classrooms."
+            },
+            {
+              "id": "a",
+              "text": "Schools should limit phones during lessons."
+            }
+          ],
+          "explanation": "The first sentence makes an arguable proposal about the topic."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which conclusion urges action on the town square?",
+          "options": [
+            {
+              "id": "a",
+              "text": "For these reasons, repairing the square should be a community priority."
+            },
+            {
+              "id": "b",
+              "text": "The square is in the centre."
+            },
+            {
+              "id": "c",
+              "text": "The square has four sides."
+            }
+          ],
+          "explanation": "The conclusion links the recommendation to the preceding reasons."
+        },
+        {
+          "id": "r6",
+          "prompt": "The park is small, [gap1] it is popular with families.",
+          "options": [
+            {
+              "id": "a",
+              "text": "but"
+            },
+            {
+              "id": "b",
+              "text": "because of"
+            },
+            {
+              "id": "d",
+              "text": "during"
+            }
+          ],
+          "explanation": "But links two contrasting facts."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which example supports a phone-free lesson?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Some phones are black."
+            },
+            {
+              "id": "b",
+              "text": "Messages can contain many letters."
+            },
+            {
+              "id": "a",
+              "text": "Students may concentrate better without messages."
+            }
+          ],
+          "explanation": "The example explains a learning benefit rather than giving an unrelated fact."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence gives a reason for cycling?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Cycling happened yesterday at noon."
+            },
+            {
+              "id": "b",
+              "text": "Cycling is a word with seven letters."
+            },
+            {
+              "id": "a",
+              "text": "Cycling is cheap and keeps people active."
+            }
+          ],
+          "explanation": "The sentence gives two relevant benefits that support the opinion."
+        }
+      ],
+      "lessonIds": [
+        "b1-writing-opinion-article"
+      ],
+      "tags": [
+        "b1",
+        "opinion",
+        "titles",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

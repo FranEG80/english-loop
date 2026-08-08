@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "A headline uses dramatic language to make readers panic. Its tone is ___.",
+          "prompt": "A headline uses dramatic language to make readers panic. Its tone is [gap1].",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "False information shared without a clear intention to deceive is often called ___.",
+          "prompt": "False information shared without a clear intention to deceive is often called [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A report that explains causes and implications offers ___.",
+          "prompt": "A report that explains causes and implications offers [gap1].",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The short title above a news story is the ___.",
+          "prompt": "The short title above a news story is the [gap1].",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A presenter changes examples and vocabulary for university students. The presenter is adapting to the ___.",
+          "prompt": "A presenter changes examples and vocabulary for university students. The presenter is adapting to the [gap1].",
           "options": [
             {
               "id": "b",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A journalist who includes relevant background provides useful ___.",
+          "prompt": "A journalist who includes relevant background provides useful [gap1].",
           "options": [
             {
               "id": "c",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "A campaign designed to persuade rather than inform may use a strongly ___ tone.",
+          "prompt": "A campaign designed to persuade rather than inform may use a strongly [gap1] tone.",
           "options": [
             {
               "id": "d",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Information deliberately created to mislead is ___.",
+          "prompt": "Information deliberately created to mislead is [gap1].",
           "options": [
             {
               "id": "c",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The people a programme is designed for form its ___.",
+          "prompt": "The people a programme is designed for form its [gap1].",
           "options": [
             {
               "id": "c",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The number of people reached by a message is its ___.",
+          "prompt": "The number of people reached by a message is its [gap1].",
           "options": [
             {
               "id": "d",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A person or organisation that provides information is a ___.",
+          "prompt": "A person or organisation that provides information is a [gap1].",
           "options": [
             {
               "id": "d",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A story gives one group's view repeatedly and omits relevant alternatives. This suggests ___.",
+          "prompt": "A story gives one group's view repeatedly and omits relevant alternatives. This suggests [gap1].",
           "options": [
             {
               "id": "b",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "analysis",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-media-communication-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-media-communication",
+      "subtopic": "b2-media-communication",
+      "taxonomyNodeIds": [
+        "b2-media-communication"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Facts or figures used to support a claim are [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "headlines"
+            },
+            {
+              "id": "a",
+              "text": "evidence"
+            },
+            {
+              "id": "d",
+              "text": "platforms"
+            }
+          ],
+          "explanation": "Evidence supports or tests whether a claim is reliable."
+        },
+        {
+          "id": "r2",
+          "prompt": "A careful report uses cautious language because the claim is not yet [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "targeted"
+            },
+            {
+              "id": "d",
+              "text": "published"
+            },
+            {
+              "id": "a",
+              "text": "verified"
+            }
+          ],
+          "explanation": "A claim can be described cautiously until it is verified."
+        },
+        {
+          "id": "r3",
+          "prompt": "A statistic is presented without its original population or date. The missing element is [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "context"
+            },
+            {
+              "id": "d",
+              "text": "headline"
+            },
+            {
+              "id": "c",
+              "text": "tone"
+            }
+          ],
+          "explanation": "Context explains how and when a figure should be interpreted."
+        },
+        {
+          "id": "r4",
+          "prompt": "A podcast reaches few listeners but changes their behaviour strongly. It has limited reach but high [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "impact"
+            },
+            {
+              "id": "b",
+              "text": "source"
+            },
+            {
+              "id": "d",
+              "text": "coverage"
+            }
+          ],
+          "explanation": "Impact describes an effect, not the number of people reached."
+        },
+        {
+          "id": "r5",
+          "prompt": "A systematic preference that affects how a story is presented is [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "coverage"
+            },
+            {
+              "id": "a",
+              "text": "bias"
+            },
+            {
+              "id": "b",
+              "text": "evidence"
+            }
+          ],
+          "explanation": "Bias can influence selection, emphasis or language."
+        },
+        {
+          "id": "r6",
+          "prompt": "A report compares several independent sources before making a conclusion. This improves its [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "reach"
+            },
+            {
+              "id": "a",
+              "text": "reliability"
+            },
+            {
+              "id": "b",
+              "text": "headline"
+            }
+          ],
+          "explanation": "Using independent sources can make information more reliable."
+        },
+        {
+          "id": "r7",
+          "prompt": "The emotional attitude of a writer is the [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "coverage"
+            },
+            {
+              "id": "c",
+              "text": "source"
+            },
+            {
+              "id": "a",
+              "text": "tone"
+            }
+          ],
+          "explanation": "Tone can be neutral, critical, sarcastic or alarmist."
+        },
+        {
+          "id": "r8",
+          "prompt": "A statement presented as true but needing support is a [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "coverage"
+            },
+            {
+              "id": "a",
+              "text": "claim"
+            },
+            {
+              "id": "b",
+              "text": "headline"
+            }
+          ],
+          "explanation": "A claim is an assertion that may require evidence."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-media-communication"
+      ],
+      "tags": [
+        "b2",
+        "evidence",
         "mini-game"
       ],
       "estimatedSeconds": 120,

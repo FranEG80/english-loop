@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The revised timetable means ___ before seven on weekdays.",
+          "prompt": "The revised timetable means [gap1] before seven on weekdays.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The notice says that the new procedure will involve ___ an extra form.",
+          "prompt": "The notice says that the new procedure will involve [gap1] an extra form.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Lena will never forget ___ the northern lights from the ferry.",
+          "prompt": "Lena will never forget [gap1] the northern lights from the ferry.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I meant ___ you the updated route, but the file was corrupted.",
+          "prompt": "I meant [gap1] you the updated route, but the file was corrupted.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Try ___ the antenna beside the window before buying a booster.",
+          "prompt": "Try [gap1] the antenna beside the window before buying a booster.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "After the warning, the factory stopped ___ solvent near the river.",
+          "prompt": "After the warning, the factory stopped [gap1] solvent near the river.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The company regrets ___ that the evening service is unavailable.",
+          "prompt": "The company regrets [gap1] that the evening service is unavailable.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The lecturer went on ___ questions after the scheduled finish.",
+          "prompt": "The lecturer went on [gap1] questions after the scheduled finish.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The team tried ___ the damaged sensor, but it would not start.",
+          "prompt": "The team tried [gap1] the damaged sensor, but it would not start.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The cyclist stopped ___ coffee during the training ride.",
+          "prompt": "The cyclist stopped [gap1] coffee during the training ride.",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-meaning-change-gerund-infinitive-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "meaning-change-gerund-infinitive",
+      "taxonomyNodeIds": [
+        "meaning-change-gerund-infinitive"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "After describing the survey, the speaker went on [gap1] the sampling method.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to explain"
+            },
+            {
+              "id": "a",
+              "text": "explaining"
+            },
+            {
+              "id": "c",
+              "text": "explain"
+            }
+          ],
+          "explanation": "Go on to do marks a later stage or topic."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which sentence means that the guide paused another activity in order to check the map?",
+          "options": [
+            {
+              "id": "b",
+              "text": "The guide stopped to check the map."
+            },
+            {
+              "id": "a",
+              "text": "The guide stopped checking the map."
+            },
+            {
+              "id": "d",
+              "text": "The guide regretted checking the map."
+            }
+          ],
+          "explanation": "Stop to check expresses a pause with a purpose."
+        },
+        {
+          "id": "r3",
+          "prompt": "Lena forgot [gap1] the access code, so the gate stayed locked.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to enter"
+            },
+            {
+              "id": "a",
+              "text": "entering"
+            },
+            {
+              "id": "c",
+              "text": "enter"
+            }
+          ],
+          "explanation": "Forget to do means that the required action was not done."
+        },
+        {
+          "id": "r4",
+          "prompt": "Please remember [gap1] the samples before the courier arrives.",
+          "options": [
+            {
+              "id": "d",
+              "text": "labelled"
+            },
+            {
+              "id": "b",
+              "text": "to label"
+            },
+            {
+              "id": "c",
+              "text": "label"
+            }
+          ],
+          "explanation": "Remember plus to-infinitive introduces a future task."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which sentence says that the speaker intended to attach the invoice?",
+          "options": [
+            {
+              "id": "b",
+              "text": "I meant to attach the invoice."
+            },
+            {
+              "id": "c",
+              "text": "I stopped attaching the invoice."
+            },
+            {
+              "id": "d",
+              "text": "I regretted to attach the invoice."
+            }
+          ],
+          "explanation": "Mean to do expresses an intention."
+        },
+        {
+          "id": "r6",
+          "prompt": "The coach regrets [gap1] the reserve goalkeeper too soon.",
+          "options": [
+            {
+              "id": "d",
+              "text": "substituted"
+            },
+            {
+              "id": "c",
+              "text": "substitute"
+            },
+            {
+              "id": "a",
+              "text": "substituting"
+            }
+          ],
+          "explanation": "Regret plus gerund expresses regret about a past action."
+        },
+        {
+          "id": "r7",
+          "prompt": "The spokesperson regrets [gap1] that the festival has been cancelled.",
+          "options": [
+            {
+              "id": "c",
+              "text": "announce"
+            },
+            {
+              "id": "d",
+              "text": "announced"
+            },
+            {
+              "id": "b",
+              "text": "to announce"
+            }
+          ],
+          "explanation": "Regret to announce is a formal way to introduce bad news."
+        },
+        {
+          "id": "r8",
+          "prompt": "I remember [gap1] the curator at a conference in May.",
+          "options": [
+            {
+              "id": "d",
+              "text": "met"
+            },
+            {
+              "id": "a",
+              "text": "meeting"
+            },
+            {
+              "id": "b",
+              "text": "to meet"
+            }
+          ],
+          "explanation": "Remember plus gerund refers to a past experience."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-meaning-change-gerund-infinitive"
+      ],
+      "tags": [
+        "b2",
+        "go-on",
+        "sequence",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
           }
         ]
       },

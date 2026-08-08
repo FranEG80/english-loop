@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Students must ___ an assignment by Friday.",
+          "prompt": "Students must [gap1] an assignment by Friday.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Students should ___ for the exam rather than memorise isolated words.",
+          "prompt": "Students should [gap1] for the exam rather than memorise isolated words.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The researchers collected data and ___ their findings in a journal.",
+          "prompt": "The researchers collected data and [gap1] their findings in a journal.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The student received one-to-one support in a weekly ___.",
+          "prompt": "The student received one-to-one support in a weekly [gap1].",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The panel praised the clarity of her research ___.",
+          "prompt": "The panel praised the clarity of her research [gap1].",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "An ___ is studying for a first university degree.",
+          "prompt": "An [gap1] is studying for a first university degree.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The final-year student is writing a 12,000-word ___.",
+          "prompt": "The final-year student is writing a 12,000-word [gap1].",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The course is part of compulsory ___ for teenagers.",
+          "prompt": "The course is part of compulsory [gap1] for teenagers.",
           "options": [
             {
               "id": "c",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The team ___ a small-scale study of reading habits.",
+          "prompt": "The team [gap1] a small-scale study of reading habits.",
           "options": [
             {
               "id": "a",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "She ___ on a postgraduate course in public policy.",
+          "prompt": "She [gap1] on a postgraduate course in public policy.",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "A ___ student is completing a master’s degree.",
+          "prompt": "A [gap1] student is completing a master’s degree.",
           "options": [
             {
               "id": "a",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The course is a ___ programme for healthcare assistants.",
+          "prompt": "The course is a [gap1] programme for healthcare assistants.",
           "options": [
             {
               "id": "a",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "He forgot to ___ the source of the quotation.",
+          "prompt": "He forgot to [gap1] the source of the quotation.",
           "options": [
             {
               "id": "d",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The ___ encouraged students to debate the reading.",
+          "prompt": "The [gap1] encouraged students to debate the reading.",
           "options": [
             {
               "id": "c",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The lecturer asked students to ___ their essays before submission.",
+          "prompt": "The lecturer asked students to [gap1] their essays before submission.",
           "options": [
             {
               "id": "d",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The tutor gave detailed ___ on the draft.",
+          "prompt": "The tutor gave detailed [gap1] on the draft.",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "research",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-education-learning-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-education-learning",
+      "subtopic": "b2-education-learning",
+      "taxonomyNodeIds": [
+        "b2-education-learning"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The [gap1] covers tuition fees but not accommodation.",
+          "options": [
+            {
+              "id": "d",
+              "text": "curriculum"
+            },
+            {
+              "id": "a",
+              "text": "scholarship"
+            },
+            {
+              "id": "b",
+              "text": "seminar"
+            }
+          ],
+          "explanation": "A scholarship provides financial support for study."
+        },
+        {
+          "id": "r2",
+          "prompt": "The university raised its [gap1] fees for international students.",
+          "options": [
+            {
+              "id": "c",
+              "text": "research"
+            },
+            {
+              "id": "a",
+              "text": "tuition"
+            },
+            {
+              "id": "b",
+              "text": "revision"
+            }
+          ],
+          "explanation": "Tuition fees are charges for teaching and study."
+        },
+        {
+          "id": "r3",
+          "prompt": "The university offered a partial scholarship towards the [gap1] fees.",
+          "options": [
+            {
+              "id": "b",
+              "text": "revision"
+            },
+            {
+              "id": "a",
+              "text": "tuition"
+            },
+            {
+              "id": "c",
+              "text": "curriculum"
+            }
+          ],
+          "explanation": "Tuition fees are the cost of instruction."
+        },
+        {
+          "id": "r4",
+          "prompt": "The researcher cited every source to avoid [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "plagiarism"
+            },
+            {
+              "id": "b",
+              "text": "enrolment"
+            },
+            {
+              "id": "d",
+              "text": "revision"
+            }
+          ],
+          "explanation": "Plagiarism is using another person’s work as your own."
+        },
+        {
+          "id": "r5",
+          "prompt": "The practical [gap1] developed laboratory skills.",
+          "options": [
+            {
+              "id": "a",
+              "text": "workshop"
+            },
+            {
+              "id": "d",
+              "text": "qualification"
+            },
+            {
+              "id": "b",
+              "text": "lecture"
+            }
+          ],
+          "explanation": "A workshop is practical and activity-based."
+        },
+        {
+          "id": "r6",
+          "prompt": "He submitted the assignment before the [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "deadline"
+            },
+            {
+              "id": "b",
+              "text": "degree"
+            },
+            {
+              "id": "c",
+              "text": "lecture"
+            }
+          ],
+          "explanation": "A deadline is the latest permitted time."
+        },
+        {
+          "id": "r7",
+          "prompt": "The professor gave a two-hour [gap1] on climate modelling.",
+          "options": [
+            {
+              "id": "a",
+              "text": "lecture"
+            },
+            {
+              "id": "d",
+              "text": "scholarship"
+            },
+            {
+              "id": "c",
+              "text": "workshop"
+            }
+          ],
+          "explanation": "A lecture is a formal presentation to a group."
+        },
+        {
+          "id": "r8",
+          "prompt": "The institution provides [gap1] education for adults who change careers.",
+          "options": [
+            {
+              "id": "a",
+              "text": "lifelong"
+            },
+            {
+              "id": "c",
+              "text": "undergraduate"
+            },
+            {
+              "id": "d",
+              "text": "compulsory"
+            }
+          ],
+          "explanation": "Lifelong learning continues throughout adulthood."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-education-learning"
+      ],
+      "tags": [
+        "b2",
+        "scholarship",
         "mini-game"
       ],
       "estimatedSeconds": 120,

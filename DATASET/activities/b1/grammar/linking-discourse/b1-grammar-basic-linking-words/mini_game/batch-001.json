@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I like reading ___ cooking.",
+          "prompt": "I like reading [gap1] cooking.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "___ the film was long, it was interesting.",
+          "prompt": "[gap1] the film was long, it was interesting.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "We can walk ___ take the bus.",
+          "prompt": "We can walk [gap1] take the bus.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ it was cold, we went for a walk.",
+          "prompt": "[gap1] it was cold, we went for a walk.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "He was late ___ he missed the bus.",
+          "prompt": "He was late [gap1] he missed the bus.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "It was late, ___ we took a taxi.",
+          "prompt": "It was late, [gap1] we took a taxi.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The hotel was nice, ___ the room was small.",
+          "prompt": "The hotel was nice, [gap1] the room was small.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The room was clean ___ bright.",
+          "prompt": "The room was clean [gap1] bright.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "We booked a hotel near the station ___ the last train was cancelled.",
+          "prompt": "We booked a hotel near the station [gap1] the last train was cancelled.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Would you like tea ___ coffee?",
+          "prompt": "Would you like tea [gap1] coffee?",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I bought bread ___ milk.",
+          "prompt": "I bought bread [gap1] milk.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "She studied hard, ___ she passed the exam.",
+          "prompt": "She studied hard, [gap1] she passed the exam.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I wanted to go, ___ I was too tired.",
+          "prompt": "I wanted to go, [gap1] I was too tired.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I was tired, ___ I went to bed early.",
+          "prompt": "I was tired, [gap1] I went to bed early.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "She wore a coat ___ the wind was freezing.",
+          "prompt": "She wore a coat [gap1] the wind was freezing.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The flat is small ___ cosy.",
+          "prompt": "The flat is small [gap1] cosy.",
           "options": [
             {
               "id": "c",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "«but» contrasta dos ideas."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-basic-linking-words"
+      ],
+      "tags": [
+        "b1",
+        "linking",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-basic-linking-words-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "linking-discourse",
+      "subtopic": "basic-linking-words",
+      "taxonomyNodeIds": [
+        "basic-linking-words"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "It was raining, [gap1] we stayed in.",
+          "options": [
+            {
+              "id": "c",
+              "text": "but"
+            },
+            {
+              "id": "b",
+              "text": "because"
+            },
+            {
+              "id": "a",
+              "text": "so"
+            }
+          ],
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "r2",
+          "prompt": "The shop was closed, [gap1] we left.",
+          "options": [
+            {
+              "id": "c",
+              "text": "but"
+            },
+            {
+              "id": "a",
+              "text": "so"
+            },
+            {
+              "id": "b",
+              "text": "because"
+            }
+          ],
+          "explanation": "«so» introduce la consecuencia."
+        },
+        {
+          "id": "r3",
+          "prompt": "We stayed home [gap1] it was raining.",
+          "options": [
+            {
+              "id": "c",
+              "text": "but"
+            },
+            {
+              "id": "a",
+              "text": "because"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            }
+          ],
+          "explanation": "«because» introduce la causa."
+        },
+        {
+          "id": "r4",
+          "prompt": "[gap1] it rained, we enjoyed the trip.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Although"
+            },
+            {
+              "id": "d",
+              "text": "Or"
+            },
+            {
+              "id": "c",
+              "text": "Because"
+            }
+          ],
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "r5",
+          "prompt": "[gap1] the traffic was heavy, we arrived on time.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Although"
+            },
+            {
+              "id": "c",
+              "text": "Because"
+            },
+            {
+              "id": "d",
+              "text": "Or"
+            }
+          ],
+          "explanation": "«although» introduce el contraste."
+        },
+        {
+          "id": "r6",
+          "prompt": "The food was good, [gap1] the service was slow.",
+          "options": [
+            {
+              "id": "a",
+              "text": "but"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            },
+            {
+              "id": "c",
+              "text": "because"
+            }
+          ],
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "r7",
+          "prompt": "It was cold, [gap1] we went out.",
+          "options": [
+            {
+              "id": "a",
+              "text": "but"
+            },
+            {
+              "id": "b",
+              "text": "so"
+            },
+            {
+              "id": "d",
+              "text": "or"
+            }
+          ],
+          "explanation": "«but» contrasta dos ideas."
+        },
+        {
+          "id": "r8",
+          "prompt": "You can pay by card [gap1] in cash.",
+          "options": [
+            {
+              "id": "a",
+              "text": "or"
+            },
+            {
+              "id": "d",
+              "text": "because"
+            },
+            {
+              "id": "b",
+              "text": "but"
+            }
+          ],
+          "explanation": "«or» ofrece opciones."
         }
       ],
       "lessonIds": [

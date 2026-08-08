@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The model is thought ___ by a local designer.",
+          "prompt": "The model is thought [gap1] by a local designer.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "She was relieved ___ the correct address.",
+          "prompt": "She was relieved [gap1] the correct address.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The bridge appears ___ during the night.",
+          "prompt": "The bridge appears [gap1] during the night.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The suspects denied ___ the warning.",
+          "prompt": "The suspects denied [gap1] the warning.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The analyst was surprised ___ the figures so quickly.",
+          "prompt": "The analyst was surprised [gap1] the figures so quickly.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The applicants hope ___ for the exchange programme.",
+          "prompt": "The applicants hope [gap1] for the exchange programme.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The manager was proud ___ the funding application.",
+          "prompt": "The manager was proud [gap1] the funding application.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The director denied ___ the transfer.",
+          "prompt": "The director denied [gap1] the transfer.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The archive is believed ___ before the flood.",
+          "prompt": "The archive is believed [gap1] before the flood.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The documents seem ___ during the move.",
+          "prompt": "The documents seem [gap1] during the move.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The suspects denied ___ by the investigator.",
+          "prompt": "The suspects denied [gap1] by the investigator.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The files are expected ___ by June.",
+          "prompt": "The files are expected [gap1] by June.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The curator denied ___ the original label.",
+          "prompt": "The curator denied [gap1] the original label.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The director denied ___ about the transfer.",
+          "prompt": "The director denied [gap1] about the transfer.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The old theatre is expected ___ by the end of the year.",
+          "prompt": "The old theatre is expected [gap1] by the end of the year.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The witness claimed ___ the signal before the lights failed.",
+          "prompt": "The witness claimed [gap1] the signal before the lights failed.",
           "options": [
             {
               "id": "c",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-perfect-passive-infinitives-gerunds-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "gerunds-infinitives",
+      "subtopic": "perfect-passive-infinitives-gerunds",
+      "taxonomyNodeIds": [
+        "perfect-passive-infinitives-gerunds"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The volunteers regretted [gap1] from the final report.",
+          "options": [
+            {
+              "id": "b",
+              "text": "having been overlooked"
+            },
+            {
+              "id": "a",
+              "text": "having overlooked"
+            },
+            {
+              "id": "c",
+              "text": "to have overlooking"
+            }
+          ],
+          "explanation": "The volunteers received the omission: having been overlooked."
+        },
+        {
+          "id": "r2",
+          "prompt": "The panel was pleased [gap1] the review.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to be completed"
+            },
+            {
+              "id": "a",
+              "text": "to have completed"
+            },
+            {
+              "id": "c",
+              "text": "having complete"
+            }
+          ],
+          "explanation": "The panel completed the earlier review: to have completed."
+        },
+        {
+          "id": "r3",
+          "prompt": "The applicant resented [gap1] from the interview.",
+          "options": [
+            {
+              "id": "b",
+              "text": "having been excluded"
+            },
+            {
+              "id": "c",
+              "text": "to have excluding"
+            },
+            {
+              "id": "a",
+              "text": "having excluded"
+            }
+          ],
+          "explanation": "The applicant received the exclusion: having been excluded."
+        },
+        {
+          "id": "r4",
+          "prompt": "The old theatre is expected [gap1] before the festival.",
+          "options": [
+            {
+              "id": "c",
+              "text": "to have restoring"
+            },
+            {
+              "id": "d",
+              "text": "having restore"
+            },
+            {
+              "id": "b",
+              "text": "to be restored"
+            }
+          ],
+          "explanation": "The theatre receives the future restoration: to be restored."
+        },
+        {
+          "id": "r5",
+          "prompt": "The scientist claimed [gap1] the calibration twice.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to have repeated"
+            },
+            {
+              "id": "d",
+              "text": "to be repeat"
+            },
+            {
+              "id": "c",
+              "text": "having repeat"
+            }
+          ],
+          "explanation": "The scientist performed the repetition: to have repeated."
+        },
+        {
+          "id": "r6",
+          "prompt": "The committee regretted [gap1] the local volunteers.",
+          "options": [
+            {
+              "id": "d",
+              "text": "being overlook"
+            },
+            {
+              "id": "a",
+              "text": "having overlooked"
+            },
+            {
+              "id": "c",
+              "text": "to have overlooking"
+            }
+          ],
+          "explanation": "The committee performed the overlooking: having overlooked."
+        },
+        {
+          "id": "r7",
+          "prompt": "The proposal was reported [gap1] by three departments.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to be supporting"
+            },
+            {
+              "id": "c",
+              "text": "having support"
+            },
+            {
+              "id": "b",
+              "text": "to have been supported"
+            }
+          ],
+          "explanation": "The proposal received support: to have been supported."
+        },
+        {
+          "id": "r8",
+          "prompt": "The scientist claimed [gap1] by an independent laboratory.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to have been tested"
+            },
+            {
+              "id": "d",
+              "text": "to be testing"
+            },
+            {
+              "id": "a",
+              "text": "to have tested"
+            }
+          ],
+          "explanation": "The scientist received the testing: to have been tested."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-perfect-passive-infinitives-gerunds"
+      ],
+      "tags": [
+        "b2",
+        "regret",
+        "perfect-passive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
           }
         ]
       },

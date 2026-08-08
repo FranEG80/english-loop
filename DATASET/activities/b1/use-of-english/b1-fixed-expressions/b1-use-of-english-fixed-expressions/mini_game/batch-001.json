@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I look forward to ___ from you soon.",
+          "prompt": "I look forward to [gap1] from you soon.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "___ opening the window for a few minutes?",
+          "prompt": "[gap1] opening the window for a few minutes?",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Please ___ of your bag while you are on the train.",
+          "prompt": "Please [gap1] of your bag while you are on the train.",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___, I found the new timetable confusing.",
+          "prompt": "[gap1], I found the new timetable confusing.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "We meet for coffee ___, perhaps once a month.",
+          "prompt": "We meet for coffee [gap1], perhaps once a month.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The north is rainy; ___, the south is very dry.",
+          "prompt": "The north is rainy; [gap1], the south is very dry.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Everyone can ___, so check your work calmly.",
+          "prompt": "Everyone can [gap1], so check your work calmly.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The course is practical; ___, it is affordable.",
+          "prompt": "The course is practical; [gap1], it is affordable.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Nora knows the poem ___ and can recite every line.",
+          "prompt": "Nora knows the poem [gap1] and can recite every line.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The bus arrived ___, exactly at 8:00.",
+          "prompt": "The bus arrived [gap1], exactly at 8:00.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "We moved abroad, but we still ___ with our neighbours.",
+          "prompt": "We moved abroad, but we still [gap1] with our neighbours.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I thought the shop was closed; ___, it is open until nine.",
+          "prompt": "I thought the shop was closed; [gap1], it is open until nine.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The walk takes ___ twenty minutes.",
+          "prompt": "The walk takes [gap1] twenty minutes.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Did you spill the juice ___, or was it an accident?",
+          "prompt": "Did you spill the juice [gap1], or was it an accident?",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "This ticket is ___ valid; you need a new one.",
+          "prompt": "This ticket is [gap1] valid; you need a new one.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I cannot chat now because I am ___.",
+          "prompt": "I cannot chat now because I am [gap1].",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "In a hurry means that someone has very little time."
+        }
+      ],
+      "lessonIds": [
+        "b1-use-of-english-fixed-expressions"
+      ],
+      "tags": [
+        "b1",
+        "fixed-expressions",
+        "collocations",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-use-of-english-fixed-expressions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "use-of-english",
+      "topic": "b1-fixed-expressions",
+      "subtopic": "b1-fixed-expressions",
+      "taxonomyNodeIds": [
+        "b1-fixed-expressions"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Over 200 students will [gap1] in the science fair.",
+          "options": [
+            {
+              "id": "a",
+              "text": "take part"
+            },
+            {
+              "id": "d",
+              "text": "have part"
+            },
+            {
+              "id": "c",
+              "text": "do part"
+            }
+          ],
+          "explanation": "Take part means participate."
+        },
+        {
+          "id": "r2",
+          "prompt": "Call me [gap1] you reach the station.",
+          "options": [
+            {
+              "id": "c",
+              "text": "as by heart"
+            },
+            {
+              "id": "a",
+              "text": "as soon as"
+            },
+            {
+              "id": "d",
+              "text": "as on purpose"
+            }
+          ],
+          "explanation": "As soon as introduces the earliest possible moment."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1], did you hear about the new community library?",
+          "options": [
+            {
+              "id": "c",
+              "text": "In a hurry"
+            },
+            {
+              "id": "a",
+              "text": "By the way"
+            },
+            {
+              "id": "d",
+              "text": "At least"
+            }
+          ],
+          "explanation": "By the way introduces an additional, loosely connected point."
+        },
+        {
+          "id": "r4",
+          "prompt": "We got to the cinema [gap1] to see the opening scene.",
+          "options": [
+            {
+              "id": "c",
+              "text": "no longer"
+            },
+            {
+              "id": "b",
+              "text": "on purpose"
+            },
+            {
+              "id": "a",
+              "text": "in time"
+            }
+          ],
+          "explanation": "In time means early enough for a particular event."
+        },
+        {
+          "id": "r5",
+          "prompt": "We need to [gap1] for the interview at eight.",
+          "options": [
+            {
+              "id": "c",
+              "text": "get by heart"
+            },
+            {
+              "id": "d",
+              "text": "get on purpose"
+            },
+            {
+              "id": "a",
+              "text": "get ready"
+            }
+          ],
+          "explanation": "Get ready means prepare yourself."
+        },
+        {
+          "id": "r6",
+          "prompt": "Could I [gap1] at the menu before I order?",
+          "options": [
+            {
+              "id": "a",
+              "text": "have a look"
+            },
+            {
+              "id": "d",
+              "text": "do a look"
+            },
+            {
+              "id": "b",
+              "text": "make a look"
+            }
+          ],
+          "explanation": "Have a look at something is a common fixed request."
+        },
+        {
+          "id": "r7",
+          "prompt": "The old bridge is narrow, but it is worth [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "visiting"
+            },
+            {
+              "id": "b",
+              "text": "visit"
+            },
+            {
+              "id": "c",
+              "text": "to visit"
+            }
+          ],
+          "explanation": "It is worth is followed by an -ing form."
+        },
+        {
+          "id": "r8",
+          "prompt": "‘Can you help me carry this?’ ‘[gap1]!’",
+          "options": [
+            {
+              "id": "b",
+              "text": "In fact"
+            },
+            {
+              "id": "a",
+              "text": "Of course"
+            },
+            {
+              "id": "d",
+              "text": "At first"
+            }
+          ],
+          "explanation": "Of course is a natural positive reply to a request."
         }
       ],
       "lessonIds": [

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The chairperson advised delegates ___ personal data in the minutes.",
+          "prompt": "The chairperson advised delegates [gap1] personal data in the minutes.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The union urged the council ___ before winter.",
+          "prompt": "The union urged the council [gap1] before winter.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The architect suggested ___ a covered walkway.",
+          "prompt": "The architect suggested [gap1] a covered walkway.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The ranger warned visitors ___ feed the wild birds.",
+          "prompt": "The ranger warned visitors [gap1] feed the wild birds.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The travel editor recommended ___ the night train.",
+          "prompt": "The travel editor recommended [gap1] the night train.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The nurse reminded the patient ___ the tablets with food.",
+          "prompt": "The nurse reminded the patient [gap1] the tablets with food.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "At the review meeting, the engineer ___ altering the safety figures.",
+          "prompt": "At the review meeting, the engineer [gap1] altering the safety figures.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The project lead blamed the delay ___ the planning department.",
+          "prompt": "The project lead blamed the delay [gap1] the planning department.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The contractor agreed ___ the damaged tiles.",
+          "prompt": "The contractor agreed [gap1] the damaged tiles.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The volunteer offered ___ the archive visitors around.",
+          "prompt": "The volunteer offered [gap1] the archive visitors around.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The committee proposed ___ a shuttle for residents.",
+          "prompt": "The committee proposed [gap1] a shuttle for residents.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Ravi ___ copying the design during the hearing.",
+          "prompt": "Ravi [gap1] copying the design during the hearing.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The mentor encouraged the interns ___ questions about the method.",
+          "prompt": "The mentor encouraged the interns [gap1] questions about the method.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The witness claimed ___ the warning clearly.",
+          "prompt": "The witness claimed [gap1] the warning clearly.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The scientist promised ___ the full dataset.",
+          "prompt": "The scientist promised [gap1] the full dataset.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The publisher refused ___ the unverified claim.",
+          "prompt": "The publisher refused [gap1] the unverified claim.",
           "options": [
             {
               "id": "b",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-reporting-verb-patterns-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "reporting-verb-patterns",
+      "taxonomyNodeIds": [
+        "reporting-verb-patterns"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The analyst claimed [gap1] the discrepancy earlier.",
+          "options": [
+            {
+              "id": "c",
+              "text": "notice to"
+            },
+            {
+              "id": "a",
+              "text": "noticing"
+            },
+            {
+              "id": "b",
+              "text": "to have noticed"
+            }
+          ],
+          "explanation": "A perfect infinitive places the noticing before the claim."
+        },
+        {
+          "id": "r2",
+          "prompt": "The landlord threatened [gap1] the agreement if rent remained unpaid.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to terminate"
+            },
+            {
+              "id": "d",
+              "text": "of terminating"
+            },
+            {
+              "id": "c",
+              "text": "terminate to"
+            }
+          ],
+          "explanation": "Threaten takes a to-infinitive for a possible future action."
+        },
+        {
+          "id": "r3",
+          "prompt": "The auditor insisted [gap1] seeing the original receipts.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "for"
+            },
+            {
+              "id": "a",
+              "text": "to"
+            }
+          ],
+          "explanation": "Insist is followed by on plus a gerund."
+        },
+        {
+          "id": "r4",
+          "prompt": "The campaigner admitted [gap1] the deadline by two days.",
+          "options": [
+            {
+              "id": "a",
+              "text": "missing"
+            },
+            {
+              "id": "b",
+              "text": "to miss"
+            },
+            {
+              "id": "c",
+              "text": "miss to"
+            }
+          ],
+          "explanation": "Admit takes a gerund to report responsibility for an action."
+        },
+        {
+          "id": "r5",
+          "prompt": "The mediator persuaded both sides [gap1] the timetable.",
+          "options": [
+            {
+              "id": "c",
+              "text": "revise to"
+            },
+            {
+              "id": "d",
+              "text": "of revising"
+            },
+            {
+              "id": "b",
+              "text": "to revise"
+            }
+          ],
+          "explanation": "Persuade someone to do something takes object plus to-infinitive."
+        },
+        {
+          "id": "r6",
+          "prompt": "The director apologised [gap1] the launch date.",
+          "options": [
+            {
+              "id": "d",
+              "text": "for delay"
+            },
+            {
+              "id": "b",
+              "text": "for delaying"
+            },
+            {
+              "id": "a",
+              "text": "to delay"
+            }
+          ],
+          "explanation": "Apologise takes for plus a gerund when explaining the cause."
+        },
+        {
+          "id": "r7",
+          "prompt": "The report accused the supplier [gap1] falsifying delivery records.",
+          "options": [
+            {
+              "id": "a",
+              "text": "of"
+            },
+            {
+              "id": "b",
+              "text": "for"
+            },
+            {
+              "id": "d",
+              "text": "with"
+            }
+          ],
+          "explanation": "Accuse someone of plus a gerund identifies the alleged action."
+        },
+        {
+          "id": "r8",
+          "prompt": "The spokesperson [gap1] denying the allegation in every interview.",
+          "options": [
+            {
+              "id": "a",
+              "text": "continued"
+            },
+            {
+              "id": "b",
+              "text": "apologised"
+            },
+            {
+              "id": "d",
+              "text": "accused"
+            }
+          ],
+          "explanation": "Continue is followed by an -ing form: continued denying."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-reporting-verb-patterns"
+      ],
+      "tags": [
+        "b2",
+        "claim",
+        "perfect-infinitive",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
           }
         ]
       },

@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A cake is usually cooked in an ___. ",
+          "prompt": "A cake is usually cooked in an [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Move a spoon through a sauce to combine it: ___. ",
+          "prompt": "Move a spoon through a sauce to combine it: [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The opposite of sweet is often ___. ",
+          "prompt": "The opposite of sweet is often [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Add a liquid slowly from one container to another: ___. ",
+          "prompt": "Add a liquid slowly from one container to another: [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A sauce with too little flavour may be described as ___. ",
+          "prompt": "A sauce with too little flavour may be described as [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Honey usually tastes ___. ",
+          "prompt": "Honey usually tastes [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A carrot that has not been cooked is ___. ",
+          "prompt": "A carrot that has not been cooked is [gap1]. ",
           "options": [
             {
               "id": "a",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A dish with chilli is likely to be ___. ",
+          "prompt": "A dish with chilli is likely to be [gap1]. ",
           "options": [
             {
               "id": "c",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "You use a knife to ___ an onion into small pieces.",
+          "prompt": "You use a knife to [gap1] an onion into small pieces.",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b1",
         "allergies",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-vocabulary-food-cooking-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b1-food-cooking",
+      "subtopic": "b1-food-cooking",
+      "taxonomyNodeIds": [
+        "b1-food-cooking"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Cook vegetables in hot oil in a pan: [gap1]. ",
+          "options": [
+            {
+              "id": "c",
+              "text": "pour"
+            },
+            {
+              "id": "a",
+              "text": "fry"
+            },
+            {
+              "id": "b",
+              "text": "bake"
+            }
+          ],
+          "explanation": "Fry means cook in hot oil or fat."
+        },
+        {
+          "id": "r2",
+          "prompt": "Cook bread or a cake in an oven: [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "bake"
+            },
+            {
+              "id": "d",
+              "text": "slice"
+            },
+            {
+              "id": "b",
+              "text": "boil"
+            }
+          ],
+          "explanation": "Bake is used especially for bread, cakes and other dough-based food."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which request is clearest in a restaurant?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Could I have the sauce at the side from?"
+            },
+            {
+              "id": "d",
+              "text": "Could I have the sauce side without?"
+            },
+            {
+              "id": "a",
+              "text": "Could I have the sauce on the side, please?"
+            }
+          ],
+          "explanation": "On the side asks for the sauce separately from the main food."
+        },
+        {
+          "id": "r4",
+          "prompt": "A crisp biscuit has a [gap1] texture.",
+          "options": [
+            {
+              "id": "a",
+              "text": "crispy"
+            },
+            {
+              "id": "d",
+              "text": "sour"
+            },
+            {
+              "id": "b",
+              "text": "raw"
+            }
+          ],
+          "explanation": "Crispy describes food that breaks pleasantly when you bite it."
+        },
+        {
+          "id": "r5",
+          "prompt": "A smooth soup made with cream is [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "creamy"
+            },
+            {
+              "id": "d",
+              "text": "salty"
+            },
+            {
+              "id": "c",
+              "text": "raw"
+            }
+          ],
+          "explanation": "Creamy describes a smooth, rich texture like cream."
+        },
+        {
+          "id": "r6",
+          "prompt": "Cut a tomato into thin flat pieces: [gap1]. ",
+          "options": [
+            {
+              "id": "a",
+              "text": "slice"
+            },
+            {
+              "id": "c",
+              "text": "grill"
+            },
+            {
+              "id": "b",
+              "text": "boil"
+            }
+          ],
+          "explanation": "Slice means cut food into thin pieces."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which request clearly removes an ingredient?",
+          "options": [
+            {
+              "id": "b",
+              "text": "Could I have the soup beside cream?"
+            },
+            {
+              "id": "a",
+              "text": "Could I have the soup without cream?"
+            },
+            {
+              "id": "c",
+              "text": "Could I have the soup into cream?"
+            }
+          ],
+          "explanation": "Without introduces something that is not included."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which word best completes: The vegetables are soft but not [gap1]. ",
+          "options": [
+            {
+              "id": "d",
+              "text": "allergic"
+            },
+            {
+              "id": "b",
+              "text": "uncooked"
+            },
+            {
+              "id": "a",
+              "text": "overcooked"
+            }
+          ],
+          "explanation": "Overcooked means cooked for too long; the contrast shows the vegetables are soft but still good."
+        }
+      ],
+      "lessonIds": [
+        "b1-vocabulary-food-cooking"
+      ],
+      "tags": [
+        "b1",
+        "cooking",
         "mini-game"
       ],
       "estimatedSeconds": 120,

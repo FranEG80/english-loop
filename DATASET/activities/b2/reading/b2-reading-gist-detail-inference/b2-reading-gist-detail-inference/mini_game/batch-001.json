@@ -465,6 +465,235 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-gist-detail-inference-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-gist-detail-inference",
+      "subtopic": "b2-reading-gist-detail-inference",
+      "taxonomyNodeIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which conclusion is least defensible?",
+          "context": "A survey of regular users rated the new service highly. The researchers note that people who disliked it may have been less likely to answer.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The responses were favourable."
+            },
+            {
+              "id": "a",
+              "text": "All users are highly satisfied."
+            },
+            {
+              "id": "c",
+              "text": "The sample may be biased."
+            }
+          ],
+          "explanation": "The possible non-response bias makes an all-users conclusion unjustified."
+        },
+        {
+          "id": "r2",
+          "prompt": "Why were two neighbourhoods selected?",
+          "context": "The mentoring project began in two neighbourhoods with different age profiles. This allowed organisers to compare how the scheme worked in contrasting communities.",
+          "options": [
+            {
+              "id": "c",
+              "text": "To ensure identical participants."
+            },
+            {
+              "id": "b",
+              "text": "To avoid collecting any data."
+            },
+            {
+              "id": "a",
+              "text": "To compare different local contexts."
+            }
+          ],
+          "explanation": "Different age profiles create contrasting contexts for comparison."
+        },
+        {
+          "id": "r3",
+          "prompt": "Why are the findings described as preliminary?",
+          "context": "The first survey suggests that residents support the redesign, but responses came mainly from people who attended the public meeting.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The respondents may not represent the whole community."
+            },
+            {
+              "id": "c",
+              "text": "Residents opposed every change."
+            },
+            {
+              "id": "b",
+              "text": "The survey had no responses."
+            }
+          ],
+          "explanation": "People attending the meeting may differ from residents who did not attend."
+        },
+        {
+          "id": "r4",
+          "prompt": "What is the author's main concern?",
+          "context": "The new service attracted many users, but it depends on one supplier. A disruption at that company could affect the entire scheme.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The scheme has too many suppliers."
+            },
+            {
+              "id": "a",
+              "text": "The service has a single point of dependence."
+            },
+            {
+              "id": "b",
+              "text": "Users do not like the service."
+            }
+          ],
+          "explanation": "Dependence on one supplier creates the risk described in the second sentence."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which option best paraphrases the evidence?",
+          "context": "The building used less electricity after insulation was installed, although the winter was milder than usual.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The winter was the coldest on record."
+            },
+            {
+              "id": "a",
+              "text": "The saving may have had more than one cause."
+            },
+            {
+              "id": "d",
+              "text": "Electricity use doubled."
+            }
+          ],
+          "explanation": "Both insulation and the milder winter could have contributed to lower use."
+        },
+        {
+          "id": "r6",
+          "prompt": "What does the final decision imply?",
+          "context": "The committee selected the durable material after comparing ten-year maintenance costs, even though its purchase price was higher.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The durable material was cheaper to buy."
+            },
+            {
+              "id": "a",
+              "text": "They prioritised long-term cost over initial price."
+            },
+            {
+              "id": "d",
+              "text": "The committee made no comparison."
+            }
+          ],
+          "explanation": "The comparison and decision show that long-term cost mattered more."
+        },
+        {
+          "id": "r7",
+          "prompt": "Why is the author's conclusion qualified?",
+          "context": "The mentoring trial improved attendance among participants who completed the first month. The report does not know whether the most frequently absent students joined the trial.",
+          "options": [
+            {
+              "id": "c",
+              "text": "The trial included every student."
+            },
+            {
+              "id": "a",
+              "text": "The participants may not represent the absent students."
+            },
+            {
+              "id": "d",
+              "text": "The first month was never completed."
+            }
+          ],
+          "explanation": "Without knowing who joined, the improvement cannot be generalised to the most absent students."
+        },
+        {
+          "id": "r8",
+          "prompt": "What does publishing the responses make possible?",
+          "context": "The council published the survey questions and individual responses as well as its final summary.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Readers cannot question the summary."
+            },
+            {
+              "id": "a",
+              "text": "Readers can inspect how the summary was formed."
+            },
+            {
+              "id": "d",
+              "text": "The questions are removed from the record."
+            }
+          ],
+          "explanation": "Publishing the underlying material allows readers to check the route from data to conclusion."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-gist-detail-inference"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "bias",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

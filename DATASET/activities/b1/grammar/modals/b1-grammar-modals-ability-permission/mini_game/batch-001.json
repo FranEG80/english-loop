@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "For safety reasons, contractors ___ enter the server room alone.",
+          "prompt": "For safety reasons, contractors [gap1] enter the server room alone.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "We tried every password, but we ___ access the account.",
+          "prompt": "We tried every password, but we [gap1] access the account.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "After the update, users ___ export data. “___ I test the feature now?”",
+          "prompt": "After the update, users [gap1] export data. “[gap2] I test the feature now?”",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "After the second explanation, I ___ the problem.",
+          "prompt": "After the second explanation, I [gap1] the problem.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Despite restarting the router twice, we ___ restore the connection.",
+          "prompt": "Despite restarting the router twice, we [gap1] restore the connection.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Sam ___ speak Arabic and French.",
+          "prompt": "Sam [gap1] speak Arabic and French.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "I ___ hear you clearly; the connection is poor.",
+          "prompt": "I [gap1] hear you clearly; the connection is poor.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "After three attempts, the rescue team ___ lift the fallen beam.",
+          "prompt": "After three attempts, the rescue team [gap1] lift the fallen beam.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The door was jammed, but we ___ open it.",
+          "prompt": "The door was jammed, but we [gap1] open it.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Ravi ___ repair most bicycle brakes.",
+          "prompt": "Ravi [gap1] repair most bicycle brakes.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I ___ contact the supplier this week.",
+          "prompt": "I [gap1] contact the supplier this week.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "From the balcony, we ___ the whole harbour despite the mist.",
+          "prompt": "From the balcony, we [gap1] the whole harbour despite the mist.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "When Leo was six, he ___ count to a hundred.",
+          "prompt": "When Leo was six, he [gap1] count to a hundred.",
           "options": [
             {
               "id": "a",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "ability",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-ability-permission-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "ability-permission",
+      "taxonomyNodeIds": [
+        "ability-permission"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "“Could I open the window?”",
+          "options": [
+            {
+              "id": "d",
+              "text": "Yes, you are can."
+            },
+            {
+              "id": "b",
+              "text": "Yes, you could yesterday."
+            },
+            {
+              "id": "a",
+              "text": "Yes, you can."
+            }
+          ],
+          "explanation": "Aunque la petición usa «could», el permiso inmediato se concede con «can»."
+        },
+        {
+          "id": "r2",
+          "prompt": "Nora [gap1] use the design software confidently.",
+          "options": [
+            {
+              "id": "a",
+              "text": "can"
+            },
+            {
+              "id": "c",
+              "text": "can to"
+            },
+            {
+              "id": "b",
+              "text": "cans"
+            }
+          ],
+          "explanation": "La capacidad presente usa «can + infinitivo»."
+        },
+        {
+          "id": "r3",
+          "prompt": "With the new keyboard, I [gap1] type much faster.",
+          "options": [
+            {
+              "id": "a",
+              "text": "can"
+            },
+            {
+              "id": "b",
+              "text": "can to"
+            },
+            {
+              "id": "d",
+              "text": "do can"
+            }
+          ],
+          "explanation": "Después de «can» va directamente el infinitivo «type»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Only laboratory staff [gap1] enter the storage room.",
+          "options": [
+            {
+              "id": "d",
+              "text": "allowed to"
+            },
+            {
+              "id": "a",
+              "text": "are allowed to"
+            },
+            {
+              "id": "b",
+              "text": "are allow to"
+            }
+          ],
+          "explanation": "Una autorización reglamentaria se expresa con «are allowed to»."
+        },
+        {
+          "id": "r5",
+          "prompt": "You want to borrow a friend's charger.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Can I borrow your charger?"
+            },
+            {
+              "id": "b",
+              "text": "Do I can borrow your charger?"
+            },
+            {
+              "id": "c",
+              "text": "Can I to borrow your charger?"
+            }
+          ],
+          "explanation": "«Can I ...?» es natural para pedir permiso informal."
+        },
+        {
+          "id": "r6",
+          "prompt": "Mina wants [gap1] drive before she moves abroad.",
+          "options": [
+            {
+              "id": "b",
+              "text": "to can"
+            },
+            {
+              "id": "c",
+              "text": "can to"
+            },
+            {
+              "id": "a",
+              "text": "to be able to"
+            }
+          ],
+          "explanation": "Después de «wants» usamos el infinitivo «to be able to»."
+        },
+        {
+          "id": "r7",
+          "prompt": "After the course, you [gap1] edit videos independently.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will be able to"
+            },
+            {
+              "id": "b",
+              "text": "will can"
+            },
+            {
+              "id": "d",
+              "text": "can will"
+            }
+          ],
+          "explanation": "`Can` no tiene futuro propio; usamos «will be able to»."
+        },
+        {
+          "id": "r8",
+          "prompt": "During the renovation, staff [gap1] work from the library.",
+          "options": [
+            {
+              "id": "b",
+              "text": "are allowed to yesterday"
+            },
+            {
+              "id": "d",
+              "text": "did allowed to"
+            },
+            {
+              "id": "a",
+              "text": "were allowed to"
+            }
+          ],
+          "explanation": "El permiso pasado usa «were allowed to work»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-ability-permission"
+      ],
+      "tags": [
+        "b1",
+        "permission",
         "single-choice",
         "mini-game"
       ],

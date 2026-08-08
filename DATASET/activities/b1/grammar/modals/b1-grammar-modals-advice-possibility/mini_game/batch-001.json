@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Because of the strike, the final bus ___ run tonight; check before travelling.",
+          "prompt": "Because of the strike, the final bus [gap1] run tonight; check before travelling.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The journey ___ take about forty minutes outside rush hour.",
+          "prompt": "The journey [gap1] take about forty minutes outside rush hour.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I have not checked the guest list, so Marta ___ be attending the reception.",
+          "prompt": "I have not checked the guest list, so Marta [gap1] be attending the reception.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ I tell the landlord about the leak now?",
+          "prompt": "[gap1] I tell the landlord about the leak now?",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Leaving the window open ___ damage the papers if it rains.",
+          "prompt": "Leaving the window open [gap1] damage the papers if it rains.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "“The battery loses power very quickly.” “You ___ close unused background apps.”",
+          "prompt": "“The battery loses power very quickly.” “You [gap1] close unused background apps.”",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The replacement screen ___ arrive before the repair appointment.",
+          "prompt": "The replacement screen [gap1] arrive before the repair appointment.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "What ___ we include in the welcome pack?",
+          "prompt": "What [gap1] we include in the welcome pack?",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "You ___ leave your bicycle unlocked outside the station.",
+          "prompt": "You [gap1] leave your bicycle unlocked outside the station.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The café ___ be open on Monday because it is a public holiday.",
+          "prompt": "The café [gap1] be open on Monday because it is a public holiday.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The association ___ provide clearer instructions on its website.",
+          "prompt": "The association [gap1] provide clearer instructions on its website.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The label is difficult to read. You ___ use the photograph on your phone to enlarge it.",
+          "prompt": "The label is difficult to read. You [gap1] use the photograph on your phone to enlarge it.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The parcel ___ arrive this afternoon, but the courier has not confirmed it.",
+          "prompt": "The parcel [gap1] arrive this afternoon, but the courier has not confirmed it.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Drivers ___ check their tyre pressure before a long journey.",
+          "prompt": "Drivers [gap1] check their tyre pressure before a long journey.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A weak password ___ allow someone else to access your account.",
+          "prompt": "A weak password [gap1] allow someone else to access your account.",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Aquí «could allow» presenta un resultado posible, no capacidad pasada."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-modals-advice-possibility"
+      ],
+      "tags": [
+        "b1",
+        "advice",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-modals-advice-possibility-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "modals",
+      "subtopic": "advice-possibility",
+      "taxonomyNodeIds": [
+        "advice-possibility"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence recommends an action to Leo?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leo should check the figures again."
+            },
+            {
+              "id": "c",
+              "text": "The figures might be incomplete."
+            },
+            {
+              "id": "b",
+              "text": "The figures should arrive tomorrow."
+            }
+          ],
+          "explanation": "Solo la primera oración recomienda a Leo que realice una acción."
+        },
+        {
+          "id": "r2",
+          "prompt": "In “The refund should reach your account within five days”, “should” expresses [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "advice to the refund"
+            },
+            {
+              "id": "a",
+              "text": "a reasonable expectation"
+            },
+            {
+              "id": "d",
+              "text": "formal permission"
+            }
+          ],
+          "explanation": "El reembolso no recibe consejo; la frase indica cuándo se espera que llegue."
+        },
+        {
+          "id": "r3",
+          "prompt": "The council ought [gap1] residents before changing the collection schedule.",
+          "options": [
+            {
+              "id": "a",
+              "text": "to consult"
+            },
+            {
+              "id": "b",
+              "text": "consult"
+            },
+            {
+              "id": "c",
+              "text": "consulting"
+            }
+          ],
+          "explanation": "La estructura completa es «ought to consult»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence means that joining the call is one possible option?",
+          "options": [
+            {
+              "id": "c",
+              "text": "Rina is allowed to join the call."
+            },
+            {
+              "id": "a",
+              "text": "Rina could join the call from the library."
+            },
+            {
+              "id": "d",
+              "text": "Rina has to join the call."
+            }
+          ],
+          "explanation": "La afirmativa «could join» presenta una opción posible; las otras expresan petición, permiso u obligación."
+        },
+        {
+          "id": "r5",
+          "prompt": "You [gap1] take an umbrella; the forecast says it will rain.",
+          "options": [
+            {
+              "id": "d",
+              "text": "do should"
+            },
+            {
+              "id": "c",
+              "text": "shoulds"
+            },
+            {
+              "id": "a",
+              "text": "should"
+            }
+          ],
+          "explanation": "El consejo se forma con «should + infinitivo»."
+        },
+        {
+          "id": "r6",
+          "prompt": "The path is muddy. You [gap1] wear your older shoes, but the choice is yours.",
+          "options": [
+            {
+              "id": "b",
+              "text": "must"
+            },
+            {
+              "id": "a",
+              "text": "should"
+            },
+            {
+              "id": "d",
+              "text": "mustn't"
+            }
+          ],
+          "explanation": "«The choice is yours» indica consejo, no obligación."
+        },
+        {
+          "id": "r7",
+          "prompt": "The repair [gap1] solve the noise problem, but you [gap2] back up the device first.",
+          "options": [
+            {
+              "id": "a",
+              "text": "might / should"
+            },
+            {
+              "id": "d",
+              "text": "might to / ought"
+            },
+            {
+              "id": "c",
+              "text": "must / should to"
+            }
+          ],
+          "explanation": "«Might solve» expresa posibilidad y «should back up» ofrece consejo."
+        },
+        {
+          "id": "r8",
+          "prompt": "It [gap1] snow on higher ground tonight, according to the forecast.",
+          "options": [
+            {
+              "id": "a",
+              "text": "might"
+            },
+            {
+              "id": "c",
+              "text": "mights"
+            },
+            {
+              "id": "d",
+              "text": "does might"
+            }
+          ],
+          "explanation": "«Might + infinitivo» expresa una posibilidad futura."
         }
       ],
       "lessonIds": [

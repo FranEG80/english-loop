@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The designer ___ our office on Tuesday to discuss the new layout.",
+          "prompt": "The designer [gap1] our office on Tuesday to discuss the new layout.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "I can't stay late because I ___ Sam at the station at nine.",
+          "prompt": "I can't stay late because I [gap1] Sam at the station at nine.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ you ___ the project manager this afternoon?",
+          "prompt": "[gap1] you [gap2] the project manager this afternoon?",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Our landlord ___ someone to check the boiler tomorrow morning.",
+          "prompt": "Our landlord [gap1] someone to check the boiler tomorrow morning.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "We ___ at home tonight; we've booked a table at the Thai restaurant.",
+          "prompt": "We [gap1] at home tonight; we've booked a table at the Thai restaurant.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "___ anyone ___ you at the airport, or should I arrange a taxi?",
+          "prompt": "[gap1] anyone [gap2] you at the airport, or should I arrange a taxi?",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Ravi ___ his driving instructor again on Saturday, as they agreed after today's lesson.",
+          "prompt": "Ravi [gap1] his driving instructor again on Saturday, as they agreed after today's lesson.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "We ___ the flat after all; the agent cancelled tomorrow's viewing.",
+          "prompt": "We [gap1] the flat after all; the agent cancelled tomorrow's viewing.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ the supplier tomorrow unless they ask to move the appointment again.",
+          "prompt": "I [gap1] the supplier tomorrow unless they ask to move the appointment again.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Because the photographer is unavailable on Friday, we ___ the team photo on Monday instead.",
+          "prompt": "Because the photographer is unavailable on Friday, we [gap1] the team photo on Monday instead.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The clients ___ in person; they have requested an online meeting instead.",
+          "prompt": "The clients [gap1] in person; they have requested an online meeting instead.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "We ___ dinner with our new neighbours on Friday evening.",
+          "prompt": "We [gap1] dinner with our new neighbours on Friday evening.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Who ___ the children after school tomorrow?",
+          "prompt": "Who [gap1] the children after school tomorrow?",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "My parents ___ for the weekend; their room is already prepared.",
+          "prompt": "My parents [gap1] for the weekend; their room is already prepared.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I ___ the dentist at half past three tomorrow; the appointment is confirmed.",
+          "prompt": "I [gap1] the dentist at half past three tomorrow; the appointment is confirmed.",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which branch ___ the regional director ___ during her trip next week?",
+          "prompt": "Which branch [gap1] the regional director [gap2] during her trip next week?",
           "options": [
             {
               "id": "a",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "c"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-future-arrangements-timetables-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "present-continuous-arrangements",
+      "taxonomyNodeIds": [
+        "present-continuous-arrangements"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "I [gap1] the afternoon shift next Monday because Priya has agreed to swap with me.",
+          "options": [
+            {
+              "id": "d",
+              "text": "am work"
+            },
+            {
+              "id": "a",
+              "text": "work"
+            },
+            {
+              "id": "b",
+              "text": "am working"
+            }
+          ],
+          "explanation": "El cambio de turno está acordado con Priya; «am working» presenta ese arreglo futuro."
+        },
+        {
+          "id": "r2",
+          "prompt": "Nadia [gap1] us outside the cinema at seven.",
+          "options": [
+            {
+              "id": "d",
+              "text": "meeting"
+            },
+            {
+              "id": "c",
+              "text": "is meeting"
+            },
+            {
+              "id": "a",
+              "text": "meet"
+            }
+          ],
+          "explanation": "El lugar y la hora indican un acuerdo; la forma correcta es «is meeting»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I've exchanged emails with the journalist, and she [gap1] me on Thursday morning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "interviews"
+            },
+            {
+              "id": "b",
+              "text": "is interviewing"
+            },
+            {
+              "id": "c",
+              "text": "will interviewing"
+            }
+          ],
+          "explanation": "Los correos y la fecha muestran que la entrevista está concertada: «is interviewing»."
+        },
+        {
+          "id": "r4",
+          "prompt": "I [gap1] directly to Brussels on Wednesday; my ticket and hotel are both booked.",
+          "options": [
+            {
+              "id": "a",
+              "text": "am flying"
+            },
+            {
+              "id": "b",
+              "text": "fly usually"
+            },
+            {
+              "id": "d",
+              "text": "am fly"
+            }
+          ],
+          "explanation": "Billete y hotel reservados aportan detalles de un viaje organizado; usamos «am flying»."
+        },
+        {
+          "id": "r5",
+          "prompt": "I [gap1] the keynote speaker at breakfast tomorrow, so I can pass on your question.",
+          "options": [
+            {
+              "id": "a",
+              "text": "am meeting"
+            },
+            {
+              "id": "b",
+              "text": "meet every day"
+            },
+            {
+              "id": "c",
+              "text": "will met"
+            }
+          ],
+          "explanation": "El desayuno con una persona concreta ya está organizado; «am meeting» expresa el acuerdo."
+        },
+        {
+          "id": "r6",
+          "prompt": "The researchers [gap1] their preliminary findings to the committee next Thursday; the session is in everyone's calendar.",
+          "options": [
+            {
+              "id": "d",
+              "text": "presents yesterday"
+            },
+            {
+              "id": "a",
+              "text": "presented"
+            },
+            {
+              "id": "b",
+              "text": "are presenting"
+            }
+          ],
+          "explanation": "La sesión figura en los calendarios y está acordada; «are presenting» la describe como arreglo futuro."
+        },
+        {
+          "id": "r7",
+          "prompt": "Lena and I [gap1] a video call with the Madrid team at noon.",
+          "options": [
+            {
+              "id": "a",
+              "text": "has"
+            },
+            {
+              "id": "b",
+              "text": "are having"
+            },
+            {
+              "id": "c",
+              "text": "is having"
+            }
+          ],
+          "explanation": "El sujeto plural y la llamada acordada requieren «are having»."
+        },
+        {
+          "id": "r8",
+          "prompt": "What [gap1] you [gap2] after the workshop? Have you made any plans with the others?",
+          "options": [
+            {
+              "id": "a",
+              "text": "do / do"
+            },
+            {
+              "id": "b",
+              "text": "are / doing"
+            },
+            {
+              "id": "d",
+              "text": "are / do"
+            }
+          ],
+          "explanation": "La pregunta pide planes acordados; la estructura correcta es «What are you doing...?»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-future-arrangements-timetables"
+      ],
+      "tags": [
+        "b1",
+        "future-forms",
+        "arrangements",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
           }
         ]
       },

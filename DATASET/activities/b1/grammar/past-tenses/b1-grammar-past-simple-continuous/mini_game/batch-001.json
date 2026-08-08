@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I ___ the figures were wrong while the analyst ___ them again.",
+          "prompt": "I [gap1] the figures were wrong while the analyst [gap2] them again.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The wind ___ harder as we ___ the ridge, but it suddenly ___ when we reached the shelter.",
+          "prompt": "The wind [gap1] harder as we [gap2] the ridge, but it suddenly [gap3] when we reached the shelter.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The chef was in the middle of checking the seasoning: she ___ the sauce when the alarm sounded.",
+          "prompt": "The chef was in the middle of checking the seasoning: she [gap1] the sauce when the alarm sounded.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "I was halfway home: I ___ along King Street when it suddenly ___ to rain.",
+          "prompt": "I was halfway home: I [gap1] along King Street when it suddenly [gap2] to rain.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "While I was cooking, Leo ___ the table.",
+          "prompt": "While I was cooking, Leo [gap1] the table.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I ___ near the coast from 2018 to 2020, then I moved inland.",
+          "prompt": "I [gap1] near the coast from 2018 to 2020, then I moved inland.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I ___ the file, ___ the laptop and left.",
+          "prompt": "I [gap1] the file, [gap2] the laptop and left.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "We ___ the route when the GPS ___ working, so we ___ a paper map.",
+          "prompt": "We [gap1] the route when the GPS [gap2] working, so we [gap3] a paper map.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The lights suddenly ___ once while we were having dinner.",
+          "prompt": "The lights suddenly [gap1] once while we were having dinner.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Rain ___ and people ___ home as the shop closed.",
+          "prompt": "Rain [gap1] and people [gap2] home as the shop closed.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The meeting ___ at 4.15.",
+          "prompt": "The meeting [gap1] at 4.15.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "At eight o'clock, we ___ outside the theatre.",
+          "prompt": "At eight o'clock, we [gap1] outside the theatre.",
           "options": [
             {
               "id": "d",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "I ___ the plan was too risky.",
+          "prompt": "I [gap1] the plan was too risky.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "She ___ in Nairobi for five years before moving to Accra.",
+          "prompt": "She [gap1] in Nairobi for five years before moving to Accra.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "He ___ my charger without asking, which really annoyed me.",
+          "prompt": "He [gap1] my charger without asking, which really annoyed me.",
           "options": [
             {
               "id": "c",
@@ -425,6 +425,227 @@
           {
             "roundId": "r3",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-past-simple-continuous-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-simple-vs-continuous",
+      "taxonomyNodeIds": [
+        "past-simple-vs-continuous"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "When the inspector [gap1], the technicians [gap2] the final safety test.",
+          "options": [
+            {
+              "id": "c",
+              "text": "did arrived / were run"
+            },
+            {
+              "id": "a",
+              "text": "arrived / were running"
+            },
+            {
+              "id": "d",
+              "text": "arrived / was running"
+            }
+          ],
+          "explanation": "La llegada ocurre durante una prueba que ya estaba en progreso."
+        },
+        {
+          "id": "r2",
+          "prompt": "The visitors continued looking because they did not expect the museum to close.",
+          "options": [
+            {
+              "id": "a",
+              "text": "They weren't expecting the museum to close."
+            },
+            {
+              "id": "b",
+              "text": "They didn't expecting the museum to close."
+            },
+            {
+              "id": "d",
+              "text": "They wasn't expecting the museum to close."
+            }
+          ],
+          "explanation": "La negativa continua plural se forma con «weren't + -ing»."
+        },
+        {
+          "id": "r3",
+          "prompt": "The warning light [gap1] continuously and was still doing so, so I switched the machine off.",
+          "options": [
+            {
+              "id": "c",
+              "text": "was flash"
+            },
+            {
+              "id": "a",
+              "text": "was flashing"
+            },
+            {
+              "id": "b",
+              "text": "flashed"
+            }
+          ],
+          "explanation": "El destello repetido estaba ocurriendo cuando se tomó la decisión."
+        },
+        {
+          "id": "r4",
+          "prompt": "I had been considering it for several minutes: I [gap1] about the plan when you called.",
+          "options": [
+            {
+              "id": "b",
+              "text": "thought"
+            },
+            {
+              "id": "c",
+              "text": "was think"
+            },
+            {
+              "id": "a",
+              "text": "was thinking"
+            }
+          ],
+          "explanation": "«Think about» describe un proceso en curso interrumpido por la llamada."
+        },
+        {
+          "id": "r5",
+          "prompt": "While one group [gap1] samples, the other [gap2] the data; then the supervisor [gap3] the results.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were collecting / was record / checked"
+            },
+            {
+              "id": "d",
+              "text": "was collecting / were recording / check"
+            },
+            {
+              "id": "a",
+              "text": "was collecting / was recording / checked"
+            }
+          ],
+          "explanation": "Las dos tareas eran paralelas; la revisión posterior es un evento completo."
+        },
+        {
+          "id": "r6",
+          "prompt": "I met Jo in the middle of a temporary summer placement, while I [gap1] in Madrid.",
+          "options": [
+            {
+              "id": "d",
+              "text": "were working"
+            },
+            {
+              "id": "c",
+              "text": "was work"
+            },
+            {
+              "id": "a",
+              "text": "was working"
+            }
+          ],
+          "explanation": "El trabajo temporal sirve como fondo para el encuentro."
+        },
+        {
+          "id": "r7",
+          "prompt": "The sauce [gap1] unusually bitter, so we did not serve it.",
+          "options": [
+            {
+              "id": "c",
+              "text": "did tasted"
+            },
+            {
+              "id": "a",
+              "text": "tasted"
+            },
+            {
+              "id": "d",
+              "text": "were tasted"
+            }
+          ],
+          "explanation": "Aquí «taste» describe una propiedad y usa past simple."
+        },
+        {
+          "id": "r8",
+          "prompt": "The children [gap1] around the track when the whistle blew.",
+          "options": [
+            {
+              "id": "c",
+              "text": "was running"
+            },
+            {
+              "id": "d",
+              "text": "did running"
+            },
+            {
+              "id": "a",
+              "text": "were running"
+            }
+          ],
+          "explanation": "«Run» duplica la consonante final: «were running»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-past-simple-continuous"
+      ],
+      "tags": [
+        "b1",
+        "past-tenses",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r4",

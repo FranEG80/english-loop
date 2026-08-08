@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition completes route sentence 013? We followed the path ___ the hill.",
+          "prompt": "Which preposition completes route sentence 013? We followed the path [gap1] the hill.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Which preposition completes route sentence 006? We cycled ___ the river.",
+          "prompt": "Which preposition completes route sentence 006? We cycled [gap1] the river.",
           "options": [
             {
               "id": "a",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which preposition completes route sentence 019? We drove ___ the coast road.",
+          "prompt": "Which preposition completes route sentence 019? We drove [gap1] the coast road.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which preposition completes route sentence 001? We walked ___ the station.",
+          "prompt": "Which preposition completes route sentence 001? We walked [gap1] the station.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which preposition completes route sentence 016? The path leads ___ a narrow valley.",
+          "prompt": "Which preposition completes route sentence 016? The path leads [gap1] a narrow valley.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which preposition completes route sentence 018? The horse jumped ___ the fence.",
+          "prompt": "Which preposition completes route sentence 018? The horse jumped [gap1] the fence.",
           "options": [
             {
               "id": "d",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which preposition completes route sentence 022? The travellers moved ___ the border.",
+          "prompt": "Which preposition completes route sentence 022? The travellers moved [gap1] the border.",
           "options": [
             {
               "id": "b",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which preposition completes route sentence 011? The dog jumped ___ the car.",
+          "prompt": "Which preposition completes route sentence 011? The dog jumped [gap1] the car.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition completes route sentence 014? We walked ___ the old hotel.",
+          "prompt": "Which preposition completes route sentence 014? We walked [gap1] the old hotel.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Which preposition completes route sentence 023? The child climbed ___ the boat.",
+          "prompt": "Which preposition completes route sentence 023? The child climbed [gap1] the boat.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which preposition completes route sentence 007? Walk ___ the museum, then turn left.",
+          "prompt": "Which preposition completes route sentence 007? Walk [gap1] the museum, then turn left.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which preposition completes route sentence 012? She stepped ___ the platform.",
+          "prompt": "Which preposition completes route sentence 012? She stepped [gap1] the platform.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which preposition completes route sentence 025? We went ___ the airport and checked in.",
+          "prompt": "Which preposition completes route sentence 025? We went [gap1] the airport and checked in.",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which preposition completes route sentence 009? The train went ___ the bridge.",
+          "prompt": "Which preposition completes route sentence 009? The train went [gap1] the bridge.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which preposition completes route sentence 020? They walked ___ the station without entering.",
+          "prompt": "Which preposition completes route sentence 020? They walked [gap1] the station without entering.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which preposition completes route sentence 004? We drove ___ the tunnel.",
+          "prompt": "Which preposition completes route sentence 004? We drove [gap1] the tunnel.",
           "options": [
             {
               "id": "d",
@@ -408,6 +408,227 @@
         "b1",
         "preposition",
         "past",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-prepositions-movement-travel-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-prepositions-movement-travel",
+      "subtopic": "b1-prepositions-movement-travel",
+      "taxonomyNodeIds": [
+        "b1-prepositions-movement-travel"
+      ],
+      "difficulty": 2,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes route sentence 021? The road runs [gap1] the forest.",
+          "options": [
+            {
+              "id": "b",
+              "text": "onto"
+            },
+            {
+              "id": "c",
+              "text": "past"
+            },
+            {
+              "id": "a",
+              "text": "through"
+            }
+          ],
+          "explanation": "Use «through» when the road crosses the interior of the forest."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes route sentence 015? The boat moved [gap1] the island.",
+          "options": [
+            {
+              "id": "a",
+              "text": "towards"
+            },
+            {
+              "id": "c",
+              "text": "into"
+            },
+            {
+              "id": "b",
+              "text": "onto"
+            }
+          ],
+          "explanation": "Use «towards» when the island is the direction, not necessarily the destination."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes route sentence 024? The runner went [gap1] the finishing line.",
+          "options": [
+            {
+              "id": "a",
+              "text": "across"
+            },
+            {
+              "id": "c",
+              "text": "along"
+            },
+            {
+              "id": "b",
+              "text": "into"
+            }
+          ],
+          "explanation": "Use «across» for crossing a line."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes route sentence 003? The cat jumped [gap1] the table.",
+          "options": [
+            {
+              "id": "b",
+              "text": "into"
+            },
+            {
+              "id": "d",
+              "text": "towards"
+            },
+            {
+              "id": "a",
+              "text": "onto"
+            }
+          ],
+          "explanation": "Use «onto» for movement to a surface."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes route sentence 005? They ran [gap1] the road.",
+          "options": [
+            {
+              "id": "b",
+              "text": "through"
+            },
+            {
+              "id": "c",
+              "text": "along"
+            },
+            {
+              "id": "a",
+              "text": "across"
+            }
+          ],
+          "explanation": "Use «across» to cross from one side to the other."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes route sentence 010? The bus drove [gap1] the city centre.",
+          "options": [
+            {
+              "id": "c",
+              "text": "past"
+            },
+            {
+              "id": "d",
+              "text": "towards"
+            },
+            {
+              "id": "a",
+              "text": "through"
+            }
+          ],
+          "explanation": "Use «through» for movement within a place and out again."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes route sentence 002? She went [gap1] the shop.",
+          "options": [
+            {
+              "id": "d",
+              "text": "across"
+            },
+            {
+              "id": "a",
+              "text": "into"
+            },
+            {
+              "id": "b",
+              "text": "to"
+            }
+          ],
+          "explanation": "Use «into» when movement ends inside a place."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes route sentence 008? The hikers walked [gap1] the lake.",
+          "options": [
+            {
+              "id": "b",
+              "text": "onto"
+            },
+            {
+              "id": "c",
+              "text": "into"
+            },
+            {
+              "id": "a",
+              "text": "towards"
+            }
+          ],
+          "explanation": "Use «towards» for direction without confirming arrival."
+        }
+      ],
+      "lessonIds": [
+        "b1-prepositions-movement-travel"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "forest",
         "mini-game"
       ],
       "estimatedSeconds": 120,

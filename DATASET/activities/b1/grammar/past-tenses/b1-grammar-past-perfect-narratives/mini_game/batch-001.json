@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "We ___ the wrong path, so we ___ the village from the opposite direction.",
+          "prompt": "We [gap1] the wrong path, so we [gap2] the village from the opposite direction.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The server ___ overnight, so the technician ___ it before the office opened.",
+          "prompt": "The server [gap1] overnight, so the technician [gap2] it before the office opened.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "When I called Omar, he ___ the news.",
+          "prompt": "When I called Omar, he [gap1] the news.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The guests ___ when our taxi arrived.",
+          "prompt": "The guests [gap1] when our taxi arrived.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "After I locked the door, I ___ towards the station.",
+          "prompt": "After I locked the door, I [gap1] towards the station.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "I was hungry because I ___ breakfast.",
+          "prompt": "I was hungry because I [gap1] breakfast.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "She had ___ home before the meeting ended.",
+          "prompt": "She had [gap1] home before the meeting ended.",
           "options": [
             {
               "id": "d",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "I thought I ___ the document, but the folder was empty.",
+          "prompt": "I thought I [gap1] the document, but the folder was empty.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The path was slippery because it ___ overnight.",
+          "prompt": "The path was slippery because it [gap1] overnight.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "At noon, the replacement parcel ___ yet.",
+          "prompt": "At noon, the replacement parcel [gap1] yet.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "I returned to check the door after I ___ the building.",
+          "prompt": "I returned to check the door after I [gap1] the building.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Before that trip, Nora ___ in a plane.",
+          "prompt": "Before that trip, Nora [gap1] in a plane.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The lift ___ a second before we entered it.",
+          "prompt": "The lift [gap1] a second before we entered it.",
           "options": [
             {
               "id": "a",
@@ -399,6 +399,227 @@
             }
           ],
           "explanation": "Aunque la diferencia es mínima, la parada ocurrió antes de la entrada."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-past-perfect-narratives"
+      ],
+      "tags": [
+        "b1",
+        "past-perfect",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-past-perfect-narratives-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "past-tenses",
+      "subtopic": "past-perfect-narrative",
+      "taxonomyNodeIds": [
+        "past-perfect-narrative"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which sentence says Maya left before my arrival?",
+          "options": [
+            {
+              "id": "a",
+              "text": "When I arrived, Maya had left."
+            },
+            {
+              "id": "b",
+              "text": "When I arrived, Maya left."
+            },
+            {
+              "id": "d",
+              "text": "When I arrived, Maya had leave."
+            }
+          ],
+          "explanation": "«Had left» sitúa la salida antes de «arrived»."
+        },
+        {
+          "id": "r2",
+          "prompt": "When we arrived, the concert [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "had started"
+            },
+            {
+              "id": "d",
+              "text": "was start"
+            },
+            {
+              "id": "c",
+              "text": "had start"
+            }
+          ],
+          "explanation": "El concierto empezó antes de nuestra llegada: «had started»."
+        },
+        {
+          "id": "r3",
+          "prompt": "I opened the box and found the part that the supplier [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "had sent"
+            },
+            {
+              "id": "c",
+              "text": "had send"
+            },
+            {
+              "id": "d",
+              "text": "was sent"
+            }
+          ],
+          "explanation": "El proveedor envió la pieza antes de que yo abriera la caja."
+        },
+        {
+          "id": "r4",
+          "prompt": "Lena explained why she was late: first she had missed a bus; after that she called and waited.",
+          "options": [
+            {
+              "id": "d",
+              "text": "She had miss the bus, so she did called us."
+            },
+            {
+              "id": "b",
+              "text": "She had missed the bus, so she had called us and had waited for the next one."
+            },
+            {
+              "id": "a",
+              "text": "She had missed the bus, so she called us and waited for the next one."
+            }
+          ],
+          "explanation": "Past perfect abre el retroceso; los eventos posteriores siguen en past simple."
+        },
+        {
+          "id": "r5",
+          "prompt": "They [gap1] each other for years before they worked together.",
+          "options": [
+            {
+              "id": "a",
+              "text": "had known"
+            },
+            {
+              "id": "c",
+              "text": "have known"
+            },
+            {
+              "id": "d",
+              "text": "had knew"
+            }
+          ],
+          "explanation": "«Know» es de estado y la relación existía antes del trabajo conjunto."
+        },
+        {
+          "id": "r6",
+          "prompt": "Ask whether the driver saw the warning before the incident.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Had the driver saw the warning?"
+            },
+            {
+              "id": "a",
+              "text": "Had the driver seen the warning?"
+            },
+            {
+              "id": "b",
+              "text": "Did the driver had seen the warning?"
+            }
+          ],
+          "explanation": "La pregunta usa «Had + sujeto + participio»: «seen»."
+        },
+        {
+          "id": "r7",
+          "prompt": "By noon, we [gap1] the inspection.",
+          "options": [
+            {
+              "id": "b",
+              "text": "have finished"
+            },
+            {
+              "id": "a",
+              "text": "had finished"
+            },
+            {
+              "id": "c",
+              "text": "had finish"
+            }
+          ],
+          "explanation": "«By noon» marca un límite pasado antes del cual se completó el trabajo."
+        },
+        {
+          "id": "r8",
+          "prompt": "We couldn't pay because I [gap1] my wallet at home.",
+          "options": [
+            {
+              "id": "b",
+              "text": "have left"
+            },
+            {
+              "id": "d",
+              "text": "was left"
+            },
+            {
+              "id": "a",
+              "text": "had left"
+            }
+          ],
+          "explanation": "Dejar la cartera ocurrió antes del intento de pagar."
         }
       ],
       "lessonIds": [

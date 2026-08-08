@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The tenants got the faulty boiler ___ before the cold spell.",
+          "prompt": "The tenants got the faulty boiler [gap1] before the cold spell.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The journalist had the interview ___ into Spanish.",
+          "prompt": "The journalist had the interview [gap1] into Spanish.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "She has had her wedding dress ___ by a local designer.",
+          "prompt": "She has had her wedding dress [gap1] by a local designer.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The laboratory must ___ the samples analysed by an independent team.",
+          "prompt": "The laboratory must [gap1] the samples analysed by an independent team.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "By next month, I will have my driving licence ___.",
+          "prompt": "By next month, I will have my driving licence [gap1].",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "By Friday, the gallery will have ___ its lighting upgraded.",
+          "prompt": "By Friday, the gallery will have [gap1] its lighting upgraded.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The council will ___ the damaged sign replaced.",
+          "prompt": "The council will [gap1] the damaged sign replaced.",
           "options": [
             {
               "id": "a",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "I need to ___ my passport renewed before July.",
+          "prompt": "I need to [gap1] my passport renewed before July.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "She is ___ her bicycle serviced this afternoon.",
+          "prompt": "She is [gap1] her bicycle serviced this afternoon.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Please ___ the application signed by both partners.",
+          "prompt": "Please [gap1] the application signed by both partners.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "They have ___ the roof repaired since the storm.",
+          "prompt": "They have [gap1] the roof repaired since the storm.",
           "options": [
             {
               "id": "a",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The shop had its front window ___ during the protest.",
+          "prompt": "The shop had its front window [gap1] during the protest.",
           "options": [
             {
               "id": "c",
@@ -441,6 +441,227 @@
           {
             "roundId": "r7",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-have-get-something-done-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "passive-voice",
+      "subtopic": "have-get-something-done",
+      "taxonomyNodeIds": [
+        "have-get-something-done"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "We are getting the office [gap1] before the inspection.",
+          "options": [
+            {
+              "id": "b",
+              "text": "rewired"
+            },
+            {
+              "id": "a",
+              "text": "rewire"
+            },
+            {
+              "id": "d",
+              "text": "to rewired"
+            }
+          ],
+          "explanation": "El presente continuo causativo usa getting + objeto + participio."
+        },
+        {
+          "id": "r2",
+          "prompt": "The festival organisers had the stage [gap1] by a safety inspector.",
+          "options": [
+            {
+              "id": "b",
+              "text": "checked"
+            },
+            {
+              "id": "a",
+              "text": "check"
+            },
+            {
+              "id": "d",
+              "text": "to checked"
+            }
+          ],
+          "explanation": "The stage recibe la inspección: had the stage checked."
+        },
+        {
+          "id": "r3",
+          "prompt": "The director wants to [gap1] the archive digitised before winter.",
+          "options": [
+            {
+              "id": "d",
+              "text": "get to have"
+            },
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "have been"
+            }
+          ],
+          "explanation": "Después de wants to usamos have + objeto + participio."
+        },
+        {
+          "id": "r4",
+          "prompt": "Someone stole Liam's phone on the train.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Liam got to steal his phone on the train."
+            },
+            {
+              "id": "a",
+              "text": "Liam had his phone stolen on the train."
+            },
+            {
+              "id": "b",
+              "text": "Liam had stolen his phone on the train."
+            }
+          ],
+          "explanation": "Have + objeto + participio también describe algo sufrido por el sujeto."
+        },
+        {
+          "id": "r5",
+          "prompt": "Can you get the minutes [gap1] before the meeting starts?",
+          "options": [
+            {
+              "id": "d",
+              "text": "to type"
+            },
+            {
+              "id": "b",
+              "text": "typed"
+            },
+            {
+              "id": "a",
+              "text": "type"
+            }
+          ],
+          "explanation": "Get + objeto + participio expresa conseguir que alguien mecanografíe las actas."
+        },
+        {
+          "id": "r6",
+          "prompt": "The museum [gap1] its fire alarms tested every month.",
+          "options": [
+            {
+              "id": "d",
+              "text": "having"
+            },
+            {
+              "id": "c",
+              "text": "is have"
+            },
+            {
+              "id": "a",
+              "text": "has"
+            }
+          ],
+          "explanation": "La estructura es has + objeto + participio: has its fire alarms tested."
+        },
+        {
+          "id": "r7",
+          "prompt": "We [gap1] the contract translated by a solicitor.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were had"
+            },
+            {
+              "id": "a",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "had it"
+            }
+          ],
+          "explanation": "Had the contract translated significa que encargamos la traducción."
+        },
+        {
+          "id": "r8",
+          "prompt": "You should [gap1] your hearing tested if the ringing continues.",
+          "options": [
+            {
+              "id": "d",
+              "text": "get to have"
+            },
+            {
+              "id": "c",
+              "text": "having"
+            },
+            {
+              "id": "a",
+              "text": "have"
+            }
+          ],
+          "explanation": "Después de should usamos have + objeto + participio."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-have-get-something-done"
+      ],
+      "tags": [
+        "b2",
+        "causative",
+        "process",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r8",

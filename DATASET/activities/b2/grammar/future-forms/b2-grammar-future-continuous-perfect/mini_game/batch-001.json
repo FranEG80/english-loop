@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "At 8 p.m. tomorrow, I ___ the night shift.",
+          "prompt": "At 8 p.m. tomorrow, I [gap1] the night shift.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "At three o'clock, I ___ a client in Manchester.",
+          "prompt": "At three o'clock, I [gap1] a client in Manchester.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "By the time the guests arrive, we ___ the tables.",
+          "prompt": "By the time the guests arrive, we [gap1] the tables.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "By the end of the month, I ___ all four modules.",
+          "prompt": "By the end of the month, I [gap1] all four modules.",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "At this point next year, our daughter ___ at university.",
+          "prompt": "At this point next year, our daughter [gap1] at university.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "When the conference opens, we ___ in the registration queue.",
+          "prompt": "When the conference opens, we [gap1] in the registration queue.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "When you arrive at 6, we ___ dinner.",
+          "prompt": "When you arrive at 6, we [gap1] dinner.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "This time tomorrow, she ___ her presentation.",
+          "prompt": "This time tomorrow, she [gap1] her presentation.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "By the end of the expedition, the team ___ 200 kilometres.",
+          "prompt": "By the end of the expedition, the team [gap1] 200 kilometres.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "By 9, the chef ___ all the ingredients.",
+          "prompt": "By 9, the chef [gap1] all the ingredients.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "At 5 p.m., the repair team ___ the lift.",
+          "prompt": "At 5 p.m., the repair team [gap1] the lift.",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "By the end of the course, you ___ a full portfolio.",
+          "prompt": "By the end of the course, you [gap1] a full portfolio.",
           "options": [
             {
               "id": "a",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "At 7 p.m., the volunteers ___ meals at the shelter.",
+          "prompt": "At 7 p.m., the volunteers [gap1] meals at the shelter.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "At noon on Friday, Marta ___ in the lab.",
+          "prompt": "At noon on Friday, Marta [gap1] in the lab.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "By the time the shop closes, the staff ___ the stock.",
+          "prompt": "By the time the shop closes, the staff [gap1] the stock.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "By next June, our team ___ the new bridge.",
+          "prompt": "By next June, our team [gap1] the new bridge.",
           "options": [
             {
               "id": "c",
@@ -408,6 +408,227 @@
         "b2",
         "future-forms",
         "future-perfect",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-future-continuous-perfect-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "future-forms",
+      "subtopic": "future-continuous-perfect",
+      "taxonomyNodeIds": [
+        "future-continuous-perfect"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "At 6 a.m. tomorrow, the gardeners [gap1] the trees.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will have watered"
+            },
+            {
+              "id": "c",
+              "text": "water"
+            },
+            {
+              "id": "a",
+              "text": "will be watering"
+            }
+          ],
+          "explanation": "La actividad estará desarrollándose a las seis."
+        },
+        {
+          "id": "r2",
+          "prompt": "At 10 tomorrow, the train [gap1] through the tunnel.",
+          "options": [
+            {
+              "id": "c",
+              "text": "travelled"
+            },
+            {
+              "id": "a",
+              "text": "will be travelling"
+            },
+            {
+              "id": "b",
+              "text": "will have travelled"
+            }
+          ],
+          "explanation": "At 10 señala el momento en que el viaje estará en curso."
+        },
+        {
+          "id": "r3",
+          "prompt": "By midnight, the engineers [gap1] the safety checks.",
+          "options": [
+            {
+              "id": "c",
+              "text": "finish"
+            },
+            {
+              "id": "d",
+              "text": "finished"
+            },
+            {
+              "id": "a",
+              "text": "will have finished"
+            }
+          ],
+          "explanation": "By midnight enfoca una tarea acabada antes de esa hora."
+        },
+        {
+          "id": "r4",
+          "prompt": "By Friday, the editor [gap1] the final chapter.",
+          "options": [
+            {
+              "id": "c",
+              "text": "revises"
+            },
+            {
+              "id": "b",
+              "text": "will be revising"
+            },
+            {
+              "id": "a",
+              "text": "will have revised"
+            }
+          ],
+          "explanation": "El capítulo estará revisado antes del viernes."
+        },
+        {
+          "id": "r5",
+          "prompt": "This time next week, we [gap1] along the coast.",
+          "options": [
+            {
+              "id": "d",
+              "text": "cycled"
+            },
+            {
+              "id": "c",
+              "text": "cycle"
+            },
+            {
+              "id": "a",
+              "text": "will be cycling"
+            }
+          ],
+          "explanation": "This time next week sitúa la actividad en progreso en un momento futuro."
+        },
+        {
+          "id": "r6",
+          "prompt": "By 2030, the city [gap1] its new tram line.",
+          "options": [
+            {
+              "id": "c",
+              "text": "opens"
+            },
+            {
+              "id": "b",
+              "text": "will be opening"
+            },
+            {
+              "id": "a",
+              "text": "will have opened"
+            }
+          ],
+          "explanation": "By 2030 establece la fecha límite para la apertura completada."
+        },
+        {
+          "id": "r7",
+          "prompt": "By the time the film starts, they [gap1] their seats.",
+          "options": [
+            {
+              "id": "b",
+              "text": "will be finding"
+            },
+            {
+              "id": "d",
+              "text": "found"
+            },
+            {
+              "id": "a",
+              "text": "will have found"
+            }
+          ],
+          "explanation": "Encontrar los asientos será anterior al comienzo de la película."
+        },
+        {
+          "id": "r8",
+          "prompt": "This time next month, they [gap1] in their new flat.",
+          "options": [
+            {
+              "id": "d",
+              "text": "lived"
+            },
+            {
+              "id": "a",
+              "text": "will be living"
+            },
+            {
+              "id": "b",
+              "text": "will have lived"
+            }
+          ],
+          "explanation": "This time next month describe una situación que estará en curso."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-future-continuous-perfect"
+      ],
+      "tags": [
+        "b2",
+        "future-forms",
+        "future-continuous",
         "mini-game"
       ],
       "estimatedSeconds": 120,

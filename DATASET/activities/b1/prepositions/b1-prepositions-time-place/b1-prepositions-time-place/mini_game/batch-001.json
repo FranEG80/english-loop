@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition completes time sentence 023? We finished the work ___ the afternoon.",
+          "prompt": "Which preposition completes time sentence 023? We finished the work [gap1] the afternoon.",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Which preposition completes surface sentence 014? There is a mark ___ the door.",
+          "prompt": "Which preposition completes surface sentence 014? There is a mark [gap1] the door.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which preposition completes time sentence 022? The deadline is ___ the end of June.",
+          "prompt": "Which preposition completes time sentence 022? The deadline is [gap1] the end of June.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which preposition completes period sentence 018? The building was finished ___ the nineteenth century.",
+          "prompt": "Which preposition completes period sentence 018? The building was finished [gap1] the nineteenth century.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which preposition completes interior sentence 010? The children are ___ the garden.",
+          "prompt": "Which preposition completes interior sentence 010? The children are [gap1] the garden.",
           "options": [
             {
               "id": "c",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which preposition completes transport sentence 013? We travelled ___ a bus.",
+          "prompt": "Which preposition completes transport sentence 013? We travelled [gap1] a bus.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which preposition completes part-of-day sentence 008? We exercise ___ the morning.",
+          "prompt": "Which preposition completes part-of-day sentence 008? We exercise [gap1] the morning.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which preposition completes period sentence 006? They moved here ___ 2019.",
+          "prompt": "Which preposition completes period sentence 006? They moved here [gap1] 2019.",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Which preposition completes the location contrast in sentence 020? The students are ___ school, not inside the building.",
+          "prompt": "Which preposition completes the location contrast in sentence 020? The students are [gap1] school, not inside the building.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Which preposition completes surface sentence 024? There is a label ___ the bottle.",
+          "prompt": "Which preposition completes surface sentence 024? There is a label [gap1] the bottle.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Which preposition completes weekend sentence 019? We usually work ___ the weekend.",
+          "prompt": "Which preposition completes weekend sentence 019? We usually work [gap1] the weekend.",
           "options": [
             {
               "id": "c",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Which preposition completes season sentence 016? We visit the coast ___ summer.",
+          "prompt": "Which preposition completes season sentence 016? We visit the coast [gap1] summer.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Which preposition completes date sentence 002? Our exam is ___ Monday.",
+          "prompt": "Which preposition completes date sentence 002? Our exam is [gap1] Monday.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Which preposition completes time sentence 001? The lesson starts ___ eight.",
+          "prompt": "Which preposition completes time sentence 001? The lesson starts [gap1] eight.",
           "options": [
             {
               "id": "c",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Which preposition completes physical-location sentence 012? The notice is ___ the school building.",
+          "prompt": "Which preposition completes physical-location sentence 012? The notice is [gap1] the school building.",
           "options": [
             {
               "id": "d",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Which preposition completes place sentence 004? We met ___ the station.",
+          "prompt": "Which preposition completes place sentence 004? We met [gap1] the station.",
           "options": [
             {
               "id": "c",
@@ -408,6 +408,227 @@
         "b1",
         "preposition",
         "contrast",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-prepositions-time-place-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "prepositions",
+      "topic": "b1-prepositions-time-place",
+      "subtopic": "b1-prepositions-time-place",
+      "taxonomyNodeIds": [
+        "b1-prepositions-time-place"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which preposition completes point sentence 015? Meet me [gap1] the entrance.",
+          "options": [
+            {
+              "id": "a",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "b",
+              "text": "in"
+            }
+          ],
+          "explanation": "Use «at» for a specific meeting point."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which preposition completes date sentence 007? The concert is [gap1] 12 May.",
+          "options": [
+            {
+              "id": "b",
+              "text": "in"
+            },
+            {
+              "id": "d",
+              "text": "during"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "Use «on» with a complete date."
+        },
+        {
+          "id": "r3",
+          "prompt": "Which preposition completes the location contrast in sentence 021? The caretaker is [gap1] the school building.",
+          "options": [
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            },
+            {
+              "id": "a",
+              "text": "in"
+            }
+          ],
+          "explanation": "«In the school building» describes physical position inside it."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which preposition completes activity sentence 011? Ben is [gap1] school today.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            },
+            {
+              "id": "c",
+              "text": "on"
+            }
+          ],
+          "explanation": "«At school» focuses on the activity or institution."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which preposition completes surface sentence 005? The photo is [gap1] the wall.",
+          "options": [
+            {
+              "id": "d",
+              "text": "to"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            },
+            {
+              "id": "b",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «on» with a surface."
+        },
+        {
+          "id": "r6",
+          "prompt": "Which preposition completes month sentence 003? I was born [gap1] July.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in"
+            },
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «in» with months."
+        },
+        {
+          "id": "r7",
+          "prompt": "Which preposition completes point sentence 025? The taxi is waiting [gap1] the corner.",
+          "options": [
+            {
+              "id": "b",
+              "text": "on"
+            },
+            {
+              "id": "c",
+              "text": "in"
+            },
+            {
+              "id": "a",
+              "text": "at"
+            }
+          ],
+          "explanation": "Use «at» for a specific point such as a corner."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which preposition completes event sentence 017? The museum is free [gap1] Sundays.",
+          "options": [
+            {
+              "id": "b",
+              "text": "at"
+            },
+            {
+              "id": "d",
+              "text": "by"
+            },
+            {
+              "id": "a",
+              "text": "on"
+            }
+          ],
+          "explanation": "Use «on» with named days."
+        }
+      ],
+      "lessonIds": [
+        "b1-prepositions-time-place"
+      ],
+      "tags": [
+        "b1",
+        "preposition",
+        "points",
         "mini-game"
       ],
       "estimatedSeconds": 120,

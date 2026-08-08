@@ -27,16 +27,28 @@
       "prompt": "Match article and review purposes.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Article",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "informs a broad audience"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Review",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "evaluates an experience"
+        },
+        {
+          "leftId": "l3",
+          "left": "The route is long",
+          "rightId": "r3",
+          "right": "allow extra time for the visit"
+        },
+        {
+          "leftId": "l4",
+          "left": "The play is intimate",
+          "rightId": "r4",
+          "right": "the small stage brings actors close"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match review sections with their jobs.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Opening",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "identify the subject and focus"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Closing",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "give a justified recommendation"
+        },
+        {
+          "leftId": "l3",
+          "left": "Support evaluations",
+          "rightId": "r3",
+          "right": "make recommendations credible"
+        },
+        {
+          "leftId": "l4",
+          "left": "Acknowledge limitations",
+          "rightId": "r4",
+          "right": "keep the judgement balanced"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match factual details with their review function.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Five local artists",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "identifies the contributors"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Step-free entrance",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "describes accessibility"
+        },
+        {
+          "leftId": "l3",
+          "left": "The book is emotionally subtle",
+          "rightId": "r3",
+          "right": "feelings are implied rather than explained"
+        },
+        {
+          "leftId": "l4",
+          "left": "Beginners",
+          "rightId": "r4",
+          "right": "explain specialist terms"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match positive evaluations with supporting details.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The layout is clear",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "signs guide visitors between rooms"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The atmosphere is thoughtful",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "lighting is carefully controlled"
+        },
+        {
+          "leftId": "l3",
+          "left": "Assess a specialist book",
+          "rightId": "r3",
+          "right": "recommend it to experienced readers"
+        },
+        {
+          "leftId": "l4",
+          "left": "Concrete scene",
+          "rightId": "r4",
+          "right": "supports an interpretation"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match audiences with review advice.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Readers with little time",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "visit the main gallery first"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Families with children",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "choose the interactive tour"
+        },
+        {
+          "leftId": "l3",
+          "left": "The gallery has clear signs",
+          "rightId": "r3",
+          "right": "easy to navigate"
+        },
+        {
+          "leftId": "l4",
+          "left": "Inform readers about an event",
+          "rightId": "r4",
+          "right": "The festival brings together music and workshops"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match connectors used in balanced reviews.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "although",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "introduces a limitation"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "overall",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "signals a final judgement"
+        },
+        {
+          "leftId": "l3",
+          "left": "Practical detail",
+          "rightId": "r3",
+          "right": "supports a decision"
+        },
+        {
+          "leftId": "l4",
+          "left": "Facts and opinions are mixed randomly",
+          "rightId": "r4",
+          "right": "group details before evaluating"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match review subjects with useful information.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Theatre",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "performance and atmosphere"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Restaurant",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "food, service and value"
+        },
+        {
+          "leftId": "l3",
+          "left": "Evaluate a venue for families",
+          "rightId": "r3",
+          "right": "This review considers whether the centre suits families"
+        },
+        {
+          "leftId": "l4",
+          "left": "The hall becomes crowded",
+          "rightId": "r4",
+          "right": "arrive before the main performance"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match conclusions with the readers they address.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Ideal for local culture fans",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "city festival"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Best for experienced visitors",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "specialist exhibition"
+        },
+        {
+          "leftId": "l3",
+          "left": "Everyone will enjoy it",
+          "rightId": "r3",
+          "right": "identify a realistic audience"
+        },
+        {
+          "leftId": "l4",
+          "left": "Emotionally subtle",
+          "rightId": "r4",
+          "right": "rewards careful attention"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match review phrases with their effect on the reader.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "particularly suitable for",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "targets an audience"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "worth visiting because",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "gives a reason to recommend"
+        },
+        {
+          "leftId": "l3",
+          "left": "Best for experienced visitors",
+          "rightId": "r3",
+          "right": "specialist exhibition"
+        },
+        {
+          "leftId": "l4",
+          "left": "The film has short chapters",
+          "rightId": "r4",
+          "right": "easy to read in brief sessions"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match review facts with reasonable evaluations.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The film has short chapters",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "easy to read in brief sessions"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The gallery has clear signs",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "easy to navigate"
+        },
+        {
+          "leftId": "l3",
+          "left": "Emotionally subtle",
+          "rightId": "r3",
+          "right": "rewards careful attention"
+        },
+        {
+          "leftId": "l4",
+          "left": "Accessible to a wide audience",
+          "rightId": "r4",
+          "right": "requires little specialist knowledge"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match article-review purposes with suitable openings.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Inform readers about an event",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "The festival brings together music and workshops"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Evaluate a venue for families",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "This review considers whether the centre suits families"
+        },
+        {
+          "leftId": "l3",
+          "left": "Ideal for local culture fans",
+          "rightId": "r3",
+          "right": "city festival"
+        },
+        {
+          "leftId": "l4",
+          "left": "Best for experienced visitors",
+          "rightId": "r4",
+          "right": "specialist exhibition"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match review limitations with practical advice.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The hall becomes crowded",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "arrive before the main performance"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The route is long",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "allow extra time for the visit"
+        },
+        {
+          "leftId": "l3",
+          "left": "It was good",
+          "rightId": "r3",
+          "right": "name a feature and its effect"
+        },
+        {
+          "leftId": "l4",
+          "left": "Everyone will enjoy it",
+          "rightId": "r4",
+          "right": "identify a realistic audience"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match nuanced evaluations with supporting details.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The play is intimate",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "the small stage brings actors close"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "The book is emotionally subtle",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "feelings are implied rather than explained"
+        },
+        {
+          "leftId": "l3",
+          "left": "Theatre",
+          "rightId": "r3",
+          "right": "performance and atmosphere"
+        },
+        {
+          "leftId": "l4",
+          "left": "Restaurant",
+          "rightId": "r4",
+          "right": "food, service and value"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match audiences with useful review choices.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Beginners",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "explain specialist terms"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Experts",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "discuss technical detail"
+        },
+        {
+          "leftId": "l3",
+          "left": "Evaluate impact",
+          "rightId": "r3",
+          "right": "explain how readers experience it"
+        },
+        {
+          "leftId": "l4",
+          "left": "Recommend",
+          "rightId": "r4",
+          "right": "identify who should attend"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match review conclusions with the evidence they synthesise.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Worth a special visit",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "strong atmosphere and varied programme"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Best for a quick stop",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "interesting highlights but limited size"
+        },
+        {
+          "leftId": "l3",
+          "left": "although",
+          "rightId": "r3",
+          "right": "introduces a limitation"
+        },
+        {
+          "leftId": "l4",
+          "left": "overall",
+          "rightId": "r4",
+          "right": "signals a final judgement"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match comparisons between exhibition spaces with their focus.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "more spacious",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "room for larger groups"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "greater character",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "a distinctive older atmosphere"
+        },
+        {
+          "leftId": "l3",
+          "left": "Thoughtful but slow",
+          "rightId": "r3",
+          "right": "strong ideas and a quiet beginning"
+        },
+        {
+          "leftId": "l4",
+          "left": "Provide context",
+          "rightId": "r4",
+          "right": "name the event and date"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match audience implications with review claims.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Technical detail is central",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "experienced readers will benefit"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Simple routes are explained",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "beginners can follow the guide"
+        },
+        {
+          "leftId": "l3",
+          "left": "Readers with little time",
+          "rightId": "r3",
+          "right": "visit the main gallery first"
+        },
+        {
+          "leftId": "l4",
+          "left": "Families with children",
+          "rightId": "r4",
+          "right": "choose the interactive tour"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match balanced judgements with the details that justify them.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Excellent but expensive",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "high quality and high price"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Thoughtful but slow",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "strong ideas and a quiet beginning"
+        },
+        {
+          "leftId": "l3",
+          "left": "Simple routes are explained",
+          "rightId": "r3",
+          "right": "beginners can follow the guide"
+        },
+        {
+          "leftId": "l4",
+          "left": "Provide context",
+          "rightId": "r4",
+          "right": "name the event and date"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,22 +1377,28 @@
       "prompt": "Match article-review planning jobs with content.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Provide context",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "name the event and date"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Evaluate impact",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "explain how readers experience it"
         },
         {
-          "leftId": "c",
+          "leftId": "l3",
           "left": "Recommend",
-          "rightId": "z",
+          "rightId": "r3",
           "right": "identify who should attend"
+        },
+        {
+          "leftId": "l4",
+          "left": "The layout is clear",
+          "rightId": "r4",
+          "right": "signs guide visitors between rooms"
         }
       ],
       "lessonIds": [
@@ -1048,16 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
           },
           {
-            "leftId": "c",
-            "rightId": "z"
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1082,16 +1452,28 @@
       "prompt": "Match weak review comments with stronger writing goals.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "It was good",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "name a feature and its effect"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Everyone will enjoy it",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "identify a realistic audience"
+        },
+        {
+          "leftId": "l3",
+          "left": "Beginners",
+          "rightId": "r3",
+          "right": "explain specialist terms"
+        },
+        {
+          "leftId": "l4",
+          "left": "Experts",
+          "rightId": "r4",
+          "right": "discuss technical detail"
         }
       ],
       "lessonIds": [
@@ -1107,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1137,16 +1527,28 @@
       "prompt": "Match advanced evaluations with what they imply for readers.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Emotionally subtle",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "rewards careful attention"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Accessible to a wide audience",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "requires little specialist knowledge"
+        },
+        {
+          "leftId": "l3",
+          "left": "Review",
+          "rightId": "r3",
+          "right": "evaluates an experience"
+        },
+        {
+          "leftId": "l4",
+          "left": "Opening",
+          "rightId": "r4",
+          "right": "identify the subject and focus"
         }
       ],
       "lessonIds": [
@@ -1162,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1192,16 +1602,28 @@
       "prompt": "Match article-review purposes with final recommendations.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Help families choose an event",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "recommend the interactive programme"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Assess a specialist book",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "recommend it to experienced readers"
+        },
+        {
+          "leftId": "l3",
+          "left": "The play is intimate",
+          "rightId": "r3",
+          "right": "the small stage brings actors close"
+        },
+        {
+          "leftId": "l4",
+          "left": "The book is emotionally subtle",
+          "rightId": "r4",
+          "right": "feelings are implied rather than explained"
         }
       ],
       "lessonIds": [
@@ -1217,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1247,16 +1677,28 @@
       "prompt": "Match advanced evidence with the work it does in a review.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Concrete scene",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "supports an interpretation"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Practical detail",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "supports a decision"
+        },
+        {
+          "leftId": "l3",
+          "left": "Acknowledge limitations",
+          "rightId": "r3",
+          "right": "keep the judgement balanced"
+        },
+        {
+          "leftId": "l4",
+          "left": "Article",
+          "rightId": "r4",
+          "right": "informs a broad audience"
         }
       ],
       "lessonIds": [
@@ -1272,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1302,16 +1752,28 @@
       "prompt": "Match weak article-review structures with improvements.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Facts and opinions are mixed randomly",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "group details before evaluating"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Recommendation has no reason",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "link it to evidence"
+        },
+        {
+          "leftId": "l3",
+          "left": "more spacious",
+          "rightId": "r3",
+          "right": "room for larger groups"
+        },
+        {
+          "leftId": "l4",
+          "left": "greater character",
+          "rightId": "r4",
+          "right": "a distinctive older atmosphere"
         }
       ],
       "lessonIds": [
@@ -1327,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1357,22 +1827,28 @@
       "prompt": "Match advanced planning decisions with the result they create.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Define the audience",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "select relevant details"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Support evaluations",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "make recommendations credible"
         },
         {
-          "leftId": "c",
+          "leftId": "l3",
           "left": "Acknowledge limitations",
-          "rightId": "z",
+          "rightId": "r3",
           "right": "keep the judgement balanced"
+        },
+        {
+          "leftId": "l4",
+          "left": "Step-free entrance",
+          "rightId": "r4",
+          "right": "describes accessibility"
         }
       ],
       "lessonIds": [
@@ -1388,16 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
           },
           {
-            "leftId": "c",
-            "rightId": "z"
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },

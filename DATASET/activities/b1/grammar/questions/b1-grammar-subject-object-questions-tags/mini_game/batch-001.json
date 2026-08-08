@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "There's a pharmacy nearby, ___?",
+          "prompt": "There's a pharmacy nearby, [gap1]?",
           "options": [
             {
               "id": "a",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "There weren't any delays, ___?",
+          "prompt": "There weren't any delays, [gap1]?",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ outside?",
+          "prompt": "[gap1] outside?",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Who ___ you call?",
+          "prompt": "Who [gap1] you call?",
           "options": [
             {
               "id": "a",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Let's take a break, ___?",
+          "prompt": "Let's take a break, [gap1]?",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Who ___ the manager invited?",
+          "prompt": "Who [gap1] the manager invited?",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The office is open, ___?",
+          "prompt": "The office is open, [gap1]?",
           "options": [
             {
               "id": "b",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Maya and Leo left early, ___?",
+          "prompt": "Maya and Leo left early, [gap1]?",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The documents are ready, ___?",
+          "prompt": "The documents are ready, [gap1]?",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Marta works here, ___?",
+          "prompt": "Marta works here, [gap1]?",
           "options": [
             {
               "id": "d",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The parcel has arrived, ___?",
+          "prompt": "The parcel has arrived, [gap1]?",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "You didn't call, ___?",
+          "prompt": "You didn't call, [gap1]?",
           "options": [
             {
               "id": "c",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Close the window, ___?",
+          "prompt": "Close the window, [gap1]?",
           "options": [
             {
               "id": "b",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The rooms aren't ready, ___?",
+          "prompt": "The rooms aren't ready, [gap1]?",
           "options": [
             {
               "id": "b",
@@ -407,6 +407,227 @@
       "tags": [
         "b1",
         "question-tag",
+        "single-choice",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-grammar-subject-object-questions-tags-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "questions",
+      "subtopic": "subject-object-question-tags",
+      "taxonomyNodeIds": [
+        "subject-object-question-tags"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The curator thanked the volunteer. Which question asks for “the volunteer”?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Who did the curator thank?"
+            },
+            {
+              "id": "b",
+              "text": "Who thanked the curator?"
+            },
+            {
+              "id": "c",
+              "text": "Who did thank the curator?"
+            }
+          ],
+          "explanation": "The volunteer recibe la acción, por eso usamos «Who did the curator thank?»."
+        },
+        {
+          "id": "r2",
+          "prompt": "You can access the folder, [gap1]?",
+          "options": [
+            {
+              "id": "a",
+              "text": "can't you"
+            },
+            {
+              "id": "b",
+              "text": "don't you"
+            },
+            {
+              "id": "d",
+              "text": "couldn't you"
+            }
+          ],
+          "explanation": "Repetimos «can» en negativo."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1] this noise every morning?",
+          "options": [
+            {
+              "id": "b",
+              "text": "What does cause"
+            },
+            {
+              "id": "c",
+              "text": "What do causes"
+            },
+            {
+              "id": "a",
+              "text": "What causes"
+            }
+          ],
+          "explanation": "«What» es sujeto y el verbo singular es «causes»."
+        },
+        {
+          "id": "r4",
+          "prompt": "Nobody complained, [gap1]?",
+          "options": [
+            {
+              "id": "c",
+              "text": "did nobody"
+            },
+            {
+              "id": "b",
+              "text": "didn't they"
+            },
+            {
+              "id": "a",
+              "text": "did they"
+            }
+          ],
+          "explanation": "«Nobody» tiene sentido negativo y suele usar la tag positiva «did they»."
+        },
+        {
+          "id": "r5",
+          "prompt": "[gap1] repaired the printer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Who"
+            },
+            {
+              "id": "c",
+              "text": "Who was"
+            },
+            {
+              "id": "b",
+              "text": "Who did"
+            }
+          ],
+          "explanation": "«Who» es sujeto y va directamente seguido del verbo."
+        },
+        {
+          "id": "r6",
+          "prompt": "Nothing was damaged, [gap1]?",
+          "options": [
+            {
+              "id": "d",
+              "text": "did it"
+            },
+            {
+              "id": "c",
+              "text": "were they"
+            },
+            {
+              "id": "a",
+              "text": "was it"
+            }
+          ],
+          "explanation": "«Nothing» es negativo y se representa con «it»."
+        },
+        {
+          "id": "r7",
+          "prompt": "They arrived yesterday, [gap1]?",
+          "options": [
+            {
+              "id": "a",
+              "text": "didn't they"
+            },
+            {
+              "id": "c",
+              "text": "did they"
+            },
+            {
+              "id": "b",
+              "text": "weren't they"
+            }
+          ],
+          "explanation": "El pasado simple afirmativo usa «didn't they»."
+        },
+        {
+          "id": "r8",
+          "prompt": "I'm next, [gap1]?",
+          "options": [
+            {
+              "id": "d",
+              "text": "am I"
+            },
+            {
+              "id": "b",
+              "text": "amn't I"
+            },
+            {
+              "id": "a",
+              "text": "aren't I"
+            }
+          ],
+          "explanation": "La forma convencional es «aren't I?»."
+        }
+      ],
+      "lessonIds": [
+        "b1-grammar-subject-object-questions-tags"
+      ],
+      "tags": [
+        "b1",
+        "object-question",
         "single-choice",
         "mini-game"
       ],

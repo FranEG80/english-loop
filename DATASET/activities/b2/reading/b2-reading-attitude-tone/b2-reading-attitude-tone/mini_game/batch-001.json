@@ -465,6 +465,235 @@
         ]
       },
       "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-reading-attitude-tone-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "reading",
+      "topic": "b2-reading-attitude-tone",
+      "subtopic": "b2-reading-attitude-tone",
+      "taxonomyNodeIds": [
+        "b2-reading-attitude-tone"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "What attitude does 'delighted' express?",
+          "context": "The organisers are delighted to confirm that the festival will return next spring.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Irritation."
+            },
+            {
+              "id": "a",
+              "text": "Strong enthusiasm."
+            },
+            {
+              "id": "b",
+              "text": "Mild doubt."
+            }
+          ],
+          "explanation": "Delighted is a strong positive emotion."
+        },
+        {
+          "id": "r2",
+          "prompt": "What is the writer's stance towards the criticism?",
+          "context": "Critics call the plan unrealistic. That judgement seems premature: the funding model has not yet been tested.",
+          "options": [
+            {
+              "id": "a",
+              "text": "The writer thinks the criticism is too early."
+            },
+            {
+              "id": "d",
+              "text": "The writer thinks testing is unnecessary."
+            },
+            {
+              "id": "c",
+              "text": "The writer has no view."
+            }
+          ],
+          "explanation": "Premature rejects the timing of the criticism rather than necessarily the plan itself."
+        },
+        {
+          "id": "r3",
+          "prompt": "What is the writer's position on the evidence?",
+          "context": "The figures are encouraging, but they should not be treated as proof of a permanent trend until another winter has been observed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Certain of a permanent trend."
+            },
+            {
+              "id": "a",
+              "text": "Positive but explicitly provisional."
+            },
+            {
+              "id": "b",
+              "text": "Negative and dismissive."
+            }
+          ],
+          "explanation": "Encouraging is positive, while the second clause limits the conclusion."
+        },
+        {
+          "id": "r4",
+          "prompt": "What does the reviewer imply about the service?",
+          "context": "The service is efficient, if somewhat impersonal. It solves the practical problem, though it offers little human contact.",
+          "options": [
+            {
+              "id": "a",
+              "text": "It works well but lacks warmth."
+            },
+            {
+              "id": "b",
+              "text": "It is inefficient and friendly."
+            },
+            {
+              "id": "c",
+              "text": "It is entirely personal."
+            }
+          ],
+          "explanation": "Efficient is positive, while somewhat impersonal introduces the limitation."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which phrase expresses strong criticism?",
+          "context": "The device is impressively light, though its battery life is disappointing.",
+          "options": [
+            {
+              "id": "a",
+              "text": "battery life is disappointing"
+            },
+            {
+              "id": "b",
+              "text": "impressively light"
+            },
+            {
+              "id": "d",
+              "text": "though"
+            }
+          ],
+          "explanation": "Disappointing is a clear negative evaluation of battery life."
+        },
+        {
+          "id": "r6",
+          "prompt": "Why are quotation marks important here?",
+          "context": "The company called the closure a 'temporary pause', despite selling the building.",
+          "options": [
+            {
+              "id": "a",
+              "text": "They can signal scepticism about the phrase."
+            },
+            {
+              "id": "c",
+              "text": "They introduce a direct question."
+            },
+            {
+              "id": "d",
+              "text": "They make selling the building impossible."
+            }
+          ],
+          "explanation": "The quotation marks distance the writer from a description that conflicts with the context."
+        },
+        {
+          "id": "r7",
+          "prompt": "What does 'promising, although' signal?",
+          "context": "The proposal is promising, although its costs remain unclear.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Positive assessment with a reservation."
+            },
+            {
+              "id": "d",
+              "text": "Strong criticism only."
+            },
+            {
+              "id": "b",
+              "text": "Complete rejection."
+            }
+          ],
+          "explanation": "Promising is positive and although introduces the cost reservation."
+        },
+        {
+          "id": "r8",
+          "prompt": "How does the author treat the proposed solution?",
+          "context": "The shortcut is undeniably convenient, yet it transfers traffic to a residential street. Its advantages therefore need to be weighed against its local cost.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Describing it neutrally with no evaluation."
+            },
+            {
+              "id": "a",
+              "text": "Acknowledging a benefit while stressing a drawback."
+            },
+            {
+              "id": "b",
+              "text": "Rejecting every benefit."
+            }
+          ],
+          "explanation": "Undeniably positive is balanced by the traffic drawback and weighing language."
+        }
+      ],
+      "lessonIds": [
+        "b2-reading-attitude-tone"
+      ],
+      "tags": [
+        "b2",
+        "reading",
+        "emotion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
     }
   ]
 }

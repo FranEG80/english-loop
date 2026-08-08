@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Online appointments are quick for many users. ___ A phone option should therefore remain available.",
+          "prompt": "Online appointments are quick for many users. [gap1] A phone option should therefore remain available.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "More cycle lanes would make short journeys safer. ___ This would encourage people to leave their cars at home.",
+          "prompt": "More cycle lanes would make short journeys safer. [gap1] This would encourage people to leave their cars at home.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Solar panels require an initial investment. ___ The long-term reduction in energy costs makes the plan worth examining.",
+          "prompt": "Solar panels require an initial investment. [gap1] The long-term reduction in energy costs makes the plan worth examining.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The new booking scheme has reduced missed appointments. ___ This improvement should be monitored over the next quarter.",
+          "prompt": "The new booking scheme has reduced missed appointments. [gap1] This improvement should be monitored over the next quarter.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Schools can reduce food waste without changing the whole menu. ___ This would prevent unopened food from being thrown away.",
+          "prompt": "Schools can reduce food waste without changing the whole menu. [gap1] This would prevent unopened food from being thrown away.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Residents repeatedly mentioned the unsafe crossing. ___ The council should install a raised crossing.",
+          "prompt": "Residents repeatedly mentioned the unsafe crossing. [gap1] The council should install a raised crossing.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Libraries should open later once a week. ___ This would allow more workers to borrow books after work.",
+          "prompt": "Libraries should open later once a week. [gap1] This would allow more workers to borrow books after work.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "Several passengers reported late buses. ___ As a result, some people arrived after their shifts had begun.",
+          "prompt": "Several passengers reported late buses. [gap1] As a result, some people arrived after their shifts had begun.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Some residents are concerned about the cost of the proposal. ___ It would nevertheless improve access for people without cars.",
+          "prompt": "Some residents are concerned about the cost of the proposal. [gap1] It would nevertheless improve access for people without cars.",
           "options": [
             {
               "id": "d",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Public parks give residents space to exercise and meet. They also support local wildlife. ___",
+          "prompt": "Public parks give residents space to exercise and meet. They also support local wildlife. [gap1]",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The new online form gives users the information they need. ___ Staff can spend more time on complex enquiries.",
+          "prompt": "The new online form gives users the information they need. [gap1] Staff can spend more time on complex enquiries.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The evidence shows that evening access is limited, while daytime sessions are well used. ___ This would test demand without changing the whole service.",
+          "prompt": "The evidence shows that evening access is limited, while daytime sessions are well used. [gap1] This would test demand without changing the whole service.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "Fewer cars would improve air quality near the school. ___ Parents could also feel more confident about walking there.",
+          "prompt": "Fewer cars would improve air quality near the school. [gap1] Parents could also feel more confident about walking there.",
           "options": [
             {
               "id": "d",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Digital forms can speed up applications. ___ An alternative should still be available.",
+          "prompt": "Digital forms can speed up applications. [gap1] An alternative should still be available.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The same problem appeared in several interviews. ___ The service should test a clearer process before expanding it.",
+          "prompt": "The same problem appeared in several interviews. [gap1] The service should test a clearer process before expanding it.",
           "options": [
             {
               "id": "a",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The pilot reduced average waiting time by ten minutes. ___ It therefore appears to have improved access for participants.",
+          "prompt": "The pilot reduced average waiting time by ten minutes. [gap1] It therefore appears to have improved access for participants.",
           "options": [
             {
               "id": "a",
@@ -408,6 +408,227 @@
         "b2",
         "cohesion",
         "conclusion",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-writing-argument-cohesion-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "guided-writing",
+      "topic": "b2-writing-argument-cohesion",
+      "subtopic": "b2-writing-argument-cohesion",
+      "taxonomyNodeIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Visitors often ask where the meeting rooms are. [gap1] Staff would then have more time for other tasks.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Clearer signs could therefore reduce routine enquiries."
+            },
+            {
+              "id": "b",
+              "text": "The meeting rooms have wooden tables."
+            },
+            {
+              "id": "d",
+              "text": "The staff kitchen is upstairs."
+            }
+          ],
+          "explanation": "Therefore links the observed issue to a plausible response."
+        },
+        {
+          "id": "r2",
+          "prompt": "The pilot was successful for the participants who attended. [gap1] It should not yet be presented as proof that the scheme works everywhere.",
+          "options": [
+            {
+              "id": "c",
+              "text": "Participants received a welcome email."
+            },
+            {
+              "id": "a",
+              "text": "This result applies to the pilot group and its four-week period."
+            },
+            {
+              "id": "d",
+              "text": "The scheme has a short name."
+            }
+          ],
+          "explanation": "The sentence narrows both group and time."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1] Many residents work during the day and cannot visit before six.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Libraries should offer at least one later opening each week."
+            },
+            {
+              "id": "b",
+              "text": "The library bought new chairs."
+            },
+            {
+              "id": "d",
+              "text": "The café is next to the library."
+            }
+          ],
+          "explanation": "The first sentence states the paragraph's central claim."
+        },
+        {
+          "id": "r4",
+          "prompt": "The online system is efficient for regular users. [gap1] The service should therefore keep a phone option.",
+          "options": [
+            {
+              "id": "a",
+              "text": "A further concern is that new users may find the instructions unclear."
+            },
+            {
+              "id": "b",
+              "text": "The system was launched in April."
+            },
+            {
+              "id": "d",
+              "text": "The office has a telephone."
+            }
+          ],
+          "explanation": "A further concern advances the paragraph with a new issue."
+        },
+        {
+          "id": "r5",
+          "prompt": "The survey found that waiting times were the main complaint. [gap1] The office should review its appointment system.",
+          "options": [
+            {
+              "id": "b",
+              "text": "The office has a green front door."
+            },
+            {
+              "id": "a",
+              "text": "This evidence suggests that delays are affecting user satisfaction."
+            },
+            {
+              "id": "d",
+              "text": "Some appointments take place upstairs."
+            }
+          ],
+          "explanation": "This evidence clearly refers to the stated survey finding."
+        },
+        {
+          "id": "r6",
+          "prompt": "Free transport would help students reach college. [gap1] A small pilot could show whether the benefits justify the cost.",
+          "options": [
+            {
+              "id": "d",
+              "text": "The buses are painted red."
+            },
+            {
+              "id": "c",
+              "text": "Some students bring packed lunches."
+            },
+            {
+              "id": "a",
+              "text": "Although the scheme would be expensive, it could improve attendance."
+            }
+          ],
+          "explanation": "Although links the benefit with the relevant cost concern."
+        },
+        {
+          "id": "r7",
+          "prompt": "Home insulation can lower energy use. [gap1] Even so, the long-term savings make it worth considering.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Although the initial cost is high, the improvement has lasting benefits."
+            },
+            {
+              "id": "c",
+              "text": "The family bought a new sofa."
+            },
+            {
+              "id": "b",
+              "text": "The roof was painted last summer."
+            }
+          ],
+          "explanation": "Although introduces the cost concession before the positive return."
+        },
+        {
+          "id": "r8",
+          "prompt": "The alternative route avoids the closed bridge. [gap1] This could make journeys shorter for residents in the north.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Residents usually travel at noon."
+            },
+            {
+              "id": "a",
+              "text": "It also connects directly with the northern bus stop."
+            },
+            {
+              "id": "c",
+              "text": "The route is marked in yellow."
+            }
+          ],
+          "explanation": "The sentence gives the missing link between route and shorter journey."
+        }
+      ],
+      "lessonIds": [
+        "b2-writing-argument-cohesion"
+      ],
+      "tags": [
+        "b2",
+        "cohesion",
+        "result",
         "mini-game"
       ],
       "estimatedSeconds": 120,

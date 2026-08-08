@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "If ___ correctly, the tool saves time.",
+          "prompt": "If [gap1] correctly, the tool saves time.",
           "options": [
             {
               "id": "b",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "If ___ in a sealed container, the chemical remains stable.",
+          "prompt": "If [gap1] in a sealed container, the chemical remains stable.",
           "options": [
             {
               "id": "b",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ carefully, the solvent is safe to handle.",
+          "prompt": "[gap1] carefully, the solvent is safe to handle.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "___ the route, Elena guided the visitors.",
+          "prompt": "[gap1] the route, Elena guided the visitors.",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The documents ___ after noon will be processed tomorrow.",
+          "prompt": "The documents [gap1] after noon will be processed tomorrow.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "___ the risks, the team added a backup plan.",
+          "prompt": "[gap1] the risks, the team added a backup plan.",
           "options": [
             {
               "id": "a",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "___ the inspection, the engineer left.",
+          "prompt": "[gap1] the inspection, the engineer left.",
           "options": [
             {
               "id": "b",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "___ the contract, Maya asked one question.",
+          "prompt": "[gap1] the contract, Maya asked one question.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "___ about the ice, the hikers changed route.",
+          "prompt": "[gap1] about the ice, the hikers changed route.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The samples ___ in May were contaminated.",
+          "prompt": "The samples [gap1] in May were contaminated.",
           "options": [
             {
               "id": "b",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "___ the figures, the analyst signed the report.",
+          "prompt": "[gap1] the figures, the analyst signed the report.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "___ through the market, we noticed a new stall.",
+          "prompt": "[gap1] through the market, we noticed a new stall.",
           "options": [
             {
               "id": "d",
@@ -429,6 +429,227 @@
           {
             "roundId": "r4",
             "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-participle-reduced-clauses-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "participle-reduced-clauses",
+      "taxonomyNodeIds": [
+        "participle-reduced-clauses"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "[gap1] twice, the proposal was approved.",
+          "options": [
+            {
+              "id": "b",
+              "text": "Having been reviewed"
+            },
+            {
+              "id": "c",
+              "text": "Reviewing"
+            },
+            {
+              "id": "a",
+              "text": "Having reviewed"
+            }
+          ],
+          "explanation": "The proposal received two reviews."
+        },
+        {
+          "id": "r2",
+          "prompt": "The engine failed, [gap1] the vehicle on the hard shoulder.",
+          "options": [
+            {
+              "id": "b",
+              "text": "left"
+            },
+            {
+              "id": "d",
+              "text": "leaves"
+            },
+            {
+              "id": "a",
+              "text": "leaving"
+            }
+          ],
+          "explanation": "Leaving expresses the result of the engine failure."
+        },
+        {
+          "id": "r3",
+          "prompt": "[gap1] of the change, the passengers waited calmly.",
+          "options": [
+            {
+              "id": "d",
+              "text": "Informed having"
+            },
+            {
+              "id": "b",
+              "text": "Having been informed"
+            },
+            {
+              "id": "c",
+              "text": "Informing"
+            }
+          ],
+          "explanation": "The passengers were informed, so use the passive form."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which sentence clearly shows that the inspection came first?",
+          "options": [
+            {
+              "id": "d",
+              "text": "Having complete the inspection, the engineer filed the report."
+            },
+            {
+              "id": "a",
+              "text": "Having completed the inspection, the engineer filed the report."
+            },
+            {
+              "id": "b",
+              "text": "Completing been the inspection, the engineer filed the report."
+            }
+          ],
+          "explanation": "Having completed explicitly marks anteriority."
+        },
+        {
+          "id": "r5",
+          "prompt": "The applicants [gap1] were sent an email.",
+          "options": [
+            {
+              "id": "d",
+              "text": "shortlist"
+            },
+            {
+              "id": "b",
+              "text": "shortlisted"
+            },
+            {
+              "id": "a",
+              "text": "shortlisting"
+            }
+          ],
+          "explanation": "The applicants were shortlisted."
+        },
+        {
+          "id": "r6",
+          "prompt": "[gap1] about delays, the manager changed the schedule.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Concerned"
+            },
+            {
+              "id": "d",
+              "text": "Having concern"
+            },
+            {
+              "id": "b",
+              "text": "Concerning"
+            }
+          ],
+          "explanation": "Concerned describes the manager’s state."
+        },
+        {
+          "id": "r7",
+          "prompt": "The files [gap1] on the server are encrypted.",
+          "options": [
+            {
+              "id": "b",
+              "text": "stored"
+            },
+            {
+              "id": "a",
+              "text": "storing"
+            },
+            {
+              "id": "d",
+              "text": "store"
+            }
+          ],
+          "explanation": "The files are stored on the server."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which option avoids a dangling participle?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Having checked the map, we chose the northern road."
+            },
+            {
+              "id": "b",
+              "text": "Having checked the map, the northern road was chosen."
+            },
+            {
+              "id": "d",
+              "text": "Having checking the map, we chose the road."
+            }
+          ],
+          "explanation": "We checked the map and we chose the road."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-participle-reduced-clauses"
+      ],
+      "tags": [
+        "b2",
+        "perfect-passive",
+        "proposal",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
           },
           {
             "roundId": "r5",

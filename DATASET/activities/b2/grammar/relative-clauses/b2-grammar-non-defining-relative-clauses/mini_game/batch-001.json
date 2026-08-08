@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The storm damaged the roof, ___ forced the theatre to close.",
+          "prompt": "The storm damaged the roof, [gap1] forced the theatre to close.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The library, ___ closes at eight, has quiet study rooms.",
+          "prompt": "The library, [gap1] closes at eight, has quiet study rooms.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The conference was cancelled, ___ disappointed the delegates.",
+          "prompt": "The conference was cancelled, [gap1] disappointed the delegates.",
           "options": [
             {
               "id": "c",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The proposal, ___ starts in April, needs funding.",
+          "prompt": "The proposal, [gap1] starts in April, needs funding.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The engineer, ___ design won, received an award.",
+          "prompt": "The engineer, [gap1] design won, received an award.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "2019, ___ the centre opened, was a memorable year.",
+          "prompt": "2019, [gap1] the centre opened, was a memorable year.",
           "options": [
             {
               "id": "c",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Friday, ___ the results were published, was unusually busy.",
+          "prompt": "Friday, [gap1] the results were published, was unusually busy.",
           "options": [
             {
               "id": "a",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The date ___ the contract begins is printed on the first page.",
+          "prompt": "The date [gap1] the contract begins is printed on the first page.",
           "options": [
             {
               "id": "a",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The committee, ___ members work across Europe, meets online.",
+          "prompt": "The committee, [gap1] members work across Europe, meets online.",
           "options": [
             {
               "id": "b",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The train, ___ I missed, was the last one.",
+          "prompt": "The train, [gap1] I missed, was the last one.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The island, ___ no cars are allowed, is easy to explore on foot.",
+          "prompt": "The island, [gap1] no cars are allowed, is easy to explore on foot.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Kyoto, ___ the conference was held, was crowded.",
+          "prompt": "Kyoto, [gap1] the conference was held, was crowded.",
           "options": [
             {
               "id": "d",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The village, ___ my grandmother grew up, is now protected.",
+          "prompt": "The village, [gap1] my grandmother grew up, is now protected.",
           "options": [
             {
               "id": "b",
@@ -445,6 +445,227 @@
           {
             "roundId": "r8",
             "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-non-defining-relative-clauses-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "relative-clauses",
+      "subtopic": "non-defining-relative-clauses",
+      "taxonomyNodeIds": [
+        "non-defining-relative-clauses"
+      ],
+      "difficulty": 3,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Nadia, [gap1] brother works here, recommended the course.",
+          "options": [
+            {
+              "id": "d",
+              "text": "which"
+            },
+            {
+              "id": "c",
+              "text": "whose"
+            },
+            {
+              "id": "b",
+              "text": "where"
+            }
+          ],
+          "explanation": "Whose introduces a possessed noun: whose brother."
+        },
+        {
+          "id": "r2",
+          "prompt": "Our coordinator, [gap1] speaks three languages, welcomed the visitors.",
+          "options": [
+            {
+              "id": "b",
+              "text": "who"
+            },
+            {
+              "id": "d",
+              "text": "which"
+            },
+            {
+              "id": "a",
+              "text": "whose"
+            }
+          ],
+          "explanation": "Who is the subject relative for a person."
+        },
+        {
+          "id": "r3",
+          "prompt": "My supervisor, [gap1] lives nearby, cycles to work.",
+          "options": [
+            {
+              "id": "c",
+              "text": "where"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            },
+            {
+              "id": "b",
+              "text": "that"
+            }
+          ],
+          "explanation": "Who refers to an identified person in an additional clause."
+        },
+        {
+          "id": "r4",
+          "prompt": "The museum, [gap1] opened in 1890, is popular.",
+          "options": [
+            {
+              "id": "b",
+              "text": "which"
+            },
+            {
+              "id": "c",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "where it"
+            }
+          ],
+          "explanation": "Which is the subject of opened; an extra it would be incorrect."
+        },
+        {
+          "id": "r5",
+          "prompt": "The framework, [gap1] the study operates, is transparent.",
+          "options": [
+            {
+              "id": "c",
+              "text": "within where"
+            },
+            {
+              "id": "a",
+              "text": "within which"
+            },
+            {
+              "id": "d",
+              "text": "within who"
+            }
+          ],
+          "explanation": "Within which is a formal relative pattern for a thing."
+        },
+        {
+          "id": "r6",
+          "prompt": "Sara, [gap1] proposal won, presented the findings.",
+          "options": [
+            {
+              "id": "d",
+              "text": "that"
+            },
+            {
+              "id": "c",
+              "text": "whose"
+            },
+            {
+              "id": "a",
+              "text": "who"
+            }
+          ],
+          "explanation": "Whose links Sara with her proposal."
+        },
+        {
+          "id": "r7",
+          "prompt": "The policy, [gap1] staff may work remotely, is new.",
+          "options": [
+            {
+              "id": "c",
+              "text": "under who"
+            },
+            {
+              "id": "a",
+              "text": "under which"
+            },
+            {
+              "id": "b",
+              "text": "under that"
+            }
+          ],
+          "explanation": "Formal preposition plus which is possible for a thing."
+        },
+        {
+          "id": "r8",
+          "prompt": "Which sentence uses a non-defining clause correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The report, that I read, was useful."
+            },
+            {
+              "id": "d",
+              "text": "The report, I read which, was useful."
+            },
+            {
+              "id": "c",
+              "text": "The report, which I read, was useful."
+            }
+          ],
+          "explanation": "Which is used between commas in an additional clause."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-non-defining-relative-clauses"
+      ],
+      "tags": [
+        "b2",
+        "whose",
+        "possession",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "c"
           }
         ]
       },

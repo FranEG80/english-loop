@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The lawyer asked the witness to give ___ about what she had seen.",
+          "prompt": "The lawyer asked the witness to give [gap1] about what she had seen.",
           "options": [
             {
               "id": "c",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The report says the new lighting may ___ crime in the park.",
+          "prompt": "The report says the new lighting may [gap1] crime in the park.",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The defendant was ___ because the evidence was not reliable.",
+          "prompt": "The defendant was [gap1] because the evidence was not reliable.",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The judge imposed a large ___ for the parking offence.",
+          "prompt": "The judge imposed a large [gap1] for the parking offence.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "After the guilty verdict, the judge ___ the offender to two years in prison.",
+          "prompt": "After the guilty verdict, the judge [gap1] the offender to two years in prison.",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The jury reached a ___ after hearing the evidence.",
+          "prompt": "The jury reached a [gap1] after hearing the evidence.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The court decided that the statement was inadmissible as ___.",
+          "prompt": "The court decided that the statement was inadmissible as [gap1].",
           "options": [
             {
               "id": "c",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A court may grant ___ when a defendant promises to attend future hearings.",
+          "prompt": "A court may grant [gap1] when a defendant promises to attend future hearings.",
           "options": [
             {
               "id": "c",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The police are ___ a series of thefts from parked cars.",
+          "prompt": "The police are [gap1] a series of thefts from parked cars.",
           "options": [
             {
               "id": "a",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The article carefully called the claim an ___ because nobody had proved it.",
+          "prompt": "The article carefully called the claim an [gap1] because nobody had proved it.",
           "options": [
             {
               "id": "b",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The charity works with former offenders to reduce ___.",
+          "prompt": "The charity works with former offenders to reduce [gap1].",
           "options": [
             {
               "id": "c",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The company was charged ___ breaking environmental regulations.",
+          "prompt": "The company was charged [gap1] breaking environmental regulations.",
           "options": [
             {
               "id": "d",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The defence plans to ___ against the conviction.",
+          "prompt": "The defence plans to [gap1] against the conviction.",
           "options": [
             {
               "id": "d",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The journalist avoided stating that the minister was guilty and referred only to an ___.",
+          "prompt": "The journalist avoided stating that the minister was guilty and referred only to an [gap1].",
           "options": [
             {
               "id": "c",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The victim made an ___ that the contractor had falsified documents.",
+          "prompt": "The victim made an [gap1] that the contractor had falsified documents.",
           "options": [
             {
               "id": "a",
@@ -439,6 +439,226 @@
           {
             "roundId": "r7",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-crime-justice-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-crime-justice",
+      "subtopic": "b2-crime-justice",
+      "taxonomyNodeIds": [
+        "b2-crime-justice"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The court did not have enough [gap1] to support the charge.",
+          "options": [
+            {
+              "id": "b",
+              "text": "bail"
+            },
+            {
+              "id": "d",
+              "text": "prevention"
+            },
+            {
+              "id": "a",
+              "text": "evidence"
+            }
+          ],
+          "explanation": "Evidence is uncountable in this meaning, so the phrase is enough evidence."
+        },
+        {
+          "id": "r2",
+          "prompt": "Which option correctly completes the legal collocation? The prosecutor [gap1] the witness of lying.",
+          "options": [
+            {
+              "id": "c",
+              "text": "convicted"
+            },
+            {
+              "id": "a",
+              "text": "accused"
+            },
+            {
+              "id": "b",
+              "text": "charged"
+            }
+          ],
+          "explanation": "The structure is accuse someone of doing something; charge is followed by with."
+        },
+        {
+          "id": "r3",
+          "prompt": "The judge ordered the offender to [gap1] a sentence in a rehabilitation centre.",
+          "options": [
+            {
+              "id": "a",
+              "text": "serve"
+            },
+            {
+              "id": "b",
+              "text": "gather"
+            },
+            {
+              "id": "c",
+              "text": "reach"
+            }
+          ],
+          "explanation": "The collocation is serve a sentence, meaning complete a court-imposed punishment."
+        },
+        {
+          "id": "r4",
+          "prompt": "The detective interviewed a person who might have committed the burglary. That person was a [gap1].",
+          "options": [
+            {
+              "id": "a",
+              "text": "suspect"
+            },
+            {
+              "id": "d",
+              "text": "conviction"
+            },
+            {
+              "id": "b",
+              "text": "judge"
+            }
+          ],
+          "explanation": "A suspect is a person thought possibly to have committed a crime."
+        },
+        {
+          "id": "r5",
+          "prompt": "The appeal court upheld the original [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "bail"
+            },
+            {
+              "id": "a",
+              "text": "conviction"
+            },
+            {
+              "id": "c",
+              "text": "testimony"
+            }
+          ],
+          "explanation": "A conviction is the formal decision that someone is guilty; an appeal can challenge it."
+        },
+        {
+          "id": "r6",
+          "prompt": "The prosecutor presented digital [gap1] from the security cameras.",
+          "options": [
+            {
+              "id": "a",
+              "text": "evidence"
+            },
+            {
+              "id": "d",
+              "text": "a suspect"
+            },
+            {
+              "id": "b",
+              "text": "bail"
+            }
+          ],
+          "explanation": "Evidence is information used to establish what happened."
+        },
+        {
+          "id": "r7",
+          "prompt": "The defendant was released on [gap1] until the next hearing.",
+          "options": [
+            {
+              "id": "c",
+              "text": "testimony"
+            },
+            {
+              "id": "b",
+              "text": "bail"
+            },
+            {
+              "id": "a",
+              "text": "evidence"
+            }
+          ],
+          "explanation": "Bail is temporary release while a case continues, often with conditions."
+        },
+        {
+          "id": "r8",
+          "prompt": "The prosecutor could not prove the allegation, so the defendant was [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "charged"
+            },
+            {
+              "id": "b",
+              "text": "convicted"
+            },
+            {
+              "id": "a",
+              "text": "acquitted"
+            }
+          ],
+          "explanation": "If the court does not find the defendant guilty, the defendant is acquitted."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-crime-justice"
+      ],
+      "tags": [
+        "b2",
+        "evidence",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
           },
           {
             "roundId": "r8",

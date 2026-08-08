@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "Nadia said she ___ email the receipt the next day.",
+          "prompt": "Nadia said she [gap1] email the receipt the next day.",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Marta told us that the train ___ already left.",
+          "prompt": "Marta told us that the train [gap1] already left.",
           "options": [
             {
               "id": "c",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "Owen said he ___ not attend the evening meeting.",
+          "prompt": "Owen said he [gap1] not attend the evening meeting.",
           "options": [
             {
               "id": "c",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The professor said that the equation ___ correct.",
+          "prompt": "The professor said that the equation [gap1] correct.",
           "options": [
             {
               "id": "b",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The scientist said that the sample ___ not contain lead.",
+          "prompt": "The scientist said that the sample [gap1] not contain lead.",
           "options": [
             {
               "id": "b",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The manager said that the office ___ closed the following day.",
+          "prompt": "The manager said that the office [gap1] closed the following day.",
           "options": [
             {
               "id": "a",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The doctor said I ___ avoid strenuous exercise for a week.",
+          "prompt": "The doctor said I [gap1] avoid strenuous exercise for a week.",
           "options": [
             {
               "id": "c",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The guide told us that the museum ___ at nine every day.",
+          "prompt": "The guide told us that the museum [gap1] at nine every day.",
           "options": [
             {
               "id": "d",
@@ -250,7 +250,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The curator said that the gallery ___ at six.",
+          "prompt": "The curator said that the gallery [gap1] at six.",
           "options": [
             {
               "id": "b",
@@ -269,7 +269,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The pilot explained that the plane ___ safely.",
+          "prompt": "The pilot explained that the plane [gap1] safely.",
           "options": [
             {
               "id": "c",
@@ -288,7 +288,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The historian said that the bridge ___ in 1890.",
+          "prompt": "The historian said that the bridge [gap1] in 1890.",
           "options": [
             {
               "id": "a",
@@ -307,7 +307,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The witness told police she ___ the lights before midnight.",
+          "prompt": "The witness told police she [gap1] the lights before midnight.",
           "options": [
             {
               "id": "b",
@@ -326,7 +326,7 @@
         },
         {
           "id": "r5",
-          "prompt": "The curator ___ that the exhibition had moved to the west wing.",
+          "prompt": "The curator [gap1] that the exhibition had moved to the west wing.",
           "options": [
             {
               "id": "a",
@@ -345,7 +345,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The lecturer said that water ___ at 100°C.",
+          "prompt": "The lecturer said that water [gap1] at 100°C.",
           "options": [
             {
               "id": "b",
@@ -364,7 +364,7 @@
         },
         {
           "id": "r7",
-          "prompt": "He said he ___ finish the repairs that day.",
+          "prompt": "He said he [gap1] finish the repairs that day.",
           "options": [
             {
               "id": "c",
@@ -383,7 +383,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The reporter said that prices ___ rapidly.",
+          "prompt": "The reporter said that prices [gap1] rapidly.",
           "options": [
             {
               "id": "b",
@@ -433,6 +433,227 @@
           {
             "roundId": "r5",
             "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "c"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "b"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-grammar-advanced-backshift-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "grammar",
+      "topic": "reported-speech",
+      "subtopic": "advanced-backshift",
+      "taxonomyNodeIds": [
+        "advanced-backshift"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The guide told visitors that the path [gap1] closed.",
+          "options": [
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "was"
+            },
+            {
+              "id": "a",
+              "text": "is"
+            }
+          ],
+          "explanation": "Is closed cambia normalmente a was closed desde la perspectiva pasada."
+        },
+        {
+          "id": "r2",
+          "prompt": "The engineer explained that the device [gap1] working.",
+          "options": [
+            {
+              "id": "b",
+              "text": "was"
+            },
+            {
+              "id": "d",
+              "text": "would be"
+            },
+            {
+              "id": "c",
+              "text": "had been"
+            }
+          ],
+          "explanation": "Is working retrocede a was working tras explained en pasado."
+        },
+        {
+          "id": "r3",
+          "prompt": "The audit team said they [gap1] the figures.",
+          "options": [
+            {
+              "id": "c",
+              "text": "were checking"
+            },
+            {
+              "id": "d",
+              "text": "would check"
+            },
+            {
+              "id": "b",
+              "text": "had checked"
+            }
+          ],
+          "explanation": "Have checked retrocede a had checked después de said en pasado."
+        },
+        {
+          "id": "r4",
+          "prompt": "The nurse told me I [gap1] stay still during the scan.",
+          "options": [
+            {
+              "id": "d",
+              "text": "might"
+            },
+            {
+              "id": "b",
+              "text": "had to"
+            },
+            {
+              "id": "a",
+              "text": "must"
+            }
+          ],
+          "explanation": "Had to sitúa la obligación durante la prueba pasada."
+        },
+        {
+          "id": "r5",
+          "prompt": "The coach said the team [gap1] train at dawn the next morning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "will"
+            },
+            {
+              "id": "c",
+              "text": "had"
+            },
+            {
+              "id": "b",
+              "text": "would"
+            }
+          ],
+          "explanation": "Would mantiene la perspectiva futura desde el momento pasado."
+        },
+        {
+          "id": "r6",
+          "prompt": "The report stated that exports [gap1] by twelve per cent.",
+          "options": [
+            {
+              "id": "a",
+              "text": "fall"
+            },
+            {
+              "id": "b",
+              "text": "were falling"
+            },
+            {
+              "id": "c",
+              "text": "had fallen"
+            }
+          ],
+          "explanation": "El descenso se presenta como anterior al momento del informe: had fallen."
+        },
+        {
+          "id": "r7",
+          "prompt": "Lena said she [gap1] working from home that week.",
+          "options": [
+            {
+              "id": "d",
+              "text": "would be"
+            },
+            {
+              "id": "b",
+              "text": "was"
+            },
+            {
+              "id": "c",
+              "text": "had been"
+            }
+          ],
+          "explanation": "Is working retrocede a was working en una declaración indirecta pasada."
+        },
+        {
+          "id": "r8",
+          "prompt": "Asha [gap1] me that the venue had moved to a larger hall.",
+          "options": [
+            {
+              "id": "a",
+              "text": "said"
+            },
+            {
+              "id": "b",
+              "text": "told"
+            },
+            {
+              "id": "d",
+              "text": "spoke"
+            }
+          ],
+          "explanation": "Tell necesita un objeto: told me that the venue had moved."
+        }
+      ],
+      "lessonIds": [
+        "b2-grammar-advanced-backshift"
+      ],
+      "tags": [
+        "b2",
+        "reported-speech",
+        "backshift",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "b"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "b"
           },
           {
             "roundId": "r6",

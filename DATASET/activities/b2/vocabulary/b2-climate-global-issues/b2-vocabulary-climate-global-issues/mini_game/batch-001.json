@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A target is ambitious, but the first annual result is the measured ___.",
+          "prompt": "A target is ambitious, but the first annual result is the measured [gap1].",
           "options": [
             {
               "id": "d",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Reducing the causes of climate change is called ___.",
+          "prompt": "Reducing the causes of climate change is called [gap1].",
           "options": [
             {
               "id": "d",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "Raising sea walls to protect homes is an example of ___.",
+          "prompt": "Raising sea walls to protect homes is an example of [gap1].",
           "options": [
             {
               "id": "a",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "Restoring wetlands would most directly protect local ___.",
+          "prompt": "Restoring wetlands would most directly protect local [gap1].",
           "options": [
             {
               "id": "c",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "A change from fossil fuels to cleaner energy is an energy ___.",
+          "prompt": "A change from fossil fuels to cleaner energy is an energy [gap1].",
           "options": [
             {
               "id": "c",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "A possibility of harm in the future is a ___.",
+          "prompt": "A possibility of harm in the future is a [gap1].",
           "options": [
             {
               "id": "c",
@@ -268,7 +268,7 @@
         },
         {
           "id": "r2",
-          "prompt": "The damage or effect caused by an event is its ___.",
+          "prompt": "The damage or effect caused by an event is its [gap1].",
           "options": [
             {
               "id": "c",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A community's reliable access to enough food is its food ___.",
+          "prompt": "A community's reliable access to enough food is its food [gap1].",
           "options": [
             {
               "id": "c",
@@ -325,7 +325,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A drought threatens food ___ when crops fail and prices rise.",
+          "prompt": "A drought threatens food [gap1] when crops fail and prices rise.",
           "options": [
             {
               "id": "a",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "A society where income and protection are unevenly distributed has greater ___.",
+          "prompt": "A society where income and protection are unevenly distributed has greater [gap1].",
           "options": [
             {
               "id": "a",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "Land, water and energy are examples of natural ___.",
+          "prompt": "Land, water and energy are examples of natural [gap1].",
           "options": [
             {
               "id": "d",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A planned level an organisation wants to reach is a ___.",
+          "prompt": "A planned level an organisation wants to reach is a [gap1].",
           "options": [
             {
               "id": "d",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "climate",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-climate-global-issues-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-climate-global-issues",
+      "subtopic": "b2-climate-global-issues",
+      "taxonomyNodeIds": [
+        "b2-climate-global-issues"
+      ],
+      "difficulty": 5,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "Which measure is mainly adaptation?",
+          "options": [
+            {
+              "id": "b",
+              "text": "cutting factory emissions"
+            },
+            {
+              "id": "d",
+              "text": "switching to solar power"
+            },
+            {
+              "id": "a",
+              "text": "designing homes for extreme heat"
+            }
+          ],
+          "explanation": "Designing for heat prepares people for an expected impact."
+        },
+        {
+          "id": "r2",
+          "prompt": "A policy that lowers emissions rather than responding to floods is a measure of [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "exposure"
+            },
+            {
+              "id": "a",
+              "text": "mitigation"
+            },
+            {
+              "id": "b",
+              "text": "adaptation"
+            }
+          ],
+          "explanation": "Mitigation addresses the causes of climate change."
+        },
+        {
+          "id": "r3",
+          "prompt": "International [gap1] is needed when pollution crosses national borders.",
+          "options": [
+            {
+              "id": "b",
+              "text": "footprint"
+            },
+            {
+              "id": "d",
+              "text": "exposure"
+            },
+            {
+              "id": "a",
+              "text": "cooperation"
+            }
+          ],
+          "explanation": "Cooperation means working together towards a shared solution."
+        },
+        {
+          "id": "r4",
+          "prompt": "The variety of plants and animals in an area is [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "emissions"
+            },
+            {
+              "id": "d",
+              "text": "drought"
+            },
+            {
+              "id": "a",
+              "text": "biodiversity"
+            }
+          ],
+          "explanation": "Biodiversity is the variety of living things."
+        },
+        {
+          "id": "r5",
+          "prompt": "Which policy best addresses both climate and social fairness?",
+          "options": [
+            {
+              "id": "c",
+              "text": "raise waste without support"
+            },
+            {
+              "id": "b",
+              "text": "remove public transport"
+            },
+            {
+              "id": "a",
+              "text": "fund insulation for low-income homes"
+            }
+          ],
+          "explanation": "Insulation can reduce emissions and household energy costs."
+        },
+        {
+          "id": "r6",
+          "prompt": "The emissions linked to a person or product form its carbon [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "drought"
+            },
+            {
+              "id": "c",
+              "text": "transition"
+            },
+            {
+              "id": "a",
+              "text": "footprint"
+            }
+          ],
+          "explanation": "A carbon footprint estimates linked emissions."
+        },
+        {
+          "id": "r7",
+          "prompt": "A coastal village with homes on an exposed shoreline is particularly [gap1] to flooding.",
+          "options": [
+            {
+              "id": "a",
+              "text": "vulnerable"
+            },
+            {
+              "id": "c",
+              "text": "secure"
+            },
+            {
+              "id": "d",
+              "text": "balanced"
+            }
+          ],
+          "explanation": "Vulnerable means more likely to suffer harm."
+        },
+        {
+          "id": "r8",
+          "prompt": "Gases released by transport and industry are [gap1].",
+          "options": [
+            {
+              "id": "b",
+              "text": "habitats"
+            },
+            {
+              "id": "c",
+              "text": "targets"
+            },
+            {
+              "id": "a",
+              "text": "emissions"
+            }
+          ],
+          "explanation": "Emissions are substances released into the atmosphere."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-climate-global-issues"
+      ],
+      "tags": [
+        "b2",
+        "policy",
         "mini-game"
       ],
       "estimatedSeconds": 120,

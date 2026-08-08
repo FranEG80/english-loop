@@ -29,7 +29,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The team must manage the ___ that the new material may fail.",
+          "prompt": "The team must manage the [gap1] that the new material may fail.",
           "options": [
             {
               "id": "b",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r2",
-          "prompt": "Before deciding, the committee needs to ___ the alternatives.",
+          "prompt": "Before deciding, the committee needs to [gap1] the alternatives.",
           "options": [
             {
               "id": "d",
@@ -67,7 +67,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The project will be tested on a small scale in a ___.",
+          "prompt": "The project will be tested on a small scale in a [gap1].",
           "options": [
             {
               "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "r4",
-          "prompt": "A failed pilot can still be useful if the team learns from its ___.",
+          "prompt": "A failed pilot can still be useful if the team learns from its [gap1].",
           "options": [
             {
               "id": "d",
@@ -105,7 +105,7 @@
         },
         {
           "id": "r5",
-          "prompt": "A first version of a product used for testing is a ___.",
+          "prompt": "A first version of a product used for testing is a [gap1].",
           "options": [
             {
               "id": "d",
@@ -124,7 +124,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The board decided to ___ the risky option.",
+          "prompt": "The board decided to [gap1] the risky option.",
           "options": [
             {
               "id": "b",
@@ -143,7 +143,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The team needs to ___ the evidence before choosing a supplier.",
+          "prompt": "The team needs to [gap1] the evidence before choosing a supplier.",
           "options": [
             {
               "id": "d",
@@ -162,7 +162,7 @@
         },
         {
           "id": "r8",
-          "prompt": "A plan that can grow without losing effectiveness is ___.",
+          "prompt": "A plan that can grow without losing effectiveness is [gap1].",
           "options": [
             {
               "id": "a",
@@ -249,7 +249,7 @@
       "rounds": [
         {
           "id": "r1",
-          "prompt": "The team held a ___ to generate ideas for the campaign.",
+          "prompt": "The team held a [gap1] to generate ideas for the campaign.",
           "options": [
             {
               "id": "c",
@@ -287,7 +287,7 @@
         },
         {
           "id": "r3",
-          "prompt": "The organisation will ___ the successful programme to more towns.",
+          "prompt": "The organisation will [gap1] the successful programme to more towns.",
           "options": [
             {
               "id": "a",
@@ -306,7 +306,7 @@
         },
         {
           "id": "r4",
-          "prompt": "The proposal is possible in practice and within the budget, so it is ___.",
+          "prompt": "The proposal is possible in practice and within the budget, so it is [gap1].",
           "options": [
             {
               "id": "b",
@@ -344,7 +344,7 @@
         },
         {
           "id": "r6",
-          "prompt": "The company plans to ___ the service after the successful trial.",
+          "prompt": "The company plans to [gap1] the service after the successful trial.",
           "options": [
             {
               "id": "c",
@@ -363,7 +363,7 @@
         },
         {
           "id": "r7",
-          "prompt": "The drawback of this design is its high maintenance ___.",
+          "prompt": "The drawback of this design is its high maintenance [gap1].",
           "options": [
             {
               "id": "d",
@@ -382,7 +382,7 @@
         },
         {
           "id": "r8",
-          "prompt": "The committee chose the plan after ___ the evidence.",
+          "prompt": "The committee chose the plan after [gap1] the evidence.",
           "options": [
             {
               "id": "a",
@@ -406,6 +406,226 @@
       "tags": [
         "b2",
         "ideas",
+        "mini-game"
+      ],
+      "estimatedSeconds": 120,
+      "evaluator": {
+        "strategy": "game_rounds",
+        "rounds": [
+          {
+            "roundId": "r1",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r2",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r3",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r4",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r5",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r6",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r7",
+            "correctOptionId": "a"
+          },
+          {
+            "roundId": "r8",
+            "correctOptionId": "a"
+          }
+        ]
+      },
+      "explanation": "Al terminar la partida verás la media de aciertos y la explicación de cada ronda fallada."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b2-vocabulary-creativity-innovation-decisions-mg-sentence-tower-001",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B2",
+      "type": "mini_game",
+      "skillFocus": "mini_game",
+      "category": "vocabulary",
+      "topic": "b2-creativity-innovation-decisions",
+      "subtopic": "b2-creativity-innovation-decisions",
+      "taxonomyNodeIds": [
+        "b2-creativity-innovation-decisions"
+      ],
+      "difficulty": 4,
+      "instructions": "Apila los fragmentos en orden para levantar la frase.",
+      "prompt": "Partida de 8 rondas para repasar el tema jugando.",
+      "game": "sentence_tower",
+      "rounds": [
+        {
+          "id": "r1",
+          "prompt": "The design offers a good balance between cost and performance. It is [gap1].",
+          "options": [
+            {
+              "id": "d",
+              "text": "accidental"
+            },
+            {
+              "id": "b",
+              "text": "impractical"
+            },
+            {
+              "id": "a",
+              "text": "cost-effective"
+            }
+          ],
+          "explanation": "Cost-effective describes a good result in relation to the money spent."
+        },
+        {
+          "id": "r2",
+          "prompt": "The unexpected result is an important [gap1] of the experiment.",
+          "options": [
+            {
+              "id": "a",
+              "text": "outcome"
+            },
+            {
+              "id": "d",
+              "text": "assumption"
+            },
+            {
+              "id": "c",
+              "text": "prototype"
+            }
+          ],
+          "explanation": "An outcome is the result of an action, process or experiment."
+        },
+        {
+          "id": "r3",
+          "prompt": "A limit on time or money is a [gap1].",
+          "options": [
+            {
+              "id": "c",
+              "text": "launch"
+            },
+            {
+              "id": "d",
+              "text": "outcome"
+            },
+            {
+              "id": "a",
+              "text": "constraint"
+            }
+          ],
+          "explanation": "A constraint limits what a project can do."
+        },
+        {
+          "id": "r4",
+          "prompt": "Which word describes an idea or method introduced to create value?",
+          "options": [
+            {
+              "id": "b",
+              "text": "constraint"
+            },
+            {
+              "id": "c",
+              "text": "failure"
+            },
+            {
+              "id": "a",
+              "text": "innovation"
+            }
+          ],
+          "explanation": "Innovation is a new or improved idea, method or product that brings value."
+        },
+        {
+          "id": "r5",
+          "prompt": "The team will [gap1] the new app with a limited group first.",
+          "options": [
+            {
+              "id": "b",
+              "text": "launch"
+            },
+            {
+              "id": "a",
+              "text": "pilot"
+            },
+            {
+              "id": "d",
+              "text": "inherit"
+            }
+          ],
+          "explanation": "Pilot as a verb means test or operate something on a small scale."
+        },
+        {
+          "id": "r6",
+          "prompt": "The proposal is not [gap1] because the team lacks the required staff.",
+          "options": [
+            {
+              "id": "a",
+              "text": "feasible"
+            },
+            {
+              "id": "b",
+              "text": "creative"
+            },
+            {
+              "id": "c",
+              "text": "innovative"
+            }
+          ],
+          "explanation": "Feasible means realistic with the resources and conditions available."
+        },
+        {
+          "id": "r7",
+          "prompt": "The cheaper design is usable, but it involves a [gap1] in reliability.",
+          "options": [
+            {
+              "id": "c",
+              "text": "prototype"
+            },
+            {
+              "id": "a",
+              "text": "trade-off"
+            },
+            {
+              "id": "d",
+              "text": "invention"
+            }
+          ],
+          "explanation": "A trade-off identifies what is sacrificed to gain another advantage."
+        },
+        {
+          "id": "r8",
+          "prompt": "The team ran a small [gap1] before releasing the product nationally.",
+          "options": [
+            {
+              "id": "a",
+              "text": "trial"
+            },
+            {
+              "id": "b",
+              "text": "trade-off"
+            },
+            {
+              "id": "c",
+              "text": "constraint"
+            }
+          ],
+          "explanation": "A trial is a test to discover whether something works."
+        }
+      ],
+      "lessonIds": [
+        "b2-vocabulary-creativity-innovation-decisions"
+      ],
+      "tags": [
+        "b2",
+        "evaluation",
         "mini-game"
       ],
       "estimatedSeconds": 120,

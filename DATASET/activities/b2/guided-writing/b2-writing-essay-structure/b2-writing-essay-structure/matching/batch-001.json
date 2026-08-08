@@ -27,16 +27,28 @@
       "prompt": "Match basic essay sections with their purpose.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Introduction",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "presents context and thesis"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Conclusion",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "answers the question again"
+        },
+        {
+          "leftId": "l3",
+          "left": "Specific example",
+          "rightId": "r3",
+          "right": "makes an abstract claim concrete"
+        },
+        {
+          "leftId": "l4",
+          "left": "It introduces a new argument",
+          "rightId": "r4",
+          "right": "summarise earlier points instead"
         }
       ],
       "lessonIds": [
@@ -52,12 +64,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -82,16 +102,28 @@
       "prompt": "Match common essay linkers with their functions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "To begin with",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "opens the first argument"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Furthermore",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "adds another argument"
+        },
+        {
+          "leftId": "l3",
+          "left": "Libraries remain useful",
+          "rightId": "r3",
+          "right": "they provide shared access to knowledge"
+        },
+        {
+          "leftId": "l4",
+          "left": "Initial investment can be high",
+          "rightId": "r4",
+          "right": "renewable energy"
         }
       ],
       "lessonIds": [
@@ -107,12 +139,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -137,16 +177,28 @@
       "prompt": "Match essay planning terms with definitions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Thesis",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "overall position"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Evidence",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "supporting detail"
+        },
+        {
+          "leftId": "l3",
+          "left": "Flexible universities should mix formats",
+          "rightId": "r3",
+          "right": "compare attendance and online resources"
+        },
+        {
+          "leftId": "l4",
+          "left": "Public transport deserves priority",
+          "rightId": "r4",
+          "right": "explain benefits beyond passengers"
         }
       ],
       "lessonIds": [
@@ -162,12 +214,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -192,16 +252,28 @@
       "prompt": "Match education claims with supporting reasons.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Practical lessons matter",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "they prepare students for daily decisions"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Libraries remain useful",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "they provide shared access to knowledge"
+        },
+        {
+          "leftId": "l3",
+          "left": "Exams are stressful",
+          "rightId": "r3",
+          "right": "a mix of assessment can reduce pressure"
+        },
+        {
+          "leftId": "l4",
+          "left": "The investment is justified",
+          "rightId": "r4",
+          "right": "environmental and economic benefits"
         }
       ],
       "lessonIds": [
@@ -217,12 +289,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -247,16 +327,28 @@
       "prompt": "Match concessions with the issue they qualify.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Initial investment can be high",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "renewable energy"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Some commuters need cars",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "traffic restrictions"
+        },
+        {
+          "leftId": "l3",
+          "left": "Plan a rebuttal",
+          "rightId": "r3",
+          "right": "show balanced reasoning"
+        },
+        {
+          "leftId": "l4",
+          "left": "Reserve the conclusion for synthesis",
+          "rightId": "r4",
+          "right": "end with a direct answer"
         }
       ],
       "lessonIds": [
@@ -272,12 +364,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -302,16 +402,28 @@
       "prompt": "Match first-paragraph jobs with suitable notes.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Introduce the issue",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "explain why the question matters"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "State the thesis",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "give the essay's answer"
+        },
+        {
+          "leftId": "l3",
+          "left": "More buses run",
+          "rightId": "r3",
+          "right": "fewer commuters need cars"
+        },
+        {
+          "leftId": "l4",
+          "left": "Schools teach budgeting",
+          "rightId": "r4",
+          "right": "students make informed choices"
         }
       ],
       "lessonIds": [
@@ -327,12 +439,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -357,16 +477,28 @@
       "prompt": "Match policy changes with their likely results.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "More buses run",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "fewer commuters need cars"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Schools teach budgeting",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "students make informed choices"
+        },
+        {
+          "leftId": "l3",
+          "left": "Commuters need convenience",
+          "rightId": "r3",
+          "right": "reliable public transport offers an alternative"
+        },
+        {
+          "leftId": "l4",
+          "left": "Shops fear fewer customers",
+          "rightId": "r4",
+          "right": "pedestrian areas can increase local visits"
         }
       ],
       "lessonIds": [
@@ -382,12 +514,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -412,16 +552,28 @@
       "prompt": "Match conclusions with their essay positions.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Community spaces deserve investment",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "they strengthen local trust"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Exercise should be part of education",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "it supports health and concentration"
+        },
+        {
+          "leftId": "l3",
+          "left": "A paragraph has three unrelated ideas",
+          "rightId": "r3",
+          "right": "choose one focused claim"
+        },
+        {
+          "leftId": "l4",
+          "left": "Technology should support human judgement",
+          "rightId": "r4",
+          "right": "examine benefits and limits of automation"
         }
       ],
       "lessonIds": [
@@ -437,12 +589,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -467,16 +627,28 @@
       "prompt": "Match useful evidence labels with examples.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Example",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "a protected cycle lane"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Consequence",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "cleaner air in the city"
+        },
+        {
+          "leftId": "l3",
+          "left": "To begin with",
+          "rightId": "r3",
+          "right": "opens the first argument"
+        },
+        {
+          "leftId": "l4",
+          "left": "Furthermore",
+          "rightId": "r4",
+          "right": "adds another argument"
         }
       ],
       "lessonIds": [
@@ -492,12 +664,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -522,16 +702,28 @@
       "prompt": "Match phrases with where they normally appear.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Admittedly",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "counterargument"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "In conclusion",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "final paragraph"
+        },
+        {
+          "leftId": "l3",
+          "left": "A thesis only repeats the topic",
+          "rightId": "r3",
+          "right": "add a clear position"
+        },
+        {
+          "leftId": "l4",
+          "left": "A paragraph has three unrelated ideas",
+          "rightId": "r4",
+          "right": "choose one focused claim"
         }
       ],
       "lessonIds": [
@@ -547,12 +739,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -577,16 +777,28 @@
       "prompt": "Match detailed theses with focused arguments.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Flexible universities should mix formats",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "compare attendance and online resources"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Public transport deserves priority",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "explain benefits beyond passengers"
+        },
+        {
+          "leftId": "l3",
+          "left": "Consequently",
+          "rightId": "r3",
+          "right": "shows a result"
+        },
+        {
+          "leftId": "l4",
+          "left": "Commuters need convenience",
+          "rightId": "r4",
+          "right": "reliable public transport offers an alternative"
         }
       ],
       "lessonIds": [
@@ -602,12 +814,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -632,16 +852,28 @@
       "prompt": "Match argumentative linkers with their relationships.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Nevertheless",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "returns from concession to claim"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Consequently",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "shows a result"
+        },
+        {
+          "leftId": "l3",
+          "left": "Introduce the issue",
+          "rightId": "r3",
+          "right": "explain why the question matters"
+        },
+        {
+          "leftId": "l4",
+          "left": "State the thesis",
+          "rightId": "r4",
+          "right": "give the essay's answer"
         }
       ],
       "lessonIds": [
@@ -657,12 +889,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -687,16 +927,28 @@
       "prompt": "Match concerns about car restrictions with responses.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Commuters need convenience",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "reliable public transport offers an alternative"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Shops fear fewer customers",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "pedestrian areas can increase local visits"
+        },
+        {
+          "leftId": "l3",
+          "left": "Define the thesis precisely",
+          "rightId": "r3",
+          "right": "keep the essay focused"
+        },
+        {
+          "leftId": "l4",
+          "left": "Plan a rebuttal",
+          "rightId": "r4",
+          "right": "show balanced reasoning"
         }
       ],
       "lessonIds": [
@@ -712,12 +964,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -742,16 +1002,28 @@
       "prompt": "Match an argument paragraph about digital education.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Topic sentence",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "Digital tools widen access to resources"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Example",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "recorded lessons help absent students"
+        },
+        {
+          "leftId": "l3",
+          "left": "In contrast",
+          "rightId": "r3",
+          "right": "directly compares difference"
+        },
+        {
+          "leftId": "l4",
+          "left": "This suggests that",
+          "rightId": "r4",
+          "right": "draws an inference"
         }
       ],
       "lessonIds": [
@@ -767,12 +1039,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -797,16 +1077,28 @@
       "prompt": "Match evidence about flexible work with claims.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Parents can adjust schedules",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "flexibility supports caring responsibilities"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Teams use shared tools",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "remote work can maintain collaboration"
+        },
+        {
+          "leftId": "l3",
+          "left": "Broad context",
+          "rightId": "r3",
+          "right": "frames the public issue"
+        },
+        {
+          "leftId": "l4",
+          "left": "Renewable investment grows",
+          "rightId": "r4",
+          "right": "emissions may fall over time"
         }
       ],
       "lessonIds": [
@@ -822,12 +1114,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -852,16 +1152,28 @@
       "prompt": "Match advanced introduction elements with their roles.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Broad context",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "frames the public issue"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Thesis",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "states the specific answer"
+        },
+        {
+          "leftId": "l3",
+          "left": "Community spaces deserve investment",
+          "rightId": "r3",
+          "right": "they strengthen local trust"
+        },
+        {
+          "leftId": "l4",
+          "left": "Exercise should be part of education",
+          "rightId": "r4",
+          "right": "it supports health and concentration"
         }
       ],
       "lessonIds": [
@@ -877,12 +1189,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -907,16 +1227,28 @@
       "prompt": "Match policy proposals with their wider consequences.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Renewable investment grows",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "emissions may fall over time"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Community centres reopen",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "residents have more opportunities to meet"
+        },
+        {
+          "leftId": "l3",
+          "left": "Conclusion",
+          "rightId": "r3",
+          "right": "answers the question again"
+        },
+        {
+          "leftId": "l4",
+          "left": "To begin with",
+          "rightId": "r4",
+          "right": "opens the first argument"
         }
       ],
       "lessonIds": [
@@ -932,12 +1264,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -962,16 +1302,28 @@
       "prompt": "Match nuanced concessions with rebuttals.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Online learning lacks spontaneous contact",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "scheduled discussion can partly replace it"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Exams are stressful",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "a mix of assessment can reduce pressure"
+        },
+        {
+          "leftId": "l3",
+          "left": "It gives no answer",
+          "rightId": "r3",
+          "right": "return to the thesis"
+        },
+        {
+          "leftId": "l4",
+          "left": "Define the thesis precisely",
+          "rightId": "r4",
+          "right": "keep the essay focused"
         }
       ],
       "lessonIds": [
@@ -987,12 +1339,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1017,16 +1377,28 @@
       "prompt": "Match conclusions with the reasons they combine.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "The investment is justified",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "environmental and economic benefits"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "A mixed model is preferable",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "access and personal support"
+        },
+        {
+          "leftId": "l3",
+          "left": "Community centres reopen",
+          "rightId": "r3",
+          "right": "residents have more opportunities to meet"
+        },
+        {
+          "leftId": "l4",
+          "left": "Online learning lacks spontaneous contact",
+          "rightId": "r4",
+          "right": "scheduled discussion can partly replace it"
         }
       ],
       "lessonIds": [
@@ -1042,12 +1414,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1072,16 +1452,28 @@
       "prompt": "Match essay planning problems with better choices.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "A thesis only repeats the topic",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "add a clear position"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "A paragraph has three unrelated ideas",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "choose one focused claim"
+        },
+        {
+          "leftId": "l3",
+          "left": "Exercise should be part of education",
+          "rightId": "r3",
+          "right": "it supports health and concentration"
+        },
+        {
+          "leftId": "l4",
+          "left": "Example",
+          "rightId": "r4",
+          "right": "a protected cycle lane"
         }
       ],
       "lessonIds": [
@@ -1097,12 +1489,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1127,16 +1527,28 @@
       "prompt": "Match complex theses with the most relevant paragraph focus.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Technology should support human judgement",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "examine benefits and limits of automation"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Public transport has wider benefits",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "consider access, pollution and mobility"
+        },
+        {
+          "leftId": "l3",
+          "left": "Teams use shared tools",
+          "rightId": "r3",
+          "right": "remote work can maintain collaboration"
+        },
+        {
+          "leftId": "l4",
+          "left": "Broad context",
+          "rightId": "r4",
+          "right": "frames the public issue"
         }
       ],
       "lessonIds": [
@@ -1152,12 +1564,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1182,16 +1602,28 @@
       "prompt": "Match advanced linkers with the relationship they signal.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "In contrast",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "directly compares difference"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "This suggests that",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "draws an inference"
+        },
+        {
+          "leftId": "l3",
+          "left": "A paragraph has three unrelated ideas",
+          "rightId": "r3",
+          "right": "choose one focused claim"
+        },
+        {
+          "leftId": "l4",
+          "left": "Technology should support human judgement",
+          "rightId": "r4",
+          "right": "examine benefits and limits of automation"
         }
       ],
       "lessonIds": [
@@ -1207,12 +1639,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1237,16 +1677,28 @@
       "prompt": "Match advanced evidence types with their role in an essay.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Specific example",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "makes an abstract claim concrete"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Consequence",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "shows why the issue matters"
+        },
+        {
+          "leftId": "l3",
+          "left": "To begin with",
+          "rightId": "r3",
+          "right": "opens the first argument"
+        },
+        {
+          "leftId": "l4",
+          "left": "Furthermore",
+          "rightId": "r4",
+          "right": "adds another argument"
         }
       ],
       "lessonIds": [
@@ -1262,12 +1714,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1292,16 +1752,28 @@
       "prompt": "Match weak conclusions with the improvement they need.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "It introduces a new argument",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "summarise earlier points instead"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "It gives no answer",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "return to the thesis"
+        },
+        {
+          "leftId": "l3",
+          "left": "In conclusion",
+          "rightId": "r3",
+          "right": "final paragraph"
+        },
+        {
+          "leftId": "l4",
+          "left": "Flexible universities should mix formats",
+          "rightId": "r4",
+          "right": "compare attendance and online resources"
         }
       ],
       "lessonIds": [
@@ -1317,12 +1789,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
+          },
+          {
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
@@ -1347,22 +1827,28 @@
       "prompt": "Match detailed planning decisions with the result they create.",
       "pairs": [
         {
-          "leftId": "a",
+          "leftId": "l1",
           "left": "Define the thesis precisely",
-          "rightId": "x",
+          "rightId": "r1",
           "right": "keep the essay focused"
         },
         {
-          "leftId": "b",
+          "leftId": "l2",
           "left": "Plan a rebuttal",
-          "rightId": "y",
+          "rightId": "r2",
           "right": "show balanced reasoning"
         },
         {
-          "leftId": "c",
+          "leftId": "l3",
           "left": "Reserve the conclusion for synthesis",
-          "rightId": "z",
+          "rightId": "r3",
           "right": "end with a direct answer"
+        },
+        {
+          "leftId": "l4",
+          "left": "Online learning lacks spontaneous contact",
+          "rightId": "r4",
+          "right": "scheduled discussion can partly replace it"
         }
       ],
       "lessonIds": [
@@ -1378,16 +1864,20 @@
         "strategy": "matching_pairs",
         "pairs": [
           {
-            "leftId": "a",
-            "rightId": "x"
+            "leftId": "l1",
+            "rightId": "r1"
           },
           {
-            "leftId": "b",
-            "rightId": "y"
+            "leftId": "l2",
+            "rightId": "r2"
           },
           {
-            "leftId": "c",
-            "rightId": "z"
+            "leftId": "l3",
+            "rightId": "r3"
+          },
+          {
+            "leftId": "l4",
+            "rightId": "r4"
           }
         ]
       },
