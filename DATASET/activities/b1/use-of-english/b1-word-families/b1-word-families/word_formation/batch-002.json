@@ -1,0 +1,504 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "b1-word-families-word-formation-002",
+  "level": "B1",
+  "category": "use-of-english",
+  "topic": "b1-word-families",
+  "subtopic": "b1-word-families",
+  "lessonId": "b1-word-families",
+  "activityType": "word_formation",
+  "activities": [
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-004",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 2,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "A village library",
+      "gapText": "Our village library reopened last spring after a long [gap1] for repairs.\nThe old roof was in a [gap2] state and had to be replaced at once.\nLocal people raised the money with a [gap3] that surprised the council.\nThe new reading room is bright and [gap4] enough for thirty readers.\nChildren find the picture books [gap5] and stay all afternoon.\nBorrowing is [gap6] for anyone who lives in the village.\nThe staff answer questions [gap7] even when the queue is long.\nEveryone agrees the project was a real [gap8] for the community.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "community"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "CLOSE", "answers": ["closure"] },
+          { "gapId": "gap2", "cueWord": "DANGER", "answers": ["dangerous"] },
+          { "gapId": "gap3", "cueWord": "QUICK", "answers": ["quickness"] },
+          { "gapId": "gap4", "cueWord": "COMFORT", "answers": ["comfortable"] },
+          { "gapId": "gap5", "cueWord": "ATTRACT", "answers": ["attractive"] },
+          { "gapId": "gap6", "cueWord": "COST", "answers": ["costless"] },
+          { "gapId": "gap7", "cueWord": "POLITE", "answers": ["politely"] },
+          { "gapId": "gap8", "cueWord": "SUCCEED", "answers": ["success"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. CLOSE: Entre «a long» y «for repairs» va un sustantivo: «closure». 2. DANGER: Delante de «state» toca el adjetivo «dangerous». 3. QUICK: Tras «a» y antes de «that» va el sustantivo «quickness». 4. COMFORT: «Bright and ___ enough» encadena adjetivos: «comfortable». 5. ATTRACT: Tras «find the picture books» va el adjetivo «attractive». 6. COST: El contexto de gratuidad pide el negativo «costless». 7. POLITE: Modifica al verbo «answer»: adverbio «politely». 8. SUCCEED: Tras «a real» va el sustantivo «success»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-005",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "Learning to swim",
+      "gapText": "My sister was afraid of water and her first lesson was a [gap1] afternoon.\nThe teacher never made her feel [gap2] about being the slowest.\nShe practised twice a week with a [gap3] that impressed us all.\nHer progress was slow but [gap4] enough to keep her going.\nAfter six months she swam a whole length without [gap5] once.\nNow the pool is her favourite place for [gap6] after school.\nShe even races, though she is not [gap7] by nature.\nHer only [gap8] is that the water is often cold in winter.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "sport"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "DISASTER", "answers": ["disastrous"] },
+          { "gapId": "gap2", "cueWord": "FOOL", "answers": ["foolish"] },
+          { "gapId": "gap3", "cueWord": "DETERMINE", "answers": ["determination"] },
+          { "gapId": "gap4", "cueWord": "STEADY", "answers": ["steady"] },
+          { "gapId": "gap5", "cueWord": "STOP", "answers": ["stopping"] },
+          { "gapId": "gap6", "cueWord": "RELAX", "answers": ["relaxation"] },
+          { "gapId": "gap7", "cueWord": "COMPETE", "answers": ["competitive"] },
+          { "gapId": "gap8", "cueWord": "COMPLAIN", "answers": ["complaint"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. DISASTER: Delante de «afternoon» va el adjetivo «disastrous». 2. FOOL: Tras «feel» va un adjetivo: «foolish». 3. DETERMINE: Tras «a» y antes de «that» va el sustantivo «determination». 4. STEADY: «Slow but ___ enough» contrapone adjetivos: «steady». 5. STOP: Tras «without» va el gerundio «stopping». 6. RELAX: Tras «for» va el sustantivo «relaxation». 7. COMPETE: Tras «is not» y antes de «by nature» va el adjetivo «competitive». 8. COMPLAIN: Tras «her only» va el sustantivo «complaint»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-006",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "The school garden",
+      "gapText": "Our class started a garden behind the science [gap1] last March.\nAt first the soil was poor and the plants looked [gap2] to everyone.\nA gardener gave us some useful [gap3] about making compost.\nWe watered everything [gap4] through the dry summer weeks.\nBy September the tomatoes were ready and [gap5] enough to sell.\nThe head teacher said the project showed real [gap6] from the class.\nSome pupils were [gap7] and stopped coming after a month.\nEven so, the garden is now the [gap8] of the whole school.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "school"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "BUILD", "answers": ["building"] },
+          { "gapId": "gap2", "cueWord": "HEALTH", "answers": ["unhealthy"] },
+          { "gapId": "gap3", "cueWord": "ADVISE", "answers": ["advice"] },
+          { "gapId": "gap4", "cueWord": "DAY", "answers": ["daily"] },
+          { "gapId": "gap5", "cueWord": "TASTE", "answers": ["tasty"] },
+          { "gapId": "gap6", "cueWord": "COMMIT", "answers": ["commitment"] },
+          { "gapId": "gap7", "cueWord": "RELY", "answers": ["unreliable"] },
+          { "gapId": "gap8", "cueWord": "PROUD", "answers": ["pride"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. BUILD: Tras «science» va el sustantivo «building». 2. HEALTH: «Poor soil» anticipa sentido negativo: «unhealthy». 3. ADVISE: Tras «some useful» va el sustantivo incontable «advice». 4. DAY: Modifica al verbo «watered»: adverbio «daily». 5. TASTE: «Ready and ___ enough» encadena adjetivos: «tasty». 6. COMMIT: Tras «real» va el sustantivo «commitment». 7. RELY: Dejar de venir describe a alguien «unreliable». 8. PROUD: Tras «the» va el sustantivo «pride»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-007",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "A rainy holiday",
+      "gapText": "The forecast was [gap1] and we packed completely the wrong clothes.\nOur week in Wales began with a heavy [gap2] of rain on the Monday.\nThe cottage was small but [gap3] enough for the four of us.\nWe spent the mornings playing cards, which was [gap4] for a wet week.\nMy brother felt [gap5] because he could not go cycling.\nOn Thursday the sky cleared with a [gap6] that astonished us.\nWe walked to the coast and took photographs [gap7] all afternoon.\nIn the end the bad weather was no [gap8] at all.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "travel"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "RELY", "answers": ["unreliable"] },
+          { "gapId": "gap2", "cueWord": "SHOWER", "answers": ["shower"] },
+          { "gapId": "gap3", "cueWord": "COMFORT", "answers": ["comfortable"] },
+          { "gapId": "gap4", "cueWord": "ENJOY", "answers": ["enjoyable"] },
+          { "gapId": "gap5", "cueWord": "MISERY", "answers": ["miserable"] },
+          { "gapId": "gap6", "cueWord": "SUDDEN", "answers": ["suddenness"] },
+          { "gapId": "gap7", "cueWord": "EAGER", "answers": ["eagerly"] },
+          { "gapId": "gap8", "cueWord": "DISAPPOINT", "answers": ["disappointment"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. RELY: «The wrong clothes» delata que la previsión falló: «unreliable». 2. SHOWER: Entre «a heavy» y «of rain» va el sustantivo «shower». 3. COMFORT: «Small but ___ enough» contrapone adjetivos: «comfortable». 4. ENJOY: Entre «was» y «for a wet week» va el adjetivo «enjoyable». 5. MISERY: Tras «felt» va el adjetivo «miserable». 6. SUDDEN: Tras «a» y antes de «that» va el sustantivo «suddenness». 7. EAGER: Modifica al verbo «took»: adverbio «eagerly». 8. DISAPPOINT: Tras «no» va el sustantivo «disappointment»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-008",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "My first job",
+      "gapText": "My first job was in a bakery and the hours were [gap1] at the start.\nThe owner trained me with a [gap2] I have never forgotten.\nFor the first week I was slow and rather [gap3] with the change.\nCustomers were mostly [gap4] whenever I made a mistake.\nAfter a month I could work the till [gap5] and without help.\nThe pay was low, so saving anything was almost [gap6].\nStill, the experience turned out to be [gap7] later on.\nI left with a real sense of [gap8] about what I had learned.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "work"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "TIRE", "answers": ["tiring"] },
+          { "gapId": "gap2", "cueWord": "PATIENT", "answers": ["patience"] },
+          { "gapId": "gap3", "cueWord": "CARE", "answers": ["careless"] },
+          { "gapId": "gap4", "cueWord": "FORGIVE", "answers": ["forgiving"] },
+          { "gapId": "gap5", "cueWord": "CONFIDENCE", "answers": ["confidently"] },
+          { "gapId": "gap6", "cueWord": "POSSIBLE", "answers": ["impossible"] },
+          { "gapId": "gap7", "cueWord": "VALUE", "answers": ["valuable"] },
+          { "gapId": "gap8", "cueWord": "ACHIEVE", "answers": ["achievement"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. TIRE: Describe las horas, no a quien las sufre: «tiring». 2. PATIENT: Entre «a» y «I have never forgotten» va el sustantivo «patience». 3. CARE: «Slow and rather» anticipa un defecto: «careless». 4. FORGIVE: Tras «mostly» va el adjetivo «forgiving». 5. CONFIDENCE: Modifica al verbo «work»: adverbio «confidently». 6. POSSIBLE: «Low pay» exige el negativo «impossible». 7. VALUE: Tras «to be» va el adjetivo «valuable». 8. ACHIEVE: Tras «a real sense of» va el sustantivo «achievement»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-009",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 2,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "The old bicycle",
+      "gapText": "My grandfather gave me a bicycle of great [gap1] value to him.\nThe frame was rusty and the brakes were completely [gap2].\nI cleaned every part [gap3] over three long weekends.\nFinding the right screws needed a [gap4] I did not know I had.\nA neighbour lent me tools with a [gap5] that touched me.\nThe repaired bike now looks almost [gap6] to anyone who sees it.\nRiding it through the park is deeply [gap7] on a summer evening.\nMy grandfather was moved by my [gap8] to keep the old thing.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "hobbies"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "SENTIMENT", "answers": ["sentimental"] },
+          { "gapId": "gap2", "cueWord": "USE", "answers": ["useless"] },
+          { "gapId": "gap3", "cueWord": "PATIENT", "answers": ["patiently"] },
+          { "gapId": "gap4", "cueWord": "PERSIST", "answers": ["persistence"] },
+          { "gapId": "gap5", "cueWord": "GENEROUS", "answers": ["generosity"] },
+          { "gapId": "gap6", "cueWord": "RECOGNISE", "answers": ["unrecognisable"] },
+          { "gapId": "gap7", "cueWord": "SATISFY", "answers": ["satisfying"] },
+          { "gapId": "gap8", "cueWord": "DECIDE", "answers": ["decision"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. SENTIMENT: Delante de «value» va el adjetivo «sentimental». 2. USE: Unos frenos oxidados no sirven: «useless». 3. PATIENT: Modifica al verbo «cleaned»: adverbio «patiently». 4. PERSIST: Entre «a» y «I did not know» va el sustantivo «persistence». 5. GENEROUS: Tras «a» y antes de «that» va el sustantivo «generosity». 6. RECOGNISE: El cambio es tal que la bici queda «unrecognisable». 7. SATISFY: Describe la acción, no a quien la hace: «satisfying». 8. DECIDE: Tras «my» va el sustantivo «decision»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-010",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "A noisy neighbour",
+      "gapText": "The flat above ours became [gap1] again last autumn.\nThe new tenant plays drums with a total [gap2] for the time of day.\nAt midnight the sound is genuinely [gap3] for the whole building.\nMy mother wrote a very [gap4] letter asking him to stop.\nHe replied [gap5] and promised to practise earlier.\nFor one week the [gap6] on our floor was complete.\nThen the noise returned, which was deeply [gap7] for everyone.\nWe are still waiting for a [gap8] from the landlord.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "home"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "OCCUPY", "answers": ["occupied"] },
+          { "gapId": "gap2", "cueWord": "REGARD", "answers": ["disregard"] },
+          { "gapId": "gap3", "cueWord": "BEAR", "answers": ["unbearable"] },
+          { "gapId": "gap4", "cueWord": "STRENGTH", "answers": ["strong"] },
+          { "gapId": "gap5", "cueWord": "APOLOGY", "answers": ["apologetically"] },
+          { "gapId": "gap6", "cueWord": "SILENT", "answers": ["silence"] },
+          { "gapId": "gap7", "cueWord": "FRUSTRATE", "answers": ["frustrating"] },
+          { "gapId": "gap8", "cueWord": "RESPOND", "answers": ["response"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. OCCUPY: «Became» más participio: el piso pasó a estar «occupied». 2. REGARD: «A total ___ for the time» pide el negativo «disregard». 3. BEAR: A medianoche el ruido resulta «unbearable». 4. STRENGTH: Delante de «letter» va el adjetivo «strong». 5. APOLOGY: Modifica al verbo «replied»: adverbio «apologetically». 6. SILENT: Tras «the» va el sustantivo «silence». 7. FRUSTRATE: Describe la situación, no a quien la sufre: «frustrating». 8. RESPOND: Tras «a» va el sustantivo «response»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-011",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 2,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "Cooking for friends",
+      "gapText": "Last Saturday I cooked for eight friends, quite an [gap1] for me.\nMy first attempt at bread was a complete [gap2] and went in the bin.\nThe soup, however, turned out [gap3] enough to serve twice.\nI chopped the vegetables [gap4] to save myself some time.\nOne guest is a vegetarian, so I planned the menu [gap5] round her.\nThe kitchen was left in a state of total [gap6] by midnight.\nEveryone praised the meal, which was very [gap7] to hear.\nI felt real [gap8] when the plates came back empty.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "food"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "UNDERTAKE", "answers": ["undertaking"] },
+          { "gapId": "gap2", "cueWord": "FAIL", "answers": ["failure"] },
+          { "gapId": "gap3", "cueWord": "DELIGHT", "answers": ["delightful"] },
+          { "gapId": "gap4", "cueWord": "QUICK", "answers": ["quickly"] },
+          { "gapId": "gap5", "cueWord": "CARE", "answers": ["carefully"] },
+          { "gapId": "gap6", "cueWord": "ORDER", "answers": ["disorder"] },
+          { "gapId": "gap7", "cueWord": "FLATTER", "answers": ["flattering"] },
+          { "gapId": "gap8", "cueWord": "SATISFY", "answers": ["satisfaction"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. UNDERTAKE: Tras «quite an» va el sustantivo «undertaking». 2. FAIL: Tras «a complete» va el sustantivo «failure». 3. DELIGHT: «Turned out ___ enough» pide un adjetivo: «delightful». 4. QUICK: Modifica al verbo «chopped»: adverbio «quickly». 5. CARE: Modifica al verbo «planned»: adverbio «carefully». 6. ORDER: «A state of total» tras cocinar pide el negativo «disorder». 7. FLATTER: Describe los elogios: «flattering». 8. SATISFY: Tras «real» va el sustantivo «satisfaction»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-012",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "The lost wallet",
+      "gapText": "I lost my wallet on the bus and felt completely [gap1] for an hour.\nThe driver was [gap2] and told me to call the depot at once.\nThe woman on the phone spoke to me very [gap3] indeed.\nTwo days later a stranger handed it in, an act of great [gap4].\nNothing was missing, which seemed almost [gap5] to my family.\nI wrote to thank him for the [gap6] he had shown.\nHe replied that keeping it would have been [gap7] of him.\nThe whole story restored my [gap8] in people.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "daily-life"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "HELP", "answers": ["helpless"] },
+          { "gapId": "gap2", "cueWord": "SYMPATHY", "answers": ["sympathetic"] },
+          { "gapId": "gap3", "cueWord": "KIND", "answers": ["kindly"] },
+          { "gapId": "gap4", "cueWord": "HONEST", "answers": ["honesty"] },
+          { "gapId": "gap5", "cueWord": "BELIEVE", "answers": ["unbelievable"] },
+          { "gapId": "gap6", "cueWord": "THOUGHT", "answers": ["thoughtfulness"] },
+          { "gapId": "gap7", "cueWord": "MORAL", "answers": ["immoral"] },
+          { "gapId": "gap8", "cueWord": "CONFIDE", "answers": ["confidence"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. HELP: Perder la cartera te deja «helpless». 2. SYMPATHY: Tras «was» va el adjetivo «sympathetic». 3. KIND: Modifica al verbo «spoke»: adverbio «kindly». 4. HONEST: Tras «great» va el sustantivo «honesty». 5. BELIEVE: «Almost ___» ante algo asombroso: «unbelievable». 6. THOUGHT: Entre «the» y «he had shown» va el sustantivo «thoughtfulness». 7. MORAL: Quedarse la cartera sería «immoral». 8. CONFIDE: Tras «my» va el sustantivo «confidence»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-013",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 2,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "A school trip to the coast",
+      "gapText": "Our teacher organised the trip with an [gap1] we all noticed.\nThe coach left at seven, so the start was rather [gap2] for everyone.\nThe cliffs were high and looked slightly [gap3] from below.\nA guide explained the rocks very [gap4] to the younger pupils.\nSome classmates seemed [gap5] and asked no questions at all.\nWe collected shells of remarkable [gap6] along the beach.\nThe journey home was noisy but [gap7] all the same.\nIt was easily the most [gap8] day of the school year.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "school"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "EFFICIENT", "answers": ["efficiency"] },
+          { "gapId": "gap2", "cueWord": "SLEEP", "answers": ["sleepy"] },
+          { "gapId": "gap3", "cueWord": "THREAT", "answers": ["threatening"] },
+          { "gapId": "gap4", "cueWord": "CLEAR", "answers": ["clearly"] },
+          { "gapId": "gap5", "cueWord": "INTEREST", "answers": ["uninterested"] },
+          { "gapId": "gap6", "cueWord": "VARY", "answers": ["variety"] },
+          { "gapId": "gap7", "cueWord": "CHEER", "answers": ["cheerful"] },
+          { "gapId": "gap8", "cueWord": "MEMORY", "answers": ["memorable"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. EFFICIENT: Entre «an» y «we all noticed» va el sustantivo «efficiency». 2. SLEEP: Salir a las siete deja el comienzo «sleepy». 3. THREAT: Los acantilados vistos desde abajo resultan «threatening». 4. CLEAR: Modifica al verbo «explained»: adverbio «clearly». 5. INTEREST: No preguntar nada describe a alguien «uninterested». 6. VARY: Tras «remarkable» va el sustantivo «variety». 7. CHEER: «Noisy but ___» contrapone adjetivos: «cheerful». 8. MEMORY: Tras «the most» va el adjetivo «memorable»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-014",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 4,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "Living without a phone",
+      "gapText": "For one week I lived without a phone, which sounded like [gap1] to my friends.\nThe first morning felt strangely [gap2] without the usual alarm.\nI had to memorise addresses, an almost forgotten [gap3] these days.\nMeeting friends needed careful [gap4] the evening before.\nTwice I arrived late, which was rather [gap5] for them.\nBy Thursday my [gap6] on the screen had faded a little.\nI slept more [gap7] than I had for months.\nThe experiment gave me a new sense of [gap8] I did not expect.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "technology"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "MAD", "answers": ["madness"] },
+          { "gapId": "gap2", "cueWord": "PEACE", "answers": ["peaceful"] },
+          { "gapId": "gap3", "cueWord": "SKILFUL", "answers": ["skill"] },
+          { "gapId": "gap4", "cueWord": "ARRANGE", "answers": ["arrangement"] },
+          { "gapId": "gap5", "cueWord": "EMBARRASS", "answers": ["embarrassing"] },
+          { "gapId": "gap6", "cueWord": "DEPEND", "answers": ["dependence"] },
+          { "gapId": "gap7", "cueWord": "DEEP", "answers": ["deeply"] },
+          { "gapId": "gap8", "cueWord": "FREE", "answers": ["freedom"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. MAD: Tras «sounded like» va el sustantivo «madness». 2. PEACE: Tras «strangely» va el adjetivo «peaceful». 3. SKILFUL: Tras «forgotten» va el sustantivo «skill». 4. ARRANGE: Tras «careful» va el sustantivo «arrangement». 5. EMBARRASS: Describe la situación, no a quien la sufre: «embarrassing». 6. DEPEND: Tras «my» va el sustantivo «dependence». 7. DEEP: Modifica al verbo «slept»: adverbio «deeply». 8. FREE: Tras «a new sense of» va el sustantivo «freedom»."
+    },
+    {
+      "schemaVersion": "2.0.0",
+      "id": "b1-word-families-wf-015",
+      "status": "published",
+      "autoGradable": true,
+      "level": "B1",
+      "type": "word_formation",
+      "skillFocus": "word_formation",
+      "category": "use-of-english",
+      "topic": "b1-word-families",
+      "subtopic": "b1-word-families",
+      "taxonomyNodeIds": ["b1-word-families"],
+      "difficulty": 3,
+      "instructions": "Lee el texto y escribe en cada hueco la palabra derivada de la raíz en mayúsculas.",
+      "prompt": "The village market",
+      "gapText": "Every Friday the square fills with traders of every [gap1] you can imagine.\nThe cheese stall is easily the most [gap2] corner of the market.\nPrices are low, which makes shopping there very [gap3] for families.\nOne farmer describes his apples [gap4] to anyone who passes.\nThe bread sells out with a [gap5] that still surprises me.\nRainy Fridays are far less [gap6] for the traders.\nThe council once suggested [gap7] the market, and the village objected.\nFor many people it remains the [gap8] of the whole week.",
+      "lessonIds": ["b1-word-families"],
+      "tags": ["b1", "word-formation", "community"],
+      "estimatedSeconds": 240,
+      "evaluator": {
+        "strategy": "per_gap",
+        "gaps": [
+          { "gapId": "gap1", "cueWord": "DESCRIBE", "answers": ["description"] },
+          { "gapId": "gap2", "cueWord": "CROWD", "answers": ["crowded"] },
+          { "gapId": "gap3", "cueWord": "ECONOMY", "answers": ["economical"] },
+          { "gapId": "gap4", "cueWord": "PROUD", "answers": ["proudly"] },
+          { "gapId": "gap5", "cueWord": "QUICK", "answers": ["quickness"] },
+          { "gapId": "gap6", "cueWord": "SUCCESS", "answers": ["successful"] },
+          { "gapId": "gap7", "cueWord": "MOVE", "answers": ["moving"] },
+          { "gapId": "gap8", "cueWord": "HIGH", "answers": ["highlight"] }
+        ],
+        "normalization": {
+          "trim": true,
+          "collapseWhitespace": true,
+          "caseSensitive": false,
+          "ignoreTerminalPunctuation": true,
+          "normaliseApostrophes": true
+        }
+      },
+      "explanation": "1. DESCRIBE: «Of every ___» es expresión fija con sustantivo: «description». 2. CROWD: Delante de «corner» va el adjetivo «crowded». 3. ECONOMY: Tras «very» va el adjetivo «economical». 4. PROUD: Modifica al verbo «describes»: adverbio «proudly». 5. QUICK: Tras «a» y antes de «that» va el sustantivo «quickness». 6. SUCCESS: Tras «far less» va el adjetivo «successful». 7. MOVE: Tras «suggested» va el gerundio «moving». 8. HIGH: Tras «the» va el sustantivo «highlight»."
+    }
+  ]
+}

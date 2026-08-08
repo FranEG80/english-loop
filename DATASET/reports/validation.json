@@ -3,23 +3,24 @@
   "valid": true,
   "summary": {
     "lessons": 124,
-    "activities": 12359,
-    "batches": 659,
+    "activities": 12396,
+    "batches": 661,
     "taxonomyNodes": 164,
     "errors": 0,
-    "warnings": 4694
+    "warnings": 4697
   },
   "warningsByCode": {
     "missing-distractor-feedback": 3894,
     "single-accepted-answer": 550,
     "deck-unbalanced": 127,
-    "answer-visible-in-prompt": 47,
+    "answer-visible-in-prompt": 48,
     "true-false-balance": 34,
     "selection-count-uniform": 13,
     "word-order-token-mismatch": 13,
     "duplicate-option-text": 8,
     "answer-position-bias": 4,
     "answer-equals-prompt": 3,
+    "word-formation-answer-equals-cue": 2,
     "kwt-key-word-absent": 1
   },
   "issues": [
@@ -13227,6 +13228,24 @@
       "code": "missing-distractor-feedback",
       "location": "activities/b1/use-of-english/b1-word-families/b1-word-families/single_choice/batch-001.json#b1-word-families-mcc-025",
       "message": "Ningún distractor explica por qué es incorrecto.",
+      "severity": "warning"
+    },
+    {
+      "code": "word-formation-answer-equals-cue",
+      "location": "activities/b1/use-of-english/b1-word-families/b1-word-families/word_formation/batch-002.json#b1-word-families-wf-005",
+      "message": "La respuesta «steady» es la raíz sin derivar.",
+      "severity": "warning"
+    },
+    {
+      "code": "word-formation-answer-equals-cue",
+      "location": "activities/b1/use-of-english/b1-word-families/b1-word-families/word_formation/batch-002.json#b1-word-families-wf-007",
+      "message": "La respuesta «shower» es la raíz sin derivar.",
+      "severity": "warning"
+    },
+    {
+      "code": "answer-visible-in-prompt",
+      "location": "activities/b1/use-of-english/b1-word-families/b1-word-families/word_formation/batch-003.json#b1-word-families-wf-027",
+      "message": "La respuesta «competition» del hueco gap1 ya aparece en el enunciado.",
       "severity": "warning"
     },
     {
